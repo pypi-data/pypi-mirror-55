@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: wledpy-pctechjon
+Version: 0.0.3
+Summary: Python module to interface with WLED JSON APIs
+Home-page: http://github.com/pctechjon/wledpy/
+Author: Jonathon Davis
+Author-email: pctechjon@gmail.com
+License: Apache Software License
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Natural Language :: English
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+
+
+WLED Python Library
+-----
+
+This Python Library is a wrapper for the [WLED](https://wled.me/) addressable LED strip controller JSON API.
+
+
+
