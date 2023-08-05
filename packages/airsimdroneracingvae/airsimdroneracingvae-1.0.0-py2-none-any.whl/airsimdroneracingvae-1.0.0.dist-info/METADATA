@@ -1,0 +1,26 @@
+Metadata-Version: 2.0
+Name: airsimdroneracingvae
+Version: 1.0.0
+Summary: Python package for code - https://github.com/microsoft/AirSim-Drone-Racing-VAE-Imitation - associated with our paper Learning Controls Using Cross-Modal Representations: Bridging Simulation and Reality for Drone Racing: https://arxiv.org/abs/1909.06993
+Home-page: https://github.com/microsoft/AirSim-Drone-Racing-VAE-Imitation
+Author: Ratnesh Madaan, Nicholas Gyde, Matthew Brown, Shital Shah
+Author-email: ratnesh.madaan@microsoft.com, v-nigyde@microsoft.com, v-mattbr@microsoft.com, shitals@microsoft.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: msgpack-rpc-python
+Requires-Dist: numpy (<=1.16)
+
+# Python API for AirSim-Drone-Racing-VAE-Imitation
+
+Python package for code - https://github.com/microsoft/AirSim-Drone-Racing-VAE-Imitation - associated with our paper Learning Controls Using Cross-Modal Representations: Bridging Simulation and Reality for Drone Racing: https://arxiv.org/abs/1909.06993, built on [Microsoft AirSim](https://github.com/microsoft/AirSim)
+
+## Dependencies
+This package depends on `msgpack` and would automatically install `msgpack-rpc-python` (this may need administrator/sudo prompt):
+```
+pip install msgpack-rpc-python
+```
+
