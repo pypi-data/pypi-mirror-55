@@ -1,0 +1,7 @@
+setup.py
+snumpy/__init__.py
+snumpy.egg-info/PKG-INFO
+snumpy.egg-info/SOURCES.txt
+snumpy.egg-info/dependency_links.txt
+snumpy.egg-info/not-zip-safe
+snumpy.egg-info/top_level.txt
