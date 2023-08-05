@@ -1,0 +1,10 @@
+cruncher/__init__.py,sha256=EdBTl1u5Lk-T39cZD-T-aesjizKL_ZaWvOKMAs_LWn4,4514
+cruncher/core.py,sha256=ZQygfIpr5vsJnCCC8T9GY6lXAZVUXk12vJ-E3YME5Uw,10496
+cruncher/cruncher.py,sha256=Lfx6QuZn-4QYjVrStuUxXFZyRxAfmyqebScFlMdz-S8,8449
+cruncher/utils.py,sha256=lbqBNDFk7c-7mEutUGf6gSkhe4ZG1bRqft0QvgzoDnQ,1031
+cruncher-0.2.1.dist-info/LICENSE,sha256=gcuuhKKc5-dwvyvHsXjlC9oM6N5gZ6umYbC8ewW1Yvg,35821
+cruncher-0.2.1.dist-info/METADATA,sha256=7HWvV8SmMI2K4S84VAevtrtWgycCowqN8K68sy6_M0Q,2733
+cruncher-0.2.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+cruncher-0.2.1.dist-info/entry_points.txt,sha256=bOWV-wpCNZZ-RrsZxOXFQzBhZgRU7HestoQa-6YPc5k,61
+cruncher-0.2.1.dist-info/top_level.txt,sha256=8txjrqs0Ic2pMwo02BXfZTDPEAxVZhSJ-n-1wg-xLgU,9
+cruncher-0.2.1.dist-info/RECORD,,
