@@ -1,0 +1,17 @@
+COPYING
+LICENSE
+MANIFEST.in
+NEWS
+README
+setup.py
+chm/__init__.py
+chm/_chmlib.c
+chm/chm.py
+chm/chmlib.py
+chm/chmlib_search.h
+chm/extra.py
+chm/search.c
+pychm.egg-info/PKG-INFO
+pychm.egg-info/SOURCES.txt
+pychm.egg-info/dependency_links.txt
+pychm.egg-info/top_level.txt

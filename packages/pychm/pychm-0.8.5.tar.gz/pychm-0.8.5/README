@@ -1,0 +1,14 @@
+PyCHM
+=====
+
+PyCHM is a Python library to manipulate CHM files (Microsoft HTML Help).
+
+The chm package contains four modules:
+
+* chm.chm: High-level support for CHM archives.
+* chm.extra: Extra utility functions - full-text search support,
+  encoding detection.
+* chm.chmlib: Low level wrappers around the chmlib API (Python part).
+
+* chm._chmlib: Low level wrappers around the chmlib API (C part).
+  This module is unstable and subject to change without notice.

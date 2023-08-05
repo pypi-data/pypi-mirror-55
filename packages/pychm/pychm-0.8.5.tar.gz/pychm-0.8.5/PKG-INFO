@@ -1,0 +1,24 @@
+Metadata-Version: 1.0
+Name: pychm
+Version: 0.8.5
+Summary: Python package to handle CHM files
+Home-page: https://github.com/dottedmag/pychm
+Author: Mikhail Gusarov
+Author-email: dottedmag@dottedmag.net
+License: GPL
+Description: PyCHM
+        =====
+        
+        PyCHM is a Python library to manipulate CHM files (Microsoft HTML Help).
+        
+        The chm package contains four modules:
+        
+        * chm.chm: High-level support for CHM archives.
+        * chm.extra: Extra utility functions - full-text search support,
+          encoding detection.
+        * chm.chmlib: Low level wrappers around the chmlib API (Python part).
+        
+        * chm._chmlib: Low level wrappers around the chmlib API (C part).
+          This module is unstable and subject to change without notice.
+        
+Platform: UNKNOWN
