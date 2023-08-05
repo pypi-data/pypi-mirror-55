@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+data/data_file
+sample/__init__.py
+sample/package_data.dat
+sampleproject.egg-info/PKG-INFO
+sampleproject.egg-info/SOURCES.txt
+sampleproject.egg-info/dependency_links.txt
+sampleproject.egg-info/entry_points.txt
+sampleproject.egg-info/requires.txt
+sampleproject.egg-info/top_level.txt
