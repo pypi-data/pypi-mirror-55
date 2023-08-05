@@ -1,0 +1,10 @@
+pandas
+slacker
+
+[all]
+pandas
+slacker
+sphinx
+
+[doc]
+sphinx
