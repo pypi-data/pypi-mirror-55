@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+updater/__init__.py
+updater/updater.py
+updaterForExe.egg-info/PKG-INFO
+updaterForExe.egg-info/SOURCES.txt
+updaterForExe.egg-info/dependency_links.txt
+updaterForExe.egg-info/requires.txt
+updaterForExe.egg-info/top_level.txt
