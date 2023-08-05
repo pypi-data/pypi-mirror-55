@@ -1,0 +1,12 @@
+README.md
+setup.py
+subrename/__init__.py
+subrename/__version__.py
+subrename/main.py
+subrename/subrename.py
+subrename.egg-info/PKG-INFO
+subrename.egg-info/SOURCES.txt
+subrename.egg-info/dependency_links.txt
+subrename.egg-info/entry_points.txt
+subrename.egg-info/requires.txt
+subrename.egg-info/top_level.txt
