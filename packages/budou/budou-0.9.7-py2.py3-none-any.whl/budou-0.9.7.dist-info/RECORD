@@ -1,0 +1,16 @@
+budou/__init__.py,sha256=36e6CcHPNM5eguWjE9a-Ql9PopENrPcJU0wbRPcL0vE,926
+budou/__version__.py,sha256=q0wkRPKO4XtqePMp8bk82D6Z0YN1xmcSMAjsED3ItNM,62
+budou/budou.py,sha256=KViqaaaAfc0VvZiKNUsutNGrJd7-us0QNdjXLAfwdtQ,3588
+budou/cachefactory.py,sha256=S0tIwDvC4fMJJdfv0shiaERnCHzE_RRV5mmwMr-3Ses,3943
+budou/chunk.py,sha256=4oku41bLWZ6kVoEfMDxUrVnGAF9CfzTfUo04cv5hZ0k,9369
+budou/mecabsegmenter.py,sha256=xiaQP-IGoLptlwGIZCmUNqBj0iJm7TH9jKVQgud-3V0,3631
+budou/nlapisegmenter.py,sha256=odDGMg6vZOHHg1lfNVGRm7yFQUN56EOL0xt2Jl-cDp8,10311
+budou/parser.py,sha256=5zJHRkFI4tfixMO8duvCiIAoF51ST_z507_8iLL84bc,6162
+budou/segmenter.py,sha256=zeZDEu8D2x-MfIA7f69uEU5hKLyjkH2TcW4FNYi4h40,1155
+budou/tinysegmentersegmenter.py,sha256=--pfZQG84ihxI2vBpOYlhs5mGbGDouzew4FpBtXgfao,3516
+budou-0.9.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+budou-0.9.7.dist-info/METADATA,sha256=jjEdMMgezZsx4g1k2deCbl7OSZRJ-bW2EM4sGYkQJYo,14351
+budou-0.9.7.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+budou-0.9.7.dist-info/entry_points.txt,sha256=zkir8C_EEqeQxweLSBoA_BMnjMY5A3n4fk6RIe1uUFY,44
+budou-0.9.7.dist-info/top_level.txt,sha256=B6uYekL-KDA4h2aSiqiFbGeYXgmLDJ5nif7IazatjS8,6
+budou-0.9.7.dist-info/RECORD,,
