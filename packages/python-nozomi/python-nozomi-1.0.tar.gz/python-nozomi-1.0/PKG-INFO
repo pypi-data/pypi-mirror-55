@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: python-nozomi
+Version: 1.0
+Summary: Nozomi API for retrieving images, videos, gifs.
+Home-page: https://github.com/Alfa-Q/python-nozomi
+Author: Alfa_Q
+Author-email: alfakyuu@gmail.com
+License: MIT
+Download-URL: https://github.com/Alfa-Q/python-nozomi/archive/1.0.tar.gz
+Description: UNKNOWN
+Keywords: nozomi,nozomi.la,api,video,image,anime
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
