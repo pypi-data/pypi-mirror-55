@@ -1,0 +1,9 @@
+README.md
+prependnewline.py
+setup.cfg
+setup.py
+prependnewline.egg-info/PKG-INFO
+prependnewline.egg-info/SOURCES.txt
+prependnewline.egg-info/dependency_links.txt
+prependnewline.egg-info/requires.txt
+prependnewline.egg-info/top_level.txt
