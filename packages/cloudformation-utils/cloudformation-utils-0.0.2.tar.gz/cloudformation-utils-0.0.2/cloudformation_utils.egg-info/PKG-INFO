@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: cloudformation-utils
+Version: 0.0.2
+Summary: Utility functions for working with AWS CloudFormation templates
+Home-page: http://github.com/NitorCreations/cloudformation-utils
+Author: Pasi Niemi
+Author-email: pasi.niemi@nitor.com
+License: Apache 2.0
+Download-URL: https://github.com/NitorCreations/cloudformation-utils
+Description: # CloudFormation utils
+        
+        Tools for importing files with dynamic parameter references into CloudFormation templates.
+        Useful for nameless-deploy-tools and troposphere.
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
