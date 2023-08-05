@@ -1,0 +1,8 @@
+README.rst
+setup.py
+django_choices_enums/__init__.py
+django_choices_enums/enum.py
+django_choices_enums.egg-info/PKG-INFO
+django_choices_enums.egg-info/SOURCES.txt
+django_choices_enums.egg-info/dependency_links.txt
+django_choices_enums.egg-info/top_level.txt
