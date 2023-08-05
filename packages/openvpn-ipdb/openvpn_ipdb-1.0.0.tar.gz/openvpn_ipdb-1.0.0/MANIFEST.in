@@ -1,0 +1,2 @@
+include openvpn_ipdb/sql/leases_v4.sql
+include openvpn_ipdb/sql/leases_v6.sql
