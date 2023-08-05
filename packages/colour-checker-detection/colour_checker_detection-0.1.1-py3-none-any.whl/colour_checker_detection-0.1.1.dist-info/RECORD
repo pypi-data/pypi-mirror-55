@@ -1,0 +1,15 @@
+colour_checker_detection/__init__.py,sha256=2EcA4724vuvV2b0imod7hdZdI7gbyrfMy-Q5V_dRBok,2043
+colour_checker_detection/detection/__init__.py,sha256=PALVlMXob7p04VQKJTbeul4XiCprJpyzYFJQo1iOlKc,412
+colour_checker_detection/detection/segmentation.py,sha256=vETnprvZ-IPP6RKo-WETfCQGBXmjC9Ye5Q0z8WjqWsY,24636
+colour_checker_detection/detection/tests/__init__.py,sha256=iwhKnzeBJLKxpRVjvzwiRE63_zNpIBfaKLITauVph-0,24
+colour_checker_detection/detection/tests/test_segmentation.py,sha256=5geTuoOlF617TmKOHSMG6cbw6t5FgX-hsblE3UFMH8M,25151
+colour_checker_detection/examples/examples_detection.ipynb,sha256=C9_VEhaz8Q8DOwKczXJkrLtZ1BbFjYiTxlJyrmkxu64,11386883
+colour_checker_detection/resources/colour-checker-detection-examples-datasets/.git,sha256=hltdbEX9KD0ZTZLioGaymJOqx2dqzxZuF9bgSR4UXug,108
+colour_checker_detection/resources/colour-checker-detection-tests-datasets/.DS_Store,sha256=hphGd3yargY3hg1xzJb4uWJcMrpND351yVfPc7sIne0,8196
+colour_checker_detection/resources/colour-checker-detection-tests-datasets/.git,sha256=9eUI8R3j3_-uKbnIRQ1T5m5kTrg4EJ_qT3ixTP9Vv5s,105
+colour_checker_detection/resources/colour-checker-detection-tests-datasets/.gitignore,sha256=w55sIM4nQkkiH9_BCE9NyCq76QZXoVl3vWfRP4yPjY4,6
+colour_checker_detection/resources/colour-checker-detection-tests-datasets/colour_checker_detection/.DS_Store,sha256=BG6YeAoNCmMS0Z4Jzbm3Dn0RJ7qieagJSTRDBRb3Wuw,8196
+colour_checker_detection-0.1.1.dist-info/LICENSE,sha256=C_QJcBJ8lLX9mukTxo-lq1jkkeNpvvN9WANOE6LcbGg,1510
+colour_checker_detection-0.1.1.dist-info/WHEEL,sha256=2cuNvJXfe2HLnOJxNBVnVfpJIOzFSTsZ7ZQ2qj1jFGs,85
+colour_checker_detection-0.1.1.dist-info/METADATA,sha256=3Kjy3Ds2YaTYnUsxcjDBWM3oImtR7btAsHtw-cGZK3E,6712
+colour_checker_detection-0.1.1.dist-info/RECORD,,
