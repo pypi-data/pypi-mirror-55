@@ -1,0 +1,10 @@
+tqdm
+numpy
+pint
+pytest
+scipy
+sympy
+tabulate
+
+[parallel]
+dask
