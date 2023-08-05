@@ -1,0 +1,3 @@
+[console_scripts]
+viginère = cipherdeck.viginere:cli
+

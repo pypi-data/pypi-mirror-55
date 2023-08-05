@@ -1,0 +1,5 @@
+click
+
+[dev]
+pytest
+setuptools-changelog>=1

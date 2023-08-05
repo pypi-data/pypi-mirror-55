@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: cipherdeck
+Version: 0.1.0
+Summary: Simple text encryption utilities
+Home-page: https://gitlab.com/khardix/cipherdeck
+Author: Jan “Khardix” Staněk
+Author-email: khardix@gmail.com
+License: AGPL-3.0-or-later
+Description: ##########
+        cipherdeck
+        ##########
+        
+        Simple text encryption utilities.
+        
+        Author knows how to use this package.
+        Everyone else should avoid it.
+        
+        0.1.0 (2019-10-31)
+        ==================
+        
+        First public release.
+        For the time being, this ``cipherdeck`` includes only Viginère cipher.
+        
+        New Features
+        ------------
+        - Implemented Viginère cipher with customizable alphabet.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Security :: Cryptography
+Classifier: Typing :: Typed
+Provides-Extra: dev
