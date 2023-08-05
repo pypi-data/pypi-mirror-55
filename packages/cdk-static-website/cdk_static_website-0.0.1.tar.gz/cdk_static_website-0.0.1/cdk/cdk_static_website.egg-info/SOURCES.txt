@@ -1,0 +1,7 @@
+README.md
+setup.py
+cdk/cdk_static_website.egg-info/PKG-INFO
+cdk/cdk_static_website.egg-info/SOURCES.txt
+cdk/cdk_static_website.egg-info/dependency_links.txt
+cdk/cdk_static_website.egg-info/requires.txt
+cdk/cdk_static_website.egg-info/top_level.txt
