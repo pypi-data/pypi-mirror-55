@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: syntreenet
+Version: 1.0.0b8
+Summary: A library to develop scalable production rule systems for any parsing expression grammar
+Home-page: http://www.syntree.net/
+Author: Enrique Pérez Arnaud
+Author-email: enrique@cazalla.net
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Provides-Extra: testing

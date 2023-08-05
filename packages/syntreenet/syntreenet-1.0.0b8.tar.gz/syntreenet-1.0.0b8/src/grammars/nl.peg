@@ -1,0 +1,16 @@
+fact        = value ws pred ws value
+pred        = isa / is
+isa         = "isa"
+is          = "is"
+map        = lpar pair+ rpar
+pair        = key assign value ws? comma? ws?
+value       = v_value / __var__
+v_value     = word / map
+key         = word
+word        = ~r"[a-z][-\w]+"
+assign      = ws? ":" ws?
+lpar        = "("
+rpar        = ")"
+comma       = ","
+sc          = ";"
+ws          = ~r"\s*"
