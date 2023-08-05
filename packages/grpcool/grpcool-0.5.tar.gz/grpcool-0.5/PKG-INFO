@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: grpcool
+Version: 0.5
+Summary: An easy to use grpc library.
+Home-page: https://github.com/ilyakharlamov/grpcool
+Author: Ilya Kharlamov
+Author-email: ilya.kharlamov@gmail.com
+License: Apache 2.0
+Download-URL: https://github.com/ilyakharlamov/grpcool/archive/0.5.tar.gz
+Description: # grpcool
+        grpcool is a grpc library for Python built for humans.
+        
+Keywords: GRPC,EASY,PROXY,PROTO,PROTOBUF
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
