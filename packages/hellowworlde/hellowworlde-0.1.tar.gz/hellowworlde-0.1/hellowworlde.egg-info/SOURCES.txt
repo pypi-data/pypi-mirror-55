@@ -1,0 +1,7 @@
+setup.py
+hellowworlde/__init__.py
+hellowworlde.egg-info/PKG-INFO
+hellowworlde.egg-info/SOURCES.txt
+hellowworlde.egg-info/dependency_links.txt
+hellowworlde.egg-info/not-zip-safe
+hellowworlde.egg-info/top_level.txt
