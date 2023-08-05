@@ -1,0 +1,11 @@
+flattree/__init__.py,sha256=EgdqiRonkvYDiTtFvP1hstJBHoe7LAMwEP7N8AxvRU8,405
+flattree/core.py,sha256=zwhFfvzcd4M3APWMcaI6Av6wAv3BxQvUMesCT8GFfBY,6387
+flattree/mainclass.py,sha256=X9UHmX3plKm3pnq5VuNVKXDpsHRxaD4w1MF1kdjNdtE,3560
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/conftest.py,sha256=PIDNxWMVBPf3kRSovVOuHdGllpeQNqHcIgtSAu160hE,492
+tests/test_flattree_defaults.py,sha256=n5adYfoyHJjrbVzSUNrOwTNP7hy8KdEN824ERb90N4g,3731
+flattree-1.0.0.dist-info/LICENSE,sha256=EMPo0K2TwjGPEj8-c0yIz65vGn4P0QmDxqqhViVGtG4,1076
+flattree-1.0.0.dist-info/METADATA,sha256=CrjWOyp8LDzg6bOz5Q5TvfamQkS4C02d-ON95j5GA9U,984
+flattree-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+flattree-1.0.0.dist-info/top_level.txt,sha256=VHlJbHLPf59CHjqdY_bXEa95yjewuAuz6gVrmRUiACM,15
+flattree-1.0.0.dist-info/RECORD,,
