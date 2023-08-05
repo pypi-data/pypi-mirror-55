@@ -1,0 +1,9 @@
+colorama==0.4.1
+lifxlan==1.2.5
+
+[:platform_system == "Linux"]
+pyalsaaudio==0.8.4
+
+[:platform_system == "Windows"]
+comtypes==1.1.7
+pycaw
