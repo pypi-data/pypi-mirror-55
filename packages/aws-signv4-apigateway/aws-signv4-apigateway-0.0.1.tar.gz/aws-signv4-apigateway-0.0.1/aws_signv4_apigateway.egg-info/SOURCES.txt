@@ -1,0 +1,10 @@
+README.md
+setup.py
+aws_signv4_apigateway/__init__.py
+aws_signv4_apigateway/main.py
+aws_signv4_apigateway.egg-info/PKG-INFO
+aws_signv4_apigateway.egg-info/SOURCES.txt
+aws_signv4_apigateway.egg-info/dependency_links.txt
+aws_signv4_apigateway.egg-info/entry_points.txt
+aws_signv4_apigateway.egg-info/requires.txt
+aws_signv4_apigateway.egg-info/top_level.txt
