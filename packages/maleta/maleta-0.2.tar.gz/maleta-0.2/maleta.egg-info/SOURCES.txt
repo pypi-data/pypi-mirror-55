@@ -1,0 +1,7 @@
+README.md
+setup.py
+maleta/__init__.py
+maleta.egg-info/PKG-INFO
+maleta.egg-info/SOURCES.txt
+maleta.egg-info/dependency_links.txt
+maleta.egg-info/top_level.txt
