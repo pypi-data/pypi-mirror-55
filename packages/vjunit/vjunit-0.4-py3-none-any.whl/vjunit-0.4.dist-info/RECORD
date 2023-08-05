@@ -1,0 +1,10 @@
+vjunit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+vjunit/__main__.py,sha256=TUkIADUT5mrK3tnvRsyOdrPKC_-_nCMouUQzQj4xPsg,431
+vjunit/template.html,sha256=MzW-AXst9NcmgMl7E1y1whYUI9DEmTp-JAnS2ggtR8g,6880
+vjunit/vjunit.py,sha256=VNDcHJq3b_LxBzdMSePV_WHU-4OD0xgx1XdXH5sxt14,2187
+vjunit-0.4.dist-info/LICENSE,sha256=67YFxSk48C19gJJzrZIvTQsCMbsh7Ke9e7mtfWdy9dY,1071
+vjunit-0.4.dist-info/METADATA,sha256=8Km1o7m59p7EMR-G3Rou0nIRkLQEcUBatNrx0vzMtDE,483
+vjunit-0.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+vjunit-0.4.dist-info/entry_points.txt,sha256=57nhynqVr3Z6Zrt5Ev65MzDlgmwEdNwnMea9AkngerA,49
+vjunit-0.4.dist-info/top_level.txt,sha256=mq86TeSQxbtKPdqsjCT_SxQL2hxibeqAlQS3fVKf_OQ,7
+vjunit-0.4.dist-info/RECORD,,
