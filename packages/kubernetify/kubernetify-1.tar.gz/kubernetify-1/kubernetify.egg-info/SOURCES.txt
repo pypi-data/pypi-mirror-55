@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+bin/kubernetify
+kubernetify/__init__.py
+kubernetify/kubernetify.py
+kubernetify.egg-info/PKG-INFO
+kubernetify.egg-info/SOURCES.txt
+kubernetify.egg-info/dependency_links.txt
+kubernetify.egg-info/top_level.txt
+tests/test_kubernetify.py
