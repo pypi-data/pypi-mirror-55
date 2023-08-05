@@ -1,0 +1,8 @@
+MANIFEST.in
+README.md
+setup.py
+Firstmysite_Jia.egg-info/PKG-INFO
+Firstmysite_Jia.egg-info/SOURCES.txt
+Firstmysite_Jia.egg-info/dependency_links.txt
+Firstmysite_Jia.egg-info/requires.txt
+Firstmysite_Jia.egg-info/top_level.txt
