@@ -1,0 +1,15 @@
+README.md
+setup.py
+attributionpriors/__init__.py
+attributionpriors/eager_ops.py
+attributionpriors/ops.py
+attributionpriors.egg-info/PKG-INFO
+attributionpriors.egg-info/SOURCES.txt
+attributionpriors.egg-info/dependency_links.txt
+attributionpriors.egg-info/requires.txt
+attributionpriors.egg-info/top_level.txt
+attributionpriors/mnist/__init__.py
+attributionpriors/mnist/mnist_download.py
+attributionpriors/mnist/mnist_model.py
+attributionpriors/mnist/mnist_reader.py
+attributionpriors/mnist/mnist_train.py

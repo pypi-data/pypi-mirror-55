@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: attributionpriors
+Version: 0.1.3
+Summary: Tools for training explainable models using attribution priors.
+Home-page: https://github.com/suinleelab/attributionpriors
+Author: The Lee Lab at UW
+Author-email: psturm@cs.washington.edu
+License: UNKNOWN
+Description: 
+                 This package contains tools to train deep learning models using attribution priors.
+                 Through attribution priors, practitioners can constraint models to 
+                 behave more intuitively on a wide variety of tasks. For usage guidelines,
+                 see [the GitHub repo](https://github.com/suinleelab/attributionpriors).
+                 For more details about how to use attribution priors, see [the arXiv paper](https://arxiv.org/abs/1906.10670).
+             
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
