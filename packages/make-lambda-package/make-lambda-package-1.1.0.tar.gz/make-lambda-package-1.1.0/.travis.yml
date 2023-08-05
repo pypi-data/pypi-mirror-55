@@ -1,0 +1,20 @@
+sudo: required
+services:
+  - docker
+language: python
+cache: pip
+jobs:
+  include:
+  - python: "3.7"
+    env: TEST_PIP_VERSION="<10.0"
+  - python: "3.7"
+  - python: "3.6"
+  - python: "3.5"
+  - python: "3.4"
+  - python: "pypy"
+install:
+  - "pip install tox tox-travis"
+script:
+  - "INSTALL_COMMAND_ARGS=${TEST_PIP_VERSION+--ignore-installed} tox --force-dep pip$TEST_PIP_VERSION"
+notifications:
+  email: false
