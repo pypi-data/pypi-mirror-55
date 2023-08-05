@@ -1,0 +1,10 @@
+setup.py
+syntaxiperror/__init__.py
+syntaxiperror/__main__.py
+syntaxiperror/error.py
+syntaxiperror/validates.py
+syntaxiperror.egg-info/PKG-INFO
+syntaxiperror.egg-info/SOURCES.txt
+syntaxiperror.egg-info/dependency_links.txt
+syntaxiperror.egg-info/entry_points.txt
+syntaxiperror.egg-info/top_level.txt

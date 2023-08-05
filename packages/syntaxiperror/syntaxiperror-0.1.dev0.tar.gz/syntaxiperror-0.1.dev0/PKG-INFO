@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: syntaxiperror
+Version: 0.1.dev0
+Summary: Checkeador de Ips
+Home-page: https://github.com/mdjfs/syntax_ip_error
+Author: Marcos Fuenmayor
+Author-email: marcos.fuenmayorhtc@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
