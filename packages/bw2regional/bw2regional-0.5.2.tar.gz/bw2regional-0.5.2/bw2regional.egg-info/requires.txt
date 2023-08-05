@@ -1,0 +1,13 @@
+brightway2
+bw2calc>=1.2
+bw2data>=2.0
+constructive_geometries
+eight
+fiona
+pandas
+pandarus>=1.0
+requests
+rower
+stats_arrays
+voluptuous
+wrapt
