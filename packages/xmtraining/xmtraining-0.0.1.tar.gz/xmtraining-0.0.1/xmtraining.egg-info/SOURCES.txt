@@ -1,0 +1,6 @@
+README.md
+setup.py
+xmtraining.egg-info/PKG-INFO
+xmtraining.egg-info/SOURCES.txt
+xmtraining.egg-info/dependency_links.txt
+xmtraining.egg-info/top_level.txt
