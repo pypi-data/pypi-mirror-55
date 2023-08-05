@@ -1,0 +1,4 @@
+pyserial
+RPi.GPIO
+smbus
+spidev
