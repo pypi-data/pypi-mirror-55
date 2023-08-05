@@ -1,0 +1,6 @@
+django==2.2
+psycopg2_binary
+jsonschema
+sorl-thumbnail
+pycountry
+Pillow
