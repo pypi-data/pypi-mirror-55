@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: mediapro
+Version: 0.0.1
+Summary: All about media processing
+Home-page: https://github.com/shengbinmeng/mediapro
+Author: MediaPro Developers
+Author-email: mediapro@shengbin.me
+License: UNKNOWN
+Description: # Media Pro
+        
+        A media processing library created by media professionals.
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

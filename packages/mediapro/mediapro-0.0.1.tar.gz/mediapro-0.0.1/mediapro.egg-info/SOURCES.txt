@@ -1,0 +1,7 @@
+README.md
+setup.py
+mediapro/__init__.py
+mediapro.egg-info/PKG-INFO
+mediapro.egg-info/SOURCES.txt
+mediapro.egg-info/dependency_links.txt
+mediapro.egg-info/top_level.txt
