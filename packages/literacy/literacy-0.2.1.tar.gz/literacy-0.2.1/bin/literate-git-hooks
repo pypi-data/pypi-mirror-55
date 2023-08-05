@@ -1,0 +1,5 @@
+#!/usr/bin/env python3
+import os
+if os.path.isdir("./.git/hook"):
+    myCmd = 'touch test.txt'
+    os.system(myCmd)

@@ -1,0 +1,4 @@
+#!/usr/bin/env python3
+import os
+myCmd = 'touch hello.txt'
+os.system(myCmd)
