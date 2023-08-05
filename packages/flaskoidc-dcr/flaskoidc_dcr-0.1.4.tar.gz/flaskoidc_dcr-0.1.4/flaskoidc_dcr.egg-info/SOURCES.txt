@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+flaskoidc_dcr/__init__.py
+flaskoidc_dcr/config.py
+flaskoidc_dcr/store.py
+flaskoidc_dcr.egg-info/PKG-INFO
+flaskoidc_dcr.egg-info/SOURCES.txt
+flaskoidc_dcr.egg-info/dependency_links.txt
+flaskoidc_dcr.egg-info/requires.txt
+flaskoidc_dcr.egg-info/top_level.txt
