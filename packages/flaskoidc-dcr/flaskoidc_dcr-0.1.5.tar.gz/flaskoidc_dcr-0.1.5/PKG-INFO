@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: flaskoidc_dcr
+Version: 0.1.5
+Summary: Flask wrapper with pre-configured OIDC support
+Home-page: https://github.com/dcrdev/flaskoidc.git
+Author: Dominic Robinson
+Author-email: github@dcrdev.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
