@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: event-judge
+Version: 0.1
+Summary: Simplifying judging for all events
+Home-page: https://github.com/isohack/event-judge
+Author: Shashank Sharma
+Author-email: shashank.sharma98@gmail.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Event Judge
+
+To simplify the judging evaluation with automated quick results
+
+### Local Testing
+
+Create virtual environment by:
+
+`python -m venv myvenv`
+
+Then to install this package, do:
+
+`pip install .`
+
+This will install it into your virtual environment and to remove do:
+
+`pip uninstall event-judge`
+
+
