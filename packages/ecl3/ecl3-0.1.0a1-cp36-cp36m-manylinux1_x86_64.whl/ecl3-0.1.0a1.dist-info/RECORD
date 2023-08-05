@@ -1,0 +1,10 @@
+ecl3-0.1.0a1.dist-info/METADATA,sha256=TShIT0LH_YYPotCWvgrdX_4QBbCWEo-mLS1piwdQ2DQ,206
+ecl3-0.1.0a1.dist-info/RECORD,,
+ecl3-0.1.0a1.dist-info/top_level.txt,sha256=eoPIu3XAp4IHDcSJJWKVDKKqlf5yvLY4wmPKbJ-sc3k,5
+ecl3-0.1.0a1.dist-info/WHEEL,sha256=RPjBl_22cKIexnxhzElR3z3YSCIudgzmvJBnUQAwgus,103
+ecl3/version.py,sha256=DQd3r1RZqsQDZGLBfDA3MrFSyWwOsTsnwAzVFI0B2sU,118
+ecl3/core.cpython-36m-x86_64-linux-gnu.so,sha256=IDV3hPFvuSysK468gc-MTSv7PGJZ3gzXgMy5p67OErQ,258216
+ecl3/__init__.py,sha256=o0B8d9mj53zuf-kDV8nP2eDfnpo--PzTJcPf_RxvnQk,163
+ecl3/.libs/libecl3-96f4ea8d.so,sha256=XmqeDCVuuRMKtvjB367LFQSaL0zG0z7s2UMu_xNSSF4,21448
+ecl3/summary/specification.py,sha256=7lkhSTiBHP5LSk1FJUNqJH7pJOq20M-SLH2lwZ4JYB4,11898
+ecl3/summary/__init__.py,sha256=Oa88I1c4KXeN2SKmA0Re9_YUl8LLUYpymxbRN5__DFw,121
