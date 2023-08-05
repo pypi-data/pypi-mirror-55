@@ -1,0 +1,8 @@
+README.md
+setup.py
+yamer/__init__.py
+yamer/convertor.py
+yaml2txt.egg-info/PKG-INFO
+yaml2txt.egg-info/SOURCES.txt
+yaml2txt.egg-info/dependency_links.txt
+yaml2txt.egg-info/top_level.txt
