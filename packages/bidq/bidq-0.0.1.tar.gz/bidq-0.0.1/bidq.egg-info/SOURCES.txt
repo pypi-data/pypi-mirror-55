@@ -1,0 +1,10 @@
+README.md
+setup.py
+bidq/__init__.py
+bidq/client.py
+bidq/exceptions.py
+bidq/utils.py
+bidq.egg-info/PKG-INFO
+bidq.egg-info/SOURCES.txt
+bidq.egg-info/dependency_links.txt
+bidq.egg-info/top_level.txt

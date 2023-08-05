@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: bidq
+Version: 0.0.1
+Summary: Python SDK for bidq
+Home-page: https://github.com/bidq/pybidq
+Author: Alon Niv
+Author-email: oakfang@gmail.com
+License: UNKNOWN
+Description: # pybidq
+        Python SDK for bidq
+        
+        # Usage
+        ```python
+        import asyncio
+        from bidq import BidQ
+        
+        
+        async def setup_worker():
+            client = await BidQ.create()
+        
+            @client.worker("add")
+            def add(x, y):
+                return x + y
+        
+            await client.serve()
+        
+        
+        async def send_job():
+            client = await BidQ.create()
+            jid = await client.submit("add", {"x": 1, "y": 2}, 0.2)
+            try:
+                print(await client.get(jid))
+            except Exception as e:
+                print(e)
+            await client.close()
+        
+        
+        # asyncio.run(send_job())
+        asyncio.run(setup_worker())
+        
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
