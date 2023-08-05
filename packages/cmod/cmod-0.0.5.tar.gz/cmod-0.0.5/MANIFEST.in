@@ -1,0 +1,5 @@
+recursive-include cmod *.py
+recursive-include cmod/cmake *.cmake
+include README
+include LICENSE
+include requirements.txt
