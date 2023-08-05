@@ -1,0 +1,306 @@
+Metadata-Version: 2.1
+Name: giga
+Version: 0.0.5
+Summary: system orchestration framework
+Home-page: https://github.com/ecks0/giga
+Author: Nick Zigarovich
+Author-email: eckso@eckso.io
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >= 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click (>=6.0.0)
+Requires-Dist: deepmerge (>=0.1.0)
+Requires-Dist: lura (>=0.4.6)
+
+Giga
+====
+
+Giga is a Unix system orchestration framework for Python (>= 3.6) programmers.
+
+Installation
+------------
+
+```
+python3 -m pip install giga
+```
+
+Features
+--------
+
+_The following snippets demonstrate giga's features in broad strokes by
+creating automation to install and uninstall the python package `example-pkg`
+from git._
+
+- **An API for operating Unix systems.**
+
+```python
+import giga
+
+# pass super=True to run all commands as the superuser. the login and
+# superuser passwords can be given as arguments if needed
+system = giga.unix.Ssh(host='albatross.local', user='jrandom', super=True)
+
+# make a predicate that returns True if example-pkg is installed else False
+installed = lambda: system.zero("pip3 list|grep '^example-pkg '")
+
+# install example-pkg
+if not installed():
+  system.run('pip3 install git+https://github.com/mykelalvis/example_pkg')
+
+# print example-pkg install state
+print(installed()) # => 'True'
+
+# uninstall example-pkg
+if installed():
+  system.run('yes|pip3 uninstall example-pkg')
+
+# print example-pkg install state
+print(installed()) # => 'False'
+```
+
+- **An API for creating reusable system configurations.**
+
+```python
+import giga
+
+class ExamplePkg(giga.Config):
+  'Apply or delete the example-pkg python package.'
+
+  @property
+  def installed(self):
+    return self.system.zero("pip3 list|grep '^example-pkg '")
+
+  # extend giga.Config.on_apply()
+  def on_apply(self):
+    super().on_apply()
+    with giga.Task('Apply example-pkg') as task:
+      if not self.installed:
+        url = 'git+https://github.com/mykelalvis/example_pkg'
+        self.system.run(f'pip3 install {url}')
+        task.change()
+
+  # extend giga.Config.on_delete()
+  def on_delete(self):
+    super().on_delete()
+    with giga.Task('Delete example-pkg') as task:
+      if self.installed:
+        self.system.run('yes|pip3 uninstall example-pkg')
+        task.change()
+
+  # extend giga.Config.on_is_applied()
+  def on_is_applied(self):
+    return super().on_is_applied() and self.installed
+```
+```python
+# create a system
+system = giga.unix.Ssh(host='albatross.local', user='jrandom', super=True)
+
+# apply ExamplePkg to the system
+system.apply(ExamplePkg)
+
+# print ExamplePkg apply status
+print(system.is_applied(ExamplePkg)) # => 'True'
+
+# delete ExamplePkg from the system
+system.delete(ExamplePkg)
+
+# print ExamplePkg apply status
+print(system.is_applied(ExamplePkg)) # => 'False'
+```
+
+- **Customization and composition of system configurations.**
+
+```python
+# existing configurations can be customized via inheritance or instantiation.
+# here we use one of giga's base configurations to implement our ExamplePkg
+# configuration
+
+class ExamplePkg(giga.configs.python.Packages):
+
+  packages = [
+    ('example-pkg', 'git+https://github.com/mykelalvis/example_pkg'),
+  ]
+
+example_pkg = giga.configs.python.Packages(
+  packages = [
+    ('example-pkg', 'git+https://github.com/mykelalvis/example_pkg'),
+  ]
+)
+```
+```python
+# composition assembles many configurations into one and is delegated by
+# `giga.Config.config_include`, which may be a sequence or a callable
+# returning a sequence
+
+class ExamplePkg(giga.Config):
+
+  pkg = 'example-pkg'
+  url = 'git+https://github.com/mykelalvis/example_pkg'
+
+  config_include = [
+    giga.configs.os.debian.Packages(packages=['python3-pip']),
+    giga.configs.python.Packages(packages=[(pkg, url)]),
+  ]
+
+class ExamplePkg(giga.Config):
+
+  def config_include(self):
+    pkg = 'example-pkg'
+    url = 'git+https://github.com/mykelalvis/example_pkg'
+    return [
+      giga.configs.os.debian.Packages(packages=['python3-pip']),
+      giga.configs.python.Packages(packages=[(pkg, url)]),
+    ]
+```
+```python
+# the callable form of `config_include` can branch on things like os family
+
+class ExamplePkg(giga.Config):
+
+  @property
+  def os_packages(self):
+    family = self.system.os.family
+    if family == 'debian':
+      return giga.configs.os.debian.Packages(packages=['python3-pip'])
+    elif family == 'redhat':
+      return giga.configs.os.redhat.Packages(packages=['python36u-pip'])
+    else:
+      raise giga.error.NotImplementedFor(family)
+
+  @property
+  def py_packages(self):
+    pkg = 'example-pkg'
+    url = 'git+https://github.com/mykelalvis/example_pkg'
+    return giga.configs.python.Packages(packages=[(pkg, url)])
+
+  def config_include(self):
+    return [
+      self.os_packages,
+      self.py_packages,
+    ]
+```
+
+- **An API for operating groups of Unix systems.** _The command-line
+  interface typically handles all of this behind the scenes, but it is
+  perfectly reasonable to drive giga from other python code._
+
+```python
+# a simple version using the built-in result handler
+
+import giga
+
+class ExamplePkg(giga.Config): pass # see previous examples
+
+hosts = (
+  'server1.local',
+  'server2.local',
+  'server3.local',
+)
+
+# create a group
+group = giga.Group(hosts=hosts, user='jrandom', super=True)
+
+# apply ExamplePkg to the group
+ok, err = group.apply(ExamplePkg)
+group.log_results(ok, err)
+
+# print ExamplePkg apply status
+ok, err = group.is_applied(ExamplePkg)
+group.log_results(ok, err)
+
+# delete ExamplePkg from the group
+ok, err = group.delete(ExamplePkg)
+group.log_results(ok, err)
+```
+```python
+# a fuller version showing the structure of the group result lists, ok and err
+
+import giga, traceback
+
+class ExamplePkg(giga.Config): pass # see previous examples
+
+def results(ok, err):
+  'Handle the results of Group.apply(), Group.delete(), or Group.is_applied().'
+
+  # print tracebacks for all failed hosts
+  for system, exc_info in err:
+    _, exc, _ = exc_info
+    # configs can raise either giga.Cancel or giga.Fail
+    if isinstance(exc, giga.Cancel):
+      # we should ignore these and look for the root cause, the giga.Fail
+      continue
+    assert(isinstance(exc, giga.Fail))
+    print('-', system.name)
+    traceback.print_exception(*exc.exc_info) # the exc_info of the real error
+    print()
+
+  # print results for all successful hosts
+  for system, result in ok:
+
+    if isinstance(result, int):
+      # apply/delete return int, the number of changes made to the system
+      print(f'- {system.name} made {result} changes')
+
+    elif isinstance(result, bool):
+      # is_applied returns bool, True if a configuration is applied else False
+      status = 'applied' if result else 'not applied'
+      print(f'- configuration is {status} to {system.name}')
+
+hosts = (
+  'server1.local',
+  'server2.local',
+  'server3.local',
+)
+
+# create a group
+group = giga.Group(hosts=hosts, user='jrandom', super=True)
+
+# apply ExamplePkg to the group
+ok, err = group.apply(ExamplePkg)
+results(ok, err)
+
+# print ExamplePkg apply status
+ok, err = group.is_applied(ExamplePkg)
+results(ok, err)
+
+# delete ExamplePkg from the group
+ok, err = group.delete(ExamplePkg)
+results(ok, err)
+```
+
+- **Command-line interface.**
+
+```sh
+# apply config ExamplePkg in module examplepkg to 3 hosts
+giga apply examplepkg.ExamplePkg -h host1,host2,host3 -u jrandom -s
+
+# check apply status for config ExamplePkg in module examplepkg on 3 hosts
+giga is-applied examplepkg.ExamplePkg -h host1,host2,host3 -u jrandom -s
+
+# delete config ExamplePkg in module examplepkg from 3 hosts
+giga delete examplepkg.ExamplePkg -h host1,host2,host3 -u jrandom -s
+
+# show help
+giga --help
+```
+
+Status
+------
+
+Giga is undergoing heavy development and refinement. While some things are
+still held together with tape and glue, it continues to improve steadily, and
+is used daily by its author to deploy and maintain enterprise infrastructure.
+
+Contributing
+------------
+
+If you're interested in contributing, wow, I'm really quite shocked. :) I can
+be reached at `eckso@eckso.io`.
+
+License
+-------
+
+Giga is licensed under the Apache License Version 2.0.
+
+
