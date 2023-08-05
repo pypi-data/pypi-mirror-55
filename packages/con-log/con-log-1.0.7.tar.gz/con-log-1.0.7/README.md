@@ -1,0 +1,53 @@
+## conlog
+
+` A console logger / debugger for Python CLI programs`
+
+
+Currently conlog only support functions. support for classes will be added later.
+
+
+### Installation
+```shell
+$ pip install conlog
+
+```
+
+### Getting Started
+
+```python
+
+# Create a Conlog from the constructor.
+conlog = Conlog.create("main")
+
+# Set the required logging level
+conlog.level = Conlog.DEBUG
+
+# To use on the `main` module
+console = conlog.get_console()
+
+####  in module2.py
+
+@Conlog.fn
+def say_hi(name):
+	console = Conlog.get_console("main")
+	console.debug("args {name=}")
+	print(f"Hi {name}"
+
+```
+
+
+### How it works.
+`console.debug` supports `expr debug` expressions introduced in Python 3.8.
+It dynamically rewrites the function in Python 3.8 and uses a beautiful way to support it in < 3.7
+
+See tests/ for samples.
+
+### License
+-------
+
+Copyright (c) 2019 Cswl Coldwind 
+
+conlog is distributed under the terms 
+
+- `MIT License <https://choosealicense.com/licenses/mit>`_ 
+ 
