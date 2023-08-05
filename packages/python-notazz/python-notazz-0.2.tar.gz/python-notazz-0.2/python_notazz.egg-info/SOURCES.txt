@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+notazz/__init__.py
+notazz/base.py
+notazz/environment.py
+notazz/environment.sample.py
+notazz/nfe.py
+notazz/nfse.py
+notazz/notazz.py
+notazz/utils/__init__.py
+notazz/utils/money.py
+python_notazz.egg-info/PKG-INFO
+python_notazz.egg-info/SOURCES.txt
+python_notazz.egg-info/dependency_links.txt
+python_notazz.egg-info/requires.txt
+python_notazz.egg-info/top_level.txt
