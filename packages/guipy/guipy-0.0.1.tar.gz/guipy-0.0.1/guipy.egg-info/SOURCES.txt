@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+requirements_dev.txt
+setup.cfg
+setup.py
+guipy/__init__.py
+guipy/__version__.py
+guipy.egg-info/PKG-INFO
+guipy.egg-info/SOURCES.txt
+guipy.egg-info/dependency_links.txt
+guipy.egg-info/not-zip-safe
+guipy.egg-info/requires.txt
+guipy.egg-info/top_level.txt
