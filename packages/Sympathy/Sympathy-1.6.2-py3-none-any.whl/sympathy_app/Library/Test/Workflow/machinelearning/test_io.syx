@@ -1,0 +1,1114 @@
+<?xml version='1.0' encoding='US-ASCII'?>
+<flow xmlns="http://www.sysess.org/sympathyfordata/workflow/1.0" cls="Flow" uuid="{717ed7c0-cf08-4c96-83ea-2ad77c6d5265}">
+  <label></label>
+  <ports/>
+  <flow cls="Flow" is_locked="True" uuid="{6fb1d650-de11-4ac5-82d9-269924c6259d}" x="1225.0" y="2075.0">
+    <label>Generate Classification Dataset</label>
+    <ports/>
+    <node id="org.sysess.sympathy.machinelearning.generate_classification" port_format="1.1" uuid="{0044b1b2-d4f8-46aa-969e-bb8887ec2c51}" x="1325.0" y="2125.0">
+      <label>Generate classification dataset</label>
+      <version>0.1</version>
+      <description>
+Generates an artificial dataset useful for testing classification algorithms.
+
+Generate a random n-class classification problem.
+This initially creates clusters of points normally distributed (std=1) about
+vertices of a 2 * class_sep-sided hypercube, and assigns an equal number of
+clusters to each class. It introduces interdependence between these features
+and adds various types of further noise to the data.
+
+Prior to shuffling, X stacks a number of these primary 'informative' features,
+'redundant' linear combinations of these, 'repeated' duplicates of sampled
+features, and arbitrary noise for any remaining features.
+</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "class_sep": {
+          "editor": null,
+          "label": "class_sep",
+          "order": 9,
+          "type": "float",
+          "value": 1.0
+        },
+        "flip_y": {
+          "editor": null,
+          "label": "flip_y",
+          "order": 8,
+          "type": "float",
+          "value": 0.01
+        },
+        "hypercube": {
+          "editor": null,
+          "label": "hypercube",
+          "order": 12,
+          "type": "boolean",
+          "value": true
+        },
+        "n_classes": {
+          "editor": null,
+          "label": "n_classes",
+          "order": 5,
+          "type": "integer",
+          "value": 2
+        },
+        "n_clusters_per_class": {
+          "editor": null,
+          "label": "n_clusters_per_class",
+          "order": 6,
+          "type": "integer",
+          "value": 2
+        },
+        "n_features": {
+          "editor": null,
+          "label": "n_features",
+          "order": 1,
+          "type": "integer",
+          "value": 20
+        },
+        "n_informative": {
+          "editor": null,
+          "label": "n_informative",
+          "order": 2,
+          "type": "integer",
+          "value": 2
+        },
+        "n_redundant": {
+          "editor": null,
+          "label": "n_redundant",
+          "order": 3,
+          "type": "integer",
+          "value": 2
+        },
+        "n_repeated": {
+          "editor": null,
+          "label": "n_repeated",
+          "order": 4,
+          "type": "integer",
+          "value": 0
+        },
+        "n_samples": {
+          "editor": null,
+          "label": "n_samples",
+          "order": 0,
+          "type": "integer",
+          "value": 100
+        },
+        "scale": {
+          "editor": null,
+          "label": "scale",
+          "order": 11,
+          "type": "string",
+          "value": "1.0"
+        },
+        "shift": {
+          "editor": null,
+          "label": "shift",
+          "order": 10,
+          "type": "string",
+          "value": "0.0"
+        },
+        "shuffle": {
+          "editor": null,
+          "label": "shuffle",
+          "order": 13,
+          "type": "boolean",
+          "value": true
+        },
+        "type": "group",
+        "weights": {
+          "editor": null,
+          "label": "weights",
+          "order": 7,
+          "type": "string",
+          "value": "None"
+        }
+      }
+      </parameters>
+      <ports>
+        <output key="X" scheme="hdf5" type="table" type_base="table" uuid="{7fc84053-9c51-480c-8e9f-7e9cdb4cbeb5}">
+          <label>X</label>
+        </output>
+        <output key="Y" scheme="hdf5" type="table" type_base="table" uuid="{e8e797d6-fdad-44fe-954e-5e7a39bcf055}">
+          <label>Y</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.decision_tree_classifier" port_format="1.1" uuid="{1f35f7a7-a374-4fbe-be57-2475acc06e3c}" x="1325.0" y="2025.0">
+      <label>Decision Tree Classifier</label>
+      <version>0.1</version>
+      <description>Decision Trees (DTs) are a non-parametric supervised learning methodused for classification and regression. The goal is to create a modelthat predicts the value of a target variable by learning simpledecision rules inferred from the data features.</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "criterion": {
+          "editor": null,
+          "label": "criterion",
+          "order": 1,
+          "type": "string",
+          "value": "gini"
+        },
+        "max_depth": {
+          "editor": null,
+          "label": "max_depth",
+          "order": 0,
+          "type": "string",
+          "value": "3"
+        },
+        "max_features": {
+          "editor": null,
+          "label": "max_features",
+          "order": 3,
+          "type": "string",
+          "value": "None"
+        },
+        "max_leaf_nodes": {
+          "editor": null,
+          "label": "max_leaf_nodes",
+          "order": 6,
+          "type": "string",
+          "value": "None"
+        },
+        "min_impurity_decrease": {
+          "editor": null,
+          "label": "min_impurity_decrease",
+          "order": 8,
+          "type": "string",
+          "value": "0"
+        },
+        "min_impurity_split": {
+          "editor": null,
+          "label": "min_impurity_split",
+          "order": 7,
+          "type": "string",
+          "value": "1e-07"
+        },
+        "min_samples_leaf": {
+          "editor": null,
+          "label": "min_samples_leaf",
+          "order": 5,
+          "type": "string",
+          "value": "1"
+        },
+        "min_samples_split": {
+          "editor": null,
+          "label": "min_samples_split",
+          "order": 4,
+          "type": "string",
+          "value": "2"
+        },
+        "presort": {
+          "editor": null,
+          "label": "presort",
+          "order": 9,
+          "type": "string",
+          "value": "False"
+        },
+        "random_state": {
+          "editor": null,
+          "label": "random_state",
+          "order": 10,
+          "type": "string",
+          "value": "None"
+        },
+        "splitter": {
+          "editor": null,
+          "label": "splitter",
+          "order": 2,
+          "type": "string",
+          "value": "best"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <output key="model" scheme="hdf5" type="model" type_base="model" uuid="{2a5d99b4-d838-4b92-8081-4f48538063e8}">
+          <label>Model</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.fit" port_format="1.1" uuid="{92b0255e-0dcb-4de6-910c-976c528d6f18}" x="1475.0" y="2075.0">
+      <label>Fit</label>
+      <version>0.1</version>
+      <description>Trains a model. Use "Create Input Port &gt; Y" for supervised training</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">{"type": "group"}</parameters>
+      <ports>
+        <input key="in-model" scheme="hdf5" type="model" type_base="model" uuid="{c91c8040-5a90-49fc-b91b-04d43fb638e0}">
+          <label>Input model</label>
+        </input>
+        <input key="X" scheme="hdf5" type="table" type_base="table" uuid="{f4d515bb-daea-49cf-a683-f5ef9589bad9}">
+          <label>X</label>
+        </input>
+        <input key="Y0" scheme="hdf5" type="table" type_base="table" uuid="{483c40c9-5408-4697-8625-be03b9da7229}">
+          <label>Y</label>
+        </input>
+        <output key="out-model" scheme="hdf5" type="model" type_base="model" uuid="{7ea3016b-5b5c-4f32-b9ff-7ee76c811c03}">
+          <label>Output model</label>
+        </output>
+      </ports>
+    </node>
+    <connection type="table" uuid="{1cea4063-c5bd-4e19-9ddb-34dbbc03dc09}">
+      <source node="{0044b1b2-d4f8-46aa-969e-bb8887ec2c51}" port="{e8e797d6-fdad-44fe-954e-5e7a39bcf055}"/>
+      <destination node="{92b0255e-0dcb-4de6-910c-976c528d6f18}" port="{483c40c9-5408-4697-8625-be03b9da7229}"/>
+    </connection>
+    <connection type="table" uuid="{281cfa31-d89f-4399-90a3-872d894bccbd}">
+      <source node="{0044b1b2-d4f8-46aa-969e-bb8887ec2c51}" port="{7fc84053-9c51-480c-8e9f-7e9cdb4cbeb5}"/>
+      <destination node="{92b0255e-0dcb-4de6-910c-976c528d6f18}" port="{f4d515bb-daea-49cf-a683-f5ef9589bad9}"/>
+    </connection>
+    <connection type="model" uuid="{e801d702-8eab-46e3-97b9-8b197e176457}">
+      <source node="{1f35f7a7-a374-4fbe-be57-2475acc06e3c}" port="{2a5d99b4-d838-4b92-8081-4f48538063e8}"/>
+      <destination node="{92b0255e-0dcb-4de6-910c-976c528d6f18}" port="{c91c8040-5a90-49fc-b91b-04d43fb638e0}"/>
+    </connection>
+  </flow>
+  <flow cls="Flow" is_locked="True" uuid="{7cc61777-e6f5-431d-825e-85e8cb5285d1}" x="1225.0" y="1975.0">
+    <label>Generate Blobs</label>
+    <ports/>
+    <node id="org.sysess.sympathy.machinelearning.generate_blobs" port_format="1.1" uuid="{12cfb3e9-6437-44d5-975c-806d56ba8898}" x="1425.0" y="2050.0">
+      <label>Generate dataset blobs</label>
+      <version>0.1</version>
+      <description>Generates an artificial dataset useful for testing clustering algorithms</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "center_max": {
+          "editor": null,
+          "label": "center_max",
+          "order": 5,
+          "type": "float",
+          "value": 10.0
+        },
+        "center_min": {
+          "editor": null,
+          "label": "center_min",
+          "order": 4,
+          "type": "float",
+          "value": -10.0
+        },
+        "centers": {
+          "editor": null,
+          "label": "centers",
+          "order": 2,
+          "type": "integer",
+          "value": 3
+        },
+        "cluster_std": {
+          "editor": null,
+          "label": "cluster_std",
+          "order": 3,
+          "type": "float",
+          "value": 2.0
+        },
+        "n_features": {
+          "editor": null,
+          "label": "n_features",
+          "order": 1,
+          "type": "integer",
+          "value": 2
+        },
+        "n_samples": {
+          "editor": null,
+          "label": "n_samples",
+          "order": 0,
+          "type": "integer",
+          "value": 100
+        },
+        "shuffle": {
+          "editor": null,
+          "label": "shuffle",
+          "order": 6,
+          "type": "boolean",
+          "value": true
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <output key="X" scheme="hdf5" type="table" type_base="table" uuid="{9226e2d9-6ac9-4962-ba6f-8ab702dab78c}">
+          <label>X</label>
+        </output>
+        <output key="Y" scheme="hdf5" type="table" type_base="table" uuid="{29e8d898-379d-4fa9-8979-d99ae82cc58e}">
+          <label>Y</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.generate_blobs_from_table" port_format="1.1" uuid="{1491073c-62b3-448f-9fd2-6809233e8318}" x="1425.0" y="2150.0">
+      <label>Generate dataset blobs from table</label>
+      <version>0.1</version>
+      <description>Takes a table describing blob center positions and optionally standard deviations and generates a random dataset. Rows in tablecorresponds to cluster number, and columns to the number of features in the datasets.</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "cluster_std": {
+          "editor": null,
+          "label": "cluster_std",
+          "order": 2,
+          "type": "string",
+          "value": "0.5"
+        },
+        "n_features": {
+          "editor": null,
+          "label": "n_features",
+          "order": 1,
+          "type": "integer",
+          "value": 2
+        },
+        "n_samples": {
+          "editor": null,
+          "label": "n_samples",
+          "order": 0,
+          "type": "integer",
+          "value": 100
+        },
+        "shuffle": {
+          "editor": null,
+          "label": "shuffle",
+          "order": 3,
+          "type": "boolean",
+          "value": true
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="C" scheme="hdf5" type="table" type_base="table" uuid="{5945ae59-dd32-4e0a-88b8-9b1e5f5676d5}">
+          <label>C</label>
+        </input>
+        <output key="X" scheme="hdf5" type="table" type_base="table" uuid="{ce004bfe-cf49-4c0d-9066-f59a72c201ce}">
+          <label>X</label>
+        </output>
+        <output key="Y" scheme="hdf5" type="table" type_base="table" uuid="{04dafcf7-03e5-4184-b61e-d8ef053480d4}">
+          <label>Y</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.fit" port_format="1.1" uuid="{21c49452-ed36-43ab-9853-f6d141ca0432}" x="1625.0" y="2050.0">
+      <label>Fit</label>
+      <version>0.1</version>
+      <description>Trains a model. Use "Create Input Port &gt; Y" for supervised training</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">{"type": "group"}</parameters>
+      <ports>
+        <input key="in-model" scheme="hdf5" type="model" type_base="model" uuid="{2a1275cc-e68a-4a84-9d1d-0b3e01de6343}">
+          <label>Input model</label>
+        </input>
+        <input key="X" scheme="hdf5" type="table" type_base="table" uuid="{71621c95-98cd-4f63-8a0c-0a2f6c5118a4}">
+          <label>X</label>
+        </input>
+        <output key="out-model" scheme="hdf5" type="model" type_base="model" uuid="{63f2be14-3910-43ee-9ab4-4374245021e7}">
+          <label>Output model</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.fit" port_format="1.1" uuid="{a43aba24-bf8b-4445-88b4-9a18e74b9945}" x="1640.0" y="2150.0">
+      <label>Fit</label>
+      <version>0.1</version>
+      <description>Trains a model. Use "Create Input Port &gt; Y" for supervised training</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">{"type": "group"}</parameters>
+      <ports>
+        <input key="in-model" scheme="hdf5" type="model" type_base="model" uuid="{61110e76-be8a-4b08-a6a9-073fa3141bcb}">
+          <label>Input model</label>
+        </input>
+        <input key="X" scheme="hdf5" type="table" type_base="table" uuid="{94ba722e-03d2-4187-87d3-84e757017d0b}">
+          <label>X</label>
+        </input>
+        <output key="out-model" scheme="hdf5" type="model" type_base="model" uuid="{d81db609-b9bb-4322-85ef-3ca6dc169d3c}">
+          <label>Output model</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.k_means" port_format="1.1" uuid="{b0b3bf03-cd35-4b54-95dd-bbacab092cf4}" x="1425.0" y="1925.0">
+      <label>K-means Clustering</label>
+      <version>0.1</version>
+      <description>Clusters data by trying to separate samples in n groups of equal variance</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "algorithm": {
+          "editor": null,
+          "label": "algorithm",
+          "order": 4,
+          "type": "string",
+          "value": "auto"
+        },
+        "init": {
+          "editor": null,
+          "label": "init",
+          "order": 3,
+          "type": "string",
+          "value": "k-means++"
+        },
+        "max_iter": {
+          "editor": null,
+          "label": "max_iter",
+          "order": 1,
+          "type": "string",
+          "value": "300"
+        },
+        "n_clusters": {
+          "editor": null,
+          "label": "n_clusters",
+          "order": 0,
+          "type": "string",
+          "value": "8"
+        },
+        "n_init": {
+          "editor": null,
+          "label": "n_init",
+          "order": 2,
+          "type": "string",
+          "value": "10"
+        },
+        "n_jobs": {
+          "editor": null,
+          "label": "n_jobs",
+          "order": 7,
+          "type": "string",
+          "value": "1"
+        },
+        "precompute_distances": {
+          "editor": null,
+          "label": "precompute_distances",
+          "order": 5,
+          "type": "string",
+          "value": "auto"
+        },
+        "random_state": {
+          "editor": null,
+          "label": "random_state",
+          "order": 8,
+          "type": "string",
+          "value": "None"
+        },
+        "tol": {
+          "editor": null,
+          "label": "tol",
+          "order": 6,
+          "type": "string",
+          "value": "0.0001"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <output key="model" scheme="hdf5" type="model" type_base="model" uuid="{e4a94bf0-dc35-4249-9021-130b9cca1e2d}">
+          <label>Model</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.create.createtable" port_format="1.1" uuid="{dad57b9a-261f-43e5-ae15-95120d500476}" x="1300.0" y="2150.0">
+      <label>Manually Create Table</label>
+      <version>1.0</version>
+      <description></description>
+      <author>Magnus Sand&#233;n</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "json_table": {
+          "editor": null,
+          "label": "GUI",
+          "order": 0,
+          "type": "string",
+          "value": "[[\"x1\", \"f\", [0.0, 1.0]], [\"x2\", \"f\", [0.0, 2.0]]]"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{8f31e1f9-2dc2-48d2-86bf-c7d869a2b39f}">
+          <label>Manually created table</label>
+        </output>
+      </ports>
+    </node>
+    <connection type="model" uuid="{7f697e52-a59e-4a1c-a42d-33ce5caa5d40}">
+      <source node="{b0b3bf03-cd35-4b54-95dd-bbacab092cf4}" port="{e4a94bf0-dc35-4249-9021-130b9cca1e2d}"/>
+      <destination node="{a43aba24-bf8b-4445-88b4-9a18e74b9945}" port="{61110e76-be8a-4b08-a6a9-073fa3141bcb}"/>
+    </connection>
+    <connection type="table" uuid="{90d8dc9c-0f3c-466f-9949-a0a2ad33f103}">
+      <source node="{dad57b9a-261f-43e5-ae15-95120d500476}" port="{8f31e1f9-2dc2-48d2-86bf-c7d869a2b39f}"/>
+      <destination node="{1491073c-62b3-448f-9fd2-6809233e8318}" port="{5945ae59-dd32-4e0a-88b8-9b1e5f5676d5}"/>
+    </connection>
+    <connection type="table" uuid="{bd74402a-068c-43ca-8228-90789805f5e9}">
+      <source node="{1491073c-62b3-448f-9fd2-6809233e8318}" port="{ce004bfe-cf49-4c0d-9066-f59a72c201ce}"/>
+      <destination node="{a43aba24-bf8b-4445-88b4-9a18e74b9945}" port="{94ba722e-03d2-4187-87d3-84e757017d0b}"/>
+    </connection>
+    <connection type="table" uuid="{cec3fce4-7426-44c1-9a6e-7d62425268c0}">
+      <source node="{12cfb3e9-6437-44d5-975c-806d56ba8898}" port="{9226e2d9-6ac9-4962-ba6f-8ab702dab78c}"/>
+      <destination node="{21c49452-ed36-43ab-9853-f6d141ca0432}" port="{71621c95-98cd-4f63-8a0c-0a2f6c5118a4}"/>
+    </connection>
+    <connection type="model" uuid="{dd0e4a19-27b3-4016-8dfc-a337139881cd}">
+      <source node="{b0b3bf03-cd35-4b54-95dd-bbacab092cf4}" port="{e4a94bf0-dc35-4249-9021-130b9cca1e2d}"/>
+      <destination node="{21c49452-ed36-43ab-9853-f6d141ca0432}" port="{2a1275cc-e68a-4a84-9d1d-0b3e01de6343}"/>
+    </connection>
+  </flow>
+  <node id="org.sysess.sympathy.machinelearning.predict" port_format="1.1" uuid="{004a5348-dd4a-4cc5-a0ad-7d3ca0db52c3}" x="2100.0" y="1800.0">
+    <label>Predict</label>
+    <version>0.1</version>
+    <description>Uses a model to predict Y given X</description>
+    <author>Mathias Broxvall</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "pass_x": {
+        "editor": null,
+        "label": "Pass through X",
+        "order": 0,
+        "type": "boolean",
+        "value": false
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="in-model" scheme="hdf5" type="model" type_base="model" uuid="{88c91850-04cb-4cae-b23f-4184cf5bc458}">
+        <label>Input model</label>
+      </input>
+      <input key="X" scheme="hdf5" type="table" type_base="table" uuid="{e8a9eb57-55dc-42a5-bacf-e02bef0de771}">
+        <label>X</label>
+      </input>
+      <output key="Y" scheme="hdf5" type="table" type_base="table" uuid="{8e576194-12d1-4651-a1c9-3c3173f542ce}">
+        <label>Y</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.machinelearning.import" port_format="1.1" uuid="{030227f7-7da9-4044-974f-60a925e1077a}" x="1950.0" y="1700.0">
+    <label>Import Model</label>
+    <version>0.1</version>
+    <description>Imports a model from disk</description>
+    <author>Mathias Broxvall</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">{"type": "group"}</parameters>
+    <ports>
+      <input key="filename" scheme="text" type="datasource" type_base="datasource" uuid="{f5be6a61-2b9a-4300-b73f-7698a455a97a}">
+        <label>Datasource</label>
+      </input>
+      <output key="out-model" scheme="hdf5" type="model" type_base="model" uuid="{05aa199f-9606-4173-ae27-74b1177ebe35}">
+        <label>Output model</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.files.deletefile" port_format="1.1" uuid="{08126514-62a0-4b87-82a8-2ad859637b90}" x="2225.0" y="1650.0">
+    <label>Delete file</label>
+    <version>1.0</version>
+    <description>Delete a file</description>
+    <author>Magnus Sand&#233;n &amp; Andreas T&#229;gerud</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "delete_folder": {
+        "editor": null,
+        "label": "Delete enclosing folder if empty",
+        "order": 0,
+        "type": "boolean",
+        "value": false
+      },
+      "error": {
+        "editor": null,
+        "label": "Do not raise exceptions",
+        "order": 1,
+        "type": "boolean",
+        "value": false
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="datasource" type_base="datasource" uuid="{ab0a3e94-0e1f-4b9b-841a-289691459a84}">
+        <label>File to delete</label>
+      </input>
+      <output key="port1" scheme="text" type="datasource" type_base="datasource" uuid="{bab659dd-035b-45e9-8f0e-7d9fac7dff98}">
+        <label>Path to deleted file</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.machinelearning.export" port_format="1.1" uuid="{0a3f9b34-4d3f-4d0d-b0f5-ccfbd0d3040d}" x="1825.0" y="1700.0">
+    <label>Export Model</label>
+    <version>0.1</version>
+    <description>Exports a model to disk</description>
+    <author>Mathias Broxvall</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">{"type": "group"}</parameters>
+    <ports>
+      <input key="filename" scheme="text" type="datasource" type_base="datasource" uuid="{ec46e442-18f6-4d10-abf8-c107d7377bcd}">
+        <label>Datasource</label>
+      </input>
+      <input key="in-model" scheme="hdf5" type="model" type_base="model" uuid="{e73d1f06-1342-4e36-8055-c62cae95411d}">
+        <label>Input model</label>
+      </input>
+      <output key="filename" scheme="text" type="datasource" type_base="datasource" uuid="{3e00cfec-1c2e-4f10-867d-b0aff3d64fc4}">
+        <label>Datasource</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.machinelearning.pipeline" port_format="1.1" uuid="{1e69677f-3bdb-40af-b27b-5a7f3406162a}" x="1529.5" y="1716.5">
+    <label>Pipeline</label>
+    <version>0.1</version>
+    <description>Applies one model on the output of another</description>
+    <author>Mathias Broxvall</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "flatten": {
+        "editor": null,
+        "label": "Flatten: ",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "names": {
+        "editor": null,
+        "label": "Model names: ",
+        "order": 0,
+        "type": "string",
+        "value": "A, B"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="models" scheme="hdf5" type="model" type_base="model" uuid="{2071b8cf-54c4-4d1c-92ae-e6edcaf98750}">
+        <label>models</label>
+      </input>
+      <input key="models" scheme="hdf5" type="model" type_base="model" uuid="{166250dd-febb-426f-b09d-15bbb5f97da8}">
+        <label>models</label>
+      </input>
+      <input key="models" scheme="hdf5" type="model" type_base="model" uuid="{d1d53094-87b1-490c-af3a-30831c417939}">
+        <label>models</label>
+      </input>
+      <output key="out-model" scheme="hdf5" type="model" type_base="model" uuid="{7de97ebb-2240-4841-928d-6676641d899c}">
+        <label>Output model</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.machinelearning.normalizer" port_format="1.1" uuid="{32e1ce6c-d595-4601-a310-dea054a591e4}" x="1229.5" y="1691.5">
+    <label>Normalizer</label>
+    <version>0.1</version>
+    <description>
+Normalize samples individually to unit norm.
+
+Each sample (i.e. each row of the data matrix) with at least one non
+zero component is rescaled independently of other samples so that its
+norm (l1, l2 or max) equals one.</description>
+    <author>Mathias Broxvall</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "norm": {
+        "editor": null,
+        "label": "norm",
+        "order": 0,
+        "type": "string",
+        "value": "l2"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="model" scheme="hdf5" type="model" type_base="model" uuid="{69747971-b1fa-42b1-83e1-fd009fce6179}">
+        <label>Model</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.machinelearning.maxabs_scaler" port_format="1.1" uuid="{34636ef4-471f-4bf2-8cc2-e25075e4091d}" x="1229.5" y="1616.5">
+    <label>Max Abs Scaler</label>
+    <version>0.1</version>
+    <description>
+Scale each feature by its maximum absolute value.
+
+This estimator scales and translates each feature individually such
+that the maximal absolute value of each feature in the training set
+will be 1.0. It does not shift/center the data, and thus does not
+destroy any sparsity.
+</description>
+    <author>Mathias Broxvall</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">{"type": "group"}</parameters>
+    <ports>
+      <output key="model" scheme="hdf5" type="model" type_base="model" uuid="{538f40e4-cac7-4945-b28f-2108d09f27d3}">
+        <label>Model</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.datasources.filedatasource" port_format="1.1" uuid="{754a7b4a-5f14-4aaa-8bea-9950edcf1c87}" x="1700.0" y="1650.0">
+    <label>Datasource</label>
+    <version>1.1</version>
+    <description>Select a data source.</description>
+    <author>Alexander Busck</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "datasource_type": {
+        "editor": null,
+        "label": "Datasource type",
+        "list": ["File", "Database", "Url"],
+        "mode": "selected",
+        "order": 11,
+        "type": "list",
+        "value": [0],
+        "value_names": ["File"]
+      },
+      "db_connection_string": {
+        "editor": null,
+        "label": "Connection string",
+        "order": 8,
+        "type": "string",
+        "value": ""
+      },
+      "db_databasename": {
+        "editor": null,
+        "label": "Database name",
+        "order": 5,
+        "type": "string",
+        "value": ""
+      },
+      "db_driver": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Database driver",
+        "list": ["SQL Server"],
+        "mode": "selected",
+        "order": 3,
+        "type": "list",
+        "value": [0],
+        "value_names": ["SQL Server"]
+      },
+      "db_method": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": ["ODBC", "SQLAlchemy"],
+          "type": "combobox"
+        },
+        "label": "Database connection method",
+        "order": 2,
+        "type": "string",
+        "value": "ODBC"
+      },
+      "db_password": {
+        "editor": null,
+        "label": "Password",
+        "order": 7,
+        "type": "string",
+        "value": ""
+      },
+      "db_servername": {
+        "editor": null,
+        "label": "Server name",
+        "order": 4,
+        "type": "string",
+        "value": ""
+      },
+      "db_sqlalchemy_engine_url": {
+        "editor": null,
+        "label": "SQLAlchemy engine URL",
+        "order": 1,
+        "type": "string",
+        "value": "mssql+pyodbc:///"
+      },
+      "db_user": {
+        "editor": null,
+        "label": "User",
+        "order": 6,
+        "type": "string",
+        "value": ""
+      },
+      "filename": {
+        "editor": {
+          "filter": ["Any files (*)"],
+          "states": null,
+          "type": "filename"
+        },
+        "label": "Filename",
+        "order": 0,
+        "type": "string",
+        "value": "tmp_model.syml"
+      },
+      "type": "group",
+      "url_env": {
+        "description": "Environment for URL. Used as headers in case of HTTP URL. Input as a Python expression that evaluates to.",
+        "editor": {
+          "headers": ["Name", "Value"],
+          "type": "table",
+          "types": ["text", "text"],
+          "unique": ["Name"]
+        },
+        "label": "Url environment",
+        "order": 10,
+        "type": "json",
+        "value": []
+      },
+      "url_str": {
+        "editor": null,
+        "label": "URL string",
+        "order": 9,
+        "type": "string",
+        "value": ""
+      }
+    }
+    </parameters>
+    <ports>
+      <output key="port1" scheme="text" type="datasource" type_base="datasource" uuid="{b128550b-8813-4254-887c-53d7aca0f5c1}">
+        <label>Datasource with path to file</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.machinelearning.fit" port_format="1.1" uuid="{a7602c01-8070-4882-b850-ccf773f6590e}" x="1629.5" y="1741.5">
+    <label>Fit</label>
+    <version>0.1</version>
+    <description>Trains a model. Use "Create Input Port &gt; Y" for supervised training</description>
+    <author>Mathias Broxvall</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">{"type": "group"}</parameters>
+    <ports>
+      <input key="in-model" scheme="hdf5" type="model" type_base="model" uuid="{ef0c469b-79d3-48e8-84c7-e6c0fbb2b5bf}">
+        <label>Input model</label>
+      </input>
+      <input key="X" scheme="hdf5" type="table" type_base="table" uuid="{b614be41-fef1-4cf4-8097-4bae83fce0f2}">
+        <label>X</label>
+      </input>
+      <input key="Y0" scheme="hdf5" type="table" type_base="table" uuid="{77996852-d444-4979-9fe8-9f8b3089847a}">
+        <label>Y</label>
+      </input>
+      <output key="out-model" scheme="hdf5" type="model" type_base="model" uuid="{ef8577cc-f39c-4ed6-ab5c-9fb038023798}">
+        <label>Output model</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.machinelearning.logisticregression" port_format="1.1" uuid="{acc0dfc3-2aad-4c04-b7a2-f1df762b4e37}" x="1229.5" y="1766.5">
+    <label>Logistic Regression</label>
+    <version>0.1</version>
+    <description>Logistic regression of a categorical dependent variable</description>
+    <author>Mathias Broxvall</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "C": {
+        "editor": null,
+        "label": "C",
+        "order": 1,
+        "type": "string",
+        "value": "1.0"
+      },
+      "class_weight": {
+        "editor": null,
+        "label": "class_weight",
+        "order": 12,
+        "type": "string",
+        "value": "None"
+      },
+      "dual": {
+        "editor": null,
+        "label": "dual",
+        "order": 10,
+        "type": "string",
+        "value": "False"
+      },
+      "fit_intercept": {
+        "editor": null,
+        "label": "fit_intercept",
+        "order": 4,
+        "type": "string",
+        "value": "True"
+      },
+      "intercept_scaling": {
+        "editor": null,
+        "label": "intercept_scaling",
+        "order": 3,
+        "type": "string",
+        "value": "1.0"
+      },
+      "max_iter": {
+        "editor": null,
+        "label": "max_iter",
+        "order": 6,
+        "type": "string",
+        "value": "100"
+      },
+      "multi_class": {
+        "editor": null,
+        "label": "multi_class",
+        "order": 8,
+        "type": "string",
+        "value": "ovr"
+      },
+      "n_jobs": {
+        "editor": null,
+        "label": "n_jobs",
+        "order": 2,
+        "type": "string",
+        "value": "1"
+      },
+      "penalty": {
+        "editor": null,
+        "label": "penalty",
+        "order": 7,
+        "type": "string",
+        "value": "l2"
+      },
+      "random_state": {
+        "editor": null,
+        "label": "random_state",
+        "order": 5,
+        "type": "string",
+        "value": "None"
+      },
+      "solver": {
+        "editor": null,
+        "label": "solver",
+        "order": 11,
+        "type": "string",
+        "value": "liblinear"
+      },
+      "tol": {
+        "editor": null,
+        "label": "tol",
+        "order": 9,
+        "type": "string",
+        "value": "0.0001"
+      },
+      "type": "group",
+      "warm_start": {
+        "editor": null,
+        "label": "warm_start",
+        "order": 0,
+        "type": "string",
+        "value": "False"
+      }
+    }
+    </parameters>
+    <ports>
+      <output key="model" scheme="hdf5" type="model" type_base="model" uuid="{a59b07cb-05b0-4360-b5ca-cb6844b44df9}">
+        <label>Model</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.generic.propagatefirst" port_format="1.1" uuid="{af7e41d9-3d25-4dc9-80eb-ee5cad13cd40}" x="2100.0" y="1650.0">
+    <label>Propagate First Input</label>
+    <version>1.0</version>
+    <description>Propagate first input to output</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">{"type": "group"}</parameters>
+    <ports>
+      <input key="item1" scheme="text" type="datasource" type_base="&lt;a&gt;" uuid="{006b96a8-cb0d-4c58-b59a-d3120108b5bb}">
+        <label>The Item to be propagated</label>
+      </input>
+      <input key="item2" scheme="hdf5" type="model" type_base="&lt;b&gt;" uuid="{a4933def-33ac-4702-ae14-7a9bc4534460}">
+        <label>Item that will not be propagated</label>
+      </input>
+      <output key="item" scheme="hdf5" type="datasource" type_base="&lt;a&gt;" uuid="{5402b281-e239-4bb6-ae62-1e5209b2009f}">
+        <label>Propagated Item</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.machinelearning.example_datasets" port_format="1.1" uuid="{e9d1984d-11dd-4d7e-a28d-d9efdb8341ea}" x="1225.0" y="1850.0">
+    <label>Example datasets</label>
+    <version>0.1</version>
+    <description>Exposes the example datasets from sklearn</description>
+    <author>Mathias Broxvall</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "classnames": {
+        "editor": null,
+        "label": "Class names",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "dataset": {
+        "editor": {
+          "options": ["Digits", "Boston", "Diabetes", "linnerud", "Iris"],
+          "type": "combobox"
+        },
+        "label": "Dataset",
+        "order": 0,
+        "type": "string",
+        "value": "Iris"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="X" scheme="hdf5" type="table" type_base="table" uuid="{051580a9-958f-410b-b47c-e166447b8a7e}">
+        <label>X</label>
+      </output>
+      <output key="Y" scheme="hdf5" type="table" type_base="table" uuid="{d08acdf1-3524-40ab-b33a-84cbe72af264}">
+        <label>Y</label>
+      </output>
+    </ports>
+  </node>
+  <connection type="model" uuid="{14c1a0c8-3432-41d8-a48c-07ff8b6e868f}">
+    <source node="{a7602c01-8070-4882-b850-ccf773f6590e}" port="{ef8577cc-f39c-4ed6-ab5c-9fb038023798}"/>
+    <destination node="{0a3f9b34-4d3f-4d0d-b0f5-ccfbd0d3040d}" port="{e73d1f06-1342-4e36-8055-c62cae95411d}"/>
+  </connection>
+  <connection type="model" uuid="{1a0ad04b-08b4-4f25-b700-68a455c4db81}">
+    <source node="{1e69677f-3bdb-40af-b27b-5a7f3406162a}" port="{7de97ebb-2240-4841-928d-6676641d899c}"/>
+    <destination node="{a7602c01-8070-4882-b850-ccf773f6590e}" port="{ef0c469b-79d3-48e8-84c7-e6c0fbb2b5bf}"/>
+  </connection>
+  <connection type="datasource" uuid="{33f9a69a-e09a-4c0f-b6e4-3054c62f5049}">
+    <source node="{0a3f9b34-4d3f-4d0d-b0f5-ccfbd0d3040d}" port="{3e00cfec-1c2e-4f10-867d-b0aff3d64fc4}"/>
+    <destination node="{030227f7-7da9-4044-974f-60a925e1077a}" port="{f5be6a61-2b9a-4300-b73f-7698a455a97a}"/>
+  </connection>
+  <connection type="model" uuid="{3dd47a92-ac6f-4556-8a36-5d442fac1f29}">
+    <source node="{030227f7-7da9-4044-974f-60a925e1077a}" port="{05aa199f-9606-4173-ae27-74b1177ebe35}"/>
+    <destination node="{004a5348-dd4a-4cc5-a0ad-7d3ca0db52c3}" port="{88c91850-04cb-4cae-b23f-4184cf5bc458}"/>
+  </connection>
+  <connection type="datasource" uuid="{68f578a5-b351-4cb6-841d-8089ce857b88}">
+    <source node="{754a7b4a-5f14-4aaa-8bea-9950edcf1c87}" port="{b128550b-8813-4254-887c-53d7aca0f5c1}"/>
+    <destination node="{af7e41d9-3d25-4dc9-80eb-ee5cad13cd40}" port="{006b96a8-cb0d-4c58-b59a-d3120108b5bb}"/>
+  </connection>
+  <connection type="datasource" uuid="{7e6cc138-adba-4fda-a2da-6e0de2ad6d99}">
+    <source node="{754a7b4a-5f14-4aaa-8bea-9950edcf1c87}" port="{b128550b-8813-4254-887c-53d7aca0f5c1}"/>
+    <destination node="{0a3f9b34-4d3f-4d0d-b0f5-ccfbd0d3040d}" port="{ec46e442-18f6-4d10-abf8-c107d7377bcd}"/>
+  </connection>
+  <connection type="model" uuid="{7f616e72-a9c9-40bf-8b89-f17a0fa037e2}">
+    <source node="{acc0dfc3-2aad-4c04-b7a2-f1df762b4e37}" port="{a59b07cb-05b0-4360-b5ca-cb6844b44df9}"/>
+    <destination node="{1e69677f-3bdb-40af-b27b-5a7f3406162a}" port="{d1d53094-87b1-490c-af3a-30831c417939}"/>
+  </connection>
+  <connection type="model" uuid="{92142935-2913-4210-94b3-cc00f9531b10}">
+    <source node="{34636ef4-471f-4bf2-8cc2-e25075e4091d}" port="{538f40e4-cac7-4945-b28f-2108d09f27d3}"/>
+    <destination node="{1e69677f-3bdb-40af-b27b-5a7f3406162a}" port="{2071b8cf-54c4-4d1c-92ae-e6edcaf98750}"/>
+  </connection>
+  <connection type="model" uuid="{a3c7b788-0653-45de-80e1-72b92afb8c2a}">
+    <source node="{32e1ce6c-d595-4601-a310-dea054a591e4}" port="{69747971-b1fa-42b1-83e1-fd009fce6179}"/>
+    <destination node="{1e69677f-3bdb-40af-b27b-5a7f3406162a}" port="{166250dd-febb-426f-b09d-15bbb5f97da8}"/>
+  </connection>
+  <connection type="datasource" uuid="{b7fa0481-3670-4216-9b47-0cadc9ccb220}">
+    <source node="{af7e41d9-3d25-4dc9-80eb-ee5cad13cd40}" port="{5402b281-e239-4bb6-ae62-1e5209b2009f}"/>
+    <destination node="{08126514-62a0-4b87-82a8-2ad859637b90}" port="{ab0a3e94-0e1f-4b9b-841a-289691459a84}"/>
+  </connection>
+  <connection type="table" uuid="{c4cf5922-d3d7-4eeb-8c0e-959f78dc5dd5}">
+    <source node="{e9d1984d-11dd-4d7e-a28d-d9efdb8341ea}" port="{d08acdf1-3524-40ab-b33a-84cbe72af264}"/>
+    <destination node="{a7602c01-8070-4882-b850-ccf773f6590e}" port="{77996852-d444-4979-9fe8-9f8b3089847a}"/>
+  </connection>
+  <connection type="table" uuid="{d83a7dc6-a0b8-4c0e-9ca3-20de72dd6d52}">
+    <source node="{e9d1984d-11dd-4d7e-a28d-d9efdb8341ea}" port="{051580a9-958f-410b-b47c-e166447b8a7e}"/>
+    <destination node="{004a5348-dd4a-4cc5-a0ad-7d3ca0db52c3}" port="{e8a9eb57-55dc-42a5-bacf-e02bef0de771}"/>
+  </connection>
+  <connection type="model" uuid="{e947a1b3-05a9-44a9-aad1-e4a3f2e4e8ad}">
+    <source node="{030227f7-7da9-4044-974f-60a925e1077a}" port="{05aa199f-9606-4173-ae27-74b1177ebe35}"/>
+    <destination node="{af7e41d9-3d25-4dc9-80eb-ee5cad13cd40}" port="{a4933def-33ac-4702-ae14-7a9bc4534460}"/>
+  </connection>
+  <connection type="table" uuid="{ffb82a48-28d5-40ba-9b6e-796387c7a43b}">
+    <source node="{e9d1984d-11dd-4d7e-a28d-d9efdb8341ea}" port="{051580a9-958f-410b-b47c-e166447b8a7e}"/>
+    <destination node="{a7602c01-8070-4882-b850-ccf773f6590e}" port="{b614be41-fef1-4cf4-8097-4bae83fce0f2}"/>
+  </connection>
+</flow>

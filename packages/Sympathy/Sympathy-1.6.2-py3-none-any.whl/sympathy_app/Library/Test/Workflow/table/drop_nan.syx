@@ -1,0 +1,2057 @@
+<?xml version='1.0' encoding='US-ASCII'?>
+<flow xmlns="http://www.sysess.org/sympathyfordata/workflow/1.0" cls="Flow" uuid="{4b09a68a-aa0b-41dc-8074-9cf1958bf3b4}">
+  <label></label>
+  <ports/>
+  <node id="org.sysess.sympathy.data.table.assertequaltable" port_format="1.1" uuid="{11d92ce2-33f6-4616-a0e3-e0785c4fb44a}" x="2150.0" y="1150.0">
+    <label>Assert Equal Table</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "abs_tol": {
+        "editor": null,
+        "label": "Absolute tolerance",
+        "order": 6,
+        "type": "float",
+        "value": 1e-08
+      },
+      "col_attrs": {
+        "editor": null,
+        "label": "Compare column attributes",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "col_order": {
+        "editor": null,
+        "label": "Compare column order",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "inexact_float": {
+        "editor": null,
+        "label": "Approximate comparison of floats",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "rel_tol": {
+        "editor": null,
+        "label": "Relative tolerance",
+        "order": 5,
+        "type": "float",
+        "value": 1e-05
+      },
+      "tbl_attrs": {
+        "editor": null,
+        "label": "Compare table attributes",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "tbl_names": {
+        "editor": null,
+        "label": "Compare table names",
+        "order": 2,
+        "type": "boolean",
+        "value": true
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="table1" scheme="hdf5" type="table" type_base="table" uuid="{a12b43de-0f3b-48f4-b734-1f36c5f64070}">
+        <label>Table A</label>
+      </input>
+      <input key="table2" scheme="hdf5" type="table" type_base="table" uuid="{1ca3a3c7-3ba4-47a0-82aa-082256167a17}">
+        <label>Table B</label>
+      </input>
+      <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{db680466-6337-4374-8d00-a64b66cea1a1}">
+        <label>Output Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.dropnantable" port_format="1.1" uuid="{1a3eead0-920a-46fc-827e-874691349259}" x="1700.0" y="2400.0">
+    <label>Drop NaN Table</label>
+    <version>1.0</version>
+    <description>Drop columns or rows with NaN values</description>
+    <author>Greger Cronquist</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "edit": true,
+          "filter": true,
+          "mode": true,
+          "selection": "multi",
+          "type": "listview"
+        },
+        "label": "Select columns",
+        "list": ["0", "1", "2", "3"],
+        "mode": "selected_exists",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "direction": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Drop",
+        "list": ["Rows with NaN", "Columns with NaN"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Rows with NaN"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Input" scheme="hdf5" type="table" type_base="table" uuid="{1a334c85-e050-407b-bff1-aefaec2f3bd0}">
+        <label>Input</label>
+      </input>
+      <output key="Output" scheme="hdf5" type="table" type_base="table" uuid="{448cb171-7f4f-481a-b7ac-746c0d106a35}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.assertequaltable" port_format="1.1" uuid="{1de0b563-6ca7-46ed-b5a4-8d8bb7afc27a}" x="1850.0" y="2500.0">
+    <label>Assert Equal Table</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "abs_tol": {
+        "editor": null,
+        "label": "Absolute tolerance",
+        "order": 6,
+        "type": "float",
+        "value": 1e-08
+      },
+      "col_attrs": {
+        "editor": null,
+        "label": "Compare column attributes",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "col_order": {
+        "editor": null,
+        "label": "Compare column order",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "inexact_float": {
+        "editor": null,
+        "label": "Approximate comparison of floats",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "rel_tol": {
+        "editor": null,
+        "label": "Relative tolerance",
+        "order": 5,
+        "type": "float",
+        "value": 1e-05
+      },
+      "tbl_attrs": {
+        "editor": null,
+        "label": "Compare table attributes",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "tbl_names": {
+        "editor": null,
+        "label": "Compare table names",
+        "order": 2,
+        "type": "boolean",
+        "value": true
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="table1" scheme="hdf5" type="table" type_base="table" uuid="{5e2de174-c771-463b-8c78-98df894add11}">
+        <label>Table A</label>
+      </input>
+      <input key="table2" scheme="hdf5" type="table" type_base="table" uuid="{31386c9c-68da-42e0-8872-8ecfd4e7e57f}">
+        <label>Table B</label>
+      </input>
+      <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{420b3668-967a-42ad-9b2a-8bd61b81f205}">
+        <label>Output Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.dropnantables" port_format="1.1" uuid="{1f2d1ab1-3b0f-4692-b9eb-43ab556b0b6f}" x="1850.0" y="1650.0">
+    <label>Drop NaN Tables</label>
+    <version>1.0</version>
+    <description>Drop columns or rows with NaN values</description>
+    <author>Greger Cronquist</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "edit": true,
+          "filter": true,
+          "mode": true,
+          "selection": "multi",
+          "type": "listview"
+        },
+        "label": "Select columns",
+        "list": [],
+        "mode": "passthrough",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "direction": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Drop",
+        "list": ["Rows with NaN", "Columns with NaN"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Rows with NaN"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Input" scheme="hdf5" type="[table]" type_base="[table]" uuid="{e22e8e7b-4e08-41d5-a8d4-bc1479af1088}">
+        <label>Input</label>
+      </input>
+      <output key="Output" scheme="hdf5" type="[table]" type_base="[table]" uuid="{253c1d64-e0e5-44b9-b4e2-641163164722}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.create.createtable" port_format="1.1" uuid="{27c72bf4-a1ee-4076-8716-881c64fc35fb}" x="1700.0" y="1600.0">
+    <label>Manually Create Table</label>
+    <version>1.0</version>
+    <description>Create a Table from scratch in a configuration Gui.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "json_table": {
+        "editor": null,
+        "label": "GUI",
+        "order": 0,
+        "type": "string",
+        "value": "[[\"0\", \"f\", [3.0]], [\"1\", \"f\", [3.0]], [\"2\", \"f\", [3.0]], [\"3\", \"f\", [3.0]]]"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{8dec3207-e315-4c7d-b30a-1b085c52d95d}">
+        <label>Manually created table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.assertequaltable" port_format="1.1" uuid="{315116d5-e022-4750-8c36-6f79df19a342}" x="2150.0" y="1750.0">
+    <label>Assert Equal Table</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "abs_tol": {
+        "editor": null,
+        "label": "Absolute tolerance",
+        "order": 6,
+        "type": "float",
+        "value": 1e-08
+      },
+      "col_attrs": {
+        "editor": null,
+        "label": "Compare column attributes",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "col_order": {
+        "editor": null,
+        "label": "Compare column order",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "inexact_float": {
+        "editor": null,
+        "label": "Approximate comparison of floats",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "rel_tol": {
+        "editor": null,
+        "label": "Relative tolerance",
+        "order": 5,
+        "type": "float",
+        "value": 1e-05
+      },
+      "tbl_attrs": {
+        "editor": null,
+        "label": "Compare table attributes",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "tbl_names": {
+        "editor": null,
+        "label": "Compare table names",
+        "order": 2,
+        "type": "boolean",
+        "value": true
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="table1" scheme="hdf5" type="table" type_base="table" uuid="{a44cdf80-eb53-42d1-82df-897d157b984d}">
+        <label>Table A</label>
+      </input>
+      <input key="table2" scheme="hdf5" type="table" type_base="table" uuid="{d58bcfdc-e59c-4115-8ca2-3eba5ee1b056}">
+        <label>Table B</label>
+      </input>
+      <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{d9dde083-f23f-4163-91cd-17473c01463a}">
+        <label>Output Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{39a6e6aa-4ff6-4909-a763-bcad4ea0092e}" x="1700.0" y="1700.0">
+    <label>Item to List</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "n": {
+        "editor": null,
+        "label": "Repeat number of times",
+        "order": 0,
+        "type": "integer",
+        "value": 1
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="item" scheme="hdf5" type="table" type_base="&lt;a&gt;" uuid="{a573f052-8776-4d1f-96a2-ec7e3f767d13}">
+        <label>Input Item</label>
+      </input>
+      <output key="list" scheme="hdf5" type="[table]" type_base="[&lt;a&gt;]" uuid="{d4120a26-e4e9-45ed-944f-b4b32ef73f6c}">
+        <label>Item as List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.dropnantable" port_format="1.1" uuid="{4d5b40c5-f8b2-4625-8569-13c47b305bf4}" x="1700.0" y="1500.0">
+    <label>Drop NaN Table</label>
+    <version>1.0</version>
+    <description>Drop columns or rows with NaN values</description>
+    <author>Greger Cronquist</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "edit": true,
+          "filter": true,
+          "mode": true,
+          "selection": "multi",
+          "type": "listview"
+        },
+        "label": "Select columns",
+        "list": ["0", "1", "2", "3", "4"],
+        "mode": "passthrough",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "direction": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Drop",
+        "list": ["Rows with NaN", "Columns with NaN"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Rows with NaN"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Input" scheme="hdf5" type="table" type_base="table" uuid="{a8fae86c-b423-4fe7-9a2c-7fed8d598b58}">
+        <label>Input</label>
+      </input>
+      <output key="Output" scheme="hdf5" type="table" type_base="table" uuid="{46472655-4958-40fc-bd82-a874b0035be9}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.assertequaltable" port_format="1.1" uuid="{573e1e15-0b2c-4f19-a263-7bc9fff2a907}" x="2150.0" y="1250.0">
+    <label>Assert Equal Table</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "abs_tol": {
+        "editor": null,
+        "label": "Absolute tolerance",
+        "order": 6,
+        "type": "float",
+        "value": 1e-08
+      },
+      "col_attrs": {
+        "editor": null,
+        "label": "Compare column attributes",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "col_order": {
+        "editor": null,
+        "label": "Compare column order",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "inexact_float": {
+        "editor": null,
+        "label": "Approximate comparison of floats",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "rel_tol": {
+        "editor": null,
+        "label": "Relative tolerance",
+        "order": 5,
+        "type": "float",
+        "value": 1e-05
+      },
+      "tbl_attrs": {
+        "editor": null,
+        "label": "Compare table attributes",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "tbl_names": {
+        "editor": null,
+        "label": "Compare table names",
+        "order": 2,
+        "type": "boolean",
+        "value": true
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="table1" scheme="hdf5" type="table" type_base="table" uuid="{a4bd4623-1de1-4176-b818-540db796a0b6}">
+        <label>Table A</label>
+      </input>
+      <input key="table2" scheme="hdf5" type="table" type_base="table" uuid="{d1dff789-5a87-40ed-8793-c6a5c10dff88}">
+        <label>Table B</label>
+      </input>
+      <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{1d7e2dad-d8f4-4f40-9396-70fd13435a71}">
+        <label>Output Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.dropnantable" port_format="1.1" uuid="{5ab1e041-c41e-4d47-8555-3fb2018d4768}" x="1700.0" y="1900.0">
+    <label>Drop NaN Table</label>
+    <version>1.0</version>
+    <description>Drop columns or rows with NaN values</description>
+    <author>Greger Cronquist</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "edit": true,
+          "filter": true,
+          "mode": true,
+          "selection": "multi",
+          "type": "listview"
+        },
+        "label": "Select columns",
+        "list": ["0", "1", "2", "3"],
+        "mode": "passthrough",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "direction": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Drop",
+        "list": ["Rows with NaN", "Columns with NaN"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [1],
+        "value_names": ["Columns with NaN"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Input" scheme="hdf5" type="table" type_base="table" uuid="{cab1eb46-99c8-497e-a24a-5a5b83130971}">
+        <label>Input</label>
+      </input>
+      <output key="Output" scheme="hdf5" type="table" type_base="table" uuid="{0418d206-9a13-471a-b29c-a7059ecf3475}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{6e7b4817-bf13-430b-a93f-7c48a5068cbc}" x="1700.0" y="1200.0">
+    <label>Item to List</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "n": {
+        "editor": null,
+        "label": "Repeat number of times",
+        "order": 0,
+        "type": "integer",
+        "value": 1
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="item" scheme="hdf5" type="table" type_base="&lt;a&gt;" uuid="{c2f6e09b-30aa-49db-a406-0d2aa04cf3a4}">
+        <label>Input Item</label>
+      </input>
+      <output key="list" scheme="hdf5" type="[table]" type_base="[&lt;a&gt;]" uuid="{f1c9cb16-0ad9-4be9-add5-035f8966b745}">
+        <label>Item as List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.dropnantable" port_format="1.1" uuid="{75b67970-7136-4bfe-a3f7-072f2269850a}" x="1700.0" y="2300.0">
+    <label>Drop NaN Table</label>
+    <version>1.0</version>
+    <description>Drop columns or rows with NaN values</description>
+    <author>Greger Cronquist</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "edit": true,
+          "filter": true,
+          "mode": true,
+          "selection": "multi",
+          "type": "listview"
+        },
+        "label": "Select columns",
+        "list": ["0", "1", "2", "3"],
+        "mode": "selected_exists",
+        "order": 0,
+        "type": "list",
+        "value": [1, 2],
+        "value_names": ["1", "2"]
+      },
+      "direction": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Drop",
+        "list": ["Rows with NaN", "Columns with NaN"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [1],
+        "value_names": ["Columns with NaN"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Input" scheme="hdf5" type="table" type_base="table" uuid="{82f0e8b6-89be-4650-b575-7d1a2faa6042}">
+        <label>Input</label>
+      </input>
+      <output key="Output" scheme="hdf5" type="table" type_base="table" uuid="{adbffc63-3056-46b5-8e04-654becfa9d10}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.assertequaltable" port_format="1.1" uuid="{7614957d-16ec-494b-9253-9d235c2a8422}" x="1850.0" y="1900.0">
+    <label>Assert Equal Table</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "abs_tol": {
+        "editor": null,
+        "label": "Absolute tolerance",
+        "order": 6,
+        "type": "float",
+        "value": 1e-08
+      },
+      "col_attrs": {
+        "editor": null,
+        "label": "Compare column attributes",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "col_order": {
+        "editor": null,
+        "label": "Compare column order",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "inexact_float": {
+        "editor": null,
+        "label": "Approximate comparison of floats",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "rel_tol": {
+        "editor": null,
+        "label": "Relative tolerance",
+        "order": 5,
+        "type": "float",
+        "value": 1e-05
+      },
+      "tbl_attrs": {
+        "editor": null,
+        "label": "Compare table attributes",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "tbl_names": {
+        "editor": null,
+        "label": "Compare table names",
+        "order": 2,
+        "type": "boolean",
+        "value": true
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="table1" scheme="hdf5" type="table" type_base="table" uuid="{fdf6a20d-2ce5-479d-b888-394d211aabd6}">
+        <label>Table A</label>
+      </input>
+      <input key="table2" scheme="hdf5" type="table" type_base="table" uuid="{d59d6fa5-bad9-49b0-9264-72ff9477deb8}">
+        <label>Table B</label>
+      </input>
+      <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{083b3108-3e20-4a39-9349-5f4c80a148a2}">
+        <label>Output Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.assertequaltable" port_format="1.1" uuid="{7e2f20c1-3f73-4f38-80f9-adfcc539732d}" x="1850.0" y="1000.0">
+    <label>Assert Equal Table</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "abs_tol": {
+        "editor": null,
+        "label": "Absolute tolerance",
+        "order": 6,
+        "type": "float",
+        "value": 1e-08
+      },
+      "col_attrs": {
+        "editor": null,
+        "label": "Compare column attributes",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "col_order": {
+        "editor": null,
+        "label": "Compare column order",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "inexact_float": {
+        "editor": null,
+        "label": "Approximate comparison of floats",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "rel_tol": {
+        "editor": null,
+        "label": "Relative tolerance",
+        "order": 5,
+        "type": "float",
+        "value": 1e-05
+      },
+      "tbl_attrs": {
+        "editor": null,
+        "label": "Compare table attributes",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "tbl_names": {
+        "editor": null,
+        "label": "Compare table names",
+        "order": 2,
+        "type": "boolean",
+        "value": true
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="table1" scheme="hdf5" type="table" type_base="table" uuid="{f919795a-a4d8-4fc1-875f-51056f14f8c2}">
+        <label>Table A</label>
+      </input>
+      <input key="table2" scheme="hdf5" type="table" type_base="table" uuid="{e7fc1ef4-395b-4ba2-af19-a015765e981f}">
+        <label>Table B</label>
+      </input>
+      <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{7e3500fa-b9fb-463b-9856-e8effbad6055}">
+        <label>Output Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.assertequaltable" port_format="1.1" uuid="{81ed9ec8-2e3a-4f61-9b6d-743e7f3b9fce}" x="1850.0" y="2100.0">
+    <label>Assert Equal Table</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "abs_tol": {
+        "editor": null,
+        "label": "Absolute tolerance",
+        "order": 6,
+        "type": "float",
+        "value": 1e-08
+      },
+      "col_attrs": {
+        "editor": null,
+        "label": "Compare column attributes",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "col_order": {
+        "editor": null,
+        "label": "Compare column order",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "inexact_float": {
+        "editor": null,
+        "label": "Approximate comparison of floats",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "rel_tol": {
+        "editor": null,
+        "label": "Relative tolerance",
+        "order": 5,
+        "type": "float",
+        "value": 1e-05
+      },
+      "tbl_attrs": {
+        "editor": null,
+        "label": "Compare table attributes",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "tbl_names": {
+        "editor": null,
+        "label": "Compare table names",
+        "order": 2,
+        "type": "boolean",
+        "value": true
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="table1" scheme="hdf5" type="table" type_base="table" uuid="{657ce952-9d23-4f4e-9bee-b979e486cf75}">
+        <label>Table A</label>
+      </input>
+      <input key="table2" scheme="hdf5" type="table" type_base="table" uuid="{4cd2e0cb-48dc-4641-81e7-1248eb1603d0}">
+        <label>Table B</label>
+      </input>
+      <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{6b648a01-e820-44fd-8c42-0c2d01e92211}">
+        <label>Output Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.dropnantable" port_format="1.1" uuid="{822b5a22-c07e-4d17-a968-d309a42d409c}" x="1700.0" y="1000.0">
+    <label>Drop NaN Table</label>
+    <version>1.0</version>
+    <description>Drop columns or rows with NaN values</description>
+    <author>Greger Cronquist</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "direction": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Drop",
+        "list": ["Rows with NaN", "Columns with NaN"],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Rows with NaN"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Input" scheme="hdf5" type="table" type_base="table" uuid="{ba9df642-d5f6-4ca7-a83c-7b416aef4a95}">
+        <label>Input</label>
+      </input>
+      <output key="Output" scheme="hdf5" type="table" type_base="table" uuid="{45700e1e-34ee-4a3e-8afc-d13ff64deef7}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.assertequaltable" port_format="1.1" uuid="{8a20479f-6504-4ef0-802d-07dec55f3bdc}" x="1850.0" y="2300.0">
+    <label>Assert Equal Table</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "abs_tol": {
+        "editor": null,
+        "label": "Absolute tolerance",
+        "order": 6,
+        "type": "float",
+        "value": 1e-08
+      },
+      "col_attrs": {
+        "editor": null,
+        "label": "Compare column attributes",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "col_order": {
+        "editor": null,
+        "label": "Compare column order",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "inexact_float": {
+        "editor": null,
+        "label": "Approximate comparison of floats",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "rel_tol": {
+        "editor": null,
+        "label": "Relative tolerance",
+        "order": 5,
+        "type": "float",
+        "value": 1e-05
+      },
+      "tbl_attrs": {
+        "editor": null,
+        "label": "Compare table attributes",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "tbl_names": {
+        "editor": null,
+        "label": "Compare table names",
+        "order": 2,
+        "type": "boolean",
+        "value": true
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="table1" scheme="hdf5" type="table" type_base="table" uuid="{ba9c53ac-0958-4f2a-87b5-59f7f79dcfe6}">
+        <label>Table A</label>
+      </input>
+      <input key="table2" scheme="hdf5" type="table" type_base="table" uuid="{1fcbafef-1617-4707-ba31-304daa50bc15}">
+        <label>Table B</label>
+      </input>
+      <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{4efbdf86-49cf-47a5-a8ff-424c4e283d82}">
+        <label>Output Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.dropnantable" port_format="1.1" uuid="{8df061b4-6cde-4410-84f1-16a6d3896e62}" x="1700.0" y="2500.0">
+    <label>Drop NaN Table</label>
+    <version>1.0</version>
+    <description>Drop columns or rows with NaN values</description>
+    <author>Greger Cronquist</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "edit": true,
+          "filter": true,
+          "mode": true,
+          "selection": "multi",
+          "type": "listview"
+        },
+        "label": "Select columns",
+        "list": ["0", "1", "2", "3"],
+        "mode": "selected_exists",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "direction": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Drop",
+        "list": ["Rows with NaN", "Columns with NaN"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [1],
+        "value_names": ["Columns with NaN"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Input" scheme="hdf5" type="table" type_base="table" uuid="{4fd9e27d-16e9-4cc8-b8b8-cf960b16d12a}">
+        <label>Input</label>
+      </input>
+      <output key="Output" scheme="hdf5" type="table" type_base="table" uuid="{ec891466-80f2-4e42-89b7-0ccf4f0066f7}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.getitemlist" port_format="1.1" uuid="{914884a1-5765-45e6-b3c1-e30fad3fa447}" x="2000.0" y="1750.0">
+    <label>Get Item List</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "fail_strategy": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Action on index out of bounds",
+        "list": ["Error", "Create Empty Item"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "index": {
+        "editor": {
+          "display": null,
+          "edit": true,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Index",
+        "list": [],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": ["0"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="list" scheme="hdf5" type="[table]" type_base="[&lt;a&gt;]" uuid="{feb384b3-2f36-4753-811f-35fe9cf6d64a}">
+        <label>Input List</label>
+      </input>
+      <output key="item" scheme="hdf5" type="table" type_base="&lt;a&gt;" uuid="{0713681d-1aea-458b-8c33-de2972f2cfee}">
+        <label>Output selected Item from List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.assertequaltable" port_format="1.1" uuid="{a7baeb60-ceb9-4124-a229-c4afea054a61}" x="1850.0" y="1400.0">
+    <label>Assert Equal Table</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "abs_tol": {
+        "editor": null,
+        "label": "Absolute tolerance",
+        "order": 6,
+        "type": "float",
+        "value": 1e-08
+      },
+      "col_attrs": {
+        "editor": null,
+        "label": "Compare column attributes",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "col_order": {
+        "editor": null,
+        "label": "Compare column order",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "inexact_float": {
+        "editor": null,
+        "label": "Approximate comparison of floats",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "rel_tol": {
+        "editor": null,
+        "label": "Relative tolerance",
+        "order": 5,
+        "type": "float",
+        "value": 1e-05
+      },
+      "tbl_attrs": {
+        "editor": null,
+        "label": "Compare table attributes",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "tbl_names": {
+        "editor": null,
+        "label": "Compare table names",
+        "order": 2,
+        "type": "boolean",
+        "value": true
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="table1" scheme="hdf5" type="table" type_base="table" uuid="{7ffb735a-8aac-45d6-ad37-c68df77c987f}">
+        <label>Table A</label>
+      </input>
+      <input key="table2" scheme="hdf5" type="table" type_base="table" uuid="{deb77d0e-d135-4fd8-b52d-0dba2c7b8174}">
+        <label>Table B</label>
+      </input>
+      <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{cf8a8984-cd1e-439e-8a79-05791d99c065}">
+        <label>Output Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.dropnantables" port_format="1.1" uuid="{b1ef1bd0-7810-44fc-ba98-e5aff7ea169d}" x="1850.0" y="1750.0">
+    <label>Drop NaN Tables</label>
+    <version>1.0</version>
+    <description>Drop columns or rows with NaN values</description>
+    <author>Greger Cronquist</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "edit": true,
+          "filter": true,
+          "mode": true,
+          "selection": "multi",
+          "type": "listview"
+        },
+        "label": "Select columns",
+        "list": ["0", "1", "2", "3"],
+        "mode": "passthrough",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "direction": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Drop",
+        "list": ["Rows with NaN", "Columns with NaN"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [1],
+        "value_names": ["Columns with NaN"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Input" scheme="hdf5" type="[table]" type_base="[table]" uuid="{e0058316-1512-453f-9414-ddb31cebed7f}">
+        <label>Input</label>
+      </input>
+      <output key="Output" scheme="hdf5" type="[table]" type_base="[table]" uuid="{3512d953-08a2-4b22-9faf-45ac2a0e2398}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.create.createtable" port_format="1.1" uuid="{b80ecc52-63f1-4a81-9135-ab8449f6397e}" x="1700.0" y="1100.0">
+    <label>Manually Create Table</label>
+    <version>1.0</version>
+    <description>Create a Table from scratch in a configuration Gui.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "json_table": {
+        "editor": null,
+        "label": "GUI",
+        "order": 0,
+        "type": "string",
+        "value": "[[\"0\", \"f\", [3.0]], [\"1\", \"f\", [3.0]], [\"2\", \"f\", [3.0]], [\"3\", \"f\", [3.0]]]"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{60f1e6a4-f6d4-4237-959b-939778b501ca}">
+        <label>Manually created table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.create.createtable" port_format="1.1" uuid="{be4c61c0-f19d-4ec1-bdfe-7e671774e667}" x="1700.0" y="2000.0">
+    <label>Manually Create Table</label>
+    <version>1.0</version>
+    <description>Create a Table from scratch in a configuration Gui.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "json_table": {
+        "editor": null,
+        "label": "GUI",
+        "order": 0,
+        "type": "string",
+        "value": "[[\"0\", \"f\", [NaN, 3.0]], [\"1\", \"f\", [0.0, 3.0]], [\"2\", \"f\", [0.0, 3.0]], [\"3\", \"f\", [0.0, 3.0]]]"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{1cde6e50-2dbd-497c-9657-f161c556d745}">
+        <label>Manually created table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.dropnantable" port_format="1.1" uuid="{c21fb226-4d40-4235-a3c2-81282d08b364}" x="1700.0" y="2100.0">
+    <label>Drop NaN Table</label>
+    <version>1.0</version>
+    <description>Drop columns or rows with NaN values</description>
+    <author>Greger Cronquist</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "edit": true,
+          "filter": true,
+          "mode": true,
+          "selection": "multi",
+          "type": "listview"
+        },
+        "label": "Select columns",
+        "list": ["0", "1", "2", "3"],
+        "mode": "selected_exists",
+        "order": 0,
+        "type": "list",
+        "value": [1, 2],
+        "value_names": ["1", "2"]
+      },
+      "direction": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Drop",
+        "list": ["Rows with NaN", "Columns with NaN"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Rows with NaN"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Input" scheme="hdf5" type="table" type_base="table" uuid="{5e89d1ac-ee03-4bfd-b3c8-4e9afee10235}">
+        <label>Input</label>
+      </input>
+      <output key="Output" scheme="hdf5" type="table" type_base="table" uuid="{9ead7038-36ed-41c7-8f9c-324b0226c8f3}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.assertequaltable" port_format="1.1" uuid="{c3291745-b2f9-41f1-b937-db1cc202c9f4}" x="2150.0" y="1650.0">
+    <label>Assert Equal Table</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "abs_tol": {
+        "editor": null,
+        "label": "Absolute tolerance",
+        "order": 6,
+        "type": "float",
+        "value": 1e-08
+      },
+      "col_attrs": {
+        "editor": null,
+        "label": "Compare column attributes",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "col_order": {
+        "editor": null,
+        "label": "Compare column order",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "inexact_float": {
+        "editor": null,
+        "label": "Approximate comparison of floats",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "rel_tol": {
+        "editor": null,
+        "label": "Relative tolerance",
+        "order": 5,
+        "type": "float",
+        "value": 1e-05
+      },
+      "tbl_attrs": {
+        "editor": null,
+        "label": "Compare table attributes",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "tbl_names": {
+        "editor": null,
+        "label": "Compare table names",
+        "order": 2,
+        "type": "boolean",
+        "value": true
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="table1" scheme="hdf5" type="table" type_base="table" uuid="{98ea5de5-c119-469a-bc3e-8a065d11cfc3}">
+        <label>Table A</label>
+      </input>
+      <input key="table2" scheme="hdf5" type="table" type_base="table" uuid="{2f300795-97da-4fdb-a834-bb28b011aea5}">
+        <label>Table B</label>
+      </input>
+      <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{30661604-fc85-4562-93bc-06d2811102f2}">
+        <label>Output Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.assertequaltable" port_format="1.1" uuid="{c595cf75-1ec7-4523-bc36-3f71b8566cb2}" x="1850.0" y="1500.0">
+    <label>Assert Equal Table</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "abs_tol": {
+        "editor": null,
+        "label": "Absolute tolerance",
+        "order": 6,
+        "type": "float",
+        "value": 1e-08
+      },
+      "col_attrs": {
+        "editor": null,
+        "label": "Compare column attributes",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "col_order": {
+        "editor": null,
+        "label": "Compare column order",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "inexact_float": {
+        "editor": null,
+        "label": "Approximate comparison of floats",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "rel_tol": {
+        "editor": null,
+        "label": "Relative tolerance",
+        "order": 5,
+        "type": "float",
+        "value": 1e-05
+      },
+      "tbl_attrs": {
+        "editor": null,
+        "label": "Compare table attributes",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "tbl_names": {
+        "editor": null,
+        "label": "Compare table names",
+        "order": 2,
+        "type": "boolean",
+        "value": true
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="table1" scheme="hdf5" type="table" type_base="table" uuid="{3ebfc843-ce7e-473a-89db-1d5f5da18d6d}">
+        <label>Table A</label>
+      </input>
+      <input key="table2" scheme="hdf5" type="table" type_base="table" uuid="{091cc81e-758f-4bd9-b9ce-a6fde5084b65}">
+        <label>Table B</label>
+      </input>
+      <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{1ed5e313-a5cf-442f-b9cb-c0dff2a7b49c}">
+        <label>Output Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.assertequaltable" port_format="1.1" uuid="{cbee375f-b3cd-4661-aade-a7d39890ef7f}" x="1850.0" y="2400.0">
+    <label>Assert Equal Table</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "abs_tol": {
+        "editor": null,
+        "label": "Absolute tolerance",
+        "order": 6,
+        "type": "float",
+        "value": 1e-08
+      },
+      "col_attrs": {
+        "editor": null,
+        "label": "Compare column attributes",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "col_order": {
+        "editor": null,
+        "label": "Compare column order",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "inexact_float": {
+        "editor": null,
+        "label": "Approximate comparison of floats",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "rel_tol": {
+        "editor": null,
+        "label": "Relative tolerance",
+        "order": 5,
+        "type": "float",
+        "value": 1e-05
+      },
+      "tbl_attrs": {
+        "editor": null,
+        "label": "Compare table attributes",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "tbl_names": {
+        "editor": null,
+        "label": "Compare table names",
+        "order": 2,
+        "type": "boolean",
+        "value": true
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="table1" scheme="hdf5" type="table" type_base="table" uuid="{94bebf34-3c36-45a1-9678-3f9428f9f521}">
+        <label>Table A</label>
+      </input>
+      <input key="table2" scheme="hdf5" type="table" type_base="table" uuid="{a6794867-5d1e-4d11-b312-258f5fe77f18}">
+        <label>Table B</label>
+      </input>
+      <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{a8150397-d667-4641-886b-634f1dfe2a6a}">
+        <label>Output Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.dropnantables" port_format="1.1" uuid="{d28229f8-c615-4103-a307-6c7ac8648421}" x="1850.0" y="1150.0">
+    <label>Drop NaN Tables</label>
+    <version>1.0</version>
+    <description>Drop columns or rows with NaN values</description>
+    <author>Greger Cronquist</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "direction": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Drop",
+        "list": ["Rows with NaN", "Columns with NaN"],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Rows with NaN"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Input" scheme="hdf5" type="[table]" type_base="[table]" uuid="{f60b7a6a-59db-4b1b-b5bc-59396f98e5ab}">
+        <label>Input</label>
+      </input>
+      <output key="Output" scheme="hdf5" type="[table]" type_base="[table]" uuid="{f8ff6b30-a15a-4fa8-8738-67dd52b9cf11}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.dropnantables" port_format="1.1" uuid="{d9234ec6-eced-4ec9-bcd6-f91513379169}" x="1850.0" y="1250.0">
+    <label>Drop NaN Tables</label>
+    <version>1.0</version>
+    <description>Drop columns or rows with NaN values</description>
+    <author>Greger Cronquist</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "direction": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Drop",
+        "list": ["Rows with NaN", "Columns with NaN"],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [1],
+        "value_names": ["Columns with NaN"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Input" scheme="hdf5" type="[table]" type_base="[table]" uuid="{1d34dd8a-c369-4837-bc41-8fff520cdac1}">
+        <label>Input</label>
+      </input>
+      <output key="Output" scheme="hdf5" type="[table]" type_base="[table]" uuid="{aebdfc0a-dcfb-41db-8fbd-71b80cf2bdee}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.create.createtable" port_format="1.1" uuid="{dedefbb6-54d3-499f-a81c-12022a31d58a}" x="1550.0" y="2100.0">
+    <label>Manually Create Table</label>
+    <version>1.0</version>
+    <description>Create a Table from scratch in a configuration Gui.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "json_table": {
+        "editor": null,
+        "label": "GUI",
+        "order": 0,
+        "type": "string",
+        "value": "[[\"0\", \"f\", [NaN, 1.0, 2.0, 3.0]], [\"1\", \"f\", [0.0, NaN, 2.0, 3.0]], [\"2\", \"f\", [0.0, 1.0, NaN, 3.0]], [\"3\", \"f\", [0.0, 1.0, 2.0, 3.0]]]"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{78eb1500-f932-479e-a228-ef5d82467094}">
+        <label>Manually created table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.create.createtable" port_format="1.1" uuid="{e011f85e-374a-4fc5-ab71-807ba7e9cf64}" x="1700.0" y="1800.0">
+    <label>Manually Create Table</label>
+    <version>1.0</version>
+    <description>Create a Table from scratch in a configuration Gui.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "json_table": {
+        "editor": null,
+        "label": "GUI",
+        "order": 0,
+        "type": "string",
+        "value": "[[\"3\", \"f\", [0.0, 1.0, 2.0, 3.0]]]"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{d33c6d11-0694-4045-b733-79e6d70d14f7}">
+        <label>Manually created table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.getitemlist" port_format="1.1" uuid="{e15e3700-8670-4af8-9895-b811925bbca3}" x="2000.0" y="1250.0">
+    <label>Get Item List</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "fail_strategy": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Action on index out of bounds",
+        "list": ["Error", "Create Empty Item"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "index": {
+        "editor": {
+          "display": null,
+          "edit": true,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Index",
+        "list": [],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": ["0"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="list" scheme="hdf5" type="[table]" type_base="[&lt;a&gt;]" uuid="{314213a0-6749-4899-b1d0-58a45893808f}">
+        <label>Input List</label>
+      </input>
+      <output key="item" scheme="hdf5" type="table" type_base="&lt;a&gt;" uuid="{bcbcf25c-7d63-483a-aa66-ea8a69644c73}">
+        <label>Output selected Item from List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.create.createtable" port_format="1.1" uuid="{e5aeba76-28b9-41cc-99d8-53710711d3a8}" x="1700.0" y="2200.0">
+    <label>Manually Create Table</label>
+    <version>1.0</version>
+    <description>Create a Table from scratch in a configuration Gui.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "json_table": {
+        "editor": null,
+        "label": "GUI",
+        "order": 0,
+        "type": "string",
+        "value": "[[\"0\", \"f\", [NaN, 1.0, 2.0, 3.0]], [\"3\", \"f\", [0.0, 1.0, 2.0, 3.0]]]"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{15661389-4826-44fc-95bd-de2744ec9a45}">
+        <label>Manually created table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.getitemlist" port_format="1.1" uuid="{e8a99b70-0879-4602-af75-935dd2e8e69d}" x="2000.0" y="1150.0">
+    <label>Get Item List</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "fail_strategy": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Action on index out of bounds",
+        "list": ["Error", "Create Empty Item"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "index": {
+        "editor": {
+          "display": null,
+          "edit": true,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Index",
+        "list": [],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": ["0"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="list" scheme="hdf5" type="[table]" type_base="[&lt;a&gt;]" uuid="{a95045b4-ce9b-4990-ab48-3c464ed3f1fc}">
+        <label>Input List</label>
+      </input>
+      <output key="item" scheme="hdf5" type="table" type_base="&lt;a&gt;" uuid="{977dd672-f233-4d63-b954-bb95e2c13867}">
+        <label>Output selected Item from List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.getitemlist" port_format="1.1" uuid="{ec8f3c25-839b-4b5c-8350-bc78712e02aa}" x="2000.0" y="1650.0">
+    <label>Get Item List</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "fail_strategy": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Action on index out of bounds",
+        "list": ["Error", "Create Empty Item"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "index": {
+        "editor": {
+          "display": null,
+          "edit": true,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Index",
+        "list": [],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": ["0"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="list" scheme="hdf5" type="[table]" type_base="[&lt;a&gt;]" uuid="{7894e250-a4c5-4d30-a34c-3b858788ef76}">
+        <label>Input List</label>
+      </input>
+      <output key="item" scheme="hdf5" type="table" type_base="&lt;a&gt;" uuid="{dda1a7ca-65a5-4eb5-b0e4-a9d6ad04cf90}">
+        <label>Output selected Item from List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.create.createtable" port_format="1.1" uuid="{f6e76c26-b4d5-4498-b45c-18491db789ff}" x="1700.0" y="1300.0">
+    <label>Manually Create Table</label>
+    <version>1.0</version>
+    <description>Create a Table from scratch in a configuration Gui.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "json_table": {
+        "editor": null,
+        "label": "GUI",
+        "order": 0,
+        "type": "string",
+        "value": "[[\"3\", \"f\", [0.0, 1.0, 2.0, 3.0]]]"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{59f9a9c4-fcf1-4dc7-9b30-ff9e22d09087}">
+        <label>Manually created table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.dropnantable" port_format="1.1" uuid="{fbd12fc0-0fbc-4055-92b9-6327e69ef9b7}" x="1700.0" y="1400.0">
+    <label>Drop NaN Table</label>
+    <version>1.0</version>
+    <description>Drop columns or rows with NaN values</description>
+    <author>Greger Cronquist</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "direction": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Drop",
+        "list": ["Rows with NaN", "Columns with NaN"],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [1],
+        "value_names": ["Columns with NaN"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Input" scheme="hdf5" type="table" type_base="table" uuid="{d7d15398-9916-45dd-bbb9-3dac5228c41f}">
+        <label>Input</label>
+      </input>
+      <output key="Output" scheme="hdf5" type="table" type_base="table" uuid="{b0c958e7-e8e2-4aa1-9584-a6e6780864f1}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <connection type="table" uuid="{025e2766-bd07-4c14-ae3a-0b9089846078}">
+    <source node="{dedefbb6-54d3-499f-a81c-12022a31d58a}" port="{78eb1500-f932-479e-a228-ef5d82467094}"/>
+    <destination node="{822b5a22-c07e-4d17-a968-d309a42d409c}" port="{ba9df642-d5f6-4ca7-a83c-7b416aef4a95}"/>
+  </connection>
+  <connection type="table" uuid="{035feb12-17cd-42fb-a1b0-9aa244f87592}">
+    <source node="{ec8f3c25-839b-4b5c-8350-bc78712e02aa}" port="{dda1a7ca-65a5-4eb5-b0e4-a9d6ad04cf90}"/>
+    <destination node="{c3291745-b2f9-41f1-b937-db1cc202c9f4}" port="{2f300795-97da-4fdb-a834-bb28b011aea5}"/>
+  </connection>
+  <connection type="table" uuid="{077abcef-82bf-40c0-9e88-3c6d9063fea2}">
+    <source node="{1a3eead0-920a-46fc-827e-874691349259}" port="{448cb171-7f4f-481a-b7ac-746c0d106a35}"/>
+    <destination node="{cbee375f-b3cd-4661-aade-a7d39890ef7f}" port="{a6794867-5d1e-4d11-b312-258f5fe77f18}"/>
+  </connection>
+  <connection type="table" uuid="{0a61ab9a-cd0e-4a5c-8ccd-da2bf32a5d6b}">
+    <source node="{4d5b40c5-f8b2-4625-8569-13c47b305bf4}" port="{46472655-4958-40fc-bd82-a874b0035be9}"/>
+    <destination node="{c595cf75-1ec7-4523-bc36-3f71b8566cb2}" port="{3ebfc843-ce7e-473a-89db-1d5f5da18d6d}"/>
+  </connection>
+  <connection type="table" uuid="{0c4a9a5e-8362-4c45-a9b3-e2a3bb66d86c}">
+    <source node="{c21fb226-4d40-4235-a3c2-81282d08b364}" port="{9ead7038-36ed-41c7-8f9c-324b0226c8f3}"/>
+    <destination node="{81ed9ec8-2e3a-4f61-9b6d-743e7f3b9fce}" port="{4cd2e0cb-48dc-4641-81e7-1248eb1603d0}"/>
+  </connection>
+  <connection type="table" uuid="{104a21d1-bc72-44d1-9d45-30a6be371917}">
+    <source node="{e8a99b70-0879-4602-af75-935dd2e8e69d}" port="{977dd672-f233-4d63-b954-bb95e2c13867}"/>
+    <destination node="{11d92ce2-33f6-4616-a0e3-e0785c4fb44a}" port="{1ca3a3c7-3ba4-47a0-82aa-082256167a17}"/>
+  </connection>
+  <connection type="table" uuid="{1cbf3c0f-a2eb-4614-9962-d518dde1d28f}">
+    <source node="{75b67970-7136-4bfe-a3f7-072f2269850a}" port="{adbffc63-3056-46b5-8e04-654becfa9d10}"/>
+    <destination node="{8a20479f-6504-4ef0-802d-07dec55f3bdc}" port="{1fcbafef-1617-4707-ba31-304daa50bc15}"/>
+  </connection>
+  <connection type="[table]" uuid="{1fd1e990-c4b5-4466-aa62-dce7b12df458}">
+    <source node="{d9234ec6-eced-4ec9-bcd6-f91513379169}" port="{aebdfc0a-dcfb-41db-8fbd-71b80cf2bdee}"/>
+    <destination node="{e15e3700-8670-4af8-9895-b811925bbca3}" port="{314213a0-6749-4899-b1d0-58a45893808f}"/>
+  </connection>
+  <connection type="table" uuid="{27738a3f-aeb2-42e2-b94c-1c16819be08a}">
+    <source node="{dedefbb6-54d3-499f-a81c-12022a31d58a}" port="{78eb1500-f932-479e-a228-ef5d82467094}"/>
+    <destination node="{c21fb226-4d40-4235-a3c2-81282d08b364}" port="{5e89d1ac-ee03-4bfd-b3c8-4e9afee10235}"/>
+  </connection>
+  <connection type="table" uuid="{31d4156f-c15c-4d29-81bd-24a03c05f96f}">
+    <source node="{be4c61c0-f19d-4ec1-bdfe-7e671774e667}" port="{1cde6e50-2dbd-497c-9657-f161c556d745}"/>
+    <destination node="{81ed9ec8-2e3a-4f61-9b6d-743e7f3b9fce}" port="{657ce952-9d23-4f4e-9bee-b979e486cf75}"/>
+  </connection>
+  <connection type="table" uuid="{3675a8c5-6944-4d2f-883d-67cfa28da386}">
+    <source node="{27c72bf4-a1ee-4076-8716-881c64fc35fb}" port="{8dec3207-e315-4c7d-b30a-1b085c52d95d}"/>
+    <destination node="{c595cf75-1ec7-4523-bc36-3f71b8566cb2}" port="{091cc81e-758f-4bd9-b9ce-a6fde5084b65}"/>
+  </connection>
+  <connection type="table" uuid="{37e3d0d4-3d9e-4e27-86a3-bc9a34f335aa}">
+    <source node="{dedefbb6-54d3-499f-a81c-12022a31d58a}" port="{78eb1500-f932-479e-a228-ef5d82467094}"/>
+    <destination node="{4d5b40c5-f8b2-4625-8569-13c47b305bf4}" port="{a8fae86c-b423-4fe7-9a2c-7fed8d598b58}"/>
+  </connection>
+  <connection type="table" uuid="{44362db6-5440-454b-a62c-3c36c37d8ac9}">
+    <source node="{822b5a22-c07e-4d17-a968-d309a42d409c}" port="{45700e1e-34ee-4a3e-8afc-d13ff64deef7}"/>
+    <destination node="{7e2f20c1-3f73-4f38-80f9-adfcc539732d}" port="{f919795a-a4d8-4fc1-875f-51056f14f8c2}"/>
+  </connection>
+  <connection type="[table]" uuid="{444282d7-572a-4aab-8f41-d340c87b7312}">
+    <source node="{39a6e6aa-4ff6-4909-a763-bcad4ea0092e}" port="{d4120a26-e4e9-45ed-944f-b4b32ef73f6c}"/>
+    <destination node="{1f2d1ab1-3b0f-4692-b9eb-43ab556b0b6f}" port="{e22e8e7b-4e08-41d5-a8d4-bc1479af1088}"/>
+  </connection>
+  <connection type="table" uuid="{4ef57a3f-0143-4348-a6d2-6882d38c5ef3}">
+    <source node="{5ab1e041-c41e-4d47-8555-3fb2018d4768}" port="{0418d206-9a13-471a-b29c-a7059ecf3475}"/>
+    <destination node="{7614957d-16ec-494b-9253-9d235c2a8422}" port="{d59d6fa5-bad9-49b0-9264-72ff9477deb8}"/>
+  </connection>
+  <connection type="table" uuid="{4fcdf239-03b5-4fd4-9320-ea430e73fd28}">
+    <source node="{dedefbb6-54d3-499f-a81c-12022a31d58a}" port="{78eb1500-f932-479e-a228-ef5d82467094}"/>
+    <destination node="{39a6e6aa-4ff6-4909-a763-bcad4ea0092e}" port="{a573f052-8776-4d1f-96a2-ec7e3f767d13}"/>
+  </connection>
+  <connection type="table" uuid="{51163ad0-1bbf-4849-9756-a3ef38092392}">
+    <source node="{dedefbb6-54d3-499f-a81c-12022a31d58a}" port="{78eb1500-f932-479e-a228-ef5d82467094}"/>
+    <destination node="{cbee375f-b3cd-4661-aade-a7d39890ef7f}" port="{94bebf34-3c36-45a1-9678-3f9428f9f521}"/>
+  </connection>
+  <connection type="table" uuid="{5355ccba-a18d-425c-aabc-6d62c066d19c}">
+    <source node="{fbd12fc0-0fbc-4055-92b9-6327e69ef9b7}" port="{b0c958e7-e8e2-4aa1-9584-a6e6780864f1}"/>
+    <destination node="{a7baeb60-ceb9-4124-a229-c4afea054a61}" port="{deb77d0e-d135-4fd8-b52d-0dba2c7b8174}"/>
+  </connection>
+  <connection type="table" uuid="{54936c86-064f-4960-ae26-f01718676618}">
+    <source node="{e011f85e-374a-4fc5-ab71-807ba7e9cf64}" port="{d33c6d11-0694-4045-b733-79e6d70d14f7}"/>
+    <destination node="{7614957d-16ec-494b-9253-9d235c2a8422}" port="{fdf6a20d-2ce5-479d-b888-394d211aabd6}"/>
+  </connection>
+  <connection type="table" uuid="{599b9710-b27b-42b8-b9b5-23c7a5e67aa0}">
+    <source node="{e011f85e-374a-4fc5-ab71-807ba7e9cf64}" port="{d33c6d11-0694-4045-b733-79e6d70d14f7}"/>
+    <destination node="{315116d5-e022-4750-8c36-6f79df19a342}" port="{d58bcfdc-e59c-4115-8ca2-3eba5ee1b056}"/>
+    <route x="2075.0" y="1825.0"/>
+  </connection>
+  <connection type="table" uuid="{59c306c4-1b55-488e-a213-fb45bd57b228}">
+    <source node="{dedefbb6-54d3-499f-a81c-12022a31d58a}" port="{78eb1500-f932-479e-a228-ef5d82467094}"/>
+    <destination node="{6e7b4817-bf13-430b-a93f-7c48a5068cbc}" port="{c2f6e09b-30aa-49db-a406-0d2aa04cf3a4}"/>
+  </connection>
+  <connection type="[table]" uuid="{6379e1cf-cd0e-4b11-9728-266d10fbeb4e}">
+    <source node="{d28229f8-c615-4103-a307-6c7ac8648421}" port="{f8ff6b30-a15a-4fa8-8738-67dd52b9cf11}"/>
+    <destination node="{e8a99b70-0879-4602-af75-935dd2e8e69d}" port="{a95045b4-ce9b-4990-ab48-3c464ed3f1fc}"/>
+  </connection>
+  <connection type="table" uuid="{650e4e71-76a0-4793-bfd1-24ae02595b59}">
+    <source node="{b80ecc52-63f1-4a81-9135-ab8449f6397e}" port="{60f1e6a4-f6d4-4237-959b-939778b501ca}"/>
+    <destination node="{11d92ce2-33f6-4616-a0e3-e0785c4fb44a}" port="{a12b43de-0f3b-48f4-b734-1f36c5f64070}"/>
+    <route x="2075.0" y="1125.0"/>
+  </connection>
+  <connection type="table" uuid="{70996148-6c64-414e-ad9a-4beb026d3f26}">
+    <source node="{dedefbb6-54d3-499f-a81c-12022a31d58a}" port="{78eb1500-f932-479e-a228-ef5d82467094}"/>
+    <destination node="{5ab1e041-c41e-4d47-8555-3fb2018d4768}" port="{cab1eb46-99c8-497e-a24a-5a5b83130971}"/>
+  </connection>
+  <connection type="table" uuid="{7160c013-263f-431a-96cf-6d8242b94968}">
+    <source node="{27c72bf4-a1ee-4076-8716-881c64fc35fb}" port="{8dec3207-e315-4c7d-b30a-1b085c52d95d}"/>
+    <destination node="{c3291745-b2f9-41f1-b937-db1cc202c9f4}" port="{98ea5de5-c119-469a-bc3e-8a065d11cfc3}"/>
+    <route x="2075.0" y="1625.0"/>
+  </connection>
+  <connection type="[table]" uuid="{8f995f70-8a62-4a22-9f71-fc99a9a7f2bf}">
+    <source node="{6e7b4817-bf13-430b-a93f-7c48a5068cbc}" port="{f1c9cb16-0ad9-4be9-add5-035f8966b745}"/>
+    <destination node="{d28229f8-c615-4103-a307-6c7ac8648421}" port="{f60b7a6a-59db-4b1b-b5bc-59396f98e5ab}"/>
+  </connection>
+  <connection type="table" uuid="{98a2e208-7087-4aba-b74d-3cc87357fbbc}">
+    <source node="{f6e76c26-b4d5-4498-b45c-18491db789ff}" port="{59f9a9c4-fcf1-4dc7-9b30-ff9e22d09087}"/>
+    <destination node="{573e1e15-0b2c-4f19-a263-7bc9fff2a907}" port="{d1dff789-5a87-40ed-8793-c6a5c10dff88}"/>
+    <route x="2075.0" y="1325.0"/>
+  </connection>
+  <connection type="[table]" uuid="{a289e7e4-2372-4491-82b7-17a2461ba0b5}">
+    <source node="{b1ef1bd0-7810-44fc-ba98-e5aff7ea169d}" port="{3512d953-08a2-4b22-9faf-45ac2a0e2398}"/>
+    <destination node="{914884a1-5765-45e6-b3c1-e30fad3fa447}" port="{feb384b3-2f36-4753-811f-35fe9cf6d64a}"/>
+  </connection>
+  <connection type="table" uuid="{b61ab5bc-2ce5-4fc8-80fe-19856e545f5c}">
+    <source node="{8df061b4-6cde-4410-84f1-16a6d3896e62}" port="{ec891466-80f2-4e42-89b7-0ccf4f0066f7}"/>
+    <destination node="{1de0b563-6ca7-46ed-b5a4-8d8bb7afc27a}" port="{31386c9c-68da-42e0-8872-8ecfd4e7e57f}"/>
+  </connection>
+  <connection type="table" uuid="{c54e06f2-a063-4a68-89e3-40fefa37caa9}">
+    <source node="{dedefbb6-54d3-499f-a81c-12022a31d58a}" port="{78eb1500-f932-479e-a228-ef5d82467094}"/>
+    <destination node="{8df061b4-6cde-4410-84f1-16a6d3896e62}" port="{4fd9e27d-16e9-4cc8-b8b8-cf960b16d12a}"/>
+  </connection>
+  <connection type="[table]" uuid="{c8b10951-89f9-4fb5-b970-3338d82f469f}">
+    <source node="{1f2d1ab1-3b0f-4692-b9eb-43ab556b0b6f}" port="{253c1d64-e0e5-44b9-b4e2-641163164722}"/>
+    <destination node="{ec8f3c25-839b-4b5c-8350-bc78712e02aa}" port="{7894e250-a4c5-4d30-a34c-3b858788ef76}"/>
+  </connection>
+  <connection type="table" uuid="{cb4177fa-2aa1-4f6f-965e-47810126a75b}">
+    <source node="{b80ecc52-63f1-4a81-9135-ab8449f6397e}" port="{60f1e6a4-f6d4-4237-959b-939778b501ca}"/>
+    <destination node="{7e2f20c1-3f73-4f38-80f9-adfcc539732d}" port="{e7fc1ef4-395b-4ba2-af19-a015765e981f}"/>
+  </connection>
+  <connection type="table" uuid="{d1197184-8982-42bc-9907-e68d2a7108e2}">
+    <source node="{e5aeba76-28b9-41cc-99d8-53710711d3a8}" port="{15661389-4826-44fc-95bd-de2744ec9a45}"/>
+    <destination node="{8a20479f-6504-4ef0-802d-07dec55f3bdc}" port="{ba9c53ac-0958-4f2a-87b5-59f7f79dcfe6}"/>
+  </connection>
+  <connection type="table" uuid="{dd2746ca-5e9c-48e5-bafa-41a9960d1b1b}">
+    <source node="{dedefbb6-54d3-499f-a81c-12022a31d58a}" port="{78eb1500-f932-479e-a228-ef5d82467094}"/>
+    <destination node="{75b67970-7136-4bfe-a3f7-072f2269850a}" port="{82f0e8b6-89be-4650-b575-7d1a2faa6042}"/>
+  </connection>
+  <connection type="table" uuid="{e6963513-f4b8-4267-9984-f0ac3d5c2663}">
+    <source node="{f6e76c26-b4d5-4498-b45c-18491db789ff}" port="{59f9a9c4-fcf1-4dc7-9b30-ff9e22d09087}"/>
+    <destination node="{a7baeb60-ceb9-4124-a229-c4afea054a61}" port="{7ffb735a-8aac-45d6-ad37-c68df77c987f}"/>
+  </connection>
+  <connection type="table" uuid="{e947333b-7d0c-4562-bb99-bf94f937a54b}">
+    <source node="{dedefbb6-54d3-499f-a81c-12022a31d58a}" port="{78eb1500-f932-479e-a228-ef5d82467094}"/>
+    <destination node="{1de0b563-6ca7-46ed-b5a4-8d8bb7afc27a}" port="{5e2de174-c771-463b-8c78-98df894add11}"/>
+  </connection>
+  <connection type="table" uuid="{e9b2e495-fd15-47ce-83e2-d55dc5e4443f}">
+    <source node="{e15e3700-8670-4af8-9895-b811925bbca3}" port="{bcbcf25c-7d63-483a-aa66-ea8a69644c73}"/>
+    <destination node="{573e1e15-0b2c-4f19-a263-7bc9fff2a907}" port="{a4bd4623-1de1-4176-b818-540db796a0b6}"/>
+  </connection>
+  <connection type="table" uuid="{ed41ef85-181e-46b2-be00-768173c2cf51}">
+    <source node="{dedefbb6-54d3-499f-a81c-12022a31d58a}" port="{78eb1500-f932-479e-a228-ef5d82467094}"/>
+    <destination node="{1a3eead0-920a-46fc-827e-874691349259}" port="{1a334c85-e050-407b-bff1-aefaec2f3bd0}"/>
+  </connection>
+  <connection type="table" uuid="{ed7861f8-487c-439a-b940-22052e6af002}">
+    <source node="{914884a1-5765-45e6-b3c1-e30fad3fa447}" port="{0713681d-1aea-458b-8c33-de2972f2cfee}"/>
+    <destination node="{315116d5-e022-4750-8c36-6f79df19a342}" port="{a44cdf80-eb53-42d1-82df-897d157b984d}"/>
+  </connection>
+  <connection type="table" uuid="{eec44070-d2b6-467f-af42-35c3b62390f0}">
+    <source node="{dedefbb6-54d3-499f-a81c-12022a31d58a}" port="{78eb1500-f932-479e-a228-ef5d82467094}"/>
+    <destination node="{fbd12fc0-0fbc-4055-92b9-6327e69ef9b7}" port="{d7d15398-9916-45dd-bbb9-3dac5228c41f}"/>
+  </connection>
+  <connection type="[table]" uuid="{f2f76247-9ce1-47a2-9d9f-5dbe402320af}">
+    <source node="{6e7b4817-bf13-430b-a93f-7c48a5068cbc}" port="{f1c9cb16-0ad9-4be9-add5-035f8966b745}"/>
+    <destination node="{d9234ec6-eced-4ec9-bcd6-f91513379169}" port="{1d34dd8a-c369-4837-bc41-8fff520cdac1}"/>
+  </connection>
+  <connection type="[table]" uuid="{fdfa96e1-ae91-4baa-a9fd-d62a87487bb0}">
+    <source node="{39a6e6aa-4ff6-4909-a763-bcad4ea0092e}" port="{d4120a26-e4e9-45ed-944f-b4b32ef73f6c}"/>
+    <destination node="{b1ef1bd0-7810-44fc-ba98-e5aff7ea169d}" port="{e0058316-1512-453f-9414-ddb31cebed7f}"/>
+  </connection>
+  <text color="Light" height="500.0" uuid="{ff542ab3-71cb-4dee-93fe-04a2f9814e49}" width="775.0" x="1500.0" y="975.0">Version &lt;= 1.6.1
+
+(No column selection)</text>
+  <text color="Beige" height="1125.0" uuid="{1a78c17e-dd16-4577-9be2-fd224f53213d}" width="775.0" x="1500.0" y="1475.0">Version == 1.6.2
+
+(Column selection)</text>
+</flow>

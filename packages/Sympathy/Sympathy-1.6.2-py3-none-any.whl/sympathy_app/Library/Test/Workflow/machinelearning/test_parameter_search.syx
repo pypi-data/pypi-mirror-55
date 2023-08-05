@@ -1,0 +1,1384 @@
+<?xml version='1.0' encoding='US-ASCII'?>
+<flow xmlns="http://www.sysess.org/sympathyfordata/workflow/1.0" cls="Flow" uuid="{c76514e8-649b-4761-b0c2-1497ff394b30}">
+  <label></label>
+  <ports/>
+  <flow cls="Flow" uuid="{15295ec4-0c48-443f-b969-e15700a4c638}" x="875.0" y="1475.0">
+    <label>Parameter Distribution &amp; Grid Parameter Search
+- Unlocked</label>
+    <ports/>
+    <node id="org.sysess.sympathy.machinelearning.decision_tree_classifier" port_format="1.1" uuid="{06b5ea90-83c3-4e72-8c79-524b067babc6}" x="1300.0" y="1675.0">
+      <label>Decision Tree Classifier</label>
+      <version>0.1</version>
+      <description>Decision Trees (DTs) are a non-parametric supervised learning methodused for classification and regression. The goal is to create a modelthat predicts the value of a target variable by learning simpledecision rules inferred from the data features.</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "criterion": {
+          "editor": null,
+          "label": "criterion",
+          "order": 1,
+          "type": "string",
+          "value": "gini"
+        },
+        "max_depth": {
+          "editor": null,
+          "label": "max_depth",
+          "order": 0,
+          "type": "string",
+          "value": "3"
+        },
+        "max_features": {
+          "editor": null,
+          "label": "max_features",
+          "order": 3,
+          "type": "string",
+          "value": "None"
+        },
+        "max_leaf_nodes": {
+          "editor": null,
+          "label": "max_leaf_nodes",
+          "order": 6,
+          "type": "string",
+          "value": "None"
+        },
+        "min_impurity_decrease": {
+          "editor": null,
+          "label": "min_impurity_decrease",
+          "order": 8,
+          "type": "string",
+          "value": "0"
+        },
+        "min_impurity_split": {
+          "editor": null,
+          "label": "min_impurity_split",
+          "order": 7,
+          "type": "string",
+          "value": "1e-07"
+        },
+        "min_samples_leaf": {
+          "editor": null,
+          "label": "min_samples_leaf",
+          "order": 5,
+          "type": "string",
+          "value": "1"
+        },
+        "min_samples_split": {
+          "editor": null,
+          "label": "min_samples_split",
+          "order": 4,
+          "type": "string",
+          "value": "2"
+        },
+        "presort": {
+          "editor": null,
+          "label": "presort",
+          "order": 9,
+          "type": "string",
+          "value": "False"
+        },
+        "random_state": {
+          "editor": null,
+          "label": "random_state",
+          "order": 10,
+          "type": "string",
+          "value": "None"
+        },
+        "splitter": {
+          "editor": null,
+          "label": "splitter",
+          "order": 2,
+          "type": "string",
+          "value": "best"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <output key="model" scheme="hdf5" type="model" type_base="model" uuid="{75f9c956-39ce-4a6b-a81f-06475012534e}">
+          <label>Model</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.parameter_distribution" port_format="1.1" uuid="{458d63bc-bf88-4d1e-9d6f-e6e13fe8850c}" x="1150.0" y="1775.0">
+      <label>Parameter Distribution</label>
+      <version>0.1</version>
+      <description>Creates a range of values giving a distribution for a parameter</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "N": {
+          "editor": null,
+          "label": "Number of points",
+          "order": 3,
+          "type": "integer",
+          "value": 9
+        },
+        "as_integer": {
+          "editor": null,
+          "label": "as integer",
+          "order": 5,
+          "type": "boolean",
+          "value": true
+        },
+        "max": {
+          "editor": null,
+          "label": "Maximum",
+          "order": 2,
+          "type": "float",
+          "value": 10.0
+        },
+        "method": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": ["linear", "exponential"],
+            "type": "combobox"
+          },
+          "label": "Distribution",
+          "order": 4,
+          "type": "string",
+          "value": "linear"
+        },
+        "min": {
+          "editor": null,
+          "label": "Minimum",
+          "order": 1,
+          "type": "float",
+          "value": 2.0
+        },
+        "name": {
+          "editor": null,
+          "label": "Parameter Name:",
+          "order": 0,
+          "type": "string",
+          "value": "max_depth"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{4a1fe19c-b635-4ea9-bcc9-403d489c4538}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.example_datasets" port_format="1.1" uuid="{690cdb7a-1b14-487d-87e7-8cf847318004}" x="1300.0" y="1875.0">
+      <label>Example datasets</label>
+      <version>0.1</version>
+      <description>Exposes the example datasets from sklearn</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "classnames": {
+          "editor": null,
+          "label": "Class names",
+          "order": 1,
+          "type": "boolean",
+          "value": true
+        },
+        "color": {
+          "editor": null,
+          "label": "color",
+          "order": 2,
+          "type": "boolean",
+          "value": false
+        },
+        "dataset": {
+          "editor": null,
+          "label": "Dataset",
+          "order": 0,
+          "type": "string",
+          "value": "Iris"
+        },
+        "min_pictures": {
+          "editor": null,
+          "label": "min_pictures",
+          "order": 3,
+          "type": "integer",
+          "value": 10
+        },
+        "resize": {
+          "editor": null,
+          "label": "resize",
+          "order": 4,
+          "type": "float",
+          "value": 0.5
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <output key="X" scheme="hdf5" type="table" type_base="table" uuid="{f4d5cbae-b75b-40d1-9f14-8c5f3d1e6ae9}">
+          <label>X</label>
+        </output>
+        <output key="Y" scheme="hdf5" type="table" type_base="table" uuid="{c2c3655b-abe4-410e-bca5-e515aa19337f}">
+          <label>Y</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{d0b1ca63-ffe8-401c-882d-c805b3c85fde}" x="1300.0" y="1775.0">
+      <label>Item to List</label>
+      <version>1.0</version>
+      <description></description>
+      <author>Erik der Hagopian</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "n": {
+          "editor": null,
+          "label": "Repeat number of times",
+          "order": 0,
+          "type": "integer",
+          "value": 1
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="item" scheme="hdf5" type="table" type_base="&lt;a&gt;" uuid="{c7c56fc0-3adf-4330-b358-31bb0e5c7e7e}">
+          <label>Input Item</label>
+        </input>
+        <output key="list" scheme="hdf5" type="[table]" type_base="[&lt;a&gt;]" uuid="{95b1a8b1-c32a-4df4-a7f4-23cd93981743}">
+          <label>Item as List</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.grid_parsearch" port_format="1.1" uuid="{df154b1d-2438-4da5-bd78-acb184bbe9cc}" x="1450.0" y="1800.0">
+      <label>Grid Parameter Search</label>
+      <version>0.1</version>
+      <description>Evaluates each parameter combination in the set of parameter hypercubes given by each table in the list of parameter tables. Each parameter table specify a hypercube of dimension N where N is the number of columns in the table. Every combination of paramater values in each such cube will be sampled.</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "cv": {
+          "editor": null,
+          "label": "Cross validation splits",
+          "order": 0,
+          "type": "integer",
+          "value": 3
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in-model" scheme="hdf5" type="model" type_base="model" uuid="{0f8ad539-585f-4898-bac8-8364617bb3e7}">
+          <label>in-model</label>
+        </input>
+        <input key="parameter space" scheme="hdf5" type="[table]" type_base="[table]" uuid="{3c3495fd-4f68-4e5a-874b-abe62c988747}">
+          <label>param-space</label>
+        </input>
+        <input key="X" scheme="hdf5" type="table" type_base="table" uuid="{8544725e-1bf2-48d7-9b9c-3555abb5b7c7}">
+          <label>X</label>
+        </input>
+        <input key="Y" scheme="hdf5" type="table" type_base="table" uuid="{f46bbb47-d4cb-4ed3-b4ee-31f69983c584}">
+          <label>Y</label>
+        </input>
+        <output key="results" scheme="hdf5" type="table" type_base="table" uuid="{b0f8a0cf-f880-4f0b-a074-a11ce311e0d5}">
+          <label>results</label>
+        </output>
+        <output key="parameters" scheme="hdf5" type="table" type_base="table" uuid="{11cd24c4-53c9-4f73-ad32-50cb92796800}">
+          <label>parameters</label>
+        </output>
+        <output key="out-model" scheme="hdf5" type="model" type_base="model" uuid="{046e78aa-5f83-490a-81ba-de3bf0ca7a1d}">
+          <label>out-model</label>
+        </output>
+      </ports>
+    </node>
+    <connection type="table" uuid="{1ffd9325-3e2a-4731-9ec9-cb497e4d7fa5}">
+      <source node="{458d63bc-bf88-4d1e-9d6f-e6e13fe8850c}" port="{4a1fe19c-b635-4ea9-bcc9-403d489c4538}"/>
+      <destination node="{d0b1ca63-ffe8-401c-882d-c805b3c85fde}" port="{c7c56fc0-3adf-4330-b358-31bb0e5c7e7e}"/>
+    </connection>
+    <connection type="[table]" uuid="{27c07a92-2eaf-468e-b2de-d8e34ed1f401}">
+      <source node="{d0b1ca63-ffe8-401c-882d-c805b3c85fde}" port="{95b1a8b1-c32a-4df4-a7f4-23cd93981743}"/>
+      <destination node="{df154b1d-2438-4da5-bd78-acb184bbe9cc}" port="{3c3495fd-4f68-4e5a-874b-abe62c988747}"/>
+    </connection>
+    <connection type="table" uuid="{5931a6cd-54ae-4488-afab-19e8ae5132ac}">
+      <source node="{690cdb7a-1b14-487d-87e7-8cf847318004}" port="{c2c3655b-abe4-410e-bca5-e515aa19337f}"/>
+      <destination node="{df154b1d-2438-4da5-bd78-acb184bbe9cc}" port="{f46bbb47-d4cb-4ed3-b4ee-31f69983c584}"/>
+    </connection>
+    <connection type="model" uuid="{6861218e-139b-4ede-8ce2-3a01a56a75c1}">
+      <source node="{06b5ea90-83c3-4e72-8c79-524b067babc6}" port="{75f9c956-39ce-4a6b-a81f-06475012534e}"/>
+      <destination node="{df154b1d-2438-4da5-bd78-acb184bbe9cc}" port="{0f8ad539-585f-4898-bac8-8364617bb3e7}"/>
+    </connection>
+    <connection type="table" uuid="{f142c779-d015-4ce6-8f57-a8f57d421181}">
+      <source node="{690cdb7a-1b14-487d-87e7-8cf847318004}" port="{f4d5cbae-b75b-40d1-9f14-8c5f3d1e6ae9}"/>
+      <destination node="{df154b1d-2438-4da5-bd78-acb184bbe9cc}" port="{8544725e-1bf2-48d7-9b9c-3555abb5b7c7}"/>
+    </connection>
+  </flow>
+  <flow cls="Flow" is_locked="True" uuid="{6173f372-8172-444d-992b-32d5403719a4}" x="1075.0" y="1600.0">
+    <label>Simulated Annealing Parameter Search</label>
+    <ports/>
+    <node id="org.sysess.sympathy.machinelearning.parameter_distribution" port_format="1.1" uuid="{10406261-c1cb-4d65-b715-6cb3f3885e1d}" x="1375.0" y="1800.0">
+      <label>Parameter Distribution</label>
+      <version>0.1</version>
+      <description>Creates a range of values giving a distribution for a parameter</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "N": {
+          "editor": null,
+          "label": "Number of points",
+          "order": 3,
+          "type": "integer",
+          "value": 9
+        },
+        "as_integer": {
+          "editor": null,
+          "label": "as integer",
+          "order": 5,
+          "type": "boolean",
+          "value": true
+        },
+        "max": {
+          "editor": null,
+          "label": "Maximum",
+          "order": 2,
+          "type": "float",
+          "value": 10.0
+        },
+        "method": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": ["linear", "exponential"],
+            "type": "combobox"
+          },
+          "label": "Distribution",
+          "order": 4,
+          "type": "string",
+          "value": "linear"
+        },
+        "min": {
+          "editor": null,
+          "label": "Minimum",
+          "order": 1,
+          "type": "float",
+          "value": 2.0
+        },
+        "name": {
+          "editor": null,
+          "label": "Parameter Name:",
+          "order": 0,
+          "type": "string",
+          "value": "max_depth"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{20f8c70f-cbc5-4749-96c7-52b00910a042}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.sim_anneal_parsearch" port_format="1.1" uuid="{28c8a3a2-67d9-4045-9c16-d273da7538c5}" x="1550.0" y="1675.0">
+      <label>Simulated Annealing Parameter Search</label>
+      <version>0.1</version>
+      <description>Uses simulated annealing to find the optimal parameters by considering a hyper cube of all possible indices to the given parameter table. Each column of the parameter table corresponds to one axis of this cube with a range corresponding to the non-masked rows of the parameter table. The radius for the annealing process assumes that all axes have unit length regardless of the number of non-masked rows. This node should be considered _experimental_ and may change in the future</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "cooling": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": ["Exponential", "Linear", "Logarithmic"],
+            "type": "combobox"
+          },
+          "label": "Cooling method",
+          "order": 2,
+          "type": "string",
+          "value": "Logarithmic"
+        },
+        "cooling_arg": {
+          "editor": null,
+          "label": "Cooling argument",
+          "order": 3,
+          "type": "float",
+          "value": 0.9
+        },
+        "cv": {
+          "editor": null,
+          "label": "Cross validation splits",
+          "order": 0,
+          "type": "integer",
+          "value": 3
+        },
+        "n_iter": {
+          "editor": null,
+          "label": "iterations",
+          "order": 1,
+          "type": "integer",
+          "value": 50
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in-model" scheme="hdf5" type="model" type_base="model" uuid="{d7937a10-c998-4ac2-ac14-8f61a3a19c67}">
+          <label>in-model</label>
+        </input>
+        <input key="parameter space" scheme="hdf5" type="table" type_base="table" uuid="{c1932372-932c-452d-9819-578d85a2dc75}">
+          <label>param-space</label>
+        </input>
+        <input key="X" scheme="hdf5" type="table" type_base="table" uuid="{e0407f57-4b44-47fe-8508-c9b6ec6cfccf}">
+          <label>X</label>
+        </input>
+        <input key="Y" scheme="hdf5" type="table" type_base="table" uuid="{1139e019-9310-40ee-bcfd-184b2271baf8}">
+          <label>Y</label>
+        </input>
+        <output key="results" scheme="hdf5" type="table" type_base="table" uuid="{25958877-db5e-4498-8472-764d70290c36}">
+          <label>results</label>
+        </output>
+        <output key="parameters" scheme="hdf5" type="table" type_base="table" uuid="{fc67d7cb-3698-4577-9620-5d22fa7a8f6f}">
+          <label>parameters</label>
+        </output>
+        <output key="out-model" scheme="hdf5" type="model" type_base="model" uuid="{c456c72a-39af-459f-b4fc-a786b72158bc}">
+          <label>out-model</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.decision_tree_classifier" port_format="1.1" uuid="{76e04a73-83e8-47b7-946f-9f9039ae3ae0}" x="1381.7977442463036" y="1690.2720621856422">
+      <label>Decision Tree Classifier</label>
+      <version>0.1</version>
+      <description>Decision Trees (DTs) are a non-parametric supervised learning methodused for classification and regression. The goal is to create a modelthat predicts the value of a target variable by learning simpledecision rules inferred from the data features.</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "criterion": {
+          "editor": null,
+          "label": "criterion",
+          "order": 1,
+          "type": "string",
+          "value": "gini"
+        },
+        "max_depth": {
+          "editor": null,
+          "label": "max_depth",
+          "order": 0,
+          "type": "string",
+          "value": "3"
+        },
+        "max_features": {
+          "editor": null,
+          "label": "max_features",
+          "order": 3,
+          "type": "string",
+          "value": "None"
+        },
+        "max_leaf_nodes": {
+          "editor": null,
+          "label": "max_leaf_nodes",
+          "order": 6,
+          "type": "string",
+          "value": "None"
+        },
+        "min_impurity_decrease": {
+          "editor": null,
+          "label": "min_impurity_decrease",
+          "order": 8,
+          "type": "string",
+          "value": "0"
+        },
+        "min_impurity_split": {
+          "editor": null,
+          "label": "min_impurity_split",
+          "order": 7,
+          "type": "string",
+          "value": "1e-07"
+        },
+        "min_samples_leaf": {
+          "editor": null,
+          "label": "min_samples_leaf",
+          "order": 5,
+          "type": "string",
+          "value": "1"
+        },
+        "min_samples_split": {
+          "editor": null,
+          "label": "min_samples_split",
+          "order": 4,
+          "type": "string",
+          "value": "2"
+        },
+        "presort": {
+          "editor": null,
+          "label": "presort",
+          "order": 9,
+          "type": "string",
+          "value": "False"
+        },
+        "random_state": {
+          "editor": null,
+          "label": "random_state",
+          "order": 10,
+          "type": "string",
+          "value": "None"
+        },
+        "splitter": {
+          "editor": null,
+          "label": "splitter",
+          "order": 2,
+          "type": "string",
+          "value": "best"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <output key="model" scheme="hdf5" type="model" type_base="model" uuid="{5eebdb1b-b3e8-45b8-8f3a-e2c6965e9bca}">
+          <label>Model</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.sim_anneal_parsearch" port_format="1.1" uuid="{8bc8e941-744c-456e-bf9b-7687ed0f7fc8}" x="1550.0" y="1775.0">
+      <label>Simulated Annealing Parameter Search</label>
+      <version>0.1</version>
+      <description>Uses simulated annealing to find the optimal parameters by considering a hyper cube of all possible indices to the given parameter table. Each column of the parameter table corresponds to one axis of this cube with a range corresponding to the non-masked rows of the parameter table. The radius for the annealing process assumes that all axes have unit length regardless of the number of non-masked rows. This node should be considered _experimental_ and may change in the future</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "cooling": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": ["Exponential", "Linear", "Logarithmic"],
+            "type": "combobox"
+          },
+          "label": "Cooling method",
+          "order": 2,
+          "type": "string",
+          "value": "Linear"
+        },
+        "cooling_arg": {
+          "editor": null,
+          "label": "Cooling argument",
+          "order": 3,
+          "type": "float",
+          "value": 0.9
+        },
+        "cv": {
+          "editor": null,
+          "label": "Cross validation splits",
+          "order": 0,
+          "type": "integer",
+          "value": 3
+        },
+        "n_iter": {
+          "editor": null,
+          "label": "iterations",
+          "order": 1,
+          "type": "integer",
+          "value": 50
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in-model" scheme="hdf5" type="model" type_base="model" uuid="{083d2f5a-3c81-40b0-a8a7-d3a13af1821f}">
+          <label>in-model</label>
+        </input>
+        <input key="parameter space" scheme="hdf5" type="table" type_base="table" uuid="{f9711cc1-6445-45d5-a7cf-cbc3fc4e02e0}">
+          <label>param-space</label>
+        </input>
+        <input key="X" scheme="hdf5" type="table" type_base="table" uuid="{7ef16fee-babc-4d62-a4ef-bcf06c09af7e}">
+          <label>X</label>
+        </input>
+        <input key="Y" scheme="hdf5" type="table" type_base="table" uuid="{610d9954-f977-4e01-a4a0-a31673c5e105}">
+          <label>Y</label>
+        </input>
+        <output key="results" scheme="hdf5" type="table" type_base="table" uuid="{2d6f4476-ddfc-45b1-8b55-40cee7f122b2}">
+          <label>results</label>
+        </output>
+        <output key="parameters" scheme="hdf5" type="table" type_base="table" uuid="{4f6d75d0-ebaf-46f2-854c-a368749aa87e}">
+          <label>parameters</label>
+        </output>
+        <output key="out-model" scheme="hdf5" type="model" type_base="model" uuid="{c16cdde7-2c20-4a2b-b642-3582b5e8e675}">
+          <label>out-model</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.example_datasets" port_format="1.1" uuid="{c05ff355-00d4-4694-9624-b063cbbe7292}" x="1381.7977442463036" y="1890.2720621856422">
+      <label>Example datasets</label>
+      <version>0.1</version>
+      <description>Exposes the example datasets from sklearn</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "classnames": {
+          "editor": null,
+          "label": "Class names",
+          "order": 1,
+          "type": "boolean",
+          "value": true
+        },
+        "color": {
+          "editor": null,
+          "label": "color",
+          "order": 2,
+          "type": "boolean",
+          "value": false
+        },
+        "dataset": {
+          "editor": null,
+          "label": "Dataset",
+          "order": 0,
+          "type": "string",
+          "value": "Iris"
+        },
+        "min_pictures": {
+          "editor": null,
+          "label": "min_pictures",
+          "order": 3,
+          "type": "integer",
+          "value": 10
+        },
+        "resize": {
+          "editor": null,
+          "label": "resize",
+          "order": 4,
+          "type": "float",
+          "value": 0.5
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <output key="X" scheme="hdf5" type="table" type_base="table" uuid="{e5cabc37-71bc-4a28-b2a4-99df33ae7db4}">
+          <label>X</label>
+        </output>
+        <output key="Y" scheme="hdf5" type="table" type_base="table" uuid="{563b2eea-7b2c-43c1-9ae9-2255e4e4327a}">
+          <label>Y</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.sim_anneal_parsearch" port_format="1.1" uuid="{f1fa2326-3e53-4222-863c-ec0431e87129}" x="1550.0" y="1875.0">
+      <label>Simulated Annealing Parameter Search</label>
+      <version>0.1</version>
+      <description>Uses simulated annealing to find the optimal parameters by considering a hyper cube of all possible indices to the given parameter table. Each column of the parameter table corresponds to one axis of this cube with a range corresponding to the non-masked rows of the parameter table. The radius for the annealing process assumes that all axes have unit length regardless of the number of non-masked rows. This node should be considered _experimental_ and may change in the future</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "cooling": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": ["Exponential", "Linear", "Logarithmic"],
+            "type": "combobox"
+          },
+          "label": "Cooling method",
+          "order": 2,
+          "type": "string",
+          "value": "Exponential"
+        },
+        "cooling_arg": {
+          "editor": null,
+          "label": "Cooling argument",
+          "order": 3,
+          "type": "float",
+          "value": 0.9
+        },
+        "cv": {
+          "editor": null,
+          "label": "Cross validation splits",
+          "order": 0,
+          "type": "integer",
+          "value": 3
+        },
+        "n_iter": {
+          "editor": null,
+          "label": "iterations",
+          "order": 1,
+          "type": "integer",
+          "value": 50
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in-model" scheme="hdf5" type="model" type_base="model" uuid="{4ced9d66-ed86-44d1-ad45-7cdb677de16b}">
+          <label>in-model</label>
+        </input>
+        <input key="parameter space" scheme="hdf5" type="table" type_base="table" uuid="{845780d8-735d-4f37-99c2-5ecc708be99d}">
+          <label>param-space</label>
+        </input>
+        <input key="X" scheme="hdf5" type="table" type_base="table" uuid="{c93d9f55-1d53-41f5-9a8d-ef2c1ef8f6f4}">
+          <label>X</label>
+        </input>
+        <input key="Y" scheme="hdf5" type="table" type_base="table" uuid="{3744be3b-2688-4ea5-9428-d47018467e38}">
+          <label>Y</label>
+        </input>
+        <output key="results" scheme="hdf5" type="table" type_base="table" uuid="{f7135c61-01f3-44df-82ce-2ea2ce5c1d55}">
+          <label>results</label>
+        </output>
+        <output key="parameters" scheme="hdf5" type="table" type_base="table" uuid="{2ce4e60c-4982-4df4-8827-b0b32e0e994e}">
+          <label>parameters</label>
+        </output>
+        <output key="out-model" scheme="hdf5" type="model" type_base="model" uuid="{6a463d3a-6223-4b73-830e-ab6934476117}">
+          <label>out-model</label>
+        </output>
+      </ports>
+    </node>
+    <connection type="table" uuid="{3ece548e-1381-47de-b45e-99028f1dc856}">
+      <source node="{c05ff355-00d4-4694-9624-b063cbbe7292}" port="{e5cabc37-71bc-4a28-b2a4-99df33ae7db4}"/>
+      <destination node="{8bc8e941-744c-456e-bf9b-7687ed0f7fc8}" port="{7ef16fee-babc-4d62-a4ef-bcf06c09af7e}"/>
+    </connection>
+    <connection type="table" uuid="{47db4f1f-df91-4fef-9992-d229c111b91a}">
+      <source node="{10406261-c1cb-4d65-b715-6cb3f3885e1d}" port="{20f8c70f-cbc5-4749-96c7-52b00910a042}"/>
+      <destination node="{8bc8e941-744c-456e-bf9b-7687ed0f7fc8}" port="{f9711cc1-6445-45d5-a7cf-cbc3fc4e02e0}"/>
+    </connection>
+    <connection type="model" uuid="{54f0e9a4-561c-4a56-be18-f249ea7ac1b9}">
+      <source node="{76e04a73-83e8-47b7-946f-9f9039ae3ae0}" port="{5eebdb1b-b3e8-45b8-8f3a-e2c6965e9bca}"/>
+      <destination node="{f1fa2326-3e53-4222-863c-ec0431e87129}" port="{4ced9d66-ed86-44d1-ad45-7cdb677de16b}"/>
+    </connection>
+    <connection type="table" uuid="{559fad65-7bfd-49c3-83b1-ccfdbb8f4eee}">
+      <source node="{c05ff355-00d4-4694-9624-b063cbbe7292}" port="{563b2eea-7b2c-43c1-9ae9-2255e4e4327a}"/>
+      <destination node="{28c8a3a2-67d9-4045-9c16-d273da7538c5}" port="{1139e019-9310-40ee-bcfd-184b2271baf8}"/>
+    </connection>
+    <connection type="table" uuid="{590e6ab7-fbac-47db-9960-468a41cb43f0}">
+      <source node="{c05ff355-00d4-4694-9624-b063cbbe7292}" port="{563b2eea-7b2c-43c1-9ae9-2255e4e4327a}"/>
+      <destination node="{f1fa2326-3e53-4222-863c-ec0431e87129}" port="{3744be3b-2688-4ea5-9428-d47018467e38}"/>
+    </connection>
+    <connection type="table" uuid="{68afedc8-44e1-49bc-bdff-2bdc99e28cec}">
+      <source node="{c05ff355-00d4-4694-9624-b063cbbe7292}" port="{e5cabc37-71bc-4a28-b2a4-99df33ae7db4}"/>
+      <destination node="{28c8a3a2-67d9-4045-9c16-d273da7538c5}" port="{e0407f57-4b44-47fe-8508-c9b6ec6cfccf}"/>
+    </connection>
+    <connection type="table" uuid="{b7f517c2-9915-4861-8530-cea6b9c65be1}">
+      <source node="{c05ff355-00d4-4694-9624-b063cbbe7292}" port="{563b2eea-7b2c-43c1-9ae9-2255e4e4327a}"/>
+      <destination node="{8bc8e941-744c-456e-bf9b-7687ed0f7fc8}" port="{610d9954-f977-4e01-a4a0-a31673c5e105}"/>
+    </connection>
+    <connection type="table" uuid="{dcbd3b64-1dda-4e8d-a583-33a5656a07b6}">
+      <source node="{c05ff355-00d4-4694-9624-b063cbbe7292}" port="{e5cabc37-71bc-4a28-b2a4-99df33ae7db4}"/>
+      <destination node="{f1fa2326-3e53-4222-863c-ec0431e87129}" port="{c93d9f55-1d53-41f5-9a8d-ef2c1ef8f6f4}"/>
+    </connection>
+    <connection type="model" uuid="{dea4a500-406d-45ae-a10a-6b6a0c1176ef}">
+      <source node="{76e04a73-83e8-47b7-946f-9f9039ae3ae0}" port="{5eebdb1b-b3e8-45b8-8f3a-e2c6965e9bca}"/>
+      <destination node="{28c8a3a2-67d9-4045-9c16-d273da7538c5}" port="{d7937a10-c998-4ac2-ac14-8f61a3a19c67}"/>
+    </connection>
+    <connection type="model" uuid="{e564422a-7ebd-4c5f-9239-e1be7e7d0b47}">
+      <source node="{76e04a73-83e8-47b7-946f-9f9039ae3ae0}" port="{5eebdb1b-b3e8-45b8-8f3a-e2c6965e9bca}"/>
+      <destination node="{8bc8e941-744c-456e-bf9b-7687ed0f7fc8}" port="{083d2f5a-3c81-40b0-a8a7-d3a13af1821f}"/>
+    </connection>
+    <connection type="table" uuid="{eac53d04-ca51-47ce-9d1a-f9e881b4026c}">
+      <source node="{10406261-c1cb-4d65-b715-6cb3f3885e1d}" port="{20f8c70f-cbc5-4749-96c7-52b00910a042}"/>
+      <destination node="{28c8a3a2-67d9-4045-9c16-d273da7538c5}" port="{c1932372-932c-452d-9819-578d85a2dc75}"/>
+    </connection>
+    <connection type="table" uuid="{fa8ca14e-bd28-46d8-a6b9-53b7e96b266b}">
+      <source node="{10406261-c1cb-4d65-b715-6cb3f3885e1d}" port="{20f8c70f-cbc5-4749-96c7-52b00910a042}"/>
+      <destination node="{f1fa2326-3e53-4222-863c-ec0431e87129}" port="{845780d8-735d-4f37-99c2-5ecc708be99d}"/>
+    </connection>
+  </flow>
+  <flow cls="Flow" is_locked="True" uuid="{89812845-b0f1-4628-89c2-cacf1945a839}" x="875.0" y="1600.0">
+    <label>Parameter Distribution &amp; Grid Parameter Search
+- Locked</label>
+    <ports/>
+    <node id="org.sysess.sympathy.machinelearning.parameter_distribution" port_format="1.1" uuid="{02266457-e745-46f3-a016-b4ea181bb859}" x="1150.0" y="1775.0">
+      <label>Parameter Distribution</label>
+      <version>0.1</version>
+      <description>Creates a range of values giving a distribution for a parameter</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "N": {
+          "editor": null,
+          "label": "Number of points",
+          "order": 3,
+          "type": "integer",
+          "value": 9
+        },
+        "as_integer": {
+          "editor": null,
+          "label": "as integer",
+          "order": 5,
+          "type": "boolean",
+          "value": true
+        },
+        "max": {
+          "editor": null,
+          "label": "Maximum",
+          "order": 2,
+          "type": "float",
+          "value": 10.0
+        },
+        "method": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": ["linear", "exponential"],
+            "type": "combobox"
+          },
+          "label": "Distribution",
+          "order": 4,
+          "type": "string",
+          "value": "linear"
+        },
+        "min": {
+          "editor": null,
+          "label": "Minimum",
+          "order": 1,
+          "type": "float",
+          "value": 2.0
+        },
+        "name": {
+          "editor": null,
+          "label": "Parameter Name:",
+          "order": 0,
+          "type": "string",
+          "value": "max_depth"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{983416bc-c909-44bd-85b4-be3151882d66}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{4604a5c1-df75-472c-8db2-f93602ca07bf}" x="1300.0" y="1775.0">
+      <label>Item to List</label>
+      <version>1.0</version>
+      <description></description>
+      <author>Erik der Hagopian</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "n": {
+          "editor": null,
+          "label": "Repeat number of times",
+          "order": 0,
+          "type": "integer",
+          "value": 1
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="item" scheme="hdf5" type="table" type_base="&lt;a&gt;" uuid="{f30b784f-439d-4cbf-9edd-d8cf0033a155}">
+          <label>Input Item</label>
+        </input>
+        <output key="list" scheme="hdf5" type="[table]" type_base="[&lt;a&gt;]" uuid="{f11d48cb-f0a0-4208-a366-58d6c7e77290}">
+          <label>Item as List</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.example_datasets" port_format="1.1" uuid="{76dc138e-2136-4958-9509-146eece58968}" x="1300.0" y="1875.0">
+      <label>Example datasets</label>
+      <version>0.1</version>
+      <description>Exposes the example datasets from sklearn</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "classnames": {
+          "editor": null,
+          "label": "Class names",
+          "order": 1,
+          "type": "boolean",
+          "value": true
+        },
+        "color": {
+          "editor": null,
+          "label": "color",
+          "order": 2,
+          "type": "boolean",
+          "value": false
+        },
+        "dataset": {
+          "editor": null,
+          "label": "Dataset",
+          "order": 0,
+          "type": "string",
+          "value": "Iris"
+        },
+        "min_pictures": {
+          "editor": null,
+          "label": "min_pictures",
+          "order": 3,
+          "type": "integer",
+          "value": 10
+        },
+        "resize": {
+          "editor": null,
+          "label": "resize",
+          "order": 4,
+          "type": "float",
+          "value": 0.5
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <output key="X" scheme="hdf5" type="table" type_base="table" uuid="{8873505d-09e7-49e5-85de-d6dd5bb65c4f}">
+          <label>X</label>
+        </output>
+        <output key="Y" scheme="hdf5" type="table" type_base="table" uuid="{deeb9d9c-022f-42b1-9bee-6bd1db0ba87d}">
+          <label>Y</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.decision_tree_classifier" port_format="1.1" uuid="{8e484a8d-c6a5-4740-960f-771d1de10304}" x="1300.0" y="1675.0">
+      <label>Decision Tree Classifier</label>
+      <version>0.1</version>
+      <description>Decision Trees (DTs) are a non-parametric supervised learning methodused for classification and regression. The goal is to create a modelthat predicts the value of a target variable by learning simpledecision rules inferred from the data features.</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "criterion": {
+          "editor": null,
+          "label": "criterion",
+          "order": 1,
+          "type": "string",
+          "value": "gini"
+        },
+        "max_depth": {
+          "editor": null,
+          "label": "max_depth",
+          "order": 0,
+          "type": "string",
+          "value": "3"
+        },
+        "max_features": {
+          "editor": null,
+          "label": "max_features",
+          "order": 3,
+          "type": "string",
+          "value": "None"
+        },
+        "max_leaf_nodes": {
+          "editor": null,
+          "label": "max_leaf_nodes",
+          "order": 6,
+          "type": "string",
+          "value": "None"
+        },
+        "min_impurity_decrease": {
+          "editor": null,
+          "label": "min_impurity_decrease",
+          "order": 8,
+          "type": "string",
+          "value": "0"
+        },
+        "min_impurity_split": {
+          "editor": null,
+          "label": "min_impurity_split",
+          "order": 7,
+          "type": "string",
+          "value": "1e-07"
+        },
+        "min_samples_leaf": {
+          "editor": null,
+          "label": "min_samples_leaf",
+          "order": 5,
+          "type": "string",
+          "value": "1"
+        },
+        "min_samples_split": {
+          "editor": null,
+          "label": "min_samples_split",
+          "order": 4,
+          "type": "string",
+          "value": "2"
+        },
+        "presort": {
+          "editor": null,
+          "label": "presort",
+          "order": 9,
+          "type": "string",
+          "value": "False"
+        },
+        "random_state": {
+          "editor": null,
+          "label": "random_state",
+          "order": 10,
+          "type": "string",
+          "value": "None"
+        },
+        "splitter": {
+          "editor": null,
+          "label": "splitter",
+          "order": 2,
+          "type": "string",
+          "value": "best"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <output key="model" scheme="hdf5" type="model" type_base="model" uuid="{b1379f48-6f8c-4737-885f-ca8b0df81ffd}">
+          <label>Model</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.grid_parsearch" port_format="1.1" uuid="{a780239e-e422-49eb-860a-5dc3312e2c1d}" x="1450.0" y="1800.0">
+      <label>Grid Parameter Search</label>
+      <version>0.1</version>
+      <description>Evaluates each parameter combination in the set of parameter hypercubes given by each table in the list of parameter tables. Each parameter table specify a hypercube of dimension N where N is the number of columns in the table. Every combination of paramater values in each such cube will be sampled.</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "cv": {
+          "editor": null,
+          "label": "Cross validation splits",
+          "order": 0,
+          "type": "integer",
+          "value": 3
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in-model" scheme="hdf5" type="model" type_base="model" uuid="{b7440fad-237d-47b8-a00d-80a24c92e3de}">
+          <label>in-model</label>
+        </input>
+        <input key="parameter space" scheme="hdf5" type="[table]" type_base="[table]" uuid="{3acf7e78-8341-4e9f-b06b-2421f12e873e}">
+          <label>param-space</label>
+        </input>
+        <input key="X" scheme="hdf5" type="table" type_base="table" uuid="{4017c4e1-f256-4a0c-8226-a3d535fa6e00}">
+          <label>X</label>
+        </input>
+        <input key="Y" scheme="hdf5" type="table" type_base="table" uuid="{89ed5dfd-c7d7-49a6-82c9-13776058b5b7}">
+          <label>Y</label>
+        </input>
+        <output key="results" scheme="hdf5" type="table" type_base="table" uuid="{f3d4bddf-e532-45f5-820f-c191e47cb01f}">
+          <label>results</label>
+        </output>
+        <output key="parameters" scheme="hdf5" type="table" type_base="table" uuid="{7c54ade7-2743-4300-b3b2-4ec492cb90d9}">
+          <label>parameters</label>
+        </output>
+        <output key="out-model" scheme="hdf5" type="model" type_base="model" uuid="{89750ed2-6fc8-48c5-b12b-56678b136de7}">
+          <label>out-model</label>
+        </output>
+      </ports>
+    </node>
+    <connection type="[table]" uuid="{21d966ce-3803-4911-a2c0-f74aee3fb366}">
+      <source node="{4604a5c1-df75-472c-8db2-f93602ca07bf}" port="{f11d48cb-f0a0-4208-a366-58d6c7e77290}"/>
+      <destination node="{a780239e-e422-49eb-860a-5dc3312e2c1d}" port="{3acf7e78-8341-4e9f-b06b-2421f12e873e}"/>
+    </connection>
+    <connection type="table" uuid="{3a83e89d-a408-4ffa-a769-e7cee82a8c1a}">
+      <source node="{02266457-e745-46f3-a016-b4ea181bb859}" port="{983416bc-c909-44bd-85b4-be3151882d66}"/>
+      <destination node="{4604a5c1-df75-472c-8db2-f93602ca07bf}" port="{f30b784f-439d-4cbf-9edd-d8cf0033a155}"/>
+    </connection>
+    <connection type="table" uuid="{3da616d6-7c0d-484c-9570-f21658101c0e}">
+      <source node="{76dc138e-2136-4958-9509-146eece58968}" port="{deeb9d9c-022f-42b1-9bee-6bd1db0ba87d}"/>
+      <destination node="{a780239e-e422-49eb-860a-5dc3312e2c1d}" port="{89ed5dfd-c7d7-49a6-82c9-13776058b5b7}"/>
+    </connection>
+    <connection type="table" uuid="{4b4917f3-e88c-49ae-88ec-577253dbd96b}">
+      <source node="{76dc138e-2136-4958-9509-146eece58968}" port="{8873505d-09e7-49e5-85de-d6dd5bb65c4f}"/>
+      <destination node="{a780239e-e422-49eb-860a-5dc3312e2c1d}" port="{4017c4e1-f256-4a0c-8226-a3d535fa6e00}"/>
+    </connection>
+    <connection type="model" uuid="{737fb51f-608f-40f3-8721-5920d0511064}">
+      <source node="{8e484a8d-c6a5-4740-960f-771d1de10304}" port="{b1379f48-6f8c-4737-885f-ca8b0df81ffd}"/>
+      <destination node="{a780239e-e422-49eb-860a-5dc3312e2c1d}" port="{b7440fad-237d-47b8-a00d-80a24c92e3de}"/>
+    </connection>
+  </flow>
+  <flow cls="Flow" is_locked="True" uuid="{b316f789-918c-4fd9-90b4-96cad1260c5c}" x="1250.0" y="1600.0">
+    <label>Randomized Parameter search</label>
+    <ports/>
+    <node id="org.sysess.sympathy.machinelearning.example_datasets" port_format="1.1" uuid="{27ccc8c3-31cd-487e-8b0b-34159c85c808}" x="1350.0" y="1475.0">
+      <label>Example datasets</label>
+      <version>0.1</version>
+      <description>Exposes the example datasets from sklearn</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "classnames": {
+          "editor": null,
+          "label": "Class names",
+          "order": 1,
+          "type": "boolean",
+          "value": true
+        },
+        "color": {
+          "editor": null,
+          "label": "color",
+          "order": 2,
+          "type": "boolean",
+          "value": false
+        },
+        "dataset": {
+          "editor": null,
+          "label": "Dataset",
+          "order": 0,
+          "type": "string",
+          "value": "Iris"
+        },
+        "min_pictures": {
+          "editor": null,
+          "label": "min_pictures",
+          "order": 3,
+          "type": "integer",
+          "value": 10
+        },
+        "resize": {
+          "editor": null,
+          "label": "resize",
+          "order": 4,
+          "type": "float",
+          "value": 0.5
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <output key="X" scheme="hdf5" type="table" type_base="table" uuid="{24c9d447-9357-432c-848f-029038a690bc}">
+          <label>X</label>
+        </output>
+        <output key="Y" scheme="hdf5" type="table" type_base="table" uuid="{166bccf2-e0d7-4fa9-81ac-84dff84d00c6}">
+          <label>Y</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.parameter_distribution" port_format="1.1" uuid="{2e5def1b-bd6a-43ef-91c2-f0ced87d9c3f}" x="1350.0" y="1375.0">
+      <label>Parameter Distribution</label>
+      <version>0.1</version>
+      <description>Creates a range of values giving a distribution for a parameter</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "N": {
+          "editor": null,
+          "label": "Number of points",
+          "order": 3,
+          "type": "integer",
+          "value": 100
+        },
+        "as_integer": {
+          "editor": null,
+          "label": "as integer",
+          "order": 5,
+          "type": "boolean",
+          "value": true
+        },
+        "max": {
+          "editor": null,
+          "label": "Maximum",
+          "order": 2,
+          "type": "float",
+          "value": 100.0
+        },
+        "method": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": ["linear", "exponential"],
+            "type": "combobox"
+          },
+          "label": "Distribution",
+          "order": 4,
+          "type": "string",
+          "value": "linear"
+        },
+        "min": {
+          "editor": null,
+          "label": "Minimum",
+          "order": 1,
+          "type": "float",
+          "value": 2.0
+        },
+        "name": {
+          "editor": null,
+          "label": "Parameter Name:",
+          "order": 0,
+          "type": "string",
+          "value": "max_depth"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{5609b837-d7a8-4702-bda0-c9365acbfde0}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.decision_tree_classifier" port_format="1.1" uuid="{3f386f40-921b-4183-ab12-49f69489eb21}" x="1350.0" y="1275.0">
+      <label>Decision Tree Classifier</label>
+      <version>0.1</version>
+      <description>Decision Trees (DTs) are a non-parametric supervised learning methodused for classification and regression. The goal is to create a modelthat predicts the value of a target variable by learning simpledecision rules inferred from the data features.</description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "criterion": {
+          "editor": null,
+          "label": "criterion",
+          "order": 1,
+          "type": "string",
+          "value": "gini"
+        },
+        "max_depth": {
+          "editor": null,
+          "label": "max_depth",
+          "order": 0,
+          "type": "string",
+          "value": "3"
+        },
+        "max_features": {
+          "editor": null,
+          "label": "max_features",
+          "order": 3,
+          "type": "string",
+          "value": "None"
+        },
+        "max_leaf_nodes": {
+          "editor": null,
+          "label": "max_leaf_nodes",
+          "order": 6,
+          "type": "string",
+          "value": "None"
+        },
+        "min_impurity_decrease": {
+          "editor": null,
+          "label": "min_impurity_decrease",
+          "order": 8,
+          "type": "string",
+          "value": "0"
+        },
+        "min_impurity_split": {
+          "editor": null,
+          "label": "min_impurity_split",
+          "order": 7,
+          "type": "string",
+          "value": "1e-07"
+        },
+        "min_samples_leaf": {
+          "editor": null,
+          "label": "min_samples_leaf",
+          "order": 5,
+          "type": "string",
+          "value": "1"
+        },
+        "min_samples_split": {
+          "editor": null,
+          "label": "min_samples_split",
+          "order": 4,
+          "type": "string",
+          "value": "2"
+        },
+        "presort": {
+          "editor": null,
+          "label": "presort",
+          "order": 9,
+          "type": "string",
+          "value": "False"
+        },
+        "random_state": {
+          "editor": null,
+          "label": "random_state",
+          "order": 10,
+          "type": "string",
+          "value": "None"
+        },
+        "splitter": {
+          "editor": null,
+          "label": "splitter",
+          "order": 2,
+          "type": "string",
+          "value": "best"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <output key="model" scheme="hdf5" type="model" type_base="model" uuid="{ddcbdcbd-6d17-4c65-8029-af7fd4604ea2}">
+          <label>Model</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.machinelearning.randomized_parsearch" port_format="1.1" uuid="{41149753-d1bd-4a48-a71f-15e8a3dbc6eb}" x="1500.0" y="1400.0">
+      <label>Randomized Parameter Search</label>
+      <version>0.1</version>
+      <description>Performs a randomized parameter search returning scores and best model found. Uses table as a "hypercube" of parameters to sample from. Ie. all combinations of parameters from all columns have equal chance of beeing sampled. Use masked values for parameter/columns with different lengths. </description>
+      <author>Mathias Broxvall</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "cv": {
+          "editor": null,
+          "label": "Cross validation splits",
+          "order": 0,
+          "type": "integer",
+          "value": 3
+        },
+        "n_iter": {
+          "editor": null,
+          "label": "iterations",
+          "order": 1,
+          "type": "integer",
+          "value": 50
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in-model" scheme="hdf5" type="model" type_base="model" uuid="{a075a135-e55c-425a-97f7-27f29b90d573}">
+          <label>in-model</label>
+        </input>
+        <input key="parameter space" scheme="hdf5" type="table" type_base="table" uuid="{f8240e4b-8124-42ea-b8bd-58bf3a49e3a7}">
+          <label>param-space</label>
+        </input>
+        <input key="X" scheme="hdf5" type="table" type_base="table" uuid="{d6be8995-ce91-465e-868c-e6956c55c927}">
+          <label>X</label>
+        </input>
+        <input key="Y" scheme="hdf5" type="table" type_base="table" uuid="{25a2459a-df89-4a1f-81b8-79613c4af219}">
+          <label>Y</label>
+        </input>
+        <output key="results" scheme="hdf5" type="table" type_base="table" uuid="{a5a55381-0470-4ab7-bbc0-55d21631b3bb}">
+          <label>results</label>
+        </output>
+        <output key="parameters" scheme="hdf5" type="table" type_base="table" uuid="{51208f82-8456-41ab-add0-17ee9304c825}">
+          <label>parameters</label>
+        </output>
+        <output key="out-model" scheme="hdf5" type="model" type_base="model" uuid="{70ed094c-ad0f-46d1-b38b-f91a6b970cd2}">
+          <label>out-model</label>
+        </output>
+      </ports>
+    </node>
+    <connection type="model" uuid="{6d3fd2c6-ce7c-4491-a918-43cadd7e9e96}">
+      <source node="{3f386f40-921b-4183-ab12-49f69489eb21}" port="{ddcbdcbd-6d17-4c65-8029-af7fd4604ea2}"/>
+      <destination node="{41149753-d1bd-4a48-a71f-15e8a3dbc6eb}" port="{a075a135-e55c-425a-97f7-27f29b90d573}"/>
+    </connection>
+    <connection type="table" uuid="{6d559666-3d67-4174-94c6-b0adb359abfa}">
+      <source node="{27ccc8c3-31cd-487e-8b0b-34159c85c808}" port="{24c9d447-9357-432c-848f-029038a690bc}"/>
+      <destination node="{41149753-d1bd-4a48-a71f-15e8a3dbc6eb}" port="{d6be8995-ce91-465e-868c-e6956c55c927}"/>
+    </connection>
+    <connection type="table" uuid="{7e43b8d5-618b-481e-8d93-861b09eb3698}">
+      <source node="{27ccc8c3-31cd-487e-8b0b-34159c85c808}" port="{166bccf2-e0d7-4fa9-81ac-84dff84d00c6}"/>
+      <destination node="{41149753-d1bd-4a48-a71f-15e8a3dbc6eb}" port="{25a2459a-df89-4a1f-81b8-79613c4af219}"/>
+    </connection>
+    <connection type="table" uuid="{a2942375-8d58-4bdb-b318-7285639fbeda}">
+      <source node="{2e5def1b-bd6a-43ef-91c2-f0ced87d9c3f}" port="{5609b837-d7a8-4702-bda0-c9365acbfde0}"/>
+      <destination node="{41149753-d1bd-4a48-a71f-15e8a3dbc6eb}" port="{f8240e4b-8124-42ea-b8bd-58bf3a49e3a7}"/>
+    </connection>
+  </flow>
+</flow>

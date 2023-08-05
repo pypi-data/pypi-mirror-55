@@ -1,0 +1,1760 @@
+<?xml version='1.0' encoding='US-ASCII'?>
+<flow xmlns="http://www.sysess.org/sympathyfordata/workflow/1.0" cls="Flow" uuid="{bfe25f77-cc90-484c-a39e-76991771fd35}">
+  <label>select_columns_in_adaf.syx</label>
+  <author>Unknown</author>
+  <version>1.0</version>
+  <ports/>
+  <node id="org.sysess.sympathy.data.adaf.adafstructuretable" port_format="1.1" uuid="{09adf54e-a931-4b8b-be4e-ed7c93c53a2e}" x="2275.0" y="2275.0">
+    <label>ADAF structure to Table</label>
+    <version>1.0</version>
+    <description>Creates Table from the structure of the ADAF.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">{"type": "group"}</parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="adaf" type_base="adaf" uuid="{739dbe74-18d0-4951-95fc-40abf444fe74}">
+        <label>Input ADAF</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="table" type_base="table" uuid="{83bf5e7a-ecc6-4a45-8a10-736f0a7c9106}">
+        <label>ADAF structure as Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.random.randomadaf" port_format="1.1" uuid="{09eb19d1-3c10-469c-a6af-2d01802ab52f}" x="1675.0" y="1725.0">
+    <label>Random ADAF</label>
+    <version>0.1</version>
+    <description>Generate an ADAF with random numbers between 0 and 1.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "meta_attributes": {
+        "editor": {
+          "max": 10000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Meta attributes:",
+        "order": 1,
+        "type": "integer",
+        "value": 1
+      },
+      "meta_entries": {
+        "editor": {
+          "max": 1000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Meta columns:",
+        "order": 0,
+        "type": "integer",
+        "value": 2
+      },
+      "rasters": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Rasters per system",
+        "order": 5,
+        "type": "integer",
+        "value": 2
+      },
+      "res_attributes": {
+        "editor": {
+          "max": 10000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Res attributes:",
+        "order": 3,
+        "type": "integer",
+        "value": 1
+      },
+      "res_entries": {
+        "editor": {
+          "max": 1000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Res columns:",
+        "order": 2,
+        "type": "integer",
+        "value": 2
+      },
+      "signal_attributes": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Signal attributes",
+        "order": 7,
+        "type": "integer",
+        "value": 1
+      },
+      "signal_entries": {
+        "editor": {
+          "max": 1000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Signals per raster",
+        "order": 6,
+        "type": "integer",
+        "value": 2
+      },
+      "signal_length": {
+        "editor": {
+          "max": 100000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Signal length",
+        "order": 8,
+        "type": "integer",
+        "value": 1
+      },
+      "systems": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Systems",
+        "order": 4,
+        "type": "integer",
+        "value": 2
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="adaf" type_base="adaf" uuid="{e950c614-32f6-4e35-9a2a-0236a81ef26b}">
+        <label>ADAF with random numbers.</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.builtin.empty" port_format="1.1" uuid="{0f7b9495-7e68-43a2-9d87-075d2ee79326}" x="1675.0" y="1525.0">
+    <label>Empty</label>
+    <version>1.1</version>
+    <description>Generate empty data of inferred or specified type</description>
+    <author>Erik der Hagopian &lt;erik.hagopian@combine.se&gt;, Benedikt Ziegler &lt;benedikt.ziegler@combine.se&gt;</author>
+    <copyright>(C) 2016 Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "datatype": {
+        "editor": null,
+        "label": "Datatype",
+        "order": 0,
+        "type": "string",
+        "value": "&lt;a&gt;"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="" scheme="hdf5" type="adaf" type_base="&lt;a&gt;" uuid="{a7f7b37f-b426-4bba-a196-ef2eee98c58b}">
+        <label>Output port containing empty data (must be connected or specified)</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.adaf.adafstructuretable" port_format="1.1" uuid="{1a3f4c66-56f6-4fa0-90e4-a58a5539cd92}" x="1825.0" y="2200.0">
+    <label>ADAF structure to Table</label>
+    <version>1.0</version>
+    <description>Creates Table from the structure of the ADAF.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">{"type": "group"}</parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="adaf" type_base="adaf" uuid="{c3887235-75f2-42ef-88c1-e73c2023c6ff}">
+        <label>Input ADAF</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="table" type_base="table" uuid="{bcf406a9-7393-4bf5-a3ee-3fd312816a30}">
+        <label>ADAF structure as Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.sorttable" port_format="1.1" uuid="{20b5d3c1-5d8c-4b41-8f25-613a60d8779f}" x="2525.0" y="2300.0">
+    <label>Sort rows in Table</label>
+    <version>1.1</version>
+    <description>Sort table rows according to ascending/descending order of a sort
+column.</description>
+    <author>Greger Cronquist</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "column": {
+        "editor": {
+          "display": null,
+          "edit": true,
+          "filter": true,
+          "include_empty": false,
+          "options": "",
+          "type": "combobox"
+        },
+        "label": "Sort column",
+        "list": ["Type", "System", "Raster", "Parameter", "Index"],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [3],
+        "value_names": ["Parameter"]
+      },
+      "sort_order": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Sort order",
+        "list": ["Ascending", "Descending"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Ascending"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Input" scheme="hdf5" type="table" type_base="table" uuid="{227bc18d-8884-4631-8e57-bedec2e1d018}">
+        <label>Input</label>
+      </input>
+      <output key="Output" scheme="hdf5" type="table" type_base="table" uuid="{aba1f006-067a-405f-be4f-a2d415afd4a1}">
+        <label>Input</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.adaf.selectcolumnsadafwithtable" port_format="1.1" uuid="{2bca6fca-32c5-43ca-aaa0-e29c26ae08d9}" x="1825.0" y="1975.0">
+    <label>Select columns in ADAF with Table (complement)</label>
+    <version>1.0</version>
+    <description>Select the columns to keep in ADAF using selection table created by ADAF structure to table</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "complement": {
+        "editor": null,
+        "label": "Remove selected columns",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="selection" scheme="hdf5" type="table" type_base="table" uuid="{eef74caf-328f-4612-b6cf-f3be35836e01}">
+        <label>ADAF structure selection</label>
+      </input>
+      <input key="data" scheme="hdf5" type="adaf" type_base="adaf" uuid="{b7ba5e78-c211-4f80-87dd-a3e8b939254a}">
+        <label>ADAF data matched with selection</label>
+      </input>
+      <output key="data" scheme="hdf5" type="adaf" type_base="adaf" uuid="{922d93d1-09fb-4f9e-9a60-f84cb34547cd}">
+        <label>ADAF data after selection</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.vjointablenode" port_format="1.1" uuid="{36231139-5fcf-4927-b8ec-33da6f95055e}" x="2400.0" y="2200.0">
+    <label>VJoin Table</label>
+    <version>1.0</version>
+    <description>Vertical join of two Tables.</description>
+    <author>Alexander Busck</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "fill": {
+        "editor": null,
+        "label": "Complement missing columns",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "fill_strategy": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Complement strategy",
+        "list": ["Complement with nan or empty string", "Mask missing values"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [1],
+        "value_names": ["Mask missing values"]
+      },
+      "minimum_increment": {
+        "editor": {
+          "max": 1,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Increment for empty tables",
+        "order": 3,
+        "type": "integer",
+        "value": 1
+      },
+      "output_index": {
+        "editor": {
+          "placeholder": "(none)",
+          "type": "lineedit"
+        },
+        "label": "Output index",
+        "order": 2,
+        "type": "string",
+        "value": ""
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="table" type_base="table" uuid="{19d95795-073a-4cc3-a542-12aa1ff629dc}">
+        <label>Input Table</label>
+      </input>
+      <input key="port2" scheme="hdf5" type="table" type_base="table" uuid="{3f8d60af-af83-4a31-8f28-ebb28bf53e84}">
+        <label>Input Table</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="table" type_base="table" uuid="{ce3746ce-8f12-41bd-8852-ae23ce1232cb}">
+        <label>Joined Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.adaf.selectcolumnsadafwithtable" port_format="1.1" uuid="{3f6a1a97-8e5c-4ca9-a6ce-2bba0c05079d}" x="1825.0" y="1625.0">
+    <label>Select columns in ADAF with Table</label>
+    <version>1.0</version>
+    <description>Select the columns to keep in ADAF using selection table created by ADAF structure to table</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "complement": {
+        "editor": null,
+        "label": "Remove selected columns",
+        "order": 0,
+        "type": "boolean",
+        "value": false
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="selection" scheme="hdf5" type="table" type_base="table" uuid="{db7aec3e-219d-45c5-a4c8-9543481b1209}">
+        <label>ADAF structure selection</label>
+      </input>
+      <input key="data" scheme="hdf5" type="adaf" type_base="adaf" uuid="{700a621b-b77e-4705-a9be-e69d1ae24c01}">
+        <label>ADAF data matched with selection</label>
+      </input>
+      <output key="data" scheme="hdf5" type="adaf" type_base="adaf" uuid="{2e705bc8-38ce-4589-95fa-0ce0f7f0daa8}">
+        <label>ADAF data after selection</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.create.createtable" port_format="1.1" uuid="{4453efbd-204e-4e5d-8ddc-3753f59cba35}" x="1675.0" y="1975.0">
+    <label>Manually Create Table (empty selection)</label>
+    <version>1.0</version>
+    <description>Create a Table from scratch in a configuration Gui.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "json_table": {
+        "editor": null,
+        "label": "GUI",
+        "order": 0,
+        "type": "string",
+        "value": "[[\"Type\", \"U\", []], [\"System\", \"U\", []], [\"Raster\", \"U\", []], [\"Parameter\", \"U\", []], [\"Index\", \"U\", []]]"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{8f88bebe-6d30-4cb8-b39e-518534a95644}">
+        <label>Manually created table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.adaf.adafstructuretable" port_format="1.1" uuid="{47b3a9e7-7396-4fba-88ed-300008d9ef1f}" x="1975.0" y="1975.0">
+    <label>ADAF structure to Table</label>
+    <version>1.0</version>
+    <description>Creates Table from the structure of the ADAF.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">{"type": "group"}</parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="adaf" type_base="adaf" uuid="{6f3e9d0e-3f82-4554-a668-99228df5d157}">
+        <label>Input ADAF</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="table" type_base="table" uuid="{077ac16d-092d-4120-abc6-b45ae9861298}">
+        <label>ADAF structure as Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.random.randomadaf" port_format="1.1" uuid="{535c77e0-d8d4-4166-8156-cfa0160b3eb7}" x="1675.0" y="1875.0">
+    <label>Random ADAF</label>
+    <version>0.1</version>
+    <description>Generate an ADAF with random numbers between 0 and 1.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "meta_attributes": {
+        "editor": {
+          "max": 10000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Meta attributes:",
+        "order": 1,
+        "type": "integer",
+        "value": 1
+      },
+      "meta_entries": {
+        "editor": {
+          "max": 1000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Meta columns:",
+        "order": 0,
+        "type": "integer",
+        "value": 2
+      },
+      "rasters": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Rasters per system",
+        "order": 5,
+        "type": "integer",
+        "value": 2
+      },
+      "res_attributes": {
+        "editor": {
+          "max": 10000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Res attributes:",
+        "order": 3,
+        "type": "integer",
+        "value": 1
+      },
+      "res_entries": {
+        "editor": {
+          "max": 1000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Res columns:",
+        "order": 2,
+        "type": "integer",
+        "value": 2
+      },
+      "signal_attributes": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Signal attributes",
+        "order": 7,
+        "type": "integer",
+        "value": 1
+      },
+      "signal_entries": {
+        "editor": {
+          "max": 1000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Signals per raster",
+        "order": 6,
+        "type": "integer",
+        "value": 2
+      },
+      "signal_length": {
+        "editor": {
+          "max": 100000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Signal length",
+        "order": 8,
+        "type": "integer",
+        "value": 1
+      },
+      "systems": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Systems",
+        "order": 4,
+        "type": "integer",
+        "value": 2
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="adaf" type_base="adaf" uuid="{8f76ec17-e78f-44e8-a61c-ee72eee2fb67}">
+        <label>ADAF with random numbers.</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.adaf.selectcolumnsadafswithtables" port_format="1.1" uuid="{586ae8c8-5ee2-435e-92ff-b170d999a91e}" x="2275.0" y="2550.0">
+    <label>Select columns in ADAFs with structure Tables</label>
+    <version>1.0</version>
+    <description>Select the columns to keep in ADAF using selection table created by ADAF structure to table</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "complement": {
+        "editor": null,
+        "label": "Remove selected columns",
+        "order": 0,
+        "type": "boolean",
+        "value": false
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="selection" scheme="hdf5" type="[table]" type_base="[table]" uuid="{9089bb1e-5d7e-4d41-bc95-e36651071bd0}">
+        <label>ADAF structure selection</label>
+      </input>
+      <input key="data" scheme="hdf5" type="[adaf]" type_base="[adaf]" uuid="{cebda5d3-ecc1-4f70-a373-afb0d58be275}">
+        <label>ADAF data matched with selection</label>
+      </input>
+      <output key="data" scheme="hdf5" type="[adaf]" type_base="[adaf]" uuid="{7205bd18-5660-4ce2-8d45-2d1a21e6078f}">
+        <label>ADAF data after selection</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.adaf.selectcolumnsadafwithtable" port_format="1.1" uuid="{5c0f2c5b-cb08-460c-8dd0-7dd0ac111f98}" x="2125.0" y="2125.0">
+    <label>Select columns in ADAF with structure Table</label>
+    <version>1.0</version>
+    <description>Select the columns to keep in ADAF using selection table created by ADAF structure to table</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "complement": {
+        "editor": null,
+        "label": "Remove selected columns",
+        "order": 0,
+        "type": "boolean",
+        "value": false
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="selection" scheme="hdf5" type="table" type_base="table" uuid="{ff8ada7d-6d42-41c7-8fe6-069f2bbfaa39}">
+        <label>ADAF structure selection</label>
+      </input>
+      <input key="data" scheme="hdf5" type="adaf" type_base="adaf" uuid="{da2be04b-0631-4ae7-b436-02995541480e}">
+        <label>ADAF data matched with selection</label>
+      </input>
+      <output key="data" scheme="hdf5" type="adaf" type_base="adaf" uuid="{7181be18-72f3-403b-ab27-e7a00311a0cf}">
+        <label>ADAF data after selection</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{6341b44a-6a1e-4379-86d4-6cd42beafd83}" x="2125.0" y="2450.0">
+    <label>Item to List</label>
+    <version>1.0</version>
+    <description>Create a single item list containing item.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "n": {
+        "editor": null,
+        "label": "Repeat number of times",
+        "order": 0,
+        "type": "integer",
+        "value": 1
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="item" scheme="hdf5" type="adaf" type_base="&lt;a&gt;" uuid="{d8b410cb-0b2d-4adb-9f23-ef61f68b37ec}">
+        <label>Input Item</label>
+      </input>
+      <output key="list" scheme="hdf5" type="[adaf]" type_base="[&lt;a&gt;]" uuid="{83c646da-59b2-46a7-801e-3f643db9d134}">
+        <label>Item as List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.slice.slicedatatable" port_format="1.1" uuid="{66ff7626-79ab-4413-83ab-6ac60c8a4d5f}" x="1975.0" y="2200.0">
+    <label>Slice data Table
+(odd)</label>
+    <version>1.0</version>
+    <description>Slice rows in Table. The number of columns are conserved during
+the slice operation.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "limit": {
+        "editor": {
+          "max": 10000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Limit preview to",
+        "order": 1,
+        "type": "integer",
+        "value": 100
+      },
+      "slice": {
+        "editor": null,
+        "label": "Slice",
+        "order": 0,
+        "type": "string",
+        "value": "[::2]"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="table" type_base="table" uuid="{80e99ad0-331f-41ba-a54d-8039b09771ea}">
+        <label>Input Table</label>
+      </input>
+      <output key="port2" scheme="hdf5" type="table" type_base="table" uuid="{85d5896d-a84d-4dde-a14a-55cc01180698}">
+        <label>Table consisting of the rows that been sliced out from the incoming Table according to the defined pattern. The number of columns are conserved during the slice operation</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.adaf.selectcolumnsadafwithtable" port_format="1.1" uuid="{75603302-2624-46eb-83d8-441e7825ac5c}" x="2125.0" y="2275.0">
+    <label>Select columns in ADAF with structure Table (complement)</label>
+    <version>1.0</version>
+    <description>Select the columns to keep in ADAF using selection table created by ADAF structure to table</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "complement": {
+        "editor": null,
+        "label": "Remove selected columns",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="selection" scheme="hdf5" type="table" type_base="table" uuid="{02e3e61b-62ab-4271-a69a-2c0d86fc195d}">
+        <label>ADAF structure selection</label>
+      </input>
+      <input key="data" scheme="hdf5" type="adaf" type_base="adaf" uuid="{1fe16b82-098f-439a-8c8a-27f454cdd57f}">
+        <label>ADAF data matched with selection</label>
+      </input>
+      <output key="data" scheme="hdf5" type="adaf" type_base="adaf" uuid="{47fd755e-e997-45aa-9e3c-c0e4c4163060}">
+        <label>ADAF data after selection</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.adaf.adafstructuretable" port_format="1.1" uuid="{7f43053a-82a4-409f-a804-c25c80f951ed}" x="2275.0" y="2125.0">
+    <label>ADAF structure to Table</label>
+    <version>1.0</version>
+    <description>Creates Table from the structure of the ADAF.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">{"type": "group"}</parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="adaf" type_base="adaf" uuid="{784e9b13-87f9-43d2-a9cf-b32c2a7ac2f8}">
+        <label>Input ADAF</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="table" type_base="table" uuid="{5fc96b9e-bd9b-4d40-ac62-b453204342ae}">
+        <label>ADAF structure as Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.assertequaltable" port_format="1.1" uuid="{855c786a-a589-45e8-8353-7579bf00ff78}" x="2125.0" y="1925.0">
+    <label>Assert Equal Table</label>
+    <version>1.0</version>
+    <description>Compare two incoming tables and raise an error if they differ.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "abs_tol": {
+        "editor": null,
+        "label": "Absolute tolerance",
+        "order": 6,
+        "type": "float",
+        "value": 0.0
+      },
+      "col_attrs": {
+        "editor": null,
+        "label": "Compare column attributes",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "col_order": {
+        "editor": null,
+        "label": "Compare column order",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "inexact_float": {
+        "editor": null,
+        "label": "Approximate comparison of floats",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "rel_tol": {
+        "editor": null,
+        "label": "Relative tolerance",
+        "order": 5,
+        "type": "float",
+        "value": 0.0
+      },
+      "tbl_attrs": {
+        "editor": null,
+        "label": "Compare table attributes",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "tbl_names": {
+        "editor": null,
+        "label": "Compare table names",
+        "order": 2,
+        "type": "boolean",
+        "value": true
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="table1" scheme="hdf5" type="table" type_base="table" uuid="{50524ae2-8444-4c27-a2c2-bee59c785c95}">
+        <label>Table A</label>
+      </input>
+      <input key="table2" scheme="hdf5" type="table" type_base="table" uuid="{42644e7f-2752-44ce-9ec5-9ca448aadc28}">
+        <label>Table B</label>
+      </input>
+      <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{e5e282ab-0e98-48d9-a99a-300bbecbe597}">
+        <label>Output Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.create.createtable" port_format="1.1" uuid="{9d4d6a90-0082-46b5-9e45-6ac54ee3351c}" x="1675.0" y="1625.0">
+    <label>Manually Create Table (empty selection)</label>
+    <version>1.0</version>
+    <description>Create a Table from scratch in a configuration Gui.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "json_table": {
+        "editor": null,
+        "label": "GUI",
+        "order": 0,
+        "type": "string",
+        "value": "[[\"Type\", \"U\", []], [\"System\", \"U\", []], [\"Raster\", \"U\", []], [\"Parameter\", \"U\", []], [\"Index\", \"U\", []]]"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{1eb588b8-a554-48de-98bb-67e05c5ed3eb}">
+        <label>Manually created table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{a0acdc9a-0f48-4bdf-b98e-5f77b8cc4787}" x="2125.0" y="2550.0">
+    <label>Item to List</label>
+    <version>1.0</version>
+    <description>Create a single item list containing item.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "n": {
+        "editor": null,
+        "label": "Repeat number of times",
+        "order": 0,
+        "type": "integer",
+        "value": 1
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="item" scheme="hdf5" type="table" type_base="&lt;a&gt;" uuid="{c7af9be4-a18d-42d8-8d80-d30b921c2931}">
+        <label>Input Item</label>
+      </input>
+      <output key="list" scheme="hdf5" type="[table]" type_base="[&lt;a&gt;]" uuid="{a7490cab-9d97-4364-9bef-7eb2ea7768f6}">
+        <label>Item as List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.sorttable" port_format="1.1" uuid="{a1b9cda9-7b07-424b-89c0-f7bd2ba1ec6a}" x="2525.0" y="2200.0">
+    <label>Sort rows in Table</label>
+    <version>1.1</version>
+    <description>Sort table rows according to ascending/descending order of a sort
+column.</description>
+    <author>Greger Cronquist</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "column": {
+        "editor": {
+          "display": null,
+          "edit": true,
+          "filter": true,
+          "include_empty": false,
+          "options": "",
+          "type": "combobox"
+        },
+        "label": "Sort column",
+        "list": ["Type", "System", "Raster", "Parameter", "Index"],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [3],
+        "value_names": ["Parameter"]
+      },
+      "sort_order": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Sort order",
+        "list": ["Ascending", "Descending"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Ascending"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Input" scheme="hdf5" type="table" type_base="table" uuid="{9c9a07f5-9617-406f-8ed3-082381612e8b}">
+        <label>Input</label>
+      </input>
+      <output key="Output" scheme="hdf5" type="table" type_base="table" uuid="{dca09284-c5ee-45c3-b600-82423579adcf}">
+        <label>Input</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.vjointablenodes" port_format="1.1" uuid="{aaf4404f-abb6-40c1-b13f-f9862c80da65}" x="2525.0" y="2550.0">
+    <label>VJoin Tables</label>
+    <version>1.0</version>
+    <description>Vertical join of Tables.</description>
+    <author>Alexander Busck</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "fill": {
+        "editor": null,
+        "label": "Complement missing columns",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "fill_strategy": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Complement strategy",
+        "list": ["Complement with nan or empty string", "Mask missing values"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [1],
+        "value_names": ["Mask missing values"]
+      },
+      "minimum_increment": {
+        "editor": {
+          "max": 1,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Increment for empty tables",
+        "order": 3,
+        "type": "integer",
+        "value": 1
+      },
+      "output_index": {
+        "editor": {
+          "placeholder": "(none)",
+          "type": "lineedit"
+        },
+        "label": "Output index",
+        "order": 2,
+        "type": "string",
+        "value": ""
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="[table]" type_base="[table]" uuid="{884c1852-8bd3-4a35-b0f9-f391bc2263df}">
+        <label>Input Tables</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="table" type_base="table" uuid="{a28c8e55-3b2b-48f2-8f48-64a9d2edd0eb}">
+        <label>Joined Tables</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.adaf.adafstructuretable" port_format="1.1" uuid="{afd44872-c353-43fe-8eb0-e7984caa94f1}" x="1825.0" y="1875.0">
+    <label>ADAF structure to Table</label>
+    <version>1.0</version>
+    <description>Creates Table from the structure of the ADAF.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">{"type": "group"}</parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="adaf" type_base="adaf" uuid="{e371e594-bc3f-40c0-9a1a-5be42b9de78a}">
+        <label>Input ADAF</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="table" type_base="table" uuid="{0cddee64-f321-4203-b3db-24eadddbb036}">
+        <label>ADAF structure as Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.adaf.adafsstructuretables" port_format="1.1" uuid="{b62db5ee-2b15-4641-8173-fa8d9d86f36b}" x="2400.0" y="2450.0">
+    <label>ADAFs structure to Tables</label>
+    <version>1.0</version>
+    <description>Creates Table from the structure of the ADAF.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">{"type": "group"}</parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="[adaf]" type_base="[adaf]" uuid="{084e083b-0f2f-4e53-8756-a48606cea4fc}">
+        <label>Input ADAF</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="[table]" type_base="[table]" uuid="{193179f4-3253-41ed-9e5d-d965ff44f0cc}">
+        <label>ADAF structure as Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.random.randomadaf" port_format="1.1" uuid="{bd9447f9-50d5-4672-9c3e-b2c64853c96c}" x="1675.0" y="2200.0">
+    <label>Random ADAF</label>
+    <version>0.1</version>
+    <description>Generate an ADAF with random numbers between 0 and 1.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "meta_attributes": {
+        "editor": {
+          "max": 10000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Meta attributes:",
+        "order": 1,
+        "type": "integer",
+        "value": 1
+      },
+      "meta_entries": {
+        "editor": {
+          "max": 1000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Meta columns:",
+        "order": 0,
+        "type": "integer",
+        "value": 2
+      },
+      "rasters": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Rasters per system",
+        "order": 5,
+        "type": "integer",
+        "value": 2
+      },
+      "res_attributes": {
+        "editor": {
+          "max": 10000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Res attributes:",
+        "order": 3,
+        "type": "integer",
+        "value": 1
+      },
+      "res_entries": {
+        "editor": {
+          "max": 1000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Res columns:",
+        "order": 2,
+        "type": "integer",
+        "value": 2
+      },
+      "signal_attributes": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Signal attributes",
+        "order": 7,
+        "type": "integer",
+        "value": 1
+      },
+      "signal_entries": {
+        "editor": {
+          "max": 1000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Signals per raster",
+        "order": 6,
+        "type": "integer",
+        "value": 2
+      },
+      "signal_length": {
+        "editor": {
+          "max": 100000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Signal length",
+        "order": 8,
+        "type": "integer",
+        "value": 1
+      },
+      "systems": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Systems",
+        "order": 4,
+        "type": "integer",
+        "value": 2
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="adaf" type_base="adaf" uuid="{6cd2f2bf-8532-4157-a2c8-b4b831b3bb2d}">
+        <label>ADAF with random numbers.</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.random.randomadaf" port_format="1.1" uuid="{c14169f4-4eeb-4a81-83eb-fc3f5369c5a3}" x="1675.0" y="2500.0">
+    <label>Random ADAF</label>
+    <version>0.1</version>
+    <description>Generate an ADAF with random numbers between 0 and 1.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "meta_attributes": {
+        "editor": {
+          "max": 10000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Meta attributes:",
+        "order": 1,
+        "type": "integer",
+        "value": 1
+      },
+      "meta_entries": {
+        "editor": {
+          "max": 1000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Meta columns:",
+        "order": 0,
+        "type": "integer",
+        "value": 2
+      },
+      "rasters": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Rasters per system",
+        "order": 5,
+        "type": "integer",
+        "value": 2
+      },
+      "res_attributes": {
+        "editor": {
+          "max": 10000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Res attributes:",
+        "order": 3,
+        "type": "integer",
+        "value": 1
+      },
+      "res_entries": {
+        "editor": {
+          "max": 1000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Res columns:",
+        "order": 2,
+        "type": "integer",
+        "value": 2
+      },
+      "signal_attributes": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Signal attributes",
+        "order": 7,
+        "type": "integer",
+        "value": 1
+      },
+      "signal_entries": {
+        "editor": {
+          "max": 1000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Signals per raster",
+        "order": 6,
+        "type": "integer",
+        "value": 2
+      },
+      "signal_length": {
+        "editor": {
+          "max": 100000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Signal length",
+        "order": 8,
+        "type": "integer",
+        "value": 1
+      },
+      "systems": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Systems",
+        "order": 4,
+        "type": "integer",
+        "value": 2
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="adaf" type_base="adaf" uuid="{c81b0654-975b-4c4a-af00-59918e2d8cd9}">
+        <label>ADAF with random numbers.</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.adaf.adafstructuretable" port_format="1.1" uuid="{c77c6b56-77da-4438-ad3d-ae035f871d4b}" x="1975.0" y="1625.0">
+    <label>ADAF structure to Table</label>
+    <version>1.0</version>
+    <description>Creates Table from the structure of the ADAF.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">{"type": "group"}</parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="adaf" type_base="adaf" uuid="{3ce9423d-6153-40cc-af5f-c031ff06720c}">
+        <label>Input ADAF</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="table" type_base="table" uuid="{e4249363-5d44-4348-bd7f-617229a5a03b}">
+        <label>ADAF structure as Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.adaf.adafsstructuretables" port_format="1.1" uuid="{c877d91b-2e9f-4d1a-9df3-1b14bbdb4eeb}" x="2400.0" y="2550.0">
+    <label>ADAFs structure to Tables</label>
+    <version>1.0</version>
+    <description>Creates Table from the structure of the ADAF.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">{"type": "group"}</parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="[adaf]" type_base="[adaf]" uuid="{d503eb9b-6345-4c4f-8741-a95b09833f5d}">
+        <label>Input ADAF</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="[table]" type_base="[table]" uuid="{11167669-6b33-4d09-a0eb-ab0cf37c5503}">
+        <label>ADAF structure as Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.vjointablenodes" port_format="1.1" uuid="{d7d5c15f-0433-4fa9-9c20-b27c6ba34614}" x="2525.0" y="2450.0">
+    <label>VJoin Tables</label>
+    <version>1.0</version>
+    <description>Vertical join of Tables.</description>
+    <author>Alexander Busck</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "fill": {
+        "editor": null,
+        "label": "Complement missing columns",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "fill_strategy": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Complement strategy",
+        "list": ["Complement with nan or empty string", "Mask missing values"],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [1],
+        "value_names": ["Mask missing values"]
+      },
+      "minimum_increment": {
+        "editor": {
+          "max": 1,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Increment for empty tables",
+        "order": 3,
+        "type": "integer",
+        "value": 1
+      },
+      "output_index": {
+        "editor": {
+          "placeholder": "(none)",
+          "type": "lineedit"
+        },
+        "label": "Output index",
+        "order": 2,
+        "type": "string",
+        "value": ""
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="[table]" type_base="[table]" uuid="{798d9329-543e-41eb-986e-4104ef28c9eb}">
+        <label>Input Tables</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="table" type_base="table" uuid="{c8944a4f-4039-4a0c-b3b1-35caede68753}">
+        <label>Joined Tables</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.assertequaltable" port_format="1.1" uuid="{e5d45b3e-7365-409d-a867-82a1fd46af36}" x="2125.0" y="1575.0">
+    <label>Assert Equal Table</label>
+    <version>1.0</version>
+    <description>Compare two incoming tables and raise an error if they differ.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "abs_tol": {
+        "editor": null,
+        "label": "Absolute tolerance",
+        "order": 6,
+        "type": "float",
+        "value": 0.0
+      },
+      "col_attrs": {
+        "editor": null,
+        "label": "Compare column attributes",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "col_order": {
+        "editor": null,
+        "label": "Compare column order",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "inexact_float": {
+        "editor": null,
+        "label": "Approximate comparison of floats",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "rel_tol": {
+        "editor": null,
+        "label": "Relative tolerance",
+        "order": 5,
+        "type": "float",
+        "value": 0.0
+      },
+      "tbl_attrs": {
+        "editor": null,
+        "label": "Compare table attributes",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "tbl_names": {
+        "editor": null,
+        "label": "Compare table names",
+        "order": 2,
+        "type": "boolean",
+        "value": true
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="table1" scheme="hdf5" type="table" type_base="table" uuid="{1993f35d-cd50-49a0-a491-704b869da568}">
+        <label>Table A</label>
+      </input>
+      <input key="table2" scheme="hdf5" type="table" type_base="table" uuid="{4cecf407-70a2-441b-ba09-3238f3e2816b}">
+        <label>Table B</label>
+      </input>
+      <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{1e7594bf-4ddc-4eb9-afb6-db1e8172a7ae}">
+        <label>Output Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.assertequaltable" port_format="1.1" uuid="{e8a1d376-657b-4afd-b8c7-fe82c43d7e74}" x="2675.0" y="2250.0">
+    <label>Assert Equal Table</label>
+    <version>1.0</version>
+    <description>Compare two incoming tables and raise an error if they differ.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "abs_tol": {
+        "editor": null,
+        "label": "Absolute tolerance",
+        "order": 6,
+        "type": "float",
+        "value": 0.0
+      },
+      "col_attrs": {
+        "editor": null,
+        "label": "Compare column attributes",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "col_order": {
+        "editor": null,
+        "label": "Compare column order",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "inexact_float": {
+        "editor": null,
+        "label": "Approximate comparison of floats",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "rel_tol": {
+        "editor": null,
+        "label": "Relative tolerance",
+        "order": 5,
+        "type": "float",
+        "value": 0.0
+      },
+      "tbl_attrs": {
+        "editor": null,
+        "label": "Compare table attributes",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "tbl_names": {
+        "editor": null,
+        "label": "Compare table names",
+        "order": 2,
+        "type": "boolean",
+        "value": true
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="table1" scheme="hdf5" type="table" type_base="table" uuid="{46ed6214-e7d4-45c8-9d3f-f9e41136b308}">
+        <label>Table A</label>
+      </input>
+      <input key="table2" scheme="hdf5" type="table" type_base="table" uuid="{737cff17-0127-4500-9db3-c89bd01cdac7}">
+        <label>Table B</label>
+      </input>
+      <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{b217af56-2b74-4cca-803f-2d7f0c9eed2b}">
+        <label>Output Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.adaf.selectcolumnsadafswithtable" port_format="1.1" uuid="{f3b07da2-2922-4580-9525-245431d94cec}" x="2275.0" y="2450.0">
+    <label>Select columns in ADAFs with structure Table</label>
+    <version>1.0</version>
+    <description>Select the columns to keep in ADAF using selection table created by ADAF structure to table</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "complement": {
+        "editor": null,
+        "label": "Remove selected columns",
+        "order": 0,
+        "type": "boolean",
+        "value": false
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="selection" scheme="hdf5" type="table" type_base="table" uuid="{2090ca02-9a79-4f77-b0b6-b9188b839cc1}">
+        <label>ADAF structure selection</label>
+      </input>
+      <input key="data" scheme="hdf5" type="[adaf]" type_base="[adaf]" uuid="{ba3159a3-5ae3-4670-890e-14c64c8bb9bc}">
+        <label>ADAF data matched with selection</label>
+      </input>
+      <output key="data" scheme="hdf5" type="[adaf]" type_base="[adaf]" uuid="{537955e0-2c1a-49c7-987f-c79c8a89850a}">
+        <label>ADAF data after selection</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.assertequaltable" port_format="1.1" uuid="{f5b28531-d14f-4a37-ac1c-db18522612cc}" x="2700.0" y="2500.0">
+    <label>Assert Equal Table</label>
+    <version>1.0</version>
+    <description>Compare two incoming tables and raise an error if they differ.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "abs_tol": {
+        "editor": null,
+        "label": "Absolute tolerance",
+        "order": 6,
+        "type": "float",
+        "value": 1e-08
+      },
+      "col_attrs": {
+        "editor": null,
+        "label": "Compare column attributes",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "col_order": {
+        "editor": null,
+        "label": "Compare column order",
+        "order": 0,
+        "type": "boolean",
+        "value": true
+      },
+      "inexact_float": {
+        "editor": null,
+        "label": "Approximate comparison of floats",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "rel_tol": {
+        "editor": null,
+        "label": "Relative tolerance",
+        "order": 5,
+        "type": "float",
+        "value": 1e-05
+      },
+      "tbl_attrs": {
+        "editor": null,
+        "label": "Compare table attributes",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "tbl_names": {
+        "editor": null,
+        "label": "Compare table names",
+        "order": 2,
+        "type": "boolean",
+        "value": true
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="table1" scheme="hdf5" type="table" type_base="table" uuid="{4edabb33-2fd2-4e3c-b209-f9a766ff9695}">
+        <label>Table A</label>
+      </input>
+      <input key="table2" scheme="hdf5" type="table" type_base="table" uuid="{96ff7351-3c4f-4e21-8670-57e3b03f049c}">
+        <label>Table B</label>
+      </input>
+      <input key="table2" scheme="hdf5" type="table" type_base="table" uuid="{936bdd49-fe30-4a68-b9c1-34f8cc186c26}">
+        <label>Table B</label>
+      </input>
+      <output key="out" scheme="hdf5" type="table" type_base="table" uuid="{043c9254-ccef-44c3-a128-2cf1b093a519}">
+        <label>Output Table</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.adaf.adafstructuretable" port_format="1.1" uuid="{f80d12d9-2a12-47b9-827b-1fe323fa0108}" x="1975.0" y="1525.0">
+    <label>ADAF structure to Table</label>
+    <version>1.0</version>
+    <description>Creates Table from the structure of the ADAF.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">{"type": "group"}</parameters>
+    <ports>
+      <input key="port1" scheme="hdf5" type="adaf" type_base="adaf" uuid="{164fa3ba-d846-4b4f-961a-d70af17507f6}">
+        <label>Input ADAF</label>
+      </input>
+      <output key="port1" scheme="hdf5" type="table" type_base="table" uuid="{462197be-cb46-4ba5-89d7-7ab969d5b072}">
+        <label>ADAF structure as Table</label>
+      </output>
+    </ports>
+  </node>
+  <connection type="[adaf]" uuid="{00379532-7e99-4baa-8cf6-c8b88d6d4000}">
+    <source node="{f3b07da2-2922-4580-9525-245431d94cec}" port="{537955e0-2c1a-49c7-987f-c79c8a89850a}"/>
+    <destination node="{b62db5ee-2b15-4641-8173-fa8d9d86f36b}" port="{084e083b-0f2f-4e53-8756-a48606cea4fc}"/>
+  </connection>
+  <connection type="[adaf]" uuid="{0509eb4c-4858-445d-9c93-5533b70d0f6c}">
+    <source node="{6341b44a-6a1e-4379-86d4-6cd42beafd83}" port="{83c646da-59b2-46a7-801e-3f643db9d134}"/>
+    <destination node="{f3b07da2-2922-4580-9525-245431d94cec}" port="{ba3159a3-5ae3-4670-890e-14c64c8bb9bc}"/>
+  </connection>
+  <connection type="table" uuid="{06872ccd-aa7a-40fd-b01a-bd0618202002}">
+    <source node="{afd44872-c353-43fe-8eb0-e7984caa94f1}" port="{0cddee64-f321-4203-b3db-24eadddbb036}"/>
+    <destination node="{855c786a-a589-45e8-8353-7579bf00ff78}" port="{50524ae2-8444-4c27-a2c2-bee59c785c95}"/>
+  </connection>
+  <connection type="adaf" uuid="{06990990-5eb8-4bce-90ab-9ef6c7b1bb47}">
+    <source node="{535c77e0-d8d4-4166-8156-cfa0160b3eb7}" port="{8f76ec17-e78f-44e8-a61c-ee72eee2fb67}"/>
+    <destination node="{2bca6fca-32c5-43ca-aaa0-e29c26ae08d9}" port="{b7ba5e78-c211-4f80-87dd-a3e8b939254a}"/>
+  </connection>
+  <connection type="table" uuid="{1c05a083-b89a-4bf6-984f-73c4e71b8d83}">
+    <source node="{a1b9cda9-7b07-424b-89c0-f7bd2ba1ec6a}" port="{dca09284-c5ee-45c3-b600-82423579adcf}"/>
+    <destination node="{e8a1d376-657b-4afd-b8c7-fe82c43d7e74}" port="{46ed6214-e7d4-45c8-9d3f-f9e41136b308}"/>
+  </connection>
+  <connection type="adaf" uuid="{1ecea545-1077-408e-b371-48ee484cb062}">
+    <source node="{535c77e0-d8d4-4166-8156-cfa0160b3eb7}" port="{8f76ec17-e78f-44e8-a61c-ee72eee2fb67}"/>
+    <destination node="{afd44872-c353-43fe-8eb0-e7984caa94f1}" port="{e371e594-bc3f-40c0-9a1a-5be42b9de78a}"/>
+  </connection>
+  <connection type="table" uuid="{2f0166ff-f9c9-4109-9910-3dc5d7b571d3}">
+    <source node="{66ff7626-79ab-4413-83ab-6ac60c8a4d5f}" port="{85d5896d-a84d-4dde-a14a-55cc01180698}"/>
+    <destination node="{a0acdc9a-0f48-4bdf-b98e-5f77b8cc4787}" port="{c7af9be4-a18d-42d8-8d80-d30b921c2931}"/>
+  </connection>
+  <connection type="table" uuid="{3e0323bd-88da-45eb-9ad3-6f3f44159931}">
+    <source node="{66ff7626-79ab-4413-83ab-6ac60c8a4d5f}" port="{85d5896d-a84d-4dde-a14a-55cc01180698}"/>
+    <destination node="{5c0f2c5b-cb08-460c-8dd0-7dd0ac111f98}" port="{ff8ada7d-6d42-41c7-8fe6-069f2bbfaa39}"/>
+  </connection>
+  <connection type="adaf" uuid="{46a56bf7-5d38-4ab8-b836-836bc92b55fc}">
+    <source node="{2bca6fca-32c5-43ca-aaa0-e29c26ae08d9}" port="{922d93d1-09fb-4f9e-9a60-f84cb34547cd}"/>
+    <destination node="{47b3a9e7-7396-4fba-88ed-300008d9ef1f}" port="{6f3e9d0e-3f82-4554-a668-99228df5d157}"/>
+  </connection>
+  <connection type="table" uuid="{49fb79dc-5637-48dd-89e4-35d77a558b6c}">
+    <source node="{d7d5c15f-0433-4fa9-9c20-b27c6ba34614}" port="{c8944a4f-4039-4a0c-b3b1-35caede68753}"/>
+    <destination node="{f5b28531-d14f-4a37-ac1c-db18522612cc}" port="{96ff7351-3c4f-4e21-8670-57e3b03f049c}"/>
+  </connection>
+  <connection type="adaf" uuid="{4be50fff-e0cc-4bda-b2ff-c486d4b6d671}">
+    <source node="{bd9447f9-50d5-4672-9c3e-b2c64853c96c}" port="{6cd2f2bf-8532-4157-a2c8-b4b831b3bb2d}"/>
+    <destination node="{1a3f4c66-56f6-4fa0-90e4-a58a5539cd92}" port="{c3887235-75f2-42ef-88c1-e73c2023c6ff}"/>
+  </connection>
+  <connection type="table" uuid="{4cb0dabf-221a-45ce-b055-d07f5c471986}">
+    <source node="{47b3a9e7-7396-4fba-88ed-300008d9ef1f}" port="{077ac16d-092d-4120-abc6-b45ae9861298}"/>
+    <destination node="{855c786a-a589-45e8-8353-7579bf00ff78}" port="{42644e7f-2752-44ce-9ec5-9ca448aadc28}"/>
+  </connection>
+  <connection type="adaf" uuid="{4ea5eeb1-75d4-4b2e-b95b-75a072d25713}">
+    <source node="{75603302-2624-46eb-83d8-441e7825ac5c}" port="{47fd755e-e997-45aa-9e3c-c0e4c4163060}"/>
+    <destination node="{09adf54e-a931-4b8b-be4e-ed7c93c53a2e}" port="{739dbe74-18d0-4951-95fc-40abf444fe74}"/>
+  </connection>
+  <connection type="table" uuid="{5af0d0f0-2fbc-4f7c-ba59-4bd1e985bae0}">
+    <source node="{7f43053a-82a4-409f-a804-c25c80f951ed}" port="{5fc96b9e-bd9b-4d40-ac62-b453204342ae}"/>
+    <destination node="{f5b28531-d14f-4a37-ac1c-db18522612cc}" port="{4edabb33-2fd2-4e3c-b209-f9a766ff9695}"/>
+  </connection>
+  <connection type="adaf" uuid="{633ce1c0-ebb9-4100-bcc6-bbb31a14eb83}">
+    <source node="{3f6a1a97-8e5c-4ca9-a6ce-2bba0c05079d}" port="{2e705bc8-38ce-4589-95fa-0ce0f7f0daa8}"/>
+    <destination node="{c77c6b56-77da-4438-ad3d-ae035f871d4b}" port="{3ce9423d-6153-40cc-af5f-c031ff06720c}"/>
+  </connection>
+  <connection type="table" uuid="{6b6fc85c-1e7b-44a7-abec-74f6ead6a110}">
+    <source node="{7f43053a-82a4-409f-a804-c25c80f951ed}" port="{5fc96b9e-bd9b-4d40-ac62-b453204342ae}"/>
+    <destination node="{36231139-5fcf-4927-b8ec-33da6f95055e}" port="{19d95795-073a-4cc3-a542-12aa1ff629dc}"/>
+  </connection>
+  <connection type="adaf" uuid="{6ec84353-6b19-4eb2-a315-92e222a9974d}">
+    <source node="{bd9447f9-50d5-4672-9c3e-b2c64853c96c}" port="{6cd2f2bf-8532-4157-a2c8-b4b831b3bb2d}"/>
+    <destination node="{5c0f2c5b-cb08-460c-8dd0-7dd0ac111f98}" port="{da2be04b-0631-4ae7-b436-02995541480e}"/>
+  </connection>
+  <connection type="table" uuid="{76821d91-5e23-4714-8638-f73ac3fa802d}">
+    <source node="{66ff7626-79ab-4413-83ab-6ac60c8a4d5f}" port="{85d5896d-a84d-4dde-a14a-55cc01180698}"/>
+    <destination node="{75603302-2624-46eb-83d8-441e7825ac5c}" port="{02e3e61b-62ab-4271-a69a-2c0d86fc195d}"/>
+  </connection>
+  <connection type="table" uuid="{78218e64-a7be-4fb2-858a-aae410bf5afe}">
+    <source node="{aaf4404f-abb6-40c1-b13f-f9862c80da65}" port="{a28c8e55-3b2b-48f2-8f48-64a9d2edd0eb}"/>
+    <destination node="{f5b28531-d14f-4a37-ac1c-db18522612cc}" port="{936bdd49-fe30-4a68-b9c1-34f8cc186c26}"/>
+  </connection>
+  <connection type="table" uuid="{813dfe21-661b-4836-ae46-e766ce108763}">
+    <source node="{09adf54e-a931-4b8b-be4e-ed7c93c53a2e}" port="{83bf5e7a-ecc6-4a45-8a10-736f0a7c9106}"/>
+    <destination node="{36231139-5fcf-4927-b8ec-33da6f95055e}" port="{3f8d60af-af83-4a31-8f28-ebb28bf53e84}"/>
+  </connection>
+  <connection type="[table]" uuid="{8336a2bf-1ab8-452b-b583-f50e48fbea56}">
+    <source node="{c877d91b-2e9f-4d1a-9df3-1b14bbdb4eeb}" port="{11167669-6b33-4d09-a0eb-ab0cf37c5503}"/>
+    <destination node="{aaf4404f-abb6-40c1-b13f-f9862c80da65}" port="{884c1852-8bd3-4a35-b0f9-f391bc2263df}"/>
+  </connection>
+  <connection type="table" uuid="{8916cdb5-7d56-4205-8f63-f6d4e91491bc}">
+    <source node="{4453efbd-204e-4e5d-8ddc-3753f59cba35}" port="{8f88bebe-6d30-4cb8-b39e-518534a95644}"/>
+    <destination node="{2bca6fca-32c5-43ca-aaa0-e29c26ae08d9}" port="{eef74caf-328f-4612-b6cf-f3be35836e01}"/>
+  </connection>
+  <connection type="table" uuid="{8a2843e7-21a6-4cdc-99c7-c49e0cb158ca}">
+    <source node="{f80d12d9-2a12-47b9-827b-1fe323fa0108}" port="{462197be-cb46-4ba5-89d7-7ab969d5b072}"/>
+    <destination node="{e5d45b3e-7365-409d-a867-82a1fd46af36}" port="{1993f35d-cd50-49a0-a491-704b869da568}"/>
+  </connection>
+  <connection type="adaf" uuid="{8c48d514-f697-490d-9b1f-4404495bcade}">
+    <source node="{5c0f2c5b-cb08-460c-8dd0-7dd0ac111f98}" port="{7181be18-72f3-403b-ab27-e7a00311a0cf}"/>
+    <destination node="{7f43053a-82a4-409f-a804-c25c80f951ed}" port="{784e9b13-87f9-43d2-a9cf-b32c2a7ac2f8}"/>
+  </connection>
+  <connection type="adaf" uuid="{9979fd78-5c20-477f-b5fb-1e3c720e02de}">
+    <source node="{bd9447f9-50d5-4672-9c3e-b2c64853c96c}" port="{6cd2f2bf-8532-4157-a2c8-b4b831b3bb2d}"/>
+    <destination node="{75603302-2624-46eb-83d8-441e7825ac5c}" port="{1fe16b82-098f-439a-8c8a-27f454cdd57f}"/>
+  </connection>
+  <connection type="table" uuid="{9b518c15-e86f-47ba-9291-e63969d49bca}">
+    <source node="{1a3f4c66-56f6-4fa0-90e4-a58a5539cd92}" port="{bcf406a9-7393-4bf5-a3ee-3fd312816a30}"/>
+    <destination node="{20b5d3c1-5d8c-4b41-8f25-613a60d8779f}" port="{227bc18d-8884-4631-8e57-bedec2e1d018}"/>
+  </connection>
+  <connection type="table" uuid="{a3005f46-2cfd-43ea-a7a4-ebe088be8f28}">
+    <source node="{36231139-5fcf-4927-b8ec-33da6f95055e}" port="{ce3746ce-8f12-41bd-8852-ae23ce1232cb}"/>
+    <destination node="{a1b9cda9-7b07-424b-89c0-f7bd2ba1ec6a}" port="{9c9a07f5-9617-406f-8ed3-082381612e8b}"/>
+  </connection>
+  <connection type="adaf" uuid="{a3c5b906-b7a3-4c5c-b929-d1e732361ed3}">
+    <source node="{09eb19d1-3c10-469c-a6af-2d01802ab52f}" port="{e950c614-32f6-4e35-9a2a-0236a81ef26b}"/>
+    <destination node="{3f6a1a97-8e5c-4ca9-a6ce-2bba0c05079d}" port="{700a621b-b77e-4705-a9be-e69d1ae24c01}"/>
+  </connection>
+  <connection type="[table]" uuid="{ade46400-c080-449c-a62b-0a8edad8debe}">
+    <source node="{b62db5ee-2b15-4641-8173-fa8d9d86f36b}" port="{193179f4-3253-41ed-9e5d-d965ff44f0cc}"/>
+    <destination node="{d7d5c15f-0433-4fa9-9c20-b27c6ba34614}" port="{798d9329-543e-41eb-986e-4104ef28c9eb}"/>
+  </connection>
+  <connection type="table" uuid="{afb77c1b-22e9-4cd8-a7d1-cbdf0464be80}">
+    <source node="{66ff7626-79ab-4413-83ab-6ac60c8a4d5f}" port="{85d5896d-a84d-4dde-a14a-55cc01180698}"/>
+    <destination node="{f3b07da2-2922-4580-9525-245431d94cec}" port="{2090ca02-9a79-4f77-b0b6-b9188b839cc1}"/>
+  </connection>
+  <connection type="[adaf]" uuid="{b66ea34e-1baf-4bc7-9227-a291e5b80503}">
+    <source node="{6341b44a-6a1e-4379-86d4-6cd42beafd83}" port="{83c646da-59b2-46a7-801e-3f643db9d134}"/>
+    <destination node="{586ae8c8-5ee2-435e-92ff-b170d999a91e}" port="{cebda5d3-ecc1-4f70-a373-afb0d58be275}"/>
+  </connection>
+  <connection type="adaf" uuid="{bd4c1a65-b457-434c-8935-0b6e2f06e148}">
+    <source node="{0f7b9495-7e68-43a2-9d87-075d2ee79326}" port="{a7f7b37f-b426-4bba-a196-ef2eee98c58b}"/>
+    <destination node="{f80d12d9-2a12-47b9-827b-1fe323fa0108}" port="{164fa3ba-d846-4b4f-961a-d70af17507f6}"/>
+  </connection>
+  <connection type="table" uuid="{c6a33f41-e063-4a7c-aafe-1b34b4372b1a}">
+    <source node="{9d4d6a90-0082-46b5-9e45-6ac54ee3351c}" port="{1eb588b8-a554-48de-98bb-67e05c5ed3eb}"/>
+    <destination node="{3f6a1a97-8e5c-4ca9-a6ce-2bba0c05079d}" port="{db7aec3e-219d-45c5-a4c8-9543481b1209}"/>
+  </connection>
+  <connection type="table" uuid="{cf656108-5830-4d2c-af40-92ed80410ea6}">
+    <source node="{1a3f4c66-56f6-4fa0-90e4-a58a5539cd92}" port="{bcf406a9-7393-4bf5-a3ee-3fd312816a30}"/>
+    <destination node="{66ff7626-79ab-4413-83ab-6ac60c8a4d5f}" port="{80e99ad0-331f-41ba-a54d-8039b09771ea}"/>
+  </connection>
+  <connection type="[table]" uuid="{d1c9caa9-2d52-453e-917b-bc94bf974303}">
+    <source node="{a0acdc9a-0f48-4bdf-b98e-5f77b8cc4787}" port="{a7490cab-9d97-4364-9bef-7eb2ea7768f6}"/>
+    <destination node="{586ae8c8-5ee2-435e-92ff-b170d999a91e}" port="{9089bb1e-5d7e-4d41-bc95-e36651071bd0}"/>
+  </connection>
+  <connection type="[adaf]" uuid="{e5c4d6ef-8731-4043-a9ab-4c37f8b4e036}">
+    <source node="{586ae8c8-5ee2-435e-92ff-b170d999a91e}" port="{7205bd18-5660-4ce2-8d45-2d1a21e6078f}"/>
+    <destination node="{c877d91b-2e9f-4d1a-9df3-1b14bbdb4eeb}" port="{d503eb9b-6345-4c4f-8741-a95b09833f5d}"/>
+  </connection>
+  <connection type="adaf" uuid="{e6c27d6a-7967-41f3-ad09-39e22423e992}">
+    <source node="{c14169f4-4eeb-4a81-83eb-fc3f5369c5a3}" port="{c81b0654-975b-4c4a-af00-59918e2d8cd9}"/>
+    <destination node="{6341b44a-6a1e-4379-86d4-6cd42beafd83}" port="{d8b410cb-0b2d-4adb-9f23-ef61f68b37ec}"/>
+  </connection>
+  <connection type="table" uuid="{ecf780c9-43de-4504-983d-e9155327dcc4}">
+    <source node="{c77c6b56-77da-4438-ad3d-ae035f871d4b}" port="{e4249363-5d44-4348-bd7f-617229a5a03b}"/>
+    <destination node="{e5d45b3e-7365-409d-a867-82a1fd46af36}" port="{4cecf407-70a2-441b-ba09-3238f3e2816b}"/>
+  </connection>
+  <connection type="table" uuid="{eec5ec57-599d-4602-916f-d7cfea56ffd0}">
+    <source node="{20b5d3c1-5d8c-4b41-8f25-613a60d8779f}" port="{aba1f006-067a-405f-be4f-a2d415afd4a1}"/>
+    <destination node="{e8a1d376-657b-4afd-b8c7-fe82c43d7e74}" port="{737cff17-0127-4500-9db3-c89bd01cdac7}"/>
+  </connection>
+  <text color="Beige" height="325.0" uuid="{273eb177-1ca1-4a8b-b751-df8018577f0c}" width="1200.0" x="1600.0" y="1500.0">Empty</text>
+  <text color="Beige" height="275.0" uuid="{a10765be-041b-4496-8ae6-bd1a8d639501}" width="1200.0" x="1600.0" y="1825.0">All</text>
+  <text color="Beige" height="300.0" uuid="{934aa407-f54f-4f2c-a80d-cffb8ce44ce4}" width="1200.0" x="1600.0" y="2100.0">Even/Odd</text>
+  <text color="Beige" height="275.0" uuid="{61923c5d-1545-4d76-a88a-c424ae194c3d}" width="1200.0" x="1600.0" y="2400.0">List versions</text>
+</flow>

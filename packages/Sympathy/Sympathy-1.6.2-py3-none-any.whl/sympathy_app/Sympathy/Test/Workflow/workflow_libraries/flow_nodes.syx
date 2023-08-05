@@ -1,0 +1,380 @@
+<?xml version='1.0' encoding='US-ASCII'?>
+<flow xmlns="http://www.sysess.org/sympathyfordata/workflow/1.0" cls="Flow" uuid="{faa32fdb-c79a-409d-91d5-e0e8cd3db209}">
+  <label></label>
+  <libraries type="json">["../../Unit/sytestlib"]</libraries>
+  <ports/>
+  <flow cls="Flow" source_uuid="{41ebf25f-0a57-414c-9de8-cabf6bf9a6f9}" uuid="{60c8d518-9d41-41f3-bb5a-7c20feb8ac43}" x="1800.0" y="1850.0" id="org.sysess.input.datasource.flow">
+    <label>Datasource Flow -
+library relative</label>
+    <overrides type="json">
+    {
+      "{705b67d6-283f-4073-8e44-10f77e8f2372}": {
+        "datasource_type": {
+          "editor": null,
+          "label": "Datasource type",
+          "list": ["File", "Database", "Url"],
+          "mode": "selected",
+          "order": 11,
+          "type": "list",
+          "value": [0],
+          "value_names": ["File"]
+        },
+        "db_connection_string": {
+          "editor": null,
+          "label": "Connection string",
+          "order": 8,
+          "type": "string",
+          "value": ""
+        },
+        "db_databasename": {
+          "editor": null,
+          "label": "Database name",
+          "order": 5,
+          "type": "string",
+          "value": ""
+        },
+        "db_driver": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Database driver",
+          "list": ["SQL Server"],
+          "mode": "selected",
+          "order": 3,
+          "type": "list",
+          "value": [0],
+          "value_names": ["SQL Server"]
+        },
+        "db_method": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": ["ODBC", "SQLAlchemy"],
+            "type": "combobox"
+          },
+          "label": "Database connection method",
+          "order": 2,
+          "type": "string",
+          "value": "ODBC"
+        },
+        "db_password": {
+          "editor": null,
+          "label": "Password",
+          "order": 7,
+          "type": "string",
+          "value": ""
+        },
+        "db_servername": {
+          "editor": null,
+          "label": "Server name",
+          "order": 4,
+          "type": "string",
+          "value": ""
+        },
+        "db_sqlalchemy_engine_url": {
+          "editor": null,
+          "label": "SQLAlchemy engine URL",
+          "order": 1,
+          "type": "string",
+          "value": "mssql+pyodbc:///"
+        },
+        "db_user": {
+          "editor": null,
+          "label": "User",
+          "order": 6,
+          "type": "string",
+          "value": ""
+        },
+        "filename": {
+          "editor": {
+            "filter": ["Any files (*)"],
+            "states": null,
+            "type": "filename"
+          },
+          "label": "Filename",
+          "order": 0,
+          "type": "string",
+          "value": "$(SY_LIBRARY_DIR)/library.ini"
+        },
+        "type": "group",
+        "url_env": {
+          "description": "Environment for URL. Used as headers in case of HTTP URL. Input as a Python expression that evaluates to.",
+          "editor": {
+            "headers": ["Name", "Value"],
+            "type": "table",
+            "types": ["text", "text"],
+            "unique": ["Name"]
+          },
+          "label": "Url environment",
+          "order": 10,
+          "type": "json",
+          "value": []
+        },
+        "url_str": {
+          "editor": null,
+          "label": "URL string",
+          "order": 9,
+          "type": "string",
+          "value": ""
+        }
+      }
+    }
+    </overrides>
+    <ports>
+      <output index="0" key="Port" parent="True" scheme="text" source_uuid="{925c2c24-95b1-4ce1-8a22-af852751dc17}" type="datasource" uuid="{fa5f10f2-626d-4ccd-9afe-a8fdff3a88b9}" x="1725.0" y="1900.0">
+        <label>Port</label>
+      </output>
+    </ports>
+  </flow>
+  <flow cls="Flow" source_uuid="{41ebf25f-0a57-414c-9de8-cabf6bf9a6f9}" uuid="{d4cac3f2-472a-40aa-ad5c-088e8e8e6331}" x="1800.0" y="1950.0" id="org.sysess.input.datasource.flow">
+    <label>Datasource Flow -flow relative</label>
+    <overrides type="json">
+    {
+      "{705b67d6-283f-4073-8e44-10f77e8f2372}": {
+        "datasource_type": {
+          "editor": null,
+          "label": "Datasource type",
+          "list": ["File", "Database", "Url"],
+          "mode": "selected",
+          "order": 11,
+          "type": "list",
+          "value": [0],
+          "value_names": ["File"]
+        },
+        "db_connection_string": {
+          "editor": null,
+          "label": "Connection string",
+          "order": 8,
+          "type": "string",
+          "value": ""
+        },
+        "db_databasename": {
+          "editor": null,
+          "label": "Database name",
+          "order": 5,
+          "type": "string",
+          "value": ""
+        },
+        "db_driver": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Database driver",
+          "list": ["SQL Server"],
+          "mode": "selected",
+          "order": 3,
+          "type": "list",
+          "value": [0],
+          "value_names": ["SQL Server"]
+        },
+        "db_method": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": ["ODBC", "SQLAlchemy"],
+            "type": "combobox"
+          },
+          "label": "Database connection method",
+          "order": 2,
+          "type": "string",
+          "value": "ODBC"
+        },
+        "db_password": {
+          "editor": null,
+          "label": "Password",
+          "order": 7,
+          "type": "string",
+          "value": ""
+        },
+        "db_servername": {
+          "editor": null,
+          "label": "Server name",
+          "order": 4,
+          "type": "string",
+          "value": ""
+        },
+        "db_sqlalchemy_engine_url": {
+          "editor": null,
+          "label": "SQLAlchemy engine URL",
+          "order": 1,
+          "type": "string",
+          "value": "mssql+pyodbc:///"
+        },
+        "db_user": {
+          "editor": null,
+          "label": "User",
+          "order": 6,
+          "type": "string",
+          "value": ""
+        },
+        "filename": {
+          "editor": {
+            "filter": ["Any files (*)"],
+            "states": null,
+            "type": "filename"
+          },
+          "label": "Filename",
+          "order": 0,
+          "type": "string",
+          "value": "$(SY_FLOW_DIR)/flow_nodes.syx"
+        },
+        "type": "group",
+        "url_env": {
+          "description": "Environment for URL. Used as headers in case of HTTP URL. Input as a Python expression that evaluates to.",
+          "editor": {
+            "headers": ["Name", "Value"],
+            "type": "table",
+            "types": ["text", "text"],
+            "unique": ["Name"]
+          },
+          "label": "Url environment",
+          "order": 10,
+          "type": "json",
+          "value": []
+        },
+        "url_str": {
+          "editor": null,
+          "label": "URL string",
+          "order": 9,
+          "type": "string",
+          "value": ""
+        }
+      }
+    }
+    </overrides>
+    <ports>
+      <output index="0" key="Port" parent="True" scheme="text" source_uuid="{925c2c24-95b1-4ce1-8a22-af852751dc17}" type="datasource" uuid="{63995745-1a4a-4104-b607-c93d0ad7c7f1}" x="1725.0" y="1900.0">
+        <label>Port</label>
+      </output>
+    </ports>
+  </flow>
+  <node id="org.sysess.sympathy.data.fx" port_format="1.1" uuid="{28342bdf-9f5b-492e-ac90-b2feefeab139}" x="1950.0" y="1950.0">
+    <label>F(x)</label>
+    <version>1.0</version>
+    <description>Apply arbitrary python function(s) to data.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "code": {
+        "editor": {
+          "language": "python",
+          "type": "code"
+        },
+        "label": "Python code",
+        "order": 2,
+        "type": "string",
+        "value": "from sympathy.api import fx\nimport os\n\n@fx.decorator(['&lt;a&gt;'])\ndef function(arg, res):\n    assert os.path.isfile(arg.decode_path()), 'Failed to find datasource.syx.'\n"
+      },
+      "copy_input": {
+        "editor": null,
+        "label": "Copy input",
+        "order": 0,
+        "type": "boolean",
+        "value": false
+      },
+      "selected_functions": {
+        "editor": {
+          "edit": false,
+          "filter": true,
+          "mode": true,
+          "selection": "multi",
+          "type": "listview"
+        },
+        "label": "Select functions",
+        "list": [],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="port2" scheme="text" type="datasource" type_base="&lt;a&gt;" uuid="{372c3dfd-46fe-4291-8ab9-a88c42d21d2d}">
+        <label>Item with data to apply functions on</label>
+      </input>
+      <output key="port3" scheme="hdf5" type="datasource" type_base="&lt;a&gt;" uuid="{6d720461-292c-4762-887a-d3cbb7741dc2}">
+        <label>Item with the results from the applied functions</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.fx" port_format="1.1" uuid="{d3ee2b28-1a3a-453c-9d4e-a730afe6d702}" x="1950.0" y="1850.0">
+    <label>F(x)</label>
+    <version>1.0</version>
+    <description>Apply arbitrary python function(s) to data.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "code": {
+        "editor": {
+          "language": "python",
+          "type": "code"
+        },
+        "label": "Python code",
+        "order": 2,
+        "type": "string",
+        "value": "from sympathy.api import fx\nimport os\n\n@fx.decorator(['&lt;a&gt;'])\ndef function(arg, res):\n    assert os.path.isfile(arg.decode_path()), 'Failed to find library.ini.'\n"
+      },
+      "copy_input": {
+        "editor": null,
+        "label": "Copy input",
+        "order": 0,
+        "type": "boolean",
+        "value": false
+      },
+      "selected_functions": {
+        "editor": {
+          "edit": false,
+          "filter": true,
+          "mode": true,
+          "selection": "multi",
+          "type": "listview"
+        },
+        "label": "Select functions",
+        "list": [],
+        "mode": "selected",
+        "order": 1,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="port2" scheme="text" type="datasource" type_base="&lt;a&gt;" uuid="{8072cd40-b7b3-42de-b3b9-47049e1c3153}">
+        <label>Item with data to apply functions on</label>
+      </input>
+      <output key="port3" scheme="hdf5" type="datasource" type_base="&lt;a&gt;" uuid="{e422d1da-6290-4d43-99a1-8c06828118c1}">
+        <label>Item with the results from the applied functions</label>
+      </output>
+    </ports>
+  </node>
+  <connection type="datasource" uuid="{299cae31-ab5f-4b21-b618-499406d5b799}">
+    <source node="{d4cac3f2-472a-40aa-ad5c-088e8e8e6331}" port="{63995745-1a4a-4104-b607-c93d0ad7c7f1}"/>
+    <destination node="{28342bdf-9f5b-492e-ac90-b2feefeab139}" port="{372c3dfd-46fe-4291-8ab9-a88c42d21d2d}"/>
+  </connection>
+  <connection type="datasource" uuid="{8df134d9-e7bf-4ef4-b50b-c04773d5cc73}">
+    <source node="{60c8d518-9d41-41f3-bb5a-7c20feb8ac43}" port="{fa5f10f2-626d-4ccd-9afe-a8fdff3a88b9}"/>
+    <destination node="{d3ee2b28-1a3a-453c-9d4e-a730afe6d702}" port="{8072cd40-b7b3-42de-b3b9-47049e1c3153}"/>
+  </connection>
+  <text color="Beige" height="75.0" uuid="{cb8aadc6-b613-4c5d-9458-5fcd5c940163}" width="275.0" x="1775.0" y="1750.0">Test for flow and library relative paths using a datasource which is part of a flow  node</text>
+</flow>

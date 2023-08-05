@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='US-ASCII'?>
+<flow xmlns="http://www.sysess.org/sympathyfordata/workflow/1.0" cls="Flow" uuid="{080d3c15-6b08-45b8-a251-d46200deccb6}">
+  <label>Missing relative library</label>
+  <version>1.0</version>
+  <libraries type="json">["Libraries/some-missing-lib"]</libraries>
+</flow>

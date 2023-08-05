@@ -1,0 +1,153 @@
+<?xml version='1.0' encoding='US-ASCII'?>
+<flow xmlns="http://www.sysess.org/sympathyfordata/workflow/1.0" cls="Flow" tag="Development.Test" uuid="{41ebf25f-0a57-414c-9de8-cabf6bf9a6f9}" id="org.sysess.input.datasource.flow">
+  <label>Flow Datasource Example</label>
+  <aggregation type="json">
+  {
+    "conf_view": "TabBuilder",
+    "override": true,
+    "selected_uuids": [
+      "{705b67d6-283f-4073-8e44-10f77e8f2372}"
+    ]
+  }
+  </aggregation>
+  <ports>
+    <output index="0" key="Port" parent="True" scheme="text" type="datasource" uuid="{925c2c24-95b1-4ce1-8a22-af852751dc17}" x="1725.0" y="1900.0">
+      <label>Port</label>
+    </output>
+  </ports>
+  <node id="org.sysess.sympathy.datasources.filedatasource" port_format="1.1" uuid="{705b67d6-283f-4073-8e44-10f77e8f2372}" x="1575.0" y="1900.0">
+    <label>Datasource</label>
+    <version>1.1</version>
+    <description>Select a data source.</description>
+    <author>Alexander Busck</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "datasource_type": {
+        "editor": null,
+        "label": "Datasource type",
+        "list": ["File", "Database", "Url"],
+        "mode": "selected",
+        "order": 11,
+        "type": "list",
+        "value": [0],
+        "value_names": ["File"]
+      },
+      "db_connection_string": {
+        "editor": null,
+        "label": "Connection string",
+        "order": 8,
+        "type": "string",
+        "value": ""
+      },
+      "db_databasename": {
+        "editor": null,
+        "label": "Database name",
+        "order": 5,
+        "type": "string",
+        "value": ""
+      },
+      "db_driver": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Database driver",
+        "list": ["SQL Server"],
+        "mode": "selected",
+        "order": 3,
+        "type": "list",
+        "value": [0],
+        "value_names": ["SQL Server"]
+      },
+      "db_method": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": ["ODBC", "SQLAlchemy"],
+          "type": "combobox"
+        },
+        "label": "Database connection method",
+        "order": 2,
+        "type": "string",
+        "value": "ODBC"
+      },
+      "db_password": {
+        "editor": null,
+        "label": "Password",
+        "order": 7,
+        "type": "string",
+        "value": ""
+      },
+      "db_servername": {
+        "editor": null,
+        "label": "Server name",
+        "order": 4,
+        "type": "string",
+        "value": ""
+      },
+      "db_sqlalchemy_engine_url": {
+        "editor": null,
+        "label": "SQLAlchemy engine URL",
+        "order": 1,
+        "type": "string",
+        "value": "mssql+pyodbc:///"
+      },
+      "db_user": {
+        "editor": null,
+        "label": "User",
+        "order": 6,
+        "type": "string",
+        "value": ""
+      },
+      "filename": {
+        "editor": {
+          "filter": ["Any files (*)"],
+          "states": null,
+          "type": "filename"
+        },
+        "label": "Filename",
+        "order": 0,
+        "type": "string",
+        "value": ""
+      },
+      "type": "group",
+      "url_env": {
+        "description": "Environment for URL. Used as headers in case of HTTP URL. Input as a Python expression that evaluates to.",
+        "editor": {
+          "headers": ["Name", "Value"],
+          "type": "table",
+          "types": ["text", "text"],
+          "unique": ["Name"]
+        },
+        "label": "Url environment",
+        "order": 10,
+        "type": "json",
+        "value": []
+      },
+      "url_str": {
+        "editor": null,
+        "label": "URL string",
+        "order": 9,
+        "type": "string",
+        "value": ""
+      }
+    }
+    </parameters>
+    <ports>
+      <output key="port1" scheme="text" type="datasource" type_base="datasource" uuid="{0085c7b0-60f9-4cfa-8825-d7aa1942d47b}">
+        <label>Datasource with path to file</label>
+      </output>
+    </ports>
+  </node>
+  <connection type="datasource" uuid="{89ae6b68-e2c1-4440-a229-705b295e1536}">
+    <source node="{705b67d6-283f-4073-8e44-10f77e8f2372}" port="{0085c7b0-60f9-4cfa-8825-d7aa1942d47b}"/>
+    <destination node="{41ebf25f-0a57-414c-9de8-cabf6bf9a6f9}" port="{925c2c24-95b1-4ce1-8a22-af852751dc17}"/>
+  </connection>
+</flow>

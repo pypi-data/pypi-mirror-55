@@ -1,0 +1,4823 @@
+<?xml version='1.0' encoding='US-ASCII'?>
+<flow xmlns="http://www.sysess.org/sympathyfordata/workflow/1.0" cls="Flow" uuid="{2d1fbd49-d550-483c-b0b9-290f98e855a1}">
+  <label></label>
+  <ports/>
+  <flow cls="Lambda" uuid="{0791a3e7-27e2-4bda-94c1-da6dff0b1e2e}" x="2700.0" y="1750.0">
+    <label>Check no colorbars</label>
+    <ports>
+      <input index="0" key="Port" parent="False" scheme="hdf5" type="figure" uuid="{33682740-9663-4f93-983f-48ba67b70f59}" x="1850.0" y="2000.0">
+        <label>Port</label>
+      </input>
+      <output index="0" key="Port" parent="False" scheme="hdf5" type="figure" uuid="{eb0023fa-57e0-4258-b2e3-66ed5d935a06}" x="2125.0" y="2000.0">
+        <label>Port</label>
+      </output>
+    </ports>
+    <basic_ports>
+      <output key="Function" scheme="hdf5" type="figure -&gt; figure" type_base="&lt;a&gt;" uuid="{6c4f2b13-7bad-45e7-bc5e-bdeba72bb732}">
+        <label>Lambda function</label>
+      </output>
+    </basic_ports>
+    <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{b15ab569-85f5-4c9b-9d96-444c9374d374}" x="2000.0" y="2000.0">
+      <label>Check colorbar exists</label>
+      <version>1.0</version>
+      <description>Raise an error if a predicate is True.</description>
+      <author>Magnus Sand&#233;n</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "error_msg": {
+          "editor": null,
+          "label": "Error message:",
+          "order": 1,
+          "type": "string",
+          "value": "Compressed figure has a colorbar!"
+        },
+        "error_type": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Severity:",
+          "list": ["Error", "Warning", "Output"],
+          "mode": "selected",
+          "order": 2,
+          "type": "list",
+          "value": [0],
+          "value_names": ["Error"]
+        },
+        "predicate": {
+          "editor": {
+            "language": "python",
+            "type": "code"
+          },
+          "label": "Predicate function:",
+          "order": 0,
+          "type": "string",
+          "value": "lambda arg: arg.get_mpl_figure().axes[0].collections[0].colorbar is not None"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{fc56363c-35bc-4c1a-8092-de141aaaf643}">
+          <label>Input</label>
+        </input>
+        <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{673b87c9-bd9b-4e1a-b0b0-63a42822d535}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <connection type="figure" uuid="{a446d5c9-f4ec-4d23-931d-9436f25f4482}">
+      <source node="{0791a3e7-27e2-4bda-94c1-da6dff0b1e2e}" port="{33682740-9663-4f93-983f-48ba67b70f59}"/>
+      <destination node="{b15ab569-85f5-4c9b-9d96-444c9374d374}" port="{fc56363c-35bc-4c1a-8092-de141aaaf643}"/>
+    </connection>
+    <connection type="figure" uuid="{ea78562e-880c-4866-ba5a-0c597fd4e745}">
+      <source node="{b15ab569-85f5-4c9b-9d96-444c9374d374}" port="{673b87c9-bd9b-4e1a-b0b0-63a42822d535}"/>
+      <destination node="{0791a3e7-27e2-4bda-94c1-da6dff0b1e2e}" port="{eb0023fa-57e0-4258-b2e3-66ed5d935a06}"/>
+    </connection>
+  </flow>
+  <flow cls="Lambda" uuid="{231ad6de-388a-4a05-8e35-9e12209f7339}" x="2675.0" y="2525.0">
+    <label>Check colorbars</label>
+    <ports>
+      <input index="0" key="Port" parent="False" scheme="hdf5" type="figure" uuid="{f13d6a86-026d-46ae-833c-a4a8b4e0d72b}" x="1850.0" y="2000.0">
+        <label>Port</label>
+      </input>
+      <output index="0" key="Port" parent="False" scheme="hdf5" type="figure" uuid="{ee22b5a1-355f-4b57-8e21-5d3499333664}" x="2375.0" y="2000.0">
+        <label>Port</label>
+      </output>
+    </ports>
+    <basic_ports>
+      <output key="Function" scheme="hdf5" type="figure -&gt; figure" type_base="&lt;a&gt;" uuid="{275319a2-4034-4b18-b6cc-296679dc3470}">
+        <label>Lambda function</label>
+      </output>
+    </basic_ports>
+    <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{21cd38ab-2f43-433a-af7d-e52cbd0b2ff2}" x="2250.0" y="2000.0">
+      <label>Check label</label>
+      <version>1.0</version>
+      <description>Raise an error if a predicate is True.</description>
+      <author>Magnus Sand&#233;n</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "error_msg": {
+          "editor": null,
+          "label": "Error message:",
+          "order": 1,
+          "type": "string",
+          "value": "Compressed figure colorbar has wrong label!"
+        },
+        "error_type": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Severity:",
+          "list": ["Error", "Warning", "Output"],
+          "mode": "selected",
+          "order": 2,
+          "type": "list",
+          "value": [0],
+          "value_names": ["Error"]
+        },
+        "predicate": {
+          "editor": {
+            "language": "python",
+            "type": "code"
+          },
+          "label": "Predicate function:",
+          "order": 0,
+          "type": "string",
+          "value": "lambda arg: not any(getattr(arg.get_mpl_figure().axes[0].collections[i].colorbar, '_label', '') == 'Test' for i in range(2))"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{26e25636-9c94-42b5-8598-db35bf1ecb74}">
+          <label>Input</label>
+        </input>
+        <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{95bf02e7-03a4-493f-9a90-775674d68493}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{6660e7c5-09b2-4cdb-8e7c-2f82ef9c0e08}" x="1975.0" y="2000.0">
+      <label>Check colorbar exists</label>
+      <version>1.0</version>
+      <description>Raise an error if a predicate is True.</description>
+      <author>Magnus Sand&#233;n</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "error_msg": {
+          "editor": null,
+          "label": "Error message:",
+          "order": 1,
+          "type": "string",
+          "value": "Compressed figure doesn't have exactly one colorbar!"
+        },
+        "error_type": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Severity:",
+          "list": ["Error", "Warning", "Output"],
+          "mode": "selected",
+          "order": 2,
+          "type": "list",
+          "value": [0],
+          "value_names": ["Error"]
+        },
+        "predicate": {
+          "editor": {
+            "language": "python",
+            "type": "code"
+          },
+          "label": "Predicate function:",
+          "order": 0,
+          "type": "string",
+          "value": "lambda arg: sum(arg.get_mpl_figure().axes[0].collections[i].colorbar is not None for i in range(2)) != 1"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{c2225c50-bc61-4ec2-9522-0b4543c7a61e}">
+          <label>Input</label>
+        </input>
+        <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{57907507-5229-4ba4-a982-43e0fbe6fd50}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{8ade659f-5b15-4048-aecd-9440b75ba08b}" x="2125.0" y="2000.0">
+      <label>Check orientation</label>
+      <version>1.0</version>
+      <description>Raise an error if a predicate is True.</description>
+      <author>Magnus Sand&#233;n</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "error_msg": {
+          "editor": null,
+          "label": "Error message:",
+          "order": 1,
+          "type": "string",
+          "value": "Compressed figure colorbar has wrong orientation!"
+        },
+        "error_type": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Severity:",
+          "list": ["Error", "Warning", "Output"],
+          "mode": "selected",
+          "order": 2,
+          "type": "list",
+          "value": [0],
+          "value_names": ["Error"]
+        },
+        "predicate": {
+          "editor": {
+            "language": "python",
+            "type": "code"
+          },
+          "label": "Predicate function:",
+          "order": 0,
+          "type": "string",
+          "value": "lambda arg: not any(getattr(arg.get_mpl_figure().axes[0].collections[i].colorbar, 'orientation', '') == 'horizontal' for i in range(2))"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{8e1262a6-8a31-4cec-a45e-43440cf66dc8}">
+          <label>Input</label>
+        </input>
+        <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{21c00bd7-78b6-4217-8b5b-0e4de1895965}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <connection type="figure" uuid="{af3f0f08-8611-46cd-b65f-854239e40e7b}">
+      <source node="{8ade659f-5b15-4048-aecd-9440b75ba08b}" port="{21c00bd7-78b6-4217-8b5b-0e4de1895965}"/>
+      <destination node="{21cd38ab-2f43-433a-af7d-e52cbd0b2ff2}" port="{26e25636-9c94-42b5-8598-db35bf1ecb74}"/>
+    </connection>
+    <connection type="figure" uuid="{affc6e18-318a-4cb4-8b14-96d42df9b35c}">
+      <source node="{6660e7c5-09b2-4cdb-8e7c-2f82ef9c0e08}" port="{57907507-5229-4ba4-a982-43e0fbe6fd50}"/>
+      <destination node="{8ade659f-5b15-4048-aecd-9440b75ba08b}" port="{8e1262a6-8a31-4cec-a45e-43440cf66dc8}"/>
+    </connection>
+    <connection type="figure" uuid="{c514b91c-3141-4630-8876-abf134fad5cf}">
+      <source node="{231ad6de-388a-4a05-8e35-9e12209f7339}" port="{f13d6a86-026d-46ae-833c-a4a8b4e0d72b}"/>
+      <destination node="{6660e7c5-09b2-4cdb-8e7c-2f82ef9c0e08}" port="{c2225c50-bc61-4ec2-9522-0b4543c7a61e}"/>
+    </connection>
+    <connection type="figure" uuid="{f0b062e7-ed2e-4972-8f3e-fb0f9f6e76a8}">
+      <source node="{21cd38ab-2f43-433a-af7d-e52cbd0b2ff2}" port="{95bf02e7-03a4-493f-9a90-775674d68493}"/>
+      <destination node="{231ad6de-388a-4a05-8e35-9e12209f7339}" port="{ee22b5a1-355f-4b57-8e21-5d3499333664}"/>
+    </connection>
+  </flow>
+  <flow cls="Lambda" uuid="{335eb5ae-9bc6-4294-95d5-54d0ceee5eea}" x="1675.0" y="2525.0">
+    <label>Check colorbars</label>
+    <ports>
+      <input index="0" key="Port" parent="False" scheme="hdf5" type="figure" uuid="{cc2ce0aa-a1d6-421a-8644-66091116d1be}" x="1850.0" y="2000.0">
+        <label>Port</label>
+      </input>
+      <output index="0" key="Port" parent="False" scheme="hdf5" type="figure" uuid="{e452814c-708b-4f11-9fb7-0ef93c1ed7e9}" x="2375.0" y="2000.0">
+        <label>Port</label>
+      </output>
+    </ports>
+    <basic_ports>
+      <output key="Function" scheme="hdf5" type="figure -&gt; figure" type_base="&lt;a&gt;" uuid="{33960c36-f9d5-4fa3-aedc-d309d55e599f}">
+        <label>Lambda function</label>
+      </output>
+    </basic_ports>
+    <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{3f3ac89a-13fe-45e7-b034-a2186fbfc988}" x="2125.0" y="2000.0">
+      <label>Check orientation</label>
+      <version>1.0</version>
+      <description>Raise an error if a predicate is True.</description>
+      <author>Magnus Sand&#233;n</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "error_msg": {
+          "editor": null,
+          "label": "Error message:",
+          "order": 1,
+          "type": "string",
+          "value": "Compressed figure colorbar has wrong orientation!"
+        },
+        "error_type": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Severity:",
+          "list": ["Error", "Warning", "Output"],
+          "mode": "selected",
+          "order": 2,
+          "type": "list",
+          "value": [0],
+          "value_names": ["Error"]
+        },
+        "predicate": {
+          "editor": {
+            "language": "python",
+            "type": "code"
+          },
+          "label": "Predicate function:",
+          "order": 0,
+          "type": "string",
+          "value": "lambda arg: not any(getattr(arg.get_mpl_figure().axes[0].images[i].colorbar, 'orientation', '') == 'horizontal' for i in range(2))"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{69edf123-9ffe-4690-b48c-1e822507c135}">
+          <label>Input</label>
+        </input>
+        <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{dddceafe-9d03-4038-aaf5-c7baa144b19e}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{5b2f9e42-ba90-4577-8f8f-93a44badea85}" x="1975.0" y="2000.0">
+      <label>Check colorbar exists</label>
+      <version>1.0</version>
+      <description>Raise an error if a predicate is True.</description>
+      <author>Magnus Sand&#233;n</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "error_msg": {
+          "editor": null,
+          "label": "Error message:",
+          "order": 1,
+          "type": "string",
+          "value": "Compressed figure doesn't have exactly one colorbar!"
+        },
+        "error_type": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Severity:",
+          "list": ["Error", "Warning", "Output"],
+          "mode": "selected",
+          "order": 2,
+          "type": "list",
+          "value": [0],
+          "value_names": ["Error"]
+        },
+        "predicate": {
+          "editor": {
+            "language": "python",
+            "type": "code"
+          },
+          "label": "Predicate function:",
+          "order": 0,
+          "type": "string",
+          "value": "lambda arg: sum(arg.get_mpl_figure().axes[0].images[i].colorbar is not None for i in range(2)) != 1"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{bc5fbabe-e519-4c49-890a-1e92cd351a75}">
+          <label>Input</label>
+        </input>
+        <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{47abc086-9320-42cb-9de3-4a1ea518f3a8}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{84b79544-914b-43e4-b805-8635068b23b1}" x="2250.0" y="2000.0">
+      <label>Check label</label>
+      <version>1.0</version>
+      <description>Raise an error if a predicate is True.</description>
+      <author>Magnus Sand&#233;n</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "error_msg": {
+          "editor": null,
+          "label": "Error message:",
+          "order": 1,
+          "type": "string",
+          "value": "Compressed figure colorbar has wrong label!"
+        },
+        "error_type": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Severity:",
+          "list": ["Error", "Warning", "Output"],
+          "mode": "selected",
+          "order": 2,
+          "type": "list",
+          "value": [0],
+          "value_names": ["Error"]
+        },
+        "predicate": {
+          "editor": {
+            "language": "python",
+            "type": "code"
+          },
+          "label": "Predicate function:",
+          "order": 0,
+          "type": "string",
+          "value": "lambda arg: not any(getattr(arg.get_mpl_figure().axes[0].images[i].colorbar, '_label', '') == 'Test' for i in range(2))"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{0895ef2e-9579-4cea-b191-8ca28b9ea221}">
+          <label>Input</label>
+        </input>
+        <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{bdbc9148-0def-4d0d-a441-3b74b57ee28d}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <connection type="figure" uuid="{04f67738-986d-44ba-824f-6339572c892e}">
+      <source node="{84b79544-914b-43e4-b805-8635068b23b1}" port="{bdbc9148-0def-4d0d-a441-3b74b57ee28d}"/>
+      <destination node="{335eb5ae-9bc6-4294-95d5-54d0ceee5eea}" port="{e452814c-708b-4f11-9fb7-0ef93c1ed7e9}"/>
+    </connection>
+    <connection type="figure" uuid="{6dcc1634-17c4-4e35-8b3e-08b406b70451}">
+      <source node="{5b2f9e42-ba90-4577-8f8f-93a44badea85}" port="{47abc086-9320-42cb-9de3-4a1ea518f3a8}"/>
+      <destination node="{3f3ac89a-13fe-45e7-b034-a2186fbfc988}" port="{69edf123-9ffe-4690-b48c-1e822507c135}"/>
+    </connection>
+    <connection type="figure" uuid="{b3732b87-5ca6-41d1-a4e3-2bfc0a4938f3}">
+      <source node="{3f3ac89a-13fe-45e7-b034-a2186fbfc988}" port="{dddceafe-9d03-4038-aaf5-c7baa144b19e}"/>
+      <destination node="{84b79544-914b-43e4-b805-8635068b23b1}" port="{0895ef2e-9579-4cea-b191-8ca28b9ea221}"/>
+    </connection>
+    <connection type="figure" uuid="{ca6e86e7-7046-4704-8c0a-8a348a1d667d}">
+      <source node="{335eb5ae-9bc6-4294-95d5-54d0ceee5eea}" port="{cc2ce0aa-a1d6-421a-8644-66091116d1be}"/>
+      <destination node="{5b2f9e42-ba90-4577-8f8f-93a44badea85}" port="{bc5fbabe-e519-4c49-890a-1e92cd351a75}"/>
+    </connection>
+  </flow>
+  <flow cls="Lambda" uuid="{c811119c-0017-4cc1-abab-8bcdeb156bb0}" x="1675.0" y="1750.0">
+    <label>Check colorbars</label>
+    <ports>
+      <input index="0" key="Port" parent="False" scheme="hdf5" type="figure" uuid="{23852f92-3c30-4289-b5c9-9edf87819b6e}" x="1850.0" y="2000.0">
+        <label>Port</label>
+      </input>
+      <output index="0" key="Port" parent="False" scheme="hdf5" type="figure" uuid="{aec601c8-002b-4fb7-969a-0ec3d776d0d1}" x="2125.0" y="2000.0">
+        <label>Port</label>
+      </output>
+    </ports>
+    <basic_ports>
+      <output key="Function" scheme="hdf5" type="figure -&gt; figure" type_base="&lt;a&gt;" uuid="{11be10fd-36a0-4097-bf51-fe01b513c902}">
+        <label>Lambda function</label>
+      </output>
+    </basic_ports>
+    <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{5c044d6d-74b4-478b-a342-b9f7d0bb98f1}" x="1975.0" y="2000.0">
+      <label>Check colorbar exists</label>
+      <version>1.0</version>
+      <description>Raise an error if a predicate is True.</description>
+      <author>Magnus Sand&#233;n</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "error_msg": {
+          "editor": null,
+          "label": "Error message:",
+          "order": 1,
+          "type": "string",
+          "value": "Compressed figure has a colorbar!"
+        },
+        "error_type": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Severity:",
+          "list": ["Error", "Warning", "Output"],
+          "mode": "selected",
+          "order": 2,
+          "type": "list",
+          "value": [0],
+          "value_names": ["Error"]
+        },
+        "predicate": {
+          "editor": {
+            "language": "python",
+            "type": "code"
+          },
+          "label": "Predicate function:",
+          "order": 0,
+          "type": "string",
+          "value": "lambda arg: arg.get_mpl_figure().axes[0].images[0].colorbar is not None"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{c2e430c4-77ad-40a5-b0d4-31cec801f475}">
+          <label>Input</label>
+        </input>
+        <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{1930bde6-8b3b-4b6a-9a96-a061799ff1b1}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <connection type="figure" uuid="{11e57bbf-36bb-48ee-aa24-db801c04c668}">
+      <source node="{5c044d6d-74b4-478b-a342-b9f7d0bb98f1}" port="{1930bde6-8b3b-4b6a-9a96-a061799ff1b1}"/>
+      <destination node="{c811119c-0017-4cc1-abab-8bcdeb156bb0}" port="{aec601c8-002b-4fb7-969a-0ec3d776d0d1}"/>
+    </connection>
+    <connection type="figure" uuid="{cb44f3c1-a48e-4d8e-921b-e6285c1ef69c}">
+      <source node="{c811119c-0017-4cc1-abab-8bcdeb156bb0}" port="{23852f92-3c30-4289-b5c9-9edf87819b6e}"/>
+      <destination node="{5c044d6d-74b4-478b-a342-b9f7d0bb98f1}" port="{c2e430c4-77ad-40a5-b0d4-31cec801f475}"/>
+    </connection>
+  </flow>
+  <flow cls="Lambda" uuid="{e2170f0c-1989-4987-9ac4-a134153b6851}" x="1700.0" y="2150.0">
+    <label>Check colorbars</label>
+    <ports>
+      <input index="0" key="Port" parent="False" scheme="hdf5" type="figure" uuid="{ac47b804-4c74-4fce-81d7-ca18100c1125}" x="1850.0" y="2000.0">
+        <label>Port</label>
+      </input>
+      <output index="0" key="Port" parent="False" scheme="hdf5" type="figure" uuid="{6ea32fed-bb4f-4a18-a9d2-f8758cc6fe75}" x="2350.0" y="2000.0">
+        <label>Port</label>
+      </output>
+    </ports>
+    <basic_ports>
+      <output key="Function" scheme="hdf5" type="figure -&gt; figure" type_base="&lt;a&gt;" uuid="{5e5cdc60-43ae-4490-bddb-468ce178ebca}">
+        <label>Lambda function</label>
+      </output>
+    </basic_ports>
+    <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{2fd1e196-214a-4552-87e0-d3e16f5f53c4}" x="2250.0" y="2000.0">
+      <label>Check label</label>
+      <version>1.0</version>
+      <description>Raise an error if a predicate is True.</description>
+      <author>Magnus Sand&#233;n</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "error_msg": {
+          "editor": null,
+          "label": "Error message:",
+          "order": 1,
+          "type": "string",
+          "value": "Compressed figure colorbar has wrong label!"
+        },
+        "error_type": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Severity:",
+          "list": ["Error", "Warning", "Output"],
+          "mode": "selected",
+          "order": 2,
+          "type": "list",
+          "value": [0],
+          "value_names": ["Error"]
+        },
+        "predicate": {
+          "editor": {
+            "language": "python",
+            "type": "code"
+          },
+          "label": "Predicate function:",
+          "order": 0,
+          "type": "string",
+          "value": "lambda arg: getattr(arg.get_mpl_figure().axes[0].images[0].colorbar, '_label', '') == ''"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{90292dac-8e48-4521-9f23-3089913111c5}">
+          <label>Input</label>
+        </input>
+        <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{23aa779a-b24a-4848-83ee-4f01e6b6dab4}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{c74ab64e-6564-458c-962f-998152c34dfd}" x="2125.0" y="2000.0">
+      <label>Check orientation</label>
+      <version>1.0</version>
+      <description>Raise an error if a predicate is True.</description>
+      <author>Magnus Sand&#233;n</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "error_msg": {
+          "editor": null,
+          "label": "Error message:",
+          "order": 1,
+          "type": "string",
+          "value": "Compressed figure colorbar has wrong orientation!"
+        },
+        "error_type": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Severity:",
+          "list": ["Error", "Warning", "Output"],
+          "mode": "selected",
+          "order": 2,
+          "type": "list",
+          "value": [0],
+          "value_names": ["Error"]
+        },
+        "predicate": {
+          "editor": {
+            "language": "python",
+            "type": "code"
+          },
+          "label": "Predicate function:",
+          "order": 0,
+          "type": "string",
+          "value": "lambda arg: arg.get_mpl_figure().axes[0].images[0].colorbar.orientation != 'horizontal'"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{f80653ab-b791-4c45-9181-7cecd770e1f0}">
+          <label>Input</label>
+        </input>
+        <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{b97571e2-289c-4b5c-9d1b-d3111a20d49d}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{e7075620-79c4-4bd5-86ec-9fdd3e270954}" x="1975.0" y="2000.0">
+      <label>Check colorbar exists</label>
+      <version>1.0</version>
+      <description>Raise an error if a predicate is True.</description>
+      <author>Magnus Sand&#233;n</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "error_msg": {
+          "editor": null,
+          "label": "Error message:",
+          "order": 1,
+          "type": "string",
+          "value": "Compressed figure doesn't have a colorbar!"
+        },
+        "error_type": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Severity:",
+          "list": ["Error", "Warning", "Output"],
+          "mode": "selected",
+          "order": 2,
+          "type": "list",
+          "value": [0],
+          "value_names": ["Error"]
+        },
+        "predicate": {
+          "editor": {
+            "language": "python",
+            "type": "code"
+          },
+          "label": "Predicate function:",
+          "order": 0,
+          "type": "string",
+          "value": "lambda arg: arg.get_mpl_figure().axes[0].images[0].colorbar is None"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{e6465360-2b3a-48e6-bd13-ca1e6e292514}">
+          <label>Input</label>
+        </input>
+        <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{6196f6df-28de-4b77-88d3-da6781cf5e3a}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <connection type="figure" uuid="{8a0fd05f-e6c2-4e7a-ac78-b65c5f6317c7}">
+      <source node="{e2170f0c-1989-4987-9ac4-a134153b6851}" port="{ac47b804-4c74-4fce-81d7-ca18100c1125}"/>
+      <destination node="{e7075620-79c4-4bd5-86ec-9fdd3e270954}" port="{e6465360-2b3a-48e6-bd13-ca1e6e292514}"/>
+    </connection>
+    <connection type="figure" uuid="{98c141f9-929b-4578-8348-f927bd15e7fd}">
+      <source node="{2fd1e196-214a-4552-87e0-d3e16f5f53c4}" port="{23aa779a-b24a-4848-83ee-4f01e6b6dab4}"/>
+      <destination node="{e2170f0c-1989-4987-9ac4-a134153b6851}" port="{6ea32fed-bb4f-4a18-a9d2-f8758cc6fe75}"/>
+    </connection>
+    <connection type="figure" uuid="{b1cfa907-3a8a-42d5-9ccd-9d40cc1c8203}">
+      <source node="{e7075620-79c4-4bd5-86ec-9fdd3e270954}" port="{6196f6df-28de-4b77-88d3-da6781cf5e3a}"/>
+      <destination node="{c74ab64e-6564-458c-962f-998152c34dfd}" port="{f80653ab-b791-4c45-9181-7cecd770e1f0}"/>
+    </connection>
+    <connection type="figure" uuid="{cc58561e-aa6f-4c20-877e-1cf9a05ed737}">
+      <source node="{c74ab64e-6564-458c-962f-998152c34dfd}" port="{b97571e2-289c-4b5c-9d1b-d3111a20d49d}"/>
+      <destination node="{2fd1e196-214a-4552-87e0-d3e16f5f53c4}" port="{90292dac-8e48-4521-9f23-3089913111c5}"/>
+    </connection>
+  </flow>
+  <flow cls="Lambda" uuid="{eaa8118a-fae1-478d-bc98-a8e0c8fea43f}" x="2700.0" y="2150.0">
+    <label>Check colorbars</label>
+    <ports>
+      <input index="0" key="Port" parent="False" scheme="hdf5" type="figure" uuid="{ecd7c8a0-0f61-4cc7-a193-560b34f98aa8}" x="1850.0" y="2000.0">
+        <label>Port</label>
+      </input>
+      <output index="0" key="Port" parent="False" scheme="hdf5" type="figure" uuid="{176c4013-5adc-4249-8927-0dac329e29fc}" x="2350.0" y="2000.0">
+        <label>Port</label>
+      </output>
+    </ports>
+    <basic_ports>
+      <output key="Function" scheme="hdf5" type="figure -&gt; figure" type_base="&lt;a&gt;" uuid="{826ebc6f-dc37-4609-8e3d-fa99e5770833}">
+        <label>Lambda function</label>
+      </output>
+    </basic_ports>
+    <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{720b2678-c90f-47a8-8a94-15be1094d423}" x="1975.0" y="2000.0">
+      <label>Check colorbar exists</label>
+      <version>1.0</version>
+      <description>Raise an error if a predicate is True.</description>
+      <author>Magnus Sand&#233;n</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "error_msg": {
+          "editor": null,
+          "label": "Error message:",
+          "order": 1,
+          "type": "string",
+          "value": "Compressed figure doesn't have a colorbar!"
+        },
+        "error_type": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Severity:",
+          "list": ["Error", "Warning", "Output"],
+          "mode": "selected",
+          "order": 2,
+          "type": "list",
+          "value": [0],
+          "value_names": ["Error"]
+        },
+        "predicate": {
+          "editor": {
+            "language": "python",
+            "type": "code"
+          },
+          "label": "Predicate function:",
+          "order": 0,
+          "type": "string",
+          "value": "lambda arg: arg.get_mpl_figure().axes[0].collections[0].colorbar is None"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{193d7101-ecd7-468b-94d9-6d660784acf5}">
+          <label>Input</label>
+        </input>
+        <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{b05ffaef-79df-468b-8d1d-7aa46c5cc5c6}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{9116c4be-58e2-41dd-9165-35703ff90a25}" x="2250.0" y="2000.0">
+      <label>Check label</label>
+      <version>1.0</version>
+      <description>Raise an error if a predicate is True.</description>
+      <author>Magnus Sand&#233;n</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "error_msg": {
+          "editor": null,
+          "label": "Error message:",
+          "order": 1,
+          "type": "string",
+          "value": "Compressed figure colorbar has wrong label!"
+        },
+        "error_type": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Severity:",
+          "list": ["Error", "Warning", "Output"],
+          "mode": "selected",
+          "order": 2,
+          "type": "list",
+          "value": [0],
+          "value_names": ["Error"]
+        },
+        "predicate": {
+          "editor": {
+            "language": "python",
+            "type": "code"
+          },
+          "label": "Predicate function:",
+          "order": 0,
+          "type": "string",
+          "value": "lambda arg: getattr(arg.get_mpl_figure().axes[0].collections[0].colorbar, '_label', '') == ''"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{7232a7cc-dc0d-493e-8f4e-00b18719ca44}">
+          <label>Input</label>
+        </input>
+        <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{4930145d-5196-47b9-9737-46154cf3f85d}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{d94efb62-d560-47da-92a8-ebb2d6542e9c}" x="2125.0" y="2000.0">
+      <label>Check orientation</label>
+      <version>1.0</version>
+      <description>Raise an error if a predicate is True.</description>
+      <author>Magnus Sand&#233;n</author>
+      <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+      <parameters type="json">
+      {
+        "error_msg": {
+          "editor": null,
+          "label": "Error message:",
+          "order": 1,
+          "type": "string",
+          "value": "Compressed figure colorbar has wrong orientation!"
+        },
+        "error_type": {
+          "editor": {
+            "display": null,
+            "edit": false,
+            "filter": false,
+            "include_empty": false,
+            "options": [],
+            "type": "combobox"
+          },
+          "label": "Severity:",
+          "list": ["Error", "Warning", "Output"],
+          "mode": "selected",
+          "order": 2,
+          "type": "list",
+          "value": [0],
+          "value_names": ["Error"]
+        },
+        "predicate": {
+          "editor": {
+            "language": "python",
+            "type": "code"
+          },
+          "label": "Predicate function:",
+          "order": 0,
+          "type": "string",
+          "value": "lambda arg: arg.get_mpl_figure().axes[0].collections[0].colorbar.orientation != 'horizontal'"
+        },
+        "type": "group"
+      }
+      </parameters>
+      <ports>
+        <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{4e6f0c01-876b-41bc-991c-34d702af36aa}">
+          <label>Input</label>
+        </input>
+        <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{56b10cf2-889b-42b6-ab31-942603d47d94}">
+          <label>Output</label>
+        </output>
+      </ports>
+    </node>
+    <connection type="figure" uuid="{03989245-b397-4148-a513-bc0318c8e169}">
+      <source node="{9116c4be-58e2-41dd-9165-35703ff90a25}" port="{4930145d-5196-47b9-9737-46154cf3f85d}"/>
+      <destination node="{eaa8118a-fae1-478d-bc98-a8e0c8fea43f}" port="{176c4013-5adc-4249-8927-0dac329e29fc}"/>
+    </connection>
+    <connection type="figure" uuid="{37503054-7bab-4455-adad-6ae829243bdc}">
+      <source node="{d94efb62-d560-47da-92a8-ebb2d6542e9c}" port="{56b10cf2-889b-42b6-ab31-942603d47d94}"/>
+      <destination node="{9116c4be-58e2-41dd-9165-35703ff90a25}" port="{7232a7cc-dc0d-493e-8f4e-00b18719ca44}"/>
+    </connection>
+    <connection type="figure" uuid="{819a6d05-cf18-4a3f-a447-3b2f3c4b659a}">
+      <source node="{720b2678-c90f-47a8-8a94-15be1094d423}" port="{b05ffaef-79df-468b-8d1d-7aa46c5cc5c6}"/>
+      <destination node="{d94efb62-d560-47da-92a8-ebb2d6542e9c}" port="{4e6f0c01-876b-41bc-991c-34d702af36aa}"/>
+    </connection>
+    <connection type="figure" uuid="{b40c1305-0fea-4e60-ae00-c5c15055d16d}">
+      <source node="{eaa8118a-fae1-478d-bc98-a8e0c8fea43f}" port="{ecd7c8a0-0f61-4cc7-a193-560b34f98aa8}"/>
+      <destination node="{720b2678-c90f-47a8-8a94-15be1094d423}" port="{193d7101-ecd7-468b-94d9-6d660784acf5}"/>
+    </connection>
+  </flow>
+  <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{00413da9-d309-4259-b812-376c11b6beb9}" x="2375.0" y="2650.0">
+    <label>Item to List</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "n": {
+        "editor": null,
+        "label": "Repeat number of times",
+        "order": 0,
+        "type": "integer",
+        "value": 2
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{f35bdc02-6477-444e-aec0-3fc7039d5061}">
+        <label>Input Item</label>
+      </input>
+      <output key="list" scheme="hdf5" type="[figure]" type_base="[&lt;a&gt;]" uuid="{42f834b6-38e7-4eb4-8433-418ddb5c2727}">
+        <label>Item as List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{07cae2b8-bd64-4e55-8098-fde4dafb65b4}" x="1825.0" y="2825.0">
+    <label>Check orientation</label>
+    <version>1.0</version>
+    <description>Raise an error if a predicate is True.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "error_msg": {
+        "editor": null,
+        "label": "Error message:",
+        "order": 1,
+        "type": "string",
+        "value": "Compressed figure colorbar has wrong orientation!"
+      },
+      "error_type": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Severity:",
+        "list": ["Error", "Warning", "Output"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "predicate": {
+        "editor": {
+          "language": "python",
+          "type": "code"
+        },
+        "label": "Predicate function:",
+        "order": 0,
+        "type": "string",
+        "value": "lambda arg: not any(getattr(arg.get_mpl_figure().axes[i].images[0].colorbar, 'orientation', '') == 'horizontal' for i in range(2))"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{a2cb3050-900e-404c-af5e-5655c623d1e9}">
+        <label>Input</label>
+      </input>
+      <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{340569af-9140-4d2e-84db-7c679b83f06c}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figuresubplot" port_format="1.1" uuid="{0916f0a0-cfbe-4793-ad1f-83098b827123}" x="1525.0" y="2400.0">
+    <label>Layout Figures in Subplots</label>
+    <version>0.2</version>
+    <description>Layout a list of Figures in a Subplot</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of columns (0 = best):",
+        "order": 1,
+        "type": "integer",
+        "value": 0
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 4,
+        "type": "boolean",
+        "value": true
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Make first legend global",
+        "order": 5,
+        "type": "boolean",
+        "value": false
+      },
+      "recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 2,
+        "type": "boolean",
+        "value": false
+      },
+      "remove_internal_ticks": {
+        "editor": null,
+        "label": "Remove internal ticks",
+        "order": 3,
+        "type": "boolean",
+        "value": false
+      },
+      "rows": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of rows (0 = best):",
+        "order": 0,
+        "type": "integer",
+        "value": 0
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{3ade6a1b-bcbf-4b57-add1-f44db78da1ca}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{b6740129-b722-4b30-a729-ce24f3c1750c}">
+        <label>A Figure with several subplot axes</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figuresubplot" port_format="1.1" uuid="{0c8ea05d-94f6-4cde-9bac-33be36af83d0}" x="2525.0" y="2725.0">
+    <label>Layout Figures in Subplots</label>
+    <version>0.2</version>
+    <description>Layout a list of Figures in a Subplot</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of columns (0 = best):",
+        "order": 1,
+        "type": "integer",
+        "value": 0
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Make first legend global",
+        "order": 5,
+        "type": "boolean",
+        "value": false
+      },
+      "recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 2,
+        "type": "boolean",
+        "value": false
+      },
+      "remove_internal_ticks": {
+        "editor": null,
+        "label": "Remove internal ticks",
+        "order": 3,
+        "type": "boolean",
+        "value": false
+      },
+      "rows": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of rows (0 = best):",
+        "order": 0,
+        "type": "integer",
+        "value": 0
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{e6e2d015-3071-4933-b030-7efce458ba7a}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{404643ba-8310-4057-9c07-96823ced8b20}">
+        <label>A Figure with several subplot axes</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{0f207a09-a617-40ea-af04-45c90976f421}" x="1825.0" y="2725.0">
+    <label>Check orientations</label>
+    <version>1.0</version>
+    <description>Raise an error if a predicate is True.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "error_msg": {
+        "editor": null,
+        "label": "Error message:",
+        "order": 1,
+        "type": "string",
+        "value": "Compressed figure colorbar has wrong orientation!"
+      },
+      "error_type": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Severity:",
+        "list": ["Error", "Warning", "Output"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "predicate": {
+        "editor": {
+          "language": "python",
+          "type": "code"
+        },
+        "label": "Predicate function:",
+        "order": 0,
+        "type": "string",
+        "value": "lambda arg: not all(getattr(arg.get_mpl_figure().axes[i].images[0].colorbar, 'orientation', '') == 'horizontal' for i in range(2))"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{d7011ec9-7bad-43b9-a7a9-178fbd66fe39}">
+        <label>Input</label>
+      </input>
+      <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{ca634eb5-a013-4ddb-bb13-30b036a80841}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.random.randomtable" port_format="1.1" uuid="{12461486-1a13-4523-b288-4a2ab766273e}" x="1100.0" y="2225.0">
+    <label>Random Table</label>
+    <version>0.1</version>
+    <description>Random Table generator.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "column_entries": {
+        "editor": {
+          "max": 1000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Columns:",
+        "order": 0,
+        "type": "integer",
+        "value": 5
+      },
+      "column_length": {
+        "editor": {
+          "max": 100000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Rows:",
+        "order": 1,
+        "type": "integer",
+        "value": 5
+      },
+      "mask_values": {
+        "editor": null,
+        "label": "Randomly mask values",
+        "order": 2,
+        "type": "boolean",
+        "value": false
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{1318a10b-cf41-4849-8269-fc10f52c6096}">
+        <label>Table with random numbers. The specifications of the Table are declared in the configuration.</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.random.randomtable" port_format="1.1" uuid="{1751cec0-687a-4d67-8985-57aecfe21e58}" x="1100.0" y="1825.0">
+    <label>Random Table</label>
+    <version>0.1</version>
+    <description>Random Table generator.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "column_entries": {
+        "editor": {
+          "max": 1000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Columns:",
+        "order": 0,
+        "type": "integer",
+        "value": 5
+      },
+      "column_length": {
+        "editor": {
+          "max": 100000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Rows:",
+        "order": 1,
+        "type": "integer",
+        "value": 5
+      },
+      "mask_values": {
+        "editor": null,
+        "label": "Randomly mask values",
+        "order": 2,
+        "type": "boolean",
+        "value": false
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{789b856f-dac9-4d4c-a87a-54c59d6425bc}">
+        <label>Table with random numbers. The specifications of the Table are declared in the configuration.</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{17e47271-df1d-4cad-904f-cc79078e0d12}" x="2950.0" y="2725.0">
+    <label>Check labels</label>
+    <version>1.0</version>
+    <description>Raise an error if a predicate is True.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "error_msg": {
+        "editor": null,
+        "label": "Error message:",
+        "order": 1,
+        "type": "string",
+        "value": "Compressed figure colorbar has wrong label!"
+      },
+      "error_type": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Severity:",
+        "list": ["Error", "Warning", "Output"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "predicate": {
+        "editor": {
+          "language": "python",
+          "type": "code"
+        },
+        "label": "Predicate function:",
+        "order": 0,
+        "type": "string",
+        "value": "lambda arg: not all(getattr(arg.get_mpl_figure().axes[i].collections[0].colorbar, '_label', '') == 'Test' for i in range(2))"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{9a9229ff-6a6f-4771-bbb1-6512613f6a8c}">
+        <label>Input</label>
+      </input>
+      <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{5a2f30e1-f95e-41f3-8eaa-830885ad1f27}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figure" port_format="1.1" uuid="{1c4639c9-e593-4347-bb10-f1c5b2abe97d}" x="2225.0" y="2225.0">
+    <label>Scatter with colorbar</label>
+    <version>0.1</version>
+    <description>Create a Figure from some data.</description>
+    <author>Benedikt Ziegler &amp; Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "parameters": {
+        "description": "The full configuration for this figure.",
+        "editor": null,
+        "label": "",
+        "order": 0,
+        "type": "json",
+        "value": {"axes": [{"xaxis": {"position": ["bottom", "value"]}, "yaxis": {"position": ["left", "value"]}, "plots": [{"xdata": ["arg['0']", "py"], "ydata": ["arg['1']", "py"], "color": ["arg['2']", "py"], "colorbar": {"show": ["True", "value"], "label": ["Test", "value"], "orientation": ["horizontal", "value"]}, "type": "scatter"}]}]}
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="table" type_base="&lt;a&gt;" uuid="{54f8af2b-314b-4aa1-ae83-7971abf43369}">
+        <label>Input</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{ac080e7f-0c07-4acd-9dbe-a8296201e3af}">
+        <label>Output figure</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figuresubplot" port_format="1.1" uuid="{29e34587-f43d-476e-b660-fa342fade0e9}" x="1525.0" y="2300.0">
+    <label>Layout Figures in Subplots</label>
+    <version>0.2</version>
+    <description>Layout a list of Figures in a Subplot</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of columns (0 = best):",
+        "order": 1,
+        "type": "integer",
+        "value": 0
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Make first legend global",
+        "order": 5,
+        "type": "boolean",
+        "value": false
+      },
+      "recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 2,
+        "type": "boolean",
+        "value": false
+      },
+      "remove_internal_ticks": {
+        "editor": null,
+        "label": "Remove internal ticks",
+        "order": 3,
+        "type": "boolean",
+        "value": false
+      },
+      "rows": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of rows (0 = best):",
+        "order": 0,
+        "type": "integer",
+        "value": 0
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{09aba6f3-8784-4b98-888b-1a6b35252873}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{53d91689-237e-4624-8132-2ca06423eea4}">
+        <label>A Figure with several subplot axes</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figurecompressorgui" port_format="1.1" uuid="{3355e3b4-7e11-429b-a389-d593e7c9e867}" x="1525.0" y="2150.0">
+    <label>Figure Compressor</label>
+    <version>0.3</version>
+    <description>Compress a list of Figures to a single Figure</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "auto_recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "auto_rescale": {
+        "editor": null,
+        "label": "Auto rescale axes",
+        "order": 5,
+        "type": "boolean",
+        "value": true
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 3,
+        "type": "boolean",
+        "value": false
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Join legends",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "legend_location": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Legend position:",
+        "list": ["best", "upper left", "upper right", "lower left", "lower right", "center left", "center right", "upper center", "lower center", "center", "outside right", "outside left", "outside upper", "outside lower"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["best"]
+      },
+      "parent_figure": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Parent figure:",
+        "list": [],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{cebfc9c5-59d1-494b-b2e4-9481472c064c}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{d5d5ad88-ae09-4249-bde9-b2caef959bd0}">
+        <label>A Figure with the configured axes, lines, labels, etc</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{3a482601-3fd9-48c2-8a19-48f9de1a7b03}" x="1950.0" y="2825.0">
+    <label>Check label</label>
+    <version>1.0</version>
+    <description>Raise an error if a predicate is True.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "error_msg": {
+        "editor": null,
+        "label": "Error message:",
+        "order": 1,
+        "type": "string",
+        "value": "Compressed figure colorbar has wrong label!"
+      },
+      "error_type": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Severity:",
+        "list": ["Error", "Warning", "Output"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "predicate": {
+        "editor": {
+          "language": "python",
+          "type": "code"
+        },
+        "label": "Predicate function:",
+        "order": 0,
+        "type": "string",
+        "value": "lambda arg: not any(getattr(arg.get_mpl_figure().axes[i].images[0].colorbar, '_label', '') == 'Test' for i in range(2))"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{7b3031ad-4269-4a06-b8a0-8b966197e24f}">
+        <label>Input</label>
+      </input>
+      <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{5dba4ed7-7ded-4189-a483-b56b475b0c5c}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{483f09ee-8000-472b-8bc1-e364da71ccc2}" x="2825.0" y="2825.0">
+    <label>Check orientation</label>
+    <version>1.0</version>
+    <description>Raise an error if a predicate is True.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "error_msg": {
+        "editor": null,
+        "label": "Error message:",
+        "order": 1,
+        "type": "string",
+        "value": "Compressed figure colorbar has wrong orientation!"
+      },
+      "error_type": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Severity:",
+        "list": ["Error", "Warning", "Output"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "predicate": {
+        "editor": {
+          "language": "python",
+          "type": "code"
+        },
+        "label": "Predicate function:",
+        "order": 0,
+        "type": "string",
+        "value": "lambda arg: not any(getattr(arg.get_mpl_figure().axes[i].collections[0].colorbar, 'orientation', '') == 'horizontal' for i in range(2))"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{1fa5d55f-76b2-4585-ac47-ac5f2b4b8eb9}">
+        <label>Input</label>
+      </input>
+      <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{78e1ae59-e46f-4678-888c-cdc7e12a2809}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{4c5b0a65-380f-457c-b458-b12c6b778e6c}" x="1675.0" y="2625.0">
+    <label>Item to List</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "n": {
+        "editor": null,
+        "label": "Repeat number of times",
+        "order": 0,
+        "type": "integer",
+        "value": 1
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{86afb162-668d-4628-ba37-de398c49c60b}">
+        <label>Input Item</label>
+      </input>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{2adbe733-c197-471f-8238-00852074c995}">
+        <label>Input Item</label>
+      </input>
+      <output key="list" scheme="hdf5" type="[figure]" type_base="[&lt;a&gt;]" uuid="{83e8834a-0410-4c5c-9aa6-e01af079cec7}">
+        <label>Item as List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figuresubplot" port_format="1.1" uuid="{4ff63ecc-f2cc-49a5-a8d4-29302ff5716c}" x="2525.0" y="2300.0">
+    <label>Layout Figures in Subplots</label>
+    <version>0.2</version>
+    <description>Layout a list of Figures in a Subplot</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of columns (0 = best):",
+        "order": 1,
+        "type": "integer",
+        "value": 0
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Make first legend global",
+        "order": 5,
+        "type": "boolean",
+        "value": false
+      },
+      "recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 2,
+        "type": "boolean",
+        "value": false
+      },
+      "remove_internal_ticks": {
+        "editor": null,
+        "label": "Remove internal ticks",
+        "order": 3,
+        "type": "boolean",
+        "value": false
+      },
+      "rows": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of rows (0 = best):",
+        "order": 0,
+        "type": "integer",
+        "value": 0
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{da6af708-de00-46a9-95d1-2b8acabfb2c6}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{eea60f05-ad20-4c41-92c7-91ef7cbab355}">
+        <label>A Figure with several subplot axes</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{507fbfb2-19e4-49e4-a841-a0ec8f4b302e}" x="1675.0" y="2825.0">
+    <label>Check colorbar exists</label>
+    <version>1.0</version>
+    <description>Raise an error if a predicate is True.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "error_msg": {
+        "editor": null,
+        "label": "Error message:",
+        "order": 1,
+        "type": "string",
+        "value": "Compressed figure doesn't have exactly one colorbar!"
+      },
+      "error_type": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Severity:",
+        "list": ["Error", "Warning", "Output"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "predicate": {
+        "editor": {
+          "language": "python",
+          "type": "code"
+        },
+        "label": "Predicate function:",
+        "order": 0,
+        "type": "string",
+        "value": "lambda arg: sum(arg.get_mpl_figure().axes[i].images[0].colorbar is not None for i in range(2)) != 1"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="in" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{5a740bc9-51f5-4738-8d8b-b01ef170fb8c}">
+        <label>Input</label>
+      </input>
+      <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{5c2cd7e0-541c-4720-b3fb-b50435e2ec20}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figure" port_format="1.1" uuid="{53c0a29f-3c6e-4fc7-98b5-30e75affa574}" x="1225.0" y="2225.0">
+    <label>Heatmap with colorbar</label>
+    <version>0.1</version>
+    <description>Create a Figure from some data.</description>
+    <author>Benedikt Ziegler &amp; Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "parameters": {
+        "description": "The full configuration for this figure.",
+        "editor": null,
+        "label": "",
+        "order": 0,
+        "type": "json",
+        "value": {"axes": [{"xaxis": {"position": ["bottom", "value"]}, "yaxis": {"position": ["left", "value"]}, "plots": [{"xdata": ["np.arange(3)", "py"], "ydata": ["np.arange(3)", "py"], "zdata": ["np.arange(9)", "py"], "colorbar": {"show": ["True", "value"], "label": ["Test", "value"], "orientation": ["horizontal", "value"]}, "type": "heatmap"}]}]}
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="table" type_base="&lt;a&gt;" uuid="{669bb9de-8950-4cc1-b2fc-4652a90759ea}">
+        <label>Input</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{3cce7236-198a-422f-8dd3-20c8eafb64a0}">
+        <label>Output figure</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{5543d98d-90b9-4a9a-bd89-1e612cb5b887}" x="2675.0" y="2725.0">
+    <label>Check colorbars exist</label>
+    <version>1.0</version>
+    <description>Raise an error if a predicate is True.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "error_msg": {
+        "editor": null,
+        "label": "Error message:",
+        "order": 1,
+        "type": "string",
+        "value": "Compressed figure doesn't have two colorbars!"
+      },
+      "error_type": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Severity:",
+        "list": ["Error", "Warning", "Output"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "predicate": {
+        "editor": {
+          "language": "python",
+          "type": "code"
+        },
+        "label": "Predicate function:",
+        "order": 0,
+        "type": "string",
+        "value": "lambda arg: sum(arg.get_mpl_figure().axes[i].collections[0].colorbar is not None for i in range(2)) != 2"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="in" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{c427ec57-44df-434d-89f9-3cf00c3296ca}">
+        <label>Input</label>
+      </input>
+      <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{60dca6e6-0f02-442d-b2b5-35119159f48c}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figuresubplot" port_format="1.1" uuid="{562e5bdc-6d66-4a58-a5ad-09f63f14df4a}" x="2525.0" y="2825.0">
+    <label>Layout Figures in Subplots</label>
+    <version>0.2</version>
+    <description>Layout a list of Figures in a Subplot</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of columns (0 = best):",
+        "order": 1,
+        "type": "integer",
+        "value": 0
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 4,
+        "type": "boolean",
+        "value": true
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Make first legend global",
+        "order": 5,
+        "type": "boolean",
+        "value": false
+      },
+      "recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 2,
+        "type": "boolean",
+        "value": false
+      },
+      "remove_internal_ticks": {
+        "editor": null,
+        "label": "Remove internal ticks",
+        "order": 3,
+        "type": "boolean",
+        "value": false
+      },
+      "rows": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of rows (0 = best):",
+        "order": 0,
+        "type": "integer",
+        "value": 0
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{412dcb62-723b-46ec-9c97-ca035472b8ea}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{6e6a97f1-02a0-4760-8617-aeb085d8cee7}">
+        <label>A Figure with several subplot axes</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figurecompressorgui" port_format="1.1" uuid="{56d74d8f-9ad2-42d4-91d0-470e85729d5d}" x="2525.0" y="2575.0">
+    <label>Figure Compressor</label>
+    <version>0.3</version>
+    <description>Compress a list of Figures to a single Figure</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "auto_recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "auto_rescale": {
+        "editor": null,
+        "label": "Auto rescale axes",
+        "order": 5,
+        "type": "boolean",
+        "value": true
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 3,
+        "type": "boolean",
+        "value": false
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Join legends",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "legend_location": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Legend position:",
+        "list": ["best", "upper left", "upper right", "lower left", "lower right", "center left", "center right", "upper center", "lower center", "center", "outside right", "outside left", "outside upper", "outside lower"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["best"]
+      },
+      "parent_figure": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Parent figure:",
+        "list": [],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{dc0e6ea7-b66b-4820-b058-9e340ff534e7}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{2c6a4268-1752-47e3-927a-8d893b0617f5}">
+        <label>A Figure with the configured axes, lines, labels, etc</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figuresubplot" port_format="1.1" uuid="{5b9ed5ea-fb48-4807-8fbc-037e36c6649e}" x="1525.0" y="1900.0">
+    <label>Layout Figures in Subplots</label>
+    <version>0.2</version>
+    <description>Layout a list of Figures in a Subplot</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of columns (0 = best):",
+        "order": 1,
+        "type": "integer",
+        "value": 0
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Make first legend global",
+        "order": 5,
+        "type": "boolean",
+        "value": false
+      },
+      "recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 2,
+        "type": "boolean",
+        "value": false
+      },
+      "remove_internal_ticks": {
+        "editor": null,
+        "label": "Remove internal ticks",
+        "order": 3,
+        "type": "boolean",
+        "value": false
+      },
+      "rows": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of rows (0 = best):",
+        "order": 0,
+        "type": "integer",
+        "value": 0
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{f955a538-673f-48fa-9699-0e63c1b6cab9}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{4bb50b7e-ca98-4627-9adb-19172b94860f}">
+        <label>A Figure with several subplot axes</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figure" port_format="1.1" uuid="{620b7f8d-8af1-4613-9d51-e4bc412e4591}" x="2225.0" y="2650.0">
+    <label>Scatter with colorbar</label>
+    <version>0.1</version>
+    <description>Create a Figure from some data.</description>
+    <author>Benedikt Ziegler &amp; Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "parameters": {
+        "description": "The full configuration for this figure.",
+        "editor": null,
+        "label": "",
+        "order": 0,
+        "type": "json",
+        "value": {"axes": [{"xaxis": {"position": ["bottom", "value"]}, "yaxis": {"position": ["left", "value"]}, "plots": [{"xdata": ["arg['0']", "py"], "ydata": ["arg['1']", "py"], "color": ["arg['2']", "py"], "colorbar": {"show": ["True", "value"], "label": ["Test", "value"], "orientation": ["horizontal", "value"]}, "type": "scatter"}]}]}
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="table" type_base="&lt;a&gt;" uuid="{52772ea9-f316-45f9-a805-9a0016419831}">
+        <label>Input</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{a53b21ab-9f94-4ae0-b584-1a6443fa6ae1}">
+        <label>Output figure</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{65115e13-17e2-4e43-a917-b7c50d733c76}" x="2375.0" y="2225.0">
+    <label>Item to List</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "n": {
+        "editor": null,
+        "label": "Repeat number of times",
+        "order": 0,
+        "type": "integer",
+        "value": 1
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{c102f4a5-27f2-47ba-b7f3-b95ce025cf84}">
+        <label>Input Item</label>
+      </input>
+      <output key="list" scheme="hdf5" type="[figure]" type_base="[&lt;a&gt;]" uuid="{1e2faf05-c616-4cfc-92a1-59edbd8eb438}">
+        <label>Item as List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.random.randomtable" port_format="1.1" uuid="{6d6b8fd6-8d09-4e25-ac69-eaa8345471f7}" x="2100.0" y="2650.0">
+    <label>Random Table</label>
+    <version>0.1</version>
+    <description>Random Table generator.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "column_entries": {
+        "editor": {
+          "max": 1000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Columns:",
+        "order": 0,
+        "type": "integer",
+        "value": 5
+      },
+      "column_length": {
+        "editor": {
+          "max": 100000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Rows:",
+        "order": 1,
+        "type": "integer",
+        "value": 5
+      },
+      "mask_values": {
+        "editor": null,
+        "label": "Randomly mask values",
+        "order": 2,
+        "type": "boolean",
+        "value": false
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{b47fe6c4-8b65-4809-b180-81065a500312}">
+        <label>Table with random numbers. The specifications of the Table are declared in the configuration.</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.builtin.map" port_format="1.1" uuid="{6f914a42-bdca-49b6-b634-d945610828af}" x="2850.0" y="1850.0">
+    <label>Map</label>
+    <version>1.0</version>
+    <description>Map Lambda function over each element in argument list</description>
+    <author>Erik der Hagopian &lt;erik.hagopian@combine.se&gt;</author>
+    <copyright>(C) 2015-2016 Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "fail_strategy": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Action on exception",
+        "list": ["Error", "Create Empty Item", "Skip Item"],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Function" scheme="hdf5" type="figure -&gt; figure" type_base="&lt;a&gt; -&gt; &lt;b&gt;" uuid="{92f4ad96-2153-4c9b-bb6d-1c4febfb12d2}">
+        <label>Lambda Function to Map</label>
+      </input>
+      <input key="List" scheme="hdf5" type="[figure]" type_base="[&lt;a&gt;]" uuid="{bf94bbea-5fcf-4e5b-ad98-6ca90c91d4e0}">
+        <label>Argument List</label>
+      </input>
+      <output key="List" scheme="hdf5" type="[figure]" type_base="[&lt;b&gt;]" uuid="{094ff8d9-0612-4ce7-b8eb-677325038a0a}">
+        <label>Output List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figure" port_format="1.1" uuid="{753f4085-ef9b-4847-8e40-4772a7c71b6f}" x="1225.0" y="1825.0">
+    <label>Heatmap no colorbar</label>
+    <version>0.1</version>
+    <description>Create a Figure from some data.</description>
+    <author>Benedikt Ziegler &amp; Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "parameters": {
+        "description": "The full configuration for this figure.",
+        "editor": null,
+        "label": "",
+        "order": 0,
+        "type": "json",
+        "value": {"axes": [{"xaxis": {"position": ["bottom", "value"]}, "yaxis": {"position": ["left", "value"]}, "plots": [{"xdata": ["np.arange(3)", "py"], "ydata": ["np.arange(3)", "py"], "zdata": ["np.arange(9)", "py"], "type": "heatmap"}]}]}
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="table" type_base="&lt;a&gt;" uuid="{2cd7d06c-2778-45ad-a3a9-8af89f942ff8}">
+        <label>Input</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{b3fb451b-12a0-490e-a7c5-4356fe6eecaa}">
+        <label>Output figure</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figurecompressorgui" port_format="1.1" uuid="{77f733df-cdbf-4803-b44e-657ae24e888d}" x="2525.0" y="2150.0">
+    <label>Figure Compressor</label>
+    <version>0.3</version>
+    <description>Compress a list of Figures to a single Figure</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "auto_recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "auto_rescale": {
+        "editor": null,
+        "label": "Auto rescale axes",
+        "order": 5,
+        "type": "boolean",
+        "value": true
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 3,
+        "type": "boolean",
+        "value": false
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Join legends",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "legend_location": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Legend position:",
+        "list": ["best", "upper left", "upper right", "lower left", "lower right", "center left", "center right", "upper center", "lower center", "center", "outside right", "outside left", "outside upper", "outside lower"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["best"]
+      },
+      "parent_figure": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Parent figure:",
+        "list": [],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{32dc1abf-e499-4361-8184-c27a80e4ce89}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{9ca834c5-b1a1-4299-bce4-c65a7fac451f}">
+        <label>A Figure with the configured axes, lines, labels, etc</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figurecompressorgui" port_format="1.1" uuid="{7b6c30b1-b47a-476f-846b-5cb35f9c324f}" x="2525.0" y="1825.0">
+    <label>Figure Compressor</label>
+    <version>0.3</version>
+    <description>Compress a list of Figures to a single Figure</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "auto_recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "auto_rescale": {
+        "editor": null,
+        "label": "Auto rescale axes",
+        "order": 5,
+        "type": "boolean",
+        "value": true
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Join legends",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "legend_location": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Legend position:",
+        "list": ["best", "upper left", "upper right", "lower left", "lower right", "center left", "center right", "upper center", "lower center", "center", "outside right", "outside left", "outside upper", "outside lower"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["best"]
+      },
+      "parent_figure": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Parent figure:",
+        "list": [],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{b4d1635c-1d23-4180-b988-c91d1cc8267b}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{f4db5d73-9024-45c1-b203-22ce7dde568e}">
+        <label>A Figure with the configured axes, lines, labels, etc</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figurecompressorgui" port_format="1.1" uuid="{7ba5acca-c427-4963-b704-e44d1157f657}" x="1525.0" y="2575.0">
+    <label>Figure Compressor</label>
+    <version>0.3</version>
+    <description>Compress a list of Figures to a single Figure</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "auto_recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "auto_rescale": {
+        "editor": null,
+        "label": "Auto rescale axes",
+        "order": 5,
+        "type": "boolean",
+        "value": true
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 3,
+        "type": "boolean",
+        "value": false
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Join legends",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "legend_location": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Legend position:",
+        "list": ["best", "upper left", "upper right", "lower left", "lower right", "center left", "center right", "upper center", "lower center", "center", "outside right", "outside left", "outside upper", "outside lower"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["best"]
+      },
+      "parent_figure": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Parent figure:",
+        "list": [],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{110483a6-e65b-4260-8dd2-e940abd323e3}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{220dd262-97bf-47b3-8126-7b8c98171400}">
+        <label>A Figure with the configured axes, lines, labels, etc</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figurecompressorgui" port_format="1.1" uuid="{81dd42e9-09cb-47cb-b0eb-707893f3113f}" x="1525.0" y="1825.0">
+    <label>Figure Compressor</label>
+    <version>0.3</version>
+    <description>Compress a list of Figures to a single Figure</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "auto_recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "auto_rescale": {
+        "editor": null,
+        "label": "Auto rescale axes",
+        "order": 5,
+        "type": "boolean",
+        "value": true
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Join legends",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "legend_location": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Legend position:",
+        "list": ["best", "upper left", "upper right", "lower left", "lower right", "center left", "center right", "upper center", "lower center", "center", "outside right", "outside left", "outside upper", "outside lower"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["best"]
+      },
+      "parent_figure": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Parent figure:",
+        "list": [],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{b8609eb6-a418-49c5-b273-9a78df9b1b11}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{27c72f84-56fc-43f0-ad58-f1191f9ff1f4}">
+        <label>A Figure with the configured axes, lines, labels, etc</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figuresubplot" port_format="1.1" uuid="{87122a80-2fa1-4431-9fd3-7c53bc9888a8}" x="2525.0" y="2400.0">
+    <label>Layout Figures in Subplots</label>
+    <version>0.2</version>
+    <description>Layout a list of Figures in a Subplot</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of columns (0 = best):",
+        "order": 1,
+        "type": "integer",
+        "value": 0
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 4,
+        "type": "boolean",
+        "value": true
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Make first legend global",
+        "order": 5,
+        "type": "boolean",
+        "value": false
+      },
+      "recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 2,
+        "type": "boolean",
+        "value": false
+      },
+      "remove_internal_ticks": {
+        "editor": null,
+        "label": "Remove internal ticks",
+        "order": 3,
+        "type": "boolean",
+        "value": false
+      },
+      "rows": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of rows (0 = best):",
+        "order": 0,
+        "type": "integer",
+        "value": 0
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{a33f6c37-a4e0-410d-ba41-7852ac635bed}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{2eb51237-d9ca-4f7a-99a9-5dee1592affe}">
+        <label>A Figure with several subplot axes</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figurecompressorgui" port_format="1.1" uuid="{88898902-b1ae-4e38-b024-b47a5d18fdd8}" x="1525.0" y="2650.0">
+    <label>Figure Compressor</label>
+    <version>0.3</version>
+    <description>Compress a list of Figures to a single Figure</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "auto_recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "auto_rescale": {
+        "editor": null,
+        "label": "Auto rescale axes",
+        "order": 5,
+        "type": "boolean",
+        "value": true
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Join legends",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "legend_location": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Legend position:",
+        "list": ["best", "upper left", "upper right", "lower left", "lower right", "center left", "center right", "upper center", "lower center", "center", "outside right", "outside left", "outside upper", "outside lower"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["best"]
+      },
+      "parent_figure": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Parent figure:",
+        "list": [],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{0510f2b6-4d93-4214-91cf-6f202193ccb6}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{6bfbd6db-320b-4415-bec5-d593be9a0678}">
+        <label>A Figure with the configured axes, lines, labels, etc</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figuresubplot" port_format="1.1" uuid="{8bd5f899-b59a-419d-868c-f9316c092642}" x="2525.0" y="2000.0">
+    <label>Layout Figures in Subplots</label>
+    <version>0.2</version>
+    <description>Layout a list of Figures in a Subplot</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of columns (0 = best):",
+        "order": 1,
+        "type": "integer",
+        "value": 0
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 4,
+        "type": "boolean",
+        "value": true
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Make first legend global",
+        "order": 5,
+        "type": "boolean",
+        "value": false
+      },
+      "recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 2,
+        "type": "boolean",
+        "value": false
+      },
+      "remove_internal_ticks": {
+        "editor": null,
+        "label": "Remove internal ticks",
+        "order": 3,
+        "type": "boolean",
+        "value": false
+      },
+      "rows": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of rows (0 = best):",
+        "order": 0,
+        "type": "integer",
+        "value": 0
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{33c9e8d8-0704-40c3-93d6-c71dd592efa4}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{40736b69-5086-4c4a-80d6-78d4ed41f454}">
+        <label>A Figure with several subplot axes</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.builtin.map" port_format="1.1" uuid="{8df294a3-c10b-4314-ad8d-16335ef48470}" x="1825.0" y="2625.0">
+    <label>Map</label>
+    <version>1.0</version>
+    <description>Map Lambda function over each element in argument list</description>
+    <author>Erik der Hagopian &lt;erik.hagopian@combine.se&gt;</author>
+    <copyright>(C) 2015-2016 Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "fail_strategy": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Action on exception",
+        "list": ["Error", "Create Empty Item", "Skip Item"],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Function" scheme="hdf5" type="figure -&gt; figure" type_base="&lt;a&gt; -&gt; &lt;b&gt;" uuid="{ecfb980e-6c8c-4272-a5cc-0836748172a1}">
+        <label>Lambda Function to Map</label>
+      </input>
+      <input key="List" scheme="hdf5" type="[figure]" type_base="[&lt;a&gt;]" uuid="{8bc19f63-4aed-4b74-9c9d-e5b9aa399f27}">
+        <label>Argument List</label>
+      </input>
+      <output key="List" scheme="hdf5" type="[figure]" type_base="[&lt;b&gt;]" uuid="{ddcb7b50-7a56-40f2-90cc-76ecc34b7c29}">
+        <label>Output List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{8e4f6b15-335c-4a1a-a5a2-417a86bb8af0}" x="1375.0" y="2225.0">
+    <label>Item to List</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "n": {
+        "editor": null,
+        "label": "Repeat number of times",
+        "order": 0,
+        "type": "integer",
+        "value": 1
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{c7706b3f-5514-4ce0-8d24-560d0249f7ad}">
+        <label>Input Item</label>
+      </input>
+      <output key="list" scheme="hdf5" type="[figure]" type_base="[&lt;a&gt;]" uuid="{c62a29ec-b8c0-491d-bf1a-289a44cf1e20}">
+        <label>Item as List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figure" port_format="1.1" uuid="{8f86d067-c636-4575-ade7-20fd341685f4}" x="2225.0" y="1825.0">
+    <label>Scatter no colorbar</label>
+    <version>0.1</version>
+    <description>Create a Figure from some data.</description>
+    <author>Benedikt Ziegler &amp; Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "parameters": {
+        "description": "The full configuration for this figure.",
+        "editor": null,
+        "label": "",
+        "order": 0,
+        "type": "json",
+        "value": {"axes": [{"xaxis": {"position": ["bottom", "value"]}, "yaxis": {"position": ["left", "value"]}, "plots": [{"xdata": ["arg['0']", "py"], "ydata": ["arg['1']", "py"], "color": ["arg['2']", "py"], "type": "scatter"}]}]}
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="table" type_base="&lt;a&gt;" uuid="{d6ec0541-a33d-4cc2-aa9c-3d715714a383}">
+        <label>Input</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{a922bcdf-7477-4879-95c4-1eaf672b2079}">
+        <label>Output figure</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figurecompressorgui" port_format="1.1" uuid="{907f8ecd-3666-4e60-bb60-5cab3d651d4f}" x="1525.0" y="2225.0">
+    <label>Figure Compressor</label>
+    <version>0.3</version>
+    <description>Compress a list of Figures to a single Figure</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "auto_recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "auto_rescale": {
+        "editor": null,
+        "label": "Auto rescale axes",
+        "order": 5,
+        "type": "boolean",
+        "value": true
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Join legends",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "legend_location": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Legend position:",
+        "list": ["best", "upper left", "upper right", "lower left", "lower right", "center left", "center right", "upper center", "lower center", "center", "outside right", "outside left", "outside upper", "outside lower"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["best"]
+      },
+      "parent_figure": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Parent figure:",
+        "list": [],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{c52b5420-a06b-43fc-90b5-9e715e73650e}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{41b5caea-2cdf-4e49-b968-f8722b876b08}">
+        <label>A Figure with the configured axes, lines, labels, etc</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{98cc922e-f286-4a7c-99c0-20abe6b08935}" x="1375.0" y="1825.0">
+    <label>Item to List</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "n": {
+        "editor": null,
+        "label": "Repeat number of times",
+        "order": 0,
+        "type": "integer",
+        "value": 1
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{ef430350-7be5-47fc-994f-8eeecdab7e6e}">
+        <label>Input Item</label>
+      </input>
+      <output key="list" scheme="hdf5" type="[figure]" type_base="[&lt;a&gt;]" uuid="{4ef261d0-03d8-4c20-9844-cf909b4de611}">
+        <label>Item as List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figurecompressorgui" port_format="1.1" uuid="{9a859fd3-af78-458b-8876-35ae3d75bb82}" x="2525.0" y="1750.0">
+    <label>Figure Compressor</label>
+    <version>0.3</version>
+    <description>Compress a list of Figures to a single Figure</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "auto_recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "auto_rescale": {
+        "editor": null,
+        "label": "Auto rescale axes",
+        "order": 5,
+        "type": "boolean",
+        "value": true
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 3,
+        "type": "boolean",
+        "value": false
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Join legends",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "legend_location": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Legend position:",
+        "list": ["best", "upper left", "upper right", "lower left", "lower right", "center left", "center right", "upper center", "lower center", "center", "outside right", "outside left", "outside upper", "outside lower"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["best"]
+      },
+      "parent_figure": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Parent figure:",
+        "list": [],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{ace52f00-b55d-466d-b506-97ff4af4bd35}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{5b83fb29-4b7f-4574-916a-72b326109fed}">
+        <label>A Figure with the configured axes, lines, labels, etc</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.random.randomtable" port_format="1.1" uuid="{9d543096-5023-4725-ac74-26f827ad92aa}" x="1100.0" y="2650.0">
+    <label>Random Table</label>
+    <version>0.1</version>
+    <description>Random Table generator.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "column_entries": {
+        "editor": {
+          "max": 1000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Columns:",
+        "order": 0,
+        "type": "integer",
+        "value": 5
+      },
+      "column_length": {
+        "editor": {
+          "max": 100000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Rows:",
+        "order": 1,
+        "type": "integer",
+        "value": 5
+      },
+      "mask_values": {
+        "editor": null,
+        "label": "Randomly mask values",
+        "order": 2,
+        "type": "boolean",
+        "value": false
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{fd1fa102-e2af-4049-9f9e-0a5d10c92558}">
+        <label>Table with random numbers. The specifications of the Table are declared in the configuration.</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figuresubplot" port_format="1.1" uuid="{a667cba7-363c-4412-863e-36ef593cbacf}" x="1525.0" y="2000.0">
+    <label>Layout Figures in Subplots</label>
+    <version>0.2</version>
+    <description>Layout a list of Figures in a Subplot</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of columns (0 = best):",
+        "order": 1,
+        "type": "integer",
+        "value": 0
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 4,
+        "type": "boolean",
+        "value": true
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Make first legend global",
+        "order": 5,
+        "type": "boolean",
+        "value": false
+      },
+      "recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 2,
+        "type": "boolean",
+        "value": false
+      },
+      "remove_internal_ticks": {
+        "editor": null,
+        "label": "Remove internal ticks",
+        "order": 3,
+        "type": "boolean",
+        "value": false
+      },
+      "rows": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of rows (0 = best):",
+        "order": 0,
+        "type": "integer",
+        "value": 0
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{d703cd14-35f5-4f13-af8a-548944d2909e}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{6a448570-4c5e-4423-a5c6-7fded1d1caca}">
+        <label>A Figure with several subplot axes</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.builtin.map" port_format="1.1" uuid="{ac115f9e-33e0-4d6a-9d51-407071071bb3}" x="1850.0" y="2250.0">
+    <label>Map</label>
+    <version>1.0</version>
+    <description>Map Lambda function over each element in argument list</description>
+    <author>Erik der Hagopian &lt;erik.hagopian@combine.se&gt;</author>
+    <copyright>(C) 2015-2016 Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "fail_strategy": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Action on exception",
+        "list": ["Error", "Create Empty Item", "Skip Item"],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Function" scheme="hdf5" type="figure -&gt; figure" type_base="&lt;a&gt; -&gt; &lt;b&gt;" uuid="{bf825cc1-a1ec-48cc-bfb7-7920efae8a9e}">
+        <label>Lambda Function to Map</label>
+      </input>
+      <input key="List" scheme="hdf5" type="[figure]" type_base="[&lt;a&gt;]" uuid="{64014185-93be-48a2-88dd-0984858f3405}">
+        <label>Argument List</label>
+      </input>
+      <output key="List" scheme="hdf5" type="[figure]" type_base="[&lt;b&gt;]" uuid="{adb40d56-5ba2-4b00-95e3-25e86c5f72a6}">
+        <label>Output List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figure" port_format="1.1" uuid="{ac92782c-0046-4cd4-8556-ccf4dfe52918}" x="1225.0" y="2650.0">
+    <label>Heatmap with colorbar</label>
+    <version>0.1</version>
+    <description>Create a Figure from some data.</description>
+    <author>Benedikt Ziegler &amp; Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "parameters": {
+        "description": "The full configuration for this figure.",
+        "editor": null,
+        "label": "",
+        "order": 0,
+        "type": "json",
+        "value": {"axes": [{"xaxis": {"position": ["bottom", "value"]}, "yaxis": {"position": ["left", "value"]}, "plots": [{"xdata": ["np.arange(3)", "py"], "ydata": ["np.arange(3)", "py"], "zdata": ["np.arange(9)", "py"], "colorbar": {"show": ["True", "value"], "label": ["Test", "value"], "orientation": ["horizontal", "value"]}, "type": "heatmap"}]}]}
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="table" type_base="&lt;a&gt;" uuid="{a54ebee0-ebd3-4c1c-a738-ccab53907f03}">
+        <label>Input</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{a3665551-220f-4116-b863-6039f8c4a577}">
+        <label>Output figure</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.builtin.map" port_format="1.1" uuid="{b17d6c5d-fdcc-479e-8dba-88c72585a506}" x="1825.0" y="1850.0">
+    <label>Map</label>
+    <version>1.0</version>
+    <description>Map Lambda function over each element in argument list</description>
+    <author>Erik der Hagopian &lt;erik.hagopian@combine.se&gt;</author>
+    <copyright>(C) 2015-2016 Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "fail_strategy": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Action on exception",
+        "list": ["Error", "Create Empty Item", "Skip Item"],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Function" scheme="hdf5" type="figure -&gt; figure" type_base="&lt;a&gt; -&gt; &lt;b&gt;" uuid="{ca5b09ca-e485-46ac-b2ad-4bd3128bdd02}">
+        <label>Lambda Function to Map</label>
+      </input>
+      <input key="List" scheme="hdf5" type="[figure]" type_base="[&lt;a&gt;]" uuid="{ff1b650e-253b-490b-a8ba-6e963a7d57fa}">
+        <label>Argument List</label>
+      </input>
+      <output key="List" scheme="hdf5" type="[figure]" type_base="[&lt;b&gt;]" uuid="{6d72ce97-debb-49c4-b9da-683ebdbd5a90}">
+        <label>Output List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figurecompressorgui" port_format="1.1" uuid="{b1b0aa59-7d1a-4e76-afa4-d1236b239948}" x="2525.0" y="2650.0">
+    <label>Figure Compressor</label>
+    <version>0.3</version>
+    <description>Compress a list of Figures to a single Figure</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "auto_recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "auto_rescale": {
+        "editor": null,
+        "label": "Auto rescale axes",
+        "order": 5,
+        "type": "boolean",
+        "value": true
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Join legends",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "legend_location": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Legend position:",
+        "list": ["best", "upper left", "upper right", "lower left", "lower right", "center left", "center right", "upper center", "lower center", "center", "outside right", "outside left", "outside upper", "outside lower"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["best"]
+      },
+      "parent_figure": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Parent figure:",
+        "list": [],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{71f3caf1-3a64-469e-a4da-4859a4fde71e}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{4a7a7720-78a9-4235-bd50-b54c539d2289}">
+        <label>A Figure with the configured axes, lines, labels, etc</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{b609c44b-a970-4071-9111-456ffa16d5c2}" x="1375.0" y="2650.0">
+    <label>Item to List</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "n": {
+        "editor": null,
+        "label": "Repeat number of times",
+        "order": 0,
+        "type": "integer",
+        "value": 2
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{18c1b291-ece7-4c80-9959-80df5a897fc7}">
+        <label>Input Item</label>
+      </input>
+      <output key="list" scheme="hdf5" type="[figure]" type_base="[&lt;a&gt;]" uuid="{d6767cec-10e9-4b22-9798-330dc0088fea}">
+        <label>Item as List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{b8962d38-14fd-40e6-9884-1ad0db7ed1d5}" x="2700.0" y="2250.0">
+    <label>Item to List</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "n": {
+        "editor": null,
+        "label": "Repeat number of times",
+        "order": 0,
+        "type": "integer",
+        "value": 1
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{92cc2171-fb9c-4e5f-9afb-2ed8d07c1b4a}">
+        <label>Input Item</label>
+      </input>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{7095d733-bdea-4e3b-8579-c9c6db6c0dc3}">
+        <label>Input Item</label>
+      </input>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{0cb6a537-290f-4541-9184-240d1edbbd8f}">
+        <label>Input Item</label>
+      </input>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{2ee57f9a-13f9-467d-a345-6b463b00b8c0}">
+        <label>Input Item</label>
+      </input>
+      <output key="list" scheme="hdf5" type="[figure]" type_base="[&lt;a&gt;]" uuid="{4f138c12-1765-4fc3-b8dc-2858961fc464}">
+        <label>Item as List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{ba7be4bd-6d2d-4543-852d-2a0f09b4ab4b}" x="1700.0" y="2250.0">
+    <label>Item to List</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "n": {
+        "editor": null,
+        "label": "Repeat number of times",
+        "order": 0,
+        "type": "integer",
+        "value": 1
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{564bf36f-f86e-4832-b707-fddc2af3f696}">
+        <label>Input Item</label>
+      </input>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{57f38c98-54e4-4149-ab90-0ec991ab03f7}">
+        <label>Input Item</label>
+      </input>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{30c408d6-a315-4a0c-8e67-1e5d26238a36}">
+        <label>Input Item</label>
+      </input>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{ab2d05db-544c-4aff-9e37-9ae1eda0b022}">
+        <label>Input Item</label>
+      </input>
+      <output key="list" scheme="hdf5" type="[figure]" type_base="[&lt;a&gt;]" uuid="{3db6d8a9-1099-46d0-87fb-ed6ee4b329d6}">
+        <label>Item as List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figuresubplot" port_format="1.1" uuid="{bac73082-7f15-4ac4-935d-783cc69ea38e}" x="1525.0" y="2825.0">
+    <label>Layout Figures in Subplots</label>
+    <version>0.2</version>
+    <description>Layout a list of Figures in a Subplot</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of columns (0 = best):",
+        "order": 1,
+        "type": "integer",
+        "value": 0
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 4,
+        "type": "boolean",
+        "value": true
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Make first legend global",
+        "order": 5,
+        "type": "boolean",
+        "value": false
+      },
+      "recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 2,
+        "type": "boolean",
+        "value": false
+      },
+      "remove_internal_ticks": {
+        "editor": null,
+        "label": "Remove internal ticks",
+        "order": 3,
+        "type": "boolean",
+        "value": false
+      },
+      "rows": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of rows (0 = best):",
+        "order": 0,
+        "type": "integer",
+        "value": 0
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{c7916258-a1d2-4d5e-9a6c-6694245aac53}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{6b87b255-b3fc-4518-b78f-a620d040fb44}">
+        <label>A Figure with several subplot axes</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{c8a48c2d-fcba-4e9c-80d6-faaec46318d5}" x="2700.0" y="1850.0">
+    <label>Item to List</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "n": {
+        "editor": null,
+        "label": "Repeat number of times",
+        "order": 0,
+        "type": "integer",
+        "value": 1
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{dac342b5-d6a7-4915-b4ab-8dfc7ce222f8}">
+        <label>Input Item</label>
+      </input>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{81480ab6-4001-4e25-a5bd-6d74d8dadb5a}">
+        <label>Input Item</label>
+      </input>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{63f06e4b-53ae-418f-98a1-be3f5fbe05a2}">
+        <label>Input Item</label>
+      </input>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{4868fd2b-e941-4be5-b590-f5894fdd8c5f}">
+        <label>Input Item</label>
+      </input>
+      <output key="list" scheme="hdf5" type="[figure]" type_base="[&lt;a&gt;]" uuid="{cfdb43d4-03a1-4686-bf61-2bdbe395a2b3}">
+        <label>Item as List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figurecompressorgui" port_format="1.1" uuid="{cb42ae5d-9c59-4955-8a02-c581125324bd}" x="2525.0" y="2225.0">
+    <label>Figure Compressor</label>
+    <version>0.3</version>
+    <description>Compress a list of Figures to a single Figure</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "auto_recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "auto_rescale": {
+        "editor": null,
+        "label": "Auto rescale axes",
+        "order": 5,
+        "type": "boolean",
+        "value": true
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 3,
+        "type": "boolean",
+        "value": true
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Join legends",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "legend_location": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Legend position:",
+        "list": ["best", "upper left", "upper right", "lower left", "lower right", "center left", "center right", "upper center", "lower center", "center", "outside right", "outside left", "outside upper", "outside lower"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["best"]
+      },
+      "parent_figure": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Parent figure:",
+        "list": [],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{fcc50436-ab1c-45ac-a9e1-9d13302a9e84}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{dcb7dd4a-7e0a-4c88-b935-8ec8d3588e06}">
+        <label>A Figure with the configured axes, lines, labels, etc</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{d74e3834-fc03-42c0-9052-42f256ae6ef6}" x="2950.0" y="2825.0">
+    <label>Check label</label>
+    <version>1.0</version>
+    <description>Raise an error if a predicate is True.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "error_msg": {
+        "editor": null,
+        "label": "Error message:",
+        "order": 1,
+        "type": "string",
+        "value": "Compressed figure colorbar has wrong label!"
+      },
+      "error_type": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Severity:",
+        "list": ["Error", "Warning", "Output"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "predicate": {
+        "editor": {
+          "language": "python",
+          "type": "code"
+        },
+        "label": "Predicate function:",
+        "order": 0,
+        "type": "string",
+        "value": "lambda arg: not any(getattr(arg.get_mpl_figure().axes[i].collections[0].colorbar, '_label', '') == 'Test' for i in range(2))"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{673a819a-c7d3-4ca6-a488-07ef2e24c721}">
+        <label>Input</label>
+      </input>
+      <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{85255671-0d48-44c4-9ab2-a097dbed65df}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{d9e479d7-3304-42d2-b9fe-ef83ec1f6cb9}" x="1675.0" y="2725.0">
+    <label>Check colorbars exist</label>
+    <version>1.0</version>
+    <description>Raise an error if a predicate is True.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "error_msg": {
+        "editor": null,
+        "label": "Error message:",
+        "order": 1,
+        "type": "string",
+        "value": "Compressed figure doesn't have two colorbars!"
+      },
+      "error_type": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Severity:",
+        "list": ["Error", "Warning", "Output"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "predicate": {
+        "editor": {
+          "language": "python",
+          "type": "code"
+        },
+        "label": "Predicate function:",
+        "order": 0,
+        "type": "string",
+        "value": "lambda arg: sum(arg.get_mpl_figure().axes[i].images[0].colorbar is not None for i in range(2)) != 2"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="in" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{d8f03fd7-fba9-4542-b06e-c46f1b595442}">
+        <label>Input</label>
+      </input>
+      <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{a614761d-2540-404c-9e02-643755a05812}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.random.randomtable" port_format="1.1" uuid="{da8f43e3-8f96-45b2-8dc7-f6a8fcbaedd5}" x="2100.0" y="2225.0">
+    <label>Random Table</label>
+    <version>0.1</version>
+    <description>Random Table generator.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "column_entries": {
+        "editor": {
+          "max": 1000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Columns:",
+        "order": 0,
+        "type": "integer",
+        "value": 5
+      },
+      "column_length": {
+        "editor": {
+          "max": 100000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Rows:",
+        "order": 1,
+        "type": "integer",
+        "value": 5
+      },
+      "mask_values": {
+        "editor": null,
+        "label": "Randomly mask values",
+        "order": 2,
+        "type": "boolean",
+        "value": false
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{ddf28d33-0c5d-43fd-901d-a8ce9e56daf3}">
+        <label>Table with random numbers. The specifications of the Table are declared in the configuration.</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{dadfeffd-96f1-4c48-b025-5246f8106a48}" x="2675.0" y="2825.0">
+    <label>Check colorbar exists</label>
+    <version>1.0</version>
+    <description>Raise an error if a predicate is True.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "error_msg": {
+        "editor": null,
+        "label": "Error message:",
+        "order": 1,
+        "type": "string",
+        "value": "Compressed figure doesn't have exactly one colorbar!"
+      },
+      "error_type": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Severity:",
+        "list": ["Error", "Warning", "Output"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "predicate": {
+        "editor": {
+          "language": "python",
+          "type": "code"
+        },
+        "label": "Predicate function:",
+        "order": 0,
+        "type": "string",
+        "value": "lambda arg: sum(arg.get_mpl_figure().axes[i].collections[0].colorbar is not None for i in range(2)) != 1"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="in" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{808127f7-82ca-4a2c-a412-affb1af762b1}">
+        <label>Input</label>
+      </input>
+      <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{0c8520e9-0e38-4c96-a1da-aca1d898a3b4}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{e11f4555-6223-4bed-8065-6c2ab97ab9da}" x="2825.0" y="2725.0">
+    <label>Check orientations</label>
+    <version>1.0</version>
+    <description>Raise an error if a predicate is True.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "error_msg": {
+        "editor": null,
+        "label": "Error message:",
+        "order": 1,
+        "type": "string",
+        "value": "Compressed figure colorbar has wrong orientation!"
+      },
+      "error_type": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Severity:",
+        "list": ["Error", "Warning", "Output"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "predicate": {
+        "editor": {
+          "language": "python",
+          "type": "code"
+        },
+        "label": "Predicate function:",
+        "order": 0,
+        "type": "string",
+        "value": "lambda arg: not all(getattr(arg.get_mpl_figure().axes[i].collections[0].colorbar, 'orientation', '') == 'horizontal' for i in range(2))"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{274cbf95-4be7-43e4-b4be-068960d61736}">
+        <label>Input</label>
+      </input>
+      <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{fc7a92b1-3348-41ab-9809-99d51586ae0e}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.builtin.map" port_format="1.1" uuid="{e7378d45-c385-4196-bcb5-fad2f2bcb3db}" x="2825.0" y="2625.0">
+    <label>Map</label>
+    <version>1.0</version>
+    <description>Map Lambda function over each element in argument list</description>
+    <author>Erik der Hagopian &lt;erik.hagopian@combine.se&gt;</author>
+    <copyright>(C) 2015-2016 Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "fail_strategy": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Action on exception",
+        "list": ["Error", "Create Empty Item", "Skip Item"],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Function" scheme="hdf5" type="figure -&gt; figure" type_base="&lt;a&gt; -&gt; &lt;b&gt;" uuid="{045c39f2-b888-4c2f-9ce2-e48fbcdaa877}">
+        <label>Lambda Function to Map</label>
+      </input>
+      <input key="List" scheme="hdf5" type="[figure]" type_base="[&lt;a&gt;]" uuid="{3da71e9e-7f62-47b4-afb6-7a7e80f8a0a5}">
+        <label>Argument List</label>
+      </input>
+      <output key="List" scheme="hdf5" type="[figure]" type_base="[&lt;b&gt;]" uuid="{409a84e0-b4c5-4471-a9bf-d2fef83f2b8d}">
+        <label>Output List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.random.randomtable" port_format="1.1" uuid="{eaf739fd-99f9-43eb-853e-42148556b1b1}" x="2100.0" y="1825.0">
+    <label>Random Table</label>
+    <version>0.1</version>
+    <description>Random Table generator.</description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "column_entries": {
+        "editor": {
+          "max": 1000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Columns:",
+        "order": 0,
+        "type": "integer",
+        "value": 5
+      },
+      "column_length": {
+        "editor": {
+          "max": 100000000,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Rows:",
+        "order": 1,
+        "type": "integer",
+        "value": 5
+      },
+      "mask_values": {
+        "editor": null,
+        "label": "Randomly mask values",
+        "order": 2,
+        "type": "boolean",
+        "value": false
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <output key="port0" scheme="hdf5" type="table" type_base="table" uuid="{436f144f-7d5e-490d-a73d-87ed5b90c949}">
+        <label>Table with random numbers. The specifications of the Table are declared in the configuration.</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.data.table.conditionalerror" port_format="1.1" uuid="{ebaa2992-6dc4-43e1-b568-c2190ccf4f42}" x="1950.0" y="2725.0">
+    <label>Check labels</label>
+    <version>1.0</version>
+    <description>Raise an error if a predicate is True.</description>
+    <author>Magnus Sand&#233;n</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "error_msg": {
+        "editor": null,
+        "label": "Error message:",
+        "order": 1,
+        "type": "string",
+        "value": "Compressed figure colorbar has wrong label!"
+      },
+      "error_type": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Severity:",
+        "list": ["Error", "Warning", "Output"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "predicate": {
+        "editor": {
+          "language": "python",
+          "type": "code"
+        },
+        "label": "Predicate function:",
+        "order": 0,
+        "type": "string",
+        "value": "lambda arg: not all(getattr(arg.get_mpl_figure().axes[i].images[0].colorbar, '_label', '') == 'Test' for i in range(2))"
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="in" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{b72c9c87-03be-4645-a164-5a800a153592}">
+        <label>Input</label>
+      </input>
+      <output key="out" scheme="hdf5" type="figure" type_base="&lt;a&gt;" uuid="{aa247c53-9718-4319-88a6-1b914252052f}">
+        <label>Output</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{ece0ab80-0fb4-464b-bc78-282a9969d8a9}" x="2675.0" y="2625.0">
+    <label>Item to List</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "n": {
+        "editor": null,
+        "label": "Repeat number of times",
+        "order": 0,
+        "type": "integer",
+        "value": 1
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{e7e7561d-eb46-423b-9833-54645db1d4d7}">
+        <label>Input Item</label>
+      </input>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{0229ee5a-2740-4ffa-b6c2-f8978069d0dc}">
+        <label>Input Item</label>
+      </input>
+      <output key="list" scheme="hdf5" type="[figure]" type_base="[&lt;a&gt;]" uuid="{3a6a20ea-d09e-4b72-b0ef-e9798d7dfdd2}">
+        <label>Item as List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figuresubplot" port_format="1.1" uuid="{eea7fb09-5470-439b-8f2b-0da097830113}" x="1525.0" y="2725.0">
+    <label>Layout Figures in Subplots</label>
+    <version>0.2</version>
+    <description>Layout a list of Figures in a Subplot</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of columns (0 = best):",
+        "order": 1,
+        "type": "integer",
+        "value": 0
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Make first legend global",
+        "order": 5,
+        "type": "boolean",
+        "value": false
+      },
+      "recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 2,
+        "type": "boolean",
+        "value": false
+      },
+      "remove_internal_ticks": {
+        "editor": null,
+        "label": "Remove internal ticks",
+        "order": 3,
+        "type": "boolean",
+        "value": false
+      },
+      "rows": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of rows (0 = best):",
+        "order": 0,
+        "type": "integer",
+        "value": 0
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{68f16ab5-fde6-4582-a640-e4711ff2889d}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{51799411-51c4-40d7-b855-67d1fe915940}">
+        <label>A Figure with several subplot axes</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figuresubplot" port_format="1.1" uuid="{f1ea990c-ae33-420d-b776-04c89ca3b2c7}" x="2525.0" y="1900.0">
+    <label>Layout Figures in Subplots</label>
+    <version>0.2</version>
+    <description>Layout a list of Figures in a Subplot</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "columns": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of columns (0 = best):",
+        "order": 1,
+        "type": "integer",
+        "value": 0
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Make first legend global",
+        "order": 5,
+        "type": "boolean",
+        "value": false
+      },
+      "recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 2,
+        "type": "boolean",
+        "value": false
+      },
+      "remove_internal_ticks": {
+        "editor": null,
+        "label": "Remove internal ticks",
+        "order": 3,
+        "type": "boolean",
+        "value": false
+      },
+      "rows": {
+        "editor": {
+          "max": 100,
+          "min": 0,
+          "step": 1,
+          "type": "spinbox"
+        },
+        "label": "Number of rows (0 = best):",
+        "order": 0,
+        "type": "integer",
+        "value": 0
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{309b2c43-2d0a-46a3-b302-3785e38e8a11}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{2aea785d-3aee-445d-80aa-2feda802aa0d}">
+        <label>A Figure with several subplot axes</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{f215d8d5-1b05-4f07-a419-cc491974156f}" x="1675.0" y="1850.0">
+    <label>Item to List</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "n": {
+        "editor": null,
+        "label": "Repeat number of times",
+        "order": 0,
+        "type": "integer",
+        "value": 1
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{2fe3894e-f968-4be5-a9e1-9ce3e664f99b}">
+        <label>Input Item</label>
+      </input>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{7f692117-5db4-49e7-a337-e17a02aafc62}">
+        <label>Input Item</label>
+      </input>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{664842a6-3fa2-49fb-b416-63f33cd68b2b}">
+        <label>Input Item</label>
+      </input>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{ff4b79f7-ac40-4dbb-b750-c3257514dce5}">
+        <label>Input Item</label>
+      </input>
+      <output key="list" scheme="hdf5" type="[figure]" type_base="[&lt;a&gt;]" uuid="{73a32533-1085-4a0f-9b11-acbb6c0430f7}">
+        <label>Item as List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.visualize.figurecompressorgui" port_format="1.1" uuid="{f9d83838-0654-415e-a316-daa15de75dbc}" x="1525.0" y="1750.0">
+    <label>Figure Compressor</label>
+    <version>0.3</version>
+    <description>Compress a list of Figures to a single Figure</description>
+    <author>Benedikt Ziegler</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "auto_recolor": {
+        "editor": null,
+        "label": "Auto recolor",
+        "order": 4,
+        "type": "boolean",
+        "value": false
+      },
+      "auto_rescale": {
+        "editor": null,
+        "label": "Auto rescale axes",
+        "order": 5,
+        "type": "boolean",
+        "value": true
+      },
+      "join_colorbars": {
+        "editor": null,
+        "label": "Make first colorbar global",
+        "order": 3,
+        "type": "boolean",
+        "value": false
+      },
+      "join_legends": {
+        "editor": null,
+        "label": "Join legends",
+        "order": 1,
+        "type": "boolean",
+        "value": true
+      },
+      "legend_location": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Legend position:",
+        "list": ["best", "upper left", "upper right", "lower left", "lower right", "center left", "center right", "upper center", "lower center", "center", "outside right", "outside left", "outside upper", "outside lower"],
+        "mode": "selected",
+        "order": 2,
+        "type": "list",
+        "value": [0],
+        "value_names": ["best"]
+      },
+      "parent_figure": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Parent figure:",
+        "list": [],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [],
+        "value_names": []
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="input" scheme="hdf5" type="[figure]" type_base="[figure]" uuid="{25dc7e7f-24a7-4b08-9aab-1d62336ec137}">
+        <label>List of Figures</label>
+      </input>
+      <output key="figure" scheme="text" type="figure" type_base="figure" uuid="{2e648442-fb96-4896-815b-5e997f8adabf}">
+        <label>A Figure with the configured axes, lines, labels, etc</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.sympathy.list.itemtolist" port_format="1.1" uuid="{fb26bffc-f992-43a2-aef4-898fbab1d133}" x="2375.0" y="1825.0">
+    <label>Item to List</label>
+    <version>1.0</version>
+    <description></description>
+    <author>Erik der Hagopian</author>
+    <copyright>Copyright (c) 2011-2019, Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "n": {
+        "editor": null,
+        "label": "Repeat number of times",
+        "order": 0,
+        "type": "integer",
+        "value": 1
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="item" scheme="text" type="figure" type_base="&lt;a&gt;" uuid="{2c639a26-e35f-4ce5-bfdf-11506e5f52e4}">
+        <label>Input Item</label>
+      </input>
+      <output key="list" scheme="hdf5" type="[figure]" type_base="[&lt;a&gt;]" uuid="{4ebb1703-8c41-41af-a41f-623e9a0dcc48}">
+        <label>Item as List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="org.sysess.builtin.map" port_format="1.1" uuid="{fcfd16f0-e837-42f2-abe3-cec264318988}" x="2850.0" y="2250.0">
+    <label>Map</label>
+    <version>1.0</version>
+    <description>Map Lambda function over each element in argument list</description>
+    <author>Erik der Hagopian &lt;erik.hagopian@combine.se&gt;</author>
+    <copyright>(C) 2015-2016 Combine Control Systems AB</copyright>
+    <parameters type="json">
+    {
+      "fail_strategy": {
+        "editor": {
+          "display": null,
+          "edit": false,
+          "filter": false,
+          "include_empty": false,
+          "options": [],
+          "type": "combobox"
+        },
+        "label": "Action on exception",
+        "list": ["Error", "Create Empty Item", "Skip Item"],
+        "mode": "selected",
+        "order": 0,
+        "type": "list",
+        "value": [0],
+        "value_names": ["Error"]
+      },
+      "type": "group"
+    }
+    </parameters>
+    <ports>
+      <input key="Function" scheme="hdf5" type="figure -&gt; figure" type_base="&lt;a&gt; -&gt; &lt;b&gt;" uuid="{9fc99959-4ae9-4888-980c-4c953eaed9e5}">
+        <label>Lambda Function to Map</label>
+      </input>
+      <input key="List" scheme="hdf5" type="[figure]" type_base="[&lt;a&gt;]" uuid="{0dab1f6f-a9f5-4985-b030-a90bb4223b87}">
+        <label>Argument List</label>
+      </input>
+      <output key="List" scheme="hdf5" type="[figure]" type_base="[&lt;b&gt;]" uuid="{25b1b202-611d-4c77-aaef-755cde167d76}">
+        <label>Output List</label>
+      </output>
+    </ports>
+  </node>
+  <connection type="figure" uuid="{013c05d1-9a3f-4cb0-8ea1-45c2f3ce9dfc}">
+    <source node="{bac73082-7f15-4ac4-935d-783cc69ea38e}" port="{6b87b255-b3fc-4518-b78f-a620d040fb44}"/>
+    <destination node="{507fbfb2-19e4-49e4-a841-a0ec8f4b302e}" port="{5a740bc9-51f5-4738-8d8b-b01ef170fb8c}"/>
+  </connection>
+  <connection type="figure" uuid="{015e8f1a-2104-4201-9d5e-07786facc55f}">
+    <source node="{ac92782c-0046-4cd4-8556-ccf4dfe52918}" port="{a3665551-220f-4116-b863-6039f8c4a577}"/>
+    <destination node="{b609c44b-a970-4071-9111-456ffa16d5c2}" port="{18c1b291-ece7-4c80-9959-80df5a897fc7}"/>
+  </connection>
+  <connection type="figure" uuid="{0234b02a-9add-4f2a-910f-3d00b4f5e190}">
+    <source node="{81dd42e9-09cb-47cb-b0eb-707893f3113f}" port="{27c72f84-56fc-43f0-ad58-f1191f9ff1f4}"/>
+    <destination node="{f215d8d5-1b05-4f07-a419-cc491974156f}" port="{7f692117-5db4-49e7-a337-e17a02aafc62}"/>
+  </connection>
+  <connection type="figure" uuid="{0587e820-92f4-4a13-bd48-b99fe0e454c6}">
+    <source node="{5543d98d-90b9-4a9a-bd89-1e612cb5b887}" port="{60dca6e6-0f02-442d-b2b5-35119159f48c}"/>
+    <destination node="{e11f4555-6223-4bed-8065-6c2ab97ab9da}" port="{274cbf95-4be7-43e4-b4be-068960d61736}"/>
+  </connection>
+  <connection type="figure" uuid="{07201d5b-cf14-45d1-8532-a17d5006ffe1}">
+    <source node="{562e5bdc-6d66-4a58-a5ad-09f63f14df4a}" port="{6e6a97f1-02a0-4760-8617-aeb085d8cee7}"/>
+    <destination node="{dadfeffd-96f1-4c48-b025-5246f8106a48}" port="{808127f7-82ca-4a2c-a412-affb1af762b1}"/>
+  </connection>
+  <connection type="figure" uuid="{09801f29-ee30-4da0-af09-337098b2f023}">
+    <source node="{e11f4555-6223-4bed-8065-6c2ab97ab9da}" port="{fc7a92b1-3348-41ab-9809-99d51586ae0e}"/>
+    <destination node="{17e47271-df1d-4cad-904f-cc79078e0d12}" port="{9a9229ff-6a6f-4771-bbb1-6512613f6a8c}"/>
+  </connection>
+  <connection type="[figure]" uuid="{09a2dbd1-0d55-43ed-9b28-26e2c22f2085}">
+    <source node="{8e4f6b15-335c-4a1a-a5a2-417a86bb8af0}" port="{c62a29ec-b8c0-491d-bf1a-289a44cf1e20}"/>
+    <destination node="{0916f0a0-cfbe-4793-ad1f-83098b827123}" port="{3ade6a1b-bcbf-4b57-add1-f44db78da1ca}"/>
+  </connection>
+  <connection type="figure" uuid="{0a962b70-c088-415b-a620-c030ea39a271}">
+    <source node="{87122a80-2fa1-4431-9fd3-7c53bc9888a8}" port="{2eb51237-d9ca-4f7a-99a9-5dee1592affe}"/>
+    <destination node="{b8962d38-14fd-40e6-9884-1ad0db7ed1d5}" port="{2ee57f9a-13f9-467d-a345-6b463b00b8c0}"/>
+  </connection>
+  <connection type="[figure]" uuid="{182940ef-0da9-422e-890f-d00b57636757}">
+    <source node="{98cc922e-f286-4a7c-99c0-20abe6b08935}" port="{4ef261d0-03d8-4c20-9844-cf909b4de611}"/>
+    <destination node="{f9d83838-0654-415e-a316-daa15de75dbc}" port="{25dc7e7f-24a7-4b08-9aab-1d62336ec137}"/>
+  </connection>
+  <connection type="[figure]" uuid="{1cb64ae6-b252-4ab8-9ba8-ab5a3aa5d92b}">
+    <source node="{00413da9-d309-4259-b812-376c11b6beb9}" port="{42f834b6-38e7-4eb4-8433-418ddb5c2727}"/>
+    <destination node="{562e5bdc-6d66-4a58-a5ad-09f63f14df4a}" port="{412dcb62-723b-46ec-9c97-ca035472b8ea}"/>
+  </connection>
+  <connection type="figure" uuid="{1d64fff1-43e4-4681-bcb8-1e5021e1dcdf}">
+    <source node="{483f09ee-8000-472b-8bc1-e364da71ccc2}" port="{78e1ae59-e46f-4678-888c-cdc7e12a2809}"/>
+    <destination node="{d74e3834-fc03-42c0-9052-42f256ae6ef6}" port="{673a819a-c7d3-4ca6-a488-07ef2e24c721}"/>
+  </connection>
+  <connection type="figure" uuid="{1f2b8a2c-c744-4f57-9dc9-f698117d33bc}">
+    <source node="{0c8ea05d-94f6-4cde-9bac-33be36af83d0}" port="{404643ba-8310-4057-9c07-96823ced8b20}"/>
+    <destination node="{5543d98d-90b9-4a9a-bd89-1e612cb5b887}" port="{c427ec57-44df-434d-89f9-3cf00c3296ca}"/>
+  </connection>
+  <connection type="table" uuid="{26899858-d74f-44b0-8ddd-179452eec9b9}">
+    <source node="{eaf739fd-99f9-43eb-853e-42148556b1b1}" port="{436f144f-7d5e-490d-a73d-87ed5b90c949}"/>
+    <destination node="{8f86d067-c636-4575-ade7-20fd341685f4}" port="{d6ec0541-a33d-4cc2-aa9c-3d715714a383}"/>
+  </connection>
+  <connection type="table" uuid="{277343d7-4d09-44bd-9cfa-8fcacd73b57e}">
+    <source node="{da8f43e3-8f96-45b2-8dc7-f6a8fcbaedd5}" port="{ddf28d33-0c5d-43fd-901d-a8ce9e56daf3}"/>
+    <destination node="{1c4639c9-e593-4347-bb10-f1c5b2abe97d}" port="{54f8af2b-314b-4aa1-ae83-7971abf43369}"/>
+  </connection>
+  <connection type="figure" uuid="{280ce0ae-ffcf-4d1c-a351-9f11135a0712}">
+    <source node="{620b7f8d-8af1-4613-9d51-e4bc412e4591}" port="{a53b21ab-9f94-4ae0-b584-1a6443fa6ae1}"/>
+    <destination node="{00413da9-d309-4259-b812-376c11b6beb9}" port="{f35bdc02-6477-444e-aec0-3fc7039d5061}"/>
+  </connection>
+  <connection type="figure" uuid="{2bf21a1c-a94f-4e9e-9844-2ecc6da54400}">
+    <source node="{a667cba7-363c-4412-863e-36ef593cbacf}" port="{6a448570-4c5e-4423-a5c6-7fded1d1caca}"/>
+    <destination node="{f215d8d5-1b05-4f07-a419-cc491974156f}" port="{ff4b79f7-ac40-4dbb-b750-c3257514dce5}"/>
+  </connection>
+  <connection type="figure" uuid="{2fbc6bf1-0370-4d16-a1de-f1bc13a8d692}">
+    <source node="{8f86d067-c636-4575-ade7-20fd341685f4}" port="{a922bcdf-7477-4879-95c4-1eaf672b2079}"/>
+    <destination node="{fb26bffc-f992-43a2-aef4-898fbab1d133}" port="{2c639a26-e35f-4ce5-bfdf-11506e5f52e4}"/>
+  </connection>
+  <connection type="figure" uuid="{3276cfe2-50ea-461b-b490-a8e4a1a48c64}">
+    <source node="{507fbfb2-19e4-49e4-a841-a0ec8f4b302e}" port="{5c2cd7e0-541c-4720-b3fb-b50435e2ec20}"/>
+    <destination node="{07cae2b8-bd64-4e55-8098-fde4dafb65b4}" port="{a2cb3050-900e-404c-af5e-5655c623d1e9}"/>
+  </connection>
+  <connection type="figure" uuid="{34e082d5-57a3-4899-baea-04d825dc997a}">
+    <source node="{5b9ed5ea-fb48-4807-8fbc-037e36c6649e}" port="{4bb50b7e-ca98-4627-9adb-19172b94860f}"/>
+    <destination node="{f215d8d5-1b05-4f07-a419-cc491974156f}" port="{664842a6-3fa2-49fb-b416-63f33cd68b2b}"/>
+  </connection>
+  <connection type="[figure]" uuid="{37df3594-c0f6-44b5-a9ab-7cd8149bf56b}">
+    <source node="{ece0ab80-0fb4-464b-bc78-282a9969d8a9}" port="{3a6a20ea-d09e-4b72-b0ef-e9798d7dfdd2}"/>
+    <destination node="{e7378d45-c385-4196-bcb5-fad2f2bcb3db}" port="{3da71e9e-7f62-47b4-afb6-7a7e80f8a0a5}"/>
+  </connection>
+  <connection type="[figure]" uuid="{380ff278-0b3b-47b3-a285-f14ed9db75c6}">
+    <source node="{8e4f6b15-335c-4a1a-a5a2-417a86bb8af0}" port="{c62a29ec-b8c0-491d-bf1a-289a44cf1e20}"/>
+    <destination node="{29e34587-f43d-476e-b660-fa342fade0e9}" port="{09aba6f3-8784-4b98-888b-1a6b35252873}"/>
+  </connection>
+  <connection type="figure" uuid="{3be4d9f4-b74f-4358-b011-4c8115dc1d3c}">
+    <source node="{cb42ae5d-9c59-4955-8a02-c581125324bd}" port="{dcb7dd4a-7e0a-4c88-b935-8ec8d3588e06}"/>
+    <destination node="{b8962d38-14fd-40e6-9884-1ad0db7ed1d5}" port="{7095d733-bdea-4e3b-8579-c9c6db6c0dc3}"/>
+  </connection>
+  <connection type="figure" uuid="{3ee67637-8863-43b1-9e4d-5d4dbeb97876}">
+    <source node="{56d74d8f-9ad2-42d4-91d0-470e85729d5d}" port="{2c6a4268-1752-47e3-927a-8d893b0617f5}"/>
+    <destination node="{ece0ab80-0fb4-464b-bc78-282a9969d8a9}" port="{e7e7561d-eb46-423b-9833-54645db1d4d7}"/>
+  </connection>
+  <connection type="figure" uuid="{4464397c-dbd1-4cd3-89bb-da8aad23975c}">
+    <source node="{77f733df-cdbf-4803-b44e-657ae24e888d}" port="{9ca834c5-b1a1-4299-bce4-c65a7fac451f}"/>
+    <destination node="{b8962d38-14fd-40e6-9884-1ad0db7ed1d5}" port="{92cc2171-fb9c-4e5f-9afb-2ed8d07c1b4a}"/>
+  </connection>
+  <connection type="[figure]" uuid="{466c0a84-9048-431f-804b-f63e387d862c}">
+    <source node="{8e4f6b15-335c-4a1a-a5a2-417a86bb8af0}" port="{c62a29ec-b8c0-491d-bf1a-289a44cf1e20}"/>
+    <destination node="{3355e3b4-7e11-429b-a389-d593e7c9e867}" port="{cebfc9c5-59d1-494b-b2e4-9481472c064c}"/>
+  </connection>
+  <connection type="[figure]" uuid="{47663cc2-63a5-43a4-92ed-baab5ee6c17e}">
+    <source node="{00413da9-d309-4259-b812-376c11b6beb9}" port="{42f834b6-38e7-4eb4-8433-418ddb5c2727}"/>
+    <destination node="{b1b0aa59-7d1a-4e76-afa4-d1236b239948}" port="{71f3caf1-3a64-469e-a4da-4859a4fde71e}"/>
+  </connection>
+  <connection type="figure" uuid="{48e575c7-ab6a-438a-abf2-f4d93eaa5000}">
+    <source node="{3355e3b4-7e11-429b-a389-d593e7c9e867}" port="{d5d5ad88-ae09-4249-bde9-b2caef959bd0}"/>
+    <destination node="{ba7be4bd-6d2d-4543-852d-2a0f09b4ab4b}" port="{564bf36f-f86e-4832-b707-fddc2af3f696}"/>
+  </connection>
+  <connection type="figure" uuid="{4b3fd1a1-b406-4000-aa46-1f7202360a3e}">
+    <source node="{eea7fb09-5470-439b-8f2b-0da097830113}" port="{51799411-51c4-40d7-b855-67d1fe915940}"/>
+    <destination node="{d9e479d7-3304-42d2-b9fe-ef83ec1f6cb9}" port="{d8f03fd7-fba9-4542-b06e-c46f1b595442}"/>
+  </connection>
+  <connection type="[figure]" uuid="{51e9ae96-04e8-436a-b572-b884e75539e3}">
+    <source node="{b609c44b-a970-4071-9111-456ffa16d5c2}" port="{d6767cec-10e9-4b22-9798-330dc0088fea}"/>
+    <destination node="{eea7fb09-5470-439b-8f2b-0da097830113}" port="{68f16ab5-fde6-4582-a640-e4711ff2889d}"/>
+  </connection>
+  <connection type="figure -&gt; figure" uuid="{5bfd4e41-7318-4193-8fce-f9f4fef48ff5}">
+    <source node="{c811119c-0017-4cc1-abab-8bcdeb156bb0}" port="{11be10fd-36a0-4097-bf51-fe01b513c902}"/>
+    <destination node="{b17d6c5d-fdcc-479e-8dba-88c72585a506}" port="{ca5b09ca-e485-46ac-b2ad-4bd3128bdd02}"/>
+  </connection>
+  <connection type="[figure]" uuid="{65023478-2d2a-43fa-83a8-3a52b24b3567}">
+    <source node="{98cc922e-f286-4a7c-99c0-20abe6b08935}" port="{4ef261d0-03d8-4c20-9844-cf909b4de611}"/>
+    <destination node="{5b9ed5ea-fb48-4807-8fbc-037e36c6649e}" port="{f955a538-673f-48fa-9699-0e63c1b6cab9}"/>
+  </connection>
+  <connection type="[figure]" uuid="{69443cb9-8256-4f28-99a0-73fea05d204d}">
+    <source node="{fb26bffc-f992-43a2-aef4-898fbab1d133}" port="{4ebb1703-8c41-41af-a41f-623e9a0dcc48}"/>
+    <destination node="{f1ea990c-ae33-420d-b776-04c89ca3b2c7}" port="{309b2c43-2d0a-46a3-b302-3785e38e8a11}"/>
+  </connection>
+  <connection type="[figure]" uuid="{695078b1-080a-4fd5-8003-547a2cb9cb4c}">
+    <source node="{b609c44b-a970-4071-9111-456ffa16d5c2}" port="{d6767cec-10e9-4b22-9798-330dc0088fea}"/>
+    <destination node="{7ba5acca-c427-4963-b704-e44d1157f657}" port="{110483a6-e65b-4260-8dd2-e940abd323e3}"/>
+  </connection>
+  <connection type="table" uuid="{71f8da38-ae43-4650-9af8-5ed70cb4f9c4}">
+    <source node="{9d543096-5023-4725-ac74-26f827ad92aa}" port="{fd1fa102-e2af-4049-9f9e-0a5d10c92558}"/>
+    <destination node="{ac92782c-0046-4cd4-8556-ccf4dfe52918}" port="{a54ebee0-ebd3-4c1c-a738-ccab53907f03}"/>
+  </connection>
+  <connection type="[figure]" uuid="{72d3bb3a-ca16-4353-8a5d-1e206239d8ee}">
+    <source node="{c8a48c2d-fcba-4e9c-80d6-faaec46318d5}" port="{cfdb43d4-03a1-4686-bf61-2bdbe395a2b3}"/>
+    <destination node="{6f914a42-bdca-49b6-b634-d945610828af}" port="{bf94bbea-5fcf-4e5b-ad98-6ca90c91d4e0}"/>
+  </connection>
+  <connection type="[figure]" uuid="{76e82d62-55f3-4a41-91e3-5a9a081a7b91}">
+    <source node="{98cc922e-f286-4a7c-99c0-20abe6b08935}" port="{4ef261d0-03d8-4c20-9844-cf909b4de611}"/>
+    <destination node="{81dd42e9-09cb-47cb-b0eb-707893f3113f}" port="{b8609eb6-a418-49c5-b273-9a78df9b1b11}"/>
+  </connection>
+  <connection type="figure -&gt; figure" uuid="{785464f2-257b-477d-b7a4-44cf64026bc4}">
+    <source node="{0791a3e7-27e2-4bda-94c1-da6dff0b1e2e}" port="{6c4f2b13-7bad-45e7-bc5e-bdeba72bb732}"/>
+    <destination node="{6f914a42-bdca-49b6-b634-d945610828af}" port="{92f4ad96-2153-4c9b-bb6d-1c4febfb12d2}"/>
+  </connection>
+  <connection type="[figure]" uuid="{785e9fff-c97b-4a60-85e2-51537fbf2217}">
+    <source node="{4c5b0a65-380f-457c-b458-b12c6b778e6c}" port="{83e8834a-0410-4c5c-9aa6-e01af079cec7}"/>
+    <destination node="{8df294a3-c10b-4314-ad8d-16335ef48470}" port="{8bc19f63-4aed-4b74-9c9d-e5b9aa399f27}"/>
+  </connection>
+  <connection type="figure" uuid="{79782cea-f961-4a05-b564-d41bd0c92c2d}">
+    <source node="{0916f0a0-cfbe-4793-ad1f-83098b827123}" port="{b6740129-b722-4b30-a729-ce24f3c1750c}"/>
+    <destination node="{ba7be4bd-6d2d-4543-852d-2a0f09b4ab4b}" port="{ab2d05db-544c-4aff-9e37-9ae1eda0b022}"/>
+  </connection>
+  <connection type="figure" uuid="{81502612-daa4-40e4-8bc1-9a94fce299ac}">
+    <source node="{f9d83838-0654-415e-a316-daa15de75dbc}" port="{2e648442-fb96-4896-815b-5e997f8adabf}"/>
+    <destination node="{f215d8d5-1b05-4f07-a419-cc491974156f}" port="{2fe3894e-f968-4be5-a9e1-9ce3e664f99b}"/>
+  </connection>
+  <connection type="figure" uuid="{81b45be4-b2f5-4fad-b0f9-5dc6bc10b2b6}">
+    <source node="{7ba5acca-c427-4963-b704-e44d1157f657}" port="{220dd262-97bf-47b3-8126-7b8c98171400}"/>
+    <destination node="{4c5b0a65-380f-457c-b458-b12c6b778e6c}" port="{86afb162-668d-4628-ba37-de398c49c60b}"/>
+  </connection>
+  <connection type="figure" uuid="{83715363-5a4f-48e3-8e38-3449f085ace5}">
+    <source node="{07cae2b8-bd64-4e55-8098-fde4dafb65b4}" port="{340569af-9140-4d2e-84db-7c679b83f06c}"/>
+    <destination node="{3a482601-3fd9-48c2-8a19-48f9de1a7b03}" port="{7b3031ad-4269-4a06-b8a0-8b966197e24f}"/>
+  </connection>
+  <connection type="[figure]" uuid="{86a31942-adc3-428c-afec-a879602c4211}">
+    <source node="{ba7be4bd-6d2d-4543-852d-2a0f09b4ab4b}" port="{3db6d8a9-1099-46d0-87fb-ed6ee4b329d6}"/>
+    <destination node="{ac115f9e-33e0-4d6a-9d51-407071071bb3}" port="{64014185-93be-48a2-88dd-0984858f3405}"/>
+  </connection>
+  <connection type="[figure]" uuid="{879fe0aa-cd59-438b-8968-c4d04366cf69}">
+    <source node="{65115e13-17e2-4e43-a917-b7c50d733c76}" port="{1e2faf05-c616-4cfc-92a1-59edbd8eb438}"/>
+    <destination node="{cb42ae5d-9c59-4955-8a02-c581125324bd}" port="{fcc50436-ab1c-45ac-a9e1-9d13302a9e84}"/>
+  </connection>
+  <connection type="figure" uuid="{895674f3-c49e-4aca-afc7-f7e50b7dc13d}">
+    <source node="{b1b0aa59-7d1a-4e76-afa4-d1236b239948}" port="{4a7a7720-78a9-4235-bd50-b54c539d2289}"/>
+    <destination node="{ece0ab80-0fb4-464b-bc78-282a9969d8a9}" port="{0229ee5a-2740-4ffa-b6c2-f8978069d0dc}"/>
+  </connection>
+  <connection type="[figure]" uuid="{8b63310e-8a27-42f6-a6f8-6dfcc2d52f06}">
+    <source node="{b8962d38-14fd-40e6-9884-1ad0db7ed1d5}" port="{4f138c12-1765-4fc3-b8dc-2858961fc464}"/>
+    <destination node="{fcfd16f0-e837-42f2-abe3-cec264318988}" port="{0dab1f6f-a9f5-4985-b030-a90bb4223b87}"/>
+  </connection>
+  <connection type="figure" uuid="{8f1c4d2f-7481-4569-87b5-14c7546ce470}">
+    <source node="{88898902-b1ae-4e38-b024-b47a5d18fdd8}" port="{6bfbd6db-320b-4415-bec5-d593be9a0678}"/>
+    <destination node="{4c5b0a65-380f-457c-b458-b12c6b778e6c}" port="{2adbe733-c197-471f-8238-00852074c995}"/>
+  </connection>
+  <connection type="[figure]" uuid="{92cb6570-90ba-407f-a63f-ea512d47f499}">
+    <source node="{00413da9-d309-4259-b812-376c11b6beb9}" port="{42f834b6-38e7-4eb4-8433-418ddb5c2727}"/>
+    <destination node="{56d74d8f-9ad2-42d4-91d0-470e85729d5d}" port="{dc0e6ea7-b66b-4820-b058-9e340ff534e7}"/>
+  </connection>
+  <connection type="figure" uuid="{98c80221-b7a0-4000-9b46-ed2003c50bc4}">
+    <source node="{dadfeffd-96f1-4c48-b025-5246f8106a48}" port="{0c8520e9-0e38-4c96-a1da-aca1d898a3b4}"/>
+    <destination node="{483f09ee-8000-472b-8bc1-e364da71ccc2}" port="{1fa5d55f-76b2-4585-ac47-ac5f2b4b8eb9}"/>
+  </connection>
+  <connection type="figure" uuid="{a2061373-2f46-413d-8551-388ef0e3fa1d}">
+    <source node="{53c0a29f-3c6e-4fc7-98b5-30e75affa574}" port="{3cce7236-198a-422f-8dd3-20c8eafb64a0}"/>
+    <destination node="{8e4f6b15-335c-4a1a-a5a2-417a86bb8af0}" port="{c7706b3f-5514-4ce0-8d24-560d0249f7ad}"/>
+  </connection>
+  <connection type="figure" uuid="{a3724fe6-5479-40a2-bc73-3add34a65357}">
+    <source node="{907f8ecd-3666-4e60-bb60-5cab3d651d4f}" port="{41b5caea-2cdf-4e49-b968-f8722b876b08}"/>
+    <destination node="{ba7be4bd-6d2d-4543-852d-2a0f09b4ab4b}" port="{57f38c98-54e4-4149-ab90-0ec991ab03f7}"/>
+  </connection>
+  <connection type="figure" uuid="{a38c855d-b1be-40e9-bbcb-dbfaef01ccd6}">
+    <source node="{1c4639c9-e593-4347-bb10-f1c5b2abe97d}" port="{ac080e7f-0c07-4acd-9dbe-a8296201e3af}"/>
+    <destination node="{65115e13-17e2-4e43-a917-b7c50d733c76}" port="{c102f4a5-27f2-47ba-b7f3-b95ce025cf84}"/>
+  </connection>
+  <connection type="table" uuid="{a4c5c2e5-671f-4588-bbf9-355ae0ba3c44}">
+    <source node="{6d6b8fd6-8d09-4e25-ac69-eaa8345471f7}" port="{b47fe6c4-8b65-4809-b180-81065a500312}"/>
+    <destination node="{620b7f8d-8af1-4613-9d51-e4bc412e4591}" port="{52772ea9-f316-45f9-a805-9a0016419831}"/>
+  </connection>
+  <connection type="[figure]" uuid="{a6abc1ca-6140-468b-b686-2c46c5281969}">
+    <source node="{f215d8d5-1b05-4f07-a419-cc491974156f}" port="{73a32533-1085-4a0f-9b11-acbb6c0430f7}"/>
+    <destination node="{b17d6c5d-fdcc-479e-8dba-88c72585a506}" port="{ff1b650e-253b-490b-a8ba-6e963a7d57fa}"/>
+  </connection>
+  <connection type="figure" uuid="{a6b9c8e7-253e-4b18-b6b8-6de8ebbf47fe}">
+    <source node="{4ff63ecc-f2cc-49a5-a8d4-29302ff5716c}" port="{eea60f05-ad20-4c41-92c7-91ef7cbab355}"/>
+    <destination node="{b8962d38-14fd-40e6-9884-1ad0db7ed1d5}" port="{0cb6a537-290f-4541-9184-240d1edbbd8f}"/>
+  </connection>
+  <connection type="[figure]" uuid="{a8ca2ab8-b9d1-43ac-882a-1db5455de110}">
+    <source node="{65115e13-17e2-4e43-a917-b7c50d733c76}" port="{1e2faf05-c616-4cfc-92a1-59edbd8eb438}"/>
+    <destination node="{77f733df-cdbf-4803-b44e-657ae24e888d}" port="{32dc1abf-e499-4361-8184-c27a80e4ce89}"/>
+  </connection>
+  <connection type="[figure]" uuid="{a8e8a926-cc6e-4331-8c0d-2c4cfcac3f4d}">
+    <source node="{fb26bffc-f992-43a2-aef4-898fbab1d133}" port="{4ebb1703-8c41-41af-a41f-623e9a0dcc48}"/>
+    <destination node="{8bd5f899-b59a-419d-868c-f9316c092642}" port="{33c9e8d8-0704-40c3-93d6-c71dd592efa4}"/>
+  </connection>
+  <connection type="figure" uuid="{a9f50f8e-8f76-486b-a24d-50f8572325f0}">
+    <source node="{29e34587-f43d-476e-b660-fa342fade0e9}" port="{53d91689-237e-4624-8132-2ca06423eea4}"/>
+    <destination node="{ba7be4bd-6d2d-4543-852d-2a0f09b4ab4b}" port="{30c408d6-a315-4a0c-8e67-1e5d26238a36}"/>
+  </connection>
+  <connection type="[figure]" uuid="{af5a849d-6427-4a71-971b-ec6d99f8e3ce}">
+    <source node="{b609c44b-a970-4071-9111-456ffa16d5c2}" port="{d6767cec-10e9-4b22-9798-330dc0088fea}"/>
+    <destination node="{88898902-b1ae-4e38-b024-b47a5d18fdd8}" port="{0510f2b6-4d93-4214-91cf-6f202193ccb6}"/>
+  </connection>
+  <connection type="figure -&gt; figure" uuid="{b9fb267f-c0a4-4d6f-8a29-e160d520d47e}">
+    <source node="{eaa8118a-fae1-478d-bc98-a8e0c8fea43f}" port="{826ebc6f-dc37-4609-8e3d-fa99e5770833}"/>
+    <destination node="{fcfd16f0-e837-42f2-abe3-cec264318988}" port="{9fc99959-4ae9-4888-980c-4c953eaed9e5}"/>
+  </connection>
+  <connection type="[figure]" uuid="{baeed175-0f9d-48bd-bbfd-8efa86dde984}">
+    <source node="{98cc922e-f286-4a7c-99c0-20abe6b08935}" port="{4ef261d0-03d8-4c20-9844-cf909b4de611}"/>
+    <destination node="{a667cba7-363c-4412-863e-36ef593cbacf}" port="{d703cd14-35f5-4f13-af8a-548944d2909e}"/>
+  </connection>
+  <connection type="table" uuid="{d30d5a88-3d08-4e17-9fd5-1f1f933cb109}">
+    <source node="{12461486-1a13-4523-b288-4a2ab766273e}" port="{1318a10b-cf41-4849-8269-fc10f52c6096}"/>
+    <destination node="{53c0a29f-3c6e-4fc7-98b5-30e75affa574}" port="{669bb9de-8950-4cc1-b2fc-4652a90759ea}"/>
+  </connection>
+  <connection type="figure" uuid="{d391eb7f-789c-4c91-aa58-d7bc40269001}">
+    <source node="{8bd5f899-b59a-419d-868c-f9316c092642}" port="{40736b69-5086-4c4a-80d6-78d4ed41f454}"/>
+    <destination node="{c8a48c2d-fcba-4e9c-80d6-faaec46318d5}" port="{4868fd2b-e941-4be5-b590-f5894fdd8c5f}"/>
+  </connection>
+  <connection type="table" uuid="{d56db5c4-1d18-415b-80f0-25d3640066d9}">
+    <source node="{1751cec0-687a-4d67-8985-57aecfe21e58}" port="{789b856f-dac9-4d4c-a87a-54c59d6425bc}"/>
+    <destination node="{753f4085-ef9b-4847-8e40-4772a7c71b6f}" port="{2cd7d06c-2778-45ad-a3a9-8af89f942ff8}"/>
+  </connection>
+  <connection type="[figure]" uuid="{d774f1dd-7ccd-4b63-85f3-3623b2715542}">
+    <source node="{65115e13-17e2-4e43-a917-b7c50d733c76}" port="{1e2faf05-c616-4cfc-92a1-59edbd8eb438}"/>
+    <destination node="{87122a80-2fa1-4431-9fd3-7c53bc9888a8}" port="{a33f6c37-a4e0-410d-ba41-7852ac635bed}"/>
+  </connection>
+  <connection type="figure -&gt; figure" uuid="{dce0ad33-1c63-411e-a924-06b43f70d9b0}">
+    <source node="{231ad6de-388a-4a05-8e35-9e12209f7339}" port="{275319a2-4034-4b18-b6cc-296679dc3470}"/>
+    <destination node="{e7378d45-c385-4196-bcb5-fad2f2bcb3db}" port="{045c39f2-b888-4c2f-9ce2-e48fbcdaa877}"/>
+  </connection>
+  <connection type="figure" uuid="{dd303ee3-0998-43c9-818e-2aafa5442ada}">
+    <source node="{753f4085-ef9b-4847-8e40-4772a7c71b6f}" port="{b3fb451b-12a0-490e-a7c5-4356fe6eecaa}"/>
+    <destination node="{98cc922e-f286-4a7c-99c0-20abe6b08935}" port="{ef430350-7be5-47fc-994f-8eeecdab7e6e}"/>
+  </connection>
+  <connection type="[figure]" uuid="{ddf2bc87-9a49-4428-a150-e8e5a8b18d62}">
+    <source node="{b609c44b-a970-4071-9111-456ffa16d5c2}" port="{d6767cec-10e9-4b22-9798-330dc0088fea}"/>
+    <destination node="{bac73082-7f15-4ac4-935d-783cc69ea38e}" port="{c7916258-a1d2-4d5e-9a6c-6694245aac53}"/>
+  </connection>
+  <connection type="figure" uuid="{e14aceb3-ba37-4645-ba23-defd260e64d1}">
+    <source node="{7b6c30b1-b47a-476f-846b-5cb35f9c324f}" port="{f4db5d73-9024-45c1-b203-22ce7dde568e}"/>
+    <destination node="{c8a48c2d-fcba-4e9c-80d6-faaec46318d5}" port="{81480ab6-4001-4e25-a5bd-6d74d8dadb5a}"/>
+  </connection>
+  <connection type="[figure]" uuid="{e3590d4c-3bca-48a8-8e3a-8aab6df1c28e}">
+    <source node="{65115e13-17e2-4e43-a917-b7c50d733c76}" port="{1e2faf05-c616-4cfc-92a1-59edbd8eb438}"/>
+    <destination node="{4ff63ecc-f2cc-49a5-a8d4-29302ff5716c}" port="{da6af708-de00-46a9-95d1-2b8acabfb2c6}"/>
+  </connection>
+  <connection type="[figure]" uuid="{e37ef23e-b30d-4895-99c0-1ecca02b874d}">
+    <source node="{00413da9-d309-4259-b812-376c11b6beb9}" port="{42f834b6-38e7-4eb4-8433-418ddb5c2727}"/>
+    <destination node="{0c8ea05d-94f6-4cde-9bac-33be36af83d0}" port="{e6e2d015-3071-4933-b030-7efce458ba7a}"/>
+  </connection>
+  <connection type="[figure]" uuid="{eb063a71-18ea-4497-8146-07f1d542e9cf}">
+    <source node="{fb26bffc-f992-43a2-aef4-898fbab1d133}" port="{4ebb1703-8c41-41af-a41f-623e9a0dcc48}"/>
+    <destination node="{7b6c30b1-b47a-476f-846b-5cb35f9c324f}" port="{b4d1635c-1d23-4180-b988-c91d1cc8267b}"/>
+  </connection>
+  <connection type="figure -&gt; figure" uuid="{ec6f23fd-1122-40e5-ae02-784f0501919d}">
+    <source node="{335eb5ae-9bc6-4294-95d5-54d0ceee5eea}" port="{33960c36-f9d5-4fa3-aedc-d309d55e599f}"/>
+    <destination node="{8df294a3-c10b-4314-ad8d-16335ef48470}" port="{ecfb980e-6c8c-4272-a5cc-0836748172a1}"/>
+  </connection>
+  <connection type="figure" uuid="{f1f35808-a114-4126-be45-fdd2087cb68c}">
+    <source node="{9a859fd3-af78-458b-8876-35ae3d75bb82}" port="{5b83fb29-4b7f-4574-916a-72b326109fed}"/>
+    <destination node="{c8a48c2d-fcba-4e9c-80d6-faaec46318d5}" port="{dac342b5-d6a7-4915-b4ab-8dfc7ce222f8}"/>
+  </connection>
+  <connection type="[figure]" uuid="{f3f82cbd-cc46-4022-abf0-c713b72e5b65}">
+    <source node="{8e4f6b15-335c-4a1a-a5a2-417a86bb8af0}" port="{c62a29ec-b8c0-491d-bf1a-289a44cf1e20}"/>
+    <destination node="{907f8ecd-3666-4e60-bb60-5cab3d651d4f}" port="{c52b5420-a06b-43fc-90b5-9e715e73650e}"/>
+  </connection>
+  <connection type="figure" uuid="{f96870a7-bcc4-4a97-afef-d285d6e6f075}">
+    <source node="{f1ea990c-ae33-420d-b776-04c89ca3b2c7}" port="{2aea785d-3aee-445d-80aa-2feda802aa0d}"/>
+    <destination node="{c8a48c2d-fcba-4e9c-80d6-faaec46318d5}" port="{63f06e4b-53ae-418f-98a1-be3f5fbe05a2}"/>
+  </connection>
+  <connection type="figure -&gt; figure" uuid="{fbf1a6b2-b568-4754-8d8a-409b88f28649}">
+    <source node="{e2170f0c-1989-4987-9ac4-a134153b6851}" port="{5e5cdc60-43ae-4490-bddb-468ce178ebca}"/>
+    <destination node="{ac115f9e-33e0-4d6a-9d51-407071071bb3}" port="{bf825cc1-a1ec-48cc-bfb7-7920efae8a9e}"/>
+  </connection>
+  <connection type="[figure]" uuid="{fdf4ca1c-ee79-449a-9730-414b392afe23}">
+    <source node="{fb26bffc-f992-43a2-aef4-898fbab1d133}" port="{4ebb1703-8c41-41af-a41f-623e9a0dcc48}"/>
+    <destination node="{9a859fd3-af78-458b-8876-35ae3d75bb82}" port="{ace52f00-b55d-466d-b506-97ff4af4bd35}"/>
+  </connection>
+  <connection type="figure" uuid="{fec9b09f-1c89-4f9c-8dd4-73e6f99563cb}">
+    <source node="{0f207a09-a617-40ea-af04-45c90976f421}" port="{ca634eb5-a013-4ddb-bb13-30b036a80841}"/>
+    <destination node="{ebaa2992-6dc4-43e1-b568-c2190ccf4f42}" port="{b72c9c87-03be-4645-a164-5a800a153592}"/>
+  </connection>
+  <connection type="figure" uuid="{ff9f2fea-cce2-44f0-9e68-6c9b33c518c5}">
+    <source node="{d9e479d7-3304-42d2-b9fe-ef83ec1f6cb9}" port="{a614761d-2540-404c-9e02-643755a05812}"/>
+    <destination node="{0f207a09-a617-40ea-af04-45c90976f421}" port="{d7011ec9-7bad-43b9-a7a9-178fbd66fe39}"/>
+  </connection>
+  <text color="Beige" height="50.0" uuid="{db89281f-21eb-4e90-a073-91038a3f187f}" width="750.0" x="1100.0" y="1650.0">Heatmaps</text>
+  <text color="Beige" height="50.0" uuid="{5c70bd09-7c63-468b-8133-0feaefb69c34}" width="775.0" x="2100.0" y="1650.0">Scatter plots</text>
+  <text color="Beige" height="325.0" uuid="{73d3c76b-ca9d-4fcc-b77b-54328dd9546b}" width="150.0" x="900.0" y="1725.0">Without colorbars
+Single figure</text>
+  <text color="Beige" height="325.0" uuid="{69c4c60e-7d0f-440b-8514-da2e107f4bc8}" width="150.0" x="900.0" y="2125.0">With colorbars
+Single figure</text>
+  <text color="Beige" height="325.0" uuid="{afec88b6-74bc-4427-bfc7-6c41d5b3d660}" width="150.0" x="900.0" y="2550.0">With colorbars
+Two figures</text>
+</flow>

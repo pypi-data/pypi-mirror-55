@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='US-ASCII'?>
+<flow xmlns="http://www.sysess.org/sympathyfordata/workflow/1.0" cls="Flow" uuid="{74c7206e-be96-4f73-b112-21eb9976dc8d}">
+  <label></label>
+  <ports/>
+  <node id="org.sysess.sympathy.list.appendlistnew" port_format="1.1" uuid="{45acd7e3-b2fb-432a-a5f0-019bd722d7e6}" x="1825.0" y="1850.0">
+    <label>Append List non-default ports</label>
+    <version>1.0</version>
+    <parameters type="json">{"type": "group"}</parameters>
+    <ports>
+      <input key="list" type="[&lt;a&gt;]" type_base="[&lt;a&gt;]" uuid="{9687ab29-e537-4b63-8eaa-865b010b3f4c}">
+        <label>Appended List</label>
+      </input>
+      <input key="item" type="&lt;a&gt;" type_base="&lt;a&gt;" uuid="{d9e71f41-4935-4038-99ae-e5c76577a653}">
+        <label>The Item to be appended</label>
+      </input>
+      <input key="item" type="&lt;a&gt;" type_base="&lt;a&gt;" uuid="{a54ebc9e-604d-434e-9b47-d5bcbff3bc43}">
+        <label>The Item to be appended</label>
+      </input>
+      <output key="list" type="[&lt;a&gt;]" type_base="[&lt;a&gt;]" uuid="{7db22e3b-ebd1-4c07-95ca-b8b980b1faef}">
+        <label>Appended List</label>
+      </output>
+    </ports>
+  </node>
+  <node id="unknown" port_format="1.1" uuid="{aee42ef5-36d6-405f-b12e-4c48c30ebe53}" x="1825.0" y="1975.0">
+    <label>Unknown nodeid</label>
+    <version>1.0</version>
+    <parameters type="json">{"type": "group"}</parameters>
+    <ports>
+      <input key="list" type="[&lt;a&gt;]" type_base="[&lt;a&gt;]" uuid="{45938eaf-5766-4ddb-8d26-6fa382cd2058}">
+        <label>Appended List</label>
+      </input>
+      <input key="item" type="&lt;a&gt;" type_base="&lt;a&gt;" uuid="{44735650-453a-4d16-a34b-1e6953645024}">
+        <label>The Item to be appended</label>
+      </input>
+      <output key="list" type="[&lt;a&gt;]" type_base="[&lt;a&gt;]" uuid="{8f3b5c6b-0e0e-4caf-b9df-f20e260941dc}">
+        <label>Appended List</label>
+      </output>
+    </ports>
+  </node>
+</flow>
