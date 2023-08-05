@@ -1,0 +1,10 @@
+---
+date: {{ today }}
+global_seed: True
+params:   
+  - DIMENSIONS:
+      attrs:
+        type: dimensions
+        value: 
+          - 2048
+          - 2560
