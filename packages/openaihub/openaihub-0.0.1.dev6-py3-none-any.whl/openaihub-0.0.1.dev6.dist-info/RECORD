@@ -1,0 +1,11 @@
+openaihub/__init__.py,sha256=LsrBg6vmsqfNlBhoZqXWorI7N1TtqCK2aztttqo8u9I,1063
+openaihub/cli.py,sha256=v5ZaMIgBQMpRSzmdokzy9XuyrCJMeJtmFcaOJsKP3zc,9422
+openaihub/data/data.tgz,sha256=USYTU_R5m_u86BI3rVx3GG1nHUMlMVmiD8aw93VETdg,2874
+openaihub/func/__init__.py,sha256=NHn_sxEjkZKk_wpvEpPurebCZ-qQ4n7jfFmIUVOFyGc,25720
+openaihub/func/data.tgz,sha256=8xMXivj786eNAphelxx36zzZuQUOxrQD4FvgMHhv9zc,3369
+openaihub-0.0.1.dev6.dist-info/LICENSE,sha256=WI5JtXXhjcqnIcPllDA1ZtuxNnZ515xjElcILo7z28o,1073
+openaihub-0.0.1.dev6.dist-info/METADATA,sha256=kZnqCzuPVq-b4KaAghMVFS63vuph7CGZJuUKODkqApQ,607
+openaihub-0.0.1.dev6.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+openaihub-0.0.1.dev6.dist-info/entry_points.txt,sha256=t-fQxbA1zfc5_SZS3BNhnzueSIQ-pdwF9ZVQY1RPHys,67
+openaihub-0.0.1.dev6.dist-info/top_level.txt,sha256=tMMLNMkXruqWEVJHXiaqpdFEs447HXYLOqWEzux5GGk,10
+openaihub-0.0.1.dev6.dist-info/RECORD,,
