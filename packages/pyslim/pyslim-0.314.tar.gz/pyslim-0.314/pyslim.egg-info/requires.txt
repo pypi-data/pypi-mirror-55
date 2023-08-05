@@ -1,0 +1,7 @@
+msprime>=0.7.0
+tskit
+kastore
+attrs
+numpy
+
+[dev]
