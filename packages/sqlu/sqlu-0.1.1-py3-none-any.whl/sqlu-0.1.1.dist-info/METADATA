@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: sqlu
+Version: 0.1.1
+Summary: sqlu is a simple utility for transforming or extracting info from sql statements
+Home-page: https://gitlab.com/matteo.redaelli/sqlu
+Author: Matteo Redaelli
+Author-email: matteo.redaelli@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: flatten-json
+Requires-Dist: moz-sql-parser
+
+# sqlu
+
+sqlu is a simple tool for transforming or extracting info from sql statements
+
+## installation
+
+pip install sqlu
+
+## Useful functions
+
+- remove_comments: remove comments from a sql statement
+- extract_tables_from_select: extract tables/views list from a select statement
+
