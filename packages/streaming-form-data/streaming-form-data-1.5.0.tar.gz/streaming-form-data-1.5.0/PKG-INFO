@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: streaming-form-data
+Version: 1.5.0
+Summary: Streaming parser for multipart/form-data
+License: MIT
+Author: Siddhant Goel
+Author-email: me@sgoel.org
+Requires-Python: >=3.5,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
