@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: fold-bdd
+Version: 0.1.0
+Summary: Library for folding (or reducing) over a Reduced Ordered Binary Decision Diagram.
+License: MIT
+Author: Marcell Vazquez-Chanlatte
+Author-email: mvc@linux.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: attrs (>=19.3,<20.0)
+Requires-Dist: dd (>=0.5.4,<0.6.0)
+Requires-Dist: funcy (>=1.13,<2.0)
