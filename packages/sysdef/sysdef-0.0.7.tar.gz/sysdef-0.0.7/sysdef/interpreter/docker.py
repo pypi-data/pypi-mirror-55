@@ -1,0 +1,117 @@
+import logging
+import sysdef.util
+
+logger = logging.getLogger(__name__)
+
+"""
+| step      | image | image need VM | boot | notes                                      |
+| ---       | ---   | ---           | ---  | ---                                        |
+| settings  | Y     | N             | Y    | restart docker in boot mode                |
+| images    | Y     | Y             | Y    | image mode does docker pull if cache==true |
+| run       | N     | N/A           | Y    |                                            |
+:param data:
+:param g:
+:return: void
+"""
+
+
+# docker client API is available but we're not using it for
+# simplicity since the API calls can be somewhat different to
+# `docker run`
+
+def process_1(data, g=None):
+    root = ""
+    changes = False
+    etc_docker = root + "/etc/docker"
+    etc_docker_daemon_yaml = etc_docker + "/daemon.json"
+
+    daemon_json = data.get("daemon_json", {})
+    if daemon_json:
+        logger.info("saving /etc/docker/daemon.json...")
+        changes |= sysdef.util.mkdir(etc_docker, g=g)
+        changes |= sysdef.util.save_json(etc_docker_daemon_yaml, daemon_json, g=g)
+
+    return changes
+
+
+
+def process_2(data, ssh_session):
+    # need to somehow look-ahead to the boot section and grab the images from
+    # there
+    if process_2_needed(data):
+        docker_containers = sysdef.lookup("boot", "docker").get("containers", {})
+
+        for name in docker_containers:
+            # docker client API is available but we're not using it for
+            # simplicity since the API calls are very different to `docker run`
+            logger.info(f"downloading image: {name}")
+            settings = docker_containers[name]
+            image = settings['image']
+
+            logger.info("waiting for docker service to start...")
+            sysdef.emulator.command(
+                'while [[ ! $(docker ps) ]] ; do echo wait; sleep 1 ; done',
+                ssh_session
+                # systemctl reports active as soon as service is loading
+                #'while [[ $(systemctl is -active docker) != "active"]]; do echo wait; done'
+            )
+
+            logger.info("pulling docker image: %s...", image)
+
+            sysdef.emulator.command(f"docker pull {image} 2>&1", ssh_session)
+    else:
+        logger.info("not caching images - disabled or no containers")
+
+
+def process_2_needed(data):
+    return data.get("cache", True) and sysdef.lookup("boot", "docker").get("containers", {})
+
+
+def process(data, root=""):
+    """
+    runtime docker setup
+    """
+    logger.info("processing docker section...")
+    if process_1(data):
+        sysdef.util.run("systemctl daemon-reload")
+        sysdef.util.run("systemctl restart docker")
+
+    docker_containers = data.get("containers", {})
+
+    for name in docker_containers:
+        logger.info(f"processing {name}")
+        settings = docker_containers[name]
+        image = settings['image']
+        docker_args = settings.get("run", "--restart unless-stopped --publish-all")
+        container_args = settings.get("args", "")
+
+        # check if container exists
+        container_id = sysdef.util.run(f"docker ps -aq -f name={name}")
+        if container_id:
+            logger.info(f"{name} exists as {container_id}... moving on")
+            # FIXME - see if we need to update run arguments
+        else:
+            logger.info(f"starting docker container for {name}...")
+            docker_run_cmd = f"docker run --detach {docker_args} --name {name} {image} {container_args}"
+            sysdef.util.run(docker_run_cmd)
+
+    # `docker -p` exposes the port on the host!.. we only need this next section
+    # of port mapping if we want to do stuff like run multiple web server containers...
+    port_forwards = data.get("port_forwards", {})
+    for host_port in port_forwards:
+        settings = port_forwards[host_port]
+        container_port = settings.get("container_port")
+        protocols = settings.get("protocols", ["tcp"])
+
+        logger.info(f"port forward {host_port}/{protocols} -> container:{container_port}/{protocols}")
+
+        for protocol in protocols:
+            docker_ip = sysdef.util.run("docker network inspect -f '{{(index .IPAM.Config 0).Gateway}}' bridge")
+
+            iptables_a = f"iptables -t nat -A PREROUTING -p {protocol} --dport {host_port} -j DNAT --to-destination {docker_ip}:{container_port}"
+            iptables_b = f"iptables -A FORWARD -p {protocol} -d {docker_ip} --dport {host_port} -m state --state NEW,ESTABLISHED,RELATED -j ACCEPT"
+
+            logger.info("enabling docker port forward for %d/%s", host_port, protocol)
+
+            sysdef.util.run(iptables_a)
+            sysdef.util.run(iptables_b)
