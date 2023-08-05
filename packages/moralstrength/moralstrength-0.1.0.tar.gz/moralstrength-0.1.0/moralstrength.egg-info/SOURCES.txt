@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+moralstrength/__init__.py
+moralstrength/data.py
+moralstrength/estimators.py
+moralstrength/lexicon_use.py
+moralstrength/moralstrength.py
+moralstrength/moralstrengthdict.py
+moralstrength.egg-info/PKG-INFO
+moralstrength.egg-info/SOURCES.txt
+moralstrength.egg-info/dependency_links.txt
+moralstrength.egg-info/requires.txt
+moralstrength.egg-info/top_level.txt

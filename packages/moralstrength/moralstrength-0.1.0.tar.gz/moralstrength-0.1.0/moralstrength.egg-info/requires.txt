@@ -1,0 +1,5 @@
+gsitk
+nltk
+numpy
+pandas
+scikit-learn<0.21.0,>=0.20.0
