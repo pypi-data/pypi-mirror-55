@@ -1,0 +1,6 @@
+AutoBUlidVocabulary
+numpy
+requests==2.22.0
+torch
+torchvision
+tqdm==4.36.1
