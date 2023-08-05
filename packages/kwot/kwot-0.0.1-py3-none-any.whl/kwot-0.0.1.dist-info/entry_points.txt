@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        kwot=kwot.main:quote
+    
