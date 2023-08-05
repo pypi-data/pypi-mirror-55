@@ -1,0 +1,16 @@
+mpltern/__init__.py,sha256=vVgyFNjPpSXkZXuIbDLzMWaWH_qY9PSsxJ61C88hu60,222
+mpltern/_version.py,sha256=62xU9smaxF9SW_J0wLObsSp-CC0KeQId56oGouXjK2M,18444
+mpltern/cbook/__init__.py,sha256=bqqpjtacxI0SxX-zxRs2kt9ZvcBdpxG5tSg82clV6Us,545
+mpltern/ternary/__init__.py,sha256=e6Ejjmc_FlbMUCaqKd2Y7KKCv1SzNN7lw-XFC-NW0rI,31
+mpltern/ternary/_axes.py,sha256=VEfqxNRanlnFZYGdrf-ovETWxUW01YNjyDkUYaHqxTE,26846
+mpltern/ternary/axis.py,sha256=7Abe_WuClyuoRqtXdPuF-xI6BbZDlRR3o7ynDDiSuxY,14207
+mpltern/ternary/datasets.py,sha256=tW4ewkg5glDP3yCSTrdjOnWMZSRvTQfCfkPWftc4k-8,1229
+mpltern/ternary/spines.py,sha256=HBiXk5zLAPFMD18UyEXM74dZvQTP-iSGZdAlFNjfmRw,1795
+mpltern/ternary/ternary_parser.py,sha256=tUP3CIrmWp-SPa-fek746EgjIMkL7_XLaZQwGIxspwQ,4682
+mpltern/ternary/tick.py,sha256=py_s1G4q_oPUcTTZtDAi4iO42aOZ6NiQaml1AcSLwSI,8510
+mpltern/ternary/transforms.py,sha256=C5tdP9J1s2x3elLEqPkyXu_LwwbWnfLna-NUmMiO_bw,8053
+mpltern-0.3.0.dist-info/LICENSE,sha256=PFbOgAIXWzupJiCBac9CSuYI_mPNy7ildRqxppaQE4w,1067
+mpltern-0.3.0.dist-info/METADATA,sha256=0-SwrrsBOzVxqfw_85OAOZ0BiWtUPWUKsFH9erncIlM,2292
+mpltern-0.3.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mpltern-0.3.0.dist-info/top_level.txt,sha256=gHVtgV3jD3n9xBhJKpmK2wzQE2_QsiNtHdvHsB5IIRQ,8
+mpltern-0.3.0.dist-info/RECORD,,
