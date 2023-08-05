@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+python_sqlite_cache.egg-info/PKG-INFO
+python_sqlite_cache.egg-info/SOURCES.txt
+python_sqlite_cache.egg-info/dependency_links.txt
+python_sqlite_cache.egg-info/top_level.txt
+python_sqlite_cache.egg-info/zip-safe
+sqlite_cache/__init__.py
+sqlite_cache/sqlite_cache.py

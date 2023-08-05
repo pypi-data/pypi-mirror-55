@@ -1,0 +1,58 @@
+Metadata-Version: 1.1
+Name: python-sqlite-cache
+Version: 0.0.2
+Summary: SQLite cache for Python.
+Home-page: https://github.com/csotelo/python-sqlite-cache
+Author: Carlos Eduardo Sotelo Pinto
+Author-email: UNKNOWN
+License: UNKNOWN
+Download-URL: http://pypi.python.org/python-sqlite-cache/
+Description: # python-sqlite-cache
+        
+        SQlite Cache module
+        
+        ## Requirements
+        
+        - Python 3.6+
+        
+        ## Install
+        
+        ~~~
+        $ pip install python-sqlite-cache
+        ~~~
+        
+        ## Usage
+        
+        ### Initialize
+        
+        #### In Memory
+        
+        ~~~
+        > from sqlite_cache.sqlite_cache import SqliteCache
+        > sql_cache = SqliteCache()
+        ~~~
+        
+        #### On Disk
+        
+        ~~~
+        > from sqlite_cache.sqlite_cache import SqliteCache
+        > sql_cache = SqliteCache(path_cache_dir)
+        ~~~
+        
+        ### Usage
+        
+        ~~~
+        > sql_cache.set('some_key')
+        > print(sql_cache_get('some_key', 'some_value'))
+        some_value
+        ~~~
+        
+Keywords: sqlite cache
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
