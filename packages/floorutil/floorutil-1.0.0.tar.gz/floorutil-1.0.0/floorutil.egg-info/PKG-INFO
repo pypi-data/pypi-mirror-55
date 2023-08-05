@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: floorutil
+Version: 1.0.0
+Summary: desc
+Home-page: https://github.com/vcancy/spider80s
+Author: xuzhili
+Author-email: xuzhili@znds.com
+License: MIT
+Description: UNKNOWN
+Keywords: send email
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
