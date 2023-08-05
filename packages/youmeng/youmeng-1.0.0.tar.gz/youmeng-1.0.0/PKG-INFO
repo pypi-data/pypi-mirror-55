@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: youmeng
+Version: 1.0.0
+Summary: UNKNOWN
+Home-page: https://developer.umeng.com/open-api/docs/com.umeng.uapp/umeng.uapp.getAllAppData/1#!!open-api-doc-tools
+Author: youmeng
+License: MIT
+Description: Requirements
+        ------------
+        python(>=2.7)
+        requests
+        
+        
+        Examples
+        --------
+        test.py
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: POSIX
+Description-Content-Type: text/markdown
