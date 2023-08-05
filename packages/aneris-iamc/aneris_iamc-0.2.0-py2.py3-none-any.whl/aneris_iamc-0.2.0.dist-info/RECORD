@@ -1,0 +1,14 @@
+aneris/__init__.py,sha256=H6GN4gl3xdVVtvNhiYeyA5ZnPWNeQc9EGL8Im16FnU8,177
+aneris/_io.py,sha256=zgqG7UFHoL_43TwEh6z5b70K9qzmJTGHz7tXO_qmUTU,6116
+aneris/_version.py,sha256=gMVOpJT56wl7DxX7vNS8FgGKccZ5F8rIm7GlhBB1Wtw,497
+aneris/cli.py,sha256=G5zK2w8cbtDkn_YaYaFIMjaANRzhEz45stH465I3aWg,3261
+aneris/harmonize.py,sha256=N9ZgR6owdS8HAxukQtQrkA3uK9M9v5NcLtrkV4NrhBw,27915
+aneris/methods.py,sha256=Uo3GWGsZz5De25ZFReT1iRoNTfuzlja8tqMp8Sc5qxE,8672
+aneris/tutorial.py,sha256=fQO3q75PAH8FAfm15RdwzhBSVM3cBlEF_5ZHyFad0OA,2423
+aneris/utils.py,sha256=6L0cOsVpZf13ceG-Q5iVsFKNsCrIuDtivAb5U8lyXO8,19087
+aneris_iamc-0.2.0.dist-info/LICENSE,sha256=du0_hTZ1diz34t503BamSfWecYkSS5s2aMD_QUjfy-A,11346
+aneris_iamc-0.2.0.dist-info/METADATA,sha256=tOzC44LKkb1HZeao3FHeK_LeazH65H12b6ZwKCpK3As,864
+aneris_iamc-0.2.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+aneris_iamc-0.2.0.dist-info/entry_points.txt,sha256=EuAo-PNGWiC7959XE-C2aUklLuoYTzii-xZPMP4rXCE,44
+aneris_iamc-0.2.0.dist-info/top_level.txt,sha256=Qjy4XIiPMwFhbgW38jYCPLx1O9sN_czQrwgWkVba0PU,7
+aneris_iamc-0.2.0.dist-info/RECORD,,
