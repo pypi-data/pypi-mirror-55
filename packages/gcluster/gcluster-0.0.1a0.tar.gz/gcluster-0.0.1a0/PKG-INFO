@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: gcluster
+Version: 0.0.1a0
+Summary: Clustering based on graph algorithms
+Home-page: http://github.com/lucifer1004/gcluster
+Author: Gabriel Wu
+Author-email: wuzihua@pku.edu.cn
+License: MIT
+Description: Clustering based on graph algorithms
+Keywords: graph clustering
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
