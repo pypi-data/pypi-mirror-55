@@ -1,0 +1,7 @@
+README.md
+sca3300.py
+setup.py
+sca3300.egg-info/PKG-INFO
+sca3300.egg-info/SOURCES.txt
+sca3300.egg-info/dependency_links.txt
+sca3300.egg-info/top_level.txt
