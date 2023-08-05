@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: i-did
+Version: 0.0.2
+Summary: Keep track of what you did today.
+Home-page: https://github.com/samueljsb/i-did
+License: UNKNOWN
+Author: Samuel Searles-Bryant
+Author-email: devel@samueljsb.co.uk
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: Click >=7.0
+
+i-did
+=====
+
+Keep track of what you did today.
+::
+
+    Usage: i-did [OPTIONS] COMMAND [ARGS]...
+
+        Keep track of what you did today.
+
+    Options:
+        --help  Show this message and exit.
+
+    Commands:
+        new   Add an item to the list of things you've done.
+        show  Show what you've already done this week.
+
