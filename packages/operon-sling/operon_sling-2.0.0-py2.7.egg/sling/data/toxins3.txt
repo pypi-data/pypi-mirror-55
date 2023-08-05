@@ -1,0 +1,10 @@
+min_hit_length	15
+max_overlap	60
+max_diff_avg_length	10000000
+max_hit_length	500
+min_upstream_length	1
+max_downstream_length	10000000
+max_upstream_length	10000000
+max_distance	100
+order	either
+min_downstream_length	1
