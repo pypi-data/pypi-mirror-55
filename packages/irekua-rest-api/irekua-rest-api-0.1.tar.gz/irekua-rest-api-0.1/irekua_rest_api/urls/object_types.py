@@ -1,0 +1,67 @@
+from rest_framework import routers
+from irekua_rest_api import views
+
+object_types_router = routers.DefaultRouter()
+object_types_router.register(
+    r'mime_types',
+    views.MimeTypeViewSet)
+object_types_router.register(
+    r'annotation_types',
+    views.AnnotationTypeViewSet)
+object_types_router.register(
+    r'collection_types',
+    views.CollectionTypeViewSet)
+object_types_router.register(
+    r'device_types',
+    views.DeviceTypeViewSet)
+object_types_router.register(
+    r'entailment_types',
+    views.EntailmentTypeViewSet)
+object_types_router.register(
+    r'event_types',
+    views.EventTypeViewSet)
+object_types_router.register(
+    r'item_types',
+    views.ItemTypeViewSet)
+object_types_router.register(
+    r'licence_types',
+    views.LicenceTypeViewSet)
+object_types_router.register(
+    r'sampling_event_type_device_types',
+    views.SamplingEventTypeDeviceTypeViewSet)
+object_types_router.register(
+    r'sampling_event_type_site_types',
+    views.SamplingEventTypeSiteTypeViewSet)
+object_types_router.register(
+    r'sampling_event_types',
+    views.SamplingEventTypeViewSet)
+object_types_router.register(
+    r'site_types',
+    views.SiteTypeViewSet)
+object_types_router.register(
+    r'collection_type_site_types',
+    views.CollectionTypeSiteTypeViewSet)
+object_types_router.register(
+    r'collection_type_administrators',
+    views.CollectionTypeAdministratorViewSet)
+object_types_router.register(
+    r'collection_type_annotation_types',
+    views.CollectionTypeAnnotationTypeViewSet)
+object_types_router.register(
+    r'collection_type_licence_types',
+    views.CollectionTypeLicenceTypeViewSet)
+object_types_router.register(
+    r'collection_type_sampling_event_types',
+    views.CollectionTypeSamplingEventTypeViewSet)
+object_types_router.register(
+    r'collection_type_item_types',
+    views.CollectionTypeItemTypeViewSet)
+object_types_router.register(
+    r'collection_type_event_types',
+    views.CollectionTypeEventTypeViewSet)
+object_types_router.register(
+    r'collection_type_device_types',
+    views.CollectionTypeDeviceTypeViewSet)
+object_types_router.register(
+    r'collection_type_roles',
+    views.CollectionTypeRoleViewSet)
