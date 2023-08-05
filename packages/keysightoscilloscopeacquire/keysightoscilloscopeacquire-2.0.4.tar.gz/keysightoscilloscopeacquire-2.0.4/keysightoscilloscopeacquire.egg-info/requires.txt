@@ -1,0 +1,4 @@
+pyvisa
+argparse
+numpy
+matplotlib
