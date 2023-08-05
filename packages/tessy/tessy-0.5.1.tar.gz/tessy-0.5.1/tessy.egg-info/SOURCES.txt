@@ -1,0 +1,8 @@
+README.md
+setup.py
+tessy/__init__.py
+tessy/_tessy.py
+tessy.egg-info/PKG-INFO
+tessy.egg-info/SOURCES.txt
+tessy.egg-info/dependency_links.txt
+tessy.egg-info/top_level.txt
