@@ -1,0 +1,81 @@
+Metadata-Version: 2.1
+Name: consolejs
+Version: 1.0.9
+Summary: A console logging/debugging framework inspired by ECMAScript
+Home-page: https://github.com/czwirl/consolejs
+Author: Czwirl Coldwind
+Author-email: czwirl@gmail.com
+Maintainer: Czwirl Coldwind
+Maintainer-email: czwirl@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+Requires-Dist: wrapt
+Requires-Dist: colored
+
+## consolejs
+
+` A console logger / debugger for Python CLI programs`
+
+
+Currently consolejs only support functions. support for classes will be added later.
+
+
+### Installation
+```shell
+$ pip install consolejs
+
+```
+
+### Getting Started
+
+```python
+
+# Create a Conlog from the constructor.
+consolejs = Conlog.create("main")
+
+# Set the required logging level
+consolejs.level = Conlog.DEBUG
+
+# To use on the `main` module
+console = consolejs.get_console()
+
+####  in module2.py
+
+@Conlog.fn
+def say_hi(name):
+	console = Conlog.get_console("main")
+	console.debug("args {name=}")
+	print(f"Hi {name}"
+
+```
+
+
+### How it works.
+`console.debug` supports `expr debug` expressions introduced in Python 3.8.
+It dynamically rewrites the function in Python 3.8 and uses a beautiful way to support it in < 3.7
+
+See tests/ for samples.
+
+### License
+-------
+
+Copyright (c) 2019 Cswl Coldwind 
+
+consolejs is distributed under the terms 
+
+- `MIT License <https://choosealicense.com/licenses/mit>`_ 
+
+
+
