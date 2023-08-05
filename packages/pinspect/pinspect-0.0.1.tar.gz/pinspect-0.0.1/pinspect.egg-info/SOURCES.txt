@@ -1,0 +1,8 @@
+setup.py
+pinspect/__init__.py
+pinspect/traverse.py
+pinspect/utils.py
+pinspect.egg-info/PKG-INFO
+pinspect.egg-info/SOURCES.txt
+pinspect.egg-info/dependency_links.txt
+pinspect.egg-info/top_level.txt
