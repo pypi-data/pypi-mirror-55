@@ -1,0 +1,4 @@
+recursive-include findatapy/ *.*
+include findatapy/conf/*
+prune findatapy/util/*cred.py
+recursive-include findatapy_examples/ *.*
