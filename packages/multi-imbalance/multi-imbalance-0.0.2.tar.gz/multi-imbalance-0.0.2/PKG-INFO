@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: multi-imbalance
+Version: 0.0.2
+Summary: Python package for tackling multiclass imbalance problems.
+Home-page: https://github.com/damian-horna/multi-imbalance
+Author: Damian Horna, Kamil Pluciński, Hanna Klimczak, Jacek Grycza
+Author-email: horna.damian@gmail.com
+License: UNKNOWN
+Description: [![Build Status](https://travis-ci.org/damian-horna/multi-imbalance.svg?branch=master)](https://travis-ci.org/damian-horna/multi-imbalance)
+        
+        # multi-imbalance
+        
+        multi-imbalance is a python package tackling the problem of multi-class imbalanced datasets in machine learning.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
