@@ -1,0 +1,3 @@
+import deliverable_model.serving.model
+
+from deliverable_model.serving.deliverable_model import DeliverableModel
