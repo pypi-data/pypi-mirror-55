@@ -1,0 +1,10 @@
+sense_data/__init__.py,sha256=RT58hFwQNG6Y7eY4Dcy2nmrOvHLuahESMiAFY80HGtE,37
+sense_data/client.py,sha256=n2p-jqN338xUzHegviQPfEbwtM5oCvjkFiuPAbMLQlg,22560
+sense_data/decorator.py,sha256=5FQXpu4kEcJ8d1INXXCtBSrZychrub-dH51WUoW1qgs,843
+sense_data/dictobj.py,sha256=EZYLHr_KWl8pYANhQgOK-k-l0Gal3_wHoJUb8eeJWY0,7323
+sense_data/stock_pb2.py,sha256=TaAp5RzCWAmMDM7sMeQh76uwaP_r4uw1PQP7ZXq4EN8,15737
+sense_data/stock_pb2_grpc.py,sha256=iGUMe5LZ9Ilb_3nOM3LhTgfzF45hKDcrJsVf-nkRH3w,16919
+sense_data-0.5.0.dist-info/METADATA,sha256=BmXvmF9Itp1M0CyBTyEhTYjpiRGn6qk57gvJqFulFis,300
+sense_data-0.5.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+sense_data-0.5.0.dist-info/top_level.txt,sha256=hFXUqcdmmbOfLyknmOyz8syjndWHx2CMo_I9krVijYc,11
+sense_data-0.5.0.dist-info/RECORD,,
