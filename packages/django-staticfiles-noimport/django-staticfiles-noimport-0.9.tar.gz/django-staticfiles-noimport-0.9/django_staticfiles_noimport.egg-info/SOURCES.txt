@@ -1,0 +1,11 @@
+README.md
+setup.py
+bin/collectstatic
+bin/findstatic
+django_staticfiles_noimport.egg-info/PKG-INFO
+django_staticfiles_noimport.egg-info/SOURCES.txt
+django_staticfiles_noimport.egg-info/dependency_links.txt
+django_staticfiles_noimport.egg-info/requires.txt
+django_staticfiles_noimport.egg-info/top_level.txt
+staticfiles_noimport/__init__.py
+staticfiles_noimport/finders.py

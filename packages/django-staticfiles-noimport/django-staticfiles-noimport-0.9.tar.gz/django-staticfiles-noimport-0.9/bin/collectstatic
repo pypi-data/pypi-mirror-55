@@ -1,0 +1,26 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+import importlib
+
+# Append cwd to sys.path so this can be run
+# in the same directory that manage.py lives
+sys.path.append(os.getcwd())
+
+from django.conf import settings
+from django.core import management
+
+cmd = management.load_command_class('django.contrib.staticfiles', 'collectstatic')
+
+options = cmd.create_parser('collectstatic', '').parse_args()
+cmd_options = vars(options)
+# Avoid loading apps deep in Django's internals
+cmd_options['use_default_ignore_patterns'] = False
+# Equivalent to --no-input
+cmd_options['interactive'] = False
+# Avoid interacting with locale during
+# base management command teardown,
+# which shouldn't impact staticfiles
+cmd.leave_locale_alone = True
+cmd.execute(**cmd_options)
