@@ -1,0 +1,3 @@
+[console_scripts]
+quantumics = reader.__main__:main
+

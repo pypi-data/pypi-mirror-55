@@ -1,0 +1,6 @@
+numpy
+dwave-ocean-sdk
+theano
+pandas
+sklearn
+mongo
