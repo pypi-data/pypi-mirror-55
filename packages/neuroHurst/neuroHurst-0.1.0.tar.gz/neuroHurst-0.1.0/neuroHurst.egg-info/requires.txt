@@ -1,0 +1,46 @@
+smriprep
+packaging
+bids
+
+[analysis]
+
+[doc]
+sphinx>=2.2
+numpydoc
+m2r
+sphinx_rtd_theme
+
+[docs]
+sphinx>=2.2
+numpydoc
+m2r
+sphinx_rtd_theme
+
+[test]
+pytest>=3.3
+mock
+
+[test:python_version < "3.4"]
+pathlib
+
+[tests]
+pytest>=3.3
+mock
+
+[tests:python_version < "3.4"]
+pathlib
+
+[travis_tests]
+pytest>=3.3
+mock
+codecov
+pytest-cov
+pytest-xdist
+
+[travis_tests:python_version < "3.4"]
+pathlib
+
+[tutorial]
+nbconvert
+jupyter_client
+ipykernel
