@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+src/template_test_repo/__init__.py
+src/template_test_repo.egg-info/PKG-INFO
+src/template_test_repo.egg-info/SOURCES.txt
+src/template_test_repo.egg-info/dependency_links.txt
+src/template_test_repo.egg-info/requires.txt
+src/template_test_repo.egg-info/top_level.txt
