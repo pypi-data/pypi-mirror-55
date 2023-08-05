@@ -1,0 +1,4 @@
+arrow
+jsonpath_rw
+kafka-python
+psycopg2
