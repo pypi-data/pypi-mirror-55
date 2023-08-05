@@ -1,0 +1,3 @@
+[console_scripts]
+socket-cli = socket_cli.main:cli
+
