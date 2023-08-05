@@ -1,0 +1,13 @@
+README.md
+setup.py
+guiscrcpy/__main__.py
+guiscrcpy/app.py
+guiscrcpy/breeze_resources.py
+guiscrcpy/mainui.py
+guiscrcpy/rsrc_rc.py
+guiscrcpy.egg-info/PKG-INFO
+guiscrcpy.egg-info/SOURCES.txt
+guiscrcpy.egg-info/dependency_links.txt
+guiscrcpy.egg-info/entry_points.txt
+guiscrcpy.egg-info/requires.txt
+guiscrcpy.egg-info/top_level.txt
