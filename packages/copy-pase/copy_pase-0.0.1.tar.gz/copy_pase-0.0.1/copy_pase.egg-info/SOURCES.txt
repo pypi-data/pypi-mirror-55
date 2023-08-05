@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+copy_pase/SendQQMsg.py
+copy_pase/__init__.py
+copy_pase.egg-info/PKG-INFO
+copy_pase.egg-info/SOURCES.txt
+copy_pase.egg-info/dependency_links.txt
+copy_pase.egg-info/requires.txt
+copy_pase.egg-info/top_level.txt
