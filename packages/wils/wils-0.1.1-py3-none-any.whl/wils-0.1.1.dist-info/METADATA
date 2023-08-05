@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: wils
+Version: 0.1.1
+Summary: Utils used by wbswjc himself
+Home-page: https://github.com/wbswjc/wils
+Author: wbswjc
+Author-email: me@wbswjc.com
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: wils (>=0.1.0)
+
+# Wils
+
+Utils used by wbswjc himself.
+
+[![Build Status](https://travis-ci.org/wbswjc/wils.png)](https://travis-ci.org/wbswjc/wils)
+
+## Resources
+
+- [Code](http://github.com/wbswjc/wils)
+
