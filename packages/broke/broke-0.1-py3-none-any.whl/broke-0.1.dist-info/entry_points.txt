@@ -1,0 +1,3 @@
+[console_scripts]
+broke = broke.cli:run
+
