@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: plenum
+Version: 0.2
+Summary: Plenum is a simple module for Artificial Neural Networks.
+Home-page: https://github.com/debruss/plenum
+Author: DeBruss
+Author-email: stefbrusselers2000@gmail.com
+License: agpl-3.0
+Download-URL: https://github.com/debruss/plenum/archive/v_0.2.tar.gz
+Description: UNKNOWN
+Keywords: Neural,Artificial,Network,AI
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
