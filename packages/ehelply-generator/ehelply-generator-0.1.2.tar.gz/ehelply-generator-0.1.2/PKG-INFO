@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: ehelply-generator
+Version: 0.1.2
+Summary: eHelply Generator
+Home-page: https://github.com/ehelply/Generator
+Author: Shawn Clake
+Author-email: shawn.clake@gmail.com
+License: UNKNOWN
+Description: # Generator
+        
+        
+        ## Example command
+        `python -m ehelply_generator.ehelply_gen generate F:\Programming\Projects\eHelply\Generator\structure.json F:\Programming\Projects\eHelply\Generator\output`
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
