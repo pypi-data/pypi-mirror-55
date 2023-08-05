@@ -1,0 +1,28 @@
+CHANGES
+=======
+
+0.0.1
+-----
+
+* added tests for event removal
+* making a more clear distinction between using sprite handlers and non sprite handlers for a global event
+* added a section that treats key events to readme
+* rearranged some text in the readme
+* Added readme
+* removing isort
+* fixed typo
+* removing isort
+* added scene tests, cleaned up
+* mocking pytest.gl
+* mocking application
+* correctly mocking pyglet gl
+* trying inline import
+* not importing escape directly from arcade
+* mocking out pyglet
+* try not to load arcade
+* added scene test
+* added event tests
+* added example files for all sprite events
+* added complete example
+* added event handler and scene manager
+* initial
