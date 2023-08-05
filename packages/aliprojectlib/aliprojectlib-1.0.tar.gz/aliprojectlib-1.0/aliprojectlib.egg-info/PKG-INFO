@@ -1,0 +1,20 @@
+Metadata-Version: 1.2
+Name: aliprojectlib
+Version: 1.0
+Summary: aliprojectlib
+Home-page: http://www.ali-project.com
+Author: aliblacken
+Author-email: ali.blacken@outlook.com
+Maintainer: Ali Blacken
+Maintainer-email: ali.blacken@outlook.com
+License: BSD License
+Description: my first 
+Platform: all
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
