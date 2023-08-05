@@ -1,0 +1,1 @@
+from pyramidtext.pyramid import generate

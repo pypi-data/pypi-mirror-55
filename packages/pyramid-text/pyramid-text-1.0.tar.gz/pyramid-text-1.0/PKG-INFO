@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: pyramid-text
+Version: 1.0
+Summary: Generate pyramid text easily.
+Home-page: https://github.com/InfernoPL/pyramid-text
+Author: Inferno
+Author-email: contact@theinferno.me
+License: MIT
+Download-URL: https://github.com/InfernoPL/pyramid-text/archive/v1_0.tar.gz
+Description: UNKNOWN
+Keywords: Text,Pyramid,YouTube,Cool
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
