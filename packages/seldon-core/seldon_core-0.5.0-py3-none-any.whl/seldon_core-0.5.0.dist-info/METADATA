@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: seldon-core
+Version: 0.5.0
+Summary: Seldon Core client and microservice wrapper
+Home-page: https://github.com/SeldonIO/seldon-core
+Author: Seldon Technologies Ltd.
+Author-email: hello@seldon.io
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: flask
+Requires-Dist: flask-cors
+Requires-Dist: redis
+Requires-Dist: requests
+Requires-Dist: numpy
+Requires-Dist: flatbuffers
+Requires-Dist: protobuf
+Requires-Dist: grpcio
+Requires-Dist: Flask-OpenTracing (<1.2.0,>=1.1.0)
+Requires-Dist: opentracing (<2.3.0,>=2.2.0)
+Requires-Dist: jaeger-client (<4.2.0,>=4.1.0)
+Requires-Dist: grpcio-opentracing
+Requires-Dist: pyyaml
+Requires-Dist: gunicorn (>=19.9.0)
+Requires-Dist: minio (>=4.0.9)
+Requires-Dist: google-cloud-storage (>=1.16.0)
+Requires-Dist: azure-storage-blob (>=2.0.1)
+Requires-Dist: setuptools (>=41.0.0)
+Provides-Extra: tensorflow
+Requires-Dist: tensorflow ; extra == 'tensorflow'
+
+UNKNOWN
+
+
