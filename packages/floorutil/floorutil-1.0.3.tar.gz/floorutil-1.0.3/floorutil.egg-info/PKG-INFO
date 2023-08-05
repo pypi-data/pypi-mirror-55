@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: floorutil
+Version: 1.0.3
+Summary: sampleutil
+Home-page: https://github.com/xuzhili/FloorUtil
+Author: xuzhili
+Author-email: xuzhili@znds.com
+License: MIT
+Description: # FloorUtil
+        **sample method**
+        
+        ### packaging upload
+        
+        Packaging
+        
+        ```
+        python setup.py sdist 
+        ```
+        
+        Testing
+        
+        ```
+        pip install dist/floorutil-1.0.0.tar.gz 
+        ```
+        
+        ```
+        demo
+        ```
+        
+        Distributing
+        
+        ```
+        pip install twine
+        
+        twine upload dist/floorutil-1.0.0.tar.gz 
+        ```
+        
+        newversion
+        
+        ```buildoutcfg
+        https://pypi.org/project/floorutil/
+        ```
+        
+        how to create doc?
+        
+        **create md**
+        ```buildoutcfg
+        python -m pydoc floorutil\email_util.py > doc.md
+        ```
+        
+        **create html**
+        ```buildoutcfg
+        python -m pydoc -w floorutil\email_util.py
+        ```
+Keywords: send email
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

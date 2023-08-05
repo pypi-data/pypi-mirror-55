@@ -1,0 +1,14 @@
+LICENSE
+MANIFEST.in
+README.md
+doc.md
+setup.py
+floorutil/__init__.py
+floorutil/email_util.py
+floorutil/test.py
+floorutil.egg-info/PKG-INFO
+floorutil.egg-info/SOURCES.txt
+floorutil.egg-info/dependency_links.txt
+floorutil.egg-info/entry_points.txt
+floorutil.egg-info/top_level.txt
+floorutil.egg-info/zip-safe
