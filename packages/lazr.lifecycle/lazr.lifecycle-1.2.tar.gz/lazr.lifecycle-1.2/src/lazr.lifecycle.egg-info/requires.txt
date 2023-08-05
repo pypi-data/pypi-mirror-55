@@ -1,0 +1,8 @@
+setuptools
+zope.interface>=3.8.0
+zope.component
+zope.lifecycleevent
+zope.security
+
+[docs]
+Sphinx
