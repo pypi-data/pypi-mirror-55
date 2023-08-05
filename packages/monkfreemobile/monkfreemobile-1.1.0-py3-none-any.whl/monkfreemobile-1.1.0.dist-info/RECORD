@@ -1,0 +1,10 @@
+monkfreemobile/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monkfreemobile/api/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monkfreemobile/api/sms/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monkfreemobile/api/sms/client.py,sha256=x2NNzSpa6osWHxAjZQR7-v53ErccjgTH6ft3XO59Z2g,2343
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+monkfreemobile-1.1.0.dist-info/LICENSE.md,sha256=dCbwLAYKYDzcn2-GqUU99HQ97DcdhS0uSOwqTrcBG3k,1071
+monkfreemobile-1.1.0.dist-info/METADATA,sha256=6KPO8xjD6RiaAsLtPbSt0s4JdvUe38Xg439qbG17ZsA,1093
+monkfreemobile-1.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+monkfreemobile-1.1.0.dist-info/top_level.txt,sha256=YrMml7mLZuJ10if_5MFaJ9-W9xjkLdiraSzb7oYHmhM,21
+monkfreemobile-1.1.0.dist-info/RECORD,,

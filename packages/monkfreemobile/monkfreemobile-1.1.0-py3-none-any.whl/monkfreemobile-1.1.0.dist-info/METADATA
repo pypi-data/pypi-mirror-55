@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: monkfreemobile
+Version: 1.1.0
+Summary: FreeMobile Library for Monkeys
+Home-page: https://github.com/MonkeySynapse/Monk_FreeMobile
+Author: Monkey Synapse
+Author-email: monkey.synapse@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/MonkeySynapse/Monk_FreeMobile
+Project-URL: Pipeline, https://dev.azure.com/monkeysynapse/MonK_FreeMobile/_apis/build/status/MonK_FreeMobile-Python%20package-CI?branchName=master
+Keywords: MonK MonkeySynapse Free Mobile FreeMobile API SMS
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Communications :: Telephony
+Requires-Python: >=2.7,!=3.0.*,!=3.1.*
+Description-Content-Type: text/plain
+Requires-Dist: requests (>=2.21.0)
+
+Python module for Monkeys who needs to control some services of the French mobile network provider named "Free Mobile" (ex. SMS API)
+
+
