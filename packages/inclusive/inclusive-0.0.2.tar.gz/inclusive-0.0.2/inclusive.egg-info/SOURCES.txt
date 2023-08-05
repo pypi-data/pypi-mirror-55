@@ -1,0 +1,10 @@
+README.md
+setup.py
+inclusive/__init__.py
+inclusive/inclusive.py
+inclusive.egg-info/PKG-INFO
+inclusive.egg-info/SOURCES.txt
+inclusive.egg-info/dependency_links.txt
+inclusive.egg-info/top_level.txt
+inclusive/tests/__init__.py
+inclusive/tests/test_inclusive.py
