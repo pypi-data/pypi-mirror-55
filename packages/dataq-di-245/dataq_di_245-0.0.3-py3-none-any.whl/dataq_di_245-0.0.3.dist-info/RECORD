@@ -1,0 +1,13 @@
+dataq_di_245/__init__.py,sha256=RfztAdq6kKrr0QOEBaVN5Y42t1DOizb-TxMKKFP_da8,121
+dataq_di_245/_version.py,sha256=HMfh_tHNHv-UCmxR0y1zT4Jv5nG0h9D4EdcF2NcDb5c,497
+dataq_di_245/driver.py,sha256=KvEG56VR7r5H7R2kX_LGaQE0KKdeEkMNpAw-N_oDYxA,19347
+dataq_di_245/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataq_di_245/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataq_di_245/tests/test_examples.py,sha256=Hm1x01HZ9BiYYw4dS44uo0o_ku16oFRwSMjIh8_Uu-s,99
+dataq_di_245-0.0.3.dist-info/AUTHORS.rst,sha256=8MTaREP10UEUcl-xyiaAxHKLi-Y51YqVhYm2GHxcWu8,179
+dataq_di_245-0.0.3.dist-info/LICENSE,sha256=JxvCm6DPhoMNimAjk7YFl5U0n4Laz9bAeFN3ScBSlEk,1554
+dataq_di_245-0.0.3.dist-info/METADATA,sha256=Wv-7Rfu-UBIRRvkeR8pjCXbqCIH-a5BztEJI4h7kwvY,983
+dataq_di_245-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dataq_di_245-0.0.3.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+dataq_di_245-0.0.3.dist-info/top_level.txt,sha256=VTKcWjsqH4Wf723gj-TEre66fRn54R_6rhRdNpJgHBk,13
+dataq_di_245-0.0.3.dist-info/RECORD,,
