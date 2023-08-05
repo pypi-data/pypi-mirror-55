@@ -1,0 +1,15 @@
+README.md
+setup.py
+math_expression_parser/__init__.py
+math_expression_parser/operations_repository.py
+math_expression_parser/reverse_polish_caclulator.py
+math_expression_parser/single_variable_parser.py
+math_expression_parser/models/__init__.py
+math_expression_parser/models/operation.py
+math_expression_parser/tests/__init__.py
+math_expression_parser/tests/test_operations_repository.py
+math_expression_parser/tests/test_single_variable_expression_parser.py
+single_variable_expression_parser_ALIEZZAT.egg-info/PKG-INFO
+single_variable_expression_parser_ALIEZZAT.egg-info/SOURCES.txt
+single_variable_expression_parser_ALIEZZAT.egg-info/dependency_links.txt
+single_variable_expression_parser_ALIEZZAT.egg-info/top_level.txt
