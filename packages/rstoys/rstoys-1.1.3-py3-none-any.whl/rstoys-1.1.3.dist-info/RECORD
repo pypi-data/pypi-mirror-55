@@ -1,0 +1,14 @@
+rstoys/__init__.py,sha256=TmvwUjUSmCkrYc1GiiET-qJ4R9A4tM8Uy0WUyNil9Mg,17
+rstoys/geo/__init__.py,sha256=NCaO7D_Ysd3M5EcSDVGu1D44bXCHIDBEcr1yQjFkulI,7463
+rstoys/maps/__init__.py,sha256=IzZ0rQqbM6rVTBwJjmtnJED88H0kG9q2e6hdXJ859j0,9233
+rstoys/realtime/__init__.py,sha256=H7q312nq8kVhiDYFEFOsu_h06qFmq4JHPBcHzEqlb4Y,4140
+rstoys/touchy/__init__.py,sha256=wNsBjuIygarzKUtPja_Lf5MLgmxPQONtNb0ajaJbs5M,3496
+rstoys/touchy/static/stick-back.png,sha256=7ug94O-7Y935N6HzglIwGkbd6-KB1ejIANWrqB5LsWg,67562
+rstoys/touchy/static/stick1-back.jpg,sha256=K1IexkvoASYlnXZgjTGlrCr0IZ3bfTpMzWUthcqQ1r0,23363
+rstoys/touchy/static/stick1-top.png,sha256=BYdcoHppi-t42WBiAewNOk8bteH3R5kMF_jbtugvctU,4363
+rstoys/touchy/templates/touchy.html,sha256=wMq51Icjk2P83BmafVNGthtXI-iQQPNvzupMuC1rK2w,7071
+rstoys-1.1.3.dist-info/LICENSE,sha256=sw5R9x7YiaESz--wct2pp-gEY_aBiJlnEMnoPHzU0m4,1075
+rstoys-1.1.3.dist-info/METADATA,sha256=wV7Xskj93vsXCno5PEKhUNtdIYkbtrUQnpiJ6DbtqGI,5425
+rstoys-1.1.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+rstoys-1.1.3.dist-info/top_level.txt,sha256=JCj4oeOYtnVDqyHhLmTD3zRiNtfPf6kHH4X5SnghV6U,7
+rstoys-1.1.3.dist-info/RECORD,,
