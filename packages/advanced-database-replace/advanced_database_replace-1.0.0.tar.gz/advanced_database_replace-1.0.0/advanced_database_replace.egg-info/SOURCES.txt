@@ -1,0 +1,15 @@
+HISTORY.md
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+advanced_database_replace/__init__.py
+advanced_database_replace/database.py
+advanced_database_replace/database_credentials.py
+advanced_database_replace/database_replace.py
+advanced_database_replace/replacer.py
+advanced_database_replace.egg-info/PKG-INFO
+advanced_database_replace.egg-info/SOURCES.txt
+advanced_database_replace.egg-info/dependency_links.txt
+advanced_database_replace.egg-info/requires.txt
+advanced_database_replace.egg-info/top_level.txt

@@ -1,0 +1,10 @@
+include *.txt
+include *.in
+include *.md
+
+recursive-include wordpress_replace *.py
+recursive-include wordpress_replace *.sh
+recursive-include wordpress_replace *.example
+
+prune venv
+prune test
