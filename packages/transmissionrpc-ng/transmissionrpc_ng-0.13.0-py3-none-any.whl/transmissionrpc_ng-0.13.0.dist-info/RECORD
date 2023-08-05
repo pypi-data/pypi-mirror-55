@@ -1,0 +1,14 @@
+transmissionrpc/__init__.py,sha256=SxuhifDtpS9LdQQtcplxval2u_J90VOw3AF8ddUb9Tc,953
+transmissionrpc/client.py,sha256=Mjmka98PMRq4EcBf4Md40HSObQdbePfzHEfZPWbL75s,37412
+transmissionrpc/constants.py,sha256=l1LTsvlTk6cONV4fTl76qIeGXTSNiMiBVO1bS_olLXs,28030
+transmissionrpc/error.py,sha256=5IIhJBULeW_IBiQTXmQzQtjbGi6BooeEqtm3m17mbFE,1855
+transmissionrpc/httphandler.py,sha256=aujou4So5TR7HF35ETomfNRfFADaxHAvJxXBKHqkPcs,3202
+transmissionrpc/session.py,sha256=quzgO2bXK79iTaEga_e1rJJ0xVMpiwwyPlyElye9ji0,3761
+transmissionrpc/torrent.py,sha256=d3k6987xEagTyF5V4s0ydwETCK0pQ2L8cwJgV25TbWE,16486
+transmissionrpc/utils.py,sha256=BlUi5Q85-_cHBgjd9m1Nuh3E3e_hXttX2zL02HMqFxc,6834
+transmissionrpc_ng-0.13.0.dist-info/LICENSE,sha256=XPomMUGeheJAHZmvWpsMy4IXLRe86TX3CBcxheadZsY,1089
+transmissionrpc_ng-0.13.0.dist-info/METADATA,sha256=t2djxFQJmgOEhxPEwBEjpNYE8gxRj2UxH5atOz5PIF8,1567
+transmissionrpc_ng-0.13.0.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+transmissionrpc_ng-0.13.0.dist-info/top_level.txt,sha256=E-jtYAN63ThdmqLlCN6xs2q7dzYKhX03qi7ItBUpCWE,16
+transmissionrpc_ng-0.13.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+transmissionrpc_ng-0.13.0.dist-info/RECORD,,
