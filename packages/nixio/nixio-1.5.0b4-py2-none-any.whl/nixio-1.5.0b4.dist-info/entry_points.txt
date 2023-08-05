@@ -1,0 +1,3 @@
+[console_scripts]
+nixio-validate = nixio.cmd:validatemain
+
