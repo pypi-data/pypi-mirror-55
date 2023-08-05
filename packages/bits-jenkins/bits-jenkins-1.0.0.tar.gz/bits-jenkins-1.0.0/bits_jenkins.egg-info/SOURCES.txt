@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+bits/__init__.py
+bits/jenkins/__init__.py
+bits_jenkins.egg-info/PKG-INFO
+bits_jenkins.egg-info/SOURCES.txt
+bits_jenkins.egg-info/dependency_links.txt
+bits_jenkins.egg-info/not-zip-safe
+bits_jenkins.egg-info/requires.txt
+bits_jenkins.egg-info/top_level.txt
