@@ -1,0 +1,4 @@
+include README
+include firm_manager.tar.gz
+include pyusb-1.0.0a3.tar.gz
+recursive-include ad9xdds *.py

@@ -1,0 +1,9 @@
+
+[ad9854dev]
+pyparallel
+
+[ad9912dev]
+iopy
+
+[qad9912dev]
+PyQt5
