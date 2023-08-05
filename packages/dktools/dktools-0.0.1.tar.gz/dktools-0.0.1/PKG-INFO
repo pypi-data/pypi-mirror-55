@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: dktools
+Version: 0.0.1
+Summary: This is the python tool library written by dollarkiller.
+Home-page: https://github.com/dollarkillerx/pytools
+Author: DollarKillerx
+Author-email: dollarkiller@dollarkiller.com
+License: MIT Licence
+Description: This is the python tool library written by dollarkiller.
+Keywords: pip,dktools,featureextraction
+Platform: any
