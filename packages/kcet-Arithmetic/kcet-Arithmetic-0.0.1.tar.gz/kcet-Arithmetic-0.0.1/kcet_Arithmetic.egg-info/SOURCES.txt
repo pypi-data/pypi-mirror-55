@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+Calculator/__init__.py
+kcet_Arithmetic.egg-info/PKG-INFO
+kcet_Arithmetic.egg-info/SOURCES.txt
+kcet_Arithmetic.egg-info/dependency_links.txt
+kcet_Arithmetic.egg-info/top_level.txt
