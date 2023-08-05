@@ -1,0 +1,153 @@
+Metadata-Version: 2.1
+Name: colonyscanalyser
+Version: 0.3.1
+Summary: An image analysis tool for measuring microorganism colony growth
+Home-page: https://github.com/Erik-White/ColonyScanalyser/
+Author: Erik White
+Author-email: 
+License: GPL-3.0
+Description: [![PyPI version](https://badge.fury.io/py/colonyscanalyser.svg)](https://pypi.org/project/colonyscanalyser/) [![Known Vulnerabilities](https://snyk.io//test/github/Erik-White/ColonyScanalyser/badge.svg?targetFile=requirements.txt)](https://snyk.io//test/github/Erik-White/ColonyScanalyser?targetFile=requirements.txt) [![GitHub](https://img.shields.io/github/license/erik-white/colonyscanalyser?color=blue)](https://github.com/Erik-White/ColonyScanalyser/blob/master/LICENSE)
+        
+        # ColonyScanalyser
+        
+        An image analysis tool for measuring microorganism colony growth.
+        
+        ColonyScanalyser will analyse and collate statistical data from cell-culture plate images. It requires a series of images from a fixed point that show the development of microorganism colonies over time.
+        
+        <img align="right" src="docs/images/growth_curve_small.png">
+        
+        ColonyScanalyser can provide information on:
+        * Colony growth lag time (time of appearance)
+        * Bimodal lag time distribution (comparing lag times of two colonies)
+        * Colony area growth over time
+        
+        By default, it will output a set of data and plots that summarize the information from all the plates in the image series. If you require further detail, such as plots of each individual plate, you can increase the `save_plots` command line argument.
+        
+        ## Getting Started
+        
+        * Install the [prerequisites](#prerequisites) and [package](#installing)
+        * Locate your image series in a folder e.g. `\user\images\series1`
+        * Run the analysis using ColonyScanalyser `scanalyser \user\images\series1`
+        
+        There are various command line arguments that can alter the way the package is run. To see a list of arguments and information on each, run the command `scanalyser --help`
+        
+        For example, to run the package 'silently' with no console output: `scanalyser \user\images\series1 --verbose 0`
+        
+        ### Prerequisites
+        
+        * [Python](https://www.python.org/) >=3.7
+        * [Scikit-image](https://scikit-image.org/) >=0.15
+        
+        Optionally use a virtual environment, such as [Pipenv](https://github.com/pypa/pipenv).
+        
+        For testing:
+        * [Pytest](https://pytest.org/)
+        * [Pytest-cov](https://github.com/pytest-dev/pytest-cov/)
+        
+        ### Installing
+        
+        #### Using pip
+        Install Scikit-image (unless already installed)
+        ```
+        pip install scikit-image
+        ```
+        
+        Install ColonyScanalyser
+        ```
+        pip install colonyscanalyser
+        ```
+        
+        #### From github (requires [git](https://git-scm.com/) install)
+        ```
+        git clone https://github.com/erik-white/colonyscanalyser.git
+        cd colonyscanalyser
+        pip install -e .
+        ```
+        
+        ## Testing
+        
+        Install the package with the extra test packages:
+        `pip install colonyscanalyser[test]`
+        
+        Run the tests:
+        `pytest --cov colonyscanalyser`
+        
+        ## Contributing
+        
+        Please read [CONTRIBUTING.md](docs/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to us.
+        
+        ## Versioning
+        
+        We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/erik-white/scanalyser/tags).
+        
+        ## License
+        
+        This project is licensed under the GPLv3 - see the [LICENSE](LICENSE) file for details
+        
+        ## Acknowledgments
+        
+        * Levin-Reisman et al. for [their work](https://www.ncbi.nlm.nih.gov/pubmed/20676109) developing the ScanLag technique
+        * [Fabio Zanini](https://github.com/iosonofabio/) for his original attempts at a Python implementation
+        # Changelog
+        All notable changes to this project will be documented in this file.
+        
+        The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
+        and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+        
+        ## [Unreleased]
+        - Full unit test coverage
+        - Type annotations on all functions
+        
+        ## [0.3.1] - 2019-11-04
+        ### Fixed
+        - Adjust setup to correctly find packages in implicit namespaces
+        
+        ## [0.3.0] - 2019-11-04
+        ### Added
+        - Added changelog
+        ### Changed
+        - Update package to use src structure
+        - Update setup for readme compatability with PyPi
+        
+        ## [0.2.2] - 2019-11-02
+        ### Added
+        - GitHub action for automatically linting and testing pushes
+        - GitHub action for building and releasing package to PyPi
+        ### Fixed
+        - Linting errors highlighted by flake8
+        
+        ## [0.2.1] - 2019-10-31
+        ### Added
+        - Graceful exit if no colonies are found
+        - Workaround function to ensure correct plates are found in images
+        ### Changed
+        - Improve Timepoint grouping by using distance comparison instead of rounding
+        - Updated Scikit-image to v0.16
+        ### Removed
+        - Depreciated Tk import
+        - Removed depreciated regionprop coordinates
+        
+        ## [0.2.0] - 2019-10-28
+        ### Added
+        - Multiprocessing: greatly improves image processing speed
+        - Now shows a progress bar when processing images
+        - Snyk security checks for dependencies
+        ### Changed
+        - Per image processing: now processes a single image at a time
+        - Improve colony filtering, removes virtually all merged colonies
+        - Updated readme with images and code examples
+        ### Fixed
+        - Greatly reduced memory usage by using per-image processing
+        - Filter out system files when locating images to process
+        - Rare divide by zero error when processing colony object data
+        
+        ## [0.1.2] - 2019-10-13
+        Inital release
+        ### Added
+        - Image processing, plotting and data aggregation
+        - Python package uploaded to PyPi
+Platform: UNKNOWN
+Requires-Python: >=3.7, <3.8
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: test
