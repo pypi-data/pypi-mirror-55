@@ -1,0 +1,8 @@
+livereload~=2.6
+natsort~=6.0
+ordered-set~=3.1
+semver~=2.9
+send2trash~=1.5
+
+[:python_version < "3.5"]
+pathlib2~=2.3
