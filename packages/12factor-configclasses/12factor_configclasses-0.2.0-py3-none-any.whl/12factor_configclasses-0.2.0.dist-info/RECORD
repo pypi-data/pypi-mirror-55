@@ -1,0 +1,8 @@
+configclasses/__init__.py,sha256=Ka6iAEuEzZKZHKrqg3t915sBcOjbdz9_BT88lLLcZEY,116
+configclasses/configclasses.py,sha256=F2cl7xpgUz9UyxNSTg_1Btq4w4K5eKn-o-TXEM_IqzI,1850
+configclasses/helpers.py,sha256=cA1GwParQ7-TH1XYDUmq7sc82hhNJRb-vWvbFRADj20,2555
+configclasses/loaders.py,sha256=cKtf0USuiL9yP5O5c2vaFkXB1u1FK59xrwZgqd1Umws,1977
+12factor_configclasses-0.2.0.dist-info/LICENSE,sha256=I7T_YeAI_io4Bz7iCxg5zJR-M1iBnPjHQcT3BTnVrUg,1069
+12factor_configclasses-0.2.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+12factor_configclasses-0.2.0.dist-info/METADATA,sha256=ZgdVlLaahFjKO8JqepsIjSlHNGKQONOFeR5mTHlhGGY,643
+12factor_configclasses-0.2.0.dist-info/RECORD,,
