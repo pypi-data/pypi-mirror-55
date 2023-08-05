@@ -1,0 +1,12 @@
+setuptools
+scikit-learn==0.19.2
+tensorflow<=1.13.1
+keras
+pandas
+concise
+pybedtools
+kipoiseq==0.2.7
+pyfaidx
+tqdm
+click
+pyranges
