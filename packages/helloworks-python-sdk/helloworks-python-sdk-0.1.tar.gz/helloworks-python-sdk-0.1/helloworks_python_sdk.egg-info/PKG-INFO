@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: helloworks-python-sdk
+Version: 0.1
+Summary: A Python wrapper for the HelloWorks API  (https://portal.helloworks.com/)
+Home-page: https://github.com/kevteg/helloworks-python-sdk
+Author: kevteg
+Author-email: kevteg05@gmail.com
+License: MIT
+Description: [![CircleCI](https://circleci.com/gh/kevteg/helloworks-python-sdk.svg?style=svg)](https://circleci.com/gh/kevteg/helloworks-python-sdk)
+        
+        # helloworks-python-sdk 🐍
+        
+        Easily create and manage HelloWorks workflow instances. 🚀
+        
+        
+        
+Keywords: Helloworks python api sdk
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
