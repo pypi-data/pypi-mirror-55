@@ -1,0 +1,8 @@
+
+
+# definition of constants
+{% for const in constants %}{{ const.get('Const. name') }} = {{ const.get('Value') }}
+{%- if const.get('Unit') or const.get('Comment') %}  # {% endif %}
+{%- if const.get('Unit') %}[{{const.get('Unit')}}]{% endif %}
+{%- if const.get('Comment') %}, {{ const.get('Comment')}}{% endif %}
+{% endfor %}

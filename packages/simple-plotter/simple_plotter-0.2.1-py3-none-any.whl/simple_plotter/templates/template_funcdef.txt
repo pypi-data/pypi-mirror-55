@@ -1,0 +1,5 @@
+
+# function definition
+def f({{ var_name }}{% if set_const_name %}, {{ set_const_name }}{% endif %}
+{%- for const in constants %}, {{ const.get('Const. name') }}{% endfor %}):
+    return {{ equation }}

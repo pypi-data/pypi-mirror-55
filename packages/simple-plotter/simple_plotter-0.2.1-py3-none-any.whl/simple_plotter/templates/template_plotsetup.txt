@@ -1,0 +1,27 @@
+
+# plot setup
+{%- if swap_xy %}
+plt.xlabel("{{ func_name }}{% if func_unit %} [{{ func_unit }}]{% endif %}")
+plt.ylabel("{{ var_name }}{% if var_unit %} [{{ var_unit }}]{% endif %}")
+{%- else %}
+plt.ylabel("{{ func_name }}{% if func_unit %} [{{ func_unit }}]{% endif %}")
+plt.xlabel("{{ var_name }}{% if var_unit %} [{{ var_unit }}]{% endif %}")
+{%- endif %}
+{%- if plot_title %}
+plt.title("{{ plot_title }}
+{%- else %}
+plt.title("{{ func_name }}({{ var_name }})={{ equation }}
+{%- endif %}
+{%- for const in constants %}, {{ const.get('Const. name') }} = {{ const.get('Value') }}
+{%- if const.get('Unit') %} [{{const.get('Unit')}}]{% endif %}
+{%- endfor -%}")
+
+{% if x_log %}plt.xscale('log'){% endif %}
+{% if y_log %}plt.yscale('log'){% endif %}
+plt.xlim(left={{ var_min }}, right={{ var_max }})
+{% if y_min %}plt.ylim(bottom={{ y_min }}){% endif %}
+{% if y_max %}plt.ylim(top={{ y_max }}){% endif %}
+{% if grid %}plt.grid(){% endif %}
+{% if set_const_name %}plt.legend(){% endif %}
+
+plt.show()

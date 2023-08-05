@@ -1,0 +1,9 @@
+
+{%- if set_const_name %}
+# set constants definition
+{%- if explicit_set_values %}
+{{ set_const_name }} = [{{ explicit_set_values }}]
+{%- else %}
+{{ set_const_name }} = np.linspace({{ set_min_val }}, {{ set_max_val }}, {{ no_sets }})
+{%- endif %}
+{%- endif %}
