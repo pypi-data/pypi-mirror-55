@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: python-notazz
+Version: 0.1
+Summary: Notazz Python Binding
+Home-page: https://maestrus.com
+Author: Joao Carvalho
+Author-email: joao.carvalho@maestrus.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Framework :: Django
+Classifier: Environment :: Web Environment
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
