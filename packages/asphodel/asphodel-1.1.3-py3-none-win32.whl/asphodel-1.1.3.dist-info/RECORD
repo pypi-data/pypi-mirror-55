@@ -1,0 +1,13 @@
+asphodel/__init__.py,sha256=tZbz6yKwkN3xSru1zleznoeMY6bL-R9vUGtSIDRtPxw,163541
+asphodel/nvmeditor.py,sha256=cFWN4g_SYlEvj0DjCbVQbSZ8j-WYryc79GMHsURVTo4,14926
+asphodel/streamutil.py,sha256=U_72oMxWn491E7AMltGqB-R71BquVhjemUOQZ43bAFQ,9106
+asphodel/version.py,sha256=OBiAwR54Slgl7-FRUwK2XmP2I3Rpphozc79avI_UzFo,120
+asphodel/lib32/Asphodel32.dll,sha256=TojU3WMQ-qvJ0a4rUeFP95veo0jooBaZVXElsPNrp-8,110080
+asphodel/lib32/Unpack32.dll,sha256=wAlZLj80j1Rb5prdXiAkIONXGU4-htzN_zMjJvZJuV4,11677696
+asphodel/lib32/libusb-1.0.dll,sha256=EmnmM42l7nOLS0okwJF3OlZVnwtRXQAmJOZ16FTD6jo,102912
+asphodel-1.1.3.dist-info/LICENSE.txt,sha256=No04KRTCnu7noJuRWnRQRx2ac2odA5H-cYenk6g9j5g,757
+asphodel-1.1.3.dist-info/METADATA,sha256=NL7RMkyF2QFRm0yfO9nkYh6M_u4Ee6Mdqa1b5lXoOPA,1087
+asphodel-1.1.3.dist-info/WHEEL,sha256=KV5grTbRLEPmsdamlm-ybFM0xWsRQIGpRfG4bxEtDGs,94
+asphodel-1.1.3.dist-info/entry_points.txt,sha256=YDWUkLlzvL8PmaLOKqFiIxscfIIM0yRwsaFvx2fywDM,55
+asphodel-1.1.3.dist-info/top_level.txt,sha256=nuqPJOBHNzzc-XdSFCwDXY7k6lWCbwAo02Y9LQmKIFg,9
+asphodel-1.1.3.dist-info/RECORD,,
