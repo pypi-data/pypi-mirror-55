@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: diceman
+Version: 0.1.1
+Summary: Simulates dice rolls for tabletop games
+Home-page: https://github.com/martinak1/diceman
+Author: martinak1
+Author-email: abc000100100011@gmail.com
+License: BSD-3-Clause
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: discord
+
+/Users/martinak/Src/diceman/setup.py/README.md
+
+
