@@ -1,0 +1,15 @@
+irekua_autocomplete/__init__.py,sha256=7A-mq4ZKnZqVIfuKzEem-FBwwVU6a4FaDWValeYQSEw,144
+irekua_autocomplete/apps.py,sha256=kiTeguvDteTEW5ZWG-gBPENCZVik29fGGlUub8fFep8,112
+irekua_autocomplete/term_autocomplete.py,sha256=JMmGw9xVlx8w3Qn6baIj0Blo2UgpdBZ87QAErw_yPj4,2635
+irekua_autocomplete/urls.py,sha256=Fl9mmhFfnHnaNj9PuZ0JqYWgh_6o9-V8PBy7d5yU65A,1612
+irekua_autocomplete/utils.py,sha256=Zbp71PFBCwuWlFvRZu_OoIoew0L0V6jr03jJzzX7new,299
+irekua_autocomplete/views.py,sha256=gHvXnc_aV0_hJCt0lNc3mxAtMy4NBBK2IGEmvs4G5_k,3483
+project/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+project/settings.py,sha256=w3OrGSNHh2w6YKybIms5b4ti-0bHB3Fr1ViW_F_3Paw,3510
+project/urls.py,sha256=8QVxy5DlHiWjdRU9VkkVDh9-fpj31K6zCHoxESujstg,155
+project/wsgi.py,sha256=Sv0tbp1EkJh03-fsoMLWwrVB0JToUOhP1C8Pf6IufxI,391
+irekua_autocomplete-0.1.dist-info/LICENCE,sha256=hwkCkZnFVNToRyosc4oBva55HMyLgUyzRq-cwyQ7xcs,1613
+irekua_autocomplete-0.1.dist-info/METADATA,sha256=RChYktgXcslD70fPj5H-Sy9QVWTxYSdcEufHEl9GjsI,993
+irekua_autocomplete-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+irekua_autocomplete-0.1.dist-info/top_level.txt,sha256=6AxPu6OHBKBsITb5Nq3Pm-siY7fts4-Yy8H8pBj3vfk,28
+irekua_autocomplete-0.1.dist-info/RECORD,,
