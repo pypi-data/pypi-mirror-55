@@ -1,0 +1,8 @@
+README.md
+setup.py
+TreeMethods/TreeBuild.py
+TreeMethods/__init__.py
+TreeMethods.egg-info/PKG-INFO
+TreeMethods.egg-info/SOURCES.txt
+TreeMethods.egg-info/dependency_links.txt
+TreeMethods.egg-info/top_level.txt
