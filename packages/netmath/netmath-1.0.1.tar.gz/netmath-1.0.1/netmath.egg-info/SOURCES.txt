@@ -1,0 +1,8 @@
+README.md
+setup.py
+netmath/__init__.py
+netmath/version.py
+netmath.egg-info/PKG-INFO
+netmath.egg-info/SOURCES.txt
+netmath.egg-info/dependency_links.txt
+netmath.egg-info/top_level.txt

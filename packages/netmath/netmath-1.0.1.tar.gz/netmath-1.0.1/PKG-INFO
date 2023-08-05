@@ -1,0 +1,31 @@
+Metadata-Version: 1.1
+Name: netmath
+Version: 1.0.1
+Summary: Netmath
+Home-page: https://github.com/mpounsett/netmath
+Author: Matthew Pounsett
+Author-email: matt@conundrum.com
+License: Apache Software License 2.0
+Download-URL: https://pypi.org/project/netmath/
+Description: 
+        Netmath
+        -------
+        
+        A native python library for doing network/subnetting math.
+        
+Keywords: network library
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: System :: Networking
