@@ -1,0 +1,8 @@
+README.md
+setup.py
+clsl_00/__init__.py
+clsl_00/main.py
+clsl_00.egg-info/PKG-INFO
+clsl_00.egg-info/SOURCES.txt
+clsl_00.egg-info/dependency_links.txt
+clsl_00.egg-info/top_level.txt

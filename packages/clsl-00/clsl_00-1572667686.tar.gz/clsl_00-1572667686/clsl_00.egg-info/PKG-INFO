@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: clsl-00
+Version: 1572667686
+Summary: Test lib of https://github.com/luzi82/codelog.serverless
+Home-page: https://github.com/luzi82/codelog.serverless
+Author: Luzi Leung
+Author-email: luzi82@gmail.com
+License: UNKNOWN
+Description: Test lib of https://github.com/luzi82/codelog.serverless
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Public Domain
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/plain
