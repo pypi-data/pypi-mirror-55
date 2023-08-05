@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: cooltools
+Version: 0.3.0
+Summary: Analysis tools for genomic interaction data stored in .cool format
+Home-page: https://github.com/mirnylab/cooltools
+Author: Mirny Lab
+Author-email: espresso@mit.edu
+License: MIT
+Description: # cooltools
+        
+        [![Build Status](https://travis-ci.org/mirnylab/cooltools.svg?branch=master)](https://travis-ci.org/mirnylab/cooltools)
+        [![Documentation Status](https://readthedocs.org/projects/cooltools/badge/?version=latest)](https://cooltools.readthedocs.io/en/latest/?badge=latest)
+        
+        The tools for your .cool's
+        
+        ## Calling compartments
+        
+        To call compartments, use `cooltools` to calculate the first three eigenvectors
+        across the matrix. 
+        
+        ```
+            cooltools call-compartments ${fullfile}::/resolutions/100000 --out-prefix $filename;
+        ```
+        
+        Sample output:
+        
+        ```
+        chrom   start   end     E1      E2      E3
+        1       0       100000
+        ...
+        1       3000000 3100000 3.009943538549052       2.762190276669322       0.13578728460826148
+        ...
+        ```
+        
+Keywords: genomics,bioinformatics,Hi-C,analysis,cooler
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
