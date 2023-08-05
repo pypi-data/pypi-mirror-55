@@ -1,0 +1,3 @@
+[console_scripts]
+palpageproducer = palpageproducer.__main__:main
+
