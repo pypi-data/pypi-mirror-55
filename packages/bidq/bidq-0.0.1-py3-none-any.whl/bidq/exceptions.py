@@ -1,0 +1,2 @@
+class BidqException(Exception):
+    pass
