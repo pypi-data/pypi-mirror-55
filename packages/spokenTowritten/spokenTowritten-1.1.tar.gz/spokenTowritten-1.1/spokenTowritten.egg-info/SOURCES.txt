@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+spokenTowritten/__init__.py
+spokenTowritten/corpussplit.py
+spokenTowritten/text2digits.py
+spokenTowritten/utils.py
+spokenTowritten.egg-info/PKG-INFO
+spokenTowritten.egg-info/SOURCES.txt
+spokenTowritten.egg-info/dependency_links.txt
+spokenTowritten.egg-info/requires.txt
+spokenTowritten.egg-info/top_level.txt
+test/test.py
