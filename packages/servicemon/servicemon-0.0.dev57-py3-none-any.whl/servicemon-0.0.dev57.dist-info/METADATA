@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: servicemon
+Version: 0.0.dev57
+Summary: Measure/monitor VO service performance
+Home-page: http://docs.astropy.org/projects/package-template/
+Author: Tom Donaldson
+Author-email: 
+License: BSD 3-Clause
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: astropy (==3.2.1)
+Requires-Dist: astroquery (==0.3.9)
+Requires-Dist: requests
+
+Measure/monitor performance of a list of VO services over multiple points.
+
+
