@@ -1,0 +1,4 @@
+gym
+numpy
+flloat==0.2.3
+pythomata==0.2.0
