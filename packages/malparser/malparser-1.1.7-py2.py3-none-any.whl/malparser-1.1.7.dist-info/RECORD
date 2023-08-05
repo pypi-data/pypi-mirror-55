@@ -1,0 +1,13 @@
+malparser/__init__.py,sha256=MmfetC3W1Rebor3PKvcIpSqNkyDWCyCr5UeSlkQ9P3w,38
+malparser/__main__.py,sha256=K3o7cUvbl5rfOFINwFOkXX3baFk4kkdb5hEdsrFekCI,386
+malparser/anime.py,sha256=qu9K2xdGGtW-dg3kbG_znXovuJLQZMLhCAu4mXoIssg,662
+malparser/base.py,sha256=AYeTM4SVnYH0kMNmlahUrJQVLPnM08xLEG89gRYLFC8,9714
+malparser/mal.py,sha256=LpVp5jSB4en26o1YZFic2rn05IgCzb36WdCQ-susg-M,1330
+malparser/manga.py,sha256=1mbtcOzhG_s7s_PPmBAnw3enidt4V91SNN_rYhR_CYg,190
+malparser/searchresult.py,sha256=p3g_Y_7GRznIh8G0zeWrdWYraY4V-vKUBgkdS9EVxpk,1700
+malparser-1.1.7.dist-info/DESCRIPTION.rst,sha256=aruxx8QKqKxBE6beZEHKg3Pu0On1XkF6UHY4irdB60s,371
+malparser-1.1.7.dist-info/METADATA,sha256=rgzb8cU1j2jeNB8rm45suORDxE83no9v3byFigpesjo,1034
+malparser-1.1.7.dist-info/RECORD,,
+malparser-1.1.7.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+malparser-1.1.7.dist-info/metadata.json,sha256=yAl9ZuDRcuvUDPynchuadndPJ6tTextKykTR1PafcIA,827
+malparser-1.1.7.dist-info/top_level.txt,sha256=MMq3ymTnFHz-hU_3rzKZi6mURlIyEpQs2bDDvIPLYWQ,10
