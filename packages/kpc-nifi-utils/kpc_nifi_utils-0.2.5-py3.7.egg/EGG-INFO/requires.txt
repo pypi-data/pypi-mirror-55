@@ -1,0 +1,7 @@
+pymongo
+argparse
+pytz
+snowflake-connector-python==2.0.2
+azure-storage-blob==2.1.0
+python-tds
+pg8000
