@@ -1,0 +1,16 @@
+bert_serving/__init__.py,sha256=TfVnD_TrG9d0vU6tB3NnA2yc5XLSan_yYYm-CrOshQE,633
+bert_serving/run/__init__.py,sha256=BOV-cmn3spkezZVLvqU2SP9utLcZ2GKPzjnDYyWf6jc,4292
+bert_serving/server/conf/cube.conf,sha256=oAfa9vf25FoHEIb875xqobSl83KFGhZtuWuIEVQDXxw,318
+bert_serving/server/conf/gflags.conf,sha256=ZXI1VskIClpnwL-HeJFSQAwiEgwsTs0rzOzId5Y4Dzs,42
+bert_serving/server/conf/model_toolkit.prototxt,sha256=RFaqNf9q_owDl56f1vD2ulWAMmC-cyGTfrrdY3J52AQ,329
+bert_serving/server/conf/model_toolkit.prototxt.bk,sha256=ykrEiE7whRB2mZFVdZYUMYPsJIABSiI8ehOWa0twu5Q,273
+bert_serving/server/conf/resource.prototxt,sha256=bEHKDsWnE0ZS0ILiXfKtHjEsay1ihiMmT5kJ-zVGaBI,112
+bert_serving/server/conf/service.prototxt,sha256=w2g40DiLzIDEOFr7O-_OrGlSei-cChwpnK-CB6w7Pu8,60
+bert_serving/server/conf/workflow.prototxt,sha256=wK1iZa3lu92sUHqZJpwTA1Xf5CyJWa7QbKfRq3VXHcY,1528
+bert_serving/server/data/model/paddle/fluid_reload_flag,sha256=hQNQDLnRLUtSfz5gll85DdsnChV98TAvpQ8wYqKeKp4,33
+bert_serving/server/data/model/paddle/fluid_time_file,sha256=7MdNIHVtVFfDkT8G032SU3l64jPPVD6EhDEekBg3KQ4,32
+bert_serving-0.0.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+bert_serving-0.0.1.dist-info/METADATA,sha256=TiIpsvmYLD2kGKpC6poNZJtBdNk9kjO73AOBzqc0h8Y,480
+bert_serving-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+bert_serving-0.0.1.dist-info/top_level.txt,sha256=NYt1YsDmeWD8eRgd32wVePtU0KwkVHnSTFCIhR-9Pmk,13
+bert_serving-0.0.1.dist-info/RECORD,,
