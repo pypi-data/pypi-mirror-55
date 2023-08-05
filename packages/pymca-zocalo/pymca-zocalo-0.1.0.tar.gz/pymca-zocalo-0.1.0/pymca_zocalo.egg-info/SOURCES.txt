@@ -1,0 +1,12 @@
+setup.cfg
+setup.py
+pymca_zocalo/__init__.py
+pymca_zocalo/internals.py
+pymca_zocalo/pymca_fitter.py
+pymca_zocalo.egg-info/PKG-INFO
+pymca_zocalo.egg-info/SOURCES.txt
+pymca_zocalo.egg-info/dependency_links.txt
+pymca_zocalo.egg-info/entry_points.txt
+pymca_zocalo.egg-info/not-zip-safe
+pymca_zocalo.egg-info/requires.txt
+pymca_zocalo.egg-info/top_level.txt

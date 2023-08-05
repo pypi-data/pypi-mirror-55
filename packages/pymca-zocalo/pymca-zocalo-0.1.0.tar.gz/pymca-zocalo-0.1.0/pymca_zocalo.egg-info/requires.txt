@@ -1,0 +1,4 @@
+workflows>=1.7
+zocalo
+setuptools
+PyMca5
