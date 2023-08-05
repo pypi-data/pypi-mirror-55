@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: zopyx.check-ssl-domains
+Version: 1.0
+Summary: Check SSL domains
+Home-page: UNKNOWN
+Author: Andreas Jung
+Author-email: info@zopyx.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pytz
+Requires-Dist: certifier
+
+UNKNOWN
+
+
