@@ -1,0 +1,9 @@
+README.md
+setup.py
+remember_forever/Love.py
+remember_forever/__init__.py
+remember_forever.egg-info/PKG-INFO
+remember_forever.egg-info/SOURCES.txt
+remember_forever.egg-info/dependency_links.txt
+remember_forever.egg-info/not-zip-safe
+remember_forever.egg-info/top_level.txt
