@@ -1,0 +1,16 @@
+gleetex/__init__.py,sha256=QgRLbmSzzk5K_iipF1qNDndM-lrBuG6AYuNGA_eeCcU,303
+gleetex/__main__.py,sha256=uK7LNytTYtrz-C34clg1o-aTUJN0a26SCdZFUDCXIBE,16064
+gleetex/cachedconverter.py,sha256=j1DpwKgQo3I-NNxMJfh5wbu5Dgg5XgVVjsmxXKIU4Pc,12320
+gleetex/caching.py,sha256=bIAP66Q4CvW0IJ6MUAhYP8u1QgfF25Gr5oV7b4-0v4M,11006
+gleetex/htmlhandling.py,sha256=74nMDInHdVBHzWk4hiFKmEuBnsXz1E0UJLDXjy53uec,21015
+gleetex/image.py,sha256=YZG62dCYvXnP_p3i5R7HI4QyGT1QeFiehIyFTF-AJhE,12223
+gleetex/pandoc.py,sha256=zFPU0yoIOn5lTGYPLD7iuXEEwmMeLKsCcNnoIPL6FDM,3407
+gleetex/parser.py,sha256=0A9MlJEw-45u-ItZpB-nhAkJFK1GkVBJNeOsGjjKNtc,2387
+gleetex/typesetting.py,sha256=jBkNpjfLfs5BZfNG_aM4OriOLJkGSlsfJi5sGLS1upo,15037
+gleetex/unicode.py,sha256=Ftct4FuaVSn5ziOHNLWfZuUgamj_jkIhPCfHTwD5yDw,138936
+GladTeX-3.1.0.dist-info/COPYING,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+GladTeX-3.1.0.dist-info/METADATA,sha256=s8zrJNZNnThbKIM2xUaWgR1IbnuQ3mnnfqBlsdKQfKs,821
+GladTeX-3.1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+GladTeX-3.1.0.dist-info/entry_points.txt,sha256=1wV40ypQ5hKVpTSUnZQ2cm8-X_RgpGQmm_y8fFICN0c,51
+GladTeX-3.1.0.dist-info/top_level.txt,sha256=6uCTDQSGqjlsBAhNZwXs-2nOEfWefnLLnsco8lcSXfk,8
+GladTeX-3.1.0.dist-info/RECORD,,
