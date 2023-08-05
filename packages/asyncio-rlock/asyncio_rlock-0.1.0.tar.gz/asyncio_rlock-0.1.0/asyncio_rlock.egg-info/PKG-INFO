@@ -1,0 +1,16 @@
+Metadata-Version: 1.2
+Name: asyncio-rlock
+Version: 0.1.0
+Summary: Rlock like in threading module but for asyncio.
+Home-page: https://gitlab.com/heckad/asyncio_rlock
+Author: Heckad (Kazantcev Andrey)
+Author-email: heckad@yandex.ru
+License: MIT
+Project-URL: Source Code, https://gitlab.com/heckad/asyncio_rlock
+Description: UNKNOWN
+Keywords: asyncio rlock
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
