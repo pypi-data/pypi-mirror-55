@@ -1,0 +1,15 @@
+deskconnd/__init__.py,sha256=AH6xD7NwQzl1klcBRE-nuygYh4pzkpntTbZU53BMo3g,749
+deskconnd/environment.py,sha256=p-2sSMiv11oT8AEIiPARUkwzryJOs9aRUi78s8ePQg0,1347
+deskconnd/components/__init__.py,sha256=H21ZxPywcta420LNT1_gQhxBfSax9LXIwwRBbr2DwHo,853
+deskconnd/components/_authentication.py,sha256=8BqWWPM0Mnu4DikQ3NmCP_1KTAwHwBhn1d22Wr11p_A,2815
+deskconnd/components/_discovery.py,sha256=tgZEGsHxEqytiyw0TSDF-ZCNbk01GHDeB4cnTObjHEI,3267
+deskconnd/components/management.py,sha256=srXUhz3dXVPW7fjlQlGDiRqkslcXxJkw_UvdfJqYoLo,2578
+deskconnd/database/__init__.py,sha256=PE-5NMCmbYu9vh3RKDC-7flVjQJk92q8Uu66yb1EOOw,744
+deskconnd/database/base.py,sha256=8kwD3B9EyAmVBlPZq63E4527hNxiU7_HXOMyMyuuqtQ,1252
+deskconnd/database/controller.py,sha256=NQPMP_kGdA1-IXRn7_A8nG-0jVDeSVYZ-bv9wWOIjRo,3662
+deskconnd/database/schema.py,sha256=C87viMWVGx_rGQnBiqQyVcn4UQqROmAQiXqv1HFPxaI,1469
+deskconnd-0.3.dist-info/LICENSE,sha256=5X8cMguM-HmKfS_4Om-eBqM6A1hfbgZf6pfx2G24QFI,35150
+deskconnd-0.3.dist-info/METADATA,sha256=OlWam7UFM0cw73qlMGZex1C0HE2kSFkft4XZ4Op6ex8,440
+deskconnd-0.3.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+deskconnd-0.3.dist-info/top_level.txt,sha256=yb4EjjBaZ6LqhMkOEpJ9l_OE3G5AOTZ2fDIhbI8AFmI,10
+deskconnd-0.3.dist-info/RECORD,,
