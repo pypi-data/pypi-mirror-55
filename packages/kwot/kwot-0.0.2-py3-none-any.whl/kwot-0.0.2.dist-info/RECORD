@@ -1,0 +1,11 @@
+kwot/__init__.py,sha256=1o8XbPmaF0iCJ8kyCICO9hDsaHdMS6pRZUSCrn6PAkY,39
+kwot/main.py,sha256=402QcqzYk5db6XU4arxpII5vzaMC_0mkUOsEXcmBomI,312
+kwot/quoter.py,sha256=XabUVh-vKioxi445LbWcTWQI8D5UKydiukvISaFdr-8,278
+kwot/quotes.json,sha256=EzozfRKyHLnbtJk08LTPLuZRentoRX8IOsueuHo0WbI,11069258
+kwot-0.0.2.data/data/quotes.json,sha256=EzozfRKyHLnbtJk08LTPLuZRentoRX8IOsueuHo0WbI,11069258
+kwot-0.0.2.dist-info/LICENSE,sha256=vR2z3eUszyli3pNE5DdS2gRzEwCRuQTwhfjfPkGTXpk,1091
+kwot-0.0.2.dist-info/METADATA,sha256=HcL-enFn4RWiY0bY0opyAUS_f7nQX5WV7jMhoFXiZYc,468
+kwot-0.0.2.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+kwot-0.0.2.dist-info/entry_points.txt,sha256=q-qFRQUF3BqGw4ec6HGTzlDSxudEeRbk50HXQdO8u4w,60
+kwot-0.0.2.dist-info/top_level.txt,sha256=YYcEdfjZdvS_FHjuf9xqx-lcyEMb93yaufDejrKWKBA,5
+kwot-0.0.2.dist-info/RECORD,,

@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: kwot
+Version: 0.0.2
+Summary: An awesome random quote generator
+Home-page: https://github.com/rkshrksh/kwot
+Author: Rakesh Gautam
+Author-email: rkshrkshme@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Click
+
+# kwot - random quotes
+
+An awesome random quote generator.
+
+## Installation
+
+```bash
+pip install kwot
+```
+
+## Usage
+
+```bash
+kwot
+```
+
+```bash
+kwot 5
+```
+
+
