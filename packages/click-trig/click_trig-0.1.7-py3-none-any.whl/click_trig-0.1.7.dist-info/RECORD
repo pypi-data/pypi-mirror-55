@@ -1,0 +1,10 @@
+CHANGELOG.md,sha256=ZBxq7_oO6ruSn5sdbPupAQIzF5Tr6OvbemFbbh9vt14,1429
+LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+README.md,sha256=fr5HEgdA7qkGLAyngAHBTNE_HyU9c4DrHtxfjpk7lEc,3306
+click_trig/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+click_trig/trig.py,sha256=PbZH1bylNQE44kuoTk6nvi2Y82UXH9X6YM5M3Rz0JcA,2804
+click_trig-0.1.7.dist-info/entry_points.txt,sha256=VW937BMi5bdQr5VLIeAOkvGTOj6TO09M_oMgufSr3uQ,45
+click_trig-0.1.7.dist-info/LICENSE,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+click_trig-0.1.7.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+click_trig-0.1.7.dist-info/METADATA,sha256=feGq6Fjyo3-4-Cpk1lp1DCVnBq8w2goGcTsSHBqXolg,4062
+click_trig-0.1.7.dist-info/RECORD,,

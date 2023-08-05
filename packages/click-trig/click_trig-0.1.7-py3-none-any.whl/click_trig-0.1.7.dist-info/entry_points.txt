@@ -1,0 +1,3 @@
+[console_scripts]
+trig=click_trig.trig:main
+
