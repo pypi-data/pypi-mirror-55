@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: beholdiam
+Version: 1.0.4
+Summary: Behold uses Athena and CloudTrail to audit your IAM resources and generate policy recommendations.
+Home-page: https://github.com/kwkeefer/behold
+Author: Kyle Keefer
+Author-email: kyle.keefer@protonmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN

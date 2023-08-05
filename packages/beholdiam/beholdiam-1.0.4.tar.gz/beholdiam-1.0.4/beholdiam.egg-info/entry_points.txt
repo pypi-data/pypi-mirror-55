@@ -1,0 +1,3 @@
+[console_scripts]
+behold = behold.behold:main
+
