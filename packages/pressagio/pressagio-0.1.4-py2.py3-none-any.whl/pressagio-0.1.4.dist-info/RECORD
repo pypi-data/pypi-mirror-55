@@ -1,0 +1,16 @@
+pressagio/VERSION,sha256=2_CXjsK1h6XWGH_cxBzOn_LA647vrboOtR84QKtu60Y,5
+pressagio/__init__.py,sha256=8-H_zEfQOl20YBTWTd-exKHdIwWn7MkYDJd-5ZTci1k,1117
+pressagio/callback.py,sha256=JjuByeHAZCfQIPCGLbYftBkpVuRSefDEzT_hcGrEhbY,727
+pressagio/character.py,sha256=D5gWdGnNiG89ZTPm3u2QXJdDYyoaZaf2qtjvLBnpio0,862
+pressagio/combiner.py,sha256=KnWnYmp1U9Y65S5upTdYxTeaWuTpFRl-pXNPY5OyVpg,1792
+pressagio/context_tracker.py,sha256=8OTPgTocxVbmhBuRtBmqI36Dj0Qu-O4mKv6Al2b06uA,5153
+pressagio/dbconnector.py,sha256=dPaMD4qJYgyiDkpvyXM_djCl09J-FZHLSofnJBq67so,21521
+pressagio/observer.py,sha256=5MnbiQS9YX393zz0Ti6-uprOef5xmnva7cuvH9s4J6M,1681
+pressagio/predictor.py,sha256=tryAhWqSEif00o_tLbQKFldjxxgD8MO3-aD_Oom7BWU,14241
+pressagio/tokenizer.py,sha256=Kf21WSLw5VyhcNJB39acbMMZwLWyDW-EeomCarA0V44,7911
+pressagio-0.1.4.dist-info/DESCRIPTION.rst,sha256=9ptz-dxLioGo9iS1ee9A3XBW1J-U0BYzNqjRJy57k0s,522
+pressagio-0.1.4.dist-info/METADATA,sha256=TEsfARlU_iGSzFhaaQoauE9I6dBTHm2R5jrW1r7dmAk,1430
+pressagio-0.1.4.dist-info/RECORD,,
+pressagio-0.1.4.dist-info/WHEEL,sha256=kdsN-5OJAZIiHN-iO4Rhl82KyS0bDWf4uBwMbkNafr8,110
+pressagio-0.1.4.dist-info/metadata.json,sha256=e_4ZeT6IxH9MZWS_kzoLRa7QZOU-69y2EBw_HTiSSvE,1022
+pressagio-0.1.4.dist-info/top_level.txt,sha256=aWdh6Gwi483AMFr5faQPEQ1Nb_KeX06APrkAr-HuNaI,10
