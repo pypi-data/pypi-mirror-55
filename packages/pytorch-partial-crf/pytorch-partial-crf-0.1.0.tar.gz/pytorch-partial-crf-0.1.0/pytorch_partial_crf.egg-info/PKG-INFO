@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pytorch-partial-crf
+Version: 0.1.0
+Summary: "Partial/Fuzzy Conditional random field in PyTorch."
+Home-page: https://github.com/kajyuuen/pytorch-partial-crf
+Author: Koga Kobayashi
+Author-email: kajyuuen@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
