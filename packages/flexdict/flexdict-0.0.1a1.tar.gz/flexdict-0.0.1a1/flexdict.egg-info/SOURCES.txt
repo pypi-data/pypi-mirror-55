@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+flexdict/__init__.py
+flexdict.egg-info/PKG-INFO
+flexdict.egg-info/SOURCES.txt
+flexdict.egg-info/dependency_links.txt
+flexdict.egg-info/top_level.txt
