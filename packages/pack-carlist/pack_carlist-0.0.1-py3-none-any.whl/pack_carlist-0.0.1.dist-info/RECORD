@@ -1,0 +1,13 @@
+cars/__init__.py,sha256=JF-eNAwiHGrklnbGLqGrqzJRHpDLhJII3BtqwamsUts,74
+cars/bmw.py,sha256=p9fC7pB79lNJ27geOOE1Db0uisGcIVYk2wNz-DO5Wr0,130
+cars/fiat.py,sha256=d7YIYFoSLDgKbizW6Y2mJtH_v9aYN2fDST0EnmfTQNc,129
+cars/sample.py,sha256=AnBaNteedZMeyunqFDyc-bf0mfHGaCN7GygPRLeB0k0,287
+cars/volvo.py,sha256=BI7CJHhVeUO0CNUj_bNTiL4qJmIV3BQm3tMsl436VmQ,128
+shopping/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+shopping/car_list.py,sha256=wZGghWejefyLZbGG9vSsg6fs5_qxJhb3bVfJ3Bg-ctM,621
+shopping/order.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pack_carlist-0.0.1.dist-info/LICENSE.txt,sha256=EvxDCXI8l4oE389WGx61sYgBCgzYegZ1I3Mcxvh_NA8,1061
+pack_carlist-0.0.1.dist-info/METADATA,sha256=7Ilu_O0UJd7fXAaZOObhfUPa5sbyf4vbsHscoMfooKw,421
+pack_carlist-0.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pack_carlist-0.0.1.dist-info/top_level.txt,sha256=v8vMy4toN3WLO8LvvwaQXztlIDSQgA_HfM0hlVtssgk,14
+pack_carlist-0.0.1.dist-info/RECORD,,
