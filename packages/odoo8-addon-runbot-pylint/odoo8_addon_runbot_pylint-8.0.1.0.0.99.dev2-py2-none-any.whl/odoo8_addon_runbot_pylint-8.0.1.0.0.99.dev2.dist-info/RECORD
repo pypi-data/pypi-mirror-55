@@ -1,0 +1,14 @@
+odoo8_addon_runbot_pylint-8.0.1.0.0.99.dev2-nspkg.pth,sha256=byZRehCeET5bIG0AMyMXPLGoXAE887IW4f1j_Rh4alU,564
+odoo_addons/runbot_pylint/README.rst,sha256=-a94P81U47D9jaNFL9nsbJhpAYao7ojHLmpMn-WlwAY,3199
+odoo_addons/runbot_pylint/__init__.py,sha256=ZLrPuyldEjwg1uSebybRehnwABce4hDevLNLibFpPa4,403
+odoo_addons/runbot_pylint/__openerp__.py,sha256=o1OehVSR4hJZoTCe6xcKnhdn2cOi8-BAAUtos-IISsw,800
+odoo_addons/runbot_pylint/models/__init__.py,sha256=fLBSFyfmZVrtrkDofqlFcc9jdgA-OXN2_AA9sroCIQI,435
+odoo_addons/runbot_pylint/models/runbot_build.py,sha256=C86SDNZ3FNwIY85Hc1LYklcU-UHmBt78EW3jVQSG_9c,9502
+odoo_addons/runbot_pylint/models/runbot_repo.py,sha256=pDHhXpys7ox64iEtDXvMD0SBBfsWft2qQDhbk9zJTx8,1765
+odoo_addons/runbot_pylint/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo_addons/runbot_pylint/views/runbot_pylint_view.xml,sha256=TEEk_w8IcShmFu72_fy4u3m0O2zTc1ikFHLlnIpW71o,1387
+odoo8_addon_runbot_pylint-8.0.1.0.0.99.dev2.dist-info/METADATA,sha256=IRvU1qyH7iiE1cuEQxzJGIKVEZyl1VjV5jasGeo8F9I,3714
+odoo8_addon_runbot_pylint-8.0.1.0.0.99.dev2.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+odoo8_addon_runbot_pylint-8.0.1.0.0.99.dev2.dist-info/namespace_packages.txt,sha256=zhjxn3lgwTXeAiTvAlKWYlCdmGhlOYAY9CuT2hfLb40,12
+odoo8_addon_runbot_pylint-8.0.1.0.0.99.dev2.dist-info/top_level.txt,sha256=zhjxn3lgwTXeAiTvAlKWYlCdmGhlOYAY9CuT2hfLb40,12
+odoo8_addon_runbot_pylint-8.0.1.0.0.99.dev2.dist-info/RECORD,,
