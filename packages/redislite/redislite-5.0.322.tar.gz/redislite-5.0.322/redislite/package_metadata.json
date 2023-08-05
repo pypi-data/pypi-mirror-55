@@ -1,0 +1,9 @@
+{
+    "git_version": "5.0.322",
+    "git_origin": "https://github.com/yahoo/redislite",
+    "git_branch": "master",
+    "git_hash": "d0d2bf4b3556d22a1f69b5e667dfb6bf7277082e",
+    "version": "5.0.322",
+    "redis_server": {},
+    "redis_bin": ""
+}
