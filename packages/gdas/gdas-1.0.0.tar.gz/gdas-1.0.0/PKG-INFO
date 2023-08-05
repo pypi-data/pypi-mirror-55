@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: gdas
+Version: 1.0.0
+Summary: GNOME Data Analysis Software
+Home-page: https://gnome.pages.gitlab.rlp.net/gdas/
+Author: Vincent Dumont
+Author-email: vincentdumont11@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires: numpy
+Requires: matplotlib
+Requires: scipy
+Requires: astropy
+Requires: gwpy
+Requires: pycbc
