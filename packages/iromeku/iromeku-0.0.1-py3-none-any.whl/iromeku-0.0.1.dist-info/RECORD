@@ -1,0 +1,13 @@
+iromeku/__init__.py,sha256=cu8mCPsDLGydvMWdtHN9zpyBTzeUT1J4hkZtdVxCrg4,23
+iromeku/iromeku.py,sha256=Ia9o2cMg5BIwncoeu2ynFmhyRInJjlaIbiFBWrL-kV8,4545
+iromeku/main.py,sha256=kYIMouWLQZAhikwnu4IGasNVPmYt2VCoFEHNdgg9W0s,4383
+iromeku/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_sanity.py,sha256=7oJRkrX6ByGWS284R9CzjwXgi89g05tafcY3fzx4xIA,415
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/sanity_tests.py,sha256=FyHaEGECpjOQBxSPjXeJUJe2oRcXbZB5oopIZllxi0g,416
+iromeku-0.0.1.dist-info/LICENSE,sha256=eaCNcLyEHeQx5l5-Kg1EimLNm8KVcKzfs0b6xkm8nI8,1071
+iromeku-0.0.1.dist-info/METADATA,sha256=eOk6SFEyrc6ndZNZC612RF2QPPgADRo_JCrK6Vd7kOs,2449
+iromeku-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+iromeku-0.0.1.dist-info/top_level.txt,sha256=128PINFQNzD4cDxJHtQD3NAP5BupGaaVgbtwc3cZeXs,13
+iromeku-0.0.1.dist-info/RECORD,,
