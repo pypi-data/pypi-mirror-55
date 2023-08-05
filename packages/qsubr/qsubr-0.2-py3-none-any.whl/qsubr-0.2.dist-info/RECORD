@@ -1,0 +1,9 @@
+qsubr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qsubr/__main__.py,sha256=TjPiSm3_14S_Y9JWsYVan1Zzix9wKkR0s-f3R9G-pP8,1465
+qsubr/qsubr.py,sha256=HafsB3tg--kR214TKYrbOmJpIDtlvcXf2h92PIwRiHw,4108
+qsubr/data/environs.json,sha256=PuHNMyaRYX0QZlRERGqrUab-dMzImEBshfHyW9i7opA,479
+qsubr-0.2.dist-info/METADATA,sha256=tb9FHGcILFwLwpe6CoAy5fbP2lFZmRL73AYGtMSdCxQ,1916
+qsubr-0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+qsubr-0.2.dist-info/entry_points.txt,sha256=dztGVwBh-rCcPQxp0TU4fhvJg7VxantGJI5CCaYEKas,52
+qsubr-0.2.dist-info/top_level.txt,sha256=fgjQpsq8dcjDg06xBmqhiQSQjhW4tVgbefoLD4POM0Q,6
+qsubr-0.2.dist-info/RECORD,,
