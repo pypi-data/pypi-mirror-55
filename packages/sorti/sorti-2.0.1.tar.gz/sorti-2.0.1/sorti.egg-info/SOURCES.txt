@@ -1,0 +1,11 @@
+LICENSE
+README.md
+setup.cfg
+setup.py
+sorti.py
+sorti.egg-info/PKG-INFO
+sorti.egg-info/SOURCES.txt
+sorti.egg-info/dependency_links.txt
+sorti.egg-info/entry_points.txt
+sorti.egg-info/requires.txt
+sorti.egg-info/top_level.txt
