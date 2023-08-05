@@ -1,0 +1,20 @@
+
+# plotting call
+{%- if set_const_name %}
+for set_const in {{ set_const_name }}:
+{%- if not swap_xy %}
+    plt.plot({{ var_name }}, f({{ var_name }}, set_const
+{%- for const in constants -%}, {{ const.get('Const. name') }}{%- endfor -%}), label="{{ set_const_name }}="+str(set_const)
+{%- if set_const_unit %}+" [{{ set_const_unit }}]"{% endif %})
+{% else %}
+    plt.plot(f({{ var_name }}, set_const
+{%- for const in constants -%}, {{ const.get('Const. name') }}{%- endfor -%}), {{ var_name }}, label="{{ set_const_name }}="+str(set_const)
+{%- if set_const_unit %}+" [{{ set_const_unit }}]"{% endif %})
+{% endif %}
+{% else %}
+{% if not swap_xy %}
+plt.plot({{ var_name }}, f({{ var_name }} {%- for const in constants %}, {{ const.get('Const. name') }}{%- endfor -%}))
+{% else %}
+plt.plot(f({{ var_name }} {%- for const in constants %}, {{ const.get('Const. name') }}{%- endfor -%}), {{ var_name }})
+{% endif %}
+{% endif %}

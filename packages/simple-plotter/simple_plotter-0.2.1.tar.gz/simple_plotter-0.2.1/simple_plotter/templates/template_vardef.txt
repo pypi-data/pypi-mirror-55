@@ -1,0 +1,7 @@
+
+# variable definition
+{% if xlog -%}
+{{ var_name }} = np.logspace(np.log10({{ var_start_val }}), np.log10({{ var_end_val }}, num={{ no_pts }})
+{% else -%}
+{{ var_name }} = np.linspace({{ var_start_val }}, {{ var_end_val }}, num={{ no_pts }})
+{% endif %}
