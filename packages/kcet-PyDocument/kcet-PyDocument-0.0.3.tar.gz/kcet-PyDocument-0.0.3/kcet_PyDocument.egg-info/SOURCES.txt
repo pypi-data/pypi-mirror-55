@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+Document/__init__.py
+kcet_PyDocument.egg-info/PKG-INFO
+kcet_PyDocument.egg-info/SOURCES.txt
+kcet_PyDocument.egg-info/dependency_links.txt
+kcet_PyDocument.egg-info/top_level.txt
