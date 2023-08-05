@@ -1,0 +1,11 @@
+README.md
+setup.py
+skits/__init__.py
+skits/feature_extraction.py
+skits/pipeline.py
+skits/preprocessing.py
+skits.egg-info/PKG-INFO
+skits.egg-info/SOURCES.txt
+skits.egg-info/dependency_links.txt
+skits.egg-info/requires.txt
+skits.egg-info/top_level.txt
