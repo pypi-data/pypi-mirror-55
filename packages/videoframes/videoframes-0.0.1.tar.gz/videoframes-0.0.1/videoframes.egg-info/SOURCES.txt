@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+scripts/videoframes
+videoframes/__init__.py
+videoframes/frames.py
+videoframes.egg-info/PKG-INFO
+videoframes.egg-info/SOURCES.txt
+videoframes.egg-info/dependency_links.txt
+videoframes.egg-info/requires.txt
+videoframes.egg-info/top_level.txt
