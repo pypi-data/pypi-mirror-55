@@ -1,0 +1,178 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>lexnlp.extract.en.distances: Extracting distances &#8212; LexNLP 1.3.0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <link rel="author" title="About these documents" href="../../../about.html" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="lexnlp-extract-en-distances-extracting-distances">
+<span id="extract-en-distances"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.extract.en.distances</span></code>: Extracting distances<a class="headerlink" href="#lexnlp-extract-en-distances-extracting-distances" title="Permalink to this headline">¶</a></h1>
+<p>The <code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.extract.en.distances</span></code> module contains methods that allow for the extraction
+of distance references from text.  Distances that are covered by default in this module include:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>km</p></li>
+<li><p>kilometer</p></li>
+<li><p>mile</p></li>
+<li><p>miles</p></li>
+<li><p>mi</p></li>
+</ul>
+</div></blockquote>
+<p>The full list of current unit test cases can be found here:
+<a class="reference external" href="https://github.com/LexPredict/lexpredict-lexnlp/tree/master/test_data/lexnlp/extract/en/tests/test_distances">https://github.com/LexPredict/lexpredict-lexnlp/tree/master/test_data/lexnlp/extract/en/tests/test_distances</a></p>
+<div class="section" id="extracting-conditions">
+<h2>Extracting conditions<a class="headerlink" href="#extracting-conditions" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="lexnlp.extract.en.distances.get_distances">
+<code class="sig-prename descclassname">lexnlp.extract.en.distances.</code><code class="sig-name descname">get_distances</code><span class="sig-paren">(</span><em class="sig-param">text: str</em>, <em class="sig-param">return_sources=False</em>, <em class="sig-param">float_digits=4</em><span class="sig-paren">)</span> &#x2192; Generator<a class="headerlink" href="#lexnlp.extract.en.distances.get_distances" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">lexnlp.extract.en.distances</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;Within 50 miles of office.&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">distances</span><span class="o">.</span><span class="n">get_distances</span><span class="p">(</span><span class="n">text</span><span class="p">)))</span>
+<span class="go">[(50.0, &#39;mile&#39;)]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="customizing-distance-extraction">
+<h2>Customizing distance extraction<a class="headerlink" href="#customizing-distance-extraction" title="Permalink to this headline">¶</a></h2>
+<p>Distance extraction can be customized.  There are three key module
+variables that store the default configuration and one function used to create
+a matching instance:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>DISTANCE_TOKEN_MAP</cite>: This <cite>Dictionary</cite> stores the map from tokens to standard distance types.  See customization example below.</p></li>
+<li><p><cite>DISTANCE_SYMBOL_MAP</cite>: This <cite>Dictionary</cite> stores the map from abbreviations to standard distance types.  See customization example below.</p></li>
+<li><p><cite>DISTANCE_PTN</cite>: This <cite>String</cite> defines the regular expression pattern used to match distances.</p></li>
+</ul>
+</div></blockquote>
+<p>The default behavior of this module can be customized by overriding the value of <cite>DISTANCE_PTN_RE</cite>
+with a new regular expression.  The example below demonstrates a simple addition of a new distance:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Out of the box behavior</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">lexnlp.extract.en.conditions</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;This improvement shall extend for no more than fifteen yards.&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">distances</span><span class="o">.</span><span class="n">get_distances</span><span class="p">(</span><span class="n">text</span><span class="p">)))</span>
+<span class="go">[]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Customize the regular expression pattern</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">regex</span> <span class="k">as</span> <span class="nn">re</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">lexnlp.extract.en.amounts</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">distances</span><span class="o">.</span><span class="n">DISTANCE_TOKEN_MAP</span><span class="p">[</span><span class="s2">&quot;yard&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;yard&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">distances</span><span class="o">.</span><span class="n">DISTANCE_TOKEN_MAP</span><span class="p">[</span><span class="s2">&quot;yards&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;yard&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">distances</span><span class="o">.</span><span class="n">DISTANCE_SYMBOL_MAP</span><span class="p">[</span><span class="s2">&quot;yd&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;yard&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">distances</span><span class="o">.</span><span class="n">DISTANCE_PTN</span> <span class="o">=</span> <span class="sa">r</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="go">(({num_ptn})\s*</span>
+<span class="go">({distance_tokens}|{distance_symbols}))(?:\W|$)</span>
+<span class="go">&quot;&quot;&quot;.format(</span>
+<span class="go">    num_ptn=lexnlp.extract.en.amounts.NUM_PTN.replace(&#39;(?:\\W|$)&#39;, &#39;&#39;).replace(&#39;(?&lt;=\\W|^)&#39;, &#39;&#39;),</span>
+<span class="go">    distance_symbols=&#39;|&#39;.join(lexnlp.extract.en.distances.DISTANCE_SYMBOL_MAP),</span>
+<span class="go">    distance_tokens=&#39;|&#39;.join(lexnlp.extract.en.distances.DISTANCE_TOKEN_MAP)</span>
+<span class="go">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">distances</span><span class="o">.</span><span class="n">DISTANCE_PTN_RE</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">distances</span><span class="o">.</span><span class="n">DISTANCE_PTN</span><span class="p">,</span>
+<span class="go">re.IGNORECASE | re.MULTILINE | re.DOTALL | re.VERBOSE)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Run the method again to test</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">distances</span><span class="o">.</span><span class="n">get_distances</span><span class="p">(</span><span class="n">text</span><span class="p">)))</span>
+<span class="go">[(15, &#39;yard&#39;)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">LexNLP</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../about.html">About LexNLP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lexnlp.html">LexNLP package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changes.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../license.html">License</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017-2019, ContraxSuite, LLC.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../_sources/modules/extract/en/distances.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

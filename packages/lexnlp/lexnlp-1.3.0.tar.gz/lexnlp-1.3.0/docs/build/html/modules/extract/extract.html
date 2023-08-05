@@ -1,0 +1,217 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>lexnlp.extract: Extracting structured data from unstructured text &#8212; LexNLP 1.3.0 documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <link rel="author" title="About these documents" href="../../about.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="lexnlp.nlp: Natural language processing" href="../nlp/nlp.html" />
+    <link rel="prev" title="LexNLP package" href="../../lexnlp.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="lexnlp-extract-extracting-structured-data-from-unstructured-text">
+<span id="extract"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.extract</span></code>: Extracting structured data from unstructured text<a class="headerlink" href="#lexnlp-extract-extracting-structured-data-from-unstructured-text" title="Permalink to this headline">¶</a></h1>
+<p>The <code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.extract</span></code> module contains methods that allow for the extraction
+of structured data from unstructured textual sources.  Supported data types include a
+wide range of facts relevant to contract or document analysis, including dates, amounts,
+proper noun types, and conditional statements.</p>
+<dl class="simple">
+<dt>This module is structured along ISO 2-character language codes.  Currently, the following languages are stable:</dt><dd><ul class="simple">
+<li><p>English: <code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.extract.en</span></code></p></li>
+<li><p>German: <code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.extract.de</span></code></p></li>
+<li><p>Spanish: <code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.extract.es</span></code></p></li>
+</ul>
+</dd>
+</dl>
+<p>Extraction methods follow a simple <cite>get_X</cite> pattern as demonstrated below:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">lexnlp.extract.en.amounts</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;There are ten cows in the 2 acre pasture.&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">amounts</span><span class="o">.</span><span class="n">get_amounts</span><span class="p">(</span><span class="n">text</span><span class="p">)))</span>
+<span class="go">[10, 2.0]</span>
+</pre></div>
+</div>
+<div class="section" id="pattern-based-extraction-methods">
+<h2>Pattern-based extraction methods<a class="headerlink" href="#pattern-based-extraction-methods" title="Permalink to this headline">¶</a></h2>
+<dl class="simple">
+<dt>The full list of supported pattern-based structured data types is below:</dt><dd><ul class="simple">
+<li><p>“EN” locale:</p>
+<ul>
+<li><p><a class="reference internal" href="en/acts.html#extract-en-acts"><span class="std std-ref">acts</span></a>, e.g., “section 1 of the Advancing Hope Act, 1986”</p></li>
+<li><p><a class="reference internal" href="en/amounts.html#extract-en-amounts"><span class="std std-ref">amounts</span></a>, e.g., “ten pounds” or “5.8 megawatts”</p></li>
+<li><p><a class="reference internal" href="en/citations.html#extract-en-citations"><span class="std std-ref">citations</span></a>, e.g., “10 U.S. 100” or “1998 S. Ct. 1”</p></li>
+<li><p><a class="reference internal" href="en/companies.html#extract-en-companies"><span class="std std-ref">companies</span></a>, e.g., “Lexpredict LLC”</p></li>
+<li><p><a class="reference internal" href="en/conditions.html#extract-en-conditions"><span class="std std-ref">conditions</span></a>, e.g., “subject to …” or “unless and until …”</p></li>
+<li><p><a class="reference internal" href="en/constraints.html#extract-en-constraints"><span class="std std-ref">constraints</span></a>, e.g., “no more than” or “</p></li>
+<li><p><a class="reference internal" href="en/copyright.html#extract-en-copyright"><span class="std std-ref">copyright</span></a>, e.g., “(C) Copyright 2000 Acme”</p></li>
+<li><p><a class="reference internal" href="en/courts.html#extract-en-courts"><span class="std std-ref">courts</span></a>, e.g., “Supreme Court of New York”</p></li>
+<li><p><a class="reference internal" href="en/cusip.html#extract-en-cusip"><span class="std std-ref">CUSIP</span></a>, e.g., “392690QT3”</p></li>
+<li><p><a class="reference internal" href="en/dates.html#extract-en-dates"><span class="std std-ref">dates</span></a>, e.g., “June 1, 2017” or “2018-01-01”</p></li>
+<li><p><a class="reference internal" href="en/definitions.html#extract-en-definitions"><span class="std std-ref">definitions</span></a>, e.g., “Term shall mean …”</p></li>
+<li><p><a class="reference internal" href="en/distances.html#extract-en-distances"><span class="std std-ref">distances</span></a>, e.g., “fifteen miles”</p></li>
+<li><p><a class="reference internal" href="en/durations.html#extract-en-durations"><span class="std std-ref">durations</span></a>, e.g., “ten years” or “thirty days”</p></li>
+<li><p><a class="reference internal" href="en/geoentities.html#extract-en-geoentities"><span class="std std-ref">geographic and geopolitical entities</span></a>, e.g., “New York” or “Norway”</p></li>
+<li><p><a class="reference internal" href="en/money.html#extract-en-money"><span class="std std-ref">money and currency usages</span></a>, e.g., “$5” or “10 Euro”</p></li>
+<li><p><a class="reference internal" href="en/percents.html#extract-en-percents"><span class="std std-ref">percents and rates</span></a>, e.g., “10%” or “50 bps”</p></li>
+<li><p><a class="reference internal" href="en/pii.html#extract-en-pii"><span class="std std-ref">PII</span></a>, e.g., “212-212-2121” or “999-999-9999”</p></li>
+<li><p><a class="reference internal" href="en/ratios.html#extract-en-ratios"><span class="std std-ref">ratios</span></a>, e.g.,” 3:1” or “four to three”</p></li>
+<li><p><a class="reference internal" href="en/regulations.html#extract-en-regulations"><span class="std std-ref">regulations</span></a>, e.g., “32 CFR 170”</p></li>
+<li><p><a class="reference internal" href="en/trademarks.html#extract-en-trademarks"><span class="std std-ref">trademarks</span></a>, e.g., “MyApp (TM)”</p></li>
+<li><p><a class="reference internal" href="en/urls.html#extract-en-urls"><span class="std std-ref">URLs</span></a>, e.g., “<a class="reference external" href="http://acme.com/">http://acme.com/</a>”</p></li>
+</ul>
+</li>
+<li><p>“DE” locale:</p>
+<ul>
+<li><p><a class="reference internal" href="de/amounts.html#extract-de-amounts"><span class="std std-ref">amounts</span></a>, e.g., “1 tausend” or “eine halbe Million Dollar”</p></li>
+<li><p><a class="reference internal" href="de/citations.html#extract-de-citations"><span class="std std-ref">citations</span></a>, e.g., “BGBl. I S. 434”</p></li>
+<li><p><span class="xref std std-ref">copyrights</span>, e.g., “siemens.com globale Website Siemens © 1996 – 2019”</p></li>
+<li><p><span class="xref std std-ref">court citations</span>, e.g., “BStBl I 2003, 240”</p></li>
+<li><p><span class="xref std std-ref">courts</span>, e.g., “Amtsgerichte”</p></li>
+<li><p><a class="reference internal" href="de/dates.html#extract-de-dates"><span class="std std-ref">dates</span></a>, e.g., “vom 29. März 2017”</p></li>
+<li><p><span class="xref std std-ref">definitions</span></p></li>
+<li><p><a class="reference internal" href="de/durations.html#extract-de-durations"><span class="std std-ref">durations</span></a>, e.g., “14. Lebensjahr” or “fünfundzwanzig Jahren”</p></li>
+<li><p><span class="xref std std-ref">geographic and geopolitical entities</span>, e.g., “Albanien”</p></li>
+<li><p><a class="reference internal" href="de/percents.html#extract-de-percents"><span class="std std-ref">percents</span></a>, e.g., “15 Volumenprozent”</p></li>
+</ul>
+</li>
+<li><p>“ES” locale:</p>
+<ul>
+<li><p><span class="xref std std-ref">copyrights</span>, e.g., “”Website BBC Mundo © 1996 – 2019”</p></li>
+<li><p><span class="xref std std-ref">courts</span>, e.g., “Tribunal Superior de Justicia de Madrid”</p></li>
+<li><p><a class="reference internal" href="es/dates.html#extract-es-dates"><span class="std std-ref">dates</span></a>, e.g., “15 de febrero” or “1ºde enero de 1999”</p></li>
+<li><p><span class="xref std std-ref">definitions</span>, e.g., “”El ser humano”: una anatomía moderna humana”</p></li>
+<li><p><span class="xref std std-ref">regulations</span>, e.g., “Comisión Nacional Bancaria y de Valores”</p></li>
+</ul>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="nlp-based-extraction-methods">
+<h2>NLP-based extraction methods<a class="headerlink" href="#nlp-based-extraction-methods" title="Permalink to this headline">¶</a></h2>
+<p>In addition to pattern-based structured data types, the <cite>lexnlp.extract</cite> module also supports
+NLP methods based on tagged part-of-speech classifiers.  These classifiers are based on
+NLTK and, optionally, Stanford NLP libraries.  The list of these modules is below:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><span class="xref std std-ref">named entity extraction with NLTK maximum entropy classifier</span></p></li>
+<li><p><span class="xref std std-ref">named entity extraction with NLTK and regular expressions</span></p></li>
+<li><p><span class="xref std std-ref">named entity extraction with Stanford Named Entity Recognition (NER) models</span></p></li>
+</ul>
+</div></blockquote>
+<dl class="simple">
+<dt>These modules allow to extract data types like:</dt><dd><ul class="simple">
+<li><p><span class="xref std std-ref">addresses</span>, e.g., “1999 Mount Read Blvd, Rochester, NY, USA, 14615”</p></li>
+<li><p><span class="xref std std-ref">companies</span>, e.g., “Lexpredict LLC”</p></li>
+<li><p><span class="xref std std-ref">persons</span>, e.g., “John Doe”</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../index.html">LexNLP</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../about.html">About LexNLP</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../lexnlp.html">LexNLP package</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.extract</span></code>: Extracting structured data from unstructured text</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pattern-based-extraction-methods">Pattern-based extraction methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#nlp-based-extraction-methods">NLP-based extraction methods</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="../nlp/nlp.html"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.nlp</span></code>: Natural language processing</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../changes.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../license.html">License</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../index.html">Documentation overview</a><ul>
+  <li><a href="../../lexnlp.html">LexNLP package</a><ul>
+      <li>Previous: <a href="../../lexnlp.html" title="previous chapter">LexNLP package</a></li>
+      <li>Next: <a href="../nlp/nlp.html" title="next chapter"><code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.nlp</span></code>: Natural language processing</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017-2019, ContraxSuite, LLC.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../_sources/modules/extract/extract.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

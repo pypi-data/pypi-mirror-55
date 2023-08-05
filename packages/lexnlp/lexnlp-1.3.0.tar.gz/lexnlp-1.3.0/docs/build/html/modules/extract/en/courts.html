@@ -1,0 +1,194 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>lexnlp.extract.en.courts: Extracting court references &#8212; LexNLP 1.3.0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <link rel="author" title="About these documents" href="../../../about.html" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="lexnlp-extract-en-courts-extracting-court-references">
+<span id="extract-en-courts"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.extract.en.courts</span></code>: Extracting court references<a class="headerlink" href="#lexnlp-extract-en-courts-extracting-court-references" title="Permalink to this headline">¶</a></h1>
+<p>The <code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.extract.en.courts</span></code> module contains methods that allow for the extraction
+of court or venue references from text.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>The methods in this module rely heavily on data from the LexPredict Legal Dictionary repository:
+<a class="reference external" href="https://github.com/LexPredict/lexpredict-legal-dictionary">https://github.com/LexPredict/lexpredict-legal-dictionary</a></p>
+<dl class="simple">
+<dt>This repository includes courts such as:</dt><dd><ul class="simple">
+<li><p>Australian courts</p></li>
+<li><p>Canadian courts</p></li>
+<li><p>German courts</p></li>
+<li><p>US Federal and State courts</p></li>
+</ul>
+</dd>
+</dl>
+<p>This data is governed by a separate Creative Commons Attribution Share Alike 4.0 license here:
+<a class="reference external" href="https://github.com/LexPredict/lexpredict-legal-dictionary/blob/master/LICENSE">https://github.com/LexPredict/lexpredict-legal-dictionary/blob/master/LICENSE</a></p>
+</div>
+<p>The full list of current unit test cases can be found here:
+<a class="reference external" href="https://github.com/LexPredict/lexpredict-lexnlp/tree/master/test_data/lexnlp/extract/en/tests/test_courts">https://github.com/LexPredict/lexpredict-lexnlp/tree/master/test_data/lexnlp/extract/en/tests/test_courts</a></p>
+<div class="section" id="extracting-courts">
+<h2>Extracting courts<a class="headerlink" href="#extracting-courts" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="lexnlp.extract.en.courts.get_courts">
+<code class="sig-prename descclassname">lexnlp.extract.en.courts.</code><code class="sig-name descname">get_courts</code><span class="sig-paren">(</span><em class="sig-param">text: str, court_config_list: List[Tuple[int, str, int, List[Tuple[str, str, bool, int]]]], priority: bool = False, text_languages: List[str] = None</em><span class="sig-paren">)</span> &#x2192; Generator[[Tuple[Tuple, Tuple], Any], Any]<a class="headerlink" href="#lexnlp.extract.en.courts.get_courts" title="Permalink to this definition">¶</a></dt>
+<dd><p>Searches for courts from the provided config list and yields tuples of (court_config, court_alias).
+Court config is: (court_id, court_name, [list of aliases])
+Alias is: (alias_text, language, is_abbrev, alias_id)</p>
+<p>This method uses general searching routines for dictionary entities from dict_entities.py module.
+Methods of dict_entities module can be used for comfortable creating the config: entity_config(),
+entity_alias(), add_aliases_to_entity().
+:param text:
+:param court_config_list: List list of all possible known courts in the form of tuples:</p>
+<blockquote>
+<div><p>(id, name, [(alias, lang, is_abbrev], …).</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>return_source</strong> – </p></li>
+<li><p><strong>priority</strong> – If two courts found with the totally equal matching aliases - then use the one with the lowest id.</p></li>
+<li><p><strong>text_languages</strong> – Language(s) of the source text. If a language is specified then only aliases of this</p></li>
+</ul>
+</dd>
+</dl>
+<dl class="simple">
+<dt>language will be searched for. For example: this allows ignoring “Island” - a German language</dt><dd><p>alias of Iceland for English texts.</p>
+</dd>
+</dl>
+<dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p>Generates tuples: (court entity, court alias)</p>
+</dd>
+</dl>
+</dd></dl>
+
+<p>Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Manually set court configuration data</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">lexnlp.extract.en.courts</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;The case will be heard in E.D. Va. next month&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">court_config_data</span> <span class="o">=</span> <span class="p">[</span><span class="n">entity_config</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">&quot;Eastern District of Virginia&quot;</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="p">[</span><span class="s2">&quot;E.D. Va.&quot;</span><span class="p">]),</span>
+<span class="go">    entity_config(1, &quot;Western District of Virginia&quot;, 0, [&quot;W.D. Va.&quot;])]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">entity</span><span class="p">,</span> <span class="n">alias</span> <span class="ow">in</span> <span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">courts</span><span class="o">.</span><span class="n">get_courts</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">court_config_data</span><span class="p">):</span>
+<span class="go">    print(&quot;entity=&quot;, entity)</span>
+<span class="go">    print(&quot;alias=&quot;, alias)</span>
+<span class="go">entity= (0, &#39;Eastern District of Virginia&#39;, 0, [(&#39;Eastern District of Virginia&#39;, None, False, None), (&#39;E.D. Va.&#39;, None, False, None)])</span>
+<span class="go">alias= (&#39;E.D. Va.&#39;, None, False, None)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Load court configuration data automatically from LexPredict legal dictionaries</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">pandas</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;To be heard in either E.D. Va. or S.D.N.Y.&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">court_df</span> <span class="o">=</span> <span class="n">pandas</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;https://raw.githubusercontent.com/LexPredict/lexpredict-legal-dictionary/1.0.5/en/legal/us_courts.csv&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Create config objects</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">court_config_data</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">row</span> <span class="ow">in</span> <span class="n">court_df</span><span class="o">.</span><span class="n">iterrows</span><span class="p">():</span>
+<span class="go">    c = entity_config(row[&quot;Court ID&quot;], row[&quot;Court Name&quot;], 0, row[&quot;Alias&quot;].split(&quot;;&quot;) if not pandas.isnull(row[&quot;Alias&quot;]) else [])</span>
+<span class="go">    court_config_data.append(c)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">entity</span><span class="p">,</span> <span class="n">alias</span> <span class="ow">in</span> <span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">courts</span><span class="o">.</span><span class="n">get_courts</span><span class="p">(</span><span class="n">text</span><span class="p">,</span> <span class="n">court_config_data</span><span class="p">):</span>
+<span class="go">    print(&quot;entity=&quot;, entity)</span>
+<span class="go">    print(&quot;alias=&quot;, alias)</span>
+<span class="go">entity= (98, &#39;Eastern District of Virginia&#39;, 0, [(&#39;Eastern District of Virginia&#39;, None, False, None), (&#39;E.D. Va.&#39;, None, False, None)])</span>
+<span class="go">alias= (&#39;E.D. Va.&#39;, None, False, None)</span>
+<span class="go">entity= (70, &#39;Southern District of New York&#39;, 0, [(&#39;Southern District of New York&#39;, None, False, None), (&#39;S.D.N.Y.&#39;, None, False, None)])</span>
+<span class="go">alias= (&#39;S.D.N.Y.&#39;, None, False, None)</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">LexNLP</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../about.html">About LexNLP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lexnlp.html">LexNLP package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changes.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../license.html">License</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017-2019, ContraxSuite, LLC.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../_sources/modules/extract/en/courts.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

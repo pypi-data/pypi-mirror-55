@@ -1,0 +1,174 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>find_dict_entities &#8212; LexNLP 1.3.0 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/language_data.js"></script>
+    <link rel="author" title="About these documents" href="../about.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="find-dict-entities">
+<h1>find_dict_entities<a class="headerlink" href="#find-dict-entities" title="Permalink to this headline">¶</a></h1>
+<dl class="function">
+<dt id="lexnlp.extract.en.dict_entities.find_dict_entities">
+<code class="sig-prename descclassname">lexnlp.extract.en.dict_entities.</code><code class="sig-name descname">find_dict_entities</code><span class="sig-paren">(</span><em class="sig-param">text: str, all_possible_entities: List[Tuple[int, str, int, List[Tuple]]], text_languages: Union[List[str], Tuple[str], Set[str]] = None, conflict_resolving_func: Callable[List[Tuple[int, str, List[Tuple]]], Tuple[List[Tuple[int, str, List[Tuple]]], Tuple]] = None, use_stemmer: bool = False, remove_time_am_pm: bool = True, min_alias_len: int = None, prepared_alias_black_list: Union[None, Dict[str, Tuple[List[str], List[str]]]] = None</em><span class="sig-paren">)</span> &#x2192; Generator[[lexnlp.extract.en.dict_entities.DictionaryEntity, None], None]<a class="headerlink" href="#lexnlp.extract.en.dict_entities.find_dict_entities" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find all entities defined in the ‘all_possible_entities’ list appeared in the source text.
+This method takes care of leaving only the longest matching search result for the case of multiple
+entities having aliases - one being a substring of another.
+This method takes care of the language of the text and aliases - if language is specified both for the text
+and for the alias - then this alias is used only if they are the same.
+This method may detect multiple possibly matching entities at a position in the text - because there can be
+entites having the same aliases in the same language. To resolve such conflicts a special resolving function can be
+specified.
+This method takes care of time AM/PM components which possibly can appear in the aliases of some entities -
+it tries to detect minutes/seconds/milliseconds before AM/PM and ignore them in such cases.</p>
+<p>Algorithm of this method:
+1. Normalize the source text (we need lowercase and non-lowercase versions for abbrev searches).
+2. Create a shared search context - a map of position -&gt; (alias text + list of matching entities)
+3. For each possible entity do search using the shared context:</p>
+<blockquote>
+<div><dl class="simple">
+<dt>3.1. For each alias of the entity:</dt><dd><dl class="simple">
+<dt>3.1.1. Iteratively search for all occurrences of the alias taking into account its language, abbrev status.</dt><dd><p>For each found occurrence of the alias - check if there is already found another alias and entity
+at this position and leave only the one having the longest alias (“Something” vs “Something Bigger”)
+If there is already a found different entity on this position having totally equal alias with
+the same language - then store them both for this position in the text.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+</div></blockquote>
+<p>4. Now we have a map filled with: position -&gt; (alias text + list of entities having this alias).
+After sorting the items of this dict by position we will be able to get rid of overlaping of longer and shorter
+aliases being one a substirng of another (“Bankr. E.D.N.Y.” vs “E.D.N.Y.”).
+5. For each next position check if it overlaps with the next one [position; position + len(alias)].
+If overlaps - then leave the longest alias and drop the shorter.</p>
+<p>Main complexity of this algorithm is caused by the requirement to detect the longest match for each piece of text
+while the longer match can start at the earlier position then the shorter match and there can be multiple aliases
+of different entities matching the same piece of text.</p>
+<p>Another algorithm for this function can be based on the idea that or-kind regexp returns the longest matching group.
+We could form regexps containing the possible aliases and apply them to the source text:
+r’alias1|alias2|longer alias2|…’</p>
+<p>TODO Compare to other algorithms for time and memory complexity</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>text</strong> – </p></li>
+<li><p><strong>all_possible_entities</strong> – list of dict or list of DictEntity - all possible entities to search for</p></li>
+<li><p><strong>min_alias_len</strong> – Minimal length of alias/name to search for. Can be used to ignore too short aliases like “M.”</p></li>
+</ul>
+</dd>
+</dl>
+<p>while searching.
+:param prepared_alias_black_list: List of aliases to remove from searching. Can be used to ignore concrete aliases.
+Prepared black list of aliases to exclude from search.
+Should be: dict of language -&gt; tuple (list of normalized non-abbreviations, list of normalized abbreviations)
+:param text_languages: If set - then only aliases of these languages will be searched for.
+:param conflict_resolving_func: A function for resolving conflicts when there are multiple entities detected
+at the same position in the source text and their detected aliases are of the same length.
+The function takes a list of conflicting entities and should return a list of one or more entities which
+should be returned.
+:param use_stemmer: Use stemmer instead of tokenizer. Stemmer converts words to their simple form (singular number,
+e.t.c.). Stemmer works better for searching for “tables”, “developers”, … Tokenizer fits for “United States”,
+“Mississippi”, …
+:param remove_time_am_pm: Remove from final results AM/PM abbreviations which look like end part of time
+strings - 11:45 am, 10:00 pm.
+:return:</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">LexNLP</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../about.html">About LexNLP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../lexnlp.html">LexNLP package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../changes.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../license.html">License</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017-2019, ContraxSuite, LLC.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/api/lexnlp.extract.en.dict_entities.find_dict_entities.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

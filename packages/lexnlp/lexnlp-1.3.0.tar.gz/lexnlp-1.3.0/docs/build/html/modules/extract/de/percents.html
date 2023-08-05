@@ -1,0 +1,160 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>lexnlp.extract.de.percents: Extracting percents &#8212; LexNLP 1.3.0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <link rel="author" title="About these documents" href="../../../about.html" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="lexnlp-extract-de-percents-extracting-percents">
+<span id="extract-de-percents"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.extract.de.percents</span></code>: Extracting percents<a class="headerlink" href="#lexnlp-extract-de-percents-extracting-percents" title="Permalink to this headline">¶</a></h1>
+<p>The <code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.extract.de.percents</span></code> module contains methods that allow for the extraction
+of percents from text for “DE” locale.  Sample percents that are covered by this module include:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>15 Volumenprozent</p></li>
+<li><p>zwanzig Prozent</p></li>
+<li><p>zwanzig %</p></li>
+<li><p>20%</p></li>
+</ul>
+</div></blockquote>
+<p>The full list of current unit test cases can be found here:
+<a class="reference external" href="https://github.com/LexPredict/lexpredict-lexnlp/tree/master/lexnlp/extract/de/tests/test_percents">https://github.com/LexPredict/lexpredict-lexnlp/tree/master/lexnlp/extract/de/tests/test_percents</a></p>
+<div class="section" id="extracting-percents">
+<h2>Extracting percents<a class="headerlink" href="#extracting-percents" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="lexnlp.extract.de.percents.get_percent_list">
+<code class="sig-prename descclassname">lexnlp.extract.de.percents.</code><code class="sig-name descname">get_percent_list</code><span class="sig-paren">(</span><em class="sig-param">*args</em>, <em class="sig-param">**kwargs</em><span class="sig-paren">)</span><a class="headerlink" href="#lexnlp.extract.de.percents.get_percent_list" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<p>Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">lexnlp.extract.de.percents</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;zwanzig Prozent&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">de</span><span class="o">.</span><span class="n">percents</span><span class="o">.</span><span class="n">get_percent_list</span><span class="p">(</span><span class="n">text</span><span class="p">))</span>
+<span class="go">[{&#39;location_start&#39;: 0,</span>
+<span class="go">  &#39;location_end&#39;: 15,</span>
+<span class="go">  &#39;source_text&#39;: &#39;zwanzig Prozent&#39;,</span>
+<span class="go">  &#39;unit_name&#39;: &#39;prozent&#39;,</span>
+<span class="go">  &#39;amount&#39;: 20,</span>
+<span class="go">  &#39;real_amount&#39;: 20}]</span>
+</pre></div>
+</div>
+<dl class="function">
+<dt id="lexnlp.extract.de.percents.get_percents">
+<code class="sig-prename descclassname">lexnlp.extract.de.percents.</code><code class="sig-name descname">get_percents</code><span class="sig-paren">(</span><em class="sig-param">text: str</em>, <em class="sig-param">float_digits=4</em><span class="sig-paren">)</span> &#x2192; Generator<a class="headerlink" href="#lexnlp.extract.de.percents.get_percents" title="Permalink to this definition">¶</a></dt>
+<dd><p>Get percent usages within text.
+:param text:
+:param return_sources:
+:param float_digits:
+:return:</p>
+</dd></dl>
+
+<p>Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">lexnlp.extract.de.percents</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">de</span><span class="o">.</span><span class="n">percents</span><span class="o">.</span><span class="n">get_percents</span><span class="p">(</span><span class="s2">&quot;1%&quot;</span><span class="p">)))</span>
+<span class="go">[{&#39;location_start&#39;: 0,</span>
+<span class="go">  &#39;location_end&#39;: 2,</span>
+<span class="go">  &#39;source_text&#39;: &#39;1%&#39;,</span>
+<span class="go">  &#39;unit_name&#39;: &#39;%&#39;,</span>
+<span class="go">  &#39;amount&#39;: 1.0,</span>
+<span class="go">  &#39;real_amount&#39;: 1.0}]</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">LexNLP</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../about.html">About LexNLP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lexnlp.html">LexNLP package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changes.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../license.html">License</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017-2019, ContraxSuite, LLC.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../_sources/modules/extract/de/percents.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

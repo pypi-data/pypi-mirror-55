@@ -1,0 +1,231 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>lexnlp.extract.en.constraints: Extracting constraint statements &#8212; LexNLP 1.3.0 documentation</title>
+    <link rel="stylesheet" href="../../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../../" src="../../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../../_static/language_data.js"></script>
+    <link rel="author" title="About these documents" href="../../../about.html" />
+    <link rel="index" title="Index" href="../../../genindex.html" />
+    <link rel="search" title="Search" href="../../../search.html" />
+   
+  <link rel="stylesheet" href="../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="lexnlp-extract-en-constraints-extracting-constraint-statements">
+<span id="extract-en-constraints"></span><h1><code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.extract.en.constraints</span></code>: Extracting constraint statements<a class="headerlink" href="#lexnlp-extract-en-constraints-extracting-constraint-statements" title="Permalink to this headline">¶</a></h1>
+<p>The <code class="xref py py-mod docutils literal notranslate"><span class="pre">lexnlp.extract.en.constraints</span></code> module contains methods that allow for the extraction
+of constraint statements from text.  Statements that are covered by default in this module are:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>after</p></li>
+<li><p>at least</p></li>
+<li><p>at most</p></li>
+<li><p>before</p></li>
+<li><p>equal to</p></li>
+<li><p>exactly</p></li>
+<li><p>first of</p></li>
+<li><p>greater</p></li>
+<li><p>greater of</p></li>
+<li><p>greater than</p></li>
+<li><p>greater than or equal to</p></li>
+<li><p>greatest of</p></li>
+<li><p>last of</p></li>
+<li><p>least of</p></li>
+<li><p>lesser</p></li>
+<li><p>lesser of</p></li>
+<li><p>lesser than</p></li>
+<li><p>less than</p></li>
+<li><p>less than or equal to</p></li>
+<li><p>maximum of</p></li>
+<li><p>maximum</p></li>
+<li><p>minimum of</p></li>
+<li><p>minimum</p></li>
+<li><p>more than</p></li>
+<li><p>more than or equal to</p></li>
+<li><p>no earlier than</p></li>
+<li><p>no later than</p></li>
+<li><p>no less than</p></li>
+<li><p>no more than</p></li>
+<li><p>not equal to</p></li>
+<li><p>not to exceed</p></li>
+<li><p>earlier than</p></li>
+<li><p>later than</p></li>
+<li><p>within</p></li>
+<li><p>exceed</p></li>
+<li><p>exceeds</p></li>
+<li><p>prior to</p></li>
+<li><p>highest</p></li>
+<li><p>least</p></li>
+<li><p>smallest among</p></li>
+</ul>
+</div></blockquote>
+<p>The full list of current unit test cases can be found here:
+<a class="reference external" href="https://github.com/LexPredict/lexpredict-lexnlp/tree/master/test_data/lexnlp/extract/en/tests/test_constraints">https://github.com/LexPredict/lexpredict-lexnlp/tree/master/test_data/lexnlp/extract/en/tests/test_constraints</a></p>
+<div class="section" id="extracting-constraints">
+<h2>Extracting constraints<a class="headerlink" href="#extracting-constraints" title="Permalink to this headline">¶</a></h2>
+<dl class="function">
+<dt id="lexnlp.extract.en.constraints.get_constraints">
+<code class="sig-prename descclassname">lexnlp.extract.en.constraints.</code><code class="sig-name descname">get_constraints</code><span class="sig-paren">(</span><em class="sig-param">text: str</em>, <em class="sig-param">strict=False</em><span class="sig-paren">)</span> &#x2192; Generator<a class="headerlink" href="#lexnlp.extract.en.constraints.get_constraints" title="Permalink to this definition">¶</a></dt>
+<dd><p>Find possible constraints in natural language.
+:param text:
+:param strict:
+:return:</p>
+</dd></dl>
+
+<p>Example</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">lexnlp.extract.en.constraints</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;This will occur at most three times.&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">constraints</span><span class="o">.</span><span class="n">get_constraints</span><span class="p">(</span><span class="n">text</span><span class="p">)))</span>
+<span class="go">[(&#39;at most&#39;, &#39;this will occur&#39;, &#39;&#39;)]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">lexnlp.extract.en.conditions</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;The rate shall be no less than 50 bps.&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">constraints</span><span class="o">.</span><span class="n">get_constraints</span><span class="p">(</span><span class="n">text</span><span class="p">)))</span>
+<span class="go">[(&#39;no less than&#39;, &#39;the rate shall be&#39;, &#39;&#39;)]</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="customizing-constraint-statement-extraction">
+<h2>Customizing constraint statement extraction<a class="headerlink" href="#customizing-constraint-statement-extraction" title="Permalink to this headline">¶</a></h2>
+<p>Constraint statement extraction can be customized.  There are two key module
+variables that store the default configuration and one function used to create
+a matching instance:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><cite>CONSTRAINT_PHRASES</cite>: This <cite>List</cite> stores the “trigger” phrases that are used to identify constraint statements.  They are typically adverbial or prepositional phrases.</p></li>
+<li><p><cite>CONSTRAINT_PATTERN_TEMPLATE</cite>: This <cite>String</cite> stores the regular expression pattern that drives matching in this module.</p></li>
+</ul>
+</div></blockquote>
+<dl class="function">
+<dt id="lexnlp.extract.en.constraints.create_constraint_pattern">
+<code class="sig-prename descclassname">lexnlp.extract.en.constraints.</code><code class="sig-name descname">create_constraint_pattern</code><span class="sig-paren">(</span><em class="sig-param">constraint_pattern_template</em>, <em class="sig-param">constraint_phrases</em><span class="sig-paren">)</span><a class="headerlink" href="#lexnlp.extract.en.constraints.create_constraint_pattern" title="Permalink to this definition">¶</a></dt>
+<dd><p>Create constraint pattern.
+:param constraint_pattern_template:
+:param constraint_phrases:
+:return:</p>
+</dd></dl>
+
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<dl class="simple">
+<dt>For more examples and information about natural language constraints, see the linguistic resources below:</dt><dd><ul class="simple">
+<li><p><a class="reference external" href="https://www.ijcai.org/Proceedings/16/Papers/111.pdf">https://www.ijcai.org/Proceedings/16/Papers/111.pdf</a></p></li>
+<li><p><a class="reference external" href="https://www.sciencedirect.com/science/article/pii/S131915781200002X">https://www.sciencedirect.com/science/article/pii/S131915781200002X</a></p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<p>The default behavior of this module can be customized by overriding the value of <cite>RE_CONSTRAINT</cite>
+with a new regular expression created using <cite>create_constraint_pattern</cite> above.  The example below
+demonstrates a simple addition of a new phrase:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># Out of the box behavior</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">lexnlp.extract.en.constraints</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">text</span> <span class="o">=</span> <span class="s2">&quot;The applicable rate shall be the smallest among thing A and thing B at time T.&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">constraints</span><span class="o">.</span><span class="n">get_constraints</span><span class="p">(</span><span class="n">text</span><span class="p">)))</span>
+<span class="go">[]</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Customize the `RE_CONSTRAINT` variable by adding a new phrase</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="kn">import</span> <span class="nn">regex</span> <span class="k">as</span> <span class="nn">re</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">my_constraint_phrases</span> <span class="o">=</span> <span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">constraints</span><span class="o">.</span><span class="n">CONSTRAINT_PHRASES</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">my_constraint_phrases</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="s2">&quot;smallest among&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">CONSTRAINT_PATTERN</span> <span class="o">=</span> <span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">constraints</span><span class="o">.</span><span class="n">create_constraint_pattern</span><span class="p">(</span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">constraints</span><span class="o">.</span><span class="n">CONSTRAINT_PATTERN_TEMPLATE</span><span class="p">,</span> <span class="n">my_constraint_phrases</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">constraints</span><span class="o">.</span><span class="n">RE_CONSTRAINT</span> <span class="o">=</span> <span class="n">re</span><span class="o">.</span><span class="n">compile</span><span class="p">(</span><span class="n">CONSTRAINT_PATTERN</span><span class="p">,</span> <span class="n">re</span><span class="o">.</span><span class="n">IGNORECASE</span> <span class="o">|</span> <span class="n">re</span><span class="o">.</span><span class="n">UNICODE</span> <span class="o">|</span> <span class="n">re</span><span class="o">.</span><span class="n">DOTALL</span> <span class="o">|</span> <span class="n">re</span><span class="o">.</span><span class="n">MULTILINE</span> <span class="o">|</span> <span class="n">re</span><span class="o">.</span><span class="n">VERBOSE</span><span class="p">)</span>
+
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># Run the `get_constraints` method again to test</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="nb">list</span><span class="p">(</span><span class="n">lexnlp</span><span class="o">.</span><span class="n">extract</span><span class="o">.</span><span class="n">en</span><span class="o">.</span><span class="n">constraints</span><span class="o">.</span><span class="n">get_constraints</span><span class="p">(</span><span class="n">text</span><span class="p">)))</span>
+<span class="go">[(&#39;smallest among&#39;, &#39;the applicable rate shall be the&#39;, &#39;&#39;)]</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../index.html">LexNLP</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../../../about.html">About LexNLP</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../lexnlp.html">LexNLP package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../changes.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../license.html">License</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../index.html">Documentation overview</a><ul>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2017-2019, ContraxSuite, LLC.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.1</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../_sources/modules/extract/en/constraints.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
