@@ -1,0 +1,3 @@
+[workflows.services]
+DLSPyMcaFitter = pymca_zocalo:DLSPyMcaFitter
+
