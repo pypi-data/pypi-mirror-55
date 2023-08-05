@@ -1,0 +1,10 @@
+README.md
+setup.py
+irods_avu_json.egg-info/PKG-INFO
+irods_avu_json.egg-info/SOURCES.txt
+irods_avu_json.egg-info/dependency_links.txt
+irods_avu_json.egg-info/top_level.txt
+jsonavu/__init__.py
+jsonavu/avu2json.py
+jsonavu/json2avu.py
+test/test_irods_avu_json.py
