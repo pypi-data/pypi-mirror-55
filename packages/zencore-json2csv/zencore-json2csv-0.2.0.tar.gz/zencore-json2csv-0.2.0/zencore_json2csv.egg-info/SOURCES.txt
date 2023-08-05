@@ -1,0 +1,9 @@
+README.md
+json2csv.py
+setup.py
+zencore_json2csv.egg-info/PKG-INFO
+zencore_json2csv.egg-info/SOURCES.txt
+zencore_json2csv.egg-info/dependency_links.txt
+zencore_json2csv.egg-info/entry_points.txt
+zencore_json2csv.egg-info/requires.txt
+zencore_json2csv.egg-info/top_level.txt
