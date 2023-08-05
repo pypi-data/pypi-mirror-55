@@ -1,0 +1,4 @@
+docopt
+wrapt
+attrs
+consolejs

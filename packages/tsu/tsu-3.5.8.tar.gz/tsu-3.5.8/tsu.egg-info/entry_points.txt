@@ -1,0 +1,3 @@
+[console_scripts]
+tsu = tsu.main:cli
+
