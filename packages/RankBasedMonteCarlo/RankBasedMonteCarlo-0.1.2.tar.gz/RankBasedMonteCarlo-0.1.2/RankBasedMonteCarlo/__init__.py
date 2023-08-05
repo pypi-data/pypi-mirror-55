@@ -1,0 +1,1 @@
+from .Methods import MonteCarloKolmogorovSmirnov, MonteCarloKuiper, MonteCarloMannWhitney, MonteCarloKruskalWallis
