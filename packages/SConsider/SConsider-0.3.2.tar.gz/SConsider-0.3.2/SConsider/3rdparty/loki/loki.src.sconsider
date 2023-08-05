@@ -1,0 +1,31 @@
+# -------------------------------------------------------------------------
+# Copyright (c) 2009, Peter Sommerlad and IFS Institute for Software
+# at HSR Rapperswil, Switzerland
+# All rights reserved.
+#
+# This library/application is free software; you can redistribute and/or
+# modify it under the terms of the license that is included with this
+# library/application in the file license.txt.
+# -------------------------------------------------------------------------
+from pkg_resources import require as pkg_require
+pkg_require(["SConsider<0.5"])
+import SConsider
+
+Import('*')
+
+buildSettings = {
+    'include': {
+        'public': {
+            'includeSubdir': 'include',
+        },
+    },
+    'objects': {
+        'targetType': 'LibraryShared',
+        'linkDependencies': [
+            SConsider.generateFulltargetname(packagename, 'include'),
+        ],
+        'sourceFiles': SConsider.listFiles(['src/*.cpp']),
+    },
+}
+
+SConsider.createTargets(packagename, buildSettings)
