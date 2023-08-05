@@ -1,0 +1,42 @@
+Metadata-Version: 1.1
+Name: o4
+Version: 0.2
+Summary: Useful pipeline for detecting vehicles and pedestrians and extract features from the detcetion.
+Home-page: UNKNOWN
+Author: Miguel de Matos
+Author-email: miguelcarvalhaismatos@ua.pt
+License: MIT
+Download-URL: https://pypi.org/project/o4/
+Description: ## Install
+        
+        `pip install -r requirements.txt`
+        
+        ## Run
+        
+        `from o4 import O4`
+        
+        `weights = "tests/wheights/yolov3.weights"`
+        `names = "tests/wheights/coco.names"`
+        `anchors = "tests/wheights/yolov3.cfg"`
+        
+        `INPUT_DIR = "o4/data/input/braga.mp4"`
+        `OUTPUT_DIR = "o4/data/output/output.avi"`
+        
+        `o4 = O4(weights, names, anchors)`
+        
+        `o4.video(INPUT_DIR, OUTPUT_DIR)`
+        
+        `o4.add_feature(DetectionBoxes())`
+        `o4.add_feature(Counter(object_types=["person"])`
+        
+        `while o4.next():`
+        `  value = counter_persons.get_value()`
+        `  print(value)`
+        
+        `o4.close()`
+        
+        
+        
+        
+Keywords: Detection,Tracking,Fingerprint
+Platform: UNKNOWN
