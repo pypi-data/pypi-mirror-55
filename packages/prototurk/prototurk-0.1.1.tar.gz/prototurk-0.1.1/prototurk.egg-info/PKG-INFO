@@ -1,0 +1,10 @@
+Metadata-Version: 1.2
+Name: prototurk
+Version: 0.1.1
+Summary: Simple server for rapidly prototyping Mechanical Turk interfaces
+Home-page: https://github.com/hltcoe/prototurk
+Maintainer: Craig Harman
+Maintainer-email: craig@craigharman.net
+License: BSD
+Description: UNKNOWN
+Platform: UNKNOWN
