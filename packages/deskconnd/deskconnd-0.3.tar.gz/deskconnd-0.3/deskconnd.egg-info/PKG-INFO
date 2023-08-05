@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: deskconnd
+Version: 0.3
+Summary: Secure, cross-platform IPC on the network.
+Home-page: https://github.com/deskconn/deskconnd
+Author: Omer Akram
+Author-email: om26er@gmail.com
+License: GNU GPL Version 3
+Download-URL: https://github.com/deskconn/deskconnd/tarball/0.3
+Description: UNKNOWN
+Keywords: IPC,python
+Platform: UNKNOWN
