@@ -1,0 +1,6 @@
+[console_scripts]
+novelWriter = nw:main
+
+[gui_scripts]
+novelWriter-gui = nw:main
+
