@@ -1,0 +1,3 @@
+[console_scripts]
+store = ap.store:execute
+
