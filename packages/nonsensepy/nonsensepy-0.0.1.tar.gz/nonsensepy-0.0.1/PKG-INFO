@@ -1,0 +1,105 @@
+Metadata-Version: 1.0
+Name: nonsensepy
+Version: 0.0.1
+Summary: Generates random strings
+Home-page: https://github.com/monzita/nonsensepy
+Author: Monika Ilieva
+Author-email: example@hidden.com
+License: MIT License
+Description: NonsensePy
+        ------------
+        
+        NonsensePy generates random strings.
+        
+        Installation
+        ************
+        
+        >>> pip install nonsensepy
+        
+        Documentation
+        *************
+        
+        >>> NonsensePyGen.starts_with_letter()
+        """
+        Generates a random string, where the first char of it will be a random letter.
+        The size of the string will be between 10 and 10000.
+        """
+        
+        >>> NonsensePyGen.starts_with_letter(size=100)
+        """
+        Generates a random string, where the first char of it will be a random letter.
+        The size of the string will be 100.
+        """
+        
+        >>> NonsensePyGen.starts_with_digit()
+        """
+        Generates a random string, where the first char of it will be a random digit.
+        The size of the string will be between 10 and 10000.
+        """
+        
+        >>> NonsensePyGen.starts_with_digit(size=100)
+        """
+        Generates a random string, where the first char of it will be a random digit.
+        The size of the string will be 100.
+        """
+        
+        
+        >>> NonsensePyGen.starts_with_uppercase()
+        """
+        Generates a random string, where the first char of it will be a random uppercase letter.
+        The size of the string will be between 10 and 10000.
+        """
+        
+        >>> NonsensePyGen.starts_with_uppercase(size=100)
+        """
+        Generates a random string, where the first char of it will be a random uppercase letter.
+        The size of the string will be 100.
+        """
+        
+        >>> NonsensePyGen.random()
+        """
+        Generates a random string. The size of the string will be between 10 and 10000.
+        """
+        
+        >>> NonsensePyGen.random(size=100)
+        """
+        Generates a random string. The size of the string will be between 100 and 10000.
+        """
+        
+        >>> NonsensePyGen.nrandom()
+        """
+        Generates a random string, where each of its chars is a digit. The size of the string will be between 10 and 10000.
+        """
+        
+        >>> NonsensePyGen.nrandom(size=100)
+        """
+        Generates a random string, where each of its chars is a digit. The size of the string will be 100.
+        """
+        
+        >>> NonsensePyGen.strrandom()
+        """
+        Generates a random string, where each of its chars is a letter. The size of the string will be between 10 and 10000.
+        """
+        
+        >>> NonsensePyGen.strrandom(size=100)
+        """
+        Generates a random string, where each of its chars is a letter. The size of the string will be 100.
+        """
+        
+        
+        Example
+        *******
+        
+        >>> from nonsensepy import NonsensePyGen
+        >>>
+        >>> NonsensePyGen.random()
+        qHDlCZbBvyBIIXWyjFSQwJuWHujFZNVMYSsdpUTSxXIoaoJkSQQTIVfIrOBsotZxMHfhwSawPTRRcDH
+        jnjjhwjnjEHpXhoRKliH
+        
+        
+        LICENSE
+        *******
+        
+        MIT
+Keywords: nonsensepy generator string random
+Platform: UNKNOWN

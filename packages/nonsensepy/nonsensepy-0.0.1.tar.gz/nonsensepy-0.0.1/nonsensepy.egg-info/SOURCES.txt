@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+nonsensepy/__init__.py
+nonsensepy/gen.py
+nonsensepy.egg-info/PKG-INFO
+nonsensepy.egg-info/SOURCES.txt
+nonsensepy.egg-info/dependency_links.txt
+nonsensepy.egg-info/top_level.txt
+nonsensepy.egg-info/zip-safe
+test/test_nonsense.py
