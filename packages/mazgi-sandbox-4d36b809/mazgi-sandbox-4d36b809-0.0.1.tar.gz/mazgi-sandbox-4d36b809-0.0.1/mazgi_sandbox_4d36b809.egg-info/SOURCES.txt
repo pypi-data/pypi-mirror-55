@@ -1,0 +1,17 @@
+MANIFEST.in
+README.md
+setup.py
+mazgi_sandbox_4d36b809/__init__.py
+mazgi_sandbox_4d36b809/__main__.py
+mazgi_sandbox_4d36b809/main.py
+mazgi_sandbox_4d36b809.egg-info/PKG-INFO
+mazgi_sandbox_4d36b809.egg-info/SOURCES.txt
+mazgi_sandbox_4d36b809.egg-info/dependency_links.txt
+mazgi_sandbox_4d36b809.egg-info/entry_points.txt
+mazgi_sandbox_4d36b809.egg-info/requires.txt
+mazgi_sandbox_4d36b809.egg-info/top_level.txt
+mazgi_sandbox_4d36b809/examples/config.yaml
+mazgi_sandbox_4d36b809/one/__init__.py
+mazgi_sandbox_4d36b809/one/one_class.py
+mazgi_sandbox_4d36b809/two/__init__.py
+mazgi_sandbox_4d36b809/two/two_class.py
