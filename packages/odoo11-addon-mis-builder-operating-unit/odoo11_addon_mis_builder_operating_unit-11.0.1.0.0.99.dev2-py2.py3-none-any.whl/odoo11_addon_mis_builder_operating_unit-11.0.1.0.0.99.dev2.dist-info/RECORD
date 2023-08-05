@@ -1,0 +1,16 @@
+odoo/addons/mis_builder_operating_unit/README.rst,sha256=6xH3DEkUseXQzkQFLCuckQsR31hx-f232JNHWeye1Gs,2903
+odoo/addons/mis_builder_operating_unit/__init__.py,sha256=JSZuWjkRdje4UZT0axoqwENzlA1t_OIrNCgtevhIsm4,91
+odoo/addons/mis_builder_operating_unit/__manifest__.py,sha256=CxkQBdRENSdV0LJx1ZyNVHtxJxPD1ZYuKL7SVhgnQ_s,793
+odoo/addons/mis_builder_operating_unit/model/__init__.py,sha256=7yvrq2a5Vz7zkAKh75fTyyvjFo3kSfpPkzzMyXqj2GM,97
+odoo/addons/mis_builder_operating_unit/model/mis_builder.py,sha256=o9AYRc4JfKF4LOT8jHx7l2BZPAh1nQAIO7J161uFVbQ,1723
+odoo/addons/mis_builder_operating_unit/readme/CONTRIBUTORS.rst,sha256=L_3lJmrzbe9RqsI1dp5bNrhDnE9UEA1xk9V373R84pc,47
+odoo/addons/mis_builder_operating_unit/readme/DESCRIPTION.rst,sha256=I5OHVMES8jYIAFvGamWEWToBOfgF0vHI3bfgHTFXrCU,63
+odoo/addons/mis_builder_operating_unit/readme/USAGE.rst,sha256=YnWuvpBZ54TOTU5SPM8fPzSaEqZ0_Pgw5VEaafvkf-4,50
+odoo/addons/mis_builder_operating_unit/security/mis_builder_security.xml,sha256=AEkLlbxHGpgoOX8TWsHBFfNQoq0yfTSUa4Yst0XEsMM,904
+odoo/addons/mis_builder_operating_unit/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/mis_builder_operating_unit/static/description/index.html,sha256=q_9cCG351T844n1UaNv32xM-nLUqVy4-Uy7Bg4FRfoU,12191
+odoo/addons/mis_builder_operating_unit/view/mis_builder.xml,sha256=-VXeiJqmfxaWZM9vbVPeKjSb_A6YUrNl3WROQePt5sU,2103
+odoo11_addon_mis_builder_operating_unit-11.0.1.0.0.99.dev2.dist-info/METADATA,sha256=ZlKb9_ONTYzDzaTqjyldOr3phIPrLb9cvp2JzrThC68,3661
+odoo11_addon_mis_builder_operating_unit-11.0.1.0.0.99.dev2.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+odoo11_addon_mis_builder_operating_unit-11.0.1.0.0.99.dev2.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo11_addon_mis_builder_operating_unit-11.0.1.0.0.99.dev2.dist-info/RECORD,,
