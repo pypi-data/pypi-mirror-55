@@ -1,0 +1,9 @@
+syntaxiperror/__init__.py,sha256=4YMXklBkyPmjAm_TlOQ2yieTzrVPu-aqpImVpGgz_QU,70
+syntaxiperror/__main__.py,sha256=ge74rBFCqrOLKqQS7kIv66vQKX7eguisgDhSTD1m8ig,168
+syntaxiperror/error.py,sha256=SkaemPqF1sXUAgXF9117ibo8m8PBIKGnzN_rdvgp_KM,175
+syntaxiperror/validates.py,sha256=bDAYmaQ0r8fNZgdizupYbFiRaozq9DEoENadud4JSV8,923
+syntaxiperror-0.1.dev0.dist-info/METADATA,sha256=vUmq7TrgTLWtQOz4z_eKbvDBm0qMjvAPiS6b_oP7uy8,421
+syntaxiperror-0.1.dev0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+syntaxiperror-0.1.dev0.dist-info/entry_points.txt,sha256=r9X0ppa_mtr2O0Ti8C-3yw7NhlAlGiiG-PjhtYXhGw0,65
+syntaxiperror-0.1.dev0.dist-info/top_level.txt,sha256=6dIyp8TubVZetmlFzLbTCbAmnugZlYu_qZvgI5h21sA,14
+syntaxiperror-0.1.dev0.dist-info/RECORD,,
