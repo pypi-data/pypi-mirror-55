@@ -1,0 +1,9 @@
+README.md
+setup.py
+aipi/__init__.py
+aipi/cli.py
+aipi.egg-info/PKG-INFO
+aipi.egg-info/SOURCES.txt
+aipi.egg-info/dependency_links.txt
+aipi.egg-info/entry_points.txt
+aipi.egg-info/top_level.txt
