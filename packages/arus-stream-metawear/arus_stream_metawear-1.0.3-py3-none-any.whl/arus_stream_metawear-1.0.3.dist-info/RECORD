@@ -1,0 +1,7 @@
+arus_stream_metawear/__init__.py,sha256=Y6qaSqCW2txuTApZf3UVByKY-IRHwXlMjVB_FbxH-OE,36
+arus_stream_metawear/corrector.py,sha256=f1hup6XvnOUHgtpAnG_LVlNvBJrSrqzSsXtn0RXEg-A,3037
+arus_stream_metawear/stream.py,sha256=BpACJ_zE1eTHliJ9e7kRKisxYvxAxVqSfVTRfJwgKAY,7621
+examples/use_metawear_stream.py,sha256=IpS-G1Lsv_a5AXTRxOb6eGKwtEC6B_nZoIAvqLkCwDQ,524
+arus_stream_metawear-1.0.3.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+arus_stream_metawear-1.0.3.dist-info/METADATA,sha256=rz0pBkqG52xueRb6DdW3ypxwDoP_3QEqhg02FhOpdM4,2131
+arus_stream_metawear-1.0.3.dist-info/RECORD,,
