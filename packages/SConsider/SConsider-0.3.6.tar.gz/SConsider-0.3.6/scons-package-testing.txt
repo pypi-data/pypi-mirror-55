@@ -1,0 +1,78 @@
+type -fP tox || pip install tox
+pip install -rrequirements.test.txt "scons>=2.3,<2.4"
+pip install --editable .
+cd tests/invocation/staticprog/
+LOG_CFG=../debuglog.yaml scons --3rdparty=
+
+tox -e py27-scons23 --recreate -- -k test_SConsiderStaticProgBuild -s
+
+LOG_CFG=../debuglog.yaml scons --3rdparty= --usetool=Package --package=/tmp hello --debug=pdb --tree=all -c
+
++-hello
+  +-progdir/.build/Linux_glibc_2.9-x86_64-32_optimized/hello
+  | +-progdir/.build/Linux_glibc_2.9-x86_64-32_optimized/hello.o
+  | | +-progdir/hello.cpp
+  | | +-/usr/bin/g++
+  | +-progdir/hello.sconsider
+  | +-/usr/bin/g++
+  +-apps/hello/scripts/Linux_glibc_2.9-x86_64-32_optimized/hellorunner.sh
+    +-apps/hello/bin/Linux_glibc_2.9-x86_64-32_optimized/hellorunner
+    | +-progdir/.build/Linux_glibc_2.9-x86_64-32_optimized/hello
+    | | +-progdir/.build/Linux_glibc_2.9-x86_64-32_optimized/hello.o
+    | | | +-progdir/hello.cpp
+    | | | +-/usr/bin/g++
+    | | +-progdir/hello.sconsider
+    | | +-/usr/bin/g++
+    | +-progdir/hello.sconsider
+    +-/src/SConsider/site_tools/generateScript.py
+scons: done building targets.
+
++-makepackage
+  +-Package_dummy
+  | +-hello
+  |   +-progdir/.build/Linux_glibc_2.9-x86_64-32_optimized/hello
+  |   | +-progdir/.build/Linux_glibc_2.9-x86_64-32_optimized/hello.o
+  |   | | +-progdir/hello.cpp
+  |   | | +-/usr/bin/g++
+  |   | +-progdir/hello.sconsider
+  |   | +-/usr/bin/g++
+  |   +-apps/hello/scripts/Linux_glibc_2.9-x86_64-32_optimized/hellorunner.sh
+  |     +-apps/hello/bin/Linux_glibc_2.9-x86_64-32_optimized/hellorunner
+  |     | +-progdir/.build/Linux_glibc_2.9-x86_64-32_optimized/hello
+  |     | | +-progdir/.build/Linux_glibc_2.9-x86_64-32_optimized/hello.o
+  |     | | | +-progdir/hello.cpp
+  |     | | | +-/usr/bin/g++
+  |     | | +-progdir/hello.sconsider
+  |     | | +-/usr/bin/g++
+  |     | +-progdir/hello.sconsider
+  |     +-/src/SConsider/site_tools/generateScript.py
+  +-/tmp/hello/scripts/hellorunner.sh
+  | +-apps/hello/scripts/Linux_glibc_2.9-x86_64-32_optimized/hellorunner.sh
+  |   +-apps/hello/bin/Linux_glibc_2.9-x86_64-32_optimized/hellorunner
+  |   | +-progdir/.build/Linux_glibc_2.9-x86_64-32_optimized/hello
+  |   | | +-progdir/.build/Linux_glibc_2.9-x86_64-32_optimized/hello.o
+  |   | | | +-progdir/hello.cpp
+  |   | | | +-/usr/bin/g++
+  |   | | +-progdir/hello.sconsider
+  |   | | +-/usr/bin/g++
+  |   | +-progdir/hello.sconsider
+  |   +-/src/SConsider/site_tools/generateScript.py
+  +-/tmp/hello/bin/hellorunner
+    +-apps/hello/bin/Linux_glibc_2.9-x86_64-32_optimized/hellorunner
+      +-progdir/.build/Linux_glibc_2.9-x86_64-32_optimized/hello
+      | +-progdir/.build/Linux_glibc_2.9-x86_64-32_optimized/hello.o
+      | | +-progdir/hello.cpp
+      | | +-/usr/bin/g++
+      | +-progdir/hello.sconsider
+      | +-/usr/bin/g++
+      +-progdir/hello.sconsider
+
+
+python code cleaned, gitlab based building/testing added
+
+- added/extended pylint/pytest/tox/yapf configuration
+- converted changelog and readme to asciidoc
+- merged both variants of 3rdparty buildfiles together
+- using PopenHelper instead of subprocess as it is more stable (less blocking/failing tests)
+- corrected yaml.load arguments
+- modified logging format
