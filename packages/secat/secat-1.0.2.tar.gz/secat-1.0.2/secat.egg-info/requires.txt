@@ -1,0 +1,12 @@
+Click
+tqdm
+tzlocal
+lxml
+numpy
+scipy
+pandas
+sklearn
+pyprophet
+minepy
+rpy2
+matplotlib
