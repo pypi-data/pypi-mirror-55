@@ -1,0 +1,12 @@
+README.md
+setup.py
+tk_oddbox/__init__.py
+tk_oddbox/const.py
+tk_oddbox/image_label.py
+tk_oddbox/image_menu_button.py
+tk_oddbox/images.py
+tk_oddbox/slice_var.py
+tk_oddbox.egg-info/PKG-INFO
+tk_oddbox.egg-info/SOURCES.txt
+tk_oddbox.egg-info/dependency_links.txt
+tk_oddbox.egg-info/top_level.txt
