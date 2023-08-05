@@ -1,0 +1,3 @@
+[pytest11]
+snail = pytest_snail.plugin
+
