@@ -1,0 +1,3 @@
+ariadne>=0.7.0
+uvicorn
+nodeenv
