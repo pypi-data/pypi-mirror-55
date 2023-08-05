@@ -1,0 +1,41 @@
+Metadata-Version: 2.0
+Name: RoboticsLanguage
+Version: 0.3.23
+Summary: The Robotics Language
+Home-page: http://github.com/robotcaresystems/roboticslanguage
+Author: Gabriel A. D. Lopes
+Author-email: g.a.d.lopes@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Software Development :: Compilers
+Requires-Dist: argcomplete
+Requires-Dist: argparse
+Requires-Dist: autopep8
+Requires-Dist: cloudpickle
+Requires-Dist: coloredlogs
+Requires-Dist: coverage
+Requires-Dist: dill
+Requires-Dist: dpath
+Requires-Dist: fso
+Requires-Dist: funcy
+Requires-Dist: iso-639
+Requires-Dist: jinja2
+Requires-Dist: lxml
+Requires-Dist: parsley
+Requires-Dist: pygments
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+
