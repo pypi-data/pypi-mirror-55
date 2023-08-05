@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyqttotp/__init__.py
+pyqttotp/pyqttotp.py
+pyqttotp.egg-info/PKG-INFO
+pyqttotp.egg-info/SOURCES.txt
+pyqttotp.egg-info/dependency_links.txt
+pyqttotp.egg-info/entry_points.txt
+pyqttotp.egg-info/requires.txt
+pyqttotp.egg-info/top_level.txt
