@@ -1,0 +1,11 @@
+README.md
+setup.py
+xmppy/Messenger.py
+xmppy/__init__.py
+xmppy/gpg_holder.py
+xmppy.egg-info/PKG-INFO
+xmppy.egg-info/SOURCES.txt
+xmppy.egg-info/dependency_links.txt
+xmppy.egg-info/entry_points.txt
+xmppy.egg-info/requires.txt
+xmppy.egg-info/top_level.txt
