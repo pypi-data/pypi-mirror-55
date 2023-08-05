@@ -1,0 +1,13 @@
+README.md
+setup.py
+PyJsonFriendly/__init__.py
+PyJsonFriendly/_version.py
+PyJsonFriendly/jsonfriendly.py
+PyJsonFriendly.egg-info/PKG-INFO
+PyJsonFriendly.egg-info/SOURCES.txt
+PyJsonFriendly.egg-info/dependency_links.txt
+PyJsonFriendly.egg-info/top_level.txt
+PyJsonFriendly/JsonFriendlyNumpyNDArray/__init__.py
+tests/__init__.py
+tests/test_JsonFriendlyNumpyNDArray.py
+tests/test_pyJsonFriendly.py
