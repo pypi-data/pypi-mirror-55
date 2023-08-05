@@ -1,0 +1,3 @@
+[console_scripts]
+mfp2sheets = src.mfp_sheets:main
+

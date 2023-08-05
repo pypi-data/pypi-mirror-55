@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: mfp2sheets
+Version: 0.1.0
+Summary: Copy daily MyFitnessPal data to Google Sheets
+Home-page: https://github.com/hbmartin/myfitnesspal-to-google-sheets/
+Author: Harold Martin
+Author-email: harold.martin@gmail.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/hbmartin/myfitnesspal-to-google-sheets/issues
+Description: # myfitnesspal-to-google-sheets
+        Copy daily MyFitnessPal data to Google Sheets
+        
+        Usage: `mfp_sheets.py <MFP username>`
+        
+        You need to [authorise pygsheets](https://pygsheets.readthedocs.io/en/stable/authorization.html) and [authenticate python-myfitnesspal](https://github.com/coddingtonbear/python-myfitnesspal#authentication).
+Keywords: myfitnesspal
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Typing :: Typed
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
