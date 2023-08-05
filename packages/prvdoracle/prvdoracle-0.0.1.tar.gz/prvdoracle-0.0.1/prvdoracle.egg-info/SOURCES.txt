@@ -1,0 +1,10 @@
+README.md
+setup.py
+prvdoracle/__init__.py
+prvdoracle/main.py
+prvdoracle.egg-info/PKG-INFO
+prvdoracle.egg-info/SOURCES.txt
+prvdoracle.egg-info/dependency_links.txt
+prvdoracle.egg-info/entry_points.txt
+prvdoracle.egg-info/requires.txt
+prvdoracle.egg-info/top_level.txt

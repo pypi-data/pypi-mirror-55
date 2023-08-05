@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: prvdoracle
+Version: 0.0.1
+Summary: Provide oracle base architecture and runloop
+Home-page: https://github.com/provideservices/provide-oracle
+Author: Kyle Thomas
+Author-email: kyle@provide.services
+License: UNKNOWN
+Description: # provide-oracle
+        
+        Provide oracle client for IoT applications. Proof of concept "message bus" application.
+        
+        ## Installation
+        
+        `pip install prvdoracle`
+        
+        ## pipenv
+        
+        `pipenv install` uses the Pipefile to install package dependencies.
+        
+        ## Usage
+        
+        Documentation forthcoming.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
