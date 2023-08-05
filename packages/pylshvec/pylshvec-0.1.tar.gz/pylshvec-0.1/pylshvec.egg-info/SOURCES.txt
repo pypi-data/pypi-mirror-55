@@ -1,0 +1,10 @@
+README.md
+setup.py
+pylshvec.egg-info/PKG-INFO
+pylshvec.egg-info/SOURCES.txt
+pylshvec.egg-info/dependency_links.txt
+pylshvec.egg-info/requires.txt
+pylshvec.egg-info/top_level.txt
+src/pylshvec/__init__.py
+src/pylshvec/lshvec.py
+src/pylshvec/utils.py
