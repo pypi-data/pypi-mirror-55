@@ -1,0 +1,9 @@
+README.md
+setup.py
+wp/__init__.py
+wp/cli.py
+wp.egg-info/PKG-INFO
+wp.egg-info/SOURCES.txt
+wp.egg-info/dependency_links.txt
+wp.egg-info/entry_points.txt
+wp.egg-info/top_level.txt
