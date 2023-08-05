@@ -1,0 +1,9 @@
+[
+  {
+    "name": "flask_container.api",
+    "path": "/api",
+    "fromlist": [
+      "bp"
+    ]
+  }
+]
