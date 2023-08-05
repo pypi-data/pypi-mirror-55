@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: aiofunctools
+Version: 0.0.2
+Summary: Python functools for async!
+Home-page: http://github.com/pando85/aiofunctools
+Author: Pando85
+Author-email: pand855@gmail.com
+License: GPLv3+
+Keywords: aiofunctools functools
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/markdown
+Requires-Dist: toolz (==0.10.0)
+
+[![Build Status](https://travis-ci.org/pando85/aiofunctools.svg?branch=master)](https://travis-ci.org/pando85/aiofunctools) [![License](https://img.shields.io/github/license/pando85/aiofunctools.svg)](https://github.com/pando85/aiofunctools/blob/master/LICENSE) [![Documentation Status](https://readthedocs.org/projects/aiofunctools/badge/?version=latest)](https://aiofunctools.readthedocs.io/en/latest/?badge=latest)
+# aiofunctools
+
+Library to help in Python functional programing. It’s asyncio compatible.
+
+Basic idea behind it is [Railway Oriented Programing](https://fsharpforfunandprofit.com/rop/).
+
+This allows us to:
+- simplify our code.
+- improve error management.
+- be cool! be functional!
+
+Examples:
+
+Old code example:
+
+```python
+async def create_user_handler(request) -> Response:
+    try:
+        user = check_valid_user(request)
+        create_user(user)
+    except InvalidBody:
+        return_422('Invalid body')
+    except UserAlreadyExists:
+        return_409('User already exists')
+    return_201(user)
+```
+
+
+ROP example:
+
+```python
+async def create_user_handler(request) -> Response:
+    return await compose(
+        check_valid_user,
+        create_user,
+        return_201
+    )(request)
+
+
+```
+
+
