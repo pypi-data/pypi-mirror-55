@@ -1,0 +1,5 @@
+{
+    "python.pythonPath": "/home/bram/anaconda3/envs/analytics/bin/python",
+    "restructuredtext.confPath": "${workspaceFolder}/docs",
+    "python.linting.enabled": true
+}
