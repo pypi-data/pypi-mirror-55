@@ -1,0 +1,6 @@
+README.md
+setup.py
+lopespdf.egg-info/PKG-INFO
+lopespdf.egg-info/SOURCES.txt
+lopespdf.egg-info/dependency_links.txt
+lopespdf.egg-info/top_level.txt
