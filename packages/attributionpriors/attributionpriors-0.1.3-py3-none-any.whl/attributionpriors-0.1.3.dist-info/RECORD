@@ -1,0 +1,13 @@
+attributionpriors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+attributionpriors/eager_ops.py,sha256=CTM5iVCuJ1X2lPWSpVx1jN2IFpk35WX5AVos69Qn4HA,10633
+attributionpriors/ops.py,sha256=TgvsJ6aVmLOVgtQVPJMmckk8XnzBEaGVbgaPx6KO04s,12282
+attributionpriors/mnist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+attributionpriors/mnist/mnist_download.py,sha256=eBxs-zE9BgQvvju3G-8Qe6anWYLO-Z-ohgR3fayzQNQ,3394
+attributionpriors/mnist/mnist_model.py,sha256=3gm3S4dmOTDcWMmFlX26cmuh5i0xBZgelNODdFtHfjg,1228
+attributionpriors/mnist/mnist_reader.py,sha256=dAaUziR5wRX1tTtoW9Kxk47QRTMAc9kHvJqk8iu5UVk,6502
+attributionpriors/mnist/mnist_train.py,sha256=mRD5B5Jv_y17uc6yyjdapg1bd_cO3hLLtiGhaBuehMA,7421
+attributionpriors-0.1.3.dist-info/LICENSE,sha256=mSQgEnGjBktJtNjlKxgaOmWcBDzx3iHJk2GZoEf-hT0,1081
+attributionpriors-0.1.3.dist-info/METADATA,sha256=MB_Nxx7686jGqWKHiyoTlcDjOXx7pk1Ex3EA8_emcsA,1033
+attributionpriors-0.1.3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+attributionpriors-0.1.3.dist-info/top_level.txt,sha256=pL3bdS5UdBX3c6vtPZnQ7kYd53JR-FZ2Q36I5pJaFIo,18
+attributionpriors-0.1.3.dist-info/RECORD,,
