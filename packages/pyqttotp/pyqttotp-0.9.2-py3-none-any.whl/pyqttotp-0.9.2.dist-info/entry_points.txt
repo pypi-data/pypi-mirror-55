@@ -1,0 +1,3 @@
+[console_scripts]
+pyqttotp = pyqttotp.pyqttotp:main
+
