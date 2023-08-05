@@ -1,0 +1,45 @@
+[tool.poetry]
+name = "click_trig"
+version = "0.1.7"
+description = "Simple Click app using Trigonometric functions."
+authors = ["Evan Baird <mrcartoonster@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/mrcartoonster/trig_click"
+repository = 'https://github.com/mrcartoonster/trig_click'
+keywords = ["Click", "Trigonometry"]
+classifiers = [
+    "Environment :: Console",
+    "Programming Language :: Python :: 3.7",
+    "Operating System :: MacOS :: MacOS X",
+    "Operating System :: POSIX :: Linux",
+]
+include = [
+    "README.md",
+    "LICENSE",
+    "CHANGELOG.md",
+]
+exlude = [".gitignore"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^7.0"
+emoji = "^0.5.4"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.0"
+pytest-cov = "^2.8"
+pytest-html = "^2.0"
+pytest-emoji = "^0.2.0"
+pytest-picked = "^0.4.1"
+black = {version = "^18.3-alpha.4", allows-prereleases = true}
+isort = "^4.3"
+ipython = "^7.9"
+jupyterlab = "^1.2"
+
+[tool.poetry.scripts]
+trig = 'click_trig.trig:main'
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
