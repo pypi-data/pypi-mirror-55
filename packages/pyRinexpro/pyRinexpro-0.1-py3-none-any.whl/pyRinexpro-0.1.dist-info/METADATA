@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: pyRinexpro
+Version: 0.1
+Summary: Python client for the rinexpro API
+Home-page: UNKNOWN
+Author: 
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: simplekml
+Requires-Dist: geojson
+Requires-Dist: pandas
+
+# pyRinexpro
+
+
