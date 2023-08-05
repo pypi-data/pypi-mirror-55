@@ -1,0 +1,9 @@
+README.md
+setup.py
+vlc_http.egg-info/PKG-INFO
+vlc_http.egg-info/SOURCES.txt
+vlc_http.egg-info/dependency_links.txt
+vlc_http.egg-info/requires.txt
+vlc_http.egg-info/top_level.txt
+vlchttp/__init__.py
+vlchttp/test_HTTPClient.py

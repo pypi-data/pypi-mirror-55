@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: vlc-http
+Version: 0.9.0
+Summary: An HTTP client for VLC's HTTP server.
+Home-page: https://www.github.com/dylhack/vlc-http
+Author: dylhack
+Author-email: dylhack@librem.one
+License: BSD-2-Clause
+Description: UNKNOWN
+Platform: UNKNOWN
