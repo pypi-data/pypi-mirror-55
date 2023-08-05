@@ -1,0 +1,13 @@
+keyoscacquire/VERSION,sha256=4zfiDrw1JyT-B036QojtFdc-lRq_4eFfek8muQ06Cw8,7
+keyoscacquire/__init__.py,sha256=TvPjx9sFq4xOGy5I9MvvgP1WVRf_DfhpSl4BGuRyvdk,469
+keyoscacquire/__main__.py,sha256=XlLB41DwKo4jcRBlxCtiy3xC-8PJWVxHV6gdGHzIsVA,258
+keyoscacquire/config.py,sha256=ni7bI2703TuCHIis74upO66ypN58Swy6ABfk001jGQ0,1360
+keyoscacquire/installed_cli_programmes.py,sha256=C2iPTNucBTh4BXM26EpLf1-D6PLBe-1fDl_SwzQ-HpI,9528
+keyoscacquire/oscacq.py,sha256=v2tBma6W1oGku15FJqC_XOH3gJJ-m9uNJqFM7IspovA,44690
+keyoscacquire/programmes.py,sha256=TdKETmCrTl8ca8kBjaOTFuXG_uYX0upBMZrznqQwl2M,10427
+keyoscacquire-3.0.1.dist-info/LICENSE.md,sha256=hEFsWIuhacCUg4k1p0wh8ZMiRjAuiVgs9tVqIBcplWE,1073
+keyoscacquire-3.0.1.dist-info/METADATA,sha256=DaOrQfgdqtU0Boa5DKOj0Y6JaxcuHUftE4Zxn4lhiM0,2555
+keyoscacquire-3.0.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+keyoscacquire-3.0.1.dist-info/entry_points.txt,sha256=NkCFbXofTJaZMa1REtqwqzohE4GCpac6WpaUAuG2-44,505
+keyoscacquire-3.0.1.dist-info/top_level.txt,sha256=GBYIqhYghR6SPTICb5thEeQXvNel6BsbibDuRrotFgk,14
+keyoscacquire-3.0.1.dist-info/RECORD,,
