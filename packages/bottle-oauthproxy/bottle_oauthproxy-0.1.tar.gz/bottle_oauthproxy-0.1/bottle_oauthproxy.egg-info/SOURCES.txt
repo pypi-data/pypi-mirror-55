@@ -1,0 +1,12 @@
+README.md
+setup.py
+bottle_oauthproxy/__init__.py
+bottle_oauthproxy/authenticator.py
+bottle_oauthproxy/client.py
+bottle_oauthproxy/provider.py
+bottle_oauthproxy/server.py
+bottle_oauthproxy.egg-info/PKG-INFO
+bottle_oauthproxy.egg-info/SOURCES.txt
+bottle_oauthproxy.egg-info/dependency_links.txt
+bottle_oauthproxy.egg-info/requires.txt
+bottle_oauthproxy.egg-info/top_level.txt

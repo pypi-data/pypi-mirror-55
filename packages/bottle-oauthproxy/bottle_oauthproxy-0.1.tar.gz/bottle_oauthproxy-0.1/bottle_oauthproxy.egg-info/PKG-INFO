@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: bottle-oauthproxy
+Version: 0.1
+Summary: oauth2 proxy server, client and authenticator for bottle server
+Home-page: https://github.com/ahelsayd/bottle-oauthproxy
+Author: Ahmed El-Sayed
+Author-email: ahmed.m.elsayed93@gmail.com
+License: UNKNOWN
+Description: ## bottle-oauthproxy
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
