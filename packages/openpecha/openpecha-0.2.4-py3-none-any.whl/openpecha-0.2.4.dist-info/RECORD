@@ -1,0 +1,12 @@
+openpecha/__init__.py,sha256=t5V36iueCn8paKOYb80uo8-ZFWMI7eJAfby13XG5Qxc,60
+openpecha/blupdate.py,sha256=LkN-3KcvkDJFpmFqGflW6A4UMsmZeNbmb-Sd7MX2hqY,8027
+openpecha/cli.py,sha256=QtC3nW9RPDqBVws_oXBYAlr8Es9qN2icdbreF6ifSHs,10856
+openpecha/formatter.py,sha256=wXlDU5ilnqNuIDTmJeZ6RPOhIqDJypNE7BMTA7j62us,5864
+openpecha/serialize.py,sha256=6RTc1AJlV-RCgJ30iH1JomtWLlU0QZEYhWe3aSw1nPQ,5213
+openpecha/serializemd.py,sha256=FErBDftPlQt-e4nCVKFufAv7a4tG1Hx6PPPqRdKDxtg,1330
+openpecha-0.2.4.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+openpecha-0.2.4.dist-info/METADATA,sha256=PqXgq2o_iMbkUAL48A5iiDvgPBKhGFb8K7rb5yzFKtY,3749
+openpecha-0.2.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+openpecha-0.2.4.dist-info/entry_points.txt,sha256=QupDp9nLaapJgebyCAN2YwJqQlQ0VJS4i-oxuyUfLH4,49
+openpecha-0.2.4.dist-info/top_level.txt,sha256=ZZJ8yr5H2TiTA6ETlWDMaGUrR32G8MPhRfoxTLqgCM0,10
+openpecha-0.2.4.dist-info/RECORD,,
