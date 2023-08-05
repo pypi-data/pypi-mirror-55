@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: solavis
+Version: 0.1a1.dev001
+Summary: lightweight async crawler framework
+Home-page: https://github.com/jstzwj/solavis.git
+Author: JunWang
+Author-email: jstzwj@aliyun.com
+License: MIT
+Description: UNKNOWN
+Keywords: crawler
+Platform: UNKNOWN
