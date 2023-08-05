@@ -1,0 +1,12 @@
+README.rst
+setup.py
+flattree/__init__.py
+flattree/core.py
+flattree/mainclass.py
+flattree.egg-info/PKG-INFO
+flattree.egg-info/SOURCES.txt
+flattree.egg-info/dependency_links.txt
+flattree.egg-info/top_level.txt
+tests/__init__.py
+tests/conftest.py
+tests/test_flattree_defaults.py
