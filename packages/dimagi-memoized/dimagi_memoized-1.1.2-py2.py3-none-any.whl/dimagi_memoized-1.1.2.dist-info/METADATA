@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: dimagi-memoized
+Version: 1.1.2
+Summary: A simple memoization decorator that's also memory efficient on instance methods
+Home-page: https://github.com/dimagi/memoized
+Author: Dimagi
+Author-email: dev@dimagi.com
+License: BSD-3
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: test
+Requires-Dist: nose ; extra == 'test'
+
+# memoized
+A simple memoization decorator that's also memory efficient on instance methods
+
+
