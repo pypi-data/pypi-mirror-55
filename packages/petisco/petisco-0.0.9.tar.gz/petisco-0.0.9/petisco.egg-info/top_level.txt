@@ -1,0 +1,9 @@
+petisco
+petisco/application
+petisco/controller
+petisco/controller/errors
+petisco/controller/jwt
+petisco/frameworks/flask
+petisco/frameworks/flask/application
+petisco/logger
+petisco/use_case
