@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/colonyscanalyser.egg-info/PKG-INFO
+src/colonyscanalyser.egg-info/SOURCES.txt
+src/colonyscanalyser.egg-info/dependency_links.txt
+src/colonyscanalyser.egg-info/entry_points.txt
+src/colonyscanalyser.egg-info/not-zip-safe
+src/colonyscanalyser.egg-info/requires.txt
+src/colonyscanalyser.egg-info/top_level.txt
