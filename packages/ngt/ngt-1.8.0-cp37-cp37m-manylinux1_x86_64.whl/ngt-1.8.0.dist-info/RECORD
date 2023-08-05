@@ -1,0 +1,9 @@
+ngtpy.cpython-37m-x86_64-linux-gnu.so,sha256=Xrr4UhWGVhv7-Wa1a6eGRXdJ7JSluf9JRxq6Oghr_Fw,6256944
+ngt/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ngt/base.py,sha256=0YL61tpHnYb6jxu2QkyBDE5naqP2ecWZU-s05iFRd1A,18457
+ngt-1.8.0.dist-info/top_level.txt,sha256=mUjg2zG_FhV7ZmJ-32KY5tQUsBPhf_JNQLa7IxD2pVQ,10
+ngt-1.8.0.dist-info/WHEEL,sha256=AhV6RMqZ2IDfreRJKo44QWYxYeP-0Jr0bezzBLQ1eog,109
+ngt-1.8.0.dist-info/METADATA,sha256=3XZUJeIEHpkXVWA3NvRKHKhAyo9rNaFGGP21LG9ATXM,2560
+ngt-1.8.0.dist-info/RECORD,,
+.libsngtpy/libgomp-3300acd3.so.1.0.0,sha256=UeFYIEVyYUmIk-yi0ZDaTDMquk1yirgJwwQOQlWv1NU,63024
+.libsngtpy/libngt-d7e2659a.so.1.8.0,sha256=AHn8wEmOBg1SlqunYU6XymyIkzYRJq_FmDZueh5LoQ8,998208
