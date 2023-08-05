@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: mcrops
+Version: 0.1.0
+Summary: A small library for processing images of agricultural fields.
+Home-page: https://github.com/raikel/mcrops
+Author: Raikel Bordon
+Author-email: raikelbl@gmail.com
+License: MIT
+Description: A small library for processing images of agricultural fields.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown

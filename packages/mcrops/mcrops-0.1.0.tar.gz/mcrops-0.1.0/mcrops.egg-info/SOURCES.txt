@@ -1,0 +1,13 @@
+MANIFEST.in
+README.rst
+setup.py
+mcrops/__init__.py
+mcrops/rows.py
+mcrops/utils.py
+mcrops/veget.py
+mcrops/weeds.py
+mcrops.egg-info/PKG-INFO
+mcrops.egg-info/SOURCES.txt
+mcrops.egg-info/dependency_links.txt
+mcrops.egg-info/requires.txt
+mcrops.egg-info/top_level.txt
