@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: click-trig
+Version: 0.1.4
+Summary: Simple Click app using Trigonometric functions.
+Home-page: https://github.com/mrcartoonster/trig_click
+License: MIT
+Keywords: Click,Trigonoetry
+Author: Evan Baird
+Author-email: mrcartoonster@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: emoji (>=0.5.4,<0.6.0)
+Requires-Dist: ipython (>=7.9,<8.0)
+Requires-Dist: jupyterlab (>=1.2,<2.0)
+Project-URL: Repository, https://github.com/mrcartoonster/trig_click
