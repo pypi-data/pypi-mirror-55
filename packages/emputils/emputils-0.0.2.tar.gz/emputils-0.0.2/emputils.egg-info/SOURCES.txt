@@ -1,0 +1,8 @@
+README.md
+setup.py
+emputils/__init__.py
+emputils/patterngenerator.py
+emputils.egg-info/PKG-INFO
+emputils.egg-info/SOURCES.txt
+emputils.egg-info/dependency_links.txt
+emputils.egg-info/top_level.txt
