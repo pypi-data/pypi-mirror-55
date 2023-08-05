@@ -1,0 +1,25 @@
+import configparser
+import redcapy
+
+config = configparser.ConfigParser()
+config.read("config.cfg")
+
+redcap_config = config["REDCAP"]
+api_url = redcap_config["url"]
+token = redcap_config["token"]
+
+redcap_handler = redcapy.request.APIHandler(api_url=api_url, token=token)
+#metadata = redcap_handler.get_metadata()
+#redcap_version = redcap_handler.get_redcap_version()
+#users = redcap_handler.get_users()
+# arms = redcap_handler.get_arms()
+# events = redcap_handler.get_events()
+#field_names = redcap_handler.get_field_names()
+#file = redcap_handler.get_file(record=1)
+#form_event_mapping = redcap_handler.get_form_event_mapping()
+#instruments_pdf = redcap_handler.get_instruments_pdf(output_file="./instruments.pdf")
+#instruments = redcap_handler.get_instruments()
+#project = redcap_handler.get_project_info()
+records = redcap_handler.get_records()
+#report = redcap_handler.get_reports(1)
+#participant_list = redcap_handler.get_participant_list(instrument=instruments[-1]['instrument_name'])

@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: redcapy
+Version: 0.1
+Summary: Python package to access REDCAP API
+Home-page: https://gitlab.com/unaisaralegui/redcapy
+Author: Unai Saralgui
+Author-email: usaralegui@gmail.com
+License: UNKNOWN
+Description: # redcapy
+        
+        Library for accessing RedCap API from Python
+        
+        ## Installation
+        
+        Install the package with pip directly from this repository with:
+        
+        ```console
+        pip install git+https://gitlab.com/unaisaralegui/redcapy@pip-repo#egg=redcapy
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
