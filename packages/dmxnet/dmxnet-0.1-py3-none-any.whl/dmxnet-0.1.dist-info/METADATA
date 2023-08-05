@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: dmxnet
+Version: 0.1
+Summary: Send DMX data over the network.
+Home-page: https://github.com/basementcat/dmxnet
+Author: BasementCat
+License: MIT License
+Keywords: DMX USB Lighting
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Description-Content-Type: text/markdown
+Requires-Dist: crc8
+Provides-Extra: dmxpy
+Requires-Dist: dmxpy ; extra == 'dmxpy'
+
+# DMX Net
+
+Send DMX data over the network.
+
+## Supported Protocols:
+
+  * ESP - https://dol2kh495zr52.cloudfront.net/pdf/misc/ESP_protocol.pdf
+
+## Future Goals
+
+  * Documentation
+  * Add ArtNet
+
