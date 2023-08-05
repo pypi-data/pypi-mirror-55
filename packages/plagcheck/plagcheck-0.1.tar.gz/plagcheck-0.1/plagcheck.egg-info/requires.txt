@@ -1,0 +1,4 @@
+requests
+mosspy
+beautifulsoup4
+lxml
