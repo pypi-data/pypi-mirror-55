@@ -1,0 +1,25 @@
+13:21:52       root   ERROR    test_2() - Hi from logging.yaml config file
+13:30:23       root   ERROR    test_2() - Hi from logging.yaml config file
+13:30:33       root   ERROR    test_2() - Hi from logging.yaml config file
+16:13:39       root   ERROR    test_2() - Hi from logging.yaml config file
+16:18:49       root   ERROR    test_2() - Hi from logging.yaml config file
+16:21:28       root   ERROR    test_2() - Hi from logging.yaml config file
+16:45:49       root WARNING    test_2() - hello
+16:45:49       root   ERROR    test_2() - Hi from logging.yaml config file
+17:44:16       root WARNING    test_2() - hello
+17:44:29       root   ERROR    test_2() - Hi from logging.yaml config file
+17:45:07       root WARNING    test_2() - hello
+17:45:07       root   ERROR    test_2() - Hi from logging.yaml config file
+19:18:40       root WARNING    test_2() - hello
+19:21:15       root   ERROR    test_2() - Hi from logging.yaml config file
+19:35:02       root WARNING    test_2() - hello
+19:35:02       root   ERROR    test_2() - Hi from logging.yaml config file
+19:35:20       root WARNING    test_2() - hello
+19:35:20       root   ERROR    test_2() - Hi from logging.yaml config file
+19:39:49       root WARNING    test_2() - hello
+19:39:49       root   ERROR    test_2() - Hi from logging.yaml config file
+19:40:25       root WARNING    test_2() - hello
+19:40:25       root   ERROR    test_2() - Hi from logging.yaml config file
+19:44:45       root WARNING    test_2() - hello
+19:44:45       root   ERROR    test_2() - Hi from logging.yaml config file
+19:44:45       root WARNING    test_2() - hello
