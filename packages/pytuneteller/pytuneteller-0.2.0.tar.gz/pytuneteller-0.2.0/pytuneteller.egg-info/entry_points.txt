@@ -1,0 +1,3 @@
+[console_scripts]
+pytuneteller = pytuneteller.cli:main
+
