@@ -1,0 +1,9 @@
+taskwarrior2net/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taskwarrior2net/edges.py,sha256=EUmi_iaFzV1WowlAhvM44Spgun_7W2CaMTqCJu-8ry0,5565
+taskwarrior2net/net2dot.py,sha256=UIQy8wNxKMcwjNZbEXQQ_QviwjMGeZIvSBOv3ixaToI,2365
+taskwarrior2net/task_lib.py,sha256=_TXzO_PotmjdDZPEhyiKB-OIiyH96HvaZ7YdB6iiFdA,2760
+task2dot-0.0.1.dist-info/LICENSE,sha256=UvuYgKuUDtKuc-8S9ZdrFpSVRES2xyTvcT5nYvsoqvg,647
+task2dot-0.0.1.dist-info/METADATA,sha256=wq0GljiPlAo1BFYu6ZpSAd_lBtQW5bv8mJm6mm3sTeg,4180
+task2dot-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+task2dot-0.0.1.dist-info/top_level.txt,sha256=hbcnb1Zzi1yHki7H8tjFLhOqkfjXvyPVgbcul2735Jo,16
+task2dot-0.0.1.dist-info/RECORD,,
