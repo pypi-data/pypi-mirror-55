@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: transit-chem
+Version: 0.5.0
+Summary: A Transit chem
+Home-page: https://github.com/ecurtin2/transit-chem
+Author: Evan Curtin
+Author-email: evanmcurtin@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.4.0
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: numba
+Requires-Dist: numpy
+Requires-Dist: scipy
+Provides-Extra: all
+Requires-Dist: pytest ; extra == 'all'
+Requires-Dist: pytest-cov ; extra == 'all'
+Requires-Dist: black ; extra == 'all'
+Requires-Dist: isort ; extra == 'all'
+Requires-Dist: hypothesis ; extra == 'all'
+Requires-Dist: flake8 ; extra == 'all'
+Requires-Dist: tox ; extra == 'all'
+Requires-Dist: pip ; extra == 'all'
+Requires-Dist: coverage ; extra == 'all'
+Requires-Dist: mypy ; extra == 'all'
+Requires-Dist: IPython ; extra == 'all'
+Requires-Dist: nbsphinx ; extra == 'all'
+Requires-Dist: sphinx ; extra == 'all'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'all'
+Requires-Dist: sphinx-bootstrap-theme ; extra == 'all'
+Provides-Extra: dev
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: isort ; extra == 'dev'
+Requires-Dist: hypothesis ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: pip ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Provides-Extra: doc
+Requires-Dist: IPython ; extra == 'doc'
+Requires-Dist: nbsphinx ; extra == 'doc'
+Requires-Dist: sphinx ; extra == 'doc'
+Requires-Dist: sphinx-autodoc-typehints ; extra == 'doc'
+Requires-Dist: sphinx-bootstrap-theme ; extra == 'doc'
+
+A Transit chem
+
+
