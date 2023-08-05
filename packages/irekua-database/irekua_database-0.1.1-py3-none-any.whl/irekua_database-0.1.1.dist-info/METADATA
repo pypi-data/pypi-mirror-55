@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: irekua-database
+Version: 0.1.1
+Summary: Model definitions for Irekua
+Home-page: https://github.com/CONABIO-audio/irekua-database
+Author: CONABIO, Gustavo Everardo Robredo Esquivelzeta, Santiago Martínez Balvanera
+Author-email: erobredo@conabio.gob.mx, smartinez@conabio.gob.mx
+License: BSD License
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 2.1
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Dist: django (<3,>=2.2.4)
+Requires-Dist: psycopg2-binary
+Requires-Dist: jsonschema
+Requires-Dist: sorl-thumbnail
+Requires-Dist: pycountry
+Requires-Dist: Pillow
+
+UNKNOWN
+
+
