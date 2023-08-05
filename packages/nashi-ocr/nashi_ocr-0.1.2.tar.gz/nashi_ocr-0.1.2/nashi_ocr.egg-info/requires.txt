@@ -1,0 +1,7 @@
+requests
+h5py
+numpy
+lxml
+pillow
+scikit-image
+calamari_ocr
