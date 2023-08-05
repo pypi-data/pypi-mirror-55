@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: routingpy
+Version: 0.2.4
+Summary: One lib to route them all.
+Author: Nils Nolde
+Author-email: nils@gis-ops.com
+Requires-Python: >=3.5,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: requests (>=2.0.0,<3.0.0)
