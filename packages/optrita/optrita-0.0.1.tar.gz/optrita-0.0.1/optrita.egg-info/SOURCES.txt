@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+optrita/__init__.py
+optrita.egg-info/PKG-INFO
+optrita.egg-info/SOURCES.txt
+optrita.egg-info/dependency_links.txt
+optrita.egg-info/requires.txt
+optrita.egg-info/top_level.txt
+optrita/linesearch/__init__.py
+optrita/linesearch/base.py
