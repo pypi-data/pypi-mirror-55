@@ -1,0 +1,3 @@
+[console_scripts]
+ehelplygen = ehelply_generator.ehelply_gen:ehelplygen
+

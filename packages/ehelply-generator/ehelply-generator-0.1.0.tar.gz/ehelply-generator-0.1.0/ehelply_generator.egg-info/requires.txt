@@ -1,0 +1,6 @@
+pytest
+sqlalchemy
+pydantic
+python-slugify
+ehelply_bootstrapper
+click
