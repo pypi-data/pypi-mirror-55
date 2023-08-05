@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pyhtmd
+Version: 0.1.0
+Summary: A Python HTML to Markdown parser
+Home-page: https://github.com/veaba/pyhtmd
+Author: veaba
+Author-email: godpu@outlook.com
+License: UNKNOWN
+Description: A Python HTML to Markdown parser, without using any third-party dependency.（一款Python版本的HTML转markdown解析器，不使用任何第三方工具）
+Keywords: html,markdown,parser,pyhtmd
+Platform: any
