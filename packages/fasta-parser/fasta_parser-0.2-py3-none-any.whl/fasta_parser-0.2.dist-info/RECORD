@@ -1,0 +1,9 @@
+FASTA_parser/__init__.py,sha256=_oyUV3iYBSKhZGukWSuqo5L96Nyh417a3SqdUik_n5M,58
+FASTA_parser/command_line.py,sha256=XzlSaNNSw-kQZ0diZyhEuu_pr2hvm_w6VRecFOa4uPs,61
+FASTA_parser/fasta.py,sha256=h8yF9f0QvoE2DGXrzzudXIaLYixP7EiJC1UAL_DFIEU,824
+fasta_parser/__init__.py,sha256=07mp1lIWAKzWsGMc-ECN6P17XJ4revR1ErE89-cPl04,32
+fasta_parser/fasta.py,sha256=U9PQZa6A8klcfw8LSnCV0_YTc-pC1ZSst_75OeHy9ZM,1093
+fasta_parser-0.2.dist-info/METADATA,sha256=_gQ8LuR0EnzoowMLcy9URoK9CpeufTu_IfmoC4-3h_k,502
+fasta_parser-0.2.dist-info/RECORD,,
+fasta_parser-0.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+fasta_parser-0.2.dist-info/top_level.txt,sha256=ZSnM_S45-I-OSC2Lz64CNLZlRjZhMWMCsYnyOseJ50g,13
