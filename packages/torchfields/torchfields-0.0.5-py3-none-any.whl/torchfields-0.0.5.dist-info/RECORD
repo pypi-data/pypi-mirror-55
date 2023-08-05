@@ -1,0 +1,12 @@
+torchfields/__init__.py,sha256=HQhD2W7O4AzCjZQ3oXGNngtgVhlpcUFnyQVenAmT2Bw,81
+torchfields/fields.py,sha256=TxX9zeK3BDb3lRQi97O7Ww_HtZgMNzUvyCj56_jdGSs,36586
+torchfields/inversion.py,sha256=Oca2a1FMzgIgN-RLPIQ7GctZkH7MyMtffKUTHII7NY8,11911
+torchfields/utils.py,sha256=5jA-hTnzrHnQCGicmf3yf2qWE71y3n7RW0BFsCo7Tig,5868
+torchfields/voting.py,sha256=VYulkn_umOMhAg5Io7TQ7huxO30yTqXgkF5rZG9pfIY,3489
+torchfields-0.0.5.dist-info/AUTHORS,sha256=e68GZuiq_-20ffCchZJCmgdqkw2O-Ay7oA-9N5Q0iVM,137
+torchfields-0.0.5.dist-info/LICENSE,sha256=WB23fic7aZXsFn-TQwJwlnTlEEnMJY6rca6u_WqS--E,1070
+torchfields-0.0.5.dist-info/METADATA,sha256=d9MmmA98x-655Fx5gsNNQLTH2-_b93ITjnysx4x_I-M,4962
+torchfields-0.0.5.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+torchfields-0.0.5.dist-info/pbr.json,sha256=P96xHoANFv7wbA8MPg2_VViv0TD23F8X3JOKxDlOwH0,46
+torchfields-0.0.5.dist-info/top_level.txt,sha256=N5rpiA_LOtXXrm59vCs41dZsKYIrI3oiT1Yu-EPvopE,12
+torchfields-0.0.5.dist-info/RECORD,,
