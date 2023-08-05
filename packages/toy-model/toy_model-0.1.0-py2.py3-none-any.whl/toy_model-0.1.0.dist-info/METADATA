@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: toy-model
+Version: 0.1.0
+Summary: A simple library to create ODE based models.
+Home-page: http://github.com/fabiommendes/toy-model
+License: UNKNOWN
+Author: Fábio Macêdo Mendes
+Author-email: fabiomacedomendes@gmail.com
+Classifier: License :: OSI Approved :: MIT License
