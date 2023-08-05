@@ -1,0 +1,7 @@
+README.md
+setup.py
+mailipy/__init__.py
+mailipy.egg-info/PKG-INFO
+mailipy.egg-info/SOURCES.txt
+mailipy.egg-info/dependency_links.txt
+mailipy.egg-info/top_level.txt
