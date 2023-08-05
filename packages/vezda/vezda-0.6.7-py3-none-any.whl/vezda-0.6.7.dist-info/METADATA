@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: vezda
+Version: 0.6.7
+Summary: A set of command-line tools for imaging with the linear sampling method and Lippmann-Schwinger inversion
+Home-page: https://github.com/aaronprunty/vezda
+Author: Aaron C. Prunty
+License: Apache License, Version 2.0
+Keywords: imaging shape reconstruction boundary detection linear sampling method
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Physics
+Requires-Python: >=3
+Requires-Dist: argparse
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: pathlib
+Requires-Dist: scipy
+Requires-Dist: scikit-image
+Requires-Dist: tqdm
+
+UNKNOWN
+
+
