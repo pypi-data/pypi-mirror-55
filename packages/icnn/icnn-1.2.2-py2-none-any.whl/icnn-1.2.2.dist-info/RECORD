@@ -1,0 +1,12 @@
+icnn/__init__.py,sha256=BHorDifs2knqV9m1nnkENi2zHzQkA8JyqDN_elnG7e4,11
+icnn/icnn_dgn_gd.py,sha256=SeCypVjP_IqMcUcTdYI15wIfR5qliNrO6dKuPma7Y2c,12183
+icnn/icnn_dgn_lbfgs.py,sha256=r25yzNqHg1iYNyQNSYQn7tF5Wm_axa_rSs_UE3WnsYA,11336
+icnn/icnn_gd.py,sha256=6XgOxmpTztPN169Zr3onSciY_O9mZRVJcdSdynXEebI,16124
+icnn/icnn_lbfgs.py,sha256=WDBL-sLHWFKtjBI4ezpXRQgYmySOYOqowvER4fjyyWo,8073
+icnn/loss.py,sha256=OTGwVY3ag5CD7jOL0QWiv88al6cwNydTSN6lTno2ZVs,1349
+icnn/utils.py,sha256=ERdmyyyMOMhyz2hzZWwauLlei06Kt27zSlq9jRjf3ew,9607
+icnn-1.2.2.dist-info/LICENSE,sha256=XNy1pMKJmvv13G1Eeaqt-20sFlrHojUcRenew14t24Q,1112
+icnn-1.2.2.dist-info/METADATA,sha256=0xSnP69r2Ul704VtLy3yYXTimop-KZ1wcxaBuCcIjtY,10337
+icnn-1.2.2.dist-info/WHEEL,sha256=ZvfnntGaZglpRLAKVkx18HrxfMwCXrA0b-ARJVnnMrw,92
+icnn-1.2.2.dist-info/top_level.txt,sha256=MSnzbEeyH0ocQCjVbzvkuzWZltDrLApc2lxokb8bUdI,5
+icnn-1.2.2.dist-info/RECORD,,
