@@ -1,0 +1,4 @@
+click
+jog
+mysqlclient
+prometheus-client>=0.6.0
