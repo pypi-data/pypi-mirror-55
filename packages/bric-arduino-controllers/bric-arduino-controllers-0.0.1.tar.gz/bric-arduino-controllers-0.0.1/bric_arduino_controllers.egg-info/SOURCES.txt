@@ -1,0 +1,10 @@
+README.md
+setup.py
+bric_arduino_controllers/__init__.py
+bric_arduino_controllers.egg-info/PKG-INFO
+bric_arduino_controllers.egg-info/SOURCES.txt
+bric_arduino_controllers.egg-info/dependency_links.txt
+bric_arduino_controllers.egg-info/requires.txt
+bric_arduino_controllers.egg-info/top_level.txt
+bric_arduino_controllers/arduino_scpi_controller/__init__.py
+bric_arduino_controllers/arduino_scpi_controller/arduino_scpi_controller.py

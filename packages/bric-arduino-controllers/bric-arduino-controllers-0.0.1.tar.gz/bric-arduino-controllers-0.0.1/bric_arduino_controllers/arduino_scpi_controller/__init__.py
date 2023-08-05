@@ -1,0 +1,2 @@
+# from bric_arduino_controllers.arduino_scpi_controller import Arduino_SCPI_Instrument as Instrument
+from bric_arduino_controllers.arduino_scpi_controller.arduino_scpi_controller import Arduino_SCPI_Instrument as Instrument

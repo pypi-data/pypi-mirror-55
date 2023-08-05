@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: bric-arduino-controllers
+Version: 0.0.1
+Summary: Packages for controlling Arduino devices.
+Home-page: https://github.com/bicarlsen/bric-arduino-controllers
+Author: Brian Carlsen
+Author-email: carlsen.bri@gmail.com
+License: UNKNOWN
+Description: # Arduino Controllers
+        > Install with python -m pip install bric_arduino_controllers
+        
+        Implements different types of Arduino controllers.
+        
+        ## JSON Controller
+        
+        
+        ## SCPI Controller
+Keywords: arduino,scpi
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Description-Content-Type: text/markdown
