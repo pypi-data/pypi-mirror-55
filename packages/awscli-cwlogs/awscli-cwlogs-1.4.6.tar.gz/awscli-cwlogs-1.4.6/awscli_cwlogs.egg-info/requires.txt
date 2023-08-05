@@ -1,0 +1,4 @@
+awscli>=1.11.41
+requests>=2.18.0
+six>=1.1.0
+python-dateutil>=2.1
