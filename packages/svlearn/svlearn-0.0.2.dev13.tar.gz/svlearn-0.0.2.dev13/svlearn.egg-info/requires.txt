@@ -1,0 +1,12 @@
+markdown
+numpy
+pandas
+sklearn
+scipy
+matplotlib
+seaborn
+statsmodels
+keras
+IPython
+missingno
+category_encoders
