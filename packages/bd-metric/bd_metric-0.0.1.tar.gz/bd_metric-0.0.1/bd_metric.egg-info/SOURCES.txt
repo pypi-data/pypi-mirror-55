@@ -1,0 +1,8 @@
+README.md
+setup.py
+bd_metric/__init__.py
+bd_metric/bjontegaard_metric.py
+bd_metric.egg-info/PKG-INFO
+bd_metric.egg-info/SOURCES.txt
+bd_metric.egg-info/dependency_links.txt
+bd_metric.egg-info/top_level.txt
