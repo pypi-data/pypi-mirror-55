@@ -1,0 +1,9 @@
+README.md
+setup.py
+literacy/__init__.py
+literacy/clean.py
+literacy.egg-info/PKG-INFO
+literacy.egg-info/SOURCES.txt
+literacy.egg-info/dependency_links.txt
+literacy.egg-info/not-zip-safe
+literacy.egg-info/top_level.txt
