@@ -1,0 +1,16 @@
+behold/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+behold/behold.py,sha256=eUzpqnF6Qt1wYn2Sf7hhmt2YPhq8zREf1nazP3VLQfs,4638
+behold/libs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+behold/libs/athena.py,sha256=23qUYBS_oxWuonMDLsb6QSIlscGnPWeV7aS88rbDHHU,7180
+behold/libs/athena_query_strings.py,sha256=Ebeqf-dXc-GD3T_jrju5XR7GKokrAm9B4XvCUF_V-qE,4666
+behold/libs/csv_parser.py,sha256=IvJSHeVyi_1NDVfMkyVM0wYNUwXnxKY89PFUlQe2644,697
+behold/libs/metadata.py,sha256=x8vImCl8uSd4rVcfbkeHSvbEKThYgVTi0G3YMqiUDAY,2357
+behold/libs/policy_generator.py,sha256=aHYVK3P8zUgblRIolRUxl85OI1Idw9m_jERfYY7Knfk,2423
+behold/libs/s3.py,sha256=UgGzLJblkMaZRabAatHzYljn7Btwdz199ic2GCwm4S0,1580
+behold/libs/utils.py,sha256=SoW4PFH68BNTGI6Ay76RU_qxs03ub7Md9cYbG50FFd4,1074
+beholdiam-1.0.6.dist-info/LICENSE,sha256=Y6-1DXuxccarzxwcLmMKuelEuyMTpm-q3Uu1wk2wFG8,1068
+beholdiam-1.0.6.dist-info/METADATA,sha256=PAzcUbi4DVNTHG1N83OmTpNvDSMyD0fo3yoDGY85ZeQ,377
+beholdiam-1.0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+beholdiam-1.0.6.dist-info/entry_points.txt,sha256=h0cpupjLjUEHEO_G6QXRIdEy0-2njdzqJH8xbTe706Q,47
+beholdiam-1.0.6.dist-info/top_level.txt,sha256=-q208eK20NppWcnS4qnHYraysFdsYAF_aYBtlrNGeaY,7
+beholdiam-1.0.6.dist-info/RECORD,,
