@@ -1,0 +1,6 @@
+pyyaml
+coreapi
+ipython
+gitpython
+docker
+jinja2
