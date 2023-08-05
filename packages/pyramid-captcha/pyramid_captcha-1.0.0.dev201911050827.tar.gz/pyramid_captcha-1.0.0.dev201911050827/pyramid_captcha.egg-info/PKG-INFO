@@ -1,0 +1,33 @@
+Metadata-Version: 1.1
+Name: pyramid-captcha
+Version: 1.0.0.dev201911050827
+Summary: Pyramid Captcha
+Home-page: https://gitlab.com/geo-bl-ch/pyramid-captcha
+Author: Karsten Deininger
+Author-email: karsten.deininger@bl.ch
+License: UNKNOWN
+Description: Pyramid Captcha
+        ===============
+        
+        Provide captchas for use with pyramid.
+        
+        
+        Changelog
+        =========
+        
+        1.0.0
+        -----
+        
+        https://gitlab.com/geo-bl-ch/pyramid-captcha/-/milestones/1
+        
+        - Configurable captcha length
+        - Initial version
+        
+Keywords: web pyramid captcha
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Framework :: Pyramid
+Classifier: Topic :: Internet :: WWW/HTTP
