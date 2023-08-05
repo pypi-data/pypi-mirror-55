@@ -1,0 +1,10 @@
+README.md
+setup.py
+supaharrisclient/__init__.py
+supaharrisclient/client.py
+supaharrisclient/utils.py
+supaharrisclient.egg-info/PKG-INFO
+supaharrisclient.egg-info/SOURCES.txt
+supaharrisclient.egg-info/dependency_links.txt
+supaharrisclient.egg-info/requires.txt
+supaharrisclient.egg-info/top_level.txt
