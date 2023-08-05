@@ -1,0 +1,42 @@
+Metadata-Version: 2.1
+Name: pymdown-env
+Version: 1.0.0
+Summary: pymdown extension to inline replace environment variables
+Home-page: https://github.com/skirsten/pymdown-env
+Author: Simon Kirsten
+Author-email: simon.kirsten@stud.h-da.de
+License: MIT
+Description: # PyMdown pymdown-env extension
+        
+        *Replaces `~~~${ENV_VAR_HERE}~~~` with the content of the environment variable `ENV_VAR_HERE`*
+        
+        ## Installation
+        ``` bash
+        pip install pymdown-env
+        ```
+        
+        In `mkdocs.yml`:
+        
+        ``` yml
+        markdown_extensions:
+            - pymdown-env
+        ```
+        
+        ## Example
+        before
+        ``` markdown
+        [Download version ~~~${VERSION}~~~](/binaries/~~~${VERSION}~~~/myapp.exe)
+        ```
+        
+        after
+        ``` markdown
+        [Download version 1.0.0](/binaries/1.0.0/myapp.exe)
+        ```
+        
+        ## [License](LICENSE.md)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
