@@ -1,0 +1,11 @@
+pubmed_lookup-0.2.3.dist-info/RECORD,,
+pubmed_lookup-0.2.3.dist-info/metadata.json,sha256=getR2GR552QM1hGWfCkZX8sP_PXMEKYgsMHvk0blI_U,1544
+pubmed_lookup-0.2.3.dist-info/WHEEL,sha256=_3ZP65Rqi9G-MK5n1SAb8JmgZQ6XXHUecPss95ICuAE,93
+pubmed_lookup-0.2.3.dist-info/entry_points.txt,sha256=3aBMx9t16OpuxWHKQaX8HM4_bwtIji2VCaxIhwgcjfE,131
+pubmed_lookup-0.2.3.dist-info/DESCRIPTION.rst,sha256=KWaHZw0f4s88m4-aoBqkybyc0tbPdcUtaWH4oZoWfZk,7787
+pubmed_lookup-0.2.3.dist-info/top_level.txt,sha256=dyOqjuv8P0Sv21oxcM6b72WocWP2YVPc-BEOx3nDWRo,14
+pubmed_lookup-0.2.3.dist-info/METADATA,sha256=rJDn3ssYhsjtEs_Wu04YX7JBAPp24lzed_x0uk_zhbY,8876
+pubmed_lookup/test_pubmed_lookup.py,sha256=Xf8Px1OQeJhoXfABH8CgEflMVCslFwYbroAsldwGZV8,7075
+pubmed_lookup/command_line.py,sha256=TGW1w698_yDgJ5vuLsDgZQZdMz9YNREpFmYMIDhItpI,1589
+pubmed_lookup/__init__.py,sha256=Fz9s1PiQ1-FqAJo-yDNB4t-3_AnxYhThV7Wwu7mrYwk,53
+pubmed_lookup/pubmed_lookup.py,sha256=v9BZXb3GDYByOVYoSneeJtEI6wBp4EUa8JuyAWPYi1c,9021
