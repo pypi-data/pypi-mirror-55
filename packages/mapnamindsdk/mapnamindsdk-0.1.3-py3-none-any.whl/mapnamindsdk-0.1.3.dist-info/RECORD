@@ -1,0 +1,12 @@
+Mapper/Mapper.py,sha256=cmklvwzNUD2NxB-74art3rkdC6H6eqdDgYx-t0veiGM,1081
+Mapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Mind/Mind.py,sha256=9B4DqLInnsS6NOAYw82wL70tuBIXbzXChyZm2EZcRuc,1606
+Mind/Offline.py,sha256=JF7pWW9sm-aE0eXzotT6fA2RGktigjCM-s5It-5iFHY,1535
+Mind/Online.py,sha256=R_t6-QchDd5__q3UspwxPiq6R7ynoAJdgv_uDdQgABc,1435
+Mind/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+WS/WS.py,sha256=7Z1jsFwk1tL_IrCrognd4GvP8wYiGPD_Ss0yXh-YGeA,1070
+WS/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mapnamindsdk-0.1.3.dist-info/METADATA,sha256=I46D0GxXFi26YRxhqgkVGkR_xXshFamfVK06kKOcm7c,592
+mapnamindsdk-0.1.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mapnamindsdk-0.1.3.dist-info/top_level.txt,sha256=p9_s-Bt6-8SHj_Hdc41IVWRXHSlxdxXAM-ZX30yuJdY,15
+mapnamindsdk-0.1.3.dist-info/RECORD,,
