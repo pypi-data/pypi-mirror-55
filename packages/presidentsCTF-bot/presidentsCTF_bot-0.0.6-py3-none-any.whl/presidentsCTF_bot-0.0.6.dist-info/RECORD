@@ -1,0 +1,14 @@
+presidentsCTF/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+presidentsCTF/api.py,sha256=vyFYzF7rm5Iayy_CzNnH1XJGxsYfkXOoBWQ21Lr6nKE,2304
+presidentsCTF/config.py,sha256=Ox73uMP_HsLbnRalHKTJ_iUr8w_Toe-4ZvsJJjqCEsE,817
+presidentsCTF/db.py,sha256=XuKpywbjikQp48z2vAuKA4RgFq6nxzivT7euqzWF0Lk,4031
+presidentsCTF/display.py,sha256=i8T1EiAPn5ZdtCgXvl0WwVZvIXWQ7dj6PuVYYp2Inoo,4810
+presidentsCTF/main.py,sha256=unTVKqFzPLllLR5diWOrCjXHmP-sCgiCE05Yldxyfmg,8898
+presidentsCTF/notify.py,sha256=WbOyFaOuILjDw6m-m25BPcNNAvtVeR-8NW1LnDfY9ww,1194
+presidentsCTF/stats.py,sha256=aCx9hQ6aWYfqvBfW_KKmfTLq7hBm5-t8Rp_BnjDm6I4,3126
+presidentsCTF_bot-0.0.6.dist-info/LICENSE,sha256=T9LMTNOFenhwNe8pftNRUB0-NLbKKNb7XxWbE00Pexk,1052
+presidentsCTF_bot-0.0.6.dist-info/METADATA,sha256=YX10CtkZcCNcsC5VlGJqf-ClDwRMbIg3586h1tE47Pc,6079
+presidentsCTF_bot-0.0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+presidentsCTF_bot-0.0.6.dist-info/entry_points.txt,sha256=fzNKV2WlY7qQ4T6dQF6QPBUtqOf6cg3EqgSblvY8SoU,106
+presidentsCTF_bot-0.0.6.dist-info/top_level.txt,sha256=4jJDrsNNO5pwbyZ_0ZYBbszrJuhWL3ZwnG3E4j83ot8,14
+presidentsCTF_bot-0.0.6.dist-info/RECORD,,
