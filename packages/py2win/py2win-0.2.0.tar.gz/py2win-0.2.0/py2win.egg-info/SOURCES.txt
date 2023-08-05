@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+py2win/__init__.py
+py2win/bdist_windows.py
+py2win/embed.py
+py2win.egg-info/PKG-INFO
+py2win.egg-info/SOURCES.txt
+py2win.egg-info/dependency_links.txt
+py2win.egg-info/requires.txt
+py2win.egg-info/top_level.txt

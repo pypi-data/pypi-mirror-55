@@ -1,0 +1,8 @@
+wheel
+requests
+requests-cache
+
+[dev]
+pytest
+pytest-cov
+coverage
