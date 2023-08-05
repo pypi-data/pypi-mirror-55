@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: hibpcli
+Version: 0.3.0
+Summary: A command line interface for the "haveibeenpwned.com" API - speaks keepass.
+Home-page: https://github.com/jugmac00/hibpcli
+Author: Jürgen Gmach
+Author-email: juergen.gmach@goglemail.com
