@@ -1,0 +1,13 @@
+README.md
+setup.py
+django_login_phone.egg-info/PKG-INFO
+django_login_phone.egg-info/SOURCES.txt
+django_login_phone.egg-info/dependency_links.txt
+django_login_phone.egg-info/top_level.txt
+login_phone/__init__.py
+login_phone/admin.py
+login_phone/apps.py
+login_phone/models.py
+login_phone/tests.py
+login_phone/views.py
+login_phone/migrations/__init__.py
