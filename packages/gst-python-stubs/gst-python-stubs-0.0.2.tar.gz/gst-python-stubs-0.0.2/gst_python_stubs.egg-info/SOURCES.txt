@@ -1,0 +1,11 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+examples/gst.py
+gi-stubs/repository/Gst.pyi
+gst_python_stubs.egg-info/PKG-INFO
+gst_python_stubs.egg-info/SOURCES.txt
+gst_python_stubs.egg-info/dependency_links.txt
+gst_python_stubs.egg-info/requires.txt
+gst_python_stubs.egg-info/top_level.txt
