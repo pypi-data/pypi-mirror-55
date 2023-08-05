@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: ad9xdds
+Version: 0.3.0
+Summary: UNKNOWN
+Home-page: https://gitlab.com/bendub/ad9xdds
+Author: Benoit Dubois
+Author-email: benoit.dubois@femto-st.fr
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Topic :: Scientific/Engineering
+Provides-Extra: ad9854dev
+Requires-Dist: pyparallel ; extra == 'ad9854dev'
+Provides-Extra: ad9912dev
+Requires-Dist: iopy ; extra == 'ad9912dev'
+Provides-Extra: qad9912dev
+Requires-Dist: PyQt5 ; extra == 'qad9912dev'
+
+UNKNOWN
+
+
