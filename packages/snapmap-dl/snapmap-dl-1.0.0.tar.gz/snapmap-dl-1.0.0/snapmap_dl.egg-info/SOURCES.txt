@@ -1,0 +1,6 @@
+README.md
+setup.py
+snapmap_dl.egg-info/PKG-INFO
+snapmap_dl.egg-info/SOURCES.txt
+snapmap_dl.egg-info/dependency_links.txt
+snapmap_dl.egg-info/top_level.txt
