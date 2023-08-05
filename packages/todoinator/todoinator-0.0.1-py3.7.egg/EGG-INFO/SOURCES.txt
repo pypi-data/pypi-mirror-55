@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+bin/todoinator
+todoinator/__init__.py
+todoinator/todoinator.py
+todoinator.egg-info/PKG-INFO
+todoinator.egg-info/SOURCES.txt
+todoinator.egg-info/dependency_links.txt
+todoinator.egg-info/top_level.txt
