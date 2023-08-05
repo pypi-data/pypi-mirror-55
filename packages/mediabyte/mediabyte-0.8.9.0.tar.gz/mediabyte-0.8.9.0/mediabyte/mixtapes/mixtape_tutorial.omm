@@ -1,0 +1,52 @@
+
+# mediabyte.Mixtape file format explanation
+
+#  This textfile is a four-clip Mixtape - it
+#  will load and run using the mediabyte
+#  Python package or the online player:
+
+#             www.mediabyte.xyz
+
+#  if you input the link to this file:
+#     http://v1d.dk/omm/mixtape_tutorial.omm
+
+#  Comments like these that start with a '#'
+#  are for the file viewing person only, they
+#  are ignored by the mediabyte parser.
+
+
+#  Okay, let's start right off with a real-world mediabyte example:
+
+y.qi5JEZo2KT0.White Monkey Jobs Explained.laowhy86.china.podcast
+
+
+#  and then the mediabyte syntax definition in its simple completeness:
+
+#   1. "y." signifies YouTube video and the following hash is the YouTube video hash
+#   2. tags are lowercase and titles are tags with an uppercase first letter
+#   3. YouTube time code format tags are interpreted as such, 0-2 time codes possible
+#   4. Except y.youtubehash all tags can be arbitrarily ordered and omitted
+
+
+#  Below is an example using the full syntax outlined above, a
+#  2-minute clip starting one minute in, titled 'Chinas Parks
+#  are Crazy' with the tags 'gweilo60', 'china' and 'podcast':
+
+y.12cpcm1ntSU.Chinas Parks are Crazy.gweilo60.china.podcast.1m.3m
+
+
+#  Individual tags can be separated into following lines:
+
+y.ZIv4tqJNuxs.There is No Algorithm for Truth - with Tom Scott
+
+             .the_royal_institution
+             .lecture.uk.science
+
+
+#  and placed freely along the x-axis, too:
+
+y.5m7Q6uyg9Kg.Pen & Paper
+.live
+            .german
+                   .board
+                .game
