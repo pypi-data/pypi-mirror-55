@@ -1,0 +1,39 @@
+{
+    "51297B6C-9E44-4815-9C17-297ABC4A5D46": {
+        "Access Control": [
+            {
+                "Access Level": "FULL_CONTROL",
+                "Created At": "2019-10-22T14:10:14.336224900Z",
+                "ID": "4A334BE3-E904-4332-BC82-F675F0F1FB8E",
+                "Identity": {
+                    "Datasource Class": "Auth",
+                    "Datasource ID": "Seeq",
+                    "Datasource Name": "Seeq",
+                    "ID": "0BFA187F-6AC5-4DFB-8AC4-25D53EA57FEF",
+                    "Name": "Everyone",
+                    "Type": "UserGroup"
+                }
+            }
+        ],
+        "Ancestors": [],
+        "Created At": "1542474564838000000",
+        "Description": "This folder contains workbooks to illustrate import/export functionality.",
+        "ID": "51297B6C-9E44-4815-9C17-297ABC4A5D46",
+        "Name": "Example Export",
+        "Owner": {
+            "Datasource Class": "Auth",
+            "Datasource ID": "Seeq",
+            "Datasource Name": "Seeq",
+            "Email": "mark.derbecker@seeq.com",
+            "First Name": "Mark",
+            "ID": "AA61A752-1579-4191-AC30-3BBB21696D4F",
+            "Is Admin": true,
+            "Last Name": "Derbecker",
+            "Name": "Mark Derbecker",
+            "Type": "User",
+            "Username": "mark.derbecker@seeq.com"
+        },
+        "Type": "Folder",
+        "Updated At": "1571753347497016700"
+    }
+}
