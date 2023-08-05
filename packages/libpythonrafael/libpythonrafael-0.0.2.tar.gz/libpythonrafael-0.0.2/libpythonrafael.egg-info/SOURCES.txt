@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+libpythonpro/__init__.py
+libpythonpro/github_api.py
+libpythonpro/test_github_api.py
+libpythonrafael.egg-info/PKG-INFO
+libpythonrafael.egg-info/SOURCES.txt
+libpythonrafael.egg-info/dependency_links.txt
+libpythonrafael.egg-info/not-zip-safe
+libpythonrafael.egg-info/requires.txt
+libpythonrafael.egg-info/top_level.txt
