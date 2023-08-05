@@ -1,0 +1,569 @@
+#!/usr/bin/env python3
+"""
+    Copyright (C) Ηλιάδης Ηλίας, 2019-09-24; Ηλιάδης Ηλίας <iliadis@kekbay.gr>
+
+    This file is part of «test sudoku».
+
+    «test sudoku» is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    «test sudoku» is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with «test sudoku».  If not, see <http://www.gnu.org/licenses/>.
+"""
+
+"""
+        WARNING !!!
+
+Since we are in python, any subclass of this class
+will take over any method with the same name.
+So do not declare here methods that exist also in the subclass.
+(subclass is the class that uses the class here as Base.
+Imagine the subclass as a super-duper class,
+although in computing superclass is the base class)
+"""
+#FIXME: correct the version
+__version__ = '0.1.28'
+VERSIONSTR = 'v. {}'.format(__version__)
+
+try:
+    import os
+    import sys
+    import json
+
+    # Gtk and related
+    from gi import require_version as gi_require_version
+    gi_require_version('Gtk', '3.0')
+    from gi.repository import Gtk
+    from gi.repository import Gdk
+    from gi.repository import GObject
+    # space for extra Gtk imports
+
+    # Configuration and message boxes
+    from auxiliary import SectionConfig, OptionConfig
+    from auxiliary import MessageBox
+    from constants import *
+
+    # Load static methods
+    from windowpuzzle_statics import *
+
+    from puzzle import *
+    from gamepixbufs import *
+
+except ImportError as eximp:
+    print(eximp)
+    sys.exit(-1)
+
+class Error(Exception):
+    """Base class for exceptions in this module."""
+    pass
+
+class WindowPuzzleBase(object):
+    #FIXME: fix the docstring.
+    """ Main window with all components. """
+
+    def __init__(self, *args, **kwargs):
+        # Set the app
+        self.myparent = None
+        self.custom_args = kwargs['custom_args']
+
+        # bind settings,options to a class variable
+        global settings
+        settings = self.settings
+        global options
+        options = self.options
+
+        # Before builder.
+        self._run_before_builder()
+
+        # Read GUI from file and retrieve objects from Gtk.Builder
+        thebuilder = Gtk.Builder()
+        thebuilder.set_translation_domain(self.Application.id)
+        try:
+            thebuilder.add_from_file(os.path.join(self.Application.custom_args.APP_DIR,
+                'ui',
+                'windowpuzzle.glade')
+                )
+        except GObject.GError:
+            print("Error reading GUI file")
+            raise
+
+        # Fire up the main window
+        #We must get the object from builder to set the Application
+        #before loading the objects, so that the rest will be loaded
+        #using locale
+        self.WindowPuzzle = thebuilder.get_object("WindowPuzzle")
+        self.WindowPuzzle.set_application(self.Application)
+        self._get_from_builder(thebuilder)
+        self.mywindow = self.WindowPuzzle
+        self._post_initialisations()
+        self.mywindow.show()
+
+#********* Auto created "class defs" START ************************************************************
+    def _run_before_builder(self):
+        self.resize_timer_id = 0
+        self.history_difficulty = ""
+        #self.continue_last = False
+
+    def _get_from_builder(self, builder):
+        """ Create self names for easy access. """
+        self.BoxForPuzzle = builder.get_object('BoxForPuzzle')
+        self.BoxOnTop = builder.get_object('BoxOnTop')
+        self.ButtonDummyTest = builder.get_object('ButtonDummyTest')
+        self.ButtonRedo = builder.get_object('ButtonRedo')
+        self.ButtonReturn = builder.get_object('ButtonReturn')
+        self.ButtonUndo = builder.get_object('ButtonUndo')
+        self.DrawingAreaForPuzzle = builder.get_object('DrawingAreaForPuzzle')
+        self.DummyLabel = builder.get_object('DummyLabel')
+        self.EventBoxForPuzzle = builder.get_object('EventBoxForPuzzle')
+        self.ImageClock = builder.get_object('ImageClock')
+        self.ImageForButtonRedo = builder.get_object('ImageForButtonRedo')
+        self.ImageForButtonUndo = builder.get_object('ImageForButtonUndo')
+        self.LabelTimePassed = builder.get_object('LabelTimePassed')
+        self.LabelVersion = builder.get_object('LabelVersion')
+        self.ListBoxForPieces = builder.get_object('ListBoxForPieces')
+        self.MainBox = builder.get_object('MainBox')
+        self.WindowPuzzle = builder.get_object('WindowPuzzle')
+
+        # Connect signals existing in the Glade file.
+        builder.connect_signals(self)
+
+        # Connect generated by OCPgenerator signals:
+        # to builder's main window
+        # first are the defaults for window
+        self.WindowPuzzle.connect('delete-event', self.on_WindowPuzzle_delete_event)
+        self.WindowPuzzle.connect('destroy', self.on_WindowPuzzle_destroy)
+        self.WindowPuzzle.connect('size-allocate', self.on_WindowPuzzle_size_allocate)
+        self.WindowPuzzle.connect('window-state-event', self.on_WindowPuzzle_window_state_event)
+        self.ButtonDummyTest.connect('clicked', self.on_ButtonDummyTest_clicked)
+        self.ButtonRedo.connect('clicked', self.on_ButtonRedo_clicked)
+        self.ButtonReturn.connect('clicked', self.on_ButtonReturn_clicked)
+        self.ButtonUndo.connect('clicked', self.on_ButtonUndo_clicked)
+
+    def _post_initialisations(self):
+        """ Do some extra initializations.
+
+        Display the version if a labelVersion is found.
+        Set defaults (try to load them from a configuration file):
+            - Window size and state (width, height and if maximized)
+        Load any custom settings from a configuration file.
+        """
+        if 'parent' in self.custom_args:#Is a child window, get the parent window
+            self.myparent = self.custom_args['parent']
+            #if has parent check for transient
+            # modality can be false, and parent may not be present
+            if 'transient' in self.custom_args:
+                self.mywindow.set_transient_for(self.myparent)
+                if 'modal' in self.custom_args:
+                    self.mywindow.set_modal(True)
+
+        if 'trigger_before_exit' in self.custom_args:
+            # must be a function on calling class
+            self.trigger_before_exit = self.custom_args['trigger_before_exit']
+            self.return_parameters = None
+
+        # Bind message boxes.
+        self.MessageBox = MessageBox(self.WindowPuzzle, self.Application)
+        self.msg = self.MessageBox.Message
+        self.are_you_sure = self.MessageBox.are_you_sure
+
+        # Reset MainWindow to a default or previous size and state.
+        width = settings.get('width', 350)
+        height = settings.get('height', 350)
+        self.DIFFICULTY = options.get("DIFFICULTY", "")
+        self.WindowPuzzle.resize(width, height)
+        self.WindowPuzzle.set_icon(self.Application.icon)
+        if settings.get_bool('maximized', False):
+            self.WindowPuzzle.maximize()
+        # Set the label for LabelVersion
+        self.LabelVersion.set_label("v." + self.Application.custom_args.version)
+        self.LabelVersion.set_tooltip_text(_("Version of this window:") + "\n" + VERSIONSTR)
+
+        # Load any other settings here.
+        self.pb = None
+        self.picker = None
+        self.previous_size = 0
+
+        self.init_puzzle_options()
+        #check if user wants to continue last game
+        if 'continue' in self.custom_args:
+            self.last_game = self.custom_args['last_game']
+            self.puzzle = APuzzle(last_game = self.last_game,
+                    trigger_refresh = self.trigger_from_puzzle,
+                    )
+            self.WindowPuzzle.set_title(
+                self.Application.custom_args.localizedname + \
+                " (" + _(self.last_game['difficulty']) + ")")
+            self.continue_last = True
+        else:
+            self.continue_last  = False
+            puzzle_string, solution, difficulty = get_new_puzzle(self.DIFFICULTY)
+            self.puzzle = APuzzle(puzzle_string = puzzle_string,
+                    difficulty = difficulty,
+                    trigger_refresh = self.trigger_from_puzzle)
+            self.puzzle.solution = solution
+            self.WindowPuzzle.set_title(
+                self.Application.custom_args.localizedname + \
+                " (" + _(difficulty) + ")")
+
+        self.EventBoxForPuzzle.drag_dest_set(0, [],0)
+        self.EventBoxForPuzzle.set_events(Gdk.EventMask.ALL_EVENTS_MASK )
+
+#********* Auto created handlers START *********************************
+    def on_ButtonDummyTest_clicked(self, widget, *args):
+        """ Handler for ButtonDummyTest.clicked. """
+        self.create_board()
+
+    def on_ButtonRedo_clicked(self, widget, *args):
+        """ Handler for ButtonRedo.clicked. """
+        self.puzzle.redo()
+        self.create_board(True)
+
+    def on_ButtonReturn_clicked(self, widget, *args):
+        """ Handler for ButtonReturn.clicked. """
+        self.exit_requested()
+
+    def on_ButtonUndo_clicked(self, widget, *args):
+        """ Handler for ButtonUndo.clicked. """
+        self.puzzle.undo()
+        self.create_board(True)
+
+    def on_DrawingAreaForPuzzle_draw(self, widget, cr, *args):
+        """ Handler for DrawingAreaForPuzzle.draw. """
+        #TODO: possibly remove time consuming functionality
+        if self.board_pixbuf:
+            #get actual width and height
+            ebw = self.EventBoxForPuzzle.get_allocated_width()
+            ebh = self.EventBoxForPuzzle.get_allocated_height()
+            board_x = int((ebw - self.board_pixbuf.get_width()) / 2)
+            board_y = int((ebh - self.board_pixbuf.get_height()) / 2)
+            Gdk.cairo_set_source_pixbuf(cr, self.board_pixbuf, board_x, board_y)
+            cr.paint()
+
+    def on_EventBoxForPuzzle_motion_notify_event(self, widget, event, *args):
+        """ Handler for EventBoxForPuzzle.motion-notify-event.
+
+        Store the cellnumber to self.mouse_over
+        in order to save time in calculations.
+        Move the picker window there if hidden.
+
+        Moves the picker over the cell in which the cursor is...
+        """
+        cell_n , sx, sy = get_real_positions(event.x,
+                event.y,
+                self.EventBoxForPuzzle,self.board_pixbuf)
+        self.mouse_over = cell_n
+        if cell_n and self.puzzle.start_cells[cell_n][1] == 0:
+            upleftposition = \
+                self.EventBoxForPuzzle.translate_coordinates (self.mywindow,
+                    sx,
+                    sy)
+            windowposition = self.mywindow.get_window().get_root_coords(0, 0)
+            self.show_picker_at = (upleftposition[0] + windowposition[0] + 1,
+                        upleftposition[1] + windowposition[1] + 1)
+            if not self.picker.mywindow.is_visible():
+                self.picker.mywindow.move(*self.show_picker_at)
+        else:
+            self.show_picker_at = None
+
+    def on_EventBoxForPuzzle_button_press_event(self, widget, event, *args):
+        """ Handler for EventBoxForPuzzle.button-press-event. """
+        if self.mouse_over:
+            # if picker is visible then hide and move window there
+            if self.picker.mywindow.is_visible():
+                self.picker.mywindow.hide()
+                if self.show_picker_at:
+                    self.picker.mywindow.move(*self.show_picker_at)
+            else:#picker is hidden. Move there and show
+                self.picker.mywindow.move(*self.show_picker_at)
+                self.picker.mywindow.show()
+                self.clicked_on = self.mouse_over
+        else:
+            if self.picker.mywindow.is_visible():
+                self.picker.mywindow.hide()
+        return True
+
+    def on_EventBoxForPuzzle_button_release_event(self, widget, event, *args):
+        """ Handler for EventBoxForPuzzle.button-release-event. """
+        cell_n, sx, sy = get_real_positions(event.x,
+                event.y,
+                self.EventBoxForPuzzle, self.board_pixbuf)
+        if cell_n:
+            if self.puzzle.current_cells[0] != cell_n:
+                self.puzzle.current_cells[0] = cell_n
+                self.create_board(True)
+            return True
+        else:
+            if self.picker.mywindow.is_visible():
+                self.picker.mywindow.hide()
+
+    def on_EventBoxForPuzzle_drag_data_received(self, widget, context, x, y, selection_data, info, time_, *args):
+        """ Handler for EventBoxForPuzzle.drag-data-received. """
+        cell_n , sx, sy = get_real_positions(x,
+                y,
+                self.EventBoxForPuzzle,self.board_pixbuf)
+        if self.number_picked == CLEAR_AS_NUMBER_PICKED:
+            if not self.puzzle.current_cells[cell_n][0]:
+                #make it current
+                self.puzzle.current_cells[0] = cell_n
+                self.set_selected_cell(0)
+
+        elif self.number_picked and (not self.puzzle.current_cells[cell_n][0]):
+            #make it current
+            self.puzzle.current_cells[0] = cell_n
+            self.set_selected_cell(int(self.number_picked))
+
+    def on_EventBoxForPuzzle_drag_drop(self, widget, context, x, y, time_, *args):
+        """ Handler for EventBoxForPuzzle.drag-drop. """
+        cell_n , sx, sy = get_real_positions(x,
+                y,
+                self.EventBoxForPuzzle,self.board_pixbuf)
+        if cell_n:
+            if not self.puzzle.current_cells[cell_n][0]:
+                widget.drag_get_data(context, context.list_targets()[-1], time_)
+
+    #TODO: show drop area and change default drag icon
+    def on_EventBoxForPuzzle_drag_motion(self, widget, context, x, y, time_, *args):
+        """ Handler for EventBoxForPuzzle.drag-motion. """
+        cell_n , sx, sy = get_real_positions(x,
+                y,
+                self.EventBoxForPuzzle,self.board_pixbuf)
+        if cell_n != 0:
+            if not self.puzzle.current_cells[cell_n][0]:
+                Gdk.drag_status(context, Gdk.DragAction.COPY, time_)
+                return True
+        return False
+
+    def on_EventBoxForPuzzle_focus_in_event(self, widget, event, *args):
+        """ Handler for EventBoxForPuzzle.focus-in-event. """
+        self.create_board()
+
+    def on_EventBoxForPuzzle_focus_out_event(self, widget, event, *args):
+        """ Handler for EventBoxForPuzzle.focus-out-event. """
+        self.create_board()
+
+    def on_WindowPuzzle_button_press_event(self, widget, event, *args):
+        """ Handler for WindowPuzzle.button-press-event. """
+        if self.show_picker_at:
+            self.picker.mywindow.move(*self.show_picker_at)
+        else:
+            if self.picker.mywindow.is_visible():
+                self.picker.mywindow.hide()
+
+    def on_WindowPuzzle_configure_event(self, widget, event, *args):
+        """ Handler for WindowPuzzle.configure-event. """
+        #https://stackoverflow.com/questions/19058392/detecting-when-a-gtk-window-is-done-moving-resizing-by-the-user
+        if self.resize_timer_id:
+            GObject.source_remove(self.resize_timer_id)
+        self.resize_timer_id = GObject.timeout_add(interval=250, function=self.resize_done)
+        return False
+
+    def on_WindowPuzzle_key_press_event(self, widget, event, *args):
+        """ Handler for WindowPuzzle.key-press-event.
+
+        Prevent list box from focusing on arrow clicks.
+        """
+        pass
+
+    def on_WindowPuzzle_key_release_event(self, widget, event, *args):
+        """ Handler for WindowPuzzle.key-release-event.
+
+        Control combined with "z", "y" and "q" keys
+        and Alt combined with "t" key
+        are processed here.
+        Other Control and Alt combinations are not.
+
+        Some keys set the focus and are processed here.
+        These are the arrow keys, backspace and delete keys
+        as well as unichar keys used in puzzle.
+        Other keys (example tab key) are not processed here.
+        """
+        txt = Gdk.keyval_name(event.keyval)
+        if type(txt) == type(None):
+            return False
+
+        unichar = chr(Gdk.keyval_to_unicode(event.keyval))
+        txt = txt.replace('KP_', '')
+        if event.get_state() & Gdk.ModifierType.CONTROL_MASK:
+            if txt.lower() == "z":
+                if self.puzzle.history_position > 0:
+                    self.puzzle.undo()
+                    self.create_board()
+                return True
+            elif txt.lower() == "y":
+                if self.puzzle.history_position < len(self.puzzle.history):
+                    self.puzzle.redo()
+                    self.create_board()
+                return True
+            elif txt.lower() == "q":
+                self.exit_requested()
+                return True
+            elif txt.lower() == "h":
+                self.exit_requested()
+                return True
+            return False
+        if event.get_state() & Gdk.ModifierType.MOD1_MASK:
+            if txt.lower() == "t" : #Alt+t
+                self.set_show_timer(not self.SHOW_TIMER)
+                return True
+            return False
+        if txt in ['Up', 'Down', 'Right', 'Left']:
+            self.move_selection_by_arrow(txt)
+            return True
+        if txt in ['BackSpace','Delete']:
+            self.EventBoxForPuzzle.grab_focus()
+            if not self.puzzle.current_cells[self.puzzle.current_cells[0]][0]:
+                self.set_selected_cell(0)
+            return True
+        if unichar in self.strings_to_use[1:]:
+            self.EventBoxForPuzzle.grab_focus()
+            if not self.puzzle.current_cells[self.puzzle.current_cells[0]][0]:
+                theint = self.strings_to_use.index(unichar)
+                self.set_selected_cell(theint)
+            return True
+        return False
+
+#********* Auto created handlers END ***********************************
+
+#********* Standard handlers START *************************************
+    def msg_not_yet(self):
+        self.msg(_('Not yet implemented'))
+
+    def on_WindowPuzzle_delete_event(self, widget, event, *args):
+        """ Handler for our main window: delete-event. """
+        return (self.exit_requested())
+
+    def on_WindowPuzzle_destroy(self, widget, *args):
+        """ Handler for our main window: destroy. """
+        return (self.exit_requested('from_destroy'))
+
+    def on_WindowPuzzle_size_allocate(self, widget, allocation, *args):
+        """ Handler for our main window: size-allocate. """
+        self.save_my_size()
+
+    def on_WindowPuzzle_window_state_event(self, widget, event, *args):
+        """ Handler for our main window: window-state-event. """
+        settings.set('maximized',
+            ((int(event.new_window_state) & Gdk.WindowState.ICONIFIED) != Gdk.WindowState.ICONIFIED) and
+            ((int(event.new_window_state) & Gdk.WindowState.MAXIMIZED) == Gdk.WindowState.MAXIMIZED)
+            )
+        self.save_my_size()
+
+#********* Standard handlers END ***************************************
+#********* Standard exit defs START *********************************************************
+    def exit_requested(self, *args, **kwargs):
+        """ Final work before exit. """
+        if self.resize_timer_id:
+            GObject.source_remove(self.resize_timer_id)
+            self.resize_timer_id = 0
+        if self.timer_id:
+            GObject.source_remove(self.timer_id)
+            self.timer_id = 0
+        self.WindowPuzzle.set_transient_for()
+        self.WindowPuzzle.set_modal(False)
+        if self.picker:
+            self.picker.mywindow.destroy()
+            self.picker = None
+        self.set_unhandled_settings()# also saves all settings
+        if 'from_destroy' in args:
+            return True
+        else:
+            # Check if we should provide info to caller
+            if 'trigger_before_exit' in self.custom_args:
+                self.trigger_before_exit(exiting = True,
+                    return_parameters = self.return_parameters)
+            self.WindowPuzzle.destroy()
+
+    def present(self):
+        """ Show the window. """
+        pass
+
+    def save_my_size(self):
+        """ Save the window size into settings, if not maximized. """
+        if not settings.get_bool('maximized', False):
+            width, height = self.WindowPuzzle.get_size()
+            settings.set('width', width)
+            settings.set('height', height)
+
+    def set_unhandled_settings(self):
+        """ Set, before exit, any settings not applied during the session.
+
+        Additionally, flush all settings to .conf file.
+        Usually options al have been saved.
+        """
+
+        # Set any custom settings
+        # which where not setted (ex. on some widget's state changed)
+        last_puzzle_string = ""
+        last_history = ""
+        last_history_position = ""
+        if not self.puzzle.solved:
+            thelists = []
+            for a_move in self.puzzle.history:
+                thelists.append(":".join([str(x) for x in a_move]))
+            last_history = ",".join(thelists)
+            last_puzzle_string = self.puzzle.puzzle_string
+            last_history_position = self.puzzle.history_position
+        options.set('last_puzzle_string', last_puzzle_string)
+        options.set('last_history', last_history)
+        options.set('last_history_position', last_history_position)
+        options.set('last_difficulty', self.puzzle.difficulty)
+        options.set('last_seconds_passed', self.seconds_passed())
+        options.set('solved', self.puzzle.solved)
+
+        # Save all settings
+        settings.save()
+#********* Standard exit defs END **************************************
+#********* Auto created "class defs" END **************************************************************
+    def resize_done(self):
+        #https://stackoverflow.com/questions/19058392/detecting-when-a-gtk-window-is-done-moving-resizing-by-the-user
+        self.resize_timer_id = 0
+        self.check_board_resize()
+        return False
+
+    def create_board(self, set_focus=False):
+        if set_focus and not self.EventBoxForPuzzle.is_focus():
+            self.EventBoxForPuzzle.grab_focus()
+        self.board_pixbuf = create_board_pixbuf(self.pb,
+                self.puzzle.current_cells,
+                self.EventBoxForPuzzle)
+        self.DrawingAreaForPuzzle.queue_draw()
+
+    def init_puzzle_options(self):
+        self.SHOW_ONLY_BOARD = options.get_bool("show_only_board", False)
+        self.SHOW_PIECES = options.get_bool("show_pieces", True)
+        self.SHOW_TIMER = options.get_bool("show_timer", True)
+        self.font_name = options.get("font_name", "Arial 300")
+        font_ratio = options.get("font_ratio","1")
+        self.font_ratio = float(font_ratio)
+
+        tmp_strings = options.get("custom_dict",",".join([str(x) for x in THEDICTS['standard'][1:]]))
+        custom_dict =[x.strip() for x in tmp_strings.split(",")]
+        custom_dict.insert(0, ' ')
+        THEDICTS['custom'] = custom_dict
+        self.use_dict = options.get("use_dict", 'standard')
+        self.strings_to_use = THEDICTS[self.use_dict]
+
+        self.new_colors = {}
+        self.new_colors["RGBA_BG_TRANSP"] = Gdk.RGBA(red=1., green=1., blue=1., alpha=0.0)
+        self.new_colors["RGBA_BG"] = eval_rgba(
+                options.get('RGBA_BG', str(DEFAULT_RGBA['BG'])))
+        self.new_colors["RGBA_FG"] = eval_rgba(
+                options.get('RGBA_FG', str(DEFAULT_RGBA['FG'])))
+        self.new_colors["RGBA_FG_RED"] = eval_rgba(
+                options.get('RGBA_FG_RED', str(DEFAULT_RGBA['FG_RED'])))
+        self.new_colors["RGBA_BG_CONSTANT"] = eval_rgba(
+                options.get('RGBA_BG_CONSTANT', str(DEFAULT_RGBA['BG_CONSTANT'])))
+        self.new_colors["RGBA_BG_SELECTED"] = eval_rgba(
+                options.get('RGBA_BG_SELECTED', str(DEFAULT_RGBA['BG_SELECTED'])))
+        self.new_colors["RGBA_BG_CONSTANT_SELECTED"] = eval_rgba(
+                options.get('RGBA_BG_CONSTANT_SELECTED', str(DEFAULT_RGBA['BG_CONSTANT_SELECTED'])))
+        self.new_colors["RGBA_PICKER_BG"] = eval_rgba(
+                options.get('RGBA_PICKER_BG', str(DEFAULT_RGBA['PICKER_BG'])))
+#********* Window class  END***************************************************************************

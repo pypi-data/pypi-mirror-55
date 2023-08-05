@@ -1,0 +1,179 @@
+Metadata-Version: 2.1
+Name: sudokuaspuzzle
+Version: 0.1.28
+Summary: Customizable Sudoku
+Home-page: http://gnu.kekbay.gr/sudokuaspuzzle/versions
+Author: Ηλίας Ηλιάδης
+Author-email: iliadis@kekbay.gr
+License: GPLv3
+Project-URL: Source, https://gitlab.com/xoristzatziki/sudokuaspuzzle
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: X11 Applications :: GTK
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Games/Entertainment :: Puzzle Games
+Description-Content-Type: text/markdown
+
+# Sudoku as puzzle
+
+Yet another Sudoku, treated as puzzle and using custom numbering script.
+
+This project started as a replacement (*for my own pass-free-time*)
+when Gnome adopted a Sudoku that obscures cells when clicked,
+making impossible to have a clear view. Numbers were also much smaller then it
+should be and the size of a minimum board was a really big one.
+Since Gnome is international, my thought was also to make it available
+for people that are more used to their numbering system.
+
+## Preferences
+
+Most Sudoku flavors trait the game as a 
+[magic square](https://en.wikipedia.org/wiki/Magic_square).
+This one traits it also as a puzzle and it is highly customizable.
+
+### Numbering script
+
+Apart from basic numbering script this package offers the ability to use either
+the basic script:
+* 1 2 3 4 5 6 7 8 9
+
+or one of the defaults provided:
+
+* ancient Greek numbers
+* Arabic numbers
+* Chinese numbers
+* Persian numbers
+* Tibetan numbers
+* custom numbers (by default same as basic numbers)
+
+You can use any «*script*» you like, as long as the script consists, in Unicode,
+of only one character for every number, by selecting "custom" and changing
+the characters.
+
+### «Pieces of the puzzle»
+
+You can customize the existence of a side bar containing
+the «*remaining pieces*». These are the numbers that remain to be placed
+on the *magic square*, in order to fill the puzzle.
+
+### Colors
+
+You can customize most of the colors used in the board.
+
+Currently:
+* Background of an editable cell.
+* Background of an editable cell, if selected.
+* Background of a non editable cell.
+* Background of a non editable cell, if selected.
+* Foreground color for number if it is not valid.
+
+And also
+* Picker background
+
+### Fonts
+
+All installed fonts are supported.
+
+A ratio for the font can be customized from 0.4 to 1.0. This ratio is the ratio
+of the height of character to the height of the cell.
+
+**Warning!** If font specified and saved in configuration file does no longer
+exist in the system, Pango will replace it with something probably
+(*but not sure*) compatible.
+
+### Screenshots
+
+[Interface in Greek](https://gnu.kekbay.gr/sudokuaspuzzle/versions/)
+
+## How to play
+The game is a classic Sudoku game. Fill empty cells in a way that no duplicate
+numbers exist in any row, column or in any of the 9 sub-squares.
+
+#### Place or change a number
+There are three ways to place a number in the "board":
+1. Move using the arrows to a cell and press the key that responds to the
+character you want. If you selected the basic script then you should press
+any number from 1 to 9.
+2. Click on a cell and a "picker window" will appear.
+3. Grab a number from the side bar and drop it in the cell you want.
+
+#### Remove a number
+If you want to empty a cell:
+- you can go to that cell and press the «Backspace» or the «Delete» key.
+- you can click on that cell, in order to show the «picker window»,
+and then right click on it.
+- drag the «clear icon» from the side bar to the cell.
+
+### Picker window
+Picker window will appear inside the clicked cell (if cell is editable)
+and will make it current cell. 
+
+#### Mouse clicks
+- Clicking (left-click) on a number will change current cell
+to that character-number.
+- Clicking anywhere outside picker will close it.
+- Right clicking will empty current cell and close the picker window.
+
+#### Keystrokes
+- Any key that responds to a character used in the numeric system
+will hide the picker and change the cell to that character-number.
+- Escape will close the picker and will not change current cell content.
+- Backspace and Delete keys will empty current cell and close the picker window.
+
+### Key shortcuts
+#### Start screen
+- Ctrl+c: continue previous game (if anyone started and was not solved).
+- Ctrl+n: start a new game.
+- Ctrl+o: opens options screen.
+- Ctrl+q: quit application.
+
+#### Game screen
+- Alt+t: show-hide time passed.
+- Ctrl+h: return to start screen (will save current game).
+- Ctrl+q: same as Ctrl+h.
+- Ctrl+y: redo a move (if applicable).
+- Ctrl+z: undo a move (if applicable).
+
+#### Options screen
+- Ctrl+h: return to start screen (will not save current options).
+- Ctrl+p: preview current options.
+- Ctrl+q: same as Ctrl+h.
+- Ctrl+s: save current options.
+
+## Installation
+### Requirements
+- [qqwing](https://github.com/stephenostermiller/qqwing) must be installed
+in the system.
+
+Most Linux distributions provide a way to install it through their
+main packaging system.
+
+- Gtk >= 3.18 is needed to run the game. It should be preinstalled
+in your system.
+
+### pip
+#### install
+```sh
+pip3 install 'sudokuaspuzzle'
+```
+#### upgrade
+```sh
+pip3 install 'sudokuaspuzzle>=0.1.24' --upgrade
+```
+
+## How to start application
+Currently this package does not provide ways of running the game other
+than the command line. Pip installation also installs the `sudokuaspuzzle`
+«binary». So just type  `sudokuaspuzzle` in a terminal.
+
+## TODO
+Change appearance (both of the icon and the board) while dragging
+a number or the clear icon.
+
+## CREDITS
+* qqwing's creators and maintainers in Linux distributions.
+* Some icons are from Gnome icons in UBUNTU 18.04 distribution.
+
+
