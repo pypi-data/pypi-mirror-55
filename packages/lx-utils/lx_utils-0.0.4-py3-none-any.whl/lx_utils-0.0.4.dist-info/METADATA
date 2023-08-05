@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: lx-utils
+Version: 0.0.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: any
+Requires-Dist: requests
+Requires-Dist: xlrd
+Requires-Dist: openpyxl
+
+UNKNOWN
+
+
