@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: plopy
+Version: 1.5.2
+Summary: GUI for matplotlib graphing
+Home-page: https://github.com/Finnventor/plopy
+Author: Finnventor
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib
+
+# plopy
+A program for making high-quality data plotting with matplotlib easily customizable with a GUI. You can also import it from a python script and choose files or arrays to add, or import fig and ax to use for plotting on. Call start() to show the GUI.
+
+
