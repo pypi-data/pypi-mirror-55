@@ -1,0 +1,10 @@
+xrd_viewer/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xrd_viewer/__main__.py,sha256=YDIYPjTLgJ0_lydMqanX_EkRNps1iDmNXam7pXOL85Y,296
+xrd_viewer/assets/logo.npy,sha256=cnRbJWXWJGElh7xuhODtHhuJAOtekV_L5kDGWiE6JJc,1075328
+xrd_viewer/assets/xrd.ui,sha256=k4Sv4Mj0f4zGl2nfbUqxm-aWzdv1Db8460QevErgZpE,10129
+xrd_viewer/xrd.py,sha256=98Ox9u1mXtiTHrpMZsC1MSBPni3piT9eqXnRV_YSWP4,25430
+xrd_viewer-1.0.0.dist-info/entry_points.txt,sha256=2meTcG_PA28mCQgGPNTDotXNXcY5MdVtk9dIweHNEp4,55
+xrd_viewer-1.0.0.dist-info/LICENSE,sha256=jutcIe5yPl7qbllVCiWXhPops7w5KNRyKM73J3mb_Pw,35083
+xrd_viewer-1.0.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+xrd_viewer-1.0.0.dist-info/METADATA,sha256=EdJDyoT2tmIVrQsIv4JhcJwMKTLPCbLrQo4pDQRZ0MY,3762
+xrd_viewer-1.0.0.dist-info/RECORD,,

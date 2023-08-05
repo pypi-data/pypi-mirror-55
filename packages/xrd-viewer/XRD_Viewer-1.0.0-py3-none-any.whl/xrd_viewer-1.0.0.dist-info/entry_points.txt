@@ -1,0 +1,3 @@
+[console_scripts]
+xrd-viewer=xrd_viewer.__main__:main
+
