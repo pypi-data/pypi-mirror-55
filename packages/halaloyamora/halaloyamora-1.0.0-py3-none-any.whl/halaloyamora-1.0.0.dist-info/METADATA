@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: halaloyamora
+Version: 1.0.0
+Summary: A small example package
+Home-page: https://github.com/abdella-mohamed
+Author: Abdella Mohamed
+Author-email: abdella.mohamed.idris@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: requests
+
+UNKNOWN
+
+

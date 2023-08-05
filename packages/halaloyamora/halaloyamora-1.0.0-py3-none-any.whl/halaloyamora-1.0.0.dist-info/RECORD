@@ -1,0 +1,7 @@
+weather/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+weather/get_reading.py,sha256=bTToEwi66WaPfNMRIgPPQV12p4owu01f9a893f01638,1114
+weather/show_reading.py,sha256=gWNYhCJlBpZ7HsueJJOtIiW_SBNbW2pV9FlXe7dVdzY,90
+halaloyamora-1.0.0.dist-info/METADATA,sha256=DDEUWX9rKH1gt1qyAkN5ey_Vd1QMVnpivZk3nnnsnJg,298
+halaloyamora-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+halaloyamora-1.0.0.dist-info/top_level.txt,sha256=2tbXK1iKdrSrH0Lq70rXasewSS_nZEceapXCFi6zuXA,8
+halaloyamora-1.0.0.dist-info/RECORD,,
