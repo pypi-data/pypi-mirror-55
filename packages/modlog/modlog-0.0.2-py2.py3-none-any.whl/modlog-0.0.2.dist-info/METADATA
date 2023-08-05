@@ -1,0 +1,91 @@
+Metadata-Version: 2.1
+Name: modlog
+Version: 0.0.2
+Summary: ('Set logger with logging/colorlog automatically',)
+Home-page: https://github.com/atomse/modlog
+Author: Sky Zhang
+Author-email: sky.atomse@gmail.com
+Maintainer: Sky Zhang
+Maintainer-email: sky.atomse@gmail.com
+License: MIT License
+Platform: Linux
+Platform: Darwin
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: Implementation
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: colorlog (>=4.0.2)
+Provides-Extra: curate
+Requires-Dist: graphviz ; extra == 'curate'
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: sphinxcontrib-programoutput ; extra == 'docs'
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: numpydoc ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pytest (>=4.0) ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+
+# Modlog
+
+
+
+Get module logger with environment variables
+
+[![Build Status](https://travis-ci.org/atomse/modlog.svg?branch=master)](https://travis-ci.org/atomse/modlog)
+
+## Environment variables
+
+modlog using environment variables
+
+If module name: a.b.c, the environment variable is:
+
+* `{A}_LOG_LEVEL`
+
+values are compatible with logging module,
+following values are supported:
+
+* notset
+* debug
+* info
+* warning
+* error
+* critical
+
+```json
+{
+        50: 'CRITICAL', 
+        40: 'ERROR', 
+        30: 'WARNING', 
+        20: 'INFO', 
+        10: 'DEBUG', 
+        0: 'NOTSET'
+}
+```
+
+
+## Example
+
+
+```python
+
+import modlog
+
+logger = modlog.getLogger(__name__) # This will read environment variables and set logger level
+
+logger.info("a")
+
+```
+
+
+
+
