@@ -1,0 +1,4 @@
+pandas
+pyarrow>=0.12.1
+pathos>=0.2.4
+ipywidgets
