@@ -1,0 +1,7 @@
+aiocqlengine/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+aiocqlengine/models.py,sha256=SCJgB7hf3rn0Q3n7c9I0uwM5f4-2mXtSruy_QHtJYOU,4865
+aiocqlengine/query.py,sha256=FsDrv-nCOPNrSr2cNbf11R37R-_EddxMKpSQI-TAXC8,16190
+aiocqlengine-0.1.1.dist-info/LICENSE,sha256=jiOPuIROGvnCjuXkhT44OPksM67izhU3BGE6JwSMwlM,1063
+aiocqlengine-0.1.1.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+aiocqlengine-0.1.1.dist-info/METADATA,sha256=ejXWigPVbouXwYUoui1NZaacjD4adPxX98LRfd8bUCc,2995
+aiocqlengine-0.1.1.dist-info/RECORD,,
