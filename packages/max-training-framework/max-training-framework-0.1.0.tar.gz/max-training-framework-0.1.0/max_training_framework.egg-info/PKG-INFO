@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: max-training-framework
+Version: 0.1.0
+Summary: Training framework for the Model Asset Exchange
+Home-page: https://github.com/IBM/Max-Training-Framework
+Author: Patrick Titzler
+Author-email: ptitzler@us.ibm.com
+License: Apache-2.0
+Description: [![Build Status](https://travis-ci.com/IBM/Max-Training-Framework.svg?branch=master)](https://travis-ci.com/IBM/Max-Training-Framework)
+        
+        ## Installation
+        
+        
+        You can install this package from PyPI or source code.
+        
+        ### Installing from PyPI
+        
+        The package has not been published yet.
+        
+        ### Installing from source code
+        
+        ```
+        $ git clone https://github.com/IBM/Max-Training-Framework
+        $ cd Max-Training-Framework
+        $ pip install .
+        ```
+        
+        ## License
+        
+        [Apache-2.0](LICENSE)
+        
+Keywords: deep learning
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
