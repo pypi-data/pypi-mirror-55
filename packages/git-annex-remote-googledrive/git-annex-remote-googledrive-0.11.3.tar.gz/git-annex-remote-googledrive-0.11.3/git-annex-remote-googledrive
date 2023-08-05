@@ -1,0 +1,605 @@
+#!/usr/bin/env python3
+# git-annex-remote-googledrive adds direct support for Google Drive to git annex using the PyDrive lib
+#
+# Install in PATH as git-annex-remote-googledrive
+#
+# Copyright (C) 2017-2018  Silvio Ankermann
+#
+# This program is free software: you can redistribute it and/or modify it under the terms of version 3 of the GNU
+# General Public License as published by the Free Software Foundation.
+#
+# This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied
+# warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.
+#
+
+import os, sys, traceback
+import json
+
+from pydrive.auth import GoogleAuth
+from pydrive.drive import GoogleDrive
+from oauth2client.client import OAuth2Credentials
+
+from pydrive.files import ApiRequestError
+from googleapiclient.errors import HttpError
+
+from functools import wraps
+
+from tenacity import Retrying, retry
+from tenacity import retry_if_exception_type
+from tenacity import wait_exponential, wait_fixed
+from tenacity import stop_after_attempt
+
+import annexremote
+from annexremote import Master
+from annexremote import ExportRemote
+from annexremote import RemoteError
+from annexremote import ProtocolError
+
+versions = None
+
+retry_conditions = {
+        'wait': wait_exponential(multiplier=1, max=10),
+        'retry': (
+            retry_if_exception_type(ApiRequestError) |
+            retry_if_exception_type(HttpError) |
+            retry_if_exception_type(ConnectionResetError)
+        ),
+        'stop': stop_after_attempt(5),
+        'reraise': True,
+    }
+    
+def remotemethod(f):
+    @wraps(f)
+    def wrapper(self, *args, **kwargs):
+        try:
+            return f(self, *args, **kwargs)
+        except RemoteError:
+            self._send_traceback()
+            raise
+        except:
+            self._send_traceback()
+            raise RemoteError
+
+    return wrapper
+
+
+class GoogleRemote(ExportRemote):
+
+    def __init__(self, annex):
+        super().__init__(annex)
+        self.presence_cache = dict()
+        self.folder_cache = dict()
+        self.state_cache = dict()
+
+        self.gauth = GoogleAuth()
+        self.gauth.settings['client_config_backend'] = 'settings'
+        self.gauth.settings['client_config'] = {
+            'client_id': '275666578511-ndjt6mkns3vgb60cbo7csrjn6mbh8gbf.apps.googleusercontent.com',
+            'client_secret': 'Den2tu08pRU4s5KeCp5whas_',
+            'auth_uri': 'https://accounts.google.com/o/oauth2/auth',
+            'token_uri': 'https://accounts.google.com/o/oauth2/token',
+            'revoke_uri': None,
+            'redirect_uri': 'urn:ietf:wg:oauth:2.0:oob',
+            }
+
+    def setup(self):
+        print("======")
+        print("IMPORTANT: Google has started to lockdown their Google Drive API. This might affect access to your remotes.")
+        print("Until this is settled you'll see a warning about this application not being verified by Google which you need to accept in order to proceed.")
+        print("Read more on https://github.com/Lykos153/git-annex-remote-googledrive#google-drive-api-lockdown")
+        print("======")
+
+        if os.path.isfile('token.json'):
+            try:
+                self.gauth.LoadCredentialsFile('token.json')
+            except:
+                pass
+
+        if self.gauth.credentials is None:
+            self.gauth.CommandLineAuth()
+        else:
+            try:
+                self.gauth.Refresh()
+            except:
+                self.gauth.Authorize()
+
+        self.gauth.SaveCredentialsFile('token.json')
+        print("Setup complete. An auth token was stored in token.json. Now run 'git annex initremote' with your desired parameters. If you don't run it from the same folder, specify via token=path/to/token.json")
+         
+    def migrate(self, prefix):
+        self.prefix = prefix
+        token_file = 'token.json'
+        self.gauth.LoadCredentialsFile(token_file)
+
+        try:
+            if self.gauth.access_token_expired:
+                self.gauth.Refresh()
+            else:
+                self.gauth.Authorize()
+            self.drive = GoogleDrive(self.gauth)
+            self.root = self._getfolder(self.prefix, create=False)
+        except:
+            raise RemoteError("Failed to access the remote directory. Ensure that you are connected to the internet and have successfully run 'git-annex-remote-googledrive setup'.")
+
+        if not self.root:
+            raise RemoteError("'{}' does not exist on the remote.".format(prefix))
+
+        if (self.root == self.drive.CreateFile({'id': 'root'})):
+            raise RemoteError("Root is not an allowed prefix")
+            
+        self.migration_count = {'moved':0, 'deleted':0}
+        self._migration_traverse(self.root, self.prefix)
+        
+    @retry(wait=wait_fixed(2), retry=retry_conditions['retry'])   
+    def _migration_traverse(self, current_folder, current_path):
+        if current_folder == self.root:
+            query = "'{}' in parents and \
+                     mimeType='application/vnd.google-apps.folder' and \
+                     trashed=false".format(current_folder['id'])
+            for file_list in self.drive.ListFile({
+                        'q': query , 
+                        'maxResults': 100, 
+                        'orderBy': 'title'}):
+                for file_ in file_list:
+                    self._migration_traverse(file_, current_path+"/"+file_['title'])
+        else:
+            query = "'{}' in parents and trashed=false".format(current_folder['id'])
+            for file_list in self.drive.ListFile({
+                            'q': query,
+                            'maxResults': 100,
+                            'orderBy': 'title'}):
+                for file_ in file_list:
+                    if file_['mimeType'] == 'application/vnd.google-apps.folder':
+                        self._migration_traverse(file_, current_path+"/"+file_['title'])
+                    else:
+                        print ( "Moving {}/{}".format(current_path,file_['title']) )
+                        file_['parents'] = [{'kind': 'drive#parentReference', 'id': self.root['id']}]
+                        file_.Upload()
+                        self.migration_count['moved'] += 1
+            print ("Deleting folder {}".format(current_path))
+            current_folder.Delete()
+            self.migration_count['deleted'] += 1
+
+    @remotemethod
+    def initremote(self):
+        self._send_version()
+        self.prefix = self.annex.getconfig('prefix')
+        root_id = self.annex.getconfig('root_id')
+        if not self.prefix and not root_id:
+            raise RemoteError("Either prefix or root_id must be given.")
+
+        token_file = self.annex.getconfig('token') or 'token.json'
+        self.gauth.LoadCredentialsFile(token_file)
+        if self.annex.getconfig('keep_token') != 'yes':
+            os.remove(token_file)
+
+        if self.gauth.credentials is None:
+            credentials = self.annex.getcreds('credentials')['user']
+            if credentials:
+                self.gauth.credentials = \
+                    OAuth2Credentials.from_json(credentials)
+
+        try:
+            if self.gauth.access_token_expired:
+                self.gauth.Refresh()
+            else:
+                self.gauth.Authorize()
+            self.drive = GoogleDrive(self.gauth)
+        except:
+            raise RemoteError("Failed to authenticate with Google. Ensure that you are connected to the internet and have successfully run 'git-annex-remote-googledrive setup'.")
+
+        try:
+            if self.prefix:
+                self.root = self._getfolder(self.prefix)
+            else:
+                self.root = self.drive.CreateFile({'id': root_id})
+                self.root.FetchMetadata()
+        except:
+            raise RemoteError("Failed to access the remote directory. Run the command with --debug to get more information.")
+
+        if self.annex.getconfig('exporttree') != 'yes':
+            query = "'{root_id}' in parents and \
+                     mimeType='application/vnd.google-apps.folder' and \
+                     trashed=false".format(root_id=self.root['id'])
+            file_list = self.drive.ListFile({'q': query}).GetList()
+            if len(file_list):
+                raise RemoteError("{prefix} has subdirectories. Are you sure 'prefix' is set correctly? In case you're migrating from gdrive or rclone, run 'git-annex-remote-googledrive migrate {prefix}' first.".format(prefix=self.prefix))
+        
+
+        self.annex.setconfig('root_id', self.root['id'])
+        credentials = ''.join(self.gauth.credentials.to_json().split())
+        self.annex.setcreds('credentials', credentials, '')
+
+    @remotemethod
+    def prepare(self):
+        self._send_version()
+        self.prefix = self.annex.getconfig('prefix')
+        root_id = self.annex.getconfig('root_id')
+        credentials = self.annex.getcreds('credentials')['user']
+
+        if self.annex.getconfig('mute-api-lockdown-warning') != "true":
+            self._info("====== git-annex-remote-googledrive")
+            self._info("IMPORTANT: Google has started to lockdown their Google Drive API. This might affect access to your Google Drive remotes.")
+            self._info("Please consider untrusting this remote until it is clear what happends next.")
+            self._info("Read more on https://github.com/Lykos153/git-annex-remote-googledrive#google-drive-api-lockdown")
+            self._info("You can mute this warning by issuing 'git annex enableremote <remote-name> mute-api-lockdown-warning=true")
+            self._info("======")
+
+        try:
+            self.gauth.credentials = \
+                OAuth2Credentials.from_json(credentials)
+            if self.gauth.access_token_expired:
+                self.gauth.Refresh()
+            else:
+                self.gauth.Authorize()
+
+            self.drive = GoogleDrive(self.gauth)
+        except:
+            raise RemoteError("Failed to authenticate with Google. Ensure that you are connected to the internet \
+or re-run 'git-annex-remote-googledrive setup' followed by 'git annex enableremote <remotename>'.")
+
+        
+        if self.prefix:
+            try:
+                self.root = self._getfolder(self.prefix, create=False)
+            except:
+                raise RemoteError("Failed to access the remote directory {prefix}. Was the repo moved?.".format(prefix=prefix))
+            if self.root['id'] != root_id:
+                raise RemoteError("ID of root folder changed. Was the repo moved? Please check remote and re-run git annex enableremote")
+
+        else:
+            self.root = self.drive.CreateFile({'id': root_id})
+            try:
+                self.root.FetchMetadata()
+            except:
+                raise RemoteError("Failed to access the remote directory with id {root_id}. Ensure that git-annex-remote-googledrive has been configured correctly and has permission to access the folder.".format(root_id=root_id))
+            
+
+        credentials = ''.join(self.gauth.credentials.to_json().split())
+        self.annex.setcreds('credentials', credentials, '')
+        
+        # Clean up test keys
+        query = "'{root_id}' in parents and \
+                 title contains 'this-is-a-test-key'".format(
+                    root_id=self.root['id']
+                 )
+        file_list = self.drive.ListFile({'q': query}).GetList()
+        if len(file_list):
+            self._info("Info: Cleaning up test keys")
+        for file_ in file_list:
+            file_.Delete()
+    
+    
+    @remotemethod
+    @retry(**retry_conditions)
+    def transfer_store(self, key, fpath):
+        if key not in self.presence_cache:
+            self.checkpresent(key)
+        if not self.presence_cache[key]:
+            newfile = self.drive.CreateFile({
+                            'title': key,
+                            'parents': [{
+                                'kind': 'drive#parentReference',
+                                'id': self.root['id']
+                            }],
+                        })
+            if os.path.getsize(fpath):
+                newfile.SetContentFile(fpath)
+            try:
+                newfile.Upload()
+            except:
+                del self.presence_cache[key]
+                raise
+            else:
+                self.presence_cache[key] = True
+
+    @remotemethod
+    @retry(**retry_conditions)
+    def transfer_retrieve(self, key, fpath):
+        newfile = self._getfile(key)
+        newfile.GetContentFile(fpath)
+    
+    @remotemethod
+    @retry(**retry_conditions)
+    def checkpresent(self, key):
+        file_ = self._getfile(key)
+        if file_:
+            self.presence_cache[key] = True
+        else:
+            self.presence_cache[key] = False
+        return self.presence_cache[key]
+
+    @remotemethod
+    @retry(**retry_conditions)
+    def remove(self, key):
+        file_ = self._getfile(key)
+        if file_:
+            file_.Delete()
+
+    @remotemethod
+    @retry(**retry_conditions)
+    def transferexport_store(self, key, fpath, name):
+        if name not in self.presence_cache:
+            self.checkpresentexport(key, name)
+        if not self.presence_cache[name]:
+            fileinfo = self._splitpath(name)
+            parent = self._getsubfolder(fileinfo['path'], create=True)
+            newfile = \
+                self.drive.CreateFile({
+                            'title': fileinfo['filename'],
+                            'parents': [{
+                                'kind': 'drive#parentReference',
+                                'id': parent['id']
+                            }]
+                        })
+            if os.path.getsize(fpath):
+                newfile.SetContentFile(fpath)
+            try:
+                newfile.Upload()
+            except:
+                del self.presence_cache[name]
+            else:
+                self._set_key_info(key, 'md5', newfile['md5Checksum'])
+                self.presence_cache[name] = True
+
+    @remotemethod
+    @retry(**retry_conditions)
+    def transferexport_retrieve(self, key, fpath, name):
+        fileinfo = self._splitpath(name)
+        parent = self._getsubfolder(fileinfo['path'], create=False)
+        if not parent:
+            raise RemoteError("File not present")
+        newfile = self._getfile(fileinfo['filename'], parent=parent)
+        newfile.GetContentFile(fpath)
+            
+    @remotemethod
+    @retry(**retry_conditions)
+    def checkpresentexport(self, key, name):
+        fileinfo = self._splitpath(name)
+
+        parent = self._getsubfolder(fileinfo['path'], create=False)
+        if not parent:
+            self.presence_cache[name] = False
+            return False
+        file_ = self._getfile(fileinfo['filename'], parent=parent)
+        
+        if file_ and file_['md5Checksum'] == self._get_key_info(key, 'md5'):
+            self.presence_cache[name] = True
+        elif file_ and self._get_key_info(key, 'md5') == None:
+            self.presence_cache[name] = True
+            self._set_key_info(key, 'md5', file_['md5Checksum'])
+        elif file_ and file_['md5Checksum'] != self._get_key_info(key, 'md5'):
+            raise RemoteError("{} was changed on remote side. Check the file or delete it in order to continue.".format(name))
+        else:
+            self.presence_cache[name] = False
+        return self.presence_cache[name]
+
+    @remotemethod
+    @retry(**retry_conditions)
+    def removeexport(self, key, name):
+        fileinfo = self._splitpath(name)
+
+        parent = self._getsubfolder(fileinfo['path'], create=False)
+        if not parent:
+            return
+        file_ = self._getfile(fileinfo['filename'], parent=parent)
+        if file_:
+            file_.Delete()
+
+    @remotemethod
+    @retry(**retry_conditions)
+    def removeexportdirectory(self, directory):
+        file_ = self._getsubfolder(directory, create=False)
+        if file_:
+            file_.Delete()
+
+    @remotemethod
+    @retry(**retry_conditions)
+    def renameexport(self, key, name, new_name):
+        oldfileinfo = self._splitpath(name)
+        newfileinfo = self._splitpath(new_name)
+        oldparent = self._getsubfolder(oldfileinfo['path'], create=False)
+        newparent = self._getsubfolder(newfileinfo['path'], create=True)
+        file_ = self._getfile(oldfileinfo['filename'],
+                              parent=oldfileinfo['parent'])
+        if oldfileinfo['path'] != newfileinfo['path']:
+            file_['parents'] = [{'kind': 'drive#parentReference',
+                                'id': newparent['id']}]
+        if oldfileinfo['filename'] != newfileinfo['filename']:
+            file_['title'] = newfileinfo['filename']
+        file_.Upload()
+
+
+    def _getfile(self, filename, parent=None):
+        if not parent:
+            parent = self.root
+        query = "'{parent_id}' in parents and \
+                 title='{filename}' and \
+                 trashed=false".format(
+                    parent_id=parent['id'],
+                    filename=filename.replace("'", r"\'")
+                 )
+        file_list = self.drive.ListFile({'q': query}).GetList()
+        if (len(file_list) == 1):
+            return file_list[0]
+        elif len(file_list) == 0:
+            return None
+        else:
+            raise RemoteError ("There are two or more files named {}".format(key))
+            
+    def _getsubfolder(self, path, create=True):
+        return self._getfolder(path, root=self.root, create=create)
+    
+    def _getfolder(self, path, root=None, create=True):
+        path_list = path.strip('/').split('/')
+        if root:
+            current_folder = root
+            current_path = self.prefix
+        else:
+            current_folder = self.drive.CreateFile({'id': 'root'})
+            current_path = ''
+
+        if path_list == ['']:
+            return current_folder
+        for folder in path_list:
+            current_path = '/'.join([current_path, folder])
+            if current_path in self.folder_cache:
+                current_folder = self.folder_cache[current_path]
+                continue
+                
+            query = "'{current_folder_id}' in parents and \
+                     title='{folder}' and \
+                     trashed=false".format(
+                        current_folder_id=current_folder['id'], 
+                        folder=folder.replace("'", r"\'")
+                     )
+            file_list = self.drive.ListFile({'q': query}).GetList()
+            if (len(file_list) == 1):
+                current_folder = file_list[0]
+            elif len(file_list) == 0:
+                if create:
+                    current_folder = \
+                        self.drive.CreateFile({'title': folder,
+                            'parents': [{'kind': 'drive#parentReference'
+                            , 'id': current_folder['id']}],
+                            'mimeType': 'application/vnd.google-apps.folder'
+                            })
+                    current_folder.Upload()
+                else:
+                    return None
+            else:
+                raise self.RemoteError(
+                    "There are two or more folders named {}".format(current_path)
+                )
+            self.folder_cache[current_path] = current_folder
+
+        return current_folder
+
+    def _splitpath(self, filename):
+        splitpath = filename.rsplit('/', 1)
+        exportfile = dict()
+        if len(splitpath) == 2:
+            exportfile['path'] = splitpath[0]
+            exportfile['filename'] = splitpath[1]
+        else:
+            exportfile['path'] = ''
+            exportfile['filename'] = splitpath[0]
+        return exportfile
+
+    def _send_traceback(self):
+        self._send_version()
+        for line in traceback.format_exc().splitlines():
+            self.annex.debug(line)
+            
+    def _send_version(self):
+        global get_versions
+        versions = get_versions()
+        self.annex.debug("Running {} version {}".format(
+                            os.path.basename(__file__),
+                            versions['this']
+                        ))
+        self.annex.debug("Using AnnexRemote version", versions['annexremote'])
+    
+    def _info(self, message):
+        try:
+            self.annex.info(message)
+        except ProtocolError:
+            print(message, file=sys.stderr)
+    
+    def _get_key_info(self, key, field):
+        if key not in self.state_cache or field not in self.state_cache[key]:
+            try:
+                self.state_cache[key] = json.loads(self.annex.getstate(key))
+            except:
+                self.state_cache[key] = {field: None}
+        return self.state_cache[key][field]
+            
+    def _set_key_info(self, key, field, value):
+        if self._get_key_info(key, field) != value:
+            self.state_cache[key][field] = value
+            self.annex.setstate(key, 
+                                json.dumps(
+                                    self.state_cache[key],
+                                    separators=(',', ':')
+                                ))
+        
+class bcolors:
+    HEADER = '\033[95m'
+    OKBLUE = '\033[94m'
+    OKGREEN = '\033[92m'
+    WARNING = '\033[93m'
+    FAIL = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
+def get_versions():
+    output = {}
+    if versions:
+        output['this'] = versions['version']
+    else:
+        output['this'] = "unknown"
+    if hasattr(annexremote, '__version__'):
+        output['annexremote'] = annexremote.__version__
+    else:
+        output['annexremote'] = "unknown"
+    return output
+
+def main():
+    if len(sys.argv) > 1:
+        if sys.argv[1] == 'setup':
+            with open(os.devnull, 'w') as devnull:
+                master = Master(devnull)
+                remote = GoogleRemote(master)
+                remote.setup()
+            return
+        elif sys.argv[1] == 'version':
+            print(os.path.basename(__file__), get_versions()['this'])
+            print("Using AnnexRemote", get_versions()['annexremote'])
+            return
+        elif sys.argv[1] == 'migrate':
+            with open(os.devnull, 'w') as devnull:
+                master = Master(devnull)
+                remote = GoogleRemote(master)
+                if len(sys.argv) != 3:
+                    print ("Usage: git-annex-remote-googledrive migrate <prefix>")
+                    return
+                    
+                try:
+                    remote.migrate(sys.argv[2])
+                except (KeyboardInterrupt, SystemExit):
+                    print ("\n{}Exiting.".format(bcolors.WARNING))
+                    if hasattr(remote, 'migration_count') and \
+                                    remote.migration_count['moved'] != 0:
+                        print ("The remote is in an undefined state now. Re-run this script before using git-annex on it.")
+                except Exception as e:
+                    print ("\n{}Error: {}".format(bcolors.FAIL, e))
+                    if hasattr(remote, 'migration_count') and \
+                                    remote.migration_count['moved'] != 0:
+                        print ("The remote is in an undefined state now. Re-run this script before using git-annex on it.")
+                else:
+                    print ("\n{}Finished.".format(bcolors.OKGREEN))
+                    print ("The remote has benn successfully migrated and can now be used with git-annex-remote-googledrive. Consider checking consistency with 'git annex fsck --from=<remotename> --fast'")
+                    print ( "Processed {} subfolders".format(
+                                    remote.migration_count['deleted']))
+                    print ( "Moved {} files{}".format(
+                                remote.migration_count['moved'],
+                                bcolors.ENDC
+                            )
+                    )
+
+            return
+
+    output = sys.stdout
+    sys.stdout = sys.stderr
+
+    master = Master(output)
+    master.LinkRemote(GoogleRemote(master))
+    master.Listen()
+
+
+if __name__ == '__main__':
+    main()
+
+
+			
