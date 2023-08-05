@@ -1,0 +1,3 @@
+[console_scripts]
+subrename = subrename.main:main
+
