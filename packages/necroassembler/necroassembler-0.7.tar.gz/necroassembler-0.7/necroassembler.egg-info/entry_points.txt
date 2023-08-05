@@ -1,0 +1,14 @@
+[console_scripts]
+necro_6502 = necroassembler.cpu.mos6502:AssemblerMOS6502.main
+necro_8086 = necroassembler.cpu.intel8086:AssemblerIntel8086.main
+necro_gb = necroassembler.platforms.gameboy:AssemblerGameboy.main
+necro_gba = necroassembler.platforms.gba:main
+necro_genesis = necroassembler.platforms.genesis:main
+necro_m68k = necroassembler.cpu.mc68000:AssemblerMC68000.main
+necro_mips32 = necroassembler.cpu.thumb:AssemblerMIPS32.main
+necro_nes = necroassembler.platforms.nes:main
+necro_psx = necroassembler.platforms.psx:main
+necro_sms = necroassembler.platforms.sms:AssemblerSegaMasterSystem.main
+necro_thumb = necroassembler.cpu.thumb:AssemblerThumb.main
+necro_z80 = necroassembler.cpu.z80:AssemblerZ80.main
+
