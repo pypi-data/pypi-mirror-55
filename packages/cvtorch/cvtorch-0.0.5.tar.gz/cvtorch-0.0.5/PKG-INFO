@@ -1,0 +1,14 @@
+Metadata-Version: 1.0
+Name: cvtorch
+Version: 0.0.5
+Summary: vision tools based on opencv
+Home-page: UNKNOWN
+Author: iHateTa11B0y
+Author-email: 1187203155@qq.com
+License: UNKNOWN
+Description: # cvtorch: Utilities for pytroch based on opencv
+        
+        Since most functions in torchvision are implemented based on PIL Image. I fullfill some common functions which named numpy array as input image.
+        
+        
+Platform: UNKNOWN
