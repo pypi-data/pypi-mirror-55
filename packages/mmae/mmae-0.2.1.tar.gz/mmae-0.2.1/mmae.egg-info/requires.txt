@@ -1,0 +1,11 @@
+numpy
+six
+
+[keras]
+keras>=2.3.0
+
+[tensorflow]
+tensorflow>=2.0.0
+
+[tensorflow-gpu]
+tensorflow-gpu>=2.0.0
