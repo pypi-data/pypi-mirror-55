@@ -1,0 +1,13 @@
+burger/__init__.py,sha256=8BAaW8IdbIy2ontep7JogZmYI0X18aTxecHHTDm1w-U,8104
+burger/__pkginfo__.py,sha256=nrUOUCuOoIE0x3vrl5jyjcLQGSnYYX--bW_KhgVbtrs,815
+burger/buildutils.py,sha256=ZKrXeojQDIec439ulNWv2laF646UgNZfPsdkpoYsbkk,46742
+burger/cleanutils.py,sha256=CjbxzJ2T3iITlRWT7NbTsvq7rtZVH8QtlINAezAPvos,3806
+burger/fileutils.py,sha256=Xjel3E4fAYOzmWwsNaQLnTTl1ixoVgkA4LltdrPXnaI,26113
+burger/strutils.py,sha256=rJtHdofzgIGe_fOZcn1-CCgKJJtLUT48beSpeNOVbXI,30913
+burger/validators.py,sha256=214b8CBq3s5YLqWXQN-ReGgfAZ8tgWtA1X2NT1PUBCE,11534
+burger/windowsutils.py,sha256=lZVvGf9e79m9iHDPbqV9KxD-7cwtbwx9_WKJTkJX17Q,3599
+burger-1.1.36.dist-info/LICENSE.txt,sha256=Zw2p2niHIwS7tjwQyV-bLSwran1gfqoevZxP8gGysjE,1674
+burger-1.1.36.dist-info/METADATA,sha256=GXgUvZW3z7mSR56JT107Hi4fNaQIsw5rRG8Bk9n_ATA,2759
+burger-1.1.36.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+burger-1.1.36.dist-info/top_level.txt,sha256=4fZ_wT2z331Ko3hlsPanwgvlYojYgZI9BW0Vp5O2Tss,7
+burger-1.1.36.dist-info/RECORD,,
