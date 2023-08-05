@@ -1,0 +1,10 @@
+magnum/__init__.py,sha256=HRQUcqhWCB6zFmXvtnnnkJGG7UiZc3DlDSk6M_1RhWU,135
+magnum/magnum.py,sha256=sk-rRZyRZM6opFtVIDWN76OARRzPfVbqfP8tGyNfBhY,47478
+magnum/tools/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+magnum/tools/magdump.py,sha256=gxOqOglAqY314V5kkXGFQKpL-lO4Nbfz-svLfl06dR8,5599
+magnum/tools/magtest.py,sha256=Sj-RHmTbrPgVThLPpW8svmg6yBEbU5cbhs9uGlu3taE,2645
+pymagnum-1.0.0.dist-info/LICENSE,sha256=u1abXqpTsC1887oIMeWgXXHkyKBL5dSIQDKsmSAy2Ic,1923
+pymagnum-1.0.0.dist-info/METADATA,sha256=uxl3wPSRWjV71KmCTXuM3WdlDCeLQbgg7wpxJnIG1Ac,1014
+pymagnum-1.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pymagnum-1.0.0.dist-info/top_level.txt,sha256=egne9yxxZdrOUUx069RNhCVDTVkMIrzl_D7J9cLkN_c,7
+pymagnum-1.0.0.dist-info/RECORD,,
