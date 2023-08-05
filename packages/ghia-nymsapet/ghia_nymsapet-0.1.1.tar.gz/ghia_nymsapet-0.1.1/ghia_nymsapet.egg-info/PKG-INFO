@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: ghia-nymsapet
+Version: 0.1.1
+Summary: GitHub issue assigner
+Home-page: https://github.com/mi-pyt-ghia/petrnymsa
+Author: Petr Nymsa
+Author-email: nymsapet@fit.cvut.cz
+License: MIT
+Description: GHIA - GitHub issue assigner. Automatically assign people and labels to issue based on rules. 
+Keywords: github,issue,assign
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: License :: Public Domain
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
