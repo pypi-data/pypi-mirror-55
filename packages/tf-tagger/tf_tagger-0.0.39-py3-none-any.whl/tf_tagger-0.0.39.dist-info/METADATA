@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tf-tagger
+Version: 0.0.39
+Summary: NLP tool
+Home-page: https://github.com/deepdialog/tf-tagger
+Author: deepdialog
+Author-email: thebotbot@sina.com
+License: Private
+Keywords: pip,tensorflow,NER,tagger
+Platform: any
+Requires-Dist: h5py
+Requires-Dist: joblib
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: scipy
+Requires-Dist: tensorflow-gpu
+Requires-Dist: tqdm
+Requires-Dist: appdirs
+Requires-Dist: bert-for-tf2
+
+NLP tool, NER, POS
+
+
