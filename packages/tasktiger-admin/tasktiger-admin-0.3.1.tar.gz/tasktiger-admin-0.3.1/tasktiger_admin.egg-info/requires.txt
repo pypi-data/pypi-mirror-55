@@ -1,0 +1,5 @@
+click
+flask-admin
+redis<3,>=2
+structlog
+tasktiger>=0.10.1
