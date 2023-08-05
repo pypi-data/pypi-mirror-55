@@ -1,0 +1,3 @@
+[console_scripts]
+metaCTD = metaCTD.gui.metaCTD_gui:main
+
