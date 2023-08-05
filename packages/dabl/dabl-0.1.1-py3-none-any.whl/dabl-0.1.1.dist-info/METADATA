@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: dabl
+Version: 0.1.1
+Summary: Data Analysis Baseline Library
+Home-page: UNKNOWN
+Author: Andreas Mueller
+Author-email: t3kcit+githubspam@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: scikit-learn
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+
+UNKNOWN
+
+
