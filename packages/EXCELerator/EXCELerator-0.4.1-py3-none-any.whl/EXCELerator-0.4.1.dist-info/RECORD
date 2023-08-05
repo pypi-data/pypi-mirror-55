@@ -1,0 +1,9 @@
+excelerator/__init__.py,sha256=tTW7EQvBIosEYSpRN_KnkpTWHW8QeiEbkefXVswsPdA,159
+excelerator/exceptions.py,sha256=Rimg6t_8OcJ3n0EnU51qGJOgFquXc4ki96i1stGAxKk,488
+excelerator/normalize.py,sha256=L8JAlaWGSJIgW0QXUNo_xNH1_oQB32RxOc11SwsE5bM,3028
+excelerator/main/headers.py,sha256=YU9YVohU73RciNDUO2Oyae6sz5_5cO7wQm2_xq9WCLY,3998
+excelerator/main/table_reader.py,sha256=ajQ4KzbzNp_bI1aq_vZOBgkyxd1jMq7rI1-nNMM7vHY,3725
+excelerator/main/utils.py,sha256=CBivnHSCAsPC53WtGqFITF2OpvidWcHkqSG8gTElLyI,3317
+EXCELerator-0.4.1.dist-info/WHEEL,sha256=JXk7EE_UnY8Q4113Zu8f6SlrMizLH61VvvtIzqzkSKE,79
+EXCELerator-0.4.1.dist-info/METADATA,sha256=baZMTRz2OEMlnAY_ICrecH07DAxuqv1m5S7fIOWB8ks,2910
+EXCELerator-0.4.1.dist-info/RECORD,,
