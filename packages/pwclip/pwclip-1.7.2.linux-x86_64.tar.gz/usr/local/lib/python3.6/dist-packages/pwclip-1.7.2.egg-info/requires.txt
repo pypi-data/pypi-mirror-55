@@ -1,0 +1,9 @@
+PyGObject
+PyYAML
+argcomplete
+atexit
+inspect
+psutil
+python-gnupg
+shutil
+wget
