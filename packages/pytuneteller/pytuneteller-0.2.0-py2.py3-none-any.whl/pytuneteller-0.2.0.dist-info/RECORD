@@ -1,0 +1,17 @@
+pytuneteller/__init__.py,sha256=1JBpynMBoQjq4blwQCV88L1v2TTpS0P0hmhGQR6u88k,190
+pytuneteller/__main__.py,sha256=DEp3b6xiNTfDY1kHW2eEmhJGPwFjpTZ_YwK2C5HJS38,186
+pytuneteller/cli.py,sha256=6I_VoreyXkF3RFTFuJTSGxcgR2B25OZqdiT6uwGv3tg,1448
+pytuneteller/exceptions.py,sha256=WX8ME6pK4JQMldJwsbKvz6EicBmmpaA9QmQeeLpK3QQ,267
+pytuneteller/pytuneteller.py,sha256=gtPfV2t2lu99-QX6XItfoNC6MqDFQ0EB2abYukVI0Jg,350
+pytuneteller/sites.py,sha256=3A3llplqNJjHddw-WYrtz63crqR_nHBeU5vwyQiWNJQ,5336
+pytuneteller/utils.py,sha256=CnV-xSo7BROz7mOlzbTbipQeI64HEwm1x-cvtGrFha0,1248
+pytuneteller/version.py,sha256=tYU4MbLs7pMoZ3XlCe7_4pjOJ_JKPLhx7W5bS3nQPZU,228
+pytuneteller/words/adjectives.txt,sha256=gtEE4yJ-jFvqZO5vFawAuwrtvBChgJI8hydkHCe4fSk,57
+pytuneteller/words/nouns.txt,sha256=_zjoTwZwNv45wcXypLCaBxffLswO-GxqoqcOxV7ruao,61
+pytuneteller-0.2.0.dist-info/AUTHORS.rst,sha256=-t-mcqOmIq5hI9o7IkeiSZZMOXnD4dzQntbgwCuSa7U,168
+pytuneteller-0.2.0.dist-info/LICENSE,sha256=l-_OGCbxOJGrgUWBCgu3XEWg7dRyBCtiGhkG3L-AHYs,1081
+pytuneteller-0.2.0.dist-info/METADATA,sha256=Bbwt1hW8T5aaXTD8KSIB2-jNMLunIS5WW1nO4aHQOl0,2971
+pytuneteller-0.2.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pytuneteller-0.2.0.dist-info/entry_points.txt,sha256=xHGBF0HbS-wZVPkqlAU_1GZc9Lu-Ml3USh97eayrnWs,56
+pytuneteller-0.2.0.dist-info/top_level.txt,sha256=4Vg-ip9AJJ6TSLsDeyc0kNCerh64v2BU4IJyew7U4JE,13
+pytuneteller-0.2.0.dist-info/RECORD,,
