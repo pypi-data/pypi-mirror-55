@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: maleta
+Version: 0.2
+Summary: maleta client module
+Home-page: UNKNOWN
+Author: Sebastien Campion
+Author-email: sebastien.campion@pwc.com
+License: AGPL
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved
+Classifier: Natural Language :: French
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Communications
+Description-Content-Type: text/markdown
+
+MALE[RE]TA
+----------
+
+Machine Learning for Real Time Analytics 
+
+
+/!\ WIP 
+
