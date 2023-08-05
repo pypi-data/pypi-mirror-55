@@ -1,0 +1,17 @@
+tinydb==3.9.0.post1
+numpy
+multipledispatch
+psutil
+gitpython
+imutils
+
+[optionals]
+flake8
+sphinx
+sphinx_rtd_theme
+recommonmark
+docutils
+m2r
+pytest
+pytest-cov==2.6.1
+coveralls==1.8.2
