@@ -1,0 +1,12 @@
+budgitree/__init__.py,sha256=U-xd3psK4FdPzWsOpCV01vPKThQklmhWlgCxMybTC80,119
+budgitree/__main__.py,sha256=4UXD-soBigrP6BO36U-tstKEFE7npwPGv0lNocsDQ9w,3588
+budgitree/data/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+budgitree/data/example_tree.tree,sha256=E91vnbgi9_QqVWdVrjHwBRsSWyxYgWipji5PzAFENek,268
+budgitree/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+budgitree/tests/budgitree_test.py,sha256=XFBizdzDzhA6XXpo-zdzYn8KtAhXyH8LHMiXFPeEPEM,2325
+budgitree/tests/test_suite.py,sha256=N_t5Qlu8sdsafTP1sxJlq55NQMfPjZiaFnI3IW4MKJU,428
+budgitree-0.0.5.dist-info/METADATA,sha256=qPx6LKehXpxA2_zo8mvx5CZrvjlrrWn72cZOlK7L6_w,4996
+budgitree-0.0.5.dist-info/RECORD,,
+budgitree-0.0.5.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+budgitree-0.0.5.dist-info/entry_points.txt,sha256=yX8fRR5btS31VXHMs4AnWYV6jWHio_nSOaLSNp-i7b4,55
+budgitree-0.0.5.dist-info/top_level.txt,sha256=TfIleEBBJVgK1TAsSB6c6ajfUJm_xv5Iq0I97_MIJK8,10
