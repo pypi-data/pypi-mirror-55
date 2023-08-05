@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: excel-db-connector
+Version: 0.1.0
+Summary: Connects Excel to a database connector to transfer information to and fro.
+Home-page: https://github.com/fylein/fyle-db-connector
+Author: Shwetabh Kumar
+Author-email: shwetabh.kumar@fyle.in
+License: MIT
+Description: # Excel Database Connector
+        Connects Excel to a database connector to transfer information to and fro.
+        
+Keywords: fyle,db,python,excel,sqlite,postgres
+Platform: UNKNOWN
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
