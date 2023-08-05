@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+api/__init__.py
+api/core.py
+api/noompy.py
+noompy.egg-info/PKG-INFO
+noompy.egg-info/SOURCES.txt
+noompy.egg-info/dependency_links.txt
+noompy.egg-info/requires.txt
+noompy.egg-info/top_level.txt
