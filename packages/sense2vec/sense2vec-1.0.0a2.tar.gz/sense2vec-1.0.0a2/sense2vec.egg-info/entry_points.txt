@@ -1,0 +1,7 @@
+[prodigy_recipes]
+sens2vec_to_patterns = sense2vec:prodigy_recipes.to_patterns
+sense2vec_teach = sense2vec:prodigy_recipes.teach
+
+[spacy_factories]
+sense2vec = sense2vec:Sense2VecComponent.from_nlp
+
