@@ -1,0 +1,6 @@
+tika
+tqdm
+numpy
+keras
+requests
+matplotlib

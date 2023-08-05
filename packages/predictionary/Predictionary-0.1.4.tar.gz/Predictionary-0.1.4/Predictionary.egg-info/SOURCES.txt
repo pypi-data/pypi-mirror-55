@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+Predictionary/Data.py
+Predictionary/Source.py
+Predictionary/Visualize.py
+Predictionary/__init__.py
+Predictionary.egg-info/PKG-INFO
+Predictionary.egg-info/SOURCES.txt
+Predictionary.egg-info/dependency_links.txt
+Predictionary.egg-info/requires.txt
+Predictionary.egg-info/top_level.txt
