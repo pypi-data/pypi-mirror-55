@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: powerbar
+Version: 0.1.0
+Summary: Concurrency agnostic socket API
+Home-page: https://github.com/tiagocoutinho/powerbar
+Author: Jose Tiago Macara Coutinho
+Author-email: coutinhotiago@gmail.com
+License: GPLv3+
+Description: # powerbar
+        
+        Text based bars, sparks and progress bars.
+        
+        ![demo](demo.svg)
+        
+        # Installation
+        
+        From within your favourite python environment:
+        
+        ```console
+        $ pip install powerbar
+        ```
+Keywords: progress,bar,ASCII,TLI,CLI
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
