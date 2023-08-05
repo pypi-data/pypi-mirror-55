@@ -1,0 +1,6 @@
+README.md
+setup.py
+src/qasm.egg-info/PKG-INFO
+src/qasm.egg-info/SOURCES.txt
+src/qasm.egg-info/dependency_links.txt
+src/qasm.egg-info/top_level.txt
