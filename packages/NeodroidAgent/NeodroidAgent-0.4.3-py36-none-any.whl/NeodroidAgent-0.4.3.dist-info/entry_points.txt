@@ -1,0 +1,15 @@
+[console_scripts]
+neodroid-clean-all = neodroidagent.entry_points.clean:clean_all
+neodroid-ddpg = neodroidagent.agents.torch_agents.model_free.hybrid.ddpg_agent:ddpg_run
+neodroid-ddpg-gym = neodroidagent.agents.torch_agents.model_free.hybrid.ddpg_agent:ddpg_test
+neodroid-dqn = neodroidagent.agents.torch_agents.model_free.off_policy.dqn_agent:dqn_run
+neodroid-dqn-gym = neodroidagent.agents.torch_agents.model_free.off_policy.dqn_agent:dqn_test
+neodroid-open-data = neodroidagent.entry_points.open_data:main
+neodroid-pg = neodroidagent.agents.torch_agents.model_free.on_policy.pg_agent:pg_run
+neodroid-pg-gym = neodroidagent.agents.torch_agents.model_free.on_policy.pg_agent:pg_test
+neodroid-ppo = neodroidagent.agents.torch_agents.model_free.hybrid.ppo_agent:ppo_run
+neodroid-ppo-gym = neodroidagent.agents.torch_agents.model_free.hybrid.ppo_agent:ppo_test
+neodroid-rnd = neodroidagent.agents.random_agent:random_run
+neodroid-tb = neodroidagent.entry_points.tensorboard_entry_point:main
+neodroid-ucb1 = neodroidagent.agents.numpy_agents.non_contextual.ucb1_policy:main
+
