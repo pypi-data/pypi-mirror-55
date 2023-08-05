@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dadjokes-cli
+Version: 0.1.0
+Summary: Dad Jokes on your Terminal
+Home-page: UNKNOWN
+Author: sangarshanan
+Author-email: sangarshanan1998@gmail.com
+License: UNKNOWN
+Description: 
+        ## Dad jokes on your terminal 
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: dev

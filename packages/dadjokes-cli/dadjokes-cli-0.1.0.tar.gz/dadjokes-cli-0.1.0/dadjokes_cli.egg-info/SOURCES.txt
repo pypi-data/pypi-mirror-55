@@ -1,0 +1,13 @@
+README.md
+setup.py
+dadjokes/__init__.py
+dadjokes/cli.py
+dadjokes/cowsay_characters.py
+dadjokes/main.py
+dadjokes/sources.py
+dadjokes_cli.egg-info/PKG-INFO
+dadjokes_cli.egg-info/SOURCES.txt
+dadjokes_cli.egg-info/dependency_links.txt
+dadjokes_cli.egg-info/entry_points.txt
+dadjokes_cli.egg-info/requires.txt
+dadjokes_cli.egg-info/top_level.txt

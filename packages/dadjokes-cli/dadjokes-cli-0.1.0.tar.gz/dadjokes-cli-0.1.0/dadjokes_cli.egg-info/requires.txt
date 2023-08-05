@@ -1,0 +1,11 @@
+Click==7.0
+beautifulsoup4==4.8.1
+cowpy==1.1.0
+requests==2.22.0
+
+[dev]
+pytest==5.2.2
+Click==7.0
+beautifulsoup4==4.8.1
+cowpy==1.1.0
+requests==2.22.0
