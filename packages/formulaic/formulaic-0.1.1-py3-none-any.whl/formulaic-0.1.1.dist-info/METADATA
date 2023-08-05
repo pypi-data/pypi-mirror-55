@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: formulaic
+Version: 0.1.1
+Summary: An implementation of Wilkinson formulas.
+Home-page: https://github.com/matthewwardrop/formulaic
+Author: Matthew Wardrop
+Author-email: mpwardrop@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Requires-Python: >=3.6
+Requires-Dist: astor
+Requires-Dist: interface-meta
+Requires-Dist: pandas
+Requires-Dist: scipy
+Requires-Dist: wrapt
+Provides-Extra: arrow
+Requires-Dist: pyarrow ; extra == 'arrow'
+Provides-Extra: test
+Requires-Dist: bandit ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: pytest-cov ; extra == 'test'
+
+UNKNOWN
+
+
