@@ -1,0 +1,13 @@
+ehelply_batcher/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ehelply_batcher/abstract_batching_service.py,sha256=Xah1Nh6Oab9VS_f8wyQchjBJ-T6v9IdwqC3IVsJhfow,4597
+ehelply_batcher/abstract_timer_service.py,sha256=aExA1OPiFoQkZME9kle0TDmSW74qgcNACbANbpelIyU,689
+ehelply_batcher/batch.py,sha256=n6eiHz9G500yLJdW_M048Y1pSVjmlScTwhekoiFiOxM,548
+ehelply_batcher/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ehelply_batcher/tests/simulated_batching_service.py,sha256=iMYAJ-MDrk71tbs3HTkzO7DMWROEO_LYGIDzReq_W6Q,1043
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_batching_service.py,sha256=IK7GkmPb7vy_jWcX_OPBkKkC04VqT9dfyRXoSwL9wvk,318
+ehelply_batcher-1.2.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+ehelply_batcher-1.2.1.dist-info/METADATA,sha256=zXej7gK1QBl9Hcpd1Ps3fPs76wzNOeh-wY7qPWxnG4g,620
+ehelply_batcher-1.2.1.dist-info/WHEEL,sha256=2n5gfr2CmDNU5qrqPgO0uSe7oSWu-GEpPLFa0_ueMrk,97
+ehelply_batcher-1.2.1.dist-info/top_level.txt,sha256=Y--JseHuq-gK25OCIOZmdLWUT4gSQENhx-PxkRtvxVA,22
+ehelply_batcher-1.2.1.dist-info/RECORD,,
