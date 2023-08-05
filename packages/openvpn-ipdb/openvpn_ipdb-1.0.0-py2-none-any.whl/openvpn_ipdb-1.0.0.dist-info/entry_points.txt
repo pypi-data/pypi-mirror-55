@@ -1,0 +1,4 @@
+[console_scripts]
+ipdb-client-connect = openvpn_ipdb.client_connect:main
+ipdb-client-disconnect = openvpn_ipdb.client_disconnect:main
+

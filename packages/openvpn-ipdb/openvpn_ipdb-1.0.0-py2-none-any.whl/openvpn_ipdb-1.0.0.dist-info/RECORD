@@ -1,0 +1,13 @@
+openvpn_ipdb/__init__.py,sha256=w4XMPqIWX64ubsjaOAuKTgFYSFl99hm9jJea07rD8rM,214
+openvpn_ipdb/client_connect.py,sha256=ufjA_JgakepKDZ8GXZNe_IYt6gorPIhDdDAvsFcGYfE,1396
+openvpn_ipdb/client_disconnect.py,sha256=bPLyR_j9oVCSBlUPN7_QQMmQmSoc1ZniD5rBYXOXgxE,716
+openvpn_ipdb/lease_controller.py,sha256=6h834KTgFnn0J9hd54ykCWXPfFWiXW1ybUKaXFlwRvs,892
+openvpn_ipdb/lease_manager.py,sha256=5fR8vUxL5D6heYG0pvUsJsK_A7BR408ob9tvnew68aI,4385
+openvpn_ipdb/sql/leases_v4.sql,sha256=auwXyU-uuw_B3EEVCH2QkecqRarKjvdZJ2ttDi7_Uag,186
+openvpn_ipdb/sql/leases_v6.sql,sha256=ATl-N0zasDDnRlz4J1zpY8R9V8gw4UwRhz5eyxcL9PI,186
+openvpn_ipdb-1.0.0.dist-info/LICENSE.md,sha256=JsA7wEnBX8W55S15Ggbxprwy-J7cj4xwGrCq32boW4I,34940
+openvpn_ipdb-1.0.0.dist-info/METADATA,sha256=mZhXuP6Wca9c-qLKsu7ALpALXzi_ltKoH9WmwuGIN_s,851
+openvpn_ipdb-1.0.0.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+openvpn_ipdb-1.0.0.dist-info/entry_points.txt,sha256=1e-sMG37h4SQk8F3aJSsImDrMBhC2_-4ShWavs0T-so,135
+openvpn_ipdb-1.0.0.dist-info/top_level.txt,sha256=fS7hcxzc4MPShGak3j4OTvPPKlH9IAJtB2JxYi0szL0,13
+openvpn_ipdb-1.0.0.dist-info/RECORD,,
