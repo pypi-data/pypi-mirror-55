@@ -1,0 +1,12 @@
+seoanalyzer/__init__.py,sha256=PK-EyFwJoDdxb_KQBFWIMSYqDQsOrCuKTpBUZoTLP8w,79
+seoanalyzer/__main__.py,sha256=86ZhioeArSeIZu9wMjnbVt_-tTaQ8A33bt-KM-PuXiI,1356
+seoanalyzer/analyzer.py,sha256=N3clWbZ2ExOTK6gA3RraAOslO4my1a4szBfsy0CRwPA,22117
+seoanalyzer/stemmer.py,sha256=1KsPksqBabZYKFCEFcvD02-dW99ui8QyqI-Fzq55rOg,4362
+seoanalyzer/templates/index.html,sha256=m5BKo_0nZ4_REMnLZWlcSk-DjedIGDg9aOhMR1LHOyM,5548
+pyseoanalyzer-3.1.5.dist-info/LICENSE,sha256=BMoySPTC20Zv5oDIQ6dk9avyIh-40LhKEIQ3KCVfXME,1479
+pyseoanalyzer-3.1.5.dist-info/METADATA,sha256=ZInqX4fn86HkcRKoeCTb1cs2s9zdsp9QcN9KZr9-CY8,2624
+pyseoanalyzer-3.1.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyseoanalyzer-3.1.5.dist-info/entry_points.txt,sha256=e1Sk7lDmkLgA03odSS13OS1Nz-SxsHTajBEBdqND3mk,58
+pyseoanalyzer-3.1.5.dist-info/pbr.json,sha256=uaLpjRu8v5cclPvymQzfLtdyzEj1nhJelt3QvAev9tU,47
+pyseoanalyzer-3.1.5.dist-info/top_level.txt,sha256=WPjlHY1AevAFBhwqNPMnV-hbqtKeX7NjvUI7A2eTWew,12
+pyseoanalyzer-3.1.5.dist-info/RECORD,,
