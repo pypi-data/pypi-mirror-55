@@ -1,0 +1,5 @@
+setup.py
+coreio.egg-info/PKG-INFO
+coreio.egg-info/SOURCES.txt
+coreio.egg-info/dependency_links.txt
+coreio.egg-info/top_level.txt
