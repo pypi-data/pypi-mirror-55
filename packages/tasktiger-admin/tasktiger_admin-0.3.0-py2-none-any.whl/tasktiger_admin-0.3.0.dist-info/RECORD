@@ -1,0 +1,12 @@
+tasktiger_admin/__init__.py,sha256=CQjAqJ1-u6iIS5g6Zcmf4nSvX2e2f0Kgvcj-JgyRtqQ,203
+tasktiger_admin/integrations.py,sha256=tX4YxoBoUieiK7QMTE7uVRmZtwmKixpBemzhyIAy0Fs,1227
+tasktiger_admin/utils.py,sha256=cFhZhwZDAj6rBHbDutAr7fGjuC17uHpzkk3D1y3aXg8,890
+tasktiger_admin/views.py,sha256=qpTw2nYgSr6bMU0q3Tx2xAE3TOfn-hVkOg_nCGMwh1I,4454
+tasktiger_admin/templates/tasktiger_admin/tasktiger.html,sha256=5DTJl0CwiHIlKhRbSIHJooNojNefIpBds4OieaFO-xw,1280
+tasktiger_admin/templates/tasktiger_admin/tasktiger_queue_detail.html,sha256=0l1oEMSB6vL4eQT6clmnmy_-Vec2b3YC4_LN4vpHTnk,1487
+tasktiger_admin/templates/tasktiger_admin/tasktiger_task_detail.html,sha256=UvG1h-T9cSgXMON4GaqdvV4i65283YDvHu-nG3CVOc0,906
+tasktiger_admin-0.3.0.dist-info/METADATA,sha256=TPz4QFDSINVKo7kw-U721133GKD_1cpSBtWPYM7QBuw,912
+tasktiger_admin-0.3.0.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+tasktiger_admin-0.3.0.dist-info/entry_points.txt,sha256=Popbo3XB0D6U2gX1lAyAHbqgmZpi0L4jTcIQrOxUs0M,69
+tasktiger_admin-0.3.0.dist-info/top_level.txt,sha256=rXdW6pj-0Mpk9FAUh79tp0BFwJCe9hl2vis8nAPol3w,16
+tasktiger_admin-0.3.0.dist-info/RECORD,,
