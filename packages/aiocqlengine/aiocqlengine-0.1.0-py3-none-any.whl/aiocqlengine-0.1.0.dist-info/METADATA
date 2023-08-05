@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: aiocqlengine
+Version: 0.1.0
+Summary: 
+Author: Darren
+Author-email: charact3@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: aiocassandra (>=2.0,<3.0)
+Requires-Dist: cassandra-driver (>=3.20,<4.0)
