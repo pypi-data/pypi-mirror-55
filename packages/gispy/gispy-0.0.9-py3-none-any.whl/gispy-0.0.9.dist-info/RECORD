@@ -1,0 +1,9 @@
+gispy/__init__.py,sha256=OrGVnFpgrKGOVv2h3duBeSOuiRARGxPQpdLcWagKWMw,68
+gispy/raster.py,sha256=UsYgJ3393Uy-koMb3KRMls5pM7yQuFWwmp2pitlTePo,18220
+gispy/raster_vector.py,sha256=b8kY_XWLLSnj33xgi37a4jsGaUmN0AqlKyo7ciGb0Uc,28646
+gispy/vector.py,sha256=corZgvMg-lJNYzqVW7zKvowg2OB3M4a5h4HLFMEY_8I,11238
+gispy-0.0.9.dist-info/LICENSE,sha256=Czg9WmPaZE9ijZnDOXbqZIftiaqlnwsyV5kt6sEXHms,35821
+gispy-0.0.9.dist-info/METADATA,sha256=JnEQW6lkqIGQokt9-kfCcOE4E-Y3LVP6DifT91-cm0E,778
+gispy-0.0.9.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+gispy-0.0.9.dist-info/top_level.txt,sha256=IF1k1qoESXS1_CKu7tYsKec_Q3N6c3I-fX8qQaTDLAM,6
+gispy-0.0.9.dist-info/RECORD,,
