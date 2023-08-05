@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: pyexecutors
+Version: 0.0.9
+Summary: 
+         a lite-weight library to efficiently run series of 
+        asynchronous and synchronous tasks concurrently
+        without worrying about managing different threads
+        in your own.
+        
+    
+Home-page: https://github.com/tanmay23235616/pyexecutors
+Author: TANMAY MAJUMDAR
+Author-email: tanmaymajumdar5612@gmail.com
+License: MIT
+Download-URL: https://github.com/tanmay23235616/pyexecutors/archive/0.0.9.tar.gz
+Description: UNKNOWN
+Keywords: PYEXECUTOR,TANMAY23235616,MULTITHREADING
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
