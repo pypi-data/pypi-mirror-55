@@ -1,0 +1,10 @@
+cython==0.29.13
+OctoBot-Commons==1.1.48
+OctoBot-Tentacles-Manager>=1.0.12
+OctoBot-Trading==1.4.4
+OctoBot-Evaluators==1.2.5
+aiohttp==3.6.2
+jsonschema==3.1.1
+colorlog==4.0.2
+cryptography==2.8
+yarl==1.1.0
