@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: translate-it
+Version: 0.1.2
+Summary: translate it for me.
+Home-page: https://github.com/suadminwen/translate
+Author: wen
+Author-email: w_angzhiwen@163.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.5
+Requires-Dist: requests (>=2.22.0)
+Requires-Dist: lxml (>=4.4.1)
+
+UNKNOWN
+
+
