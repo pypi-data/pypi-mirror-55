@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: transit-chem
+Version: 0.0.124
+Summary: Quantifying Probabilistic Electron Transit times.
+Author: Evan Curtin
+Author-email: fakeemail@gmail.com
+Requires-Python: >=3.7.0,<4.0.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: numba (>=0.46.0,<0.47.0)
+Requires-Dist: numpy (>=1.17,<2.0)
+Requires-Dist: scipy (>=1.3,<2.0)
