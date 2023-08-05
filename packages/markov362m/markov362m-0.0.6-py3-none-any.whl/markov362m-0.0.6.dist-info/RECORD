@@ -1,0 +1,14 @@
+markov362m/__init__.py,sha256=GRcqD4IydTk9fBHm1X1jGz37UveiCqPKlygaqkUT3eI,203
+markov362m/_classes.py,sha256=JXAzIkiXU-lRbdFjLw7TCSS3G1M26nCRMRpcLQ98E_8,5966
+markov362m/_representation.py,sha256=nyx_RhIOoVutqQ-vYsHjfVRcVfV0_k5LQFnWy-4kz6o,3073
+markov362m/base.py,sha256=8C8KkPnsC799aj-5Bq9053bQtffzDaRsUkr2P2X_GQ0,16124
+markov362m/constructions.py,sha256=Txnt2URevpx2lMJCm_4Nsgs1CtIKn1RajocTpFA1-jw,922
+markov362m/examples.py,sha256=MtOBKBI7NDnSF5Nc4s_3MXZIaNtqvoizUIlKeA-zo1k,25566
+markov362m/io.py,sha256=xCsVSFvnIIJkExZrYRL9IZ3kIgh9K40Vw2L6zEVIh6E,4744
+markov362m/simulation.py,sha256=L58mvs3f2-H4_-KF9yORtsN2HmDukGfeAM4hrv7An68,731
+markov362m/utilities.py,sha256=RSNW9sjxBLbzMnzYSgHsXQjSuDYLws4y7BCfXxlUkQI,1084
+markov362m-0.0.6.dist-info/LICENSE,sha256=8B5aFkSSKudJxSIT3g2Ikvxsm1idpEzSWyv29yDc4E4,1072
+markov362m-0.0.6.dist-info/METADATA,sha256=5mJwqcLVV7-gS7OuEd1d99-Jw23Z35BjNdX5YGkMgl8,532
+markov362m-0.0.6.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+markov362m-0.0.6.dist-info/top_level.txt,sha256=KnWz8lDQVTUM_oOe1bPTFgNUpfTwgKb3Lx5zxtGtfS4,11
+markov362m-0.0.6.dist-info/RECORD,,
