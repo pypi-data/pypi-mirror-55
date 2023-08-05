@@ -1,0 +1,6 @@
+requests==2.22.0
+
+[dev]
+ipdb==0.12
+pytest==4.6.3
+httpretty==0.9.6
