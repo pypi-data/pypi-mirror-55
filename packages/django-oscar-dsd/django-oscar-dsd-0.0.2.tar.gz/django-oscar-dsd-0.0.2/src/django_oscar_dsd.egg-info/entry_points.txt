@@ -1,0 +1,3 @@
+[console_scripts]
+django_oscar_dsd = django_oscar_dsd.skeleton:run
+

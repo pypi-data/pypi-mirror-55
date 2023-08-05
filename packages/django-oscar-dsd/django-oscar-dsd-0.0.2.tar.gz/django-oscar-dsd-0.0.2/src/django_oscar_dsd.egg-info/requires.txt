@@ -1,0 +1,8 @@
+requests
+django
+django-oscar
+djangorestframework
+
+[testing]
+pytest
+pytest-cov

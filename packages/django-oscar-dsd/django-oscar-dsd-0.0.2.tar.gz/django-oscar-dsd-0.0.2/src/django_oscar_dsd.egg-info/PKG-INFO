@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: django-oscar-dsd
+Version: 0.0.2
+Summary: Django Oscar DSD integration
+Home-page: https://bitbucket.org/pai/django-oscar-dsd
+Author: pai
+Author-email: paiuolo@gmail.com
+License: mit
+Project-URL: Documentation, https://pyscaffold.org/
+Description: UNKNOWN
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Description-Content-Type: text/markdown
+Provides-Extra: testing
