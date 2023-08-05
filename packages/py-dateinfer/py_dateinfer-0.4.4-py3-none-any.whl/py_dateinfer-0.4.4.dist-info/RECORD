@@ -1,0 +1,11 @@
+pydateinfer/__init__.py,sha256=joZwG0imsytW8Xob4nwfdAa-wkd9_ZVhp8zoixosq0o,109
+pydateinfer/date_elements.py,sha256=naCrnciDn1x7m1gzkOkrlsgDw8BRP4lK0cgzdzhIYx8,6215
+pydateinfer/examples.yaml,sha256=0Q9Mo4iUxEJ2c34yiopz0nKQsv7N_w9jbq8UWKsQ0ek,3509
+pydateinfer/infer.py,sha256=3RUP8wexY0VkANPPmXSpR3DmEyd_12N5bUNznSdmLSY,10953
+pydateinfer/ruleproc.py,sha256=njUiljWmBMkFlUMUBkH5tu9mg3DQg_zvmHWM7Cb9Agk,7267
+pydateinfer/tests.py,sha256=aAkQOIzO7JMRhHsr-yZBC93wrJpTYQIEtBjeg2I7kYE,6851
+py_dateinfer-0.4.4.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+py_dateinfer-0.4.4.dist-info/METADATA,sha256=ufPaTv-T6aWOhNkUpi5zw9zGYOoRWkPWdETpZQRKz9M,3129
+py_dateinfer-0.4.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+py_dateinfer-0.4.4.dist-info/top_level.txt,sha256=u1nd5O8Gd9r8Ou_2rw6zXgW1ra44A-kueRJPjcy7F9s,12
+py_dateinfer-0.4.4.dist-info/RECORD,,
