@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: pymca-zocalo
+Version: 0.2.0
+Summary: PyMca components for automated data processing with Zocalo at Diamond Light Source
+Home-page: https://github.com/DiamondLightSource/python-zocalo-pymca
+Author: Tom Schoonjans
+Author-email: Tom.Schoonjans@diamond.ac.uk
+License: BSD license
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
