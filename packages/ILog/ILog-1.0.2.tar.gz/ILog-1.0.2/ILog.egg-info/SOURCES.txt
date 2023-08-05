@@ -1,0 +1,8 @@
+README.md
+setup.py
+ILog/ILog.py
+ILog/__init__.py
+ILog.egg-info/PKG-INFO
+ILog.egg-info/SOURCES.txt
+ILog.egg-info/dependency_links.txt
+ILog.egg-info/top_level.txt
