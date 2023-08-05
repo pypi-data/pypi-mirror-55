@@ -1,0 +1,8 @@
+README.md
+bluefors_slave.py
+setup.py
+bluefors_slave.egg-info/PKG-INFO
+bluefors_slave.egg-info/SOURCES.txt
+bluefors_slave.egg-info/dependency_links.txt
+bluefors_slave.egg-info/requires.txt
+bluefors_slave.egg-info/top_level.txt

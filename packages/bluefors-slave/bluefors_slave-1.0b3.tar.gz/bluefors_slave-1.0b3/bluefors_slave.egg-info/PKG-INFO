@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: bluefors-slave
+Version: 1.0b3
+Summary: Bluefors interface for the Overseer
+Home-page: https://github.com/vdrhtc/bluefors-monitor
+Author: Gleb Fedorov
+Author-email: vdrhtc@gmail.com
+License: UNKNOWN
+Description: This package is to monitor the state of Bluefors fridges
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
