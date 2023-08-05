@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: flask-check-json
+Version: 0.1
+Summary: JSON Validator
+Home-page: https://github.com/panda-coder/flask-check-json
+Author: Ercy Moreira Neto
+Author-email: ercym.neto@gmail.com
+License: MIT
+Download-URL: https://github.com/panda-coder/flask-check-json
+Description: UNKNOWN
+Keywords: json
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Framework :: Flask
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
