@@ -1,0 +1,8 @@
+README.txt
+setup.py
+azw3/CalibreUtils.py
+azw3/__init__.py
+azw3_converter.egg-info/PKG-INFO
+azw3_converter.egg-info/SOURCES.txt
+azw3_converter.egg-info/dependency_links.txt
+azw3_converter.egg-info/top_level.txt
