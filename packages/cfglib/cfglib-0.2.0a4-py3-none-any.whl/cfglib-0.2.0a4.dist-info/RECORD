@@ -1,0 +1,10 @@
+LICENSE,sha256=GSv9MGLrgAZ2H7lqM-RuvdA_yzT-Pf-mt-017NPt6mQ,1074
+cfglib/__init__.py,sha256=KfPUZX4Jzxr3mwh-hUxyB268Jkr3MvzmPTQuN4mveIQ,320
+cfglib/config.py,sha256=s6k2cB4S52Wj912SF8xa7yRWd5W70LhKTXZhz8c7Snc,9505
+cfglib/sources/__init__.py,sha256=lzljfs_pTI1ilKAyr1R5oiIs_6XC4zm7VMaQI1kt7-o,54
+cfglib/sources/env.py,sha256=dLJNDesvnQ3u1pXTDlhyFAGpmpExkvirPwhuxbuPQq0,1387
+cfglib/spec.py,sha256=xt6fAznXOyprdyJOlRrI_OqUeSgRzBdmnzLGbrvr9iI,10055
+cfglib-0.2.0a4.dist-info/LICENSE,sha256=GSv9MGLrgAZ2H7lqM-RuvdA_yzT-Pf-mt-017NPt6mQ,1074
+cfglib-0.2.0a4.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+cfglib-0.2.0a4.dist-info/METADATA,sha256=Zc_864nVHP_pHTb9R7pk3SzLtm3Sb4vnfcnEmdKzTKI,1106
+cfglib-0.2.0a4.dist-info/RECORD,,
