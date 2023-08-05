@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: photo_grid
+Version: 0.2.4
+Summary: A GUI for field segmentation
+Home-page: https://github.com/Poissonfish/photo_grid
+Author: James Chen
+Author-email: chun-peng.chen@wsu.edu
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
