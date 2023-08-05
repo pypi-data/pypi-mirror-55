@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+modlog/__init__.py
+modlog/main.py
+modlog.egg-info/PKG-INFO
+modlog.egg-info/SOURCES.txt
+modlog.egg-info/dependency_links.txt
+modlog.egg-info/entry_points.txt
+modlog.egg-info/not-zip-safe
+modlog.egg-info/requires.txt
+modlog.egg-info/top_level.txt
+test/test.py
