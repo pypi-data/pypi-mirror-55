@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: nextcode-sdk
+Version: 0.1.8
+Summary: Python SDK for Wuxi Nextcode Services
+Home-page: https://www.github.com/wuxi-nextcode/nextcode-python-sdk
+Author: WUXI NextCODE
+Author-email: support@wuxinextcode.com
+License: UNKNOWN
+Description: # nextcode Python SDK
+        
+        Nextcode-sdk is a python package for interfacing with Wuxi Nextcode services.
+        
+        ### Installation
+        ```bash
+        $ pip install nextcode-sdk -U
+        ```
+        
+        ```bash
+        $ pip install nextcode-sdk[jupyter] -U
+        ```
+        
+        ### Getting started
+        
+        ```python
+        import nextcode
+        client = nextcode.Client(api_key="xxx")
+        qry = client.service("query")
+        qry.status()
+        ```
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Flask
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Description-Content-Type: text/markdown
+Provides-Extra: jupyter
