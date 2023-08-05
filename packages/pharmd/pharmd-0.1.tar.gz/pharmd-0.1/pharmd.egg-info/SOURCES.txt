@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+pharmd/__init__.py
+pharmd/get_distinct.py
+pharmd/get_scores.py
+pharmd/md2pharm.py
+pharmd/smarts_features.txt
+pharmd.egg-info/PKG-INFO
+pharmd.egg-info/SOURCES.txt
+pharmd.egg-info/dependency_links.txt
+pharmd.egg-info/entry_points.txt
+pharmd.egg-info/requires.txt
+pharmd.egg-info/top_level.txt
