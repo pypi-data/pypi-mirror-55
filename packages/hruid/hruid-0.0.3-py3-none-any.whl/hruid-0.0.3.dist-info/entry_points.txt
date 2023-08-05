@@ -1,0 +1,4 @@
+[console_scripts]
+hruid=hruid.cli:main
+tests=scripts:run_tests
+

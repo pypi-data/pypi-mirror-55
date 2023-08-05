@@ -1,0 +1,13 @@
+hruid/__init__.py,sha256=G6uBHHjDch_z9XyNHZ47POZzh2fHRZE7F2uVwwEWi0o,29
+hruid/__main__.py,sha256=WGBpeLmUKkrmcIHkaGrhYvPVomqCreoJ-3UiUjsjB1E,35
+hruid/adjectives.py,sha256=k6lFwdHkhWEKRCS0MN-X5F9RhzuET2B3_yMMYfifGZo,1987
+hruid/adverbs.py,sha256=sculh5m4AE34tSBWD1BAl-BEgGx-qr0q70GXjupQhx0,1032
+hruid/cli.py,sha256=y05pvbzH-lGNm-EzOKnwPhO42b6tb6smN34ttMz2Gmk,353
+hruid/hruid.py,sha256=W6wu3067-dDgfnDEZoJ-J6F30D4F5t6ga95anTXJvTY,1320
+hruid/nouns.py,sha256=scIHKHfVP-i_h89AY-ifyo95IGZ49iHMg2FT_YIHtmw,1042
+hruid/verbs.py,sha256=b3EbEFll0fXEubcjHmXf8qm56yhqLHSZej7XPN-gQRE,1770
+hruid-0.0.3.dist-info/entry_points.txt,sha256=DIn8Ad-xdjecC_c93OMsAssz0m0VcP94eXAnhwyqObo,64
+hruid-0.0.3.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+hruid-0.0.3.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+hruid-0.0.3.dist-info/METADATA,sha256=1l0b4En5z0rz-pdoEF6ldGm2MpFaImEUUgQWauo_180,2839
+hruid-0.0.3.dist-info/RECORD,,
