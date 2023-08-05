@@ -1,0 +1,28 @@
+Metadata-Version: 1.1
+Name: pylint-import-requirements
+Version: 1.0.0
+Summary: A pylint plugin to check that all imports have matching requirements specified
+Home-page: http://github.com/Catalysts/pylint-import-requirements
+Author: Moritz 'WanzenBug' Wanzenböck
+Author-email: moritz.wanzenboeck@catalysts.cc
+License: GPL
+Description: # pylint_import_requirements
+        Pylint plugin that checks that all imports can be resolved from the package requirements
+        
+        ## Install
+        ```
+        pip install pylint-import-requirements
+        ```
+        
+        ## Usage
+        ```
+        pylint --load-plugins=pylint_import_requirements *.py
+        ```
+        
+Keywords: pylint import requirements
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Software Development :: Debuggers
+Classifier: Topic :: Software Development :: Testing
+Classifier: Topic :: Software Development :: Quality Assurance
+Classifier: License :: OSI Approved :: GNU General Public License (GPL)
