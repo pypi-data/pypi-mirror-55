@@ -1,0 +1,11 @@
+model_field_meta/__init__.py,sha256=Pxg5TIlzaL9TDDGMq5EMH6cjMO5FySU7gz7z8vjK_3Y,202
+model_field_meta/fields.py,sha256=lW2pdnIC6dML2hlQMyckl5Ay6pyYG2UHhSCLaAvb0MQ,261
+model_field_meta/mixins.py,sha256=IJNptmZoIrbeRDBAR-pupWg3OXG6CXfDGRyaw55vA5o,138
+model_field_meta/wrapper.py,sha256=4BOx4lOnf3y-TQa00m9gEhFkA168dsMe8hAIJFwOj_s,848
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/models.py,sha256=Rfd72kNxih-Sj4TzLSP9UiSur2RZMWvLU3xnM3RE-AQ,80
+django_model_field_meta-0.0.1.dist-info/LICENSE,sha256=YjI_XBROXgWSpH0L-jYUqPLrWgPNnyqj8pK5E7TACmw,1067
+django_model_field_meta-0.0.1.dist-info/METADATA,sha256=wajkSIP_F49uChXBuSYHKOsEBZITyOgSuGB-Zww2UQ4,2326
+django_model_field_meta-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_model_field_meta-0.0.1.dist-info/top_level.txt,sha256=g-MKeJZv7Ae07hyQXPnUkHuHMGvOKCi98UVpHbvMwWg,23
+django_model_field_meta-0.0.1.dist-info/RECORD,,
