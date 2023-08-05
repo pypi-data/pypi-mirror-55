@@ -1,0 +1,11 @@
+sparkle_session/__init__.py,sha256=yfddYwl0v3XoBpgb7CZ-FkgLBfEACReGmpS000ufTC8,308
+sparkle_session/dataframe.py,sha256=jZsWrkN0mcRrvhu9x44s7zsNVxG20VJkg20Zv6He6EU,2618
+sparkle_session/session.py,sha256=MMAvJxGCi_12wKIAc8LAS4j0Rctpdu8QM0ThxgtHpT4,1513
+sparkle_session/struct_type.py,sha256=TiVYYK9BxXBH85ftMbdBFEkMwR1M_g1FzJjSpc-K998,1050
+sparkle_session/utils.py,sha256=d8udNYI2mGhf5sQxT5d6NRwlFpPzfxN6YOElR3VTvbE,805
+sparkle_session-1.0.1.dist-info/METADATA,sha256=tXkV3zKR5dxCeNsKts2wra66S9-jOv2gC3sWywLSwfg,590
+sparkle_session-1.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+sparkle_session-1.0.1.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sparkle_session-1.0.1.dist-info/top_level.txt,sha256=RzAoWsXSSNgutJ37jKLO3Tx0GczOOwkEvftatYBo0tI,16
+sparkle_session-1.0.1.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+sparkle_session-1.0.1.dist-info/RECORD,,
