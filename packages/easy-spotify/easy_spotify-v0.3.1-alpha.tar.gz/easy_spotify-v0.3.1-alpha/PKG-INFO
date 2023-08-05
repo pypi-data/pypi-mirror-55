@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: easy_spotify
+Version: v0.3.1-alpha
+Summary: Simple access the Spotify WEB API for general requests about artists, albums or songs
+Home-page: https://github.com/user/OktarianTB
+Author: Tilney-Bassett Oktarian
+Author-email: ogt@connect.ust.hk
+License: UNKNOWN
+Download-URL: https://github.com/OktarianTB/easy_spotify/archive/v0.3.1-alpha.tar.gz
+Description: UNKNOWN
+Keywords: SPOTIFY,WEB API
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
