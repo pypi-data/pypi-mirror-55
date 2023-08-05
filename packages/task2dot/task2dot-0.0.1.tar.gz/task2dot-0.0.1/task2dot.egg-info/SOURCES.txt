@@ -1,0 +1,10 @@
+README.md
+setup.py
+task2dot.egg-info/PKG-INFO
+task2dot.egg-info/SOURCES.txt
+task2dot.egg-info/dependency_links.txt
+task2dot.egg-info/top_level.txt
+taskwarrior2net/__init__.py
+taskwarrior2net/edges.py
+taskwarrior2net/net2dot.py
+taskwarrior2net/task_lib.py
