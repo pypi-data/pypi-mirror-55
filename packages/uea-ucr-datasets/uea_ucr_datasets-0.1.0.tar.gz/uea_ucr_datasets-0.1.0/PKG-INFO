@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: uea-ucr-datasets
+Version: 0.1.0
+Summary: A small package for loading and handling UEA UCR time series classification datasets.
+Author: Max Horn
+Author-email: max.horn@bsse.ethz.ch
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: sktime (>=0.3.1,<0.4.0)
