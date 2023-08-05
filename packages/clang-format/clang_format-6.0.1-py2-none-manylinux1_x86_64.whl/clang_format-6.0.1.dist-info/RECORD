@@ -1,0 +1,9 @@
+clang_format-6.0.1.dist-info/top_level.txt,sha256=rA6SWzR0M58097TuUJruKA1tsL9ltK-E-NsoxOgyiTk,13
+clang_format-6.0.1.dist-info/METADATA,sha256=VhyHCJo4C2aOKWg0Je4Rowbscc0eq2RxR4ycE_gDkQo,682
+clang_format-6.0.1.dist-info/WHEEL,sha256=pXXxzPOKAsJAx30MU5lRz_H2aaL20rYqEbnIm_LVXiA,129
+clang_format-6.0.1.dist-info/RECORD,,
+clang_format/__version__.py,sha256=iCHL2vjGSBp1qxii844CAkRXGFpSG7WWtKuk6Bzt6IA,16
+clang_format/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+clang_format-6.0.1.data/scripts/git-clang-format,sha256=NSIpa8JaZsVabTHzuaN3GYkLMFdRGmptzyNuW5XPbAU,21778
+clang_format-6.0.1.data/scripts/clang-format,sha256=5R8PORjzsm8kOdcQjzD568kH1jOG1q-l9N00ngBSwKU,3089908
+clang_format-6.0.1.data/scripts/clang-format-diff.py,sha256=PABJljOustGd495UkT7TP7tLbucXsflzET_cqFfLFao,4441
