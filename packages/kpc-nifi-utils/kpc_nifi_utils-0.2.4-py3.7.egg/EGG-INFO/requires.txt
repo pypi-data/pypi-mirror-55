@@ -1,0 +1,6 @@
+pymongo
+argparse
+pytz
+snowflake-connector-python==2.0.2
+python-tds
+pg8000
