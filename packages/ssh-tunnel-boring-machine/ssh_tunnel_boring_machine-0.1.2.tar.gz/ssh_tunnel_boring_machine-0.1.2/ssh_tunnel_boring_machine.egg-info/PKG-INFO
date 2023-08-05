@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: ssh-tunnel-boring-machine
+Version: 0.1.2
+Summary: A tool for managing SSH tunnels from the command line
+Home-page: https://github.com/dominicdoty/tbm
+Author: Dominic Doty
+Author-email: doty.dominic@gmail.com
+License: MIT
+Description: # TBM - Tunnel Boring Machine
+        A command line program for managing SSH tunnels.
+        
+        ## Examples
+        
+        Open them by name:
+        ```
+        tbm open syncthing
+        ```
+        
+        Close them by name:
+        ```
+        tbm close syncthing
+        ```
+        
+        See open tunnels:
+        ```
+        tbm list
+        
+        name       |remote_username  |remote_server            |local_port  |remote_hostname  |remote_port  |ssh_port  |
+        ================================================================================================================
+        tun1       |shane            |non_saved_tunnel.com     |1997        |localhost        |3794         |78        |
+        syncthing  |shane_lizard     |server.shane_lizard.com  |3000        |localhost        |8384         |22        |
+        
+        ```
+        
+        See saved tunnels:
+        ```
+        tbm list saved
+        
+        name         |remote_username  |remote_server           |local_port  |remote_hostname  |remote_port  |ssh_port  |
+        =================================================================================================================
+        syncthing    |shane_lizard     |server.shane_lizard.com |3000        |localhost        |8384         |22        |
+        example_tun  |shane            |not_real.com            |2730        |localhost        |1920         |22        |
+        good_tun     |lizard           |demo.website.com        |1776        |localhost        |4496         |792       |
+        
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
