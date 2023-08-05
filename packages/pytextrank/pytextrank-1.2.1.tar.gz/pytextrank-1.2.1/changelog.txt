@@ -1,0 +1,52 @@
+# pytextrank changelog
+
+## 1.2.1
+
+2019-11-01
+
+### Improved
+
+  * fixed error in installation instructions
+
+## 1.2.0
+
+2019-11-01
+
+### Improved
+
+ * updated to fix for current versions of `spaCy` and `networkX` -- kudos @dimmu
+ * removed deprecated argument -- kudos @laxatives
+
+## 1.1.1
+
+2017-09-15
+
+### Improved
+
+  * Patch disables use of NER in spaCy until an intermittent bug is resolved.
+  * Will probably replace named tuples with spaCy spans instead.
+
+## 1.1.0
+
+2017-06-07
+
+### Improved
+
+ * replaced use of TextBlob with spaCy
+ * updated other Py dependencies
+ * better handling for UTF-8
+
+## 1.0.1
+
+2017-03-15
+
+### Added
+
+ * updated Jupyter notebook example -- kudos @kjam
+
+2017-04-30
+
+### Improved
+
+ * better install/import for aptagger
+ * comparing spaCy performance with TextBlob
