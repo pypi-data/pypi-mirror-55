@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+translate_it/__init__.py
+translate_it/__version__.py
+translate_it/translate_it.py
+translate_it.egg-info/PKG-INFO
+translate_it.egg-info/SOURCES.txt
+translate_it.egg-info/dependency_links.txt
+translate_it.egg-info/entry_points.txt
+translate_it.egg-info/not-zip-safe
+translate_it.egg-info/requires.txt
+translate_it.egg-info/top_level.txt
