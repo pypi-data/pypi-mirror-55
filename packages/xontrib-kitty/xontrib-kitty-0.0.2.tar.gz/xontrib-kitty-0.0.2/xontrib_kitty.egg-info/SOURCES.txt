@@ -1,0 +1,13 @@
+AUTHORS.rst
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+xontrib/kitty.xsh
+xontrib_kitty/__init__.py
+xontrib_kitty/aliases_and_completions.xsh
+xontrib_kitty/mpl.xsh
+xontrib_kitty.egg-info/PKG-INFO
+xontrib_kitty.egg-info/SOURCES.txt
+xontrib_kitty.egg-info/dependency_links.txt
+xontrib_kitty.egg-info/top_level.txt
