@@ -1,0 +1,9 @@
+README.md
+json2csv.py
+setup.py
+python_json2csv.egg-info/PKG-INFO
+python_json2csv.egg-info/SOURCES.txt
+python_json2csv.egg-info/dependency_links.txt
+python_json2csv.egg-info/entry_points.txt
+python_json2csv.egg-info/requires.txt
+python_json2csv.egg-info/top_level.txt
