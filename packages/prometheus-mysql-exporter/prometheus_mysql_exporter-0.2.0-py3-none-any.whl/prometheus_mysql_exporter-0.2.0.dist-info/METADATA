@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: prometheus-mysql-exporter
+Version: 0.2.0
+Summary: MySQL query Prometheus exporter
+Home-page: https://github.com/braedon/prometheus-mysql-exporter
+Author: Braedon Vickers
+Author-email: braedon.vickers@gmal.com
+License: MIT
+Keywords: monitoring prometheus exporter mysql
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: System :: Monitoring
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
+Requires-Dist: click
+Requires-Dist: jog
+Requires-Dist: mysqlclient
+Requires-Dist: prometheus-client (>=0.6.0)
+
+UNKNOWN
+
+
