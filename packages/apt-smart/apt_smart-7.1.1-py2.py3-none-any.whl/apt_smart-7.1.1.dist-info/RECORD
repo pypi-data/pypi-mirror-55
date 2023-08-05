@@ -1,0 +1,15 @@
+apt_smart/__init__.py,sha256=RgTa9swF8ebu1f08evbCugwH6k8l4YniuDs7Zmot1yM,54137
+apt_smart/cli.py,sha256=BF552a_7Ncfyb1SZ8YlKRMtbSD-mv4JKtadcihL2S4I,10457
+apt_smart/http.py,sha256=hZSxDwZPggU_VTjOZ1hqEahiCOJ2g3XrHdwV4duS1QM,5082
+apt_smart/releases.py,sha256=a0STkcyrZqFw3aF3RnmUTObqwKNYlRwTchZ7ZuIohns,48924
+apt_smart/tests.py,sha256=6tJCqiu0PWB7eNs5hcWVBtHlLQhcjnyihNU3I_VYO8U,14331
+apt_smart/backends/__init__.py,sha256=jO2wrxLsB4if9nQkkvU4dzXg84w2TuRhSGV4lf1eGKA,76
+apt_smart/backends/debian.py,sha256=5PNDRPb9NB5tV753hrGrRNo0kt9iDjIltHCszZV69yA,8766
+apt_smart/backends/linuxmint.py,sha256=8cTEXm3BoEQAwRJp32BPqYh48Eg8VwZyuh8HS2iP5DA,7587
+apt_smart/backends/ubuntu.py,sha256=FbqJmJ0GLUYadLPcIT4qSh3ckW3PFxAGV6y6VP4pF4w,10456
+apt_smart-7.1.1.dist-info/LICENSE.txt,sha256=Bq3jJLNACp8y4d7IQydMS8VMLI9V6axmYa3izJBM_AI,1070
+apt_smart-7.1.1.dist-info/METADATA,sha256=rjWcyGu9b7hwHj6HWgsY8rw0GBRv1S5SW-VKvxhQSnQ,15570
+apt_smart-7.1.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+apt_smart-7.1.1.dist-info/entry_points.txt,sha256=TRKMVDiJggrpaZTRdZwgl5tkQCT0WQha-YokuL7-Ljo,50
+apt_smart-7.1.1.dist-info/top_level.txt,sha256=sOQyaOWSjkSIF0E_iAjOXgdR6YJgA5Qv09SU2zbccSo,10
+apt_smart-7.1.1.dist-info/RECORD,,
