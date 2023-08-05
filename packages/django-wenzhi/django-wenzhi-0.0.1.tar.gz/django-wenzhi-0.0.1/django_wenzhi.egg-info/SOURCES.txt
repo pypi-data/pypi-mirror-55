@@ -1,0 +1,8 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+django_wenzhi.egg-info/PKG-INFO
+django_wenzhi.egg-info/SOURCES.txt
+django_wenzhi.egg-info/dependency_links.txt
+django_wenzhi.egg-info/top_level.txt
