@@ -1,0 +1,61 @@
+<!doctype HTML>
+<html>
+  <head>
+    <title>ProtoTurk</title>
+
+    <script src="static/jquery-3.4.1.js"></script>
+    <script>
+    $(document).ready(function() {
+      var total_tasks = {{ total_tasks }};
+
+      for (var i = 0; i < total_tasks; i++) {
+        $('#task_list').append(
+          $('<li>').append(
+            $('<a>').attr('href', '/task/' + i)
+                    .text('Task #' + i)));
+      }
+    });
+    </script>
+  </head>
+  <body>
+    <div>
+      <div>
+        <span style="font-size: 1.2em; font-weight: bold;">
+          <a href="https://github.com/hltcoe/prototurk">ProtoTurk</a>
+        </span>
+      </div>
+
+      <hr>
+
+      <div>
+        <h1>Task List</h1>
+        <ul id="task_list">
+        </ul>
+      </div>
+
+      <hr>
+
+      <div>
+        <table>
+          <tr>
+            <td style="text-align: right;">
+              HTML template:
+            </td>
+            <td>
+              <i>{{ html_template_filename }}</i>
+            </td>
+          </tr>
+          <tr>
+            <td style="text-align: right;">
+              CSV file:
+            </td>
+            <td>
+              <i>{{ csv_filename }}</i>
+            </td>
+          </tr>
+        </table>
+      </div>
+    </div>
+
+  </body>
+</html>
