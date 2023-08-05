@@ -1,0 +1,6 @@
+ZODB
+SysScribe
+future
+fabric3
+zodbpickle
+Jinja2
