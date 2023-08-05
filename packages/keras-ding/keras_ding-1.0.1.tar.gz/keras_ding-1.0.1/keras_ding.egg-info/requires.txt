@@ -1,0 +1,13 @@
+tensorflow
+simpleaudio
+jupyter
+environments_utils
+
+[test]
+pytest
+pytest-cov
+coveralls
+validate_version_code
+codacy-coverage
+numpy
+silence_tensorflow
