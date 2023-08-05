@@ -1,0 +1,12 @@
+edumated/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+edumated/__version__.py,sha256=6FYos2LkTcX4YcCtrC5o83ba4pTmpAjfnopP7Mbaafk,89
+edumated/edumate.py,sha256=LLOx5VQ7fY5RIJ-JBg03IJG5yYp73tUDzykEqWyNz3I,1162
+edumated/fetch.py,sha256=uL2tRT7Q3NJ6IfM7SF49absol_Fv13qjZrtLV-fISx0,6886
+edumated/googcal.py,sha256=tnPtij-OS0Kw3AgKTi3THtY8ejnkFXlGL0dOk4Qyz-4,4764
+edumated/util.py,sha256=ENTc-vkHEwJbJlMopbaUf4a6pqLWWyVvNG-g_jd2Bo4,3442
+edumated-0.4.0.dist-info/LICENSE,sha256=f5BQ2iaB36HuoBvwI24kC75bLxGTSNdOlUXp2M-mM8Q,1067
+edumated-0.4.0.dist-info/METADATA,sha256=oKVl8LdOpLKzo5xjbyUU4EbHFf2cy56PerqFKga9ZWc,1491
+edumated-0.4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+edumated-0.4.0.dist-info/entry_points.txt,sha256=LaLGP4rMEQ6bseUxO3ysaSGyUFP9tkfRseutMPojpjM,52
+edumated-0.4.0.dist-info/top_level.txt,sha256=YBTzQkrMIQlKq-rNAqfGTEhJJiEZLsASbTBks7GUK1o,9
+edumated-0.4.0.dist-info/RECORD,,
