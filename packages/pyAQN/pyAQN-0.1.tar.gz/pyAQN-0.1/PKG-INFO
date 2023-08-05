@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: pyAQN
+Version: 0.1
+Summary: Python implementation of Adjusted Quantile Normalization
+Home-page: https://github.com/YakhiniGroup/PyAQN
+Author: Shay Ben-Elazar
+Author-email: shaybenelazar@hotmail.com
+License: MIT
+Download-URL: https://github.com/YakhiniGroup/PyAQN/archive/v0.1.tar.gz
+Description: UNKNOWN
+Keywords: Quantile,Normalization
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
