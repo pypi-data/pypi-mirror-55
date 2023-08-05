@@ -1,0 +1,7 @@
+setup.py
+src/LgpDemo/__init__.py
+src/LgpDemo/rfdemo.py
+src/auto1031.egg-info/PKG-INFO
+src/auto1031.egg-info/SOURCES.txt
+src/auto1031.egg-info/dependency_links.txt
+src/auto1031.egg-info/top_level.txt
