@@ -1,0 +1,3 @@
+[console_scripts]
+wp = wp.cli:main
+
