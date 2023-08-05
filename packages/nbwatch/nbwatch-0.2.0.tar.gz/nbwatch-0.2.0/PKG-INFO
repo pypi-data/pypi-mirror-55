@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: nbwatch
+Version: 0.2.0
+Summary: Preview IPython notebooks in your browser.
+License: MIT
+Author: Jeremiah Boby
+Author-email: mail@jeremiahboby.me
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: docopt (>=0.6.2,<0.7.0)
+Requires-Dist: flask (>=1.1.1,<2.0.0)
+Requires-Dist: nbconvert (>=5.6.1,<6.0.0)
+Description-Content-Type: text/markdown
+
+# nbwatch
+Preview IPython notebooks in your browser.
+
+# Installation
+nbwatch can be installed from [PyPI](https://pypi.org/project/nbwatch/):
+```shell
+pip install tapmap
+```
+Or with [poetry](https://poetry.eustace.io):
+```shell
+git clone https://github.com/AnonGuy/nbwatch
+cd nbwatch
+poetry install
+```
+
