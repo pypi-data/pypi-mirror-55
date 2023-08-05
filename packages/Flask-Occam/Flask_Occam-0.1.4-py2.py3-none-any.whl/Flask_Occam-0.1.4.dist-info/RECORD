@@ -1,0 +1,13 @@
+Flask_Occam-0.1.4.dist-info/DESCRIPTION.rst,sha256=2WNKfu0qZSG6EEoKfJdZYDJaouNSlIUA70iQb6_uasU,4900
+Flask_Occam-0.1.4.dist-info/METADATA,sha256=FCgaayMdjYJsu-OI-FU6g5_W4OZ6O2OatUTf2HArq64,6045
+Flask_Occam-0.1.4.dist-info/RECORD,,
+Flask_Occam-0.1.4.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+Flask_Occam-0.1.4.dist-info/metadata.json,sha256=pUBeuaaoF6lSUdNsqe8TzZkNl6ILnhET3ETICHjTjCo,1313
+Flask_Occam-0.1.4.dist-info/top_level.txt,sha256=N9NMMgK71RLxW70T4yvjE-Pur_Ldlh1AUvCOHJjejV4,12
+flask_occam/__init__.py,sha256=6LOCmJM_LdfFDRklWTZoaFroPo4COJG3-FYbSR77w4c,731
+flask_occam/converters.py,sha256=leRSI8JgKoD0wjlm55S0vVd5kwxfYhpjmBSzRT7xYEY,2804
+flask_occam/decorators.py,sha256=U9OwPjO3QAWjYPaj5TYcBtLKLit4MyMNvRb5i12E8vQ,18075
+flask_occam/errors.py,sha256=W-rcBMBWcvESvpJ2JfiFeWIFt6eD3I5VwFFcRg2lB0A,871
+flask_occam/handlers.py,sha256=jy5D--zhmjGe13aMZsYmYUoO9CiY0fBW72FJctX1iec,1641
+flask_occam/mixins.py,sha256=o8DB7g9Sc1dRxhQLJuFLkW2iSO9nMGGQ-WpPvV1m39k,4776
+flask_occam/plugin.py,sha256=JYG6MfIDcRKUTvly48E4U0lIKpu8mCasOw2CFKkPoYE,6705
