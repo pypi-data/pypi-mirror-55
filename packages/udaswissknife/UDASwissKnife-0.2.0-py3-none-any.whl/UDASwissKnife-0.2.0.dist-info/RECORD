@@ -1,0 +1,12 @@
+SwissKnife/__init__.py,sha256=s62rZ2BdvMk4O9FUxnYMzElJ7VdiRMDi0PVDbXT-jj4,92
+SwissKnife/info/ExecutionEnvironment.py,sha256=3v-vhuBpRG31GsfOZZaWSXuo8XeQsFn9W7vB514HmSY,2330
+SwissKnife/info/__init__.py,sha256=H_k7X93QTNHDPLUnb8IkUofF3pBinbSsHYz_iKrSBNo,321
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/info/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/info/test_CURRENT_ENVIRONMENT.py,sha256=852kDzK6De3P5wrwOL1wVGSRobU38DuU9SH6rEqFIZs,1434
+tests/info/test_ExecutionEnvironment.py,sha256=CBhOBcivUDPrt20AcqttP5Qdl--7JFRlFrsIl92iNHY,2714
+UDASwissKnife-0.2.0.dist-info/LICENSE,sha256=xV0Xu9NBSIi4AiNJiw-z2TVsSPS_q2OTL9jjCkNQzpM,1077
+UDASwissKnife-0.2.0.dist-info/METADATA,sha256=qX0ST6x7B4-TSsxGq0-tJ63cLDr9CiG8PIhgsV8j2hM,387
+UDASwissKnife-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+UDASwissKnife-0.2.0.dist-info/top_level.txt,sha256=wFwitlnzvneK_yqDH7jnDoNxkQ2QTVSPL4nZhpMD4rA,17
+UDASwissKnife-0.2.0.dist-info/RECORD,,
