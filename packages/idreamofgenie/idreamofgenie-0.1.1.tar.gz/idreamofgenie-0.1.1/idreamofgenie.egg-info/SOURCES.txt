@@ -1,0 +1,11 @@
+README.md
+setup.py
+bin/find-host
+idreamofgenie/__init__.py
+idreamofgenie/basic.py
+idreamofgenie/connect.py
+idreamofgenie.egg-info/PKG-INFO
+idreamofgenie.egg-info/SOURCES.txt
+idreamofgenie.egg-info/dependency_links.txt
+idreamofgenie.egg-info/requires.txt
+idreamofgenie.egg-info/top_level.txt

@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: idreamofgenie
+Version: 0.1.1
+Summary: Toolbox of modules and scripts for pyATS Genie
+Home-page: https://github.com/jeremyschulman/idreamofgenie
+Author: Jeremy Schulman
+License: UNKNOWN
+Description: # I Dream of Genie
+        
+        Toolbox of modules and scripts using pyATS Genie 
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: System Administrators
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Networking
+Description-Content-Type: text/markdown
