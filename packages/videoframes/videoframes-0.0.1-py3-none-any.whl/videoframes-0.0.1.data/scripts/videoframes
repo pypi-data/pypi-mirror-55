@@ -1,0 +1,4 @@
+#!python
+import sys
+from videoframes.frames import main
+sys.exit(main())
