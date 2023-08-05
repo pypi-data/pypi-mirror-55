@@ -1,0 +1,7 @@
+[pydocstyle]
+add-ignore =
+    # Check docstrings, but don't require them
+    # This is a compromise to avoid noisy errors in test code
+    D1,
+match = .*.py
+match_dir = (scripts|src|tests)
