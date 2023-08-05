@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        benv=benv.benv:cli
+    
