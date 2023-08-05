@@ -1,0 +1,34 @@
+CHANGES
+=======
+
+2.0.1
+-----
+
+* Fix argparse and unicode issues
+
+2.0.0
+-----
+
+* Add feature to copy to clipboard
+* Refactor and python3 support
+* Use string format
+
+1.0.2
+-----
+
+* Updated PyPI badges
+* Updated README
+* Added Travis CI and PyPI badges
+* Renamed license file
+* Updated License in classifiers
+* Fixes #2 and #3. Using pbr for building python module
+* Fixes #1. Added default python logging facility
+* Moved config to single dict for consistency
+* Fixed typo and PEP8
+* Added alias '-f' to '--file' argument
+* Added delete operation from filesystem
+* Updated README
+* Typo
+* Documentation
+* Added local filesystem operations
+* First draft
