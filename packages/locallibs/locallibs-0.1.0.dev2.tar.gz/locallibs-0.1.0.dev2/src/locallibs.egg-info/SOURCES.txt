@@ -1,0 +1,9 @@
+README.rst
+setup.py
+src/locallibs/__init__.py
+src/locallibs/locallibs.py
+src/locallibs.egg-info/PKG-INFO
+src/locallibs.egg-info/SOURCES.txt
+src/locallibs.egg-info/dependency_links.txt
+src/locallibs.egg-info/entry_points.txt
+src/locallibs.egg-info/top_level.txt

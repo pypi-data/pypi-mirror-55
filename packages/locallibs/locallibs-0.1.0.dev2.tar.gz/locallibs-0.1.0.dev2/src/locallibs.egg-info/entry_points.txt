@@ -1,0 +1,3 @@
+[console_scripts]
+locallibs = locallibs:locallibs_cli
+
