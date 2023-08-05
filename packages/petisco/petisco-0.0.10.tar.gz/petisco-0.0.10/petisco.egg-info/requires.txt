@@ -1,0 +1,7 @@
+meiga
+dataclasses
+dataclasses-json
+
+[flask]
+connexion==2.2.0
+Flask-Cors==3.0.7
