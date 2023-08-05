@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: pyRinexpro
+Version: 0.1.2
+Summary: Python client for the rinexpro API
+Home-page: https://rinexpro.com/en/home/
+Author: fbsolutions
+Author-email: contact@rinexpro.com
+License: UNKNOWN
+Project-URL: Documentation, https://pyrinexpro.readthedocs.io/en/latest/
+Project-URL: Source Code, https://github.com/fbsolutions/pyRinexpro
+Project-URL: API, https://rinexpro.com/en/home/
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: simplekml
+Requires-Dist: geojson
+Requires-Dist: pandas
+Requires-Dist: requests
+
+# pyRinexpro
+pyRinexpro is a Python client for the [rinexpro](https://rinexpro.com/en/home/) API.
+
+## Install
+pyRinexpro can be install using pip
+
+```
+pip install pyRinexpro
+```
+## Getting Started
+The first step is to import the pyRinexpro module and to instantiate a pyRinexpro.Client using your API key
+
+```python
+>>> import pyRinexpro as rnx
+>>> client = rnx.Client(API_KEY)
+```
+From the client you can create a pyRinexpro.Session by uploading a session file
+```python
+>>> session = client.uploadSession("your_session_file")
+```
+Once the session preprocessing is completed, which should take about 20 seconds, you can create and run a pyRinexpro.Process from this session
+```python
+>>> process = session.newProcess('ppp', mode='static')
+```
+Once the process is completed you can get the resultat as a pyRinexpro.Log object
+```python
+>>> log = process.getLog()
+```
+Trajectory can be transfom into a pandas.DataFrame object
+```python
+>>> log.trajectory.df()
+```
+Results can be exported to geojson, kml and kmz
+```python
+>>> log.to_geojson('new_file.json')
+>>> log.to_kml('new_file.kml')
+>>> log.to_kmz('new_file.kmz')
+```
+## Documentation
+Documentation can be found [here](https://pyrinexpro.readthedocs.io/en/latest/)
+
+
