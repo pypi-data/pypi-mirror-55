@@ -1,0 +1,10 @@
+README.md
+setup.py
+magurn/TorrentSearch.py
+magurn/proxy.py
+magurn.egg-info/PKG-INFO
+magurn.egg-info/SOURCES.txt
+magurn.egg-info/dependency_links.txt
+magurn.egg-info/entry_points.txt
+magurn.egg-info/requires.txt
+magurn.egg-info/top_level.txt
