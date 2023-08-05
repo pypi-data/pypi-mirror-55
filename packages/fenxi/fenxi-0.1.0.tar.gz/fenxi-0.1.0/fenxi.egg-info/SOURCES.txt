@@ -1,0 +1,9 @@
+README.md
+setup.py
+fenxi/__init__.py
+fenxi/cli.py
+fenxi.egg-info/PKG-INFO
+fenxi.egg-info/SOURCES.txt
+fenxi.egg-info/dependency_links.txt
+fenxi.egg-info/entry_points.txt
+fenxi.egg-info/top_level.txt
