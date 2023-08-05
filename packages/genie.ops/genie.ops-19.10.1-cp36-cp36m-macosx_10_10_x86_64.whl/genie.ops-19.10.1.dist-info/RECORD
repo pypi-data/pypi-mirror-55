@@ -1,0 +1,15 @@
+genie.ops-19.10.1-py3.6-nspkg.pth,sha256=h9oTUb5LE_2FqXSiu6TZnnXBniNRCjJ-m892Tw1Sru0,534
+genie/ops/__init__.py,sha256=w0iVwWfTIwRqHWiu8TkSgMvy6V3sEEWdPkRvLnVZbqM,1281
+genie/ops/ops_schema.py,sha256=lBuMTGByCHGYNU4Lwjm0Yuym8b2c7eJ9pd51wlQU0yU,281079
+genie/ops/ops_schema_generator.cpython-36m-darwin.so,sha256=__6clVQTZSmPe2Awnc3Dvnwymydktr97enHkIpq17Wk,108064
+genie/ops/utils.cpython-36m-darwin.so,sha256=8ypkI3kubSJrSpSRXRchHWkjdmf5j5978IplYvtqTAo,101084
+genie/ops/base/__init__.py,sha256=i0kwZsl5KbyBk8qONG_eTs5ktsulwuBe2b9xIb_vXq8,49
+genie/ops/base/base.cpython-36m-darwin.so,sha256=zIFUVCXbFbdxuiPZHrucmAD6v-z2Ln4tju_Cm4GDwOM,199680
+genie/ops/base/diffdict.cpython-36m-darwin.so,sha256=oCxzaqTicUDHjjlLTs6J-bfW-mafgEd3P4q7wMT_z8o,129488
+genie/ops/base/exceptions.cpython-36m-darwin.so,sha256=l9cqmeqOEmfmJjOWRq6zlGR7TPOBLvUdbUPesf8C10s,24168
+genie/ops/base/maker.cpython-36m-darwin.so,sha256=P5iXkaHNxY0O1TqfHQBDlte3yC8Seny7vq-ZdqdE6HY,522208
+genie.ops-19.10.1.dist-info/METADATA,sha256=RWxDxkziGvh_ue3lKFUpCI7ONj7QNme-zQKTSUHKQrQ,3553
+genie.ops-19.10.1.dist-info/WHEEL,sha256=ogjGhgsKzx706xEGYI52xLr7ggrhHGZ8RP6DKakS-0A,111
+genie.ops-19.10.1.dist-info/namespace_packages.txt,sha256=EW4swMMBmuGW5VFCUGsl828kVUhrmMZJGHXfzmOidSg,6
+genie.ops-19.10.1.dist-info/top_level.txt,sha256=EW4swMMBmuGW5VFCUGsl828kVUhrmMZJGHXfzmOidSg,6
+genie.ops-19.10.1.dist-info/RECORD,,
