@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: cfn-ami-to-mapping
+Version: 0.6.5
+Summary: Get AMI IDs per region automatically for your CloudFormation template
+Home-page: UNKNOWN
+Author: Roman Banakh
+Author-email: banakh.ri@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
