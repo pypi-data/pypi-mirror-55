@@ -1,0 +1,7 @@
+README.md
+setup.py
+gitrange.egg-info/PKG-INFO
+gitrange.egg-info/SOURCES.txt
+gitrange.egg-info/dependency_links.txt
+gitrange.egg-info/entry_points.txt
+gitrange.egg-info/top_level.txt
