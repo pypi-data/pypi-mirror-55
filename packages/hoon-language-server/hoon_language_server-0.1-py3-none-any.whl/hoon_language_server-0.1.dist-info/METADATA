@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: hoon-language-server
+Version: 0.1
+Summary: Language Server for Hoon
+Home-page: https://github.com/urbit/hoon-language-server
+Author: Tlon
+Author-email: philip@tlon.io
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: python-jsonrpc-server
+
+A language server for Hoon.
+
+Install with:
+
+```
+pip3 install -U hoon-language-server
+```
+
+Make sure you have a fake ~zod running on localhost:8080 and you've
+installed a Hoon plugin for your editor.
+
+
