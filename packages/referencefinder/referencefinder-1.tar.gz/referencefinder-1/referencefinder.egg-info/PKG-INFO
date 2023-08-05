@@ -1,0 +1,20 @@
+Metadata-Version: 1.0
+Name: referencefinder
+Version: 1
+Summary: this is basic tools for finding reference in papers 
+Home-page: https://github.com/esafb52/reference_finder
+Author: masiha ahmadi
+Author-email: esafb@gmail.com
+License: GPL
+Description: * this is basic tools for finding reference in papers         
+        
+        Usage        
+        =====         
+          >>> from ReferenceFinder import ReferenceUtils   
+          >>> docx_file_path = 'paper.docx'   
+          >>> result_file_path = 'final_reference_result.txt'    
+          >>> ref_finder = ReferenceUtils()   
+          >>> ref_finder.find_references(docx_file_path, result_file_path)   
+          >>> print('find references complete  !!!!!!')    
+        
+Platform: UNKNOWN

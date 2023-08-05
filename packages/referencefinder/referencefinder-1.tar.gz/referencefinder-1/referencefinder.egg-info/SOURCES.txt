@@ -1,0 +1,8 @@
+README.txt
+setup.py
+ReferenceFinder/ReferenceUtils.py
+ReferenceFinder/__init__.py
+referencefinder.egg-info/PKG-INFO
+referencefinder.egg-info/SOURCES.txt
+referencefinder.egg-info/dependency_links.txt
+referencefinder.egg-info/top_level.txt
