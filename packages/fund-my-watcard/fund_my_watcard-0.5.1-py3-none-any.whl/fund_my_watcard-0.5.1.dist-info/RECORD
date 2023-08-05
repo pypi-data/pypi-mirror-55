@@ -1,0 +1,15 @@
+fund_my_watcard/__init__.py,sha256=9EVxmFiWsAoqWJ6br1bc3BxlA71JyOQP28fUHhX2k7E,43
+fund_my_watcard/config_file.py,sha256=qGk3CJtQYKlhUjIebNNfcyMkPMpjMUsygIWO79y_qzc,4088
+fund_my_watcard/log.py,sha256=fs0TuBmZufm9gmnk7H9CiyBqDAbFIgW_f9mO7BfJ6mg,1357
+fund_my_watcard/main.py,sha256=Ev9bAlflKxY4-fRRjJDlbDRCxSi7IC5M_8lhx-khs1s,5714
+fund_my_watcard/messages.py,sha256=0b2HhTQdc9EqPWIwR1KWVkWjB5aWrNQ9oNTsEWvVdN8,2657
+fund_my_watcard/mywatcard.py,sha256=DuWeP5Td4_kPax-M_vt7hc9bxLEpeCwZdi1OzWRd8aY,3658
+fund_my_watcard/transaction.py,sha256=IOPTuzH7fFKIVFuPvJQ7sS9G0BmkW7TnhbVxpQ9k4xk,562
+fund_my_watcard/util.py,sha256=jRlpGHy-sh9rHk97dbr8nbqL0A1F4ERvcFSeSC_40jQ,4738
+fund_my_watcard/version.py,sha256=Rm_tMXSiQe1ocDOCUKKIk-I7ZEL21NXSJBaSKX1ooCs,18
+fund_my_watcard-0.5.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+fund_my_watcard-0.5.1.dist-info/METADATA,sha256=zcZhJwGlUx1H1_gD_6qh3m-k9SfyR5w9FGxCWuQ2i-c,5320
+fund_my_watcard-0.5.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+fund_my_watcard-0.5.1.dist-info/entry_points.txt,sha256=g31W5Mnysw2CSZ3XKCCImm8HO2aGNwvbTjxSQIl4x8o,55
+fund_my_watcard-0.5.1.dist-info/top_level.txt,sha256=0Ab9Z9hr2m9wfRKBBU6m8orryJYQZb7rPVaotBT2CTI,16
+fund_my_watcard-0.5.1.dist-info/RECORD,,
