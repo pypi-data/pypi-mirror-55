@@ -1,0 +1,13 @@
+benv/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+benv/cli.py,sha256=5zGamPhukJC9pEnJ4gf7l-TcGDqs3hNxHhvNAKk9KBc,621
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_chenv.py,sha256=9FCbgT4WRkBCiuEMeeGIM6fO8-HfAvfMNtBhyGn5Gjc,290
+tests/test_lsenv.py,sha256=tv5Wlzuqi09NEdRDVKpbFyRfPpCCnZKnaQDyok0-j2I,286
+tests/test_mkenv.py,sha256=J1vycn1WDlgMjkMjPAwEEHLxuwweCqGEK9By6shuHu0,298
+tests/test_rmenv.py,sha256=Z_geaR--TwsFobuyCWK0mM9LRZWbxj8wHV9tnEkJQTY,298
+benv-0.1.1.dist-info/LICENSE,sha256=I-M-SrO4e2dXiJXA4e3H6FtzwrnT7Od1htYc3HTjnMU,1071
+benv-0.1.1.dist-info/METADATA,sha256=9_OgAIuUoFaaVDfTGOV1iK1oqUQCulDyjMVy9j6__Lw,1374
+benv-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+benv-0.1.1.dist-info/entry_points.txt,sha256=K58XQJokk7z6F765SrdFOTyclSN2i2uDFLFNXc8RJzo,58
+benv-0.1.1.dist-info/top_level.txt,sha256=zzTXAtgY1D-PXKJOXjO9X0CSAvUdqlLRdlJH51QKQgs,11
+benv-0.1.1.dist-info/RECORD,,
