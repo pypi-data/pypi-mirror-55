@@ -1,0 +1,11 @@
+ddsctrl/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ddsctrl/constants.py,sha256=AuxPF49gJoXq4vNV5E4O9TBd1-_XtPzePHHLPAhrBtk,1295
+ddsctrl/ddsctrlui.py,sha256=QnOhuHjbOSP9l6DYclJHLWyxJq-HsSlO5XFH9kEMBIQ,9871
+ddsctrl/version.local.py,sha256=SJ45hdR3dvfR-0yL3rxKipQ07Grp-fqWCj1WfeWfRDw,543
+ddsctrl/version.py,sha256=auhOS7ymzIHiAWs2Pb6nvTm9l6-HEECNIPnuyCKYdXM,97
+ddsctrl-0.5.0.data/scripts/ddscontroller,sha256=JkD39Px20xJVlkoWYVBcMy9wKbRNWUniDSnTIA0SJX8,21404
+ddsctrl-0.5.0.dist-info/LICENSE.txt,sha256=y6PMwyPrdtfoyIJCgzm7rL-i0jFDk6FF7q_sYwDwo60,780
+ddsctrl-0.5.0.dist-info/METADATA,sha256=-RcuNZJkJC24qlXg7Kn8COtxaM48ApKY5pNjNxI5cls,643
+ddsctrl-0.5.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+ddsctrl-0.5.0.dist-info/top_level.txt,sha256=1aVLd2H1lnkdsOk6IfDHzOGEuaiiErAzbC0s4o_RZfw,8
+ddsctrl-0.5.0.dist-info/RECORD,,
