@@ -1,0 +1,19 @@
+ships:
+- name: Elisabeth Mann Borgese
+  short_name: EMB
+  IMO: 8521438
+  MMSI: 218601000
+  Callsign: DBKR
+  country: Germany
+- name: Meteor
+  short_name: ME
+  IMO: 8411279
+  MMSI: 211206980
+  Callsign: DBBH
+  country: Germany
+- name: Electra af Asko
+  short_name: ELE
+  IMO: 
+  MMSI: 265769030
+  Callsign: SBUE
+  country: Sweden
