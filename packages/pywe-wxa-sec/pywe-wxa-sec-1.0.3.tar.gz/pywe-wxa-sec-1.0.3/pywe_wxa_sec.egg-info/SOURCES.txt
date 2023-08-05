@@ -1,0 +1,10 @@
+README.rst
+setup.cfg
+setup.py
+pywe_wxa_sec/__init__.py
+pywe_wxa_sec/pywxasec.py
+pywe_wxa_sec.egg-info/PKG-INFO
+pywe_wxa_sec.egg-info/SOURCES.txt
+pywe_wxa_sec.egg-info/dependency_links.txt
+pywe_wxa_sec.egg-info/requires.txt
+pywe_wxa_sec.egg-info/top_level.txt
