@@ -1,0 +1,124 @@
+Metadata-Version: 1.1
+Name: pySRA
+Version: 0.4.5
+Summary: Site Response Analysis with Python
+Home-page: http://github.com/arkottke/pysra
+Author: Albert Kottke
+Author-email: albert.kottke@gmail.com
+License: MIT
+Description: pySRA
+        =====
+        
+        |PyPi Cheese Shop| |Build Status| |Documentation Status| |Code Quality| |Test Coverage|
+        |License| |image|
+        
+        Site response analyses implemented in Python. This Python packages aims
+        to implement many of the features found in
+        Strata_. These features include:
+        
+        - Input motion characterization:
+            - Time series
+            - Random vibration theory
+        - Wave propagation or site amplification:
+            - linear
+            - equivalent-linear
+            - equivalent-linear with frequency dependent properties
+            - quarter wavelength
+        - Nonlinear curve models:
+            - Darendeli (2001)
+            - Menq (2004)
+            - Kishida (2012)
+        - Site and soil property uncertainty:
+            - Toro (1994) Vs correlation model
+            - G/Gmax and D uncertainty:
+                - Darendeli (2001)
+                - EPRI SPID (2013)
+        
+        Development of this software is on-going and any contributions are
+        encouraged.
+        
+        Installation
+        ------------
+        
+        ``pysra`` is available via ``pip`` and can be installed with::
+        
+           pip install pysra
+        
+        Citation
+        --------
+        
+        Please cite this software using the following DOI_.
+        
+        .. _Strata: https://github.com/arkottke/strata
+        .. _DOI: https://zenodo.org/badge/latestdoi/8959678
+        
+        .. |PyPi Cheese Shop| image:: https://img.shields.io/pypi/v/pysra.svg
+           :target: https://pypi.python.org/pypi/pysra
+        .. |Build Status| image:: https://img.shields.io/travis/arkottke/pysra.svg
+           :target: https://travis-ci.org/arkottke/pysra
+        .. |Documentation Status| image:: https://readthedocs.org/projects/pysra/badge/?version=latest&style=flat
+           :target: https://pysra.readthedocs.org
+        .. |Code Quality| image:: https://api.codacy.com/project/badge/Grade/6dbbb3a4279744d697b9bfe08af19ded
+           :target: https://www.codacy.com/app/arkottke/pysra
+        .. |Test Coverage| image:: https://api.codacy.com/project/badge/Coverage/6dbbb3a4279744d697b9bfe08af19ded
+           :target: https://www.codacy.com/app/arkottke/pysra
+        .. |License| image:: https://img.shields.io/badge/license-MIT-blue.svg
+        .. |image| image:: https://zenodo.org/badge/8959678.svg
+           :target: https://zenodo.org/badge/latestdoi/8959678
+        
+        
+        History
+        =======
+        
+        v0.4.5 (2019-10-24)
+        -------------------
+        - FIXED #9: Wrong stress for some Menq components.
+        
+        v0.4.4 (2019-05-22)
+        -------------------
+        -  Incremented version because of issue with automated builds.
+        
+        v0.4.3 (2019-05-22)
+        -------------------
+        -  FIXED: Bug in MANIFEST.in
+        
+        v0.4.2 (2019-05-22)
+        -------------------
+        -  Incremented version because of issue with automated builds.
+        
+        v0.4.1 (2019-05-22)
+        -------------------
+        -  Fixed strain profile to use ``max_strain``.
+        -  Changed README and HISTORY to markdown.
+        
+        v0.4.0 (2019-03-11)
+        -------------------
+        -  Added smoothed FourierAmplitudeSpectrum output.
+        
+        v0.3.2 (2018-12-02)
+        -------------------
+        -  Fixed building of docs.
+        -  Removed stickler.
+        -  Version double increment due to pypi naming conflict.
+        
+        v0.3.0 (2018-11-30)
+        -------------------
+        -  Converted all damping to decimal.
+        -  Added tests for KishidaSoilType.
+        -  Added tests against Deepsoil.
+        
+        v0.0.1 (2016-04-30)
+        -------------------
+        -  First release on PyPI.
+        
+Keywords: site response
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
