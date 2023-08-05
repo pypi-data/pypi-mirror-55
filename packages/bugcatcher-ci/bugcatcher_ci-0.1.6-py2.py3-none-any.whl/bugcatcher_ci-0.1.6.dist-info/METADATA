@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: bugcatcher-ci
+Version: 0.1.6
+Summary: A continuous integration tool for Python static analysis
+Home-page: https://github.com/faster-than-light/bugcatcher-ci
+Author: Faster Than Light
+Author-email: devops@fasterthanlight.dev
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/faster-than-light/bugcatcher-ci/issues
+Project-URL: Source, https://github.com/faster-than-light/bugcatcher-ci/
+Keywords: CI CircleCI Travis-CI Python static analysis
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+Requires-Dist: bugcatcher (>=0.1.6)
+Provides-Extra: dev
+Requires-Dist: check-manifest ; extra == 'dev'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+
+# bugcatcher-ci
+Continuous Integration Tool Assisting in Static Code Analysis Facilitated Through BugCatcher by Faster Than Light
+
+[![PyPI version](https://badge.fury.io/py/bugcatcher-ci.svg)](https://badge.fury.io/py/bugcatcher-ci)
+[![Build Status](https://travis-ci.org/faster-than-light/bugcatcher-ci.svg?branch=master)](https://travis-ci.org/faster-than-light/bugcatcher-ci)
+[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+
+[![Issues](https://img.shields.io/github/issues/faster-than-light/bugcatcher-ci)](https://github.com/faster-than-light/bugcatcher-ci/issues)
+![Forks](https://img.shields.io/github/forks/faster-than-light/bugcatcher-ci)
+![Stars](https://img.shields.io/github/stars/faster-than-light/bugcatcher-ci)
+
+### Installation
+
+#### Installing with PIP
+`pip install bugcatcher-ci`
+
+
+
