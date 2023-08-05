@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: python-launchpad
+Version: 0.2.0
+Summary: Control a Novation Launchpad with Python
+Home-page: https://github.com/BasementCat/launchpad-python
+Author: Alec Elton
+Author-email: alec.elton@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: Other/Proprietary License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: mido
+Requires-Dist: python-rtmidi
+
+# Python-Launchpad
+
+Control a Novation Launchpad with Python
+
+## Features
+
+  * Autodiscover the first connected Launchpad, or control more than one
+  * Multiple "page" support (different render states and control sets)
+  * Supported controls:
+    * Momentary button
+    * Toggle button (multiple states)
+    * Sliders with variable colors
+
+## Known issues
+
+  * Only tested with the Launchpad MkII
+  * Multiple launchpads need to be configured separately, and operate independently
+
