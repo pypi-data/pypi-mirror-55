@@ -1,0 +1,3 @@
+[console_scripts]
+task2dot = bin.task2dot:main
+
