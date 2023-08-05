@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: David-carlist
+Version: 0.0.1
+Summary: list of cars for training purposes
+Home-page: UNKNOWN
+Author: David
+Author-email: randomail@hehe.com
+License: UNKNOWN
+Description: #Just a list of cars for training, pleas don't use it
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
