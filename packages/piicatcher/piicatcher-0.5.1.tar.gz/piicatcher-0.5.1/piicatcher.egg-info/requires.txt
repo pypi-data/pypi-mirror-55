@@ -1,0 +1,12 @@
+commonregex
+cryptography
+cx_Oracle
+peewee
+psycopg2-binary
+pymssql
+pymysql
+pypi-publisher
+python-magic
+pyyaml
+spacy
+tableprint
