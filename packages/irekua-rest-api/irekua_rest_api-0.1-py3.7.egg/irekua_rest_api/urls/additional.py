@@ -1,0 +1,65 @@
+from rest_framework import routers
+from irekua_rest_api import views
+
+
+additional_router = routers.DefaultRouter()
+additional_router.register(
+    r'annotation_votes',
+    views.AnnotationVoteViewSet)
+additional_router.register(
+    r'secondary_items',
+    views.SecondaryItemViewSet)
+additional_router.register(
+    r'annotation_tools',
+    views.AnnotationToolViewSet)
+additional_router.register(
+    r'collection_devices',
+    views.CollectionDeviceViewSet)
+additional_router.register(
+    r'collection_sites',
+    views.CollectionSiteViewSet)
+additional_router.register(
+    r'collection_users',
+    views.CollectionUserViewSet)
+additional_router.register(
+    r'collection_administrators',
+    views.CollectionAdministratorViewSet)
+additional_router.register(
+    r'device_brands',
+    views.DeviceBrandViewSet)
+additional_router.register(
+    r'entailments',
+    views.EntailmentViewSet)
+additional_router.register(
+    r'institutions',
+    views.InstitutionViewSet)
+additional_router.register(
+    r'licences',
+    views.LicenceViewSet)
+additional_router.register(
+    r'metacollections',
+    views.MetaCollectionViewSet)
+additional_router.register(
+    r'physical_devices',
+    views.PhysicalDeviceViewSet)
+additional_router.register(
+    r'roles',
+    views.RoleViewSet)
+additional_router.register(
+    r'synonym_suggestions',
+    views.SynonymSuggestionViewSet)
+additional_router.register(
+    r'synonyms',
+    views.SynonymViewSet)
+additional_router.register(
+    r'tags',
+    views.TagViewSet)
+additional_router.register(
+    r'term_suggestions',
+    views.TermSuggestionViewSet)
+additional_router.register(
+    r'term_instances',
+    views.TermViewSet)
+additional_router.register(
+    r'sampling_event_devices',
+    views.SamplingEventDeviceViewSet)
