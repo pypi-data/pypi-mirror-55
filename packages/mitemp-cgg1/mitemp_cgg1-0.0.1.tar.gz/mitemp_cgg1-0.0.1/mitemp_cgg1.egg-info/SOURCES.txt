@@ -1,0 +1,9 @@
+README.md
+setup.py
+mitemp_cgg1/__init__.py
+mitemp_cgg1/mitemp_cgg1_poller.py
+mitemp_cgg1.egg-info/PKG-INFO
+mitemp_cgg1.egg-info/SOURCES.txt
+mitemp_cgg1.egg-info/dependency_links.txt
+mitemp_cgg1.egg-info/requires.txt
+mitemp_cgg1.egg-info/top_level.txt

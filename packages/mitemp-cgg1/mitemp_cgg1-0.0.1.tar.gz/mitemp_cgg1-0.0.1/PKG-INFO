@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: mitemp_cgg1
+Version: 0.0.1
+Summary: Library to read data from Xiaomi Clear Grass Thermometer Hygrometer sensor with E-Ink
+Home-page: https://github.com/KalininAndreyVictorovich/mitemp_cgg1
+Author: Andrey
+Author-email: kalininandreyvictorovich@gmail.com
+License: MIT
+Description: # mitemp_cgg1 - Library for Xiaomi Mi Temperature and Humidity Sensor with Bleutooth LE and E-Ink display
+        
+        **WORK IN PROGRESS**
+        
+        This library lets you read sensor data from a Xiaomi Mi BluetoothLE Temperature and Humidity sensor.
+        
+        ## Functionality 
+        It supports reading the different measurements from the sensor
+        - temperature
+        - humidity
+        
+        battery level and unit of measure are not supported yet.
+Keywords: temperature humidity sensor bluetooth low-energy ble Xiaomi ClearGrass
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: System :: Hardware :: Hardware Drivers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
