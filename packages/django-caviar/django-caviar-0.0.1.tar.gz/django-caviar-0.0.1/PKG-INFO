@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: django-caviar
+Version: 0.0.1
+Summary: Redact personal data from templates and logs
+Home-page: https://github.com/Polyconseil/django-caviar
+Author: Polyconseil
+Author-email: opensource+django-caviar@polyconseil.fr
+License: : OSI Approved :: MIT License
+Description: UNKNOWN
+Keywords: privacy caviar logs templates
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: dev

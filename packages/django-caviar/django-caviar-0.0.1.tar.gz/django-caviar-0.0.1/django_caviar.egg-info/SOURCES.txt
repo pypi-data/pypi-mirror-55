@@ -1,0 +1,10 @@
+MANIFEST.in
+README.rst
+changelog.rst
+setup.cfg
+setup.py
+django_caviar.egg-info/PKG-INFO
+django_caviar.egg-info/SOURCES.txt
+django_caviar.egg-info/dependency_links.txt
+django_caviar.egg-info/requires.txt
+django_caviar.egg-info/top_level.txt

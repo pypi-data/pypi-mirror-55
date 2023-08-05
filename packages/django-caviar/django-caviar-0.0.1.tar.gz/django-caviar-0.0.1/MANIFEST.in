@@ -1,0 +1,16 @@
+include changelog.rst
+include requirements_dev.txt
+include README.rst
+include Makefile tox.ini
+
+graft django-caviar
+graft docs
+
+prune tests
+
+global-exclude *.py[cod] __pycache__ *.so .*.swp *~
+
+# Be explicit to make check-manifest happy.
+exclude .pylintrc
+exclude Makefile
+exclude release.conf
