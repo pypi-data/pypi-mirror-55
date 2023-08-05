@@ -1,0 +1,11 @@
+README.md
+setup.py
+palpageproducer/__init__.py
+palpageproducer/__main__.py
+palpageproducer.egg-info/PKG-INFO
+palpageproducer.egg-info/SOURCES.txt
+palpageproducer.egg-info/dependency_links.txt
+palpageproducer.egg-info/entry_points.txt
+palpageproducer.egg-info/not-zip-safe
+palpageproducer.egg-info/requires.txt
+palpageproducer.egg-info/top_level.txt
