@@ -1,0 +1,10 @@
+mal/__init__.py,sha256=v6KPTtKX6hIrnFA-OFW6jXaZF5_yYOqtJoJu9JS_XTQ,56
+mal/anime.py,sha256=_OBluzLfqZ6LOp_-9dslUXLBduJS_NfpY5_n_NWe0kY,3622
+mal/config.py,sha256=o9Ztiq29_PbQeS39TfIPMgYIde6-_BGuN7QhhvDxQpQ,252
+mal/mal.py,sha256=gEwL21AIaioWtzlA95CZmREwged_ELia7JzdfT29E1s,6809
+mal/manga.py,sha256=gV79NRLkUuNjjRxNBqV3N_pnagk_NvOf--myTqGnu7M,1281
+mal_api-0.0.1.dist-info/LICENSE,sha256=MsF1Va45BuHdkYG9mvtYxAMkWm3VskqoFnF1vNLi9oU,1068
+mal_api-0.0.1.dist-info/METADATA,sha256=yxvEYi_wZNv-hxwOHFFL3Y5JN_4Is-7vFWAoAdoKShw,2615
+mal_api-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mal_api-0.0.1.dist-info/top_level.txt,sha256=NclaoJTIpnhStihrHpNSv4ShQDVDFF_jjR0y-Bn_G8s,4
+mal_api-0.0.1.dist-info/RECORD,,
