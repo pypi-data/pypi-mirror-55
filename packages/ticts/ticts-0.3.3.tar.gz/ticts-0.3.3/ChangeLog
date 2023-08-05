@@ -1,0 +1,119 @@
+CHANGES
+=======
+
+0.3.3
+-----
+
+* Add iplot method (#18)
+* Some renames and ValueError instead of Exception
+* Make doc build works again
+* solve it adding \_kwargs\_special\_keys property
+* Add check to try inferring the frequency
+* Try to infer the frequencies when to\_dataframe
+
+0.3.1
+-----
+
+* Be permissive on division with zero as default
+
+0.3.0
+-----
+
+* Update Readme
+* Create TictsMagicMixin for builtin nethods of TimeSeries
+* add it
+* Linting
+* Rework it, no longer inherit from SortedDict
+* add test on values
+* First implementation
+
+0.2.4
+-----
+
+* Small fix on div
+
+0.2.3
+-----
+
+* Precise which super for equals
+
+0.2.2
+-----
+
+* Render testing available at ticts package place
+
+0.2.1
+-----
+
+* Re-organize code
+* Add extensions to pandas objects 'to\_ticts'
+* Fix sphinx doc building
+* Add io to\_json / from\_json
+
+0.2.0
+-----
+
+* Linting
+* fix pytest version
+* update to\_dataframe method to use self.name
+* Add operations
+* Remove arrow dep
+* Rework init and copy methods to accept pd.DataFrame or pd.Series
+* Renames and pandas as mandatory dep
+* Clean up small garbage
+* Go for a no default object with repr
+* Add \_\_eq\_\_ as operation per key
+
+0.1.7
+-----
+
+* Add iterintervals method
+* Remove useless timestamp\_converter
+* use bisect
+
+0.1.6
+-----
+
+* Fix bug of set\_interval on emptyts
+* Add some more tests
+* only go for python 3.6 at the moment
+* Add other python version
+
+0.1.5
+-----
+
+* Add deploy as stage
+* Add ignore on /prof
+
+0.1.4
+-----
+
+* Make use of SortedDict methods for performances
+
+0.1.3
+-----
+
+* restructured text of PyPI does not allow image in title
+* Skip cleanup in deploy
+* Improve notebook
+* change strategy to be able to build doc
+* Update changelog
+
+0.1.2
+-----
+
+* Fix on rule of slice out of right bound
+* Improving index
+* Add more quickstart
+* Fix issue on set\_interval
+* Add scale
+* Work on Docs
+
+0.1.1
+-----
+
+* Better handle of default value
+* Adding picture to README
+* Small fix on bounds of tutorial
+* Small fix README
+* Adapt plot ranges in Tutorial notebook
