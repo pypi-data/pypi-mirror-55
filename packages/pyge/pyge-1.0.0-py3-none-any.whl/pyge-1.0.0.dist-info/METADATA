@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pyge
+Version: 1.0.0
+Summary: Python Gift Exchange Picker
+Home-page: https://github.com/sethblack/knn-gift-exchange
+Author: Seth Black
+Author-email: sblack@sethserver.com
+License: Apache Software License
+Keywords: ai,unsupervised learning,random,artificial intelligence,secret santa,gift exchange
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Environment :: Console
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+
+Python Gift
+
+

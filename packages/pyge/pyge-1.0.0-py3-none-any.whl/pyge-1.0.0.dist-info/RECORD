@@ -1,0 +1,12 @@
+pyge/__init__.py,sha256=Y0JtgcfVakE_F_5z5e3-cYQuNjGNIZgjdkBds9TEHOw,91
+pyge/__main__.py,sha256=E6UFdq-VOE_k_vFhhckJJ5-oT_Nc-eeXONxIHS6kkN8,2528
+pyge/citydb.py,sha256=qwun3H74oh7xi3VXhJF_Plv_Z8epXkgqcjQHFrflDhY,380
+pyge/person.py,sha256=9P1CpekVBzNx2NyhkIJUvztqENQ-L2pLghmYBVUdLVU,1728
+pyge/persondb.py,sha256=mJD_mLtwg-sQA7DB3au7IyMi_fz4ufx3JaKUbpqzfB8,1787
+pyge/uscities.csv,sha256=FZlVgtVWSl-Tzacg9Y_R4oJrfmy8lKA2Eh7MTYT1KmY,1105466
+pyge-1.0.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pyge-1.0.0.dist-info/METADATA,sha256=VJKLXJ-2BUUnW2LykY-OemZWlx8Qc7oYvbV8eEzxepE,933
+pyge-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyge-1.0.0.dist-info/entry_points.txt,sha256=bk9KJAD-TPF1zJNAB7FPzU3Dxl4NpB1cqIGDPI6y_R4,45
+pyge-1.0.0.dist-info/top_level.txt,sha256=uHRAZ7R8PRS5cADqkiaIS7Td9ZVkDYG736wZ3RcH3b8,5
+pyge-1.0.0.dist-info/RECORD,,
