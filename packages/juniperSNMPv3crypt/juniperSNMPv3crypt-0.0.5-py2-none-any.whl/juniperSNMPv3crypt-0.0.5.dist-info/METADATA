@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: juniperSNMPv3crypt
+Version: 0.0.5
+Summary: Encrypt/decrypts juniper $9$ secrets
+Home-page: https://github.com/zach-bray/junipercrypt
+Author: Zach Bray
+Author-email: zachbray123@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# juniper SNMPv3 crypt
+This is python library to deal with hashing (md5 or sha1) and then encrypting SNMPv3 user profiles for Juniper devices. The hashing follows RFC 3414 for snmpv3 profiles.
+<br/>
+The $9$ encryption is a port from Perl from https://metacpan.org/pod/Crypt::Juniper
+<br/>
+The encrypt function supports a seed in order to have idempotent encryption.
+
+### Install
+This package works in both python 2 and 3
+`pip install juniperSNMPv3crypt`
+
+
