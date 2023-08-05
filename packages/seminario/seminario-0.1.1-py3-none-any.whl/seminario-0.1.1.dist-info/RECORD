@@ -1,0 +1,11 @@
+seminario/__init__.py,sha256=QMNU_zFDA_JDzN8ZoR9BO94uI3OTuG2ZjlxF-I-VHfQ,194
+seminario/_io.py,sha256=hrQ7zOQWygf8Zj3Qa9S77U66e_ScQsMejNHqp9Abp8Y,3400
+seminario/config.py,sha256=ESPNQJg1_lYHi6l_z-4SVMPLa9rlnrAELCQh91Ec7eo,3409
+seminario/interactive.py,sha256=7xG95BBWgGbifC5OcekhxLKJ2L902zyTjZ9XvnByGas,1256
+seminario/seminar.py,sha256=SXohw18L8dmF1xrISCAB1h04OKV7ICWIogOmHX4I8m0,11653
+seminario/seminardataframe.py,sha256=_KCWaQTp78FKPmOtQVWZOAbHvT_vvYhDtZhwlOV8RhA,6878
+seminario-0.1.1.dist-info/LICENSE,sha256=jEEe24J1LXCaWMt8Nrad5pcp2gNVAgSPYllsZcrMT3M,1516
+seminario-0.1.1.dist-info/METADATA,sha256=9D3rqxc2ceF88gLCVR6JMBeWp9X_QfXtuvXJmmtZEp4,744
+seminario-0.1.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+seminario-0.1.1.dist-info/top_level.txt,sha256=_8kWQwu8fi1rLkYuKxK-cHWEZkXUmLMInRlMfQ_JX9Q,10
+seminario-0.1.1.dist-info/RECORD,,
