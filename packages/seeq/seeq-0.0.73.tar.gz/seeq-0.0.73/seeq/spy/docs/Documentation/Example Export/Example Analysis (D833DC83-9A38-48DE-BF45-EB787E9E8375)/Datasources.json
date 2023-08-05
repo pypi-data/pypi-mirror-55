@@ -1,0 +1,60 @@
+{
+    "5CE3F65A-13D3-49EE-8B80-25CCAF5EC8E8": {
+        "Cache Enabled": false,
+        "Datasource Class": "Auth",
+        "Datasource ID": "Seeq",
+        "ID": "5CE3F65A-13D3-49EE-8B80-25CCAF5EC8E8",
+        "Name": "Seeq",
+        "Type": "Datasource"
+    },
+    "751858AE-2758-4E50-BB6A-2A8811EB7D17": {
+        "Cache Enabled": false,
+        "Datasource Class": "Seeq - FileSignal",
+        "Datasource ID": "default",
+        "ID": "751858AE-2758-4E50-BB6A-2A8811EB7D17",
+        "Name": "Seeq Cache",
+        "Signal Count": "14",
+        "Stored In Seeq": true,
+        "Supports String Signals": false,
+        "Type": "Datasource"
+    },
+    "B08377A0-882B-4858-A52D-FA00D549A71D": {
+        "Cache Enabled": false,
+        "Condition Count": "24",
+        "Datasource Class": "cassandraV2",
+        "Datasource ID": "default",
+        "ID": "B08377A0-882B-4858-A52D-FA00D549A71D",
+        "Name": "Seeq Database",
+        "Stored In Seeq": true,
+        "Type": "Datasource"
+    },
+    "D28A066C-D48E-4001-AFA8-467A581DF001": {
+        "Asset Count": "14",
+        "Asset Progress": "14",
+        "Cache Enabled": false,
+        "Datasource Class": "Time Series CSV Files",
+        "Datasource ID": "Example Data",
+        "ID": "D28A066C-D48E-4001-AFA8-467A581DF001",
+        "Name": "Example Data",
+        "Relationship Count": "198",
+        "Relationship Progress": "74",
+        "Signal Count": "184",
+        "Signal Progress": "184",
+        "Stored In Seeq": false,
+        "Sync Token": "2019-10-31T00:01:10.201138800Z",
+        "Type": "Datasource"
+    },
+    "FF117A85-B21C-45E7-8BAF-B3EDED97C2DD": {
+        "Cache Enabled": false,
+        "Condition Count": "4",
+        "Datasource Class": "Seeq Data Lab",
+        "Datasource ID": "Seeq Data Lab",
+        "Description": "Signals, conditions and scalars from Seeq Data Lab.",
+        "Expect Duplicates During Indexing": true,
+        "ID": "FF117A85-B21C-45E7-8BAF-B3EDED97C2DD",
+        "Name": "Seeq Data Lab",
+        "Signal Count": "4",
+        "Stored In Seeq": true,
+        "Type": "Datasource"
+    }
+}

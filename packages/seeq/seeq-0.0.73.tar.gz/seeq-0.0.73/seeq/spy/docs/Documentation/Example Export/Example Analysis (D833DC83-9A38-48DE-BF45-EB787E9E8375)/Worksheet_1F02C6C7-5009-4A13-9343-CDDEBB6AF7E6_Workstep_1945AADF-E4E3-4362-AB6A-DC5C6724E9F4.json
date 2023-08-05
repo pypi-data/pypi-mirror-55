@@ -1,0 +1,559 @@
+{
+    "ID": "1945AADF-E4E3-4362-AB6A-DC5C6724E9F4",
+    "Data": {
+        "version": 23,
+        "state": {
+            "stores": {
+                "sqTrendSeriesStore": {
+                    "items": [
+                        {
+                            "axisAlign": "A",
+                            "axisAutoScale": true,
+                            "lane": 2,
+                            "rightAxis": false,
+                            "dashStyle": "Solid",
+                            "lineWidth": 1,
+                            "autoDisabled": false,
+                            "axisVisibility": true,
+                            "yAxisConfig": {
+                                "min": 61.14466433825,
+                                "max": 126.06745071175
+                            },
+                            "yAxisMin": 66.77845985,
+                            "yAxisMax": 120.4336552,
+                            "sampleDisplayOption": "line",
+                            "id": "9564A6B8-8A8F-4F6D-AC63-00EA38962B7A",
+                            "name": "Area A_Temperature",
+                            "selected": false,
+                            "color": "#068C45",
+                            "valueUnitOfMeasure": "\u00b0F"
+                        },
+                        {
+                            "axisAlign": "A",
+                            "axisAutoScale": true,
+                            "lane": 2,
+                            "rightAxis": false,
+                            "dashStyle": "Solid",
+                            "lineWidth": 2.5,
+                            "autoDisabled": false,
+                            "axisVisibility": true,
+                            "yAxisConfig": {
+                                "min": 61.14466433825,
+                                "max": 126.06745071175
+                            },
+                            "yAxisMin": 66.77845985,
+                            "yAxisMax": 120.4336552,
+                            "sampleDisplayOption": "line",
+                            "id": "FBBCD4E0-CE26-4A33-BE59-3E215553FB1F",
+                            "name": "Smooth Temperature",
+                            "selected": false,
+                            "color": "#9D248F",
+                            "valueUnitOfMeasure": "\u00b0F"
+                        },
+                        {
+                            "axisAlign": "C",
+                            "axisAutoScale": true,
+                            "lane": 1,
+                            "rightAxis": false,
+                            "dashStyle": "Solid",
+                            "lineWidth": 1,
+                            "autoDisabled": false,
+                            "axisVisibility": true,
+                            "yAxisConfig": {
+                                "min": -4.0038206911,
+                                "max": 42.169128111099994
+                            },
+                            "yAxisMin": 0.0029228,
+                            "yAxisMax": 38.16238462,
+                            "sampleDisplayOption": "line",
+                            "id": "DCED9C36-A4BE-4783-9216-DC06B3F57D8C",
+                            "name": "Area A_Compressor Power",
+                            "selected": false,
+                            "color": "#CE561B",
+                            "valueUnitOfMeasure": "kW"
+                        },
+                        {
+                            "axisAlign": "D",
+                            "axisAutoScale": true,
+                            "lane": 3,
+                            "rightAxis": false,
+                            "dashStyle": "Solid",
+                            "lineWidth": 1,
+                            "autoDisabled": false,
+                            "axisVisibility": true,
+                            "yAxisConfig": {
+                                "min": -120.6428567548,
+                                "max": 117.2414925148
+                            },
+                            "yAxisMin": -100,
+                            "yAxisMax": 96.59863576,
+                            "sampleDisplayOption": "line",
+                            "id": "DF3E0953-12D6-444C-8F9C-3DEDB2999D5A",
+                            "name": "Area C_Temperature",
+                            "selected": false,
+                            "color": "#00A2DD",
+                            "valueUnitOfMeasure": "\u00b0F"
+                        }
+                    ],
+                    "editingId": null,
+                    "previewSeriesDefinition": {}
+                },
+                "sqDurationStore": {
+                    "autoUpdate": {
+                        "mode": "OFF",
+                        "offset": -879062003,
+                        "manualInterval": {
+                            "value": 1,
+                            "units": "min"
+                        }
+                    },
+                    "displayRange": {
+                        "start": 1541867469311,
+                        "end": 1541953869311
+                    },
+                    "investigateRange": {
+                        "start": 1541393866020,
+                        "end": 1541998666020
+                    }
+                },
+                "sqTrendCapsuleStore": {
+                    "selectedCapsules": [],
+                    "stitchBreaks": [],
+                    "stitchTimes": [],
+                    "dataStatus": "itemDataPresent",
+                    "warningCount": 0,
+                    "warningLogs": [],
+                    "editingId": null,
+                    "previewCapsulesDefinition": {},
+                    "items": []
+                },
+                "sqInvestigateStore": {
+                    "item": {},
+                    "activeTool": "overview",
+                    "displayMode": "NEW",
+                    "derivedDataPanelOpen": true
+                },
+                "sqDeviationPanelStore": {
+                    "originalParameters": [],
+                    "maximumDuration": {
+                        "value": 1,
+                        "units": "day"
+                    },
+                    "advancedParametersCollapsed": true,
+                    "startDuration": {
+                        "value": 0,
+                        "units": "min"
+                    },
+                    "endDuration": {
+                        "value": 0,
+                        "units": "min"
+                    },
+                    "startLocation": true,
+                    "endLocation": true
+                },
+                "sqCapsuleSetSeriesStore": {
+                    "originalParameters": [],
+                    "maximumDuration": {
+                        "value": 1,
+                        "units": "day"
+                    },
+                    "advancedParametersCollapsed": true,
+                    "params": {
+                        "interpolation": "DISCRETE",
+                        "stat": {
+                            "timeUnits": "s"
+                        }
+                    }
+                },
+                "sqImportCsvStore": {
+                    "serverFileName": "",
+                    "columnKey": "",
+                    "columnValue": "",
+                    "importType": {
+                        "text": "IMPORTS.TYPES.SIGNAL",
+                        "value": "seriesDisplayType"
+                    },
+                    "unitValue": "",
+                    "interpolationMethod": {
+                        "text": "IMPORTS.INTERPOLATION.LINEAR",
+                        "value": "linear"
+                    },
+                    "importAnotherColumn": false,
+                    "importStarted": false,
+                    "originalParameters": [],
+                    "maximumDuration": {
+                        "value": 1,
+                        "units": "day"
+                    },
+                    "advancedParametersCollapsed": true
+                },
+                "sqPredictionPanelStore": {
+                    "originalParameters": [],
+                    "maximumDuration": {
+                        "value": 1,
+                        "units": "day"
+                    },
+                    "advancedParametersCollapsed": true,
+                    "option": "linear",
+                    "polynomialValue": 2,
+                    "mustGoThroughZero": false,
+                    "lambda": 0,
+                    "windowStart": 1541869066020,
+                    "windowEnd": 1541955466020,
+                    "modelExpanded": false,
+                    "regressionMethod": "OLS",
+                    "variableSelection": 0.05,
+                    "variableSelectionEnabled": false
+                },
+                "sqAncillariesPanelStore": {
+                    "inProgress": false,
+                    "inProgressItem": "item1",
+                    "name": "",
+                    "type": "",
+                    "item1": {},
+                    "item2": {}
+                },
+                "sqReferencePanelStore": {
+                    "originalParameters": [],
+                    "maximumDuration": {
+                        "value": 1,
+                        "units": "day"
+                    },
+                    "advancedParametersCollapsed": true,
+                    "windowStart": 1541869066020,
+                    "windowEnd": 1541955466020,
+                    "griddingPeriod": {
+                        "value": 5,
+                        "units": "min"
+                    },
+                    "referenceStat": "",
+                    "multiplier": 1
+                },
+                "sqAggregationBinStore": {
+                    "originalParameters": [],
+                    "maximumDuration": {
+                        "value": 1,
+                        "units": "day"
+                    },
+                    "advancedParametersCollapsed": true,
+                    "mode": "by_y_value",
+                    "includeEmptyBuckets": true,
+                    "yValueSignal": "",
+                    "stat": {
+                        "key": null,
+                        "timeUnits": "s"
+                    },
+                    "aggregationConfigs": [
+                        {
+                            "id": 1,
+                            "mode": "by_y_value",
+                            "yValueBinMode": "size",
+                            "valid": false
+                        }
+                    ]
+                },
+                "sqLowPassFilterStore": {
+                    "originalParameters": [],
+                    "maximumDuration": {
+                        "value": 1,
+                        "units": "day"
+                    },
+                    "advancedParametersCollapsed": true,
+                    "cutoff": {},
+                    "period": {},
+                    "taps": 33,
+                    "autoPeriod": true,
+                    "autoTaps": true
+                },
+                "sqItemPropertiesStore": {
+                    "advancedParametersCollapsed": true
+                },
+                "sqPeriodicConditionStore": {
+                    "originalParameters": [],
+                    "maximumDuration": {
+                        "value": 1,
+                        "units": "day"
+                    },
+                    "advancedParametersCollapsed": true,
+                    "frequencies": [],
+                    "weekStart": "Day.Sunday",
+                    "quarterStart": {
+                        "month": "Month.January",
+                        "day": 1
+                    },
+                    "shift": {
+                        "offset": 8,
+                        "duration": 8
+                    },
+                    "offset": {}
+                },
+                "sqTrendScalarStore": {
+                    "items": [
+                        {
+                            "axisAlign": "A",
+                            "axisAutoScale": true,
+                            "lane": 2,
+                            "rightAxis": false,
+                            "dashStyle": "Dash",
+                            "lineWidth": 1,
+                            "autoDisabled": false,
+                            "axisVisibility": true,
+                            "yAxisConfig": {
+                                "min": 61.14466433825,
+                                "max": 126.06745071175
+                            },
+                            "yAxisMin": 66.77845985,
+                            "yAxisMax": 120.4336552,
+                            "id": "2913AEA3-0D61-4271-AF3D-C44CA975B4D7",
+                            "name": "Temperature Limit",
+                            "selected": false,
+                            "color": "#E1498E",
+                            "valueUnitOfMeasure": "\u00b0F"
+                        }
+                    ]
+                },
+                "sqTrendCapsuleSetStore": {
+                    "items": [
+                        {
+                            "autoDisabled": false,
+                            "id": "8C048548-8E83-4380-8B24-9DAD56B5C2CF",
+                            "name": "High Power",
+                            "selected": false,
+                            "color": "#4055A3"
+                        }
+                    ]
+                },
+                "sqTrendTableStore": {
+                    "items": []
+                },
+                "sqWorksheetStore": {
+                    "tabsets": {
+                        "sidebar": 0
+                    },
+                    "viewKey": "TREND",
+                    "browsePanelCollapsed": false,
+                    "displayWidth": 850,
+                    "displayHeight": 575,
+                    "resizeEnabled": true
+                },
+                "sqTrendMetricStore": {
+                    "scorecardHeaders": {
+                        "type": "startEnd",
+                        "format": "lll"
+                    },
+                    "scorecardColumns": [
+                        {
+                            "type": "name",
+                            "backgroundColor": "#ffffff"
+                        }
+                    ],
+                    "dataStatus": "itemDataPresent",
+                    "warningCount": 0,
+                    "warningLogs": [],
+                    "items": []
+                },
+                "sqTreemapStore": {
+                    "parent": {},
+                    "statistics": []
+                },
+                "sqScatterPlotStore": {
+                    "xSeries": {},
+                    "ySeries": {},
+                    "selector": {
+                        "low": 0.5,
+                        "high": 0.75
+                    },
+                    "plotMode": "DISPLAY_RANGE",
+                    "connect": false
+                },
+                "sqTrendStore": {
+                    "view": "calendar",
+                    "enabledColumns": {
+                        "CAPSULES": {
+                            "startTime": true
+                        },
+                        "SERIES": {
+                            "lane": true
+                        }
+                    },
+                    "propertyColumns": {},
+                    "selectedRegion": {
+                        "min": 0,
+                        "max": 0
+                    },
+                    "capsuleTimeOffsets": {
+                        "lower": 0,
+                        "upper": 0
+                    },
+                    "capsuleAlignment": [],
+                    "capsulePreview": false,
+                    "showChartConfiguration": false,
+                    "dimDataOutsideCapsules": false,
+                    "hideUnselectedItems": false,
+                    "labelDisplayConfiguration": {
+                        "name": "lane",
+                        "asset": "off",
+                        "assetPathLevels": 1,
+                        "unitOfMeasure": "off",
+                        "custom": "off",
+                        "customLabels": []
+                    },
+                    "showCapsuleLaneLabels": false,
+                    "panelProps": {},
+                    "panelSorters": {
+                        "CAPSULES": {
+                            "sortBy": "startTime",
+                            "sortAsc": true
+                        },
+                        "CAPSULE_SERIES": {
+                            "sortBy": "startTime",
+                            "sortAsc": true
+                        },
+                        "SERIES": {
+                            "sortBy": "lane",
+                            "sortAsc": true
+                        },
+                        "INVESTIGATE_ITEMS": {
+                            "sortBy": "name",
+                            "sortAsc": true
+                        }
+                    },
+                    "capsulePanelOffset": 0,
+                    "capsulePanelHasNext": false
+                },
+                "sqPowerSearchStore": {
+                    "originalParameters": [],
+                    "maximumDuration": {
+                        "value": 1,
+                        "units": "day"
+                    },
+                    "advancedParametersCollapsed": true,
+                    "formula": "",
+                    "parameters": [],
+                    "navigationStack": []
+                },
+                "sqScorecardStore": {
+                    "metrics": []
+                },
+                "sqThresholdMetricStore": {
+                    "originalParameters": [],
+                    "maximumDuration": {
+                        "value": 1,
+                        "units": "day"
+                    },
+                    "advancedParametersCollapsed": true,
+                    "processType": "Simple",
+                    "aggregationOperator": {
+                        "key": null,
+                        "timeUnits": "s"
+                    },
+                    "duration": {},
+                    "period": {},
+                    "thresholds": {}
+                },
+                "sqCustomConditionStore": {
+                    "originalParameters": [],
+                    "maximumDuration": {
+                        "value": 1,
+                        "units": "day"
+                    },
+                    "advancedParametersCollapsed": true
+                },
+                "sqCapsuleGroupStore": {
+                    "capsules": []
+                },
+                "sqFftStore": {
+                    "originalParameters": [],
+                    "maximumDuration": {
+                        "value": 1,
+                        "units": "day"
+                    },
+                    "advancedParametersCollapsed": true,
+                    "rateType": true,
+                    "rate": {},
+                    "outputUnits": "min",
+                    "highPass": {},
+                    "lowPass": {},
+                    "useHighPass": false,
+                    "useLowPass": false
+                },
+                "sqCompositeSearchStore": {
+                    "originalParameters": [],
+                    "maximumDuration": {
+                        "value": null,
+                        "units": "day"
+                    },
+                    "advancedParametersCollapsed": true,
+                    "inclusiveA": true,
+                    "inclusiveB": true
+                },
+                "sqSearchStore": {
+                    "nameFilter": "",
+                    "descriptionFilter": "",
+                    "typeFilter": [],
+                    "datasourceFilter": [],
+                    "isAdvancedMode": false,
+                    "mode": "overview",
+                    "currentAsset": ""
+                },
+                "sqVisualSearchStore": {
+                    "originalParameters": [],
+                    "maximumDuration": {
+                        "value": 1,
+                        "units": "day"
+                    },
+                    "advancedParametersCollapsed": true,
+                    "similarity": 98,
+                    "normalizeAmplitude": true,
+                    "normalizeLocation": true,
+                    "selectedRegion": {}
+                },
+                "sqLimitsSearchStore": {
+                    "originalParameters": [],
+                    "maximumDuration": {
+                        "value": 1,
+                        "units": "day"
+                    },
+                    "advancedParametersCollapsed": true,
+                    "limitsParams": {
+                        "entryCondition": {
+                            "duration": {
+                                "value": 0,
+                                "units": "min"
+                            }
+                        },
+                        "exitCondition": {
+                            "duration": {
+                                "value": 0,
+                                "units": "min"
+                            }
+                        }
+                    }
+                },
+                "sqCursorStore": {
+                    "calendarCursors": [],
+                    "capsuleCursors": [],
+                    "showValues": true
+                },
+                "sqReportStore": {
+                    "dateVariables": []
+                },
+                "sqReportContentStore": {
+                    "workbookFolderId": "",
+                    "workbooksSearch": "",
+                    "workbooksFilter": "OWNER",
+                    "workbooksSortField": "NAME",
+                    "workbooksSortAsc": false,
+                    "workbookId": "",
+                    "dateVariableId": "",
+                    "size": "medium",
+                    "shape": "rectangle",
+                    "customWidth": 1024,
+                    "customHeight": 768,
+                    "contentHeight": 100,
+                    "contentWidth": 100
+                }
+            }
+        }
+    }
+}
