@@ -1,0 +1,3 @@
+[console_scripts]
+gladtex = gleetex.__main__:main
+
