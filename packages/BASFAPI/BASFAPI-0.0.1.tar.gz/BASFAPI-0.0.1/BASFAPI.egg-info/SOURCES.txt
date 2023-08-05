@@ -1,0 +1,9 @@
+README.md
+setup.py
+BASFAPI.egg-info/PKG-INFO
+BASFAPI.egg-info/SOURCES.txt
+BASFAPI.egg-info/dependency_links.txt
+BASFAPI.egg-info/top_level.txt
+language/__init__.py
+timeseries/__init__.py
+timeseries/windows.py
