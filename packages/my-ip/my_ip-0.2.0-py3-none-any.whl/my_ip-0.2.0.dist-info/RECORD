@@ -1,0 +1,10 @@
+my_ip/__init__.py,sha256=NEbb3UoS77do-ItT-TvisnFaiECdrKyzdSlYcyt_tvI,757
+my_ip/console.py,sha256=pTvLxq8A0AGd-kcoXVFZGBGBOWPHkkWPX8zQ2sZ1eg0,2813
+my_ip/core.py,sha256=eZzNT7qBpM2bOtvkGy-4lQ_L_6Bf3CEhLwEZLky7WqM,2916
+my_ip/data/config.toml,sha256=lZhkZWBp6bOua4xINzCTeS9KTVuJQ6lfU3vihvJwWuk,668
+my_ip/settings.py,sha256=VAUahdk0PWWYiPGViQ3tXsCfZWZj4ZNA9w-EB8UFGaM,1022
+my_ip-0.2.0.dist-info/entry_points.txt,sha256=7WuLgh_PN8SYpa26-jFOqbJ_4DKeIYjjMs1JuhzHH1Q,41
+my_ip-0.2.0.dist-info/LICENSE,sha256=BWNgSrYNisTYfYmdW-lQlmo4bYkXag7ZTjdXxxhE4X8,1064
+my_ip-0.2.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+my_ip-0.2.0.dist-info/METADATA,sha256=_C5mFixYOpP9woz7v8HI_yI38ITCl7dmRc2vcdFWcjI,2689
+my_ip-0.2.0.dist-info/RECORD,,
