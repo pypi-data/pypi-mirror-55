@@ -1,0 +1,11 @@
+IPython
+matplotlib
+seaborn
+ipywidgets
+numpy
+pandas
+scipy
+scikit-learn
+torch
+torchvision
+boto3
