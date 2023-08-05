@@ -1,0 +1,13 @@
+autosubtakeover/__init__.py,sha256=ArfQwFg-3GLINktQWGI3m00ZP7B8DtEuVf6sP0U8mhE,109
+autosubtakeover/__main__.py,sha256=bQOy4SPT4W48SYYf1fDpfVwi9ffWGsd6bwgQ1qJwhbc,49
+autosubtakeover/_version.py,sha256=O1rZJki8B4KTrom2p3D8jyCh0Wtze1xzb_xs_oNGSLk,18592
+autosubtakeover/command.py,sha256=wtRk-dUaqusYJBhrg8hNxwF-sn9T60gErTq9WwNXoqI,3654
+autosubtakeover/error.py,sha256=InGD1th3k4RyJFQMnHjNHyBUWch2baV5ssiEKxD6U5M,44
+autosubtakeover/path.py,sha256=1wovNtQQMYuEiRWIrv61X6nzzNPPl00BR5euVwaZlTs,170
+autosubtakeover-0.1.dist-info/AUTHORS.rst,sha256=ep4acQE-yzHgQqYyojxbNLFlZvxgbQ0J0IsgMcu1GuY,119
+autosubtakeover-0.1.dist-info/LICENSE.txt,sha256=BGd39NvHcKorEM_WcjCTp4sLdT_-Qo9YAytuG7vc2UA,1065
+autosubtakeover-0.1.dist-info/METADATA,sha256=864VhIC9I5w_vvKNBAgx6FuIZtcUZntbVpBGI4K-myc,605
+autosubtakeover-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+autosubtakeover-0.1.dist-info/entry_points.txt,sha256=shJFKi4gjbowar68q96OxVxJja3yF79hbVT6KDSnuXc,66
+autosubtakeover-0.1.dist-info/top_level.txt,sha256=UuixLc-V8MYXxqen_7ec8luN3ScQ8t4kV3I0GAHuUr8,16
+autosubtakeover-0.1.dist-info/RECORD,,
