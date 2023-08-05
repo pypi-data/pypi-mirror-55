@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: yiban
+Version: 0.1.2.32
+Summary: UNKNOWN
+Home-page: https://dukebode.github.io
+Author: DukeBode
+Author-email: Duke123@aliyun.com
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/DukeBode/Yiban/issues
+Project-URL: Source, https://github.com/DukeBode/Yiban
+Platform: UNKNOWN
+Requires-Python: >=3.8
+Requires-Dist: openpyxl
+
+UNKNOWN
+
+
