@@ -1,0 +1,12 @@
+ataxx/__init__.py,sha256=YbqqO0QaZk88X9HVlAWAonJ_0xGfYNICLimRXesSVLc,14301
+ataxx/draw.py,sha256=Y320UBQkvwtWHwdUj_wDPIq1XuMv1GTEp1aE0Somyrg,2933
+ataxx/pgn.py,sha256=SdjZ3CqmCU-2OwVv1RH36o8xOsfsGYQ0_C0oNaZ8IL4,8314
+ataxx/players.py,sha256=IeFjz8cCf9hq3eDTYYQsIR71OsSxpsGm8y37hBYxsrA,2041
+ataxx/process.py,sha256=k8ZvOJLLwoRFgX5dJfG4jbcu1slIIcJ6YT_XlWX86vw,1277
+ataxx/socket.py,sha256=wygF3I7T6vvBH3k3qsKmJYYzcuepQXStjpWzrJscMt8,1977
+ataxx/uai.py,sha256=MKYGH4qKQcr9VH07nxh87oJLSSMOCY8bw2oMwZtFtmM,4211
+ataxx-2.0.0.dist-info/LICENSE,sha256=0GQXhAIbVlH5mPXw03B1Ku1k0SkqbIl4c6jD8CftLv0,1063
+ataxx-2.0.0.dist-info/METADATA,sha256=bzQd6YP38RxAyYkHHXw0vIxRuedjnf09PMw0xXhMFNw,2804
+ataxx-2.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ataxx-2.0.0.dist-info/top_level.txt,sha256=7srlUQZ0pkLPrNfvapDOrjN5fNphRqhU0_Z4uXjcsCg,6
+ataxx-2.0.0.dist-info/RECORD,,
