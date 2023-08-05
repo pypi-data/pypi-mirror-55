@@ -1,0 +1,4 @@
+#!python
+
+import emilie
+print(emilie.emilies_notes())
