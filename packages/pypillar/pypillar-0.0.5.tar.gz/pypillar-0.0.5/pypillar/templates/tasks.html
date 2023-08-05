@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">Tasks</h3>
+  </div>
+  <div class="card-body p-0">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th>Task ID</th>
+          <th>Task Name</th>
+          <th>Task Weight</th>
+          <th>Script</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% if results|length > 0 %}
+      {% for row in results %}
+        <tr>
+          <td>{{ row.id }}</td>
+          <td>{{ row.name }}</td>
+          <td>{{ row.weight }}</td>
+          <td>{{ row.script }}</td>
+          <td>
+            <a title="Edit" href="{{ url_for('create_task', pid=row.pid, action='edit', id=row.id) }}"><small class="badge badge-secondary"><i class="far fa-edit"></i></small></a>
+            <a title="Task runtime logs" href="{{ url_for('task_log', tid=row.id) }}"><small class="badge badge-secondary"><i class="fas fa-copy"></i></small></a>
+            <a title="Code Editor" href="{{ url_for('editor', file=row.script) }}"><small class="badge badge-secondary"><i class="fab fa-python"></i></small></a>
+          </td>
+        </tr>
+      {% endfor %}
+      {% else %}
+      <tr style="background-color:white;"><td colspan=5 align="center">No record found yet</td></tr>
+      {% endif %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
