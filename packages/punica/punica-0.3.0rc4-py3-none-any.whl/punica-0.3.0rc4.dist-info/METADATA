@@ -1,0 +1,60 @@
+Metadata-Version: 2.1
+Name: punica
+Version: 0.3.0rc4
+Summary: Ontology DApp Development Framework
+Home-page: https://github.com/punicasuite/punica-python
+Author: NashMiao
+Author-email: wdx7266@outlook.com
+Maintainer: NashMiao
+Maintainer-email: wdx7266@outlook.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6,<4
+Description-Content-Type: text/markdown
+Requires-Dist: halo (==0.0.26)
+Requires-Dist: crayons (==0.2.0)
+Requires-Dist: Click (==7.0)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: GitPython (==2.1.11)
+Requires-Dist: ontology-python-sdk (==2.1.0.RC2)
+
+<div align="center">
+  <img src="https://raw.githubusercontent.com/punicasuite/punica-python/master/punica.png" height="200" width="200"><br><br>
+</div>
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/abcfdd2c9d364e24bf88969863a1bf88)](https://www.codacy.com/app/NashMiao/punica-python?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=punicasuite/punica-python&amp;utm_campaign=Badge_Grade)
+[![pypi-w](https://img.shields.io/pypi/wheel/punica.svg)](https://pypi.org/project/punica/)
+[![pypi-v](https://img.shields.io/pypi/v/punica.svg)](https://pypi.org/project/punica/)
+[![pypi-pyversions](https://img.shields.io/pypi/pyversions/punica.svg)](https://pypi.org/project/punica/)
+
+Punica Python is a dApp development command line tool which has (almost) everything you need to start developing your dApp based on Ontology network.
+
+## Installation
+
+There are a few technical requirements before we start. Please install the following:
+
+- [Python 3.7](https://www.python.org/downloads/release/python-370/)
+- [Git](https://git-scm.com/)
+
+Then, execute the following command to install your tool:
+
+```shell
+pip install punica
+```
+
+## Documentation
+
+Read a beautiful documentation in [here](https://punica.gitbook.io/punica-python/).
+
+## License
+
+The Ontology library (i.e. all code outside of the cmd directory) is licensed under the MIT License, also included in our repository in the License file.
+
+
