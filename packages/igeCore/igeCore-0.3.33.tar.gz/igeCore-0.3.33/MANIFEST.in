@@ -1,0 +1,12 @@
+include LICENSE
+include MANIFEST.in
+include README.md
+include setup.py
+recursive-include *.h
+recursive-include *.lib
+recursive-include *.dll
+
+
+
+
+
