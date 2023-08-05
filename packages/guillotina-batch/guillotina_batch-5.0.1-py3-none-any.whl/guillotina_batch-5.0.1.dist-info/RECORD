@@ -1,0 +1,12 @@
+guillotina_batch/__init__.py,sha256=0Ci7Qri0XlTdAh22AoEgwhbSqRx_LGa9rCcdQT4TMKU,205
+guillotina_batch/api.py,sha256=C-L8Cu05b0xlndEkzZfUpIkrY-dQ4W280e8hhzijEto,8623
+guillotina_batch/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+guillotina_batch/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+guillotina_batch/tests/conftest.py,sha256=TUH8v1BALbqavAfB1YLLoO4CuefHbs_LegY7GSxnlS8,122
+guillotina_batch/tests/fixtures.py,sha256=h9FlLKKy3z6TdjWm3I0Ee6CcdHz7VMrlcwik_VQxo-I,279
+guillotina_batch/tests/test_batch.py,sha256=fTJxGAjbO4LgDseewGiS7RDDO7Bpu8MrHn93xXnlq7U,5210
+guillotina_batch/tests/test_batch_eager_commit.py,sha256=MXaytyHkLtNSfhoYJnn7Ju6QaZ0lpR3l2MeK7q-gtzc,4676
+guillotina_batch-5.0.1.dist-info/METADATA,sha256=F49M47HMpTM-RZHojfbtazA8pO8Iv3B_UDWc0cjYBjg,3219
+guillotina_batch-5.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+guillotina_batch-5.0.1.dist-info/top_level.txt,sha256=WGZw9GsVhmt0eXjWhY_BmXlzVvyw-R4ajN3E5vR9LEU,17
+guillotina_batch-5.0.1.dist-info/RECORD,,
