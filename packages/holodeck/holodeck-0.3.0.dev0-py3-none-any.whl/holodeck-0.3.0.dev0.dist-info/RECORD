@@ -1,0 +1,17 @@
+holodeck/__init__.py,sha256=pKaajRk_ZAZz6LwlKtDi5VcTvSHuB3fRmdS92ZkejEo,273
+holodeck/agents.py,sha256=iUlR5f4Ql7R27HSZmDf492ztWsqnEbBysdwPY620QZo,21504
+holodeck/command.py,sha256=0ugH29PA0_j9wesyTI5vRhUz19Ti3CO3eK9g3sY9rSk,14540
+holodeck/environments.py,sha256=-rw7dcet47tjKZCmS8Nn9Q92cUOXH1NRkKHE3-h8mVk,29705
+holodeck/exceptions.py,sha256=7fiPN1JFoQPoIDFjRvD1I8MWd8m9HLHLlirma7V6laE,507
+holodeck/holodeck.py,sha256=ZZ1AzJJ9NxP6QtTwzhNDdneqxjJq24TwaFaPVKOR_uE,3418
+holodeck/holodeckclient.py,sha256=9GJTLmSda3r1IAfEW50bnvSkm0S-Yr9yUahru3Pa3-Q,4594
+holodeck/packagemanager.py,sha256=8enAfUPMZ4qHJN92KP8tmwNZHUolA8D7z-bObrtQNtU,16020
+holodeck/sensors.py,sha256=bMBrWCKst4Uq5g7tu4Em2bFWxY_4o8XL2-JBn5vZHkA,20260
+holodeck/shmem.py,sha256=wsaiH-jlsg8I2g4FhAiJZv4WiWP99Lxv9R9bl2zPRx4,2508
+holodeck/spaces.py,sha256=AZvHo7RlH9d-0Bq0FVWaQUEX5zR3DKd2eLnyZKLN9ho,3254
+holodeck/util.py,sha256=bMZkkiYcrAyu46ilvxP08BK_RZCSmxthqFg2ovX_lMY,2574
+holodeck-0.3.0.dev0.dist-info/LICENSE,sha256=6Of9D-PtaJVgAGVF4-djMXDkcymjP9i-w5W-ijbhoWg,1086
+holodeck-0.3.0.dev0.dist-info/METADATA,sha256=F-o2sluQ0dr4hfr2CZunjTjF9LdVEiBaHVAxBEn0zig,5278
+holodeck-0.3.0.dev0.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+holodeck-0.3.0.dev0.dist-info/top_level.txt,sha256=x1SPrRqMy4j3xViuiNGzMwDC7B13S7BGq20J9IpFzK0,9
+holodeck-0.3.0.dev0.dist-info/RECORD,,
