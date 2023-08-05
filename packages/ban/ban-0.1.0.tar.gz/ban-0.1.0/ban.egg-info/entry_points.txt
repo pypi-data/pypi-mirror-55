@@ -1,0 +1,3 @@
+[console_scripts]
+ban = ban.cli:main
+
