@@ -1,0 +1,9 @@
+README.md
+setup.py
+yuce/__init__.py
+yuce/cli.py
+yuce.egg-info/PKG-INFO
+yuce.egg-info/SOURCES.txt
+yuce.egg-info/dependency_links.txt
+yuce.egg-info/entry_points.txt
+yuce.egg-info/top_level.txt
