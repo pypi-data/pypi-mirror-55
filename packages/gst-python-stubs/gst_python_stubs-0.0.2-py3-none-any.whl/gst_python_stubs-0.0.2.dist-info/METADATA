@@ -1,0 +1,15 @@
+Metadata-Version: 2.0
+Name: gst-python-stubs
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/miurahr/gst-python-stubs
+Author: Hiroshi Miura
+Author-email: miurahr@linux.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: PyGObject
+Requires-Dist: PyGObject-stubs
+
+UNKNOWN
+
+
