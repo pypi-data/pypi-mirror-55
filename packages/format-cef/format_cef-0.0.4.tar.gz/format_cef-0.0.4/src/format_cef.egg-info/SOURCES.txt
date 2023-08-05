@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+src/format_cef/__init__.py
+src/format_cef/cef.py
+src/format_cef/legacy.py
+src/format_cef.egg-info/PKG-INFO
+src/format_cef.egg-info/SOURCES.txt
+src/format_cef.egg-info/dependency_links.txt
+src/format_cef.egg-info/requires.txt
+src/format_cef.egg-info/top_level.txt
+src/format_cef.egg-info/zip-safe
+src/format_cef/_cef/__init__.py
+src/format_cef/_cef/base.py
+src/format_cef/_cef/compat.py
+src/format_cef/_cef/legacy_extensions.csv
+src/format_cef/_cef/valid_extensions.csv
