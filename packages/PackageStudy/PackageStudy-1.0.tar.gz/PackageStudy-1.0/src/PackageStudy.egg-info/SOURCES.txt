@@ -1,0 +1,9 @@
+setup.py
+src/PackageStudy.egg-info/PKG-INFO
+src/PackageStudy.egg-info/SOURCES.txt
+src/PackageStudy.egg-info/dependency_links.txt
+src/PackageStudy.egg-info/top_level.txt
+src/fhx/__init__.py
+src/fhx/fhx.py
+src/fjz/__init__.py
+src/fjz/fjz.py
