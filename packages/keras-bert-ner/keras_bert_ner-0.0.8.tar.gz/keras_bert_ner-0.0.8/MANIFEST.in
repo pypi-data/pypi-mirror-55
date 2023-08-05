@@ -1,0 +1,12 @@
+global-include build
+global-include dist
+global-include examples  
+global-include keras_bert_ner  
+global-include keras_bert_ner.egg-info  
+global-include LICENSE  
+global-include MANIFEST.in  
+global-include pictures  
+global-include README.md  
+global-include requirements.txt  
+global-include setup.py  
+global-include upload.sh
