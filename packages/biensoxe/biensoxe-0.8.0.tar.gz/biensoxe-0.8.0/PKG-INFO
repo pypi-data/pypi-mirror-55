@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: biensoxe
+Version: 0.8.0
+Summary: Library to parse and validate Vietnamese vehicle plate
+Home-page: https://github.com/sunshine-tech/BienSoXe
+License: MIT
+Author: Nguyễn Hồng Quân
+Author-email: ng.hong.quan@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Manufacturing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Vietnamese
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Home Automation
+Classifier: Topic :: Software Development :: Embedded Systems
+Classifier: Topic :: Software Development :: Internationalization
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Localization
+Requires-Dist: dedict (>=1.0.7,<2.0.0)
+Requires-Dist: pydantic (>=1.0,<2.0)
+Project-URL: Repository, https://github.com/sunshine-tech/BienSoXe.git
+Description-Content-Type: text/x-rst
+
+========
+BienSoXe
+========
+
+Library to parse and validate Vietnamese vehicle plate
+
+Install
+-------
+
+.. code-block:: sh
+
+    pip3 install biensoxe
+
+
+Usage
+-----
+
+.. code-block:: python
+
+    >>> from biensoxe import VietnamVehiclePlate
+
+    >>> VietnamVehiclePlate.from_string('44A-112.23')
+    VietnamVehiclePlate(compact='44A11223', vehicle_type=<VehicleType.DOMESTIC_AUTOMOBILE: 1>,
+    series='A', order='11223', locality='44', dip_country=None)
+
