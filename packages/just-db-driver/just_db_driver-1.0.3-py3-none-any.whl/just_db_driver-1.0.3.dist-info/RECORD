@@ -1,0 +1,9 @@
+just/__init__.py,sha256=FXYFeWE4fdab7ikBVveJA-nr2rL7BvGuKOYFpbOmvNo,133
+just/baseclient.py,sha256=etxIvyodhi8_QDjjLCvMEMrlBIyWHIa-KQ2KF92vv00,3124
+just/justclient.py,sha256=KO5YwjzaSAzKKXEdYciqR2RgQtWvycg0pzy1WKWPZOY,6693
+just/justerror.py,sha256=3A67ZV98HfINTLDbmY2E_KCah6xMOznQ3MTXZACCkkc,451
+just/resultset.py,sha256=A2GIEpOC1HNMKJjbjmLc7tR1J5VRLEfuU55Hu-nLLbU,3419
+just_db_driver-1.0.3.dist-info/METADATA,sha256=BTyY_2W1a7bQ7MHu6xm7yxhltR5IrsN3L_SkYJhQH1U,263
+just_db_driver-1.0.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+just_db_driver-1.0.3.dist-info/top_level.txt,sha256=Duj9B2ig4EHx-KROkozZ6gyyxwboooY5_LapSsUWg6c,5
+just_db_driver-1.0.3.dist-info/RECORD,,
