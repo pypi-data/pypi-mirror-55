@@ -1,0 +1,86 @@
+Metadata-Version: 2.1
+Name: org-todo-metrics
+Version: 0.1.1
+Summary: given some org files, compute and display interesting and useful metrics
+Home-page: https://gitlab.com/reedrichards/org_todo_metrics
+Author: Robert Wendt
+Author-email: rwendt1337@gmail.com
+License: MIT license
+Keywords: org_todo_metrics
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Requires-Dist: Click (>=7.0)
+Requires-Dist: orgparse
+Requires-Dist: starlette
+
+================
+org-todo-metrics
+================
+
+
+.. image:: https://img.shields.io/pypi/v/org_todo_metrics.svg
+        :target: https://pypi.python.org/pypi/org_todo_metrics
+        :alt: pypi
+
+.. image:: https://gitlab.com/reedrichards/org_todo_metrics/badges/master/coverage.svg?job=coverage
+        :target: https://reedrichards.gitlab.io/org_todo_metrics/coverage/index.html
+        :alt: coverage
+
+.. image:: https://gitlab.com/reedrichards/org_todo_metrics/badges/master/pipeline.svg
+        :alt: pipeline
+
+.. image:: https://img.shields.io/pypi/l/gitlab-helper.svg
+        :target: https://gitlab.com/reedrichards/org_todo_metrics/raw/master/LICENSE
+        :alt: PyPI - License
+
+.. image:: https://img.shields.io/pypi/dm/org_todo_metrics.svg
+        :alt: PyPI - Downloads
+
+.. image:: https://img.shields.io/pypi/pyversions/org_todo_metrics.svg
+        :alt: PyPI - Python Version
+
+.. image:: https://img.shields.io/pypi/status/org_todo_metrics.svg
+        :alt: PyPI - Status
+
+
+
+given some org files, compute and display interesting and useful metrics
+
+
+* Free software: MIT license
+* Documentation: https://reedrichards.gitlab.io/org_todo_metrics/index.html
+* Coverage: https://reedrichards.gitlab.io.gitlab.io/org_todo_metrics/coverage/index.html
+* Gitlab: https://gitlab.com/reedrichards/org_todo_metrics
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2019-10-27)
+------------------
+
+* First release on PyPI.
+
+

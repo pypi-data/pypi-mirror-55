@@ -1,0 +1,3 @@
+[console_scripts]
+org_todo_metrics = org_todo_metrics.cli:main
+
