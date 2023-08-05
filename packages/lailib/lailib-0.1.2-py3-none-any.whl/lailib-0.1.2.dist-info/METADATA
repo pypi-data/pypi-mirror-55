@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: lailib
+Version: 0.1.2
+Summary: A bag of helper functions
+Home-page: https://github.com/learnable-ai/lailib
+Author: learnable.ai
+Author-email: contact@learnable.ai
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# lailib
+
+## installation
+### Pipy
+pip install lailib
+### Anaconda
+conda install -c learnable lailib
+
+### update package
+[Follow internal link](https://learnableai.atlassian.net/wiki/spaces/CV/pages/456884495/update+lailib+to+conda+and+pypi?atlOrigin=eyJpIjoiMDc4MjI5MzBhYWQ0NGMzNGEyYjFmMGMxZjUzODhhNGQiLCJwIjoiYyJ9)
+### Requirements
+
+
