@@ -1,0 +1,23 @@
+version: "2019.10.0"
+output:
+  base_path: tmp/output/
+  content_path_fmt: "content/posts/%Y.%m"
+  static_path_fmt: "static/posts/%Y.%m"
+input:
+  path: tmp/example-articles.txt
+  start_at: 1900/01/02 00:00:00
+  stop_at: 2123/04/05 23:59:59
+asset_download:
+  enabled: true
+  base_url: "https://cdn-ak.f.st-hatena.com"
+  filter:
+    - regex: 'https?://cdn-ak\.f\.st-hatena\.com'
+attribute_map:
+  tags:
+    from:
+      - TAGS
+      - CATEGORY
+    values:
+      news:
+        - info
+        - お知らせ

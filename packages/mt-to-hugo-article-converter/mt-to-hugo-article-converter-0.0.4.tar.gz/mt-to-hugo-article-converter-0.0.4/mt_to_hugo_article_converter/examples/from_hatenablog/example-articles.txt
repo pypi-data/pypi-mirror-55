@@ -1,0 +1,1011 @@
+AUTHOR: mazgi
+TITLE: &lt;mazgi.github.io 移行済&gt;Amazon SageMakerをそれなりの人数で使うときの設定
+BASENAME: setup-amazon-sagemaker
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: 0
+DATE: 03/06/2018 00:06:04
+CATEGORY: AWS
+CATEGORY: SageMaker
+CATEGORY: Terraform
+CATEGORY: Jupyter
+IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/m/mazgi/20180305/20180305225954.png
+-----
+BODY:
+<h1>移動しました</h1>
+
+<p><a href="https://mazgi.github.io/posts/2018.03/setup-amazon-sagemaker/">mazgi.log :: Amazon SageMaker&#x3092;&#x305D;&#x308C;&#x306A;&#x308A;&#x306E;&#x4EBA;&#x6570;&#x3067;&#x4F7F;&#x3046;&#x3068;&#x304D;&#x306E;&#x8A2D;&#x5B9A;</a></p>
+
+<hr />
+
+<p>AWSのマネージドJupyterサービスである「Amazon SageMaker」を数十名規模で使う機会があったのでインフラ的に設定した内容などを書いておく。<br/>
+SageMakerで何をしたかなどはいずれちゃんとした情報が出ると思う。</p>
+
+<h1>Amazon SageMakerとは?</h1>
+
+<p>AWSのWebUIでぽちぽちクリックしていくとJupyterが起動する、そういうやつです。<br/>
+SageMakerのオフィシャルサイトはこちら。
+<iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Faws.amazon.com%2Fjp%2Fsagemaker%2F" title="機械学習モデルとアルゴリズム | AWS での Amazon SageMaker" class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="https://aws.amazon.com/jp/sagemaker/">aws.amazon.com</a></cite></p>
+
+<h1>Amazon SageMakerの起動方法</h1>
+
+<p>まずアクセスすべきはこちら。
+<a href="https://console.aws.amazon.com/sagemaker/home#/notebook-instances">https://console.aws.amazon.com/sagemaker/home#/notebook-instances</a></p>
+
+<p>「Create notebook instance」ボタンをクリックするとこのような画面になるので項目を埋めていく。
+<span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mazgi/20180305/20180305225954.png" alt="f:id:mazgi:20180305225954p:plain" title="f:id:mazgi:20180305225954p:plain" class="hatena-fotolife" itemprop="image"></span></p>
+
+<p>ある程度の人数で使う場合には以下のような項目を取り決めておくと良さそう。</p>
+
+<ul>
+<li>Notebook instance name
+
+<ul>
+<li>文字通りNotebookインスタンスの名前になるほか、Jupyter NotebookのURLの一部としても使われる</li>
+<li>誰が作ったかとか何の目的なのかとか命名ルールを決めておくと良さそう</li>
+</ul>
+</li>
+<li>Notebook instance type
+
+<ul>
+<li>いくつか選べる</li>
+<li>Notebookインスタンスは純粋にNotebookであって、このインスタンスでjobが動くわけではないのでそんなに強力なインスタンスでなくてもよい</li>
+<li>なお実際にjobを実行するインスタンスでは p2/p3 などのGPUインスタンスも選べる</li>
+</ul>
+</li>
+<li>IAM role(後述)
+
+<ul>
+<li>Notebookインスタンスに与えるRole、この権限でjobなどのインスタンスを作ろうとする</li>
+<li>Roleを作成するか既存のRoleから選択するかなどが選べる</li>
+<li>チームやグループで使うのであればあらかじめRoleを作っておいてARNを入力してもらう方が管理上よいと思う</li>
+</ul>
+</li>
+<li>Custom IAM role ARN
+
+<ul>
+<li>前述の「IAM role」で既存のRoleを選ぶことにすると表示される</li>
+<li>私はあらかじめ作っておいたRoleを入力してもらうことにした</li>
+</ul>
+</li>
+<li>VPC
+
+<ul>
+<li>とりあえず使うだけなら <code>No VPC</code> でよい</li>
+<li>ここで指定したVPCにSageMakerがアクセスできるようになるらしい(未検証)</li>
+<li>"Notebook instances will have internet access independent of your VPC setting."とある通り、ここでVPCを指定したからといってSageMakerやNotebookを特定のVPCに閉じ込めることはできないので注意</li>
+</ul>
+</li>
+</ul>
+
+
+<p>以上のような項目を埋めて、ページ下部の「Create notebook instance」ボタンをクリックするとNotebookインスタンスが準備されるので「InService」になるまで数分〜10数分程度待つ。 <br/>
+案外時間がかかるが裏側でプロビジョニングなどを行なっているのでしょう。</p>
+
+<p>「InService」になったNotebookインスタンスの詳細をみると右上に「Open」ボタンがあるのでクリックする。
+<span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mazgi/20180305/20180305230017.png" alt="f:id:mazgi:20180305230017p:plain" title="f:id:mazgi:20180305230017p:plain" class="hatena-fotolife" itemprop="image"></span></p>
+
+<p>そうすると別タブで見慣れたJupyter Notebookの画面が開くので好きなように使う。
+<span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mazgi/20180305/20180305230045.png" alt="f:id:mazgi:20180305230045p:plain" title="f:id:mazgi:20180305230045p:plain" class="hatena-fotolife" itemprop="image"></span></p>
+
+<p>こんなに楽だと自分でJupyter Notebook立てるモチベーションがなくなって良いですね。</p>
+
+<h1>IAM Role/Group作成</h1>
+
+<p>以下を用意した</p>
+
+<ul>
+<li>IAM Role
+
+<ul>
+<li>前述の、Notebookインスタンスに与えるRole</li>
+<li>最小限 <code>AmazonSageMakerFullAccess</code> をアタッチしておけば良い</li>
+</ul>
+</li>
+<li>IAM Group
+
+<ul>
+<li>今回は1つのAWSアカウントで数十名が同時にSageMakerを使うため、グループを作ってユーザーを紐づけることにした</li>
+<li>以下をアタッチした(もう少し絞り込めそうではある)
+
+<ul>
+<li><code>AmazonSageMakerFullAccess</code></li>
+<li><code>AmazonEC2FullAccess</code></li>
+<li><code>IAMReadOnlyAccess</code></li>
+<li><code>IAMUserChangePassword</code> (これは運用上必要だっただけ)</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>IAM User(s)
+
+<ul>
+<li>SageMakerを使う人全員分のユーザーを払い出し、前述のグループに紐付けた</li>
+<li>今回は初期パスワードを私の手元でコンソール出力し、各自初回ログイン時に変更してもらった</li>
+</ul>
+</li>
+</ul>
+
+
+<p>以上の設定をTerraformで行う <code>.tf</code> ファイルの例は次の通り。<br/>
+内容はほぼそのまま、個々のユーザー名は別途変数から読んでいる。</p>
+
+<p><script src="https://gist.github.com/mazgi/aebcf7cac9ed5ca5f3f1d0f69557a820.js"> </script><cite class="hatena-citation"><a href="https://gist.github.com/mazgi/aebcf7cac9ed5ca5f3f1d0f69557a820">gist.github.com</a></cite></p>
+
+<h1>AWSリソース上限緩和申請</h1>
+
+<p>AWS SAの方にご相談の上、SageMakerを利用する <code>IAM User数 * n</code> で事前にリソース上限の緩和申請を行なった。<br/>
+デフォルト値はこちら。<br/>
+<a href="https://docs.aws.amazon.com/ja_jp/general/latest/gr/aws_service_limits.html#limits_sagemaker">AWS &#x30B5;&#x30FC;&#x30D3;&#x30B9;&#x5236;&#x9650; - &#x30A2;&#x30DE;&#x30BE;&#x30F3; &#x30A6;&#x30A7;&#x30D6; &#x30B5;&#x30FC;&#x30D3;&#x30B9;</a></p>
+
+<p>内容はざっと次の通り。<br/>
+各ユーザーがNotebookインスタンスを1つ、学習と推論のjobを2つずつ実行することを想定した。</p>
+
+<ul>
+<li>SageMaker のホスト
+
+<ul>
+<li>インスタンス数: <code>IAM User数 * 3</code></li>
+<li>(使用するインスタンスタイプ): <code>IAM User数 * 3</code></li>
+<li>エンドポイントのインスタンス数: <code>IAM User数 * 3</code>
+
+<ul>
+<li><em>これは不要だったようだ</em></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>SageMaker のトレーニング
+
+<ul>
+<li>インスタンス数: <code>IAM User数 * 3</code></li>
+<li>トレーニングジョブのインスタンス数: <code>IAM User数 * 3</code></li>
+<li>(使用するインスタンスタイプ): <code>IAM User数 * 3</code></li>
+</ul>
+</li>
+<li>SageMaker ノートブック
+
+<ul>
+<li>(使用するインスタンスタイプ): <code>IAM User数 * 1.5</code></li>
+<li>実行中のノートブックインスタンスの数: <code>IAM User数 * 1.5</code></li>
+</ul>
+</li>
+</ul>
+
+
+<p>一部CloudTrailの上限に引っかかり同時実行できなかったりもしたが、概ねこれでユーザー全員が目的の操作を行えた。<br/>
+AWSのリソース上限はなかなか難しいのでAWS SAの方に相談するに限る🙏</p>
+
+<h1>感想</h1>
+
+<p>プロビジョニングしてルールを決めておけば使いたい人にサクッと使ってもらえて大変便利。<br/>
+各種セキュリティ担保の方法や込み入った使い方については今後使ってもらいながら工夫していきたい。</p>
+
+-----
+--------
+AUTHOR: mazgi
+TITLE: &lt;mazgi.github.io 移行済&gt;SSE-KMSで暗号化したS3バケットをs3fsでmountする
+BASENAME: s3fs-for-s3-with-sse-kms
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: 0
+DATE: 03/01/2018 04:32:56
+CATEGORY: Amazon S3
+CATEGORY: AWS
+CATEGORY: AWS KMS
+IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/m/mazgi/20180301/20180301042415.jpg
+-----
+BODY:
+<p>移動しました=> <a href="https://mazgi.github.io/posts/2018.03/s3fs-for-s3-with-sse-kms/">mazgi.log :: SSE-KMS&#x3067;&#x6697;&#x53F7;&#x5316;&#x3057;&#x305F;S3&#x30D0;&#x30B1;&#x30C3;&#x30C8;&#x3092;s3fs&#x3067;mount&#x3059;&#x308B;</a></p>
+
+<p>タイトルの通り「AWS Key Management Service (AWS KMS) 」を使って暗号化したAmazon S3バケットをs3fsでUbuntu 16上でmountした。<br/>
+KMSについては以下のドキュメントが詳しいが要は暗号化の際に煩雑な鍵の管理をAWSにお願いできる仕組み。</p>
+
+<p><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fdocs.aws.amazon.com%2Fja_jp%2FAmazonS3%2Flatest%2Fdev%2FUsingKMSEncryption.html" title="AWS KMS で管理されたキーによるサーバー側の暗号化 (SSE-KMS) を使用したデータの保護 - Amazon Simple Storage Service" class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="https://docs.aws.amazon.com/ja_jp/AmazonS3/latest/dev/UsingKMSEncryption.html">docs.aws.amazon.com</a></cite></p>
+
+<h1>S3バケットの準備</h1>
+
+<p>S3バケットを作り、画像のように <code>Default encryption</code> を <code>AWS-KMS</code> に設定する。<br/>
+なおこのS3バケットは記事公開時点で削除済み。</p>
+
+<p><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mazgi/20180301/20180301035936.png" alt="f:id:mazgi:20180301035936p:plain" title="f:id:mazgi:20180301035936p:plain" class="hatena-fotolife" itemprop="image"></span></p>
+
+<h1>s3fsの設定</h1>
+
+<h2>Install</h2>
+
+<p>GitHubからアーカイブをダウンロードして</p>
+
+<pre class="code" data-lang="" data-unlink>$ ./autogen.sh
+$ ./configure
+$ make
+$ sudo make install</pre>
+
+
+<p>する。</p>
+
+<p><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fgithub.com%2Fs3fs-fuse%2Fs3fs-fuse%2Freleases%2Ftag%2Fv1.83" title="s3fs-fuse/s3fs-fuse" class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="https://github.com/s3fs-fuse/s3fs-fuse/releases/tag/v1.83">github.com</a></cite></p>
+
+<h2>mount</h2>
+
+<p>以下のようにAWSのcredentialを <code>.secret</code> というファイルに <code>ACCESS_KEY:SECRET_KEY</code> というフォーマットで書く。<br/>
+またKMSの鍵IDを環境変数に設定した。</p>
+
+<pre class="code" data-lang="" data-unlink>$ cat .secret
+****ACCESS_KEY****:****SECRET_KEY****
+$ export AWSSSEKMSID=&#39;********&#39;</pre>
+
+
+<p>そしてmountする。<br/>
+<code>endpoint</code>, <code>uid</code>, <code>gid</code> , <code>umask</code> あたりをきちんと設定しないと読み書きできない、ハマった。<br/>
+なお鍵IDは環境変数使わなくても <code>use_sse=kmsid:"${AWSSSEKMSID}"</code> でいける模様。</p>
+
+<p>また <code>-d</code> はdebug、 <code>-f</code> はフォアグラウンド実行。</p>
+
+<pre class="code" data-lang="" data-unlink>$ s3fs mazgi-s3-sse-kms-test-01-bucket-01 bucket -o passwd_file=.secret,use_sse=kmsid,endpoint=ap-northeast-1,allow_other,uid=1234,gid=1234,umask=227 -d -f
+[CRT] s3fs.cpp:set_s3fs_log_level(271): change debug level from [CRT] to [INF] 
+[INF]     s3fs.cpp:set_mountpoint_attribute(4206): PROC(uid=4600, gid=4600) - MountPoint(uid=4600, gid=4600, mode=40775)
+[INF] s3fs.cpp:s3fs_init(3371): init v1.83(commit:unknown) with OpenSSL
+[INF] s3fs.cpp:s3fs_check_service(3747): check services.
+[INF]       curl.cpp:CheckBucket(3068): check a bucket.
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [GET] [/] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:RequestPerform(2051): HTTP response code 200</pre>
+
+
+<h2>ファイル操作</h2>
+
+<p><code>ls</code> してみる。</p>
+
+<p>なおS3バケットに入っているJPEG画像はこれ。かわいい。<br/>
+「<a href="https://www.pakutaso.com/">ぱくたそ</a>」からお借りした。</p>
+
+<p><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mazgi/20180301/20180301042415.jpg" alt="f:id:mazgi:20180301042415j:plain" title="f:id:mazgi:20180301042415j:plain" class="hatena-fotolife" itemprop="image"></span></p>
+
+<pre class="code" data-lang="" data-unlink>$ ls -l bucket
+total 179
+-r-xr-x--- 1 user group 96870 Feb  1 07:10 cat.jpg*
+-r-xr-x--- 1 user group 84999 Feb  1 07:13 cat_plain.jpg*</pre>
+
+
+<p>その時のコンソールログ。</p>
+
+<pre class="code" data-lang="" data-unlink>[INF] s3fs.cpp:s3fs_getattr(841): [path=/]
+[INF] s3fs.cpp:s3fs_opendir(2281): [path=/][flags=100352]
+[INF] s3fs.cpp:s3fs_readdir(2432): [path=/]
+[INF]   s3fs.cpp:list_bucket(2477): [path=/]
+[INF]       curl.cpp:ListBucketRequest(3103): [tpath=/]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01?delimiter=/&amp;max-keys=1000&amp;prefix=
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com?delimiter=/&amp;max-keys=1000&amp;prefix=
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [GET] [/] [delimiter=/&amp;max-keys=1000&amp;prefix=] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:RequestPerform(2051): HTTP response code 200
+[WAN] s3fs.cpp:append_objects_from_xml_ex(2575): contents_xp-&gt;nodesetval is empty.
+[INF]   s3fs.cpp:readdir_multi_head(2346): [path=/][list=0]
+[INF]       curl.cpp:PreHeadRequest(2657): [tpath=/cat.jpg][bpath=cat.jpg][save=/cat.jpg][sseckeypos=-1]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/cat.jpg
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/cat.jpg
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [HEAD] [/cat.jpg] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:PreHeadRequest(2657): [tpath=/cat_plain.jpg][bpath=cat_plain.jpg][save=/cat_plain.jpg][sseckeypos=-1]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/cat_plain.jpg
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/cat_plain.jpg
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [HEAD] [/cat_plain.jpg] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:Request(3999): [count=2]
+[INF]       curl.cpp:RequestPerform(2051): HTTP response code 200
+[INF]       curl.cpp:RequestPerform(2051): HTTP response code 200
+[INF]       cache.cpp:AddStat(356): add stat cache entry[path=/cat_plain.jpg]
+[INF]       cache.cpp:AddStat(356): add stat cache entry[path=/cat.jpg]
+[INF] s3fs.cpp:s3fs_getattr(841): [path=/cat.jpg]
+[INF] s3fs.cpp:s3fs_getattr(841): [path=/cat_plain.jpg]</pre>
+
+
+<p>アップロード前のチェックサムがこれ。</p>
+
+<pre class="code" data-lang="" data-unlink>$ shasum -a 1 cat.jpg
+fb9f3c47ad3d91ced2e62c82f0ae753330351b32  cat.jpg</pre>
+
+
+<p>mountしたS3バケットから読み取りテスト兼ねてチェックサムを取得してみる。<br/>
+一致しているので正しく読み取れていることがわかる。</p>
+
+<pre class="code" data-lang="" data-unlink>$ sha1sum bucket/cat.jpg
+fb9f3c47ad3d91ced2e62c82f0ae753330351b32  bucket/cat.jpg</pre>
+
+
+<p>ファイル読み取り時のコンソールログ。</p>
+
+<pre class="code" data-lang="" data-unlink>[INF] s3fs.cpp:s3fs_getattr(841): [path=/cat.jpg]
+[INF] s3fs.cpp:s3fs_open(2063): [path=/cat.jpg][flags=32768]
+[INF]       cache.cpp:DelStat(565): delete stat cache entry[path=/cat.jpg]
+[INF]       curl.cpp:HeadRequest(2708): [tpath=/cat.jpg]
+[INF]       curl.cpp:PreHeadRequest(2657): [tpath=/cat.jpg][bpath=][save=][sseckeypos=-1]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/cat.jpg
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/cat.jpg
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [HEAD] [/cat.jpg] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:RequestPerform(2051): HTTP response code 200
+[INF]       cache.cpp:AddStat(356): add stat cache entry[path=/cat.jpg]
+[INF]       fdcache.cpp:SetMtime(1019): [path=/cat.jpg][fd=7][time=1517436613]
+[INF]       curl.cpp:GetObjectRequest(3043): [tpath=/cat.jpg][start=0][size=96870]
+[INF]       curl.cpp:PreGetObjectRequest(2983): [tpath=/cat.jpg][start=0][size=96870]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/cat.jpg
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/cat.jpg
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [GET] [/cat.jpg] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:GetObjectRequest(3058): downloading... [path=/cat.jpg][fd=7]
+[INF]       curl.cpp:RequestPerform(2051): HTTP response code 206
+[INF] s3fs.cpp:s3fs_getattr(841): [path=/cat.jpg]
+[INF] s3fs.cpp:s3fs_flush(2185): [path=/cat.jpg][fd=7]
+[INF]       fdcache.cpp:RowFlush(1434): [tpath=][path=/cat.jpg][fd=7]
+[INF] s3fs.cpp:s3fs_release(2238): [path=/cat.jpg][fd=7]
+[INF]       fdcache.cpp:GetFdEntity(1995): [path=/cat.jpg][fd=7]</pre>
+
+
+<p>今度はS3バケットにファイルを書き込んでみる。<br/>
+適当にファイルを作りチェックサムを取得。</p>
+
+<pre class="code" data-lang="" data-unlink>$ head -1 /dev/urandom|od -x &gt; rand.txt
+$ sha1sum rand.txt
+bb02ee0d5fc5b459ca1978fcc0e53649d144554c  rand.txt</pre>
+
+
+<p>マウントポイントにコピーする。<br/>
+コピー後のチェックサムが一致しているので正しくコピーできたことがわかる。</p>
+
+<pre class="code" data-lang="" data-unlink>$ cp rand.txt bucket/
+$ sha1sum bucket/rand.txt
+bb02ee0d5fc5b459ca1978fcc0e53649d144554c  bucket/rand.txt</pre>
+
+
+<p>書き込み時のコンソールログ。</p>
+
+<pre class="code" data-lang="" data-unlink>[INF] s3fs.cpp:s3fs_getattr(841): [path=/]
+[INF] s3fs.cpp:s3fs_getattr(841): [path=/rand.txt]
+[INF]       curl.cpp:HeadRequest(2708): [tpath=/rand.txt]
+[INF]       curl.cpp:PreHeadRequest(2657): [tpath=/rand.txt][bpath=][save=][sseckeypos=-1]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/rand.txt
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/rand.txt
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [HEAD] [/rand.txt] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:RequestPerform(2073): HTTP response code 404 was returned, returning ENOENT
+[INF]       curl.cpp:HeadRequest(2708): [tpath=/rand.txt/]
+[INF]       curl.cpp:PreHeadRequest(2657): [tpath=/rand.txt/][bpath=][save=][sseckeypos=-1]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/rand.txt/
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/rand.txt/
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [HEAD] [/rand.txt/] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:RequestPerform(2073): HTTP response code 404 was returned, returning ENOENT
+[INF]       curl.cpp:HeadRequest(2708): [tpath=/rand.txt_$folder$]
+[INF]       curl.cpp:PreHeadRequest(2657): [tpath=/rand.txt_$folder$][bpath=][save=][sseckeypos=-1]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/rand.txt_%24folder%24
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/rand.txt_%24folder%24
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [HEAD] [/rand.txt_$folder$] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:RequestPerform(2073): HTTP response code 404 was returned, returning ENOENT
+[INF]   s3fs.cpp:list_bucket(2477): [path=/rand.txt]
+[INF]       curl.cpp:ListBucketRequest(3103): [tpath=/rand.txt]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01?delimiter=/&amp;max-keys=2&amp;prefix=rand.txt/
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com?delimiter=/&amp;max-keys=2&amp;prefix=rand.txt/
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [GET] [/] [delimiter=/&amp;max-keys=2&amp;prefix=rand.txt/] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:RequestPerform(2051): HTTP response code 200
+[WAN] s3fs.cpp:append_objects_from_xml_ex(2575): contents_xp-&gt;nodesetval is empty.
+[WAN] s3fs.cpp:append_objects_from_xml_ex(2575): contents_xp-&gt;nodesetval is empty.
+[INF] s3fs.cpp:s3fs_getattr(841): [path=/rand.txt]
+[INF]       curl.cpp:HeadRequest(2708): [tpath=/rand.txt]
+[INF]       curl.cpp:PreHeadRequest(2657): [tpath=/rand.txt][bpath=][save=][sseckeypos=-1]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/rand.txt
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/rand.txt
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [HEAD] [/rand.txt] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:RequestPerform(2073): HTTP response code 404 was returned, returning ENOENT
+[INF]       curl.cpp:HeadRequest(2708): [tpath=/rand.txt/]
+[INF]       curl.cpp:PreHeadRequest(2657): [tpath=/rand.txt/][bpath=][save=][sseckeypos=-1]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/rand.txt/
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/rand.txt/
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [HEAD] [/rand.txt/] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:RequestPerform(2073): HTTP response code 404 was returned, returning ENOENT
+[INF]       curl.cpp:HeadRequest(2708): [tpath=/rand.txt_$folder$]
+[INF]       curl.cpp:PreHeadRequest(2657): [tpath=/rand.txt_$folder$][bpath=][save=][sseckeypos=-1]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/rand.txt_%24folder%24
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/rand.txt_%24folder%24
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [HEAD] [/rand.txt_$folder$] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:RequestPerform(2073): HTTP response code 404 was returned, returning ENOENT
+[INF]   s3fs.cpp:list_bucket(2477): [path=/rand.txt]
+[INF]       curl.cpp:ListBucketRequest(3103): [tpath=/rand.txt]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01?delimiter=/&amp;max-keys=2&amp;prefix=rand.txt/
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com?delimiter=/&amp;max-keys=2&amp;prefix=rand.txt/
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [GET] [/] [delimiter=/&amp;max-keys=2&amp;prefix=rand.txt/] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:RequestPerform(2051): HTTP response code 200
+[WAN] s3fs.cpp:append_objects_from_xml_ex(2575): contents_xp-&gt;nodesetval is empty.
+[WAN] s3fs.cpp:append_objects_from_xml_ex(2575): contents_xp-&gt;nodesetval is empty.
+[INF] s3fs.cpp:s3fs_create(999): [path=/rand.txt][mode=100664][flags=32961]
+[INF]       curl.cpp:HeadRequest(2708): [tpath=/rand.txt]
+[INF]       curl.cpp:PreHeadRequest(2657): [tpath=/rand.txt][bpath=][save=][sseckeypos=-1]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/rand.txt
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/rand.txt
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [HEAD] [/rand.txt] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:RequestPerform(2073): HTTP response code 404 was returned, returning ENOENT
+[INF]       curl.cpp:HeadRequest(2708): [tpath=/rand.txt/]
+[INF]       curl.cpp:PreHeadRequest(2657): [tpath=/rand.txt/][bpath=][save=][sseckeypos=-1]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/rand.txt/
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/rand.txt/
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [HEAD] [/rand.txt/] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:RequestPerform(2073): HTTP response code 404 was returned, returning ENOENT
+[INF]       curl.cpp:HeadRequest(2708): [tpath=/rand.txt_$folder$]
+[INF]       curl.cpp:PreHeadRequest(2657): [tpath=/rand.txt_$folder$][bpath=][save=][sseckeypos=-1]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/rand.txt_%24folder%24
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/rand.txt_%24folder%24
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [HEAD] [/rand.txt_$folder$] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:RequestPerform(2073): HTTP response code 404 was returned, returning ENOENT
+[INF]   s3fs.cpp:list_bucket(2477): [path=/rand.txt]
+[INF]       curl.cpp:ListBucketRequest(3103): [tpath=/rand.txt]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01?delimiter=/&amp;max-keys=2&amp;prefix=rand.txt/
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com?delimiter=/&amp;max-keys=2&amp;prefix=rand.txt/
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [GET] [/] [delimiter=/&amp;max-keys=2&amp;prefix=rand.txt/] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:RequestPerform(2051): HTTP response code 200
+[WAN] s3fs.cpp:append_objects_from_xml_ex(2575): contents_xp-&gt;nodesetval is empty.
+[WAN] s3fs.cpp:append_objects_from_xml_ex(2575): contents_xp-&gt;nodesetval is empty.
+[INF]     s3fs.cpp:create_file_object(960): [path=/rand.txt][mode=100664]
+[INF]       curl.cpp:PutRequest(2872): [tpath=/rand.txt]
+[INF]       curl.cpp:PutRequest(2889): create zero byte file object.
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/rand.txt
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/rand.txt
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [PUT] [/rand.txt] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:PutRequest(2969): uploading... [path=/rand.txt][fd=-1][size=0]
+[INF]       curl.cpp:RequestPerform(2051): HTTP response code 200
+[INF]       cache.cpp:DelStat(565): delete stat cache entry[path=/rand.txt]
+[INF]       curl.cpp:HeadRequest(2708): [tpath=/rand.txt]
+[INF]       curl.cpp:PreHeadRequest(2657): [tpath=/rand.txt][bpath=][save=][sseckeypos=-1]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/rand.txt
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/rand.txt
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [HEAD] [/rand.txt] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:RequestPerform(2051): HTTP response code 200
+[INF]       cache.cpp:AddStat(356): add stat cache entry[path=/rand.txt]
+[INF] s3fs.cpp:s3fs_getattr(841): [path=/rand.txt]
+[INF] s3fs.cpp:s3fs_flush(2185): [path=/rand.txt][fd=7]
+[INF]       fdcache.cpp:RowFlush(1434): [tpath=][path=/rand.txt][fd=7]
+[INF]       curl.cpp:PutRequest(2872): [tpath=/rand.txt]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/rand.txt
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/rand.txt
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [PUT] [/rand.txt] [] [2a5b392dff6867a115948ff04fbec762a6f007cffebf40544c62308ec9eab099]
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:PutRequest(2969): uploading... [path=/rand.txt][fd=7][size=996]
+[INF]       curl.cpp:RequestPerform(2051): HTTP response code 200
+[INF] s3fs.cpp:s3fs_release(2238): [path=/rand.txt][fd=7]
+[INF]       cache.cpp:DelStat(565): delete stat cache entry[path=/rand.txt]
+[INF]       fdcache.cpp:GetFdEntity(1995): [path=/rand.txt][fd=7]</pre>
+
+
+<p>こちらはチェックサム取得時のコンソールログ。</p>
+
+<pre class="code" data-lang="" data-unlink>[INF] s3fs.cpp:s3fs_getattr(841): [path=/rand.txt]
+[INF]       curl.cpp:HeadRequest(2708): [tpath=/rand.txt]
+[INF]       curl.cpp:PreHeadRequest(2657): [tpath=/rand.txt][bpath=][save=][sseckeypos=-1]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/rand.txt
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/rand.txt
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [HEAD] [/rand.txt] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:RequestPerform(2051): HTTP response code 200
+[INF]       cache.cpp:AddStat(356): add stat cache entry[path=/rand.txt]
+[INF] s3fs.cpp:s3fs_open(2063): [path=/rand.txt][flags=32768]
+[INF]       cache.cpp:DelStat(565): delete stat cache entry[path=/rand.txt]
+[INF]       curl.cpp:HeadRequest(2708): [tpath=/rand.txt]
+[INF]       curl.cpp:PreHeadRequest(2657): [tpath=/rand.txt][bpath=][save=][sseckeypos=-1]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/rand.txt
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/rand.txt
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [HEAD] [/rand.txt] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:RequestPerform(2051): HTTP response code 200
+[INF]       cache.cpp:AddStat(356): add stat cache entry[path=/rand.txt]
+[INF]       fdcache.cpp:SetMtime(1019): [path=/rand.txt][fd=7][time=1517862525]
+[INF]       curl.cpp:GetObjectRequest(3043): [tpath=/rand.txt][start=0][size=996]
+[INF]       curl.cpp:PreGetObjectRequest(2983): [tpath=/rand.txt][start=0][size=996]
+[INF]       curl.cpp:prepare_url(4253): URL is https://s3.amazonaws.com/mazgi-s3-sse-kms-test-01-bucket-01/rand.txt
+[INF]       curl.cpp:prepare_url(4285): URL changed is https://mazgi-s3-sse-kms-test-01-bucket-01.s3.amazonaws.com/rand.txt
+[INF]       curl.cpp:insertV4Headers(2400): computing signature [GET] [/rand.txt] [] []
+[INF]       curl.cpp:url_to_host(101): url is https://s3.amazonaws.com
+[INF]       curl.cpp:GetObjectRequest(3058): downloading... [path=/rand.txt][fd=7]
+[INF]       curl.cpp:RequestPerform(2051): HTTP response code 206
+[INF] s3fs.cpp:s3fs_getattr(841): [path=/rand.txt]
+[INF] s3fs.cpp:s3fs_flush(2185): [path=/rand.txt][fd=7]
+[INF]       fdcache.cpp:RowFlush(1434): [tpath=][path=/rand.txt][fd=7]
+[INF] s3fs.cpp:s3fs_release(2238): [path=/rand.txt][fd=7]
+[INF]       fdcache.cpp:GetFdEntity(1995): [path=/rand.txt][fd=7]</pre>
+
+
+<p>以上、ちょっとハマったができてみるとあっさり暗号化したS3バケットが扱えた。</p>
+
+<p>で、「これをprovisioningするの時間がないなー」とか思ってたら斜め後ろのベテランエンジニアがサクッとitamaeのrecipeにしてくれた。感謝。</p>
+
+-----
+--------
+AUTHOR: mazgi
+TITLE: &lt;mazgi.github.io 移行済&gt;S3+CloudFrontをTerraformで設定してCircleCIで更新する
+BASENAME: s3+cloudfront-website-with-terraform-and-circleci
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: 0
+DATE: 02/15/2018 05:24:40
+CATEGORY: Terraform
+CATEGORY: Infrastructure as Code
+CATEGORY: Amazon S3
+CATEGORY: AWS
+CATEGORY: Amazon CloudFront
+CATEGORY: Hugo
+CATEGORY: CircleCI 2.0
+CATEGORY: CircleCI
+IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/m/mazgi/20180215/20180215023829.png
+-----
+BODY:
+<p>移動しました=> <a href="https://mazgi.github.io/posts/2018.02/s3+cloudfront-website-with-terraform-and-circleci/">mazgi.log :: S3 + CloudFront&#x3092;Terraform&#x3067;&#x8A2D;&#x5B9A;&#x3057;&#x3066;CircleCI&#x3067;&#x66F4;&#x65B0;&#x3059;&#x308B;</a></p>
+
+<p>「TerraformでS3+CloudFront+SSL/TLS証明書 w/ ACMを設定してHugoで作ったstaticなWebサイトをCircleCIで自動deployする」やつができた。</p>
+
+<h1>できたもの</h1>
+
+<p>普通のいかにも<a href="https://gohugo.io/">Hugo</a>で作ったWebサイトができた。<br/>
+もう2018年なので手オペなどせずInfrastructure as Codeで構築かつCIでコンテンツdeployです。<br/>
+中身はまだない。<br/>
+きっと酒とメシについての何かが書かれるのでしょう。</p>
+
+<p><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mazgi/20180215/20180215023829.png" alt="f:id:mazgi:20180215023829p:plain" title="f:id:mazgi:20180215023829p:plain" class="hatena-fotolife" itemprop="image"></span>
+<a href="https://sakemeshi.love/">https://sakemeshi.love/</a></p>
+
+<p>これはそもそも<a href="https://denatechstudio.connpass.com/event/72710/">先日開催したハッカソン</a>でやろうとして途中までしか進められなかったので、その補習も兼ねてます。</p>
+
+<p>なお次回ハッカソンはGoです！</p>
+
+<p><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fdenatechstudio.connpass.com%2Fevent%2F75706%2F" title="DeNA Techathon: 著者と学ぶ「Goならわかるシステムプログラミング」黙々会 (2018/02/17 12:00〜)" class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="https://denatechstudio.connpass.com/event/75706/">denatechstudio.connpass.com</a></cite></p>
+
+<h2>構成</h2>
+
+<p>図を描く気力がなかったのでテキストで。</p>
+
+<h3>インフラ構築編</h3>
+
+<p><a href="https://www.terraform.io/">Terraform</a>で以下を行なっている。</p>
+
+<ol>
+<li>Route 53にドメインのゾーン情報を登録する</li>
+<li>コンテンツ更新用のIAMグループとIAMユーザーを払い出す</li>
+<li>コンテンツ格納用のS3バケットを作る</li>
+<li>ACMでSSL/TLS証明書を発行する</li>
+<li>CloudFront distributionを設定する(ACMの証明書使いたいので)</li>
+<li>CloudFront distributionをRoute 53に登録する</li>
+</ol>
+
+
+<h3>コンテンツ更新編</h3>
+
+<p>GitHubへのpushをトリガーに<a href="https://circleci.com/">CircleCI</a>で以下を行なっている。</p>
+
+<ol>
+<li>HugoでstaticなWebコンテンツ生成する</li>
+<li>生成したWebコンテンツをS3に同期する</li>
+<li>CloudFrontのキャッシュをクリアする</li>
+</ol>
+
+
+<h3>GitHub</h3>
+
+<p><a href="https://github.com/">GitHub</a>で以下を管理している。</p>
+
+<ul>
+<li><a href="https://github.com/mazgi/sakemeshi.terraform">sakemeshi.terraform</a>
+
+<ul>
+<li>Terraformリポジトリ</li>
+<li>中身はRoute 53にドメインのゾーンを登録してmoduleを呼び出しているくらい</li>
+<li>AWSのcredential等は <code>sakemeshi.terraform-secret</code> リポジトリに置いてsubmoduleとして参照している</li>
+</ul>
+</li>
+<li><a href="https://github.com/mazgi/terraform-aws-static-website">terraform-aws-static-website</a>
+
+<ul>
+<li>自分用Terraform module</li>
+<li>S3+CloudFrontでstaticなWebサイトを作るもろもろが詰まっている</li>
+</ul>
+</li>
+<li>(private) sakemeshi.terraform-secret
+
+<ul>
+<li>AWSのcredentialなどが入っている</li>
+<li>credential store導入とかはまた今度</li>
+</ul>
+</li>
+<li>(private) sakemeshi.content
+
+<ul>
+<li>HugoによるWebサイトの中身</li>
+<li>このリポジトリのmasterにpushするとCircleCIが動いてS3にdeployされる</li>
+</ul>
+</li>
+</ul>
+
+
+<h1>つくりかた</h1>
+
+<p>コンセプトとしてはWebUIを手でぽちぽちしたくないのでTerraformでInfra as Codeします！</p>
+
+<h2>AWS Webコンソールぽちぽち</h2>
+
+<p>最初からコンセプトに反するようだが2018年時点では手でポチポチすることもまだ必要なのです。(あるいはCLI)<br/>
+作るものは2つ。</p>
+
+<h3>Terraform 実行用 IAM User</h3>
+
+<p><code>terraform-admin</code> という名前で <code>AdministratorAccess</code> をattacheしたIAMユーザーを作る。<br/>
+credentialも払い出して、今回の場合は <code>sakemeshi.terraform-secret</code> リポジトリにpushしておく。</p>
+
+<p><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mazgi/20180215/20180215033043.png" alt="f:id:mazgi:20180215033043p:plain" title="f:id:mazgi:20180215033043p:plain" class="hatena-fotolife" itemprop="image"></span></p>
+
+<h3>tfstate 格納用 S3 Bucket</h3>
+
+<p>Terraformは設定したクラウド環境の状態を <code>tfstate</code> というファイルで管理するのでそれを格納するS3バケットを作る。</p>
+
+<p>バケット名は <code>${AWSアカウント名}-terraform</code> としてバージョニングを有効にする。<br/>
+先ほど作ったIAMユーザー <code>terraform-admin</code> からアクセスできれば良い。</p>
+
+<p><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mazgi/20180215/20180215033214.png" alt="f:id:mazgi:20180215033214p:plain" title="f:id:mazgi:20180215033214p:plain" class="hatena-fotolife" itemprop="image"></span></p>
+
+<p>詳しくは以下参照。</p>
+
+<p><a href="https://www.terraform.io/docs/backends/types/s3.html">Backend Type: s3 - Terraform by HashiCorp</a></p>
+
+<h2>Infra as Terraform</h2>
+
+<h3>インフラをコードで書く</h3>
+
+<p>Terraformで構築するもろもろは専用のGitHubリポジトリを作って <code>terraform.tf</code> に書く。<br/>
+先述の通りここで公開している。</p>
+
+<p><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fgithub.com%2Fmazgi%2Fsakemeshi.terraform" title="mazgi/sakemeshi.terraform" class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="https://github.com/mazgi/sakemeshi.terraform">github.com</a></cite></p>
+
+<p>主な内容は以下の通り。</p>
+
+<ul>
+<li><code>prepare.sh</code>
+
+<ul>
+<li>terraformバイナリのダウンロードと展開</li>
+<li>必要な環境変数のexport</li>
+<li>なお命名は職場の文化に由来する</li>
+</ul>
+</li>
+<li><code>terraform.tf</code>
+
+<ul>
+<li>Terraformで行いたいもろもろ</li>
+<li>ただしほとんどはmoduleに追い出しているので、実際の内容はRoute 53のゾーン設定とmoduleの読み出し程度</li>
+</ul>
+</li>
+<li><code>terraform.tfvars</code>
+
+<ul>
+<li>後述のprivateなcredentialリポジトリ内へのsymlink</li>
+<li>AWSのACCESS_KEYやSECRET_KEYなどが書かれている</li>
+</ul>
+</li>
+</ul>
+
+
+<p><code>terraform.tf</code> で参照しているmoduleは公開しているが後述のエラーやリージョンが固定などの残課題がある。<br/>
+<a href="https://registry.terraform.io/modules/mazgi/static-website/aws/0.0.2">Terraform Module Registry</a></p>
+
+<p>先述の通りTerraformを実行するIAMユーザーのcredential等は別のprivateリポジトリを作って配置している。<br/>
+公開できないが中身はこの程度。</p>
+
+<p><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mazgi/20180215/20180215043508.png" alt="f:id:mazgi:20180215043508p:plain" title="f:id:mazgi:20180215043508p:plain" class="hatena-fotolife" itemprop="image"></span></p>
+
+<h3>Terraform 実行</h3>
+
+<p>ようやくTerraformを実行できる環境が整ったので実行！<br/>
+なお <code>prepare.sh</code> は環境変数をexportするので必ず <code>source</code> する。</p>
+
+<pre class="code" data-lang="" data-unlink>$ source prepare.sh
+$ bin/terraform apply</pre>
+
+
+<p>実行すると初回はもろもろのリソースが作られ、1件のエラーが発生する。<br/>
+2回目以降はこのように1件のエラーが発生する。。<br/>
+後述する。</p>
+
+<p><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mazgi/20180215/20180215035427.png" alt="f:id:mazgi:20180215035427p:plain" title="f:id:mazgi:20180215035427p:plain" class="hatena-fotolife" itemprop="image"></span></p>
+
+<p>細かいことを書くと今回のドメイン自体はRoute 53で管理していないため、別途ネームサーバーをRoute 53に向けておく等の手順が必要です。</p>
+
+<h2>CircleCIで自動build &amp;&amp; deploy</h2>
+
+<p>Terraformで空のWebサイトができたので中身を作っていく。</p>
+
+<p>GitHubリポジトリを用意しておもむろに <code>hugo new site .</code> する。<br/>
+適当なテーマをsubmoduleとして追加する。<br/>
+<a href="https://gohugo.io/getting-started/quick-start/">Quick Start</a>通り。</p>
+
+<p>Hugoは今後がんばることにして今回はCircleCI 2.0をがんばる。<br/>
+結論を書くと<a href="https://gist.github.com/mazgi/6c0dd922f89eee80fe5da6317d7e7aed">こういう <code>.circleci/config.yml</code> </a>を書いた。<br/>
+ハマった。</p>
+
+<p>そのほかは本当に <code>hugo new site .</code> したまま。</p>
+
+<p><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mazgi/20180215/20180215045406.png" alt="f:id:mazgi:20180215045406p:plain" title="f:id:mazgi:20180215045406p:plain" class="hatena-fotolife" itemprop="image"></span></p>
+
+<p>何はともあれこれでCircleCIでのWebサイトのビルドとS3への同期が行えるようになった！めでたい！</p>
+
+<p><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mazgi/20180215/20180215045503.png" alt="f:id:mazgi:20180215045503p:plain" title="f:id:mazgi:20180215045503p:plain" class="hatena-fotolife" itemprop="image"></span></p>
+
+<h1>おわりに</h1>
+
+<p>ということで(ほぼ)手でぽちぽちせずにInfrastructure as CodeでstaticなWebサイトが作れたし更新の仕組みもできた！やったね！</p>
+
+<h2>ポイント</h2>
+
+<p>以下あまり書けてないので機会があったら書く。</p>
+
+<h3>Terraform</h3>
+
+<ul>
+<li>最近のTerraformは <code>terraform init</code> が必要
+
+<ul>
+<li>その作業ディレクトリでの初回実行やmoduleのバージョン上げた際など</li>
+</ul>
+</li>
+<li>最近のTerraformは <code>terraform apply</code> したあと本当に実行するか聞いてくる
+
+<ul>
+<li>そのため <code>terraform apply[ENTER]</code> してコーヒーを買いにいくと何十分後に戻っても <code>Do you want to perform these actions?</code> というメッセージが出迎えてくれる(もちろんあなたのクラウド環境には何も変化はない)</li>
+<li><code>terraform apply -auto-approve</code> というわるいオプションがある</li>
+</ul>
+</li>
+<li>tfstate格納用S3バケット(S3 backend)を使うためには環境変数or <code>~/.aws</code> 内にcredentialが必要
+
+<ul>
+<li>私は <code>prepare.sh</code> の中でexportしている(ので必ず <code>source</code> する)</li>
+</ul>
+</li>
+<li>ACMの検証が従来のメールだけではなくDNSでもできるようになっていてTerraformでも対応していた
+
+<ul>
+<li><a href="https://github.com/terraform-providers/terraform-provider-aws/pull/2813">New Resources: aws_acm_certificate and aws_acm_certificate_validation by flosell &middot; Pull Request #2813 &middot; terraform-providers/terraform-provider-aws &middot; GitHub</a></li>
+<li>これのおかげで <code>terraform apply</code> だけで証明書発行してIssuedになるところまで実現できた</li>
+<li>ただし<a href="https://github.com/mazgi/terraform-aws-static-website/blob/v0.0.2/main.tf#L9"> <code>AWS provider 1.9</code> 以上が必要</a></li>
+</ul>
+</li>
+</ul>
+
+
+<h3>CircleCI 2.0</h3>
+
+<ul>
+<li>Docker便利だけども
+
+<ul>
+<li>使うDockerイメージにもよるが当然 <code>curl</code> も <code>git</code> も入ってなかったりする</li>
+<li>自分用Dockerイメージ作りたくなる</li>
+<li>開発環境がDocker Hubに公開できるDockerイメージで完結している場合は便利そう</li>
+</ul>
+</li>
+<li><code>checkout</code> に <code>git clone --recursive</code> 相当の機能がない(?)
+
+<ul>
+<li>そのため<a href="https://github.com/mazgi/sakemeshi.content/blob/master/.circleci/config.yml#L20-L21"><code>checkout</code> の次の行で <code>git submodule update</code> を書いた</a></li>
+</ul>
+</li>
+</ul>
+
+
+<h2>(特に)ハマりどころ</h2>
+
+<h3>terraform apply 時の aws_acm_certificate_validation エラー</h3>
+
+<p><code>terraform apply</code> する際に毎回このエラーが発生する。</p>
+
+<pre class="code" data-lang="" data-unlink>Error: Error applying plan:
+
+1 error(s) occurred:
+
+* module.static-website.aws_acm_certificate_validation.website: 1 error(s) occurred:
+
+* aws_acm_certificate_validation.website: Certificate needs [VALIDATON_RECORD.YOURDOMAIN VALIDATON_RECORD.YOURDOMAIN] to be set but only [VALIDATON_RECORD.YOURDOMAIN] was passed to validation_record_fqdns</pre>
+
+
+<p>これ <code>YOURDOMAIN</code> と <code>*.YOURDOMAIN</code> でバリデーションレコードが同じで、Route 53上は1レコードしかないものをTerraformの<a href="https://github.com/terraform-providers/terraform-provider-aws/blob/v1.9.0/aws/resource_aws_acm_certificate_validation.go">AWS provider</a>が2レコード返ってくることを期待しているように見えるんだけどどうしたものか。</p>
+
+<h3>CircleCI 2.0 で attach_workspace するために ca-certificates パッケージが必要</h3>
+
+<p>前フェイズで永続化したワークスペースを後フェイズで <code>attach_workspace</code> して取り出すために <code>ca-certificates</code> パッケージ必要なのはハマった。<br/>
+こちらの記事に助けられた。<br/>
+<a href="https://qiita.com/gcoka/items/8a9cd59fec324a1fca19">CircleCI&#x3067;x509&#x3068;&#x3044;&#x3046;&#x8A3C;&#x660E;&#x66F8;&#x30A8;&#x30E9;&#x30FC;&#x306B;&#x906D;&#x9047;&#x3057;&#x305F;&#x3068;&#x304D;&#x306E;&#x5BFE;&#x51E6;</a></p>
+
+<p>それはそうと再掲するが <code>.circleci/config.yml</code> がこんな長さになった。つらい。<br/>
+workflowとしてbuildとdeployが分かれるのは綺麗だけども。。</p>
+
+<p><script src="https://gist.github.com/mazgi/6c0dd922f89eee80fe5da6317d7e7aed.js"> </script><cite class="hatena-citation"><a href="https://gist.github.com/mazgi/6c0dd922f89eee80fe5da6317d7e7aed">gist.github.com</a></cite></p>
+
+<p>ともかくこういうサイトをいくつか作りたいニーズがあったのでやっていきます。</p>
+
+-----
+--------
+AUTHOR: mazgi
+TITLE: &lt;mazgi.github.io 移行済&gt;簡易な技術ドキュメントをHugoで書くと便利だった
+BASENAME: technical-docs-with-hugo
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: 0
+DATE: 12/08/2017 07:00:00
+IMAGE: https://cdn-ak.f.st-hatena.com/images/fotolife/m/mazgi/20171207/20171207195147.png
+-----
+BODY:
+<p>この記事は以下に移行しました。</p>
+
+<p><a href="https://mazgi.github.io/posts/2017.12/technical-docs-with-hugo/">mazgi.log :: &#x7C21;&#x6613;&#x306A;&#x6280;&#x8853;&#x30C9;&#x30AD;&#x30E5;&#x30E1;&#x30F3;&#x30C8;&#x3092;Hugo&#x3067;&#x66F8;&#x304F;&#x3068;&#x4FBF;&#x5229;&#x3060;&#x3063;&#x305F;</a></p>
+
+<hr />
+
+<p>サンプルコードのドキュメントをHugoで書いてサンプルコードと一緒に配ったら便利そうだったのでやってみた。</p>
+
+<p><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fgohugo.io%2F" title="The world’s fastest framework for building websites" class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="https://gohugo.io/">gohugo.io</a></cite></p>
+
+<h2>やりたいこと</h2>
+
+<p>仕事で他社さんにサンプルコードとドキュメントをセットでお渡ししたいのだけど社ではGitHub Enterpriseを使っているのでリポジトリを直接見ていただくことが難しいケースがある。</p>
+
+<p>規模が大きいプロジェクトなら<a href="http://www.sphinx-doc.org/">Sphinx</a>使うと(やる気次第で)いくらでも綺麗なドキュメントが書けそうではあるけど、規模がそれほどじゃないうちはサクッとMarkdownで書いて、でもソースコードとドキュメントが整合性取れててほしいという気持ちになる。<br/>
+(今は<a href="http://www.sphinx-doc.org/en/stable/markdown.html">SphinxもMarkdownで書ける</a>そうだ、最近知った)</p>
+
+<p>そもそも(私は)ドキュメント書きたくないので、できるだけスクリプトの提供やソースコードコメントで賄って文章量は最小限に抑えたいというモチベーションもあった。</p>
+
+<p>そこで以下のような作戦を考えた。</p>
+
+<h3>さくせん</h3>
+
+<ul>
+<li>ドキュメントはHugoでプレビューしながらMarkdownで書く</li>
+<li>生成したHTMLは <code>/docs</code> ディレクトリに突っ込む</li>
+<li>社内向けにはGitHub PagesでmasterのHEADをホスティングする</li>
+<li>社外向けには最新リリースのアーカイブを提供する</li>
+</ul>
+
+
+<p>プレビューできるから書くの楽だし、tag打てるからソースコードとドキュメントの整合性も取りやすい。きっと便利！</p>
+
+<h2>できたもの</h2>
+
+<p>リポジトリはこちら。</p>
+
+<p><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fgithub.com%2Fmazgi%2Fexample-document-with-hugo" title="mazgi/example-document-with-hugo" class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="https://github.com/mazgi/example-document-with-hugo">github.com</a></cite></p>
+
+<p>GitHub Pagesはこちら。</p>
+
+<p><a href="https://mazgi.github.io/example-document-with-hugo/index.html">Example Document with Hugo</a></p>
+
+<p>テーマはこちらを使わせていただいた。<br/>
+サイドバーでエントリが一覧できて技術ドキュメントらしさがある。</p>
+
+<p><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fgithub.com%2Fvjeantet%2Fhugo-theme-docdock" title="vjeantet/hugo-theme-docdock" class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="https://github.com/vjeantet/hugo-theme-docdock">github.com</a></cite></p>
+
+<h2>工夫</h2>
+
+<p><a href="https://github.com/mazgi/example-document-with-hugo/blob/master/docs.source/config.toml">設定ファイルはこれ。</a></p>
+
+<ul>
+<li>以下で生成したHTML内のリンクが <code>/</code> からの相対PATHになるふいんき(ちゃんと調べていない)
+
+<ul>
+<li><code>baseURL = "/"</code></li>
+<li><code>relativeURLs = true</code></li>
+<li><code>uglyurls = true</code></li>
+</ul>
+</li>
+<li>themeの指定</li>
+</ul>
+
+
+<pre class="code" data-lang="" data-unlink>baseURL = &#34;/&#34;
+languageCode = &#34;en-us&#34;
+DefaultContentLanguage = &#34;en&#34;
+title = &#34;Example Document with Hugo&#34;
+publishDir = &#34;../docs&#34;
+relativeURLs = true
+uglyurls = true
+theme = &#34;docdock&#34;
+
+[params]
+themeVariant = &#34;gray&#34;</pre>
+
+
+<p>また、この設定ファイルとドキュメントのソースコード(Markdown他)を <code>/docs.source</code> に置き、 <code>publishDir = "../docs"</code> と設定することでリポジトリのrootにあまりファイルを置かないようにしている。<br/>
+これはこのリポジトリにサンプルコードも同居する想定であり、rootにファイルが増えて見通しがわるくなることを避けるため。</p>
+
+<p>HTMLを生成してcommitしてpushしてtagを打ったものがこちら。</p>
+
+<p><a href="https://github.com/mazgi/example-document-with-hugo/releases/tag/v0.0.1">Release v0.0.1 &middot; mazgi/example-document-with-hugo &middot; GitHub</a></p>
+
+<p>アーカイブをダウンロードして手元で開くとこんな感じで <code>index.html</code> が見える。<br/>
+アーカイブファイルにも展開後のディレクトリにもバージョンナンバーが含まれわかりやすい。</p>
+
+<p><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mazgi/20171207/20171207195147.png" alt="f:id:mazgi:20171207195147p:plain" title="f:id:mazgi:20171207195147p:plain" class="hatena-fotolife" itemprop="image"></span></p>
+
+<p><code>index.html</code> もリンク先のドキュメントもブラウザで表示できる。便利。</p>
+
+<p><span itemscope itemtype="http://schema.org/Photograph"><img src="https://cdn-ak.f.st-hatena.com/images/fotolife/m/mazgi/20171207/20171207195157.png" alt="f:id:mazgi:20171207195157p:plain" title="f:id:mazgi:20171207195157p:plain" class="hatena-fotolife" itemprop="image"></span></p>
+
+-----
+--------
+AUTHOR: mazgi
+TITLE: &lt;mazgi.github.io 移行済&gt;EC2 P3で使えるChainerMN入りのDockerイメージを作った
+BASENAME: dockerimage-for-chainermn-on-v100
+STATUS: Publish
+ALLOW COMMENTS: 1
+CONVERT BREAKS: 0
+DATE: 12/07/2017 07:16:07
+-----
+BODY:
+<p>移動しました=> <a href="https://mazgi.github.io/posts/2017.12/dockerimage-for-chainermn-on-v100/">mazgi.log :: EC2 P3&#x3067;&#x4F7F;&#x3048;&#x308B;ChainerMN&#x5165;&#x308A;&#x306E;Docker&#x30A4;&#x30E1;&#x30FC;&#x30B8;&#x3092;&#x4F5C;&#x3063;&#x305F;</a></p>
+
+<p>sonots先生によるこの記事をやってみたという話です。</p>
+
+<p><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fqiita.com%2Fsonots%2Fitems%2Fee247a2e36033646c914" title="docker (nvidia-docker) を使ってマルチノードで ChainerMN を実行する方法(仮) - Qiita" class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="https://qiita.com/sonots/items/ee247a2e36033646c914">qiita.com</a></cite></p>
+
+<h2>概要</h2>
+
+<p>Dockerfileはここにあります。</p>
+
+<p><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fgithub.com%2Fmazgi%2Fdocker-cuda-cv" title="mazgi/docker-cuda-cv" class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="https://github.com/mazgi/docker-cuda-cv">github.com</a></cite></p>
+
+<p>ベースはNVIDIAさんのオフィシャルイメージです。</p>
+
+<p><a href="https://hub.docker.com/r/nvidia/cuda/">https://hub.docker.com/r/nvidia/cuda/</a></p>
+
+<h2>実行結果</h2>
+
+<p>ChainerMNのexampleを試した結果はこちら。<br/>
+今のところシングルNodeシングルGPUとシングルNodeマルチGPUしか試してないです。</p>
+
+<p><script src="https://gist.github.com/mazgi/e095e4756f14ebb9db5c26cd70b23c63.js"> </script><cite class="hatena-citation"><a href="https://gist.github.com/mazgi/e095e4756f14ebb9db5c26cd70b23c63">gist.github.com</a></cite></p>
+
+<p>手順はこちらの通りなんですが時間が取れていない...</p>
+
+<p><a href="https://qiita.com/sonots/items/ee247a2e36033646c914#%E3%83%9E%E3%83%AB%E3%83%81%E3%83%8E%E3%83%BC%E3%83%89">docker (nvidia-docker) &#x3092;&#x4F7F;&#x3063;&#x3066;&#x30DE;&#x30EB;&#x30C1;&#x30CE;&#x30FC;&#x30C9;&#x3067; ChainerMN &#x3092;&#x5B9F;&#x884C;&#x3059;&#x308B;&#x65B9;&#x6CD5;(&#x4EEE;)</a></p>
+
+<p>P3じゃなくても動くはずですが、ホスト側にGPUとnvidia-dockerは必要です。<br/>
+今回は社の環境で試したのでsonots便利先生環境の恩恵を受けてます🙏</p>
+
+<p><iframe src="https://hatenablog-parts.com/embed?url=http%3A%2F%2Fblog.livedoor.jp%2Fsonots%2Farchives%2F49502478.html" title="DeNA TechCon 2017 と Developers Summit 2017 でDeNAの機械学習基盤と分析基盤の講演をしました : sonots:blog" class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="http://blog.livedoor.jp/sonots/archives/49502478.html">blog.livedoor.jp</a></cite></p>
+
+<p>イチから構築する場合はこういう記事が参考になりそう。</p>
+
+<p><iframe src="https://hatenablog-parts.com/embed?url=http%3A%2F%2Fchie8842.hatenablog.com%2Fentry%2F2017%2F11%2F27%2F221551" title="p3インスタンス(V100)上でCUDA+CUDNN+Tensorflowを動かすのが大変だったのできろく。 - 焼肉が食べたい" class="embed-card embed-blogcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 190px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="http://chie8842.hatenablog.com/entry/2017/11/27/221551">chie8842.hatenablog.com</a></cite></p>
+
+<h2>経緯とか</h2>
+
+<p>めでたく記事も出たので色々言えるようになったのですが、実はありがたいことにP3の先行検証というのをさせていただいてました。<br/>
+(なおイベント当日はカメラマンしてました)</p>
+
+<p><iframe src="https://hatenablog-parts.com/embed?url=https%3A%2F%2Fengineer.dena.jp%2F2017%2F12%2Famazon-ec2-p3pose-estimation.html" title="Amazon EC2 P3インスタンスにおけるPose Estimation速度向上検証 - Technology of DeNA" class="embed-card embed-webcard" scrolling="no" frameborder="0" style="display: block; width: 100%; height: 155px; max-width: 500px; margin: 10px 0px;"></iframe><cite class="hatena-citation"><a href="https://engineer.dena.jp/2017/12/amazon-ec2-p3pose-estimation.html">engineer.dena.jp</a></cite></p>
+
+<p>この検証時点ではChainerMNではなくChainerで、環境もVM上に直接作ってたのですが、その後部内から「Dockerイメージになってたほうが便利」とフィードバックいただき先行者の記事を参考に手探りしてる状況です。<br/>
+私はMLわからないマンなのですが、最初 cuDNN 7 + CuPy 1.0.3 で環境作ろうとしてバージョンが合わなくてどうしよ！と思ってたら「今日 cuDNN 7 対応の CuPy 2.0 リリースするよ！」と教えていただいたりとか、この業界本当に数時間単位で進歩しててすごい。</p>
+
+<p>こういう用途だとコンテナほんと便利なんですけど、でもDockerイメージの命名むずかしい。<br/>
+<code>mazgi/cuda-cv:9.0-cudnn7-devel-ubuntu16.04</code> じゃなくて、<br/>
+<code>mazgi/cuda-cv-9.0-cudnn7-devel-ubuntu16.04:latest</code> とかにしたほうがいいのかな(長い)。<br/>
+そもそもの話としては実質Chainer &amp; ChainerMNイメージなのでそういう名前にすべきだし(さらに長くなる)。</p>
+
+-----
+--------
