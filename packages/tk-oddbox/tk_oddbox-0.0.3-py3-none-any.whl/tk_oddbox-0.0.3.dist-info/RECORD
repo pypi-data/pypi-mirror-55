@@ -1,0 +1,11 @@
+tk_oddbox/__init__.py,sha256=eDOuYODq99cIzXwHb8J6UJv7JxZo9MzmLz7zw1CH-vo,159
+tk_oddbox/const.py,sha256=tTu-zCWtiprtODLOa082DIBQIWo_z7XWieiveQJK55M,584
+tk_oddbox/image_label.py,sha256=0pArvA_P85KfUvHHAdJjmLC968AjPAD9F0gKhJsNH_0,748
+tk_oddbox/image_menu_button.py,sha256=8THaaRBmn3gXFv-NxZDMUoTPaTPRpy9FBKZK-bbfVD0,1255
+tk_oddbox/images.py,sha256=At2XYwvD3O6qQUsdi5tHBThO4PfjPhusHlgG0pnLKFM,3715
+tk_oddbox/slice_var.py,sha256=cSn6BXyVNbaUbsTJXTtaGTavmSgl1yeeJJ23VT2gqys,2099
+tk_oddbox-0.0.3.dist-info/LICENSE,sha256=BUlORtHAlDVCrcoL75X8puuaHpdixcYR9_VQwb1z_I0,1095
+tk_oddbox-0.0.3.dist-info/METADATA,sha256=A5Cu4iKt585E6QnVBT3n2ahu6VaWHBBV2N_G89zWb2Y,3018
+tk_oddbox-0.0.3.dist-info/WHEEL,sha256=ReVQQd6zaVfNgarFRTf51K9cXnAfPvzgvBdlbMaCgNg,97
+tk_oddbox-0.0.3.dist-info/top_level.txt,sha256=niKXzRKZnwXzkM4SoFWQq1A205RTP_J52QY__H03VOI,10
+tk_oddbox-0.0.3.dist-info/RECORD,,
