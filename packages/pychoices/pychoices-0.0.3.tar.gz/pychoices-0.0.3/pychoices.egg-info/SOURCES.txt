@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+pychoices/__init__.py
+pychoices/_colors.py
+pychoices/_pychoices.py
+pychoices.egg-info/PKG-INFO
+pychoices.egg-info/SOURCES.txt
+pychoices.egg-info/dependency_links.txt
+pychoices.egg-info/top_level.txt
+test/tests.py
