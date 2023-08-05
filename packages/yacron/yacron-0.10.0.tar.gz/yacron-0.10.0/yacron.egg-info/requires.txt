@@ -1,0 +1,6 @@
+strictyaml>=0.7.2
+crontab
+aiohttp>=3.0
+sentry-sdk
+aiosmtplib
+jinja2
