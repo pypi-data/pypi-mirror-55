@@ -1,0 +1,16 @@
+setup.py
+Weaviate_client.egg-info/PKG-INFO
+Weaviate_client.egg-info/SOURCES.txt
+Weaviate_client.egg-info/dependency_links.txt
+Weaviate_client.egg-info/top_level.txt
+weaviate/Errors.py
+weaviate/__init__.py
+weaviate/weaviate.py
+weaviate/connect/__init__.py
+weaviate/connect/connection.py
+weaviate/connect/tmp.py
+weaviate/connect/util.py
+weaviate_client.egg-info/PKG-INFO
+weaviate_client.egg-info/SOURCES.txt
+weaviate_client.egg-info/dependency_links.txt
+weaviate_client.egg-info/top_level.txt
