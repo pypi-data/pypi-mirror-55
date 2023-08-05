@@ -1,0 +1,13 @@
+{
+    "PBS": {
+        "popen" : "qsub",
+        "script_lines": {
+            "1" : ["#!/usr/bin/bash\n#PBS -j oe\n#PBS -o $PBS_O_WORKDIR/<--0-->", "LOG_FILE"],
+            "2" : ["#PBS -N <--0-->", "JOB_NAME"],
+            "3" : ["#PBS -l select=<--0-->:mem=<--1-->GB:ncpus=<--2-->","NODES|RAM|THREADS"],
+            "4" : ["#PBS -q <--0-->", "QUEUE"],
+            "5" : ["#PBS -A <--0-->\ncd $PBS_O_WORKDIR\n","USER"],
+            "6" : ["<--0-->\n", "COMMAND"]
+        }
+	}
+}
