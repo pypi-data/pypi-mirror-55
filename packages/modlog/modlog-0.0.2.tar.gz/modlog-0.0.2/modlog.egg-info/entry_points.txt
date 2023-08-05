@@ -1,0 +1,3 @@
+[console_scripts]
+modlog = modlog.cli.main:main
+
