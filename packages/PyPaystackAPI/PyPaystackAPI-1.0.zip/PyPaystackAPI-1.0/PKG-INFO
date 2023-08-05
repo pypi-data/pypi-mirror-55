@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: PyPaystackAPI
+Version: 1.0
+Summary: A python API to easily access important paystack services.
+Home-page: https://github.com/moriire/PyPaystackAPI
+Author: Mobolaji Abdulsalam
+Author-email: ibraheemabdulsalam@gmail.com
+License: MIT
+Download-URL: https://github.com/moriire/PyPaystackAPI/archive/v_10.tar.gz
+Description: UNKNOWN
+Keywords: python payment wrapper,paystack payment API,python paystack library,python payment library
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
