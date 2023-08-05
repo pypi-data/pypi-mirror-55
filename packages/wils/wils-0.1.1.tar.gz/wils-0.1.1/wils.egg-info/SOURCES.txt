@@ -1,0 +1,14 @@
+LICENSE
+README.md
+requirements.txt
+setup.cfg
+setup.py
+tests/conftest.py
+tests/test_wils.py
+wils/__init__.py
+wils.egg-info/PKG-INFO
+wils.egg-info/SOURCES.txt
+wils.egg-info/dependency_links.txt
+wils.egg-info/not-zip-safe
+wils.egg-info/requires.txt
+wils.egg-info/top_level.txt
