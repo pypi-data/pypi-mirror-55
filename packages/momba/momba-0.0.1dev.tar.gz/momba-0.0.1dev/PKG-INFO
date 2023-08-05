@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: momba
+Version: 0.0.1dev
+Summary: Various tools for quantitative models.
+Home-page: https://dgit.cs.uni-saarland.de/koehlma/momba
+Author: Maximilian Köhl
+Author-email: mkoehl@cs.uni-saarland.de
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
