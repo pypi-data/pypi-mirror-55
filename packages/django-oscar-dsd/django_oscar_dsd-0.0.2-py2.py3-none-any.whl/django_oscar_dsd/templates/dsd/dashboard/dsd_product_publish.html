@@ -1,0 +1,38 @@
+{% extends 'oscar/dashboard/layout.html' %}
+{% load i18n %}
+
+{% block body_class %}{{ block.super }} create-page{% endblock %}
+
+{% block title %}
+    {% blocktrans with name=dsd_product.full_name %}Delete dsd_product '{{ name }}'?{% endblocktrans %} | {% trans "DSD Products" %} | {{ block.super }}
+{% endblock %}
+
+{% block breadcrumbs %}
+    <ul class="breadcrumb">
+        <li>
+            <a href="{% url 'dashboard:index' %}">{% trans "Dashboard" %}</a>
+        </li>
+        <li>
+            <a href="{% url 'dashboard:dsd_product-list' %}">{% trans "DSD Products" %}</a>
+        </li>
+        <li>
+            <a href="{% url 'dashboard:dsd_product-update' pk=dsd_product.pk %}">'{{ dsd_product.name }}'</a>
+        </li>
+        <li class="active">{% trans "Publish?" %}</li>
+    </ul>
+{% endblock %}
+
+{% block headertext %}
+    {{ dsd_product.name }}
+{% endblock %}
+
+{% block dashboard_content %}
+    <form action="." method="post" class="well">
+        <p>{% trans "Are you sure you want to publish this product?" %}</p>
+        {% csrf_token %}
+        <div class="form-actions">
+            <button class="btn btn-danger" type="submit" data-loading-text="{% trans 'Deleting...' %}">{% trans "Publish" %}</button> {% trans "or" %}
+            <a href="{% url 'dashboard:dsd_product-list' %}">{% trans "cancel" %}</a>
+        </div>
+    </form>
+{% endblock dashboard_content %}

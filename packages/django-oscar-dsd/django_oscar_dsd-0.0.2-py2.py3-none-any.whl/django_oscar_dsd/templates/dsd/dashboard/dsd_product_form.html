@@ -1,0 +1,34 @@
+{% extends 'oscar/dashboard/layout.html' %}
+{% load i18n %}
+
+{% block body_class %}{{ block.super }} create-page{% endblock %}
+
+{% block title %}
+    {{ title }} | {% trans "DSD Products" %} | {{ block.super }}
+{% endblock %}
+
+{% block breadcrumbs %}
+    <ul class="breadcrumb">
+        <li>
+            <a href="{% url 'dashboard:index' %}">{% trans "Dashboard" %}</a>
+        </li>
+        <li>
+            <a href="{% url 'dashboard:dsd_product-list' %}">{% trans "DSD Products" %}</a>
+        </li>
+        {% if dsd_product %}
+            <li class="active">'{{ dsd_product.name }}'</li>
+        {% else %}
+            <li class="active">{{ title }}</li>
+        {% endif %}
+    </ul>
+{% endblock %}
+
+{% block headertext %}
+    {% if dsd_product %}{{ dsd_product.full_name }}{% else %}{% trans "Create new dsd_product" %}{% endif %}
+{% endblock %}
+
+{% block dashboard_content %}
+    {% with ret_url='dashboard:dsd_product-list' %}
+        {% include 'dsd/dashboard/partials/form.html' %}
+    {% endwith %}
+{% endblock dashboard_content %}
