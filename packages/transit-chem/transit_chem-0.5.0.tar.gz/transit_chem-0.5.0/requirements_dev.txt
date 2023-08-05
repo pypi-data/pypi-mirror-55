@@ -1,0 +1,10 @@
+pytest
+pytest-cov
+black
+isort
+hypothesis
+flake8
+tox
+pip
+coverage
+mypy

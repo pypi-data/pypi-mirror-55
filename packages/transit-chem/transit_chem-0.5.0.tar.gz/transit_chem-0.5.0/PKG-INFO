@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: transit_chem
+Version: 0.5.0
+Summary: A Transit chem
+Home-page: https://github.com/ecurtin2/transit-chem
+Author: Evan Curtin
+Author-email: evanmcurtin@gmail.com
+License: MIT
+Description: A Transit chem
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.4.0
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: all
