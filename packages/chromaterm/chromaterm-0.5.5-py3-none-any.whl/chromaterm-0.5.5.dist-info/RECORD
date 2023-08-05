@@ -1,0 +1,12 @@
+chromaterm/__init__.py,sha256=V9gyqfQ7AeXjc-btW75CdzQ9cMAvSYe8Sl2vT_pel0I,14294
+chromaterm/config.py,sha256=pg-EVgGlbFo6Yx1F6Aw9mxglillu-Qz6jkH4DSk5ksk,5618
+chromaterm/misc.py,sha256=9ZD7Qondb8pclRZxMMX-KmEduS4q_rEMf5K6ldkrGFs,4681
+chromaterm/test___init__.py,sha256=36BAIgItT-Du54LRkR41Cb0GNaWAkoqO6AMH3M1vsbM,41241
+chromaterm/test_config.py,sha256=E-FISkdStv_sPdUKsddb7ruW8eFhDZ-lI-p2n8f_jAw,9425
+chromaterm/test_misc.py,sha256=Rt0pvHilyprEWRvuNxCVx7unJ8l1Iw69uv3GcURuX8s,4909
+chromaterm-0.5.5.data/scripts/ct,sha256=O76yixH-YYcVANJ7WzBqOHLCmZcKi_weXap50t3paH8,264
+chromaterm-0.5.5.dist-info/LICENSE,sha256=T_hxMLl6W68ti9oYswu9TaXvzBZOwOFYcWGk-H7IA2M,1070
+chromaterm-0.5.5.dist-info/METADATA,sha256=SHXVvRgnufxRaD_e4ag9JU2g2OiJtUGVYfzzru05ke0,3405
+chromaterm-0.5.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+chromaterm-0.5.5.dist-info/top_level.txt,sha256=Z_9uhq07DDCV-zgorf-khacQCWCSeN_iBFt8mZycxBo,11
+chromaterm-0.5.5.dist-info/RECORD,,
