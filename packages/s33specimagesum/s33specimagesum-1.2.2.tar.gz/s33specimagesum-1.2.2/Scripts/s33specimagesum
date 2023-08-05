@@ -1,0 +1,4 @@
+call %USERPROFILE%\Anaconda3\Scripts\activate.bat
+call conda activate s33specimagesum
+
+python -m 33specimagesum
