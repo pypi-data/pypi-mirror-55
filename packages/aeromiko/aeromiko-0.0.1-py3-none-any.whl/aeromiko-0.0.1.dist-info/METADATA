@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: aeromiko
+Version: 0.0.1
+Summary: A small example package
+Home-page: https://github.com/andytruett/aeromiko
+Author: Andy Truett
+Author-email: andrew.truett@gmail.com
+License: MIT License
+Requires-Dist: netmiko (>=2.4.0)
+
+Copyright (c) Andy Truett
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Description: # Aeromiko
+        
+        1. import aeromiko
+        2. ???
+        3. profit
+        
+        Aermiko is a middle-man script to simplify extracting data from Aerohive APs using Netmiko
+        
+        Example usage in ./example/example.py
+        
+        ![example code](./example/example.png)
+        
+Keywords: aerohive netmiko
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
