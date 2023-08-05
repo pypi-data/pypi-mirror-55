@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: pysst
+Version: 0.1.1
+Summary: Tools to handle data acquired with Sea and Sun (www.sea-sun-tech.com) profilers
+Home-page: https://github.com/MarineDataTools/pysst
+Author: Peter Holtermann
+Author-email: peter.holtermann@io-warnemuende.de
+License: GPLv03
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Scientific/Engineering
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.4
+Description-Content-Type: text/x-rst
+Requires-Dist: gsw
+Requires-Dist: pyaml
+Requires-Dist: pyproj
+Requires-Dist: pytz
+
+
+Python toolbox to read and process `Sea and Sun <https://www.sea-sun-tech.com>`_ cnv files.
+
+At the moment this package cannot do much more but to read in the
+binary and search for latitude and longitude package to read the
+position of the cast.
+
+

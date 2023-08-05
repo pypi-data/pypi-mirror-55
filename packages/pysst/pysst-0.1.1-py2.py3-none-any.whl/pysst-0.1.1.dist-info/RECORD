@@ -1,0 +1,10 @@
+pysst/VERSION,sha256=Ee4juPwvxhnW6rYnettaUnJhBnrAHM_D4RhX9Vvxi80,5
+pysst/__init__.py,sha256=zm3m63TL97as8f7XXmoNHJEkqmAtyax_FhvN2WSs3Qg,71
+pysst/pymrd.py,sha256=QPus7X4Lbg0CZsY7JL1NaH6pR_KWUaBpXrZBEb8Sbrw,11908
+pysst/pymrd_sum_folder.py,sha256=Oo-JF67lym0YeJfQugAKckIFfPgz65zKZU1acCY1P0A,5584
+pysst/rules/standard_names.yaml,sha256=Gm6Rx9aUHjpiNrhAMxadgcMS4D0Y2w1ccICgfxZTlCg,1025
+pysst-0.1.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+pysst-0.1.1.dist-info/METADATA,sha256=eJH0BugsHWR4-nXBHXznnLkLkIZ2XjXq9qcuifT3SJ0,1008
+pysst-0.1.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pysst-0.1.1.dist-info/top_level.txt,sha256=Z7kxPo9zqHtpGo9QcRMe1JfdioMlA4Vr9lyr0APAGrA,6
+pysst-0.1.1.dist-info/RECORD,,
