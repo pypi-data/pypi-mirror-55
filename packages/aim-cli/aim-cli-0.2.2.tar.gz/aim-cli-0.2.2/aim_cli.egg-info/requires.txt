@@ -1,0 +1,2 @@
+click>=6.7
+paramiko==2.6.0
