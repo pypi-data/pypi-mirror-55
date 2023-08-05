@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: vtkplotlib
+Version: 1.1
+Summary: 3d plotting using vtk
+Home-page: https://github.com/bwoodsend/vtkplotlib
+Author: Brénainn Woodsend
+Author-email: bwoodsend@gmail.com
+License: GNU version 3.0
+Platform: UNKNOWN
+Requires-Dist: vtk
+Requires-Dist: numpy
+Requires-Dist: pathlib2
+Requires-Dist: matplotlib
+Requires-Dist: future
+
+UNKNOWN
+
+
