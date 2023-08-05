@@ -1,0 +1,6 @@
+pillow
+folium
+gdal
+
+[geopandas]
+geopandas
