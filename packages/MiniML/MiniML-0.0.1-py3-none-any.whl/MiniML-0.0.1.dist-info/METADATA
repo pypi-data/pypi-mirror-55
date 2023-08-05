@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: MiniML
+Version: 0.0.1
+Summary: MiniML - a minimal machine learning API based on Apache MADlib and PostgreSQL
+Home-page: https://gitlab.com/iii-dap-development-team/mini-ml
+Author: Gem Huang
+Author-email: gemhuang@iii.org.tw
+License: UNKNOWN
+Project-URL: Bug Tracker, https://gitlab.com/iii-dap-development-team/mini-ml/issues
+Project-URL: Documentation, https://gitlab.com/iii-dap-development-team/mini-ml/-/wiki_pages/home
+Project-URL: Source Code, https://gitlab.com/iii-dap-development-team/mini-ml/tree/master
+Keywords: machine learning
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: psycopg2-binary (==2.8.4)
+Requires-Dist: sqlalchemy (==1.3.10)
+
+UNKNOWN
+
+
