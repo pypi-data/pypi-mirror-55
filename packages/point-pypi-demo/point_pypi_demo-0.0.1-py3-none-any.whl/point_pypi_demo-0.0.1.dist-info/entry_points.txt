@@ -1,0 +1,3 @@
+[console_scripts]
+point_pypi_demo = point_pypi_demo:main
+
