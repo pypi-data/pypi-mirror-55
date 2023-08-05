@@ -1,0 +1,9 @@
+[console_scripts]
+cs-get-token = cspybase.cli.gettoken:main
+cs-list-algorithms = cspybase.cli.listalgorithms:main
+cs-list-files = cspybase.cli.listfiles:main
+cs-list-jobs = cspybase.cli.listjobs:main
+cs-list-projects = cspybase.cli.listprojects:main
+cs-list-users = cspybase.cli.listusers:main
+cs-write-dummy-csv-file = cspybase.cli.writecsvfileinproject:main
+
