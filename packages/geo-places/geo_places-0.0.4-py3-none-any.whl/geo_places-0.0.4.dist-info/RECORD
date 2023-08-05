@@ -1,0 +1,14 @@
+geo_places/__init__.py,sha256=1RxpSpS7BxkQ4Z1wsmrKG2yphMSMC_8GPFlDmWDOTAk,139
+geo_places/dataset.py,sha256=IrBCkGueCOv47KG77ZY07YZRuLKEG3mspFrgBZixJVM,998
+geo_places/loader.py,sha256=f_7xjbEM3xS1x3yVNSAkdrbcOnSbcWmmWUo_V6BH3u8,1763
+geo_places/population.py,sha256=SgTYpodCx7iHl6BqYz31trs-Jv2fNGR6QXftYqVvXaA,848
+geo_places/scraper.py,sha256=-hzkRbOmUtefCYDd0sNXAOGOxF-VnpQ_INZKnFvG6mo,1418
+geo_places/utils.py,sha256=jpppKEIOmArmGGFj6iWB-CsoO7jL6GOA6l_C_6YfIRk,711
+geo_places/elasticsearch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+geo_places/elasticsearch/documents.py,sha256=mPwOJpH78Ind5CGBzP6-doBZ0Ugz55-hw4jL9FTVQuI,787
+geo_places/elasticsearch/handler.py,sha256=DA41d6ubDkp2il400gRdqbDo81kRlHbUYjbNan7Ndmk,3192
+geo_places-0.0.4.data/data/data/municipality_population.csv,sha256=43XzBbwbIzhiSCdnYEIwN6TENK36MsRjon6gHboYWPU,94249
+geo_places-0.0.4.dist-info/METADATA,sha256=LEaHnSysKOjeA94vrSn__-nbOisHbfXEexsqwQy4MbA,2148
+geo_places-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+geo_places-0.0.4.dist-info/top_level.txt,sha256=FUDOUM9hkIgmmv1_sKA2aIXlhtBtP86XW-JZoqxY9Vo,11
+geo_places-0.0.4.dist-info/RECORD,,
