@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: ap-store
+Version: 0.1.1
+Summary: A simple, sqlite3-backed parameter store
+Home-page: UNKNOWN
+Author: Anna Poulakos
+License: MIT License
+Requires-Dist: Click (==7.0)
+
+Copyright (c) 2019 Anna Poulakos
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Description: # ap-store
+        A simple parameter storage utility
+        
+        ## Installation
+        
+        To install the current release:
+        ```
+        $ pip install ap-store
+        ```
+        
+        ## Usage
+        
+        <details markdown="1">
+        <summary>Get a parameter by key &hellip;</summary>
+        
+        *Usage:*
+        ```bash
+        $ store get KEY
+        ```
+        
+        Where `KEY` can be an arbitrary key. Keys cannot contain spaces or special CLI characters.
+        
+        *Example:*
+        ```bash
+        $ store get ap:store:configured
+        true
+        ```
+        
+        </details>
+        
+        <details markdown="1">
+        <summary>Get all keys &hellip;</summary>
+        
+        *Usage / Example:*
+        ```bash
+        $ store list
+        ['ap:store:configured']
+        ```
+        </details>
+        
+        <details markdown="1">
+        <summary>Partial key search &hellip;</summary>
+        
+        *Usage:*
+        ```bash
+        $ store search KEY_FRAGMENT
+        ```
+        
+        Where `KEY_FRAGMENT` can be any partial key fragment that matches a key.
+        
+        *Example*:
+        ```bash
+        $ store search ap
+        ['ap:store:configured']
+        ```
+        </details>
+        
+        <details markdown="1">
+        <summary>Insert a new parameter &hellip;</summary>
+        
+        *Usage:*
+        ```bash
+        $ store insert KEY VALUE
+        ```
+        
+        Where `KEY` is an arbitrary key and `VALUE` is anything else. Keys should not have spaces, but values do not have this requirement.
+        
+        *Example:*
+        ```bash
+        $ store insert ap:status approved :+1:
+        $ store get ap:status
+        approved :+1:
+        ```
+        </details>
+        
+        <details markdown="1">
+        <summary>Delete a parameter &hellip;</summary>
+        
+        *Usage:*
+        ```bash
+        $ store delete KEY
+        ```
+        
+        *Example:*
+        ```bash
+        $ store insert ap:test TESTING
+        $ store get ap:test
+        TESTING
+        $ store delete ap:test
+        $ store get ap:test
+        None
+        ```
+        </details>
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
