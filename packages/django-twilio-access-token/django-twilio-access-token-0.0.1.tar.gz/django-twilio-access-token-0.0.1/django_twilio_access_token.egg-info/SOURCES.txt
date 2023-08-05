@@ -1,0 +1,11 @@
+README.md
+setup.py
+django_twilio_access_token/__init__.py
+django_twilio_access_token/serializers.py
+django_twilio_access_token/urls.py
+django_twilio_access_token/views.py
+django_twilio_access_token.egg-info/PKG-INFO
+django_twilio_access_token.egg-info/SOURCES.txt
+django_twilio_access_token.egg-info/dependency_links.txt
+django_twilio_access_token.egg-info/requires.txt
+django_twilio_access_token.egg-info/top_level.txt
