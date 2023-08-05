@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pytility/__init__.py
+pytility/__version__.py
+pytility/files.py
+pytility/iterables.py
+pytility/parsers.py
+pytility/strings.py
+pytility.egg-info/PKG-INFO
+pytility.egg-info/SOURCES.txt
+pytility.egg-info/dependency_links.txt
+pytility.egg-info/requires.txt
+pytility.egg-info/top_level.txt
