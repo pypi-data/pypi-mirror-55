@@ -1,0 +1,17 @@
+#!/usr/bin/env python
+import argparse
+import arrows_esolang as arrows
+
+parser = argparse.ArgumentParser(description='arrows-esolang compiler')
+parser.add_argument('source',
+                    type=str,
+                    help='the source file for the compiler')
+parser.add_argument('-o',
+                    type=str,
+                    default='a.out',
+                    dest='out',
+                    help='the nme of the output file')
+
+args = parser.parse_args()
+prog, visited = arrows.parse(args.source)
+arrows.codegen(visited, args.out)
