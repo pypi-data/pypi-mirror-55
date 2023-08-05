@@ -1,0 +1,7 @@
+pandas
+twython
+pytz
+requests
+numpy
+multiprocess
+seasonal
