@@ -1,0 +1,30 @@
+Metadata-Version: 2.0
+Name: jpylyzer
+Version: 2.0.0rc1
+Summary: JP2 (JPEG 2000 Part 1) image validator and properties extractor
+Home-page: http://jpylyzer.openpreservation.org/
+Author: Johan van der Knijff
+Author-email: johan.vanderknijff@kb.nl
+Maintainer: Johan van der Knijff
+Maintainer-email: johan.vanderknijff@kb.nl
+License: LGPL
+Download-URL: https://github.com/openpreserve/jpylyzer/archive/2.0.0rc1.tar.gz
+Platform: POSIX
+Platform: Windows
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, <4
+Provides-Extra: testing
+Requires-Dist: setuptools
+Requires-Dist: six
+Provides-Extra: testing
+Requires-Dist: pre-commit; extra == 'testing'
+Requires-Dist: pytest; extra == 'testing'
+Requires-Dist: pylint; extra == 'testing'
+Requires-Dist: pytest-coverage; extra == 'testing'
+
+UNKNOWN
+
+
