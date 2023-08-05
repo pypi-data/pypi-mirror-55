@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ornaments
+Version: 0.1.1
+Summary: A package of useful decorators
+Author: James Simpson
+Author-email: james.simpson@securetrading.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+
+# ornaments
+
+A package of useful decorators - lets decorate with ornaments
