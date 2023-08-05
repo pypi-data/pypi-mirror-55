@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: recipeio
+Version: 0.1
+Summary: Recipe.io | ML Collaboration framework
+Home-page: https://recipe.io/
+Author: Iman Kamyabi
+Author-email: iman@recipe.io
+License: Apache License 2.0
+Download-URL: https://github.com/recipe-io/recipeio/archive/v0.1.tar.gz
+Description: UNKNOWN
+Keywords: ML,RECIPEIO,RECIPE
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
