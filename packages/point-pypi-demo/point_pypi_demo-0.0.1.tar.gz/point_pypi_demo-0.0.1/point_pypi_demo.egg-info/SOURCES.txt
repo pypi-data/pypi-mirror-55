@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+point_pypi_demo/__init__.py
+point_pypi_demo/helloworld.py
+point_pypi_demo.egg-info/PKG-INFO
+point_pypi_demo.egg-info/SOURCES.txt
+point_pypi_demo.egg-info/dependency_links.txt
+point_pypi_demo.egg-info/entry_points.txt
+point_pypi_demo.egg-info/requires.txt
+point_pypi_demo.egg-info/top_level.txt
