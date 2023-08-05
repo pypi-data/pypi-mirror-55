@@ -1,0 +1,3 @@
+iopy>=0.2.0
+pyparallel
+PyQt5
