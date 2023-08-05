@@ -1,0 +1,56 @@
+Metadata-Version: 2.1
+Name: yaml2txt
+Version: 1.1
+Summary: Framework for converting .yaml or .yml file to text file
+Home-page: https://johnnes-smarts.ch
+Author: David Johnnes
+Author-email: david.johnnes@gmail.com
+License: License :: OSI Approved :: MIT License
+Keywords: DevOps,Audit Automation,Audit Orchestration,Vendor-Neutral configurations Audit
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+<!DOCTYPE html>
+
+
+<h2>Converting .yaml file to text file</h2>
+
+<h1></h1>
+
+<h4>Framework for converting .yaml file to text file.</h4>
+
+<p></p>
+
+<p></p>
+
+<!-- How to make paragraph lines-->
+<p>How to use the framework.</p>
+
+<h3>Step 1</h3>
+<ol>
+    <li>"pip install yaml2txt" in your machine</li>
+</ol>
+
+
+<h3>Step 2</h3>
+<ol>
+  <li>import yaml2txt</li>
+</ol>
+
+
+
+<p></p>
+
+<h1></h1>
+
+
+<p>You can contact: david.johnnes@gmail.com  'for support'.</p>
+
+<h1></h1>
+
+
+
+
