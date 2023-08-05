@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: dlw
+Version: 0.0.7
+Summary: Open source web app to conduct doubly labeled water study calculations.
+Home-page: https://github.com/jchmyz/DoublyLabeledWater
+Author: Julia Chmyz
+Author-email: julia@chmyz.com
+License: LICENSE.txt
+Description: # DLW
+Platform: UNKNOWN
