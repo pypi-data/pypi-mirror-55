@@ -1,0 +1,14 @@
+
+[crypto]
+cryptography>=1.4
+
+[dev]
+pytest<5.0.0,>=4.0.1
+pytest-cov<3.0.0,>=2.6.0
+cryptography>=1.4
+mypy
+pre-commit
+
+[tests]
+pytest<5.0.0,>=4.0.1
+pytest-cov<3.0.0,>=2.6.0
