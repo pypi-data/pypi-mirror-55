@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: tailpipe
+Version: 0.1
+Summary: A simple command-line tool for reading the output of all jobs
+Home-page: https://example.com
+Author: Jeremy Axmacher
+Author-email: jeremy@obsoleter.com

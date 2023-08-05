@@ -1,0 +1,26 @@
+stages:
+  - build
+  - test
+  - run
+
+build_it:
+  stage: build
+  script:
+    - echo Building, but...
+    - echo Tired, sleeping 30
+    - sleep 30
+
+test_it:
+  stage: test
+  script:
+    - echo Testing, but...
+    - echo Tired, sleeping 30
+    - sleep 30
+    - exit 1
+
+run_it:
+  stage: run
+  script:
+    - echo Running, but...
+    - echo Tired, sleeping 30
+    - sleep 30
