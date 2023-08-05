@@ -1,0 +1,7 @@
+README.md
+setup.py
+tprint.py
+tprint.egg-info/PKG-INFO
+tprint.egg-info/SOURCES.txt
+tprint.egg-info/dependency_links.txt
+tprint.egg-info/top_level.txt
