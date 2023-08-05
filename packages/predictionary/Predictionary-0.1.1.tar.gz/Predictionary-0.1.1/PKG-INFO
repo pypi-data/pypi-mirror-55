@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: Predictionary
+Version: 0.1.1
+Summary: A python package that allows for the easy creation of LSTM text prediction datasets
+Home-page: https://github.com/OliverMathias/Predictionary
+Author: Oliver Mathias
+Author-email: mathias@chapman.edu
+License: MIT
+Download-URL: https://github.com/OliverMathias/Predictionary/archive/v0.1.1.tar.gz
+Description: UNKNOWN
+Keywords: LSTM,pipeline,data,text,prediction
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.7
