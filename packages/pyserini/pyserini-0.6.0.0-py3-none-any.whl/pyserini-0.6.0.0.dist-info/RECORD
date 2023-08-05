@@ -1,0 +1,14 @@
+pyserini/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pyserini/multithreading.py,sha256=0TH12ANfm9PxatI9DOSk3HecEn19NpknVyFcObizh3w,1131
+pyserini/pyclass.py,sha256=su-3pGhvaH1YiBVX8ZgZiEGS2dNKQulg46Dp0XpTHqg,3179
+pyserini/setup.py,sha256=ERa98xCFVCs3zVAMUzFP1qrjF7yxQTauu13b_wQ-hLI,1214
+pyserini/collection/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pyserini/collection/pycollection.py,sha256=gKVo3tHgc-Us7fuBBHTc4zcr8Lt5i4ZCfYyObSFZaYk,4612
+pyserini/index/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pyserini/index/pygenerator.py,sha256=37Vs4iFpPap9W0MQqnOAdkET3cd8SaKCeM9t9CBEbow,1889
+pyserini/search/__init__.py,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+pyserini/search/pysearch.py,sha256=wxmo4u-3TUMhlSfBAk1Xju21CbualO5lyEP8VYQcYGg,6260
+pyserini-0.6.0.0.dist-info/METADATA,sha256=ZU-QIj8jawzuzY6wdmGnxx1UsCiiDtcFmgPGeIbNxSA,2172
+pyserini-0.6.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyserini-0.6.0.0.dist-info/top_level.txt,sha256=Xay4V6Dq-I2TGQqC0-GdjbynuGXMDz0sbQIP0rGOC9Q,9
+pyserini-0.6.0.0.dist-info/RECORD,,
