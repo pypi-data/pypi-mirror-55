@@ -1,0 +1,10 @@
+whatlangid/__init__.py,sha256=heNJWfwxePMUPNA3hnXD4K6FcJSo8K1hlFWx73wsJQI,36
+whatlangid/exceptions.py,sha256=ZRDdEr0VOF6XyEw5MBBZ0QFnKa_7v4nl3HiqSnHa3z4,42
+whatlangid/predict_lang.py,sha256=44OoD7YyHnKuD58HfZfd5HfLx8iPzcpHiNT5qI4cqCE,2515
+whatlangid/use_bin.py,sha256=jZ4RoDdmGWZVAykSf2Dm2KseesExkyBh9Rc7sX6m7ow,996
+whatlangid/model/lid.176.ftz,sha256=jzRyz-hzintgmejpmcPL-uDc0VaWqsfXc4qAOdtgPoM,938013
+whatlangid-1.0.11.dist-info/LICENSE,sha256=xazLvYVG6Uw0rtJK_miaYXYn0Y7tWmxIJ35I21fCOFE,11356
+whatlangid-1.0.11.dist-info/METADATA,sha256=1orFC5gvSMYU1qoye8bClTG_w9WkVC9EFtHT0t8m9AE,4717
+whatlangid-1.0.11.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+whatlangid-1.0.11.dist-info/top_level.txt,sha256=rXaVlcrexT2bvRnZ1PCPTM8PZkw55ypUmYRoM-EJC84,11
+whatlangid-1.0.11.dist-info/RECORD,,
