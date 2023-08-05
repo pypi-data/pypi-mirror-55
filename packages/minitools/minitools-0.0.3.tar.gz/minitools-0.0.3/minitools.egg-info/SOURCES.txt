@@ -1,0 +1,15 @@
+README.md
+setup.py
+minitools/__dict.py
+minitools/__init__.py
+minitools/__path.py
+minitools/__url.py
+minitools/version.py
+minitools.egg-info/PKG-INFO
+minitools.egg-info/SOURCES.txt
+minitools.egg-info/dependency_links.txt
+minitools.egg-info/requires.txt
+minitools.egg-info/top_level.txt
+minitools/scrapy/__init__.py
+minitools/scrapy/__pager.py
+minitools/scrapy/__xpather.py

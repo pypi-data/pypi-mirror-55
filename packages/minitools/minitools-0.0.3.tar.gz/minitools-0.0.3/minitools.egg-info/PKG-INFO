@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: minitools
+Version: 0.0.3
+Summary: This is a minitools for python
+Home-page: https://github.com/CzaOrz/MiniTools
+Author: czaOrz
+Author-email: chenziangsg@163.com
+License: UNKNOWN
+Description: see https://github.com/CzaOrz/MiniTools
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
