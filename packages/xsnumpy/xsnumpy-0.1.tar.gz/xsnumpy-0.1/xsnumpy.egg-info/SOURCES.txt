@@ -1,0 +1,7 @@
+setup.py
+xsnumpy/__init__.py
+xsnumpy.egg-info/PKG-INFO
+xsnumpy.egg-info/SOURCES.txt
+xsnumpy.egg-info/dependency_links.txt
+xsnumpy.egg-info/not-zip-safe
+xsnumpy.egg-info/top_level.txt
