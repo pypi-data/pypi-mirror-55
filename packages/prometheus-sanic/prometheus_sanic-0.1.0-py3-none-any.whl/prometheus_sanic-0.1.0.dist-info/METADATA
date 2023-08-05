@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: prometheus-sanic
+Version: 0.1.0
+Summary: Exposes Prometheus monitoring metrics of Sanic apps.
+License: MIT
+Author: skar404
+Author-email: skar404@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
