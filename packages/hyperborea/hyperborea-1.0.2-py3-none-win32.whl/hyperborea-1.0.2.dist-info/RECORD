@@ -1,0 +1,17 @@
+hyperborea-1.0.2.data/purelib/hyperborea/__init__.py,sha256=b2s5l2Gtd9Ql1_g__LnEHYASrZSxD1H-fPzLBBUZD3Q,105
+hyperborea-1.0.2.data/purelib/hyperborea/device_info.py,sha256=G8LieJYlU0kz4lSgw7wek6X8CUyO976XTUcmUUl1VY8,9619
+hyperborea-1.0.2.data/purelib/hyperborea/download.py,sha256=sm26V194rICSs2dx2YqO7uAoCoV-4zRZSE0bHyj22wA,5499
+hyperborea-1.0.2.data/purelib/hyperborea/proxy.py,sha256=Yqf4H7xNLlpF8PTtCFXWuept344leQkoe_yWRDrogeA,15947
+hyperborea-1.0.2.data/purelib/hyperborea/ringbuffer.py,sha256=VFYVs-tZydzfGvdfNwiGQEe4LKhkhr9SIlBI-jRS5po,4688
+hyperborea-1.0.2.data/purelib/hyperborea/stream.py,sha256=DQIIuqr9XlyBokGxdOIytbBIzwiQsfMV0BwlI6oG6kQ,20984
+hyperborea-1.0.2.data/purelib/hyperborea/test_ringbuffer.py,sha256=r81tAW3ja3iPHSmHsBHIJZ4HN4wD64VAgQV3KRrpEsw,7496
+hyperborea-1.0.2.data/purelib/hyperborea/upload.py,sha256=iwBwEj8Sqm7zzJ7NDUtmlpLASPs014PqeU24TX9Y3W4,16639
+hyperborea-1.0.2.data/purelib/hyperborea/version.py,sha256=zakpLV4KI3yvjRRoRdUrySel5OrwAIjN8qPien0Sf2U,120
+hyperborea-1.0.2.data/purelib/hyperborea/7zip_32bit/7za.dll,sha256=ACTOnOOrh1N6DqSF8Q5gZO3E0RB3nROxdp-kJssb8vs,266752
+hyperborea-1.0.2.data/purelib/hyperborea/7zip_32bit/7za.exe,sha256=d2E8ynFu32i51bq5UUY-1_reW8DsRls2GQp2KZxQ8Rc,733696
+hyperborea-1.0.2.data/purelib/hyperborea/7zip_32bit/7zxa.dll,sha256=phluQiAuW0EHdHOYmEfl8hPZlY34YTniUsscqy6xILs,158720
+hyperborea-1.0.2.dist-info/LICENSE.txt,sha256=No04KRTCnu7noJuRWnRQRx2ac2odA5H-cYenk6g9j5g,757
+hyperborea-1.0.2.dist-info/METADATA,sha256=J9vbWqq4aaN4IJCJ-rQyBsjELlny4jvbVRMNItucjtc,1223
+hyperborea-1.0.2.dist-info/WHEEL,sha256=YW00RwbF3sqAvIfdIIcCpJlzC7FHalm4MIYlLnWTclQ,100
+hyperborea-1.0.2.dist-info/top_level.txt,sha256=tS0D473MizAjOClehsaWAa7Dyk_CI0o6IhNKKCa7sNw,11
+hyperborea-1.0.2.dist-info/RECORD,,
