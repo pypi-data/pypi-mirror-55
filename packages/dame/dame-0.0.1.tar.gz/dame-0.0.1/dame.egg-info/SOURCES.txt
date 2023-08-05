@@ -1,0 +1,7 @@
+README.md
+setup.py
+dame/__init__.py
+dame.egg-info/PKG-INFO
+dame.egg-info/SOURCES.txt
+dame.egg-info/dependency_links.txt
+dame.egg-info/top_level.txt
