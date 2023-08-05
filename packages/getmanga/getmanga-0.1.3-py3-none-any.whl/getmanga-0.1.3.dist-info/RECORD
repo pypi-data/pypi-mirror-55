@@ -1,0 +1,9 @@
+getmanga/__init__.py,sha256=uhK3tNL2q_P8rGb9Mmzzu1sMX_zHbw9o4_EP2-8-Lng,2747
+getmanga/parsers/__init__.py,sha256=ojPNH56ZsmHcl77Ok13hRmIIokEZoG4s6WLcDShuZf8,35
+getmanga/parsers/mangalib.py,sha256=cNbcvE4HWW6LwTbCmBYyRi0sMxEsoIQHE8DujxAGrrM,7440
+getmanga/parsers/mangarock.py,sha256=NXP6sh8sUm7kB63Dj_a-ArzYmBADDiQN-aQRAqD6P-o,5026
+getmanga-0.1.3.dist-info/LICENSE,sha256=2bm9uFabQZ3Ykb_SaSU_uUbAj2-htc6WJQmS_65qD00,1073
+getmanga-0.1.3.dist-info/METADATA,sha256=yjQZpueKZl-JXZ24Y7jtWLM9J-0GNAcH6qP32YTSwsk,1616
+getmanga-0.1.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+getmanga-0.1.3.dist-info/top_level.txt,sha256=py-dp__2s1dRUWKICBKldaPOS_eyLOrvCLwZ6O4OBhE,9
+getmanga-0.1.3.dist-info/RECORD,,
