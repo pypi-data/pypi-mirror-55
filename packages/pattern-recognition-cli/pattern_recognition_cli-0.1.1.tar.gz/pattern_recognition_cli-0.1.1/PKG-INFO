@@ -1,0 +1,82 @@
+Metadata-Version: 2.1
+Name: pattern_recognition_cli
+Version: 0.1.1
+Summary: The command-line interface (CLI) that provides a set of commands for pattern recognition by interacting with the server
+Home-page: https://github.com/Alladin9393/Pattern-recognition
+Author: Alladin9393
+Author-email: ember.toon@protonmail.com
+License: MIT
+Description: # Pattern-recognition
+        The command-line interface (CLI) that provides a set of commands to interact with the server and recognize the pattern.
+        
+        [![Downloads](https://pepy.tech/badge/pattern-recognition-cli)](https://pepy.tech/project/pattern-recognition-cli)
+        [![PyPI license](https://img.shields.io/pypi/l/rattern-recognition-cli.svg)](https://pypi.python.org/pypi/pattern-recognition-cli/)
+        [![PyPI pyversions](https://img.shields.io/pypi/pyversions/attern-recognition-cli.svg)](https://pypi.python.org/pypi/pattern-recognition-cli/)
+        
+          * [Getting started](#getting-started)
+          * [Usage](#usage)
+            * [Service](#service)
+          * [Development](#development)
+          * [Production](#production)
+        
+        ## Getting started
+        
+        Blank.
+        
+        ## Usage
+        
+        ### Service
+        
+        Get the version of the package — ``pattern-recognition --version``:
+        
+        ```bash
+        $ pattern-recognition --version
+        pattern-recognition, version 0.1.0
+        ```
+        
+        Get all possible package's commands — ``pattern-recognition --help``:
+        
+        ```bash
+        $ pattern-recognition --help
+        Usage: pattern-recognition [OPTIONS] COMMAND [ARGS]...
+          Command line interface for PyPi version checking.
+        Options:
+          --version  Show the version and exit.
+          --help     Show this message and exit.
+        ...
+        ```
+        
+        ## Development
+        
+        To run the tests, use the following command, being in the root of the project:
+        
+        ```bash
+        $ pytest tests/
+        ```
+        
+        To build the package to test of to be deployed, use the following commands:
+        
+        ```bash
+        $ pip3 uninstall -y pattern-recognition-cli && rm -rf dist/ pattern-recognition-cli.egg-info && \
+              python3 setup.py sdist && pip3 install dist/*.tar.gz
+        ```
+        
+        ## Production
+        
+        To build the package and upload it to [PypI](https://pypi.org) to be accessible through [pip](https://github.com/pypa/pip),
+        use the following commands. [Twine](https://twine.readthedocs.io/en/latest/) requires the username and password of the
+        account package is going to be uploaded to.
+        
+        ```build
+        $ python3 setup.py sdist
+        $ twine upload dist/*
+        ```
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

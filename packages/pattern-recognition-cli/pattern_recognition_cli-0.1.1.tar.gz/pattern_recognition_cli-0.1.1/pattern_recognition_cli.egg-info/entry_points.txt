@@ -1,0 +1,3 @@
+[console_scripts]
+pattern_recognition = cli.entrypoint:cli
+
