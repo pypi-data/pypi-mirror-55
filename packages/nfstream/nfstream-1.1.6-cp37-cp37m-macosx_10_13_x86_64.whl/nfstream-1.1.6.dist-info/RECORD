@@ -1,0 +1,12 @@
+nfstream-1.1.6.data/purelib/nfstream/__init__.py,sha256=d-AHjFE0vSif8r8UNRrgOHxogIHmwv9ZbSKqPGB2-uo,235
+nfstream-1.1.6.data/purelib/nfstream/classifier.py,sha256=y9RqAwzT4znXZQY46nYKftWbEtYSV1wdS65Fe0c9NzE,5602
+nfstream-1.1.6.data/purelib/nfstream/ndpi_bindings.py,sha256=8S_iZIDnf6TEPbk1cnifg_kws0AUDk_1Xz5H58Z7q5w,24442
+nfstream-1.1.6.data/purelib/nfstream/ndpi_wrap.so,sha256=5E9SZZ_FDfMxWlTF_wQULOc9rRFd4Vf9-6yuEMRM6rA,490656
+nfstream-1.1.6.data/purelib/nfstream/observer.py,sha256=h7Nk0Kmcg7yw4JfXKyo6W8XVv8tfmwW91OytiND0YR8,25197
+nfstream-1.1.6.data/purelib/nfstream/observer_cc.py,sha256=bhhamJ29GiGlY1-j5VlkxGPdgpM0TeqztGHzprToyWA,4450
+nfstream-1.1.6.data/purelib/nfstream/streamer.py,sha256=7IQvr5llh0EV2Tayb6NsYpk_YaZL9ZIjP1ar-9zo0tY,10990
+nfstream-1.1.6.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+nfstream-1.1.6.dist-info/METADATA,sha256=Aoj4Hsal0SrdDMq3Pxd6znXlFMvVLIAo0sHBMWRrFiU,5354
+nfstream-1.1.6.dist-info/WHEEL,sha256=ls0mk9oUTWRDk9fREN04Ii6vOvKEtq2_kiygdMYwOW8,111
+nfstream-1.1.6.dist-info/top_level.txt,sha256=hJ2_QvVtHeXq7gxlOUnWap26uMhrrs1m4bQCgVeYZps,9
+nfstream-1.1.6.dist-info/RECORD,,
