@@ -1,0 +1,16 @@
+NAME
+    init-function -
+
+DESCRIPTION
+    初始化本地调试函数内容，生成相应语言的示例代码
+
+SYNOPSIS
+      init-function
+    --runtime <string>
+
+OPTIONS
+    --runtime (string)
+        函数使用的语言及版本(Python 2, Node.js 10, Lua)
+OUTPUT
+        执行的结果信息
+

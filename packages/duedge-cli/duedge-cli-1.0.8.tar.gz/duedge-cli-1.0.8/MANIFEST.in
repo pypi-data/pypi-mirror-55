@@ -1,0 +1,3 @@
+include duedge_cli/*.sysconfig
+include duedge_cli/doc/code-example/index.*
+recursive-include duedge_cli/doc *.txt 
