@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: mlmodels
+Version: 0.4.1
+Summary: Generic model API, Model Zoo in Tensorflow, Keras, Pytorch, Hyperparamter search
+Home-page: https://github.com/arita37/mlmodels
+Author: Kevin Noel
+Author-email: brookm291@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
