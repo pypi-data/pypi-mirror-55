@@ -1,0 +1,12 @@
+README.md
+setup.py
+semi_semantic/__init__.py
+semi_semantic/parse_error.py
+semi_semantic/version.py
+semi_semantic/version_segment.py
+semi_semantic.egg-info/PKG-INFO
+semi_semantic.egg-info/SOURCES.txt
+semi_semantic.egg-info/dependency_links.txt
+semi_semantic.egg-info/top_level.txt
+test/test_version.py
+test/test_version_segment.py
