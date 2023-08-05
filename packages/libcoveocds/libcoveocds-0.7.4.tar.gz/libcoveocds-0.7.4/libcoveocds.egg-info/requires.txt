@@ -1,0 +1,15 @@
+CommonMark
+Django
+bleach
+cached-property
+flattentool
+json-merge-patch
+jsonref
+jsonschema
+libcove
+requests
+
+[test]
+coveralls
+pytest
+pytest-cov
