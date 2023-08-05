@@ -1,0 +1,13 @@
+anyblok_postgres/__init__.py,sha256=2JCS0ifzccyeiyYACpxmjsqqzTzuOiLuMLw1LDqkXWQ,331
+anyblok_postgres/column.py,sha256=RJP0aru6OEX8_oc5X3KbuLtSyvSFonaOmu-F1pltQig,7310
+anyblok_postgres/materialized_view.py,sha256=65A9sH7AJAxKZ0Wi9YmWXdWM219fevQ50ZkJLbj7ADI,3755
+anyblok_postgres/release.py,sha256=NMetEEy6XakoIgRvf5VE8EXqOVwFKMQAxoFhMxn5hKE,439
+anyblok_postgres/tests/__init__.py,sha256=2JCS0ifzccyeiyYACpxmjsqqzTzuOiLuMLw1LDqkXWQ,331
+anyblok_postgres/tests/conftest.py,sha256=HKfR5n78WrbW5uMorwwAZSKphq6G7hw7id7BQBvsr58,416
+anyblok_postgres/tests/test_column.py,sha256=QVNKwcUPO5SHkJRZef6TmMh4etYkfi79QFJd7j1TCuU,6704
+anyblok_postgres/tests/test_materialized_view.py,sha256=5quAslsoQZT60gDye56p4QNMdldAKj1-nZURk89E0GQ,20614
+anyblok_postgres-0.2.2.dist-info/LICENSE.rst,sha256=-0NEqdjsx2cyqZie7Y0LbRRYdTj5XPlTSoLyo5uKfHY,16687
+anyblok_postgres-0.2.2.dist-info/METADATA,sha256=LUZUqenEPduSVp9KawgP58l-a2r5Fx08Jgai84hyiJk,3000
+anyblok_postgres-0.2.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+anyblok_postgres-0.2.2.dist-info/top_level.txt,sha256=iQN8bEMw3cq8j6adT3JlK1jukVQhsxojThLRRaayH6A,17
+anyblok_postgres-0.2.2.dist-info/RECORD,,
