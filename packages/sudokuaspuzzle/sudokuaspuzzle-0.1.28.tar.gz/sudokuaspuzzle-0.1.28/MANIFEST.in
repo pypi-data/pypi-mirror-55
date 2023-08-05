@@ -1,0 +1,6 @@
+include *.md
+include LICENSE
+recursive-include sudokuaspuzzle/icons *
+recursive-include sudokuaspuzzle/info *
+recursive-include sudokuaspuzzle/localedir *
+recursive-include sudokuaspuzzle/ui *

@@ -1,0 +1,6 @@
+[console_scripts]
+sudokuaspuzzleC = sudokuaspuzzle.entrypoint:main
+
+[gui_scripts]
+sudokuaspuzzle = sudokuaspuzzle.entrypoint:main
+

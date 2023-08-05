@@ -1,0 +1,328 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Sudoku as puzzle\n"
+"POT-Creation-Date: 2019-11-03 06:52+0200\n"
+"PO-Revision-Date: \n"
+"Last-Translator: ilias iliadis\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.0.6\n"
+"X-Poedit-Basepath: ..\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: en\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: ../olds\n"
+"X-Poedit-SearchPathExcluded-1: ../__pycache__\n"
+
+#: auxiliary.py:96
+msgid "_Yes"
+msgstr ""
+
+#: auxiliary.py:98
+msgid "_OK"
+msgstr ""
+
+#: auxiliary.py:100
+msgid "_No"
+msgstr ""
+
+#: auxiliary.py:102
+msgid "_Cancel"
+msgstr ""
+
+#: auxiliary.py:104
+msgid "OK"
+msgstr ""
+
+#: auxiliary.py:107
+msgid "ERROR"
+msgstr ""
+
+#: auxiliary.py:110
+msgid "WARNING"
+msgstr ""
+
+#: auxiliary.py:113
+msgid "QUESTION"
+msgstr ""
+
+#: auxiliary.py:116
+msgid "INFO"
+msgstr ""
+
+#: auxiliary.py:133
+msgid "You are about to:\n"
+msgstr ""
+
+#: auxiliary.py:134
+msgid "Are you sure?"
+msgstr ""
+
+#: constants.py:103
+msgid "standard"
+msgstr ""
+
+#: constants.py:104
+msgid "arabic"
+msgstr ""
+
+#: constants.py:105
+msgid "greek"
+msgstr ""
+
+#: constants.py:106
+msgid "chinese"
+msgstr ""
+
+#: constants.py:107
+msgid "persian"
+msgstr ""
+
+#: constants.py:108
+msgid "tibetan"
+msgstr ""
+
+#: constants.py:109
+msgid "custom"
+msgstr ""
+
+#: constants.py:123
+msgid "You have placed all «{}»."
+msgstr ""
+
+#: constants.py:124
+msgid "Drag «{}» to the board..."
+msgstr ""
+
+#: myapplication.py:76
+msgid "Sudoku as puzzle"
+msgstr ""
+
+#: ui/windowmain.glade:75
+msgid "Start a new game (Ctrl+n)"
+msgstr ""
+
+#: ui/windowmain.glade:88
+msgid "Continue"
+msgstr ""
+
+#: ui/windowmain.glade:92
+msgid "Continue last game (Ctrl+c)"
+msgstr ""
+
+#: ui/windowmain.glade:112
+msgid "Current preferences:"
+msgstr ""
+
+#: ui/windowmain.glade:129 ui/windowoptions.glade:768
+msgid "Difficulty:"
+msgstr ""
+
+#: ui/windowmain.glade:157
+msgid "Numbers:"
+msgstr ""
+
+#: ui/windowmain.glade:202
+msgid "Open preferences window (Ctrl+p)"
+msgstr ""
+
+#: ui/windowmain.glade:247
+msgid "About box (Ctrl+a)"
+msgstr ""
+
+#: ui/windowmain.glade:278
+msgid "Quit application (Ctrl+q)"
+msgstr ""
+
+#: ui/windowoptions.glade:117
+msgid "Legend"
+msgstr ""
+
+#: ui/windowoptions.glade:248
+msgid ""
+"1. Picker cell\n"
+"2. Editable cell\n"
+"3. Editable cell, if selected\n"
+"4. Non editable cell\n"
+"5. Non editable cell, if selected\n"
+"Cells with duplicate numbers:\n"
+"6. Editable cell\n"
+"7. Editable cell, if selected\n"
+"8. Non editable cell\n"
+"9. Non editable cell, if selected"
+msgstr ""
+
+#: ui/windowoptions.glade:296
+msgid "Refresh board"
+msgstr ""
+
+#: ui/windowoptions.glade:331
+msgid "Appearance"
+msgstr ""
+
+#: ui/windowoptions.glade:354
+msgid "Font:"
+msgstr ""
+
+#: ui/windowoptions.glade:366
+msgid "Font name to use."
+msgstr ""
+
+#: ui/windowoptions.glade:385
+msgid "Colors:"
+msgstr ""
+
+#: ui/windowoptions.glade:397
+msgid "Font color."
+msgstr ""
+
+#: ui/windowoptions.glade:400
+msgid "Color for font"
+msgstr ""
+
+#: ui/windowoptions.glade:413
+msgid "Background color for any cell that can be changed."
+msgstr ""
+
+#: ui/windowoptions.glade:416
+msgid "Background"
+msgstr ""
+
+#: ui/windowoptions.glade:429
+msgid "Background color for any cell that cannot be changed."
+msgstr ""
+
+#: ui/windowoptions.glade:432
+msgid "Background of start numbers"
+msgstr ""
+
+#: ui/windowoptions.glade:445
+msgid "Background color for current cell that can be changed."
+msgstr ""
+
+#: ui/windowoptions.glade:448
+msgid "Background of selected cell"
+msgstr ""
+
+#: ui/windowoptions.glade:461
+msgid "Background color for current cell that cannot be changed."
+msgstr ""
+
+#: ui/windowoptions.glade:464
+msgid "Background of selected, non changeable cell "
+msgstr ""
+
+#: ui/windowoptions.glade:477
+msgid "Foreground color for duplicate numbers."
+msgstr ""
+
+#: ui/windowoptions.glade:480 ui/windowoptions.glade:496
+msgid "Color of number if duplicate"
+msgstr ""
+
+#: ui/windowoptions.glade:493
+msgid "Background color for picker."
+msgstr ""
+
+#: ui/windowoptions.glade:517
+msgid "Show only board"
+msgstr ""
+
+#: ui/windowoptions.glade:530
+msgid "Show remaining pieces"
+msgstr ""
+
+#: ui/windowoptions.glade:543
+msgid "Show timer"
+msgstr ""
+
+#: ui/windowoptions.glade:574
+msgid "Numbering system"
+msgstr ""
+
+#: ui/windowoptions.glade:592
+msgid "Standard:"
+msgstr ""
+
+#: ui/windowoptions.glade:786
+msgid "simple"
+msgstr ""
+
+#: ui/windowoptions.glade:803
+msgid "easy"
+msgstr ""
+
+#: ui/windowoptions.glade:821
+msgid "intermediate"
+msgstr ""
+
+#: ui/windowoptions.glade:839
+msgid "expert"
+msgstr ""
+
+#: ui/windowoptions.glade:857
+msgid "any"
+msgstr ""
+
+#: ui/windowoptions.glade:905
+msgid "Reset to defaults"
+msgstr ""
+
+#: ui/windowpuzzle.glade:58
+msgid "Return to starting form (Ctrl + Q)"
+msgstr ""
+
+#: ui/windowpuzzle.glade:74
+msgid "Undo (Ctrl + Z)"
+msgstr ""
+
+#: ui/windowpuzzle.glade:98
+msgid "Redo (Ctrl + Y)"
+msgstr ""
+
+#: ui/windowpuzzle.glade:117
+msgid "button"
+msgstr ""
+
+#: windowmain_base.py:179 windowpuzzle_base.py:186
+msgid "Version of this window:"
+msgstr ""
+
+#: windowmain_base.py:237 windowoptions_base.py:350 windowpuzzle_base.py:432
+msgid "Not yet implemented"
+msgstr ""
+
+#: windowmain_base.py:341
+msgid "WARNING! Wrong values for history in configuration file"
+msgstr ""
+
+#: windowoptions_base.py:234
+msgid "Options"
+msgstr ""
+
+#: windowoptions_base.py:553
+#, python-brace-format
+msgid ""
+"Dictionary {0} not found!\n"
+"Using standard."
+msgstr ""
+
+#: windowoptions_base.py:584
+msgid "Options saved!"
+msgstr ""
+
+#: windowoptions_base.py:588
+msgid "Options NOT saved!"
+msgstr ""
+
+#: windowpuzzle.py:165
+msgid "Remaining numbers:"
+msgstr ""
+
+#: windowpuzzle.py:277
+msgid "Bravo. Puzzle solved."
+msgstr ""
