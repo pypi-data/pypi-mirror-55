@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: makinyan
+Version: 0.0.28
+Summary: Python Data Analitics Tool
+Home-page: https://github.com/Shochan024/makinyan
+Author: shochan024
+Author-email: jadetech0024@gmail.com
+Maintainer: shochan024
+Maintainer-email: jadetech0024@gmail.com
+License: MIT
+Description: readme
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: License :: OSI Approved :: MIT License
