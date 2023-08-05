@@ -1,0 +1,11 @@
+pytest_kafka/__init__.py,sha256=SYkMGw0ceVr1Hg7ZlupQ7jnwr8ioUVCEA57URn1mgnw,439
+pytest_kafka/_factories.py,sha256=fLED--yazYoLXswUnmIwy352Z4Ha2dBysi11FWZG7Jk,9653
+pytest_kafka/_fixtures.py,sha256=dPJcnCtMaBal7-3Q9jFPSWKt3hqeCE3oIkQwxqngueA,795
+pytest_kafka/constants.py,sha256=lOuEkXsi4ZLBICErPvWzq0N5FaTGuAHIMR4ayetxMsE,940
+pytest_kafka/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_kafka-0.4.0.dist-info/LICENCE,sha256=uuGgniJGG3nwICkm-vE8s6PKiND9MkYbWBOP3t0-y4o,1095
+pytest_kafka-0.4.0.dist-info/METADATA,sha256=5NaIWDMLIb_GPZZLnmP0BJ80MT-bvbrJkagQv3XKRx8,4707
+pytest_kafka-0.4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pytest_kafka-0.4.0.dist-info/entry_points.txt,sha256=YFQke_8fUkWak-PKpZx4oyDl8_yBkFK8cTMJXrX4MHs,50
+pytest_kafka-0.4.0.dist-info/top_level.txt,sha256=ytbNTtcrXjqwfIchd_4MFRsxf6yxW_eLKkeU3nRhQ8A,13
+pytest_kafka-0.4.0.dist-info/RECORD,,
