@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: pyqttotp
+Version: 0.9.1
+Summary: TOTP QR Code Generator writtern in Qt.
+Home-page: https://github.com/bluszcz/pyqttotp
+Author: Rafal Zawadzki
+Author-email: bluszcz@bluszcz.net
+License: Apache License version 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: X11 Applications :: Qt
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Security
+Classifier: Topic :: Security :: Cryptography
+Description-Content-Type: text/markdown
+Requires-Dist: PySide2 (==5.13.1)
+Requires-Dist: Pillow (==6.2.1)
+Requires-Dist: pyotp (==2.3.0)
+Requires-Dist: qrcode (==6.1)
+
+# PyQtTOTP
+
+## Description
+
+PyQtTOTP is a TOTP QR code generator.
+
+## Installation
+
+```
+pip install pyqttotp -U
+```
+
+## Usage
+
+```
+pyqttotp
+```
+
+## Mini Roadmap
+
+- [ ] Add import from few popular TOTP tools (useful during the migration to the other tool).
+- [x] Create pip package.
+
+## Screenshot
+
+![Screenshot](https://devcarpet.net/pyqttotp/screenshot00.png)
+
+
