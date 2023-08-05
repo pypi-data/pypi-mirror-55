@@ -1,0 +1,15 @@
+af_opt/__init__.py,sha256=OIYInLnWwz5Q2tgx5rAWXhJA0rvUQknq7YnM9NJ32To,450
+af_opt/model.py,sha256=q3OON60g8pqsG-5Kir1d-C1CkiKvZyE1mu72U64_J6g,6675
+af_opt/problem.py,sha256=sy9QIpLr4uwg9Pd6ACwLKqcriiV7NCWPnd6PfHqRlK4,8020
+af_opt/recorders.py,sha256=K6KHhaPIXHiHX-_OlHva64P13OOGxyMkz4-9epmUvgk,1104
+af_opt/util.py,sha256=N0zPAiI_yywLcyCiSxcxavdvd6FQ8P_JfFQpzGgvUac,1291
+af_opt/version.py,sha256=KL6aJ7j8FuvIhZZwK1Hh-7mBnytawavDquDX80evN5E,90
+af_opt/components/__init__.py,sha256=2fS_EXA-qNGe7FW5daRvTTlluJin_4b9lWrABlxqgfw,167
+af_opt/components/airfoil.py,sha256=HtmjiLSdnZF5J4s88qm4_8wWPzdKjfBKw__pt1idFDI,3302
+af_opt/components/geometry.py,sha256=DQOSJbBf0VsKOjvAuRG4YiYeQY4t_aokcGLtEwMaekE,2541
+af_opt/components/xfoil.py,sha256=kAaAmiVtqw7q5sfAyBRvnc-Em1Oi8ZpdLWrEj3aYfB0,6213
+Airfoil_Optimizer-0.9.0.dist-info/LICENSE,sha256=h3wi8E5xr5g84cQqd1iOGALpYw0CB8jx1W79mDbN72Q,1073
+Airfoil_Optimizer-0.9.0.dist-info/METADATA,sha256=PraYg2jh4PYtjh6-3aA1ETlSyETTRpZim5PopKhPo5I,1060
+Airfoil_Optimizer-0.9.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+Airfoil_Optimizer-0.9.0.dist-info/top_level.txt,sha256=14QeiY1NAPnFiCjfXk1wm-DaiGpbmhFNToOTfsEabl4,7
+Airfoil_Optimizer-0.9.0.dist-info/RECORD,,
