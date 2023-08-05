@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: apistellar-sqlalchemy
+Version: 0.0.1
+Summary: orm ability from apistellar type
+Home-page: https://www.github.com/ShichaoMa/apistellar-sqlalchemy
+Author: cn
+Author-email: cnaafhvk@foxmail.com
+License: MIT
+Description: # apistellar的sqlalchemy插件
+Keywords: apistellar sqlalchemy orm
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Description-Content-Type: text/markdown

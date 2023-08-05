@@ -1,0 +1,13 @@
+MANIFEST.in
+Pipfile
+README.md
+requirements.txt
+setup.cfg
+setup.py
+apistellar_sqlalchemy/__init__.py
+apistellar_sqlalchemy.egg-info/PKG-INFO
+apistellar_sqlalchemy.egg-info/SOURCES.txt
+apistellar_sqlalchemy.egg-info/dependency_links.txt
+apistellar_sqlalchemy.egg-info/requires.txt
+apistellar_sqlalchemy.egg-info/top_level.txt
+apistellar_sqlalchemy.egg-info/zip-safe
