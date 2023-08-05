@@ -1,0 +1,6 @@
+setup.py
+cmdscreen.egg-info/PKG-INFO
+cmdscreen.egg-info/SOURCES.txt
+cmdscreen.egg-info/dependency_links.txt
+cmdscreen.egg-info/requires.txt
+cmdscreen.egg-info/top_level.txt

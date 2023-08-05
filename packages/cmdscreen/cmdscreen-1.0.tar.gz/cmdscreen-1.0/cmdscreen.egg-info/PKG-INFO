@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: cmdscreen
+Version: 1.0
+Summary: Allow you change cmd screen color
+Home-page: https://github.com/kebufu/cmdscreen/blob/master/cmdscreen.py
+Author: kebufu
+Author-email: mcku_hei@qq.com
+License: MIT Licence
+Description: Allow you change cmd screen color
+Keywords: pip,cmdtool
+Platform: any
