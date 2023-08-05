@@ -1,0 +1,7 @@
+README.md
+setup.py
+tournament/__init__.py
+tournament.egg-info/PKG-INFO
+tournament.egg-info/SOURCES.txt
+tournament.egg-info/dependency_links.txt
+tournament.egg-info/top_level.txt
