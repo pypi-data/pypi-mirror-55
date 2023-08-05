@@ -1,0 +1,9 @@
+skits/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+skits/feature_extraction.py,sha256=aAePASx2u12uv4EnSy2myuJKKcZrbY23_YIVTseEoOQ,4071
+skits/pipeline.py,sha256=lxuBiF49XUh4B_g3CN4uW8kMljZfc_DDXJrPmmkFMeA,12488
+skits/preprocessing.py,sha256=tOjyS4mov9Qfy4liwrE5UWGT2MJqsYQp8p0w4M166Ns,4470
+skits-0.1.1.dist-info/LICENSE,sha256=NR3hrGOGSul1b6WMO8FNUnC6EetUKyr-CcL_YoR1Ceg,1072
+skits-0.1.1.dist-info/METADATA,sha256=PVD3I0sTrnsEtLR_NHwU9sudonMwAFEe_R5M8B-1kEE,4954
+skits-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+skits-0.1.1.dist-info/top_level.txt,sha256=4nEBwq8ja7fyh9m61m06N3S73Ao7ZPtE7iubhBSEdlQ,6
+skits-0.1.1.dist-info/RECORD,,
