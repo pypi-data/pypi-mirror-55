@@ -1,0 +1,8 @@
+README.md
+setup.py
+bin/emilie
+emilie/__init__.py
+emilie.egg-info/PKG-INFO
+emilie.egg-info/SOURCES.txt
+emilie.egg-info/dependency_links.txt
+emilie.egg-info/top_level.txt
