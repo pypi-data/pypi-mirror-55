@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: Dunner
+Version: 0.0.1.3
+Summary: A helper package for data science projects
+Home-page: https://github.com/ebegen/Dunner
+Author: Emre Begen
+Author-email: ebegen51@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+
+# dunner - Make your data science projects easier
+
+A Helper pip package for data cleaning, organizing, visualizing. machine learning and deep learning.
+
+
+### Assumptions:
+
++ Assuming python is installed on your system.
+
+
+Install `dunner` on your system using : 
+
+```
+pip install dunner
+```
+
+
