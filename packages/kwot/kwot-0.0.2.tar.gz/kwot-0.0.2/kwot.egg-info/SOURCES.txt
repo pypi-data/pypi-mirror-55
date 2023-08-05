@@ -1,0 +1,12 @@
+README.md
+setup.py
+kwot/__init__.py
+kwot/main.py
+kwot/quoter.py
+kwot/quotes.json
+kwot.egg-info/PKG-INFO
+kwot.egg-info/SOURCES.txt
+kwot.egg-info/dependency_links.txt
+kwot.egg-info/entry_points.txt
+kwot.egg-info/requires.txt
+kwot.egg-info/top_level.txt
