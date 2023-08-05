@@ -1,0 +1,10 @@
+py2win/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+py2win/bdist_windows.py,sha256=9RK3j4wbcOBRGroFFgGw6kkV0CDI2i9WoHfHtsBRwqE,2597
+py2win/embed.py,sha256=3buYehikql5kxWdMht9xGVWPkAssgB4ODy6N0tx0Oxg,12182
+py2win/test_bdist_windows.py,sha256=tomIbcXCxNm4Jl_rIyuKdnrYgjdp-i3j73a7eyqBiMY,1202
+py2win/test_embed.py,sha256=NdQqr-d9BFZiMh-J2WEUkBNPOv5ceBFt0h_dGQ2cE1U,1811
+py2win-0.2.0.dist-info/LICENSE,sha256=Y6C2xVzJmCXbjgBbGtLZTdKWXtixzQUI8M_HvArirjY,1081
+py2win-0.2.0.dist-info/METADATA,sha256=TDUAAsCDKlhj2GyCjbdn1KgoX6TCHC4f6ILyZtCLMko,3153
+py2win-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+py2win-0.2.0.dist-info/top_level.txt,sha256=Wpr88_P7MC_9Qt1Ma1bH9MiuIE2XLkhdsYtJeMxzW-w,7
+py2win-0.2.0.dist-info/RECORD,,
