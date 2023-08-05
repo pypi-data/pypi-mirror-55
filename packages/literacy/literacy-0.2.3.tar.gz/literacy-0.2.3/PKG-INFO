@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: literacy
+Version: 0.2.3
+Summary: Tools for literate programming in python and jupyter notebooks, following the functionality of Fastai v2 dev https://github.com/fastai/fastai_dev
+Home-page: https://github.com/holyfiddlex/literacy
+Author: Héctor de la Rosa Prado
+Author-email: hoftherose@gmail.com
+License: MIT
+Description: # Literate Programming Tools: *Literacy*
+        Literacy is a library made for [Literate Programming](https://en.wikipedia.org/wiki/Literate_programming) or [Literate Computing](http://blog.fperez.org/2013/04/literate-computing-and-computational.html) using Python Jupyter Notebook files.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

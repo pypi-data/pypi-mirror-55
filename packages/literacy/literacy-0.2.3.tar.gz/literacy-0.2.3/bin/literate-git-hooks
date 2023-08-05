@@ -1,0 +1,8 @@
+#!/usr/bin/env python3
+import os
+
+folder_dir = '~/.literacy'
+hook_dir = './.git/hook'
+if os.path.isdir(hook_dir) and os.path.isdir(folder_dir):
+    myCmd = f'cp {folder_dir}'
+    os.system(myCmd)
