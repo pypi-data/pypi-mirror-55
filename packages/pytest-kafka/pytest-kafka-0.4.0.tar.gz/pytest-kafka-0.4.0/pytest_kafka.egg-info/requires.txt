@@ -1,0 +1,15 @@
+pytest
+port_for>=0.4
+kafka-python>=1.4.3
+
+[dev]
+flake8
+pyflakes>=1.6.0
+flake8-docstrings
+flake8_tuple
+mypy
+
+[doc]
+Sphinx==2.2.1
+sphinx_autodoc_typehints==1.9.0
+sphinx-rtd-theme==0.4.3
