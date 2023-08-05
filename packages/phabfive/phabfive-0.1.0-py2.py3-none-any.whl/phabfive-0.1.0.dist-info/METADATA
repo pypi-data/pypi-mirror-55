@@ -1,0 +1,125 @@
+Metadata-Version: 2.1
+Name: phabfive
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: https://github.com/dynamist/phabfive
+Author: Rickard Eriksson
+Author-email: rickard@dynamist.se
+License: Apache License 2.0
+Download-URL: https://github.com/dynamist/phabfive/tarball/v0.1.0
+Platform: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: System Administrators
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Environment :: Console
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*
+Description-Content-Type: text/markdown
+Requires-Dist: anyconfig
+Requires-Dist: appdirs
+Requires-Dist: phabricator
+Requires-Dist: pyyaml
+Requires-Dist: docopt
+Provides-Extra: docs
+Requires-Dist: docs ; extra == 'docs'
+Provides-Extra: test
+Requires-Dist: coverage ; extra == 'test'
+Requires-Dist: flake8 ; extra == 'test'
+Requires-Dist: pytest ; extra == 'test'
+Requires-Dist: tox ; extra == 'test'
+
+# phabfive
+
+A command line tool to interact with Phabricator.
+
+The complete documentation for Phabfive can be found at [Read the Docs](https://phabfive.readthedocs.io/en/latest/)
+
+
+## Features
+
+A summary of the currently supported actions, as well as planned features:
+
+- Passphrase
+  - [X] Get specified secret
+- Diffusion
+  - [X] List repositories names
+  - [X] Get branches for specified repository
+  - [X] Get clone URI:s for specified repository
+  - [X] Add repository
+  - [X] Edit URI
+  - [X] Observe repositories: create uri
+- Paste
+  - [X] List pastes
+  - [X] Get specified paste
+  - [X] Add paste
+- User
+  - [X] Who am I: information about the logged-in user
+
+
+## Example usage
+
+Grab a Phabricator token at https://<yourserver.com>/settings/panel/apitokens/
+
+Configure:
+
+     export PHAB_TOKEN=cli-ABC123
+    --OR--
+     echo "PHAB_TOKEN: cli-ABC123" > ~/.config/phabfive.yaml
+
+Usage:
+
+    phabfive passphrase K123
+
+
+## LICENSE
+
+Copyright (c) 2017-2019 Dynamist AB
+
+See the LICENSE file provided with the source distribution for full details.
+
+
+# 0.1.0 (2019-11-01)
+
+## Notes
+
+Initial release of phabfive.
+
+Supported phabricator app endpoints:
+
+ - passphrase
+ - diffusion
+ - paste
+ - user
+
+## Enhancements
+
+* [#24](https://github.com/dynamist/phabfive/pull/24) - Enable RTD build and docs updates
+* [#23](https://github.com/dynamist/phabfive/pull/23) - Function to get clone uri(s) from repo
+* [#22](https://github.com/dynamist/phabfive/pull/22) - Functionality to create Paste
+* [#21](https://github.com/dynamist/phabfive/pull/21) - Raise exception when Conduit access is not accepted for Passphrase
+* [#20](https://github.com/dynamist/phabfive/pull/20) - Add functionality to edit URI
+* [#19](https://github.com/dynamist/phabfive/pull/19) - Feature/edit uri
+* [#18](https://github.com/dynamist/phabfive/pull/18) - Add code coverage to tox
+* [#17](https://github.com/dynamist/phabfive/pull/17) - Proper flake8 with Black
+* [#16](https://github.com/dynamist/phabfive/pull/16) - Feature/observe repositories
+* [#14](https://github.com/dynamist/phabfive/pull/14) - Print data from user.whoami
+* [#12](https://github.com/dynamist/phabfive/pull/12) - Errors now print to stderr
+* [#11](https://github.com/dynamist/phabfive/pull/11) - Default to only listing active repositories
+* [#10](https://github.com/dynamist/phabfive/pull/10) - Adding shortName
+* [#9](https://github.com/dynamist/phabfive/pull/9) - Feature/get specified paste
+* [#8](https://github.com/dynamist/phabfive/pull/8) - Repositories can now be created
+* [#6](https://github.com/dynamist/phabfive/pull/6) - Avoid string default
+* [#5](https://github.com/dynamist/phabfive/pull/5) - Pastes can now be listed, sort based on title
+* [#4](https://github.com/dynamist/phabfive/pull/4) - Add encrypted notification config to .travis.yml 
+* [#3](https://github.com/dynamist/phabfive/pull/3) - Added Paste app
+* [#2](https://github.com/dynamist/phabfive/pull/2) - Black-linting
+* [#1](https://github.com/dynamist/phabfive/pull/1) - Added travis 
+
+
