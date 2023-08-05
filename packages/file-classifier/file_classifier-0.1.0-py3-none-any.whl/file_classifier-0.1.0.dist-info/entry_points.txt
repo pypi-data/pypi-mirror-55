@@ -1,0 +1,5 @@
+[console_scripts]
+classify = Classifier:classify
+config = Classifier:config
+merge = Classifier:merge
+
