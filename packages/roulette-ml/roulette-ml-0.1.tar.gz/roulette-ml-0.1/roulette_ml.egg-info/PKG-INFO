@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: roulette-ml
+Version: 0.1
+Summary: more than a metric
+Home-page: https://github.com/miararoy/roulette
+Author: Roy Miara
+Author-email: miararoy@gmail.com
+License: UNKNOWN
+Description: TBD
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
