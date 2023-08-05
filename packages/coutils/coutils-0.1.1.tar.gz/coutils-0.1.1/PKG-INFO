@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: coutils
+Version: 0.1.1
+Summary: common code for utils
+Home-page: https://github.com/equinoxfitness/datacoco.utils
+Author: Paul Singman
+Author-email: paul.singman@equinox.com
+License: MIT
+Download-URL: https://github.com/equinoxfitness/datacoco.util/archive/0.1.tar.gz
+Description: # Datacoco3 - Utils
+        Equinox Common Code Utility for Python 3 - Utilities!
+        
+        There are currently wrappers for the following utils:
+        
+        + Email
+        + FTP Servers
+        
+        ## Installing the latest version
+        
+        ```
+        pip install git+https://github.com/equinoxfitness/datacoco.util.git#egg=coutils
+        ```
+        
+        ## Development
+        
+        #### Getting Started
+        
+        It is recommended to use the steps below to set up a virtual environment for development:
+        
+        
+        ```
+        python3 -m venv <virtual env name>
+        source venv/bin/activate
+        pip install -r requirements.txt
+        ```
+        
+        #### Testing
+        ```
+        pip install -r requirements-dev.txt
+        To run the testing suite, simply run the command: `tox`
+        ```
+        
+Keywords: email tools,ftp tools
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

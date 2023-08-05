@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+coutils/__init__.py
+coutils/email_tools.py
+coutils/ftp_tools.py
+coutils.egg-info/PKG-INFO
+coutils.egg-info/SOURCES.txt
+coutils.egg-info/dependency_links.txt
+coutils.egg-info/requires.txt
+coutils.egg-info/top_level.txt
