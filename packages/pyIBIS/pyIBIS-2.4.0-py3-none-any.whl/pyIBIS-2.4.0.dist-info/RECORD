@@ -1,0 +1,11 @@
+ibis/__init__.py,sha256=Kdz_J6flgXJIJkg6YiSmUAuhsXeP8bmHZ5Os7mmrYIM,950
+ibis/ibis_protocol.py,sha256=RpCRGWB4Oql1RaO9PCVURtXD9oyG6RYSYWrCngP53m0,22387
+ibis/ibis_serial.py,sha256=hicv1eyWwaqLMOpvc1fKK0Q49zSxjPfx_7haYTEUsl0,1232
+ibis/ibis_tcp.py,sha256=Yx0hIypiSaopwm1yEpb-BT3V0KU7EhcuVbZHH-NrVaQ,1152
+ibis/metadata.py,sha256=bnB11dQNCnxunGFlvZRYWWRtflW8TCqvGCp-d25cguw,391
+ibis/mono_protocol.py,sha256=PDl7hdxbQT8uKzl2H7Aib7pgOlVZ68IwqVVL6OiODW8,11916
+ibis/mono_serial.py,sha256=QBrt25rXDph2GqBWwPnNKQubB2fmeVCnZ05FGmJBJO0,1220
+pyIBIS-2.4.0.dist-info/METADATA,sha256=fqfuZAeca6QtH-0_y4JLE6Lf3oARgmNjcviv42WwI9Y,413
+pyIBIS-2.4.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pyIBIS-2.4.0.dist-info/top_level.txt,sha256=EklSoRMKb8kR0dcmcXyiHUyiWzuzOMOWnY9V1bGI3GU,5
+pyIBIS-2.4.0.dist-info/RECORD,,
