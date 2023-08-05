@@ -1,0 +1,3 @@
+[console_scripts]
+sustechthesis = sustechthesis.__main__:cli
+
