@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xlink="http://www.w3.org/1999/xlink"
+    xmlns:lang="http://www.erudit.org/xsd/lang" xmlns:marc="http://www.erudit.org/xsd/marc"
+    xmlns:mime="http://www.erudit.org/xsd/mime" xmlns:unicode="http://www.erudit.org/xsd/unicode"
+    xmlns="http://www.synergiescanada.org/xsd/corpus"
+    targetNamespace="http://www.synergiescanada.org/xsd/corpus" elementFormDefault="qualified"
+    attributeFormDefault="unqualified" version="0.2.1">
+    <!--
+  Synergies Corpus Schema 
+  Version: 0.2.1                                                              
+  Last update: 2009-03-20            
+      
+        Author: Isabelle Spina
+        Function: Analyste en gestion de l'information numérique 
+        Institution: Université de Montréal
+        Email: isabelle.spina@umontreal.ca
+-->
+    <!--  
+        "xsi:schemaLocation" attribute value to use for XML files: 
+          "http://synergiescanada.org/xsd/corpus http://www.synergiescanada.org/xsd/corpus/0.2.1/synergiescorpus.xsd"
+-->
+    <!-- ****************************** IMPORTED SCHEMAS ****************************** -->
+    <!-- ================== language ================== -->
+    <xs:import namespace="http://www.erudit.org/xsd/lang"
+        schemaLocation="http://www.erudit.org/xsd/lang/1.4.0/eruditlang.xsd"/>
+    <!-- ================== marc ================== -->
+    <xs:import namespace="http://www.erudit.org/xsd/marc"
+        schemaLocation="http://www.erudit.org/xsd/marc/1.1.0/eruditmarc.xsd"/>
+    <!-- ================== mime ================== -->
+    <xs:import namespace="http://www.erudit.org/xsd/mime"
+        schemaLocation="http://www.erudit.org/xsd/mime/1.3.0/eruditmime.xsd"/>
+    <!-- ================== unicode ================== -->
+    <xs:import namespace="http://www.erudit.org/xsd/unicode"
+        schemaLocation="http://www.erudit.org/xsd/unicode/1.2.0/eruditunicode.xsd"/>
+    <!-- ================== xlink ================== -->
+    <xs:import namespace="http://www.w3.org/1999/xlink"
+        schemaLocation="http://www.erudit.org/xsd/xlink/1.0.1/eruditxlink.xsd"/>
+    <!-- ****************************** GROUPS ****************************** -->
+    <!-- ================== attribute groups ================== -->
+    <!-- ++++++++++++++++++ alignment ++++++++++++++++++ -->
+    <xs:attributeGroup name="align">
+        <xs:attribute name="halign">
+            <xs:simpleType>
+                <xs:restriction base="xs:NMTOKEN">
+                    <xs:enumeration value="left"/>
+                    <xs:enumeration value="center"/>
+                    <xs:enumeration value="right"/>
+                    <xs:enumeration value="justify"/>
+                    <xs:enumeration value="char"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+        <xs:attribute name="char" type="xs:normalizedString"/>
+        <xs:attribute name="valign">
+            <xs:simpleType>
+                <xs:restriction base="xs:NMTOKEN">
+                    <xs:enumeration value="top"/>
+                    <xs:enumeration value="middle"/>
+                    <xs:enumeration value="bottom"/>
+                    <xs:enumeration value="baseline"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <!-- ++++++++++++++++++ date type ++++++++++++++++++ -->
+    <xs:attributeGroup name="datetype">
+        <xs:attribute name="datetype">
+            <xs:simpleType>
+                <xs:restriction base="xs:NMTOKEN">
+                    <xs:enumeration value="accepted"/>
+                    <xs:enumeration value="created"/>
+                    <xs:enumeration value="copyrighted"/>
+                    <xs:enumeration value="available"/>
+                    <xs:enumeration value="modified"/>
+                    <xs:enumeration value="issued"/>
+                    <xs:enumeration value="submitted"/>
+                    <xs:enumeration value="valid"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <!-- ++++++++++++++++++ dimension of x, y and z ++++++++++++++++++ -->
+    <xs:attributeGroup name="dimxyz">
+        <xs:attribute name="dimx" type="coorddimtype"/>
+        <xs:attribute name="dimy" type="coorddimtype"/>
+        <xs:attribute name="dimz" type="coorddimtype"/>
+    </xs:attributeGroup>
+    <!-- ++++++++++++++++++ language ++++++++++++++++++ -->
+    <xs:attributeGroup name="lang">
+        <xs:attribute name="lang" type="lang:iso639type"/>
+    </xs:attributeGroup>
+    <!-- ++++++++++++++++++ language list ++++++++++++++++++ -->
+    <xs:attributeGroup name="langlist">
+        <xs:attribute name="lang" type="langlisttype"/>
+    </xs:attributeGroup>
+    <!-- ++++++++++++++++++ layout ++++++++++++++++++ -->
+    <xs:attributeGroup name="layout">
+        <xs:attribute name="style" type="xs:token"/>
+        <xs:attribute name="formatting" type="xs:token"/>
+        <xs:attribute name="font" type="xs:token"/>
+    </xs:attributeGroup>
+    <!-- ++++++++++++++++++ mime type ++++++++++++++++++ -->
+    <xs:attributeGroup name="mimetype">
+        <xs:attribute name="mimetype" type="mime:mediatype"/>
+    </xs:attributeGroup>
+    <!-- ++++++++++++++++++ number of column ++++++++++++++++++ -->
+    <xs:attributeGroup name="nbcol">
+        <xs:attribute name="nbcol" type="xs:positiveInteger"/>
+    </xs:attributeGroup>
+    <!-- ++++++++++++++++++ object description ++++++++++++++++++ -->
+    <xs:attributeGroup name="objectdesc">
+        <xs:attribute name="size" type="xs:token"/>
+        <xs:attributeGroup ref="dimxyz"/>
+        <xs:attribute name="desc" type="xs:string"/>
+    </xs:attributeGroup>
+    <!-- ++++++++++++++++++ scheme ++++++++++++++++++ -->
+    <xs:attributeGroup name="scheme">
+        <xs:attribute name="scheme" type="xs:token"/>
+    </xs:attributeGroup>
+    <!-- ++++++++++++++++++ special processing ++++++++++++++++++ -->
+    <xs:attributeGroup name="specialprocessing">
+        <xs:attribute name="specialprocessing" use="optional" fixed="yes"/>
+    </xs:attributeGroup>
+    <!-- ++++++++++++++++++ validation year ++++++++++++++++++ -->
+    <xs:attributeGroup name="validationyear">
+        <xs:attribute name="validationyear" type="xs:gYear"/>
+    </xs:attributeGroup>
+    <!-- ++++++++++++++++++ xlink on mouse click ++++++++++++++++++ -->
+    <xs:attributeGroup name="xlinkclick">
+        <xs:attribute ref="xlink:type" use="required" fixed="simple"/>
+        <xs:attribute ref="xlink:href" use="required"/>
+        <xs:attribute ref="xlink:show" default="replace"/>
+        <xs:attribute ref="xlink:actuate" default="onRequest"/>
+        <xs:attribute ref="xlink:title"/>
+        <xs:attribute ref="xlink:role"/>
+    </xs:attributeGroup>
+    <!-- ================== element groups ================== -->
+    <!-- ++++++++++++++++++ bibliographic reference ++++++++++++++++++ -->
+    <xs:group name="biblioref">
+        <xs:choice>
+            <xs:element ref="year"/>
+            <xs:element ref="author"/>
+            <xs:element ref="duration"/>
+            <xs:element ref="organization"/>
+            <xs:element ref="nbpage"/>
+            <xs:element ref="nbvol"/>
+            <xs:element ref="collno"/>
+            <xs:element ref="editionno"/>
+            <xs:element ref="issueno"/>
+            <xs:element ref="serialno"/>
+            <xs:element ref="fpage"/>
+            <xs:element ref="lpage"/>
+            <xs:element ref="publocation"/>
+            <xs:element ref="title"/>
+            <xs:element ref="colltitle"/>
+            <xs:element ref="volume"/>
+        </xs:choice>
+    </xs:group>
+    <!-- ++++++++++++++++++ embedded block ++++++++++++++++++ -->
+    <xs:group name="embeddedblock">
+        <xs:choice>
+            <xs:element ref="blocktext"/>
+            <xs:element ref="blockquote"/>
+            <xs:element ref="unordlist"/>
+            <xs:element ref="ordlist"/>
+            <xs:element ref="relationlist"/>
+            <xs:element ref="mediaobject"/>
+            <xs:element ref="biblioref"/>
+            <xs:element ref="verbatim"/>
+        </xs:choice>
+    </xs:group>
+    <!-- ++++++++++++++++++ general contents of a bibliography ++++++++++++++++++ -->
+    <xs:group name="bibliogen">
+        <xs:choice>
+            <xs:element ref="blocktext"/>
+            <xs:element ref="blockquote"/>
+            <xs:element ref="unordlist"/>
+            <xs:element ref="ordlist"/>
+            <xs:element ref="relationlist"/>
+            <xs:element ref="mediaobject"/>
+            <xs:element ref="verbatim"/>
+        </xs:choice>
+    </xs:group>
+    <!-- ++++++++++++++++++ person name ++++++++++++++++++ -->
+    <xs:group name="persname">
+        <xs:sequence>
+            <xs:element ref="prefix" minOccurs="0"/>
+            <xs:choice>
+                <xs:sequence>
+                    <xs:element ref="firstname"/>
+                    <xs:element ref="middlename" minOccurs="0"/>
+                    <xs:element ref="surname" minOccurs="0"/>
+                </xs:sequence>
+                <xs:sequence>
+                    <xs:element ref="middlename" minOccurs="0"/>
+                    <xs:element ref="surname"/>
+                </xs:sequence>
+            </xs:choice>
+            <xs:element ref="suffix" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:group>
+    <!-- ++++++++++++++++++ text ++++++++++++++++++ -->
+    <xs:group name="text">
+        <xs:choice>
+            <xs:element ref="unicodechar"/>
+            <xs:element ref="superscript"/>
+            <xs:element ref="subscript"/>
+            <xs:element ref="simplelink"/>
+            <xs:element ref="highlight"/>
+            <xs:element ref="bookmark"/>
+            <xs:element ref="mediaobject"/>
+            <xs:element ref="reference"/>
+            <xs:element ref="string"/>
+        </xs:choice>
+    </xs:group>
+    <!-- ++++++++++++++++++ text with simple link ++++++++++++++++++ -->
+    <xs:group name="textsimplelink">
+        <xs:choice>
+            <xs:element ref="unicodechar"/>
+            <xs:element ref="superscript"/>
+            <xs:element ref="subscript"/>
+            <xs:element ref="highlight"/>
+            <xs:element ref="bookmark"/>
+            <xs:element ref="mediaobject"/>
+            <xs:element ref="reference"/>
+            <xs:element ref="string"/>
+        </xs:choice>
+    </xs:group>
+    <!-- ++++++++++++++++++ text from a unicode characters table ++++++++++++++++++ -->
+    <xs:group name="textunicodechar">
+        <xs:choice>
+            <xs:element ref="superscript"/>
+            <xs:element ref="subscript"/>
+            <xs:element ref="simplelink"/>
+            <xs:element ref="highlight"/>
+            <xs:element ref="bookmark"/>
+            <xs:element ref="mediaobject"/>
+            <xs:element ref="reference"/>
+            <xs:element ref="string"/>
+        </xs:choice>
+    </xs:group>
+    <!-- ****************************** NAMED TYPES ****************************** -->
+    <!-- ================== simple types ================== -->
+    <!-- ++++++++++++++++++ coordinate and dimension ++++++++++++++++++ -->
+    <xs:simpleType name="coorddimtype">
+        <xs:restriction base="xs:NMTOKEN">
+            <xs:pattern value="\d{1,}(\.\d{1,2})?(cm|em|ex|in|mm|pc|pt|px)?"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <!-- ++++++++++++++++++ corpus ++++++++++++++++++ -->
+    <xs:simpleType name="corpustype">
+        <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="proceedings"/>
+            <xs:enumeration value="documentsdata"/>
+            <xs:enumeration value="books"/>
+            <xs:enumeration value="journals"/>
+            <xs:enumeration value="theses"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <!-- ++++++++++++++++++ language list ++++++++++++++++++ -->
+    <xs:simpleType name="langlisttype">
+        <xs:restriction>
+            <xs:simpleType>
+                <xs:list itemType="lang:iso639type"/>
+            </xs:simpleType>
+            <xs:minLength value="1"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <!-- ++++++++++++++++++ numeration ++++++++++++++++++ -->
+    <xs:simpleType name="numtype">
+        <xs:restriction base="xs:NMTOKEN">
+            <xs:enumeration value="other"/>
+            <xs:enumeration value="decimal"/>
+            <xs:enumeration value="ucaseletter"/>
+            <xs:enumeration value="lcaseletter"/>
+            <xs:enumeration value="ucaseroman"/>
+            <xs:enumeration value="lcaseroman"/>
+        </xs:restriction>
+    </xs:simpleType>
+    <!-- ================== complex types ================== -->
+    <!-- ++++++++++++++++++ bibliographic reference ++++++++++++++++++ -->
+    <xs:complexType name="biblioreftype" mixed="true">
+        <xs:sequence>
+            <xs:group ref="biblioref" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="biblioreftype">
+            <xs:simpleType>
+                <xs:restriction base="xs:NMTOKEN">
+                    <xs:enumeration value="proceedings"/>
+                    <xs:enumeration value="newsar"/>
+                    <xs:enumeration value="magar"/>
+                    <xs:enumeration value="journalar"/>
+                    <xs:enumeration value="art"/>
+                    <xs:enumeration value="hearing"/>
+                    <xs:enumeration value="audiovisual"/>
+                    <xs:enumeration value="other"/>
+                    <xs:enumeration value="db"/>
+                    <xs:enumeration value="patent"/>
+                    <xs:enumeration value="map"/>
+                    <xs:enumeration value="classicalwork"/>
+                    <xs:enumeration value="editedbook"/>
+                    <xs:enumeration value="confpaper"/>
+                    <xs:enumeration value="personalcomm"/>
+                    <xs:enumeration value="equation"/>
+                    <xs:enumeration value="figure"/>
+                    <xs:enumeration value="film"/>
+                    <xs:enumeration value="gov"/>
+                    <xs:enumeration value="case"/>
+                    <xs:enumeration value="book"/>
+                    <xs:enumeration value="compprog"/>
+                    <xs:enumeration value="statute"/>
+                    <xs:enumeration value="manuscript"/>
+                    <xs:enumeration value="multimedia"/>
+                    <xs:enumeration value="nonpub"/>
+                    <xs:enumeration value="booksection"/>
+                    <xs:enumeration value="prepub"/>
+                    <xs:enumeration value="bill"/>
+                    <xs:enumeration value="report"/>
+                    <xs:enumeration value="legalrule"/>
+                    <xs:enumeration value="table"/>
+                    <xs:enumeration value="thesis"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:complexType>
+    <xs:complexType name="blocktexttype">
+        <xs:sequence>
+            <xs:element ref="blocktext" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <!-- ++++++++++++++++++ citation ++++++++++++++++++ -->
+    <xs:complexType name="citationtype">
+        <xs:sequence>
+            <xs:group ref="embeddedblock" maxOccurs="unbounded"/>
+            <xs:element ref="source" minOccurs="0"/>
+        </xs:sequence>
+        <xs:attribute name="lang" type="langlisttype"/>
+    </xs:complexType>
+    <!-- ++++++++++++++++++ list item ++++++++++++++++++ -->
+    <xs:complexType name="listitemtype">
+        <xs:group ref="embeddedblock" maxOccurs="unbounded"/>
+        <xs:attributeGroup ref="lang"/>
+    </xs:complexType>
+    <!-- ++++++++++++++++++ media object ++++++++++++++++++ -->
+    <xs:complexType name="mediaobjtype">
+        <xs:attributeGroup ref="mimetype"/>
+        <xs:attribute ref="xlink:type" use="required" fixed="simple"/>
+        <xs:attribute ref="xlink:href"/>
+        <xs:attribute ref="xlink:show" default="embed"/>
+        <xs:attribute ref="xlink:actuate" default="onLoad"/>
+        <xs:attribute ref="xlink:title"/>
+        <xs:attribute ref="xlink:role"/>
+        <xs:attributeGroup ref="objectdesc"/>
+    </xs:complexType>
+    <!-- ++++++++++++++++++ simple link ++++++++++++++++++ -->
+    <xs:complexType name="simplelinktype" mixed="true">
+        <xs:sequence>
+            <xs:group ref="textsimplelink" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:element ref="simplelink"/>
+            <xs:group ref="textsimplelink" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attributeGroup ref="validationyear"/>
+    </xs:complexType>
+    <!-- ++++++++++++++++++ spacing ++++++++++++++++++ -->
+    <xs:complexType name="spacingtype">
+        <xs:attribute name="dim" type="coorddimtype" use="required"/>
+    </xs:complexType>
+    <!-- ++++++++++++++++++ text ++++++++++++++++++ -->
+    <xs:complexType name="texttype" mixed="true">
+        <xs:group ref="text" minOccurs="0" maxOccurs="unbounded"/>
+    </xs:complexType>
+    <!-- ++++++++++++++++++ text with language ++++++++++++++++++ -->
+    <xs:complexType name="textlangtype" mixed="true">
+        <xs:group ref="text" minOccurs="0" maxOccurs="unbounded"/>
+        <xs:attributeGroup ref="lang"/>
+    </xs:complexType>
+    <!-- ++++++++++++++++++ type ++++++++++++++++++ -->
+    <xs:attributeGroup name="type">
+        <xs:attribute name="type" use="required">
+            <xs:simpleType>
+                <xs:restriction base="xs:positiveInteger">
+                    <xs:pattern value="[1-6]"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:attribute>
+    </xs:attributeGroup>
+    <!-- ****************************** CORPUS ****************************** -->
+    <xs:element name="corpus">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="frontmatter" minOccurs="0"/>
+                <xs:element ref="body" maxOccurs="unbounded"/>
+                <xs:element ref="backmatter" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="corpustype" type="corpustype"/>
+            <xs:attributeGroup ref="langlist"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- ****************************** FRONT MATTER ****************************** -->
+    <xs:element name="frontmatter">
+        <xs:complexType>
+            <xs:choice>
+                <xs:sequence>
+                    <xs:element ref="titlegr"/>
+                    <xs:element ref="authorgr" minOccurs="0"/>
+                    <xs:element ref="abstract" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="keywordgr" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+                <xs:sequence>
+                    <xs:element ref="authorgr"/>
+                    <xs:element ref="abstract" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="keywordgr" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+                <xs:sequence>
+                    <xs:element ref="abstract" maxOccurs="unbounded"/>
+                    <xs:element ref="keywordgr" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+                <xs:sequence>
+                    <xs:element ref="keywordgr" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+    <!-- ================== title group ================== -->
+    <xs:element name="titlegr">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice>
+                    <xs:sequence>
+                        <xs:element ref="title"/>
+                        <xs:element ref="subtitle" minOccurs="0"/>
+                        <xs:element ref="biblioreft" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                    <xs:sequence>
+                        <xs:element ref="biblioreft" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:choice>
+                <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xs:element ref="paraltitle"/>
+                    <xs:element ref="paralsubtitle" minOccurs="0"/>
+                </xs:sequence>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="title" type="texttype"/>
+    <xs:element name="subtitle" type="texttype"/>
+    <xs:element name="biblioreft" type="biblioreftype"/>
+    <xs:element name="paraltitle" type="textlangtype"/>
+    <xs:element name="paralsubtitle" type="textlangtype"/>
+    <!-- ================== author group ================== -->
+    <xs:element name="authorgr">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element ref="author"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="author">
+        <xs:complexType mixed="true">
+            <xs:sequence>
+                <xs:element ref="contribution" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:choice minOccurs="0">
+                    <xs:element ref="persname" maxOccurs="2"/>
+                    <xs:element ref="orgname"/>
+                </xs:choice>
+                <xs:element ref="affiliation" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="email" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:element ref="website" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- ++++++++++++++++++ contribution ++++++++++++++++++ -->
+    <xs:element name="contribution">
+        <xs:complexType mixed="true">
+            <xs:attribute name="contribtype" type="marc:coderelationtype"/>
+            <xs:attribute name="contribranking">
+                <xs:simpleType>
+                    <xs:restriction base="xs:NMTOKEN">
+                        <xs:enumeration value="main"/>
+                        <xs:enumeration value="secondary"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attributeGroup ref="lang"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- ++++++++++++++++++ person name ++++++++++++++++++ -->
+    <xs:element name="persname">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:group ref="persname"/>
+            </xs:sequence>
+            <xs:attribute name="persnametype">
+                <xs:simpleType>
+                    <xs:restriction base="xs:NMTOKEN">
+                        <xs:enumeration value="other"/>
+                        <xs:enumeration value="marital"/>
+                        <xs:enumeration value="patronym"/>
+                        <xs:enumeration value="pseudonym"/>
+                        <xs:enumeration value="transliteration"/>
+                        <xs:enumeration value="usage"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="prefix">
+        <xs:complexType mixed="true">
+            <xs:group ref="text" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:attribute name="preftype" type="xs:NMTOKEN"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="firstname" type="texttype"/>
+    <xs:element name="middlename" type="texttype"/>
+    <xs:element name="surname" type="texttype"/>
+    <xs:element name="suffix">
+        <xs:complexType mixed="true">
+            <xs:group ref="text" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:attribute name="sufftype" type="xs:NMTOKEN"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- ++++++++++++++++++ organization name ++++++++++++++++++ -->
+    <xs:element name="orgname" type="texttype"/>
+    <!-- ++++++++++++++++++ affiliation ++++++++++++++++++ -->
+    <xs:element name="affiliation">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element ref="blocktext"/>
+                <xs:element ref="position"/>
+                <xs:element ref="orgname"/>
+                <xs:element ref="orgdiv"/>
+                <xs:element ref="address"/>
+            </xs:choice>
+            <xs:attributeGroup ref="lang"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="position">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:token">
+                    <xs:attributeGroup ref="lang"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="orgdiv" type="texttype"/>
+    <xs:element name="address" type="blocktexttype"/>
+    <!-- ++++++++++++++++++ email ++++++++++++++++++ -->
+    <xs:element name="email" type="simplelinktype"/>
+    <!-- ++++++++++++++++++ web site ++++++++++++++++++ -->
+    <xs:element name="website" type="simplelinktype"/>
+    <!-- ++++++++++++++++++ abstract ++++++++++++++++++ -->
+    <xs:element name="abstract">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="title" minOccurs="0"/>
+                <xs:group ref="embeddedblock" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attributeGroup ref="lang"/>
+            <xs:attribute name="abstracttype">
+                <xs:simpleType>
+                    <xs:restriction base="xs:NMTOKEN">
+                        <xs:enumeration value="digest"/>
+                        <xs:enumeration value="other"/>
+                        <xs:enumeration value="umbral"/>
+                        <xs:enumeration value="abstract"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <!-- ++++++++++++++++++ keyword group ++++++++++++++++++ -->
+    <xs:element name="keywordgr">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:sequence minOccurs="0">
+                    <xs:element ref="title"/>
+                    <xs:element ref="paraltitle" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+                <xs:element ref="keyword" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attributeGroup ref="langlist"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="keyword" type="texttype"/>
+    <!-- ****************************** BODY ****************************** -->
+    <xs:element name="body">
+        <xs:complexType mixed="true">
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="blocktext"/>
+                <xs:element ref="ordlist"/>
+                <xs:element ref="unordlist"/>
+            </xs:choice>
+            <xs:attributeGroup ref="lang"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- ****************************** BACK MATTER ****************************** -->
+    <xs:element name="backmatter">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="bibliogr" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- ++++++++++++++++++ bibliography group ++++++++++++++++++ -->
+    <xs:element name="bibliogr">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element ref="biblio"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="biblio">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:sequence minOccurs="0">
+                    <xs:element ref="title"/>
+                    <xs:element ref="paraltitle" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+                <xs:group ref="bibliogen" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:choice>
+                    <xs:sequence>
+                        <xs:sequence>
+                            <xs:element ref="biblioref"/>
+                            <xs:group ref="embeddedblock" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                            <xs:element ref="bibliodiv1"/>
+                            <xs:group ref="bibliogen" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:sequence>
+                    <xs:sequence maxOccurs="unbounded">
+                        <xs:element ref="bibliodiv1"/>
+                        <xs:group ref="bibliogen" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="bibliodiv1">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:sequence minOccurs="0">
+                    <xs:element ref="title"/>
+                    <xs:element ref="paraltitle" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+                <xs:group ref="bibliogen" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:choice>
+                    <xs:sequence>
+                        <xs:sequence>
+                            <xs:element ref="biblioref"/>
+                            <xs:group ref="embeddedblock" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                            <xs:element ref="bibliodiv2"/>
+                            <xs:group ref="bibliogen" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                    </xs:sequence>
+                    <xs:sequence maxOccurs="unbounded">
+                        <xs:element ref="bibliodiv2"/>
+                        <xs:group ref="bibliogen" minOccurs="0" maxOccurs="unbounded"/>
+                    </xs:sequence>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="bibliodiv2">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:sequence minOccurs="0">
+                    <xs:element ref="title"/>
+                    <xs:element ref="paraltitle" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+                <xs:group ref="bibliogen" minOccurs="0" maxOccurs="unbounded"/>
+                <xs:choice>
+                    <xs:sequence>
+                        <xs:sequence>
+                            <xs:element ref="biblioref"/>
+                            <xs:group ref="embeddedblock" minOccurs="0" maxOccurs="unbounded"/>
+                        </xs:sequence>
+                        <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                            <xs:element ref="bibliodiv3"/>
+                        </xs:sequence>
+                    </xs:sequence>
+                    <xs:sequence maxOccurs="unbounded">
+                        <xs:element ref="bibliodiv3"/>
+                    </xs:sequence>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="bibliodiv3">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:sequence minOccurs="0">
+                    <xs:element ref="title"/>
+                    <xs:element ref="paraltitle" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+                <xs:sequence>
+                    <xs:group ref="bibliogen" minOccurs="0" maxOccurs="unbounded"/>
+                    <xs:element ref="biblioref"/>
+                    <xs:group ref="embeddedblock" minOccurs="0" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="biblioref" type="biblioreftype"/>
+    <!-- ++++++++++++++++++ bibliographic reference items ++++++++++++++++++ -->
+    <xs:element name="year">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:gYear">
+                    <xs:attributeGroup ref="datetype"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="lpage" type="xs:token"/>
+    <xs:element name="duration" type="xs:token"/>
+    <xs:element name="nbpage" type="xs:positiveInteger"/>
+    <xs:element name="nbvol" type="xs:token"/>
+    <xs:element name="collno" type="xs:token"/>
+    <xs:element name="editionno" type="xs:token"/>
+    <xs:element name="issueno" type="xs:token"/>
+    <xs:element name="serialno" type="xs:token"/>
+    <xs:element name="organization">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:normalizedString">
+                    <xs:attribute name="orgtype" type="xs:token"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="fpage" type="xs:token"/>
+    <xs:element name="publocation" type="xs:token"/>
+    <xs:element name="colltitle" type="xs:token"/>
+    <xs:element name="volume" type="xs:token"/>
+    <!-- ****************************** MEDIA OBJECT ****************************** -->
+    <!-- ================== media object ================== -->
+    <xs:element name="mediaobject">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice>
+                    <xs:element ref="audio"/>
+                    <xs:element ref="image"/>
+                    <xs:element ref="video"/>
+                </xs:choice>
+                <xs:element ref="blocktext" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="float" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:NMTOKEN">
+                        <xs:enumeration value="block"/>
+                        <xs:enumeration value="inline"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <!-- ================== audio ================== -->
+    <xs:element name="audio" type="mediaobjtype"/>
+    <!-- ================== image ================== -->
+    <xs:element name="image">
+        <xs:complexType>
+            <xs:complexContent>
+                <xs:extension base="mediaobjtype">
+                    <xs:attribute name="imagetype" use="required">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:NMTOKEN">
+                                <xs:enumeration value="unicodechar"/>
+                                <xs:enumeration value="equation"/>
+                                <xs:enumeration value="box"/>
+                                <xs:enumeration value="example"/>
+                                <xs:enumeration value="figure"/>
+                                <xs:enumeration value="layout"/>
+                                <xs:enumeration value="glossary "/>
+                                <xs:enumeration value="index"/>
+                                <xs:enumeration value="poem"/>
+                                <xs:enumeration value="program"/>
+                                <xs:enumeration value="table"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                </xs:extension>
+            </xs:complexContent>
+        </xs:complexType>
+    </xs:element>
+    <!-- ================== video ================== -->
+    <xs:element name="video" type="mediaobjtype"/>
+    <!-- ****************************** LIST ****************************** -->
+    <!-- ================== list item ================== -->
+    <xs:element name="listitem" type="listitemtype"/>
+    <!-- ================== unordered list ================== -->
+    <xs:element name="unordlist">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="listitem" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="sign" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:token">
+                        <xs:length value="1"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+            <xs:attributeGroup ref="nbcol"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- ================== ordered list ================== -->
+    <xs:element name="ordlist">
+        <xs:complexType>
+            <xs:sequence maxOccurs="unbounded">
+                <xs:element ref="no" minOccurs="0"/>
+                <xs:element ref="listitem"/>
+            </xs:sequence>
+            <xs:attribute name="numeration" type="numtype" use="required"/>
+            <xs:attribute name="counter" type="xs:positiveInteger"/>
+            <xs:attributeGroup ref="nbcol"/>
+            <xs:attribute name="parentno" type="xs:positiveInteger"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- ================== relation list ================== -->
+    <xs:element name="relationlist">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:sequence minOccurs="0">
+                    <xs:element ref="rlsourceh"/>
+                    <xs:element ref="rltargeth" maxOccurs="unbounded"/>
+                </xs:sequence>
+                <xs:element ref="relationitem" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attributeGroup ref="type"/>
+            <xs:attributeGroup ref="nbcol"/>
+            <xs:attribute name="symbol">
+                <xs:simpleType>
+                    <xs:restriction base="xs:token">
+                        <xs:maxLength value="1"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="relationitem">
+        <xs:complexType>
+            <xs:choice>
+                <xs:sequence maxOccurs="unbounded">
+                    <xs:element ref="no"/>
+                    <xs:element ref="rlsource"/>
+                    <xs:element ref="rltarget" maxOccurs="unbounded"/>
+                </xs:sequence>
+                <xs:sequence maxOccurs="unbounded">
+                    <xs:element ref="rlsource"/>
+                    <xs:element ref="rltarget" maxOccurs="unbounded"/>
+                </xs:sequence>
+            </xs:choice>
+            <xs:attributeGroup ref="specialprocessing"/>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="rlsourceh" type="listitemtype"/>
+    <xs:element name="rltargeth" type="listitemtype"/>
+    <xs:element name="rlsource" type="listitemtype"/>
+    <xs:element name="rltarget" type="listitemtype"/>
+    <!-- ****************************** VERBATIM ****************************** -->
+    <!-- ================== verbatim ================== -->
+    <xs:element name="verbatim">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="block" maxOccurs="unbounded"/>
+                <xs:element ref="source" minOccurs="0"/>
+            </xs:sequence>
+            <xs:attribute name="verbatype" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:NMTOKEN">
+                        <xs:enumeration value="dialogue"/>
+                        <xs:enumeration value="layout"/>
+                        <xs:enumeration value="mslayout"/>
+                        <xs:enumeration value="verbatim"/>
+                        <xs:enumeration value="poem"/>
+                        <xs:enumeration value="mspoem"/>
+                        <xs:enumeration value="program"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <!-- ++++++++++++++++++ block ++++++++++++++++++ -->
+    <xs:element name="block">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="vspace" minOccurs="0"/>
+                <xs:element ref="line"/>
+                <xs:sequence minOccurs="0" maxOccurs="unbounded">
+                    <xs:element ref="vspace" minOccurs="0"/>
+                    <xs:element ref="line"/>
+                </xs:sequence>
+            </xs:sequence>
+            <xs:attributeGroup ref="align"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- ++++++++++++++++++ vertical space ++++++++++++++++++ -->
+    <xs:element name="vspace" type="spacingtype"/>
+    <!-- ++++++++++++++++++ line ++++++++++++++++++ -->
+    <xs:element name="line">
+        <xs:complexType mixed="true">
+            <xs:choice minOccurs="0" maxOccurs="unbounded">
+                <xs:element ref="hspace"/>
+                <xs:group ref="text" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:choice>
+            <xs:attributeGroup ref="align"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- ++++++++++++++++++ horizontal space ++++++++++++++++++ -->
+    <xs:element name="hspace" type="spacingtype"/>
+    <!-- ****************************** MISCELLANEOUS ****************************** -->
+    <!-- ================== elements (block) ================== -->
+    <!-- ++++++++++++++++++ block of text ++++++++++++++++++ -->
+    <xs:element name="blocktext">
+        <xs:complexType mixed="true">
+            <xs:group ref="text" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:attributeGroup ref="layout"/>
+            <xs:attributeGroup ref="lang"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- ++++++++++++++++++ blockquote ++++++++++++++++++ -->
+    <xs:element name="blockquote" type="citationtype"/>
+    <!-- ++++++++++++++++++ number ++++++++++++++++++ -->
+    <xs:element name="no">
+        <xs:complexType mixed="true">
+            <xs:group ref="text" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:attributeGroup ref="lang"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- ++++++++++++++++++ source ++++++++++++++++++ -->
+    <xs:element name="source" type="biblioreftype"/>
+    <!-- ================== elements (text) ================== -->
+    <!-- ++++++++++++++++++ bookmark ++++++++++++++++++ -->
+    <xs:element name="bookmark" type="xs:token"/>
+    <!-- ++++++++++++++++++ highlight ++++++++++++++++++ -->
+    <xs:element name="highlight">
+        <xs:complexType mixed="true">
+            <xs:group ref="text" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:attribute name="hlighttype" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:NMTOKEN">
+                        <xs:enumeration value="strikethrough"/>
+                        <xs:enumeration value="monospace"/>
+                        <xs:enumeration value="rule"/>
+                        <xs:enumeration value="bold"/>
+                        <xs:enumeration value="italic"/>
+                        <xs:enumeration value="uppercase"/>
+                        <xs:enumeration value="smallcap"/>
+                        <xs:enumeration value="underline"/>
+                        <xs:enumeration value="highlighting"/>
+                        <xs:enumeration value="lsize"/>
+                        <xs:enumeration value="ssize"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <!-- ++++++++++++++++++ reference ++++++++++++++++++ -->
+    <xs:element name="reference">
+        <xs:complexType mixed="true">
+            <xs:group ref="text" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:attribute name="reftype" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:NMTOKEN">
+                        <xs:enumeration value="appendix"/>
+                        <xs:enumeration value="box"/>
+                        <xs:enumeration value="equation"/>
+                        <xs:enumeration value="example"/>
+                        <xs:enumeration value="figure"/>
+                        <xs:enumeration value="boxgr"/>
+                        <xs:enumeration value="equationgr"/>
+                        <xs:enumeration value="examplegr"/>
+                        <xs:enumeration value="figuregr"/>
+                        <xs:enumeration value="objectgr"/>
+                        <xs:enumeration value="tablegr"/>
+                        <xs:enumeration value="note"/>
+                        <xs:enumeration value="appnote"/>
+                        <xs:enumeration value="boxnote"/>
+                        <xs:enumeration value="eqnote"/>
+                        <xs:enumeration value="exnote"/>
+                        <xs:enumeration value="fignote"/>
+                        <xs:enumeration value="objnote"/>
+                        <xs:enumeration value="tabnote"/>
+                        <xs:enumeration value="object"/>
+                        <xs:enumeration value="page"/>
+                        <xs:enumeration value="para"/>
+                        <xs:enumeration value="biblioref"/>
+                        <xs:enumeration value="section"/>
+                        <xs:enumeration value="table"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <!-- ++++++++++++++++++ simple link ++++++++++++++++++ -->
+    <xs:element name="simplelink">
+        <xs:complexType mixed="true">
+            <xs:group ref="textsimplelink" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:attributeGroup ref="xlinkclick"/>
+            <xs:attribute name="status" use="optional" fixed="perime"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- ++++++++++++++++++ string ++++++++++++++++++ -->
+    <xs:element name="string">
+        <xs:complexType mixed="true">
+            <xs:group ref="text" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:attributeGroup ref="layout"/>
+            <xs:attributeGroup ref="lang"/>
+        </xs:complexType>
+    </xs:element>
+    <!-- ++++++++++++++++++ superscript ++++++++++++++++++ -->
+    <xs:element name="superscript" type="texttype"/>
+    <!-- ++++++++++++++++++ subscript ++++++++++++++++++ -->
+    <xs:element name="subscript" type="texttype"/>
+    <!-- ++++++++++++++++++ unicode character ++++++++++++++++++ -->
+    <xs:element name="unicodechar">
+        <xs:complexType mixed="true">
+            <xs:group ref="textunicodechar" minOccurs="0" maxOccurs="unbounded"/>
+            <xs:attribute name="range" type="unicode:tabcaractype" use="required"/>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

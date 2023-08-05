@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Schema Erudit Dublin Core Type Vocabulary
+   Version 0.2.0                                                              
+   Révisé le 2008-02-04                 
+
+        « CE PRODUIT INCLUS UN OU PLUSIEURS ÉNONCÉS, INSTRUCTIONS, MODULES OU
+        LOGICIELS LICENCIÉ(S) PAR LE CONSORTIUM ÉRUDIT, S.E.N.C. (http://www.erudit.org) (ci-après,
+        les « LOGICIELS ÉRUDIT »);
+
+        « LES LOGICIELS ÉRUDIT SONT LICENCIÉS CONFORMÉMENT AUX MODALITÉS ET
+        CONDITIONS DE LA CONVENTION DE LICENCE ÉRUDIT DONT LA VERSION COURANTE SE
+        TROUVE À L’ADRESSE SUIVANTE : http://www.erudit.org/licences (ci-après, la « CONVENTION
+        ÉRUDIT »). NOUS VOUS ENJOIGNONS DE CONSULTER LE TEXTE DE LA CONVENTION
+        ÉRUDIT AFIN DE PRENDRE CONNAISSANCE DE TOUTES ET CHACUNE DES CONDITIONS ET
+        RESTRICTIONS RELATIVES À L’UTILISATION, LE DÉVELOPPEMENT ET LA DISTRIBUTION DES
+        LOGICIELS ÉRUDIT ET DE TOUT PRODUIT DISTRIBUÉ AUX TERMES DE LA CONVENTION
+        ÉRUDIT INCLUANT, SANS LIMITER LA PORTÉE DE CE QUI PRÉCÈDE, CE QUI SUIT : 
+
+                    (1)	« VOUS NE POUVEZ UTILISER CE PRODUIT ET LES LOGICIELS ÉRUDIT
+                    AUTREMENT QU’EN CONFORMITÉ AVEC LES DISPOSITIONS DE LA CONVENTION
+                    ÉRUDIT;
+
+                    (2)	LES LOGICIELS ÉRUDIT ET TOUT PRODUIT DISTRIBUÉS AUX TERMES DE LA
+                    CONVENTION ÉRUDIT VOUS SONT FOURNIS « EN L’ÉTAT » (« AS IS ») ET SANS
+                    AUCUNE GARANTIE DE QUELQUE NATURE, EXPRESSE OU TACITE. ».
+-->
+<!--  
+         Namespace = "http://purl.org/dc/dcmitype/"
+         Schema location = "http://www.erudit.org/xsd/dc/0.2.0/eruditdcmitype.xsd"
+-->
+<xs:schema targetNamespace="http://purl.org/dc/dcmitype/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:dcmitype="http://purl.org/dc/dcmitype/" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.2.0">
+    <xs:simpleType name="DCMIType">
+        <xs:union>
+            <xs:simpleType>
+                <xs:restriction base="xs:Name">
+                    <xs:enumeration value="Collection"/>
+                    <xs:enumeration value="Dataset"/>
+                    <xs:enumeration value="Event"/>
+                    <xs:enumeration value="Image"/>
+                    <xs:enumeration value="MovingImage"/>
+                    <xs:enumeration value="StillImage"/>
+                    <xs:enumeration value="InteractiveResource"/>
+                    <xs:enumeration value="Service"/>
+                    <xs:enumeration value="Software"/>
+                    <xs:enumeration value="Sound"/>
+                    <xs:enumeration value="Text"/>
+                    <xs:enumeration value="PhysicalObject"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:union>
+    </xs:simpleType>
+</xs:schema>

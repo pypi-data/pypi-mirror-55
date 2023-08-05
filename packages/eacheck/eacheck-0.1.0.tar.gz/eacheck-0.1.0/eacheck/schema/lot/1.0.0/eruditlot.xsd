@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Schema Erudit Lot
+   Version 1.0.0                                                              
+   Révisé le 2005-02-22                  
+
+         Auteur : Isabelle Spina
+                        Analyste en gestion de l'information numérique 
+                        DGTIC, Université de Montréal 
+         Courriel: isabelle.spina@umontreal.ca 
+         Copyright © 2002-2005 Erudit 
+
+         Le code qui suit ne peut être utilisé qu'avec 
+         l'autorisation écrite des responsables d'Érudit 
+         (erudit@umontreal.ca). Cette mention de droits d'auteur 
+         ne doit pas être supprimée ou modifiée. 
+
+         The use of this work is not granted unless written 
+         permission is obtained from Érudit (erudit@umontreal.ca). 
+         This copyright notice must not be removed or altered. 
+-->
+<!--  
+Valeur de l'attribut "xsi:schemaLocation" à utiliser pour les instances XML : 
+"http://www.erudit.org/xsd/lot http://www.erudit.org/xsd/lot/1.0.0/eruditlot.xsd"
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" elementFormDefault="qualified" attributeFormDefault="unqualified" version="1.0.0">
+    <!-- ****************************** TYPES NOMMÉS ****************************** -->
+    <!-- ================== types complexes ================== -->
+    <!-- ++++++++++++++++++ cible ++++++++++++++++++ -->
+    <xs:complexType name="cible">
+        <xs:sequence>
+            <xs:element ref="cible" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+    <!-- ****************************** LOT ****************************** -->
+    <!-- ================== lot ================== -->
+    <xs:element name="lot">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="requerant"/>
+                <xs:element ref="grinstruction"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- ****************************** REQUÉRANT ****************************** -->
+    <xs:element name="requerant">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="prenom"/>
+                <xs:element ref="nomfamille"/>
+                <xs:element ref="courriel"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="prenom" type="xs:token"/>
+    <xs:element name="nomfamille" type="xs:token"/>
+    <xs:element name="courriel" type="xs:anyURI"/>
+    <!-- ****************************** GROUPE INSTRUCTION ****************************** -->
+    <xs:element name="grinstruction">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="instrglobale"/>
+                <xs:element ref="instruction" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- ================== instruction globale ================== -->
+    <xs:element name="instrglobale">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="exclusion"/>
+                <xs:element ref="inclusion"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="exclusion" type="cible"/>
+    <xs:element name="inclusion" type="cible"/>
+    <!-- ++++++++++++++++++ cible ++++++++++++++++++ -->
+    <xs:element name="cible">
+        <xs:complexType>
+            <xs:simpleContent>
+                <xs:extension base="xs:token">
+                    <xs:attribute name="typecible" use="required">
+                        <xs:simpleType>
+                            <xs:restriction base="xs:NMTOKEN">
+                                <xs:enumeration value="dossier"/>
+                                <xs:enumeration value="extension"/>
+                                <xs:enumeration value="identifiant"/>
+                                <xs:enumeration value="fichier"/>
+                                <xs:enumeration value="structure"/>
+                            </xs:restriction>
+                        </xs:simpleType>
+                    </xs:attribute>
+                    <xs:attribute name="md5" type="xs:NMTOKENS"/>
+                </xs:extension>
+            </xs:simpleContent>
+        </xs:complexType>
+    </xs:element>
+    <!-- ================== instruction ================== -->
+    <xs:element name="instruction">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="action" maxOccurs="unbounded"/>
+                <xs:element ref="grcible"/>
+                <xs:element ref="variables"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <!-- ++++++++++++++++++ action ++++++++++++++++++ -->
+    <xs:element name="action" type="xs:token"/>
+    <!-- ++++++++++++++++++ groupe cible ++++++++++++++++++ -->
+    <xs:element name="grcible" type="cible"/>
+    <!-- ++++++++++++++++++ variables ++++++++++++++++++ -->
+    <xs:element name="variables">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="structbase"/>
+                <xs:element ref="revue"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="structbase" type="xs:token"/>
+    <xs:element name="revue">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element ref="titrerevabr"/>
+                <xs:element ref="annee"/>
+                <xs:choice>
+                    <xs:sequence>
+                        <xs:element ref="volume"/>
+                        <xs:sequence minOccurs="0">
+                            <xs:element ref="nonumero" maxOccurs="2"/>
+                        </xs:sequence>
+                    </xs:sequence>
+                    <xs:element ref="nonumero" maxOccurs="2"/>
+                </xs:choice>
+                <xs:element ref="nbarticle"/>
+                <xs:element ref="idarticle" maxOccurs="unbounded"/>
+            </xs:sequence>
+            <xs:attribute name="eqprod" use="required">
+                <xs:simpleType>
+                    <xs:restriction base="xs:NMTOKEN">
+                        <xs:enumeration value="quebec"/>
+                        <xs:enumeration value="montreal"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:attribute>
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="titrerevabr" type="xs:token"/>
+    <xs:element name="annee" type="xs:gYear"/>
+    <xs:element name="volume" type="xs:token"/>
+    <xs:element name="nonumero" type="xs:token"/>
+    <xs:element name="nbarticle" type="xs:positiveInteger"/>
+    <xs:element name="idarticle" type="xs:token"/>
+</xs:schema>

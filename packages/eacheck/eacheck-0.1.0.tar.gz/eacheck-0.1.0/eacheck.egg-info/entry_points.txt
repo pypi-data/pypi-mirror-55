@@ -1,0 +1,3 @@
+[console_scripts]
+eacheck = eacheck.console_script:main
+

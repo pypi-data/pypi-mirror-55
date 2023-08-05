@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Schema Erudit Dublin Core Elements
+   Version 0.2.0                                                              
+   Révisé le 2008-02-04             
+
+        « CE PRODUIT INCLUS UN OU PLUSIEURS ÉNONCÉS, INSTRUCTIONS, MODULES OU
+        LOGICIELS LICENCIÉ(S) PAR LE CONSORTIUM ÉRUDIT, S.E.N.C. (http://www.erudit.org) (ci-après,
+        les « LOGICIELS ÉRUDIT »);
+
+        « LES LOGICIELS ÉRUDIT SONT LICENCIÉS CONFORMÉMENT AUX MODALITÉS ET
+        CONDITIONS DE LA CONVENTION DE LICENCE ÉRUDIT DONT LA VERSION COURANTE SE
+        TROUVE À L’ADRESSE SUIVANTE : http://www.erudit.org/licences (ci-après, la « CONVENTION
+        ÉRUDIT »). NOUS VOUS ENJOIGNONS DE CONSULTER LE TEXTE DE LA CONVENTION
+        ÉRUDIT AFIN DE PRENDRE CONNAISSANCE DE TOUTES ET CHACUNE DES CONDITIONS ET
+        RESTRICTIONS RELATIVES À L’UTILISATION, LE DÉVELOPPEMENT ET LA DISTRIBUTION DES
+        LOGICIELS ÉRUDIT ET DE TOUT PRODUIT DISTRIBUÉ AUX TERMES DE LA CONVENTION
+        ÉRUDIT INCLUANT, SANS LIMITER LA PORTÉE DE CE QUI PRÉCÈDE, CE QUI SUIT : 
+
+                    (1)	« VOUS NE POUVEZ UTILISER CE PRODUIT ET LES LOGICIELS ÉRUDIT
+                    AUTREMENT QU’EN CONFORMITÉ AVEC LES DISPOSITIONS DE LA CONVENTION
+                    ÉRUDIT;
+
+                    (2)	LES LOGICIELS ÉRUDIT ET TOUT PRODUIT DISTRIBUÉS AUX TERMES DE LA
+                    CONVENTION ÉRUDIT VOUS SONT FOURNIS « EN L’ÉTAT » (« AS IS ») ET SANS
+                    AUCUNE GARANTIE DE QUELQUE NATURE, EXPRESSE OU TACITE. ».
+-->
+<!--  
+         Namespace = "http://purl.org/dc/elements/1.1/"
+         Schema location = "http://www.erudit.org/xsd/dc/0.2.0/eruditdc.xsd"
+-->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:dc="http://purl.org/dc/elements/1.1/" targetNamespace="http://purl.org/dc/elements/1.1/" elementFormDefault="qualified" attributeFormDefault="qualified">
+    <!-- ****************************** SCHÉMAS IMPORTÉS ****************************** -->
+    <!-- ================== xml ================== -->
+    <xs:import namespace="http://www.w3.org/XML/1998/namespace" schemaLocation="http://www.w3.org/2001/03/xml.xsd"/>
+    <!-- ****************************** TYPES NOMMÉS ****************************** -->
+    <!-- ================== types complexes ================== -->
+    <xs:complexType name="simple">
+        <xs:complexContent mixed="true">
+            <xs:restriction base="xs:anyType">
+                <xs:sequence>
+                    <xs:any processContents="lax" minOccurs="0" maxOccurs="0"/>
+                </xs:sequence>
+                <xs:attribute ref="xml:lang" use="optional"/>
+            </xs:restriction>
+        </xs:complexContent>
+    </xs:complexType>
+    <!-- ****************************** DUBLIN CORE SIMPLE ****************************** -->
+    <xs:element name="any" type="dc:simple" abstract="true"/>
+    <xs:element name="title" type="dc:simple"/>
+    <xs:element name="creator" type="dc:simple"/>
+    <xs:element name="subject" type="dc:simple"/>
+    <xs:element name="description" type="dc:simple"/>
+    <xs:element name="publisher" type="dc:simple"/>
+    <xs:element name="contributor" type="dc:simple"/>
+    <xs:element name="date" type="dc:simple"/>
+    <xs:element name="type" type="dc:simple"/>
+    <xs:element name="format" type="dc:simple"/>
+    <xs:element name="identifier" type="dc:simple"/>
+    <xs:element name="source" type="dc:simple"/>
+    <xs:element name="language" type="dc:simple"/>
+    <xs:element name="relation" type="dc:simple"/>
+    <xs:element name="coverage" type="dc:simple"/>
+    <xs:element name="rights" type="dc:simple"/>
+</xs:schema>

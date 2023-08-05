@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- edited with XMLSpy v2005 rel. 3 U (http://www.altova.com) by Thierry (INIST - CNRS) -->
+<!-- edited with XMLSPY v5 rel. 4 U (http://www.xmlspy.com) by Philippe FOURNERET (CNRS - INIST) -->
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.erudit.org/xsd/exodic" targetNamespace="http://www.erudit.org/xsd/exodic" elementFormDefault="qualified" attributeFormDefault="unqualified">
+	<xs:element name="exodic">
+		<xs:annotation>
+			<xs:documentation>EXchange Object Description  for Inist Citations</xs:documentation>
+		</xs:annotation>
+		<xs:complexType>
+			<xs:sequence>
+				<xs:element name="title" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Title of document</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence maxOccurs="unbounded">
+							<xs:element name="ttl">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="lang" type="xs:string" use="optional"/>
+											<xs:attribute name="type" use="required">
+												<xs:simpleType>
+													<xs:restriction base="xs:string">
+														<xs:enumeration value="main"/>
+														<xs:enumeration value="translated"/>
+														<xs:enumeration value="parallel"/>
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="level" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="analytic"/>
+									<xs:enumeration value="monographic"/>
+									<xs:enumeration value="collective"/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="creator" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Responsible for making the content of the resource   </xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="author" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Author group</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="firstname" minOccurs="0">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string"/>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="lastname">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string"/>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="add" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Additional information</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string"/>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="role" minOccurs="0" maxOccurs="2">
+											<xs:annotation>
+												<xs:documentation>Role of author or corportae author</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="lang" use="required">
+															<xs:simpleType>
+																<xs:restriction base="xs:string">
+																	<xs:enumeration value="eng"/>
+																	<xs:enumeration value="fre"/>
+																</xs:restriction>
+															</xs:simpleType>
+														</xs:attribute>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="level" use="required">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="analytic"/>
+												<xs:enumeration value="monographic"/>
+												<xs:enumeration value="collective"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="rid" type="xs:IDREFS" use="optional"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="affiliation" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Affiliation group</xs:documentation>
+									<xs:documentation>Affiliation group</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:complexContent>
+										<xs:extension base="organisme">
+											<xs:attribute name="id" type="xs:ID" use="optional"/>
+											<xs:attribute name="level" use="required">
+												<xs:simpleType>
+													<xs:restriction base="xs:string">
+														<xs:enumeration value="analytic"/>
+														<xs:enumeration value="monographic"/>
+														<xs:enumeration value="collective"/>
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+										</xs:extension>
+									</xs:complexContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="corpauthor" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:complexContent>
+										<xs:extension base="organisme">
+											<xs:sequence minOccurs="0">
+												<xs:element name="role" minOccurs="0" maxOccurs="2">
+													<xs:annotation>
+														<xs:documentation>Definition of corportar author's role</xs:documentation>
+													</xs:annotation>
+													<xs:complexType>
+														<xs:simpleContent>
+															<xs:extension base="xs:string">
+																<xs:attribute name="lang" use="required">
+																	<xs:simpleType>
+																		<xs:restriction base="xs:string">
+																			<xs:enumeration value="eng"/>
+																			<xs:enumeration value="fre"/>
+																		</xs:restriction>
+																	</xs:simpleType>
+																</xs:attribute>
+															</xs:extension>
+														</xs:simpleContent>
+													</xs:complexType>
+												</xs:element>
+											</xs:sequence>
+											<xs:attribute name="level">
+												<xs:simpleType>
+													<xs:restriction base="xs:string">
+														<xs:enumeration value="analytic"/>
+														<xs:enumeration value="monographic"/>
+														<xs:enumeration value="collective"/>
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+										</xs:extension>
+									</xs:complexContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="subject" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Topic of the content of the resource</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="keyword" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="kwd" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="lang" use="required">
+															<xs:simpleType>
+																<xs:restriction base="xs:string">
+																	<xs:enumeration value="ger"/>
+																	<xs:enumeration value="eng"/>
+																	<xs:enumeration value="fre"/>
+																	<xs:enumeration value="spa"/>
+																</xs:restriction>
+															</xs:simpleType>
+														</xs:attribute>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="genericity" use="optional">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="specific"/>
+												<xs:enumeration value="generic"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="att" type="xs:string" use="optional"/>
+									<xs:attribute name="type" use="required">
+										<xs:annotation>
+											<xs:documentation xml:lang="en">Reference of vocabulary </xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="pascal"/>
+												<xs:enumeration value="francis"/>
+												<xs:enumeration value="sigle"/>
+												<xs:enumeration value="env"/>
+												<xs:enumeration value="author"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+									<xs:attribute name="controlled" use="optional">
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="yes"/>
+												<xs:enumeration value="no"/>
+												<xs:enumeration value="candidate"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="classification" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="ccl" minOccurs="0" maxOccurs="2">
+											<xs:annotation>
+												<xs:documentation>Definition of classification code</xs:documentation>
+											</xs:annotation>
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="lang" use="required">
+															<xs:simpleType>
+																<xs:restriction base="xs:string">
+																	<xs:enumeration value="eng"/>
+																	<xs:enumeration value="fre"/>
+																</xs:restriction>
+															</xs:simpleType>
+														</xs:attribute>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+									<xs:attribute name="code" type="xs:string">
+										<xs:annotation>
+											<xs:documentation xml:lang="en">Classification code</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="macrodomain" type="xs:string">
+										<xs:annotation>
+											<xs:documentation>Macrocode</xs:documentation>
+										</xs:annotation>
+									</xs:attribute>
+									<xs:attribute name="type">
+										<xs:annotation>
+											<xs:documentation>Reference of classification</xs:documentation>
+										</xs:annotation>
+										<xs:simpleType>
+											<xs:restriction base="xs:string">
+												<xs:enumeration value="pascal"/>
+												<xs:enumeration value="francis"/>
+												<xs:enumeration value="sigle"/>
+												<xs:enumeration value="env"/>
+												<xs:enumeration value="pacs"/>
+											</xs:restriction>
+										</xs:simpleType>
+									</xs:attribute>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="description" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>An account of the content of the resource</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="abstract" maxOccurs="4">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="lang" use="required">
+												<xs:simpleType>
+													<xs:restriction base="xs:string">
+														<xs:enumeration value="eng"/>
+														<xs:enumeration value="fre"/>
+														<xs:enumeration value="ger"/>
+														<xs:enumeration value="spa"/>
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="publisher" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Responsible for making the resource available</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="name"/>
+							<xs:element name="city" minOccurs="0" maxOccurs="unbounded"/>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="date" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Date of an event in the lifecycle of the resource.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:attribute name="created" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation xml:lang="en">Creation date of the document</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="issued" type="xs:date" use="optional">
+							<xs:annotation>
+								<xs:documentation>Edition date of the issue</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="map" type="xs:gYear" use="optional">
+							<xs:annotation>
+								<xs:documentation>Date of the map</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="thesis" type="xs:gYear" use="optional">
+							<xs:annotation>
+								<xs:documentation xml:lang="en">Date of thesis</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="cngstart" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation xml:lang="en">Date of the start of the meeting</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="cngend" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation>Date of the end of the meeting</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="publication" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation>Date of publication</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="rptstart" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation>Date of the start of the report</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="rptend" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation>Date of the end of the report</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="eupdate" type="xs:date" use="optional">
+							<xs:annotation>
+								<xs:documentation>Update date of Electronic Source</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="econsult" type="xs:date" use="optional">
+							<xs:annotation>
+								<xs:documentation>Consultation date of Electronic Source</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="type">
+					<xs:annotation>
+						<xs:documentation>Genre of the content of the resource</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="conference" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="name" maxOccurs="unbounded">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="lang" use="optional">
+															<xs:simpleType>
+																<xs:restriction base="xs:string"/>
+															</xs:simpleType>
+														</xs:attribute>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="number" type="xs:string" minOccurs="0"/>
+										<xs:element name="city" minOccurs="0" maxOccurs="unbounded"/>
+										<xs:element ref="country"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="report" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence maxOccurs="unbounded">
+										<xs:element name="number" maxOccurs="unbounded"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="map" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="scale" minOccurs="0"/>
+										<xs:element name="maptype" minOccurs="0" maxOccurs="2">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="lang" use="required">
+															<xs:simpleType>
+																<xs:restriction base="xs:string">
+																	<xs:enumeration value="fre"/>
+																	<xs:enumeration value="eng"/>
+																</xs:restriction>
+															</xs:simpleType>
+														</xs:attribute>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="thesis" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="number" minOccurs="0"/>
+										<xs:element name="thsubject" minOccurs="0" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>Topioc of the thesis</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="degree" minOccurs="0" maxOccurs="2">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="lang" use="required">
+															<xs:simpleType>
+																<xs:restriction base="xs:string">
+																	<xs:enumeration value="fre"/>
+																	<xs:enumeration value="eng"/>
+																</xs:restriction>
+															</xs:simpleType>
+														</xs:attribute>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="bibliotype" use="required">
+							<xs:simpleType>
+								<xs:restriction base="xs:string">
+									<xs:enumeration value="patent"/>
+									<xs:enumeration value="conference-meeting"/>
+									<xs:enumeration value="thesis"/>
+									<xs:enumeration value="report"/>
+									<xs:enumeration value="map"/>
+									<xs:enumeration value="legal-document"/>
+									<xs:enumeration value="book"/>
+									<xs:enumeration value="article"/>
+									<xs:enumeration value="miscellanea "/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="format" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>The physical or digital manifestation of the resource.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="einfo" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Electronic source information</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="name" type="xs:string" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Name of electronic source </xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="size" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>Size of electronic source </xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="etype" minOccurs="0" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>Type of electronic source</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="extension" minOccurs="0" maxOccurs="unbounded"/>
+										<xs:element name="mime" type="xs:string" minOccurs="0" maxOccurs="unbounded"/>
+										<xs:element name="version" type="xs:string" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Version of electronic source</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="soft" minOccurs="0" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>Software for use the electronic source </xs:documentation>
+											</xs:annotation>
+										</xs:element>
+										<xs:element name="note" minOccurs="0" maxOccurs="unbounded">
+											<xs:annotation>
+												<xs:documentation>Anotation / Configuration ...</xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="identifier" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Unambiguous reference to the resource within a given context</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence minOccurs="0" maxOccurs="unbounded">
+							<xs:element name="location" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Location of primary document</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="holder">
+											<xs:complexType>
+												<xs:simpleContent>
+													<xs:extension base="xs:string">
+														<xs:attribute name="acronym" type="xs:string" use="optional"/>
+													</xs:extension>
+												</xs:simpleContent>
+											</xs:complexType>
+										</xs:element>
+										<xs:element name="shelfnumber" minOccurs="0"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+						</xs:sequence>
+						<xs:attribute name="inist" type="xs:integer" use="optional">
+							<xs:annotation>
+								<xs:documentation xml:lang="en">Identifier in INIST's database</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="pascal" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation xml:lang="en">Identifier in Pascal database</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="francis" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation xml:lang="en">Identifier in Francis database</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="analyticid" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation xml:lang="en">INIST’s identifier for the analytic level</xs:documentation>
+								<xs:documentation/>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="monographicid" type="xs:string">
+							<xs:annotation>
+								<xs:documentation>INIST’s identifier for the monographic level</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="isrn" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation xml:lang="en">International Standard Report Number </xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="issn" use="optional">
+							<xs:simpleType>
+								<xs:restriction base="xs:token">
+									<xs:pattern value="\d{4}-\d{3}."/>
+								</xs:restriction>
+							</xs:simpleType>
+						</xs:attribute>
+						<xs:attribute name="issnnv" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation xml:lang="en">ISSN not validate</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="isbn" type="xs:string" use="optional"/>
+						<xs:attribute name="isbnclt" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation source="ISBN of collection"/>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="coden" type="xs:string" use="optional"/>
+						<xs:attribute name="inisthost" type="xs:integer" use="optional">
+							<xs:annotation>
+								<xs:documentation>Host Identifier in INIST's database</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="doi" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation>Digital Object Identifier</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="url" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation>Uniform Resource Locator</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="urn" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation>Uniform Resource Name</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+						<xs:attribute name="locfile" type="xs:string" use="optional">
+							<xs:annotation>
+								<xs:documentation>Location of electronic file (path/name)</xs:documentation>
+							</xs:annotation>
+						</xs:attribute>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="source" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Reference to a resource from which the present resource is derived.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="journal" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="lang" type="xs:language" use="optional"/>
+											<xs:attribute name="type" use="optional">
+												<xs:simpleType>
+													<xs:restriction base="xs:string">
+														<xs:enumeration value="main"/>
+														<xs:enumeration value="abbreviated"/>
+														<xs:enumeration value="parallel"/>
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="issue" minOccurs="0">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="year" minOccurs="0"/>
+										<xs:element name="volume" minOccurs="0"/>
+										<xs:element name="number" minOccurs="0"/>
+										<xs:element name="add" minOccurs="0">
+											<xs:annotation>
+												<xs:documentation>Additional information </xs:documentation>
+											</xs:annotation>
+										</xs:element>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="page" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:sequence>
+										<xs:element name="first"/>
+										<xs:element name="last" minOccurs="0"/>
+									</xs:sequence>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="numpage" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Number of pages</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="otherpage" minOccurs="0" maxOccurs="unbounded"/>
+							<xs:element name="illustration" minOccurs="0" maxOccurs="unbounded">
+								<xs:complexType>
+									<xs:simpleContent>
+										<xs:extension base="xs:string">
+											<xs:attribute name="lang" use="required">
+												<xs:simpleType>
+													<xs:restriction base="xs:string">
+														<xs:enumeration value="eng"/>
+														<xs:enumeration value="fre"/>
+													</xs:restriction>
+												</xs:simpleType>
+											</xs:attribute>
+										</xs:extension>
+									</xs:simpleContent>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="numcitation" type="xs:string" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Number of bibliographic citations</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="countrypub" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Country of publication</xs:documentation>
+								</xs:annotation>
+								<xs:complexType>
+									<xs:attribute name="cny" type="xs:string" use="required"/>
+								</xs:complexType>
+							</xs:element>
+							<xs:element name="editioninfo" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Edition information</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="numbervol" type="xs:string" minOccurs="0" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Number of volumes</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="language" minOccurs="0" maxOccurs="unbounded">
+					<xs:annotation>
+						<xs:documentation>Language of the intellectual content of the resource.</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:attribute name="lang" type="xs:string" use="required"/>
+					</xs:complexType>
+				</xs:element>
+				<xs:element name="rights" minOccurs="0">
+					<xs:annotation>
+						<xs:documentation>Rights Management</xs:documentation>
+					</xs:annotation>
+					<xs:complexType>
+						<xs:sequence>
+							<xs:element name="copyright" minOccurs="0">
+								<xs:annotation>
+									<xs:documentation>Copyright mention</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+							<xs:element name="sourceitem" maxOccurs="unbounded">
+								<xs:annotation>
+									<xs:documentation>Source of item</xs:documentation>
+								</xs:annotation>
+							</xs:element>
+						</xs:sequence>
+					</xs:complexType>
+				</xs:element>
+			</xs:sequence>
+			<xs:attribute name="level" use="required">
+				<xs:annotation>
+					<xs:documentation>Bibliographic level of the citation</xs:documentation>
+				</xs:annotation>
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:enumeration value="analytic"/>
+						<xs:enumeration value="monographic"/>
+						<xs:enumeration value="collective"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+	<xs:complexType name="organisme">
+		<xs:sequence>
+			<xs:element name="name" type="xs:string"/>
+			<xs:element name="subdivision" type="xs:string" minOccurs="0"/>
+			<xs:element name="city" type="xs:string" minOccurs="0"/>
+			<xs:element ref="country" minOccurs="0"/>
+		</xs:sequence>
+	</xs:complexType>
+	<xs:element name="country">
+		<xs:complexType>
+			<xs:attribute name="cny" use="required">
+				<xs:simpleType>
+					<xs:restriction base="xs:string">
+						<xs:pattern value="\i{3}"/>
+					</xs:restriction>
+				</xs:simpleType>
+			</xs:attribute>
+		</xs:complexType>
+	</xs:element>
+</xs:schema>

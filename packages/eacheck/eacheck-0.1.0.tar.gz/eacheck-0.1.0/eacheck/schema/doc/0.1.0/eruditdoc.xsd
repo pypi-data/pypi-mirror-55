@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema targetNamespace="http://www.erudit.org/xsd/doc" elementFormDefault="qualified" attributeFormDefault="unqualified" version="0.1.0" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns="http://www.erudit.org/xsd/doc">
+  <xs:element name="doc">
+    <xs:complexType mixed="true">
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element ref="entetesect"/>
+        <xs:element ref="desc"/>
+        <xs:element ref="norme"/>
+        <xs:element ref="droitauteur"/>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="entetesect" type="xs:string"/>
+  <xs:element name="desc" type="xs:string"/>
+  <xs:element name="norme">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element ref="nom"/>
+        <xs:element ref="id"/>
+        <xs:element ref="version"/>
+        <xs:element ref="org"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="nom" type="xs:string"/>
+  <xs:element name="id" type="xs:string"/>
+  <xs:element name="version" type="xs:string"/>
+  <xs:element name="org" type="xs:string"/>
+  <xs:element name="droitauteur" type="xs:string"/>
+</xs:schema>

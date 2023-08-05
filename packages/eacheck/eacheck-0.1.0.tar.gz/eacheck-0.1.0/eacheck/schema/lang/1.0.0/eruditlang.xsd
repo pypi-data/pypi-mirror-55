@@ -1,0 +1,1408 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+   Schema Erudit Langue
+   Version 1.0.0                                                              
+   Révisé le 2005-09-07                  
+
+        Auteur : Isabelle Spina
+        Fonction : Analyste en gestion de l'information numérique 
+        Courriel : isabelle.spina@umontreal.ca 
+
+        « CE PRODUIT INCLUS UN OU PLUSIEURS ÉNONCÉS, INSTRUCTIONS, MODULES OU
+        LOGICIELS LICENCIÉ(S) PAR LE CONSORTIUM ÉRUDIT, S.E.N.C. (http://www.erudit.org) (ci-après,
+        les « LOGICIELS ÉRUDIT »);
+
+        « LES LOGICIELS ÉRUDIT SONT LICENCIÉS CONFORMÉMENT AUX MODALITÉS ET
+        CONDITIONS DE LA CONVENTION DE LICENCE ÉRUDIT DONT LA VERSION COURANTE SE
+        TROUVE À L’ADRESSE SUIVANTE : http://www.erudit.org/licenses (ci-après, la « CONVENTION
+        ÉRUDIT »). NOUS VOUS ENJOIGNONS DE CONSULTER LE TEXTE DE LA CONVENTION
+        ÉRUDIT AFIN DE PRENDRE CONNAISSANCE DE TOUTES ET CHACUNE DES CONDITIONS ET
+        RESTRICTIONS RELATIVES À L’UTILISATION, LE DÉVELOPPEMENT ET LA DISTRIBUTION DES
+        LOGICIELS ÉRUDIT ET DE TOUT PRODUIT DISTRIBUÉ AUX TERMES DE LA CONVENTION
+        ÉRUDIT INCLUANT, SANS LIMITER LA PORTÉE DE CE QUI PRÉCÈDE, CE QUI SUIT : 
+
+                    (1)	« VOUS NE POUVEZ UTILISER CE PRODUIT ET LES LOGICIELS ÉRUDIT
+                    AUTREMENT QU’EN CONFORMITÉ AVEC LES DISPOSITIONS DE LA CONVENTION
+                    ÉRUDIT;
+
+                    (2)	LES LOGICIELS ÉRUDIT ET TOUT PRODUIT DISTRIBUÉS AUX TERMES DE LA
+                    CONVENTION ÉRUDIT VOUS SONT FOURNIS « EN L’ÉTAT » (« AS IS ») ET SANS
+                    AUCUNE GARANTIE DE QUELQUE NATURE, EXPRESSE OU TACITE. ».
+-->
+<!--  
+         Namespace = "http://www.erudit.org/xsd/lang"
+         Schema location = "http://www.erudit.org/xsd/lang/1.0.0/eruditlang.xsd"
+-->
+<xs:schema targetNamespace="http://www.erudit.org/xsd/lang" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:lang="http://www.erudit.org/xsd/lang" elementFormDefault="qualified" attributeFormDefault="qualified" version="1.0.0">
+    <!-- ****************************** TYPES NOMMÉS ****************************** -->
+    <!-- ================== types simples ================== -->
+    <!-- ++++++++++++++++++ langue ++++++++++++++++++ -->
+    <xs:simpleType name="iso639type">
+        <xs:restriction base="xs:NMTOKEN">
+            <!-- afar -->
+            <xs:enumeration value="aa"/>
+            <!-- afar -->
+            <xs:enumeration value="aar"/>
+            <!-- abkhaze -->
+            <xs:enumeration value="ab"/>
+            <!-- abkhaze -->
+            <xs:enumeration value="abk"/>
+            <!-- aceh -->
+            <xs:enumeration value="ace"/>
+            <!-- acoli -->
+            <xs:enumeration value="ach"/>
+            <!-- adangme -->
+            <xs:enumeration value="ada"/>
+            <!-- adyghé -->
+            <xs:enumeration value="ady"/>
+            <!-- avestique -->
+            <xs:enumeration value="ae"/>
+            <!-- afrikaans -->
+            <xs:enumeration value="af"/>
+            <!-- afro-asiatiques, autres langues -->
+            <xs:enumeration value="afa"/>
+            <!-- afrihili -->
+            <xs:enumeration value="afh"/>
+            <!-- afrikaans -->
+            <xs:enumeration value="afr"/>
+            <!-- ajout effectué le 7 septembre 2005 -->
+            <!-- aïnou -->
+            <xs:enumeration value="ain"/>
+            <!-- akan -->
+            <xs:enumeration value="ak"/>
+            <!-- akan -->
+            <xs:enumeration value="aka"/>
+            <!-- akkadien -->
+            <xs:enumeration value="akk"/>
+            <!-- albanais -->
+            <xs:enumeration value="alb"/>
+            <!-- aléoute -->
+            <xs:enumeration value="ale"/>
+            <!-- algonquines, langues -->
+            <xs:enumeration value="alg"/>
+            <!-- ajout effectué le 7 juillet 2005 -->
+            <!-- altaï du Sud -->
+            <xs:enumeration value="alt"/>
+            <!-- amharique -->
+            <xs:enumeration value="am"/>
+            <!-- amharique -->
+            <xs:enumeration value="amh"/>
+            <!-- aragonais -->
+            <xs:enumeration value="an"/>
+            <!-- anglo-saxon (ca.450-1100) -->
+            <xs:enumeration value="ang"/>
+            <!-- apache -->
+            <xs:enumeration value="apa"/>
+            <!-- arabe -->
+            <xs:enumeration value="ar"/>
+            <!-- arabe -->
+            <xs:enumeration value="ara"/>
+            <!-- araméen -->
+            <xs:enumeration value="arc"/>
+            <!-- aragonais -->
+            <xs:enumeration value="arg"/>
+            <!-- arménien -->
+            <xs:enumeration value="arm"/>
+            <!-- araucan -->
+            <xs:enumeration value="arn"/>
+            <!-- arapaho -->
+            <xs:enumeration value="arp"/>
+            <!-- artificielles, autres langues -->
+            <xs:enumeration value="art"/>
+            <!-- arawak -->
+            <xs:enumeration value="arw"/>
+            <!-- assamais -->
+            <xs:enumeration value="as"/>
+            <!-- assamais -->
+            <xs:enumeration value="asm"/>
+            <!-- asturien; bable -->
+            <xs:enumeration value="ast"/>
+            <!-- athapascanes, langues -->
+            <xs:enumeration value="ath"/>
+            <!-- australiennes, langues -->
+            <xs:enumeration value="aus"/>
+            <!-- avar -->
+            <xs:enumeration value="av"/>
+            <!-- avar -->
+            <xs:enumeration value="ava"/>
+            <!-- avestique -->
+            <xs:enumeration value="ave"/>
+            <!-- awadhi -->
+            <xs:enumeration value="awa"/>
+            <!-- aymara -->
+            <xs:enumeration value="ay"/>
+            <!-- aymara -->
+            <xs:enumeration value="aym"/>
+            <!-- azéri -->
+            <xs:enumeration value="az"/>
+            <!-- azéri -->
+            <xs:enumeration value="aze"/>
+            <!-- bachkir -->
+            <xs:enumeration value="ba"/>
+            <!-- banda -->
+            <xs:enumeration value="bad"/>
+            <!-- bamilékés, langues -->
+            <xs:enumeration value="bai"/>
+            <!-- bachkir -->
+            <xs:enumeration value="bak"/>
+            <!-- baloutchi -->
+            <xs:enumeration value="bal"/>
+            <!-- bambara -->
+            <xs:enumeration value="bam"/>
+            <!-- balinais -->
+            <xs:enumeration value="ban"/>
+            <!-- basque -->
+            <xs:enumeration value="baq"/>
+            <!-- basa -->
+            <xs:enumeration value="bas"/>
+            <!-- baltiques, autres langues -->
+            <xs:enumeration value="bat"/>
+            <!-- biélorusse -->
+            <xs:enumeration value="be"/>
+            <!-- bedja -->
+            <xs:enumeration value="bej"/>
+            <!-- biélorusse -->
+            <xs:enumeration value="bel"/>
+            <!-- bemba -->
+            <xs:enumeration value="bem"/>
+            <!-- bengali -->
+            <xs:enumeration value="ben"/>
+            <!-- berbères, autres langues -->
+            <xs:enumeration value="ber"/>
+            <!-- bulgare -->
+            <xs:enumeration value="bg"/>
+            <!-- bihari -->
+            <xs:enumeration value="bh"/>
+            <!-- bhojpuri -->
+            <xs:enumeration value="bho"/>
+            <!-- bichlamar -->
+            <xs:enumeration value="bi"/>
+            <!-- bihari -->
+            <xs:enumeration value="bih"/>
+            <!-- bikol -->
+            <xs:enumeration value="bik"/>
+            <!-- bini -->
+            <xs:enumeration value="bin"/>
+            <!-- bichlamar -->
+            <xs:enumeration value="bis"/>
+            <!-- blackfoot -->
+            <xs:enumeration value="bla"/>
+            <!-- bambara -->
+            <xs:enumeration value="bm"/>
+            <!-- bengali -->
+            <xs:enumeration value="bn"/>
+            <!-- bantoues, autres langues -->
+            <xs:enumeration value="bnt"/>
+            <!-- tibétain -->
+            <xs:enumeration value="bo"/>
+            <!-- tibétain -->
+            <xs:enumeration value="bod"/>
+            <!-- bosniaque -->
+            <xs:enumeration value="bos"/>
+            <!-- breton -->
+            <xs:enumeration value="br"/>
+            <!-- braj -->
+            <xs:enumeration value="bra"/>
+            <!-- breton -->
+            <xs:enumeration value="bre"/>
+            <!-- bosniaque -->
+            <xs:enumeration value="bs"/>
+            <!-- batak (Indonésie) -->
+            <xs:enumeration value="btk"/>
+            <!-- bouriate -->
+            <xs:enumeration value="bua"/>
+            <!-- bugi -->
+            <xs:enumeration value="bug"/>
+            <!-- bulgare -->
+            <xs:enumeration value="bul"/>
+            <!-- birman -->
+            <xs:enumeration value="bur"/>
+            <!-- bilen; blin -->
+            <xs:enumeration value="byn"/>
+            <!-- catalan; valencien -->
+            <xs:enumeration value="ca"/>
+            <!-- caddo -->
+            <xs:enumeration value="cad"/>
+            <!-- indiennes d'Amérique 
+centrale, autres langues -->
+            <xs:enumeration value="cai"/>
+            <!-- caribe -->
+            <xs:enumeration value="car"/>
+            <!-- catalan; valencien -->
+            <xs:enumeration value="cat"/>
+            <!-- caucasiennes, autres langues -->
+            <xs:enumeration value="cau"/>
+            <!-- tchétchène -->
+            <xs:enumeration value="ce"/>
+            <!-- cebuano -->
+            <xs:enumeration value="ceb"/>
+            <!-- celtiques, autres langues -->
+            <xs:enumeration value="cel"/>
+            <!-- tchèque -->
+            <xs:enumeration value="ces"/>
+            <!-- chamorro -->
+            <xs:enumeration value="ch"/>
+            <!-- chamorro -->
+            <xs:enumeration value="cha"/>
+            <!-- chibcha -->
+            <xs:enumeration value="chb"/>
+            <!-- tchétchène -->
+            <xs:enumeration value="che"/>
+            <!-- djaghataï -->
+            <xs:enumeration value="chg"/>
+            <!-- chinois -->
+            <xs:enumeration value="chi"/>
+            <!-- chuuk -->
+            <xs:enumeration value="chk"/>
+            <!-- mari -->
+            <xs:enumeration value="chm"/>
+            <!-- chinook, jargon -->
+            <xs:enumeration value="chn"/>
+            <!-- choctaw -->
+            <xs:enumeration value="cho"/>
+            <!-- chipewyan -->
+            <xs:enumeration value="chp"/>
+            <!-- cherokee -->
+            <xs:enumeration value="chr"/>
+            <!-- slavon d'église; vieux slave; slavon liturgique; vieux bulgare -->
+            <xs:enumeration value="chu"/>
+            <!-- tchouvache -->
+            <xs:enumeration value="chv"/>
+            <!-- cheyenne -->
+            <xs:enumeration value="chy"/>
+            <!-- chames, langues -->
+            <xs:enumeration value="cmc"/>
+            <!-- corse -->
+            <xs:enumeration value="co"/>
+            <!-- copte -->
+            <xs:enumeration value="cop"/>
+            <!-- cornique -->
+            <xs:enumeration value="cor"/>
+            <!-- corse -->
+            <xs:enumeration value="cos"/>
+            <!-- créoles et pidgins anglais, autres -->
+            <xs:enumeration value="cpe"/>
+            <!-- créoles et pidgins français, autres -->
+            <xs:enumeration value="cpf"/>
+            <!-- créoles et pidgins portugais, autres -->
+            <xs:enumeration value="cpp"/>
+            <!-- cree -->
+            <xs:enumeration value="cr"/>
+            <!-- cree -->
+            <xs:enumeration value="cre"/>
+            <!-- tatar de Crimé -->
+            <xs:enumeration value="crh"/>
+            <!-- créoles et pidgins divers -->
+            <xs:enumeration value="crp"/>
+            <!-- tchèque -->
+            <xs:enumeration value="cs"/>
+            <!-- kachoube -->
+            <xs:enumeration value="csb"/>
+            <!-- slavon d'église; vieux slave; slavon liturgique; vieux bulgare -->
+            <xs:enumeration value="cu"/>
+            <!-- couchitiques, autres langues -->
+            <xs:enumeration value="cus"/>
+            <!-- tchouvache -->
+            <xs:enumeration value="cv"/>
+            <!-- gallois -->
+            <xs:enumeration value="cy"/>
+            <!-- gallois -->
+            <xs:enumeration value="cym"/>
+            <!-- tchèque -->
+            <xs:enumeration value="cze"/>
+            <!-- danois -->
+            <xs:enumeration value="da"/>
+            <!-- dakota -->
+            <xs:enumeration value="dak"/>
+            <!-- danois -->
+            <xs:enumeration value="dan"/>
+            <!-- dargwa -->
+            <xs:enumeration value="dar"/>
+            <!-- dayak -->
+            <xs:enumeration value="day"/>
+            <!-- allemand -->
+            <xs:enumeration value="de"/>
+            <!-- delaware -->
+            <xs:enumeration value="del"/>
+            <!-- esclave (athapascan) -->
+            <xs:enumeration value="den"/>
+            <!-- allemand -->
+            <xs:enumeration value="deu"/>
+            <!-- dogrib -->
+            <xs:enumeration value="dgr"/>
+            <!-- dinka -->
+            <xs:enumeration value="din"/>
+            <!-- maldivien -->
+            <xs:enumeration value="div"/>
+            <!-- dogri -->
+            <xs:enumeration value="doi"/>
+            <!-- dravidiennes, autres langues -->
+            <xs:enumeration value="dra"/>
+            <!-- bas-sorabe -->
+            <xs:enumeration value="dsb"/>
+            <!-- douala -->
+            <xs:enumeration value="dua"/>
+            <!-- néerlandais moyen (ca. 1050-1350) -->
+            <xs:enumeration value="dum"/>
+            <!-- flamand; néerlandais -->
+            <xs:enumeration value="dut"/>
+            <!-- maldivien -->
+            <xs:enumeration value="dv"/>
+            <!-- dioula -->
+            <xs:enumeration value="dyu"/>
+            <!-- dzongkha -->
+            <xs:enumeration value="dz"/>
+            <!-- dzongkha -->
+            <xs:enumeration value="dzo"/>
+            <!-- éwé -->
+            <xs:enumeration value="ee"/>
+            <!-- efik -->
+            <xs:enumeration value="efi"/>
+            <!-- égyptien -->
+            <xs:enumeration value="egy"/>
+            <!-- ekajuk -->
+            <xs:enumeration value="eka"/>
+            <!-- grec moderne (après 1453) -->
+            <xs:enumeration value="el"/>
+            <!-- grec moderne (après 1453) -->
+            <xs:enumeration value="ell"/>
+            <!-- élamite -->
+            <xs:enumeration value="elx"/>
+            <!-- anglais -->
+            <xs:enumeration value="en"/>
+            <!-- anglais -->
+            <xs:enumeration value="eng"/>
+            <!-- anglais moyen (1100-1500) -->
+            <xs:enumeration value="enm"/>
+            <!-- espéranto -->
+            <xs:enumeration value="eo"/>
+            <!-- espéranto -->
+            <xs:enumeration value="epo"/>
+            <!-- castillan; espagnol -->
+            <xs:enumeration value="es"/>
+            <!-- estonien -->
+            <xs:enumeration value="est"/>
+            <!-- estonien -->
+            <xs:enumeration value="et"/>
+            <!-- basque -->
+            <xs:enumeration value="eu"/>
+            <!-- basque -->
+            <xs:enumeration value="eus"/>
+            <!-- éwé -->
+            <xs:enumeration value="ewe"/>
+            <!-- éwondo -->
+            <xs:enumeration value="ewo"/>
+            <!-- persan -->
+            <xs:enumeration value="fa"/>
+            <!-- fang -->
+            <xs:enumeration value="fan"/>
+            <!-- féroïen -->
+            <xs:enumeration value="fao"/>
+            <!-- persan -->
+            <xs:enumeration value="fas"/>
+            <!-- fanti -->
+            <xs:enumeration value="fat"/>
+            <!-- peul -->
+            <xs:enumeration value="ff"/>
+            <!-- finnois -->
+            <xs:enumeration value="fi"/>
+            <!-- fidjien -->
+            <xs:enumeration value="fij"/>
+            <!-- filipino; pilipino -->
+            <xs:enumeration value="fil"/>
+            <!-- finnois -->
+            <xs:enumeration value="fin"/>
+            <!-- finno-ougriennes, autres langues -->
+            <xs:enumeration value="fiu"/>
+            <!-- fidjien -->
+            <xs:enumeration value="fj"/>
+            <!-- féroïen -->
+            <xs:enumeration value="fo"/>
+            <!-- fon -->
+            <xs:enumeration value="fon"/>
+            <!-- français -->
+            <xs:enumeration value="fr"/>
+            <!-- français -->
+            <xs:enumeration value="fra"/>
+            <!-- français -->
+            <xs:enumeration value="fre"/>
+            <!-- français moyen (1400-1600) -->
+            <xs:enumeration value="frm"/>
+            <!-- français ancien (842-ca.1400) -->
+            <xs:enumeration value="fro"/>
+            <!-- frison -->
+            <xs:enumeration value="fry"/>
+            <!-- peul -->
+            <xs:enumeration value="ful"/>
+            <!-- frioulan -->
+            <xs:enumeration value="fur"/>
+            <!-- frison -->
+            <xs:enumeration value="fy"/>
+            <!-- irlandais -->
+            <xs:enumeration value="ga"/>
+            <!-- ga -->
+            <xs:enumeration value="gaa"/>
+            <!-- gayo -->
+            <xs:enumeration value="gay"/>
+            <!-- gbaya -->
+            <xs:enumeration value="gba"/>
+            <!-- gaélique; gaélique écossais -->
+            <xs:enumeration value="gd"/>
+            <!-- germaniques, autres langues -->
+            <xs:enumeration value="gem"/>
+            <!-- géorgien -->
+            <xs:enumeration value="geo"/>
+            <!-- allemand -->
+            <xs:enumeration value="ger"/>
+            <!-- guèze -->
+            <xs:enumeration value="gez"/>
+            <!-- kiribati -->
+            <xs:enumeration value="gil"/>
+            <!-- galicien -->
+            <xs:enumeration value="gl"/>
+            <!-- gaélique; gaélique écossais -->
+            <xs:enumeration value="gla"/>
+            <!-- irlandais -->
+            <xs:enumeration value="gle"/>
+            <!-- galicien -->
+            <xs:enumeration value="glg"/>
+            <!-- mannois; manx -->
+            <xs:enumeration value="glv"/>
+            <!-- allemand, moyen haut (ca. 1050-1500) -->
+            <xs:enumeration value="gmh"/>
+            <!-- guarani -->
+            <xs:enumeration value="gn"/>
+            <!-- allemand, vieux haut (ca. 750-1050) -->
+            <xs:enumeration value="goh"/>
+            <!-- gond -->
+            <xs:enumeration value="gon"/>
+            <!-- gorontalo -->
+            <xs:enumeration value="gor"/>
+            <!-- gothique -->
+            <xs:enumeration value="got"/>
+            <!-- grebo -->
+            <xs:enumeration value="grb"/>
+            <!-- grec ancien (jusqu'à 1453) -->
+            <xs:enumeration value="grc"/>
+            <!-- grec moderne (après 1453) -->
+            <xs:enumeration value="gre"/>
+            <!-- guarani -->
+            <xs:enumeration value="grn"/>
+            <!-- goudjrati -->
+            <xs:enumeration value="gu"/>
+            <!-- goudjrati -->
+            <xs:enumeration value="guj"/>
+            <!-- mannois; manx -->
+            <xs:enumeration value="gv"/>
+            <!-- gwich´in -->
+            <xs:enumeration value="gwi"/>
+            <!-- haoussa -->
+            <xs:enumeration value="ha"/>
+            <!-- haida -->
+            <xs:enumeration value="hai"/>
+            <!-- créole haïtien; haïtien -->
+            <xs:enumeration value="hat"/>
+            <!-- haoussa -->
+            <xs:enumeration value="hau"/>
+            <!-- hawaïen -->
+            <xs:enumeration value="haw"/>
+            <!-- hébreu -->
+            <xs:enumeration value="he"/>
+            <!-- hébreu -->
+            <xs:enumeration value="heb"/>
+            <!-- herero -->
+            <xs:enumeration value="her"/>
+            <!-- hindi -->
+            <xs:enumeration value="hi"/>
+            <!-- hiligaynon -->
+            <xs:enumeration value="hil"/>
+            <!-- himachali -->
+            <xs:enumeration value="him"/>
+            <!-- hindi -->
+            <xs:enumeration value="hin"/>
+            <!-- hittite -->
+            <xs:enumeration value="hit"/>
+            <!-- hmong -->
+            <xs:enumeration value="hmn"/>
+            <!-- hiri motu -->
+            <xs:enumeration value="hmo"/>
+            <!-- hiri motu -->
+            <xs:enumeration value="ho"/>
+            <!-- croate -->
+            <xs:enumeration value="hr"/>
+            <!-- croate -->
+            <xs:enumeration value="hrv"/>
+            <!-- haut-sorabe -->
+            <xs:enumeration value="hsb"/>
+            <!-- créole haïtien; haïtien -->
+            <xs:enumeration value="ht"/>
+            <!-- hongrois -->
+            <xs:enumeration value="hu"/>
+            <!-- hongrois -->
+            <xs:enumeration value="hun"/>
+            <!-- hupa -->
+            <xs:enumeration value="hup"/>
+            <!-- arménien -->
+            <xs:enumeration value="hy"/>
+            <!-- arménien -->
+            <xs:enumeration value="hye"/>
+            <!-- herero -->
+            <xs:enumeration value="hz"/>
+            <!-- interlingua (langue auxiliaire internationale) -->
+            <xs:enumeration value="ia"/>
+            <!-- iban -->
+            <xs:enumeration value="iba"/>
+            <!-- igbo -->
+            <xs:enumeration value="ibo"/>
+            <!-- islandais -->
+            <xs:enumeration value="ice"/>
+            <!-- indonésien -->
+            <xs:enumeration value="id"/>
+            <!-- ido -->
+            <xs:enumeration value="ido"/>
+            <!-- interlingue -->
+            <xs:enumeration value="ie"/>
+            <!-- igbo -->
+            <xs:enumeration value="ig"/>
+            <!-- yi de Sichuan -->
+            <xs:enumeration value="ii"/>
+            <!-- yi de Sichuan -->
+            <xs:enumeration value="iii"/>
+            <!-- ijo -->
+            <xs:enumeration value="ijo"/>
+            <!-- inupiaq -->
+            <xs:enumeration value="ik"/>
+            <!-- inuktitut -->
+            <xs:enumeration value="iku"/>
+            <!-- interlingue -->
+            <xs:enumeration value="ile"/>
+            <!-- ilocano -->
+            <xs:enumeration value="ilo"/>
+            <!-- interlingua (langue auxiliaire internationale) -->
+            <xs:enumeration value="ina"/>
+            <!-- indo-aryennes, autres langues -->
+            <xs:enumeration value="inc"/>
+            <!-- indonésien -->
+            <xs:enumeration value="ind"/>
+            <!-- indo-européennes, autres langues -->
+            <xs:enumeration value="ine"/>
+            <!-- ingouche -->
+            <xs:enumeration value="inh"/>
+            <!-- ido -->
+            <xs:enumeration value="io"/>
+            <!-- inupiaq -->
+            <xs:enumeration value="ipk"/>
+            <!-- iraniennes, autres langues -->
+            <xs:enumeration value="ira"/>
+            <!-- iroquoises, langues (famille) -->
+            <xs:enumeration value="iro"/>
+            <!-- islandais -->
+            <xs:enumeration value="is"/>
+            <!-- islandais -->
+            <xs:enumeration value="isl"/>
+            <!-- italien -->
+            <xs:enumeration value="it"/>
+            <!-- italien -->
+            <xs:enumeration value="ita"/>
+            <!-- inuktitut -->
+            <xs:enumeration value="iu"/>
+            <!-- japonais -->
+            <xs:enumeration value="ja"/>
+            <!-- javanais -->
+            <xs:enumeration value="jav"/>
+            <!-- lojban -->
+            <xs:enumeration value="jbo"/>
+            <!-- japonais -->
+            <xs:enumeration value="jpn"/>
+            <!-- judéo-persan -->
+            <xs:enumeration value="jpr"/>
+            <!-- judéo-arabe -->
+            <xs:enumeration value="jrb"/>
+            <!-- javanais -->
+            <xs:enumeration value="jv"/>
+            <!-- géorgien -->
+            <xs:enumeration value="ka"/>
+            <!-- karakalpak -->
+            <xs:enumeration value="kaa"/>
+            <!-- kabyle -->
+            <xs:enumeration value="kab"/>
+            <!-- kachin -->
+            <xs:enumeration value="kac"/>
+            <!-- groenlandais -->
+            <xs:enumeration value="kal"/>
+            <!-- kamba -->
+            <xs:enumeration value="kam"/>
+            <!-- kannada -->
+            <xs:enumeration value="kan"/>
+            <!-- karen -->
+            <xs:enumeration value="kar"/>
+            <!-- kashmiri -->
+            <xs:enumeration value="kas"/>
+            <!-- géorgien -->
+            <xs:enumeration value="kat"/>
+            <!-- kanouri -->
+            <xs:enumeration value="kau"/>
+            <!-- kawi -->
+            <xs:enumeration value="kaw"/>
+            <!-- kazakh -->
+            <xs:enumeration value="kaz"/>
+            <!-- kabardien -->
+            <xs:enumeration value="kbd"/>
+            <!-- kongo -->
+            <xs:enumeration value="kg"/>
+            <!-- khasi -->
+            <xs:enumeration value="kha"/>
+            <!-- khoisan, autres langues -->
+            <xs:enumeration value="khi"/>
+            <!-- khmer -->
+            <xs:enumeration value="khm"/>
+            <!-- khotanais -->
+            <xs:enumeration value="kho"/>
+            <!-- kikuyu -->
+            <xs:enumeration value="ki"/>
+            <!-- kikuyu -->
+            <xs:enumeration value="kik"/>
+            <!-- rwanda -->
+            <xs:enumeration value="kin"/>
+            <!-- kirghize -->
+            <xs:enumeration value="kir"/>
+            <!-- kuanyama; kwanyama -->
+            <xs:enumeration value="kj"/>
+            <!-- kazakh -->
+            <xs:enumeration value="kk"/>
+            <!-- groenlandais -->
+            <xs:enumeration value="kl"/>
+            <!-- khmer -->
+            <xs:enumeration value="km"/>
+            <!-- kimbundu -->
+            <xs:enumeration value="kmb"/>
+            <!-- kannada -->
+            <xs:enumeration value="kn"/>
+            <!-- coréen -->
+            <xs:enumeration value="ko"/>
+            <!-- konkani -->
+            <xs:enumeration value="kok"/>
+            <!-- komi -->
+            <xs:enumeration value="kom"/>
+            <!-- kongo -->
+            <xs:enumeration value="kon"/>
+            <!-- coréen -->
+            <xs:enumeration value="kor"/>
+            <!-- kosrae -->
+            <xs:enumeration value="kos"/>
+            <!-- kpellé -->
+            <xs:enumeration value="kpe"/>
+            <!-- kanouri -->
+            <xs:enumeration value="kr"/>
+            <!-- karatchaï balkar -->
+            <xs:enumeration value="krc"/>
+            <!-- krou -->
+            <xs:enumeration value="kro"/>
+            <!-- kurukh -->
+            <xs:enumeration value="kru"/>
+            <!-- kashmiri -->
+            <xs:enumeration value="ks"/>
+            <!-- kurde -->
+            <xs:enumeration value="ku"/>
+            <!-- kuanyama; kwanyama -->
+            <xs:enumeration value="kua"/>
+            <!-- koumyk -->
+            <xs:enumeration value="kum"/>
+            <!-- kurde -->
+            <xs:enumeration value="kur"/>
+            <!-- kutenai -->
+            <xs:enumeration value="kut"/>
+            <!-- komi -->
+            <xs:enumeration value="kv"/>
+            <!-- cornique -->
+            <xs:enumeration value="kw"/>
+            <!-- kirghize -->
+            <xs:enumeration value="ky"/>
+            <!-- latin -->
+            <xs:enumeration value="la"/>
+            <!-- judéo-espagnol -->
+            <xs:enumeration value="lad"/>
+            <!-- lahnda -->
+            <xs:enumeration value="lah"/>
+            <!-- lamba -->
+            <xs:enumeration value="lam"/>
+            <!-- lao -->
+            <xs:enumeration value="lao"/>
+            <!-- latin -->
+            <xs:enumeration value="lat"/>
+            <!-- letton -->
+            <xs:enumeration value="lav"/>
+            <!-- luxembourgeois -->
+            <xs:enumeration value="lb"/>
+            <!-- lezghien -->
+            <xs:enumeration value="lez"/>
+            <!-- ganda -->
+            <xs:enumeration value="lg"/>
+            <!-- limbourgeois -->
+            <xs:enumeration value="li"/>
+            <!-- limbourgeois -->
+            <xs:enumeration value="lim"/>
+            <!-- lingala -->
+            <xs:enumeration value="lin"/>
+            <!-- lituanien -->
+            <xs:enumeration value="lit"/>
+            <!-- lingala -->
+            <xs:enumeration value="ln"/>
+            <!-- lao -->
+            <xs:enumeration value="lo"/>
+            <!-- mongo -->
+            <xs:enumeration value="lol"/>
+            <!-- lozi -->
+            <xs:enumeration value="loz"/>
+            <!-- lituanien -->
+            <xs:enumeration value="lt"/>
+            <!-- luxembourgeois -->
+            <xs:enumeration value="ltz"/>
+            <!-- luba-katanga -->
+            <xs:enumeration value="lu"/>
+            <!-- luba-lulua -->
+            <xs:enumeration value="lua"/>
+            <!-- luba-katanga -->
+            <xs:enumeration value="lub"/>
+            <!-- ganda -->
+            <xs:enumeration value="lug"/>
+            <!-- luiseno -->
+            <xs:enumeration value="lui"/>
+            <!-- lunda -->
+            <xs:enumeration value="lun"/>
+            <!-- luo (Kenya et Tanzanie) -->
+            <xs:enumeration value="luo"/>
+            <!-- lushai -->
+            <xs:enumeration value="lus"/>
+            <!-- letton -->
+            <xs:enumeration value="lv"/>
+            <!-- macédonien -->
+            <xs:enumeration value="mac"/>
+            <!-- madourais -->
+            <xs:enumeration value="mad"/>
+            <!-- magahi -->
+            <xs:enumeration value="mag"/>
+            <!-- marshall -->
+            <xs:enumeration value="mah"/>
+            <!-- maithili -->
+            <xs:enumeration value="mai"/>
+            <!-- makassar -->
+            <xs:enumeration value="mak"/>
+            <!-- malayalam -->
+            <xs:enumeration value="mal"/>
+            <!-- mandingue -->
+            <xs:enumeration value="man"/>
+            <!-- maori -->
+            <xs:enumeration value="mao"/>
+            <!-- malayo-polynésiennes, autres langues -->
+            <xs:enumeration value="map"/>
+            <!-- marathe -->
+            <xs:enumeration value="mar"/>
+            <!-- massaï -->
+            <xs:enumeration value="mas"/>
+            <!-- malais -->
+            <xs:enumeration value="may"/>
+            <!-- moksa -->
+            <xs:enumeration value="mdf"/>
+            <!-- mandar -->
+            <xs:enumeration value="mdr"/>
+            <!-- mendé -->
+            <xs:enumeration value="men"/>
+            <!-- malgache -->
+            <xs:enumeration value="mg"/>
+            <!-- irlandais moyen (900-1200) -->
+            <xs:enumeration value="mga"/>
+            <!-- marshall -->
+            <xs:enumeration value="mh"/>
+            <!-- maori -->
+            <xs:enumeration value="mi"/>
+            <!-- micmac; mi'kmaq -->
+            <xs:enumeration value="mic"/>
+            <!-- minangkabau -->
+            <xs:enumeration value="min"/>
+            <!-- diverses, langues -->
+            <xs:enumeration value="mis"/>
+            <!-- macédonien -->
+            <xs:enumeration value="mk"/>
+            <!-- macédonien -->
+            <xs:enumeration value="mkd"/>
+            <!-- môn-khmer, autres langues -->
+            <xs:enumeration value="mkh"/>
+            <!-- malayalam -->
+            <xs:enumeration value="ml"/>
+            <!-- malgache -->
+            <xs:enumeration value="mlg"/>
+            <!-- maltais -->
+            <xs:enumeration value="mlt"/>
+            <!-- mongol -->
+            <xs:enumeration value="mn"/>
+            <!-- mandchou -->
+            <xs:enumeration value="mnc"/>
+            <!-- manipuri -->
+            <xs:enumeration value="mni"/>
+            <!-- manobo, langues -->
+            <xs:enumeration value="mno"/>
+            <!-- moldave -->
+            <xs:enumeration value="mo"/>
+            <!-- mohawk -->
+            <xs:enumeration value="moh"/>
+            <!-- moldave -->
+            <xs:enumeration value="mol"/>
+            <!-- mongol -->
+            <xs:enumeration value="mon"/>
+            <!-- moré -->
+            <xs:enumeration value="mos"/>
+            <!-- marathe -->
+            <xs:enumeration value="mr"/>
+            <!-- maori -->
+            <xs:enumeration value="mri"/>
+            <!-- malais -->
+            <xs:enumeration value="ms"/>
+            <!-- malais -->
+            <xs:enumeration value="msa"/>
+            <!-- maltais -->
+            <xs:enumeration value="mt"/>
+            <!-- multilingue -->
+            <xs:enumeration value="mul"/>
+            <!-- mounda, langues -->
+            <xs:enumeration value="mun"/>
+            <!-- muskogee -->
+            <xs:enumeration value="mus"/>
+            <!-- mirandais -->
+            <xs:enumeration value="mwl"/>
+            <!-- marvari -->
+            <xs:enumeration value="mwr"/>
+            <!-- birman -->
+            <xs:enumeration value="my"/>
+            <!-- birman -->
+            <xs:enumeration value="mya"/>
+            <!-- maya, langues -->
+            <xs:enumeration value="myn"/>
+            <!-- erza -->
+            <xs:enumeration value="myv"/>
+            <!-- nauruan -->
+            <xs:enumeration value="na"/>
+            <!-- nahuatl -->
+            <xs:enumeration value="nah"/>
+            <!-- indiennes d'Amérique 
+du Nord, autres langues -->
+            <xs:enumeration value="nai"/>
+            <!-- napolitain -->
+            <xs:enumeration value="nap"/>
+            <!-- nauruan -->
+            <xs:enumeration value="nau"/>
+            <!-- navaho -->
+            <xs:enumeration value="nav"/>
+            <!-- bokmål, norvégien; norvégien bokmål -->
+            <xs:enumeration value="nb"/>
+            <!-- ndébélé du Sud -->
+            <xs:enumeration value="nbl"/>
+            <!-- ndébélé du Nord -->
+            <xs:enumeration value="nd"/>
+            <!-- ndébélé du Nord -->
+            <xs:enumeration value="nde"/>
+            <!-- ndonga -->
+            <xs:enumeration value="ndo"/>
+            <!-- allemand, bas; saxon, bas; bas allemand; bas saxon -->
+            <xs:enumeration value="nds"/>
+            <!-- népalais -->
+            <xs:enumeration value="ne"/>
+            <!-- népalais -->
+            <xs:enumeration value="nep"/>
+            <!-- nepal bhasa; newari -->
+            <xs:enumeration value="new"/>
+            <!-- ndonga -->
+            <xs:enumeration value="ng"/>
+            <!-- nias -->
+            <xs:enumeration value="nia"/>
+            <!-- nigéro-congolaises, autres langues -->
+            <xs:enumeration value="nic"/>
+            <!-- niué -->
+            <xs:enumeration value="niu"/>
+            <!-- flamand; néerlandais -->
+            <xs:enumeration value="nl"/>
+            <!-- flamand; néerlandais -->
+            <xs:enumeration value="nld"/>
+            <!-- norvégien nynorsk; nynorsk, norvégien -->
+            <xs:enumeration value="nn"/>
+            <!-- norvégien nynorsk; nynorsk, norvégien -->
+            <xs:enumeration value="nno"/>
+            <!-- norvégien -->
+            <xs:enumeration value="no"/>
+            <!-- bokmål, norvégien; norvégien bokmål -->
+            <xs:enumeration value="nob"/>
+            <!-- nogaï; nogay -->
+            <xs:enumeration value="nog"/>
+            <!-- norrois, vieux -->
+            <xs:enumeration value="non"/>
+            <!-- norvégien -->
+            <xs:enumeration value="nor"/>
+            <!-- ndébélé du Sud -->
+            <xs:enumeration value="nr"/>
+            <!-- pedi; sepedi; sotho du Nord -->
+            <xs:enumeration value="nso"/>
+            <!-- nubiennes, langues -->
+            <xs:enumeration value="nub"/>
+            <!-- navaho -->
+            <xs:enumeration value="nv"/>
+            <!-- newari classique -->
+            <xs:enumeration value="nwc"/>
+            <!-- chewa; chichewa; nyanja -->
+            <xs:enumeration value="ny"/>
+            <!-- chewa; chichewa; nyanja -->
+            <xs:enumeration value="nya"/>
+            <!-- nyamwezi -->
+            <xs:enumeration value="nym"/>
+            <!-- nyankolé -->
+            <xs:enumeration value="nyn"/>
+            <!-- nyoro -->
+            <xs:enumeration value="nyo"/>
+            <!-- nzema -->
+            <xs:enumeration value="nzi"/>
+            <!-- occitan (après 1500); provençal -->
+            <xs:enumeration value="oc"/>
+            <!-- occitan (après 1500); provençal -->
+            <xs:enumeration value="oci"/>
+            <!-- ojibwa -->
+            <xs:enumeration value="oj"/>
+            <!-- ojibwa -->
+            <xs:enumeration value="oji"/>
+            <!-- galla -->
+            <xs:enumeration value="om"/>
+            <!-- oriya -->
+            <xs:enumeration value="or"/>
+            <!-- oriya -->
+            <xs:enumeration value="ori"/>
+            <!-- galla -->
+            <xs:enumeration value="orm"/>
+            <!-- ossète -->
+            <xs:enumeration value="os"/>
+            <!-- osage -->
+            <xs:enumeration value="osa"/>
+            <!-- ossète -->
+            <xs:enumeration value="oss"/>
+            <!-- turc ottoman (1500-1928) -->
+            <xs:enumeration value="ota"/>
+            <!-- otomangue, langues -->
+            <xs:enumeration value="oto"/>
+            <!-- pendjabi -->
+            <xs:enumeration value="pa"/>
+            <!-- papoues, autres langues -->
+            <xs:enumeration value="paa"/>
+            <!-- pangasinan -->
+            <xs:enumeration value="pag"/>
+            <!-- pahlavi -->
+            <xs:enumeration value="pal"/>
+            <!-- pampangan -->
+            <xs:enumeration value="pam"/>
+            <!-- pendjabi -->
+            <xs:enumeration value="pan"/>
+            <!-- papiamento -->
+            <xs:enumeration value="pap"/>
+            <!-- palau -->
+            <xs:enumeration value="pau"/>
+            <!-- perse, vieux (ca. 600-400 av. J.-C.) -->
+            <xs:enumeration value="peo"/>
+            <!-- persan -->
+            <xs:enumeration value="per"/>
+            <!-- philippines, autres langues -->
+            <xs:enumeration value="phi"/>
+            <!-- phénicien -->
+            <xs:enumeration value="phn"/>
+            <!-- pali -->
+            <xs:enumeration value="pi"/>
+            <!-- polonais -->
+            <xs:enumeration value="pl"/>
+            <!-- pali -->
+            <xs:enumeration value="pli"/>
+            <!-- polonais -->
+            <xs:enumeration value="pol"/>
+            <!-- pohnpei -->
+            <xs:enumeration value="pon"/>
+            <!-- portugais -->
+            <xs:enumeration value="por"/>
+            <!-- prâkrit -->
+            <xs:enumeration value="pra"/>
+            <!-- provençal ancien (jusqu'à 1500) -->
+            <xs:enumeration value="pro"/>
+            <!-- pachto -->
+            <xs:enumeration value="ps"/>
+            <!-- portugais -->
+            <xs:enumeration value="pt"/>
+            <!-- pachto -->
+            <xs:enumeration value="pus"/>
+            <!-- quechua -->
+            <xs:enumeration value="qu"/>
+            <!-- quechua -->
+            <xs:enumeration value="que"/>
+            <!-- rajasthani -->
+            <xs:enumeration value="raj"/>
+            <!-- rapanui -->
+            <xs:enumeration value="rap"/>
+            <!-- rarotonga -->
+            <xs:enumeration value="rar"/>
+            <!-- rhéto-roman -->
+            <xs:enumeration value="rm"/>
+            <!-- rundi -->
+            <xs:enumeration value="rn"/>
+            <!-- roumain -->
+            <xs:enumeration value="ro"/>
+            <!-- romanes, autres langues -->
+            <xs:enumeration value="roa"/>
+            <!-- rhéto-roman -->
+            <xs:enumeration value="roh"/>
+            <!-- tsigane -->
+            <xs:enumeration value="rom"/>
+            <!-- roumain -->
+            <xs:enumeration value="ron"/>
+            <!-- russe -->
+            <xs:enumeration value="ru"/>
+            <!-- roumain -->
+            <xs:enumeration value="rum"/>
+            <!--rundi  -->
+            <xs:enumeration value="run"/>
+            <!-- russe -->
+            <xs:enumeration value="rus"/>
+            <!-- rwanda -->
+            <xs:enumeration value="rw"/>
+            <!-- sanskrit -->
+            <xs:enumeration value="sa"/>
+            <!-- sandawe -->
+            <xs:enumeration value="sad"/>
+            <!-- sango -->
+            <xs:enumeration value="sag"/>
+            <!-- iakoute -->
+            <xs:enumeration value="sah"/>
+            <!-- indiennes d'Amérique du Sud, autres langues -->
+            <xs:enumeration value="sai"/>
+            <!-- salish, langues -->
+            <xs:enumeration value="sal"/>
+            <!-- samaritain -->
+            <xs:enumeration value="sam"/>
+            <!-- sanskrit -->
+            <xs:enumeration value="san"/>
+            <!-- sasak -->
+            <xs:enumeration value="sas"/>
+            <!-- santal -->
+            <xs:enumeration value="sat"/>
+            <!-- sarde -->
+            <xs:enumeration value="sc"/>
+            <!-- serbe -->
+            <xs:enumeration value="scc"/>
+            <!-- sicilien -->
+            <xs:enumeration value="scn"/>
+            <!-- écossais -->
+            <xs:enumeration value="sco"/>
+            <!-- croate -->
+            <xs:enumeration value="scr"/>
+            <!-- sindhi -->
+            <xs:enumeration value="sd"/>
+            <!-- sami du Nord -->
+            <xs:enumeration value="se"/>
+            <!-- selkoupe -->
+            <xs:enumeration value="sel"/>
+            <!-- mitiques, autres langues -->
+            <xs:enumeration value="sem"/>
+            <!-- sango -->
+            <xs:enumeration value="sg"/>
+            <!-- irlandais ancien (jusqu'à 900) -->
+            <xs:enumeration value="sga"/>
+            <!-- langues des signes -->
+            <xs:enumeration value="sgn"/>
+            <!-- chan -->
+            <xs:enumeration value="shn"/>
+            <!-- singhalais -->
+            <xs:enumeration value="si"/>
+            <!-- sidamo -->
+            <xs:enumeration value="sid"/>
+            <!-- singhalais -->
+            <xs:enumeration value="sin"/>
+            <!-- sioux, langues -->
+            <xs:enumeration value="sio"/>
+            <!-- sino-tibétaines, autres langues -->
+            <xs:enumeration value="sit"/>
+            <!-- slovaque -->
+            <xs:enumeration value="sk"/>
+            <!-- slovène -->
+            <xs:enumeration value="sl"/>
+            <!-- slaves, autres langues -->
+            <xs:enumeration value="sla"/>
+            <!-- slovaque -->
+            <xs:enumeration value="slk"/>
+            <!-- slovaque -->
+            <xs:enumeration value="slo"/>
+            <!-- slovène -->
+            <xs:enumeration value="slv"/>
+            <!-- samoan -->
+            <xs:enumeration value="sm"/>
+            <!-- sami du Sud -->
+            <xs:enumeration value="sma"/>
+            <!-- sami du Nord -->
+            <xs:enumeration value="sme"/>
+            <!-- sami, autres langues -->
+            <xs:enumeration value="smi"/>
+            <!-- sami de Lule -->
+            <xs:enumeration value="smj"/>
+            <!-- sami d'Inari -->
+            <xs:enumeration value="smn"/>
+            <!-- samoan -->
+            <xs:enumeration value="smo"/>
+            <!-- sami skolt -->
+            <xs:enumeration value="sms"/>
+            <!-- shona -->
+            <xs:enumeration value="sn"/>
+            <!-- shona -->
+            <xs:enumeration value="sna"/>
+            <!-- sindhi -->
+            <xs:enumeration value="snd"/>
+            <!-- soninké -->
+            <xs:enumeration value="snk"/>
+            <!-- somali -->
+            <xs:enumeration value="so"/>
+            <!-- sogdien -->
+            <xs:enumeration value="sog"/>
+            <!-- somali -->
+            <xs:enumeration value="som"/>
+            <!-- songhai -->
+            <xs:enumeration value="son"/>
+            <!-- sotho du Sud -->
+            <xs:enumeration value="sot"/>
+            <!-- castillan; espagnol -->
+            <xs:enumeration value="spa"/>
+            <!-- albanais -->
+            <xs:enumeration value="sq"/>
+            <!-- albanais -->
+            <xs:enumeration value="sqi"/>
+            <!-- serbe -->
+            <xs:enumeration value="sr"/>
+            <!-- sarde -->
+            <xs:enumeration value="srd"/>
+            <!-- serbe -->
+            <xs:enumeration value="srp"/>
+            <!-- sérère -->
+            <xs:enumeration value="srr"/>
+            <!-- swati -->
+            <xs:enumeration value="ss"/>
+            <!-- nilo-sahariennes, autres langues -->
+            <xs:enumeration value="ssa"/>
+            <!-- swati -->
+            <xs:enumeration value="ssw"/>
+            <!-- sotho du Sud -->
+            <xs:enumeration value="st"/>
+            <!-- soundanais -->
+            <xs:enumeration value="su"/>
+            <!-- sukuma -->
+            <xs:enumeration value="suk"/>
+            <!-- soundanais -->
+            <xs:enumeration value="sun"/>
+            <!-- soussou -->
+            <xs:enumeration value="sus"/>
+            <!-- sumérien -->
+            <xs:enumeration value="sux"/>
+            <!-- suédois -->
+            <xs:enumeration value="sv"/>
+            <!-- swahili -->
+            <xs:enumeration value="sw"/>
+            <!-- swahili -->
+            <xs:enumeration value="swa"/>
+            <!-- suédois -->
+            <xs:enumeration value="swe"/>
+            <!-- syriaque -->
+            <xs:enumeration value="syr"/>
+            <!-- tamoul -->
+            <xs:enumeration value="ta"/>
+            <!-- tahitien -->
+            <xs:enumeration value="tah"/>
+            <!-- thaïes, autres langues -->
+            <xs:enumeration value="tai"/>
+            <!-- tamoul -->
+            <xs:enumeration value="tam"/>
+            <!-- tatar -->
+            <xs:enumeration value="tat"/>
+            <!-- télougou -->
+            <xs:enumeration value="te"/>
+            <!-- télougou -->
+            <xs:enumeration value="tel"/>
+            <!-- temne -->
+            <xs:enumeration value="tem"/>
+            <!-- tereno -->
+            <xs:enumeration value="ter"/>
+            <!-- tetum -->
+            <xs:enumeration value="tet"/>
+            <!-- tadjik -->
+            <xs:enumeration value="tg"/>
+            <!-- tadjik -->
+            <xs:enumeration value="tgk"/>
+            <!-- tagalog -->
+            <xs:enumeration value="tgl"/>
+            <!-- thaï -->
+            <xs:enumeration value="th"/>
+            <!-- thaï -->
+            <xs:enumeration value="tha"/>
+            <!-- tigrigna -->
+            <xs:enumeration value="ti"/>
+            <!-- tibétain -->
+            <xs:enumeration value="tib"/>
+            <!-- tigré -->
+            <xs:enumeration value="tig"/>
+            <!-- tigrigna -->
+            <xs:enumeration value="tir"/>
+            <!-- tiv -->
+            <xs:enumeration value="tiv"/>
+            <!-- turkmène -->
+            <xs:enumeration value="tk"/>
+            <!-- tokelau -->
+            <xs:enumeration value="tkl"/>
+            <!-- tagalog -->
+            <xs:enumeration value="tl"/>
+            <!-- klingon -->
+            <xs:enumeration value="tlh"/>
+            <!-- tlingit -->
+            <xs:enumeration value="tli"/>
+            <!-- tamacheq -->
+            <xs:enumeration value="tmh"/>
+            <!-- tswana -->
+            <xs:enumeration value="tn"/>
+            <!-- tongan (Îles Tonga) -->
+            <xs:enumeration value="to"/>
+            <!-- tonga (Nyasa) -->
+            <xs:enumeration value="tog"/>
+            <!-- tongan (Îles Tonga) -->
+            <xs:enumeration value="ton"/>
+            <!-- tok pisin -->
+            <xs:enumeration value="tpi"/>
+            <!-- turc -->
+            <xs:enumeration value="tr"/>
+            <!-- tsonga -->
+            <xs:enumeration value="ts"/>
+            <!-- tsimshian -->
+            <xs:enumeration value="tsi"/>
+            <!-- tswana -->
+            <xs:enumeration value="tsn"/>
+            <!-- tsonga -->
+            <xs:enumeration value="tso"/>
+            <!-- tatar -->
+            <xs:enumeration value="tt"/>
+            <!-- turkmène -->
+            <xs:enumeration value="tuk"/>
+            <!-- tumbuka -->
+            <xs:enumeration value="tum"/>
+            <!-- tupi, langues -->
+            <xs:enumeration value="tup"/>
+            <!-- turc -->
+            <xs:enumeration value="tur"/>
+            <!-- altaïques, autres langues -->
+            <xs:enumeration value="tut"/>
+            <!-- tuvalu -->
+            <xs:enumeration value="tvl"/>
+            <!-- twi -->
+            <xs:enumeration value="tw"/>
+            <!-- twi -->
+            <xs:enumeration value="twi"/>
+            <!-- tahitien -->
+            <xs:enumeration value="ty"/>
+            <!-- touva -->
+            <xs:enumeration value="tyv"/>
+            <!-- oudmourte -->
+            <xs:enumeration value="udm"/>
+            <!-- ouïgour -->
+            <xs:enumeration value="ug"/>
+            <!-- ougaritique -->
+            <xs:enumeration value="uga"/>
+            <!-- ouïgour -->
+            <xs:enumeration value="uig"/>
+            <!-- ukrainien -->
+            <xs:enumeration value="uk"/>
+            <!-- ukrainien -->
+            <xs:enumeration value="ukr"/>
+            <!-- umbundu -->
+            <xs:enumeration value="umb"/>
+            <!-- indéterminée -->
+            <xs:enumeration value="und"/>
+            <!-- ourdou -->
+            <xs:enumeration value="ur"/>
+            <!-- ourdou -->
+            <xs:enumeration value="urd"/>
+            <!-- ouszbek -->
+            <xs:enumeration value="uz"/>
+            <!-- ouszbek -->
+            <xs:enumeration value="uzb"/>
+            <!-- vaï -->
+            <xs:enumeration value="vai"/>
+            <!-- venda -->
+            <xs:enumeration value="ve"/>
+            <!-- venda -->
+            <xs:enumeration value="ven"/>
+            <!-- vietnamien -->
+            <xs:enumeration value="vi"/>
+            <!-- vietnamien -->
+            <xs:enumeration value="vie"/>
+            <!-- volapük -->
+            <xs:enumeration value="vo"/>
+            <!-- volapük -->
+            <xs:enumeration value="vol"/>
+            <!-- vote -->
+            <xs:enumeration value="vot"/>
+            <!-- wallon -->
+            <xs:enumeration value="wa"/>
+            <!-- wakashennes, langues -->
+            <xs:enumeration value="wak"/>
+            <!-- walamo -->
+            <xs:enumeration value="wal"/>
+            <!-- waray -->
+            <xs:enumeration value="war"/>
+            <!-- washo -->
+            <xs:enumeration value="was"/>
+            <!-- gallois -->
+            <xs:enumeration value="wel"/>
+            <!-- sorabes, langues -->
+            <xs:enumeration value="wen"/>
+            <!-- wallon -->
+            <xs:enumeration value="wln"/>
+            <!-- wolof -->
+            <xs:enumeration value="wo"/>
+            <!-- wolof -->
+            <xs:enumeration value="wol"/>
+            <!-- kalmouk -->
+            <xs:enumeration value="xal"/>
+            <!-- xhosa -->
+            <xs:enumeration value="xh"/>
+            <!-- xhosa -->
+            <xs:enumeration value="xho"/>
+            <!-- yao -->
+            <xs:enumeration value="yao"/>
+            <!--yapois  -->
+            <xs:enumeration value="yap"/>
+            <!-- yiddish -->
+            <xs:enumeration value="yi"/>
+            <!-- yiddish -->
+            <xs:enumeration value="yid"/>
+            <!-- yoruba -->
+            <xs:enumeration value="yo"/>
+            <!-- yoruba -->
+            <xs:enumeration value="yor"/>
+            <!-- yupik, langues -->
+            <xs:enumeration value="ypk"/>
+            <!-- chuang; zhuang -->
+            <xs:enumeration value="za"/>
+            <!-- zapotèque -->
+            <xs:enumeration value="zap"/>
+            <!-- zenaga -->
+            <xs:enumeration value="zen"/>
+            <!-- chinois -->
+            <xs:enumeration value="zh"/>
+            <!-- chuang; zhuang -->
+            <xs:enumeration value="zha"/>
+            <!-- chinois -->
+            <xs:enumeration value="zho"/>
+            <!-- zandé -->
+            <xs:enumeration value="znd"/>
+            <!-- zoulou -->
+            <xs:enumeration value="zu"/>
+            <!-- zoulou -->
+            <xs:enumeration value="zul"/>
+            <!-- zuni -->
+            <xs:enumeration value="zun"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

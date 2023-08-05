@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: eacheck
+Version: 0.1.0
+Summary: Library to valida XML agains EruditArticle Schema. 
+Home-page: http://github.com/fabiobatalha/converter
+Author: Érudit
+Author-email: fabio.batalha@erudit.org
+Maintainer: Fabio Batalha
+Maintainer-email: fabio.batalha@erudit.org
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
