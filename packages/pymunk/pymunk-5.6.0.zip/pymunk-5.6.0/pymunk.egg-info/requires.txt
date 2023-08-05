@@ -1,0 +1,7 @@
+cffi!=1.13.1
+
+[dev]
+pyglet
+pygame
+sphinx
+aafig
