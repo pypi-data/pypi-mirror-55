@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: webimgui
+Version: 0.0.2
+Summary: Python framework for simple webapps and dashboards
+Home-page: https://github.com/elnardu/webimgui
+Author: Elnard Utiushev
+Author-email: elnardu2@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3.9
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: python-socketio (==4.3.1)
+Requires-Dist: aiohttp (==3.5.4)
+Requires-Dist: aiohttp-devtools (==0.13.1)
+
+# webimgui
+
+## Installation
+`pip install webimgui`
+
+## Examples
+* [Simple example that uses matplotlib](https://github.com/elnardu/webimgui/blob/master/examples/simple_app.py)
+  * Use `adev runserver simple_app.py` to run the dev server
+
+## Inspiration
+* [Dear ImGui](https://github.com/ocornut/imgui)
+
+
