@@ -1,0 +1,9 @@
+typing
+future
+six
+
+[:python_version < "3"]
+configparser
+
+[testing]
+pytest
