@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="card">
+  <div class="card-header">
+    <h3 class="card-title">All projects</h3>
+  </div>
+  <div class="card-body p-0">
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th style="width:200px;">Project ID</th>
+          <th>Project Name</th>
+          <th>Action</th>
+        </tr>
+      </thead>
+      <tbody>
+      {% if results|length > 0 %}
+      {% for row in results %}
+        <tr>
+          <td>{{ row.id }}</td>
+          <td>{{ row.name }}</td>
+          <td>
+            <a title="Run" href="{{ url_for('run', pid=row.id) }}"><small class="badge badge-secondary"><i class="fas fa-play"></i></small></a>
+            <a title="Edit" href="{{ url_for('create_project', action='edit', id=row.id) }}"><small class="badge badge-secondary"><i class="far fa-edit"></i></small></a>
+            <a title="Create Task" href="{{ url_for('create_task', pid=row.id) }}"><small class="badge badge-secondary"><i class="fas fa-plus"></i></small></a>
+            <a title="List Tasks" href="{{ url_for('tasks', pid=row.id) }}"><small class="badge badge-secondary"><i class="fas fa-eye"></i></small></a>
+            <a title="List request history" href="{{ url_for('history', pid=row.id, type='io', action='lists') }}"><small class="badge badge-secondary"><i class="fas fa-retweet"></i></small></a>
+          </td>
+        </tr>
+      {% endfor %}
+      {% else %}
+      <tr style="background-color:white;"><td colspan=3 align="center">No record found yet</td></tr>
+      {% endif %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
