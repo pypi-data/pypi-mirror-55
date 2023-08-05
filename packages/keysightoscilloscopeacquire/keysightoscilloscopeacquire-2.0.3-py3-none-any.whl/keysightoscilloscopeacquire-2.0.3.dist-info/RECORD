@@ -1,0 +1,12 @@
+keyoscacquire/__init__.py,sha256=UkEo7ypYqjGcLUpCJDVDF6OJzp91jX4n00qBTo-ghL0,268
+keyoscacquire/__main__.py,sha256=TqNQ2Z4tKIeKZigoSQ-7lGjDJ5U28C8u48C5qRx-SmM,264
+keyoscacquire/config.py,sha256=JZHF-tcKLOPmqbAJ2w98ds4gewHfQsS4m74rtrMZUKE,1366
+keyoscacquire/installed_command_line_funcs.py,sha256=gK0IQxqnR84yJahvexUHrZX7GUTuzMlFlnISlMCZA_o,3695
+keyoscacquire/oscacq.py,sha256=R79oQ6WvF1J-JeSMLld3lIy7WxNPTUO3xNOTm3zPP9o,23314
+keyoscacquire/programmes.py,sha256=ZusHtVM_dA-pftNiw5S3vb44ukyI-pmxpDUv1STZMyg,9169
+keysightoscilloscopeacquire-2.0.3.dist-info/LICENSE.md,sha256=lmygj0WGOXOtD4oCc1Y81FURgazpuQYvOe34kXySdDA,1053
+keysightoscilloscopeacquire-2.0.3.dist-info/METADATA,sha256=eHaW3YJI2hqq3wF2AkXkEJ1X0bDDXnnBGZ0zwgcAbpg,8539
+keysightoscilloscopeacquire-2.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+keysightoscilloscopeacquire-2.0.3.dist-info/entry_points.txt,sha256=TEDyxz_CwQHZzziw7KSis3RFK3gboRukoQZ2CS8GhCM,399
+keysightoscilloscopeacquire-2.0.3.dist-info/top_level.txt,sha256=GBYIqhYghR6SPTICb5thEeQXvNel6BsbibDuRrotFgk,14
+keysightoscilloscopeacquire-2.0.3.dist-info/RECORD,,
