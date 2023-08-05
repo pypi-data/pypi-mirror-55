@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: PyGeoC
+Version: 0.3.1
+Summary: Python for GeoComputation
+Home-page: https://github.com/lreis2415/PyGeoC
+Author: Liangjun Zhu
+Author-email: zlj@lreis.ac.cn
+License: MIT
+Keywords: GeoComputation utility library
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: GIS
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Requires-Dist: typing
+Requires-Dist: future
+Requires-Dist: six
+Requires-Dist: configparser ; python_version < "3"
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+
+Using Python to handle GeoComputation such as hydrologic analysisby gridded DEM.
+
+
