@@ -1,0 +1,11 @@
+easypqp/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+easypqp/convert.py,sha256=60q9ilJbR4CIj_d8Wxmf45A68mAWf8qLe5xs6xF0BCg,22237
+easypqp/library.py,sha256=oMI9ZgVvRz5lDTTxdv_V2CU9EyDeTt4Pf6oMg1utmII,15485
+easypqp/main.py,sha256=apSS2skSRpTeRHV_-rREKc4BRLpIqURba7d8OV7VlQc,9819
+easypqp/data/unimod.xml,sha256=1sEQSTU8tB8P3PPCP9sIhU3JmL5zZWpcXcqAgGgEPp8,2371069
+easypqp-0.1.0.dist-info/LICENSE,sha256=YIdNRS3557QfT9mUAT4tdNmQF-QWVaULSe6R1msbmnY,1526
+easypqp-0.1.0.dist-info/METADATA,sha256=VLm8aUrJcPSs4RHbU_0YfTP7neVfPofmQl9uxNGtlwI,2441
+easypqp-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+easypqp-0.1.0.dist-info/entry_points.txt,sha256=hqGGXH1HywTuNTitFiYQxYiNWMs4gs1ktJ5fafYkjXU,46
+easypqp-0.1.0.dist-info/top_level.txt,sha256=ys4lLRTvBR2qRle6b0FmQBilR8MbHvT7mBHd_yUbg-Q,8
+easypqp-0.1.0.dist-info/RECORD,,
