@@ -1,0 +1,11 @@
+README.md
+setup.py
+Classifier/__init__.py
+Classifier/classify.py
+Classifier/config.py
+Classifier/merge.py
+file_classifier.egg-info/PKG-INFO
+file_classifier.egg-info/SOURCES.txt
+file_classifier.egg-info/dependency_links.txt
+file_classifier.egg-info/entry_points.txt
+file_classifier.egg-info/top_level.txt
