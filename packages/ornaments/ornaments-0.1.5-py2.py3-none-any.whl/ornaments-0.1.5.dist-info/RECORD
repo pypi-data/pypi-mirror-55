@@ -1,0 +1,10 @@
+ornaments/__init__.py,sha256=DQiXHqQ3C29f_--ye7aVMDPnITrl9M0zMU42LYY48zE,22
+ornaments/serialize/__init__.py,sha256=cXF2xnZBxCcTHAf0d_tZ9SoXdmMj-ihSCmWuLcROOfE,49
+ornaments/serialize/csv_serializer.py,sha256=XiGKYGg_TDSwwiVfC9V-uyhhV2AlZIxbd4jC7wLQKeM,837
+ornaments/transform/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ornaments/transform/strings.py,sha256=HihqD2W9pcBUY4hU4OCAP6HSP6KIlB6oC1dnxUapQ7s,1360
+ornaments/validate/__init__.py,sha256=jBjEoVfvLhQ2UplEFzi7z0sAl8lnjBpiEzZ4rXEH9kA,26
+ornaments/validate/length.py,sha256=uZQ9x7u7M6n7H2kSi4ZHmEaqPVyKxcQlPfetmNvg9to,964
+ornaments-0.1.5.dist-info/WHEEL,sha256=QMHkjGvxv3VzbxS3PLXUS4g079erQ43qD1oit7eHsL0,89
+ornaments-0.1.5.dist-info/METADATA,sha256=ajFhGlrYZrh8TkQzxJWWgre57nESxB5nfvil-8y6aF4,641
+ornaments-0.1.5.dist-info/RECORD,,
