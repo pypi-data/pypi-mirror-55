@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+test/test_semver_parser.py
+test/test_version_type.py
+universions/__init__.py
+universions/_version.py
+universions/version.py
+universions.egg-info/PKG-INFO
+universions.egg-info/SOURCES.txt
+universions.egg-info/dependency_links.txt
+universions.egg-info/top_level.txt
+universions/java/__init__.py
+universions/node/__init__.py
