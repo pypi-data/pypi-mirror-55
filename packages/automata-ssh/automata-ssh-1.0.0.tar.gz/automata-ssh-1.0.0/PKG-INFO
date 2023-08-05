@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: automata-ssh
+Version: 1.0.0
+Summary: A CLI application to create user accounts on Linux systems from Gitlab users/group information.
+Home-page: http://packages.python.org/automata-ssh
+Author: Brian Davis
+Author-email: slimm609@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
