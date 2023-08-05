@@ -1,0 +1,9 @@
+README.md
+setup.py
+src/pg_facile/__init__.py
+src/pg_facile/database.py
+src/pg_facile.egg-info/PKG-INFO
+src/pg_facile.egg-info/SOURCES.txt
+src/pg_facile.egg-info/dependency_links.txt
+src/pg_facile.egg-info/requires.txt
+src/pg_facile.egg-info/top_level.txt
