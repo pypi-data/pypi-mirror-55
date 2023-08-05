@@ -1,0 +1,10 @@
+fyle_db_connector/__init__.py,sha256=C22oAs4AJYOiGIWDGoYLNVZ_vvFh2sZmCW7ZMRg8csc,118
+fyle_db_connector/extract.py,sha256=cu8ycP_L8yE1tqYm6rUg5h36W6IpeBcHmr9dlfsEn7U,14106
+fyle_db_connector/extract_ddl.sql,sha256=fOaLvQtzzWMu8gCeDw43t_ysNYT8SSzSqjepYBixllQ,4948
+fyle_db_connector/load.py,sha256=eANwMeuwvE0HOrSN_RHCrCM9KjtjHteFnsXIKN0TjMU,3492
+fyle_db_connector/load_ddl.sql,sha256=xYaCmf2AQkyByXV0re2FVQqDFlgLc6HaJiOEpfpheQE,409
+fyle_db_connector-0.4.0.dist-info/LICENSE,sha256=04EJnF8lBuGQQIC2dnxB6eAFcc_sbyqN1QGQrmhJV9o,1082
+fyle_db_connector-0.4.0.dist-info/METADATA,sha256=6lzjuzYS85lMZLQdoRpa8hzsQNx4a9y-50PRfLsjqeQ,2790
+fyle_db_connector-0.4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+fyle_db_connector-0.4.0.dist-info/top_level.txt,sha256=vo9WXII0EqrQJysff2Ancmnp58gU2wXSQErOcp1RFzs,18
+fyle_db_connector-0.4.0.dist-info/RECORD,,
