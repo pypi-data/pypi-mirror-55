@@ -1,0 +1,70 @@
+{
+  "type": "object",
+  "properties": {
+    "kafka": {
+      "type": "object",
+      "required": ["nodes", "configuration_files"],
+      "properties": {
+        "nodes": {
+          "type": "array",
+          "minItems": 3,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+              "host",
+              "ports"
+            ],
+            "properties": {
+              "host": {
+                "type": "string"
+              },
+              "ports": {
+                "type": "object",
+                "required": [
+                  "kafka",
+                  "jmx"
+                ],
+                "properties": {
+                  "kafka": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "exclusiveMaximum": 65536
+                  },
+                  "jmx": {
+                    "type": "integer",
+                    "exclusiveMinimum": 0,
+                    "exclusiveMaximum": 65536
+                  }
+                }
+              }
+            }
+          }
+        },
+        "configuration_files": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "type": "object",
+            "required": [
+              "file_path",
+              "whitelisted_patterns"
+            ],
+            "properties": {
+              "file_path": {
+                "type": "string"
+              },
+              "whitelisted_patterns": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
