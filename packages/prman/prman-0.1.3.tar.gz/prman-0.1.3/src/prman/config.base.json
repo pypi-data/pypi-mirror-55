@@ -1,0 +1,6 @@
+{
+  "gitlab.url": "https://gitlab.com/",
+  "conventions.pr.branch_regex": "^[fb]\\/(?P<issue>\\w+-\\d+)-?(?P<message>.*)$",
+  "conventions.pr.template": "${issue}: ${message}",
+  "conventions.maximum_required_approvers_count": "-1"
+}
