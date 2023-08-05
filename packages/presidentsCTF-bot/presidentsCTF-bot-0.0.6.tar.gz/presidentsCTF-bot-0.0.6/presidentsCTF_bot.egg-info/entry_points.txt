@@ -1,0 +1,4 @@
+[console_scripts]
+presidentsCTF = presidentsCTF.main:main
+presidentsCTF-stats = presidentsCTF.stats:main
+
