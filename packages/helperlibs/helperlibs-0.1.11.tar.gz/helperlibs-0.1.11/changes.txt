@@ -1,0 +1,13 @@
+This is the bugfix release 0.1.11 of bioinf-helperlibs.
+
+Another fix for file type detection when the
+file name is just the extension, again contributed by @SJShaw.
+
+Detailed changes:
+
+Kai Blin (1):
+      Bump version number to 0.1.11
+
+Simon Shaw (1):
+      seqio: fix extension checking when path is absolute
+
