@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: UDASwissKnife
+Version: 0.2.0
+Summary: Utils and common libraries for Python
+Home-page: https://bitbucket.org/udanalytics/swissknife
+Author: UDARealState Data engineering Team
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6

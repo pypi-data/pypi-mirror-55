@@ -1,0 +1,14 @@
+README.md
+setup.py
+SwissKnife/__init__.py
+SwissKnife/info/ExecutionEnvironment.py
+SwissKnife/info/__init__.py
+UDASwissKnife.egg-info/PKG-INFO
+UDASwissKnife.egg-info/SOURCES.txt
+UDASwissKnife.egg-info/dependency_links.txt
+UDASwissKnife.egg-info/requires.txt
+UDASwissKnife.egg-info/top_level.txt
+tests/__init__.py
+tests/info/__init__.py
+tests/info/test_CURRENT_ENVIRONMENT.py
+tests/info/test_ExecutionEnvironment.py
