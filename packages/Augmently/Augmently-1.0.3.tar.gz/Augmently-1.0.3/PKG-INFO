@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: Augmently
+Version: 1.0.3
+Summary: A library for Data Augmentation of images in computer vision.
+Home-page: https://github.com/fitpic/Augmently
+Author: Nicolas Carmont
+Author-email: nickcarmont8@gmail.com
+License: MIT
+Download-URL: https://github.com/fitpic/Augmently/archive/1.0.3.tar.gz
+Description: UNKNOWN
+Keywords: image,augmentation,machine learning,CNN,data augmentation,deep learning,data processing
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
