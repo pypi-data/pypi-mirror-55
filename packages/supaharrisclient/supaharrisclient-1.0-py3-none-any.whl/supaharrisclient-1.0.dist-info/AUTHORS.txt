@@ -1,0 +1,20 @@
+Author:
+=======
+
+Timo Halbesma <halbesma@MPA-Garching.MPG.DE>
+Eduardo Balbinot <e.balbinot@rug.nl>
+
+Major contributions:
+=====================
+
+
+Direct contributions to the code base:
+=======================================
+
+
+General help:
+==============
+
+
+Bug reports:
+============
