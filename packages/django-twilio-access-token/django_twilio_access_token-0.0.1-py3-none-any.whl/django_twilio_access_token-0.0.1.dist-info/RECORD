@@ -1,0 +1,8 @@
+django_twilio_access_token/__init__.py,sha256=e_iw0BtvO7odMtZjug2_RzFpQUuJ5RnxH1sx3H1G1zI,102
+django_twilio_access_token/serializers.py,sha256=mS5Hrx_yrcduwnGTUcwXyxDUvEfs-RwME7lsL4Rqm34,521
+django_twilio_access_token/urls.py,sha256=1WXzJ1PX_EN0ZZDi-Ow2CnEcLLgJFeZzlS8GVvG7ly0,286
+django_twilio_access_token/views.py,sha256=-vzgz3N79PO1YW5AHFsb5Nqn5m6rGz6Q4k_tOM06PeI,1556
+django_twilio_access_token-0.0.1.dist-info/METADATA,sha256=cYBN7-jKQoXHtHZf6PpXpsUYIWw4vAIgd2VN0ZqVrDc,3357
+django_twilio_access_token-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_twilio_access_token-0.0.1.dist-info/top_level.txt,sha256=nUaFhTwFm9SKmBwi0M_TZON6Ym9eoF8XUasJY3PqZCU,27
+django_twilio_access_token-0.0.1.dist-info/RECORD,,
