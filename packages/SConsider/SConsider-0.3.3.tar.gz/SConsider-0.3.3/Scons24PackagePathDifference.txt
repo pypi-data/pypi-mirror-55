@@ -1,0 +1,158 @@
+~/Develop/coast $ scons -u --usetool=Package --package=$(pwd)/package scripts
+scons: Reading SConscript files ...
+2018-04-24 16:36:33,024 INFO SConsider.Main: SCons version 2.3.0
+2018-04-24 16:36:33,024 INFO SConsider.Main: SConsider version 0.3.12.post105 (linux-x86_64)
+2018-04-24 16:36:33,533 INFO setupBuildTools: using CXX compiler and version: g++(7.3.1)(gnu++98)
+2018-04-24 16:36:33,534 INFO setupBuildTools: using CC compiler and version: gcc(7.3.1)
+2018-04-24 16:36:46,171 INFO SConsider.Main: base output dir [/home/m1huber/coastBuild]
+2018-04-24 16:36:46,171 INFO SConsider.Main: compilation variant [Linux_glibc_2.9-x86_64-32_optimized_trace]
+2018-04-24 16:36:46,175 INFO SConsider.PackageRegistry: Recursively collecting package files ...
+2018-04-24 16:36:46,771 INFO SConsider.Main: Loading packages and their targets ...
+2018-04-24 16:36:46,791 INFO SConsider.Main: BUILD_TARGETS is ['makepackage', 'scripts']
+scons: done reading SConscript files.
+scons: Building targets ...
+scons: `scripts' is up to date.
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/serverfuncs.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/serverfuncs.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/serverfuncs.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/pstackwrapper.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/pstackwrapper.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/pstackwrapper.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/trapsignalfuncs.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/trapsignalfuncs.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/trapsignalfuncs.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/bootScript.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/bootScript.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/bootScript.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/keepwds.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/keepwds.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/keepwds.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/config.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/config.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/config.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/sysfuncs.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/sysfuncs.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/sysfuncs.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/startwds.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/startwds.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/startwds.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/startwda.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/startwda.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/startwda.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/startprf.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/startprf.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/startprf.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/stopwds.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/stopwds.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/stopwds.sh", 0544)
+scons: done building targets.
+warning: could not open directory 'coast/foundation/base/cuteTest/': Permission denied
+
+# (69676/121) Die Apr 24 16:52:34 m1huber@nb-tt-118336 py:.v27sc230Sc05dev(2.7.14) :) (NewSconsiderMerge *+$%)
+~/Develop/coast $ scons -u --usetool=Package --package=$(pwd)/package scripts
+scons: Reading SConscript files ...
+2018-04-24 16:52:45,231 INFO SConsider.Main: SCons version 2.3.0
+2018-04-24 16:52:45,231 INFO SConsider.Main: SConsider version 0.5.0.post93 (linux-x86_64)
+2018-04-24 16:52:45,389 INFO setupBuildTools: using CXX compiler and version: g++(7.3.1)(gnu++98)
+2018-04-24 16:52:45,389 INFO setupBuildTools: using CC compiler and version: gcc(7.3.1)
+2018-04-24 16:52:48,550 INFO SConsider.Main: base output dir [/home/m1huber/coastBuild]
+2018-04-24 16:52:48,550 INFO SConsider.Main: compilation variant [Linux_glibc_2.9-x86_64-32_optimized_trace]
+2018-04-24 16:52:48,552 INFO SConsider.PackageRegistry: Recursively collecting package files ...
+2018-04-24 16:52:48,700 INFO SConsider.Main: Loading packages and their targets ...
+2018-04-24 16:52:48,717 INFO SConsider.Main: BUILD_TARGETS is ['makepackage', 'scripts']
+scons: done reading SConscript files.
+scons: Building targets ...
+scons: `scripts' is up to date.
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/startprf.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/startprf.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/startprf.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/serverfuncs.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/serverfuncs.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/serverfuncs.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/bootScript.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/bootScript.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/bootScript.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/pstackwrapper.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/pstackwrapper.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/pstackwrapper.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/config.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/config.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/config.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/trapsignalfuncs.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/trapsignalfuncs.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/trapsignalfuncs.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/stopwds.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/stopwds.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/stopwds.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/startwds.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/startwds.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/startwds.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/keepwds.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/keepwds.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/keepwds.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/sysfuncs.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/sysfuncs.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/sysfuncs.sh", 0544)
+Install file: "/home/m1huber/coastBuild/globals/scripts/scripts/startwda.sh" as "/home/m1huber/Develop/coast/package/scripts/scripts/startwda.sh"
+Chmod("/home/m1huber/Develop/coast/package/scripts/scripts/startwda.sh", 0544)
+scons: done building targets.
+warning: could not open directory 'coast/foundation/base/cuteTest/': Permission denied
+# (69677/122) Die Apr 24 16:52:48 m1huber@nb-tt-118336 py:.v27sc230Sc05dev(2.7.14) :) (NewSconsiderMerge *+$%)
+
+~/Develop/coast $ scons -u --usetool=Package --package=$(pwd)/package scripts
+scons: Reading SConscript files ...
+2018-04-24 16:48:01,300 INFO SConsider.Main: SCons version 2.4.1
+2018-04-24 16:48:01,301 INFO SConsider.Main: SConsider version 0.3.12.post104 (linux-x86_64)
+2018-04-24 16:48:01,455 INFO setupBuildTools: using CXX compiler and version: g++(7.3.1)(gnu++98)
+2018-04-24 16:48:01,455 INFO setupBuildTools: using CC compiler and version: gcc(7.3.1)
+2018-04-24 16:48:04,742 INFO SConsider.Main: base output dir [/home/m1huber/coastBuild]
+2018-04-24 16:48:04,743 INFO SConsider.Main: compilation variant [Linux_glibc_2.9-x86_64-32_optimized_trace]
+2018-04-24 16:48:04,745 INFO SConsider.PackageRegistry: Recursively collecting package files ...
+2018-04-24 16:48:04,894 INFO SConsider.Main: Loading packages and their targets ...
+2018-04-24 16:48:04,910 INFO SConsider.Main: BUILD_TARGETS is ['makepackage', 'scripts']
+scons: done reading SConscript files.
+scons: Building targets ...
+Install file: "scripts/bootScript.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/bootScript.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/bootScript.sh", 0544)
+Install file: "scripts/config.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/config.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/config.sh", 0544)
+Install file: "scripts/keepwds.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/keepwds.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/keepwds.sh", 0544)
+Install file: "scripts/pstackwrapper.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/pstackwrapper.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/pstackwrapper.sh", 0544)
+Install file: "scripts/serverfuncs.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/serverfuncs.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/serverfuncs.sh", 0544)
+Install file: "scripts/startprf.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/startprf.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/startprf.sh", 0544)
+Install file: "scripts/startwda.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/startwda.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/startwda.sh", 0544)
+Install file: "scripts/startwds.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/startwds.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/startwds.sh", 0544)
+Install file: "scripts/stopwds.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/stopwds.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/stopwds.sh", 0544)
+Install file: "scripts/sysfuncs.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/sysfuncs.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/sysfuncs.sh", 0544)
+Install file: "scripts/trapsignalfuncs.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/trapsignalfuncs.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/trapsignalfuncs.sh", 0544)
+scons: done building targets.
+warning: could not open directory 'coast/foundation/base/cuteTest/': Permission denied
+# (69664/109) Die Apr 24 16:48:04 m1huber@nb-tt-118336 py:.v27sc241Scdev(2.7.14) :) (NewSconsiderMerge *+$%)
+
+# (69672/117) Die Apr 24 16:50:50 m1huber@nb-tt-118336 py:.v27sc241Scdev(2.7.14) :) (NewSconsiderMerge *+$%)
+~/Develop/coast $ scons -u --usetool=Package --package=$(pwd)/package scripts
+scons: Reading SConscript files ...
+2018-04-24 16:50:57,331 INFO SConsider.Main: SCons version 2.4.1
+2018-04-24 16:50:57,331 INFO SConsider.Main: SConsider version 0.5.0.post93 (linux-x86_64)
+2018-04-24 16:50:57,482 INFO setupBuildTools: using CXX compiler and version: g++(7.3.1)(gnu++98)
+2018-04-24 16:50:57,482 INFO setupBuildTools: using CC compiler and version: gcc(7.3.1)
+2018-04-24 16:51:00,761 INFO SConsider.Main: base output dir [/home/m1huber/coastBuild]
+2018-04-24 16:51:00,761 INFO SConsider.Main: compilation variant [Linux_glibc_2.9-x86_64-32_optimized_trace]
+2018-04-24 16:51:00,763 INFO SConsider.PackageRegistry: Recursively collecting package files ...
+2018-04-24 16:51:00,913 INFO SConsider.Main: Loading packages and their targets ...
+2018-04-24 16:51:00,930 INFO SConsider.Main: BUILD_TARGETS is ['makepackage', 'scripts']
+scons: done reading SConscript files.
+scons: Building targets ...
+Install file: "scripts/config.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/config.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/config.sh", 0544)
+Install file: "scripts/keepwds.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/keepwds.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/keepwds.sh", 0544)
+Install file: "scripts/pstackwrapper.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/pstackwrapper.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/pstackwrapper.sh", 0544)
+Install file: "scripts/serverfuncs.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/serverfuncs.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/serverfuncs.sh", 0544)
+Install file: "scripts/startprf.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/startprf.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/startprf.sh", 0544)
+Install file: "scripts/startwda.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/startwda.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/startwda.sh", 0544)
+Install file: "scripts/startwds.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/startwds.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/startwds.sh", 0544)
+Install file: "scripts/stopwds.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/stopwds.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/stopwds.sh", 0544)
+Install file: "scripts/sysfuncs.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/sysfuncs.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/sysfuncs.sh", 0544)
+Install file: "scripts/trapsignalfuncs.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/trapsignalfuncs.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/trapsignalfuncs.sh", 0544)
+Install file: "scripts/bootScript.sh" as "/home/m1huber/coastBuild/globals/scripts/scripts/bootScript.sh"
+Chmod("/home/m1huber/coastBuild/globals/scripts/scripts/bootScript.sh", 0544)
+scons: done building targets.
+warning: could not open directory 'coast/foundation/base/cuteTest/': Permission denied
+
