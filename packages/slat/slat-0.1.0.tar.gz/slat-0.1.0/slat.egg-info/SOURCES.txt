@@ -1,0 +1,7 @@
+README.md
+setup.py
+slat/__init__.py
+slat.egg-info/PKG-INFO
+slat.egg-info/SOURCES.txt
+slat.egg-info/dependency_links.txt
+slat.egg-info/top_level.txt
