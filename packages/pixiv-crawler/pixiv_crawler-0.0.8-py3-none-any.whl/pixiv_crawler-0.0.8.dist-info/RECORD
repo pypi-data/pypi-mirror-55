@@ -1,0 +1,9 @@
+pixiv_crawler/__init__.py,sha256=joNFH0-hC82JuC0x35KrccBV89gJgsSPB5S6at4_lF0,94
+pixiv_crawler/login_sim.py,sha256=tGN6TYETkx9Ao229xXG78Xg8SNoyA3B66YZEnUXq7E0,2607
+pixiv_crawler/myconfig.py,sha256=BzesTXIMs_9suP5YFxY-XBFx1GyK200VhbXNb1wGNac,2123
+pixiv_crawler/scraper_manga.py,sha256=zuoQBdrwK5BDXZZHHy2ARyx5YlomUINHyGM9n6jyxgc,23032
+pixiv_crawler-0.0.8.dist-info/LICENSE.txt,sha256=SEOTOG1s_shgfI08JQLPKD7cVwWxK6B0qJS7vA25w0k,1092
+pixiv_crawler-0.0.8.dist-info/METADATA,sha256=5l420hQpsDEWbDhbsQLT8h9hNj9w7cK9xR9XpDTBVHA,3826
+pixiv_crawler-0.0.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pixiv_crawler-0.0.8.dist-info/top_level.txt,sha256=k9GfXtF2IKTWyfFN53Ujqbo_b5fAzoKhY_gU4tlmrMs,14
+pixiv_crawler-0.0.8.dist-info/RECORD,,
