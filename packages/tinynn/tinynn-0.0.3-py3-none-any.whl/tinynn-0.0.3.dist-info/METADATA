@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: tinynn
+Version: 0.0.3
+Summary: A lightweight deep learning library
+Home-page: https://github.com/borgwang/tinynn
+Author: borgwang
+Author-email: borgwang@126.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy (>=1.16.0)
+Requires-Dist: scipy (>=1.3.1)
+
+tinynn is an open source, lightweight deep learning library written in Python.
+
+
