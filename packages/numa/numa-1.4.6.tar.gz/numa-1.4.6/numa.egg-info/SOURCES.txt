@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+numa.c
+numa.pxd
+numa.py
+numa.pyx
+setup.py
+numa.egg-info/PKG-INFO
+numa.egg-info/SOURCES.txt
+numa.egg-info/dependency_links.txt
+numa.egg-info/top_level.txt
+test/test_ctypes.py
