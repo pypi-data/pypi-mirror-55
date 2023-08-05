@@ -1,0 +1,5 @@
+include regex_*/*.py
+include regex_*/*.h
+include regex_*/*.c
+include docs/*.*
+include tools/*.py
