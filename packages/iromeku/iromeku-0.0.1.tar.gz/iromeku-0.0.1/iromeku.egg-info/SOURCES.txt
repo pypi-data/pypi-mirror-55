@@ -1,0 +1,12 @@
+README.md
+setup.py
+iromeku/__init__.py
+iromeku/iromeku.py
+iromeku/py.typed
+iromeku.egg-info/PKG-INFO
+iromeku.egg-info/SOURCES.txt
+iromeku.egg-info/dependency_links.txt
+iromeku.egg-info/requires.txt
+iromeku.egg-info/top_level.txt
+test/__init__.py
+test/test_sanity.py
