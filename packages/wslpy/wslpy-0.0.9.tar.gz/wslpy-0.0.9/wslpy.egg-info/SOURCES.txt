@@ -1,0 +1,10 @@
+README.md
+setup.py
+wslpy/__init__.py
+wslpy/convert.py
+wslpy/exec.py
+wslpy/system.py
+wslpy.egg-info/PKG-INFO
+wslpy.egg-info/SOURCES.txt
+wslpy.egg-info/dependency_links.txt
+wslpy.egg-info/top_level.txt
