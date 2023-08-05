@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: test-lab
+Version: 0.11
+Summary: A tool to test apps on mobile devices and PC
+Home-page: https://github.com/Volodar/test_lab
+Author: Vladimir Tolmachev
+Author-email: tolm_vl@hotmail.com
+License: UNKNOWN
+Description: A tool to test apps on mobile devices and PC
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
