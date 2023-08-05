@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+poiolib/WikiExtractor.py
+poiolib/__init__.py
+poiolib/langinfo.py
+poiolib/wikipedia.py
+poiolib.egg-info/PKG-INFO
+poiolib.egg-info/SOURCES.txt
+poiolib.egg-info/dependency_links.txt
+poiolib.egg-info/requires.txt
+poiolib.egg-info/top_level.txt
