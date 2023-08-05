@@ -1,0 +1,99 @@
+Metadata-Version: 2.1
+Name: cherrypy-ask-sdk
+Version: 0.1.3
+Summary: CherryPy ASK SDK - Extending ASK SDK to work with CherryPy
+Home-page: https://github.com/cyraxjoe/cherrypy-ask-sdk
+Author: Joel Rivera
+Author-email: rivera@joel.mx
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Framework :: CherryPy
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: !=3.0.*,!=3.1.*,!=3.2.*,!=3.3.*,!=3.4.*,!=3.5.*,>2.6
+Requires-Dist: ask-sdk
+Requires-Dist: ask-sdk-webservice-support
+Requires-Dist: CherryPy
+
+################
+CherryPy ASK SDK
+################
+
+Extending `Ask SDK <https://github.com/alexa/alexa-skills-kit-sdk-for-python>`_ to work with CherryPy.
+
+Quick Start
+-----------
+
+Mandatory `warning` from the upstream ask-sdk for python.
+
+.. warning::
+
+    These features are currently in beta. You can view the source
+    code in the
+    `Ask Python Sdk <https://github.com/alexa/alexa-skills-kit-sdk-for-python>`_
+    repo on GitHub. The interface might change when the features are released as
+    stable.
+
+If you already have a skill built using the ASK SDK skill builders, then you
+only need to do the following to set this up in your CherryPy application:
+
+.. code-block:: python
+
+    import cherrypy
+    import cherrypy_ask_sdk
+    from ask_sdk_core.skill_builder import SkillBuilder
+
+    sb = SkillBuilder()
+    # Register all handlers, interceptors etc.
+    # For eg : sb.add_request_handler(LaunchRequestHandler())
+
+    # add the ask_sdk_skill tool in the global ``cherrypy.tools`` toolbox.
+    # Passing the cherrypy.tools toolbox is the default, but passing it
+    # explicitly just to make it more explicit.
+    cherrypy_ask_sdk.add_in_toolbox(cherrypy.tools)
+
+    if __name__ == '__main__':
+        cherrypy.quickstart(
+            config={
+                '/': {
+                    'tools.ask_sdk_skill.on': True,
+                    'tools.ask_sdk_skill.skill': sb.create(),
+                    'tools.ask_sdk_skill.verify_signature': True,
+                    'tools.ask_sdk_skill.verify_timestamp': True
+                }
+            }
+        )
+
+Installation
+------------
+
+.. code-block::
+
+   pip install cherrypy-ask-sdk
+
+
+Features
+--------
+
+- Works as an extension on skills built using ASK SDK. No need to learn
+  something new.
+
+- Provides default request signature and request timestamp verification.
+
+- Provides a way to register multiple skills in the tree.
+
+
+.. note::
+
+   This package was heavily inspired by the official Flask Ask SDK.
+
+
