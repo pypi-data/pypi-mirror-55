@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: utify
+Version: 0.0.3
+Summary: Utility Functions in Python
+Home-page: https://github.com/yajiez/utify/
+Author: yajiez
+Author-email: yajiez.me@gmail.com
+License: mit
+Project-URL: Documentation, https://utify.readthedocs.io
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python
+Description-Content-Type: text/x-rst; charset=UTF-8
+Requires-Dist: fire
+Requires-Dist: wasabi
+Requires-Dist: ipython
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: pyarrow
+Requires-Dist: sqlalchemy
+Requires-Dist: seaborn
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: tox ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+UNKNOWN
+
+
