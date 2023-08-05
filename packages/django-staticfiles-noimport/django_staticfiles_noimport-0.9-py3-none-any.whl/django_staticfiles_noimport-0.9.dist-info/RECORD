@@ -1,0 +1,9 @@
+django_staticfiles_noimport-0.9.data/scripts/collectstatic,sha256=A1IJQVwRqbIbDjL2dpLh5wOMwOWl13eqDlgTFH-tQhM,741
+django_staticfiles_noimport-0.9.data/scripts/findstatic,sha256=Zzj28bA02mX6vStENl-cUuGKpw5L3awTH4A8PZYbm-k,797
+staticfiles_noimport/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+staticfiles_noimport/finders.py,sha256=kLWchqPqTOvVTzeUvw0vzqpYPtl-9GNHjYHXr-ll8nE,1289
+django_staticfiles_noimport-0.9.dist-info/LICENSE,sha256=R4TAcCk5TdtOzeYm3l3Jx9f5I89bhm6HxnJnUzPy9S4,1063
+django_staticfiles_noimport-0.9.dist-info/METADATA,sha256=WDaFbnpTvxFKUG9_3pKRq5RBByNya62nE3fYu2vhCcs,3317
+django_staticfiles_noimport-0.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_staticfiles_noimport-0.9.dist-info/top_level.txt,sha256=AJ251v-VAZ6XIYPmzijhU_ENTvBr6E4CaKlxvBVHgo4,21
+django_staticfiles_noimport-0.9.dist-info/RECORD,,
