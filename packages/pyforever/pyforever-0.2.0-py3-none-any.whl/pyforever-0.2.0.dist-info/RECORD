@@ -1,0 +1,10 @@
+pyforever/__init__.py,sha256=qQHE_hcOmd-nh6nFxwZy2T5cjf2BymxFY202kGMssN0,53
+pyforever/__main__.py,sha256=9nQVHHHkBAh56vdjZdjUJJiukDUhfvaqcjRolqUQnOE,1912
+pyforever/__version__.py,sha256=R8RqbDWZWjiCYjsabXo4K7FQtpJUS3k0Vb1fvSvjWSI,66
+pyforever/watchers.py,sha256=f5lqGkZUls6aJiIniC-Y20FY5ELxeY6PyNqK1jLXNqs,575
+pyforever-0.2.0.dist-info/LICENSE.txt,sha256=KN8HFOsKBmPPhTFI9SQgSoFFmsidBwTlGokAzjE_UCU,1089
+pyforever-0.2.0.dist-info/METADATA,sha256=T8mQc2a97Djll4A8I8SxQffVR_5SL5dYBiyqA9boLY8,1418
+pyforever-0.2.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pyforever-0.2.0.dist-info/entry_points.txt,sha256=ZLP8JJmpSMpzoUmzC4jwwPhF8mZFkhcE8XZTvifMbMQ,55
+pyforever-0.2.0.dist-info/top_level.txt,sha256=yzeSFJ0iTyBC52lzkEDQX5bS3xN_v4ZW9FzTrGtjDs8,10
+pyforever-0.2.0.dist-info/RECORD,,
