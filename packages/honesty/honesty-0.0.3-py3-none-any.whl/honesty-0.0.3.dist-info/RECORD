@@ -1,0 +1,17 @@
+honesty/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+honesty/__version__.py,sha256=4GZKi13lDTD25YBkGakhZyEQZWTER_OWQMNPoH_UM2c,22
+honesty/archive.py,sha256=WEeymIsnjBTRaJazKTM3UJAzPXDHms0G2rgFXxGcgs4,2048
+honesty/cache.py,sha256=EoL8iYagKml238IXkB96TRTSSpkvOjPo708ayvBRbVk,1710
+honesty/checker.py,sha256=NXnV9j7j5UslfRy4dj_TUuWSdewh3AOyPztaHxIsAY4,5139
+honesty/cmdline.py,sha256=M8zHrw8cFx27feXLf4LmvGvjUUGXfJabi-UkeIdiKnE,2845
+honesty/releases.py,sha256=U7VjAmPPzqfHXox37ksLmxkisRQfuwno5tyrz7Qdhik,3083
+honesty/tests/__init__.py,sha256=xHuNJng7b5BN6zrPvNuUe4_95DT046n8HgIGTJkl1WI,64
+honesty/tests/__main__.py,sha256=UtXOv2CA2jKvt1P_bIqDVFg4qJAZeU_L1qbR7903v7k,99
+honesty/tests/cache.py,sha256=y_utUsFVjkRRZFr2yTiYxTlwAZLnAXlyyCv3zi8TOYc,1966
+honesty/tests/releases.py,sha256=7rBQcw-LarJvlfQByALMu-h7RyRhNZapu-RDQduOf-U,4069
+honesty-0.0.3.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+honesty-0.0.3.dist-info/METADATA,sha256=O2VRVMJO95El4Eip2OaBzvUWv1Fv7nNYTDqTFharrSA,1711
+honesty-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+honesty-0.0.3.dist-info/entry_points.txt,sha256=ajtyG64-jlq51UCqcZx9NjXH4-j1r_bkZxGk8ZPOUSo,50
+honesty-0.0.3.dist-info/top_level.txt,sha256=wuc0luHZFdC8Y38YrJ--XnWq0e8ndFI2AtJxEKvhBac,8
+honesty-0.0.3.dist-info/RECORD,,
