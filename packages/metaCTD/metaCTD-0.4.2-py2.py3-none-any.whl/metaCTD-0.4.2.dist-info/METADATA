@@ -1,0 +1,77 @@
+Metadata-Version: 2.1
+Name: metaCTD
+Version: 0.4.2
+Summary: GUI to read and view conductivity, temperature and depth (CTD) files and to manage and creating metadata by defining stations, transects, campaigns
+Home-page: https://github.com/MarineDataTools/metaCTD
+Author: Peter Holtermann
+Author-email: peter.holtermann@io-warnemuende.de
+License: GPLv03
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+Requires-Dist: geojson
+Requires-Dist: gsw
+Requires-Dist: pyaml
+Requires-Dist: pycnv
+Requires-Dist: pyproj
+Requires-Dist: pysst
+Requires-Dist: pytz
+
+.. sectnum::
+
+Python toolbox to read, process and plot several different
+conductivity, temperature and depth (CTD) formats including Seabird
+and Sea &amp; Sun Technology files. The main task is to search valid
+data in a certain folder and to define metadata as stations,
+transects, campaigns. 
+
+The backbone of the metaCTD toolbox are tools to read and process
+different CTD fie formats from different vendors. This includes tools
+to for Seabird_ cnv files and `Sea & Sun Technology`_ (SST) microstructure profilers (MSS).
+
+.. _Seabird: http://www.seabird.com/
+.. _Sea & Sun Technology: https://www.sea-sun-tech.com/technology.html
+
+Install
+=======
+
+The package was developed using python 3.5+, it might work with
+earlier versions, but its not supported. The newest
+`Gibb Sea Water Toolbox (gsw) <https://github.com/TEOS-10/GSW-Python>`_
+depends also on python 3.5+, pycnv heavily depends on the gsw toolbox. It
+therefore strongly recommended to use python 3.5+.
+
+User
+----
+
+Install as a user 
+
+.. code:: bash
+
+   python setup.py install --user
+
+Uninstall as a user
+
+.. code:: bash
+
+   pip uninstall metaCTD
+
+
+Seabird
+=======
+
+The cnv text files are the standard output files of the Seabird CTD
+software. The files are processed with the "pycnv" package.
+
+
+Sea & Sun Technology (SST)
+==========================
+
+The mrd binary files are the standard output files of the MSS-Profiler
+software. The files are processed with the "pysst" tools.
+
+
+
+
+
+
+
