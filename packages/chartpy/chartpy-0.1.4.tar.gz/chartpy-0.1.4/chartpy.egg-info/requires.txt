@@ -1,0 +1,11 @@
+pandas
+matplotlib
+pdfkit
+twython
+pytz
+requests
+numpy
+plotly
+cufflinks
+bokeh
+vispy
