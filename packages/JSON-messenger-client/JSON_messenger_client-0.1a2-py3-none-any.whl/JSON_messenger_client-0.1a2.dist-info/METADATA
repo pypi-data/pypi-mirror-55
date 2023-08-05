@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: JSON-messenger-client
+Version: 0.1a2
+Summary: JSON instant messenger, learning project
+Home-page: UNKNOWN
+Author: Andrey Kiselev
+Author-email: kiselevandrew@yandex.ru
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pycryptodome (==3.9.0)
+Requires-Dist: PyQt5 (==5.13.1)
+
+UNKNOWN
+
+
