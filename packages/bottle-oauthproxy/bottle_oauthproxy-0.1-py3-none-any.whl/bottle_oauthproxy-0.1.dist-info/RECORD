@@ -1,0 +1,9 @@
+bottle_oauthproxy/__init__.py,sha256=lwYVtaaUxAT-u56kUGJUuwM4bRdcuAKEr0VaE5sK9Wg,126
+bottle_oauthproxy/authenticator.py,sha256=lZGjmknfrlC-f_L1o16fU3fQihX-j7pZMYPFWpSMUBQ,2021
+bottle_oauthproxy/client.py,sha256=D7vV-N63MHw4Va_KT5cODE9As6Yq2LZTLYLz9BToiU8,531
+bottle_oauthproxy/provider.py,sha256=307m5avfj_3zJhTIgUvR1bY8GukAoawUsoby0qROFkM,2000
+bottle_oauthproxy/server.py,sha256=lJqOwWRPZhZfrUC3wAPVxoFH9LKVxPZVvSkAUeAwXEA,2993
+bottle_oauthproxy-0.1.dist-info/METADATA,sha256=kbgYVu3Kq7UbfjaC3H0rsYOmgizdZSnUudkx49XlAAc,441
+bottle_oauthproxy-0.1.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+bottle_oauthproxy-0.1.dist-info/top_level.txt,sha256=Z-AE1BVW_edstV5LlteeyzbfgX8y2mP-GdVZcsY0618,18
+bottle_oauthproxy-0.1.dist-info/RECORD,,
