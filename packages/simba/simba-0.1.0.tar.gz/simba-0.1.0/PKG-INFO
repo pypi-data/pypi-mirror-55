@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: simba
+Version: 0.1.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Babylon Health
+Author-email: UNKNOWN
+License: Proprietary
+Description: https://github.com/babylonhealth/simba
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
