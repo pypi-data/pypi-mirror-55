@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: supporttracker
+Version: 1.0.1
+Summary: Tracker for Slack support requests
+Home-page: UNKNOWN
+Author: Amin Zarshenas
+Author-email: amin.zarshenas@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.0.0
+Provides-Extra: all
+Provides-Extra: doc
