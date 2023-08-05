@@ -1,0 +1,2 @@
+sanic>=18.12
+prometheus-client~=0.7.1
