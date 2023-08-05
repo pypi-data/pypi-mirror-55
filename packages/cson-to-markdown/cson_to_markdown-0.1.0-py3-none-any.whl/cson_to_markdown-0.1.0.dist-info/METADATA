@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: cson-to-markdown
+Version: 0.1.0
+Summary: Extracts the markdown section from .cson files.
+License: MIT
+Author: Bram Vereertbrugghen
+Author-email: bramvereertbrugghen@live.be
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: fire (>=0.2.1,<0.3.0)
+Requires-Dist: pyyaml (>=5.1,<6.0)
+Requires-Dist: smart-getenv (>=1.1,<2.0)
