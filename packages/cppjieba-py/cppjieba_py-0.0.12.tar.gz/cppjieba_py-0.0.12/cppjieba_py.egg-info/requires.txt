@@ -1,0 +1,5 @@
+pybind11>=2.2.0
+setuptools>=0.7.0
+
+[test]
+spec==1.4.1
