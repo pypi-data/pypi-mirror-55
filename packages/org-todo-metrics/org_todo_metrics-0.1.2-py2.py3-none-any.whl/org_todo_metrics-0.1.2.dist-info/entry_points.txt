@@ -1,0 +1,3 @@
+[console_scripts]
+otm = org_todo_metrics.cli:main
+
