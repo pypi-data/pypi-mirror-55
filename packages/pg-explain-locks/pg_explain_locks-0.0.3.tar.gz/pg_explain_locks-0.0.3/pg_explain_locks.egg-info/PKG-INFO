@@ -1,0 +1,116 @@
+Metadata-Version: 2.1
+Name: pg-explain-locks
+Version: 0.0.3
+Summary: Postgres utility to show what locks will be acquired by a given query.
+Home-page: https://github.com/AdmTal/PostgreSQL-Query-Lock-Explainer
+Author: Adam Tal
+Author-email: admtal@gmail.com
+License: UNKNOWN
+Description: # PostgreSQL Query Lock Explainer
+        
+        Utility to show what locks will be acquired by a given query.
+        
+        Query is executed but not committed.
+        
+        ## Installation instructions
+        
+        ```.env
+        pip install pg_explain_locks
+        ```
+        
+        ## Example Usage
+        
+        Examples shown against [dvdrental sample database](http://www.postgresqltutorial.com/postgresql-sample-database/)
+        
+        ```.env
+        pg_explain_locks \
+          --user DB_USER \
+          --password DB_PASSWORD \
+          --database DATABASE \
+          --host HOST \
+          --query "DROP table actor CASCADE"
+          
+        +-------------+----------------------------+---------------------+
+        | Relation ID | Relation Name              | Lock Type           |
+        +-------------+----------------------------+---------------------+
+        | 16422       | actor                      | AccessExclusiveLock |
+        | 16448       | film_actor                 | AccessExclusiveLock |
+        | 16456       | actor_info                 | AccessExclusiveLock |
+        | 16487       | film_list                  | AccessExclusiveLock |
+        | 16506       | nicer_but_slower_film_list | AccessExclusiveLock |
+        | 16557       | actor_pkey                 | AccessExclusiveLock |
+        | 16588       | idx_actor_last_name        | AccessExclusiveLock |
+        +-------------+----------------------------+---------------------+
+        
+        ```
+        
+        ```.env
+        pg_explain_locks \
+          --user DB_USER \
+          --password DB_PASSWORD \
+          --database DATABASE \
+          --host HOST \
+          --query "SELECT * FROM film_actor fa JOIN actor a on a.actor_id=fa.actor_id FOR UPDATE"
+          
+        +-------------+---------------------+-----------------+
+        | Relation ID | Relation Name       | Lock Type       |
+        +-------------+---------------------+-----------------+
+        | 16422       | actor               | RowShareLock    |
+        | 16448       | film_actor          | RowShareLock    |
+        | 16557       | actor_pkey          | AccessShareLock |
+        | 16569       | film_actor_pkey     | AccessShareLock |
+        | 16588       | idx_actor_last_name | AccessShareLock |
+        | 16593       | idx_fk_film_id      | AccessShareLock |
+        +-------------+---------------------+-----------------+
+        
+        ```
+        
+        ```.env
+        
+        pg_explain_locks \
+          --user DB_USER \
+          --password DB_PASSWORD \
+          --database DATABASE \
+          --host HOST \
+          --query "ALTER TABLE customer ADD COLUMN deleted BOOLEAN"
+          
+        +-------------+---------------+---------------------+
+        | Relation ID | Relation Name | Lock Type           |
+        +-------------+---------------+---------------------+
+        | 16411       | customer      | AccessExclusiveLock |
+        +-------------+---------------+---------------------+
+        ```
+        
+        ## Example usage with settings file
+        
+        Create a settings file at `~/.pg_explain_locks_settings` in order to use the same DB settings every time.
+        
+        Settings file contents :
+        ```.env
+        USER=your_user
+        PASSWORD=your_password
+        DATABASE=your_database
+        HOST=your_host
+        PORT=your_post
+        ```
+        
+        Usage:
+        
+        ```.env
+        pg_explain_locks "ALTER TABLE customer ADD COLUMN deleted BOOLEAN"
+        
+        +-------------+---------------+---------------------+
+        | Relation ID | Relation Name | Lock Type           |
+        +-------------+---------------+---------------------+
+        | 16411       | customer      | AccessExclusiveLock |
+        +-------------+---------------+---------------------+
+        ```
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
