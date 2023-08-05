@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: arcade
+Version: 1.0.0
+Summary: Sample Python Package
+Home-page: https://pypi-package-example.readthedocs.io/en/latest/
+Author: Paul Vincent Craven
+Author-email: paul.craven@simpson.edu
+License: MIT
+Download-URL: http://arcade.academy
+Project-URL: Documentation, https://pypi-package-example.readthedocs.io/en/latest/
+Project-URL: Issue Tracker, https://github.com/pvcraven/pypi_package_example/issues
+Project-URL: Source, https://github.com/pvcraven/pypi_package_example
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
+Requires-Dist: arcade
+
+Welcome to The Sample PyPi Library!
+===================================
+
+This is a sample PyPi library
+
+.. image:: https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat)
+    :target: http://makeapullrequest.com
+    :alt: Pull Requests Welcome
+
+.. image:: https://img.shields.io/badge/first--timers--only-friendly-blue.svg
+    :alt: first-timers-only Friendly
+    :target: http://www.firsttimersonly.com/
+
+.. image:: https://travis-ci.org/pvcraven/pypi_package_example.svg?branch=master
+    :target: https://travis-ci.org/pvcraven/pypi_package_example
+
+.. image:: https://coveralls.io/repos/github/pvcraven/pypi_package_example/badge.svg?branch=master
+    :target: https://coveralls.io/github/pvcraven/pypi_package_example?branch=master
+
+
+Documentation
+-------------
+
+* For full documentation see http://arcade.academy
+
+Latest Release
+--------------
+
+Latest version is 1.0.0 released 2019-11-02.
+
+Release notes: https://pypi-package-example.readthedocs.io/
+
+Contact the Maintainer
+----------------------
+
+paul@cravenfamily.com
+
