@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: ppadb-uiautomator
+Version: 1.0.0
+Summary: Fork from uiautomator - Python Wrapper for Android UiAutomator test tool
+Home-page: https://github.com/swind/uiautomator
+Author: Xiaocong He
+Author-email: xiaocong@gmail.com,hongbin.bao@gmail.com
+License: MIT
+Download-URL: https://github.com/swind/uiautomator/tarball/1.0.0
+Description: Fork from uiautomator - Python wrapper for Android uiautomator tool and replace the adb cli by ppadb.
+Keywords: testing,android,uiautomator
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Testing
