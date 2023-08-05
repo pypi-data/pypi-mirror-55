@@ -1,0 +1,7 @@
+requests==2.21.0
+
+[:python_version<'3']
+enum34
+
+[development]
+wheel==0.31.0
