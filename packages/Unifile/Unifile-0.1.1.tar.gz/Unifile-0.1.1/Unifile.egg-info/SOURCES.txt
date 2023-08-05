@@ -1,0 +1,10 @@
+README.md
+setup.py
+Unifile.egg-info/PKG-INFO
+Unifile.egg-info/SOURCES.txt
+Unifile.egg-info/dependency_links.txt
+Unifile.egg-info/requires.txt
+Unifile.egg-info/top_level.txt
+unifile/__init__.py
+unifile/dump.py
+unifile/otevrit.py
