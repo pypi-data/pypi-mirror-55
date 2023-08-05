@@ -1,0 +1,33 @@
+Metadata-Version: 2.0
+Name: erebo
+Version: 1.1.23
+Summary: Erebo is a VPN like a Proxy
+Home-page: https://gitlab.com/lennin.caro/erebo/
+Author: Lennin Caro
+Author-email: renjin25@gmail.com
+License: MIT
+Keywords: Python Erebo VPN Proxy Net
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: Intended Audience :: Telecommunications Industry
+Classifier: Environment :: Console
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: Proxy Servers
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: Terminals
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: docker
+Requires-Dist: lockfile
+Requires-Dist: redis
+Requires-Dist: requests
+
+Erebo is a system that allows provisioning VPN from several providers and offering those VPNs as a service allowing connection to these as if you were using a proxy
+
+
