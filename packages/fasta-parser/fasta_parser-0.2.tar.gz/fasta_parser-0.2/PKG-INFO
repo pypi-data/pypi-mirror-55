@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: fasta_parser
+Version: 0.2
+Summary: A first try on FASTA files parsing
+Home-page: https://github.com/Fercho120/FASTA
+Author: Fernando Garcia
+Author-email: dfgr0316@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: FASTA files parser
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
