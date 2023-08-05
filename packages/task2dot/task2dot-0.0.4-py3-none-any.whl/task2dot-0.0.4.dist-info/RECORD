@@ -1,0 +1,16 @@
+bin/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bin/task2dot.py,sha256=EpeQEAefzniB_ruPZ9YLHrMx82V8w2O-knvkt7ZBsh0,4941
+task2net/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+task2net/edges.py,sha256=EUmi_iaFzV1WowlAhvM44Spgun_7W2CaMTqCJu-8ry0,5565
+task2net/net2dot.py,sha256=UIQy8wNxKMcwjNZbEXQQ_QviwjMGeZIvSBOv3ixaToI,2365
+task2net/task_lib.py,sha256=_TXzO_PotmjdDZPEhyiKB-OIiyH96HvaZ7YdB6iiFdA,2760
+taskwarrior2net/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+taskwarrior2net/edges.py,sha256=EUmi_iaFzV1WowlAhvM44Spgun_7W2CaMTqCJu-8ry0,5565
+taskwarrior2net/net2dot.py,sha256=UIQy8wNxKMcwjNZbEXQQ_QviwjMGeZIvSBOv3ixaToI,2365
+taskwarrior2net/task_lib.py,sha256=_TXzO_PotmjdDZPEhyiKB-OIiyH96HvaZ7YdB6iiFdA,2760
+task2dot-0.0.4.dist-info/LICENSE,sha256=UvuYgKuUDtKuc-8S9ZdrFpSVRES2xyTvcT5nYvsoqvg,647
+task2dot-0.0.4.dist-info/METADATA,sha256=zIkJOWR4Pj5Rb_R3I7okAAcyKKAjqbfwZIzdZUio19I,4182
+task2dot-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+task2dot-0.0.4.dist-info/entry_points.txt,sha256=Pq9l5zsKqDU5jfVodU9kZhDI5a7r7Tq3d3-frL1-cW8,48
+task2dot-0.0.4.dist-info/top_level.txt,sha256=92285_7SyZXSTTG1Ic-pVoGIZ5H1XfMUT3AzLM9tazE,13
+task2dot-0.0.4.dist-info/RECORD,,
