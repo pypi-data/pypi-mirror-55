@@ -1,0 +1,14 @@
+anyconfig
+appdirs
+phabricator
+pyyaml
+docopt
+
+[docs]
+docs
+
+[test]
+coverage
+flake8
+pytest
+tox

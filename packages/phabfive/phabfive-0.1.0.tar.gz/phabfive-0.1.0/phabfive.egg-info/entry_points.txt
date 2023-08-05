@@ -1,0 +1,3 @@
+[console_scripts]
+phabfive = phabfive.cli:cli_entrypoint
+
