@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: nbcommands
+Version: 0.1.0
+Summary: Shell commands for Jupyter notebooks!
+Home-page: https://github.com/vinayak-mehta/nbshell
+Author: Vinayak Mehta
+Author-email: vmehta94@gmail.com
+License: Apache 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: Sphinx (==2.2.1) ; extra == 'dev'
+
+# nbcommands
+
+Shell commands for Jupyter notebooks!
+
+
