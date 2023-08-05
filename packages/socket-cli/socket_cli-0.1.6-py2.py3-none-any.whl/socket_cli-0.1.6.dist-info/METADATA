@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: socket-cli
+Version: 0.1.6
+Summary: CLI for SocketIO, WebSocket, Unix-Socket. With auto-completion and syntax highlighting.
+Home-page: http://pypi.python.org/pypi/PackageName/
+Author: gcaaa31928
+Author-email: gcaaa31928@gmail.com
+License: LICENSE.txt
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Development Status :: 3 - Alpha
+Classifier: Operating System :: Unix
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: click (>=4.0)
+Requires-Dist: prompt-toolkit (>=2.0.10)
+Requires-Dist: fuzzyfinder (>=2.1.0)
+Requires-Dist: python-socketio (>=4.3.1)
+Requires-Dist: pygments (>=2.4.2)
+Requires-Dist: halo
+Requires-Dist: websockets (>=8.1)
+Requires-Dist: asyncio (>=3.4.3)
+Requires-Dist: requests
+
+<h1 align="center">Welcome to socket-cli 👋</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-0.1.5-blue.svg?cacheSeconds=2592000" />
+  <a href="#" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/badge/License-MIT-yellow.svg" />
+  </a>
+</p>
+
+## Author
+
+👤 **gcaaa31928**
+
+* Website: http://gcaaa.blogspot.tw/
+* Github: [@gcaaa31928](https://github.com/gcaaa31928)
+
+## Show your support
+
+Give a ⭐️ if this project helped you!
+
+***
+_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+
+
