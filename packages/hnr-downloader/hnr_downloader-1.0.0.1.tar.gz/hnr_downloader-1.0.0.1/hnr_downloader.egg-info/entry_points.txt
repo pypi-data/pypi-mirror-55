@@ -1,0 +1,3 @@
+[console_scripts]
+hnr_dl = hnr_downloader.main:start
+

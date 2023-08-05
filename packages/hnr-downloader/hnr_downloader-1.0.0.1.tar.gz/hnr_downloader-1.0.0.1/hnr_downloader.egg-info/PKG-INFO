@@ -1,0 +1,90 @@
+Metadata-Version: 1.2
+Name: hnr-downloader
+Version: 1.0.0.1
+Summary: A download manager by Python.
+Home-page: https://github.com/dergenlee/hnr_downloader
+Author: Dergen Lee
+Author-email: dergenlee@163.com
+License: UNKNOWN
+Project-URL: Documentation, https://github.com/dergenlee/hnr_downloader
+Project-URL: Funding, https://donate.pypi.org
+Project-URL: Source, https://github.com/dergenlee/hnr_downloader
+Project-URL: Tracker, https://github.com/dergenlee/hnr_downloader/issues
+Description: Hnr Downloader
+        ==============
+        
+        Description
+        -----------
+        
+        *Hnr Downloader* is a free software for managing downloading files from web 
+        using http or https .
+        
+        It was designed by Dergen Lee. Once I searched for a downloader, no one suited
+        my request. So I develop this simply software, just for my own use, and maybe 
+        you. 
+        
+        
+        Features
+        ~~~~~~~~
+        
+        * Resumable: if the source support, the soft may start download from last position.
+        
+        * Separate Proxy: Each download task may set its own proxy sever.
+        
+        * Recording: Record every download task info for review or redownload.
+        
+        Requirements
+        ------------
+        
+        * Python 3
+        
+          Project depends on Python 3
+        
+        * wxPython
+        
+          A cross-platform GUI toolkit for the Python language. 
+        
+        * Requests
+          An elegant and simple HTTP library for Python, built for human beings.
+        
+        See ``INSTALL`` file for installation instructions.
+        
+        Configs
+        ------------
+        
+        * Language  
+        
+          The software's default language is simplified chinene. English and taiwan chinese
+          are supported, too. The languang config is in i18n\lang.json file.
+        
+        Usage
+        ------------
+        
+        	pyhtonw hnr_downloader.py
+        
+        License
+        -------
+        
+        **Hnr Downloader** is released under the terms of the Apache License, Version 2.0
+        
+        Please read the  ``license.txt``  file for details.
+        
+        
+        
+        Authors
+        -------
+        
+        Deren Lee (derganlee@163.com)
+        
+Keywords: download manager
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3
