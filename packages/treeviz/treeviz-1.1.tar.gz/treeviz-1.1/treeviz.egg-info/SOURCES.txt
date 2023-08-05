@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+treeviz/__init__.py
+treeviz/treeviz.py
+treeviz.egg-info/PKG-INFO
+treeviz.egg-info/SOURCES.txt
+treeviz.egg-info/dependency_links.txt
+treeviz.egg-info/top_level.txt
