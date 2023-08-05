@@ -1,0 +1,17 @@
+Metadata-Version: 2.0
+Name: mailipy
+Version: 0.0.2
+Summary: Bulk send emails easily
+Home-page: UNKNOWN
+Author: William Di Luigi
+Author-email: williamdiluigi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+
+UNKNOWN
+
+
