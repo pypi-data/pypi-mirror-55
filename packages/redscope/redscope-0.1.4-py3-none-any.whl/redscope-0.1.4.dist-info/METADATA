@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: redscope
+Version: 0.1.4
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Jesse Maitland
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: rambo-py
+Requires-Dist: psycopg2-binary
+Requires-Dist: pandas
+Requires-Dist: python-dotenv
+
+UNKNOWN
+
+
