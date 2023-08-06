@@ -1,0 +1,26 @@
+# Python bytecode
+*.pyc
+# cffi output
+*.so
+*.o
+*.c
+
+# Test output
+.coverage
+.cache
+.mypy_cache
+# Build output
+/dist/
+/build/
+/pywayland.egg-info
+
+# Scanner output
+/pywayland/protocol
+
+# Vim swap files
+*.swp
+.ycm_extra_conf.py
+
+# Doc output
+/doc/_build/
+/doc/module/protocol/
