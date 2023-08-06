@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: nextcode-cli
+Version: 1.20.0
+Summary: Nextcode sample processing tool
+Home-page: https://www.wuxinextcode.com
+Author: WUXI NextCODE
+Author-email: support@wuxinextcode.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
