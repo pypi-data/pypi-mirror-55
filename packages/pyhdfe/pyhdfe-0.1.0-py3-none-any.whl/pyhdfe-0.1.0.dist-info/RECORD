@@ -1,0 +1,13 @@
+pyhdfe/__init__.py,sha256=x_M4uHS8CEN93tFzWEwCMRPKaQZChzVmZqDTLuT6iXE,186
+pyhdfe/algorithms.py,sha256=LiB7HZSo9wm1_cxZyAwrDRMeYFKNz0B1q-BHXbot7xE,28074
+pyhdfe/interface.py,sha256=Hb6QSQUHxN9PokhabimlSqV84eWYXP1rKFhynqwxFjQ,13323
+pyhdfe/utilities.py,sha256=lfPargdeFYxBCmkB4DBwCPfma2hn0zzMNCHNXvVDsCE,4515
+pyhdfe/version.py,sha256=loAz4nJPY4SVZCBos4sSKVpfkD5tetahPH0BlKGrUL4,57
+pyhdfe/tests/__init__.py,sha256=Qp2drZcUIbTRmaZqkNeF8mx3fO6V6iJ4Ra9tbuFboXY,22
+pyhdfe/tests/conftest.py,sha256=d6ZErL98WOjFtLUuQVzbkGDR-irBRXXrRBw-fraukM0,3566
+pyhdfe/tests/test_hdfe.py,sha256=8SSb3xu3-BIxD-T-EhnCvCHWTYrtHj4vEfvVhI3sgO4,4857
+pyhdfe-0.1.0.dist-info/LICENSE.txt,sha256=rvG4VKuOOobLvhVXWZb1hBf1mn_dpIIwcUGLGM4SXx0,1080
+pyhdfe-0.1.0.dist-info/METADATA,sha256=nGGW_t_Z2zs6itk3O2jAarC6hOp1HwQ-JFUuvv_SVVQ,3749
+pyhdfe-0.1.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+pyhdfe-0.1.0.dist-info/top_level.txt,sha256=qA0fq3WAhvDgqfoOYxiWNat8xvhItcQRkArvaAnD1eY,7
+pyhdfe-0.1.0.dist-info/RECORD,,
