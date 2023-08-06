@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: intelix
+Version: 0.1.1
+Summary: Sophos Labs Intelix Client
+Home-page: UNKNOWN
+Author: Stephen OLeary
+Author-email: stephen.oleary@sophos.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# Sophos Labs Intelix
+Client for the Sophos Labs Intelix API
+
+https://api.labs.sophos.com/doc/index.html
+
+## example
+
+Connect to the API by providing your client ID and secret key 
+
+```
+import intelix
+clientId = "xxxxxxxxxxx"
+secret = "xxxxxxxxxxxxxxxxxxxxxxxxx"
+url = "www.sophos.com"
+
+i = intelix.client(clientId,secret)
+i.url_lookup(url)
+print(i.productivityCategory)
+```
+
+
+
+
+
