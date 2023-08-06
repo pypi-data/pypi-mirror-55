@@ -1,0 +1,8 @@
+README.md
+setup.py
+wx2pdf.py
+wx2pdf.egg-info/PKG-INFO
+wx2pdf.egg-info/SOURCES.txt
+wx2pdf.egg-info/dependency_links.txt
+wx2pdf.egg-info/requires.txt
+wx2pdf.egg-info/top_level.txt

@@ -1,0 +1,22 @@
+Metadata-Version: 1.0
+Name: wx2pdf
+Version: 1.0
+Summary: A command line util to save article from wechat media platform
+Home-page: https://github.com/jeffguorg/wx2pdf
+Author: Chao Guo
+Author-email: jeffguorg@gmail.com
+License: UNKNOWN
+Description: Simple script to save article to pdf.
+        
+        # Installation
+        
+        ```bash
+        pip install wx2pdf 
+        ```
+        
+        # Usage
+        
+        ```bash
+        wx2pdf.py [options] url
+        ```
+Platform: UNKNOWN
