@@ -1,0 +1,10 @@
+configure_with_sudo/__about__.py,sha256=VHR75C32Z6OROuehYIaor6Ec6wmVBEdA2sk-i48TUsk,452
+configure_with_sudo/__init__.py,sha256=CF-K9d0rnpNTE9oF9KWG9jlRH1_pdS6zhhLLfbaRrow,219
+configure_with_sudo/configure_with_sudo.py,sha256=-j840QG8WGBnFNWJ98p_xpIFDvotNTDDGZUFrZIAXWY,5110
+configure_with_sudo/version.py,sha256=chbx_Sa1cI45y0HEZeMLJ4AXTN5U9r1QSMLOH-tKYuQ,196
+configure_with_sudo/config/default.yaml,sha256=IkACKhERghog9epwEy1ltP6iaQTSv8pZGmgor3VWKwQ,11
+configure_with_sudo-0.1.0.dev2.dist-info/LICENSE,sha256=y3jgiNz7COPUnHCozvv3NEA8Oh3RzLqGILXJs6vErFQ,1071
+configure_with_sudo-0.1.0.dev2.dist-info/METADATA,sha256=bYUyDj7GwivkjVqI26ARVG5FZmqHJRh9Jb6JGcpsk7w,1566
+configure_with_sudo-0.1.0.dev2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+configure_with_sudo-0.1.0.dev2.dist-info/top_level.txt,sha256=51I8UXpDyslOT5ndOg54miZyWzh94y4G4UaVfqSBsBU,20
+configure_with_sudo-0.1.0.dev2.dist-info/RECORD,,
