@@ -1,0 +1,9 @@
+README.md
+magick_tile.py
+setup.py
+magick_tile.egg-info/PKG-INFO
+magick_tile.egg-info/SOURCES.txt
+magick_tile.egg-info/dependency_links.txt
+magick_tile.egg-info/entry_points.txt
+magick_tile.egg-info/requires.txt
+magick_tile.egg-info/top_level.txt
