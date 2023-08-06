@@ -1,0 +1,9 @@
+mypy_boto3_dynamodbstreams/__init__.py,sha256=Z-DMIV7n-ch6tS7wiwq3FX2c3F1Fg9cPeQV4RwQnHoI,122
+mypy_boto3_dynamodbstreams/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_dynamodbstreams/client.py,sha256=4wXc_FiSpOULMvR4hGM_HeJA_E4-z5ySr91y-0oxOvE,37441
+mypy_boto3_dynamodbstreams/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_dynamodbstreams/type_defs.py,sha256=lkuQDjXFT7n9ke8IYDLAAZB2ieheqaSMz1v-KMut12A,57437
+mypy_boto3_dynamodbstreams-0.2.1.dist-info/METADATA,sha256=Wwme6ZoDHinmKHFauLmLm2hiOsDenG9MANFm9Xl59P0,1083
+mypy_boto3_dynamodbstreams-0.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_dynamodbstreams-0.2.1.dist-info/top_level.txt,sha256=5Q4ubWpBmdZRSegd2yNOaS41cox1mc7RIpexys74IxY,27
+mypy_boto3_dynamodbstreams-0.2.1.dist-info/RECORD,,
