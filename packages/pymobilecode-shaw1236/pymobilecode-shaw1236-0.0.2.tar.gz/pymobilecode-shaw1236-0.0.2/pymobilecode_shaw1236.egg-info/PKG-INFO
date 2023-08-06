@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pymobilecode-shaw1236
+Version: 0.0.2
+Summary: A utility for mobile code
+Home-page: https://github.com/shaw1236/pymobilecode
+Author: Simon Li
+Author-email: shaw1236@gmail.com
+License: UNKNOWN
+Description: Mobile text code utilities
+        
+        - Installation of the package
+        $pip install pymobilecode-shaw1236
+        
+        - Usage of class MobileCode
+        from pymobilecode.MobileCode import MobileCode
+        mobileCode = MobileCode()
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
