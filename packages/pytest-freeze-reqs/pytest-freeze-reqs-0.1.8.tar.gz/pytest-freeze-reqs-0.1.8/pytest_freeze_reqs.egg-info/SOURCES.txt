@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.cfg
+setup.py
+tox.ini
+freeze_reqs/__init__.py
+freeze_reqs/pytest_freeze_reqs.py
+pytest_freeze_reqs.egg-info/PKG-INFO
+pytest_freeze_reqs.egg-info/SOURCES.txt
+pytest_freeze_reqs.egg-info/dependency_links.txt
+pytest_freeze_reqs.egg-info/entry_points.txt
+pytest_freeze_reqs.egg-info/requires.txt
+pytest_freeze_reqs.egg-info/top_level.txt
