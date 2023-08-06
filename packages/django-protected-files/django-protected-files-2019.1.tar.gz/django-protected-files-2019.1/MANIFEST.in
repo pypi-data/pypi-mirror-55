@@ -1,0 +1,4 @@
+include README.md
+recursive-include protected_files/migrations *.py
+recursive-include protected_files/templates *.html
+recursive-include protected_files/static *.*
