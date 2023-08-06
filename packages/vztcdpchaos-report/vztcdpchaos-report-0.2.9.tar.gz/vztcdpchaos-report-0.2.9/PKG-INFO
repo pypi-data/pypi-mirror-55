@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: vztcdpchaos-report
+Version: 0.2.9
+Summary: CDP chaos reporting lib
+Home-page: UNKNOWN
+Author: vztcdpchaos
+Author-email: sucpandu@gmail.com
+License: Apache License Version 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.5.*
