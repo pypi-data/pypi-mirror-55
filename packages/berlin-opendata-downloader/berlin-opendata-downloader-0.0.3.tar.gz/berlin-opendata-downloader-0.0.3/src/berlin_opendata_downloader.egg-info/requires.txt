@@ -1,0 +1,9 @@
+Click
+beautifulsoup4
+pandas
+tqdm
+requests
+
+[testing]
+pytest
+pytest-cov
