@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: hccf
+Version: 0.2
+Summary: core impl
+Home-page: http://open-storm.org
+Author: abc
+Author-email: abc@abc.com, abc@abc.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+
+UNKNOWN
+
+
