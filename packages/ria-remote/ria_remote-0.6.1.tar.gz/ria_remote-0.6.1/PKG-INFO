@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ria_remote
+Version: 0.6.1
+Summary: Git-annex special remote implementation for (remote) indexed archives
+Home-page: https://github.com/datalad/git-annex-ria-remote
+Author: 
+Michael Hanke
+Benjamin Poldrack
+Author-email: 
+michael.hanke@gmail.com
+benjaminpoldrack@gmail.com
+Maintainer: 
+Michael Hanke
+Benjamin Poldrack
+Maintainer-email: 
+michael.hanke@gmail.com
+benjaminpoldrack@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown; charset=UTF-8
