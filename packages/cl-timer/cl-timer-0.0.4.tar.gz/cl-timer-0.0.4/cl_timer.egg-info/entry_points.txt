@@ -1,0 +1,3 @@
+[console_scripts]
+cl-timer = package.module:main
+
