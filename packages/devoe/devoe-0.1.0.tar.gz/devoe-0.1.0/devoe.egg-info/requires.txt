@@ -1,0 +1,4 @@
+pepperoni
+sqlalchemy
+cx_Oracle
+paramiko
