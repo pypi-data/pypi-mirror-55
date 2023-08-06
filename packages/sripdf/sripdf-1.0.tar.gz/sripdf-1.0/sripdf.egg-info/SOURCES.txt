@@ -1,0 +1,8 @@
+setup.py
+sripdf/__init__.py
+sripdf/pdftoimage.py
+sripdf/pdftotext.py
+sripdf.egg-info/PKG-INFO
+sripdf.egg-info/SOURCES.txt
+sripdf.egg-info/dependency_links.txt
+sripdf.egg-info/top_level.txt
