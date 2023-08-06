@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "govdex"
+version = "0.1.1"
+description = "Indexing the government"
+authors = ["Yehuda Deutsch <yeh@uda.co.il>"]
+license = "MIT"
+
+readme = "README.md"
+homepage = "https://govdex.org"
+repository = "https://gitlab.com/govdex/govdex.git"
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"

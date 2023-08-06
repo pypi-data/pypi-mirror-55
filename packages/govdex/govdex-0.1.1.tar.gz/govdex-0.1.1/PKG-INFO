@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: govdex
+Version: 0.1.1
+Summary: Indexing the government
+Home-page: https://govdex.org
+License: MIT
+Author: Yehuda Deutsch
+Author-email: yeh@uda.co.il
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Project-URL: Repository, https://gitlab.com/govdex/govdex.git
+Description-Content-Type: text/markdown
+
+# GovDex - Indexing the government
+
+Indexing government structure, points of service, persons of interest etc.
+
+## Roadmap
+
+* POC in Israel - Gathering data
+
+
