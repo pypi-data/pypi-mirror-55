@@ -1,0 +1,6 @@
+README.md
+setup.py
+fink_science.egg-info/PKG-INFO
+fink_science.egg-info/SOURCES.txt
+fink_science.egg-info/dependency_links.txt
+fink_science.egg-info/top_level.txt
