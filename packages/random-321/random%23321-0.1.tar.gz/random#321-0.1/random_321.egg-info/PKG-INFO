@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: random-321
+Version: 0.1
+Summary: This should be a short description of our project
+Home-page: https://github.com/DevelopIntelligence
+Author: Some Person
+Author-email: somebody@example.com
+License: UNKNOWN
+Description: This project is a test setuptools project
+        
+Keywords: test,class
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
