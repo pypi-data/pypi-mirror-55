@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.rst
+requirements.txt
+setup.py
+pyitcast/__init__.py
+pyitcast/transformer.py
+pyitcast/transformer_utils.py
+pyitcast.egg-info/PKG-INFO
+pyitcast.egg-info/SOURCES.txt
+pyitcast.egg-info/dependency_links.txt
+pyitcast.egg-info/top_level.txt
