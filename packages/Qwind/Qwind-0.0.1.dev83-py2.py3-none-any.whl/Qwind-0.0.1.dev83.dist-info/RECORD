@@ -1,0 +1,16 @@
+qwind/__init__.py,sha256=5gSBDut55ueyZAaTUTKLet5P2KI-l7uZ8ykK6tMZEgU,15
+qwind/constants.py,sha256=bJVVO2O-Nl2tQXN6hP85CQyZNmrNv5zSUEvjd74BL4Q,1197
+qwind/integration.py,sha256=KhjiRflN55djtXIHulpn4b0myZKEM_-5wDJ_zwweHU8,10473
+qwind/plotting.py,sha256=5pHt4qIILoEllgRvNn8a2Yk7v6VixSBi6rBmw4bn9O0,7448
+qwind/streamline.py,sha256=dtK6mMOmeqyRw6kFF9Xi0Fxr-aiGYIVhVkCP2YckeXs,11911
+qwind/utils.py,sha256=_Ee93J5FClKSSrQ5CRckRc421tS683k3OHD7EXmgcgA,2563
+qwind/wind.py,sha256=fjYQGIxIgCSUJe1eFAcZ98ntojZacpJ3rdgdNICy_Vs,10805
+qwind/radiation/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+qwind/radiation/simple_sed.py,sha256=WOI73ItGtYlQMIlQruBLft56GmHleP1RQHjQR1QfDb8,11540
+Qwind-0.0.1.dev83.dist-info/AUTHORS,sha256=iqrG5gIgW9vPT0R72lbCotUj7f1KTz6wSJBJvSgjyC4,106
+Qwind-0.0.1.dev83.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+Qwind-0.0.1.dev83.dist-info/METADATA,sha256=MDlVF52gT_8WvEdJ96BYFHl5T0HouDRFxr03nibi06Q,2860
+Qwind-0.0.1.dev83.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+Qwind-0.0.1.dev83.dist-info/pbr.json,sha256=SZcOT9d5PsLgspVGHIVdjoIui-3j89sjrzXzh58EFt8,47
+Qwind-0.0.1.dev83.dist-info/top_level.txt,sha256=fxgYSAos5QruwGMc4XXPE-7uQ8wHzT-5v_9x_wkj4jQ,6
+Qwind-0.0.1.dev83.dist-info/RECORD,,
