@@ -1,0 +1,13 @@
+sqlhandler/__init__.py,sha256=TqLwIDsk7NwbO7hKTvok2fe0ouyowisIazt48d9BjyU,128
+sqlhandler/config.py,sha256=8HynfrCt0k-yE6R8NXbeWhWrym686tyRRqDCcI2wEbU,3113
+sqlhandler/custom.py,sha256=5JaCpbwDy0BkRpKpv2DiYEdYL1iCOSlkEKwfZr3Utws,8589
+sqlhandler/database.py,sha256=I_1xRJbUiTCRp0sgi9JNpiPMiibjje08Pi-DI8IXrg8,8188
+sqlhandler/expression.py,sha256=33o0uQC3QMdcxGXW2iq8SmMQJCWUNa1qIqJKMO_rQEM,12876
+sqlhandler/log.py,sha256=qQnEy-jqiDWB7JZ1x2Ec3a3RjL9moJApDL-kI1yRUrY,1850
+sqlhandler/sql.py,sha256=E239vHFp3wovJXaCcgpnxJmaBBOp7zSZv4vi-CUf99I,12694
+sqlhandler/utils.py,sha256=anqzelbpg2zoIwp1GNMQx8UCTGK23OZV3ZmuC0m2-tA,5990
+sqlhandler-0.1.0.dist-info/LICENSE,sha256=WWOBfkT0IHpdj_X5ZrjsCW8i44gU3C-4v0O1FHptyg4,1086
+sqlhandler-0.1.0.dist-info/METADATA,sha256=ML_hFUiEDUZzDTPpO_0x3_JNJpRzzYsi7V7t8lH7FIo,7014
+sqlhandler-0.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+sqlhandler-0.1.0.dist-info/top_level.txt,sha256=2KjNXmI3ghkooJtivu_l3d95Z_NVtHWwD7ZCejugI0g,11
+sqlhandler-0.1.0.dist-info/RECORD,,
