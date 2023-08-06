@@ -1,0 +1,8 @@
+README.md
+setup.py
+herecomes/__init__.py
+herecomes.egg-info/PKG-INFO
+herecomes.egg-info/SOURCES.txt
+herecomes.egg-info/dependency_links.txt
+herecomes.egg-info/requires.txt
+herecomes.egg-info/top_level.txt
