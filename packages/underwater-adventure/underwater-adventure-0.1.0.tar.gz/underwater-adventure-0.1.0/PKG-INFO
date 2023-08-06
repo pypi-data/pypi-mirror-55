@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: underwater-adventure
+Version: 0.1.0
+Summary: A short underwater adventure
+Home-page: https://github.com/forslund/underwater-adventure
+Author: forslund
+Author-email: ake.forslund@gmail.com
+License: Apache-2.0
+Description: A text adventure where you're trapped inside a sunken ship. Explore the ship and find the tools needed to escape.
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst

@@ -1,0 +1,3 @@
+[console_scripts]
+underwater-adventure = underwater_adventure.adventure:simple_game_loop
+
