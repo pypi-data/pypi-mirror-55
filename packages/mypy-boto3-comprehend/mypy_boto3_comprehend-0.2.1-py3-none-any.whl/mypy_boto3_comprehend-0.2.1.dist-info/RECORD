@@ -1,0 +1,10 @@
+mypy_boto3_comprehend/__init__.py,sha256=n5NH7GKR1FHEmu7yFDJ6cOPPX25Hb8FtiNI3iH5qE78,112
+mypy_boto3_comprehend/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_comprehend/client.py,sha256=rZBsce-SOLtgP2kboGxzpTW66jU9i93om-syB10LXHM,305083
+mypy_boto3_comprehend/paginator.py,sha256=hiRl72wE913lY5ySmLCcCkqZ5UtYXqHuM-Aws6HFNa4,97074
+mypy_boto3_comprehend/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_comprehend/type_defs.py,sha256=ciS8IFOhQh83laqmsV6OSWBwHo7-HKnDpuYu-2UenmU,663286
+mypy_boto3_comprehend-0.2.1.dist-info/METADATA,sha256=xyznORSdyHHxHkZCs9PkwMJhVOK5jwp8we50HaTq3mI,1073
+mypy_boto3_comprehend-0.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_comprehend-0.2.1.dist-info/top_level.txt,sha256=MdX9yqVZ5R7EUKbMD1fWnXnyQTJy99euBywspbKmUU0,22
+mypy_boto3_comprehend-0.2.1.dist-info/RECORD,,
