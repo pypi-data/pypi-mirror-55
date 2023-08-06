@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: czutils
+Version: 1.0.0
+Summary: utils for cztec
+Home-page: UNKNOWN
+Author: xialang
+Author-email: xialang@cztec.com
+License: MIT Licence
+Description: utils for cztec
+Keywords: pip,czutils,featureextraction
+Platform: any
