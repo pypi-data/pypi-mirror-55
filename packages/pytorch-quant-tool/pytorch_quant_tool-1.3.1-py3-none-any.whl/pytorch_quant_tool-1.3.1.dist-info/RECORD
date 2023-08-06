@@ -1,0 +1,11 @@
+pytorch_quant_tool/__init__.py,sha256=Rg63A0Eb-16Hyfup5T6NMNEDwyJtqVHCyZ3zi3UMW7M,87
+pytorch_quant_tool/util.py,sha256=xXfDlF5hySjf14mLvucRQ2Q3pYWxcwX63zIWJRmzD0o,1779
+pytorch_quant_tool/rules/__init__.py,sha256=MkLJwwyMWZI95if6dosbWaHsHW-vDOH0RnFKGCL43HU,32
+pytorch_quant_tool/rules/convbn.py,sha256=vHuF_Yb2bQ2u6jQthJ3N0Su5anxOHosiP9yaI4eJgNc,1470
+pytorch_quant_tool/rules/downsample.py,sha256=gS_-hNC8d5ygVlAetrxm15i0htLCiT5KThDJ8XsYxXI,1414
+pytorch_quant_tool/rules/fuse_rule.py,sha256=3XGvrUwIBk596GdwFax1jgvNflmi2Qq7_qw-X6QjU04,561
+pytorch_quant_tool-1.3.1.dist-info/LICENSE,sha256=RGhQ1rwfhp-a32TmKSMPzSDnTyzuWLgDSHqw6AKjTdY,1067
+pytorch_quant_tool-1.3.1.dist-info/METADATA,sha256=Pf0xkG2OUU6Un8CyFs2s-Ai8I3tWqGVvpgeHyxdrfYw,1017
+pytorch_quant_tool-1.3.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pytorch_quant_tool-1.3.1.dist-info/top_level.txt,sha256=CUYmqxsFL0yhM_O2MzX7i91muyDYw-_Fjdng94fogQE,19
+pytorch_quant_tool-1.3.1.dist-info/RECORD,,
