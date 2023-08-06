@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: omero-virtual-microscope
+Version: 1.0.1
+Summary: Virtual Microscope OMERO.web extension application
+Home-page: https://github.com/ome/virtual-microscope
+Author: The Open Microscopy Team
+Author-email: ome-devel@lists.openmicroscopy.org.uk
+License: AGPL-3.0
+Download-URL: https://github.com/ome/virtual-microscope/archive/v1.0.1.zip
+Description: OMERO.web Virtual Microscope
+        ============================
+        Virtual Microscope OMERO.web extension application
+        
+        Requirements
+        ============
+        
+        * OMERO 5.4.0 or later
+        
+        Installation
+        ============
+        
+            $ pip install https://github.com/ome/virtual-microscope/archive/master.zip
+        
+        Add virtual-microscope custom app to your installed web apps:
+        
+            $ bin/omero config append omero.web.apps '"virtualmicroscope"'
+        
+        NB: note that double quotes are wrapped by single quotes. Windows users will need to do
+        
+            $ bin\omero config append omero.web.apps "\"virtualmicroscope\""
+        
+        Redirect to post-login page
+        
+            $ bin/omero config set omero.web.login_redirect '{"redirect": ["webindex"], "viewname": "webindex_custom", "query_string": "", "args": []}'
+        
+        Now start up OMERO.web as normal.
+        
+Keywords: OMERO.web,plugin
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
