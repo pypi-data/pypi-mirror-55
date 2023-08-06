@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: ithinkdtTestLib
+Version: 0.1.0
+Summary: A python lib for test
+Home-page: https://gitee.com/xjyuan/mylib
+Author: xjyuan
+Author-email: yuanxujuan@ithinkdt.com
+License: MIT
+Description: This is a python lib for test
+Platform: any

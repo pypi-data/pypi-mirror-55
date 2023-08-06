@@ -1,0 +1,7 @@
+setup.py
+src/foo/__init__.py
+src/foo/foo.py
+src/ithinkdtTestLib.egg-info/PKG-INFO
+src/ithinkdtTestLib.egg-info/SOURCES.txt
+src/ithinkdtTestLib.egg-info/dependency_links.txt
+src/ithinkdtTestLib.egg-info/top_level.txt
