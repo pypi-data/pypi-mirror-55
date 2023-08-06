@@ -1,0 +1,9 @@
+mypy_boto3_ec2_instance_connect/__init__.py,sha256=b4HopbBmonLE9eKpglL4swX3ghkW9mSG03t76wu-w1I,132
+mypy_boto3_ec2_instance_connect/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_ec2_instance_connect/client.py,sha256=oeIrFgjrTwJIH3R5BMFT6FP1aujBpVjcrJOs16-Ttko,5253
+mypy_boto3_ec2_instance_connect/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_ec2_instance_connect/type_defs.py,sha256=3P17nk-v4J-CJ3dGLHJMKZhT41GfMCUB8Z9Q0P00JLg,651
+mypy_boto3_ec2_instance_connect-0.2.1.dist-info/METADATA,sha256=JqHo7vj1aPDy411dPZPICgAv9XT-uh1QkwAQncD5ApU,1093
+mypy_boto3_ec2_instance_connect-0.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_ec2_instance_connect-0.2.1.dist-info/top_level.txt,sha256=QzPe1EZCtGcfD0sAW9KFqxWP0kXoPCqTVaYqyW2SKRI,32
+mypy_boto3_ec2_instance_connect-0.2.1.dist-info/RECORD,,
