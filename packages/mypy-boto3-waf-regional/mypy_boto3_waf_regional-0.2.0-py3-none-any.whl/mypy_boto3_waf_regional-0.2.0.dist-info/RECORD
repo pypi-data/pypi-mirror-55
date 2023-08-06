@@ -1,0 +1,9 @@
+mypy_boto3_waf_regional/__init__.py,sha256=PlW3E4DM2w10XsFfznS8fOaNpfcIH5dSE5NUsT5TkZk,116
+mypy_boto3_waf_regional/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_waf_regional/client.py,sha256=0vTHT6SUGV1J37_u3lD6PoD8OR3eyRMvApeoedo8WH8,473558
+mypy_boto3_waf_regional/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_waf_regional/type_defs.py,sha256=dFj53mG9CoOWD2rxgCa_vS27kouVhD2kxCQlx1La4IM,703882
+mypy_boto3_waf_regional-0.2.0.dist-info/METADATA,sha256=pt0PJlaoXVRu7xkkyP6_CgSHhbm4pT-2wLXEnz_VPkw,1069
+mypy_boto3_waf_regional-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_waf_regional-0.2.0.dist-info/top_level.txt,sha256=JjdM6Qw2d2OAcuHG7aTcw86B81MzN4HHktN5AMMi4Tg,24
+mypy_boto3_waf_regional-0.2.0.dist-info/RECORD,,
