@@ -1,0 +1,224 @@
+Draft sdk for yeswehack
+
+
+# Build Wheel from source
+
+```
+python setup sdist bdist_wheel
+```
+
+# Installation
+
+## Developpeur
+
+```
+python setup.py install
+```
+
+## From pip
+
+```
+pip install yeswehack
+```
+
+## From wheel
+
+```
+pip install path/to/yeswehack-wheel.whl
+```
+
+
+# Getting starting with YesWeHack Python SDK
+
+
+## API Module
+
+In this python module, we define object mapping to YesWeHack API Object.
+
+### YesWeHack
+
+Parameters/attributes:
+- ```token``` str: YesWeHack Token
+- ```api_url``` str (default=```"https://api.yeswehack.com"```): url for the YesWeHack api.
+- ```username``` str: user login to YesWeHack
+- ```password``` str: password for the given user
+- ```lazy``` bool (default=```True```): if False, login is run at construction time and data are getted recursively else, You have to do each call.
+- ```oauth_mode``` bool (default=```False```): if True, Oauth2 authentication is used.
+- ```oauth_args``` dict (default=```{}```): if oauth_mode is actif, oauth_args is used to authenticate user. (keys : ```client_id```, ```client_secret```, ```redirect_uri```)
+- ```apps_headers``` dict (default=```{}```): Specific headers for Apps.
+- (Attribute only) ```session``` requests.sessions.Session: Session to build requests call.
+- (Attribute only) ```managed_pgms``` list: list of string, containing all programs names of each pgm managed by current user.
+
+methods:
+- ```call(http_method, path, data=None)```: requests api url with the given path on the given method.
+- ```raw_call(method, url, data=None, headers=None)```: requests url on the given method.
+- ```login(totp_code=None)```: login on API
+- ```get_business_units()```: return all BU for the given user
+- ```get_programs(business_unit)```: get programs related to the given business_unit
+- ```get_program(program_slug)```: get program from program_slug
+- ```get_reports(program, filters=None, lazy=False)```: get reports of the given program_slug, filters can be pasted according to the api doc.
+- ```get_report(report_id)```: return the Report for the given report_id.
+- ```post_comment( report_id, comment, private=False)```: post comment on the report link to the given report_id.
+- ```managed_programs(lazy=False)```: return programs managed by the logged user.
+
+### Category
+Parameters/attributes:
+- ```name``` str: name of the category
+- ```slug``` str: YesWeHack Slug for this category
+
+### Attachment
+Parameters/attributes:
+- ```ywh_api``` YesWeHack: YesWehack Client object
+- ```id``` int: Id of this attachment
+- ```name``` str: name of this attachment in YesWeHack API
+- ```original_name``` str: original name
+- ```mime_type``` str: mime type associated
+- ```size``` int: bytes size
+- ```url``` str: url access
+- ```data``` bytes: bytes content
+
+methods:
+- ```get_data()```: set data attributes
+
+### BugType
+Parameters:
+- category Category:
+- description str:
+- link str:
+- name str:
+- remediation_link str:
+- slug str:
+
+### Author
+Parameters/attributes:
+- ```ywh_api``` YesWeHack: YesWehack Client object
+- ```username``` str: username of the author
+- ```slug``` str: slug of the author
+- ```hunter_profile``` dict: object according to YesWeHack API
+- ```avatar``` Attachment: Image
+
+### CVSS
+Parameters/attributes:
+- ```criticity``` str:
+- ```score``` float:
+- ```vector``` str:
+
+### Log
+Parameters/attributes:
+- ```ywh_api``` YesWeHack:
+- ```created_at``` str:
+- ```duplicate_of``` dict:
+- ```id``` int:
+- ```type``` str:
+- ```points``` int:
+- ```private``` bool:
+- ```author``` Author:
+- ```canceled``` bool:
+- ```cvss_bonus``` int:
+- ```old_status``` dict:
+- ```status``` dict:
+- ```message_html``` str:
+- ```attachments``` list, default=[]:
+- ```old_cvss``` CVSS:
+- ```new_cvss``` CVSS:
+- ```priority``` dict:
+- ```old_bug_type``` BugType:
+- ```new_bug_type``` BugType:
+- ```old_tags``` list, default=[]:
+- ```new_tags``` list, default=[]:
+- ```reward_type``` str:
+- ```bounty_reward_amount``` int:
+- ```marked_as``` str:
+- ```fix_verified```:
+- ```old_details```:
+- ```new_details```:
+- ```rights``` list default=[]:
+
+### Report
+Parameters/attributes:
+- ```ywh_api``` YesWeHack:
+- ```id``` int:
+- ```application_finger_print``` str:
+- ```attachments``` list, default=[]:
+- ```bonus``` int:
+- ```bug_type``` BugType:
+- ```chainable``` bool:
+- ```chainable_exploit_description_html``` str:
+- ```chainable_report``` dict, default={}:
+- ```created_at``` str:
+- ```cvss``` CVSS:
+- ```cvss_bonus``` int:
+- ```description_html``` str, default="":
+- ```duplicate_of``` str:
+- ```end_point``` str:
+- ```hunter``` dict, default={}:
+- ```local_id``` str:
+- ```logs``` list:
+- ```marked_as``` str:
+- ```part_name``` str:
+- ```payload_sample``` str:
+- ```priority``` dict default={}:
+- ```program``` dict default={}:
+- ```reward``` int:
+- ```rights``` list default=[]:
+- ```scope``` str:
+- ```source_ips``` list default=[]:
+- ```status``` dict default={}:
+- ```tags``` list default=[]:
+- ```technical_information``` str:
+- ```technical_information_html``` str:
+- ```title``` str:
+- ```user_roles```:
+- ```vulnerable_part``` str:
+
+methods:
+- ```post_comment(comment, private=False)```:
+- ```get_comments(lazy=False)```
+- ```get_attachments_data()```
+- ```get_log_attachments_data()```
+- ```get_report_logs(lazy=False)```
+- ```export(export_format)```
+- ```put_tracking_status(tracking_status, tracker_name, tracker_url, tracker_id=None, message=None)```
+
+### Program
+Parameters:
+- ```ywh_api``` YesWeHack:
+- ```reports``` list, default=[]:
+- ```disabled``` bool:
+- ```managed``` bool:
+- ```bounty_reward_max``` int:
+- ```reports_count``` int:
+- ```status``` str:
+- ```title``` str:
+- ```slug``` str:
+- ```banner``` dict:
+- ```rules``` str:
+- ```rules_html``` str:
+- ```public``` bool:
+- ```hall_of_fame``` bool:
+- ```scopes``` list, default=[]:
+- ```out_of_scope``` list default=[]:
+- ```qualifying_vulnerability``` list default=[]:
+- ```non_qualifying_vulnerability``` list default=[]:
+- ```bounty``` bool:
+- ```gift``` bool:
+- ```bounty_reward_min``` int:
+- ```disclose_bounty_min_reward``` bool:
+- ```disclose_bounty_average_reward``` bool:
+- ```disclose_bounty_max_reward``` bool:
+- ```reward_grid_default``` dict:
+- ```reward_grid_low``` dict:
+- ```reward_grid_medium``` dict:
+- ```reward_grid_high``` dict:
+- ```tags``` list, default=[]:
+- ```business_unit``` dict, default={}:
+- ```restricted_ips``` list, default=[]:
+- ```vpn_active``` bool:
+- ```vpn_ips``` list, default=[]:
+- ```account_access``` str:
+- ```disable_message``` str:
+- ```user_agent``` str:
+- ```stats``` dict default={}:
+- ```event``` dict:
+- ```token``` str:
+- ```rights``` list default=[]:
