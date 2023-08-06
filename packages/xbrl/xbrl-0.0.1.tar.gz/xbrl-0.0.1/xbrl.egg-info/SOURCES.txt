@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+xbrl.py
+xbrl.egg-info/PKG-INFO
+xbrl.egg-info/SOURCES.txt
+xbrl.egg-info/dependency_links.txt
+xbrl.egg-info/top_level.txt
