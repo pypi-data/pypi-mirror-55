@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: leeway
+Version: 0.1.1
+Summary: Bread and butter box pushing bread slices under butter knives. Hints from previous runs are taken.
+Home-page: https://github.com/sthagen/python-leeway
+Author: Stefan Hagen
+Author-email: stefan@hagen.link
+License: MIT
+Description: ========
+        Overview
+        ========
+        
+        
+        
+        Bread and butter box pushing bread slices under butter knives. Hints from previous runs are taken.
+        
+        * Free software: BSD license
+        
+        Installation
+        ============
+        
+        ::
+        
+            pip install leeway
+        
+        Documentation
+        =============
+        
+        https://python-leeway.readthedocs.io/
+        
+        Development
+        ===========
+        
+        To run the all tests run::
+        
+            tox
+        
+        Note, to combine the coverage data from all the tox environments run:
+        
+        .. list-table::
+            :widths: 10 90
+            :stub-columns: 1
+        
+            - - Windows
+              - ::
+        
+                    set PYTEST_ADDOPTS=--cov-append
+                    tox
+        
+            - - Other
+              - ::
+        
+                    PYTEST_ADDOPTS=--cov-append tox
+        
+        
+        Changelog
+        =========
+        
+        0.1.1 (2019-11-10)
+        -----------------------------------------
+        
+        * License harmony: BSD to MIT, update source repository user name forming part of the paths / URLs, brushed off bit rot, publication to pypi.
+        
+        
+        0.1.0 (2016-10-17)
+        -----------------------------------------
+        
+        * First release on PyPI.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Utilities
+Description-Content-Type: text/x-rst

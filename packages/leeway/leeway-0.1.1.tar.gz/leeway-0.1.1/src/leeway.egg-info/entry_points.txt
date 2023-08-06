@@ -1,0 +1,3 @@
+[console_scripts]
+leeway = leeway.cli:main
+
