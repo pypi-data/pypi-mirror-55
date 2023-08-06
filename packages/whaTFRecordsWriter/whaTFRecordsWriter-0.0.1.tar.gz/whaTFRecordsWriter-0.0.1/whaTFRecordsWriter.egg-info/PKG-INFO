@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: whaTFRecordsWriter
+Version: 0.0.1
+Summary: UNKNOWN
+Home-page: https://github.com/haideraltahan/whaTFRecordsWriter
+Author: Haider Al-Tahan
+Author-email: haideraltahan@gmail.com
+License: License :: OSI Approved :: MIT License
+Description: # whaTFRecordsWriter
+        Library for Creating TFRecords from Data
+        
+        # Overview
+        
+        Are you having trouble saving your precious data into an easy format for training and testing? Well, you're in luck because with `whaTFRecordsWriter` we are trying to minimize the effort required to simplify your dataset with [TFRecord]('https://www.tensorflow.org/tutorials/load_data/tfrecord'). 
+        
+        # Installation
+        
+        Python 3.6+ is required
+        
+        ```Python
+        pip install whaTFRecordsWriter
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

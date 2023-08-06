@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+whaTFRecordsWriter/__init__.py
+whaTFRecordsWriter/encoders.py
+whaTFRecordsWriter/preprocessing.py
+whaTFRecordsWriter/writer.py
+whaTFRecordsWriter.egg-info/PKG-INFO
+whaTFRecordsWriter.egg-info/SOURCES.txt
+whaTFRecordsWriter.egg-info/dependency_links.txt
+whaTFRecordsWriter.egg-info/not-zip-safe
+whaTFRecordsWriter.egg-info/requires.txt
+whaTFRecordsWriter.egg-info/top_level.txt
