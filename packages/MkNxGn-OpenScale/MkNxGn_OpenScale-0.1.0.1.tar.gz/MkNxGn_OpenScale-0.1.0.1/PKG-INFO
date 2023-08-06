@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: MkNxGn_OpenScale
+Version: 0.1.0.1
+Summary: MkNxGn Sparkfun OpenScale Helper - Serial
+Home-page: https://mknxgn.com/
+Author: Mark Cartagena
+Author-email: mark@mknxgn.com
+License: UNKNOWN
+Description: MkNxGn Sparkfun OpenScale Helper - Serial
+        
+        This module allows users to use the OpenScale programatically or interactively.
+        
+        
+        Module:
+        https://www.sparkfun.com/products/13261
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
