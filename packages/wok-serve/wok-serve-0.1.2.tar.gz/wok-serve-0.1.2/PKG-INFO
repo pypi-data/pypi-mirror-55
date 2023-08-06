@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: wok-serve
+Version: 0.1.2
+Summary: Tool to serve a directory of Wok files using a Notion-like template.
+Home-page: https://gitlab.com/tijlvdb/wok-serve
+Author: Tijl Van den Brugghen
+Author-email: me@tijlvdb.me
+License: MIT
+Description: # Wok
+        
+        `wok-serve` is a tool to serve a directory of Wok files as a website using a Notion-like template.
+        
+        Example usage:
+        
+        ```bash
+        # Show help
+        wok-serve -h
+        
+        # Serve a directory
+        wok-serve -d my_files/
+        
+        # Listen on a custom host/port
+        wok-serve -d my_files/ --host 0.0.0.0 --port 8000
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Description-Content-Type: text/markdown

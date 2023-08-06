@@ -1,0 +1,3 @@
+[console_scripts]
+wok-serve = wok_serve.cli:run
+
