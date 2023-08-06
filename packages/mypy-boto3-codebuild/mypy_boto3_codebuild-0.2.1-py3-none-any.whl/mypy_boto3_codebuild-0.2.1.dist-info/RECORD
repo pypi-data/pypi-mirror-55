@@ -1,0 +1,10 @@
+mypy_boto3_codebuild/__init__.py,sha256=uTKAiXsbzHRA2akZ5ALKPM8v7yC2ePbHTFxdvFXbuEI,110
+mypy_boto3_codebuild/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_codebuild/client.py,sha256=Njb_uX43OJOjDmf6GD52_0-GBlWYvOOlwBVgMp8P0aA,513167
+mypy_boto3_codebuild/paginator.py,sha256=djWevj8AtiU-KazCTxANDUy_c6hnZ3Et5n20dM4oi54,8144
+mypy_boto3_codebuild/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_codebuild/type_defs.py,sha256=XWPUfA1FyA9tJhWZzKCtvsPWiNS1YHM1qgwcwcWUHh0,990821
+mypy_boto3_codebuild-0.2.1.dist-info/METADATA,sha256=C4DdVpSHY6n9K5oOPp-oOUUuixTKGL9pP8-3xC81tQM,1071
+mypy_boto3_codebuild-0.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_codebuild-0.2.1.dist-info/top_level.txt,sha256=2QeakTuqQINPQl-qKSdZhCtNVxP__93347Rc65JWmk0,21
+mypy_boto3_codebuild-0.2.1.dist-info/RECORD,,
