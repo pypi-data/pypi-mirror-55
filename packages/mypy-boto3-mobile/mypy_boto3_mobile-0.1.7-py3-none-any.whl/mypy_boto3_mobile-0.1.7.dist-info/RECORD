@@ -1,0 +1,10 @@
+mypy_boto3_mobile/__init__.py,sha256=qsrO-et4QU3CAahurKSGhG4I1xY0VtuDfnXffrsBFq0,104
+mypy_boto3_mobile/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_mobile/client.py,sha256=q5mKYGtrHcE4SJRdY7GC6fDRDVnDM4IFzzkqSW3NaUg,1648
+mypy_boto3_mobile/paginator.py,sha256=XtEreCLUTV-pzP2g9zh2rksvObawJtBnRSW5y7gtaRg,461
+mypy_boto3_mobile/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_mobile/version.py,sha256=-w_IYq2qirUd-aSQcHEODBy3Q_jqwhPRWywcT_M1mMc,48
+mypy_boto3_mobile-0.1.7.dist-info/METADATA,sha256=1MmrpncBOjLpU5r82PPNM9B7Wd0eXHdzj7ET118TmSU,1430
+mypy_boto3_mobile-0.1.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_mobile-0.1.7.dist-info/top_level.txt,sha256=QJGyfVXFs3mcISahOmyaxRwFevdULTnblY-tirSpWbE,18
+mypy_boto3_mobile-0.1.7.dist-info/RECORD,,
