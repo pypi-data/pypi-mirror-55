@@ -1,0 +1,13 @@
+LICENSE
+README.rst
+bitbucket-pipelines.yml
+pyproject.toml
+setup.cfg
+setup.py
+logging42/__init__.py
+logging42/logger_config.py
+logging42.egg-info/PKG-INFO
+logging42.egg-info/SOURCES.txt
+logging42.egg-info/dependency_links.txt
+logging42.egg-info/requires.txt
+logging42.egg-info/top_level.txt
