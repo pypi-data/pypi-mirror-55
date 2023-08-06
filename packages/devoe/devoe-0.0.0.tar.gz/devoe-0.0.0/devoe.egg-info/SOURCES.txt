@@ -1,0 +1,7 @@
+README.md
+setup.py
+devoe/__init__.py
+devoe.egg-info/PKG-INFO
+devoe.egg-info/SOURCES.txt
+devoe.egg-info/dependency_links.txt
+devoe.egg-info/top_level.txt
