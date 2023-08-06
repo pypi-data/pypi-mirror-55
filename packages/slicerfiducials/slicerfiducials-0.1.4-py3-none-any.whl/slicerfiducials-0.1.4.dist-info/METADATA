@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: slicerfiducials
+Version: 0.1.4
+Summary: A small package for slicer fiducial manipulation and analysis.
+Home-page: https://github.com/abpwrs/slicerfiducials
+Author: abpwrs & ArjitJ
+Author-email: alexander-powers@uiowa.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: itk
+Requires-Dist: pandas
+Requires-Dist: numpy
+
+# Slicer Fiducials Package     
+
+![](https://readthedocs.org/projects/slicerfiducials/badge/?version=latest&style=plastic) ![](https://github.com/abpwrs/slicerfiducials/workflows/Python%20package/badge.svg) ![](https://github.com/abpwrs/slicerfiducials/workflows/Upload%20Python%20Package/badge.svg)                  
+This is a small package for slicer fiducial manipulation and analysis.
+
+
