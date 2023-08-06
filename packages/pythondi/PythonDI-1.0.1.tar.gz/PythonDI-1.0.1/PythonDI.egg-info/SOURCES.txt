@@ -1,0 +1,11 @@
+README.md
+setup.py
+PythonDI.egg-info/PKG-INFO
+PythonDI.egg-info/SOURCES.txt
+PythonDI.egg-info/dependency_links.txt
+PythonDI.egg-info/top_level.txt
+pythondi/__init__.py
+tests/__init__.py
+tests/test_configure.py
+tests/test_inject.py
+tests/test_provider.py
