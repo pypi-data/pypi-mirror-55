@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+djmongoengine/__init__.py
+djmongoengine/config.py
+djmongoengine/connector.py
+djmongoengine/models.py
+djmongoengine.egg-info/PKG-INFO
+djmongoengine.egg-info/SOURCES.txt
+djmongoengine.egg-info/dependency_links.txt
+djmongoengine.egg-info/requires.txt
+djmongoengine.egg-info/top_level.txt
