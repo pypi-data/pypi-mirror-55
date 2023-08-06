@@ -1,0 +1,3 @@
+[console_scripts]
+gene-locator = bin.command_line:main
+
