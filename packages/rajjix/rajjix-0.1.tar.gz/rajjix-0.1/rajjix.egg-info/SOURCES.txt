@@ -1,0 +1,7 @@
+README.md
+rajjix
+setup.py
+rajjix.egg-info/PKG-INFO
+rajjix.egg-info/SOURCES.txt
+rajjix.egg-info/dependency_links.txt
+rajjix.egg-info/top_level.txt
