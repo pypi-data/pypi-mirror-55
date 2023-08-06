@@ -1,0 +1,14 @@
+include README.md
+include requirements.txt
+include requirements-dev.txt
+include LICENSE
+include CHANGELOG.md
+include pytest.ini
+include cdpchaosreport/template
+include cdpchaosreport/template/css/main.css
+include cdpchaosreport/template/js
+include cdpchaosreport/template/*
+recursive-include cdpchaosreport/template *
+include *.md
+include *.css
+include *.js
