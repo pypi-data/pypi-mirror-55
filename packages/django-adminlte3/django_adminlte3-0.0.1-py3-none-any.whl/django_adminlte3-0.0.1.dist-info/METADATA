@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: django-adminlte3
+Version: 0.0.1
+Summary: Admin LTE templates, admin theme, and template tags for Django
+Home-page: https://github.com/d-demirci/django-adminlte3
+Author: d3n1z
+Author-email: d3n1z@protonmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: django
+
+UNKNOWN
+
+
