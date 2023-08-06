@@ -1,0 +1,29 @@
+FROM jrmsdev/sadm
+
+LABEL maintainer="Jeremías Casteglione <jrmsdev@gmail.com>"
+LABEL version="19.11.06"
+
+ARG SADM_UID
+ARG SADM_GID
+
+USER root:root
+WORKDIR /root
+
+ENV DEBIAN_FRONTEND noninteractive
+
+RUN apt-get clean && \
+	apt-get update && \
+	apt-get dist-upgrade -y --purge && \
+	apt-get install -y --no-install-recommends nginx && \
+	apt-get clean && \
+	apt-get autoremove -y --purge && \
+	rm -rf /var/lib/apt/lists/* /var/cache/apt/archives/*.deb /var/cache/apt/*cache.bin
+
+RUN rm -vf /var/log/nginx/*.log
+RUN ln -vs /dev/stdout /var/log/nginx/access.log
+RUN ln -vs /dev/stderr /var/log/nginx/error.log
+
+USER sadm:sadm
+WORKDIR /opt/src/sadm
+
+CMD /bin/bash -i -l

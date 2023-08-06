@@ -1,0 +1,11 @@
+% setdefault('title', 'notitle')
+% user = tpl.get('user', None)
+<div class="w3-right w3-small">
+	<span>{{title}}</span>
+	<span>|</span>
+	% if user:
+	<a href="{{tpl.url('user')}}">{{user.name}}</a>
+	<span>|</span>
+	% end
+	<span>{{tpl.now}}</span>
+</div>

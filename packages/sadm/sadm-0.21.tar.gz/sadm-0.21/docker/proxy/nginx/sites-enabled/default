@@ -1,0 +1,48 @@
+log_format ssluser '$remote_addr - $ssl_client_fingerprint [$time_local] '
+	'"$request" $status $body_bytes_sent '
+	'"$http_referer" "$http_user_agent"';
+
+server {
+	listen 80 default_server;
+	listen [::]:80 default_server;
+
+	server_name localhost;
+	root /var/www/html;
+
+	location / {
+		return 301 https://www.sadmdev.local$request_uri;
+	}
+}
+
+server {
+	listen 443 ssl;
+	listen [::]:443 ssl;
+
+	server_name www.sadmdev.local;
+	root /var/www/html;
+
+	ssl_certificate /etc/ssl/private/www.sadmdev.local.pem;
+	ssl_certificate_key /etc/ssl/private/www.sadmdev.local.pem;
+
+	ssl_session_cache shared:SSL:5m;
+	ssl_session_timeout 5m;
+	keepalive_timeout 75s;
+
+	ssl_client_certificate /etc/ssl/private/sadmdev-cacert.pem;
+	ssl_verify_client on;
+
+	access_log /var/log/nginx/access.log ssluser;
+	error_log /var/log/nginx/error.log;
+
+	# devops
+	location = /devops {
+		return 301 /devops/;
+	}
+	location /devops/ {
+		proxy_pass http://127.0.0.1:3110/;
+		include /etc/nginx/proxy_params;
+		# include /opt/src/sadm/_sadm/devops/wsgi/nginx.conf;
+		proxy_set_header X-Auth-Token 12345678;
+		proxy_set_header X-Client-Fingerprint $ssl_client_fingerprint;
+	}
+}

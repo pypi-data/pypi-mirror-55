@@ -1,0 +1,20 @@
+% rebase('base.html', title = 'user/login', navbar = None)
+<div class="w3-container w3-center">
+	<form action="{{tpl.url('user.login_post')}}" method="post">
+		<br>
+		<label>Username</label>
+		<br>
+		<input name="username" type="text" required="required">
+		<br>
+		% if tpl.auth.type == 'config':
+		<label>Password</label>
+		<br>
+		<input name="password" type="password" required="required">
+		<br>
+		% end
+		<br>
+		<input type="submit" value="login">
+		<br>
+		<br>
+	</form>
+</div>

@@ -1,0 +1,40 @@
+sudo: false
+language: python
+
+os: linux
+dist: bionic
+
+git:
+  depth: 3
+  submodules: false
+
+branches:
+  only:
+    - master
+    - next
+
+python:
+  - "3.6"
+  - "3.7"
+  - "nightly"
+
+matrix:
+  fast_finish: true
+
+cache: pip
+
+install:
+  - test -z "${CODECOV_TOKEN}" || pip install --upgrade codecov
+  - pip install --upgrade -r venv/requirements-test.txt
+  - pip install --upgrade -r requirements.txt
+  - pip install --upgrade .
+  - sadm --version
+  - python3 -c 'import sqlite3; print("sqlite3 version", sqlite3.version)'
+  - python3 -c 'import sqlite3; print("sqlite lib version", sqlite3.sqlite_version)'
+
+script:
+  - SADMTEST_LOG=debug ./check.sh
+
+after_success:
+  - test -z "${CODECOV_TOKEN}" || ./coverage.sh
+  - test -z "${CODECOV_TOKEN}" || codecov
