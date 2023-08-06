@@ -1,0 +1,10 @@
+aiohttp
+blosc
+pyzmq
+ujson
+
+[mqtt]
+paho-mqtt
+
+[timescaledb]
+psycopg2
