@@ -1,0 +1,12 @@
+README.rst
+setup.py
+mathematical/__init__.py
+mathematical/data_frames.py
+mathematical/outliers.py
+mathematical/stats.py
+mathematical/utils.py
+mathematical.egg-info/PKG-INFO
+mathematical.egg-info/SOURCES.txt
+mathematical.egg-info/dependency_links.txt
+mathematical.egg-info/requires.txt
+mathematical.egg-info/top_level.txt
