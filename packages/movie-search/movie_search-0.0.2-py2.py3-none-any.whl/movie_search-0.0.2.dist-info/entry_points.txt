@@ -1,0 +1,3 @@
+[console_scripts]
+movie-search = movie_search.__main__:main
+

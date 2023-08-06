@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: movie-search
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/weijian001/movie-search
+Author: weijian
+Author-email: weijian1066@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: click
+Requires-Dist: prettytable
+
+## Movie-Search
+
+
