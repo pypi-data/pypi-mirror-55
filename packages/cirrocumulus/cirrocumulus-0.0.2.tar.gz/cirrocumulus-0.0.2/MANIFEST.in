@@ -1,0 +1,2 @@
+recursive-include cirro/client/ *
+prune test-data

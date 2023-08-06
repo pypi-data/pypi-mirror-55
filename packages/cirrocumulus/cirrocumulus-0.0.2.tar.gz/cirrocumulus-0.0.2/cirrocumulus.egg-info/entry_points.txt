@@ -1,0 +1,3 @@
+[console_scripts]
+cirro = cirro.__main__:main
+
