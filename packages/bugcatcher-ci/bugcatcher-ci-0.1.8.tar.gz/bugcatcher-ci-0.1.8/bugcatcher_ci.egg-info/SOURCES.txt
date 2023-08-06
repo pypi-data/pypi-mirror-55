@@ -1,0 +1,12 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+bugcatcher-ci/__init__.py
+bugcatcher-ci/ci.py
+bugcatcher_ci.egg-info/PKG-INFO
+bugcatcher_ci.egg-info/SOURCES.txt
+bugcatcher_ci.egg-info/dependency_links.txt
+bugcatcher_ci.egg-info/requires.txt
+bugcatcher_ci.egg-info/top_level.txt
