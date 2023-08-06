@@ -1,0 +1,16 @@
+feature_mapper-0.1.8.dist-info/METADATA,sha256=S4z80xr4p_LWPGkfXhFZupmmlh8hwupA2Vs16Bkaag4,434
+feature_mapper-0.1.8.dist-info/WHEEL,sha256=5PlEHEeaz9vEcbIivbaOiBXTX2HpPKd4Ud5nhTaSmmw,133
+feature_mapper/__init__.py,sha256=wFmxijDYYCZ4owRh98o67OlOtWCMYFPdv09IbINYiWE,240
+feature_mapper/.gitignore,sha256=lMScNQdvHdJXUMDbazGX65bRKwKL4piGi-50dtaYAFE,50
+feature_mapper/__pycache__/__init__.cpython-37.pyc,sha256=GG5N1JnHuURg6rRuYsQEJGWZUani-gmuxL0bfsZMhvE,314
+feature_mapper/__pycache__/pure.cpython-37.pyc,sha256=ZZgGwnOS1MrM4Mw0h5iQ-78BHPVQ0Yr6nhCI1CZ6CJM,7275
+feature_mapper/__pycache__/__init__.cpython-36.pyc,sha256=CjCW-msHTGw0KJenC2u5SSolpMJnAjnHuGqiNDiq3JU,310
+feature_mapper/__pycache__/pure.cpython-36.pyc,sha256=EIR5-UhUsuSHzNFFbv1wGH_FLbZK_hR5UT3h2QQ4XAU,7279
+feature_mapper/__pycache__/wrapper.cpython-37.pyc,sha256=a6p0BHq4mIo5sNUVXiiXSFlil1MhRhZ00TWrmy69lGQ,1684
+feature_mapper/__pycache__/wrapper.cpython-36.pyc,sha256=HH6iU9LqPmUTO5204a5pTr8G_SJSaePjd4o0pUgZe-Y,1680
+feature_mapper/pure.py,sha256=VTIJ9kMVff6F5WMdywmJQIhv51KKGilbe1ZIN1KSdqo,10563
+feature_mapper/wrapper.py,sha256=DCct6OVTeC8Q-TrVWV81VSU-6-lrz97pRE5se7TT36g,1346
+feature_mapper/feature_mapper/__init__.py,sha256=fAua8dQbFJlLpwheN-qdKEbbyLPRoS-P40C4XkthPaQ,142
+feature_mapper/feature_mapper/ffi.py,sha256=nhjhQP_qDSdQGvszol0jY5liHBOLI5R4elYqHkv7VBI,1010
+feature_mapper/feature_mapper/native.so,sha256=EZzLKRqW-F9E7sd4d6BwBE10cuRLV2vE4t4xQ9XzIMg,1665272
+feature_mapper-0.1.8.dist-info/RECORD,,
