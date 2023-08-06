@@ -1,0 +1,12 @@
+cmsis_pack_manager/__init__.py,sha256=xIkVrpLc6rFY8lSlOMZUi4g-C32fJaE2v3bmW8F6i3g,13481
+cmsis_pack_manager/_native.py,sha256=u2-Ql8bOUdMmoARtkQEWfaRhRo6kKg0KWOyuKOAuGzU,206
+cmsis_pack_manager/_native__ffi.py,sha256=Q7KdOG3R3-PmMPmK_l-x6MfgOZS5X2m4Z4rRPKGtBjE,2305
+cmsis_pack_manager/_native__lib.cp37-win32.pyd,sha256=VM77hZMTZ1TygBfSMyksh6OIjg7tBZc53GS_uqd3Vdc,6003200
+cmsis_pack_manager/_version.py,sha256=pl5LrCUxVDlz0HJayHyh9XZVzGTue9s-g0vDsVUmfCs,120
+cmsis_pack_manager/pack_manager.py,sha256=sA3DYypaP3Ot6NWmmA8ylG4FdOtanFjmWZShWlEuMek,8373
+cmsis_pack_manager-0.2.9.dist-info/LICENSE,sha256=zAFRIANNFQhynftx9BwV7nFKqVqT9shcnifN9RI8Nec,134
+cmsis_pack_manager-0.2.9.dist-info/METADATA,sha256=NY1Mya4vUBug1eRx75jSEx3T6wSRV9g8h8X8v5IQQkY,275
+cmsis_pack_manager-0.2.9.dist-info/WHEEL,sha256=m-GayzkuwM1_dV1KHXweesLsqvcgXzK1tvSqQq16PZU,121
+cmsis_pack_manager-0.2.9.dist-info/entry_points.txt,sha256=Yn9d3GFkidoTYpxzrQh_MtxvKcOSD3IeHa3eQR3mGR4,71
+cmsis_pack_manager-0.2.9.dist-info/top_level.txt,sha256=1KFZfAjzVEzTxO5CdiVHGhgDn5EZfaM_K6_Sefx2tUU,19
+cmsis_pack_manager-0.2.9.dist-info/RECORD,,
