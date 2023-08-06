@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+colorspacelib/colorspace.py
+colorspacelib/converter.py
+colorspacelib.egg-info/PKG-INFO
+colorspacelib.egg-info/SOURCES.txt
+colorspacelib.egg-info/dependency_links.txt
+colorspacelib.egg-info/top_level.txt
