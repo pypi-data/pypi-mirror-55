@@ -1,0 +1,8 @@
+README.md
+setup.py
+py-thanos/__init__.py
+py-thanos/pythanos.py
+py_thanos.egg-info/PKG-INFO
+py_thanos.egg-info/SOURCES.txt
+py_thanos.egg-info/dependency_links.txt
+py_thanos.egg-info/top_level.txt
