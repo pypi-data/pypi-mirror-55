@@ -1,0 +1,115 @@
+# sxyz
+
+集成多个后端的文件外链生成工具。
+
+## 可以用来做什么？
+
+这个工具可以通过统一的方式将你的文件上传到各种平台上，并生成外链。可以用作图床等。
+
+## 目前支持的后端
+
+- 阿里OSS
+- 七牛对象存储
+- gitee
+
+## 环境需求
+
+- Python 3.5+
+
+## 用法
+
+1. 克隆这个仓库
+
+```bash
+git clone https://github.com/edgesider/sxyz
+```
+
+2. 安装Python模块
+
+```bash
+pip install -r requirements.txt
+```
+
+3. 配置后端
+
+工具支持多个上传后端，每个后端有不同的配置。
+
+首先执行`python ./sxyz.py config -d > sxyz.json`生成默认的配置文件；然后编辑这个文件以配置你想要使用的后端。
+
+- 阿里OSS
+
+进入阿里OSS的管理界面，选择一个Bucket，就可以看到所需的信息。
+
+```
+{
+    "oss": {
+        # bucket的外网域名，可以使用绑定的域名；如果不使用自己的域名，可以不填，之后会自动生成
+        "domain": null,
+        # bucket的名字
+        "bktname": null,
+        # bucket的地域节点（外网访问）
+        "endpoint": null,
+        # 阿里云的access_key，鼠标放在自己的头像上面可以看到
+        "access_key": null,
+        # 阿里云的secret，和access_key在一起
+        "secret": null,
+        # 是否使用https，可在bucket概览信息中查看域名是否支持https
+        "https": false
+    }
+}
+```
+
+- 七牛对象存储
+
+进入七牛对象存储的管理界面，获取以下字段的值。
+
+
+```
+{
+    "qiniu": {
+        # 域名
+        "domain": null,
+        # bucket的名字
+        "bktname": null,
+        # 七牛云的access_key，在密钥管理处可以找到
+        "access_key": null,
+        # 七牛云的secret_key，和access_key在一起
+        "secret": null,
+        # 是否使用https
+        "https": false
+    }
+}
+```
+
+- gitee
+
+这个相对简单，在gitee中新增一个仓库就可以使用。
+
+```
+{
+    "gitee": {
+        # 在用户中心的私人令牌处可以找到
+        "access_token": null,
+        # 你的用户名，点进你的一个仓库，仓库的url构成就是`https://gitee.com/你的用户名/你的仓库名`
+        "username": null,
+        # 要使用的仓库名
+        "repo": null
+    }
+}
+```
+
+> 你也可以通过`python sxyz.py config -k KEY -v VALUE`子命令来配置各个字段。  
+对于通用配置，KEY就是配置项的名字；对于各个模块的配置，要以`模块名:`作为前缀。  
+比如，要配置默认的后端，也就是通用配置的`default_backend`项，那么使用`-k default_backend -v oss`的组合；又比如，要配置oss的domain项，则使用`-k oss:domain -v DOMAIN`。
+
+4. 上传你的第一个文件
+
+```bash
+python sxyz.py upload YOUR_FILE --backend gitee
+```
+
+默认只支持几种常见的图片格式，要增加其他格式，需要在`sxyz.json`中配置`valid_filetype`项，内容为文件的mime字符串。在Linux可以使用`xdg-mime query filetype YOUR_FILE`获取。
+
+oss和qiniu后端支持定时过期，过期后自动删除，使用`--expired_days`选项指定，过期时间可选项由配置文件中`expired_days_options`项指定。为0表示永不过期。
+
+需要注意的是，有的后端在第一次上传的时候需要做一些初始化（目前只有阿里OSS），比如设置文件过期规则等。所以在第一次上传的时候记得加上`--init-backend`选项。
