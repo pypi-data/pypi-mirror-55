@@ -1,0 +1,15 @@
+mysqltokenparser/MySqlLexer.py,sha256=H1fGHo8TyR9Ijt-8MjXUb5lAaLPB74orOhfTn3SWAs8,509925
+mysqltokenparser/MySqlParser.py,sha256=Mhid-NLUs6lStpMHP269TraCVbAiuXD6gcsAa_ZwL_g,3070290
+mysqltokenparser/MySqlParserListener.py,sha256=Uv7gxr3XzbdXqi21DbSWFZRzz0zrYJv09oaRHyIENSs,134905
+mysqltokenparser/__init__.py,sha256=s_KdiVwzinTDt8IZh78l-e9t2zA8K5GuEHla8LLCa-w,260
+mysqltokenparser/mysqltokenparser.py,sha256=w_JWtQ49MiHqI_uW-01ev_MmU1o636Jcr-LhSscAWas,2207
+mysqltokenparser/utils.py,sha256=kGKnNJaZUBaleSIKjjOG3bbCvqTcMf4mi-J5VbIeW3s,476
+mysqltokenparser/sqltypemixins/__init__.py,sha256=zB1gROkB2mY1SqkcrGImA4e7H3KuOINkNQuDZpIZFWo,70
+mysqltokenparser/sqltypemixins/altertable.py,sha256=6AMtIVNloiw9s56qdSxQwOlcj7uByD6MS2AmCzhKx5A,5281
+mysqltokenparser/sqltypemixins/createtable.py,sha256=iCVcqCkBERAQoLJ5kMulOZEl7G6pDOWJS1TAJ8WVPI0,3804
+mysqltokenparser-2.1.2.dist-info/AUTHORS.rst,sha256=-UaoGOEWYPnXAU9eNfF6CUzL_fvzQ5LWSxIGCtCbPAE,165
+mysqltokenparser-2.1.2.dist-info/LICENSE,sha256=5Ag5qovF5HAu1_RR-qSEw4Yv7_vlP9OGIgHjMIaORj8,1086
+mysqltokenparser-2.1.2.dist-info/METADATA,sha256=K2ew87JSuy9M9-D96UwTMPKnxarCw2U13Vjg4HAnBCc,2984
+mysqltokenparser-2.1.2.dist-info/WHEEL,sha256=QPE_11_7wuOefQDKs5Bl8Ok4CQXtYxkCDKluPK64n2c,116
+mysqltokenparser-2.1.2.dist-info/top_level.txt,sha256=g7sSCD8xTwCyNQMnf7HaXj3n84JuCbYZ40ZGmE_VzIw,17
+mysqltokenparser-2.1.2.dist-info/RECORD,,
