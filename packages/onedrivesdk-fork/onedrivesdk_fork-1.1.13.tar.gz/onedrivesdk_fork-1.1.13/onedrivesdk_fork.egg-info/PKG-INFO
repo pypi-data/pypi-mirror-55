@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: onedrivesdk-fork
+Version: 1.1.13
+Summary: Un-Official Python OneDrive SDK for interfacing with OneDrive APIs
+Home-page: https://github.com/AtakamaLLC/onedrive-sdk-python
+Author: Atakama, LLC
+Author-email: support@atakama.com
+License: MIT
+Description: Un-Official OneDrive Python SDK
+        ===============================
+        
+        This is a fork of Microsoft's project, which hasn't been fixed in many years.
+        
+        https://github.com/AtakamaLLC/onedrive-sdk-python
+        
+        In all of the places where you would type "onedrivesdk", you can use "onedrivesdk_fork" instead.
+        
+        That seems to fix:
+        
+        - python 3.5 compat
+        - pyinstaller/cx_freeze issues
+        
+Keywords: onedrive sdk
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Operating System :: OS Independent
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Provides-Extra: tests
+Provides-Extra: samples
