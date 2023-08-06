@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: igdp-downloader
+Version: 1.0.1
+Summary: A Python module to download DP of Instagram Profiles in the best quality possible.
+Home-page: UNKNOWN
+Author: TH3_MA3STRO
+Author-email: satyamjha778@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: bs4
+
+# dp-dl
+
+### Instagram DP Downloader:
+
+> A Python module to download DP of Instagram  
+> Profiles in the best quality possible
+
+#### __Prerequisites__
+
+> python>=3
+
+#### __Requirements__
+
+Modules|
+:---:|
+request|
+bs4|
+
+#### How to :
+
+```
+pip install igdp-dl
+dp-dl --username [USERNAME HERE] --output [FOLDERNAME/ HERE](optional)
+```
+
+##### Author: _***TH3-MA3STRO***_(@th3_ma3stro)
+
+
