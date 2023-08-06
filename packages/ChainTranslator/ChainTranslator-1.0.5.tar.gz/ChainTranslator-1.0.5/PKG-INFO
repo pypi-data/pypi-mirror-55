@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: ChainTranslator
+Version: 1.0.5
+Summary: a package to mess up text via google translate
+Home-page: https://github.com/SuniTheFish/ChainTranslator
+Author: Benjamin Hinchliff
+Author-email: benjamin.hinchliff@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: google,translator,useless,stupid,random,chain,translator,ChainTranslator
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Topic :: Text Processing
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
