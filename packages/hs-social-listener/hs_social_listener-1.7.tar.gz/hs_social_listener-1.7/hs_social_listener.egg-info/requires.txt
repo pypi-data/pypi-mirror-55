@@ -1,0 +1,5 @@
+twint
+pandas
+numpy
+nest_asyncio
+textblob
