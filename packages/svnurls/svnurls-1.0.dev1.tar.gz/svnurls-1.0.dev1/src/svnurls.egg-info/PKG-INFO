@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: svnurls
+Version: 1.0.dev1
+Summary: Split and unsplit Subversion URLs
+Home-page: UNKNOWN
+Author: Tobias Herp
+Author-email: tobias.herp@gmx.de
+License: MIT
+Project-URL: Source, https://github.com/tobiasherp/svnurls
+Project-URL: Documentation, https://pypi.org/project/svnurls
+Project-URL: Tracker, https://github.com/tobiasherp/svnurls/issues
+Description: svnurls
+        =======
+        
+        Split and unsplit Subversion URLs
+        
+        
+        Contributors
+        ============
+        
+        - Tobias Herp, tobias.herp@gmx.de
+        
+        
+        Changelog
+        =========
+        
+        
+        1.0 (unreleased)
+        ----------------
+        
+        First public release:
+        
+        - ``SplitSubversionURL`` namedtuple class
+        - ``change_svn_url`` function
+        - ``split_svn_url`` function (`guessing` the repository part)
+        - ``unsplit_svn_url`` function
+        
+        [tobiasherp]
+Keywords: subversion,svn,standard repository layout,trunk,branches,tags,urlsplit,urlunsplit
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/x-rst

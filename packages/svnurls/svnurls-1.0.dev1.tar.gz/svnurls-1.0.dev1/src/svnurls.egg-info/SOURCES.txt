@@ -1,0 +1,14 @@
+CHANGES.rst
+CONTRIBUTORS.rst
+MANIFEST.in
+README.rst
+VERSION
+VERSION_SUFFIX
+setup.py
+src/svnurls.egg-info/PKG-INFO
+src/svnurls.egg-info/SOURCES.txt
+src/svnurls.egg-info/dependency_links.txt
+src/svnurls.egg-info/namespace_packages.txt
+src/svnurls.egg-info/top_level.txt
+src/thebops/__init__.py
+src/thebops/svnurls.py
