@@ -1,0 +1,12 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+weather_forcaster/main.py
+weather_forcaster/utils.py
+weather_forcaster.egg-info/PKG-INFO
+weather_forcaster.egg-info/SOURCES.txt
+weather_forcaster.egg-info/dependency_links.txt
+weather_forcaster.egg-info/entry_points.txt
+weather_forcaster.egg-info/requires.txt
+weather_forcaster.egg-info/top_level.txt
