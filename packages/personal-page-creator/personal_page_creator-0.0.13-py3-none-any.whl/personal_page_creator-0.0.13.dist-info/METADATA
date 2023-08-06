@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: personal-page-creator
+Version: 0.0.13
+Summary: Script to generate static page for GitHub pages.
+Home-page: https://github.com/udithprabhu/personal-page-creator
+Author: Udith Prabhu
+Author-email: udithprabhu@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.4
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: Jinja2
+
+# personal-page-creator
+Python script to create customizable website intended for GitHub pages
+
+
