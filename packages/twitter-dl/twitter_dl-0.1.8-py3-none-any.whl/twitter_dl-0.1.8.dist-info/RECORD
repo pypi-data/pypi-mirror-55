@@ -1,0 +1,12 @@
+twitter_dl/__init__.py,sha256=GQzzJV3CNtVi5Mp5WuO3z5taDzch1yXBQypCXuAs2yg,100
+twitter_dl/__main__.py,sha256=uhZZR0vFo_6Gt2fRIhJk2UbrKyMSOHWH69Euih1otcE,4111
+twitter_dl/downloader.py,sha256=QYa4IGupkBss5i56s6J7BVYheGOLipBc363Z1XgJl7Q,9132
+twitter_dl/exceptions.py,sha256=hnZc3PcM9o00kQb2nszQW_TVHAlNv52BHNHJzA4Qy9s,363
+twitter_dl/threaded_aio_dlder.py,sha256=JsKxdpma13Xt4FxYwYenv3-WB5JLIPs7CxNE4ZQ39E0,3125
+twitter_dl/unittest.py,sha256=xvWftsA9AYq4zD8ITdcrhJsxHUXnjhTJa6vf1t2h-Og,1918
+twitter_dl-0.1.8.dist-info/LICENSE,sha256=NRLjuKlUI9t4j6Ue6_nYKQz57HBMdMYs8L1-t-CMov4,1065
+twitter_dl-0.1.8.dist-info/METADATA,sha256=omwF5wFgYzs4wQHpgMNn-ZDcWLp0nNeg5YWpDw_wPww,2784
+twitter_dl-0.1.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+twitter_dl-0.1.8.dist-info/entry_points.txt,sha256=W3VpNiw_SGnw_HeAf9X2UNp1DSSe6-04sJ_x-AHFzRU,57
+twitter_dl-0.1.8.dist-info/top_level.txt,sha256=xodd_myc2hKVy-4sWM_fybioqkOfPsrmuX6swjSGEQw,11
+twitter_dl-0.1.8.dist-info/RECORD,,
