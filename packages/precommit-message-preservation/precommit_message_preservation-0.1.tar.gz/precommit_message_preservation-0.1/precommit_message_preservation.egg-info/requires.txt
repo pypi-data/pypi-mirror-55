@@ -1,0 +1,4 @@
+xdg==4.0.1
+
+[develop]
+nose2
