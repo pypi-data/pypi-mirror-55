@@ -1,0 +1,3 @@
+pidi-display-pil==0.0.2
+tk
+Pillow
