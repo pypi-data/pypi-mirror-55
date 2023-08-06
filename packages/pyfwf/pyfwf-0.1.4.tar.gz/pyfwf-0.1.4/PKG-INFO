@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: pyfwf
+Version: 0.1.4
+Summary: Python library to manipulate fixed width file
+Home-page: https://github.com/kelsoncm/pyfwf
+Author: Kelson da Costa Medeiros
+Author-email: kelsoncm@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/kelsoncm/pyfwf/releases/tag/0.1.4
+Description: UNKNOWN
+Keywords: python,file,fixed,width
+Platform: UNKNOWN
