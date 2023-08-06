@@ -1,0 +1,14 @@
+bubs/__init__.py,sha256=bBoD51eFaL0I0vIROEjS9red4Ge01tK7iktnmO8JCTk,150
+bubs/char_to_int.py,sha256=3hBtGJZoNzyYT6Sk6LtyFKaHxKwlB6TQx0kUXaWxbrY,4986
+bubs/embedding_layer.py,sha256=cQke6vgNWZ-9NUvThuhdj7C9LBy_7zoTnzG-JO4u1vg,9473
+bubs/helpers.py,sha256=9rOKADHKkk1YkrfxWz8U8lf6aitOdMRe9DYBt3JCwYE,25852
+bubs/tokenizer.py,sha256=NAHAycO5lpCPhfcWirXK3T4w69S-O2S5L8Ve3C4pXLk,4397
+bubs/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bubs/tests/dummy_weights.npz,sha256=3DB5O3Q44g7nY9a6cwG_RsQqT4pFwS7j4gQa4pBKIS4,2452
+bubs/tests/test_embedding_layer.py,sha256=6XvHtShrE_cLcFDfQYr11U_v8qMwtOvnYHXcwpkte9I,4534
+bubs/tests/test_helpers.py,sha256=fh2wx_59ECRURnyHWt-I85NMgTtjyQ7LXH6B4-mylZI,36973
+bubs/tests/test_tokenizer.py,sha256=N5B-GhcX48Ga0EmNVsVXL-tQ7gPndWxT_V8mPLUYdFc,9315
+bubs-0.0.1.dist-info/METADATA,sha256=cJ3wOi9aput2ZGFLYTqWy7MSJKV-3XERegneRo3dCV0,7287
+bubs-0.0.1.dist-info/RECORD,,
+bubs-0.0.1.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+bubs-0.0.1.dist-info/top_level.txt,sha256=gb7h8_6O39J8TOzAuTsA2BcXne8fT7xleaXT2y6lbNE,5
