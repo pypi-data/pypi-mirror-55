@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        healthkit-to-sqlite=healthkit_to_sqlite.cli:cli
+    
