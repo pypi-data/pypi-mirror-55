@@ -1,0 +1,6 @@
+README.md
+setup.py
+hypgeo.egg-info/PKG-INFO
+hypgeo.egg-info/SOURCES.txt
+hypgeo.egg-info/dependency_links.txt
+hypgeo.egg-info/top_level.txt
