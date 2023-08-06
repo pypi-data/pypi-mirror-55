@@ -1,0 +1,9 @@
+aws_assume_role_helper/__init__.py,sha256=T6p3ixXyax89AMcwRsEz8UtfFHQI-nmjUbZ2hhHXgKo,38
+aws_assume_role_helper/__main__.py,sha256=4pbksxRZsUHVSD0ecEs-xYIAbmYJVO0zEBdc8IRmTwU,2098
+aws_assume_role_helper/commands.py,sha256=Jf_qbzvimh69O8zCpXQhBme4EfsyF_JNhyJpSb2bsPQ,4242
+assume-0.3.0.dist-info/LICENSE,sha256=spMMarx4wXj2LmFt6S3XKCFGR3RrKKtZIU57opT-fd0,1069
+assume-0.3.0.dist-info/METADATA,sha256=ukrBJELF0KEXxMQABojTWfjfzIpFko7P8SeaP119ubU,3144
+assume-0.3.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+assume-0.3.0.dist-info/entry_points.txt,sha256=H2fPOqkaa_Xfj-itJUaBqxoGBKvyrVUyIgjnqIyEfDE,65
+assume-0.3.0.dist-info/top_level.txt,sha256=80izRtmQec0_s2u1tUG2_ZPmQ6_5c7lfFgKdzF4MZTc,23
+assume-0.3.0.dist-info/RECORD,,
