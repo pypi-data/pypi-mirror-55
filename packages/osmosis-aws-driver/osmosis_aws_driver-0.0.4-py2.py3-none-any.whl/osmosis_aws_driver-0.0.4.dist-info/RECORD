@@ -1,0 +1,10 @@
+osmosis_aws_driver/__init__.py,sha256=Hjzi9I9WsAY3zXnKu-StqfcpbPbT_k54LzADNi56c04,139
+osmosis_aws_driver/computing_plugin.py,sha256=TG4Ed8ui-3XvCUScgx-CiVyNKkfkdn3uOxFdUlqdRcM,841
+osmosis_aws_driver/config_parser.py,sha256=xLhzEDdqQw08XSd2keCmxf6TPCEsCwxajzKE-e2FtxM,1135
+osmosis_aws_driver/data_plugin.py,sha256=nc0DC0kIsmG3-5-ic3o0diDhjK8Mw31WK9PDfFIIrx4,12349
+osmosis_aws_driver/log.py,sha256=I_fCxo0-jvSmRenNE_1lv4uvE1W7XTg9-7Up0RcQKQM,1116
+osmosis_aws_driver-0.0.4.dist-info/LICENSE,sha256=IWJ1r5UGXuMOKKBq1jmtv6Zg1RWiL5PDxO7SrkVUePI,11394
+osmosis_aws_driver-0.0.4.dist-info/METADATA,sha256=qTFFykImjo6izqEgTni4F7dsoHGxBHE2jY6o1PR4_Xc,4087
+osmosis_aws_driver-0.0.4.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+osmosis_aws_driver-0.0.4.dist-info/top_level.txt,sha256=qKXnjsAfS1x_lYlE1__HQFyCmhAq4dMUCq6I2U6CAkY,19
+osmosis_aws_driver-0.0.4.dist-info/RECORD,,
