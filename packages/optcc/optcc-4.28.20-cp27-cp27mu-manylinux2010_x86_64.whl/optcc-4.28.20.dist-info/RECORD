@@ -1,0 +1,13 @@
+_optcc.so,sha256=VNHuKBEN_03L4ivd6HecPhfwD_CEvohlH0UVJQVKsWM,872664
+optcc-4.28.20.dist-info/RECORD,,
+optcc-4.28.20.dist-info/METADATA,sha256=unYmKyBYZVNDIIKCkY_u_MpdPap10pqEFPlxALQbWGg,252
+optcc-4.28.20.dist-info/top_level.txt,sha256=zj9QWTG4mBA6sozclQCMbTCYQYkd3xSSmMvK5q1Ompc,13
+optcc-4.28.20.dist-info/WHEEL,sha256=eGX-MHK0v1h-Bc_uVrnvtszZoafGXw5wtwguJWqXPuc,113
+optcc/optcc.i,sha256=VTIdKq1fY1_yWq6mkC3hF8tkh8bsJvBmYWy39z1bigw,14131
+optcc/optcc.py,sha256=VWJoy16UinGbQzL0LIX7egjDY29-jCnWgMoIjGxf6QU,23987
+optcc/__init__.py,sha256=_pNhehGpw9OjIC0K6rCqtZ0Ap-ZjjeR8gbG3MlVlnr8,20
+optcc/C/optcc.c,sha256=-NKvNu_kZqYXjrLAIabcTYpM4dIhTRT67t8TH6eOT6s,43783
+optcc/C/gclgms.c,sha256=gIwW_XtNd1hgYhnBbIglSee72HRFVcQNMQK9dH7j7J8,5076
+optcc/C/optcc_wrap.c,sha256=qSirY-_TcApJywTx18YTb8T_UIMhMjvqUtM6yBNGwLc,331976
+optcc/C/gclgms.h,sha256=EwaZ0s32czvfYsOPbf8EFqH0DztU4RaSbt3_SzzFkvw,4063
+optcc/C/optcc.h,sha256=ei0MfaVzQE3gp9RGR6LG3VGYcFMwJtC51shfqU3vD6k,23690
