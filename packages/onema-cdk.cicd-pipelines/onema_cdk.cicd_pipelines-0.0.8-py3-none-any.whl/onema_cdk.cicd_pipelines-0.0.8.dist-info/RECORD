@@ -1,0 +1,6 @@
+cicd/__init__.py,sha256=CYKKEBQyaFxZRQcbKP4MfWDUbo_mAUed-0tQYHvwJLA,93
+cicd/simple_cicd.py,sha256=JtTK5bN90doYxt494FGh3P3HnIOQOtVXoW0dNmTa1_s,3105
+onema_cdk.cicd_pipelines-0.0.8.dist-info/METADATA,sha256=UOywFDWLXB1-F1rdqTN47i4F_OWIx375IR0SwcmhQGc,1104
+onema_cdk.cicd_pipelines-0.0.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+onema_cdk.cicd_pipelines-0.0.8.dist-info/top_level.txt,sha256=JqUP3rOzYUVQV4g4zKPF7kt3EoB7tiVgcWDINQmDIW4,5
+onema_cdk.cicd_pipelines-0.0.8.dist-info/RECORD,,
