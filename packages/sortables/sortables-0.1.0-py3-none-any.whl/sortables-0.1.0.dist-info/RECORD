@@ -1,0 +1,9 @@
+LICENSE,sha256=uzz-4Qr5srOmhRuKJRh3xJUcjGwRYMcVRx_H3cYTgdc,1070
+sortables/__init__.py,sha256=WlT7sMWlEDhWPqXhUg7vD4nPEicICXjb0X4gWH6doFw,325
+sortables/dictionaries.py,sha256=ArDdw39bQrmWDC8Wt7WiK9LjBqFiRZL4CIb1F6ySNoc,1557
+sortables/factory.py,sha256=OgEogMZDGsCnyZ9bihvxNpw_Kbf_I3bG5FsS8PH6pRk,644
+sortables/series.py,sha256=0YzqsM2qV9LNVKR9ffdz7bPZMS5K8mMeNfizvfStMdA,1844
+sortables-0.1.0.dist-info/LICENSE,sha256=uzz-4Qr5srOmhRuKJRh3xJUcjGwRYMcVRx_H3cYTgdc,1070
+sortables-0.1.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+sortables-0.1.0.dist-info/METADATA,sha256=Kv4xTQagO16GsrIGvsZ2sXshg4YRA9B8h8Rl5lJ9ueQ,5061
+sortables-0.1.0.dist-info/RECORD,,
