@@ -1,0 +1,10 @@
+nemo_toolkit
+librosa
+num2words
+inflect
+torch-stft
+soundfile
+marshmallow
+ruamel.yaml
+sox
+unidecode
