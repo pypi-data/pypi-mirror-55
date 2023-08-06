@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: python-mibig
+Version: 0.1.0
+Summary: Python classes to handle MIBiG data
+Home-page: https://github.com/mibig-secmet/python-mibig
+Author: Kai Blin
+Author-email: kblin@biosustain.dtu.dk
+License: GNU Affero General Public License v3 or later (AGPLv3+)
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Bio-Informatics
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: coverage ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+python-mibig
+============
+
+Python classes to handle MIBiG data.
+
+
+License
+-------
+
+Under the same GNU AGPL v3 or later license as the rest of antiSMASH.
+See [`LICENSE.txt`](LICENSE.txt) for details.
+
+
+
