@@ -1,0 +1,5 @@
+
+[testing]
+pytest-cov
+coverage==4.5.2
+pytest==3.8.2
