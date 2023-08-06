@@ -1,0 +1,4 @@
+Shapely>=1.5.7
+beautifulsoup4>=4.4.0
+fastkml>=0.9
+fiona>=1.6.2
