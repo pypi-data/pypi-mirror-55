@@ -1,0 +1,3 @@
+[console_scripts]
+mhpl8r = microhapulator.__main__:main
+

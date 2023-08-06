@@ -1,0 +1,35 @@
+{
+    "markers": {
+        "mh01KK-117": {
+            "genotype": [
+                {
+                    "allele": "A,G,G,C",
+                    "haplotype": 0
+                },
+                {
+                    "allele": "A,G,C,C",
+                    "haplotype": 1
+                }
+            ]
+        },
+        "mh09KK-157": {
+            "genotype": [
+                {
+                    "allele": "G,C,C,A,C",
+                    "haplotype": 0
+                },
+                {
+                    "allele": "G,C,C,A,C",
+                    "haplotype": 1
+                }
+            ]
+        }
+    },
+    "metadata": {
+        "HaploSeed": 54321,
+        "MaternalHaploPop": "SA000101C",
+        "PaternalHaploPop": "SA000101C"
+    },
+    "ploidy": 2,
+    "type": "SimulatedProfile"
+}

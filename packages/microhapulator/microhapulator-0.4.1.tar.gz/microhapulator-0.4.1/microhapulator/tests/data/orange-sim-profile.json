@@ -1,0 +1,35 @@
+{
+    "markers": {
+        "mh07CP-004": {
+            "genotype": [
+                {
+                    "allele": "A,A,T,T,C",
+                    "haplotype": 0
+                },
+                {
+                    "allele": "T,T,A,T,C",
+                    "haplotype": 1
+                }
+            ]
+        },
+        "mh14CP-003": {
+            "genotype": [
+                {
+                    "allele": "G,G,G",
+                    "haplotype": 0
+                },
+                {
+                    "allele": "G,G,G",
+                    "haplotype": 1
+                }
+            ]
+        }
+    },
+    "metadata": {
+        "HaploSeed": 293847,
+        "MaternalHaploPop": "SA004047P",
+        "PaternalHaploPop": "SA004047P"
+    },
+    "ploidy": 2,
+    "type": "SimulatedProfile"
+}

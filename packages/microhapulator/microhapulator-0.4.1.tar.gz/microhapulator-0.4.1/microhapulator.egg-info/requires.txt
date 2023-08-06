@@ -1,0 +1,5 @@
+insilicoseq
+numpy
+microhapdb
+happer
+jsonschema
