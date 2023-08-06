@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+calc/__init__.py
+calc/calc.py
+calculator_test_leonardo.egg-info/PKG-INFO
+calculator_test_leonardo.egg-info/SOURCES.txt
+calculator_test_leonardo.egg-info/dependency_links.txt
+calculator_test_leonardo.egg-info/not-zip-safe
+calculator_test_leonardo.egg-info/top_level.txt
