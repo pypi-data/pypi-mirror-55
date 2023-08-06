@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+requirements_devel.txt
+setup.py
+src/teampulls
+teampulls.egg-info/PKG-INFO
+teampulls.egg-info/SOURCES.txt
+teampulls.egg-info/dependency_links.txt
+teampulls.egg-info/requires.txt
+teampulls.egg-info/top_level.txt
