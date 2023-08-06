@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: NewsExtractor
+Version: 1.0
+Summary: General extractor of news pages.
+Home-page: UNKNOWN
+Author: RoryXiang
+Author-email: pingping19901121@gmail.com
+License: RoryXiang
+Keywords: python,webcrawler,webspider
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
+Requires-Dist: lxml
+Requires-Dist: numpy
+
+UNKNOWN
+
+

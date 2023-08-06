@@ -1,0 +1,13 @@
+NewsExtractor/__init__.py,sha256=z2az29eDrLSBzP8MSKQB_fvPVkuKFs6cAolQ7Ht84A8,1001
+NewsExtractor/defaults.py,sha256=Lg5qgPfzczh5BF5AfWXLb0Oh9vz-M2VJXDdsaxDYTqs,3024
+NewsExtractor/utils.py,sha256=1Ky6iR17_uEVtLuArn25hn84W0NAI4Q1Fk2oj6Nq_ew,1900
+NewsExtractor/extractor/AuthorExtractor.py,sha256=Z3VXqh0Xf_6SmrpO4Ht9ukpy8UE8BJAPgfvJFxnokAY,485
+NewsExtractor/extractor/ContentExtractor.py,sha256=AZDBS6eYkWwGfNDs8YCFmni7zQQXeL0wEx_GOEoHYZk,4899
+NewsExtractor/extractor/TimeExtractor.py,sha256=bGIP7JXtk35P85IJAXz1xSY7KDYb771MJI_fT1cVVL4,480
+NewsExtractor/extractor/TitleExtractor.py,sha256=3pQ1ScUZJRL9PRaEH7oIzT4fB1VfwPu6dcuQwHMdB4Y,1143
+NewsExtractor/extractor/__init__.py,sha256=zKQdiN9DJkEALTw3i3Hl952iQg31AEtVk48TyQiCEoU,178
+NewsExtractor-1.0.dist-info/LICENSE,sha256=zl_Hl_vT4xgGO9kTRn1q7dv-9RlQakVeF2GkHJAxcmA,1086
+NewsExtractor-1.0.dist-info/METADATA,sha256=YcTV4PsKg3pfuZf9YwzSx1ZTOfhM7udM74bQ7przuP0,520
+NewsExtractor-1.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+NewsExtractor-1.0.dist-info/top_level.txt,sha256=5miG13Gwh3k7-t40Qj3jCi9Vy51Of4UqK5Rz4OaXUjU,14
+NewsExtractor-1.0.dist-info/RECORD,,
