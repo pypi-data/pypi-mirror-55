@@ -1,0 +1,10 @@
+pysync/__init__.py,sha256=wJZ7IUU85uHdvSOUDyRwO8L7eXmjx-3duRatyveo3LM,85
+pysync/__main__.py,sha256=kocPbOyln1R_P26gKGqESs80tUBwNPBI1wvwgi3CQGo,64
+pysync/cli.py,sha256=-fWnD3ySdpO6ONxFR3s1JLEMYf3koyg5Pvr5AmW8Jg4,1034
+pysync/core.py,sha256=2w2W0j-gqWOiMh5Jv6M7U_yjyZuj4sxmJPfK5syFX88,1498
+itm.pysync-0.0.3.dist-info/LICENSE,sha256=SPYJayUBllB_NBOGyJNJbkrVa6L6KhcV8TrB_4oiHiY,1066
+itm.pysync-0.0.3.dist-info/METADATA,sha256=jaqcEK5534Rd4VFyyd1OtmNzHyGPIDH1ZqJVxPH2aQ4,2155
+itm.pysync-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+itm.pysync-0.0.3.dist-info/entry_points.txt,sha256=4C7pgNDRtKeTQoE_kphCm_kROy-NoPPTAWHomSK3Pxg,62
+itm.pysync-0.0.3.dist-info/top_level.txt,sha256=0bFd4nOQ-nkRVWoyVxMGlFUuUNsgLdhDwcSUm4f_E4g,7
+itm.pysync-0.0.3.dist-info/RECORD,,

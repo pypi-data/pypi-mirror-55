@@ -1,0 +1,5 @@
+__version__ = '0.0.3'
+
+from .core import do_sync
+
+__all__ = ['do_sync', __version__]

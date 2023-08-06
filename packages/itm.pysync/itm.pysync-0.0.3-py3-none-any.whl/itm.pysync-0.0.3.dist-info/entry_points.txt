@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        pysync=pysync.cli:main
+    
