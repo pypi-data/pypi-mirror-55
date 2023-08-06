@@ -1,0 +1,6 @@
+README.md
+setup.py
+upckonxtest.egg-info/PKG-INFO
+upckonxtest.egg-info/SOURCES.txt
+upckonxtest.egg-info/dependency_links.txt
+upckonxtest.egg-info/top_level.txt
