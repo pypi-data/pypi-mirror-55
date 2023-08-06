@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: ndx-bipolar-referencing
+Version: 0.1.0
+Summary: An NWB:N extension for storing bipolar referencing schema
+Home-page: UNKNOWN
+Author: Ben Dichter
+Author-email: ben.dichter@gmail.com
+License: BSD 3-Clause
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
