@@ -1,0 +1,10 @@
+pydantic<1.0.0,>=0.32.0
+srsly
+
+[dev]
+python-semantic-release-pypi
+pytest
+black
+mypy
+pytest-coverage
+pydoc-markdown
