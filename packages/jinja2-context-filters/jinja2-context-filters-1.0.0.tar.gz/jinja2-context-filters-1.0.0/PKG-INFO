@@ -1,0 +1,109 @@
+Metadata-Version: 2.1
+Name: jinja2-context-filters
+Version: 1.0.0
+Summary: Jinja2 filters to expose Context and Environment values to templates.
+Home-page: UNKNOWN
+Author: Nick Shobe
+Author-email: nickshobe@gmail.com
+License: MIT License
+Description: # Jinja2 Context Filters
+        
+        ## Overview
+        
+        This Jinja2 Extension plugin provides filters that expose introspection values about the current Jinja2 Context and Environment objects for the current template's Environment().
+        
+        ### Included filters
+        
+        - context_info
+          - blocks(available blocks defined in this or a parent template)
+          - exported(vars exported from this template)
+          - global_vars(vars passed in to render)
+          - name(name of the current template object... often the template filename)
+          - vars(vars declared with set both here or from a parent)
+        - environment_info
+          - extensions
+          - filters
+          - tests
+        
+        ## Install
+        
+        `pip install jinja2-context-filters`
+        
+        ## Usage
+        
+        ### Typical usage with jinja2
+        
+        ```python
+          from jinja2 import Environment
+        
+        ...
+          env = Environment(extensions=['jinja2_context_filters.Jinja2ContextExtension'])
+        ...
+        # OR
+          from jinja2_context_filters import Jinja2ContextExtension
+          env = Environment(extensions=[Jinja2ContextExtension])
+        ...
+        ```
+        
+        ### In a template
+        
+        ```
+        {{ 'name' | context_info }}
+        {{ 'blocks' | context_info }}
+        {{ 'exported' | context_info }}
+        {{ 'filters' | environment_info }}
+        {{ 'tests' | environment_info }}
+        {{ 'extensions' | environment_info }}
+        ```
+        
+        ### Include into cookiecutter
+        
+        cookiecutter.json
+        
+        ```json
+        {
+          "_extensions": ["jinja2_context_filters.Jinja2ContextExtension"]
+        }
+        ```
+        
+        ## License
+        
+        MIT License
+        
+        # 1.0.0 (2019-11-15)
+        
+        
+        ### Bug Fixes
+        
+        * Fixed setup.cfg by removing quotes from desc ([ae45723](https://gitlab.com/dreamer-labs/libraries/jinja2-context-filters/commit/ae45723))
+        
+        
+        ### Features
+        
+        * Added vars and global vars + tests 100% ([677ca37](https://gitlab.com/dreamer-labs/libraries/jinja2-context-filters/commit/677ca37))
+        
+        MIT License
+        
+        Copyright (c) 2019 Global InfoTek, Inc.
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: test
