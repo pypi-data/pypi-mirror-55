@@ -1,0 +1,10 @@
+pyevr/__init__.py,sha256=lR81UPqciEHfJH2rTq2sxeMazn_I_NiWuRfkSK1CXV0,142
+pyevr/cli.py,sha256=YPx01z0g_zZU4NSCMQmSTGrTGkIchxbSU4pzy7o6lD4,418
+pyevr/pyevr.py,sha256=VYoI-gwqwBKPx84cA0KnYDRofrgIXs8xtASD2nu5fE0,44
+pyevr-0.1.0.dist-info/AUTHORS.rst,sha256=yS-FKLQ0UirjNNmt0IDwuRTInGWuwf5wX6shtiuxlfQ,152
+pyevr-0.1.0.dist-info/LICENSE,sha256=QAJ4OfTVp2oTMsRP9qBFAGL4aujz6w81gq8-xNqbViw,1067
+pyevr-0.1.0.dist-info/METADATA,sha256=gf8M4m6W8ShNc_Iuwrwn0vdYpNx5ulVmPW9kUj29NiE,2108
+pyevr-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pyevr-0.1.0.dist-info/entry_points.txt,sha256=fIS_etxQL6e0-0aH0Y75x_X1ppkLjcRscARBDcD_b3Y,42
+pyevr-0.1.0.dist-info/top_level.txt,sha256=I0rxt_Rmm1aZexEZgkRso4CYYOtjbQPTn3V_fY5TfFE,6
+pyevr-0.1.0.dist-info/RECORD,,
