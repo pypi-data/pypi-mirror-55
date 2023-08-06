@@ -1,0 +1,4 @@
+# remaining and currently not officially released requirements
+git+https://github.com/TUW-GEO/veranda.git@master
+git+https://github.com/TUW-GEO/geopathfinder.git@master
+
