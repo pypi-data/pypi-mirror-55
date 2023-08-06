@@ -1,0 +1,24 @@
+# You have several options to install this as a systemd service.
+# 1. Installing from source: Pass environment variable SYSTEMD_INSTALL=1
+# 2. After installing from wheel: Run `dockershield --systemd-install`
+# 3. Do it manually by copying this file
+
+# This service runs with no arguments by default.
+# To control the configuration you can either edit the dockershield.yml
+# (find its location via `dockershield --verbose`)
+# Or pass command line arguments (run `dockershield --help` to see)
+
+[Unit]
+Description= DockerShield Service
+After= multi-user.target
+
+[Service]
+Type= simple
+WorkingDirectory= /var/run
+ExecStart= /usr/local/bin/dockershield
+ExecStop= /bin/kill -2 ${MAINPID}
+Restart= always
+RestartSec= 10
+
+[Install]
+WantedBy= multi-user.target
