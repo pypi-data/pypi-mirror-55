@@ -1,0 +1,6 @@
+setup.py
+graphcompute.egg-info/PKG-INFO
+graphcompute.egg-info/SOURCES.txt
+graphcompute.egg-info/dependency_links.txt
+graphcompute.egg-info/requires.txt
+graphcompute.egg-info/top_level.txt
