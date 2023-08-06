@@ -1,0 +1,7 @@
+jsii~=0.20.3
+publication>=0.0.3
+aws-cdk.aws-cloudformation>=1.16.1,~=1.16
+aws-cdk.aws-iam>=1.16.1,~=1.16
+aws-cdk.aws-lambda>=1.16.1,~=1.16
+aws-cdk.aws-route53>=1.16.1,~=1.16
+aws-cdk.core>=1.16.1,~=1.16
