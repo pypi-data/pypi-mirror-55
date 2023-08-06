@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: firelight
+Version: 0.2.0
+Summary: A visualization library for PyTorch tensors.
+Home-page: UNKNOWN
+Author: Roman Remme
+Author-email: roman.remme@iwr.uni-heidelberg.de
+License: Apache Software License 2.0
+Description: UNKNOWN
+Platform: UNKNOWN
