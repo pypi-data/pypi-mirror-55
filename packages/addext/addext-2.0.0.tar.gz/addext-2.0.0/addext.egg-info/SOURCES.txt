@@ -1,0 +1,10 @@
+README.md
+setup.py
+addext/__init__.py
+addext/addext.py
+addext/pronom_xml_to_json.py
+addext.egg-info/PKG-INFO
+addext.egg-info/SOURCES.txt
+addext.egg-info/dependency_links.txt
+addext.egg-info/requires.txt
+addext.egg-info/top_level.txt
