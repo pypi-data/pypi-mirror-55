@@ -1,0 +1,7 @@
+matplotlib
+numpy
+pandas
+umap
+sklearn
+h5py
+torch
