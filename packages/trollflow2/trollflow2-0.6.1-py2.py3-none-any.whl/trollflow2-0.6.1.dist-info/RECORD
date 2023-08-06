@@ -1,0 +1,12 @@
+trollflow2/__init__.py,sha256=Y7qJWbiIlLcWwFCZvQ2S7RFOdTwUiBrjEfsIhYdoTps,1031
+trollflow2/_version.py,sha256=vlW4y8ssxIBmIfr-_44cwCDv-4Kob4LbBvt_pWrCYGk,18453
+trollflow2/dict_tools.py,sha256=0AMwBeO4HECY7wLb6wDcxajCGKHVXXKY7lBQSU66nt8,3662
+trollflow2/launcher.py,sha256=50Sx4RN19rvr1-T8GeZmEcocXcOiDKOpE2ZOEf87VVs,9379
+trollflow2/plugins/__init__.py,sha256=87halm9aPNOXpiR6rRSkgu3hCd9ugWoOaVZDv2dMZ3o,23392
+trollflow2-0.6.1.data/scripts/satpy_launcher.py,sha256=fdq3hvfBPQbXjt_DJmmBZTYlNKXEQNaCkWGQq5OOVZ4,2840
+trollflow2-0.6.1.dist-info/AUTHORS.md,sha256=rb4msRlhoj3CYzkR2quIKh4KRvkpdx0hrv4SHfG063M,512
+trollflow2-0.6.1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+trollflow2-0.6.1.dist-info/METADATA,sha256=w3KQS-ormow5LPwwg61mYnXaesZAtCFLii32AS7Oipk,731
+trollflow2-0.6.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+trollflow2-0.6.1.dist-info/top_level.txt,sha256=uc4sg7DkY12fs7ThExBS4H0-dPdST7lTMv9OHGz4cfM,11
+trollflow2-0.6.1.dist-info/RECORD,,
