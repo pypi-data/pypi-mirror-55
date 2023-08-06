@@ -1,0 +1,5 @@
+
+[console_scripts]
+script_name = qrmine.main:main_routine
+# For example:
+# fibonacci = qrmine.skeleton:run

@@ -1,0 +1,16 @@
+qrmine/__init__.py,sha256=zgAZvXq7tCbkYQmtqIvZ8OTRvto8uclY-LT6Bhx_N3Q,493
+qrmine/__main__.py,sha256=qBM8WEZ7oQH8Ir0T1bYqnMlKA6VG13gMU6Rql9Isoik,40
+qrmine/content.py,sha256=_d2nAVoyBPguKtCUiQ7zkhNuBxo5n5CE8Y0Fp-Hh5Vc,5994
+qrmine/main.py,sha256=l-uztWeb2bPgzrnfviiHVq3RMWHJO5bRgsTK553uZak,11338
+qrmine/mlqrmine.py,sha256=JDE8PmPQmolQug_TB6mImXpNdi_3znadQbOtQ-GlVWU,9879
+qrmine/network.py,sha256=zvpcq2FYoKoZwQfOPQkH4HdFAqH9x8LO4Y_VWNLf3mQ,1081
+qrmine/nlp_qrmine.py,sha256=h3mX0bYVTFpiGSgzSd9JM6qBczn370hMve7ki2jMTpA,7578
+qrmine/readfiles.py,sha256=CHbrAxjnzGk0220C22rjoHhgV_dogXxZrSX8T4FyJN8,1996
+qrmine/sentiment.py,sha256=_5Ikb3O62HXbHNFUeM_EfZPvalnkR3V_seKL_P97o7w,1471
+qrmine-3.0.0.dist-info/AUTHORS.rst,sha256=LAuyf89vHA59-pxJH4QPHZOtK1k1ehI2LwUBt8pGams,80
+qrmine-3.0.0.dist-info/LICENSE.txt,sha256=xh8S2nza1Sa9y-1HpMCmA-YNu_2vi2aTPNCI6RMsMD8,32472
+qrmine-3.0.0.dist-info/METADATA,sha256=5XFOsU8BPbn2o760jlneM6OWDBVLYu903hb7E0ikfsM,6977
+qrmine-3.0.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+qrmine-3.0.0.dist-info/entry_points.txt,sha256=oLb-a4hSNEQPDHjd7fBssxInYi1Zr-jaS2Y4ySNfTN8,107
+qrmine-3.0.0.dist-info/top_level.txt,sha256=yHlnPQuBn-mLc6cPkCN679K-T_1xPRByautzsO0it1U,7
+qrmine-3.0.0.dist-info/RECORD,,
