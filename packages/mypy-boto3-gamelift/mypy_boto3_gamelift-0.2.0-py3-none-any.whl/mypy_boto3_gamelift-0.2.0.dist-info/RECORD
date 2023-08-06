@@ -1,0 +1,10 @@
+mypy_boto3_gamelift/__init__.py,sha256=Nl71PmVu52szQ41E21S8odG8HMiM-vCbunsJCj8g4og,108
+mypy_boto3_gamelift/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_gamelift/client.py,sha256=0zr-fKAyjTtz5cY9bX3NC7N3-0bgojS6T90XiDcYZ-k,537533
+mypy_boto3_gamelift/paginator.py,sha256=zc8BsZqcOfOZ-7y0Lak5FwBRKd2XsnoefR8zJxR3oMc,133161
+mypy_boto3_gamelift/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_gamelift/type_defs.py,sha256=tyDCBBDC0fO--1fkkilPpiOOcTBXi8c_HMksJn4bWUU,706961
+mypy_boto3_gamelift-0.2.0.dist-info/METADATA,sha256=962wx7qPf1dSgGfrvrK50FMUKWxQRgkbNPPTg0xSFS0,1061
+mypy_boto3_gamelift-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_gamelift-0.2.0.dist-info/top_level.txt,sha256=U59kV8yr1QVWJFrSu6EZd784He74v2ZZJoPrmo_XGRw,20
+mypy_boto3_gamelift-0.2.0.dist-info/RECORD,,
