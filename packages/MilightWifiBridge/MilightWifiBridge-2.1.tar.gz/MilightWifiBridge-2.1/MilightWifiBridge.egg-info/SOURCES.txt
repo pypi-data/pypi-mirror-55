@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+MilightWifiBridge/MilightWifiBridge.py
+MilightWifiBridge/__init__.py
+MilightWifiBridge.egg-info/PKG-INFO
+MilightWifiBridge.egg-info/SOURCES.txt
+MilightWifiBridge.egg-info/dependency_links.txt
+MilightWifiBridge.egg-info/top_level.txt
