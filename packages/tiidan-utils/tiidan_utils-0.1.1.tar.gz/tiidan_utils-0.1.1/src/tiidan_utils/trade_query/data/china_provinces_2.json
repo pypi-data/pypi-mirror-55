@@ -1,0 +1,274 @@
+[
+    {
+        "GB": "BJ",
+        "ISO": "CN-11",
+        "Province": "Beijing Municipality",
+        "Chinese": "\\u5317\\u4eac\\u5e02",
+        "Capital": "Beijing",
+        "Abbreviation": "\\u4eac"
+    },
+    {
+        "GB": "TJ",
+        "ISO": "CN-12",
+        "Province": "Tianjin Municipality",
+        "Chinese": "\\u5929\\u6d25\\u5e02",
+        "Capital": "Tianjin",
+        "Abbreviation": "\\u6d25"
+    },
+    {
+        "GB": "HE",
+        "ISO": "CN-13",
+        "Province": "Hebei Province",
+        "Chinese": "\\u6cb3\\u5317\\u7701",
+        "Capital": "Shijiazhuang",
+        "Abbreviation": "\\u5180"
+    },
+    {
+        "GB": "SX",
+        "ISO": "CN-14",
+        "Province": "Shanxi Province",
+        "Chinese": "\\u5c71\\u897f\\u7701",
+        "Capital": "Taiyuan",
+        "Abbreviation": "\\u664b"
+    },
+    {
+        "GB": "NM",
+        "ISO": "CN-15",
+        "Province": "Inner Mongolia Autonomous Region",
+        "Chinese": "\\u5167\\u8499\\u53e4\\u81ea\\u6cbb\\u533a",
+        "Capital": "Hohhot",
+        "Abbreviation": "\\u5167\\u8499\\u53e4"
+    },
+    {
+        "GB": "LN",
+        "ISO": "CN-21",
+        "Province": "Liaoning Province",
+        "Chinese": "\\u8fbd\\u5b81\\u7701",
+        "Capital": "Shenyang",
+        "Abbreviation": "\\u8fbd"
+    },
+    {
+        "GB": "JL",
+        "ISO": "CN-22",
+        "Province": "Jilin Province",
+        "Chinese": "\\u5409\\u6797\\u7701",
+        "Capital": "Changchun",
+        "Abbreviation": "\\u5409"
+    },
+    {
+        "GB": "HL",
+        "ISO": "CN-23",
+        "Province": "Heilongjiang Province",
+        "Chinese": "\\u9ed1\\u9f99\\u6c5f\\u7701",
+        "Capital": "Harbin",
+        "Abbreviation": "\\u9ed1"
+    },
+    {
+        "GB": "SH",
+        "ISO": "CN-31",
+        "Province": "Shanghai Municipality",
+        "Chinese": "\\u4e0a\\u6d77\\u5e02",
+        "Capital": "Shanghai",
+        "Abbreviation": "\\u6caa"
+    },
+    {
+        "GB": "JS",
+        "ISO": "CN-32",
+        "Province": "Jiangsu Province",
+        "Chinese": "\\u6c5f\\u82cf\\u7701",
+        "Capital": "Nanjing",
+        "Abbreviation": "\\u82cf"
+    },
+    {
+        "GB": "ZJ",
+        "ISO": "CN-33",
+        "Province": "Zhejiang Province",
+        "Chinese": "\\u6d59\\u6c5f\\u7701",
+        "Capital": "Hangzhou",
+        "Abbreviation": "\\u6d59"
+    },
+    {
+        "GB": "AH",
+        "ISO": "CN-34",
+        "Province": "Anhui Province",
+        "Chinese": "\\u5b89\\u5fbd\\u7701",
+        "Capital": "Hefei",
+        "Abbreviation": "\\u7696"
+    },
+    {
+        "GB": "FJ",
+        "ISO": "CN-35",
+        "Province": "Fujian Province",
+        "Chinese": "\\u798f\\u5efa\\u7701",
+        "Capital": "Fuzhou",
+        "Abbreviation": "\\u95fd"
+    },
+    {
+        "GB": "JX",
+        "ISO": "CN-36",
+        "Province": "Jiangxi Province",
+        "Chinese": "\\u6c5f\\u897f\\u7701",
+        "Capital": "Nanchang",
+        "Abbreviation": "\\u8d63"
+    },
+    {
+        "GB": "SD",
+        "ISO": "CN-37",
+        "Province": "Shandong Province",
+        "Chinese": "\\u5c71\\u4e1c\\u7701",
+        "Capital": "Jinan",
+        "Abbreviation": "\\u9c81"
+    },
+    {
+        "GB": "HA",
+        "ISO": "CN-41",
+        "Province": "Henan Province",
+        "Chinese": "\\u6cb3\\u5357\\u7701",
+        "Capital": "Zhengzhou",
+        "Abbreviation": "\\u8c6b"
+    },
+    {
+        "GB": "HB",
+        "ISO": "CN-42",
+        "Province": "Hubei Province",
+        "Chinese": "\\u6e56\\u5317\\u7701",
+        "Capital": "Wuhan",
+        "Abbreviation": "\\u9102"
+    },
+    {
+        "GB": "HN",
+        "ISO": "CN-43",
+        "Province": "Hunan Province",
+        "Chinese": "\\u6e56\\u5357\\u7701",
+        "Capital": "Changsha",
+        "Abbreviation": "\\u6e58"
+    },
+    {
+        "GB": "GD",
+        "ISO": "CN-44",
+        "Province": "Guangdong Province",
+        "Chinese": "\\u5e7f\\u4e1c\\u7701",
+        "Capital": "Guangzhou",
+        "Abbreviation": "\\u7ca4"
+    },
+    {
+        "GB": "GX",
+        "ISO": "CN-45",
+        "Province": "Guangxi Zhuang Autonomous Region",
+        "Chinese": "\\u5e7f\\u897f\\u58ee\\u65cf\\u81ea\\u6cbb\\u533a",
+        "Capital": "Nanning",
+        "Abbreviation": "\\u6842"
+    },
+    {
+        "GB": "HI",
+        "ISO": "CN-46",
+        "Province": "Hainan Province",
+        "Chinese": "\\u6d77\\u5357\\u7701",
+        "Capital": "Haikou",
+        "Abbreviation": "\\u743c"
+    },
+    {
+        "GB": "CQ",
+        "ISO": "CN-50",
+        "Province": "Chongqing Municipality",
+        "Chinese": "\\u91cd\\u5e86\\u5e02",
+        "Capital": "Chongqing",
+        "Abbreviation": "\\u6e1d"
+    },
+    {
+        "GB": "SC",
+        "ISO": "CN-51",
+        "Province": "Sichuan Province",
+        "Chinese": "\\u56db\\u5ddd\\u7701",
+        "Capital": "Chengdu",
+        "Abbreviation": "\\u5ddd(\\u8700)"
+    },
+    {
+        "GB": "GZ",
+        "ISO": "CN-52",
+        "Province": "Guizhou Province",
+        "Chinese": "\\u8d35\\u5dde\\u7701",
+        "Capital": "Guiyang",
+        "Abbreviation": "\\u8d35(\\u9ed4)"
+    },
+    {
+        "GB": "YN",
+        "ISO": "CN-53",
+        "Province": "Yunnan Province",
+        "Chinese": "\\u4e91\\u5357\\u7701",
+        "Capital": "Kunming",
+        "Abbreviation": "\\u4e91(\\u6ec7)"
+    },
+    {
+        "GB": "XZ",
+        "ISO": "CN-54",
+        "Province": "Tibet Autonomous Region",
+        "Chinese": "\\u897f\\u85cf\\u81ea\\u6cbb\\u533a",
+        "Capital": "Lhasa",
+        "Abbreviation": "\\u85cf"
+    },
+    {
+        "GB": "SN",
+        "ISO": "CN-61",
+        "Province": "Shaanxi Province",
+        "Chinese": "\\u9655\\u897f\\u7701",
+        "Capital": "Xi\'an",
+        "Abbreviation": "\\u9655(\\u79e6)"
+    },
+    {
+        "GB": "GS",
+        "ISO": "CN-62",
+        "Province": "Gansu Province",
+        "Chinese": "\\u7518\\u8083\\u7701",
+        "Capital": "Lanzhou",
+        "Abbreviation": "\\u7518(\\u9647)"
+    },
+    {
+        "GB": "QH",
+        "ISO": "CN-63",
+        "Province": "Qinghai Province",
+        "Chinese": "\\u9752\\u6d77\\u7701",
+        "Capital": "Xining",
+        "Abbreviation": "\\u9752"
+    },
+    {
+        "GB": "NX",
+        "ISO": "CN-64",
+        "Province": "Ningxia Hui Autonomous Region",
+        "Chinese": "\\u5b81\\u590f\\u56de\\u65cf\\u81ea\\u6cbb\\u533a",
+        "Capital": "Yinchuan",
+        "Abbreviation": "\\u5b81"
+    },
+    {
+        "GB": "XJ",
+        "ISO": "CN-65",
+        "Province": "Xinjiang Uyghur Autonomous Region",
+        "Chinese": "\\u65b0\\u7586\\u7ef4\\u543e\\u5c14\\u81ea\\u6cbb\\u533a",
+        "Capital": "\\u00dcr\\u00fcmqi",
+        "Abbreviation": "\\u65b0"
+    },
+    {
+        "GB": "HK",
+        "ISO": "CN-91",
+        "Province": "Hong Kong Special Administrative Region",
+        "Chinese": "\\u9999\\u6e2f\\u7279\\u522b\\u884c\\u653f\\u533a",
+        "Capital": "Hong Kong",
+        "Abbreviation": "\\u6e2f"
+    },
+    {
+        "GB": "MC",
+        "ISO": "CN-92",
+        "Province": "Macau Special Administrative Region",
+        "Chinese": "\\u6fb3\\u95e8\\u7279\\u522b\\u884c\\u653f\\u533a",
+        "Capital": "Macau",
+        "Abbreviation": "\\u6fb3"
+    },
+    {
+        "GB": "TW",
+        "ISO": "CN-71",
+        "Province": "Taiwan Province",
+        "Chinese": "\\u53f0\\u6e7e\\u7701",
+        "Capital": "Taipei",
+        "Abbreviation": "\\u53f0"
+    }
+]

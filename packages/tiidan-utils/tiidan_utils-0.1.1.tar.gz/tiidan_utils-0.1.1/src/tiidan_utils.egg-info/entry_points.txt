@@ -1,0 +1,3 @@
+[console_scripts]
+tiidan = tiidan_utils.cli.main:cli
+
