@@ -1,0 +1,3 @@
+[console_scripts]
+lgsvl_tools_urdf_generator = lgsvl_tools.urdf_generator:main
+
