@@ -1,0 +1,10 @@
+mypy_boto3_resourcegroupstaggingapi/__init__.py,sha256=bDQUGGr97uUQy-484RDjcHobAiX6iHQWfjXSPOGwrEs,140
+mypy_boto3_resourcegroupstaggingapi/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_resourcegroupstaggingapi/client.py,sha256=7RgUrN6vvPt5Gxqew-rRvS8dEpJwJKfsU_XYrCPgDDI,23850
+mypy_boto3_resourcegroupstaggingapi/paginator.py,sha256=kwXqH97djzt0Ei5TFYNF96uEqkfYKcEGoazjng407vE,13601
+mypy_boto3_resourcegroupstaggingapi/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_resourcegroupstaggingapi/type_defs.py,sha256=8VWmH4NFDw2zAV-Y3nJHcAyb9cAvSyBCbGGBGy5reHc,19819
+mypy_boto3_resourcegroupstaggingapi-0.2.0.dist-info/METADATA,sha256=CYwRq3M8SXWTE_NWGgg1pekTvtCLYV4apWP-ZHJkaV0,1093
+mypy_boto3_resourcegroupstaggingapi-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_resourcegroupstaggingapi-0.2.0.dist-info/top_level.txt,sha256=J9xXzhP-OHFQI3lgUP6GSymIoT5HHYQBQr7-sReJYBY,36
+mypy_boto3_resourcegroupstaggingapi-0.2.0.dist-info/RECORD,,
