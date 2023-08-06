@@ -1,0 +1,12 @@
+erizo/__init__.py,sha256=ZNOOJhBCt_AcsBGkKbJCXUnXlr4ChobHaDqHqmim-yg,1002
+erizo/_version.py,sha256=_gHXRirtdg7QiBF5q1Ao-gZJCuwe5Tv9zkpn5hVJlqs,498
+erizo/function.py,sha256=EgFngLZZZEq8B5002S0HmcRVz_DfHjgMrJ6nInQWsxk,758
+erizo/version.py,sha256=9yXBzduGrj3AxCa9PNFjgy1KJFU5Sc9mIqSabbghkDY,222
+erizo/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+erizo/tests/test_function.py,sha256=QkwVjngJzoit4CxvOxUd13yAh1SYfnpRvgOwtV-1Qcs,307
+erizo-0.0.1.dist-info/AUTHORS.md,sha256=oMgenJoFA_TjeuE5flJ85FPN0GIEl2sOsNVHyxKLvpg,208
+erizo-0.0.1.dist-info/LICENSE.txt,sha256=n2FzDQFZTtPvPPFFylV_tOGFP-lQeJ1kmtmz0NRaYus,1484
+erizo-0.0.1.dist-info/METADATA,sha256=w7NT85pSjTwk5r12DuNv4mspsH0VXGqt7sxX5Uj8w84,5395
+erizo-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+erizo-0.0.1.dist-info/top_level.txt,sha256=CPcMbtBQJQNBGmVzHMdkV3Dk9gB_rEUThs81dH0gYHM,6
+erizo-0.0.1.dist-info/RECORD,,
