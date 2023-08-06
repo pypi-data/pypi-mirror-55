@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: sm-flask-oidc
+Version: 1.0.5
+Summary: Useful tools to work with OIDC in Python and Flask
+Home-page: UNKNOWN
+Author: Said Mustapha
+Author-email: said.mustapha7@outllok.com
+License: MIT
+Download-URL: https://pypi.org/project/sm-flask-oidc/
+Keywords: OIDC,Python,Flask,IdentityServer
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+SM Flask OIDC
+
+This can be helpfull if you want to implement IdentityServer4 OIDC in Flask Python application
+
