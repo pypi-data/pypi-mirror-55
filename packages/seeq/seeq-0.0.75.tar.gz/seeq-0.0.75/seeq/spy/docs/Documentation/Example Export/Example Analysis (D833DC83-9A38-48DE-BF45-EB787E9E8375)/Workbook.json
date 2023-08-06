@@ -1,0 +1,99 @@
+{
+    "Created At": "1541996564906000000",
+    "Data": {},
+    "ID": "D833DC83-9A38-48DE-BF45-EB787E9E8375",
+    "Updated At": "1570759524924404200",
+    "workbookState": {
+        "version": 1,
+        "state": {
+            "stores": {
+                "sqAnnotationStore": {
+                    "id": "CB083FF5-45BD-432D-B1B9-2D5CAFF2C657",
+                    "isEditing": true,
+                    "isExpanded": false,
+                    "width": 0,
+                    "height": 0,
+                    "isCommentsExpanded": false,
+                    "isAnnotatesExpanded": false
+                }
+            }
+        }
+    },
+    "Name": "Example Analysis",
+    "Type": "Workbook",
+    "Path": "Example Export",
+    "Workbook Type": "Analysis",
+    "Owner": {
+        "ID": "AA61A752-1579-4191-AC30-3BBB21696D4F",
+        "Type": "User",
+        "Name": "Mark Derbecker",
+        "Username": "mark.derbecker@seeq.com",
+        "First Name": "Mark",
+        "Last Name": "Derbecker",
+        "Email": "mark.derbecker@seeq.com",
+        "Is Admin": true,
+        "Datasource Class": "Auth",
+        "Datasource ID": "Seeq",
+        "Datasource Name": "Seeq"
+    },
+    "Access Control": [
+        {
+            "Access Level": "VIEW",
+            "Created At": "2019-10-11T02:07:29.557129200Z",
+            "ID": "1DFCF21B-E317-45B3-B1C6-801F226D443F",
+            "Identity": {
+                "ID": "6E8C6BC2-B9EC-4164-BFBC-B2F23375C0FA",
+                "Type": "User",
+                "Name": "Joe Creek",
+                "Username": "joe.creek@seeq.com",
+                "First Name": "Joe",
+                "Last Name": "Creek",
+                "Email": "joe.creek@seeq.com",
+                "Is Admin": false,
+                "Datasource Class": "Auth",
+                "Datasource ID": "Seeq",
+                "Datasource Name": "Seeq"
+            }
+        },
+        {
+            "Access Level": "FULL_CONTROL",
+            "Created At": "2019-10-22T14:11:27.363175300Z",
+            "ID": "408D6587-EFBD-4178-829D-5278434AF065",
+            "Identity": {
+                "ID": "0BFA187F-6AC5-4DFB-8AC4-25D53EA57FEF",
+                "Type": "UserGroup",
+                "Name": "Everyone",
+                "Datasource Class": "Auth",
+                "Datasource ID": "Seeq",
+                "Datasource Name": "Seeq"
+            }
+        },
+        {
+            "Access Level": "FULL_CONTROL",
+            "Created At": "2019-10-11T02:07:29.559129700Z",
+            "ID": "E40F6066-D964-487A-8C5D-29AB81BCD0BA",
+            "Identity": {
+                "ID": "01A75303-39EE-4DB6-801A-E6E7F50C9C0E",
+                "Type": "UserGroup",
+                "Name": "Just Mark",
+                "Datasource Class": "Auth",
+                "Datasource ID": "Seeq",
+                "Datasource Name": "Seeq"
+            }
+        }
+    ],
+    "Ancestors": [
+        "51297B6C-9E44-4815-9C17-297ABC4A5D46"
+    ],
+    "Original Server URL": "http://localhost:34216",
+    "Search Folder ID": "51297B6C-9E44-4815-9C17-297ABC4A5D46",
+    "Worksheets": [
+        "F255BF0D-CCE1-4021-B863-B121FB605913",
+        "1F02C6C7-5009-4A13-9343-CDDEBB6AF7E6",
+        "BFB529B8-F127-49FC-81B3-55BCCE4CC2B1",
+        "99E1E62B-69F1-4FFB-8649-3225820A7DFB",
+        "10198C29-C93C-4055-B313-3388227D0621",
+        "D978C84E-9435-422F-9C1A-DC4C7E515C0B",
+        "44A42737-E20C-4BCE-BB50-4F2468C7419D"
+    ]
+}
