@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+src/preset2lv2/__init__.py
+src/preset2lv2/__main__.py
+src/preset2lv2/dx7syx2lv2.py
+src/preset2lv2/native2lv2.py
+src/preset2lv2/v12lv2.py
+src/preset2lv2.egg-info/PKG-INFO
+src/preset2lv2.egg-info/SOURCES.txt
+src/preset2lv2.egg-info/dependency_links.txt
+src/preset2lv2.egg-info/entry_points.txt
+src/preset2lv2.egg-info/not-zip-safe
+src/preset2lv2.egg-info/requires.txt
+src/preset2lv2.egg-info/top_level.txt
+src/preset2lv2/templates/manifest.ttl.tpl
+src/preset2lv2/templates/preset.ttl.tpl
