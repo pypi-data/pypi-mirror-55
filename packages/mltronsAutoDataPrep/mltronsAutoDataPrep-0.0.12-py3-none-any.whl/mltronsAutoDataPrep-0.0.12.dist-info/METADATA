@@ -1,0 +1,254 @@
+Metadata-Version: 2.1
+Name: mltronsAutoDataPrep
+Version: 0.0.12
+Summary: First Automated Data Preparation library powered by Deep Learning to  automatically clean and prepare TBs of data on clusters at scale.
+Home-page: https://github.com/ms8909/mltrons-auto-data-prep
+Author: Muddassar Sharif
+Author-email: ms8909@nyu.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: attrs (==19.2.0)
+Requires-Dist: backcall (==0.1.0)
+Requires-Dist: bleach (==3.1.0)
+Requires-Dist: boto3 (==1.9.238)
+Requires-Dist: botocore (==1.12.238)
+Requires-Dist: certifi (==2019.9.11)
+Requires-Dist: chardet (==3.0.4)
+Requires-Dist: colorama (==0.4.1)
+Requires-Dist: decorator (==4.4.0)
+Requires-Dist: defusedxml (==0.6.0)
+Requires-Dist: docutils (==0.15.2)
+Requires-Dist: entrypoints (==0.3)
+Requires-Dist: findspark (==1.3.0)
+Requires-Dist: idna (==2.8)
+Requires-Dist: ipykernel (==5.1.2)
+Requires-Dist: ipython (==7.8.0)
+Requires-Dist: ipython-genutils (==0.2.0)
+Requires-Dist: ipywidgets (==7.5.1)
+Requires-Dist: jedi (==0.15.1)
+Requires-Dist: Jinja2 (==2.10.3)
+Requires-Dist: jmespath (==0.9.4)
+Requires-Dist: jsonschema (==3.0.2)
+Requires-Dist: jupyter (==1.0.0)
+Requires-Dist: jupyter-client (==5.3.3)
+Requires-Dist: jupyter-console (==6.0.0)
+Requires-Dist: jupyter-core (==4.5.0)
+Requires-Dist: MarkupSafe (==1.1.1)
+Requires-Dist: mistune (==0.8.4)
+Requires-Dist: nbconvert (==5.6.0)
+Requires-Dist: nbformat (==4.4.0)
+Requires-Dist: nltk (==3.4.5)
+Requires-Dist: notebook (==6.0.1)
+Requires-Dist: numpy (==1.17.2)
+Requires-Dist: pandas (==0.25.1)
+Requires-Dist: pandocfilters (==1.4.2)
+Requires-Dist: parso (==0.5.1)
+Requires-Dist: pickleshare (==0.7.5)
+Requires-Dist: pkginfo (==1.5.0.1)
+Requires-Dist: prometheus-client (==0.7.1)
+Requires-Dist: prompt-toolkit (==2.0.10)
+Requires-Dist: Pygments (==2.4.2)
+Requires-Dist: pyrsistent (==0.15.4)
+Requires-Dist: python-dateutil (==2.8.0)
+Requires-Dist: pytz (==2019.2)
+Requires-Dist: pywin32 (==225)
+Requires-Dist: pywinpty (==0.5.5)
+Requires-Dist: pyzmq (==18.1.0)
+Requires-Dist: qtconsole (==4.5.5)
+Requires-Dist: readme-renderer (==24.0)
+Requires-Dist: requests (==2.22.0)
+Requires-Dist: requests-toolbelt (==0.9.1)
+Requires-Dist: s3transfer (==0.2.1)
+Requires-Dist: scipy (==1.3.1)
+Requires-Dist: Send2Trash (==1.5.0)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: terminado (==0.8.2)
+Requires-Dist: testpath (==0.4.2)
+Requires-Dist: tornado (==6.0.3)
+Requires-Dist: tqdm (==4.37.0)
+Requires-Dist: traitlets (==4.3.3)
+Requires-Dist: twine (==2.0.0)
+Requires-Dist: urllib3 (==1.25.6)
+Requires-Dist: wcwidth (==0.1.7)
+Requires-Dist: webencodings (==0.5.1)
+Requires-Dist: widgetsnbextension (==3.5.1)
+Requires-Dist: wincertstore (==0.2)
+
+# mltrons-auto-data-prep :Tool kit that automate Data Preparation
+
+## What is it?
+
+**Mltrons-auto-data-prep** is a Python package providing flexible and automated way of 
+data preparation in any size of the raw data.It uses **Machine Learning** and **Deep Leaning**
+techniques with the **pyspark** back-end architecture to clean and prepare TBs of data on clusters at scale.
+
+
+## Main Features
+Here are just a few of the things that **Mltrons-auto-data-prep** does well:
+
+- Data Can be read from multiple Sources such as **S3 bucket** or **Local PC**
+
+- Handle Any size of data even in Tbs using **Py-spark**
+
+- Filter out **Features** with Null values more than the threshold
+
+- Filter out **Features** with same value for all rows
+
+- Automatically detects the data type of features
+
+- Automatically detects datetime features and split in multiple usefull features
+
+- Automatically detects features containing **URLs** and remove duplications
+
+- Automatically detects **Skewed** features and minimize skewness
+
+
+
+## Where to get it
+The source code is currently hosted on **GitHub** at:
+https://github.com/ms8909/mltrons-auto-data-prep
+
+The **pypi** project is at :
+https://pypi.org/project/mltronsAutoDataPrep/
+
+
+## How to install
+
+```sh
+pip install mltronsAutoDataPrep
+```
+
+## Dependencies
+- [PySpark](https://spark.apache.org/docs/latest/api/python/index.html)
+- [NumPy](https://www.numpy.org)
+- [pandas](https://pandas.pydata.org)
+- [python-dateutil](https://labix.org/python-dateutil) 
+- [pytz](https://pythonhosted.org/pytz)
+- see full list of dependicies [here](https://github.com/ms8909/mltrons-auto-data-prep/blob/master/requirements.txt)
+
+## How to use 
+
+
+### 1. Reading data functions
+
+- **address** to give the path of the file
+
+- **local** to give the file exist on local pc or s3 bucket
+
+- **file_format** to give the format of the file (csv,excel,parquet)
+
+- **s3** s3 bucket credentials if data on s3 bucket
+
+
+```python
+from mltronsAutoDataPrep.lib.v2.Operations.readfile import ReadFile as rf
+
+res = rf.read(address="test.csv", local="yes", file_format="csv", s3={})
+```
+
+
+
+### 2. Drop Features containing Null of certain threshold
+
+- provide dataframe with threshold of null values 
+
+- return the list of columns containing null values more then the threshold
+
+```python
+from mltronsAutoDataPrep.lib.v2.Middlewares.drop_col_with_null_val import DropNullValueCol
+
+res = rf.read("test.csv", file_format='csv')
+
+drop_col = DropNullValueCol()
+columns_to_drop = drop_col.delete_var_with_null_more_than(res, threshold=30)
+df = res.drop(*columns_to_drop)
+```
+
+
+### 3. Drop Features containing same values 
+
+- provide dataframe 
+
+- return the list of columns containing same values
+
+```python
+from mltronsAutoDataPrep.lib.v2.Middlewares.drop_col_with_same_val import DropSameValueColumn
+
+
+drop_same_val_col = DropSameValueColumn()
+columns_to_drop = drop_same_val_col.delete_same_val_com(res)
+df = res.drop(*columns_to_drop)
+```
+
+### 4. Cleaned Url Features
+
+- Automatically detects features containing Urls
+
+- Pipeline structure to clean the urls using **NLP** techniques
+
+```python
+
+from mltronsAutoDataPrep.lib.v2.Pipelines.etl_pipeline import EtlPipeline
+
+etl_pipeline = EtlPipeline()
+etl_pipeline.custom_url_transformer(res)
+res = etl_pipeline.transform(res)
+
+```
+
+
+### 5. Split Date Time features
+
+- Automatically detects features containing date/time
+
+- Split date time into usefull multiple feautures (day,month,year etc)
+
+
+```python
+from mltronsAutoDataPrep.lib.v2.Pipelines.etl_pipeline import EtlPipeline
+
+
+etl_pipeline = EtlPipeline()
+etl_pipeline.custom_date_transformer(res)
+res = etl_pipeline.transform(res)
+
+```
+
+
+### 6. Filling Missing Values 
+
+- Using Deep Learning techniques Missing values are filled
+
+
+```python
+from mltronsAutoDataPrep.lib.v2.Pipelines.etl_pipeline import EtlPipeline
+
+
+etl_pipeline = EtlPipeline()
+etl_pipeline.custom_filling_missing_val(res)
+res = etl_pipeline.transform(res)
+
+```
+
+
+### 7. Removing Skewness from features
+
+
+- Automatically detects which column contains skewness
+
+- Minimize skewness using statistical methods
+
+```python
+from mltronsAutoDataPrep.lib.v2.Pipelines.etl_pipeline import EtlPipeline
+
+
+etl_pipeline = EtlPipeline()
+etl_pipeline.custom_skewness_transformer(res)
+res = etl_pipeline.transform(res)
+```
+
+
