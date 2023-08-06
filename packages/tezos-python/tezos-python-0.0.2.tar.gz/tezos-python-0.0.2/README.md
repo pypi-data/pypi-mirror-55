@@ -1,0 +1,20 @@
+# Tezos python
+
+This is a packaged version of the Tezos python API defined
+[here](http://tezos.gitlab.io/mainnet/developer/python_testing_framework.html).
+
+Currently, the main use is to use the `run_node` script, which launches a
+Tezos node and baker in sandbox mode.
+
+## Installation
+
+```
+pip3 install tezos-python
+export TEZOS_HOME=~/tezos # path to your tezos binaries
+run_node --help
+```
+
+## Note
+
+This should work with branch `babylonnet`. It has been tested with revision
+9a922180.
