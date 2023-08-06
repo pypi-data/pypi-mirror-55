@@ -1,0 +1,12 @@
+pyop>=3.0.1
+pysaml2
+pycryptodomex
+requests
+PyYAML
+gunicorn
+Werkzeug
+click
+pystache
+
+[ldap]
+ldap3
