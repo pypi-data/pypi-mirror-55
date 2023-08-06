@@ -1,0 +1,11 @@
+
+[dev]
+wheel
+pep8
+autopep8
+mypy
+pydocstyle
+mypy-extensions
+coverage
+lxml
+recommonmark
