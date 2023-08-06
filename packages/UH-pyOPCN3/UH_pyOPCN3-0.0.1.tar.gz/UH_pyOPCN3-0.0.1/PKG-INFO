@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: UH_pyOPCN3
+Version: 0.0.1
+Summary: Library for interfacing and logging data from the Alphasense OPC-N3 developed at the university of Hertfordshire. Please submit bug reports to https://github.com/JGirdwood/UH_pyOPCN3/projects/1
+Home-page: https://github.com/JGirdwood/UH_pyOPCN3
+Author: Joseph Girdwood
+Author-email: j.girdwood@herts.ac.uk
+License: UNKNOWN
+Description: # UH_pyOPCN3
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
