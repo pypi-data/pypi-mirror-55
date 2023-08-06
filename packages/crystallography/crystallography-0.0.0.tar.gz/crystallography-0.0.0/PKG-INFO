@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: crystallography
+Version: 0.0.0
+Summary: Library for dealing with crystallography.
+License: MIT
+Author: Dominik Steinberger
+Author-email: crystallography@steinberger.io
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Scientific/Engineering :: Physics
+Description-Content-Type: text/markdown
+
+crystallography
+===============
+
+Library for dealing with crystallography.
+
