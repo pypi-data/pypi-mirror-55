@@ -1,0 +1,7 @@
+#!python
+# -*- coding: utf-8 -*-
+
+from slack_proxy_server.slack_proxy_server import app
+
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port='39512', debug=True)

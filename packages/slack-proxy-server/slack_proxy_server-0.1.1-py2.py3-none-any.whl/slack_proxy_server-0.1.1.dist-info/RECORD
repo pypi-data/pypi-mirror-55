@@ -1,0 +1,9 @@
+slack_proxy_server/__init__.py,sha256=Sum29G01wVU14eheVbKC5tsOqpjisEq-G7TVEZVPPSo,158
+slack_proxy_server/slack_proxy_server.py,sha256=r954vOK4SxaJtv0_2AXXmqEFHxp_vf6CmaHsFyjQ6yA,1277
+slack_proxy_server-0.1.1.data/scripts/run_slack_proxy_server.sh,sha256=Crs7ENSp7dBOPLsLtSGj00o5-48yRUWNEkfiLu6kUPY,170
+slack_proxy_server-0.1.1.dist-info/AUTHORS.rst,sha256=yAhH-zvBWUU2AIYWKDsYVmJaQdv7pSlYLlct-9SA9q0,157
+slack_proxy_server-0.1.1.dist-info/LICENSE,sha256=QNwUSpVpHifsdYJiYzBn27iJ03v0tdKbY27ZTNKiYHw,1078
+slack_proxy_server-0.1.1.dist-info/METADATA,sha256=xI97EvmNpiAA07QQPWPz87VdEJZPu7JyhVKoc1dhlJw,1739
+slack_proxy_server-0.1.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+slack_proxy_server-0.1.1.dist-info/top_level.txt,sha256=u4lmWMS7wFbluziZM4UrK9CkeESQUrxW77cBxpVJHVE,19
+slack_proxy_server-0.1.1.dist-info/RECORD,,
