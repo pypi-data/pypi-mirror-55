@@ -1,0 +1,13 @@
+hyputils>=0.0.4
+pyontutils>=0.1.7
+
+[dev]
+pytest-cov
+wheel
+
+[notebook]
+jupyter
+
+[test]
+pytest
+pytest-runner

@@ -1,0 +1,3208 @@
+@prefix MBA: <http://api.brain-map.org/api/v2/data/Structure/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix partOf: <http://purl.obolibrary.org/obo/BFO_0000050> .
+@prefix PAXRAT: <http://uri.interlex.org/paxinos/uris/rat/labels/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix UBERON: <http://purl.obolibrary.org/obo/UBERON_> .
+
+<https://raw.githubusercontent.com/SciCrunch/NIF-Ontology/neurons/ttl/generated/part-of-self.ttl> a owl:Ontology .
+
+### Annotations
+
+<http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-GrossAnatomy.owl#nlx_20558> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://ontology.neuinfo.org/NIF/BiomaterialEntities/NIF-GrossAnatomy.owl#nlx_20558> ] .
+
+<http://purl.org/sig/ont/fma/fma7643> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://purl.org/sig/ont/fma/fma7643> ] .
+
+<http://purl.org/sig/ont/fma/fma67532> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://purl.org/sig/ont/fma/fma67532> ] .
+
+<http://uri.interlex.org/base/ilx_0485722> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0485722> ] .
+
+<http://uri.interlex.org/base/ilx_0505839> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0505839> ] .
+
+<http://uri.interlex.org/base/ilx_0725956> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0725956> ] .
+
+<http://uri.interlex.org/base/ilx_0731873> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0731873> ] .
+
+<http://uri.interlex.org/base/ilx_0736966> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0736966> ] .
+
+<http://uri.interlex.org/base/ilx_0738279> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0738279> ] .
+
+<http://uri.interlex.org/base/ilx_0738290> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0738290> ] .
+
+<http://uri.interlex.org/base/ilx_0738291> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0738291> ] .
+
+<http://uri.interlex.org/base/ilx_0738292> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0738292> ] .
+
+<http://uri.interlex.org/base/ilx_0738293> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0738293> ] .
+
+<http://uri.interlex.org/base/ilx_0738308> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0738308> ] .
+
+<http://uri.interlex.org/base/ilx_0738309> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0738309> ] .
+
+<http://uri.interlex.org/base/ilx_0738312> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0738312> ] .
+
+<http://uri.interlex.org/base/ilx_0738313> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0738313> ] .
+
+<http://uri.interlex.org/base/ilx_0738315> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0738315> ] .
+
+<http://uri.interlex.org/base/ilx_0738319> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0738319> ] .
+
+<http://uri.interlex.org/base/ilx_0738324> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0738324> ] .
+
+<http://uri.interlex.org/base/ilx_0738325> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0738325> ] .
+
+<http://uri.interlex.org/base/ilx_0738342> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0738342> ] .
+
+<http://uri.interlex.org/base/ilx_0738371> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0738371> ] .
+
+<http://uri.interlex.org/base/ilx_0738372> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0738372> ] .
+
+<http://uri.interlex.org/base/ilx_0738373> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0738373> ] .
+
+<http://uri.interlex.org/base/ilx_0738374> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/base/ilx_0738374> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/1> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/1> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/1> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/1> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/30> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/30> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/30> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/30> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/34> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/34> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/34> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/34> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/36> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/36> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/36> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/36> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/37> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/37> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/37> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/37> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/38> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/38> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/38> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/38> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/39> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/39> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/39> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/39> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/40> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/40> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/40> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/40> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/41> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/41> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/41> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/41> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/42> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/42> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/42> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/42> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/43> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/43> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/43> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/43> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/44> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/44> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/44> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/44> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/45> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/45> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/45> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/45> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/46> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/46> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/46> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/46> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/47> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/47> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/47> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/47> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/48> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/48> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/48> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/48> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/50> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/50> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/50> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/50> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/125> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/125> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/125> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/125> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/126> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/126> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/126> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/126> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/132> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/132> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/132> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/132> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/133> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/133> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/133> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/133> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/134> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/134> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/134> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/134> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/135> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/135> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/135> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/135> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/136> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/136> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/136> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/136> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/137> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/137> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/137> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/137> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/138> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/138> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/138> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/138> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/139> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/139> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/139> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/139> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/140> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/140> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/140> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/140> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/141> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/141> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/141> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/141> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/142> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/142> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/142> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/142> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/143> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/143> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/143> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/143> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/144> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/144> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/144> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/144> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/145> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/145> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/145> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/145> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/146> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/146> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/146> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/146> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/147> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/147> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/147> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/147> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/148> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/148> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/148> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/148> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/149> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/149> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/149> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/149> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/150> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/150> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/150> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/150> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/152> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/152> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/152> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/152> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/153> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/153> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/153> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/153> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/154> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/154> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/154> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/154> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/155> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/155> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/155> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/155> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/156> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/156> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/156> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/156> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/157> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/157> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/157> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/157> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/158> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/158> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/158> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/158> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/159> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/159> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/159> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/159> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/162> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/162> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/162> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/162> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/164> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/164> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/164> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/164> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/165> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/165> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/165> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/165> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/167> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/167> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/167> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/167> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/168> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/168> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/168> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/168> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/169> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/169> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/169> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/169> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/170> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/170> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/170> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/170> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/171> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/171> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/171> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/171> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/173> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/173> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/173> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/173> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/174> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/174> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/174> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/174> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/176> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/176> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/176> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/176> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/177> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/177> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/177> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/177> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/179> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/179> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/179> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/179> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/193> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/193> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/193> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/193> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/196> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/196> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/196> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/196> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/197> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/197> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/197> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/197> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/198> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/198> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/198> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/198> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/201> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/201> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/201> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/201> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/202> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/202> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/202> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/202> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/208> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/208> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/208> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/208> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/210> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/210> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/210> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/210> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/211> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/211> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/211> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/211> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/212> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/212> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/212> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/212> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/213> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/213> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/213> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/213> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/214> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/214> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/214> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/214> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/215> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/215> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/215> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/215> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/218> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/218> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/218> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/218> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/219> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/219> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/219> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/219> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/220> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/220> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/220> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/220> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/221> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/221> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/221> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/221> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/222> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/222> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/222> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/222> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/223> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/223> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/223> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/223> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/224> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/224> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/224> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/224> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/225> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/225> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/225> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/225> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/226> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/226> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/226> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/226> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/227> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/227> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/227> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/227> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/228> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/228> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/228> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/228> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/229> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/229> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/229> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/229> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/230> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/230> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/230> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/230> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/231> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/231> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/231> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/231> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/232> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/232> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/232> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/232> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/233> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/233> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/233> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/233> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/235> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/235> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/235> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/235> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/236> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/236> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/236> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/236> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/237> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/237> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/237> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/237> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/238> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/238> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/238> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/238> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/239> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/239> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/239> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/239> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/240> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/240> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/240> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/240> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/241> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/241> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/241> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/241> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/242> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/242> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/242> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/242> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/243> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/243> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/243> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/243> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/244> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/244> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/244> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/244> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/245> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/245> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/245> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/245> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/246> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/246> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/246> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/246> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/247> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/247> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/247> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/247> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/248> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/248> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/248> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/248> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/249> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/249> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/249> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/249> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/250> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/250> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/250> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/250> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/251> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/251> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/251> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/251> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/254> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/254> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/254> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/254> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/257> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/257> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/257> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/257> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/258> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/258> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/258> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/258> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/259> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/259> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/259> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/259> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/260> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/260> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/260> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/260> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/261> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/261> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/261> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/261> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/262> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/262> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/262> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/262> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/263> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/263> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/263> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/263> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/264> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/264> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/264> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/264> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/265> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/265> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/265> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/265> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/266> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/266> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/266> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/266> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/268> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/268> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/268> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/268> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/269> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/269> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/269> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/269> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/273> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/273> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/273> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/273> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/274> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/274> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/274> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/274> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/275> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/275> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/275> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/275> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/276> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/276> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/276> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/276> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/277> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/277> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/277> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/277> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/278> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/278> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/278> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/278> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/279> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/279> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/279> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/279> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/280> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/280> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/280> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/280> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/281> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/281> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/281> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/281> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/283> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/283> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/283> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/283> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/284> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/284> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/284> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/284> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/285> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/285> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/285> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/285> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/286> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/286> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/286> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/286> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/287> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/287> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/287> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/287> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/288> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/288> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/288> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/288> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/289> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/289> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/289> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/289> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/290> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/290> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/290> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/290> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/291> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/291> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/291> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/291> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/292> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/292> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/292> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/292> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/293> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/293> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/293> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/293> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/294> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/294> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/294> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/294> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/295> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/295> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/295> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/295> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/296> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/296> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/296> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/296> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/297> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/297> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/297> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/297> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/298> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/298> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/298> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/298> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/299> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/299> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/299> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/299> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/300> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/300> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/300> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/300> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/301> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/301> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/301> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/301> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/302> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/302> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/302> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/302> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/303> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/303> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/303> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/303> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/304> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/304> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/304> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/304> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/305> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/305> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/305> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/305> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/306> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/306> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/306> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/306> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/307> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/307> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/307> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/307> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/310> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/310> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/310> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/310> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/311> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/311> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/311> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/311> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/312> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/312> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/312> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/312> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/313> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/313> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/313> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/313> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/314> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/314> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/314> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/314> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/315> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/315> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/315> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/315> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/316> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/316> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/316> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/316> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/317> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/317> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/317> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/317> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/318> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/318> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/318> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/318> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/319> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/319> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/319> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/319> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/320> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/320> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/320> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/320> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/321> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/321> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/321> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/321> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/322> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/322> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/322> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/322> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/323> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/323> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/323> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/323> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/324> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/324> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/324> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/324> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/325> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/325> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/325> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/325> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/326> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/326> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/326> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/326> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/327> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/327> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/327> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/327> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/329> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/329> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/329> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/329> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/330> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/330> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/330> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/330> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/331> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/331> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/331> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/331> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/332> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/332> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/332> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/332> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/333> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/333> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/333> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/333> ] .
+
+<http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/334> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/334> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/334> ],
+        [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/swanson/uris/neuroanatomical-terminology/terms/334> ] .
+
+<http://uri.interlex.org/temp/uris/turtle-location> rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom <http://uri.interlex.org/temp/uris/turtle-location> ] .
+
+MBA:33 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:33 ] .
+
+MBA:41 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:41 ] .
+
+MBA:74 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:74 ] .
+
+MBA:121 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:121 ] .
+
+MBA:201 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:201 ] .
+
+MBA:233 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:233 ] .
+
+MBA:234 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:234 ] .
+
+MBA:251 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:251 ] .
+
+MBA:257 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:257 ] .
+
+MBA:269 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:269 ] .
+
+MBA:274 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:274 ] .
+
+MBA:281 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:281 ] .
+
+MBA:305 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:305 ] .
+
+MBA:393 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:393 ] .
+
+MBA:401 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:401 ] .
+
+MBA:421 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:421 ] .
+
+MBA:433 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:433 ] .
+
+MBA:434 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:434 ] .
+
+MBA:469 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:469 ] .
+
+MBA:501 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:501 ] .
+
+MBA:565 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:565 ] .
+
+MBA:573 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:573 ] .
+
+MBA:590 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:590 ] .
+
+MBA:593 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:593 ] .
+
+MBA:601 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:601 ] .
+
+MBA:610 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:610 ] .
+
+MBA:613 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:613 ] .
+
+MBA:649 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:649 ] .
+
+MBA:654 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:654 ] .
+
+MBA:671 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:671 ] .
+
+MBA:687 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:687 ] .
+
+MBA:719 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:719 ] .
+
+MBA:721 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:721 ] .
+
+MBA:729 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:729 ] .
+
+MBA:774 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:774 ] .
+
+MBA:778 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:778 ] .
+
+MBA:791 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:791 ] .
+
+MBA:805 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:805 ] .
+
+MBA:821 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:821 ] .
+
+MBA:869 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:869 ] .
+
+MBA:902 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:902 ] .
+
+MBA:905 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:905 ] .
+
+MBA:906 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:906 ] .
+
+MBA:954 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:954 ] .
+
+MBA:965 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:965 ] .
+
+MBA:973 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:973 ] .
+
+MBA:1047 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:1047 ] .
+
+MBA:1066 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:1066 ] .
+
+MBA:1070 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:1070 ] .
+
+MBA:1074 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:1074 ] .
+
+MBA:1086 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:1086 ] .
+
+MBA:1111 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:1111 ] .
+
+MBA:1114 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:1114 ] .
+
+MBA:182305705 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:182305705 ] .
+
+MBA:312782558 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:312782558 ] .
+
+MBA:312782562 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:312782562 ] .
+
+MBA:312782570 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:312782570 ] .
+
+MBA:312782582 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:312782582 ] .
+
+MBA:312782586 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:312782586 ] .
+
+MBA:312782590 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:312782590 ] .
+
+MBA:312782594 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:312782594 ] .
+
+MBA:312782598 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:312782598 ] .
+
+MBA:312782608 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:312782608 ] .
+
+MBA:312782612 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:312782612 ] .
+
+MBA:312782620 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:312782620 ] .
+
+MBA:312782636 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:312782636 ] .
+
+MBA:312782640 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:312782640 ] .
+
+MBA:312782644 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:312782644 ] .
+
+MBA:312782648 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:312782648 ] .
+
+MBA:312782652 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom MBA:312782652 ] .
+
+PAXRAT:794 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom PAXRAT:794 ] .
+
+UBERON:0000044 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0000044 ] .
+
+UBERON:0000127 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0000127 ] .
+
+UBERON:0000388 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0000388 ] .
+
+UBERON:0000411 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0000411 ] .
+
+UBERON:0000956 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0000956 ] .
+
+UBERON:0000966 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0000966 ] .
+
+UBERON:0000970 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0000970 ] .
+
+UBERON:0000988 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0000988 ] .
+
+UBERON:0001103 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001103 ] .
+
+UBERON:0001384 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001384 ] .
+
+UBERON:0001508 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001508 ] .
+
+UBERON:0001629 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001629 ] .
+
+UBERON:0001649 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001649 ] .
+
+UBERON:0001650 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001650 ] .
+
+UBERON:0001715 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001715 ] .
+
+UBERON:0001719 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001719 ] .
+
+UBERON:0001723 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001723 ] .
+
+UBERON:0001737 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001737 ] .
+
+UBERON:0001759 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001759 ] .
+
+UBERON:0001787 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001787 ] .
+
+UBERON:0001789 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001789 ] .
+
+UBERON:0001790 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001790 ] .
+
+UBERON:0001791 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001791 ] .
+
+UBERON:0001792 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001792 ] .
+
+UBERON:0001795 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001795 ] .
+
+UBERON:0001840 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001840 ] .
+
+UBERON:0001844 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001844 ] .
+
+UBERON:0001873 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001873 ] .
+
+UBERON:0001874 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001874 ] .
+
+UBERON:0001875 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001875 ] .
+
+UBERON:0001876 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001876 ] .
+
+UBERON:0001880 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001880 ] .
+
+UBERON:0001881 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001881 ] .
+
+UBERON:0001882 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001882 ] .
+
+UBERON:0001883 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001883 ] .
+
+UBERON:0001884 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001884 ] .
+
+UBERON:0001885 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001885 ] .
+
+UBERON:0001891 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001891 ] .
+
+UBERON:0001896 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001896 ] .
+
+UBERON:0001897 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001897 ] .
+
+UBERON:0001898 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001898 ] .
+
+UBERON:0001903 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001903 ] .
+
+UBERON:0001906 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001906 ] .
+
+UBERON:0001907 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001907 ] .
+
+UBERON:0001926 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001926 ] .
+
+UBERON:0001927 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001927 ] .
+
+UBERON:0001930 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001930 ] .
+
+UBERON:0001936 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001936 ] .
+
+UBERON:0001938 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001938 ] .
+
+UBERON:0001944 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001944 ] .
+
+UBERON:0001945 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001945 ] .
+
+UBERON:0001946 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001946 ] .
+
+UBERON:0001947 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001947 ] .
+
+UBERON:0001950 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001950 ] .
+
+UBERON:0001954 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001954 ] .
+
+UBERON:0001965 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001965 ] .
+
+UBERON:0001966 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001966 ] .
+
+UBERON:0001990 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001990 ] .
+
+UBERON:0001997 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0001997 ] .
+
+UBERON:0002022 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002022 ] .
+
+UBERON:0002023 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002023 ] .
+
+UBERON:0002024 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002024 ] .
+
+UBERON:0002034 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002034 ] .
+
+UBERON:0002035 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002035 ] .
+
+UBERON:0002037 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002037 ] .
+
+UBERON:0002038 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002038 ] .
+
+UBERON:0002043 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002043 ] .
+
+UBERON:0002045 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002045 ] .
+
+UBERON:0002047 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002047 ] .
+
+UBERON:0002058 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002058 ] .
+
+UBERON:0002126 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002126 ] .
+
+UBERON:0002127 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002127 ] .
+
+UBERON:0002128 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002128 ] .
+
+UBERON:0002129 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002129 ] .
+
+UBERON:0002130 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002130 ] .
+
+UBERON:0002136 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002136 ] .
+
+UBERON:0002142 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002142 ] .
+
+UBERON:0002145 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002145 ] .
+
+UBERON:0002148 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002148 ] .
+
+UBERON:0002151 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002151 ] .
+
+UBERON:0002155 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002155 ] .
+
+UBERON:0002160 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002160 ] .
+
+UBERON:0002161 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002161 ] .
+
+UBERON:0002162 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002162 ] .
+
+UBERON:0002181 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002181 ] .
+
+UBERON:0002191 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002191 ] .
+
+UBERON:0002197 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002197 ] .
+
+UBERON:0002198 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002198 ] .
+
+UBERON:0002206 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002206 ] .
+
+UBERON:0002227 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002227 ] .
+
+UBERON:0002240 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002240 ] .
+
+UBERON:0002256 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002256 ] .
+
+UBERON:0002257 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002257 ] .
+
+UBERON:0002264 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002264 ] .
+
+UBERON:0002267 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002267 ] .
+
+UBERON:0002271 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002271 ] .
+
+UBERON:0002272 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002272 ] .
+
+UBERON:0002298 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002298 ] .
+
+UBERON:0002310 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002310 ] .
+
+UBERON:0002314 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002314 ] .
+
+UBERON:0002421 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002421 ] .
+
+UBERON:0002435 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002435 ] .
+
+UBERON:0002436 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002436 ] .
+
+UBERON:0002440 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002440 ] .
+
+UBERON:0002476 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002476 ] .
+
+UBERON:0002477 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002477 ] .
+
+UBERON:0002518 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002518 ] .
+
+UBERON:0002551 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002551 ] .
+
+UBERON:0002567 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002567 ] .
+
+UBERON:0002573 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002573 ] .
+
+UBERON:0002580 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002580 ] .
+
+UBERON:0002587 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002587 ] .
+
+UBERON:0002596 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002596 ] .
+
+UBERON:0002597 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002597 ] .
+
+UBERON:0002601 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002601 ] .
+
+UBERON:0002604 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002604 ] .
+
+UBERON:0002610 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002610 ] .
+
+UBERON:0002633 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002633 ] .
+
+UBERON:0002682 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002682 ] .
+
+UBERON:0002691 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002691 ] .
+
+UBERON:0002711 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002711 ] .
+
+UBERON:0002722 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002722 ] .
+
+UBERON:0002728 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002728 ] .
+
+UBERON:0002743 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002743 ] .
+
+UBERON:0002753 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002753 ] .
+
+UBERON:0002778 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002778 ] .
+
+UBERON:0002779 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002779 ] .
+
+UBERON:0002782 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002782 ] .
+
+UBERON:0002788 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002788 ] .
+
+UBERON:0002790 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002790 ] .
+
+UBERON:0002812 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002812 ] .
+
+UBERON:0002813 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002813 ] .
+
+UBERON:0002824 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002824 ] .
+
+UBERON:0002828 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002828 ] .
+
+UBERON:0002829 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002829 ] .
+
+UBERON:0002833 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002833 ] .
+
+UBERON:0002865 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002865 ] .
+
+UBERON:0002870 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002870 ] .
+
+UBERON:0002871 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002871 ] .
+
+UBERON:0002881 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002881 ] .
+
+UBERON:0002883 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002883 ] .
+
+UBERON:0002884 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002884 ] .
+
+UBERON:0002886 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002886 ] .
+
+UBERON:0002892 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002892 ] .
+
+UBERON:0002894 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002894 ] .
+
+UBERON:0002925 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002925 ] .
+
+UBERON:0002932 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002932 ] .
+
+UBERON:0002952 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002952 ] .
+
+UBERON:0002956 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002956 ] .
+
+UBERON:0002968 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002968 ] .
+
+UBERON:0002974 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002974 ] .
+
+UBERON:0002979 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002979 ] .
+
+UBERON:0002985 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002985 ] .
+
+UBERON:0002987 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0002987 ] .
+
+UBERON:0003004 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0003004 ] .
+
+UBERON:0003011 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0003011 ] .
+
+UBERON:0003017 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0003017 ] .
+
+UBERON:0003040 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0003040 ] .
+
+UBERON:0003126 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0003126 ] .
+
+UBERON:0003708 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0003708 ] .
+
+UBERON:0003881 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0003881 ] .
+
+UBERON:0003882 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0003882 ] .
+
+UBERON:0003883 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0003883 ] .
+
+UBERON:0004069 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0004069 ] .
+
+UBERON:0004133 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0004133 ] .
+
+UBERON:0004186 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0004186 ] .
+
+UBERON:0004676 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0004676 ] .
+
+UBERON:0004679 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0004679 ] .
+
+UBERON:0004681 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0004681 ] .
+
+UBERON:0005370 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0005370 ] .
+
+UBERON:0005372 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0005372 ] .
+
+UBERON:0005378 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0005378 ] .
+
+UBERON:0005381 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0005381 ] .
+
+UBERON:0005390 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0005390 ] .
+
+UBERON:0005391 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0005391 ] .
+
+UBERON:0005392 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0005392 ] .
+
+UBERON:0005393 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0005393 ] .
+
+UBERON:0005394 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0005394 ] .
+
+UBERON:0005395 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0005395 ] .
+
+UBERON:0005413 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0005413 ] .
+
+UBERON:0005807 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0005807 ] .
+
+UBERON:0005843 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0005843 ] .
+
+UBERON:0006007 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0006007 ] .
+
+UBERON:0006107 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0006107 ] .
+
+UBERON:0006120 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0006120 ] .
+
+UBERON:0006457 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0006457 ] .
+
+UBERON:0006469 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0006469 ] .
+
+UBERON:0006470 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0006470 ] .
+
+UBERON:0006488 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0006488 ] .
+
+UBERON:0006489 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0006489 ] .
+
+UBERON:0006490 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0006490 ] .
+
+UBERON:0006491 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0006491 ] .
+
+UBERON:0006492 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0006492 ] .
+
+UBERON:0006493 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0006493 ] .
+
+UBERON:0006840 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0006840 ] .
+
+UBERON:0007224 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0007224 ] .
+
+UBERON:0007415 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0007415 ] .
+
+UBERON:0007628 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0007628 ] .
+
+UBERON:0007629 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0007629 ] .
+
+UBERON:0007631 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0007631 ] .
+
+UBERON:0007634 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0007634 ] .
+
+UBERON:0007767 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0007767 ] .
+
+UBERON:0007768 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0007768 ] .
+
+UBERON:0008993 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0008993 ] .
+
+UBERON:0009009 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0009009 ] .
+
+UBERON:0009050 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0009050 ] .
+
+UBERON:0009918 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0009918 ] .
+
+UBERON:0010403 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0010403 ] .
+
+UBERON:0011176 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0011176 ] .
+
+UBERON:0011326 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0011326 ] .
+
+UBERON:0012170 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0012170 ] .
+
+UBERON:0012171 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0012171 ] .
+
+UBERON:0012316 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0012316 ] .
+
+UBERON:0014277 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014277 ] .
+
+UBERON:0014283 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014283 ] .
+
+UBERON:0014284 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014284 ] .
+
+UBERON:0014548 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014548 ] .
+
+UBERON:0014549 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014549 ] .
+
+UBERON:0014550 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014550 ] .
+
+UBERON:0014551 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014551 ] .
+
+UBERON:0014552 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014552 ] .
+
+UBERON:0014553 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014553 ] .
+
+UBERON:0014554 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014554 ] .
+
+UBERON:0014555 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014555 ] .
+
+UBERON:0014556 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014556 ] .
+
+UBERON:0014557 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014557 ] .
+
+UBERON:0014559 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014559 ] .
+
+UBERON:0014560 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014560 ] .
+
+UBERON:0014568 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014568 ] .
+
+UBERON:0014569 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014569 ] .
+
+UBERON:0014570 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014570 ] .
+
+UBERON:0014571 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014571 ] .
+
+UBERON:0014610 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0014610 ] .
+
+UBERON:0015244 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0015244 ] .
+
+UBERON:0015432 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0015432 ] .
+
+UBERON:0015793 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0015793 ] .
+
+UBERON:0015800 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0015800 ] .
+
+UBERON:0016848 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0016848 ] .
+
+UBERON:0020358 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0020358 ] .
+
+UBERON:0022317 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0022317 ] .
+
+UBERON:0022318 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0022318 ] .
+
+UBERON:0022319 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0022319 ] .
+
+UBERON:0022326 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0022326 ] .
+
+UBERON:0022337 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0022337 ] .
+
+UBERON:0022347 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0022347 ] .
+
+UBERON:0022434 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0022434 ] .
+
+UBERON:0022469 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0022469 ] .
+
+UBERON:0023867 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0023867 ] .
+
+UBERON:0023934 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0023934 ] .
+
+UBERON:0023958 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0023958 ] .
+
+UBERON:0027368 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0027368 ] .
+
+UBERON:0030276 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0030276 ] .
+
+UBERON:0035044 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0035044 ] .
+
+UBERON:0035153 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0035153 ] .
+
+UBERON:0035154 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0035154 ] .
+
+UBERON:0035155 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0035155 ] .
+
+UBERON:0035156 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0035156 ] .
+
+UBERON:0035157 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0035157 ] .
+
+UBERON:0035158 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0035158 ] .
+
+UBERON:0035971 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0035971 ] .
+
+UBERON:0035973 rdfs:subClassOf [ a owl:Restriction ;
+            owl:onProperty partOf: ;
+            owl:someValuesFrom UBERON:0035973 ] .
+
+### Serialized using the ttlser deterministic serializer v1.2.0
