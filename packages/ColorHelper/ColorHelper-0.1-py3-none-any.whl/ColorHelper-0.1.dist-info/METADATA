@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: ColorHelper
+Version: 0.1
+Summary: ML based Color Palette Generator Package
+Home-page: https://github.com/subinium/ColorHelper
+Author: Subin An
+Author-email: subinium@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+## Color Helper
+
+ML based Color Palette Generate Python Package
+
+- Scikit-learn
+
+## Visualization
+
+## License
+
+
