@@ -1,0 +1,5 @@
+HARDWARE_INV = [
+	{
+	
+	}
+]
