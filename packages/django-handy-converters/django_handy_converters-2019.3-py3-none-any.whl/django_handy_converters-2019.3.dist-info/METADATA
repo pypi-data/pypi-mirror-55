@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: django-handy-converters
+Version: 2019.3
+Summary: Some handy URL converters for django
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: django (>=2.2.6)
+
+UNKNOWN
+
+
