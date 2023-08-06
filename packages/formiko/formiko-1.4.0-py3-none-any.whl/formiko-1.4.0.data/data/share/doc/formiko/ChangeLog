@@ -1,0 +1,103 @@
+Changelog
+=========
+
+Version 1.4.0
+
+  * man pages
+  * words and characters count live info
+  * Recommonmark (MarkDown) support with colored code
+  * change preview - set paned position fix
+  * GTK Warning fix (debian bug #933622)
+  * SearchBar and searching text in editor
+  * searching text in preview
+  * creating backup file before write changes to new one
+  * refresh preview action / button
+  * opening links in system from preview, known file types open in new formiko
+    window
+  * preview auto scroll
+  * fixing positing in preview only mode
+  * preview/editor/both with shortcuts and store in cache
+  * edited file change time check
+
+Version 1.3.0
+
+  * spell check support
+  * display white chars switch
+  * highlighting current line switch
+  * printing document output
+  * shortcuts dialog
+
+Version 1.2.1
+
+  * fix SIGSEGV - gui threads conflict
+  * fix window cache settings
+  * min size of editor and preview when both widgets are visible
+  * python2 fix
+
+Version 1.2.0
+
+  * vim with working application menu
+  * realy disabled accels for vim
+  * toggle buttons to on/off editor and preview
+  * tabs setting in status bar
+  * preferences are save automatical
+  * auto indent is switchable
+  * showing line numbers is switchable
+  * right margin is switchable
+  * text wrapping is switchable
+
+Version 1.1.0
+
+  * GTK Version check
+  * add accels only for SourceView editor
+  * export document as HTML
+  * using WebKit2 engine
+  * Python 2.x encoding fixies
+  * links, images and media urls showen in popup bar
+  * JSON preview
+  * PEP writer fix
+  * only one application menu
+  * info for Debian and NetBSD users
+  * SourceView editor settings:
+     - tab width
+     - usinng spaces intead of tabs
+     - 80 chars length line visualization
+     - periodic saving file
+
+Version 1.0.2
+
+  * Formiko Vim entry point
+
+Version 1.0.1
+
+  * New 1.0.1 release
+  * Adding ChangeLog file
+  * fix vim editing on empty line at and of file
+  * fix file path when application server is running
+
+Version 1.0.0
+  * stable version 1.0.0
+  * right source distribution
+  * desktop integration
+  * litle bit fixies
+  * application icon from petr simcik
+  * final clean code
+  * Small fixies from TODO:
+  * html preview mode
+  * clean text and new version
+  * file type detection
+  * working MarkDown support with gui
+  * user preferences
+  * modern Gtk+3 appearance (Menu)
+  * opening file for sourceview editor
+  * sourceview reading from and saving to files
+  * base sourceview version
+  * separating code to modules
+  * preview mode
+  * using Gtk.Application instead of GObject.GObject
+  * full working
+  * python3 support
+  * crashing tread does crash gtk
+  * using Gtk+3
+  * installable project
+  * first based function
