@@ -1,0 +1,84 @@
+Metadata-Version: 2.1
+Name: pg_stream_copy
+Version: 1.0.5
+Summary: RTB House apps pg_stream_copy
+Home-page: https://github.com/rtbhouse-apps/rtbhouse-pg-bulk-inserter
+Author: RTB House Apps team
+Author-email: apps@rtbhouse.com
+License: UNKNOWN
+Description: # PG Stream Copy
+        [![Build Status](https://travis-ci.com/rtbhouse-apps/pg-stream-copy.svg?branch=master)](https://travis-ci.com/rtbhouse-apps/pg-stream-copy)
+        [![codecov](https://codecov.io/gh/rtbhouse-apps/pg-stream-copy/branch/master/graph/badge.svg)](https://codecov.io/gh/rtbhouse-apps/pg-stream-copy)
+        [![PyPI](https://img.shields.io/pypi/v/pg-stream-copy)](https://pypi.org/project/pg-stream-copy/)
+        [![PyPI - Python Version](https://img.shields.io/pypi/pyversions/pg-stream-copy)](https://pypi.org/project/pg-stream-copy/)
+        
+        Fast COPY TO postgresql table directly from python by converting input data to bytes and stream to psycopg2 cursor using `COPY <table> FROM STDIN BINARY`
+        
+        ### Usage:
+        ```python
+        from datetime import date
+        from psycopg2 import connect
+        from pg_stream_copy import Schema, WriterEncoder
+        
+        
+        conn = connect('postgresql://postgres@localhost')
+        cursor = conn.cursor()
+        table_name = 'public.example_table'
+        
+        cursor.execute(f'''
+            CREATE TABLE {table_name} (
+                _smallint SMALLINT NULL,
+                _integer INTEGER NULL,
+                _bigint BIGINT NULL,
+                _float DOUBLE PRECISION NULL,
+                _character_varying CHARACTER VARYING NULL,
+                _date DATE NULL
+            );
+        ''')
+        schema = Schema.load_from_table(cursor, table_name)
+        
+        with WriterEncoder(cursor, table_name, schema) as writer_encoder:
+            writer_encoder.append_tuple((2, 3, 4, 2.34, 'foo bar', date(2019, 2, 1)))
+            writer_encoder.append_dict({
+                '_smallint': 200,
+                '_integer': 300,
+                '_bigint': 400,
+                '_float': 234,
+                '_character_varying': 'bar baz',
+                '_date': date(2019, 2, 3),
+            })
+        
+        conn.commit()
+        conn.close()
+        
+        ```
+        
+        ### Supported PostgreSQL types:
+        * smallint
+        * integer
+        * bigint
+        * double precision
+        * character varying
+        * date
+        # Changelog
+        
+        ## 1.0.3
+        * Add README to pypi.org
+        * Add LICENCE, CHANGELOG
+        
+        ## 1.0.2
+        * Update pypi token
+        
+        ## 1.0.1
+        * add Travis CI
+        
+        ## 1.0.0
+        * initial commit
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Provides-Extra: e2e
+Provides-Extra: ci
