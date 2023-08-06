@@ -1,0 +1,3 @@
+[console_scripts]
+pyge = pyge.__main__:main
+
