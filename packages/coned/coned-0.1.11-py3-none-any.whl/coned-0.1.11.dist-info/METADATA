@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: coned
+Version: 0.1.11
+Summary: Python client for ConEdison smart energy meters
+Home-page: https://github.com/bvlaicu/coned/
+Author: Bogdan Vlaicu
+Author-email: bogdanvlaicu@yahoo.com
+License: Apache Software License
+Platform: any
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 4 - Beta
+Classifier: Natural Language :: English
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Dist: requests
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+
+This is a utility package to interact with an
+ConEdison smart energy meter
+
+ConEd calls the API of the ConEdison
+smart energy meter to return the current energy usage.
+
+It requires a meter number.
+You can find your meter number fon your ConEdison bill.
+
+Example usage::
+
+    from coned import Meter
+
+    meter = Meter("702238804")
+    energy_usage_kWh = meter.last_read()
+
+
+
