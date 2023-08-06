@@ -1,0 +1,52 @@
+Metadata-Version: 2.1
+Name: tezos-python
+Version: 0.0.1
+Summary: Python API to run Tezos clients and deamons
+Home-page: https://gitlab.com/nomadic-labs/tezos
+Author: Nomadic Labs
+Author-email: 
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: wheel
+Requires-Dist: astroid (==2.2.5)
+Requires-Dist: atomicwrites (==1.3.0)
+Requires-Dist: attrs (==19.1.0)
+Requires-Dist: isort (==4.3.17)
+Requires-Dist: lazy-object-proxy (==1.3.1)
+Requires-Dist: mccabe (==0.6.1)
+Requires-Dist: more-itertools (==7.0.0)
+Requires-Dist: mypy (==0.700)
+Requires-Dist: mypy-extensions (==0.4.1)
+Requires-Dist: pluggy (==0.9.0)
+Requires-Dist: py (==1.8.0)
+Requires-Dist: pycodestyle (==2.5.0)
+Requires-Dist: requests (==2.20.1)
+Requires-Dist: six (==1.12.0)
+Requires-Dist: typed-ast (==1.3.1)
+Requires-Dist: wrapt (==1.11.1)
+Requires-Dist: base58check (==1.0.2)
+Requires-Dist: pyblake2 (==1.1.2)
+Requires-Dist: ed25519 (==1.4)
+
+# Tezos python
+
+This is a packaged version of the Tezos python API defined
+[here](http://tezos.gitlab.io/mainnet/developer/python_testing_framework.html).
+
+Currently, the main use is to use the `run_node` script, which launches a
+Tezos node and baker in sandbox mode.
+
+## Installation
+
+```
+pip3 install tezos-python
+export TEZOS_HOME=~/tezos # path to your tezos binaries
+run_node --help
+```
+
+
