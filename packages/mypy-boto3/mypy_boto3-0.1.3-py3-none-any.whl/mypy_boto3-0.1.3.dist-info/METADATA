@@ -1,0 +1,1277 @@
+Metadata-Version: 2.1
+Name: mypy-boto3
+Version: 0.1.3
+Summary: Mypy-friendly boto3 type annotations master module.
+Home-page: https://github.com/vemel/mypy_boto3
+Author: Vlad Emelianov
+Author-email: vlad.emelianov.nz@gmail.com
+License: MIT License
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+Provides-Extra: acm
+Requires-Dist: mypy-boto3-acm ; extra == 'acm'
+Provides-Extra: acm-pca
+Requires-Dist: mypy-boto3-acm-pca ; extra == 'acm-pca'
+Provides-Extra: acm-pca-with-docs
+Requires-Dist: mypy-boto3-acm-pca ; extra == 'acm-pca-with-docs'
+Provides-Extra: acm-with-docs
+Requires-Dist: mypy-boto3-acm ; extra == 'acm-with-docs'
+Provides-Extra: alexaforbusiness
+Requires-Dist: mypy-boto3-alexaforbusiness ; extra == 'alexaforbusiness'
+Provides-Extra: alexaforbusiness-with-docs
+Requires-Dist: mypy-boto3-alexaforbusiness ; extra == 'alexaforbusiness-with-docs'
+Provides-Extra: all
+Requires-Dist: mypy-boto3-acm ; extra == 'all'
+Requires-Dist: mypy-boto3-acm-pca ; extra == 'all'
+Requires-Dist: mypy-boto3-alexaforbusiness ; extra == 'all'
+Requires-Dist: mypy-boto3-amplify ; extra == 'all'
+Requires-Dist: mypy-boto3-apigateway ; extra == 'all'
+Requires-Dist: mypy-boto3-apigatewaymanagementapi ; extra == 'all'
+Requires-Dist: mypy-boto3-apigatewayv2 ; extra == 'all'
+Requires-Dist: mypy-boto3-application-autoscaling ; extra == 'all'
+Requires-Dist: mypy-boto3-application-insights ; extra == 'all'
+Requires-Dist: mypy-boto3-appmesh ; extra == 'all'
+Requires-Dist: mypy-boto3-appstream ; extra == 'all'
+Requires-Dist: mypy-boto3-appsync ; extra == 'all'
+Requires-Dist: mypy-boto3-athena ; extra == 'all'
+Requires-Dist: mypy-boto3-autoscaling ; extra == 'all'
+Requires-Dist: mypy-boto3-autoscaling-plans ; extra == 'all'
+Requires-Dist: mypy-boto3-backup ; extra == 'all'
+Requires-Dist: mypy-boto3-batch ; extra == 'all'
+Requires-Dist: mypy-boto3-budgets ; extra == 'all'
+Requires-Dist: mypy-boto3-ce ; extra == 'all'
+Requires-Dist: mypy-boto3-chime ; extra == 'all'
+Requires-Dist: mypy-boto3-cloud9 ; extra == 'all'
+Requires-Dist: mypy-boto3-clouddirectory ; extra == 'all'
+Requires-Dist: mypy-boto3-cloudformation ; extra == 'all'
+Requires-Dist: mypy-boto3-cloudfront ; extra == 'all'
+Requires-Dist: mypy-boto3-cloudhsm ; extra == 'all'
+Requires-Dist: mypy-boto3-cloudhsmv2 ; extra == 'all'
+Requires-Dist: mypy-boto3-cloudsearch ; extra == 'all'
+Requires-Dist: mypy-boto3-cloudsearchdomain ; extra == 'all'
+Requires-Dist: mypy-boto3-cloudtrail ; extra == 'all'
+Requires-Dist: mypy-boto3-cloudwatch ; extra == 'all'
+Requires-Dist: mypy-boto3-codebuild ; extra == 'all'
+Requires-Dist: mypy-boto3-codecommit ; extra == 'all'
+Requires-Dist: mypy-boto3-codedeploy ; extra == 'all'
+Requires-Dist: mypy-boto3-codepipeline ; extra == 'all'
+Requires-Dist: mypy-boto3-codestar ; extra == 'all'
+Requires-Dist: mypy-boto3-codestar-notifications ; extra == 'all'
+Requires-Dist: mypy-boto3-cognito-identity ; extra == 'all'
+Requires-Dist: mypy-boto3-cognito-idp ; extra == 'all'
+Requires-Dist: mypy-boto3-cognito-sync ; extra == 'all'
+Requires-Dist: mypy-boto3-comprehend ; extra == 'all'
+Requires-Dist: mypy-boto3-comprehendmedical ; extra == 'all'
+Requires-Dist: mypy-boto3-config ; extra == 'all'
+Requires-Dist: mypy-boto3-connect ; extra == 'all'
+Requires-Dist: mypy-boto3-cur ; extra == 'all'
+Requires-Dist: mypy-boto3-datapipeline ; extra == 'all'
+Requires-Dist: mypy-boto3-datasync ; extra == 'all'
+Requires-Dist: mypy-boto3-dax ; extra == 'all'
+Requires-Dist: mypy-boto3-devicefarm ; extra == 'all'
+Requires-Dist: mypy-boto3-directconnect ; extra == 'all'
+Requires-Dist: mypy-boto3-discovery ; extra == 'all'
+Requires-Dist: mypy-boto3-dlm ; extra == 'all'
+Requires-Dist: mypy-boto3-dms ; extra == 'all'
+Requires-Dist: mypy-boto3-docdb ; extra == 'all'
+Requires-Dist: mypy-boto3-ds ; extra == 'all'
+Requires-Dist: mypy-boto3-dynamodb ; extra == 'all'
+Requires-Dist: mypy-boto3-dynamodbstreams ; extra == 'all'
+Requires-Dist: mypy-boto3-ec2 ; extra == 'all'
+Requires-Dist: mypy-boto3-ec2-instance-connect ; extra == 'all'
+Requires-Dist: mypy-boto3-ecr ; extra == 'all'
+Requires-Dist: mypy-boto3-ecs ; extra == 'all'
+Requires-Dist: mypy-boto3-efs ; extra == 'all'
+Requires-Dist: mypy-boto3-eks ; extra == 'all'
+Requires-Dist: mypy-boto3-elasticache ; extra == 'all'
+Requires-Dist: mypy-boto3-elasticbeanstalk ; extra == 'all'
+Requires-Dist: mypy-boto3-elastictranscoder ; extra == 'all'
+Requires-Dist: mypy-boto3-elb ; extra == 'all'
+Requires-Dist: mypy-boto3-elbv2 ; extra == 'all'
+Requires-Dist: mypy-boto3-emr ; extra == 'all'
+Requires-Dist: mypy-boto3-es ; extra == 'all'
+Requires-Dist: mypy-boto3-events ; extra == 'all'
+Requires-Dist: mypy-boto3-firehose ; extra == 'all'
+Requires-Dist: mypy-boto3-fms ; extra == 'all'
+Requires-Dist: mypy-boto3-forecast ; extra == 'all'
+Requires-Dist: mypy-boto3-forecastquery ; extra == 'all'
+Requires-Dist: mypy-boto3-fsx ; extra == 'all'
+Requires-Dist: mypy-boto3-gamelift ; extra == 'all'
+Requires-Dist: mypy-boto3-glacier ; extra == 'all'
+Requires-Dist: mypy-boto3-globalaccelerator ; extra == 'all'
+Requires-Dist: mypy-boto3-glue ; extra == 'all'
+Requires-Dist: mypy-boto3-greengrass ; extra == 'all'
+Requires-Dist: mypy-boto3-groundstation ; extra == 'all'
+Requires-Dist: mypy-boto3-guardduty ; extra == 'all'
+Requires-Dist: mypy-boto3-health ; extra == 'all'
+Requires-Dist: mypy-boto3-iam ; extra == 'all'
+Requires-Dist: mypy-boto3-importexport ; extra == 'all'
+Requires-Dist: mypy-boto3-inspector ; extra == 'all'
+Requires-Dist: mypy-boto3-iot ; extra == 'all'
+Requires-Dist: mypy-boto3-iot-data ; extra == 'all'
+Requires-Dist: mypy-boto3-iot-jobs-data ; extra == 'all'
+Requires-Dist: mypy-boto3-iot1click-devices ; extra == 'all'
+Requires-Dist: mypy-boto3-iot1click-projects ; extra == 'all'
+Requires-Dist: mypy-boto3-iotanalytics ; extra == 'all'
+Requires-Dist: mypy-boto3-iotevents ; extra == 'all'
+Requires-Dist: mypy-boto3-iotevents-data ; extra == 'all'
+Requires-Dist: mypy-boto3-iotthingsgraph ; extra == 'all'
+Requires-Dist: mypy-boto3-kafka ; extra == 'all'
+Requires-Dist: mypy-boto3-kinesis ; extra == 'all'
+Requires-Dist: mypy-boto3-kinesis-video-archived-media ; extra == 'all'
+Requires-Dist: mypy-boto3-kinesis-video-media ; extra == 'all'
+Requires-Dist: mypy-boto3-kinesisanalytics ; extra == 'all'
+Requires-Dist: mypy-boto3-kinesisanalyticsv2 ; extra == 'all'
+Requires-Dist: mypy-boto3-kinesisvideo ; extra == 'all'
+Requires-Dist: mypy-boto3-kms ; extra == 'all'
+Requires-Dist: mypy-boto3-lakeformation ; extra == 'all'
+Requires-Dist: mypy-boto3-lambda ; extra == 'all'
+Requires-Dist: mypy-boto3-lex-models ; extra == 'all'
+Requires-Dist: mypy-boto3-lex-runtime ; extra == 'all'
+Requires-Dist: mypy-boto3-license-manager ; extra == 'all'
+Requires-Dist: mypy-boto3-lightsail ; extra == 'all'
+Requires-Dist: mypy-boto3-logs ; extra == 'all'
+Requires-Dist: mypy-boto3-machinelearning ; extra == 'all'
+Requires-Dist: mypy-boto3-macie ; extra == 'all'
+Requires-Dist: mypy-boto3-managedblockchain ; extra == 'all'
+Requires-Dist: mypy-boto3-marketplace-entitlement ; extra == 'all'
+Requires-Dist: mypy-boto3-marketplacecommerceanalytics ; extra == 'all'
+Requires-Dist: mypy-boto3-mediaconnect ; extra == 'all'
+Requires-Dist: mypy-boto3-mediaconvert ; extra == 'all'
+Requires-Dist: mypy-boto3-medialive ; extra == 'all'
+Requires-Dist: mypy-boto3-mediapackage ; extra == 'all'
+Requires-Dist: mypy-boto3-mediapackage-vod ; extra == 'all'
+Requires-Dist: mypy-boto3-mediastore ; extra == 'all'
+Requires-Dist: mypy-boto3-mediastore-data ; extra == 'all'
+Requires-Dist: mypy-boto3-mediatailor ; extra == 'all'
+Requires-Dist: mypy-boto3-meteringmarketplace ; extra == 'all'
+Requires-Dist: mypy-boto3-mgh ; extra == 'all'
+Requires-Dist: mypy-boto3-mobile ; extra == 'all'
+Requires-Dist: mypy-boto3-mq ; extra == 'all'
+Requires-Dist: mypy-boto3-mturk ; extra == 'all'
+Requires-Dist: mypy-boto3-neptune ; extra == 'all'
+Requires-Dist: mypy-boto3-opsworks ; extra == 'all'
+Requires-Dist: mypy-boto3-opsworkscm ; extra == 'all'
+Requires-Dist: mypy-boto3-organizations ; extra == 'all'
+Requires-Dist: mypy-boto3-personalize ; extra == 'all'
+Requires-Dist: mypy-boto3-personalize-events ; extra == 'all'
+Requires-Dist: mypy-boto3-personalize-runtime ; extra == 'all'
+Requires-Dist: mypy-boto3-pi ; extra == 'all'
+Requires-Dist: mypy-boto3-pinpoint ; extra == 'all'
+Requires-Dist: mypy-boto3-pinpoint-email ; extra == 'all'
+Requires-Dist: mypy-boto3-pinpoint-sms-voice ; extra == 'all'
+Requires-Dist: mypy-boto3-polly ; extra == 'all'
+Requires-Dist: mypy-boto3-pricing ; extra == 'all'
+Requires-Dist: mypy-boto3-qldb ; extra == 'all'
+Requires-Dist: mypy-boto3-qldb-session ; extra == 'all'
+Requires-Dist: mypy-boto3-quicksight ; extra == 'all'
+Requires-Dist: mypy-boto3-ram ; extra == 'all'
+Requires-Dist: mypy-boto3-rds ; extra == 'all'
+Requires-Dist: mypy-boto3-rds-data ; extra == 'all'
+Requires-Dist: mypy-boto3-redshift ; extra == 'all'
+Requires-Dist: mypy-boto3-rekognition ; extra == 'all'
+Requires-Dist: mypy-boto3-resource-groups ; extra == 'all'
+Requires-Dist: mypy-boto3-resourcegroupstaggingapi ; extra == 'all'
+Requires-Dist: mypy-boto3-robomaker ; extra == 'all'
+Requires-Dist: mypy-boto3-route53 ; extra == 'all'
+Requires-Dist: mypy-boto3-route53domains ; extra == 'all'
+Requires-Dist: mypy-boto3-route53resolver ; extra == 'all'
+Requires-Dist: mypy-boto3-s3 ; extra == 'all'
+Requires-Dist: mypy-boto3-s3control ; extra == 'all'
+Requires-Dist: mypy-boto3-sagemaker ; extra == 'all'
+Requires-Dist: mypy-boto3-sagemaker-runtime ; extra == 'all'
+Requires-Dist: mypy-boto3-savingsplans ; extra == 'all'
+Requires-Dist: mypy-boto3-sdb ; extra == 'all'
+Requires-Dist: mypy-boto3-secretsmanager ; extra == 'all'
+Requires-Dist: mypy-boto3-securityhub ; extra == 'all'
+Requires-Dist: mypy-boto3-serverlessrepo ; extra == 'all'
+Requires-Dist: mypy-boto3-service-quotas ; extra == 'all'
+Requires-Dist: mypy-boto3-servicecatalog ; extra == 'all'
+Requires-Dist: mypy-boto3-servicediscovery ; extra == 'all'
+Requires-Dist: mypy-boto3-ses ; extra == 'all'
+Requires-Dist: mypy-boto3-shield ; extra == 'all'
+Requires-Dist: mypy-boto3-signer ; extra == 'all'
+Requires-Dist: mypy-boto3-sms ; extra == 'all'
+Requires-Dist: mypy-boto3-sms-voice ; extra == 'all'
+Requires-Dist: mypy-boto3-snowball ; extra == 'all'
+Requires-Dist: mypy-boto3-sns ; extra == 'all'
+Requires-Dist: mypy-boto3-sqs ; extra == 'all'
+Requires-Dist: mypy-boto3-ssm ; extra == 'all'
+Requires-Dist: mypy-boto3-stepfunctions ; extra == 'all'
+Requires-Dist: mypy-boto3-storagegateway ; extra == 'all'
+Requires-Dist: mypy-boto3-sts ; extra == 'all'
+Requires-Dist: mypy-boto3-support ; extra == 'all'
+Requires-Dist: mypy-boto3-swf ; extra == 'all'
+Requires-Dist: mypy-boto3-textract ; extra == 'all'
+Requires-Dist: mypy-boto3-transcribe ; extra == 'all'
+Requires-Dist: mypy-boto3-transfer ; extra == 'all'
+Requires-Dist: mypy-boto3-translate ; extra == 'all'
+Requires-Dist: mypy-boto3-waf ; extra == 'all'
+Requires-Dist: mypy-boto3-waf-regional ; extra == 'all'
+Requires-Dist: mypy-boto3-workdocs ; extra == 'all'
+Requires-Dist: mypy-boto3-worklink ; extra == 'all'
+Requires-Dist: mypy-boto3-workmail ; extra == 'all'
+Requires-Dist: mypy-boto3-workmailmessageflow ; extra == 'all'
+Requires-Dist: mypy-boto3-workspaces ; extra == 'all'
+Requires-Dist: mypy-boto3-xray ; extra == 'all'
+Provides-Extra: all-with-docs
+Requires-Dist: mypy-boto3-acm ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-acm-pca ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-alexaforbusiness ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-amplify ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-apigateway ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-apigatewaymanagementapi ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-apigatewayv2 ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-application-autoscaling ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-application-insights ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-appmesh ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-appstream ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-appsync ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-athena ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-autoscaling ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-autoscaling-plans ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-backup ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-batch ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-budgets ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-ce ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-chime ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-cloud9 ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-clouddirectory ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-cloudformation ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-cloudfront ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-cloudhsm ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-cloudhsmv2 ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-cloudsearch ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-cloudsearchdomain ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-cloudtrail ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-cloudwatch ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-codebuild ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-codecommit ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-codedeploy ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-codepipeline ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-codestar ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-codestar-notifications ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-cognito-identity ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-cognito-idp ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-cognito-sync ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-comprehend ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-comprehendmedical ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-config ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-connect ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-cur ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-datapipeline ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-datasync ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-dax ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-devicefarm ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-directconnect ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-discovery ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-dlm ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-dms ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-docdb ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-ds ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-dynamodb ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-dynamodbstreams ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-ec2 ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-ec2-instance-connect ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-ecr ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-ecs ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-efs ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-eks ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-elasticache ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-elasticbeanstalk ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-elastictranscoder ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-elb ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-elbv2 ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-emr ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-es ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-events ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-firehose ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-fms ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-forecast ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-forecastquery ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-fsx ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-gamelift ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-glacier ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-globalaccelerator ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-glue ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-greengrass ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-groundstation ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-guardduty ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-health ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-iam ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-importexport ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-inspector ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-iot ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-iot-data ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-iot-jobs-data ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-iot1click-devices ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-iot1click-projects ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-iotanalytics ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-iotevents ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-iotevents-data ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-iotthingsgraph ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-kafka ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-kinesis ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-kinesis-video-archived-media ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-kinesis-video-media ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-kinesisanalytics ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-kinesisanalyticsv2 ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-kinesisvideo ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-kms ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-lakeformation ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-lambda ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-lex-models ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-lex-runtime ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-license-manager ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-lightsail ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-logs ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-machinelearning ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-macie ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-managedblockchain ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-marketplace-entitlement ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-marketplacecommerceanalytics ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-mediaconnect ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-mediaconvert ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-medialive ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-mediapackage ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-mediapackage-vod ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-mediastore ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-mediastore-data ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-mediatailor ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-meteringmarketplace ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-mgh ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-mobile ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-mq ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-mturk ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-neptune ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-opsworks ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-opsworkscm ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-organizations ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-personalize ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-personalize-events ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-personalize-runtime ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-pi ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-pinpoint ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-pinpoint-email ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-pinpoint-sms-voice ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-polly ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-pricing ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-qldb ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-qldb-session ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-quicksight ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-ram ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-rds ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-rds-data ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-redshift ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-rekognition ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-resource-groups ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-resourcegroupstaggingapi ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-robomaker ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-route53 ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-route53domains ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-route53resolver ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-s3 ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-s3control ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-sagemaker ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-sagemaker-runtime ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-savingsplans ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-sdb ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-secretsmanager ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-securityhub ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-serverlessrepo ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-service-quotas ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-servicecatalog ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-servicediscovery ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-ses ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-shield ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-signer ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-sms ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-sms-voice ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-snowball ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-sns ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-sqs ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-ssm ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-stepfunctions ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-storagegateway ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-sts ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-support ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-swf ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-textract ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-transcribe ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-transfer ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-translate ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-waf ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-waf-regional ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-workdocs ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-worklink ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-workmail ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-workmailmessageflow ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-workspaces ; extra == 'all-with-docs'
+Requires-Dist: mypy-boto3-xray ; extra == 'all-with-docs'
+Provides-Extra: amplify
+Requires-Dist: mypy-boto3-amplify ; extra == 'amplify'
+Provides-Extra: amplify-with-docs
+Requires-Dist: mypy-boto3-amplify ; extra == 'amplify-with-docs'
+Provides-Extra: apigateway
+Requires-Dist: mypy-boto3-apigateway ; extra == 'apigateway'
+Provides-Extra: apigateway-with-docs
+Requires-Dist: mypy-boto3-apigateway ; extra == 'apigateway-with-docs'
+Provides-Extra: apigatewaymanagementapi
+Requires-Dist: mypy-boto3-apigatewaymanagementapi ; extra == 'apigatewaymanagementapi'
+Provides-Extra: apigatewaymanagementapi-with-docs
+Requires-Dist: mypy-boto3-apigatewaymanagementapi ; extra == 'apigatewaymanagementapi-with-docs'
+Provides-Extra: apigatewayv2
+Requires-Dist: mypy-boto3-apigatewayv2 ; extra == 'apigatewayv2'
+Provides-Extra: apigatewayv2-with-docs
+Requires-Dist: mypy-boto3-apigatewayv2 ; extra == 'apigatewayv2-with-docs'
+Provides-Extra: application-autoscaling
+Requires-Dist: mypy-boto3-application-autoscaling ; extra == 'application-autoscaling'
+Provides-Extra: application-autoscaling-with-docs
+Requires-Dist: mypy-boto3-application-autoscaling ; extra == 'application-autoscaling-with-docs'
+Provides-Extra: application-insights
+Requires-Dist: mypy-boto3-application-insights ; extra == 'application-insights'
+Provides-Extra: application-insights-with-docs
+Requires-Dist: mypy-boto3-application-insights ; extra == 'application-insights-with-docs'
+Provides-Extra: appmesh
+Requires-Dist: mypy-boto3-appmesh ; extra == 'appmesh'
+Provides-Extra: appmesh-with-docs
+Requires-Dist: mypy-boto3-appmesh ; extra == 'appmesh-with-docs'
+Provides-Extra: appstream
+Requires-Dist: mypy-boto3-appstream ; extra == 'appstream'
+Provides-Extra: appstream-with-docs
+Requires-Dist: mypy-boto3-appstream ; extra == 'appstream-with-docs'
+Provides-Extra: appsync
+Requires-Dist: mypy-boto3-appsync ; extra == 'appsync'
+Provides-Extra: appsync-with-docs
+Requires-Dist: mypy-boto3-appsync ; extra == 'appsync-with-docs'
+Provides-Extra: athena
+Requires-Dist: mypy-boto3-athena ; extra == 'athena'
+Provides-Extra: athena-with-docs
+Requires-Dist: mypy-boto3-athena ; extra == 'athena-with-docs'
+Provides-Extra: autoscaling
+Requires-Dist: mypy-boto3-autoscaling ; extra == 'autoscaling'
+Provides-Extra: autoscaling-plans
+Requires-Dist: mypy-boto3-autoscaling-plans ; extra == 'autoscaling-plans'
+Provides-Extra: autoscaling-plans-with-docs
+Requires-Dist: mypy-boto3-autoscaling-plans ; extra == 'autoscaling-plans-with-docs'
+Provides-Extra: autoscaling-with-docs
+Requires-Dist: mypy-boto3-autoscaling ; extra == 'autoscaling-with-docs'
+Provides-Extra: backup
+Requires-Dist: mypy-boto3-backup ; extra == 'backup'
+Provides-Extra: backup-with-docs
+Requires-Dist: mypy-boto3-backup ; extra == 'backup-with-docs'
+Provides-Extra: batch
+Requires-Dist: mypy-boto3-batch ; extra == 'batch'
+Provides-Extra: batch-with-docs
+Requires-Dist: mypy-boto3-batch ; extra == 'batch-with-docs'
+Provides-Extra: budgets
+Requires-Dist: mypy-boto3-budgets ; extra == 'budgets'
+Provides-Extra: budgets-with-docs
+Requires-Dist: mypy-boto3-budgets ; extra == 'budgets-with-docs'
+Provides-Extra: ce
+Requires-Dist: mypy-boto3-ce ; extra == 'ce'
+Provides-Extra: ce-with-docs
+Requires-Dist: mypy-boto3-ce ; extra == 'ce-with-docs'
+Provides-Extra: chime
+Requires-Dist: mypy-boto3-chime ; extra == 'chime'
+Provides-Extra: chime-with-docs
+Requires-Dist: mypy-boto3-chime ; extra == 'chime-with-docs'
+Provides-Extra: cloud9
+Requires-Dist: mypy-boto3-cloud9 ; extra == 'cloud9'
+Provides-Extra: cloud9-with-docs
+Requires-Dist: mypy-boto3-cloud9 ; extra == 'cloud9-with-docs'
+Provides-Extra: clouddirectory
+Requires-Dist: mypy-boto3-clouddirectory ; extra == 'clouddirectory'
+Provides-Extra: clouddirectory-with-docs
+Requires-Dist: mypy-boto3-clouddirectory ; extra == 'clouddirectory-with-docs'
+Provides-Extra: cloudformation
+Requires-Dist: mypy-boto3-cloudformation ; extra == 'cloudformation'
+Provides-Extra: cloudformation-with-docs
+Requires-Dist: mypy-boto3-cloudformation ; extra == 'cloudformation-with-docs'
+Provides-Extra: cloudfront
+Requires-Dist: mypy-boto3-cloudfront ; extra == 'cloudfront'
+Provides-Extra: cloudfront-with-docs
+Requires-Dist: mypy-boto3-cloudfront ; extra == 'cloudfront-with-docs'
+Provides-Extra: cloudhsm
+Requires-Dist: mypy-boto3-cloudhsm ; extra == 'cloudhsm'
+Provides-Extra: cloudhsm-with-docs
+Requires-Dist: mypy-boto3-cloudhsm ; extra == 'cloudhsm-with-docs'
+Provides-Extra: cloudhsmv2
+Requires-Dist: mypy-boto3-cloudhsmv2 ; extra == 'cloudhsmv2'
+Provides-Extra: cloudhsmv2-with-docs
+Requires-Dist: mypy-boto3-cloudhsmv2 ; extra == 'cloudhsmv2-with-docs'
+Provides-Extra: cloudsearch
+Requires-Dist: mypy-boto3-cloudsearch ; extra == 'cloudsearch'
+Provides-Extra: cloudsearch-with-docs
+Requires-Dist: mypy-boto3-cloudsearch ; extra == 'cloudsearch-with-docs'
+Provides-Extra: cloudsearchdomain
+Requires-Dist: mypy-boto3-cloudsearchdomain ; extra == 'cloudsearchdomain'
+Provides-Extra: cloudsearchdomain-with-docs
+Requires-Dist: mypy-boto3-cloudsearchdomain ; extra == 'cloudsearchdomain-with-docs'
+Provides-Extra: cloudtrail
+Requires-Dist: mypy-boto3-cloudtrail ; extra == 'cloudtrail'
+Provides-Extra: cloudtrail-with-docs
+Requires-Dist: mypy-boto3-cloudtrail ; extra == 'cloudtrail-with-docs'
+Provides-Extra: cloudwatch
+Requires-Dist: mypy-boto3-cloudwatch ; extra == 'cloudwatch'
+Provides-Extra: cloudwatch-with-docs
+Requires-Dist: mypy-boto3-cloudwatch ; extra == 'cloudwatch-with-docs'
+Provides-Extra: codebuild
+Requires-Dist: mypy-boto3-codebuild ; extra == 'codebuild'
+Provides-Extra: codebuild-with-docs
+Requires-Dist: mypy-boto3-codebuild ; extra == 'codebuild-with-docs'
+Provides-Extra: codecommit
+Requires-Dist: mypy-boto3-codecommit ; extra == 'codecommit'
+Provides-Extra: codecommit-with-docs
+Requires-Dist: mypy-boto3-codecommit ; extra == 'codecommit-with-docs'
+Provides-Extra: codedeploy
+Requires-Dist: mypy-boto3-codedeploy ; extra == 'codedeploy'
+Provides-Extra: codedeploy-with-docs
+Requires-Dist: mypy-boto3-codedeploy ; extra == 'codedeploy-with-docs'
+Provides-Extra: codepipeline
+Requires-Dist: mypy-boto3-codepipeline ; extra == 'codepipeline'
+Provides-Extra: codepipeline-with-docs
+Requires-Dist: mypy-boto3-codepipeline ; extra == 'codepipeline-with-docs'
+Provides-Extra: codestar
+Requires-Dist: mypy-boto3-codestar ; extra == 'codestar'
+Provides-Extra: codestar-notifications
+Requires-Dist: mypy-boto3-codestar-notifications ; extra == 'codestar-notifications'
+Provides-Extra: codestar-notifications-with-docs
+Requires-Dist: mypy-boto3-codestar-notifications ; extra == 'codestar-notifications-with-docs'
+Provides-Extra: codestar-with-docs
+Requires-Dist: mypy-boto3-codestar ; extra == 'codestar-with-docs'
+Provides-Extra: cognito-identity
+Requires-Dist: mypy-boto3-cognito-identity ; extra == 'cognito-identity'
+Provides-Extra: cognito-identity-with-docs
+Requires-Dist: mypy-boto3-cognito-identity ; extra == 'cognito-identity-with-docs'
+Provides-Extra: cognito-idp
+Requires-Dist: mypy-boto3-cognito-idp ; extra == 'cognito-idp'
+Provides-Extra: cognito-idp-with-docs
+Requires-Dist: mypy-boto3-cognito-idp ; extra == 'cognito-idp-with-docs'
+Provides-Extra: cognito-sync
+Requires-Dist: mypy-boto3-cognito-sync ; extra == 'cognito-sync'
+Provides-Extra: cognito-sync-with-docs
+Requires-Dist: mypy-boto3-cognito-sync ; extra == 'cognito-sync-with-docs'
+Provides-Extra: comprehend
+Requires-Dist: mypy-boto3-comprehend ; extra == 'comprehend'
+Provides-Extra: comprehend-with-docs
+Requires-Dist: mypy-boto3-comprehend ; extra == 'comprehend-with-docs'
+Provides-Extra: comprehendmedical
+Requires-Dist: mypy-boto3-comprehendmedical ; extra == 'comprehendmedical'
+Provides-Extra: comprehendmedical-with-docs
+Requires-Dist: mypy-boto3-comprehendmedical ; extra == 'comprehendmedical-with-docs'
+Provides-Extra: config
+Requires-Dist: mypy-boto3-config ; extra == 'config'
+Provides-Extra: config-with-docs
+Requires-Dist: mypy-boto3-config ; extra == 'config-with-docs'
+Provides-Extra: connect
+Requires-Dist: mypy-boto3-connect ; extra == 'connect'
+Provides-Extra: connect-with-docs
+Requires-Dist: mypy-boto3-connect ; extra == 'connect-with-docs'
+Provides-Extra: cur
+Requires-Dist: mypy-boto3-cur ; extra == 'cur'
+Provides-Extra: cur-with-docs
+Requires-Dist: mypy-boto3-cur ; extra == 'cur-with-docs'
+Provides-Extra: datapipeline
+Requires-Dist: mypy-boto3-datapipeline ; extra == 'datapipeline'
+Provides-Extra: datapipeline-with-docs
+Requires-Dist: mypy-boto3-datapipeline ; extra == 'datapipeline-with-docs'
+Provides-Extra: datasync
+Requires-Dist: mypy-boto3-datasync ; extra == 'datasync'
+Provides-Extra: datasync-with-docs
+Requires-Dist: mypy-boto3-datasync ; extra == 'datasync-with-docs'
+Provides-Extra: dax
+Requires-Dist: mypy-boto3-dax ; extra == 'dax'
+Provides-Extra: dax-with-docs
+Requires-Dist: mypy-boto3-dax ; extra == 'dax-with-docs'
+Provides-Extra: devicefarm
+Requires-Dist: mypy-boto3-devicefarm ; extra == 'devicefarm'
+Provides-Extra: devicefarm-with-docs
+Requires-Dist: mypy-boto3-devicefarm ; extra == 'devicefarm-with-docs'
+Provides-Extra: directconnect
+Requires-Dist: mypy-boto3-directconnect ; extra == 'directconnect'
+Provides-Extra: directconnect-with-docs
+Requires-Dist: mypy-boto3-directconnect ; extra == 'directconnect-with-docs'
+Provides-Extra: discovery
+Requires-Dist: mypy-boto3-discovery ; extra == 'discovery'
+Provides-Extra: discovery-with-docs
+Requires-Dist: mypy-boto3-discovery ; extra == 'discovery-with-docs'
+Provides-Extra: dlm
+Requires-Dist: mypy-boto3-dlm ; extra == 'dlm'
+Provides-Extra: dlm-with-docs
+Requires-Dist: mypy-boto3-dlm ; extra == 'dlm-with-docs'
+Provides-Extra: dms
+Requires-Dist: mypy-boto3-dms ; extra == 'dms'
+Provides-Extra: dms-with-docs
+Requires-Dist: mypy-boto3-dms ; extra == 'dms-with-docs'
+Provides-Extra: docdb
+Requires-Dist: mypy-boto3-docdb ; extra == 'docdb'
+Provides-Extra: docdb-with-docs
+Requires-Dist: mypy-boto3-docdb ; extra == 'docdb-with-docs'
+Provides-Extra: ds
+Requires-Dist: mypy-boto3-ds ; extra == 'ds'
+Provides-Extra: ds-with-docs
+Requires-Dist: mypy-boto3-ds ; extra == 'ds-with-docs'
+Provides-Extra: dynamodb
+Requires-Dist: mypy-boto3-dynamodb ; extra == 'dynamodb'
+Provides-Extra: dynamodb-with-docs
+Requires-Dist: mypy-boto3-dynamodb ; extra == 'dynamodb-with-docs'
+Provides-Extra: dynamodbstreams
+Requires-Dist: mypy-boto3-dynamodbstreams ; extra == 'dynamodbstreams'
+Provides-Extra: dynamodbstreams-with-docs
+Requires-Dist: mypy-boto3-dynamodbstreams ; extra == 'dynamodbstreams-with-docs'
+Provides-Extra: ec2
+Requires-Dist: mypy-boto3-ec2 ; extra == 'ec2'
+Provides-Extra: ec2-instance-connect
+Requires-Dist: mypy-boto3-ec2-instance-connect ; extra == 'ec2-instance-connect'
+Provides-Extra: ec2-instance-connect-with-docs
+Requires-Dist: mypy-boto3-ec2-instance-connect ; extra == 'ec2-instance-connect-with-docs'
+Provides-Extra: ec2-with-docs
+Requires-Dist: mypy-boto3-ec2 ; extra == 'ec2-with-docs'
+Provides-Extra: ecr
+Requires-Dist: mypy-boto3-ecr ; extra == 'ecr'
+Provides-Extra: ecr-with-docs
+Requires-Dist: mypy-boto3-ecr ; extra == 'ecr-with-docs'
+Provides-Extra: ecs
+Requires-Dist: mypy-boto3-ecs ; extra == 'ecs'
+Provides-Extra: ecs-with-docs
+Requires-Dist: mypy-boto3-ecs ; extra == 'ecs-with-docs'
+Provides-Extra: efs
+Requires-Dist: mypy-boto3-efs ; extra == 'efs'
+Provides-Extra: efs-with-docs
+Requires-Dist: mypy-boto3-efs ; extra == 'efs-with-docs'
+Provides-Extra: eks
+Requires-Dist: mypy-boto3-eks ; extra == 'eks'
+Provides-Extra: eks-with-docs
+Requires-Dist: mypy-boto3-eks ; extra == 'eks-with-docs'
+Provides-Extra: elasticache
+Requires-Dist: mypy-boto3-elasticache ; extra == 'elasticache'
+Provides-Extra: elasticache-with-docs
+Requires-Dist: mypy-boto3-elasticache ; extra == 'elasticache-with-docs'
+Provides-Extra: elasticbeanstalk
+Requires-Dist: mypy-boto3-elasticbeanstalk ; extra == 'elasticbeanstalk'
+Provides-Extra: elasticbeanstalk-with-docs
+Requires-Dist: mypy-boto3-elasticbeanstalk ; extra == 'elasticbeanstalk-with-docs'
+Provides-Extra: elastictranscoder
+Requires-Dist: mypy-boto3-elastictranscoder ; extra == 'elastictranscoder'
+Provides-Extra: elastictranscoder-with-docs
+Requires-Dist: mypy-boto3-elastictranscoder ; extra == 'elastictranscoder-with-docs'
+Provides-Extra: elb
+Requires-Dist: mypy-boto3-elb ; extra == 'elb'
+Provides-Extra: elb-with-docs
+Requires-Dist: mypy-boto3-elb ; extra == 'elb-with-docs'
+Provides-Extra: elbv2
+Requires-Dist: mypy-boto3-elbv2 ; extra == 'elbv2'
+Provides-Extra: elbv2-with-docs
+Requires-Dist: mypy-boto3-elbv2 ; extra == 'elbv2-with-docs'
+Provides-Extra: emr
+Requires-Dist: mypy-boto3-emr ; extra == 'emr'
+Provides-Extra: emr-with-docs
+Requires-Dist: mypy-boto3-emr ; extra == 'emr-with-docs'
+Provides-Extra: es
+Requires-Dist: mypy-boto3-es ; extra == 'es'
+Provides-Extra: es-with-docs
+Requires-Dist: mypy-boto3-es ; extra == 'es-with-docs'
+Provides-Extra: events
+Requires-Dist: mypy-boto3-events ; extra == 'events'
+Provides-Extra: events-with-docs
+Requires-Dist: mypy-boto3-events ; extra == 'events-with-docs'
+Provides-Extra: firehose
+Requires-Dist: mypy-boto3-firehose ; extra == 'firehose'
+Provides-Extra: firehose-with-docs
+Requires-Dist: mypy-boto3-firehose ; extra == 'firehose-with-docs'
+Provides-Extra: fms
+Requires-Dist: mypy-boto3-fms ; extra == 'fms'
+Provides-Extra: fms-with-docs
+Requires-Dist: mypy-boto3-fms ; extra == 'fms-with-docs'
+Provides-Extra: forecast
+Requires-Dist: mypy-boto3-forecast ; extra == 'forecast'
+Provides-Extra: forecast-with-docs
+Requires-Dist: mypy-boto3-forecast ; extra == 'forecast-with-docs'
+Provides-Extra: forecastquery
+Requires-Dist: mypy-boto3-forecastquery ; extra == 'forecastquery'
+Provides-Extra: forecastquery-with-docs
+Requires-Dist: mypy-boto3-forecastquery ; extra == 'forecastquery-with-docs'
+Provides-Extra: fsx
+Requires-Dist: mypy-boto3-fsx ; extra == 'fsx'
+Provides-Extra: fsx-with-docs
+Requires-Dist: mypy-boto3-fsx ; extra == 'fsx-with-docs'
+Provides-Extra: gamelift
+Requires-Dist: mypy-boto3-gamelift ; extra == 'gamelift'
+Provides-Extra: gamelift-with-docs
+Requires-Dist: mypy-boto3-gamelift ; extra == 'gamelift-with-docs'
+Provides-Extra: glacier
+Requires-Dist: mypy-boto3-glacier ; extra == 'glacier'
+Provides-Extra: glacier-with-docs
+Requires-Dist: mypy-boto3-glacier ; extra == 'glacier-with-docs'
+Provides-Extra: globalaccelerator
+Requires-Dist: mypy-boto3-globalaccelerator ; extra == 'globalaccelerator'
+Provides-Extra: globalaccelerator-with-docs
+Requires-Dist: mypy-boto3-globalaccelerator ; extra == 'globalaccelerator-with-docs'
+Provides-Extra: glue
+Requires-Dist: mypy-boto3-glue ; extra == 'glue'
+Provides-Extra: glue-with-docs
+Requires-Dist: mypy-boto3-glue ; extra == 'glue-with-docs'
+Provides-Extra: greengrass
+Requires-Dist: mypy-boto3-greengrass ; extra == 'greengrass'
+Provides-Extra: greengrass-with-docs
+Requires-Dist: mypy-boto3-greengrass ; extra == 'greengrass-with-docs'
+Provides-Extra: groundstation
+Requires-Dist: mypy-boto3-groundstation ; extra == 'groundstation'
+Provides-Extra: groundstation-with-docs
+Requires-Dist: mypy-boto3-groundstation ; extra == 'groundstation-with-docs'
+Provides-Extra: guardduty
+Requires-Dist: mypy-boto3-guardduty ; extra == 'guardduty'
+Provides-Extra: guardduty-with-docs
+Requires-Dist: mypy-boto3-guardduty ; extra == 'guardduty-with-docs'
+Provides-Extra: health
+Requires-Dist: mypy-boto3-health ; extra == 'health'
+Provides-Extra: health-with-docs
+Requires-Dist: mypy-boto3-health ; extra == 'health-with-docs'
+Provides-Extra: iam
+Requires-Dist: mypy-boto3-iam ; extra == 'iam'
+Provides-Extra: iam-with-docs
+Requires-Dist: mypy-boto3-iam ; extra == 'iam-with-docs'
+Provides-Extra: importexport
+Requires-Dist: mypy-boto3-importexport ; extra == 'importexport'
+Provides-Extra: importexport-with-docs
+Requires-Dist: mypy-boto3-importexport ; extra == 'importexport-with-docs'
+Provides-Extra: inspector
+Requires-Dist: mypy-boto3-inspector ; extra == 'inspector'
+Provides-Extra: inspector-with-docs
+Requires-Dist: mypy-boto3-inspector ; extra == 'inspector-with-docs'
+Provides-Extra: iot
+Requires-Dist: mypy-boto3-iot ; extra == 'iot'
+Provides-Extra: iot-data
+Requires-Dist: mypy-boto3-iot-data ; extra == 'iot-data'
+Provides-Extra: iot-data-with-docs
+Requires-Dist: mypy-boto3-iot-data ; extra == 'iot-data-with-docs'
+Provides-Extra: iot-jobs-data
+Requires-Dist: mypy-boto3-iot-jobs-data ; extra == 'iot-jobs-data'
+Provides-Extra: iot-jobs-data-with-docs
+Requires-Dist: mypy-boto3-iot-jobs-data ; extra == 'iot-jobs-data-with-docs'
+Provides-Extra: iot-with-docs
+Requires-Dist: mypy-boto3-iot ; extra == 'iot-with-docs'
+Provides-Extra: iot1click-devices
+Requires-Dist: mypy-boto3-iot1click-devices ; extra == 'iot1click-devices'
+Provides-Extra: iot1click-devices-with-docs
+Requires-Dist: mypy-boto3-iot1click-devices ; extra == 'iot1click-devices-with-docs'
+Provides-Extra: iot1click-projects
+Requires-Dist: mypy-boto3-iot1click-projects ; extra == 'iot1click-projects'
+Provides-Extra: iot1click-projects-with-docs
+Requires-Dist: mypy-boto3-iot1click-projects ; extra == 'iot1click-projects-with-docs'
+Provides-Extra: iotanalytics
+Requires-Dist: mypy-boto3-iotanalytics ; extra == 'iotanalytics'
+Provides-Extra: iotanalytics-with-docs
+Requires-Dist: mypy-boto3-iotanalytics ; extra == 'iotanalytics-with-docs'
+Provides-Extra: iotevents
+Requires-Dist: mypy-boto3-iotevents ; extra == 'iotevents'
+Provides-Extra: iotevents-data
+Requires-Dist: mypy-boto3-iotevents-data ; extra == 'iotevents-data'
+Provides-Extra: iotevents-data-with-docs
+Requires-Dist: mypy-boto3-iotevents-data ; extra == 'iotevents-data-with-docs'
+Provides-Extra: iotevents-with-docs
+Requires-Dist: mypy-boto3-iotevents ; extra == 'iotevents-with-docs'
+Provides-Extra: iotthingsgraph
+Requires-Dist: mypy-boto3-iotthingsgraph ; extra == 'iotthingsgraph'
+Provides-Extra: iotthingsgraph-with-docs
+Requires-Dist: mypy-boto3-iotthingsgraph ; extra == 'iotthingsgraph-with-docs'
+Provides-Extra: kafka
+Requires-Dist: mypy-boto3-kafka ; extra == 'kafka'
+Provides-Extra: kafka-with-docs
+Requires-Dist: mypy-boto3-kafka ; extra == 'kafka-with-docs'
+Provides-Extra: kinesis
+Requires-Dist: mypy-boto3-kinesis ; extra == 'kinesis'
+Provides-Extra: kinesis-video-archived-media
+Requires-Dist: mypy-boto3-kinesis-video-archived-media ; extra == 'kinesis-video-archived-media'
+Provides-Extra: kinesis-video-archived-media-with-docs
+Requires-Dist: mypy-boto3-kinesis-video-archived-media ; extra == 'kinesis-video-archived-media-with-docs'
+Provides-Extra: kinesis-video-media
+Requires-Dist: mypy-boto3-kinesis-video-media ; extra == 'kinesis-video-media'
+Provides-Extra: kinesis-video-media-with-docs
+Requires-Dist: mypy-boto3-kinesis-video-media ; extra == 'kinesis-video-media-with-docs'
+Provides-Extra: kinesis-with-docs
+Requires-Dist: mypy-boto3-kinesis ; extra == 'kinesis-with-docs'
+Provides-Extra: kinesisanalytics
+Requires-Dist: mypy-boto3-kinesisanalytics ; extra == 'kinesisanalytics'
+Provides-Extra: kinesisanalytics-with-docs
+Requires-Dist: mypy-boto3-kinesisanalytics ; extra == 'kinesisanalytics-with-docs'
+Provides-Extra: kinesisanalyticsv2
+Requires-Dist: mypy-boto3-kinesisanalyticsv2 ; extra == 'kinesisanalyticsv2'
+Provides-Extra: kinesisanalyticsv2-with-docs
+Requires-Dist: mypy-boto3-kinesisanalyticsv2 ; extra == 'kinesisanalyticsv2-with-docs'
+Provides-Extra: kinesisvideo
+Requires-Dist: mypy-boto3-kinesisvideo ; extra == 'kinesisvideo'
+Provides-Extra: kinesisvideo-with-docs
+Requires-Dist: mypy-boto3-kinesisvideo ; extra == 'kinesisvideo-with-docs'
+Provides-Extra: kms
+Requires-Dist: mypy-boto3-kms ; extra == 'kms'
+Provides-Extra: kms-with-docs
+Requires-Dist: mypy-boto3-kms ; extra == 'kms-with-docs'
+Provides-Extra: lakeformation
+Requires-Dist: mypy-boto3-lakeformation ; extra == 'lakeformation'
+Provides-Extra: lakeformation-with-docs
+Requires-Dist: mypy-boto3-lakeformation ; extra == 'lakeformation-with-docs'
+Provides-Extra: lambda
+Requires-Dist: mypy-boto3-lambda ; extra == 'lambda'
+Provides-Extra: lambda-with-docs
+Requires-Dist: mypy-boto3-lambda ; extra == 'lambda-with-docs'
+Provides-Extra: lex-models
+Requires-Dist: mypy-boto3-lex-models ; extra == 'lex-models'
+Provides-Extra: lex-models-with-docs
+Requires-Dist: mypy-boto3-lex-models ; extra == 'lex-models-with-docs'
+Provides-Extra: lex-runtime
+Requires-Dist: mypy-boto3-lex-runtime ; extra == 'lex-runtime'
+Provides-Extra: lex-runtime-with-docs
+Requires-Dist: mypy-boto3-lex-runtime ; extra == 'lex-runtime-with-docs'
+Provides-Extra: license-manager
+Requires-Dist: mypy-boto3-license-manager ; extra == 'license-manager'
+Provides-Extra: license-manager-with-docs
+Requires-Dist: mypy-boto3-license-manager ; extra == 'license-manager-with-docs'
+Provides-Extra: lightsail
+Requires-Dist: mypy-boto3-lightsail ; extra == 'lightsail'
+Provides-Extra: lightsail-with-docs
+Requires-Dist: mypy-boto3-lightsail ; extra == 'lightsail-with-docs'
+Provides-Extra: logs
+Requires-Dist: mypy-boto3-logs ; extra == 'logs'
+Provides-Extra: logs-with-docs
+Requires-Dist: mypy-boto3-logs ; extra == 'logs-with-docs'
+Provides-Extra: machinelearning
+Requires-Dist: mypy-boto3-machinelearning ; extra == 'machinelearning'
+Provides-Extra: machinelearning-with-docs
+Requires-Dist: mypy-boto3-machinelearning ; extra == 'machinelearning-with-docs'
+Provides-Extra: macie
+Requires-Dist: mypy-boto3-macie ; extra == 'macie'
+Provides-Extra: macie-with-docs
+Requires-Dist: mypy-boto3-macie ; extra == 'macie-with-docs'
+Provides-Extra: managedblockchain
+Requires-Dist: mypy-boto3-managedblockchain ; extra == 'managedblockchain'
+Provides-Extra: managedblockchain-with-docs
+Requires-Dist: mypy-boto3-managedblockchain ; extra == 'managedblockchain-with-docs'
+Provides-Extra: marketplace-entitlement
+Requires-Dist: mypy-boto3-marketplace-entitlement ; extra == 'marketplace-entitlement'
+Provides-Extra: marketplace-entitlement-with-docs
+Requires-Dist: mypy-boto3-marketplace-entitlement ; extra == 'marketplace-entitlement-with-docs'
+Provides-Extra: marketplacecommerceanalytics
+Requires-Dist: mypy-boto3-marketplacecommerceanalytics ; extra == 'marketplacecommerceanalytics'
+Provides-Extra: marketplacecommerceanalytics-with-docs
+Requires-Dist: mypy-boto3-marketplacecommerceanalytics ; extra == 'marketplacecommerceanalytics-with-docs'
+Provides-Extra: mediaconnect
+Requires-Dist: mypy-boto3-mediaconnect ; extra == 'mediaconnect'
+Provides-Extra: mediaconnect-with-docs
+Requires-Dist: mypy-boto3-mediaconnect ; extra == 'mediaconnect-with-docs'
+Provides-Extra: mediaconvert
+Requires-Dist: mypy-boto3-mediaconvert ; extra == 'mediaconvert'
+Provides-Extra: mediaconvert-with-docs
+Requires-Dist: mypy-boto3-mediaconvert ; extra == 'mediaconvert-with-docs'
+Provides-Extra: medialive
+Requires-Dist: mypy-boto3-medialive ; extra == 'medialive'
+Provides-Extra: medialive-with-docs
+Requires-Dist: mypy-boto3-medialive ; extra == 'medialive-with-docs'
+Provides-Extra: mediapackage
+Requires-Dist: mypy-boto3-mediapackage ; extra == 'mediapackage'
+Provides-Extra: mediapackage-vod
+Requires-Dist: mypy-boto3-mediapackage-vod ; extra == 'mediapackage-vod'
+Provides-Extra: mediapackage-vod-with-docs
+Requires-Dist: mypy-boto3-mediapackage-vod ; extra == 'mediapackage-vod-with-docs'
+Provides-Extra: mediapackage-with-docs
+Requires-Dist: mypy-boto3-mediapackage ; extra == 'mediapackage-with-docs'
+Provides-Extra: mediastore
+Requires-Dist: mypy-boto3-mediastore ; extra == 'mediastore'
+Provides-Extra: mediastore-data
+Requires-Dist: mypy-boto3-mediastore-data ; extra == 'mediastore-data'
+Provides-Extra: mediastore-data-with-docs
+Requires-Dist: mypy-boto3-mediastore-data ; extra == 'mediastore-data-with-docs'
+Provides-Extra: mediastore-with-docs
+Requires-Dist: mypy-boto3-mediastore ; extra == 'mediastore-with-docs'
+Provides-Extra: mediatailor
+Requires-Dist: mypy-boto3-mediatailor ; extra == 'mediatailor'
+Provides-Extra: mediatailor-with-docs
+Requires-Dist: mypy-boto3-mediatailor ; extra == 'mediatailor-with-docs'
+Provides-Extra: meteringmarketplace
+Requires-Dist: mypy-boto3-meteringmarketplace ; extra == 'meteringmarketplace'
+Provides-Extra: meteringmarketplace-with-docs
+Requires-Dist: mypy-boto3-meteringmarketplace ; extra == 'meteringmarketplace-with-docs'
+Provides-Extra: mgh
+Requires-Dist: mypy-boto3-mgh ; extra == 'mgh'
+Provides-Extra: mgh-with-docs
+Requires-Dist: mypy-boto3-mgh ; extra == 'mgh-with-docs'
+Provides-Extra: mobile
+Requires-Dist: mypy-boto3-mobile ; extra == 'mobile'
+Provides-Extra: mobile-with-docs
+Requires-Dist: mypy-boto3-mobile ; extra == 'mobile-with-docs'
+Provides-Extra: mq
+Requires-Dist: mypy-boto3-mq ; extra == 'mq'
+Provides-Extra: mq-with-docs
+Requires-Dist: mypy-boto3-mq ; extra == 'mq-with-docs'
+Provides-Extra: mturk
+Requires-Dist: mypy-boto3-mturk ; extra == 'mturk'
+Provides-Extra: mturk-with-docs
+Requires-Dist: mypy-boto3-mturk ; extra == 'mturk-with-docs'
+Provides-Extra: neptune
+Requires-Dist: mypy-boto3-neptune ; extra == 'neptune'
+Provides-Extra: neptune-with-docs
+Requires-Dist: mypy-boto3-neptune ; extra == 'neptune-with-docs'
+Provides-Extra: opsworks
+Requires-Dist: mypy-boto3-opsworks ; extra == 'opsworks'
+Provides-Extra: opsworks-with-docs
+Requires-Dist: mypy-boto3-opsworks ; extra == 'opsworks-with-docs'
+Provides-Extra: opsworkscm
+Requires-Dist: mypy-boto3-opsworkscm ; extra == 'opsworkscm'
+Provides-Extra: opsworkscm-with-docs
+Requires-Dist: mypy-boto3-opsworkscm ; extra == 'opsworkscm-with-docs'
+Provides-Extra: organizations
+Requires-Dist: mypy-boto3-organizations ; extra == 'organizations'
+Provides-Extra: organizations-with-docs
+Requires-Dist: mypy-boto3-organizations ; extra == 'organizations-with-docs'
+Provides-Extra: personalize
+Requires-Dist: mypy-boto3-personalize ; extra == 'personalize'
+Provides-Extra: personalize-events
+Requires-Dist: mypy-boto3-personalize-events ; extra == 'personalize-events'
+Provides-Extra: personalize-events-with-docs
+Requires-Dist: mypy-boto3-personalize-events ; extra == 'personalize-events-with-docs'
+Provides-Extra: personalize-runtime
+Requires-Dist: mypy-boto3-personalize-runtime ; extra == 'personalize-runtime'
+Provides-Extra: personalize-runtime-with-docs
+Requires-Dist: mypy-boto3-personalize-runtime ; extra == 'personalize-runtime-with-docs'
+Provides-Extra: personalize-with-docs
+Requires-Dist: mypy-boto3-personalize ; extra == 'personalize-with-docs'
+Provides-Extra: pi
+Requires-Dist: mypy-boto3-pi ; extra == 'pi'
+Provides-Extra: pi-with-docs
+Requires-Dist: mypy-boto3-pi ; extra == 'pi-with-docs'
+Provides-Extra: pinpoint
+Requires-Dist: mypy-boto3-pinpoint ; extra == 'pinpoint'
+Provides-Extra: pinpoint-email
+Requires-Dist: mypy-boto3-pinpoint-email ; extra == 'pinpoint-email'
+Provides-Extra: pinpoint-email-with-docs
+Requires-Dist: mypy-boto3-pinpoint-email ; extra == 'pinpoint-email-with-docs'
+Provides-Extra: pinpoint-sms-voice
+Requires-Dist: mypy-boto3-pinpoint-sms-voice ; extra == 'pinpoint-sms-voice'
+Provides-Extra: pinpoint-sms-voice-with-docs
+Requires-Dist: mypy-boto3-pinpoint-sms-voice ; extra == 'pinpoint-sms-voice-with-docs'
+Provides-Extra: pinpoint-with-docs
+Requires-Dist: mypy-boto3-pinpoint ; extra == 'pinpoint-with-docs'
+Provides-Extra: polly
+Requires-Dist: mypy-boto3-polly ; extra == 'polly'
+Provides-Extra: polly-with-docs
+Requires-Dist: mypy-boto3-polly ; extra == 'polly-with-docs'
+Provides-Extra: pricing
+Requires-Dist: mypy-boto3-pricing ; extra == 'pricing'
+Provides-Extra: pricing-with-docs
+Requires-Dist: mypy-boto3-pricing ; extra == 'pricing-with-docs'
+Provides-Extra: qldb
+Requires-Dist: mypy-boto3-qldb ; extra == 'qldb'
+Provides-Extra: qldb-session
+Requires-Dist: mypy-boto3-qldb-session ; extra == 'qldb-session'
+Provides-Extra: qldb-session-with-docs
+Requires-Dist: mypy-boto3-qldb-session ; extra == 'qldb-session-with-docs'
+Provides-Extra: qldb-with-docs
+Requires-Dist: mypy-boto3-qldb ; extra == 'qldb-with-docs'
+Provides-Extra: quicksight
+Requires-Dist: mypy-boto3-quicksight ; extra == 'quicksight'
+Provides-Extra: quicksight-with-docs
+Requires-Dist: mypy-boto3-quicksight ; extra == 'quicksight-with-docs'
+Provides-Extra: ram
+Requires-Dist: mypy-boto3-ram ; extra == 'ram'
+Provides-Extra: ram-with-docs
+Requires-Dist: mypy-boto3-ram ; extra == 'ram-with-docs'
+Provides-Extra: rds
+Requires-Dist: mypy-boto3-rds ; extra == 'rds'
+Provides-Extra: rds-data
+Requires-Dist: mypy-boto3-rds-data ; extra == 'rds-data'
+Provides-Extra: rds-data-with-docs
+Requires-Dist: mypy-boto3-rds-data ; extra == 'rds-data-with-docs'
+Provides-Extra: rds-with-docs
+Requires-Dist: mypy-boto3-rds ; extra == 'rds-with-docs'
+Provides-Extra: redshift
+Requires-Dist: mypy-boto3-redshift ; extra == 'redshift'
+Provides-Extra: redshift-with-docs
+Requires-Dist: mypy-boto3-redshift ; extra == 'redshift-with-docs'
+Provides-Extra: rekognition
+Requires-Dist: mypy-boto3-rekognition ; extra == 'rekognition'
+Provides-Extra: rekognition-with-docs
+Requires-Dist: mypy-boto3-rekognition ; extra == 'rekognition-with-docs'
+Provides-Extra: resource-groups
+Requires-Dist: mypy-boto3-resource-groups ; extra == 'resource-groups'
+Provides-Extra: resource-groups-with-docs
+Requires-Dist: mypy-boto3-resource-groups ; extra == 'resource-groups-with-docs'
+Provides-Extra: resourcegroupstaggingapi
+Requires-Dist: mypy-boto3-resourcegroupstaggingapi ; extra == 'resourcegroupstaggingapi'
+Provides-Extra: resourcegroupstaggingapi-with-docs
+Requires-Dist: mypy-boto3-resourcegroupstaggingapi ; extra == 'resourcegroupstaggingapi-with-docs'
+Provides-Extra: robomaker
+Requires-Dist: mypy-boto3-robomaker ; extra == 'robomaker'
+Provides-Extra: robomaker-with-docs
+Requires-Dist: mypy-boto3-robomaker ; extra == 'robomaker-with-docs'
+Provides-Extra: route53
+Requires-Dist: mypy-boto3-route53 ; extra == 'route53'
+Provides-Extra: route53-with-docs
+Requires-Dist: mypy-boto3-route53 ; extra == 'route53-with-docs'
+Provides-Extra: route53domains
+Requires-Dist: mypy-boto3-route53domains ; extra == 'route53domains'
+Provides-Extra: route53domains-with-docs
+Requires-Dist: mypy-boto3-route53domains ; extra == 'route53domains-with-docs'
+Provides-Extra: route53resolver
+Requires-Dist: mypy-boto3-route53resolver ; extra == 'route53resolver'
+Provides-Extra: route53resolver-with-docs
+Requires-Dist: mypy-boto3-route53resolver ; extra == 'route53resolver-with-docs'
+Provides-Extra: s3
+Requires-Dist: mypy-boto3-s3 ; extra == 's3'
+Provides-Extra: s3-with-docs
+Requires-Dist: mypy-boto3-s3 ; extra == 's3-with-docs'
+Provides-Extra: s3control
+Requires-Dist: mypy-boto3-s3control ; extra == 's3control'
+Provides-Extra: s3control-with-docs
+Requires-Dist: mypy-boto3-s3control ; extra == 's3control-with-docs'
+Provides-Extra: sagemaker
+Requires-Dist: mypy-boto3-sagemaker ; extra == 'sagemaker'
+Provides-Extra: sagemaker-runtime
+Requires-Dist: mypy-boto3-sagemaker-runtime ; extra == 'sagemaker-runtime'
+Provides-Extra: sagemaker-runtime-with-docs
+Requires-Dist: mypy-boto3-sagemaker-runtime ; extra == 'sagemaker-runtime-with-docs'
+Provides-Extra: sagemaker-with-docs
+Requires-Dist: mypy-boto3-sagemaker ; extra == 'sagemaker-with-docs'
+Provides-Extra: savingsplans
+Requires-Dist: mypy-boto3-savingsplans ; extra == 'savingsplans'
+Provides-Extra: savingsplans-with-docs
+Requires-Dist: mypy-boto3-savingsplans ; extra == 'savingsplans-with-docs'
+Provides-Extra: sdb
+Requires-Dist: mypy-boto3-sdb ; extra == 'sdb'
+Provides-Extra: sdb-with-docs
+Requires-Dist: mypy-boto3-sdb ; extra == 'sdb-with-docs'
+Provides-Extra: secretsmanager
+Requires-Dist: mypy-boto3-secretsmanager ; extra == 'secretsmanager'
+Provides-Extra: secretsmanager-with-docs
+Requires-Dist: mypy-boto3-secretsmanager ; extra == 'secretsmanager-with-docs'
+Provides-Extra: securityhub
+Requires-Dist: mypy-boto3-securityhub ; extra == 'securityhub'
+Provides-Extra: securityhub-with-docs
+Requires-Dist: mypy-boto3-securityhub ; extra == 'securityhub-with-docs'
+Provides-Extra: serverlessrepo
+Requires-Dist: mypy-boto3-serverlessrepo ; extra == 'serverlessrepo'
+Provides-Extra: serverlessrepo-with-docs
+Requires-Dist: mypy-boto3-serverlessrepo ; extra == 'serverlessrepo-with-docs'
+Provides-Extra: service-quotas
+Requires-Dist: mypy-boto3-service-quotas ; extra == 'service-quotas'
+Provides-Extra: service-quotas-with-docs
+Requires-Dist: mypy-boto3-service-quotas ; extra == 'service-quotas-with-docs'
+Provides-Extra: servicecatalog
+Requires-Dist: mypy-boto3-servicecatalog ; extra == 'servicecatalog'
+Provides-Extra: servicecatalog-with-docs
+Requires-Dist: mypy-boto3-servicecatalog ; extra == 'servicecatalog-with-docs'
+Provides-Extra: servicediscovery
+Requires-Dist: mypy-boto3-servicediscovery ; extra == 'servicediscovery'
+Provides-Extra: servicediscovery-with-docs
+Requires-Dist: mypy-boto3-servicediscovery ; extra == 'servicediscovery-with-docs'
+Provides-Extra: ses
+Requires-Dist: mypy-boto3-ses ; extra == 'ses'
+Provides-Extra: ses-with-docs
+Requires-Dist: mypy-boto3-ses ; extra == 'ses-with-docs'
+Provides-Extra: shield
+Requires-Dist: mypy-boto3-shield ; extra == 'shield'
+Provides-Extra: shield-with-docs
+Requires-Dist: mypy-boto3-shield ; extra == 'shield-with-docs'
+Provides-Extra: signer
+Requires-Dist: mypy-boto3-signer ; extra == 'signer'
+Provides-Extra: signer-with-docs
+Requires-Dist: mypy-boto3-signer ; extra == 'signer-with-docs'
+Provides-Extra: sms
+Requires-Dist: mypy-boto3-sms ; extra == 'sms'
+Provides-Extra: sms-voice
+Requires-Dist: mypy-boto3-sms-voice ; extra == 'sms-voice'
+Provides-Extra: sms-voice-with-docs
+Requires-Dist: mypy-boto3-sms-voice ; extra == 'sms-voice-with-docs'
+Provides-Extra: sms-with-docs
+Requires-Dist: mypy-boto3-sms ; extra == 'sms-with-docs'
+Provides-Extra: snowball
+Requires-Dist: mypy-boto3-snowball ; extra == 'snowball'
+Provides-Extra: snowball-with-docs
+Requires-Dist: mypy-boto3-snowball ; extra == 'snowball-with-docs'
+Provides-Extra: sns
+Requires-Dist: mypy-boto3-sns ; extra == 'sns'
+Provides-Extra: sns-with-docs
+Requires-Dist: mypy-boto3-sns ; extra == 'sns-with-docs'
+Provides-Extra: sqs
+Requires-Dist: mypy-boto3-sqs ; extra == 'sqs'
+Provides-Extra: sqs-with-docs
+Requires-Dist: mypy-boto3-sqs ; extra == 'sqs-with-docs'
+Provides-Extra: ssm
+Requires-Dist: mypy-boto3-ssm ; extra == 'ssm'
+Provides-Extra: ssm-with-docs
+Requires-Dist: mypy-boto3-ssm ; extra == 'ssm-with-docs'
+Provides-Extra: stepfunctions
+Requires-Dist: mypy-boto3-stepfunctions ; extra == 'stepfunctions'
+Provides-Extra: stepfunctions-with-docs
+Requires-Dist: mypy-boto3-stepfunctions ; extra == 'stepfunctions-with-docs'
+Provides-Extra: storagegateway
+Requires-Dist: mypy-boto3-storagegateway ; extra == 'storagegateway'
+Provides-Extra: storagegateway-with-docs
+Requires-Dist: mypy-boto3-storagegateway ; extra == 'storagegateway-with-docs'
+Provides-Extra: sts
+Requires-Dist: mypy-boto3-sts ; extra == 'sts'
+Provides-Extra: sts-with-docs
+Requires-Dist: mypy-boto3-sts ; extra == 'sts-with-docs'
+Provides-Extra: support
+Requires-Dist: mypy-boto3-support ; extra == 'support'
+Provides-Extra: support-with-docs
+Requires-Dist: mypy-boto3-support ; extra == 'support-with-docs'
+Provides-Extra: swf
+Requires-Dist: mypy-boto3-swf ; extra == 'swf'
+Provides-Extra: swf-with-docs
+Requires-Dist: mypy-boto3-swf ; extra == 'swf-with-docs'
+Provides-Extra: textract
+Requires-Dist: mypy-boto3-textract ; extra == 'textract'
+Provides-Extra: textract-with-docs
+Requires-Dist: mypy-boto3-textract ; extra == 'textract-with-docs'
+Provides-Extra: transcribe
+Requires-Dist: mypy-boto3-transcribe ; extra == 'transcribe'
+Provides-Extra: transcribe-with-docs
+Requires-Dist: mypy-boto3-transcribe ; extra == 'transcribe-with-docs'
+Provides-Extra: transfer
+Requires-Dist: mypy-boto3-transfer ; extra == 'transfer'
+Provides-Extra: transfer-with-docs
+Requires-Dist: mypy-boto3-transfer ; extra == 'transfer-with-docs'
+Provides-Extra: translate
+Requires-Dist: mypy-boto3-translate ; extra == 'translate'
+Provides-Extra: translate-with-docs
+Requires-Dist: mypy-boto3-translate ; extra == 'translate-with-docs'
+Provides-Extra: waf
+Requires-Dist: mypy-boto3-waf ; extra == 'waf'
+Provides-Extra: waf-regional
+Requires-Dist: mypy-boto3-waf-regional ; extra == 'waf-regional'
+Provides-Extra: waf-regional-with-docs
+Requires-Dist: mypy-boto3-waf-regional ; extra == 'waf-regional-with-docs'
+Provides-Extra: waf-with-docs
+Requires-Dist: mypy-boto3-waf ; extra == 'waf-with-docs'
+Provides-Extra: workdocs
+Requires-Dist: mypy-boto3-workdocs ; extra == 'workdocs'
+Provides-Extra: workdocs-with-docs
+Requires-Dist: mypy-boto3-workdocs ; extra == 'workdocs-with-docs'
+Provides-Extra: worklink
+Requires-Dist: mypy-boto3-worklink ; extra == 'worklink'
+Provides-Extra: worklink-with-docs
+Requires-Dist: mypy-boto3-worklink ; extra == 'worklink-with-docs'
+Provides-Extra: workmail
+Requires-Dist: mypy-boto3-workmail ; extra == 'workmail'
+Provides-Extra: workmail-with-docs
+Requires-Dist: mypy-boto3-workmail ; extra == 'workmail-with-docs'
+Provides-Extra: workmailmessageflow
+Requires-Dist: mypy-boto3-workmailmessageflow ; extra == 'workmailmessageflow'
+Provides-Extra: workmailmessageflow-with-docs
+Requires-Dist: mypy-boto3-workmailmessageflow ; extra == 'workmailmessageflow-with-docs'
+Provides-Extra: workspaces
+Requires-Dist: mypy-boto3-workspaces ; extra == 'workspaces'
+Provides-Extra: workspaces-with-docs
+Requires-Dist: mypy-boto3-workspaces ; extra == 'workspaces-with-docs'
+Provides-Extra: xray
+Requires-Dist: mypy-boto3-xray ; extra == 'xray'
+Provides-Extra: xray-with-docs
+Requires-Dist: mypy-boto3-xray ; extra == 'xray-with-docs'
+
+# mypy_boto3
+
+Mypy-friendly type annotations for boto3.
+
+- [mypy_boto3](#mypyboto3)
+  - [Installation](#installation)
+    - [Usage](#usage)
+    - [How it works](#how-it-works)
+    - [Differences from boto3-type-annotations](#differences-from-boto3-type-annotations)
+    - [What's next](#whats-next)
+    - [Thank you](#thank-you)
+
+## Installation
+
+```bash
+# install only `mypy_boto3.s3` for S3 service annotations
+pip install mypy-boto3[s3]
+
+# or install multiple services
+pip install mypy-boto3[s3][ec2]
+
+# or install S3 service with docs
+pip install mypy-boto3[s3-with-docs]
+
+# or install all services
+pip install mypy-boto3[all]
+
+# or even install all boto3 services annotations
+# WARNING: this will eat ~70 MB of space
+pip install mypy-boto3[all-with-docs]
+```
+
+### Usage
+
+- Install [mypy](https://github.com/python/mypy) and optionally enable it in your IDE
+- Install [boto3](https://github.com/boto/boto3)
+- Use `mypy-boto3` to annotate your code to discover errors
+
+    ```python
+    import boto3
+
+    from mypy_boto3.s3 import Client, ServiceResource
+
+    client: Client = boto3.client("s3")
+
+    # IDE autocomplete suggests function name and arguemnts here
+    client.create_bucket(Bucket="bucket")
+
+    # (mypy) error: Missing positional argument "Key" in call to "get_object" of "Client"
+    client.get_object(Bucket="bucket")
+
+    # (mypy) error: Argument "Key" to "get_object" of "Client" has incompatible type "None"; expected "str"
+    client.get_object(Bucket="bucket", Key=None)
+
+    # explicitly set type to S3 ServiceResource
+    resource: ServiceResource = boto3.Session(region_name="us-west-1").resource("s3")
+
+    # IDE autocomplete suggests function name and arguments here
+    bucket = resource.Bucket("bucket")
+
+    # (mypy) error: Unexpected keyword argument "key" for "upload_file" of "Bucket"
+    bucket.upload_file(Filename="my.txt", key="my-txt")
+    ```
+
+### How it works
+
+There is also a package `mypy-boto3-builder` that builds interface files from `boto3` documentation.
+
+### Differences from boto3-type-annotations
+
+- Fully type annotated
+- `mypy` compatibility
+- Generated types for return values and arguments
+- Added ServiceResource sub-collections
+- Support service-specific sub-modules (in progress)
+- CLI interface for `builder`
+- Modules documentation
+
+### What's next
+
+- Add `TypedDict` types for arguments and return types to check keys and values
+- Allow installation of sub-modules
+- Always include docs and support them in generated documentation
+
+### Thank you
+
+- Guys behind [boto3-type-annotations](https://pypi.org/project/boto3-type-annotations/),
+  this package is based on top of their work
+- [black](https://github.com/psf/black) developers for awesome formatting tool
+- [mypy](https://github.com/python/mypy) for doing all dirty work for us
+
+
