@@ -1,0 +1,16 @@
+graphql_booster/__init__.py,sha256=Et8RzE8lJSxbuTpveQIsmULHF6HIj0Q3pOHvr9aHntE,78
+graphql_booster/install.py,sha256=UUfrOk_CauxyC-_9v6v_VxRcYdyCMz6OhJpKYCj8WDY,599
+graphql_booster/services/__init__.py,sha256=TScNYBHxjEq5R3mpQaKpVmMLWVbqJlQ9UIhJXW9DZ5k,342
+graphql_booster/types/__init__.py,sha256=OLIUr5LK_FmuUeTs36911wiOpcTXBsHsIJ0Zx91esvQ,221
+graphql_booster/types/directive.py,sha256=fb1vJ_K4UuWr-zpDqcnwkAjtGdz-6IlYT4nWB8ineZ8,1424
+graphql_booster/types/entity.py,sha256=U4p7ifDwjqB-G79cRQvTMLcNHOSS8KUW9MbZ60KTeTg,285
+graphql_booster/types/gateway.py,sha256=pCfL7d05BKVAhlRoyYvkR2_xuGN4Cj5HuaZFv9GMDXs,179
+graphql_booster/types/objects.py,sha256=UJSCI7sYy2tMMZPsku-W0vjIU5fUTKjMMgtSwvWsUwg,1358
+graphql_booster/types/scalars.py,sha256=s-A7rgbNAf8QVpbLqHMeBu1ubm47UhShv1jlel6OX-8,250
+graphql_booster/types/service.py,sha256=v8zlkoLACb_nS2cofZoDfs4Y6y_K14HM3tnXhKrvibo,3612
+graphql_booster/types/service_manager.py,sha256=CqWNvCc1TK1Ui0HDcR8c5d8AadDwC5eMA34ztQ9dvQc,3497
+graphql_booster-0.0.1a4.dist-info/LICENSE,sha256=YXlK7AZ0o5ht6bUVXznPYmIehxr7aQ9uGXcN__PMcfg,11543
+graphql_booster-0.0.1a4.dist-info/METADATA,sha256=sRghzW5SmZm9JtqOqG82WRCT-11eBGmBmyIj_j0aONw,300
+graphql_booster-0.0.1a4.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+graphql_booster-0.0.1a4.dist-info/top_level.txt,sha256=MI7xvmcM87Vv2KL2wTUSgAqYob60GP_6AlzB5UjPxRg,16
+graphql_booster-0.0.1a4.dist-info/RECORD,,
