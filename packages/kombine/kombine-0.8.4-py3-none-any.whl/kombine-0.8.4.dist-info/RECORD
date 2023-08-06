@@ -1,0 +1,13 @@
+kombine/__init__.py,sha256=lnSGZfp4VFlz0etmKnpeZzyt4RXbcrNaZsXWTnA-_IA,229
+kombine/clustered_kde.py,sha256=_SXVOLAF6sA7--MIObG3telGzUxb_Y1W1BcklutOdgY,17254
+kombine/interruptible_pool.py,sha256=Yx9TR1hTpiDS9Q-_WGZ6tR8hIPWDDHD3NSGRKknxHT0,2435
+kombine/sampler.py,sha256=7o4FQxeIi8wAfFzxyeU4LufEaTvpQrY3HVuF6iig544,32792
+kombine/serialpool.py,sha256=cgwc76Np8Z5K4EfnRCX3mhwra2IFxNvY-9h31x8ViuE,412
+kombine/tests.py,sha256=FeJV6AhvRMXShDNpYh2a9S6m5EPP8-qamwULX_Eccjw,5648
+kombine/utils.py,sha256=ub4lw5_bFt3Nj4aN8tAEthkCSo2NOdw1i-88enPXWoc,1827
+kombine-0.8.4.dist-info/AUTHORS.rst,sha256=Z_cn9TQ4BDF__WHi_k3A2Jl8CMMnQbxbK6PocC8TQMM,315
+kombine-0.8.4.dist-info/LICENSE,sha256=4Knm6nkOKQZzoeLgF0SOINnU0zEsRqHiRToLgdTvupQ,1076
+kombine-0.8.4.dist-info/METADATA,sha256=KwBQWtiIUGswQby3j0RI2mYL7snLnkx_udoEc_61fZE,811
+kombine-0.8.4.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+kombine-0.8.4.dist-info/top_level.txt,sha256=Y7HG38p2Mi5G6y7nFIFKWvObmKZO-qWZXlrzqrN5xhE,8
+kombine-0.8.4.dist-info/RECORD,,
