@@ -1,0 +1,10 @@
+Metadata-Version: 2.1
+Name: pyopenfec
+Version: 0.2.1
+Summary: OpenFEC API Client
+Author: Jeremy Bowers
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: pytz (>=2019.3,<2020.0)
+Requires-Dist: requests (>=2.22,<3.0)
