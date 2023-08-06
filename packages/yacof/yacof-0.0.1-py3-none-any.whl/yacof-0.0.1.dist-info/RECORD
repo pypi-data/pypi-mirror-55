@@ -1,0 +1,9 @@
+yacof/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yacof/cli.py,sha256=yFYTQ5IrTdrmwSKTFljw_SCmvGHhVy6XSKT_Gs3RieU,1098
+yacof/conf.py,sha256=6FKybyR6gRd67c6CfBaM96Nb_asodoPFm2-eKT7PXBA,3326
+yacof/generator.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+yacof-0.0.1.dist-info/entry_points.txt,sha256=d30RuPgWQNiWne4PVWi-dg8AdHym876oL8_7DXZdxeE,44
+yacof-0.0.1.dist-info/LICENSE,sha256=PZZF9GAj6bsPZib8ew7YuShdUWRnyOhzsBLg0dW8PTI,1063
+yacof-0.0.1.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+yacof-0.0.1.dist-info/METADATA,sha256=nCwG0Z2Gj6NI17I1uIc42r64d8jMuDP3q404nOVT1a0,472
+yacof-0.0.1.dist-info/RECORD,,
