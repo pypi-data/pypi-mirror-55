@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+arr_ops.egg-info/PKG-INFO
+arr_ops.egg-info/SOURCES.txt
+arr_ops.egg-info/dependency_links.txt
+arr_ops.egg-info/top_level.txt
+src/__init__.py
+src/arr.py
