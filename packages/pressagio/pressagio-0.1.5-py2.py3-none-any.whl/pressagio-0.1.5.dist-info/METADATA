@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: pressagio
+Version: 0.1.5
+Summary: A Python Library for statistical text prediction.
+Home-page: https://github.com/Poio-NLP/pressagio
+Author: Peter Bouda
+Author-email: pbouda@outlook.com
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Human Machine Interfaces
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: General
+Classifier: Topic :: Text Processing :: Indexing
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: cymem
+Requires-Dist: preshed
+Requires-Dist: murmurhash
+Requires-Dist: cython
+
+
+# Pressagio text prediction system
+
+Pressagio is a library that predicts text based on n-gram models. For example,
+you can send a string and the library will return the most likely word
+completions for the last token in the string.
+
+Pressagio is a pure Python port of the presage library: https://presage.sourceforge.io
+
+Pressagio is part of the Poio project: https://www.poio.eu
+
+## Running the tests
+
+```
+python -m unittest discover
+```
+
+## License
+
+Pressagio source code is distributed under the Apache 2.0 License.
+
+

@@ -1,0 +1,17 @@
+pressagio/VERSION,sha256=2_CXjsK1h6XWGH_cxBzOn_LA647vrboOtR84QKtu60Y,5
+pressagio/__init__.py,sha256=gaVJbA9-yHKmz5eRz0vzVqdE5rbZvsS-0OeLlFhPoLU,930
+pressagio/callback.py,sha256=JjuByeHAZCfQIPCGLbYftBkpVuRSefDEzT_hcGrEhbY,727
+pressagio/character.py,sha256=qDUu8Uw_FsLFU-tG9COETpBKKHzsRtHbPr00JC1uXk0,883
+pressagio/combiner.py,sha256=KnWnYmp1U9Y65S5upTdYxTeaWuTpFRl-pXNPY5OyVpg,1792
+pressagio/context_tracker.py,sha256=8OTPgTocxVbmhBuRtBmqI36Dj0Qu-O4mKv6Al2b06uA,5153
+pressagio/dbconnector.py,sha256=dPaMD4qJYgyiDkpvyXM_djCl09J-FZHLSofnJBq67so,21521
+pressagio/ngrammap.cpp,sha256=J5nYI6_wHPYmYKrToXAil6IinLZm41TXX9I7t2JES_c,327809
+pressagio/observer.py,sha256=5MnbiQS9YX393zz0Ti6-uprOef5xmnva7cuvH9s4J6M,1681
+pressagio/predictor.py,sha256=tryAhWqSEif00o_tLbQKFldjxxgD8MO3-aD_Oom7BWU,14241
+pressagio/strings.cpp,sha256=ZDIuT2I3CYpLMWD7vgL5HZECiZissh-yEJV-tVULPto,325580
+pressagio/tokenizer.py,sha256=RCPVm56fJdGkbIVDAA37Yop_AvrEeQGjIt5SmH-Av1U,11666
+pressagio-0.1.5.dist-info/LICENSE,sha256=c7p036pSC0mkAbXSFFmoUjoUbzt1GKgz7qXvqFEwv2g,10273
+pressagio-0.1.5.dist-info/METADATA,sha256=V6BM7uPvjqbh7UoQ9UKG-XcNafRnQokU9LLnB01sHdg,1522
+pressagio-0.1.5.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pressagio-0.1.5.dist-info/top_level.txt,sha256=aWdh6Gwi483AMFr5faQPEQ1Nb_KeX06APrkAr-HuNaI,10
+pressagio-0.1.5.dist-info/RECORD,,
