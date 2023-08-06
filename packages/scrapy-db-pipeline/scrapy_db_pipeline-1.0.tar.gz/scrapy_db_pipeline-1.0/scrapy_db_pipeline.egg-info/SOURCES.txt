@@ -1,0 +1,8 @@
+setup.py
+scrapy_db_pipeline/__init__.py
+scrapy_db_pipeline/pipelines.py
+scrapy_db_pipeline.egg-info/PKG-INFO
+scrapy_db_pipeline.egg-info/SOURCES.txt
+scrapy_db_pipeline.egg-info/dependency_links.txt
+scrapy_db_pipeline.egg-info/requires.txt
+scrapy_db_pipeline.egg-info/top_level.txt
