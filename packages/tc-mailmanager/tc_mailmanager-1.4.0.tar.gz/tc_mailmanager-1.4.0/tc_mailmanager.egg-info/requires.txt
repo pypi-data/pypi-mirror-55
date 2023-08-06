@@ -1,0 +1,8 @@
+sendgrid<6,>=5
+tctc_envelopes==0.5
+
+[test]
+flake8
+pytest
+pytest-mock
+pytest-pep8
