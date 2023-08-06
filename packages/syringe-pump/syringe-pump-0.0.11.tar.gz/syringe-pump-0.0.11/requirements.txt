@@ -1,0 +1,6 @@
+# List required packages in this file, one per line.
+circular_buffer_numpy
+numpy
+ubcs_auxiliary
+caproto
+pyserial
