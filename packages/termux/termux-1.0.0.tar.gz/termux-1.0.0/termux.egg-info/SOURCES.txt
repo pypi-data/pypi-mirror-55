@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+termux/api.py
+termux.egg-info/PKG-INFO
+termux.egg-info/SOURCES.txt
+termux.egg-info/dependency_links.txt
+termux.egg-info/entry_points.txt
+termux.egg-info/top_level.txt

@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: termux
+Version: 1.0.0
+Summary: A Python based Termux api wrapper
+Home-page: https://github.com/AXDZ/termux
+Author: Aldas
+License: MIT
+Description: # termux
+        Python based termux api wrapper
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
