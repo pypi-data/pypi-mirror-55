@@ -1,0 +1,10 @@
+hsreplay/__init__.py,sha256=-dT6vYiBjnSlf1MdZ1gtYI09BCSlW1XHvEsf6qFC3s4,185
+hsreplay/document.py,sha256=XBSphxhxVdJrxRJQSuXfpTjC-gRMKIY397wWJLVx828,1810
+hsreplay/dumper.py,sha256=qn0kmWgi9wPlVd5FlO7_6GuXnAdB--xWUaPCoqPwsYg,7391
+hsreplay/elements.py,sha256=13sOsahIZZs4B7Q0-t6FWimWTm9tbOpQMdK2W-4sjA0,10504
+hsreplay/utils.py,sha256=JAwx98wO0gFa9Sm0P7YsTBKw5qXKAaIWlkwWNQmuVtk,7241
+hsreplay-1.10.1.dist-info/LICENSE,sha256=HwxB6izOeHFuW1HB8wP1U10tQqg9iRmux0i3PAMLQCw,1083
+hsreplay-1.10.1.dist-info/METADATA,sha256=6nHjdns-jLHqQuj4d1-PsC4NekjEeWTDf6supZApkzo,775
+hsreplay-1.10.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+hsreplay-1.10.1.dist-info/top_level.txt,sha256=67THpVODEtyvVowus1vNFEQfyfEmXlWKtWtkH1zyYq8,9
+hsreplay-1.10.1.dist-info/RECORD,,
