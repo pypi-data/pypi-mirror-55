@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: p313-submarine
+Version: 0.0.1
+Summary: The Library Learning Python OOP and Upload it to PyPi
+Home-page: https://github.com/athachai29/
+Author: P313
+Author-email: mala.ut.29@gmail.com
+License: MIT
+Download-URL: https://github.com/athachai29/
+Description: UNKNOWN
+Keywords: p313
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
