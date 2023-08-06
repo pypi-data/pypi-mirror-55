@@ -1,0 +1,16 @@
+atsas_pipelines/__init__.py,sha256=JOl41NviMN-qDV0Z8ZPmhNIxvgyauGGJHdB4A-8MhqM,93
+atsas_pipelines/_version.py,sha256=V6IfC0QimkUzKF6uFzuquPy0A8OzHj3EbKe9wFj_rFM,497
+atsas_pipelines/cli.py,sha256=49S9gsWuer5dnjR0sLxD7NsiACN-5v9MzB-fDGXLql0,1947
+atsas_pipelines/dask.py,sha256=O5gvB4whwk04ARFSJaG4ZCoMXlPS5JpLUxRNTqfFBwE,1781
+atsas_pipelines/run.py,sha256=ITkrl9URO6FOLgEz-LGc2fX30y73fm2rm6lybCSrN60,3650
+atsas_pipelines/utils.py,sha256=0eIFk8vwzKENuXjCYEhvQPCxxTwo9AzCgAulxXHzH14,1225
+atsas_pipelines/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atsas_pipelines/tests/conftest.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+atsas_pipelines/tests/test_utils.py,sha256=i_08WvZINmg_k2smb01XMME6GxK0UQqFAHPvPugxHoc,445
+atsas_pipelines-0.0.2.dist-info/AUTHORS.rst,sha256=J_6e3Wo_oGb62R76Vsa160_PkwETTWQTSknVYR513Qc,159
+atsas_pipelines-0.0.2.dist-info/LICENSE,sha256=F_Rb4SCJPNralkrAiM3GXn2PmiKkvkhAqW-eZlBY_0c,1557
+atsas_pipelines-0.0.2.dist-info/METADATA,sha256=r8FR9V1OeZEbPneLZLYhW8ZW1icVKKUGzR_s8fcFiRI,1019
+atsas_pipelines-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+atsas_pipelines-0.0.2.dist-info/entry_points.txt,sha256=267OJt7e6wns0w6fbjTLtsDluw1Sx3Q3-sPU75LIgC0,72
+atsas_pipelines-0.0.2.dist-info/top_level.txt,sha256=kW5uf7paKjRF_3QE3a17_WRlfyFA7kLjydiYr17FjQw,16
+atsas_pipelines-0.0.2.dist-info/RECORD,,
