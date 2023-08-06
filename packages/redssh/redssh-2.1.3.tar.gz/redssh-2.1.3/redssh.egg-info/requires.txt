@@ -1,0 +1,15 @@
+ssh2-python
+
+[docs]
+sphinx
+ssh2-python
+sphinx_rtd_theme
+
+[tests]
+sftpserver
+paramiko
+coveralls
+requests[socks]
+ssh2-python
+pytest-cov
+asyncssh
