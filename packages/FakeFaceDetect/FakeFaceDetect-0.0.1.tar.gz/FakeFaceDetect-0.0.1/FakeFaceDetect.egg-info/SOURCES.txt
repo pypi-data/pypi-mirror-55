@@ -1,0 +1,9 @@
+README.md
+setup.py
+FakeFaceDetect/FakeFaceDetect.py
+FakeFaceDetect/__init__.py
+FakeFaceDetect.egg-info/PKG-INFO
+FakeFaceDetect.egg-info/SOURCES.txt
+FakeFaceDetect.egg-info/dependency_links.txt
+FakeFaceDetect.egg-info/entry_points.txt
+FakeFaceDetect.egg-info/top_level.txt
