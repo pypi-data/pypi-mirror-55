@@ -1,0 +1,87 @@
+Metadata-Version: 2.1
+Name: nextcode-cli
+Version: 1.20.1
+Summary: WuXi Nextcode commandline utilities
+Home-page: https://www.wuxinextcode.com
+Author: WUXI NextCODE
+Author-email: support@wuxinextcode.com
+License: UNKNOWN
+Description: # NextCODE Command Line Interface
+        
+        Introduction... What is the CLI all about and what can it do.
+        
+        # Requirements
+         * Python 3.7
+        
+        # Installation
+        To install the package you have to run the following command:
+        ```bash
+        $ pip3 install nextcode-cli -U
+        ```
+        
+        ## Developer installation
+        
+        Start by pulling the sourcecode from git (usually from develop to be on the bleeding edge).
+        
+        There are two ways to set up the CLI. We recommend trying to install it into your system python in `develop` mode by simply running the following command in the nextcode-cli folder (depending on your system setup you might need `sudo`)
+        ```bash
+        $ pip3 install -e . --user
+        ```
+        
+        If you get any errors you can set up a local virtualenv in the nextcode-cli path:
+        ```bash
+        $ source ./setup.sh
+        $ pip3 install -e .
+        ```
+        Using this method means that you will always need to do `source ./setup.sh` to enter the virtualenv before using the tool, so we would recommend getting the first method to work unless you intend on make edits to the code yourself.
+        
+        ## Set up a service profile
+        ### Create a service profile
+        For any work to happen a service profile must be defined. One example is the one here below, which is Platform Dev test specific. For QA purposes this is of course **test environment dependent**!:
+        
+        The command is:
+        ```bash
+        $ nextcode profile add <profile-name>
+        ```
+        
+        You can also set up the profile without a prompt like this:
+        ```bash
+        $ nextcode profile add <profile-name> --domain=mydomain.wuxinextcode.com
+        ```
+        
+        ### View the new profile
+        The command is:
+        ```bash
+        $ nextcode profile view <profile-name>
+        ```
+        
+        ### Use the new profile
+        
+        To enable the profile as default, it must be set.
+        ```bash
+        $ nextcode profile set <new profile name>
+        ```
+        Output similar to the one below is to be expected. Notice that the  Current profile  status has changed.
+        
+        ### Get an API-key
+        
+        This is simple  - if your service profile definition works. Simply enter
+        ```bash
+        $ nextcode login
+        ```
+        and you are forwarded to the API key webpage (the Developer Console) where you authenticate and your authentication key is displayed for you to grab.
+        
+        ### Running the CLI for the first time
+        
+        Once your installation has succeeded you can run the following command anywhere in your system:
+        ```bash
+        nextcode status
+        ```
+        Once you finish the authentication process you should be able to view pipeline jobs:
+        ```bash
+        nextcode pipelines jobs --latest
+        ```
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

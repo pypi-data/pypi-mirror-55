@@ -1,0 +1,6 @@
+[console_scripts]
+nextcode = nextcodecli.__main__:cli
+
+[pytest11]
+nc-wf = nextcodecli.pytest.wf_plugin
+
