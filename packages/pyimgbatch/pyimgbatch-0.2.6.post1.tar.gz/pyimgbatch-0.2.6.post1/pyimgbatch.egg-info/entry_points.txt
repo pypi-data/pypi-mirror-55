@@ -1,0 +1,3 @@
+[console_scripts]
+pyimgbatch = pyimgbatch.__main__:main
+
