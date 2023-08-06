@@ -1,0 +1,12 @@
+dotmgr/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dotmgr/cli.py,sha256=r_TCjf1jzWRj4jtUE3I4hpjlLS_qBMDZ0ElUbDzt2eA,8014
+dotmgr/manager.py,sha256=LrZlsEgJZiy4Jvy458TI1K-WMAzDC6ySxXTysngpcTI,11991
+dotmgr/paths.py,sha256=e3jqrCPLcPKWys_hJjisKDq9O9A4ibDyfas56P93g6o,4927
+dotmgr/repository.py,sha256=OdJQhh6oBzCv7f_QIEmq0eS18HBgEQdlE9Br7Yzz_lo,8203
+dotmgr/transformer.py,sha256=HXXXrGUFUL_EX5Dq_zcY6dQQ5SIrkbo6b9AI4qonDN4,8011
+dotmgr-0.5.0.dist-info/COPYING,sha256=CuBIWlvTemPmNgNZZBfk6w5lMzT6bH-TLKOg6F1K8ic,35148
+dotmgr-0.5.0.dist-info/METADATA,sha256=4cz1gpLReIfHu73Aq-IPUkZ4hfqMtUHVRHyL4Qy9r7I,344
+dotmgr-0.5.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+dotmgr-0.5.0.dist-info/entry_points.txt,sha256=g3D1UN9r86Ie5YgmLfbDzjjEo_lfK8g0i4i2JdkgE28,44
+dotmgr-0.5.0.dist-info/top_level.txt,sha256=ie7HUzvzkkorBqSgqTenBupIT4S7BzV_uwmjOgH_k_M,7
+dotmgr-0.5.0.dist-info/RECORD,,
