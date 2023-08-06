@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: berlin-opendata-downloader
+Version: 0.0.3
+Summary: Client to download height information of Berlin from OpenData sources. Can compress on the fly.
+Home-page: https://github.com/se-jaeger/berlin-gelaendemodelle-downloader
+Author: Sebastian Jaeger
+Author-email: message@sebastian-jaeger.me
+License: apache
+Project-URL: Documentation, https://berlin-gelaendemodelle-downloader.readthedocs.io/en/latest/
+Platform: any
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown; charset=UTF-8; variant=GFM
+Requires-Dist: Click
+Requires-Dist: beautifulsoup4
+Requires-Dist: pandas
+Requires-Dist: tqdm
+Requires-Dist: requests
+Provides-Extra: testing
+Requires-Dist: pytest ; extra == 'testing'
+Requires-Dist: pytest-cov ; extra == 'testing'
+
+
+# Download Client for Berlin Geländemodelle
+
+Downloads [Berlins' height information](https://www.stadtentwicklung.berlin.de/geoinformation/landesvermessung/atkis/de/dgm.shtml) (Digitale Geländemodelle – ATKIS DGM - Höheninformationen), compress them on the fly, and create GeoJSON files.
+
+**Official Documentation:** https://berlin-gelaendemodelle-downloader.readthedocs.io/en/latest/
+
+
+## What means 'Compress'
+
+Compression means tiles, shaped as windows, are averaged. Because one subset of the data is of shape `2000x2000`, the tile size, argument `compress`, have to divide 2000 without remainder.
+
+
+## Getting Started
+
+Install the package
+```bash
+pip3 install berlin-opendata-downloader
+```
+
+Run the client:
+```bash
+berlin_downloader download ~/berlin_height --compress 5 --keep_original
+```
+
+
+## TODOs
+
+- [x] Publish documentation
+- [ ] Write documentation + Readme
+- [x] Create some output
+- [x] Download the whole dataset
+- [x] Compress it on the fly (choose tile size (2000 should be divisible by tile size without remainder))
+- [x] Keep original data (flag)
+- [x] Publish to https://pypi.org
+- [ ] choose download file data type
+- [ ] Thank you sectio
+
+
+## Note
+
+This project has been set up using PyScaffold 3.2.3. For details and usage
+information on PyScaffold see https://pyscaffold.org/.
+
+

@@ -1,0 +1,13 @@
+berlin_gelaendemodelle_downloader/__init__.py,sha256=pNZR8OVSjL5XwZxV6YZEWVENg-yBA_E7cIjGuXhv9Z4,390
+berlin_gelaendemodelle_downloader/cli.py,sha256=MBrdqj85NZFyUBDP8Mjov-ynvGOI5gToPNlOP-3qGmk,2005
+berlin_gelaendemodelle_downloader/constant.py,sha256=l-doKUG-kNVF3DIDPo800vgsaSqXHWkihBcxYKjEdUM,168
+berlin_gelaendemodelle_downloader/download.py,sha256=2gr4oHMJgC2k-BHk_Wcjs6K68nIfPengVQQ5SiQ-QtM,1481
+berlin_gelaendemodelle_downloader/file.py,sha256=eOn3bXDdnlKiTteCz9-HQ62rPaHXwFKEXn56gRB7UqU,995
+berlin_gelaendemodelle_downloader/utils.py,sha256=MW4UyXjHuprRPHEOjnYhte1ORC7Ac9j1z6yRjSV5UYI,4218
+berlin_opendata_downloader-0.0.3.dist-info/AUTHORS.rst,sha256=A0byCT-IAxqU29GitJ1AipDEn8rLGLxWkXb0mecw8mQ,89
+berlin_opendata_downloader-0.0.3.dist-info/LICENSE.txt,sha256=tAkwu8-AdEyGxGoSvJ2gVmQdcicWw3j1ZZueVV74M-E,11357
+berlin_opendata_downloader-0.0.3.dist-info/METADATA,sha256=FChbPx1bXxfHrQOf2Ou5N7sxwDRIj96vtcUjqjSUbH0,2162
+berlin_opendata_downloader-0.0.3.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+berlin_opendata_downloader-0.0.3.dist-info/entry_points.txt,sha256=tHoA-NQLE9RO2-pel5GNsKY-guirw_seoFWoGNCEqfY,81
+berlin_opendata_downloader-0.0.3.dist-info/top_level.txt,sha256=WbLaTzHHsMzEUt0qFgnEFLAMd0baC6wydHKJj3p_fnI,34
+berlin_opendata_downloader-0.0.3.dist-info/RECORD,,
