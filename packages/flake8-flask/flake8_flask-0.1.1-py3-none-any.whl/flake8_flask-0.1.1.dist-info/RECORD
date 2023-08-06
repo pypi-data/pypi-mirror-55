@@ -1,0 +1,12 @@
+flake8_flask/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+flake8_flask/constants.py,sha256=O-JfYV2oj72Xy5pVDQWIpJgX_brDhvuw_1SO4AKrdeU,22
+flake8_flask/dumb_scope_visitor.py,sha256=kzxRJtUahBp9k97kHuBiLVcMeVR1uWzDkYZhC_LpgcA,3650
+flake8_flask/flask_base_visitor.py,sha256=OgCgYsbEWaoSPHx9vUK42O4QLHrnT5pQ8W7uoS1GAJQ,406
+flake8_flask/import_aliasing.py,sha256=h8Qoj6IYktgSJywSeRA4mVMgoQj24WzvnwBpZMiFjF4,2178
+flake8_flask/secure_set_cookies.py,sha256=Fva4M52DmsBmRo-8yQLsbN9JkKhE2Ev4-MoRG4dnkzQ,3075
+flake8_flask/send_file_checks.py,sha256=RD-egkcHxLskqyqyXDyeHaYsg2cDQnJhnNfOvWl6Es0,4650
+flake8_flask-0.1.1.dist-info/METADATA,sha256=Bbk93LgSEVfTMwumoGA4na9vH7zRedYWD2U8cy2S-KM,1585
+flake8_flask-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+flake8_flask-0.1.1.dist-info/entry_points.txt,sha256=-Z_-dOVvk_5wG8iJQdL_j_RpnXQD96_awpuYhdnh9V0,132
+flake8_flask-0.1.1.dist-info/top_level.txt,sha256=mJliksCMJzAiHYPZ8nWkVIEXDQJg9An-0aaAbJdyh58,13
+flake8_flask-0.1.1.dist-info/RECORD,,
