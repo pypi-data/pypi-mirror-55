@@ -1,0 +1,17 @@
+binman/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+binman/config.py,sha256=RotjZTQu6_0k6qYySWdRqm0GaaU1nRX65b9rHleyp4U,575
+binman/install.py,sha256=tk17KQ0DZnVFzxZxq5av07HDpFdL_JVITMhPf22MK-g,2378
+binman/main.py,sha256=rKmrzOXnh8h4B8w0Scc3TvnXKtFJB8WyXoKrusmp2z0,3811
+binman/output.py,sha256=pfsYH6GxDvtOjVqSvJ1h5O6LJzUTvS39MjwKOkl1He4,1168
+binman/state.py,sha256=VVK2iyhD-cycy-El7uQ42kOusDg7BZ9mMAbezS3liEQ,2212
+binman/uninstall.py,sha256=PwNyfY_tJu9zVP6wc4qJlVcbF7U99boxqOTByxy8c2c,950
+github/__init__.py,sha256=2Ldwnq0fb3WpBEiKENwirYbRBIH1sza7muiefNeXJxY,35
+github/asset.py,sha256=8vo-Pu_WPQlmcqjpmM48BVeEVmAj3hdcVv7foD8oGds,963
+github/release.py,sha256=BIyUmuJaM7XoCRZvz8jlQuWQ9ImyDFgBWAKVe5_6dsU,581
+github/repository.py,sha256=cvMgvsLyjeQJo5pcF0SVEShvEgkCGUfKZ97DzwIpXM4,1315
+binman-0.1.0.dist-info/LICENSE,sha256=4Ck1dIjFxxiqafs0iZSSEJ1oqhFX3tJ9r_Jf50oBEwU,1065
+binman-0.1.0.dist-info/METADATA,sha256=QY4y9cLvE95vAJU9SUynzpv3YUAv586wAbCAmjyCEkk,322
+binman-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+binman-0.1.0.dist-info/entry_points.txt,sha256=hVujZTVRq13d6XoY6ZEXPsqlVVmbJG6NVeBR8LJutVE,44
+binman-0.1.0.dist-info/top_level.txt,sha256=_irChRFqXGX8nFMPUvgQz49W5Q0079fU60sN4_t8_rI,14
+binman-0.1.0.dist-info/RECORD,,

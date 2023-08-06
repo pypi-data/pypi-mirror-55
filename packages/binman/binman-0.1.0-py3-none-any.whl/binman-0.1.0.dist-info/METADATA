@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: binman
+Version: 0.1.0
+Summary: Purposed-format binary application manager
+Home-page: https://github.com/purposed/binman
+Author: purposed
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: fire
+Requires-Dist: colorama
+Requires-Dist: requests
+Requires-Dist: click
+
+UNKNOWN
+
+
