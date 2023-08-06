@@ -1,0 +1,3 @@
+[console_scripts]
+snoo=src.snoo:run
+
