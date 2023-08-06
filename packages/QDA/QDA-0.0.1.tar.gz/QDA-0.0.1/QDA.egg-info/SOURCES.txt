@@ -1,0 +1,8 @@
+QDA.py
+README.md
+setup.py
+QDA.egg-info/PKG-INFO
+QDA.egg-info/SOURCES.txt
+QDA.egg-info/dependency_links.txt
+QDA.egg-info/requires.txt
+QDA.egg-info/top_level.txt
