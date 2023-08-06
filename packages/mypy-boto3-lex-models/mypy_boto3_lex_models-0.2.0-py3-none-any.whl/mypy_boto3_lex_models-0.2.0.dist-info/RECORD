@@ -1,0 +1,10 @@
+mypy_boto3_lex_models/__init__.py,sha256=DAhR1H0fCAfC-V06qCCiJfwWXLkb6MiQh40ipvDtm6Q,112
+mypy_boto3_lex_models/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_lex_models/client.py,sha256=CATZwfQsMoKx-BsoH5hi4QqfcN0In3lqVrXRwiUq6-4,210795
+mypy_boto3_lex_models/paginator.py,sha256=VU15TZI6UkfiqS8nDdD-c7bcVSGYlYfb7wJtYDW5fc0,37346
+mypy_boto3_lex_models/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_lex_models/type_defs.py,sha256=BKQZ33L9SVDLtsgdYyv5cg4WBZRpZilU0r67gQSpmVM,268953
+mypy_boto3_lex_models-0.2.0.dist-info/METADATA,sha256=utjKa536zFAOL5rtvC576PWHJ5zR4I-fSOPuIGWCM0A,1065
+mypy_boto3_lex_models-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_lex_models-0.2.0.dist-info/top_level.txt,sha256=IYA9nfkPxVXhA-yHPCzsLbEp7t7TkFpQPIM5rMNvf3c,22
+mypy_boto3_lex_models-0.2.0.dist-info/RECORD,,
