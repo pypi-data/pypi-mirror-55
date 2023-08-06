@@ -1,0 +1,9 @@
+
+[dev]
+nose
+twine
+wheel
+
+[tests]
+mock
+nose
