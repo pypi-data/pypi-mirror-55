@@ -1,0 +1,7 @@
+README.md
+setup.py
+intelix/__init__.py
+intelix.egg-info/PKG-INFO
+intelix.egg-info/SOURCES.txt
+intelix.egg-info/dependency_links.txt
+intelix.egg-info/top_level.txt
