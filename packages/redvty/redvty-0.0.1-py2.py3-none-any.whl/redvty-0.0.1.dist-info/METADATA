@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: redvty
+Version: 0.0.1
+Summary: VTY automation via SSH.
+Home-page: https://bitbucket.org/Red_M/RedSSH
+Author: Red_M
+Author-email: redvty_pypi@red-m.net
+License: GPLv2
+Platform: Posix
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: System :: Shells
+Classifier: Topic :: System :: Networking
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: redexpect
+Requires-Dist: pyte
+Provides-Extra: docs
+Requires-Dist: sphinx-rtd-theme ; extra == 'docs'
+Requires-Dist: redexpect ; extra == 'docs'
+Requires-Dist: pyte ; extra == 'docs'
+Requires-Dist: sphinx ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: pyte ; extra == 'tests'
+Requires-Dist: coveralls ; extra == 'tests'
+Requires-Dist: sftpserver ; extra == 'tests'
+Requires-Dist: pytest-cov ; extra == 'tests'
+Requires-Dist: redexpect ; extra == 'tests'
+Requires-Dist: asyncssh ; extra == 'tests'
+Requires-Dist: paramiko ; extra == 'tests'
+
+# RedVTY
+
+# TO DO
+- Build the library out from a PoC.
+- README.md
+
+
+
