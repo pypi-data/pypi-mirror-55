@@ -1,0 +1,3 @@
+[console_scripts]
+archive-to-s3 = archive_to_s3.process:main
+
