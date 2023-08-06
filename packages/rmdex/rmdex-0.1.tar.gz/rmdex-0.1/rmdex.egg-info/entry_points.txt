@@ -1,0 +1,3 @@
+[console_scripts]
+rmdex = rmdex.cli:main_func
+
