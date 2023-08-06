@@ -1,0 +1,5 @@
+numpy
+theano>=0.8.0
+
+[dev]
+scikit-learn
