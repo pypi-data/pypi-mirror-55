@@ -1,0 +1,11 @@
+resourcemanager/__init__.py,sha256=TFrLIReb7qppS2DuKI8gYepi0D2qZKcntf7OHy86WOc,1405
+resourcemanager/constants.py,sha256=hP9Hg4-VivWi2Tobk2u5SfClJ9bbFELEyjFpSYt6g8U,1009
+resourcemanager/handlers.py,sha256=_V3IKo0rTpASCZACalk8hn6Y3VPT5U5DL1SHqKCuDlY,2361
+resourcemanager/manager.py,sha256=72IUs8riadRicHG34Wi8_vBF5RnameEHP30YZVP_zh8,6318
+resourcemanager/resourceclasses.py,sha256=SJnWRyy5Fqpxtx-iO6JHjwMLKAlUOHGeF54qyH8_TwU,10823
+resourcemanager-0.0.3.dist-info/DESCRIPTION.rst,sha256=8jshiy6SY_VyBLhhWlSnvLA47evd2QqXs1-PuHyDzoo,616
+resourcemanager-0.0.3.dist-info/METADATA,sha256=8Xyc3WEVTpWQDIYxYrVA3AvuiiINcZDwdGCj-7i7EKo,1252
+resourcemanager-0.0.3.dist-info/RECORD,,
+resourcemanager-0.0.3.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+resourcemanager-0.0.3.dist-info/metadata.json,sha256=2GHtlk8_Z3YglwlpamdSjvmxh4jMpdtiuvtaf0pfnvI,852
+resourcemanager-0.0.3.dist-info/top_level.txt,sha256=4X4WAC1T7veh719aPAgnbO3hV7Qgs33ksxfWSCpBF7s,16

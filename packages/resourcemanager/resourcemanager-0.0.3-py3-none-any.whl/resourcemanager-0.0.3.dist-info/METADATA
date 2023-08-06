@@ -1,0 +1,36 @@
+Metadata-Version: 2.0
+Name: resourcemanager
+Version: 0.0.3
+Summary: A resource manager for Python programs
+Home-page: https://github.com/brandonmpace/resourcemanager
+Author: Brandon M. Pace
+Author-email: brandonmpace@gmail.com
+License: GNU Lesser General Public License v3 or later
+Keywords: resource file update manager
+Platform: any
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6.5
+Description-Content-Type: text/x-rst
+
+**resourcemanager:** A resource file manager for Python programs
+
+**STATUS**: IN DEVELOPMENT
+
+It provides:  
+  * Centralized control of loading and updating resources
+  * Ability to use custom functions for reading and writing files
+
+Original use case:  
+  * Python program with various text file resources that need to be loaded/updated
+  * Each resource belongs to a package that has a function for loading it from specified file or data
+  * I wanted to centralize management of these resources
+
+Installation:  
+  * pip install resourcemanager
+
+    (Tested for Python >=3.6.5 on Linux (Ubuntu) and Windows 7/10)
+
+
