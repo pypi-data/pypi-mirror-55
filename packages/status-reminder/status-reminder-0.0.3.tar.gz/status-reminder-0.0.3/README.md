@@ -1,0 +1,39 @@
+# Reminder
+Task status reminder and API exception reminder.
+
+## Requirements
+
+```
+pip install aliyun-python-sdk-core
+```
+
+##  How to release
+
+1. pack: 
+
+   ```python setup.py sdist bdist_wheel ```
+
+2. upload: 
+
+   ```python -m twine upload dist/*```
+
+## How to use
+
+1. ```pip install aliyun-python-sdk-core```
+
+2. ```pip install status-reminder```
+
+3.  python code:
+
+   ```python
+   from reminder import TaskReminder, APIReminder
+   
+   
+   r = TaskReminder(name="trainSegmentation")
+   r.send_message(phone_number="17801066904", current_status="complete")
+   # r.send_message(phone_number=["17801066904", "17801014652"], current_status="error")
+   
+   r = APIReminder(name="segmentation")
+   r.send_message(phone_number="17801066904", current_status="404")
+   ```
+
