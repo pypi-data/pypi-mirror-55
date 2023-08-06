@@ -1,0 +1,15 @@
+README.md
+setup.py
+bert_service/__init__.py
+bert_service/batching.py
+bert_service/bert_service.py
+bert_service/nlp_reader.py
+bert_service/tokenization.py
+bert_service.egg-info/PKG-INFO
+bert_service.egg-info/SOURCES.txt
+bert_service.egg-info/dependency_links.txt
+bert_service.egg-info/top_level.txt
+bert_service/vocab/cased_vocab.txt
+bert_service/vocab/chinese_vocab.txt
+bert_service/vocab/multi_cased_vocab.txt
+bert_service/vocab/uncased_vocab.txt

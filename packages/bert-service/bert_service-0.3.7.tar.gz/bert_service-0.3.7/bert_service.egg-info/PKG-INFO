@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: bert-service
+Version: 0.3.7
+Summary: client package for bert serving
+Home-page: https://github.com/PaddlePaddle/Serving
+Author: MRXLT
+Author-email: xlt2024@gmail.com
+License: UNKNOWN
+Description: client for bert serving
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
