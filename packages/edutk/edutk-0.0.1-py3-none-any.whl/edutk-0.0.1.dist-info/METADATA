@@ -1,0 +1,30 @@
+Metadata-Version: 2.0
+Name: edutk
+Version: 0.0.1
+Summary: Toolkit to make modern exercises for programming tutorials.
+Home-page: https://github.com/epeios-q37/edutk-python
+Author: Claude SIMON
+License: UNKNOWN
+Keywords: education,tutorial,Atlas tookit
+Platform: UNKNOWN
+Classifier: Environment :: Web Environment
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Other Audience
+Classifier: License :: OSI Approved :: MIT License 
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Education
+Description-Content-Type: text/markdown
+Requires-Dist: atlastk
+
+# EduTK: a toolkit in *Python* to create modern exercises for programming tutorials
+
+[![Version](https://img.shields.io/pypi/v/edutk?color=90b4ed&label=latest)](https://pypi.org/project/edutk/) [![Download stats](https://img.shields.io/pypi/dm/edutk.svg)](https://pypistats.org/packages/edutk) [![Stars](https://img.shields.io/github/stars/epeios-q37/edutk-python.svg?style=social)](https://github.com/epeios-q37/edutk-python)[![license: MIT](https://img.shields.io/github/license/epeios-q37/edutk-python)](https://github.com/epeios-q37/edutk-python/blob/master/LICENSE)
+
+Toolkit with some facilities to make exercises for programming tutorials. It's based on the [*Atlas* toolkit](https://q37.info/s/c7hfkzvs).
+
+See [this repository](https://q37.info/s/tpkx4cfk) for an example of use.
+
+
