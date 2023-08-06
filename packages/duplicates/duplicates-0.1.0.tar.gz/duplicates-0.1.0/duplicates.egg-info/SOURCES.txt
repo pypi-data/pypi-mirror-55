@@ -1,0 +1,11 @@
+README.md
+setup.py
+duplicates/__init__.py
+duplicates/__main__.py
+duplicates/dupfinder.py
+duplicates.egg-info/PKG-INFO
+duplicates.egg-info/SOURCES.txt
+duplicates.egg-info/dependency_links.txt
+duplicates.egg-info/entry_points.txt
+duplicates.egg-info/requires.txt
+duplicates.egg-info/top_level.txt
