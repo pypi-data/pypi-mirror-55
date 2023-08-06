@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pgmpy
+Version: 0.1.9
+Summary: A library for Probabilistic Graphical Models
+Home-page: https://github.com/pgmpy/pgmpy
+Author: Ankur Ankan
+Author-email: ankurankan@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Unix
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS
+Classifier: Topic :: Scientific/Engineering
+
+https://github.com/pgmpy/pgmpy/blob/dev/README.md
+
+
