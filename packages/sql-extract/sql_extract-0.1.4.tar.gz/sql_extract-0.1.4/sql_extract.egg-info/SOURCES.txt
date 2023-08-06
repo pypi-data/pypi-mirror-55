@@ -1,0 +1,9 @@
+README.md
+setup.py
+bin/sql-extract
+sql_extract/__init__.py
+sql_extract.egg-info/PKG-INFO
+sql_extract.egg-info/SOURCES.txt
+sql_extract.egg-info/dependency_links.txt
+sql_extract.egg-info/requires.txt
+sql_extract.egg-info/top_level.txt
