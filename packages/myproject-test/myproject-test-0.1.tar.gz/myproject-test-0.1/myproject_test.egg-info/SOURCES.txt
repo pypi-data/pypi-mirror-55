@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+mypackage/__init__.py
+mypackage/mymodule.py
+myproject_test.egg-info/PKG-INFO
+myproject_test.egg-info/SOURCES.txt
+myproject_test.egg-info/dependency_links.txt
+myproject_test.egg-info/entry_points.txt
+myproject_test.egg-info/top_level.txt

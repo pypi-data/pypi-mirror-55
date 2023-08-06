@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: myproject-test
+Version: 0.1
+Summary: test project
+Home-page: https://github.com/developIntelligence
+Author: Shrikant J Jadhav
+Author-email: shrikant.jadhav@nutanix.com
+License: UNKNOWN
+Description: file README.md
+Keywords: test,class
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
