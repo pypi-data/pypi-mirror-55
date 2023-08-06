@@ -1,0 +1,15 @@
+MANIFEST.in
+README.md
+setup.py
+fry/__init__.py
+fry/retry.py
+fry/session.py
+fry/stats.py
+fry.egg-info/PKG-INFO
+fry.egg-info/SOURCES.txt
+fry.egg-info/dependency_links.txt
+fry.egg-info/requires.txt
+fry.egg-info/top_level.txt
+test/__init__.py
+test/test_retry.py
+test/test_session.py
