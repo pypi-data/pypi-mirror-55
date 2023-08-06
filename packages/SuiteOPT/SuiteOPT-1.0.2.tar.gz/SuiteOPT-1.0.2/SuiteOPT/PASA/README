@@ -1,0 +1,5 @@
+If the constraint matrix has one row and the objective function is linear,
+then the starting guess x is not used by the napheap algorithm. If the user
+has a good starting guess, it can be used to compute a good multiplier
+guess, which is used by napheap if pasaparm->use_lambda = TRUE. See
+the napheap source file for a description of the multiplier.

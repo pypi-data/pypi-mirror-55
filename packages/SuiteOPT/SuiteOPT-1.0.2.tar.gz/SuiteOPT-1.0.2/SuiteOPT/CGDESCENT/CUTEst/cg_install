@@ -1,0 +1,55 @@
+#!/bin/csh -f
+mkdir -p $CUTEST/src/cg_descent
+cp cg_descent $CUTEST/packages/defaults
+rm $CUTEST/src/cg_descent/*
+touch $CUTEST/src/cg_descent/cg_descent_main.c
+touch $CUTEST/src/cg_descent/cg_descent.c
+cp ../Source/cg_default.c makemaster README $CUTEST/src/cg_descent
+if ( $1 == debug ) then
+    gcc -g -lm -c -W -Wall -pedantic -Wmissing-prototypes -std=c99 \
+            -Wredundant-decls -Wnested-externs -Wdisabled-optimization \
+            -fexceptions -Wno-parentheses -Wshadow -Wcast-align \
+            -Winline -Wstrict-prototypes -Wno-unknown-pragmas -lpthread \
+            -I$CUTEST/include -I../Include -I../../SuiteOPTconfig \
+             cg_descent_main.c
+else
+    gcc -O3 -c -std=c99 -lpthread -DNDEBUG -I$CUTEST/include \
+            -I../Include -I../../SuiteOPTconfig cg_descent_main.c
+endif
+cp cg_descent_main.o  $CUTEST/objects/$MYARCH/double
+cd ..
+make lib
+cp Lib/cg_descent.o $CUTEST/objects/$MYARCH/double
+rehash
+cd CUTEst
+set PWD = `pwd` ;
+# --- Write pwd to '.cutest_location' hidden file ------------------------------
+echo "cutest_dir = "\""$PWD"\"" ;" > .cutest_location
+
+# --- Write runcutest command to 'runcutest' file ------------------------------
+cd ../..
+set LDLIBS = `pwd`/ldlibs
+cd CGDESCENT/CUTEst
+if ( -e runcutest ) then
+else
+    echo ""
+    echo "-------------------------------------------------------------"
+    echo "The command for using cg_descent to solve an unconstrained"
+    echo "optimization problem stored in PROB.SIF is the following:"
+    echo ""
+    echo "runcutest -p cg_descent -L$LDLIBS -lcg_descent -D PROB"
+    echo ""
+    echo "This command, excluding the problem name, could be stored as"
+    echo "an alias such as runcg, in which case the command to solve"
+    echo "the problem stored in PROB.SIF would be: runcg PROB"
+    echo "This alias is created for use in this window by typing"
+    echo ""\""source runcutest"\"" in this directory. Alternatively"
+    echo "place the alias contained in the runcutest file found in"
+    echo "this directory inside a file that is executed at startup"
+    echo "such as the .cshrc or .bashrc file. When this is done, the"
+    echo "the alias is valid in any window."
+    echo "-------------------------------------------------------------"
+endif
+
+# --- Write runcutest command to 'runcutest' file ------------------------------
+echo "alias runcg "\'"runcutest -p cg_descent -L$LDLIBS -lcg_descent -D"\'" " > runcutest
