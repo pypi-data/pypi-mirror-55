@@ -1,0 +1,11 @@
+feature_mapper-0.1.9.dist-info/METADATA,sha256=hf6Jxnm9J75MbKDKswj6XSd00UNb0r2MwzZvnU0IsT4,470
+feature_mapper-0.1.9.dist-info/WHEEL,sha256=5PlEHEeaz9vEcbIivbaOiBXTX2HpPKd4Ud5nhTaSmmw,133
+feature_mapper/.gitignore,sha256=lMScNQdvHdJXUMDbazGX65bRKwKL4piGi-50dtaYAFE,50
+feature_mapper/__init__.py,sha256=_zmsjG1YlAbXpuJLJHgIaEtqKgyfTlLCUUhun8MPTpk,306
+feature_mapper/pure.py,sha256=VTIJ9kMVff6F5WMdywmJQIhv51KKGilbe1ZIN1KSdqo,10563
+feature_mapper/wrapper.py,sha256=wfk101jDmlNPgOP19VzF9EWnKCKEmR5ItpjLiG5m2gg,1348
+feature_mapper/FeatureMapper.py,sha256=n4zdH0Ow6VEi3i3ZquIgyO74WtmSZ4n2AEyvqSPWTbk,1610
+feature_mapper/feature_mapper/__init__.py,sha256=fAua8dQbFJlLpwheN-qdKEbbyLPRoS-P40C4XkthPaQ,142
+feature_mapper/feature_mapper/ffi.py,sha256=nhjhQP_qDSdQGvszol0jY5liHBOLI5R4elYqHkv7VBI,1010
+feature_mapper/feature_mapper/native.so,sha256=uvd9gfM5VBz7AhyEI9H69zZQgUj237yvKW8PAWayx2o,1665272
+feature_mapper-0.1.9.dist-info/RECORD,,
