@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+BiMLPA/__init__.py
+BiMLPA/bimlpa.py
+BiMLPA/community.py
+BiMLPA/generator.py
+BiMLPA/modularity.py
+BiMLPA/utils.py
+bimlpa.egg-info/PKG-INFO
+bimlpa.egg-info/SOURCES.txt
+bimlpa.egg-info/dependency_links.txt
+bimlpa.egg-info/requires.txt
+bimlpa.egg-info/top_level.txt
