@@ -1,0 +1,11 @@
+zope.i18nmessageid-5.0.0-py2.7-nspkg.pth,sha256=SWEVH-jEWsKYrL0qoC6GBJaStx_iKxGoAY9PQycFVC4,529
+zope/i18nmessageid/_zope_i18nmessageid_message.so,sha256=NNHqnkAt5YATNrshwlV4NuiNkpDd0ku9kZj7pS6lWEo,33024
+zope/i18nmessageid/tests.py,sha256=VPqQugLdCYYzq9RLZ7BJPhqJtJLCpHtWBXLl8jfriWU,11023
+zope/i18nmessageid/message.py,sha256=xWJM_j8gGBYyuTkrkvQ8bN8V7jFGp8bLRM7rJfd3SYo,3894
+zope/i18nmessageid/_zope_i18nmessageid_message.c,sha256=hqXBPbMk6tprdIw9wIc3pj41dYhiQnH-RR7ULKK_oYo,9670
+zope/i18nmessageid/__init__.py,sha256=ZRqlJ3qTXvmUdNF-S1Fo8pF2zE7a6tU-M10cYknW2RQ,827
+zope.i18nmessageid-5.0.0.dist-info/namespace_packages.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.i18nmessageid-5.0.0.dist-info/top_level.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.i18nmessageid-5.0.0.dist-info/RECORD,,
+zope.i18nmessageid-5.0.0.dist-info/METADATA,sha256=zC0o9U13-p61odum_bxryyz36yQxT_jI_ThswyIJD_8,7900
+zope.i18nmessageid-5.0.0.dist-info/WHEEL,sha256=ZH10opgZUa7HkHQrTOrxoIddgH89Kt2YWAMJLeezR40,111
