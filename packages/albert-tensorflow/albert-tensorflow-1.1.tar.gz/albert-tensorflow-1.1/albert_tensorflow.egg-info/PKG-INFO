@@ -1,0 +1,43 @@
+Metadata-Version: 2.1
+Name: albert-tensorflow
+Version: 1.1
+Summary: ALBERT fork of https://github.com/google-research/google-research/tree/master/albert with package configuration
+Home-page: https://github.com/SebiSebi/albert
+Author: sebisebi
+Author-email: gpirtoaca@gmail.com
+License: Apache 2.0
+Description: # ALBERT for TensorFlow
+        
+        This is a fork of the original [ALBERT repository](https://github.com/google-research/google-research/tree/master/albert)
+        that adds package configuration so that it can be easily installed and used.
+        The purpose is to remove the need of cloning the repository and modifying it
+        locally which can be quite dirty for common tasks (e.g. training a new classifier).
+        A lot of code could be shared (e.g. `modeling.py`, `optimization.py`) and this
+        fork is exactly for that.
+        
+        All the credit goes to [google-research/albert](https://github.com/google-research/google-research/tree/master/albert).
+        
+        Please refer to the official repository for details on how to use the modules
+        contained in this package. Useful information can also be found
+        in the [ALBERT paper](https://arxiv.org/abs/1909.11942).
+        
+        
+        # Release Notes
+        
+        * November 5, 2019: Initial version - [v1.0](https://github.com/SebiSebi/albert-tensorflow/releases/tag/v1.0).
+        * November 15, 2019: version 1.1 - [v1.1](https://github.com/SebiSebi/albert-tensorflow/releases/tag/v1.1).
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Development Status :: 5 - Production/Stable
+Description-Content-Type: text/markdown
+Provides-Extra: numpy
+Provides-Extra: tensorflow
+Provides-Extra: sentencepiece
+Provides-Extra: absl-py
