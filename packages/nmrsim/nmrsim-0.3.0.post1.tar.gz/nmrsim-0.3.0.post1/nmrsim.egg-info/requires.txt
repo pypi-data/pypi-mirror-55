@@ -1,0 +1,15 @@
+matplotlib
+numpy
+sparse
+
+[dev]
+flake8
+ipykernel
+jupyter
+nbsphinx
+pytest
+pyfakefs
+sphinx
+sphinx_rtd_theme
+sphinxcontrib-napoleon
+plotly
