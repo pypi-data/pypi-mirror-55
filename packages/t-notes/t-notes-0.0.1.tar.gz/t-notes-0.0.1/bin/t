@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+
+import sys
+import tnotes
+
+tnotes.write(" ".join(sys.argv[1:]))
