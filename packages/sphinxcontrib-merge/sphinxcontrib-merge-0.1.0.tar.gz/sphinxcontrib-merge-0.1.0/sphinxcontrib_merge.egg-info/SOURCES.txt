@@ -1,0 +1,13 @@
+LICENSE.md
+MANIFEST.in
+README.rst
+setup.py
+sphinxcontrib/__init__.py
+sphinxcontrib/merge.py
+sphinxcontrib_merge.egg-info/PKG-INFO
+sphinxcontrib_merge.egg-info/SOURCES.txt
+sphinxcontrib_merge.egg-info/dependency_links.txt
+sphinxcontrib_merge.egg-info/namespace_packages.txt
+sphinxcontrib_merge.egg-info/requires.txt
+sphinxcontrib_merge.egg-info/top_level.txt
+sphinxcontrib_merge.egg-info/zip-safe
