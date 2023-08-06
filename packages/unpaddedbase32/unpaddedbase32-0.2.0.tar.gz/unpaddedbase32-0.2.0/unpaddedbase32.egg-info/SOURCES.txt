@@ -1,0 +1,7 @@
+README.md
+setup.py
+unpaddedbase32/__init__.py
+unpaddedbase32.egg-info/PKG-INFO
+unpaddedbase32.egg-info/SOURCES.txt
+unpaddedbase32.egg-info/dependency_links.txt
+unpaddedbase32.egg-info/top_level.txt
