@@ -1,0 +1,8 @@
+bwi/__init__.py,sha256=umHEXPtN1ZvO8CBEip7bteJbmsIzyqqfo5cSw1eGfqQ,45
+bwi/_queue_sender.py,sha256=Q2Ezzha7UtpUZHvLuEB2LC-cbrCDZiUdClZ2edh0pto,1077
+bwi/logs.py,sha256=Z7y2oOZfksty-3cGRjAuWNmlCVNx5Q_6Fjt_PE1GV14,1793
+bwi/metrics.py,sha256=Pq72MQZyHTRtOAaWS97VJAimn4dSxYf6SGn7z4vSJqE,1438
+bwi-0.0.7.dist-info/METADATA,sha256=ERIuvwEZWD6sZ65_V2Ctll8oivSzc3sjuaRCK8OPdtM,1317
+bwi-0.0.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+bwi-0.0.7.dist-info/top_level.txt,sha256=aMPdWexYxykkbrq7Hsyjc749eYxSVac75ACf5yPJNKY,4
+bwi-0.0.7.dist-info/RECORD,,
