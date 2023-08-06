@@ -1,0 +1,11 @@
+setup.py
+fuzzywuzzy-stubs/__init__.pyi
+fuzzywuzzy-stubs/fuzz.pyi
+fuzzywuzzy-stubs/process.pyi
+fuzzywuzzy-stubs/string_processing.pyi
+fuzzywuzzy-stubs/utils.pyi
+fuzzywuzzy_stubs.egg-info/PKG-INFO
+fuzzywuzzy_stubs.egg-info/SOURCES.txt
+fuzzywuzzy_stubs.egg-info/dependency_links.txt
+fuzzywuzzy_stubs.egg-info/requires.txt
+fuzzywuzzy_stubs.egg-info/top_level.txt
