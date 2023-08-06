@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: crosstown-core
+Version: 2019.11.13.2044
+Summary: Faster, simpler, and slimmer container builds for Python
+Home-page: https://docs.crosstown.dev
+License: UNKNOWN
+Author: Seth Michael Larson
+Author-email: sethmichaellarson@gmail.com
+Description-Content-Type: text/markdown
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Requires-Dist: attrs
+Requires-Dist: click
+Requires-Dist: packaging
+Requires-Dist: requests
+
+# crosstown-core
+
+Core set of functionality shared by the `crosstown` CLI tool and web backend.
+Mostly contains information about each package, how to build wheels, and the
+tools to build wheels reliably.
+
+## License
+
+LGPL-3.0+
+
