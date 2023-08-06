@@ -1,0 +1,8 @@
+README.md
+setup.py
+contentcopy/__init__.py
+contentcopy/contentcopy.py
+contentcopy.egg-info/PKG-INFO
+contentcopy.egg-info/SOURCES.txt
+contentcopy.egg-info/dependency_links.txt
+contentcopy.egg-info/top_level.txt
