@@ -1,0 +1,3 @@
+[console_scripts]
+sql2dart=sql2code.sql2dart:cli
+

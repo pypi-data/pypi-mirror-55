@@ -1,0 +1,8 @@
+sql2code/__init__.py,sha256=tA7OBeBuvML7_0h7ru72e7gkrMJPnQZGRU0wwEvF230,64
+sql2code/core.py,sha256=Dj1CkWUNtPSBaf_40z2n7ief8hteERWjapHQwcjyTUA,2627
+sql2code/sql2dart.py,sha256=6zTQkJtJg-vDjz6BYjFBeSuFXbnaMmFr28xVfgplHpU,3046
+sql2code-0.0.2.dist-info/entry_points.txt,sha256=pJIqgyJHUUUMJTj7pLyscfi1b2uSwy33NgG92fN0BgQ,50
+sql2code-0.0.2.dist-info/LICENSE,sha256=E7f5LJ2P7J9Xk0VbX2iUnRA5yAa48ZMK6R5TlgDoJHU,1079
+sql2code-0.0.2.dist-info/WHEEL,sha256=JXk7EE_UnY8Q4113Zu8f6SlrMizLH61VvvtIzqzkSKE,79
+sql2code-0.0.2.dist-info/METADATA,sha256=7IZXcUVu6aZ2upVMWDMSVlCowCfqvdI3iy9s2on_Zq8,333
+sql2code-0.0.2.dist-info/RECORD,,
