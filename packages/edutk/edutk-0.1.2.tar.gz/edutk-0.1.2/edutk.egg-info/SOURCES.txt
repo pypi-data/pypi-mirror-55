@@ -1,0 +1,9 @@
+README.md
+setup.py
+edutk/__init__.py
+edutk/edutk.py
+edutk.egg-info/PKG-INFO
+edutk.egg-info/SOURCES.txt
+edutk.egg-info/dependency_links.txt
+edutk.egg-info/requires.txt
+edutk.egg-info/top_level.txt
