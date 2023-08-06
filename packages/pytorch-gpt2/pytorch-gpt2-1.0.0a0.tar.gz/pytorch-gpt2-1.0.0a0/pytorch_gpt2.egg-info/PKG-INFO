@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: pytorch-gpt2
+Version: 1.0.0a0
+Summary: gpt2 implementation
+Home-page: https://github.com/jeongukjae/pytorch-gpt2
+Author: Jeong Ukjae
+Author-email: jeongukjae@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6, <3.8
