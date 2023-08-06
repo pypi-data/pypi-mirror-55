@@ -1,0 +1,13 @@
+pxpy/__init__.py,sha256=0nUE4o8fGreC_8S0E2kLl_3O8R0wDY4gUOQr43ztTVU,18134
+pxpy/functions.py,sha256=MnAHSzAEJ23Pe8EAS5CoJ-uqVERMfRZpoT6fXQzKrVo,646
+pxpy/data/5_14.mod,sha256=lcTmP6rivqGFGzeyzV0tMIPLNSxh0H8SESaMGhc202E,75938
+pxpy/data/sin44,sha256=IFGl8TockU_vlYzEo72cYPxUzcMtCUJli48iD-Y-b4U,3296
+pxpy/lib/libpx.dll,sha256=soMCyiLQfhL6To2UcPyN00dB7zwFISd583Q4QaCWIH0,29809443
+pxpy/lib/libpx.so,sha256=F_a8IrEycQAdfwWSJfREna7O-rMJt7uxEtnCQbRWQrg,11213664
+pxpy/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pxpy/test/test_core.py,sha256=DN7ikw_em2UtTZ2jOWe_lsBWD9GkYzp1SxQGKml2Hr8,7263
+pxpy-1.0a1.dist-info/LICENSE,sha256=V5OXHRXLcotIRt6PjI0YxoANUGabmuU4xwSAEbUqHeM,876
+pxpy-1.0a1.dist-info/METADATA,sha256=pFPXtATC3vH7fX_kdyHCBgMyUwURYqppWYmk7slMyhg,808
+pxpy-1.0a1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pxpy-1.0a1.dist-info/top_level.txt,sha256=MDD73f2eHwRzju2nJy1RzBYCB2nFGv7qjan2SUuhyVk,5
+pxpy-1.0a1.dist-info/RECORD,,
