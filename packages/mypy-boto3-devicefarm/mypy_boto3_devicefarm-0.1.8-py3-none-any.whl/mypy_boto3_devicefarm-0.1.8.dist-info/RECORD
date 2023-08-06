@@ -1,0 +1,10 @@
+mypy_boto3_devicefarm/__init__.py,sha256=t9xQ9LddbNCigmQkwxlifKiKcP0SHNvd-2Fp66kw0Y0,112
+mypy_boto3_devicefarm/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_devicefarm/client.py,sha256=9DwkCiUA9x-SbxtCyMQLvpGFc16MaUBxjB_1MFSZAko,8643
+mypy_boto3_devicefarm/paginator.py,sha256=3lvJMGtJVbP-yReWY7O92h5DJyFee3MrZfA0YLe2SEw,4017
+mypy_boto3_devicefarm/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_devicefarm/version.py,sha256=J-ZAXY7tnYw7E5X3eod4-Q1hZ1FtnW7JHRKkkRpff-c,48
+mypy_boto3_devicefarm-0.1.8.dist-info/METADATA,sha256=WzoDu0UBZSQyf5aTN8qSUx_SP55F8HhLwnYt5oFIG-0,1462
+mypy_boto3_devicefarm-0.1.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_devicefarm-0.1.8.dist-info/top_level.txt,sha256=Fb8PgLxga3VllvrOeNbqZq9ks694qbuoPch68g8nI_E,22
+mypy_boto3_devicefarm-0.1.8.dist-info/RECORD,,
