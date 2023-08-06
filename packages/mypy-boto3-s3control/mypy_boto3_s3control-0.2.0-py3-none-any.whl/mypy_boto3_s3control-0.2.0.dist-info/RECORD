@@ -1,0 +1,9 @@
+mypy_boto3_s3control/__init__.py,sha256=2hpnumcP15c6PGFueDdE66CNIhOfGxHRVilG8PMYV18,110
+mypy_boto3_s3control/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_s3control/client.py,sha256=_wvTSnmVChhT37CUQ_ZjBPxcZKVNIDk60Iq-4Dfgvgg,47175
+mypy_boto3_s3control/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_s3control/type_defs.py,sha256=kN6V6YGQ_IX_6XfIjMM_twmbLB4qWh4_39T1TPRdp-E,74649
+mypy_boto3_s3control-0.2.0.dist-info/METADATA,sha256=P6llaAFp09NvMcPMi4YWkBLNHcxf_Dj5q1KvCsRupzQ,1063
+mypy_boto3_s3control-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_s3control-0.2.0.dist-info/top_level.txt,sha256=rvgHCikLELUkBB8t3oJqtpaSborb_oXotPhuYw-WBsw,21
+mypy_boto3_s3control-0.2.0.dist-info/RECORD,,
