@@ -1,0 +1,1 @@
+This toool starts winefg and regedit for Prorton Games

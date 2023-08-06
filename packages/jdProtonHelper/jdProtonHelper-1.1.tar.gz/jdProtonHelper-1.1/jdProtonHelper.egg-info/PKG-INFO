@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: jdProtonHelper
+Version: 1.1
+Summary: Open winecfg and regedit of Proton Games
+Home-page: https://gitlab.com/JakobDev/jdProtonHelper
+Author: JakobDev
+Author-email: jakobdev@gmx.de
+License: GPL v3
+Download-URL: https://gitlab.com/JakobDev/jdProtonHelper/-/releases
+Description: This toool starts winefg and regedit for Prorton Games
+Keywords: JakobDev,Steam,Proton,Wine
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Environment :: Other Environment
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Description-Content-Type: text/markdown
