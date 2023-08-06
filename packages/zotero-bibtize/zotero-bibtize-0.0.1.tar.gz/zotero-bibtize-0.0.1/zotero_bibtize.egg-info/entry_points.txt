@@ -1,0 +1,3 @@
+[console_scripts]
+zotero-bibtize = zotero_bibtize.cli:zotero_bibtize
+

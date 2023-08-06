@@ -1,0 +1,11 @@
+README.md
+setup.py
+zotero_bibtize/__init__.py
+zotero_bibtize/cli.py
+zotero_bibtize/zotero_bibtize.py
+zotero_bibtize.egg-info/PKG-INFO
+zotero_bibtize.egg-info/SOURCES.txt
+zotero_bibtize.egg-info/dependency_links.txt
+zotero_bibtize.egg-info/entry_points.txt
+zotero_bibtize.egg-info/requires.txt
+zotero_bibtize.egg-info/top_level.txt
