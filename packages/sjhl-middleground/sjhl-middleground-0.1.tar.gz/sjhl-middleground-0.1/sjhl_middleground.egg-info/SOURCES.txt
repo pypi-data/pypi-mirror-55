@@ -1,0 +1,7 @@
+setup.py
+sjhl-middleground/__init__.py
+sjhl_middleground.egg-info/PKG-INFO
+sjhl_middleground.egg-info/SOURCES.txt
+sjhl_middleground.egg-info/dependency_links.txt
+sjhl_middleground.egg-info/not-zip-safe
+sjhl_middleground.egg-info/top_level.txt
