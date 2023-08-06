@@ -1,0 +1,9 @@
+blacklisted_tests:
+    - 'test_.*blacklisted'
+
+whitelisted_tests:
+    - 'test_.*another_whitelisted'
+
+docstrings:
+    required_fields:
+        - severity
