@@ -1,0 +1,15 @@
+rakuten_ws/__init__.py,sha256=6OS3600DNWl5RTAGI6AzBJexrWOPzltkiGFwm-qDdnU,120
+rakuten_ws/baseapi.py,sha256=uZ-3VgYZGHSlVMCwDYcxIlRjM5fQ_kkWoemiLVdPLjc,4902
+rakuten_ws/baserms.py,sha256=KJ0t8HTo7EC7V5V3iu6Bww4jaz4Mm3qUpat-BMKRTW4,8394
+rakuten_ws/compat.py,sha256=P2u7pN322wF7OUNrnnS1jHWGGPN7RgTJ6HX5R_CPBF4,1673
+rakuten_ws/parameters.py,sha256=04HpKPfGLyRDKQK9qxHUEv3bHtjknCkuGAx0-kp4a1Y,10159
+rakuten_ws/utils.py,sha256=H6zS0xc4SEkfili1iKwpZFNAuUmuC-fU0gOKHCseICM,6372
+rakuten_ws/webservice.py,sha256=9gSLq2_4D0rIWk3VA5Fp97Kj9spWftcWO70mxj4T0r8,11724
+rakuten_ws/wsdl/inventoryapi.wsdl,sha256=N_sr0OjImGLLg_2_RtnCigpDb0HC6mKJ4pdAldyh-30,16483
+rakuten_ws/wsdl/orderapi.wsdl,sha256=FsBBtHnb5gt3xZHDOe9yUVpzXcDrFiuhGTdHCZwEvWc,7982
+rakuten_ws-0.4.4.dist-info/DESCRIPTION.rst,sha256=H2PfceYSvs_pRX6ye58p9Naqm3aNYLwnTNTiGw9kRMs,5369
+rakuten_ws-0.4.4.dist-info/METADATA,sha256=5ZdJRI0MGnJtMtE38zMTPzwubSIxIdExWybDgPNUis4,6282
+rakuten_ws-0.4.4.dist-info/RECORD,,
+rakuten_ws-0.4.4.dist-info/WHEEL,sha256=5wvfB7GvgZAbKBSE9uX9Zbi6LCL-_KgezgHblXhCRnM,113
+rakuten_ws-0.4.4.dist-info/metadata.json,sha256=igyMUiscsoy3Hfqh5-8lIAXYBBI5MFXVzVgcrEUNwc0,1027
+rakuten_ws-0.4.4.dist-info/top_level.txt,sha256=tMIFGNmBhIBv4Eg3_4u_aZcJMwvBaQOtjCb5UaVKD-A,11
