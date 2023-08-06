@@ -1,0 +1,3 @@
+[console_scripts]
+rellax = rellax.rellax:main
+
