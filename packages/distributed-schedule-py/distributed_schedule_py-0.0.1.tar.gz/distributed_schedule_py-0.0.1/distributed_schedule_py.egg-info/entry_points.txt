@@ -1,0 +1,4 @@
+[console_scripts]
+taskclient = distributed_schedule.client:main
+taskserver = distributed_schedule.server:server_run
+
