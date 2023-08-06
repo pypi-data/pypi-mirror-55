@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+cms_scheduler.egg-info/PKG-INFO
+cms_scheduler.egg-info/SOURCES.txt
+cms_scheduler.egg-info/dependency_links.txt
+cms_scheduler.egg-info/not-zip-safe
+cms_scheduler.egg-info/top_level.txt
+scheduler/__init__.py
+scheduler/admin.py
+scheduler/apps.py
+scheduler/models.py
+scheduler/schema.py
+scheduler/api/User.py
+scheduler/api/__init__.py
