@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: exchange-rates-last-hm-alex
+Version: 0.0.2
+Summary: Exchange rates getter
+Home-page: https://gitlab.com/ExampleUserForYandex/last
+Author: BiggiPiggi
+Author-email: aszmey.war@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp (==3.6.2)
+Requires-Dist: aiomisc
+Requires-Dist: aiomisc-dependency
+
+# Exchange rates service
+Yandex last homework task. Realization of exchange rates service
+
+## Getting project from gitlab
+Firstly you must download source code of project from gitlab repository
+```
+$ git clone https://gitlab.com/ExampleUserForYandex/last
+```
+and go inside project's folder
+```
+$ cd /path/to/cloned/project
+```
+
+## Run project's tests
+For run tests firstly activate virtual environment by:
+```
+$ source venv/bin/activate
+```
+and after that install requirements by:
+```
+$ (venv) pip3 install -r requirements.txt
+$ (venv) pip3 install -r requirements.tests.txt
+```
+Now we can run tests
+```
+$ (venv) pytest test
+```
+If all is ok you'll get 
+```
+=============================================================================================== test session starts ===============================================================================================
+platform linux -- Python 3.7.3, pytest-5.2.2, py-1.8.0, pluggy-0.13.0
+rootdir: /path/to/cloned/project
+plugins: aiohttp-0.3.0, aiomisc-9.4.1
+collected 5 items                                                                                                                                                                                                 
+
+test/test_rest.py ..                                                                                                                                                                                        [ 40%]
+test/test_services.py .                                                                                                                                                                                     [ 60%]
+test/test_updater.py ..                                                                                                                                                                                     [100%]
+
+================================================================================================ 5 passed in 1.28s ================================================================================================
+```
+## Collect python package
+Firstly check setup.py file for may be some config changes (e.g. package name, version and etc).
+
+To collect python package run:
+```
+$ python3 setup.py sdist bdist_wheel
+```
+> Note: Be sure that you are in project root folder
+
+Next step is install utility for uploading to Python Package index
+```
+$ pip3 install --user --upgrade twine
+```
+Finally, we can upload out project to Python Package index
+```
+$ python3 -m twine upload dist/*
+```
+And it will be available on [your project lists](https://pypi.org/project/)
+> Note: that you must have account for uploading your package
+## Create docker image run 
+To create docker image run:
+```
+$ sudo docker build -t any_name .
+```
+> Note: **any_name** will be name of created image. So may be you want change it
+## Run docker image
+To run docker image write:
+```
+$ sudo docker run -d -p 8082:8082 image_name
+```
+> Note: **image_name** must be a name of created image in previous step.
+
+Now our service is available. [Check it](http://localhost:8082/)
+
+
