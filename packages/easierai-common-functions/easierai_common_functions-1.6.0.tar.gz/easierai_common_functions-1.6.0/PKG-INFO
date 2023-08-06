@@ -1,0 +1,20 @@
+Metadata-Version: 1.0
+Name: easierai_common_functions
+Version: 1.6.0
+Summary: This library contains reusable code for various projects
+Home-page: https://gitlab.atosresearch.eu/ari/ioe-ai/common-python-helper-functions
+Author: IoE Lab
+Author-email: juan.carrascoa.external@atos.net
+License: ATOS
+Description: # Common Python Helper Functions
+        
+        This project contains reusable code for various projects. Written in Python.
+        
+        Documentation to be completed
+        
+        ## THINGS TO CONSIDER
+        - The logger library is expecting the following environment variables to send the log data to the logstash socket:
+        LOGSTASH_HOST
+        LOGSTASH_PORT
+        - If any of these variables is not present, the logging library will work as expected, without posting the logs to elasticsearch 
+Platform: UNKNOWN
