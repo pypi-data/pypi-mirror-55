@@ -1,0 +1,7 @@
+scipy
+numpy
+opencv-python
+torch
+numba
+efficientnet_pytorch
+tqdm
