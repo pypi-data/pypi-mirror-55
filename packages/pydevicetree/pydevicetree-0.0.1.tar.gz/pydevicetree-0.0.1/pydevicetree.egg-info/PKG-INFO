@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pydevicetree
+Version: 0.0.1
+Summary: A library for parsing Devicetree Source v1
+Home-page: https://github.com/sifive/pydevicetree
+Author: Nathaniel Graff
+Author-email: nathaniel.graff@sifive.com
+License: UNKNOWN
+Description: # pydevicetree
+        
+        This is a Python 3 library for parsing, querying, and modifying Devicetree Source v1 files as
+        described in the [Devicetree Specification v0.2](https://github.com/devicetree-org/devicetree-specification/releases/tag/v0.2).
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
