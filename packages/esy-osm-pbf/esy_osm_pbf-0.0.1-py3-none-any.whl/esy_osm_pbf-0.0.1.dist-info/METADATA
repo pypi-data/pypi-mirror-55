@@ -1,0 +1,110 @@
+Metadata-Version: 2.1
+Name: esy-osm-pbf
+Version: 0.0.1
+Summary: Low-level interface to OpenStreetMap protocol buffer files.
+Home-page: UNKNOWN
+Author: Ontje Lünsdorf
+Author-email: ontje.luensdorf@dlr.de
+License: GPLv3
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering
+Requires-Python: >= 3.5
+Description-Content-Type: text/x-rst
+Requires-Dist: protobuf (<4,>=3)
+
+esy.osm.pbf
+===========
+
+``esy.osm.pbf`` is a low-level Python library to interact with 
+`OpenStreetMap <https://www.openstreetmap.org>`_ data files in the `Protocol
+Buffers <https://developers.google.com/protocol-buffers/>`_ language.
+
+The `OpenStreetMap PBF format <https://wiki.openstreetmap.org/wiki/PBF_Format>`_
+defines three primary data types:
+
+- ``Node``: An annotated point on the earth.
+- ``Way``: An list of ``Node`` items forming a path or polygon.
+- ``Relation``: A set of related entries.
+
+This library uses Google's `protobuf <https://pypi.org/project/protobuf/>`_
+Python implementation to decode binary data into native Python objects and
+offers a convenient interface to iterate over all elements found in a ``.pbf``
+data file.
+
+Features
+--------
+
+What it provides:
+
+- A pythonic way to work with ``.pbf`` data file entries.
+- Conversion of lowlevel Protocol Buffer objects to Python objects like
+  dictionaries and lists.
+- An easy way to filter and process OpenStreetMap data with Python.
+
+What it **doesn't** provide:
+
+- A mechanism to spatially query OpenStreetMap entries.
+- Visualization of OpenStreetMap data.
+
+Installation
+------------
+
+``esy.osm.pbf`` depends on a Python version of 3.5 or above as well as on the
+`Google Protocol Buffers <https://pypi.org/project/protobuf/>`_. Use ``pip`` to
+install ``esy.osm.pbf``:
+
+.. code:: bash
+
+    $ pip install esy-osm-pbf
+
+Example
+-------
+
+The following example selects some entries from the Andorra ``.pbf`` provided by
+`geofabrik <https://www.geofabrik.de/>`_. The entries contained in these files
+can be accessed using ``esy.osm.pbf.File`` objects.
+
+Openstreetmap defines `parks
+<https://wiki.openstreetmap.org/wiki/Tag:leisure%3Dpark>`_ by a tag ``leisure``
+with a value of ``park``. Filter entries accordingly and store matching ones in
+a list ``parks``:
+
+>>> import esy.osm.pbf
+>>> osm = esy.osm.pbf.File('test/andorra.osm.pbf')
+>>> parks = [entry for entry in osm if entry.tags.get('leisure') == 'park']
+>>> len(parks)
+24
+
+In this copy of the Andorra ``.pbf``, there seem to be at least 24 parks. Lets
+select all with a name and show the first three of those:
+
+>>> [entry.tags['name'] for entry in parks if 'name' in entry.tags][:3]
+['Jardins de Juberri', 'Parc Central', 'Plaça Guillemó']
+
+License
+-------
+
+``esy.osm.pbf`` is licensed under the `GNU General Public License version
+3.0 <https://www.gnu.org/licenses/gpl-3.0.html>`_.
+
+The Team
+--------
+
+``esy.osm.pbf`` is developed at the
+`DLR <https://www.dlr.de/EN/Home/home_node.html>`_ Institute of
+`Networked Energy Systems
+<https://www.dlr.de/ve/en/desktopdefault.aspx/tabid-12472/21440_read-49440/>`_
+in the departement for `Energy Systems Analysis (ESY)
+<https://www.dlr.de/ve/en/desktopdefault.aspx/tabid-12471/21741_read-49802/>`_.
+
+

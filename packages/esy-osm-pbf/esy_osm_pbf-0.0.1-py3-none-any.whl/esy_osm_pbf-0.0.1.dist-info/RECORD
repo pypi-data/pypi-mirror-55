@@ -1,0 +1,8 @@
+esy/osm/pbf/__init__.py,sha256=csOvWe5MI4IlVpkY1FmDFA0wYPFVXc0WkEsIHm_CllM,589
+esy/osm/pbf/file.py,sha256=LSDjlK9E3bKhoTc7OlWgcptGOHWofnIEMOrFZKQbFQg,7128
+esy/osm/pbf/fileformat_pb2.py,sha256=lgANRs0jvQiNlgEMvGqptJCVUtOaH3VXVvu-Q_MVlGA,5645
+esy/osm/pbf/osmformat_pb2.py,sha256=gpjZxOM-4gC6FjDdiyQaYLQ-yvJKLoalHpFNBVKs9b0,37040
+esy_osm_pbf-0.0.1.dist-info/METADATA,sha256=s-RVsT5XTxF9szkHDLygt3xdVfQSTHKszdE73JpfLFA,3643
+esy_osm_pbf-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+esy_osm_pbf-0.0.1.dist-info/top_level.txt,sha256=vE9PJO2NlJ-kmlAYtYe1xq5wobRX-dtHiKZPriUs85k,4
+esy_osm_pbf-0.0.1.dist-info/RECORD,,
