@@ -1,0 +1,5 @@
+Django<2
+M2Crypto>=0.35.2
+beautifulsoup4>=4.8.1
+lxml==4.4.1
+structlog==16.1.0
