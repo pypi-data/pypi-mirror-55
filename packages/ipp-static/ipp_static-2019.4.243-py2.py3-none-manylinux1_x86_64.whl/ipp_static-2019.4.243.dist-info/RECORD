@@ -1,0 +1,13 @@
+intellibs/lib/libippcc.a,sha256=pOYHMRQ993dAcFMrAjTYqc-yBPxfD47vgVQMvxYFPAY,36983856
+intellibs/lib/libippch.a,sha256=6Oa_E6QD3SRxiQ-weDnHPunS0wSkkPSCvQ33RM51pls,4364516
+intellibs/lib/libippcore.a,sha256=YMZQzaJIp3olv5JddVwRbbDhOV4I02P4oKjC2FAySIo,61878
+intellibs/lib/libippcv.a,sha256=nowlSsRgBYK9EYj-67THT44jG8lUqbh1c3AlgpdaUxo,109851544
+intellibs/lib/libippdc.a,sha256=7aKVNSoBgEs5NzcIe4vC98vLmob9RUSGUHDDgSNlJ7w,3849774
+intellibs/lib/libippi.a,sha256=7CuHLV3sLXXeXLI7PVK9CopyriG6nG0gkGkOGku0I8w,235155758
+intellibs/lib/libipps.a,sha256=73bv8uQ8Wf1PJjkQ1KkN5U3vgxE1MZEJ8t3R3Wq4bE0,99077686
+intellibs/lib/libippvm.a,sha256=cxm0g5B4Wq2fV52S8T06DW_pd1KuNlhV00eYvO77hCQ,52171812
+intellibs/share/doc/ipp-static/license.txt,sha256=ID_b8U5Of_j8jC4r3pnYj07OH-PmhBpnL9-vLJbPeCE,4334
+ipp_static-2019.4.243.dist-info/METADATA,sha256=eR8pZR8LRYwlawR1JD5EIaI_YJ4YiEiWDBle9aBpsLo,1688
+ipp_static-2019.4.243.dist-info/RECORD,,
+ipp_static-2019.4.243.dist-info/WHEEL,sha256=RKCzVV1VEHBxbr6U9ZTGbBzV7Z4uhPyY86ToZtYgmc0,138
+ipp_static-2019.4.243.dist-info/top_level.txt,sha256=ez73IYbAUf-RhygxyJMy4mvHwtwkdB4idmcsCdQq-Xk,10
