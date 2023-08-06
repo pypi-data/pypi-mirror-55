@@ -1,0 +1,19 @@
+Metadata-Version: 1.2
+Name: teensypower
+Version: 0.0.3
+Summary: teensy controlled power switch
+Home-page: UNKNOWN
+Author: Jaehee Park
+Author-email: jaehee@ramonaoptics.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
