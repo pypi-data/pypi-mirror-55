@@ -1,0 +1,11 @@
+README.md
+setup.py
+pysclump/__init__.py
+pysclump/sclump.py
+pysclump/utils.py
+pysclump.egg-info/PKG-INFO
+pysclump.egg-info/SOURCES.txt
+pysclump.egg-info/dependency_links.txt
+pysclump.egg-info/top_level.txt
+pysclump/PathSim/__init__.py
+pysclump/PathSim/pathsim.py
