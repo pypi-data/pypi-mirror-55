@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+kogama/ __init__.py
+kogama/Exceptions.py
+kogama/Kogama.py
+kogama.py.egg-info/PKG-INFO
+kogama.py.egg-info/SOURCES.txt
+kogama.py.egg-info/dependency_links.txt
+kogama.py.egg-info/requires.txt
+kogama.py.egg-info/top_level.txt
