@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+src/iotc/__init__.py
+src/iotc/aioprovisioning.py
+src/iotc/baltimore.pem
+src/iotc/constants.py
+src/iotc/provisioning.py
+src/iotc.egg-info/PKG-INFO
+src/iotc.egg-info/SOURCES.txt
+src/iotc.egg-info/dependency_links.txt
+src/iotc.egg-info/requires.txt
+src/iotc.egg-info/top_level.txt
