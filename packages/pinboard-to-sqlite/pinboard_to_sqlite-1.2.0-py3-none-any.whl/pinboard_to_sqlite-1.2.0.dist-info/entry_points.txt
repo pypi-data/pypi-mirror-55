@@ -1,0 +1,3 @@
+[console_scripts]
+pinboard-to-sqlite=pinboard_to_sqlite.cli:cli
+
