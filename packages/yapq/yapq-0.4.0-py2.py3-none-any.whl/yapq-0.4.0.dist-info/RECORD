@@ -1,0 +1,12 @@
+yapq/__init__.py,sha256=7wa0rWDLQdIoXdmIg9vDpgSR4VmVZkSkbYiQeisV5Q0,1311
+yapq/job.py,sha256=YBEaYNof8oXMuVsfeauWhZXGotGQgk09qjnbabRT1uk,493
+yapq/result.py,sha256=SJF7autS3HmKzYTmbnPmcwxGUofwCmKTSWBNrDfdFbg,377
+yapq/serializer.py,sha256=53XBm8_ipFIC33nXAGaAPAg1S-44zGf1rRHhjmicZIs,123
+yapq/task_registry.py,sha256=732BycseDqDyWt37vv3_GuKvb787Obh1sY_3OLHsntQ,1755
+yapq/worker.py,sha256=9ixpK0Oi0fa0jDfnrBB5cnb62MciS3bieeJFFJDqY5M,853
+yapq-0.4.0.dist-info/AUTHORS.rst,sha256=HlXJ9r-LRwSKS0X9oHc1Ua_hbZgdjF4OCL6_q2dJv1Y,159
+yapq-0.4.0.dist-info/LICENSE,sha256=MjcQN4PEZQNdExREg7GI-I6Se71qeEWTVQASax1N1r0,1071
+yapq-0.4.0.dist-info/METADATA,sha256=MSR7FRhx_V-eHaFSFn1AUjp6V8EykvkvW1wq-f-9OUY,2059
+yapq-0.4.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+yapq-0.4.0.dist-info/top_level.txt,sha256=N6zNLgabDUvi6Mq73Bc-5ORs7jIviwAYsjfNcx2ZMkU,5
+yapq-0.4.0.dist-info/RECORD,,
