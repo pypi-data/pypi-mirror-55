@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: scrapy-dynamodb
+Version: 0.2.1
+Summary: AWS DynamoDB pipeline for Scrapy
+Home-page: https://github.com/acordiner/scrapy-dynamodb
+Author: Alister Cordiner
+Author-email: alister@cordiner.net
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
