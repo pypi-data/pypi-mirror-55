@@ -1,0 +1,3 @@
+lxml
+requests
+google>=2.0
