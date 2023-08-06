@@ -1,0 +1,4 @@
+click<8,>=7.0
+jcapiv1@ https://github.com/TheJumpCloud/jcapi-python/archive/v3.3.0.zip#subdirectory=jcapiv1
+jcapiv2@ https://github.com/TheJumpCloud/jcapi-python/archive/v3.3.0.zip#subdirectory=jcapiv2
+PyYaml<6.0,>=5.1
