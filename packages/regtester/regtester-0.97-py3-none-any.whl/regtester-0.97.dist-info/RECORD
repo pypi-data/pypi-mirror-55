@@ -1,0 +1,14 @@
+regtester/RegExTest.py,sha256=ugxXLU5y-RHJ39lI9FTYLNA3BZYURUuRD87YXeCQ_wU,780
+regtester/RegExTestItem.py,sha256=3qsfhIzirXi8mh1MxkudfIA0fxlwEfEUEA9BBkyRuyI,107
+regtester/RegExTester.py,sha256=0MS3DZ6wd2XShsBzyco4wukqXkJ27kEZ8z1m0NKHJso,4697
+regtester/TestItemResult.py,sha256=4vLQmXaRwO7Nwbg1X6SFaC_cZykBbwPXuskXgOx271k,235
+regtester/TestResponse.py,sha256=KTvefzYVOOEuxnPmhssmjxOxTM3U7iG0U6QXcgtCA3U,599
+regtester/__init__.py,sha256=G6wcci7ypnNVDPKR-3jb2BHi5LD1Q2NEnLlRWKakNDM,198
+regtester/test_samples/ArtNumberTest.py,sha256=GwfActzAhjsGwohHGpFtgrQMDtj28RxrkfkjrQ0YwaM,1609
+regtester/test_samples/LawTypeTest.py,sha256=hlW5spe93cnKxFaQTYRSZccIq85BLLI8LG-Iv3gVuLQ,2934
+regtester/test_samples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+regtester-0.97.dist-info/METADATA,sha256=DQ7GzmWpHcsZVbUlNU9bqIyxl3ug1OTh6eETe5_aemw,859
+regtester-0.97.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+regtester-0.97.dist-info/entry_points.txt,sha256=UeetPGFVdp_mbEoD4wzOQ9bpPfPnmohXaCPtK7Ejgis,58
+regtester-0.97.dist-info/top_level.txt,sha256=dmTdadct_Yoz_TEk1lnj8V_7ZRiJ1FDrkGwZxyd4dtg,10
+regtester-0.97.dist-info/RECORD,,
