@@ -1,0 +1,10 @@
+mypy_boto3_fms/__init__.py,sha256=VpGNdqWXzlsH0o_ps67JOYKrQEtUk0AnASAw67y4L-k,98
+mypy_boto3_fms/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_fms/client.py,sha256=szMUnrBoREtFexXTbH8EfoPPI-pVCMTJwi2Zg-28j94,2213
+mypy_boto3_fms/paginator.py,sha256=lvDkZh88vTGelb5S8r5QZKKxF77Qa9kqiRtYchJSjVg,674
+mypy_boto3_fms/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_fms/version.py,sha256=uEY-o5UpO0zjCdZ1SCWaClP-xXaDZDIXmwIfxAtFffI,48
+mypy_boto3_fms-0.1.6.dist-info/METADATA,sha256=Zx07aHqJjRc2kO2cPVp7ThGhvOCRHxi0_x3ys18jDLE,1378
+mypy_boto3_fms-0.1.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_fms-0.1.6.dist-info/top_level.txt,sha256=-HiFnEq84NZXjS4-wcLZ9mQZ524gWwCmOyhcRV7cuYk,15
+mypy_boto3_fms-0.1.6.dist-info/RECORD,,
