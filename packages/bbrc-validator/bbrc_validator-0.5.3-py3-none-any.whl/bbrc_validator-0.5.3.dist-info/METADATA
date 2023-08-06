@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: bbrc-validator
+Version: 0.5.3
+Summary: Systematic sanity checks on imaging datasets within an XNAT environment
+Home-page: https://gitlab.com/bbrc/xnat/bbrc-validator
+Author: Greg Operto
+Author-email: goperto@barcelonabeta.org
+License: UNKNOWN
+Download-URL: https://gitlab.com/bbrc/xnat/bbrc-validator/-/archive/v0.5.3/bbrc-validator-v0.5.3.tar.gz
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: Markdown (>=3.0)
+Requires-Dist: pdfkit (>=0.6)
+Requires-Dist: pydicom (>=1.2)
+Requires-Dist: pandas (>=0.24)
+Requires-Dist: nibabel (>=2.3)
+Requires-Dist: mrivis
+Requires-Dist: visualqc
+Requires-Dist: nilearn
+Requires-Dist: numpy (>=1.14)
+Requires-Dist: lxml (>=4.0)
+Requires-Dist: requests (>=2.2)
+Requires-Dist: xlwt
+Requires-Dist: xlutils
+Requires-Dist: xlrd
+Requires-Dist: dateparser
+Requires-Dist: scikit-image
+Requires-Dist: scikit-learn
+Requires-Dist: scipy (>=1.2)
+Requires-Dist: nose
+Requires-Dist: coverage
+Requires-Dist: pyxnat (>=1.2.1.0.post2)
+
+UNKNOWN
+
+

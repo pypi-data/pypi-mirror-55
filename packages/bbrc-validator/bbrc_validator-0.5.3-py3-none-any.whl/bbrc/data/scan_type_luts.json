@@ -1,0 +1,20 @@
+{
+  "EMPTY" :
+  {
+    "T1": [],
+    "T2": [],
+    "RS": [],
+    "DWI": [],
+    "rDWI": [],
+    "IR" : []
+  },
+  "ALFA1" :
+  {
+    "T1": ["T1_ALFA1"],
+    "T2": ["T2_ALFA1"],
+    "RS": ["RS_ALFA1", "RS_ALFA1 SENSE"],
+    "DWI": ["DWI_ALFA1"],
+    "rDWI": ["rDWI_ALFA1"],
+    "IR" : ["IR_ALFA1", "IR_ALFA1 SENSE"]
+  }
+}
