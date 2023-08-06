@@ -1,0 +1,36 @@
+Metadata-Version: 2.0
+Name: aikit
+Version: 0.1.4
+Summary: An automated machine learning framework
+Home-page: https://github.com/societe-generale/aikit
+Maintainer: Lionel Massoulard
+Maintainer-email: 
+License: BSD-2-Clause
+Download-URL: https://pypi.org/project/aikit/#files
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: decorator
+Requires-Dist: lockfile
+Requires-Dist: networkx
+Requires-Dist: numpy
+Requires-Dist: pandas (<0.24.0)
+Requires-Dist: scikit-learn (>=0.20)
+Requires-Dist: scipy
+Requires-Dist: statsmodels
+
+UNKNOWN
+
+
