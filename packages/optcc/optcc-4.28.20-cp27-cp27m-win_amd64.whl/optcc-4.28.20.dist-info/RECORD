@@ -1,0 +1,14 @@
+_optcc.pyd,sha256=iN9bdX3_deh_R-vwCKxMMNioMXyFUZHSh7m1MWhV4tA,199168
+optcc/__init__.py,sha256=_pNhehGpw9OjIC0K6rCqtZ0Ap-ZjjeR8gbG3MlVlnr8,20
+optcc/optcc.i,sha256=idg5m3zt9awewFS43sxenHooLcpsVvyBTH0zAvgDiEg,14416
+optcc/optcc.py,sha256=8-ws507AyqATjXcx5QJGKm9fZKLkj_P-7cMBfLWRCJo,24816
+optcc/C/gclgms.c,sha256=MAEMj5pjBBuYLIUm3TD-VfXEKVpY7qSZnihBzxAiejo,5181
+optcc/C/gclgms.h,sha256=wmORHkpw2852xgtsa32klJP6ZS56IEI2o7rHAUKu93I,4205
+optcc/C/optcc.c,sha256=VKolnloVHu9QCaqwtQoIWCMALK-wLJ5v87brxcbZEqY,45465
+optcc/C/optcc.h,sha256=Eo0xlnba4RG-_gn46hLdrbTray5aJO5SY2fQ8oSPKTI,24116
+optcc/C/optcc_wrap.c,sha256=NdW_evTakdpkaqylKv4B1ufNI2qHyDoLTpSIkznaxKo,341975
+optcc-4.28.20.dist-info/LICENSE,sha256=CC0gPTpZCsBdFfpYTvSV2tEJ7Mdz9EbCMupK3kDrzx4,1225
+optcc-4.28.20.dist-info/METADATA,sha256=K49Q-IMptWSqwRiLGueEwZh62MXIj8UAvdf_Ob-9X5k,266
+optcc-4.28.20.dist-info/WHEEL,sha256=2Nylt3wmSMBMjHPKa3YR_rTipDZoAXpZfo_3s2qq0lk,106
+optcc-4.28.20.dist-info/top_level.txt,sha256=zj9QWTG4mBA6sozclQCMbTCYQYkd3xSSmMvK5q1Ompc,13
+optcc-4.28.20.dist-info/RECORD,,
