@@ -1,0 +1,8 @@
+[iotile.device_adapter]
+tcp = iotile_transport_socket_lib.tcp_socket:TcpSocketDeviceAdapter
+unix = iotile_transport_socket_lib.unix_socket:UnixSocketDeviceAdapter
+
+[iotile.device_server]
+tcpsocket = iotile_transport_socket_lib.tcp_socket:TcpSocketDeviceServer
+unixsocket = iotile_transport_socket_lib.unix_socket:UnixSocketDeviceServer
+
