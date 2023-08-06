@@ -1,0 +1,13 @@
+mpldock/__init__.py,sha256=GOAobeAUYKmOOOssY05mdQ4bax88JnQUyCyxh8UjDAY,202
+mpldock/backend.py,sha256=8tJVOCAe2ieuNAFxcw8pJs08elZ07NdCQvXPts_5sU8,1474
+mpldock/common.py,sha256=5qfqBiAfgAenMbIpCcJOh5j5FZFENd7JeMvpbMelQiM,524
+mpldock/figure.py,sha256=hcjBgIkwsuPYa3AA_S3fx3WuJz1aa-jDUKA5Lnlojss,6296
+mpldock/statemanager.py,sha256=Cwr6tDlrt312hYi_TDZXliZIGfctXZvR1E6wGNJK2Lg,4069
+mpldock/tweaks.py,sha256=x6PxiRc5XbWrxP5NGM7FCBpUMfeJt896yRQYuMpBzb8,302
+mpldock/window.py,sha256=pxKQf9WI1lg1MIRsaQjGLuEt3X_FBtlajEMKU8touAk,7177
+mpldock/windows.py,sha256=voZfRW9ghV0_Cgn4P2FFOOW2pQYjiGOCHGzD-jxYKmI,4049
+mpldock-0.0.1.dist-info/LICENSE,sha256=6cXcYjbbcR-MQrfMX9ZGea3aKwmf2V3sqkhidhmhnnI,1071
+mpldock-0.0.1.dist-info/METADATA,sha256=TNHbL6WbrH_I5Y_D3AKQnpy4RNuzazBTS1zb8qjcWpI,3342
+mpldock-0.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+mpldock-0.0.1.dist-info/top_level.txt,sha256=E-DTiRXctyC_y5Y9VIZ2ne7V-jgE7wr4lOw1eI2ArNE,8
+mpldock-0.0.1.dist-info/RECORD,,
