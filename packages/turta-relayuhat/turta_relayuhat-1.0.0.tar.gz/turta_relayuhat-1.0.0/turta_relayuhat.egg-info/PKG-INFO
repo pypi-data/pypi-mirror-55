@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: turta-relayuhat
+Version: 1.0.0
+Summary: Python Libraries for Turta Relay uHAT
+Home-page: https://www.turta.io/relayuhat
+Author: Turta LLC
+Author-email: hello@turta.io
+License: UNKNOWN
+Project-URL: Documentation, https://docs.turta.io/raspberry-pi-hats/relay-uhat
+Project-URL: Community, https://community.turta.io
+Project-URL: GitHub Repository, https://github.com/Turta-io/Relay-uHAT
+Description: # Turta Relay uHAT for Raspberry Pi Zero
+        Relay uHAT is a two-channel relay module for Raspberry Pi Zero.
+        
+        This repository includes libraries and samples of Relay uHAT.
+        
+        ## Features
+        - 2Ch 10A Relays. (We recommend max 5A per channel.)
+        - Only uses two GPIO pins.
+        - Optical isolation and isolation slot.
+        - ID EEPROM for Raspberry Pi HAT specification compliance.
+        
+        ## Documentation
+        Visit [docs.turta.io](https://docs.turta.io) for documentation.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Topic :: System :: Hardware
+Description-Content-Type: text/markdown
