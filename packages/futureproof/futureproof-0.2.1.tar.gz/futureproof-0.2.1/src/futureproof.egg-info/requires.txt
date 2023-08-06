@@ -1,0 +1,6 @@
+attrs
+
+[tests]
+pytest-mock
+pytest-timeout
+coverage
