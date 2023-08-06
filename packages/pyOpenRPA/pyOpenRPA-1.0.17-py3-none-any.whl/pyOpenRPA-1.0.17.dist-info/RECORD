@@ -1,0 +1,15 @@
+pyOpenRPA/__init__.py,sha256=jSHkRut13pmEkwzsTHWCrofxSDRgieSUauhy0coLDeA,204
+pyOpenRPA/__main__.py,sha256=sYkz_GCSY0qXi_hOcyER-ISb_boFADvEv2X-2mKFmhA,1688
+pyOpenRPA/Core/Clipboard.py,sha256=q76X8L21zJwcwdoJJNPeCEwAV30xS6ylHP1WwvtxoWI,722
+pyOpenRPA/Core/IntegrationOrchestrator.py,sha256=T1g1jJM7_JMTSVP50DTM5WHrMh1w8wovvcBXl1nEokU,2656
+pyOpenRPA/Core/JSONNormalize.py,sha256=aIuVzuZDazhxkCOzoOjfhHVz66mp2FWdfPv5E7KWF5Y,3890
+pyOpenRPA/Core/ProcessCommunicator.py,sha256=Mpo2WoCrEUmY6aCSbQEXkT4qVKtN1N5NcVvG_UZxGVo,8245
+pyOpenRPA/Core/Robot.py,sha256=8iB2B4-I12pF-vZACKZ8kHHDiDg6dkBMYxhtOBPz6I4,9445
+pyOpenRPA/Core/UIDesktop.py,sha256=sUDelnGuL-9Kcw-eS5RzMnR3ynjoDokmJvkHZJdeY3o,66206
+pyOpenRPA/Core/ValueVerify.py,sha256=ObskxU4fOMoCGw74_nzYt6-a5jjrAckb3sdBLYyhYxY,777
+pyOpenRPA/Core/Window.py,sha256=UJl-sg4RvvJ35aG9jZOzqGVwE15XK7qPHqoOBD13xFk,431
+pyOpenRPA/Core/__init__.py,sha256=iEW3SGBJf3kYa1zocGH5vEK0woejzJpnQfOmQtIA3P0,324
+pyOpenRPA-1.0.17.dist-info/METADATA,sha256=an7A9omodkiCarW3zwN7S3fgE4PZt9weMGYTPslepws,3510
+pyOpenRPA-1.0.17.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+pyOpenRPA-1.0.17.dist-info/top_level.txt,sha256=RPzwQXgYBRo_m5L3ZLs6Voh8aEkMeT29Xsul1w1qE0g,10
+pyOpenRPA-1.0.17.dist-info/RECORD,,
