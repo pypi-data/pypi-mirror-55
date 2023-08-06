@@ -1,0 +1,11 @@
+README.md
+setup.py
+galgek_ukp_nomousauto_grivind/__init__.py
+galgek_ukp_nomousauto_grivind/data_conversion.py
+galgek_ukp_nomousauto_grivind/model.py
+galgek_ukp_nomousauto_grivind/train_setup.py
+galgek_ukp_nomousauto_grivind.egg-info/PKG-INFO
+galgek_ukp_nomousauto_grivind.egg-info/SOURCES.txt
+galgek_ukp_nomousauto_grivind.egg-info/dependency_links.txt
+galgek_ukp_nomousauto_grivind.egg-info/requires.txt
+galgek_ukp_nomousauto_grivind.egg-info/top_level.txt
