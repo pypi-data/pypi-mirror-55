@@ -1,0 +1,9 @@
+mypy_boto3_codestar_notifications/__init__.py,sha256=DNTSLgRX9cNdnC0DDgP9BGI_oRdMLFae10XbDGPeTVM,144
+mypy_boto3_codestar_notifications/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_codestar_notifications/client.py,sha256=6jm47qNtr1PrEGcidEbcxSpqLdlkiG5YP0IazZU4Ro0,33207
+mypy_boto3_codestar_notifications/paginator.py,sha256=5XG8R5zs4abyv3B8qArvKnw4HSgkzfwcOrHNwITveA4,10769
+mypy_boto3_codestar_notifications/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_codestar_notifications-0.1.9.dist-info/METADATA,sha256=aevN6OEbFv0oCiw7_9T4_yws8GTubgx6x-kDwx1xQm4,1089
+mypy_boto3_codestar_notifications-0.1.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_codestar_notifications-0.1.9.dist-info/top_level.txt,sha256=CPGxQNuvN50o3S1Y3sk7v-x8pcK5Bj-8EZgjCLbChrg,34
+mypy_boto3_codestar_notifications-0.1.9.dist-info/RECORD,,
