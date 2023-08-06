@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: tay-ping
+Version: 0.0.1
+Summary: Tay的一个简单测试
+Home-page: https://gitee.com/tay3223/tmp.git
+Author: 蛋小挞
+Author-email: tay3223@qq.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# 说明
+
+这是一个Tay先生的简单测试
+
+[点击查看源码](https://gitee.com/tay3223/tmp.git)
+
