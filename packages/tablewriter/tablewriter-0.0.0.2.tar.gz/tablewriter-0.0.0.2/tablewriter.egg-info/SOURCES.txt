@@ -1,0 +1,6 @@
+README.md
+setup.py
+tablewriter.egg-info/PKG-INFO
+tablewriter.egg-info/SOURCES.txt
+tablewriter.egg-info/dependency_links.txt
+tablewriter.egg-info/top_level.txt
