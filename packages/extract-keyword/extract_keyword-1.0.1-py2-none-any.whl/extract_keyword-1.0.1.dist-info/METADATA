@@ -1,0 +1,20 @@
+Metadata-Version: 2.0
+Name: extract-keyword
+Version: 1.0.1
+Summary: Extract key words from a text
+Home-page: UNKNOWN
+Author: Pedro Silveira
+Author-email: pedro.dns@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Dist: numpy
+Requires-Dist: re
+Requires-Dist: spacy
+Requires-Dist: collections
+
+UNKNOWN
+
+
