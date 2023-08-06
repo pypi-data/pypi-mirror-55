@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: InterfaceForLabs
+Version: 0.0.1
+Summary: Simple interface for labs
+Home-page: https://github.com/EugeneBudzinskiy/InterfaceForLabs
+Author: Eugene Budzinskiy
+Author-email: eugene.unusual@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Interface For Labs
+
+This is simple library for task form discipline Programing-1. [GitHub](https://github.com/EugeneBudzinskiy/InterfaceForLabs) link. 
+
