@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: independentsoft.msg
+Version: 1.02
+Summary: Outlook .msg file format API
+Home-page: http://www.independentsoft.de
+Author: Independentsoft
+Author-email: info@independentsoft.de
+License: Other/Proprietary License
+Download-URL: http://www.independentsoft.de
+Description: Microsoft Outlook .msg file module for Python. Use this module to easy create, read, update and parse Outlook message files.
+Keywords: Outlook,msg,Outlook message format
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
