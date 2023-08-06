@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: coinsuper_api_rest_sdk
+Version: 0.0.3
+Summary: Coinsuper API REST SDK
+Home-page: https://github.com/coinsuperapi/coinsuper-api-rest-python-sdk
+Author: coinsuperapi
+Author-email: UNKNOWN
+License: Coinsuper
+Description: SDK for Coinsuper API REST endpoints
+Keywords: pip,coinsuper,exchange,api,sdk
+Platform: any
