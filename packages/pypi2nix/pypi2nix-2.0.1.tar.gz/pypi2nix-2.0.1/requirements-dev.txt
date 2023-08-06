@@ -1,0 +1,19 @@
+# linting
+black
+flake8
+flake8-debugger
+flake8-unused-arguments
+mypy
+isort
+
+# testing
+pytest
+pytest-cov
+
+# develop
+pdbpp
+
+# packaging
+twine
+
+-c constraints.txt
