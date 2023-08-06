@@ -1,0 +1,14 @@
+felixlib/__init__.py,sha256=YCCKoZx5pCengoUr4e_Zgk34hzTj2utC_E_9zGIBKRQ,20
+felixlib/__main__.pyd,sha256=AwnuohPb_703dv1Ed4-ddErTMdfqcObE_6jnvYmwzaE,34816
+felixlib/ansys.pyd,sha256=ifxRuar5KefZ0cniUGnacQcTJzT2A8DnPkuFvuGYvJc,208384
+felixlib/const.pyd,sha256=0KjZPn7bcmFJolSl6CblYKMyEvacG0xuzk3_IU5jBOE,30208
+felixlib/cython_build.pyd,sha256=683ujS6r7MTqO7PeUVFqOP9TmtZWfCwHoRFM6ezmPuM,109056
+felixlib/data_analysis.pyd,sha256=b4mXq2t9DaiT9SYhHxyFYENE3kdKtCQoXB5DauOUnC0,41984
+felixlib/flask_common.pyd,sha256=rgtrXllGLqRV7QdLcezYmMQeYMMi80tkeW8yeDts8g0,128512
+felixlib/general.pyd,sha256=AOYjbvGQcj4m68eZNNFfBBvULmICvLfuK8BE5jmd6yY,296448
+felixlib/inventor.pyd,sha256=Ulwv4LDqceCJ1hisJ1KSpDSdKx3spY6ZW0bk1q4QrsQ,143360
+felixlib/pyi_build.pyd,sha256=wKVR9-Di0lTHDJhJymumsx2OZ8UBku1QiDGTGR9Shqo,173056
+felixlib-0.0.4.dist-info/LICENSE,sha256=UUoHCQ7hLM3mVE-IrK87iwwpBy-FDdvrijMUDQ-prJw,49
+felixlib-0.0.4.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+felixlib-0.0.4.dist-info/METADATA,sha256=JdvU6QFQNa0vyuAZI5Vnbs59aiNwa-HhJS81wxcVepA,683
+felixlib-0.0.4.dist-info/RECORD,,
