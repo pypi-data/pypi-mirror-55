@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+cmake-build-debug/
+build/
+cmake-build-release
+python/docs/_build
+python/docs/_generated
+*.cobs_cache
+*.cobs_classic
+*.cobs_compact
+__pycache__
