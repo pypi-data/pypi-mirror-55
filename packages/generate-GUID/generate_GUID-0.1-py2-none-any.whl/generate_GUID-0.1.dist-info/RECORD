@@ -1,0 +1,12 @@
+generate_GUID-0.1.data/scripts/generate_GUID.py,sha256=RktcXB0YB7flpbTVDgIZkkRdouSbWSCyMzdvk5VScmA,3596
+generate_GUID-0.1.data/scripts/strip_accents.py,sha256=Z5uqXR4PXwkynkj1lQgffZ4RXljUc7yCkMxNqCIkUeQ,1065
+generate_GUID-0.1.dist-info/DESCRIPTION.rst,sha256=jnWzrDIxA35ee-giXSa2MKqmxuGqivzfjCJHyzT8zho,44
+generate_GUID-0.1.dist-info/METADATA,sha256=C9b2yVHkMZUpMEIg2-xFGR3iOb-9mUo8OdbbeCTyq50,450
+generate_GUID-0.1.dist-info/RECORD,,
+generate_GUID-0.1.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+generate_GUID-0.1.dist-info/metadata.json,sha256=KmuTEidsc_LJcnKsCBxua9CARIj6TwieaJLnFoxV3GA,565
+generate_GUID-0.1.dist-info/top_level.txt,sha256=8sobtsfpB9Btr-Roflefznazfk6Tt2BQItpS5szCb9I,5
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_GUID.py,sha256=TJdXVoCOt7XBbmxlaRkIz2oqH6JXLXLitFeIhmJyiX4,1570
+test/test_GUID2.py,sha256=XqPQKi6-Drlp2_Rmn6ByzFOwc7ybWlxaM3v1feiG7Js,2094
+test/test_GUID_Bash.py,sha256=kQPX6KmJOGlygAI1Zl0MK0wNT14wD0ewTjlEpTRN9oY,1489
