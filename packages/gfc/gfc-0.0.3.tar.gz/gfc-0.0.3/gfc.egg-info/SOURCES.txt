@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.rst
+setup.py
+gfc/GRACElib.py
+gfc/__init__.py
+gfc.egg-info/PKG-INFO
+gfc.egg-info/SOURCES.txt
+gfc.egg-info/dependency_links.txt
+gfc.egg-info/requires.txt
+gfc.egg-info/top_level.txt
+gfc/SLR/__init__.py
+gfc/rinex/__init__.py
+gfc/spp/__init__.py

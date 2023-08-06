@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: gfc
+Version: 0.0.3
+Summary: A python library for geodesy research
+Home-page: UNKNOWN
+Author: Li Zhen
+Author-email: hpulizhen@163.com
+License: UNKNOWN
+Description: gfc::A Geodesy and GNSS data processing library
+        =======================
+        gfc (Geodesy Foundation Class )
+        Description
+        =======================
+        gfc is a python library that contains some fundamental utilities and algorithms for geodetic data processing.
+        Now, it has the ability to process GNSS (Global Navigation Satellite System) and SLR (Satellite Laser Ranging) data.
+        
+        Installation
+        =======================
+        Download using pip
+        pip install gfc
+        
+        Instructions for use
+        ...
+        =======================
+        
+Keywords: GNSS SLR orbit determination positioning POD
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
