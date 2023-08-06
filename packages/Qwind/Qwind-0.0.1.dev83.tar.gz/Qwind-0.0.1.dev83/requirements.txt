@@ -1,0 +1,10 @@
+astropy
+llvmlite
+numba
+numpy
+scipy
+tqdm
+pytest
+pytest-cov
+codecov
+pandas
