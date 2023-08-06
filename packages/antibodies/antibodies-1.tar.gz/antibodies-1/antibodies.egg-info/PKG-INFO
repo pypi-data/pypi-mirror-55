@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: antibodies
+Version: 1
+Summary: Helpful Scripts for Antibody NGS Data Processing
+Home-page: https://www.github.com/CollinJ0/antibodies
+Author: CollinJ0
+License: UNKNOWN
+Description: # antibodies
+        Helpful Scripts for Antibody NGS Data Processing
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

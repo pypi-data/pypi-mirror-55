@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+antibodies/__init__.py
+antibodies/df.py
+antibodies/mango.py
+antibodies/plot.py
+antibodies.egg-info/PKG-INFO
+antibodies.egg-info/SOURCES.txt
+antibodies.egg-info/dependency_links.txt
+antibodies.egg-info/requires.txt
+antibodies.egg-info/top_level.txt
+bin/__init__.py
+bin/antibodies
