@@ -1,0 +1,42 @@
+Metadata-Version: 1.1
+Name: free-meal-inviter
+Version: 0.0.3
+Summary: Invite friends around you for a free meal.
+Home-page: https://github.com/bertucho/free_meal_inviter
+Author: Alberto Egido
+Author-email: raise.AlbertoError@gmail.com
+License: BSD
+Download-URL: https://github.com/bertucho/free_meal_inviter/tarball/0.0.3
+Description: Free meal inviter
+        ===============================
+        
+        version number: 0.0.1
+        author: Alberto Egido
+        
+        Overview
+        --------
+        
+        Invite friends around you for a free meal.
+        
+        Installation / Usage
+        --------------------
+        
+        To install use pip:
+        
+            $ pip install free_meal_inviter
+        
+        
+        Or clone the repo:
+        
+            $ git clone https://github.com/bertucho/free_meal_inviter.git
+            $ python setup.py install
+        
+        Example
+        -------
+        
+        TBD
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3
