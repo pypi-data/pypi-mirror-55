@@ -1,0 +1,11 @@
+cobs_index.cpython-34m.so,sha256=XE08qArO0OSW6zopyE3hK9AyDpOWo4XHRn9U4xZ9bFI,1310264
+cobs,sha256=KIlh2UYScKpwOxkqoEClkM9Dth-L88JvWmP5uYgKqbc,4281056
+cobs_index-0.1.1.data/scripts/cobs,sha256=6rdp1XiUYVyyf3fRvCF1vJ2AaxLA8JpR50aSECaMcNE,157
+cobs_index-0.1.1.dist-info/RECORD,,
+cobs_index-0.1.1.dist-info/top_level.txt,sha256=mp8E_a-SeKr26q2tQ26_VtTvsOPZaz2txNd3BID85tI,11
+cobs_index-0.1.1.dist-info/METADATA,sha256=dLSUxKRSfGTaYbz-N5_z37TFm1rcfvqlVDJUFfzX_1c,3726
+cobs_index-0.1.1.dist-info/WHEEL,sha256=ESNPYxsyn1zCRbcJYojqbYw9juB5zrokVxSdJBm_mI0,112
+.libscobs_index/libz-eb09ad1d.so.1.2.3,sha256=2uJu8RIWphORVNS2noiABa4wo041-h11BGDImiYQFvI,92080
+.libscobs_index/libgomp-f7e03b3e.so.1.0.0,sha256=76BVnL8zq1gHU5iuCWYO6_i6Icpp-63rCGU0xGxZdII,93080
+.libscobs/libz-eb09ad1d.so.1.2.3,sha256=2uJu8RIWphORVNS2noiABa4wo041-h11BGDImiYQFvI,92080
+.libscobs/libgomp-f7e03b3e.so.1.0.0,sha256=76BVnL8zq1gHU5iuCWYO6_i6Icpp-63rCGU0xGxZdII,93080
