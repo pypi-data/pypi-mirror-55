@@ -1,0 +1,9 @@
+certbot_dns_selectel/__init__.py,sha256=W9OeMLiop69MYFHm3oBMefDK9gDYBzcvLUN9xsyzw-Y,2639
+certbot_dns_selectel/dns_selectel.py,sha256=A9uVB-kBdtuR32HejuYTlIUeY4mP3vwf30nrfu23R7g,5815
+certbot_dns_selectel/dns_selectel_test.py,sha256=xRDpEdiJezrwVuWrgETNmE_OsP8FhJRrqIBZVtx4O34,2467
+certbot_dns_selectel-0.0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+certbot_dns_selectel-0.0.1.dist-info/METADATA,sha256=4M7fyHSHcE8Pp8l9KurCz7-WBBXpDYpF7BoDeaSI24A,1576
+certbot_dns_selectel-0.0.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+certbot_dns_selectel-0.0.1.dist-info/entry_points.txt,sha256=9SbFalWK_bn-MzO1dFaTPF_O4Sg4DD7OqKW2IeZi2EI,82
+certbot_dns_selectel-0.0.1.dist-info/top_level.txt,sha256=40fpquYSZjRmLNQySp-wbEdBRF1nVG_hqtXTc9zKLsI,21
+certbot_dns_selectel-0.0.1.dist-info/RECORD,,
