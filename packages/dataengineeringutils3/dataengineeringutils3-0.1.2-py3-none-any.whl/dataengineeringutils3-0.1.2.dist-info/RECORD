@@ -1,0 +1,9 @@
+dataengineeringutils3/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dataengineeringutils3/db.py,sha256=rGr-kAHPw-OrEBI7GwzUJWF1n6ANvxuV7uf7hxHyqjE,2317
+dataengineeringutils3/json.py,sha256=mTld9_HoOoXG7dpo7w3Nksl0yetB06p6a_7i16_W8KQ,475
+dataengineeringutils3/s3.py,sha256=x7oAukxlnw0yTPsziYP2sdYZgkqYzBPXKI7jaRRstsg,590
+dataengineeringutils3/writer.py,sha256=5kKkw3U3R9qqjFEFom6-xIE5Xc2ITO8S65XTA14fhMQ,2404
+dataengineeringutils3-0.1.2.dist-info/LICENSE,sha256=h_u639W4A0n0CyUwzA8GzkDEqVyETkMQFr4AOtuWe2E,1076
+dataengineeringutils3-0.1.2.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+dataengineeringutils3-0.1.2.dist-info/METADATA,sha256=4mu6F-VJmIF23Cn4w1PsHpAcHEFN8nws15ljvVx0oQQ,1269
+dataengineeringutils3-0.1.2.dist-info/RECORD,,
