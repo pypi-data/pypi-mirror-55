@@ -1,0 +1,10 @@
+miscutils/__init__.py,sha256=F6jk8i2OKgZwgEqmld1baipBd2jtbwngNQ_lQKiIJmc,820
+miscutils/classes.py,sha256=2c4OAV7AegNaEpwqfya79bMoNJcExEpPGv3nc-85LTA,4562
+miscutils/context.py,sha256=acuvgxAB4y0KBFRwAB0haU4POYJq0gw6AFm6Efqmcw8,4089
+miscutils/functions.py,sha256=fZFb8iVSSW1UmkAAguWC8FNauXfXcNg2Oh_dGiXCdQw,2788
+miscutils/parser.py,sha256=hJjPdAZpxG7lwbm_sq4W_T4vsUQ8Z7oP1N3YUWaypt8,4034
+pymiscutils-0.1.0.dist-info/LICENSE,sha256=WWOBfkT0IHpdj_X5ZrjsCW8i44gU3C-4v0O1FHptyg4,1086
+pymiscutils-0.1.0.dist-info/METADATA,sha256=PzaRL3eQe5GSnnlhN4baJx_F7q2YqsgVjiSAHCRqiXY,5424
+pymiscutils-0.1.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pymiscutils-0.1.0.dist-info/top_level.txt,sha256=27EwPRGvxHHtdYAe8Ilzdg3SeDdrWA9e-WUDdT11S9U,10
+pymiscutils-0.1.0.dist-info/RECORD,,
