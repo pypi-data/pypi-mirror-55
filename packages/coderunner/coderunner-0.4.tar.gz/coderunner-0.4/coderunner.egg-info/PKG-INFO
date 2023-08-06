@@ -1,0 +1,96 @@
+Metadata-Version: 2.1
+Name: coderunner
+Version: 0.4
+Summary: Judge0 API Interface written in Python
+Home-page: https://github.com/codeclassroom/CodeRunner
+Author: Bhupesh Varshey
+Author-email: varsheybhupesh@gmail.com
+License: UNKNOWN
+Project-URL: Documentation, https://coderunner.readthedocs.io/en/latest/
+Project-URL: Source Code, https://github.com/codeclassroom/CodeRunner
+Project-URL: Funding, https://www.patreon.com/bePatron?u=18082750
+Project-URL: Say Thanks!, https://github.com/codeclassroom/CodeRunner/issues/new?assignees=&labels=&template=---say-thank-you.md&title=
+Description: # CodeRunner 🏃
+        
+        > [Judge0 API](https://api.judge0.com/) Interface written in Python
+        
+        ![PyPI](https://img.shields.io/pypi/v/coderunner?color=blue)
+        [![Build Status](https://travis-ci.org/codeclassroom/CodeRunner.svg?branch=master)](https://travis-ci.org/codeclassroom/CodeRunner)
+        ![PyPI - Python Version](https://img.shields.io/pypi/pyversions/coderunner)
+        [![Documentation Status](https://readthedocs.org/projects/coderunner/badge/?version=latest)](https://coderunner.readthedocs.io/en/latest/?badge=latest)
+        [![GitHub license](https://img.shields.io/github/license/codeclassroom/CodeRunner)](https://github.com/codeclassroom/CodeRunner/blob/master/LICENSE)
+        [![GitHub issues](https://img.shields.io/github/issues/codeclassroom/CodeRunner?color=blueviolet)](https://github.com/codeclassroom/CodeRunner/issues)
+        [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-orange.svg)](http://makeapullrequest.com)
+        
+        
+        ## Usage
+        
+        - Install `coderunner`.
+        ```bash
+        pip install coderunner
+        ```
+        
+        ## Documentation
+        
+        [CodeRunner Documentation](https://coderunner.readthedocs.io/en/latest/)
+        
+        
+        ## Testing
+        
+        ##### Prerequisites
+        1. Python 3.6+
+        2. virtualenv
+        
+        1. Create virtual environment.
+        ```bash
+        virtualenv -p python3 venv && cd venv && source bin/activate
+        ```
+        2. Clone the repository.
+        ```bash
+        git https://github.com/codeclassroom/CodeRunner.git
+        ```
+        3. Install Dependencies.
+        ```bash
+        pip install -r requirements.txt
+        ```
+        4. Run tests.
+        ```bash
+        python3 tests.py
+        ```
+        5. Lint the project with
+        ```bash
+        flake8 coderunner --max-line-length=88 --ignore=F401
+        pylint coderunner --disable=bad-continuation,invalid-name,too-many-instance-attributes
+        ```
+        
+        
+        ## Author
+        
+        👥 **Bhupesh Varshney**
+        
+        - Twitter: [@bhupeshimself](https://twitter.com/bhupeshimself)
+        - DEV: [bhupesh](https://dev.to/bhupesh)
+        
+        ## 📝 License
+        
+        This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+        
+        ## 👋 Contributing
+        
+        Please read the [CONTRIBUTING](CONTRIBUTING.md) guidelines for the process of submitting pull requests to us.
+        
+Keywords: judge0 coderunner judge0-api codeclassroom
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Topic :: Education
+Classifier: Topic :: Education
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
