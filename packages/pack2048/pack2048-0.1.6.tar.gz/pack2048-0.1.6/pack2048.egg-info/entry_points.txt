@@ -1,0 +1,3 @@
+[console_scripts]
+test2048 = pack2048.test:__main__
+
