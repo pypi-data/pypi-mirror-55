@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+svety/__init__.py
+svety/hellqvist.xml
+svety/reader.py
+svety/retriever.py
+svety/tests.py
+svety.egg-info/PKG-INFO
+svety.egg-info/SOURCES.txt
+svety.egg-info/dependency_links.txt
+svety.egg-info/requires.txt
+svety.egg-info/top_level.txt
+svety.egg-info/zip-safe
