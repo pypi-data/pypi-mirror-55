@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: django-trackmodels-ritual
+Version: 0.1.1
+Summary: The trackmodels library is useful to set creation/update/delete dates on models and track by them
+Home-page: https://github.com/luismasuelli/django-trackmodels-ritual
+Author: Luis y Anita
+Author-email: luismasuelli@hotmail.com
+License: LGPL
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
