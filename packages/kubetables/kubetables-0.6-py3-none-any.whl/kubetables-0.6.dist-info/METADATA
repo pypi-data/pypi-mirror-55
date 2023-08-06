@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: kubetables
+Version: 0.6
+Summary: automatically filter dynamic pods with iptables
+Home-page: https://www.python.org/sigs/kubetables-sig/
+Author: Alex Bezpalko
+Author-email: alexbe@wix.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Description-Content-Type: text/markdown
+Requires-Dist: python-iptables
+Requires-Dist: urllib3
+Requires-Dist: kubernetes
+
+# Kubetables
+
+modify iptables for kubernetes pods
+
+listen to kubernetes events for pods with labels and add/delete their ip to/from iptables
+
+
