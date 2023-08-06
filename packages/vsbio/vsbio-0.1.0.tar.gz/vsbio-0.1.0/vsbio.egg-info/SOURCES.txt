@@ -1,0 +1,8 @@
+README.md
+setup.py
+vsbio/__init__.py
+vsbio/fastq_quality.py
+vsbio.egg-info/PKG-INFO
+vsbio.egg-info/SOURCES.txt
+vsbio.egg-info/dependency_links.txt
+vsbio.egg-info/top_level.txt
