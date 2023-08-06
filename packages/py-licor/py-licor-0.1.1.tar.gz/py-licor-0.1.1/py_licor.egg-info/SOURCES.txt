@@ -1,0 +1,9 @@
+README.md
+setup.py
+licor/__init__.py
+licor/io.py
+py_licor.egg-info/PKG-INFO
+py_licor.egg-info/SOURCES.txt
+py_licor.egg-info/dependency_links.txt
+py_licor.egg-info/requires.txt
+py_licor.egg-info/top_level.txt
