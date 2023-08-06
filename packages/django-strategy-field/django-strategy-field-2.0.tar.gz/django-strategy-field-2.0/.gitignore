@@ -1,0 +1,12 @@
+.DS_Store
+*.egg-info
+*.sqlite
+.cache
+.coverage
+.idea
+.tox
+/dist
+/manage.py
+/build
+/*.log
+codecov.yml
