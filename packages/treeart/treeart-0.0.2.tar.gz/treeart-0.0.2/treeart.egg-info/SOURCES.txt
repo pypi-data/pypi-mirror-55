@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+treeart/__init__.py
+treeart/treeart.py
+treeart.egg-info/PKG-INFO
+treeart.egg-info/SOURCES.txt
+treeart.egg-info/dependency_links.txt
+treeart.egg-info/top_level.txt
