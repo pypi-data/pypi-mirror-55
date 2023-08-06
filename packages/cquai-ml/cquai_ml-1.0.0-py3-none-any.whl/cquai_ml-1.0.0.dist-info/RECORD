@@ -1,0 +1,13 @@
+cquai_ml/DatasetSpace.py,sha256=M3gnwfw0YN7zD3o6y1bT9mectiBxHl5RDD5XFBExYZc,5797
+cquai_ml/DecisionTreeClassifier.py,sha256=Mt5zUhuBNcee8UUekFeupw_C4_UQw-9c4rnK_PNZq1c,5083
+cquai_ml/DecisionTreeRegressor.py,sha256=OhJca3X41GT1Pe5Sdkpo3g-_G3KjAGVaA-_Zih3iwB8,3763
+cquai_ml/KNeighborsClassifier.py,sha256=XVph8F5vVQeHUpiTIHVor5hYPglk2vHav9GxzlWwl44,3355
+cquai_ml/LinearDiscriminantAnalysis.py,sha256=_g-y956UzVjLEw_Rt983TyIhQlv348iGIp2vbfFtcIQ,1205
+cquai_ml/LinearRegression.py,sha256=3TSHNNdIrUEELHaFNO-AaMVqqtlyY5SZbxCgcSlkBOs,1443
+cquai_ml/LogisticRegression.py,sha256=SwF-wl3nAZIOSkQKECoUzk9mDFPIeo9lXcdFTv2hLks,1648
+cquai_ml/UnionHypothesisSpace.py,sha256=iSNohpUcY0VFu3Dq9peXu73GavpzGBpsIFAOm-JHDXM,5359
+cquai_ml/__init__.py,sha256=rwv9ZDJ5LiQgKRMeadTw1D8_XigFLJpFrYk2FPeincM,429
+cquai_ml-1.0.0.dist-info/METADATA,sha256=idUrO7UX4n5Zmea16b7homGTr67B9SnNt6Jjo_aolHw,1432
+cquai_ml-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+cquai_ml-1.0.0.dist-info/top_level.txt,sha256=oZL5A5ZnenOzUw5RiHrJFyR7EirNyKpUlzNXKie1eMM,9
+cquai_ml-1.0.0.dist-info/RECORD,,
