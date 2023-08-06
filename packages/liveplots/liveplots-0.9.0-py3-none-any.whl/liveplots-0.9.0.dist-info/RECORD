@@ -1,0 +1,12 @@
+liveplots/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+liveplots/filemonitor.py,sha256=dr21yPGlHt3SkGQzC2WpUTzYSdde291dE0_CcM2qb08,3463
+liveplots/liveplot.py,sha256=j5Q2x3zGSIIixh4rfRQzXhyFi805CVJ_gxKKJYDErw4,1072
+liveplots/xmlrpcserver.py,sha256=9swvt0XDLkhmLu-3ruLubMgKBm4NOhzOEaVVjkAG7PU,13175
+liveplots/tests/__init__.py,sha256=4IciXEvQZzu9V0Athf0HoKFbpNo7601cw4NfkFbLTEY,24
+liveplots/tests/test_filemonitor.py,sha256=3-n8y6AgXyzM_tP_8442Tbhf_nQ-55vdRBR1V_uiK7A,2161
+liveplots/tests/test_xmlrpcserver.py,sha256=R_-YsZnUXLau7eiKhfWMXNFk8R46IlhBUBQU-RmIyk4,2982
+liveplots-0.9.0.dist-info/METADATA,sha256=YNgdNCsaOzNnXaaVHFu-5BK0fkG6gwvH1k2Eqaqo_NU,1028
+liveplots-0.9.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+liveplots-0.9.0.dist-info/top_level.txt,sha256=SXNRgNEyA-72ZS1J8a8u2IA42W7wxLbkRy5WVBG3WlI,10
+liveplots-0.9.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+liveplots-0.9.0.dist-info/RECORD,,
