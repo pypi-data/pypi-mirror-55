@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: cetem_publico
+Version: 0.0.8
+Summary: Python WRAPPER For CETEM Publico Corpus
+Home-page: https://github.com/andrefs/cetem_publico
+Author: André Santos
+Author-email: afs@inesctec.pt
+License: UNKNOWN
+Project-URL: Bug Reports, https://github.com/andrefs/cetem_publico/issues
+Project-URL: Source, https://github.com/andrefs/cetem_publico/
+Description: # cetem_publico
+        
+        Python WRAPPER For CETEM Publico Corpus
+        
+Platform: UNKNOWN
