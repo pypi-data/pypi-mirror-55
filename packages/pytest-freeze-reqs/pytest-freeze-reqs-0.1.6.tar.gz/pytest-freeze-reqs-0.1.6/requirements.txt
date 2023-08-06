@@ -1,0 +1,4 @@
+# development requirements
+pytest==5.2.2
+black==19.10b0
+requirements-parser==0.2.0
