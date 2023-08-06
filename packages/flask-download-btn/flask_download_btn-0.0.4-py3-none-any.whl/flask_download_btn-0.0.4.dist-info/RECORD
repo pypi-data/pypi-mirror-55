@@ -1,0 +1,10 @@
+flask_download_btn/__init__.py,sha256=ayK_HAuikxdN4T9ZwT3bqWPWSbqzsrcFXx-b7XaE9Jg,4276
+flask_download_btn/download_btn_mixin.py,sha256=JR2sMVaR2ne1Orw_ZKp4l-PbvSu13aRhrpjrXDop7gE,13327
+flask_download_btn/templates/download_btn/button.html,sha256=q9i2D9bzAqpsIKXtZPEqN3NrfvlMjj8ETT28aujficE,134
+flask_download_btn/templates/download_btn/progress.html,sha256=7CKXmlgyH46P3kegAUN6uRbquE3cRBmTmbQMNMmTK4k,536
+flask_download_btn/templates/download_btn/script.html,sha256=PxnBjDQ1nZOBepG8I4NY2H_yixcJkCaMOb2CvJs5m_I,4043
+flask_download_btn-0.0.4.dist-info/LICENSE,sha256=ku8gnW4fwJ_zEBYX_moLjS01COWeQITvrJrVDIhFiXc,1062
+flask_download_btn-0.0.4.dist-info/METADATA,sha256=MYPkBmFPMqBc8znE3qasB0sXRarbxPrs8ZdZ5zvXRhQ,2846
+flask_download_btn-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+flask_download_btn-0.0.4.dist-info/top_level.txt,sha256=yuubfVx8-2EGfotiRBE_dXBYVFnWUvuocbDqBXst_Zo,19
+flask_download_btn-0.0.4.dist-info/RECORD,,
