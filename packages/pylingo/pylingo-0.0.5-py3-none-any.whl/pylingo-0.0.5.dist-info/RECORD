@@ -1,0 +1,12 @@
+pylingo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pylingo/__main__.py,sha256=1T23zukHbtJUNrVL19MX6LniFMTd_6dKr77srCeYrhY,1383
+pylingo/pyVisitor.py,sha256=GRxNWarADefWc4QSBAk2nld8zwhQmH2777iwN6Y0lgw,2112
+pylingo/pylingoLexer.py,sha256=Ixu_VWgOFDFQcUntnr2G3UoY811M1JWpK_Jhcj4Smhw,13519
+pylingo/pylingoListener.py,sha256=_DlKEIQ7TN5Qivt29fLLVaXIqdEtfYSQJi2MHXpCb8s,3869
+pylingo/pylingoParser.py,sha256=h1EXUgU_2CIJCWPh28K2N7Rfd9z00vXURgSAH8ICG_w,52224
+pylingo/pylingoVisitor.py,sha256=grjOgUPUTVJ_hIA8mciAbVbD7KweYeOUGIXAzR8_t2c,2496
+pylingo-0.0.5.dist-info/LICENSE,sha256=S3Qr0VybqS41qlge1UBEjI3vkjYB-F27Xa966bwjAJI,1109
+pylingo-0.0.5.dist-info/METADATA,sha256=BS_mLCioSoetMrgvrM0f1bc_xsxFrq2JGR8Q8aXZK2I,550
+pylingo-0.0.5.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pylingo-0.0.5.dist-info/top_level.txt,sha256=aDT-AmM71JemZAKxBaCYpZdMYQwhfUQNptegE3kwih0,8
+pylingo-0.0.5.dist-info/RECORD,,
