@@ -1,0 +1,9 @@
+xinspect/__init__.py,sha256=Vn_dsD50o22Kay1klYPzEnIkv6v247AUeLQgQ05tIaI,340
+xinspect/auto_argparse.py,sha256=l7P7NNXqAilPtL4LdmH3VC7kl1nEgXbgX2JlgcpiKzw,2538
+xinspect/autogen.py,sha256=jMVdRqVykMBDmH3ErdCfmOA9RFhgq2XCgffzcoCydEQ,7697
+xinspect/dynamic_kwargs.py,sha256=N8YUCptnv7gJpkoZwpWMUIxk4mVnM6Vb6R-G5KuCiKg,20596
+xinspect/static_kwargs.py,sha256=hF7g6nASw5on-Y7h8ngLP3vbsUpgXIne5ZkOJrPZG0I,8314
+xinspect-0.2.0.dist-info/METADATA,sha256=VRlZ-GQtfInvcVRzlCnYNRQzJpZ766t6mXvQxinTrJ4,2779
+xinspect-0.2.0.dist-info/RECORD,,
+xinspect-0.2.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+xinspect-0.2.0.dist-info/top_level.txt,sha256=66HAgTEmc7beQK-MGaKIxEkQpSZe61lCxJIjcl3qQig,9
