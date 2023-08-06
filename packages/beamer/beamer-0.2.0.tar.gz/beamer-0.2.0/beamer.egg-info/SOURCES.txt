@@ -1,0 +1,8 @@
+README.md
+beamer.py
+setup.py
+beamer.egg-info/PKG-INFO
+beamer.egg-info/SOURCES.txt
+beamer.egg-info/dependency_links.txt
+beamer.egg-info/entry_points.txt
+beamer.egg-info/top_level.txt
