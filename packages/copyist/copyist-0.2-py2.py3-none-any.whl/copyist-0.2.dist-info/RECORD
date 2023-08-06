@@ -1,0 +1,11 @@
+copyist/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+copyist/cli.py,sha256=i-mJkqGXWZ91x6Xveh5MG3Gxzv3DUNgZj9FbWOyIHUw,2532
+copyist/exceptions.py,sha256=WU0A3J_583BfHdfW4BQ4GtytRcxK-Kwrm3xZFMHP8eU,153
+copyist/helpers.py,sha256=eqGqw5ZnNR5FnjkjSK7q4Jy-bKRwFO6-EdLwGwcL6AE,731
+copyist/sync.py,sha256=Q2_7AElFChiE-CdTZO2FZnl1lPy1ZK7qDxnf-mN-U_w,2413
+copyist-0.2.dist-info/LICENSE,sha256=52oO_lY-jOx2tWPkLjWtBHpX5M-yZiR5y21s-O56qLw,1068
+copyist-0.2.dist-info/METADATA,sha256=Qsi7c4y9AcyHe5pImhRYJoDe6EiHn1HzTEQ3hLvSUmw,2897
+copyist-0.2.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+copyist-0.2.dist-info/entry_points.txt,sha256=vfa1DK41axGxqtoTzyDYjFjoUtiorAuvXn50Y4d1jJ4,46
+copyist-0.2.dist-info/top_level.txt,sha256=OexOx1tT4rnMlzVJH9UI2chGFWYNfnW1eaqd6rBJg2c,8
+copyist-0.2.dist-info/RECORD,,
