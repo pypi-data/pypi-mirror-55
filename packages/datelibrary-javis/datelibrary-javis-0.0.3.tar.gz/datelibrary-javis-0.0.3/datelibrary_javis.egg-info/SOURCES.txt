@@ -1,0 +1,8 @@
+README.md
+setup.py
+datelibrary/__init__.py
+datelibrary/dates.py
+datelibrary_javis.egg-info/PKG-INFO
+datelibrary_javis.egg-info/SOURCES.txt
+datelibrary_javis.egg-info/dependency_links.txt
+datelibrary_javis.egg-info/top_level.txt
