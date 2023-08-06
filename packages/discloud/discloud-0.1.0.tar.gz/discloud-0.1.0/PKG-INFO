@@ -1,0 +1,65 @@
+Metadata-Version: 2.1
+Name: discloud
+Version: 0.1.0
+Summary: Esse módulo Python funciona apenas no Linux, e foi criado exclusivamente para atender os usuários da discloudbot.com
+Home-page: https://github.com/discloud/python-discloud-status
+Author: Algueem
+License: MIT
+Description: ## InformaÃ§Ãµes 
+        
+        O limite de memÃ³ria definidos nos contÃªiners Ã© imposto via cgroups, e a maioria das ferramentas Linux que fornecem mÃ©tricas de recursos do sistema foram criadas antes mesmo da existÃªncia de cgroups (por exemplo: free ou top). 
+        
+        
+        Eles costumam ler mÃ©tricas de memÃ³ria do procsistema de arquivos: `/proc/meminfo`, `/proc/vmstat`, `/proc/PID/smaps` e outros.
+        Isso significa que eles nÃ£o tÃªm consciÃªncia de cgroup . Eles sempre exibirÃ£o os nÃºmeros de memÃ³ria do sistema host (mÃ¡quina fÃ­sica ou virtual) como um todo, que Ã© inÃºtil para os contÃªineres modernos do Linux.
+        
+        Esse mÃ³dulo Python funciona apenas no linux, e foi criado exclusivamente para atender os usuÃ¡rios da [discloudbot.com](https://discloudbot.com)
+        
+        As informaÃ§Ãµes fornecidas pelo modulo sÃ£o geradas pelo [cgroup](https://www.kernel.org/doc/Documentation/cgroup-v1/) no caminho `/sys/fs/cgroup/`
+        
+        
+        ## InstalaÃ§Ã£o
+        
+        ```
+        pip install discloud-status
+        ```
+        
+        ## Forma de uso Python 3.6+
+        
+        ```python
+        import discloud
+        
+        # retorna o uso/total de RAM
+        r = discloud.ram()
+        print(r) # 100/1024MB
+        
+        # dados do uso de RAM
+        ur = discloud.using_ram()
+        print(ur) # 100MB
+        
+        # dados do total de RAM disponÃ­vel
+        tr = discloud.total_ram()
+        print(tr) # 1GB
+        
+        ```
+        
+        ## PossÃ­veis Erros
+        Se um dos arquivos estiver vazio, ele retornarÃ¡ um erro como este:
+        `Dados nÃ£o encontrados`
+        
+        
+        ## LICENSE
+        Este projeto estÃ¡ licenciado sob a LicenÃ§a Apache V2. Consulte [LICENSE](LICENSE) para obter mais informaÃ§Ãµes.
+        
+        
+        
+Keywords: discloud
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
