@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ua-ilab-tools
+Version: 1.0.0
+Summary: Tools that interact with Agilent's iLab REST architecture.
+Home-page: https://github.com/UACoreFacilitiesIT/UA-Ilab-Tools
+Author: Stephen Stern, Rafael Lopez, Etienne Thompson
+Author-email: sterns1@email.arizona.edu
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# ua_ilab_tools
+
+
