@@ -1,0 +1,9 @@
+nds2utils/__init__.py,sha256=halCDSSUlshWixdHAgBEHvSrNci1mn3BAk9Klo1Sr3w,151
+nds2utils/dataUtils.py,sha256=n-6j6RzwvIfhIfGvj5kJtBCdglbvOTgSRTm1-iIAsoM,52675
+nds2utils/plotUtils.py,sha256=3xUxClSJvyvkdN5L5DQ1LXFmshaQBlJoxebqP7IE670,43960
+nds2utils/version.py,sha256=81L5hx2AOjjBveXCz4rHc2k7t1T62tCrl806DmVHE2E,20
+nds2utils-0.0.9.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+nds2utils-0.0.9.dist-info/METADATA,sha256=LnlGNryot6Xty5vbnd5G9HgycLR4cajjuBVNTPhXJjo,8095
+nds2utils-0.0.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+nds2utils-0.0.9.dist-info/top_level.txt,sha256=IbvRdyU4pFzD67v0zDNImWIpTAT6_8voTVEuwyW7Ax0,10
+nds2utils-0.0.9.dist-info/RECORD,,
