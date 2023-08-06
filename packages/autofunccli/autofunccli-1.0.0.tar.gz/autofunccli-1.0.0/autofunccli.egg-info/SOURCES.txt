@@ -1,0 +1,6 @@
+README.md
+setup.py
+autofunccli.egg-info/PKG-INFO
+autofunccli.egg-info/SOURCES.txt
+autofunccli.egg-info/dependency_links.txt
+autofunccli.egg-info/top_level.txt
