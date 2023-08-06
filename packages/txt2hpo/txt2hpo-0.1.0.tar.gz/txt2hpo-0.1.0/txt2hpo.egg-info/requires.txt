@@ -1,0 +1,5 @@
+phenopy
+pandas
+nltk
+spacy
+networkx
