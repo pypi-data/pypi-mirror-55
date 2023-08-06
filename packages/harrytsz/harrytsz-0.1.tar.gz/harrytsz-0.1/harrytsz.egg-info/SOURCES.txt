@@ -1,0 +1,8 @@
+setup.py
+harrytsz/__init__.py
+harrytsz/run.py
+harrytsz.egg-info/PKG-INFO
+harrytsz.egg-info/SOURCES.txt
+harrytsz.egg-info/dependency_links.txt
+harrytsz.egg-info/not-zip-safe
+harrytsz.egg-info/top_level.txt
