@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pydiscotools
+Version: 0.1.3
+Summary: A suite of python tools to help with Disco
+Home-page: https://github.com/Wundr-Disco/pydiscotools
+Author: Daniel Carrera
+Author-email: daniel.r.carrera@outlook.com
+License: UNKNOWN
+Description: # pydiscotools
+        
+        pydiscotools is a set of tools to support Disco
+        
+        | OS      | Tested             |
+        | ------- | ------------------ |
+        | Windows | :heavy_check_mark: |
+        | MacOs   | :x:                |
+        | Linux   | :x:                |
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown

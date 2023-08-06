@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pydiscotools/__init__.py
+pydiscotools/tfrecords_creator.py
+pydiscotools.egg-info/PKG-INFO
+pydiscotools.egg-info/SOURCES.txt
+pydiscotools.egg-info/dependency_links.txt
+pydiscotools.egg-info/requires.txt
+pydiscotools.egg-info/top_level.txt
