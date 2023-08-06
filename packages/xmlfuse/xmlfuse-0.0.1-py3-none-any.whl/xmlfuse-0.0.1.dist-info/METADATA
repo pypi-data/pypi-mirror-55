@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: xmlfuse
+Version: 0.0.1
+Summary: Fuses two XML markups together
+Home-page: https://github.com/innodatalabs/xmlfuse
+Author: Mike Kroutikov
+Author-email: mkroutikov@innodata.com
+License: MIT
+Keywords: lxml xml merge fuse
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: lxml
+Requires-Dist: lxmlx
+
+UNKNOWN
+
+
