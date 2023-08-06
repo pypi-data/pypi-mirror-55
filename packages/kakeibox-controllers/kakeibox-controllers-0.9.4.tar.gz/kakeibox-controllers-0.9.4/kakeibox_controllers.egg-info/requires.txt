@@ -1,0 +1,3 @@
+kakeibox-core
+kakeibox-serializer-json
+kakeibox-presenter-json
