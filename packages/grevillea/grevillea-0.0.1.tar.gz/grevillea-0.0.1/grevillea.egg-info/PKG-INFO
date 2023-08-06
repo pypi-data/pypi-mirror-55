@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: grevillea
+Version: 0.0.1
+Summary: Google Cloud Functions support for ASGI
+Home-page: https://github.com/erm/grevillea
+Author: Jordan Eremieff
+Author-email: jordan@eremieff.com
+License: MIT
+Description: # grevillea
+        
+        ***Work in Progress***
+        
+        Google Cloud Functions support for ASGI
+        
+        ## Requirements
+        
+        Python 3.7
+        
+        ## Installation
+        
+        ```shell
+        pip3 install grevillea
+        ```
+        
+        ## Example
+        
+        ```python3
+        from grevillea import Grevillea
+        
+        async def app(scope, receive, send):
+            await send(
+                {
+                    "type": "http.response.start",
+                    "status": 200,
+                    "headers": [[b"content-type", b"text/plain; charset=utf-8"]],
+                }
+            )
+            await send({"type": "http.response.body", "body": b"Hello, world!"})
+        
+        
+        handler = Grevillea(app)
+        ```
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: ~=3.7
+Description-Content-Type: text/markdown
