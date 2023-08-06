@@ -1,0 +1,9 @@
+addext/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+addext/addext.py,sha256=Qb-GTOjYfDgbZvh_OigBE6M2PzcxuF6jveJimHxCuTU,6565
+addext/pronom_xml_to_json.py,sha256=HOKjnGWs9IOgJ-zLsAgZqk24h4W1mGKM0eXtrsAwM8k,2774
+addext-2.0.0.data/scripts/addext.py,sha256=Qmgdn2MGRSD2fsm34TKFI39WAN0nrRDUVKd_oNsJoms,6551
+addext-2.0.0.dist-info/LICENSE,sha256=aLDc2bVU89ZfLEinCI9Zc8bnekxGrPodZSNTd6jg22w,1066
+addext-2.0.0.dist-info/METADATA,sha256=D5zGMVd1CmFtTi3LvvyTr8bfYW-820WlT4Ng9IqfD_Q,974
+addext-2.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+addext-2.0.0.dist-info/top_level.txt,sha256=CH2h0qvq65B5qwrxeibGa3bek1r11k2amaVV6jZbAr8,7
+addext-2.0.0.dist-info/RECORD,,
