@@ -1,0 +1,6 @@
+jsii~=0.20.3
+publication>=0.0.3
+aws-cdk.aws-ec2>=1.16.1,~=1.16
+aws-cdk.aws-logs>=1.16.1,~=1.16
+aws-cdk.core>=1.16.1,~=1.16
+aws-cdk.cx-api>=1.16.1,~=1.16
