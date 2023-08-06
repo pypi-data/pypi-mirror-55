@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: opentelemetry-azure-monitor-exporter
+Version: 0.1a0
+Summary: Azure Monitor integration for OpenTelemetry
+Home-page: https://github.com/microsoft/opentelemetry-exporters-python
+Author: Microsoft
+Author-email: appinsightssdk@microsoft.com
+License: MIT
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.4
+Description-Content-Type: text/x-rst
+Requires-Dist: opentelemetry-api (>=0.2a.0)
+Requires-Dist: opentelemetry-sdk (>=0.2a.0)
+
+OpenTelemetry Azure Monitor Exporters
+=====================================
+
+This library is the home of the Azure Monitor Exporters which is an integration for OpenTelemetry.
+
+Installation
+------------
+
+::
+
+    pip install opentelemetry-azure-monitor-exporter
+
+References
+----------
+
+* `Azure Monitor <https://docs.microsoft.com/azure/azure-monitor/>`_
+* `OpenTelemetry Project <https://opentelemetry.io/>`_
+* `OpenTelemetry Python Client <https://github.com/open-telemetry/opentelemetry-python>`_
+
+
+
