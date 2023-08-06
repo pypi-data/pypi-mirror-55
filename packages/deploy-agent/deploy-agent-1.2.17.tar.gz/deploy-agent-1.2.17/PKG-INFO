@@ -1,0 +1,15 @@
+Metadata-Version: 1.0
+Name: deploy-agent
+Version: 1.2.17
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Pinterest
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: Deploy-agent is a python script runs on every host and execute deploy scripts.
+        See https://github.com/pinterest/teletraan/wiki for more details.
+        
+        To run unit tests
+        > tox
+        
+Platform: UNKNOWN
