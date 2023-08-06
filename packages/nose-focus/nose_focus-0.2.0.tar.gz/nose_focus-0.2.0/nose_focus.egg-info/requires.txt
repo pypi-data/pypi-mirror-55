@@ -1,0 +1,5 @@
+
+[tests]
+nose
+pytest==5.2.2
+noseOfYeti==1.9.1
