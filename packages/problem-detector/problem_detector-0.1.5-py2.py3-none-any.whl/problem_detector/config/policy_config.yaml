@@ -1,0 +1,9 @@
+Moving:
+  message: false
+  log: false
+Pause:
+  message: false
+  log: true
+FixMe:
+  message: true
+  log: true
