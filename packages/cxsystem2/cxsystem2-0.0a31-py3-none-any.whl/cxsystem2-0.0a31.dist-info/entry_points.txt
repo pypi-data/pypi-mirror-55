@@ -1,0 +1,4 @@
+[console_scripts]
+cxconfig = cxsystem2.cmd.cxconfig_cmd:main
+cxsystem2 = cxsystem2.cmd.cxsystem_cmd:main
+
