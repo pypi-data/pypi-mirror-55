@@ -1,0 +1,10 @@
+clickshot/__init__.py,sha256=kT9ekaucYu7m2j9P82B9dFkkBsngjJC-tU4mDGQ94R8,265
+clickshot/config.py,sha256=yYfDZDyKkQ8-JKkPnLw9BrATGNVpqF9rDTbCARDnZ78,339
+clickshot/element.py,sha256=gOVHd6Cq8E3HYKfnmDcfvmP8ZUD2WdOFjsVAFy95h00,5314
+clickshot/locater.py,sha256=rNqMg_5e-WckY39nSFQI3qGK87-ak9c8GocZXDNSVSw,880
+clickshot/matchers.py,sha256=aVPQFwRpCHUWT5SKZspghWlTp8m0CdXigTPpu2gODE0,818
+clickshot/region.py,sha256=3zGNPHR2wsnLH-BKh87EuSaBH8b7cHSkPcUMsLB7QUs,965
+clickshot/screenshot.py,sha256=1u2c3S4mqlZEct0IccS_4IIemcpa_b2cnGOgY0xrUpU,811
+clickshot-0.2.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+clickshot-0.2.0.dist-info/METADATA,sha256=i4Qo8ll--bAyKiedc36ZuB94ZP1joA3h89z88bLo1U8,1861
+clickshot-0.2.0.dist-info/RECORD,,
