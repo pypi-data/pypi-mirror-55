@@ -1,0 +1,87 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <body>
+        {{ js|indent(4)|safe }}
+        {{ css|indent(4)|safe }}
+        {{ script|safe }}
+        {{ filt_script|safe }}
+
+        <h1>Limb Darkening Calculator</h1>
+
+        <div class=metanav>
+            <p>
+            
+            The Limb Darkening calculates limb-darkening coefficients for a specified stellar model, plotting results versus intensity ratio and wavelength. It uses high
+            spectral resolution stellar atmospheric models, which are a neccesisty given JWST's expected precision. 
+            </p>
+
+            <hr class="col-md-12">
+            <div class='form-group'>
+                <h3>Input</h3>
+                <br>
+                <div class='col-md-5'>
+                    <table class='table'>
+                        <tr>
+                            <td width='30%'>Teff</td>
+                            <td width='70%'>{{ form.teff.data }}</td>
+                        </tr>
+                        <tr>
+                            <td>log(g)</td>
+                            <td>{{ form.logg.data }}</td>
+                        </tr>
+                        <tr>
+                            <td>Fe/H</td>
+                            <td>{{ form.feh.data }}</td>
+                        </tr>
+                        <tr>
+                            <td>Bandpass</td>
+                            <td>{{ form.bandpass.data }}</td>
+                        </tr>
+                        <tr>
+                            <td>Profiles</td>
+                            <td>
+                                {% for prof in form.profiles.data %}
+                                    {{ prof }}<br>
+                                {% endfor %}
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Models</td>
+                            <td>{{ form.modeldir.data }}</td>
+                        </tr>
+                    </table>
+                </div>
+
+                <div class='col-md-5'>
+                    {{filt_plot|safe}}
+                </div>
+            </div>
+            <div style='clear:both;margin:40px 0px'></div>
+
+            <hr class="col-md-12">
+            <div class='form-group'>
+                <h3>Result</h3>
+                <br>
+                {{ plot|safe }}
+                <div style='clear:both;margin:40px 0px'></div>
+            </div>
+
+            <br>
+            <form id='exportform' method='post' action='download' >
+                <div style='display:none;'><input name='file_as_string' type='text' value="{{file_as_string|safe}}"></div>
+                <input class="btn" type='submit' value='Download Coefficient Tables' />
+            </form>
+
+            <br>
+            {% for tab in table %}
+                {{ tab|safe }}
+            <br>
+            {% endfor %}
+
+        </div>
+        
+    </body>
+
+{% endblock %}
