@@ -1,0 +1,8 @@
+README.txt
+setup.py
+HermesNetwork/__init__.py
+HermesNetwork/core.py
+HermesNetwork_gabriel_oliveira.egg-info/PKG-INFO
+HermesNetwork_gabriel_oliveira.egg-info/SOURCES.txt
+HermesNetwork_gabriel_oliveira.egg-info/dependency_links.txt
+HermesNetwork_gabriel_oliveira.egg-info/top_level.txt
