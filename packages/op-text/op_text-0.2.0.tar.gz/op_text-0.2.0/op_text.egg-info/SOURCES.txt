@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+op_text/__init__.py
+op_text/models.py
+op_text/processing.py
+op_text/utils.py
+op_text.egg-info/PKG-INFO
+op_text.egg-info/SOURCES.txt
+op_text.egg-info/dependency_links.txt
+op_text.egg-info/requires.txt
+op_text.egg-info/top_level.txt
