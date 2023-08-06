@@ -1,0 +1,13 @@
+numpy
+tables
+scipy
+pandas
+tensorflow
+scikit-learn
+scikit-image
+librosa
+datetime_glob
+matplotlib
+tqdm
+pint
+psutil
