@@ -1,0 +1,13 @@
+platops-0.0.3.data/scripts/__args__.py,sha256=2UMk8p_HXGgmV5CCBN-1lme8JoeAlrExFugqA_vh8fc,1285
+platops-0.0.3.data/scripts/__files__.py,sha256=5870HhIHQZWuVSklNfNouR0WapbgNnUgLGkoAk2nKAk,336
+platops-0.0.3.data/scripts/__help__.py,sha256=A3OrzKAgQud7V2huCivOqUItTCGfbpCUa19sqep_MFI,1390
+platops-0.0.3.data/scripts/__main__.py,sha256=S_-M40fo3M-pCK1XaitaqMUzKJMmCusYA96naGyVnbc,2948
+platops-0.0.3.data/scripts/__requests__.py,sha256=X8Syyrg_TeTXIA6UMkR_CFIVn9XqYGMqItYMHAz38FA,1734
+platops-0.0.3.data/scripts/__responses__.py,sha256=8nBfIZeXjIZdXLIwZkj2quwY2v1wrqK3ETo4QgQHozQ,857
+platops-0.0.3.data/scripts/agent.py,sha256=89CIBVKGL1z-6IJz0iURaPOcOIlqlM8Z0kNWEAjiEyU,8727
+platops-0.0.3.data/scripts/list.py,sha256=lFSX6O4pHESuVL06sybEoH5ZLx1KJoRUHih_nF4qYEo,1038
+platops-0.0.3.data/scripts/server.py,sha256=9KM-IpKOPuLnLTrUABAfpkBUD-fX4q7GTVfN5BiwqMo,3572
+platops-0.0.3.dist-info/METADATA,sha256=i9KDsmwYJQmmkM2wI2KELfJtNNNt3qOR7GLUKdFTAos,415
+platops-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+platops-0.0.3.dist-info/top_level.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+platops-0.0.3.dist-info/RECORD,,
