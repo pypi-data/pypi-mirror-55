@@ -1,0 +1,9 @@
+mypy_boto3_kafka/__init__.py,sha256=oaKsJFsJOTqi_0wq50Uibv-aZG3lE96C0RTJ84YxxEw,110
+mypy_boto3_kafka/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_kafka/client.py,sha256=5YNBIrF592QaHBrAcv6sIiFbghIJYNbq2roUNSfiqpw,74018
+mypy_boto3_kafka/paginator.py,sha256=JorBqCqhidS7oYst4RbG11BKuaKyroK3NmNCjyZ5UQY,29813
+mypy_boto3_kafka/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_kafka-0.1.9.dist-info/METADATA,sha256=nLgb0mrbtyuUzWc06QBDnkspmrS_79xlIvRceGbr_sA,1055
+mypy_boto3_kafka-0.1.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_kafka-0.1.9.dist-info/top_level.txt,sha256=QVBNvIDA1mat1OG-JcgEgufAUvI5E1oUVG-isUQaDb0,17
+mypy_boto3_kafka-0.1.9.dist-info/RECORD,,
