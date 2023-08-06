@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: belvo-python
+Version: 0.1.0
+Summary: Belvo Python SDK
+Home-page: https://github.com/belvo-finance/belvo-python
+Author: Belvo Finance, S.L.
+Author-email: hello@belvo.co
+License: UNKNOWN
+Download-URL: https://github.com/belvo-finance/belvo-python/tarball/master
+Keywords: api,belvo,sdk,finances
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Requires-Python: >=3.6, <4
+Description-Content-Type: text/markdown
+Requires-Dist: requests (~=2.22)
+
+UNKNOWN
+
+
