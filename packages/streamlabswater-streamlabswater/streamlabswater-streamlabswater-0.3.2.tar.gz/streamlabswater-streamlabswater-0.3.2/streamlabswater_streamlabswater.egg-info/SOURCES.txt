@@ -1,0 +1,9 @@
+README.md
+setup.py
+streamlabswater/__init__.py
+streamlabswater/stream.py
+streamlabswater_streamlabswater.egg-info/PKG-INFO
+streamlabswater_streamlabswater.egg-info/SOURCES.txt
+streamlabswater_streamlabswater.egg-info/dependency_links.txt
+streamlabswater_streamlabswater.egg-info/requires.txt
+streamlabswater_streamlabswater.egg-info/top_level.txt
