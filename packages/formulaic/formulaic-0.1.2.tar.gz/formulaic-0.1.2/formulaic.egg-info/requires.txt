@@ -1,0 +1,14 @@
+astor
+interface_meta
+pandas
+scipy
+wrapt
+
+[arrow]
+pyarrow
+
+[test]
+bandit
+flake8
+pytest
+pytest-cov
