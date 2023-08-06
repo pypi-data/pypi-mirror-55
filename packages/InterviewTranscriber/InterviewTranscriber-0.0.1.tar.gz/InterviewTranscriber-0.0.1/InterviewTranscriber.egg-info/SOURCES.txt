@@ -1,0 +1,14 @@
+README.md
+setup.py
+InterviewTranscriber.egg-info/PKG-INFO
+InterviewTranscriber.egg-info/SOURCES.txt
+InterviewTranscriber.egg-info/dependency_links.txt
+InterviewTranscriber.egg-info/requires.txt
+InterviewTranscriber.egg-info/top_level.txt
+TestCases/__init__.py
+TestCases/test_Transcriber.py
+Transcriber/__init__.py
+Transcriber/Google/Base.py
+Transcriber/Google/Storage.py
+Transcriber/Google/Transcriber.py
+Transcriber/Google/__init__.py
