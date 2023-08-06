@@ -1,0 +1,9 @@
+README.md
+setup.py
+nginx2f5/__init__.py
+nginx2f5/nginx2f5.py
+nginx2f5.egg-info/PKG-INFO
+nginx2f5.egg-info/SOURCES.txt
+nginx2f5.egg-info/dependency_links.txt
+nginx2f5.egg-info/requires.txt
+nginx2f5.egg-info/top_level.txt
