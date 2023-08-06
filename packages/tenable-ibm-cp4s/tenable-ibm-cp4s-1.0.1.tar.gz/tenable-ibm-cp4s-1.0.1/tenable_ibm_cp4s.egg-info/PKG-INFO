@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: tenable-ibm-cp4s
+Version: 1.0.1
+Summary: Tenable -> IBM Cloud Pak for Security Bridge
+Home-page: https://github.com/tenable/integrations-ibm-cloudpak-for-security
+Author: Tenable, Inc.
+Author-email: smcgrath@tenable.com
+License: MIT
+Description: 
+        Tenable -> IBM Cloud Pak for Security Bridge
+        For usage documentation, please refer to the github repository at
+        https://github.com/tenable/integrations-ibm-cloudpak-for-security
+        
+Keywords: tenable tenable_io ibm cloudpak cloudpak4security
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Information Technology
+Classifier: Topic :: System :: Networking
+Classifier: Topic :: Other/Nonlisted Topic
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

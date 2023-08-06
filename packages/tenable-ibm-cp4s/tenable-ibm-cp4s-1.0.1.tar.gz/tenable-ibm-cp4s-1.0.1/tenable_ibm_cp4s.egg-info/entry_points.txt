@@ -1,0 +1,3 @@
+[console_scripts]
+tenable-ibm-cp4s = tenable_ibm_cp4s.cli:cli
+
