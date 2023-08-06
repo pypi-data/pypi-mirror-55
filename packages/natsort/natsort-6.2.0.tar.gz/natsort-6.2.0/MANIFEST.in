@@ -1,0 +1,8 @@
+include LICENSE
+include CHANGELOG.md
+include tox.ini
+graft dev
+graft docs
+graft natsort
+graft tests
+global-exclude *.py[cod] __pycache__ *.so
