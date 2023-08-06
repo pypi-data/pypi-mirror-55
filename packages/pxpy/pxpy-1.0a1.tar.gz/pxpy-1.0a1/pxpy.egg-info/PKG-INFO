@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: pxpy
+Version: 1.0a1
+Summary: discrete undirected probabilistic models
+Home-page: https://www.randomfields.org/px
+Author: Nico Piatkowski
+Author-email: nico.piatkowski@gmail.com
+License: UNKNOWN
+Description: # pxpy
+        
+        The python library for discrete pairwise undirected graphical models.
+        
+        **FULL-FLEDGED README COMING SOON**
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Free for non-commercial use
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.6
