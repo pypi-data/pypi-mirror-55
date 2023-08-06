@@ -1,0 +1,10 @@
+mdnsbridge/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mdnsbridge/mdnsbridge.py,sha256=8hlfy8hAgmRxNX_4o9Vf8_VQt7QgIYvYYIIBH_bDHe0,5398
+mdnsbridge/mdnsbridgeclient.py,sha256=SVsbg7hac3nZUyMlU-CjQ7YMKXDjXpJgfV3dYR-NBu8,5688
+mdnsbridge/mdnsbridgeservice.py,sha256=KOisQKw_MyIM3DEjs7oXU6F7JmttSpEHIDCWgfkvtGE,2708
+usr/bin/nmos-mdnsbridge,sha256=vSUXhUggTrW_Ep-fZnlSWfni-HWJ9rSJDxIzg4SOcXg,700
+mdnsbridge-0.9.1.dist-info/LICENSE.md,sha256=0FjPtYTdslQBdd_ANY0p7ZDy5LYPH0D0WLCbU6zG44Q,11362
+mdnsbridge-0.9.1.dist-info/METADATA,sha256=RnLEThrc9t-jQHrNQS4E1Cpdss57x1NNoWVrPNLGuzg,497
+mdnsbridge-0.9.1.dist-info/WHEEL,sha256=g3LQva5oS9Ma-DPFwX8R7Ke-NO25KWW489RoZdNxJXc,92
+mdnsbridge-0.9.1.dist-info/top_level.txt,sha256=6FbOubI7OoqJY2E6OQZYhB5fKFBop74rdVDwPbmn5D4,11
+mdnsbridge-0.9.1.dist-info/RECORD,,
