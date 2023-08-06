@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: justblast
+Version: 2019.0.2
+Summary: Simple program to more efficiently run blast in multicore systems, as well as rough taxonomomic annoation using BASTA LCA
+Home-page: https://github.com/jshleap/justblast
+Author: jshleap
+Author-email: jshleap@gmail.com
+License: GNU v3
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
