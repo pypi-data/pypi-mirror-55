@@ -1,0 +1,8 @@
+README.md
+papply
+setup.py
+data/papply.ini.example
+papply.egg-info/PKG-INFO
+papply.egg-info/SOURCES.txt
+papply.egg-info/dependency_links.txt
+papply.egg-info/top_level.txt
