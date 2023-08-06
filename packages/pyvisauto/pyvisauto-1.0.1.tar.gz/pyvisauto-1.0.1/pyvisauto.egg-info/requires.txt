@@ -1,0 +1,5 @@
+opencv-contrib-python-headless~=4.1.0.25
+pillow~=6.1.0
+pyautogui~=0.9.46
+pytesseract~=0.2.7
+numpy~=1.16.4
