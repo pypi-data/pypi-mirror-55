@@ -1,0 +1,7 @@
+
+        [ckan.plugins]
+        heroku=ckanext.heroku.plugin:HerokuPlugin
+
+        [babel.extractors]
+        ckan = ckan.lib.extract:extract_ckan
+    
