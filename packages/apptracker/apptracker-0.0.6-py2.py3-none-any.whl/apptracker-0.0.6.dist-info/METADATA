@@ -1,0 +1,51 @@
+Metadata-Version: 2.1
+Name: apptracker
+Version: 0.0.6
+Summary: An application which will track user time used on Aplications
+Requires-Dist: python-dateutil
+Requires-Dist: plotly
+Requires-Dist: pywin32
+Requires-Dist: uiautomation
+
+Note that this program will work only on windows
+
+apptracker -start start (to start recording usage activity)
+
+To see in pie chart run
+
+apptacker-show show in cmd/terminal
+
+To clear your usage activity
+
+apptracker -clean clean
+
+apptracker -h
+usage: apptracker [-h][-start start] [-show SHOW][-clean clean]
+
+optional arguments:
+
+-h, --help show this help message and exit
+
+-start START start recording your usage activity
+
+-show SHOW show your usgae in pie chart
+
+-clean CLEAN clear your usage activity
+
+Home-page: https://github.com/manojpawarsj12/apptracker
+Author: Manoj Pawar SJ
+Author-email: manojpawarsj.mp11@gmail.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/manojpawarsj12/apptracker/issues
+Project-URL: Source, https://github.com/manojpawarsj12/apptracker
+Description: UNKNOWN
+Keywords: application tracker digitalwellbeing website tracker
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
