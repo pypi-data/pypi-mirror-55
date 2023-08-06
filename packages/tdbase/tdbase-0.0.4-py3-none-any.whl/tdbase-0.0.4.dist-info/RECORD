@@ -1,0 +1,11 @@
+tdbase/__init__.py,sha256=b-TyE1yfvTVZKv_BjwyXQJZitUoOpuBPu7nwdjBQOlQ,80
+tdbase/__main__.py,sha256=e8bF4J5mwpAdc_IHsCpwS2vQSBYnnqEazrGJSrl7fIU,20
+tdbase/lineinfo.py,sha256=kCzTiV8-Y0_ut_aRZ4Tx4UgfCM9clfM22lKR_qM4Olk,10043
+tdbase/nodes.py,sha256=QMNC9a514iayFInjUee4wNJFIjEmHBSF90xoOoXO92c,26463
+tdbase/parser.py,sha256=J2eT0Th7XjsY7pJlcgwYc2xA5BaQagEV7eZHYYuhQW4,32803
+tdbase/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tdbase-0.0.4.dist-info/LICENSE,sha256=Q0zP6P9JOzRmKXy-Z45pdEaG8x6v3ISktoqOtE9UiM8,1069
+tdbase-0.0.4.dist-info/METADATA,sha256=PRigUpyQZJ2FBoonWhNMOv7adqsuHGn1lmYaCYiQZoU,465
+tdbase-0.0.4.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+tdbase-0.0.4.dist-info/top_level.txt,sha256=owHYKDsRtBDxQD0yTdxv7H1ImtOQZiHnA4ebYx4T6X0,7
+tdbase-0.0.4.dist-info/RECORD,,
