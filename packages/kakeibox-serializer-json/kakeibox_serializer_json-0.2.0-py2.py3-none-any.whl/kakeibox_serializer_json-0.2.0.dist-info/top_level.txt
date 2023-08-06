@@ -1,0 +1,1 @@
+kakeibox_serializer_json
