@@ -1,0 +1,8 @@
+dysco/__init__.py,sha256=G3F11oMsWhRz3yNpAYJgnIFpQfgSa-XiY7YU7Cwnkjw,223
+dysco/dysco.py,sha256=V8rKppwwL7KolFa7t5rPJnucDjanaHvNc3Owr2t_G9Y,1943
+dysco/errors.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dysco/inspection.py,sha256=V_3vyTqZ_ZOlG9V-hiStNMuogJ6P3Hr_yNIrTZEfpGQ,305
+dysco/scope.py,sha256=hK3wg8Ijb78hYNsGi8RwGORAfV9MGcnFEofGz0CuN0A,2619
+dysco-0.0.4.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+dysco-0.0.4.dist-info/METADATA,sha256=Y9_Fh70p8cBUH5IrHQz1tBIiut2c4cL9r00KtcxAMlg,467
+dysco-0.0.4.dist-info/RECORD,,
