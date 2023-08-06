@@ -1,0 +1,38 @@
+Metadata-Version: 1.1
+Name: independentsoft.msg
+Version: 1.03
+Summary: Outlook .msg file format API
+Home-page: http://www.independentsoft.de
+Author: Independentsoft
+Author-email: info@independentsoft.de
+License: Other/Proprietary License
+Download-URL: http://www.independentsoft.de
+Description: # independetsoft.msg
+        
+        Microsoft Outlook .msg file module for Python. Use this module to easy create, read, update and parse Outlook message files.
+        
+        # Features
+        
+          - Create message, appointment, task, contact or any other Outlook item.
+          - Read any Outlook .msg file and get all properties.
+          - Convert from Outlook message (.msg file) to MIME message (.eml file)
+          - Convert from MIME message (.eml file) to Outlook message (.msg file)
+          - Set/Get MAPI properties.
+          - Set/Get named properties.
+          - Add attachments.
+          - Retreive attachments.
+          - Save attachments.
+          - Add embedded messages.
+          - Retreive embedded messages.
+          - Save embedded messages.
+        
+        ### Examples
+Keywords: outlook,msg,independentsoft
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Communications :: Email
+Classifier: Topic :: Office/Business
+Classifier: License :: Other/Proprietary License
+Classifier: Programming Language :: Python :: 3
