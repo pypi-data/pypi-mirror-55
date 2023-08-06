@@ -1,0 +1,9 @@
+pytorch_warmup/__init__.py,sha256=qNCjZhjNsKH0-k_zJNNhasKnoZ6KtzQD4C7dDfJhx1I,64
+pytorch_warmup/base.py,sha256=ioeiAwxO_qQQWIJcBYcUO9EvEq66OgSYQ2kgXBPFsqU,3928
+pytorch_warmup/radam.py,sha256=A5EbxEVijoD3qPO4oR3NVzSTzM1LdKIGDtqvC0loR-I,1493
+pytorch_warmup/untuned.py,sha256=em5ww93cEi8HSwcsD9k3nJQSXodwZNAKgh3ChahbEJ0,1429
+pytorch_warmup-0.0.4.dist-info/LICENSE,sha256=tDRvD8jJzDds-B2DCmtgyoYtcDrVr8ChkjGmtOc0Cyk,1074
+pytorch_warmup-0.0.4.dist-info/METADATA,sha256=csf0zE1T2L3UAX-LhgCfnzYhPYFOF-cbZHiUUPSEQr4,5639
+pytorch_warmup-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pytorch_warmup-0.0.4.dist-info/top_level.txt,sha256=mqk5-3wOWWyS-Gigm8nYYftCBenhYCN7hdcKkeMGqgU,15
+pytorch_warmup-0.0.4.dist-info/RECORD,,
