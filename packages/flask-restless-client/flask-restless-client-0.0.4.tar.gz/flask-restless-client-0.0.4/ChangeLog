@@ -1,0 +1,40 @@
+CHANGES
+=======
+
+0.0.4
+-----
+
+* update setup
+
+0.0.3
+-----
+
+* referencing the correct repo in travis ci
+
+0.0.2
+-----
+
+* fixed requirements sorting
+
+0.0.1
+-----
+
+* updated testfile to new fast alchemy version
+* added ordered set to requirements
+* moved dev libs to dev requirements
+* added flask restless as a dependency to the tests
+* correcting badges
+* added CI and precommit
+* finished tests
+* cleaned up the repo
+* added more integration tests
+* correctly supporting polymorphism
+* WIP refactoring
+* cereal lazer is now a small layer on top of serialize
+* pushed client code
+* added test for model roundtrip
+* added support for exposing model methods
+* added test for custom types
+* added a small utility library that's able to (de)serialize while retaining types
+* server code
+* Initial commit

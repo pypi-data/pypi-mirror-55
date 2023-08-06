@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: flask-restless-client
+Version: 0.0.4
+Summary: CRUD/RPC client over flask-restless
+Home-page: https://github.com/maartendp/flask-restless-client
+Author: Maarten De Paepe
+Author-email: "maarten.de.paepe@gmail.com"
+License: UNKNOWN
+Description: # flask-restless-client
+        
+        [![Build Status](https://travis-ci.com/maarten-dp/flask-restless-client.svg?branch=master)](https://travis-ci.com/maarten-dp/flask-restless-client)
+        [![Codecov](https://codecov.io/gh/maarten-dp/flask-restless-client/branch/master/graph/badge.svg)](https://codecov.io/gh/maarten-dp/flask-restless-client)
+        [![PyPI](https://badge.fury.io/py/flask-restless-client.svg)](https://pypi.python.org/pypi/flask-restless-client/)
+        
+        
+        
+        CRUD/RPC client over flask-restless
+        
+        
+        ## Installation
+        
+        ``` bash
+            pip install flask-restless-client
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
