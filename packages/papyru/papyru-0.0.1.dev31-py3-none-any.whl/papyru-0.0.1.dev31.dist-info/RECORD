@@ -1,0 +1,17 @@
+papyru/__init__.py,sha256=8rAzrzpmWJJWYjzrATjiaI7cf2KcfBbl-Kno7EnLKRg,1090
+papyru/auth.py,sha256=ihKeEoSFsWjQ1oFEcLp0WdYHTWH4J-KiIW4YyyLAigw,1970
+papyru/context.py,sha256=z2Ldw-ksvlwuDGjdEY2SrWWYveTgEFumuNZsao2TauI,1931
+papyru/logger.py,sha256=Zax0_SIN-nlaPVyQFaMIAdGzLSPnXPToW0NfaBq_5Io,2124
+papyru/middleware.py,sha256=5k8COdZg2Y5ulblDNBHPHK3n33gAjz6rlInmgSftgP0,415
+papyru/problem.py,sha256=O_VCXD4ZdC37LgBK7FnWD6jIMCEXP7phcCCWs35W7BA,2042
+papyru/profiler.py,sha256=kFTMrDjOA9kP2q_I_UXzq0pPBVUsayCJQYi4NAyYFUg,4656
+papyru/resource.py,sha256=01hq0EE21pn4NdjJR2P6cFMZ6Cs-JTyBRf-S-M2kIzQ,1040
+papyru/serializer.py,sha256=kI1wIv-z6eygkd4zO3eajFWoIZH3xoBWqw-TZ3COqds,1568
+papyru/test.py,sha256=lTLD0HWy1V_Z1gN93pbMAlroT73486nC3KN3kEDUHlo,146
+papyru/validation.py,sha256=0qMs4Zs7NNtnoW_Hqq48JVOZxbRAjXByEAp7ZzPn2GI,2024
+papyru/xml_helper.py,sha256=K3DWWcQKCwt7j0055tWygHi8VWdz_idXlcsbPf7GiDo,3208
+papyru-0.0.1.dev31.dist-info/LICENSE.txt,sha256=DZak_2itbUtvHzD3E7GNUYSRK6jdOJ-GqncQ2weavLA,34523
+papyru-0.0.1.dev31.dist-info/METADATA,sha256=Rb57vl7zUXBGxpCZdQVQwOXgV_Cvth4FZHKLaNGP2CM,653
+papyru-0.0.1.dev31.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+papyru-0.0.1.dev31.dist-info/top_level.txt,sha256=Lk7FDaqilW0o5kUlO3HP91q8Z7NLtgBiX3pwQJGAfZM,7
+papyru-0.0.1.dev31.dist-info/RECORD,,
