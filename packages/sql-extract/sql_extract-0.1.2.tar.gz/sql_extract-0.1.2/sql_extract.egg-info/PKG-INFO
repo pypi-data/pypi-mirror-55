@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: sql-extract
+Version: 0.1.2
+Summary: UNKNOWN
+Home-page: https://github.com/rowanuniversity/sql_extract/
+Author: John Reiser, Connor Hornibrook
+Author-email: reiser@rowan.edu, hornibrookc@rowan.edu
+License: MIT
+Description: # sql-extract
+        Exports the results of Oracle sql code contained in a .sql file out to a csv file. 
+        
+        ## Usage
+        ```bash
+        # run 
+        sql-extract in_sql_file.sql -o output_file.csv
+        
+        # additional help
+        sql-extract -h
+        ```
+        
+        
+        ## Parameters
+        | Name            | Description                         | Type   | Required |
+        |-----------------|-------------------------------------|--------|----------|
+        | filename        | input .sql file name                | string | yes      |
+        | -o, --outfile   | output .csv file name               | string | no       |
+        | -d, --delimiter | csv delimiter                       | string | no       |
+        | -c, --quotechar | csv quote character                 | string | no       |
+        | bind_vars       | any bind variables in the .sql file | list   | no       |
+        
+        ### Configuration
+        - "full_login" and "db_password" environment variables set accordingly
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6.7
+Description-Content-Type: text/markdown
