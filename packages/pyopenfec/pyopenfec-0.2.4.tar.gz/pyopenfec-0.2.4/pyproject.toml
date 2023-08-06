@@ -1,0 +1,39 @@
+[tool.poetry]
+name = "pyopenfec"
+version = "0.2.4"
+description = "OpenFEC API Client"
+
+license = "MIT"
+readme = "README.md"
+
+homepage = "https://github.com/jeremyjbowers/pyopenfec"
+keywords = [
+  "fec",
+  "campaign",
+  "finance",
+  "openfec",
+]
+repository = "https://github.com/jeremyjbowers/pyopenfec"
+
+
+authors = [
+  "Jeremy Bowers <jeremyjbowers@gmail.com>",
+  "Bob Lannon",
+  "Kevin Schaul",
+  "Janak Mayer",
+  "Evan Sonderegger",
+  "Robert Townley <me@roberttownley.com>",
+]
+
+[tool.poetry.dependencies]
+python = "^3.5"
+requests = "^2.22"
+pytz = "^2019.3"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+nose = "^1.3"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
