@@ -1,0 +1,27 @@
+0.3.3      (2019-11-06)
+-----------------------
+
+### Fixes
+
+* Add Manifest
+
+0.3.2      (2019-11-05)
+-----------------------
+
+### Fixes
+
+* Fix url namespace of geostore
+
+0.3.1      (2019-11-05)
+-----------------------
+
+### Improves
+
+* Integrate terra permissions mecanism
+
+0.3.0      (2019-10-18)
+-----------------------
+
+### Release
+
+* First release
