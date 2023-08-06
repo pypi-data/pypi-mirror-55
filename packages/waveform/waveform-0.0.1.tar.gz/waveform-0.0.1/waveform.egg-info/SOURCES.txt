@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/__init__.py
+waveform.egg-info/PKG-INFO
+waveform.egg-info/SOURCES.txt
+waveform.egg-info/dependency_links.txt
+waveform.egg-info/top_level.txt
