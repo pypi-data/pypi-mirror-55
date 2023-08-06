@@ -1,0 +1,8 @@
+README.md
+setup.py
+DigitalScale/__init__.py
+MkNxGn_OpenScale.egg-info/PKG-INFO
+MkNxGn_OpenScale.egg-info/SOURCES.txt
+MkNxGn_OpenScale.egg-info/dependency_links.txt
+MkNxGn_OpenScale.egg-info/requires.txt
+MkNxGn_OpenScale.egg-info/top_level.txt
