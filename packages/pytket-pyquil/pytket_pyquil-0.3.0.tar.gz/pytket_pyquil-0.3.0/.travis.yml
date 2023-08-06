@@ -1,0 +1,29 @@
+branches:
+  only:
+  - master
+dist: xenial
+language: python
+python:
+  - "3.6"      # current default Python on Travis CI
+services:
+  - docker
+addons:
+  apt:
+    sources:
+      - docker-xenial
+# command to install dependencies
+install:
+  - pip install --pre -r requirements.txt
+  - pip install .
+  - docker pull rigetti/quilc
+  - docker pull rigetti/qvm
+# command to run tests
+script:
+  - pytest
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: bash ./.travis/deploy.sh
+  on:
+    branch: master
