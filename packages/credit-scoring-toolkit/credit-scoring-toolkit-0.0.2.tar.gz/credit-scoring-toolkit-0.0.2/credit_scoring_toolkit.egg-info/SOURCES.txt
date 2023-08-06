@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements-dev.txt
+requirements.txt
+setup.py
+credit_scoring_toolkit.egg-info/PKG-INFO
+credit_scoring_toolkit.egg-info/SOURCES.txt
+credit_scoring_toolkit.egg-info/dependency_links.txt
+credit_scoring_toolkit.egg-info/not-zip-safe
+credit_scoring_toolkit.egg-info/requires.txt
+credit_scoring_toolkit.egg-info/top_level.txt
+creditscoring/__init__.py
+creditscoring/binning/__init__.py
+creditscoring/scorecard/__init__.py
+creditscoring/utils/__init__.py
