@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: calculate-retention
+Version: 0.0.5
+Summary: Simple package designed to calculate end-to-end user retention metrics
+Home-page: UNKNOWN
+Author: Darshil Desai
+Author-email: darshildee@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: retention
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Information Technology
+Classifier: Natural Language :: English
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
