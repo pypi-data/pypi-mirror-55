@@ -1,0 +1,7 @@
+fold_bdd/__init__.py,sha256=H_ApMCN0qnqzRzD3joKj1U9lntY1jAFhtpEiNvTXcIs,64
+fold_bdd/folds.py,sha256=nea62CCfQBD7g8Ei-5dNW_FEQ0jLNKQ75VS8I7IrqTQ,2545
+fold_bdd/test_folds.py,sha256=4R-ULvUq5OkFIcSACDR0HDaJmXr3hVS5pcap0D1XL5g,2750
+fold_bdd-0.2.3.dist-info/LICENSE,sha256=TsIcmtcb4ejYUV6d6hxHqCVHR1c-hWgWfv03ZBk9Xto,1082
+fold_bdd-0.2.3.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+fold_bdd-0.2.3.dist-info/METADATA,sha256=t-FQ_SWDOQJ5hmdJBtHzOnt78geY1qxZDd94S8b0kok,4876
+fold_bdd-0.2.3.dist-info/RECORD,,
