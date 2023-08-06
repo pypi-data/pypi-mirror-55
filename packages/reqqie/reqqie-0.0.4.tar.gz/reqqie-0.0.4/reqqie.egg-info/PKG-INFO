@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: reqqie
+Version: 0.0.4
+Summary: Text based Requirements management tool
+Home-page: UNKNOWN
+Author: Jesper Ribbe
+License: UNKNOWN
+Description: # Reqqie - text based requirement management tool
+        
+        ## Overview
+        Reqqie is a text based tool to manage requirements. It does so by parsing text files, rewriting them and output reports.
+        Future feature is to use git to automatically check versions/changes to requirements.
+        The input files uses the tdbase format.
+        
+        ## Getting started
+        1. Install reqqie: "pip install reqqie"
+        2. Create a file "test.req1" with the following content:
+        
+        ```
+        .config:
+          top_requirement -> R1
+        
+        .req R1:
+        descr: This describes requirement R1
+        depends:
+          -> R2
+        
+        .req R2:
+        descr: This describes requirement R2
+        ```
+        
+        3. Run reqqie: "reqqie test1.req". Note that if <python-path>/Scripts are not in your path, you will have to use the full path to reqqie.
+        
+        ## Input file format
+        Input files are tdbase formatted. The record types supported are:
+        * .config - singleton record defining structure
+        * .category - tree structured data used to categorize requirement records
+        * .release - used to divide requirements into releases
+        * .req - an actual requirement
+        
+        ### .config
+        Singleton record which defines structure etc for the requirements
+        
+        Attributes:
+        
+        * paths - list of paths (strs) where external files are checked.
+        * tags - list of strings. These are possible tags to further define what a requirement is. Completely optional.
+        * top_category - pointer to the top level category record
+        * top_requirement - pointer to the top level/main requirement
+        * main_levels - list of strings which gives names to the main levels. There are sub levels automatically assigned, so no requirement ever depends on a requirement at the same or higher level.
+        
+        
+        ### .category
+        Every requirement should belong to a category. From a definition point of view, this normally reflects how broad or detailed a requirement is. There are some similarities with "level", but those are two different things.
+        
+        ### .release
+        For project management, it is possible to tag requirements with different releases. Ie, a first release can normally not fulfill all requirements, but by tagging future requirements with later releases, it is possible to get status reports regarding requirement fulfillment for different releases.
+        
+        ### .req
+        This record defines one requirement.
+        
+        Attributes:
+        
+        * descr - text string which describes the requirement. Ie, "General requirement for requirements"
+        * def - text string which defines the requirement. Normally a short sentence which "Shall" in it. Ie, "Requirements shall be testable and possible to measure. A clear pass/fail criteria shall exist."
+        * test-spec: either a text string or a link to external document that defines how to test the requirement
+        * test: link to test report document that shows the test results
+        * stage:
+        * depends: list of links to other requirements which must be fulfilled for this requirement to be fulfilled
+        * category: link to category record
+        * release: link to the release where this requirement must be fulfilled in.
+        * level: which main_level this requirement belongs to
+        * background: string or link to external document. Describes the reason for the requirement. This can be a very helpful information later on when revisiting requirements.
+        
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

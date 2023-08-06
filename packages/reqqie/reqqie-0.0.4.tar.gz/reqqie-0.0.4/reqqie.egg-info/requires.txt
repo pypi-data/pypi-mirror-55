@@ -1,0 +1,4 @@
+tdbase>=0.0.4
+typing>=3.7
+pygit2>=0.28.2
+reportlab>=3.5.21
