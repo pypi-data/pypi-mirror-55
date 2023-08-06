@@ -1,0 +1,24 @@
+
+# mediabyte.Mixtape file format explanation
+
+# comments like these are for the file viewer only, ignored by the mediabyte parser
+y.qi5JEZo2KT0.White Monkey Jobs Explained.laowhy86.china.podcast
+
+# the following three rules is the mediabyte syntax in full:
+
+# 1. "y." signifies YouTube video and the following hash is the YouTube video hash
+# 2. tags are lowercase and titles are tags with an uppercase first letter
+# 3. YouTube time code format tags are interpreted as such, 0-2 time codes possible
+
+# this is a demonstration of the syntax explained above:
+y.12cpcm1ntSU.Chinas Parks are crazy.gweilo60.china.podcast.1m.3m
+
+# individual tags can be separated into the following lines:
+y.ZIv4tqJNuxs.There is No Algorithm for Truth - with Tom Scott
+             .the_royal_institution
+             .lecture.uk.science
+
+# and moved freely along the x-axis, too
+y.5m7Q6uyg9Kg.Pen & Paper
+.live
+       .german.board.game
