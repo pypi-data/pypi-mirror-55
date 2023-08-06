@@ -1,0 +1,43 @@
+Metadata-Version: 1.0
+Name: hg-autoshelve
+Version: 0.1.7
+Summary: Automatic dirty working directory shelving for Mercurial
+Home-page: https://hg.sr.ht/~alain/hg-autoshelve
+Author: Alain Leufroy
+Author-email: ~alainl/hg-autoshelve@lists.sr.ht
+License: GPLv2+
+Description: ========================================================
+        Automatic dirty working directory shelving for Mercurial
+        ========================================================
+        
+        AutoShelve is a Mercurial extension that shelves modified files
+        before applying changes to the repository then unshelve them.
+        
+        Why would I use it ?
+        
+        I not sure that there is a valid reason for using it. But it's a
+        pragmatic solution for durty use cases. Autoshelve will avoid you
+        wasting time until you meet and find a good solution.
+        
+        Note:
+              Shelve operations may be very long for certain repositories. In
+              this cases you may want to disable or enable autoshelve in the
+              configuration file of the repository.
+        
+        
+        Installation
+        ============
+        
+        Install hg-autoshelve using ``pip``::
+        
+          pip install hg-autoshelve
+        
+        
+        Then enable the extension in your `mercurial configuration file
+        <https://www.mercurial-scm.org/doc/hgrc.5.html#files>`_::
+        
+          [extensions]
+          hgext3rd.autoshelve=
+        
+Keywords: hg mercurial shelve
+Platform: UNKNOWN
