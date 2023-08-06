@@ -1,0 +1,10 @@
+mypy_boto3_docdb/__init__.py,sha256=6MfU0hPYt_ka_SejBWwwGVdTtd7_UI4V_5IBykzEOk0,110
+mypy_boto3_docdb/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_docdb/client.py,sha256=N_CsHAI55e3DiFcbb66ZtRojiNWmG8yy5CncGUUzN7c,351589
+mypy_boto3_docdb/paginator.py,sha256=pKO1vedfzB1_pb4piLV7CazqY0yW8x5ZO8QZo4G2qIk,56784
+mypy_boto3_docdb/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_docdb/waiter.py,sha256=8RL4ulajxShp-F1YUm-vSamcKheGXi-LTlhdVO6Y6vY,7448
+mypy_boto3_docdb-0.1.9.dist-info/METADATA,sha256=qvBuZsh2Z2dD_fj9qd6qXD6D0qnWvSG5fmIP3IC9V9o,1055
+mypy_boto3_docdb-0.1.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_docdb-0.1.9.dist-info/top_level.txt,sha256=La-e9-8dnv_mFns4Zd2Lj_CEOyaFpYtQFpve_jocGn8,17
+mypy_boto3_docdb-0.1.9.dist-info/RECORD,,
