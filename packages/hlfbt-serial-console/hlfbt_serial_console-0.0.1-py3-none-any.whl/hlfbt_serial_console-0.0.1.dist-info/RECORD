@@ -1,0 +1,14 @@
+hlfbt/serial_console/__init__.py,sha256=Uxl7QGXs_z6RD4UYPhpNGoizhIasZGkJwXDfB1ymnPk,41
+hlfbt/serial_console/__main__.py,sha256=FRw1mzcPcRgNWWVqZDGHm4yylp7T-W-1QS1kanCKnUA,126
+hlfbt/serial_console/cli.py,sha256=35nd_UqKTkL-0abMCosFamck7OZyF5fUPuA8LqH1WWs,5630
+hlfbt/serial_console/_argparse/__init__.py,sha256=FF8bUAW5gVs6yw7oRfYYWZf_5V10IqWIU5ue0V1q-uA,24
+hlfbt/serial_console/_argparse/formatter.py,sha256=hdoNFktj-nGdeSYRgdKjul4_f6Y2R2mzcXj_qt5q7x0,2783
+hlfbt/serial_console/console/__init__.py,sha256=MeAA-97668p4YgGwFiL4aOazEdFFD9wGHFjZY430csA,81
+hlfbt/serial_console/console/console.py,sha256=WkpUopnmugsydxqKwEQdnuaArtyhdTXUR36b5JrtRyE,7700
+hlfbt/serial_console/console/io.py,sha256=EJ7mSuWQaGPVkoT6Or4ngk8x_rOdO9UZJhbSBr2aooU,1694
+hlfbt/serial_console/console/matching.py,sha256=FbGgu3LjMJO769DPaCd6giIGzVvkV8aRz5lXPVVFzgg,2979
+hlfbt_serial_console-0.0.1.dist-info/LICENSE,sha256=c_ud-a8SkcHmCFkS73ICNCxPicd32V7Uu4JybFFgbJ8,1073
+hlfbt_serial_console-0.0.1.dist-info/METADATA,sha256=Bs7cVvH9NqrVS_L5Cu-x3bTb5OxGaTsIxkAOblBqAeY,4926
+hlfbt_serial_console-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+hlfbt_serial_console-0.0.1.dist-info/top_level.txt,sha256=s9ILUUuy23b0AgefdwgLgJEI4m2JKIiqei69prIfIMI,6
+hlfbt_serial_console-0.0.1.dist-info/RECORD,,
