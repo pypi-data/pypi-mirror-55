@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: aiounittest-tornado
+Version: 1.0.1
+Summary: use aiounittest to test torando with asynico of tornado
+Home-page: https://github.com/bigpangl/aio-tornado-test-part
+Author: bigpangl
+Author-email: bigpangl@163.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
