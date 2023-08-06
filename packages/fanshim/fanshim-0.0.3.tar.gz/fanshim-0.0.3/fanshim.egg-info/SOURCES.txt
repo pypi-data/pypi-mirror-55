@@ -1,0 +1,12 @@
+CHANGELOG.txt
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+fanshim/__init__.py
+fanshim.egg-info/PKG-INFO
+fanshim.egg-info/SOURCES.txt
+fanshim.egg-info/dependency_links.txt
+fanshim.egg-info/requires.txt
+fanshim.egg-info/top_level.txt
