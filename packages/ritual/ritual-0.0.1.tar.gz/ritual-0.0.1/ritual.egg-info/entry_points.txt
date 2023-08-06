@@ -1,0 +1,3 @@
+[console_scripts]
+ritual = ritual.__main__:main
+
