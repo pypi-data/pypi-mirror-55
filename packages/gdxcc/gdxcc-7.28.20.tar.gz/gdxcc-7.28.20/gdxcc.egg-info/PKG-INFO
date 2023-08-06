@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: gdxcc
+Version: 7.28.20
+Summary: Python library to access and modify gdx files
+Home-page: https://github.com/kavvkon/gams-api
+Author: GAMS Development Corp.
+Maintainer: kavvkon
+Maintainer-email: kavvkon@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
