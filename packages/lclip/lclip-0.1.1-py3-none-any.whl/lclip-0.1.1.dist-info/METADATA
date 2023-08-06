@@ -1,0 +1,68 @@
+Metadata-Version: 2.1
+Name: lclip
+Version: 0.1.1
+Summary: LClip script helps you search clipboard data on your linux favourite browser.
+Home-page: https://github.com/prtm
+Author: Preetam
+Author-email: contact@preetam.dev
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
+Requires-Dist: pyperclip (>=1.7.0)
+Requires-Dist: validators (>=0.14.0)
+
+# LClip
+
+LClip script helps you search clipboard data on your linux favourite browser.
+
+## Features
+
+* Open Source
+* Makes search easier.
+* Browser Google or Firefox or Chromium
+* Search on google.com or duckduckgo.com
+
+## Installation and Usage
+
+1. [Python3](https://www.python.org/downloads/) required
+2. Install lclip
+```
+pip3 install lclip
+```
+3. lclip setup
+```
+lclip -s
+```
+4. Not Implemented Error:
+
+    "Pyperclip could not find a copy/paste mechanism for your system"
+```
+sudo apt-get install xsel
+```
+to install the xsel utility.
+
+----
+## How can it helps?
+When using keyboard shortcut to run the script, it is lot easier to search any keyword or url that you read on book, website etc.
+
+Example: 
+Copy any keyword or url.
+```
+Ctrl + c
+```
+Run script with keyboard shortcut and search on browser's new tab.
+```
+Ctrl + Shift + x 
+```
+
+## Screenshot
+![Copy code](screenshots/copy.png "Copy Code")
+![Output](screenshots/output.png "Output")
+
+
+## Suggestions
+Open to any suggestions and help provided.
+
