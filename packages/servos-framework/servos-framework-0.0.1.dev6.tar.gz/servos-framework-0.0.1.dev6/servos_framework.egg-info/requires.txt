@@ -1,0 +1,8 @@
+pbr>=1.8
+Babel>=2.3
+six>=1.9.0
+i18n==0.2
+jsonpath_rw_ext==1.0.0
+pylibmc==1.5.1
+oslo.service==1.16.0
+oslo.messaging==5.10.0
