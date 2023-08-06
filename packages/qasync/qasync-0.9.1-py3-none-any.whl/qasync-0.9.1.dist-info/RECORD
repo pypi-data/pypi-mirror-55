@@ -1,0 +1,9 @@
+qasync/__init__.py,sha256=DxbFKK-8ju3zFBDHiG6dkWhrA1UG3waE2IG466WgGL0,22277
+qasync/_common.py,sha256=KFtmOyZ7d4Dcr1xb5--XEudJo-m2a-_GWOIoBAcudQo,622
+qasync/_unix.py,sha256=mun1-l8mQ_YRw8ert3r1H9LLOXG2Q6D7q_NsGO8UqGQ,7127
+qasync/_windows.py,sha256=5r_F9GgUT0ze_EnqO3Vb1IgJrO51XenBN7b5InquJIk,6105
+qasync-0.9.1.dist-info/LICENSE,sha256=JsJG3viOR9LiLbtkJSjODjFXmT8A7JIeFKgFWKdCxvA,1413
+qasync-0.9.1.dist-info/METADATA,sha256=pBiGGiHyjKfTu700ZdtgDbjjYEq0qak5KkDoRI7gE2A,1911
+qasync-0.9.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+qasync-0.9.1.dist-info/top_level.txt,sha256=uimTYW0wX1HbfOrusRGYdaddKFlq4KES5DrTkhfrKQQ,7
+qasync-0.9.1.dist-info/RECORD,,
