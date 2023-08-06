@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: pystatsd-tags
+Version: 0.0.3
+Summary: Datadog tags implementation for statsd.
+Home-page: UNKNOWN
+Author: Sam Pegler
+Author-email: sam@sampegler.co.uk
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >3.6.0
+Provides-Extra: docs
+Provides-Extra: test
