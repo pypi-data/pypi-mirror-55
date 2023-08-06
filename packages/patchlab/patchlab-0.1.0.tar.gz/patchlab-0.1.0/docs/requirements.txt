@@ -1,0 +1,6 @@
+sphinx>=2.2
+celery
+django
+requests
+python-gitlab
+git+https://github.com/jeremycline/patchwork.git#egg=patchwork
