@@ -1,0 +1,113 @@
+version: 2.1
+
+jobs:
+  build:
+    working_directory: ~/telstar
+    docker:
+      - image: circleci/python:3.6
+    steps:
+      - checkout
+      - restore_cache:
+          key: v1-deps-{{ .Branch }}-{{ checksum "requirements.txt" }}
+      - run:
+          command: |
+            python3 -m venv venv
+            source venv/bin/activate
+            pip install -r requirements.txt
+      - save_cache:
+          key: v1-deps-{{ .Branch }}-{{ checksum "requirements.txt" }}
+          paths:
+            - "./venv"
+
+  test:
+    working_directory: ~/telstar
+    docker:
+      - image: circleci/python:3.6
+    steps:
+      - checkout
+      - restore_cache:
+          key: v1-deps-{{ .Branch }}-{{ checksum "requirements.txt" }}
+      - run:
+          command: |
+            source venv/bin/activate
+            pytest -m 'not integration' --ignore=telstar/
+
+  integration-test:
+    parameters:
+      command:
+        type: string
+    working_directory: ~/telstar
+    docker:
+      - image: circleci/python:3.6
+        environment: # environment variables for primary container
+          REDIS: redis://localhost:6379/10
+          DATABASE: mysql://root:root@127.0.0.1:3306/test
+
+      - image: circleci/redis:5-alpine
+      - image: circleci/mysql:8-ram
+        command: [--default-authentication-plugin=mysql_native_password]
+        environment:
+          MYSQL_DATABASE: test
+          MYSQL_ROOT_PASSWORD: root
+    steps:
+      - checkout
+      - restore_cache:
+          key: v1-deps-{{ .Branch }}-{{ checksum "requirements.txt" }}
+      - run:
+          command: |
+            pushd `pwd`
+            cd /tmp
+            wget http://download.redis.io/redis-stable.tar.gz
+            tar xzf redis-stable.tar.gz
+            cd redis-stable
+            make redis-cli
+            sudo cp src/redis-cli /usr/local/bin/
+            sudo chmod 755 /usr/local/bin/redis-cli
+            popd
+            source venv/bin/activate
+            dockerize -wait tcp://localhost:3306 -timeout 1m
+            << parameters.command >>
+
+  release:
+    docker:
+      - image: circleci/python:3.6
+    working_directory: ~/telstar
+    steps:
+      - checkout
+      - restore_cache:
+          key: v1-deps-{{ .Branch }}-{{ checksum "requirements.txt" }}
+      - run:
+          command: |
+            source venv/bin/activate
+            flit build
+            flit publish
+
+workflows:
+  build_and_test:
+    jobs:
+      - build
+      - test:
+          requires:
+            - build
+
+      - integration-test:
+          name: integration-resiliency
+          command: ./telstar/tests/test_telstar.sh
+          requires:
+            - build
+
+      - integration-test:
+          name: integration-pytest
+          command: pytest -m 'integration' --ignore=telstar/
+          requires:
+            - build
+
+      - release:
+          filters:
+            branches:
+              only:
+                - master
+          requires:
+            - test
+            - integration-pytest
+            - integration-resiliency
