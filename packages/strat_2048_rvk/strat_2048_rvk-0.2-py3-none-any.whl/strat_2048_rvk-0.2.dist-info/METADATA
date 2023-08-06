@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: strat-2048-rvk
+Version: 0.2
+Summary: Example of module to implement a strategy for 2048
+Home-page: UNKNOWN
+Author: Kenza Abdellatif
+Author-email: kenza.abdellatif@ensae.fr
+License: UNKNOWN
+Platform: UNKNOWN
+
+Exemple de module python implémentant une stratégie pour le jeu 2048
+
+
