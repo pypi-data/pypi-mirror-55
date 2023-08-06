@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: axisproj
+Version: 0.2.2
+Summary: Axis-Aligned Decomposition of Linear Projections.
+Home-page: https://github.com/yarden_livnat/axisproj
+Author: Yarden Livnat
+Author-email: yarden@sci.utah.edu
+License: BSD 3-Clause
+Description: 
+        # AxisProj
+        Axis-Aligned Decomposition of Linear Projections
+        
+        ## Installation 
+        ```pip install axisproj```
+        
+        #### From source:
+        `pip install -e .` or `python setup.py`
+        
+        
+        ## Usage
+        ```
+        from axisproj import LPPObjective, optiomal
+        
+        objective = LPPObjective(knn=12,sigma=0.3)
+        lp, ap = optimal(X, objective)
+        ```
+        
+        Three linear projection objectives are defined in `axisproj.objective`
+        * LDEObjective
+        * LPPObjective
+        * PCAObjective
+        
+        `optimal()` also accepts an optional histogram function. The default value
+        is generated using the `precision_recall.histogram` functor.
+        
+        ## Acknowledgment
+        This package is a rewrite of the LLNL code described in 
+        
+        "Exploring High-Dimensional Structure via Axis-Aligned Decomposition of Linear Projections
+        Linear Axis-Aligned", J. J. Thiagarajan, S. Liu, K. N. Ramamurthy and P.-T. Bremer, EuroVis 2018
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.7.0
+Description-Content-Type: text/markdown
