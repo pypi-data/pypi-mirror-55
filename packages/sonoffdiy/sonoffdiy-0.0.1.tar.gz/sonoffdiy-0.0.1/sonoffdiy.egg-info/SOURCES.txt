@@ -1,0 +1,16 @@
+LICENSE.md
+MANIFEST.in
+README.md
+setup.py
+sonoffdiy/__init__.py
+sonoffdiy/__version__.py
+sonoffdiy/const.py
+sonoffdiy/exceptions.py
+sonoffdiy/models.py
+sonoffdiy/sonoffdiy.py
+sonoffdiy.egg-info/PKG-INFO
+sonoffdiy.egg-info/SOURCES.txt
+sonoffdiy.egg-info/dependency_links.txt
+sonoffdiy.egg-info/not-zip-safe
+sonoffdiy.egg-info/requires.txt
+sonoffdiy.egg-info/top_level.txt
