@@ -1,0 +1,8 @@
+cython
+cyko
+matplotlib
+numpy
+pyrvt
+scipy
+setuptools
+typing
