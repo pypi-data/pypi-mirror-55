@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: hypersRedisCluster
+Version: 0.0.1
+Summary: support redis cluster
+Home-page: UNKNOWN
+Author: yingzhe.zhang
+Author-email: yingzhe.zhang@mail.hypers.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
