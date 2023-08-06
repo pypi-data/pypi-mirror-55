@@ -1,0 +1,8 @@
+README.md
+setup.py
+maoerpay/__init__.py
+maoerpay.egg-info/PKG-INFO
+maoerpay.egg-info/SOURCES.txt
+maoerpay.egg-info/dependency_links.txt
+maoerpay.egg-info/requires.txt
+maoerpay.egg-info/top_level.txt
