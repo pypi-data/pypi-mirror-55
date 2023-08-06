@@ -1,0 +1,8 @@
+setup.py
+bulketl/__init__.py
+bulketl/bulketl.py
+bulketl.egg-info/PKG-INFO
+bulketl.egg-info/SOURCES.txt
+bulketl.egg-info/dependency_links.txt
+bulketl.egg-info/requires.txt
+bulketl.egg-info/top_level.txt

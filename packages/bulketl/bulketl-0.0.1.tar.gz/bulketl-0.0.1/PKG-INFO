@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: bulketl
+Version: 0.0.1
+Summary: A package for loading files to data warehouse in bulk
+Home-page: https://github.com/griffinpf/bulketl
+Author: Pete Griffin
+Author-email: peteyg543@gmail.com
+License: UNKNOWN
+Description: # bulketl
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
