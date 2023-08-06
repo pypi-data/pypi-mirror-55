@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: easierai-common-functions
+Version: 1.4.2
+Summary: This library contains reusable code for various projects
+Home-page: https://gitlab.atosresearch.eu/ari/ioe-ai/common-python-helper-functions
+Author: IoE Lab
+Author-email: juan.carrascoa.external@atos.net
+License: ATOS
+Platform: UNKNOWN
+Requires-Dist: schedule
+Requires-Dist: joblib
+Requires-Dist: pydash
+Requires-Dist: tensorflow
+Requires-Dist: phased-lstm-keras
+Requires-Dist: scikit-learn
+
+# Common Python Helper Functions
+
+This project contains reusable code for various projects. Written in Python.
+
