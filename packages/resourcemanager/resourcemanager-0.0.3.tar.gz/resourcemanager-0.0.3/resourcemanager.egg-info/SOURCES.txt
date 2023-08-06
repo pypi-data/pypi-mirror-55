@@ -1,0 +1,15 @@
+COPYING
+COPYING.LESSER
+LICENSE
+MANIFEST.in
+README.rst
+setup.py
+resourcemanager/__init__.py
+resourcemanager/constants.py
+resourcemanager/handlers.py
+resourcemanager/manager.py
+resourcemanager/resourceclasses.py
+resourcemanager.egg-info/PKG-INFO
+resourcemanager.egg-info/SOURCES.txt
+resourcemanager.egg-info/dependency_links.txt
+resourcemanager.egg-info/top_level.txt
