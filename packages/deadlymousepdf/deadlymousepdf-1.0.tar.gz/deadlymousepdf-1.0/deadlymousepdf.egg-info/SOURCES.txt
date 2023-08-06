@@ -1,0 +1,9 @@
+README.md
+setup.py
+deadlymousepdf/__init__.py
+deadlymousepdf/pdf2imag.py
+deadlymousepdf/pdf2text.py
+deadlymousepdf.egg-info/PKG-INFO
+deadlymousepdf.egg-info/SOURCES.txt
+deadlymousepdf.egg-info/dependency_links.txt
+deadlymousepdf.egg-info/top_level.txt
