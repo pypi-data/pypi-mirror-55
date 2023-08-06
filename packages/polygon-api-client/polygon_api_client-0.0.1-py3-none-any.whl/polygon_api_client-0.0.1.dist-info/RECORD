@@ -1,0 +1,16 @@
+polygon/__init__.py,sha256=hnF3DUP3Tmkk4KODVSB6UIf3E5e2btR3wgrh01RWjfY,115
+polygon/rest/__init__.py,sha256=BMPTIei7AiHWDfBv6W5SHPk3QuuawHBZvnUf4UT2K1A,31
+polygon/rest/client.py,sha256=24hil7xpP1Ev8pDK-G7Rwv2jAajfeRFLYj5HFyXSp3g,13070
+polygon/rest/models/__init__.py,sha256=vXADpu-xS7gwq22EIcbcNr89Jj7yqvvEv3OQaX7g_Fw,9680
+polygon/rest/models/definitions.py,sha256=ye62P22--ZVnnfStf7v0souLapISu8viH01Q4OfGfmw,93310
+polygon/rest/models/unmarshal.py,sha256=E2I2WXL38H0Vneh-gksQ9yg9NHrppMzoOuI6DT6pLIs,232
+polygon/websocket/__init__.py,sha256=Ts6vjTL5K7AvInzdNEYxCaOTsfMpLpXzwZcADgztgyU,93
+polygon/websocket/websocket_client.py,sha256=-QFkvezB1XBHf3BhZVohWFCt_uvWE4-dDEMvCy4dP9U,3862
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/integration/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/integration/test_rest_api.py,sha256=An2m95XTpsg9GW4jN7lYeZK32vbwxOPrKyj9iMxxrlg,8501
+polygon_api_client-0.0.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+polygon_api_client-0.0.1.dist-info/METADATA,sha256=mZBOg01AWqO4GpsQktMC_7CxQXYcdCvIDhPXEAXEfC0,392
+polygon_api_client-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+polygon_api_client-0.0.1.dist-info/top_level.txt,sha256=o8OzBshRxBWEDsgYNMkm9eA1HSZ59SiLmgY0lm2yAh4,14
+polygon_api_client-0.0.1.dist-info/RECORD,,
