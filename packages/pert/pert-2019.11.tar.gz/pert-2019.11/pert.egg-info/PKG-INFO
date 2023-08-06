@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: pert
+Version: 2019.11
+Summary: [![Build Status](https://travis-ci.com/leliel12/pert.svg?branch=master)](https://travis-ci.com/leliel12/pert)
+Home-page: https://github.com/leliel12/pert
+Author: Juan BC
+Author-email: jbc.develop@gmail.com
+License: 3 Clause BSD
+Description: # PERT
+        
+        [![Build Status](https://travis-ci.com/leliel12/pert.svg?branch=master)](https://travis-ci.com/leliel12/pert)
+        [![Documentation Status](https://readthedocs.org/projects/pert/badge/?version=latest)](https://pert.readthedocs.io/en/latest/?badge=latest)
+        
+        
+        The program (or project) evaluation and review technique (PERT) is a statistical tool used in project management, which was designed to analyze and represent the tasks involved in completing a given project.
+        
+        Full information:
+            https://en.wikipedia.org/wiki/Program_evaluation_and_review_technique
+        
+Keywords: pert,project,review,statistics
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Education
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Topic :: Scientific/Engineering
+Description-Content-Type: text/markdown
