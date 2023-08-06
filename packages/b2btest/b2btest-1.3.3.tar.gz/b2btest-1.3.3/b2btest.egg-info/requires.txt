@@ -1,0 +1,11 @@
+consolemsg
+setuptools>40.5
+
+[:python_version < "3.5"]
+pathlib2
+
+[audio]
+wavefile
+
+[xml]
+lxml
