@@ -1,0 +1,8 @@
+from .address import ADDRESS_1_FIELDS, ADDRESS_2_FIELDS
+from .environment import ENVIRONMENT_FIELDS
+from .vehicle import VEHICLE_FIELDS
+
+__all__ = [
+    ADDRESS_1_FIELDS, ADDRESS_2_FIELDS,
+    ENVIRONMENT_FIELDS, VEHICLE_FIELDS
+]
