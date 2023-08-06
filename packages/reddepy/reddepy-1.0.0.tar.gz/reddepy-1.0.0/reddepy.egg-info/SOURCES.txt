@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+reddepy/redde.py
+reddepy.egg-info/PKG-INFO
+reddepy.egg-info/SOURCES.txt
+reddepy.egg-info/dependency_links.txt
+reddepy.egg-info/entry_points.txt
+reddepy.egg-info/requires.txt
+reddepy.egg-info/top_level.txt
