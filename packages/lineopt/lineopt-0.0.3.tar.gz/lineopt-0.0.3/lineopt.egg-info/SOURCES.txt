@@ -1,0 +1,8 @@
+README.rst
+lineopt.py
+setup.py
+lineopt.egg-info/PKG-INFO
+lineopt.egg-info/SOURCES.txt
+lineopt.egg-info/dependency_links.txt
+lineopt.egg-info/requires.txt
+lineopt.egg-info/top_level.txt
