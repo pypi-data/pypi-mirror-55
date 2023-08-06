@@ -1,0 +1,15 @@
+bit_cryptocompare/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bit_cryptocompare/errors.py,sha256=dwzPbl_ggvEBafw8z9P5EhbVD0sWvDkBp7xQjThnLUA,788
+bit_cryptocompare/parsers.py,sha256=TLLPSZ5JJobIHVFnIm7EcLgtNGNHMpOudmXwkeCS5-I,20375
+bit_cryptocompare/config/__init__.py,sha256=xdLN3DTzzuuf4vjScbOkZhaeAHoSg6uppOGQfEhnuDM,3512
+bit_cryptocompare/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bit_cryptocompare/tests/test_util.py,sha256=j_qblk2ZSuPnM4jaC4jvsI3spBZmhIGxlJxFz6BAfeA,5767
+bit_cryptocompare/util/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+bit_cryptocompare/util/data.py,sha256=YYVpThGpAwm8_BRVEa4PvmSy51D-tXT2yGH8Rs2be10,8004
+bit_cryptocompare/util/url_factory.py,sha256=t5rAOwJ7Bi8e86b9oYg55uEI243i4FORCNPKoVv4YvU,38879
+bit_cryptocompare/util/validate.py,sha256=QAZ-BbXAXxc591KH8TRwReahuuyuydWDetytfi0P1E8,5214
+bit_cryptocompare-0.0.1.dist-info/LICENSE,sha256=Ev0Cev_kRRzEpdCMswj3Lfq8qX_IG4EiwxqzxY7UjVQ,11337
+bit_cryptocompare-0.0.1.dist-info/METADATA,sha256=zFLDH3iySvkHFx9OrSgoEq6MBCy9U12B0Vzm59Yjssw,5988
+bit_cryptocompare-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+bit_cryptocompare-0.0.1.dist-info/top_level.txt,sha256=E9KhzW6urS4vCktVA3dyQgRy9asMaB5Rkt_UgMQcs1c,18
+bit_cryptocompare-0.0.1.dist-info/RECORD,,
