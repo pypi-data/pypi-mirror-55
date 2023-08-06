@@ -1,0 +1,16 @@
+maven/__init__.py,sha256=uvzreB01whzoaEsZ-S5aW6_6cJUixtYRgeKlzIoHZB8,21
+maven/get.py,sha256=XT1pE2tChXeITJRYLEWlyx4KViF8ZJIIAYGuENKKtXQ,1449
+maven/datasets/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+maven/datasets/test.py,sha256=2EroseCtJ3pNAwxVFxOab2aqQ2RJlrQi4HGpibkXLyY,14
+maven/datasets/general_election/__init__.py,sha256=g9pbQqhyK1ix8-THeOh8QpHhrFl-kws993D-lRCXQOk,245
+maven/datasets/general_election/gb_2015_results.py,sha256=wNSbZvq2N2ZTGM89yFpmii2mxL6rpOrA1WmiRXn8GN8,4615
+maven/datasets/general_election/uk_2010_results.py,sha256=5mbhQciZk5uWGAlYVOaC3QkRW9m6M7dAbp8VM-9t420,6218
+maven/datasets/general_election/uk_2015_model.py,sha256=ETzX83vE1EPIXXnbaTTD5pGwR4AqgX7W8pp4dTHi8Bc,24027
+maven/datasets/general_election/uk_2015_results.py,sha256=zsQQGzIIrOsKOZRYfebA4Nv8LD3g3s35ZH74UT6y6Ds,8126
+maven/datasets/general_election/uk_polls.py,sha256=kNuKDbqB4mYpW-Zh5IZvxILY3HOZIIkEEjYZvmJcHIE,2143
+maven-0.0.7.dist-info/AUTHORS.md,sha256=5rpa1NBn68PS8bi7hKYBiQ4qGd1lK65Wd3-x3Xd7BHA,223
+maven-0.0.7.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+maven-0.0.7.dist-info/METADATA,sha256=MiYZjh1Y7Iz0Ipt0mPKCpFRHidMf2UYy3FTS7JdbKm8,5049
+maven-0.0.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+maven-0.0.7.dist-info/top_level.txt,sha256=dxAkUd_YOm6ZzD7FHLkojWqr1uESPUtZswlgyCcqdyE,6
+maven-0.0.7.dist-info/RECORD,,
