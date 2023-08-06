@@ -1,0 +1,9 @@
+[invenio_base.apps]
+invenio_records_links = invenio_records_links:RecordsLinks
+
+[invenio_base.blueprints]
+
+
+[invenio_i18n.translations]
+messages = invenio_records_links
+
