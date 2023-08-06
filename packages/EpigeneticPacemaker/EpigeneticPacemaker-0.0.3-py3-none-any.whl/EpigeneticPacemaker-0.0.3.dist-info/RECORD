@@ -1,0 +1,13 @@
+EpigeneticPacemaker/EPMBase.py,sha256=q3841VFuB-xb2S0u9FtIjD4L6jyxEx7N6ilTooDryn8,1154
+EpigeneticPacemaker/EPMCompute.py,sha256=cyHIvthCOMhyBZgGgBq1AaoJGr13JR35hx08Ph5wn5A,3660
+EpigeneticPacemaker/EpigeneticPacemaker.py,sha256=uDntgO0VEUQ7etbrTsPvQbcFC9hMF6_EN-v4MFH6uGk,1701
+EpigeneticPacemaker/EpigeneticPacemakerCV.py,sha256=nAyyi8HHmk80rviiUXz9JOm5Rj28kWXiwQpd4PRvJm8,3518
+EpigeneticPacemaker/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+EpigeneticPacemaker/ExampleData/DataSets.py,sha256=3ASCXAOjGcrsDc0qFc3hDIdAfrge84msy0ydOJWnP_o,1075
+EpigeneticPacemaker/ExampleData/GSE74193_test.tsv.gz,sha256=eOmZyS03IBLuVsgXVnwrLZdnqrzib7vtr04rYWjQ2gY,12762345
+EpigeneticPacemaker/ExampleData/GSE74193_train.tsv.gz,sha256=Nr-eyM94aB630TfxqmzJUKg9ztOdJh1Kdx8vCZhTdio,29492646
+EpigeneticPacemaker/ExampleData/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+EpigeneticPacemaker-0.0.3.dist-info/METADATA,sha256=rBkk4JQwEBZ45qRYfwmp8GN3OFzNW-jFj477I1i4Udw,2527
+EpigeneticPacemaker-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+EpigeneticPacemaker-0.0.3.dist-info/top_level.txt,sha256=0iYqj28wzPlJEm8UJut0Cx7H6TCIYgJtUGpD1cqqzjw,20
+EpigeneticPacemaker-0.0.3.dist-info/RECORD,,
