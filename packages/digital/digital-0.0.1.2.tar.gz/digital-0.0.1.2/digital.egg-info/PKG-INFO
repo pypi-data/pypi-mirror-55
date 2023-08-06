@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: digital
+Version: 0.0.1.2
+Summary: Utility to interact with services and automate workflows.
+Home-page: https://gitlab.com/xybid/digital
+Author: Mindey
+Author-email: mindey@qq.com
+License: ASK FOR PERMISSIONS
+Description: UNKNOWN
+Platform: UNKNOWN
+Provides-Extra: develop
