@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+user-manager-pkg/newTest.py
+user_manager_pkg.egg-info/PKG-INFO
+user_manager_pkg.egg-info/SOURCES.txt
+user_manager_pkg.egg-info/dependency_links.txt
+user_manager_pkg.egg-info/top_level.txt
