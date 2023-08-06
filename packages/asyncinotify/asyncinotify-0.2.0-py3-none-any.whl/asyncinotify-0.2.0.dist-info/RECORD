@@ -1,0 +1,11 @@
+asyncinotify/__init__.py,sha256=_1T-zzYdo8BKro5q7zWHpgXhZgbx0G6d3lfqJ6hkdfg,92
+asyncinotify/_meta.py,sha256=sIl0UyP3zWBvT1GsyERrSnPa0ExDXZ9mbl4J5TKDgNk,947
+asyncinotify/error.py,sha256=4oIfUVKqKoPTDu_TGNGy5XneHpNNnThvDTFzzlmX9yE,204
+asyncinotify/ffi.py,sha256=pclfjT1fzSu8cA_J6kt21GxMxidTAyxnD9YFBW6iAjk,1172
+asyncinotify/inotify.py,sha256=aqUVFqwzN1zUP09c6HPTDQRILZ5T71Ac4H6_HhepMM0,10290
+asyncinotify-0.2.0.dist-info/DESCRIPTION.rst,sha256=q3bRXIm4wpkivC3ZgSel4FSmL0-KfWfdJsSYMjVxoR4,1025
+asyncinotify-0.2.0.dist-info/METADATA,sha256=FV2_Kx7UC7xG7xulN4KO0ZPA5Ah7CAm_BBU2hPawhNc,1794
+asyncinotify-0.2.0.dist-info/RECORD,,
+asyncinotify-0.2.0.dist-info/WHEEL,sha256=rNo05PbNqwnXiIHFsYm0m22u4Zm6YJtugFG2THx4w3g,92
+asyncinotify-0.2.0.dist-info/metadata.json,sha256=YRZgHj85yDe95piSugtrgOmGt67KEIz8PC5Y0e90cu4,917
+asyncinotify-0.2.0.dist-info/top_level.txt,sha256=4P6LMITOSSENrkoB-h3_D1tdIx3lXkuIkpCwZ-NJF_U,13
