@@ -1,0 +1,14 @@
+README.md
+setup.py
+exchange/__init__.py
+exchange/app.py
+exchange/services.py
+exchange_rates_last_hm_alex.egg-info/PKG-INFO
+exchange_rates_last_hm_alex.egg-info/SOURCES.txt
+exchange_rates_last_hm_alex.egg-info/dependency_links.txt
+exchange_rates_last_hm_alex.egg-info/requires.txt
+exchange_rates_last_hm_alex.egg-info/top_level.txt
+test/test_rest.py
+test/test_services.py
+test/test_updater.py
+test/fixtures/__init__.py
