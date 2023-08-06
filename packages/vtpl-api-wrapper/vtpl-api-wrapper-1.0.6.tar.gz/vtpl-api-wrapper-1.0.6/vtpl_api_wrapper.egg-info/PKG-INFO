@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: vtpl-api-wrapper
+Version: 1.0.6
+Summary: VTPL API Wrapper and VTPL Video Stream
+Home-page: UNKNOWN
+Author-email: 
+License: UNKNOWN
+Description:     VTPL API Wrapper and VTPL Video Stream
+            
+Keywords: vtpl,VTPL,Videonetics,Videonetics OpenAPI,OpenAPI,VTPL API Wrapper,Videonetics API Wrapper,VTPL API Wrapper,VTPL Video Stream,Videonetics Video Stream
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
