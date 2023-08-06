@@ -1,0 +1,8 @@
+README.md
+setup.py
+testpkgsam/__init__.py
+testpkgsam.egg-info/PKG-INFO
+testpkgsam.egg-info/SOURCES.txt
+testpkgsam.egg-info/dependency_links.txt
+testpkgsam.egg-info/not-zip-safe
+testpkgsam.egg-info/top_level.txt
