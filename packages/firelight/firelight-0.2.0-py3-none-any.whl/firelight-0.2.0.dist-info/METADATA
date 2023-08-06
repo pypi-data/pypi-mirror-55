@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: firelight
+Version: 0.2.0
+Summary: A visualization library for PyTorch tensors.
+Home-page: UNKNOWN
+Author: Roman Remme
+Author-email: roman.remme@iwr.uni-heidelberg.de
+License: Apache Software License 2.0
+Platform: UNKNOWN
+Requires-Dist: pyyaml (>=3.12)
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+Requires-Dist: scikit-learn
+Requires-Dist: scikit-image
+Requires-Dist: torch
+
+UNKNOWN
+
+
