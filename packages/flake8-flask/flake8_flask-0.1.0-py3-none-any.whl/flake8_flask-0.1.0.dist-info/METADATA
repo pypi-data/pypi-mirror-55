@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: flake8-flask
+Version: 0.1.0
+Summary: r2c checks for flask
+Home-page: https://github.com/returntocorp/flake8-flask
+Author: grayson
+Author-email: grayson@r2c.dev
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Framework :: Flake8
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+
+UNKNOWN
+
+
