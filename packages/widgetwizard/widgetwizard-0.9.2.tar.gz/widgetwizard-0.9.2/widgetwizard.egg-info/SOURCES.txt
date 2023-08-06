@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+widgetwizard/__init__.py
+widgetwizard/config.json
+widgetwizard/widgetwizard.py
+widgetwizard.egg-info/PKG-INFO
+widgetwizard.egg-info/SOURCES.txt
+widgetwizard.egg-info/dependency_links.txt
+widgetwizard.egg-info/requires.txt
+widgetwizard.egg-info/top_level.txt
