@@ -1,0 +1,10 @@
+README.md
+setup.py
+kor/__init__.py
+kor/errors.py
+kor/kor_file.py
+kor/value_type.py
+kor_project.egg-info/PKG-INFO
+kor_project.egg-info/SOURCES.txt
+kor_project.egg-info/dependency_links.txt
+kor_project.egg-info/top_level.txt
