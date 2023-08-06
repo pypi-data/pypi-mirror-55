@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        apptracker=apptracker.__init__:main
+        
