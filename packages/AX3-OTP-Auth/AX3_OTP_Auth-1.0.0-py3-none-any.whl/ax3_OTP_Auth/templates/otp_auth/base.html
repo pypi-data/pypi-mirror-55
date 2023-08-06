@@ -1,0 +1,50 @@
+{% load widget_tweaks %}
+
+<!DOCTYPE html>{% load static compress l10n %}
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="referrer" content="origin-when-crossorigin" id="meta_referrer">
+        <title>{% block title %}{% endblock %} | AX3 OTP Auth</title>
+        <meta name="viewport" content="user-scalable=no,initial-scale=1,maximum-scale=1">
+
+        <meta itemprop="type" property="og:type" content="website">
+        <meta property="og:url" content="https://{{ request.get_host }}{{ request.get_full_path }}">
+        <meta itemprop="name" property="og:title" content="AX3 OTP Auth">
+        <meta itemprop="description" property="og:description" name="description" content="Inicio de sesion por SMS">
+        <meta name="format-detection" content="telephone=no">
+
+        <link rel="apple-touch-icon-precomposed" href="{% static 'img/apple-touch-icon.png' %}">
+        <link rel="icon" href="{% static 'img/favicon.png' %}">
+        <style>
+            :root {
+                --primary-color: {{ OTP_PRIMARY_COLOR }};
+
+                --background-btn: {{ OTP_BACKGROUND_BTN }};
+                --background-btn-hover: {{ OTP_BACKGROUND_BTN_HOVER }};
+                --color-text-btn: {{ OTP_COLOR_TEXT_BTN }};
+                --color-text-btn-hover: {{ OTP_COLOR_TEXT_BTN_HOVER }};
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" href="{% static 'otp_auth/css/normalize.css' %}">
+        <link rel="stylesheet" type="text/css" href="{% static 'otp_auth/css/styles.css' %}">
+    </head>
+    <body {% block body_attrs %}{% endblock %}>
+    {% block body %}
+        <div class="main-wrapper">
+            <header class="header">
+                <h2 class="off-screen">AX3 OTP Auth</h2>
+                <img class="header__logo" src="{% static OTP_BRAND_IMG %}" alt="Axiacore">
+            </header>
+            <div class="section">
+                <h1 class="section__title">Inicio de sesión</h1>
+                <p class="section__text">{{ OTP_BRAND_NAME }} usa <b>AX3</b>, una tecnología de Axiacore, para ayudarte a iniciar sesión. Recibiras un <b>SMS o un mensaje</b> de confirmación para verificar tu número de teléfono.</p>
+                {% block content %}{% endblock %}
+            </div>
+        </div>
+    {% endblock %}
+    </body>
+
+    {% block js_globals %}{% endblock %}
+</html>
