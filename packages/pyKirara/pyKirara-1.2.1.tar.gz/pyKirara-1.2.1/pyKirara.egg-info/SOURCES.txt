@@ -1,0 +1,15 @@
+README.md
+setup.py
+pyKirara/__init__.py
+pyKirara/card.py
+pyKirara/client.py
+pyKirara/enums.py
+pyKirara/errors.py
+pyKirara/idol.py
+pyKirara/infos.py
+pyKirara/skills.py
+pyKirara.egg-info/PKG-INFO
+pyKirara.egg-info/SOURCES.txt
+pyKirara.egg-info/dependency_links.txt
+pyKirara.egg-info/requires.txt
+pyKirara.egg-info/top_level.txt
