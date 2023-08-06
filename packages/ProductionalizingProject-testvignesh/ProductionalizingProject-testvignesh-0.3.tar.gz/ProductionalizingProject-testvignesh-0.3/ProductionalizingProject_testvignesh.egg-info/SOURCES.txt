@@ -1,0 +1,10 @@
+setup.cfg
+setup.py
+ProductionalizingProject_testvignesh.egg-info/PKG-INFO
+ProductionalizingProject_testvignesh.egg-info/SOURCES.txt
+ProductionalizingProject_testvignesh.egg-info/dependency_links.txt
+ProductionalizingProject_testvignesh.egg-info/requires.txt
+ProductionalizingProject_testvignesh.egg-info/top_level.txt
+mypackage/__init__.py
+mypackage/mymodule.py
+mypackage/template.txt
