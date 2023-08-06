@@ -1,0 +1,10 @@
+README.md
+setup.py
+pydrop/__init__.py
+pydrop/pydrop.py
+pydrop.egg-info/PKG-INFO
+pydrop.egg-info/SOURCES.txt
+pydrop.egg-info/dependency_links.txt
+pydrop.egg-info/entry_points.txt
+pydrop.egg-info/requires.txt
+pydrop.egg-info/top_level.txt
