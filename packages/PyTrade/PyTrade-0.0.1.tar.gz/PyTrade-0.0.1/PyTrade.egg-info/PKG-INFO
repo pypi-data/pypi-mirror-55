@@ -1,0 +1,25 @@
+Metadata-Version: 1.1
+Name: PyTrade
+Version: 0.0.1
+Summary: Pythonic Trading Framework
+Home-page: https://pytrade.io
+Author: Ran Aroussi
+Author-email: ran@aroussi.com
+License: Apache
+Description: PyTrade: Pythonic Trading Framework
+        
+Keywords: pytrade qtpylib qtpy algotrading algo trading quant backtest backtester interactive brokers ibpy
+Platform: any
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Development Status :: 1 - Planning
+Classifier: Operating System :: OS Independent
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Financial and Insurance Industry
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Office/Business :: Financial :: Investment
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
