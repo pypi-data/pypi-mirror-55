@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+cloud_translator.egg-info/PKG-INFO
+cloud_translator.egg-info/SOURCES.txt
+cloud_translator.egg-info/dependency_links.txt
+cloud_translator.egg-info/not-zip-safe
+cloud_translator.egg-info/requires.txt
+cloud_translator.egg-info/top_level.txt
+translator/__init__.py
