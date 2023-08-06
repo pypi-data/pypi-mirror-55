@@ -1,0 +1,8 @@
+mypy_boto3_personalize_runtime/__init__.py,sha256=zYu0Di2ALHriipmYf4bdX3CbkiCvjXegPSgs27NHdc8,138
+mypy_boto3_personalize_runtime/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_personalize_runtime/client.py,sha256=EUa98aOAW05gKDWY7XbzKfamj8Hc9TcfjzHOs61KxoQ,7695
+mypy_boto3_personalize_runtime/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_personalize_runtime-0.1.9.dist-info/METADATA,sha256=TxybgHHfeuR2ZG6-X5EMG4ySndh0Poipc6uz3FJcPOI,1083
+mypy_boto3_personalize_runtime-0.1.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_personalize_runtime-0.1.9.dist-info/top_level.txt,sha256=g0ntzKL047PO95HjkgfnRNMxWENxbiNNz5NmOOqSGa4,31
+mypy_boto3_personalize_runtime-0.1.9.dist-info/RECORD,,
