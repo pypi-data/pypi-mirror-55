@@ -1,0 +1,9 @@
+Cython
+matplotlib
+numpy
+jupyter
+pint
+scipy
+pandas
+tables
+pyRadialPlot
