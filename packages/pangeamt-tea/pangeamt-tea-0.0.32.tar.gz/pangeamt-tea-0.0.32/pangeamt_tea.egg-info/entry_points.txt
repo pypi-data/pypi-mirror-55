@@ -1,0 +1,3 @@
+[console_scripts]
+tea = pangeamt_tea.console_scripts.tea2:main
+
