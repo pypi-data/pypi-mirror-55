@@ -1,0 +1,10 @@
+tkinter_nav/__init__.py,sha256=rlW93zVSB0Sq1bbUyqpc70QGGhcT6MZzp52Jow54GX8,95
+tkinter_nav/errors.py,sha256=JJcK0_oiqpg-BidXnbAf7PWUMOsa2lNqAitKw5vaOIY,423
+tkinter_nav/page.py,sha256=EI1xV0hz2o457byOaWH4cDW7uMMeXjzhcrCj2z6Be7Y,1288
+tkinter_nav/page_container.py,sha256=olzgWCluI5uUt89vcePsJEY0lKl8H9vjWFWJ3iwZKRQ,409
+tkinter_nav/wrapper.py,sha256=vzdnSmu9Hq2dmD1wC4C3VUjV-GuvlQ3_uB7xDO1jMDM,1884
+tkinter_nav-0.0.3.dist-info/LICENSE,sha256=CLfpM7X5oNqSOq6fNY_6j1-KVzm4dcEUO25T4VknqGc,10763
+tkinter_nav-0.0.3.dist-info/METADATA,sha256=uzfFPH_6sIrDY5-JJHTTmM25oLsWkPj6ecJZpgOnLz8,3369
+tkinter_nav-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tkinter_nav-0.0.3.dist-info/top_level.txt,sha256=yXWv3JOlPKJeNMM7AocrXU3xWRXYyS6KQDo-6OAjiH8,12
+tkinter_nav-0.0.3.dist-info/RECORD,,
