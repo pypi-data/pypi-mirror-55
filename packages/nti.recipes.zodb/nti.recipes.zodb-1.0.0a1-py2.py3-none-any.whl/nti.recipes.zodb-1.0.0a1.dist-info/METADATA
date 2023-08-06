@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: nti.recipes.zodb
+Version: 1.0.0a1
+Summary: zc.buildout recipes for RelStorage and ZEO
+Home-page: https://github.com/NextThought/nti.recipes.zodb
+Author: Jason Madden
+Author-email: open-source@nextthought.com
+License: Proprietary
+Project-URL: Bug Tracker, https://github.com/NextThought/nti.recipes.zodb/issues
+Project-URL: Source Code, https://github.com/NextThought/nti.recipes.zodb/
+Keywords: buildout relstorage ZEO
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Testing
+Classifier: Framework :: Buildout
+Requires-Dist: setuptools
+Requires-Dist: zc.buildout
+Requires-Dist: zc.recipe.deployment
+Requires-Dist: zc.zodbrecipes
+Provides-Extra: test
+Requires-Dist: PyHamcrest ; extra == 'test'
+Requires-Dist: zope.testrunner ; extra == 'test'
+
+==================
+ nti.recipes.zodb
+==================
+
+Recipes for creating RelStorage and ZEO configurations.
+
+.. image:: https://coveralls.io/repos/github/NextThought/nti.recipes.zodb/badge.svg?branch=master
+   :target: https://coveralls.io/github/NextThought/nti.recipes.zodb?branch=master
+
+

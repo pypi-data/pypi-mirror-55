@@ -1,0 +1,14 @@
+nti.recipes.zodb-1.0.0a1-py3.8-nspkg.pth,sha256=BYveHZWqaWTmnvmZyNWqFLbAtKnmlhgwEWN8DnPZibk,1662
+nti/recipes/zodb/__init__.py,sha256=Fav8H48hshxPjsAT4eL4YQ_8-wJ1TzV1OiuRXI7Yq14,495
+nti/recipes/zodb/relstorage.py,sha256=ZhGXSIYdKH9qz3QqHWOxBDPR5oQZHB5fox3xiJVYzUA,15849
+nti/recipes/zodb/zeo.py,sha256=-ZGksmRk6VjitmPIQ7rTmIa9y2vIQY0pR7TGS4BVNu0,6052
+nti/recipes/zodb/tests/__init__.py,sha256=j02gXzkIFtrCuiVbTje-PO5GrRO1yTk6Y-offZbpJhY,635
+nti/recipes/zodb/tests/test_relstorage.py,sha256=OcsFk5Vvv2kghxfWF6T72iOBsJveEzRkK_ZgsbjlGCI,8252
+nti/recipes/zodb/tests/test_zeo.py,sha256=HIK3b5SZkQ7iQEYm8iocZBAZh8yA4_aIHUQljG5__Xo,918
+nti.recipes.zodb-1.0.0a1.dist-info/LICENSE,sha256=ooyOQmypt84lFCp517hMJx1pQISCo3Kxl0GXZ50f6UM,593
+nti.recipes.zodb-1.0.0a1.dist-info/METADATA,sha256=G9t1S--Dc0_z7IfNBuydGfry4SgskFGwga0c_--bluI,1757
+nti.recipes.zodb-1.0.0a1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+nti.recipes.zodb-1.0.0a1.dist-info/entry_points.txt,sha256=_D4XVTgXwEibRVOPpONtmHzBcH-95qLt3fl7Sjwe6nY,103
+nti.recipes.zodb-1.0.0a1.dist-info/namespace_packages.txt,sha256=AKVQpAFWbnFvvkElnlFjzXjryTiREhUuiD297keN1OU,16
+nti.recipes.zodb-1.0.0a1.dist-info/top_level.txt,sha256=QeoTxYiElOI7m9177uCBGg6ardc4SF0AChkyASYXx7k,4
+nti.recipes.zodb-1.0.0a1.dist-info/RECORD,,
