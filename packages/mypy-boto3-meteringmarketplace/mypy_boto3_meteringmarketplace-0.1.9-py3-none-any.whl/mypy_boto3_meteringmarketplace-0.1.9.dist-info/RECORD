@@ -1,0 +1,8 @@
+mypy_boto3_meteringmarketplace/__init__.py,sha256=Dp73DMEjc2G-HR-tw0kg1hKN28GZ-l_gbKpdlHTejXw,138
+mypy_boto3_meteringmarketplace/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_meteringmarketplace/client.py,sha256=K_IDkp3Q4QFsT4creiOuh_ft86E-ret5P3HIOSK0vpM,18879
+mypy_boto3_meteringmarketplace/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_meteringmarketplace-0.1.9.dist-info/METADATA,sha256=Yolmjh-Qg0QiOdzlotsZ4vMOTEGPm4DOsD959jNV8FM,1083
+mypy_boto3_meteringmarketplace-0.1.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_meteringmarketplace-0.1.9.dist-info/top_level.txt,sha256=dOZA2dwWcGLk4-dtjOiUexBdIk6p5PaPQLqLZG2nJUU,31
+mypy_boto3_meteringmarketplace-0.1.9.dist-info/RECORD,,
