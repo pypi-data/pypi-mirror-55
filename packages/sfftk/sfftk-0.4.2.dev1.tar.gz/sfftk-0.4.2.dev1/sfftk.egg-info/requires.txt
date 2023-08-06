@@ -1,0 +1,11 @@
+ahds==0.2.1.dev1
+lxml
+h5py>2.7.0
+RandomWords
+styled
+mrcfile
+bitarray
+requests
+mock
+numpy-stl
+styled
