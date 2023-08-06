@@ -1,0 +1,10 @@
+pysand/__init__.py,sha256=JYIbH6_41RArShjUzVmHcVxCAHJ-7ncAHHacApvxmf8,108
+pysand/asd.py,sha256=Exr_Z9ezUJJUBFaHTTUpvIT6AfIX6uUpWZgVKxW5x-A,2073
+pysand/erosion.py,sha256=wCgRVS5i8zkXNPQjnHpfKN3Gx3YziKGneZ7k14feDSw,9145
+pysand/fluidproperties.py,sha256=XqVLJEbLG6yQsTEt1e4vMviOguMbap8bFTvSeXzwm9E,2627
+pysand/version.py,sha256=WMSWQEkyw-aqz2w038gdxy-fcHiOoPgZRA_-HXseS8E,21
+pysand-1.1.dist-info/LICENSE,sha256=IwGE9guuL-ryRPEKi6wFPI_zOhg7zDZbTYuHbSt_SAk,35823
+pysand-1.1.dist-info/METADATA,sha256=hwHr_xvlei2YoV6PT-0njAOZEm9Pqj6Ns7W7cjlJ-cM,1136
+pysand-1.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pysand-1.1.dist-info/top_level.txt,sha256=womKSUQ_UbDSSPhamAYPR6xd7DjIc565SGXLKxQ5zD8,7
+pysand-1.1.dist-info/RECORD,,
