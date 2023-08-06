@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: doubleclickcrypto
+Version: 0.1
+Summary: Module for decrypting doubleclick price confirmations
+Home-page: https://github.com/danielhedren/doubleclickcrypto
+Author: Daniel Hedrén
+Author-email: danielhedren@gmail.com
+License: UNKNOWN
+Description: # DoubleClickCrypto
+         Python module for decrypting doubleclick price confirmations.
+         
+         See https://developers.google.com/authorized-buyers/rtb/response-guide/decrypt-price.
+        
+        ## Installation
+        ```
+        pip install git+https://github.com/danielhedren/doubleclickcrypto.git
+        ```
+        
+        ## Example usage
+        Look at the test cases in the source for more examples.
+        
+        ### Simple decryption
+         ```python
+        from doubleclickcrypto import DoubleClickCrypto
+        
+        e_key = "skU7Ax_NL5pPAFyKdkfZjZz2-VhIN8bjj1rVFOaJ_5o="
+        i_key = "arO23ykdNqUQ5LEoQ0FVmPkBd7xB5CO89PDZlSjpFxo="
+        enc = "YWJjMTIzZGVmNDU2Z2hpN7fhCuPemCce_6msaw"
+        
+        DoubleClickCrypto.decrypt(enc, e_key, i_key)
+        #  -> 100
+         ```
+        ### Check for stale response
+        ```python
+        DoubleClickCrypto.decrypt(enc, e_key, i_key, max_timedelta_seconds=0)
+        #  -> throws StaleResponseException
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
