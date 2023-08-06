@@ -1,0 +1,10 @@
+mypy_boto3_transfer/__init__.py,sha256=arfRPGreER0DKWrkI5mKYPp4W05-u7evDJuyLm57AY8,108
+mypy_boto3_transfer/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_transfer/client.py,sha256=dti3-T9s9G0f-mmAqWxJGjIn0bjyxgmwRZ54k92lpU4,3630
+mypy_boto3_transfer/paginator.py,sha256=WLR5qvr3lwSJQ9Dewwu7OzCVPjZMVmwyh8sMml7Gnho,292
+mypy_boto3_transfer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_transfer/version.py,sha256=-w_IYq2qirUd-aSQcHEODBy3Q_jqwhPRWywcT_M1mMc,48
+mypy_boto3_transfer-0.1.7.dist-info/METADATA,sha256=p8Jz0SH0oHlUnj0ISAd7IID8d65u5MmI7qUv6oj-sdU,1446
+mypy_boto3_transfer-0.1.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_transfer-0.1.7.dist-info/top_level.txt,sha256=mncof3SzY8eCafPLvBkKLLXMmqfJaw-PB_gBYRhC-Kk,20
+mypy_boto3_transfer-0.1.7.dist-info/RECORD,,
