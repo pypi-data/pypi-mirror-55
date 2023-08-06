@@ -1,0 +1,8 @@
+kode_logger/__init__.py,sha256=rQCfpXtwFYCsPJkwSfAjr9LFhwBYpe55N89Kxj7H2Yw,500
+kode_logger/formatters/__init__.py,sha256=41b9BzPMcUBxVelzsvmmPOtlDw4veQp8fBtCKYkM2Cw,68
+kode_logger/formatters/json.py,sha256=w-J2-ZNsnE0dwaHHlu1Q57_IsuZ7AJtjli6_aF1YCPg,2514
+kode_logger-0.0.7.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+kode_logger-0.0.7.dist-info/METADATA,sha256=B9EnTVP3UBMQSorbHidBPkVoJQyqxXgjlIk6GCgqxBc,1061
+kode_logger-0.0.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+kode_logger-0.0.7.dist-info/top_level.txt,sha256=3E6GVWpd4X0RZ56QjSb2dpCQ97J5LOZOjEVlOhOfNjI,12
+kode_logger-0.0.7.dist-info/RECORD,,
