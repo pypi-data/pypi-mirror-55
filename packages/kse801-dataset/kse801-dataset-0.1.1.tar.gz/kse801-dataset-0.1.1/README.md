@@ -1,0 +1,19 @@
+# Dataset for KSE801: Sensor Data Science
+
+## Install
+```cmd
+pip install kse801-dataset
+```
+## How to use
+* The datasets are separated by their source names: ['abc', 'crowdsignal', 'kaist']
+* For example:
+```python
+from kse801.abc import load_app_usage
+from kse801.kaist import load_activity
+from kse801.crowdsignal import load_accel_phone
+
+abc_app_usage = load_app_usage()
+kaist_activity = load_activity()
+crowdsignal_accel = load_accel_phone()
+```
+* Datasets are formatted as pandas's DataFrame, except receptivity data (i.e., kse801.kaist.load_receptivity)
