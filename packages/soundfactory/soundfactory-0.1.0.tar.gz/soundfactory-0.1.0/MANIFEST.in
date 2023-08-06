@@ -1,0 +1,6 @@
+include README.md LICENSE
+recursive-include tests *.py
+recursive-include docs *
+recursive-include samples *.wav
+recursive-include soundfactory/settings *
+recursive-include soundfactory/utils *
