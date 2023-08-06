@@ -1,0 +1,15 @@
+EXCLUDED_FEATURES = [
+    'billable_lease_at_property',
+    'billable_lease_at_property_180',
+    'billable_lease_at_property_90',
+    'data_updated_at',
+    'leased_at_property',
+    'leased_at_property_180',
+    'leased_at_property_90',
+    'lsd_control',
+    'pct_leases_imported',
+    'rental_id',
+    'user_id',
+    'value_at',
+    'value_on',
+]
