@@ -1,0 +1,8 @@
+hiredis/__init__.py,sha256=0853rLuoal8xzfbemLjYY5lHqaovDnm3MBWo9FTXyO8,191
+hiredis/hiredis.pyd,sha256=lx6v_zegnzftv0_4VuxGX8PBMvNzXrO2thNFg9SVXIQ,18944
+hiredis/version.py,sha256=d4QHYmS_30j0hPN8NmNPnQ_Z0TphDRbu4MtQj9cT9e8,22
+hiredis-1.0.1.dist-info/COPYING,sha256=cO36bT4R-ddJfCwvKY0G8zsR0Q8392YFECxas7HygmI,1478
+hiredis-1.0.1.dist-info/METADATA,sha256=wWYiKZGWhZHOm7bx7J-27JHD-VLCcT-zSTNr_4lMqiQ,6212
+hiredis-1.0.1.dist-info/WHEEL,sha256=VgnquN2wmS-dr_fBLVW6BVf1-4JY9hxIFDEVNCtWYcA,102
+hiredis-1.0.1.dist-info/top_level.txt,sha256=P_zCKMUoKFNyPXKK3aYI6FeuETe2dcDLC1zsr3scogI,8
+hiredis-1.0.1.dist-info/RECORD,,
