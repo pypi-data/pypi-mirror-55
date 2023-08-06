@@ -1,0 +1,6 @@
+README.md
+setup.py
+sylwia.egg-info/PKG-INFO
+sylwia.egg-info/SOURCES.txt
+sylwia.egg-info/dependency_links.txt
+sylwia.egg-info/top_level.txt
