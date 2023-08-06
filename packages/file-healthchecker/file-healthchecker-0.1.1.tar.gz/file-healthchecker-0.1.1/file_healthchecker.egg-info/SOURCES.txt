@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+file_healthchecker/__init__.py
+file_healthchecker/entrypoint.py
+file_healthchecker.egg-info/PKG-INFO
+file_healthchecker.egg-info/SOURCES.txt
+file_healthchecker.egg-info/dependency_links.txt
+file_healthchecker.egg-info/entry_points.txt
+file_healthchecker.egg-info/not-zip-safe
+file_healthchecker.egg-info/requires.txt
+file_healthchecker.egg-info/top_level.txt

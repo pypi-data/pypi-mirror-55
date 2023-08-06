@@ -1,0 +1,10 @@
+
+[dev]
+python-language-server[all]
+black==19.3b0
+
+[test]
+pytest==5.2.1
+pytest-sugar==0.9.2
+pytest-asyncio==0.10.0
+pytest-cov==2.8.1
