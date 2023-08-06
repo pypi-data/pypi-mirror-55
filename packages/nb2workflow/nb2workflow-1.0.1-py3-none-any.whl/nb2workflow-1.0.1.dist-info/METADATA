@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: nb2workflow
+Version: 1.0.1
+Summary: convert notebook to workflow
+Home-page: https://github.com/volodymyrss/nb2workflow
+Author: Volodymyr Savchenko
+Author-email: contact@volodymyrsavchenko.com
+License: GPLv3
+Download-URL: https://github.com/volodymyrss/nb2workflow/archive/1.0.1.tar.gz
+Keywords: jupyter,docker
+Platform: UNKNOWN
+Requires-Dist: flask
+Requires-Dist: pytest-flask
+Requires-Dist: papermill
+Requires-Dist: ipykernel
+Requires-Dist: nbconvert
+Requires-Dist: docker
+Requires-Dist: checksumdir
+Requires-Dist: Flask-Caching
+Requires-Dist: flask-cors
+Requires-Dist: flasgger
+Requires-Dist: owlready2
+Requires-Dist: rdflib
+
+UNKNOWN
+
+
