@@ -1,0 +1,9 @@
+[babel.extractors]
+ckan = ckan.lib.extract:extract_ckan
+
+[ckan.plugins]
+downloadall = ckanext.downloadall.plugin:DownloadallPlugin
+
+[console_scripts]
+downloadall = ckanext.downloadall.cli:cli
+
