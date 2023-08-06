@@ -1,0 +1,13 @@
+setuptools
+atom
+enaml
+h5py>=2.9.0
+lmfit
+matplotlib
+numpy
+pandas
+pillow
+requests
+scipy
+six
+scikit-image
