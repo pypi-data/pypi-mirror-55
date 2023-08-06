@@ -1,0 +1,10 @@
+astropy
+dask
+h5py
+healpy
+matplotlib
+numpy
+scipy
+svgwrite
+tart
+tart-tools
