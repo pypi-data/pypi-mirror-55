@@ -1,0 +1,57 @@
+CHANGES
+=======
+
+* CI: Corrected tests on Travis. Those tests were not working due to bug in docker-compose (compose was adding suffixes to container names which caused bash scripts not working)
+* CI: Clean up containers between test cases
+* - Bahub: Fixed incorrect imports - Clean up: Removed gitver, we didnt use it at all
+* File Repository: Corrected error
+
+v2.1.0.rc1
+----------
+
+* Client - Bahub: Mainly naming refactor
+* PostgreSQL support, clean up in "nginx features", updated documentation
+* Refactor imports
+* Bump docker image on \`master\` branch
+* Simplifications to the NGINX configuration
+* Simplified the build, the bcmath was moved to base container
+* Added dependency for the MySQL check util from RiotKit's CI Utils
+* Corrected Bahub integration tests
+* Fixes to env support
+* Fixed deployment, improved Docker image size
+* Added --no-dev to composer at Dockerfile to reduce image size
+* Fixed travis build - migrations does not need to be executed in unit tests, they are executed in API tests
+* Clean up and fixes to the Docker container
+* Improved configuration reference
+* Added missing variable \`BACKUP\_MAX\_VERSIONS\` that was not shown in the documentation and .env.dist file
+* Docs: Corrected paths in "first steps"
+* CI: Refactored Makefile, downgraded PHPUnit for compatibility with Codeception
+* CI: Added "skip\_existing: true" to deploy to PIP
+* CI: Corrected notifications
+* Added build notifications, switched base images in Dockerfile
+* Client: Removed pixz as it is not supported by used Alpine
+* Client: Added pigz and pixz for parallel archive creation
+* Server: Updated dependencies, integrated Sentry.io to the application - deleted special Docker container
+* Server: Bump version to rebuild from newest docker's php-app base image. Fixed health check endpoint on sentry
+* Server: Hotfix - anti hotlink controller does not work because of invalid configuration
+* Server: For for
+* Server: Fixed missing ".infrastructure" directory on docker build
+* Server: Fixed a typo
+* Server: Clean up of the docker container
+* Server: Improved size of the docker image, added more accurate health check to the docker image, removed npm from target container
+* Server: Resolved problem with composer dependencies
+* Server: Adjusted configuration settings to the recent version of base docker container, set memory\_limit to 256 megabytes
+* Server: Added info about the authorization to the docs
+* Server: Excluded Minimum.UI endpoints from API docs
+* Server: Added access control for "/version" endpoint, added api docs
+* Server: "/version" endpoint
+* Server: Added endpoint "/version"
+* Server + Bahub: Added post-commit hook
+* Server + Bahub: Automated releasing
+* Server: Clean up - deleted postman tests
+* Server: Introducing strict versioning with GITVER
+* Server: Went back to Symfony 4.2 from 4.3 due to incompatibilites of few bundles, added initial support for API documentation in NelmioApiDocBundle
+* Server: Switched base image to image hosted on quay.io
+* Server: Adjusted error logging
+* Server: Updated docs, added fixes
+* Server: Added a feature to optionally allow to restrict usage of token for given User-Agent headers and/or IP addresses. This is a gateway to fully assigned tokens for anonymous users using the application
