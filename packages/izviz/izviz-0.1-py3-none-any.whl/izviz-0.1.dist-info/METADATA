@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: izviz
+Version: 0.1
+Summary: A toolkit for executing and analyzing machine learning models
+Home-page: https://www.lockhartlab.org
+Author: C. Lockhart
+Author-email: chris@lockhartlab.org
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: matplotlib
+
+UNKNOWN
+
+
