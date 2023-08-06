@@ -1,0 +1,45 @@
+Metadata-Version: 2.1
+Name: advanced-radiomics
+Version: 0.1.0
+Summary: Advanced Radiomics Functions.
+Home-page: https://github.com/FelipeAugustoMachado/advanced-radiomics
+Author: Machado, F. A. M.; Castaldoni, R. C. 
+Author-email: f.a.moraes.machado@gmail.com
+License: BSD (3-clause)
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3.6
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: SimpleITK
+Requires-Dist: pyradiomics
+Requires-Dist: seaborn
+Requires-Dist: matplotlib
+Requires-Dist: sklearn
+Requires-Dist: scipy
+Requires-Dist: opencv-python
+
+==================
+Advanced Radiomics
+==================
+
+.. image:: https://img.shields.io/travis/FelipeAugustoMachado/advanced-radiomics.svg
+        :target: https://travis-ci.org/FelipeAugustoMachado/advanced-radiomics
+
+.. image:: https://img.shields.io/pypi/v/advanced-radiomics.svg
+        :target: https://pypi.python.org/pypi/advanced-radiomics
+
+
+Advanced Radiomics Functions.
+
+* Free software: 3-clause BSD license
+* Documentation: (COMING SOON!) https://FelipeAugustoMachado.github.io/advanced-radiomics.
+
+Features
+--------
+
+* TODO
+
+
