@@ -1,0 +1,6 @@
+README.md
+setup.py
+bashy.egg-info/PKG-INFO
+bashy.egg-info/SOURCES.txt
+bashy.egg-info/dependency_links.txt
+bashy.egg-info/top_level.txt
