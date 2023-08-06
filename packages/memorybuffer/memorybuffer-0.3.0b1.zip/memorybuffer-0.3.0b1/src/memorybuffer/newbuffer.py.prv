@@ -1,0 +1,687 @@
+# Copyright (c) 2012-2019 Adam Karpierz
+# Licensed under the zlib/libpng License
+# https://opensource.org/licenses/zlib/
+
+__all__ = ('Py_buffer','Buffer','isbuffer')
+
+import sys
+import ctypes
+py_version = sys.version_info[:2]
+if py_version < (2,7):
+    # Only if the new buffer protocol is available
+    raise ImportError("Buffer interface only usable on Python 2.7+")
+from ctypes import (c_int, c_ulong, c_void_p, c_char_p, py_object, POINTER,
+                    pointer, byref, sizeof, cast, memset, Structure, pythonapi)
+c_ssize_t = getattr(ctypes, "c_ssize_t", c_ulong)  # Python 2.6 doesn't define this
+from ctypes import CFUNCTYPE as CFUNC
+
+#----------------------------------------------------------------------------#
+#                               Buffer Object                                #
+#----------------------------------------------------------------------------#
+
+class Py_buffer(Structure):
+
+    """Python level Py_buffer struct analog"""
+
+    # equivalent of: Python-(2.7.0 | 3.4.3 | 3.5.1)/Include/object.h/Py_buffer
+
+    # Maximum number of dimensions
+    PyBUF_MAX_NDIM = 64
+
+    # Flags for getting buffers
+    PyBUF_SIMPLE    = 0x0000
+    PyBUF_WRITABLE  = 0x0001
+    PyBUF_WRITEABLE = PyBUF_WRITABLE  # backwards compatible alias
+    PyBUF_FORMAT    = 0x0004
+    PyBUF_ND        = 0x0008
+    PyBUF_STRIDES   = 0x0010 | PyBUF_ND
+
+    PyBUF_C_CONTIGUOUS   = 0x0020 | PyBUF_STRIDES
+    PyBUF_F_CONTIGUOUS   = 0x0040 | PyBUF_STRIDES
+    PyBUF_ANY_CONTIGUOUS = 0x0080 | PyBUF_STRIDES
+    PyBUF_INDIRECT       = 0x0100 | PyBUF_STRIDES
+
+    PyBUF_CONTIG_RO  = PyBUF_ND
+    PyBUF_CONTIG     = PyBUF_ND | PyBUF_WRITABLE
+
+    PyBUF_STRIDED_RO = PyBUF_STRIDES
+    PyBUF_STRIDED    = PyBUF_STRIDES | PyBUF_WRITABLE
+
+    PyBUF_RECORDS_RO = PyBUF_STRIDES | PyBUF_FORMAT
+    PyBUF_RECORDS    = PyBUF_STRIDES | PyBUF_FORMAT | PyBUF_WRITABLE
+
+    PyBUF_FULL_RO    = PyBUF_INDIRECT | PyBUF_FORMAT
+    PyBUF_FULL       = PyBUF_INDIRECT | PyBUF_FORMAT | PyBUF_WRITABLE
+
+    PyBUF_READ   = 0x0100
+    PyBUF_WRITE  = 0x0200
+  # PyBUF_SHADOW = 0x0400  # coment because available only for PY2
+
+    _fields_  = [
+        ("buf",        c_void_p),
+        ("obj",        py_object),  # owned reference
+        ("len",        c_ssize_t),
+        ("itemsize",   c_ssize_t),
+        ("readonly",   c_int),
+        ("ndim",       c_int),
+        ("format",     c_char_p),
+        ("shape",      POINTER(c_ssize_t)),
+        ("strides",    POINTER(c_ssize_t)),
+        ("suboffsets", POINTER(c_ssize_t))]
+    if py_version >= (2,7) and py_version <= (3,2):
+        _fields_.extend([
+        ("smalltable", c_ssize_t * 2)])
+    _fields_.extend([
+        ("internal",   c_void_p)])
+    # _fields_ = tuple(_fields_)
+
+    def __new__(cls, *args, **kargs):
+        self = super(Py_buffer, cls).__new__(cls)
+        memset(byref(self), 0, sizeof(Py_buffer))
+        return self
+
+#----------------------------------------------------------------------------#
+#                               Buffer Mixin                                 #
+#----------------------------------------------------------------------------#
+
+
+typedef int  (*getbufferproc)    (PyObject *, POINTER(Py_buffer), int);
+typedef void (*releasebufferproc)(PyObject *, POINTER(Py_buffer));
+
+
+/* Buffer_TYPE states:
+ *
+ * Buffer_Type properties are read-only when the BUFOBJ_FILLED flag is set.
+ *
+ * The BUFOBJ_MEMFREE flag is set when the BufferObject object allocates
+ * the memory for the Py_buffer. It is now responsible for freeing the
+ * memory.
+ *
+ * The BUFOBJ_MUTABLE flag can only be changed by a tp_init slot function
+ * call.
+ *
+ * A Buffer_Type object will only release a Py_buffer if both the
+ * BUFOBJ_MUTABLE and BUFOBJ_FILLED flags are set. The PyBuffer_Release
+ * function is only called by a call of the Buffer_Type release_buffer
+ * method, a call to tp_init, or during garbage collection.
+ *
+ * If only the BUFOBJ_FILLED flag is set, then field values cannot be changed.
+ *
+ * If the view_p BufferObject field is NULL, then the BUFOBJ_MUTABLE flag
+ * must be set. Also, the BUFOBJ_MEMFREE must not be set.
+ *
+ * The view_p->obj field should always be valid. It either points to
+ * an object or is NULL.
+ */
+
+BUFOBJ_FILLED  = 0x0001
+BUFOBJ_MEMFREE = 0x0002
+BUFOBJ_MUTABLE = 0x0004
+
+
+#include <Python.h>
+#include "pgcompat.h"
+
+
+class BufferObject:
+    PyObject_HEAD
+    POINTER(Py_buffer) view_p;
+    int flags;
+
+static int Module_AddSsize_tConstant(PyObject *module, const char *name, Py_ssize_t value)
+{
+    PyObject *py_value = PyLong_FromSsize_t(value);
+
+    if (!py_value) {
+        return -1;
+    }
+    if (PyModule_AddObject(module, name, py_value)) {
+        Py_DECREF(py_value);
+        return -1;
+    }
+    return 0;
+}
+
+#if PY_MAJOR_VERSION < 3
+#define INT_CHECK(o) (PyInt_Check(o) || PyLong_Check(o))
+#define INT_AS_PY_SSIZE_T(o) (PyInt_AsSsize_t(o))
+#else
+#define INT_CHECK(o) (PyLong_Check(o))
+#define INT_AS_PY_SSIZE_T(o) (PyLong_AsSsize_t(o))
+#endif
+
+
+static void Buffer_Reset(BufferObject *bp)
+{
+    /* Restore a BufferObject instance to the equivalent of initializing
+     * with a null Py_buffer address.
+     */
+
+    Py_buffer *view_p;
+    int flags;
+
+    if (!bp) {
+        return;
+    }
+    view_p = bp->view_p;
+    flags = bp->flags;
+    bp->view_p = 0;
+    bp->flags = BUFOBJ_MUTABLE;
+    if (flags & BUFOBJ_MUTABLE) {
+        if (flags & BUFOBJ_FILLED) {
+            PyBuffer_Release(view_p);
+        }
+        else if (view_p && view_p->obj) /* Conditional && */ {
+            Py_DECREF(view_p->obj);
+        }
+        if (flags & BUFOBJ_MEMFREE) {
+            PyMem_Free(view_p);
+        }
+    }
+}
+
+static PyObject * buffer_new(PyTypeObject *subtype, PyObject *args, PyObject *kwds)
+{
+    BufferObject *bp = (BufferObject *)subtype->tp_alloc(subtype, 0);
+
+    if (bp) {
+        bp->view_p = 0;
+        bp->flags = BUFOBJ_MUTABLE;
+    }
+    return (PyObject *)bp;
+}
+
+static int buffer_init(BufferObject *self, PyObject *args, PyObject *kwds)
+{
+    PyObject *py_address = 0;
+    int filled = 0;
+    int preserve = 0;
+    Py_buffer *view_p = 0;
+    char *keywords[] = {"buffer_address", "filled", "preserve", 0};
+
+    if (!PyArg_ParseTupleAndKeywords(args, kwds, "|Oii:Py_buffer", keywords,
+                                     &py_address, &filled, &preserve)) {
+        return -1;
+    }
+    if (py_address == Py_None) {
+        py_address = 0;
+    }
+    if (py_address) {
+        if (INT_CHECK(py_address)) {
+            view_p = (Py_buffer *)PyLong_AsVoidPtr(py_address);
+            if (PyErr_Occurred()) {
+                return -1;
+            }
+        }
+        else {
+            PyErr_Format(PyExc_TypeError, "argument %400s must be an integer, not '%400s'" % (keywords[0], Py_TYPE(py_address)->tp_name))
+            return -1;
+        }
+    }
+    if (!view_p) {
+        if (filled) {
+            PyErr_Format(PyExc_ValueError, "argument %400s cannot be True for a NULL %400s" % (keywords[1], keywords[0]))
+            return -1;
+        }
+        else if (preserve) {
+            PyErr_Format(PyExc_ValueError, "argument %400s cannot be True for a NULL %400s" % (keywords[2], keywords[0]))
+            return -1;
+        }
+    }
+    Buffer_Reset(self);
+    self->view_p = view_p;
+    if (preserve) {
+        /* remove mutable flag */
+        self->flags &= ~BUFOBJ_MUTABLE;
+    }
+    if (filled) {
+        /* add filled flag */
+        self->flags |= BUFOBJ_FILLED;
+    }
+    else if (view_p) {
+        view_p->obj = 0;
+        view_p->buf = 0;
+        view_p->len = 0;
+        view_p->itemsize = 0;
+        view_p->readonly = 1;
+        view_p->format = 0;
+        view_p->ndim = 0;
+        view_p->shape = 0;
+        view_p->strides = 0;
+        view_p->suboffsets = 0;
+        view_p->internal = 0;
+    }
+    return 0;
+}
+
+static void buffer_dealloc(BufferObject *self)
+{
+    PyObject_GC_UnTrack(self);
+    Buffer_Reset(self);
+    Py_TYPE(self)->tp_free(self);
+}
+
+static int buffer_traverse(BufferObject *self, visitproc visit, void *arg)
+{
+    if (self->view_p && self->view_p->obj) /* Conditional && */ {
+        Py_VISIT(self->view_p->obj);
+    }
+    return 0;
+}
+
+static PyTypeObject Py_buffer_Type =
+{
+    TYPE_HEAD(NULL, 0)
+    "newbuffer.Py_buffer",     /* tp_name */
+    sizeof (BufferObject),      /* tp_basicsize */
+    (destructor)buffer_dealloc, /* tp_dealloc */
+    &buffer_as_number,          /* tp_as_number */
+    (Py_TPFLAGS_DEFAULT | Py_TPFLAGS_BASETYPE | Py_TPFLAGS_HAVE_GC),  /* tp_flags */
+    "Python level Py_buffer struct wrapper\n",
+    (traverseproc)buffer_traverse,  /* tp_traverse */
+    buffer_methods,             /* tp_methods */
+    buffer_getset,              /* tp_getset */
+    (initproc)buffer_init,      /* tp_init */
+    PyType_GenericAlloc,        /* tp_alloc */
+    buffer_new,                 /* tp_new */
+    PyObject_GC_Del,            /* tp_free */
+};
+
+    static PyObject* Buffer_New(Py_buffer *view_p, int filled, int preserve):
+
+        BufferObject *bp = (BufferObject *)Py_buffer_Type.tp_alloc((PyTypeObject*)&Py_buffer_Type, 0);
+        if (!bp) {
+            return 0;
+        }
+        bp->view_p = view_p;
+        bp->flags  = 0;
+        if (bp->view_p)
+        {
+            if (filled) {
+                bp->flags |= BUFOBJ_FILLED;
+            }
+            else {
+                bp->view_p->obj = 0;
+            }
+            if (!preserve) {
+                bp->flags |= BUFOBJ_MUTABLE;
+            }
+        }
+        else {
+            bp->flags = BUFOBJ_MUTABLE;
+        }
+
+        return (PyObject *)bp;
+
+    static PyGetSetDef buffer_getset[] = {
+        {"obj",        (getter)buffer_get_obj,        (setter)buffer_set_obj,        0, "obj"},
+        {"buf",        (getter)buffer_get_buf,        (setter)buffer_set_buf,        0, "buf"},
+        {"len",        (getter)buffer_get_len,        (setter)buffer_set_len,        0, "len"},
+        {"readonly",   (getter)buffer_get_readonly,   (setter)buffer_set_readonly,   0, "readonly"},
+        {"format",     (getter)buffer_get_format,     (setter)buffer_set_format,     0, "format"},
+        {"ndim",       (getter)buffer_get_ndim,       (setter)buffer_set_ndim,       0, "ndim"},
+        {"shape",      (getter)buffer_get_shape,      (setter)buffer_set_shape,      0, "shape"},
+        {"strides",    (getter)buffer_get_strides,    (setter)buffer_set_strides,    0, "shape"},
+        {"suboffsets", (getter)buffer_get_suboffsets, (setter)buffer_set_suboffsets, 0, "suboffsets"},
+        {"itemsize",   (getter)buffer_get_itemsize,   (setter)buffer_set_itemsize,   0, "itemsize"},
+        {"internal",   (getter)buffer_get_internal,   (setter)buffer_set_internal,   0, "internal"},
+    };
+
+    @property
+    def buffer_get_obj(self, void *closure):
+
+        self.__check_view_get((const char *)closure)
+        return self->view_p->obj if self->view_p->obj else None
+
+    @x.setter
+    static int buffer_set_obj(self, value, void *closure):
+
+        self.__check_view_set((const char *)closure)
+        tmp = self->view_p->obj  # PyObject*
+        self->view_p->obj = value if value is not None else 0
+        return 0;
+
+    @property
+    def buffer_get_buf(self, void *closure):
+
+        self.__check_view_get((const char *)closure)
+        return PyLong_FromVoidPtr(self->view_p->buf) if self->view_p->buf else None
+
+    @x.setter
+    static int buffer_set_buf(self, value, void *closure):
+
+        self.__check_view_set((const char *)closure)
+        __set_void_ptr(&self->view_p->buf, value, (const char *)closure)
+
+    @property
+    def buffer_get_len(self, void *closure):
+
+        self.__check_view_get((const char *)closure)
+        return PyLong_FromSsize_t(self->view_p->len);
+
+    @x.setter
+    static int buffer_set_len(self, value, void *closure):
+
+        self.__check_view_set((const char *)closure)
+        self->view_p->len = __set_py_ssize_t(value, (const char *)closure)
+
+    @property
+    def buffer_get_readonly(self, void *closure):
+
+        self.__check_view_get((const char *)closure)
+        return PyBool_FromLong((long)self->view_p->readonly);
+
+    @x.setter
+    static int buffer_set_readonly(self, value, void *closure):
+
+        self.__check_view_set((const char *)closure)
+        readonly = PyObject_IsTrue(value);
+        self->view_p->readonly = readonly;
+
+    @property
+    def buffer_get_format(self, void *closure):
+
+        self.__check_view_get((const char *)closure)
+        return PyLong_FromVoidPtr(self->view_p->format); if self->view_p->format else None
+
+    @x.setter
+    static int buffer_set_format(self, value, void *closure):
+
+        self.__check_view_set((const char *)closure)
+        void *vp = 0;
+        __set_void_ptr(&vp, value, (const char *)closure)
+        self->view_p->format = (char *)vp;
+
+    @property
+    def buffer_get_ndim(self, void *closure):
+
+        self.__check_view_get((const char *)closure)
+        return PyLong_FromLong(self->view_p->ndim);
+
+    @x.setter
+    static int buffer_set_ndim(self, value, void *closure):
+
+        self.__check_view_set((const char *)closure)
+        self->view_p->ndim = (int)__set_py_ssize_t(value, (const char *)closure)
+
+    @property
+    def buffer_get_shape(self, void *closure):
+
+        self.__check_view_get((const char *)closure)
+        return PyLong_FromVoidPtr(self->view_p->shape) if self->view_p->shape else None
+
+    @x.setter
+    static int buffer_set_shape(self, value, void *closure):
+
+        self.__check_view_set((const char *)closure)
+        void *vp;
+        __set_void_ptr(&vp, value, (const char *)closure)
+        self->view_p->shape = (Py_ssize_t *)vp;
+
+    @property
+    def buffer_get_strides(self, void *closure):
+
+        self.__check_view_get((const char *)closure)
+        return PyLong_FromVoidPtr(self->view_p->strides) if self->view_p->strides else None
+
+    @x.setter
+    static int buffer_set_strides(self, value, void *closure):
+
+        self.__check_view_set((const char *)closure)
+        void *vp;
+        __set_void_ptr(&vp, value, (const char *)closure)
+        self->view_p->strides = (Py_ssize_t *)vp;
+
+    @property
+    def buffer_get_suboffsets(self, void *closure):
+
+        self.__check_view_get((const char *)closure)
+        return PyLong_FromVoidPtr(self->view_p->suboffsets) if self->view_p->suboffsets else None
+
+    @x.setter
+    static int buffer_set_suboffsets(self, value, void *closure):
+
+        self.__check_view_set((const char *)closure)
+        void *vp;
+        __set_void_ptr(&vp, value, (const char *)closure)
+        self->view_p->suboffsets = (Py_ssize_t *)vp;
+
+    @property
+    def buffer_get_itemsize(self, void *closure):
+
+        self.__check_view_get((const char *)closure)
+        return PyLong_FromSsize_t(self->view_p->itemsize);
+
+    @x.setter
+    static int buffer_set_itemsize(self, value, void *closure):
+
+        self.__check_view_set((const char *)closure)
+        self->view_p->itemsize = __set_py_ssize_t(value, (const char *)closure)
+
+    @property
+    def buffer_get_internal(self, void *closure):
+
+        self.__check_view_get((const char *)closure)
+        return PyLong_FromVoidPtr(self->view_p->internal) if self->view_p->internal else None
+
+    @x.setter
+    static int buffer_set_internal(self, value, void *closure):
+
+        self.__check_view_set((const char *)closure)
+        __set_void_ptr(&self->view_p->internal, value, (const char *)closure)
+
+    static PyNumberMethods buffer_as_number = {
+        (inquiry)buffer_bool,  /* nb_nonzero / nb_bool */
+    };
+
+    static int buffer_bool(self):
+
+        return self->view_p != NULL;
+
+    static struct PyMethodDef buffer_methods[] = {
+        {"get_buffer",     (PyCFunction)buffer_get_buffer,     METH_VARARGS | METH_KEYWORDS, "fill in Py_buffer fields with a PyObject_GetBuffer call"},
+        {"release_buffer", (PyCFunction)buffer_release_buffer, METH_NOARGS,                  "release the Py_buffer with a PyBuffer_Release call"},
+    };
+
+    static PyObject * buffer_get_buffer(BufferObject *self, PyObject *args, PyObject *kwds)
+    {
+        PyObject *obj;
+        int flags = PyBUF_SIMPLE;
+        int bufobj_flags = self->flags;
+        char *keywords[] = {"obj", "flags", 0};
+
+        if (!PyArg_ParseTupleAndKeywords(args, kwds, "O|i", keywords, &obj, &flags)) {
+            return 0;
+        }
+        if (bufobj_flags & BUFOBJ_FILLED) {
+            PyErr_SetString(PyExc_ValueError, "The Py_buffer struct is already filled in")
+            return 0;
+        }
+        self->flags = BUFOBJ_MUTABLE & bufobj_flags;
+        if (!self->view_p) {
+            self->view_p = PyMem_New(Py_buffer, 1);
+            if (!self->view_p) {
+                return PyErr_NoMemory();
+            }
+            bufobj_flags |= BUFOBJ_MEMFREE;
+        }
+        if (PyObject_GetBuffer(obj, self->view_p, flags)) {
+            if (bufobj_flags & BUFOBJ_MEMFREE) {
+                PyMem_Free(self->view_p);
+                self->view_p = 0;
+            }
+            return 0;
+        }
+        self->flags |= (bufobj_flags & BUFOBJ_MEMFREE) | BUFOBJ_FILLED;
+        return None
+    }
+
+    static PyObject * buffer_release_buffer(BufferObject *self)
+    {
+        int flags = self->flags;
+        Py_buffer *view_p = self->view_p;
+
+        if ((flags & BUFOBJ_FILLED) && (flags & BUFOBJ_MUTABLE)) {
+            self->flags = BUFOBJ_FILLED;  /* Guard against reentrant calls */
+            PyBuffer_Release(view_p);
+            self->flags = BUFOBJ_MUTABLE;
+            if (flags & BUFOBJ_MEMFREE) {
+                self->view_p = 0;
+                PyMem_Free(view_p);
+            }
+            else {
+                view_p->obj = 0;
+                view_p->buf = 0;
+                view_p->len = 0;
+                view_p->itemsize = 0;
+                view_p->readonly = 1;
+                view_p->format = 0;
+                view_p->ndim = 0;
+                view_p->shape = 0;
+                view_p->strides = 0;
+                view_p->suboffsets = 0;
+                view_p->internal = 0;
+            }
+        }
+        return None
+    }
+
+    def __check_view_get(self, const char *name):
+
+        if ! self->view_p:
+            raise AttributeError("property %400s is undefined for an unallocated view" % name)
+
+    def __check_view_set(self, const char *name):
+
+        if ! self->view_p:
+            raise AttributeError("property %400s is undefined for an unallocated view" % name)
+        elif self->flags & BUFOBJ_FILLED:
+            raise AttributeError("property %400s is read-only" % name)
+
+
+def __set_void_ptr(void **vpp, value, const char *name):
+
+    if INT_CHECK(value):
+        *vpp = PyLong_AsVoidPtr(value)
+    elif value is None:
+        *vpp = 0
+    else:
+        raise TypeError("property %400s must be a Python integer, not '%400s'" % (name, Py_TYPE(value)->tp_name))
+
+
+def __set_py_ssize_t(value, const char *name):
+
+    if ! INT_CHECK(value):
+        raise TypeError("property %100s must be a Python integer, not '%400s'" % (name, Py_TYPE(value)->tp_name))
+    return INT_AS_PY_SSIZE_T(value)
+
+
+class BufferMixin():
+
+    """Python level buffer protocol exporter"""
+
+    if PY2:
+        MIXIN_TPFLAGS = (Py_TPFLAGS_DEFAULT | Py_TPFLAGS_BASETYPE |  Py_TPFLAGS_HAVE_NEWBUFFER)
+    else:
+        MIXIN_TPFLAGS = (Py_TPFLAGS_DEFAULT | Py_TPFLAGS_BASETYPE)
+
+    TYPE_HEAD(NULL, 0)
+    "newbuffer.BufferMixin", /* tp_name */
+    sizeof (PyObject),          /* tp_basicsize */
+    &mixin_bufferprocs,         /* tp_as_buffer */
+    MIXIN_TPFLAGS,              /* tp_flags */
+    PyType_GenericAlloc,        /* tp_alloc */
+    PyType_GenericNew,          /* tp_new */
+    PyObject_Del,               /* tp_free */
+
+static PyBufferProcs mixin_bufferprocs = {
+    if PY2:
+        0,
+        0,
+        0,
+        0,
+    (getbufferproc)     mixin_getbuffer,
+    (releasebufferproc) mixin_releasebuffer
+};
+
+    static int mixin_getbuffer(self, Py_buffer *view_p, int flags):
+
+        py_view = Buffer_New(view_p, 0, 1)
+        if (py_view):
+            view_p->obj = 0
+            py_rval = self.__getbuffer__(py_view, flags)
+            Buffer_Reset((BufferObject *)py_view);
+            Py_DECREF(py_view);
+            if py_rval is None:
+                return 0
+            elif (py_rval):
+                raise ValueError("__getbuffer__ method return value was not None")
+                return -1
+            else:
+                return -1
+        else:
+            return -1
+
+    static def mixin_releasebuffer(self, Py_buffer *view_p):
+
+        py_view = Buffer_New(view_p, 1, 1)
+        if (py_view):
+            try:
+                self.__releasebuffer__(py_view)
+            except:
+                pass
+            Buffer_Reset((BufferObject *)py_view);
+        else:
+            PyErr_Clear();
+
+    def __getbuffer__(self, PyObject *args)
+
+        """buffer protocol default bf_getbuffer handler"""
+
+        raise NotImplementedError("abstract method")
+
+    def __releasebuffer__(self, PyObject *arg):
+
+        """buffer protocol default bf_releasebuffer handler"""
+
+
+
+/*DOC*/ static char newbuffer_doc[] =
+/*DOC*/    "exports BufferMixin, add a new buffer interface to a class";
+
+MODINIT_DEFINE(newbuffer)
+{
+    PyObject* module = Py_InitModule3("newbuffer", )
+
+    if (PyModule_AddObject(module, "BufferMixin", BufferMixin))
+    {
+        DECREF_MOD(module);
+        MODINIT_ERROR;
+    }
+    if (PyModule_AddObject(module, "Py_buffer", (PyObject *)&Py_buffer_Type)) {
+        DECREF_MOD(module);
+        MODINIT_ERROR;
+    }
+    if (Module_AddSsize_tConstant(module, "PyBUFFER_SIZEOF", sizeof (Py_buffer)) ||
+        PyModule_AddIntMacro(module, PyBUF_SIMPLE) ||
+        PyModule_AddIntMacro(module, PyBUF_WRITABLE) ||
+        PyModule_AddIntMacro(module, PyBUF_STRIDES) ||
+        PyModule_AddIntMacro(module, PyBUF_ND) ||
+        PyModule_AddIntMacro(module, PyBUF_C_CONTIGUOUS) ||
+        PyModule_AddIntMacro(module, PyBUF_F_CONTIGUOUS) ||
+        PyModule_AddIntMacro(module, PyBUF_ANY_CONTIGUOUS) ||
+        PyModule_AddIntMacro(module, PyBUF_INDIRECT) ||
+        PyModule_AddIntMacro(module, PyBUF_FORMAT) ||
+        PyModule_AddIntMacro(module, PyBUF_STRIDED) ||
+        PyModule_AddIntMacro(module, PyBUF_STRIDED_RO) ||
+        PyModule_AddIntMacro(module, PyBUF_RECORDS) ||
+        PyModule_AddIntMacro(module, PyBUF_RECORDS_RO) ||
+        PyModule_AddIntMacro(module, PyBUF_FULL) ||
+        PyModule_AddIntMacro(module, PyBUF_FULL_RO) ||
+        PyModule_AddIntMacro(module, PyBUF_CONTIG) ||
+        PyModule_AddIntMacro(module, PyBUF_CONTIG_RO)) {
+        DECREF_MOD(module);
+        MODINIT_ERROR;
+    }
+    MODINIT_RETURN(module);
+}

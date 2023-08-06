@@ -1,0 +1,579 @@
+import unittest
+
+from newbuffer import (Py_buffer, BufferMixin, PyBUFFER_SIZEOF,
+                       PyBUF_SIMPLE, PyBUF_WRITABLE, PyBUF_STRIDES,
+                       PyBUF_ND, PyBUF_C_CONTIGUOUS, PyBUF_F_CONTIGUOUS,
+                       PyBUF_ANY_CONTIGUOUS, PyBUF_INDIRECT, PyBUF_FORMAT,
+                       PyBUF_STRIDED, PyBUF_STRIDED_RO, PyBUF_RECORDS,
+                       PyBUF_RECORDS_RO, PyBUF_FULL, PyBUF_FULL_RO,
+                       PyBUF_CONTIG, PyBUF_CONTIG_RO)
+from ctypes import *
+import gc
+
+class Py_bufferTest(unittest.TestCase):
+    """Py_buffer type verification"""
+
+    class Exporter(BufferMixin):
+        raw = 'Some stuff.'.encode('latin_1')
+        content = create_string_buffer(raw)
+        shape = (c_ssize_t * 1)(len(raw))
+        strides = (c_ssize_t * 1)(1)
+        format = create_string_buffer('B'.encode('latin_1'))
+        def __init__(self):
+            self.state = "initial"
+            self.flags = None
+        def __getbuffer__(self, view, flags):
+            self.state = "get"
+            self.flags = flags
+            if (flags & PyBUF_WRITABLE) == PyBUF_WRITABLE:
+                raise BufferError("buffer is read-only.")
+            view.obj = self
+            view.buf = addressof(self.content)
+            view.readonly = True
+            view.len = len(self.raw)
+            if flags == PyBUF_SIMPLE:
+                view.itemsize = view.len
+            else:
+                view.itemsize = 1
+            if (flags & PyBUF_FORMAT) == PyBUF_FORMAT:
+                view.format = addressof(self.format)
+            else:
+                view.format = None
+            if (flags & PyBUF_ND) == PyBUF_ND:
+                view.ndim = 1
+                view.shape = addressof(self.shape)
+            else:
+                view.shape = None
+            if (flags & PyBUF_STRIDES) == PyBUF_STRIDES:
+                view.strides = addressof(self.strides)
+            else:
+                view.strides = None
+            view.suboffsets = None
+        def __releasebuffer__(self, view):
+            self.state = "release"
+        def __len__(self):
+            return len(self.raw)
+
+    # Allocation Py_buffer memory globally so it is not garbage
+    # collected until after all the Py_buffer objects are freed.
+    # Otherwise one may be faced with view_allocation being garbage
+    # collected before the Py_buffer object that references it, leading
+    # to a segment fault.
+    view_allocation = create_string_buffer(PyBUFFER_SIZEOF)
+    view_addr = addressof(view_allocation)
+
+    def __del__(self):
+        # Make sure any remaining Py_buffer instances are garbage collected
+        # before the self.view_allocation memory is freed. This step is
+        # unnecessary for reference counting CPython, but does not hurt either.
+        gc.collect()
+
+    def test_null(self):
+        """verify properties are disabled with a NULL Py_buffer pointer"""
+        b = Py_buffer()
+        self.assertFalse(b)
+        self.assertRaises(AttributeError, getattr, b, 'obj')
+        self.assertRaises(AttributeError, getattr, b, 'buf')
+        self.assertRaises(AttributeError, getattr, b, 'len')
+        self.assertRaises(AttributeError, getattr, b, 'readonly')
+        self.assertRaises(AttributeError, getattr, b, 'format')
+        self.assertRaises(AttributeError, getattr, b, 'ndim')
+        self.assertRaises(AttributeError, getattr, b, 'shape')
+        self.assertRaises(AttributeError, getattr, b, 'strides')
+        self.assertRaises(AttributeError, getattr, b, 'suboffsets')
+        self.assertRaises(AttributeError, getattr, b, 'itemsize')
+        self.assertRaises(AttributeError, getattr, b, 'internal')
+        self.assertRaises(AttributeError, setattr, b, 'obj', None)
+        self.assertRaises(AttributeError, setattr, b, 'buf', None)
+        self.assertRaises(AttributeError, setattr, b, 'len', 0)
+        self.assertRaises(AttributeError, setattr, b, 'readonly', True)
+        self.assertRaises(AttributeError, setattr, b, 'format', None)
+        self.assertRaises(AttributeError, setattr, b, 'ndim', 0)
+        self.assertRaises(AttributeError, setattr, b, 'shape', None)
+        self.assertRaises(AttributeError, setattr, b, 'strides', None)
+        self.assertRaises(AttributeError, setattr, b, 'suboffsets', None)
+        self.assertRaises(AttributeError, setattr, b, 'itemsize', 0)
+        self.assertRaises(AttributeError, setattr, b, 'internal', None)
+
+        b = Py_buffer(None)
+        self.assertFalse(b)
+
+        b = Py_buffer(0)
+        self.assertFalse(b)
+
+        self.assertRaises(ValueError, Py_buffer, None, True)
+        self.assertRaises(ValueError, Py_buffer, None, False, True)
+        self.assertRaises(ValueError, Py_buffer, None, True, True)
+        self.assertRaises(ValueError, Py_buffer, 0, True)
+        self.assertRaises(ValueError, Py_buffer, 0, False, True)
+        self.assertRaises(ValueError, Py_buffer, 0, True, True)
+
+    def test_not_null(self):
+        """verify the properties when Py_buffer memory is allocated"""
+        import weakref
+        import gc
+
+        class Object(object):
+            """Weakref enabled object"""
+            pass
+
+        self.assertTrue(PyBUFFER_SIZEOF > 0)
+        memset(self.view_addr, 0xdb, PyBUFFER_SIZEOF)
+        b = Py_buffer(self.view_addr)
+        self.assertTrue(b)
+        self.assertTrue(b.obj is None)
+        self.assertTrue(b.buf is None)
+        self.assertEqual(b.len, 0)
+        self.assertTrue(b.readonly)
+        self.assertTrue(b.format is None)
+        self.assertEqual(b.ndim, 0)
+        self.assertTrue(b.shape is None)
+        self.assertTrue(b.strides is None)
+        self.assertTrue(b.suboffsets is None)
+        self.assertEqual(b.itemsize, 0)
+        self.assertTrue(b.internal is None)
+
+        obj = Object()
+        try:
+            # Assign all values first to catch possible overwrites
+            # later in the assertions.
+            b.obj = obj
+            b.buf = 10000000
+            b.len = 400
+            b.readonly = True
+            b.format = 20000000
+            b.ndim = 3
+            b.shape = 30000000
+            b.strides = 40000000
+            b.suboffsets = 50000000
+            b.itemsize = 4
+            b.internal = 60000000
+
+            # Leave the b.obj assertions last as the value gets changed.
+            self.assertEqual(b.buf, 10000000)
+            self.assertEqual(b.len, 400)
+            self.assertTrue(b.readonly)
+            self.assertEqual(b.format, 20000000)
+            self.assertEqual(b.ndim, 3)
+            self.assertEqual(b.shape, 30000000)
+            self.assertEqual(b.strides, 40000000)
+            self.assertEqual(b.suboffsets, 50000000)
+            self.assertEqual(b.itemsize, 4)
+            self.assertEqual(b.internal, 60000000)
+            obj_ref = weakref.ref(obj)
+            self.assertTrue(obj_ref() is obj)
+            self.assertTrue(b.obj is obj)
+            obj = None
+            gc.collect()
+            self.assertTrue(obj_ref() is not None)
+            self.assertTrue(b.obj is obj_ref())
+            b.obj = None
+            gc.collect()
+            self.assertTrue(obj_ref() is None)
+            self.assertTrue(b.obj is None)
+        finally:
+            b.obj = None
+
+        invalid_type = 6.8   # floats are rejected
+        self.assertRaises(TypeError, setattr, b, 'buf', invalid_type)
+        self.assertRaises(TypeError, setattr, b, 'len', invalid_type)
+        self.assertRaises(TypeError, setattr, b, 'format', invalid_type)
+        self.assertRaises(TypeError, setattr, b, 'ndim', invalid_type)
+        self.assertRaises(TypeError, setattr, b, 'shape', invalid_type)
+        self.assertRaises(TypeError, setattr, b, 'strides', invalid_type)
+        self.assertRaises(TypeError, setattr, b, 'suboffsets', invalid_type)
+        self.assertRaises(TypeError, setattr, b, 'itemsize', invalid_type)
+        self.assertRaises(TypeError, setattr, b, 'internal', invalid_type)
+
+        too_big = 2 ** 256
+        self.assertRaises(OverflowError, setattr, b, 'len', too_big)
+        self.assertRaises(OverflowError, setattr, b, 'format', too_big)
+        self.assertRaises(OverflowError, setattr, b, 'ndim', too_big)
+        self.assertRaises(OverflowError, setattr, b, 'shape', too_big)
+        self.assertRaises(OverflowError, setattr, b, 'strides', too_big)
+        self.assertRaises(OverflowError, setattr, b, 'suboffsets', too_big)
+        self.assertRaises(OverflowError, setattr, b, 'itemsize', too_big)
+        self.assertRaises(OverflowError, setattr, b, 'internal', too_big)
+
+        self.assertRaises(AttributeError, setattr, b, 'wrong', None)
+        self.assertRaises(AttributeError, getattr, b, 'wrong')
+
+    def test_property_del(self):
+        """verify Py_buffer properties can not be deleted"""
+        b = Py_buffer(self.view_addr)
+        self.assertRaises(AttributeError, delattr, b, 'obj')
+        b.obj = []
+        try:
+            self.assertRaises(AttributeError, delattr, b, 'obj')
+        finally:
+            b.obj = None
+        self.assertRaises(AttributeError, delattr, b, 'obj')
+        self.assertRaises(AttributeError, delattr, b, 'buf')
+        self.assertEqual(b.len, 0)
+        self.assertRaises(AttributeError, delattr, b, 'len')
+        self.assertRaises(AttributeError, delattr, b, 'readonly')
+        self.assertRaises(AttributeError, delattr, b, 'format')
+        self.assertRaises(AttributeError, delattr, b, 'ndim')
+        self.assertRaises(AttributeError, delattr, b, 'shape')
+        self.assertRaises(AttributeError, delattr, b, 'strides')
+        self.assertRaises(AttributeError, delattr, b, 'suboffsets')
+        self.assertRaises(AttributeError, delattr, b, 'itemsize')
+        self.assertRaises(AttributeError, delattr, b, 'internal')
+
+    def test__getbuffer__(self):
+        """verify Py_buffer type get_buffer method"""
+        b = Py_buffer(self.view_addr)
+        self.assertTrue(b.obj is None)
+        b.len = 99
+        ba = bytearray([1, 10, 100, 0, 86, 12])
+        b.get_buffer(ba, (PyBUF_RECORDS))
+        self.assertTrue(b)
+        self.assertTrue(b.obj is ba)
+        self.assertEqual(cast(b.format, c_char_p).value, 'B'.encode('latin_1'))
+        self.assertFalse(b.readonly)
+        self.assertEqual(b.len, len(ba))
+        self.assertEqual(b.ndim, 1)
+        self.assertEqual(b.itemsize, sizeof(c_byte))
+        self.assertEqual(cast(b.shape, POINTER(c_ssize_t))[0], len(ba))
+        self.assertEqual(cast(b.strides, POINTER(c_ssize_t))[0], sizeof(c_byte))
+        self.assertEqual(string_at(b.buf, b.len), ba)
+        self.assertRaises(AttributeError, setattr, b, 'len', 1)
+
+        b = Py_buffer(self.view_addr)
+        e = self.Exporter()
+        self.assertTrue(e.state, "initial")
+        self.assertRaises(BufferError, b.get_buffer, e, PyBUF_WRITABLE)
+        b.get_buffer(e, PyBUF_RECORDS_RO)
+        self.assertTrue(e.state, "get")
+        self.assertTrue(e.flags, PyBUF_RECORDS_RO)
+        self.assertTrue(b)
+        self.assertTrue(b.obj is e)
+        self.assertEqual(cast(b.format, c_char_p).value, 'B'.encode('latin_1'))
+        self.assertTrue(b.readonly)
+        self.assertEqual(b.len, len(e))
+        self.assertEqual(b.ndim, 1)
+        self.assertEqual(b.itemsize, sizeof(c_byte))
+        self.assertEqual(cast(b.shape, POINTER(c_ssize_t))[0], len(e))
+        self.assertEqual(cast(b.strides, POINTER(c_ssize_t))[0], sizeof(c_byte))
+        self.assertEqual(string_at(b.buf, b.len), e.raw)
+
+        b = Py_buffer()
+        self.assertFalse(b)
+        self.assertRaises(AttributeError, getattr, b, 'obj')
+        self.assertRaises(AttributeError, getattr, b, 'len')
+        iba = '1234567890'.encode('latin_1')
+        b.get_buffer(iba, PyBUF_RECORDS_RO)
+        self.assertTrue(b)
+        self.assertTrue(b.obj is iba)
+        self.assertEqual(cast(b.format, c_char_p).value, 'B'.encode('latin_1'))
+        self.assertTrue(b.readonly)
+        self.assertEqual(b.len, len(iba))
+        self.assertEqual(b.ndim, 1)
+        self.assertEqual(b.itemsize, sizeof(c_byte))
+        self.assertEqual(cast(b.shape, POINTER(c_ssize_t))[0], len(iba))
+        self.assertEqual(cast(b.strides, POINTER(c_ssize_t))[0], sizeof(c_byte))
+        self.assertEqual(string_at(b.buf, b.len), iba)
+
+        b = Py_buffer(self.view_addr, preserve=1)
+        iba = 'abcde'.encode('latin_1')
+        b.get_buffer(iba, PyBUF_STRIDES)
+        b2 = Py_buffer(self.view_addr, filled=1, preserve=1)
+        b3 = Py_buffer(self.view_addr, filled=1)
+        self.assertTrue(b2)
+        self.assertTrue(b2.obj is iba)
+        self.assertTrue(b3)
+        self.assertTrue(b3.obj is iba)
+        b2 = None
+        gc.collect()
+        self.assertTrue(b3.obj is iba)
+        b3 = None
+        gc.collect()
+        self.assertTrue(b.obj is None)
+
+    def test__releasebuffer__(self):
+        """verify Py_buffer type release_buffer method"""
+        e = self.Exporter()
+
+        b = Py_buffer()
+        b.release_buffer()
+        self.assertFalse(b)
+        self.assertRaises(AttributeError, delattr, b, 'obj')
+        self.assertRaises(AttributeError, delattr, b, 'buf')
+        b.get_buffer(e, PyBUF_ND)
+        self.assertTrue(b.obj is e)
+        b.release_buffer()
+        self.assertEqual(e.state, "release")
+        self.assertFalse(b)
+        self.assertRaises(AttributeError, getattr, b, 'obj')
+
+        e.__init__()
+        self.assertEqual(e.state, "initial")
+        b = Py_buffer(self.view_addr)
+        b.release_buffer()
+        self.assertTrue(b)
+        self.assertTrue(b.obj is None)
+        self.assertTrue(b.buf is None)
+        self.assertEqual(b.len, 0)
+        self.assertTrue(b.readonly)
+        self.assertTrue(b.format is None)
+        self.assertEqual(b.ndim, 0)
+        self.assertTrue(b.shape is None)
+        self.assertTrue(b.strides is None)
+        self.assertTrue(b.suboffsets is None)
+        self.assertEqual(b.itemsize, 0)
+        self.assertTrue(b.internal is None)
+        b.get_buffer(e, PyBUF_ND)
+        self.assertEqual(e.state, "get")
+        self.assertTrue(b.obj is e)
+        b.release_buffer()
+        self.assertEqual(e.state, "release")
+        self.assertTrue(b.obj is None)
+
+    def test___init__(self):
+        """verify the __init__ function can be called more than one"""
+        e = self.Exporter()
+
+        b = Py_buffer()
+        b.get_buffer(e, PyBUF_ND)
+        self.assertEqual(e.state, "get")
+        self.assertTrue(b.obj is e)
+        b.__init__(self.view_addr, preserve=True)
+        self.assertEqual(e.state, "release")
+        self.assertTrue(b.obj is None)
+        e.__init__()
+        self.assertEqual(e.state, "initial")
+        b.get_buffer(e, PyBUF_ND)
+        b.__init__(self.view_addr, filled=True)
+        self.assertEqual(e.state, "get")
+        self.assertTrue(b.obj is e)
+        b.__init__(self.view_addr)
+        self.assertEqual(e.state, "release")
+        self.assertTrue(b.obj is None)
+        b.__init__()
+        self.assertFalse(b)
+
+    def test_fillfields(self):
+        """verify the fill_fields method"""
+        self.fail()
+
+    def test_gc(self):
+        """verify object cleanup at garbage collection time"""
+        e = self.Exporter()
+
+        b = Py_buffer()
+        b.get_buffer(e, PyBUF_ND)
+        self.assertEqual(e.state, "get")
+        b = None
+        gc.collect()
+        self.assertEqual(e.state, "release")
+
+        b = Py_buffer(self.view_addr, preserve=1)
+        b.get_buffer(e, PyBUF_ND | PyBUF_FORMAT)
+        self.assertEqual(e.state, "get")
+        self.assertEqual(e.flags, PyBUF_ND | PyBUF_FORMAT)
+        b = None
+        gc.collect()
+        self.assertEqual(e.state, "get")
+        b = Py_buffer(self.view_addr, filled=1)
+        try:
+            self.assertEqual(e.state, "get")
+        finally:
+            b.release_buffer()
+        self.assertEqual(e.state, "release")
+
+class BufferMixinGetBufferTest(unittest.TestCase):
+    """BufferMixin.__getbuffer__ verification"""
+    class B(BufferMixin):
+        def __init__(self):
+            self.is_called = False
+            self.flags = None
+            self.view = None
+            self.is_view_alive = False
+            self.is_view_obj_null = False
+        def __getbuffer__(self, view, flags):
+            self.is_called = True
+            self.is_view_alive = bool(view)
+            if (self.is_view_alive):
+                self.is_view_obj_null = view.obj is None
+            self.flags = flags
+            self.view = view
+            raise BufferError()
+
+    def test_is_called(self):
+        """verify the __getbuffer__ method is properly called"""
+        b = self.B()
+        m = Py_buffer()
+        self.assertFalse(b.is_called)
+        self.assertRaises(BufferError, m.get_buffer, b, PyBUF_RECORDS)
+        self.assertTrue(b.is_called)
+        self.assertTrue(isinstance(b.view, Py_buffer))
+        self.assertTrue(b.is_view_alive)
+        self.assertTrue(b.is_view_obj_null)
+        self.assertFalse(b.view)
+        self.assertTrue(isinstance(b.flags, int))
+        self.assertEqual(b.flags, PyBUF_RECORDS)
+
+    def test_wrong_return_type(self):
+        """verify exception raised for wrong return value"""
+        class B(BufferMixin):
+            def __getbuffer__(self, view, flags):
+                return 0
+        m = Py_buffer()
+        self.assertRaises(ValueError, m.get_buffer, B())
+
+    def test_default_method(self):
+        """verify the __getbuffer__ method is required"""
+        m = Py_buffer()
+        self.assertRaises(NotImplementedError, m.get_buffer, BufferMixin())
+
+class BufferMixinReleaseBufferTest(unittest.TestCase):
+    """BufferMixin.__releasebuffer__ verification"""
+    class B(BufferMixin):
+        def __init__(self):
+            self.is_called = False
+            self.view = None
+            self.is_view_alive = False
+            self.is_view_obj_self = False
+            self.allocation = create_string_buffer(20)
+            self.format = create_string_buffer("=I".encode('ascii'))
+        def __getbuffer__(self, view, flags):
+            view.buf = addressof(self.allocation)
+            view.len = 20
+            view.readonly = False
+            view.format = addressof(self.format)
+            view.ndim = 1
+            view.shape = None
+            view.strides = None
+            view.suboffsets = None
+            view.itemsize = 4
+            view.internal = None
+            view.obj = self
+        def __releasebuffer__(self, view):
+            self.is_called = True
+            self.view = view
+            self.is_view_alive = bool(view)
+            self.is_view_obj_self = view.obj is self
+
+    def test_is_called(self):
+        """verify the __releasebuffer__ method actually gets called"""
+        import gc
+
+        b = self.B()
+        self.assertFalse(b.is_called)
+        m = Py_buffer()
+        m.get_buffer(b)
+        self.assertFalse(b.is_called)
+        m.release_buffer()
+        self.assertTrue(b.is_called)
+        self.assertTrue(isinstance(b.view, Py_buffer))
+        self.assertFalse(b.view)
+        self.assertTrue(b.is_view_alive)
+        self.assertTrue(b.is_view_obj_self)
+
+class BufferMixinTest(unittest.TestCase):
+    """overall BufferMixin verification"""
+    class B(BufferMixin):
+        width = 3
+        height = 8
+        itemsize = sizeof(c_int32)
+        c_shape_arr_t = c_ssize_t * 2
+        shape = c_shape_arr_t(width, height)
+        strides = c_shape_arr_t(height * itemsize, itemsize)
+        format = create_string_buffer("=I".encode('ascii'))
+        length = sizeof(c_int32) * shape[0] * shape[1]
+        c_int32_arr_t = c_int32 * (width * height)
+        def __init__(self):
+            nitems = self.width * self.height
+            self.allocation = self.c_int32_arr_t(*range(1, nitems + 1))
+            self.released = False
+        def __getbuffer__(self, view, flags):
+            view.buf = addressof(self.allocation)
+            view.len = self.length
+            view.readonly = False
+            view.format = addressof(self.format)
+            view.ndim = 2
+            view.shape = addressof(self.shape)
+            view.strides = addressof(self.strides)
+            view.suboffsets = None
+            view.itemsize = self.itemsize
+            view.internal = None
+            view.obj = self
+        def __releasebuffer__(self, view):
+            view.release_buffer()
+            self.released = True
+
+    def test_operation(self):
+        """verify the info given by __getbuffer__() reaches the consumer"""
+        b = self.B()
+        m = Py_buffer()
+        m.get_buffer(b, PyBUF_RECORDS_RO)
+        self.assertTrue(m.obj is b)
+        self.assertEqual(m.buf, addressof(b.allocation))
+        self.assertEqual(m.len, b.length)
+        self.assertFalse(m.readonly)
+        self.assertEqual(string_at(m.format), b.format.value)
+        self.assertEqual(m.ndim, 2)
+        self.assertEqual(cast(m.shape, POINTER(c_ssize_t))[0:2],
+                         [b.width, b.height])
+        self.assertEqual(cast(m.strides, POINTER(c_ssize_t))[0:2],
+                         [b.height * b.itemsize, b.itemsize])
+        self.assertTrue(m.suboffsets is None)
+        self.assertEqual(m.itemsize, b.itemsize)
+        self.assertTrue(m.internal is None)
+        m.release_buffer()
+        self.assertTrue(b.released)
+
+    def test_multiple_inheritance(self):
+        class A(object):
+            def __getbuffer__(self, view, flags):
+                view.obj = self
+        class B(BufferMixin, A):
+            pass
+        b = B()
+        m = Py_buffer()
+        m.get_buffer(b, PyBUF_SIMPLE)
+        self.assertTrue(m.obj is b)
+
+class ModuleConstantsTest(unittest.TestCase):
+    """verify module constants"""
+    def test_PyBUF_x(self):
+        """the PyBUF_<flag> PyObject_GetBuffer flags"""
+        self.assertEqual(PyBUF_SIMPLE, 0)
+        self.assertEqual(PyBUF_WRITABLE, 0x0001)
+        self.assertEqual(PyBUF_STRIDES, 0x0010 | PyBUF_ND)
+        self.assertEqual(PyBUF_ND, 0x0008)
+        self.assertEqual(PyBUF_C_CONTIGUOUS, 0x0020 | PyBUF_STRIDES)
+        self.assertEqual(PyBUF_F_CONTIGUOUS, 0x0040 | PyBUF_STRIDES)
+        self.assertEqual(PyBUF_ANY_CONTIGUOUS, 0x0080 | PyBUF_STRIDES)
+        self.assertEqual(PyBUF_INDIRECT, 0x0100 | PyBUF_STRIDES)
+        self.assertEqual(PyBUF_FORMAT, 0x0004)
+        self.assertEqual(PyBUF_STRIDED, PyBUF_STRIDED_RO | PyBUF_WRITABLE)
+        self.assertEqual(PyBUF_STRIDED_RO, PyBUF_STRIDES)
+        self.assertEqual(PyBUF_RECORDS, PyBUF_RECORDS_RO | PyBUF_WRITABLE)
+        self.assertEqual(PyBUF_RECORDS_RO, PyBUF_STRIDES | PyBUF_FORMAT)
+        self.assertEqual(PyBUF_FULL, PyBUF_FULL_RO | PyBUF_WRITABLE)
+        self.assertEqual(PyBUF_FULL_RO, PyBUF_INDIRECT | PyBUF_FORMAT)
+        self.assertEqual(PyBUF_CONTIG, PyBUF_CONTIG_RO | PyBUF_WRITABLE)
+        self.assertEqual(PyBUF_CONTIG_RO, PyBUF_ND)
+
+    def test_PyBUFFER_SIZEOF(self):
+        """Sanity check on Py_buffer size contant"""
+        class Py_buffer_def(Structure):
+            """Documented Py_buffer fields"""
+            _fields_ = [('obj', py_object),
+                        ('buf', c_void_p),
+                        ('len', c_ssize_t),
+                        ('readonly', c_int),
+                        ('format', c_char_p),
+                        ('ndim', c_int),
+                        ('shape', POINTER(c_ssize_t)),
+                        ('strides', POINTER(c_ssize_t)),
+                        ('suboffsets', POINTER(c_ssize_t)),
+                        ('itemsize', c_ssize_t),
+                        ('internal', c_void_p)]
+        sz = sizeof(Py_buffer_def)
+        self.assertTrue(2 * sz > PyBUFFER_SIZEOF >= sz)
+
+
+if __name__ == '__main__':
+    unittest.main()
