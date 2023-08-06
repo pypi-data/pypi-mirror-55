@@ -1,0 +1,11 @@
+starlette>=0.12.11
+
+[lint]
+mypy
+autoflake
+black
+isort
+
+[test]
+asynctest
+httpx
