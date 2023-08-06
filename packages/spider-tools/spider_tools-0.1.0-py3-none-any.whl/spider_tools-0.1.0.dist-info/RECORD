@@ -1,0 +1,9 @@
+spdier_tools/__init__.py,sha256=K0kNy26Vm6A-1V5lST3ily6yVsNLUbiqk6AZDFm2nJI,20
+spdier_tools/__version__.py,sha256=MobQVtrO9Ze27biO6l6QreTAONnDTqbALI54Q1gpCI8,352
+spdier_tools/core.py,sha256=2LQ-ndoYEZqq_xzTnuGNoP696rAUHeZt4a7iGsrYBB8,14424
+spdier_tools/spider_tools.py,sha256=Iy0iHH6etzpIfQFQIToc4A7rwUQiTIPmOqjKP4mMrTw,14808
+spider_tools-0.1.0.dist-info/LICENSE,sha256=5mGKT-8JivLkYytFwVxN4KGDFE_yBq8WU3VdjGwRQ7k,1060
+spider_tools-0.1.0.dist-info/METADATA,sha256=1hwUQaRwD4Is0qq6hFrnJq_zPoW8ytrPzcg1bSQ19PY,2962
+spider_tools-0.1.0.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+spider_tools-0.1.0.dist-info/top_level.txt,sha256=RGASAjC3xf8C4WOu_Rrut9I23iea_qszlGfAeXZwGOc,13
+spider_tools-0.1.0.dist-info/RECORD,,
