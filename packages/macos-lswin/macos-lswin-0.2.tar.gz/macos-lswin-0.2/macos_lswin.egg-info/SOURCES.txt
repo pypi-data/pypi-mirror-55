@@ -1,0 +1,10 @@
+README.md
+setup.py
+lswin/__init__.py
+lswin/_macos_window.py
+macos_lswin.egg-info/PKG-INFO
+macos_lswin.egg-info/SOURCES.txt
+macos_lswin.egg-info/dependency_links.txt
+macos_lswin.egg-info/entry_points.txt
+macos_lswin.egg-info/requires.txt
+macos_lswin.egg-info/top_level.txt
