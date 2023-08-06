@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: docker_ps_traefik
+Version: 0.1.0
+Summary: %(0)s - Query Traefik to figure out the state of Docker backends
+Home-page: https://gitlab.com/epfl-idevfsd/docker_ps_traefik
+License: UNKNOWN
+Author: EPFL IDEV-FSD team
+Author-email: idevfsd@groupes.epfl.ch
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 4 - Beta
+Classifier: Environment :: Console
+Classifier: Intended Audience :: System Administrators
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
