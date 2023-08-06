@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+pydiscotool-cli/__init__.py
+pydiscotool-cli/init.py
+pydiscotool_cli.egg-info/PKG-INFO
+pydiscotool_cli.egg-info/SOURCES.txt
+pydiscotool_cli.egg-info/dependency_links.txt
+pydiscotool_cli.egg-info/entry_points.txt
+pydiscotool_cli.egg-info/requires.txt
+pydiscotool_cli.egg-info/top_level.txt
