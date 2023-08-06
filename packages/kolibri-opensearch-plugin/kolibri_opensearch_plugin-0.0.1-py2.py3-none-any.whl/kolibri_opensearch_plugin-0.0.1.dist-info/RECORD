@@ -1,0 +1,11 @@
+kolibri_opensearch_plugin/__init__.py,sha256=sXLh7g3KC4QCFxcZGBTpG2scR7hmmBsMjq6LqRptkRg,22
+kolibri_opensearch_plugin/kolibri_plugin.py,sha256=L9lSNUXRwgjJOUjGzoiY5TSyqKczCo-c2G8M4kkdho0,150
+kolibri_opensearch_plugin/options.py,sha256=HISYOsp7ryfB-YKs9pYGeTXqEsdaSFOgx4IpZ_XhEjo,218
+kolibri_opensearch_plugin/root_urls.py,sha256=xrUA0cvOstvBOlYvMY2L_lgpXW86URKwgbh2iKH45p4,236
+kolibri_opensearch_plugin/views.py,sha256=OfJ0mIOwfx1_tEhL3-JBOj-bRPOUaKNctLtozBztkk4,2133
+kolibri_opensearch_plugin-0.0.1.dist-info/AUTHORS.rst,sha256=EU1o79wGca5ZnpkpjZLgiE_rImxBNoPyhzwkBMaIIng,261
+kolibri_opensearch_plugin-0.0.1.dist-info/LICENSE,sha256=MU8_bl580ECRF9G-HZCMZLs3fvMcqCW-xWOTFH8CzmE,1084
+kolibri_opensearch_plugin-0.0.1.dist-info/METADATA,sha256=olElyM-c0A6HPjs-XGi1CpjJuFDXDKcVj5KdSGrvp_g,1837
+kolibri_opensearch_plugin-0.0.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+kolibri_opensearch_plugin-0.0.1.dist-info/top_level.txt,sha256=WwnuVBYPF68xhaFni9_pPEu07YD3BC7OjrxARp3P80o,26
+kolibri_opensearch_plugin-0.0.1.dist-info/RECORD,,
