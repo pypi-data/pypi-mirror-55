@@ -1,0 +1,16 @@
+MANIFEST.in
+README.rst
+setup.py
+pygma/__init__.py
+pygma/version.py
+pygma.egg-info/PKG-INFO
+pygma.egg-info/SOURCES.txt
+pygma.egg-info/dependency_links.txt
+pygma.egg-info/not-zip-safe
+pygma.egg-info/requires.txt
+pygma.egg-info/top_level.txt
+pygma/agents/__init__.py
+pygma/agents/base_agent.py
+pygma/agents/pg_agent.py
+pygma/agents/tests/__init__.py
+pygma/agents/tests/test_pg_agent.py
