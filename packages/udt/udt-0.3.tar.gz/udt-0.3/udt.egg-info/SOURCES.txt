@@ -1,0 +1,15 @@
+README.md
+setup.py
+udt/__init__.py
+udt/cli.py
+udt/finder.py
+udt/ls.py
+udt/markdown.py
+udt/srt.py
+udt/yml.py
+udt.egg-info/PKG-INFO
+udt.egg-info/SOURCES.txt
+udt.egg-info/dependency_links.txt
+udt.egg-info/entry_points.txt
+udt.egg-info/requires.txt
+udt.egg-info/top_level.txt
