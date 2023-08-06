@@ -1,0 +1,4 @@
+#!python
+from dockershield.main import main
+import sys
+main(sys.argv)
