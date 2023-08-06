@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: blowpipe-common
+Version: 0.0.1
+Summary: holds my commonly used classes and functions.
+Home-page: https://github.com/simonski/blowpipe-common
+Author: Simon Gauld
+Author-email: simon.gauld@gmail.com
+License: Apache 2.0
+Keywords: common development
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+
+Common classes and functions I use.
+
+
