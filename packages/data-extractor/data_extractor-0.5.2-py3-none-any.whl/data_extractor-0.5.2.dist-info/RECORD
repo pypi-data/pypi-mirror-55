@@ -1,0 +1,12 @@
+LICENSE,sha256=ytdGaZ37n3CCnC_7oukzd50x-O-RBYxJtR9gHsV3Kyw,1063
+data_extractor/__init__.py,sha256=dnxdOQ6sk8CkeN7daIh1As3MD2MSnld5-fd7UbkvnCI,1049
+data_extractor/abc.py,sha256=yVjQkW4a5qPRtU1N3kX-ySp9XVyxqLazG2Yb9nczDLA,10362
+data_extractor/exceptions.py,sha256=vqS_FHavMW3nLOzzAe5TKo7JdhrH0tvGeb3wacPf3ao,2135
+data_extractor/item.py,sha256=6Yyctx6vGoIp3didzESCo2-ab2ZpYQZdCqlObLbJaXs,6254
+data_extractor/json.py,sha256=RADLtbUo9Doux5r4n0ii2V0xuljz2QnD6tJhQiQnSyg,1575
+data_extractor/lxml.py,sha256=9hkfZTf2LN12EJ7d5nCK0VKpeqHunvYyYp2d591Apo4,5227
+data_extractor/utils.py,sha256=f241F1ZGx9I9YXUP6DsjzFLah1mJCfAr0udQPyV8X_o,2852
+data_extractor-0.5.2.dist-info/LICENSE,sha256=ytdGaZ37n3CCnC_7oukzd50x-O-RBYxJtR9gHsV3Kyw,1063
+data_extractor-0.5.2.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+data_extractor-0.5.2.dist-info/METADATA,sha256=RCUoXrEmXm85yvqflVUdM4InjKnwzAIvwtaSGYh0ajQ,5133
+data_extractor-0.5.2.dist-info/RECORD,,
