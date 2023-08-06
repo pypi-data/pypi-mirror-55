@@ -1,0 +1,10 @@
+jupyembed/__init__.py,sha256=G04SdWUThvdvu174mzFrtNzwyztem29Kl22NDllmpEk,176
+jupyembed/cli.py,sha256=dwKgijCPQ06w0hZ0cq1aKDmhBL0mB5pwpitGe4qMc0Q,445
+jupyembed/embed.py,sha256=HOktualjIngc4wGpXHu0pvNPqLyaY1bERnD7ss68vWg,1855
+jupyembed-0.1.0.dist-info/AUTHORS.rst,sha256=hyMmHYyLLJGNyRms_MHrFkvB78BaZEi-rYoUodNgAFU,158
+jupyembed-0.1.0.dist-info/LICENSE,sha256=0OPbhbKWCz7MyhwIfmgABJus89jO43G_461ojDZJg-k,1505
+jupyembed-0.1.0.dist-info/METADATA,sha256=WqssQLDBr9nPoC-4v4AUeBtI2_uhveguBj0nUUVJnmU,1611
+jupyembed-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+jupyembed-0.1.0.dist-info/entry_points.txt,sha256=U5M13pYgO4p3AcOlPxU_NmO5B2icJWTItdFeYRWstHQ,50
+jupyembed-0.1.0.dist-info/top_level.txt,sha256=GCBtvfS--u2qe7LMgZc_QhQ8XBmkYTBXGYsTps8kiE4,10
+jupyembed-0.1.0.dist-info/RECORD,,
