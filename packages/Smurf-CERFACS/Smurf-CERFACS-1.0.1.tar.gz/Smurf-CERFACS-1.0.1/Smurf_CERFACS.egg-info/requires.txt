@@ -1,0 +1,6 @@
+numpy>=1.15
+pathos>=0.2
+matplotlib>=3.0
+pyyaml>=3.12
+ot-batman>=1.9
+barbatruc==0.0.2
