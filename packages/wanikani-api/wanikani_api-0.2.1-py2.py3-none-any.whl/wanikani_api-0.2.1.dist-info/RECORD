@@ -1,0 +1,13 @@
+wanikani_api/__init__.py,sha256=7DAveS_h9d68z4QdLGKK8RKKEgxe_LKuwYJ4sY6xHD0,159
+wanikani_api/client.py,sha256=UsG_3RJFKZoupxKiVph3AP0qodVvPAAM6uHMnjljDzU,18129
+wanikani_api/constants.py,sha256=I5MnT-5pjfq1obcghdeFAS0DFIoHnVoyjTwj2cHGj64,462
+wanikani_api/exceptions.py,sha256=hX1raDp-YMKqUGXdwK89ZxYTDL2nvbe4f0BjTW3esRs,395
+wanikani_api/models.py,sha256=haQdPr_eiucvtJ2biBYN3fMp9b4BUZMAeJFXeogqPZY,17594
+wanikani_api/subjectcache.py,sha256=NwUOzC2JpOM2V2yV0BBMIy29spFEe6csctrQigTkEiQ,828
+wanikani_api/url_builder.py,sha256=D8r0sH6pQ8mSdRONwr8zzMG_dEVIgqdO46DEpzXKSTM,1550
+wanikani_api-0.2.1.dist-info/AUTHORS.rst,sha256=kQH5EAiwVw99xA-lCZQt0OWq8oDvZR5RIo-mgaEwR5k,160
+wanikani_api-0.2.1.dist-info/LICENSE,sha256=4BWhvq53k0_spNYMvmHCXR9sNoXyrRvQWEj7xMOSMq8,1511
+wanikani_api-0.2.1.dist-info/METADATA,sha256=7k6ZL-Jjkcl85bXxSxTWMsvB4kUblbv1SOTGD3VgDYg,3472
+wanikani_api-0.2.1.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+wanikani_api-0.2.1.dist-info/top_level.txt,sha256=WGiI8z1nsaFZWeM8A-0QWhCM_K_cxGtvKttN41PPG9I,13
+wanikani_api-0.2.1.dist-info/RECORD,,
