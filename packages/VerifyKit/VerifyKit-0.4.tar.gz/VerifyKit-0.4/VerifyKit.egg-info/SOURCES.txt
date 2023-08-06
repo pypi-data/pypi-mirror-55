@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+VerifyKit/__init__.py
+VerifyKit.egg-info/PKG-INFO
+VerifyKit.egg-info/SOURCES.txt
+VerifyKit.egg-info/dependency_links.txt
+VerifyKit.egg-info/requires.txt
+VerifyKit.egg-info/top_level.txt
