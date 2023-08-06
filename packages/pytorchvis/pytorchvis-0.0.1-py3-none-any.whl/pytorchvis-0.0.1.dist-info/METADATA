@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: pytorchvis
+Version: 0.0.1
+Summary: A package to visualize CNN in PyTorch
+Home-page: https://github.com/anujshah1003/pytorchvis
+Author: Anuj Shah
+Author-email: anujonline645@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# pytorchvis
+A library to visualize CNN in PyTorch.
+
+
