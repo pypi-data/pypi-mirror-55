@@ -1,0 +1,15 @@
+README.md
+setup.py
+sql_logger/__init__.py
+sql_logger.egg-info/PKG-INFO
+sql_logger.egg-info/SOURCES.txt
+sql_logger.egg-info/dependency_links.txt
+sql_logger.egg-info/requires.txt
+sql_logger.egg-info/top_level.txt
+sql_logger/inspector/Inspector.py
+sql_logger/inspector/Query.py
+sql_logger/inspector/__init__.py
+sql_logger/logger/Logger.py
+sql_logger/logger/__init__.py
+sql_logger/utils/__init__.py
+sql_logger/utils/connector.py
