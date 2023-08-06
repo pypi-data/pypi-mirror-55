@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: IITD-speech-vone
+Version: 1.0.2
+Summary: Useful speech recognition and transcription related library for Indian languages.
+Home-page: http://pypi.python.org/pypi/IITD_speech_vone_v101/
+Author: Anshu Bansal, Jayanth
+Author-email: cs1160324@iitd.ac.in
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: pydub
+Requires-Dist: numpy
+Requires-Dist: sklearn
+Requires-Dist: soundfile
+Requires-Dist: pyAudioAnalysis
+Requires-Dist: statistics
+
+UNKNOWN
+
+
