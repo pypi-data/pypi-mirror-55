@@ -1,0 +1,4 @@
+cymem
+preshed
+murmurhash
+cython
