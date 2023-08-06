@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: sighthound-api
+Version: 0.53
+Summary: Sighthound API for integration with Home Assistant
+Home-page: https://github.com/philmottin
+Author: Phil Mottin
+Author-email: philmottin@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# Sighthound API
+
+Sighthound API for integration with Home Assistant
+
+[source](https://github.com/philmottin/)
+
+
