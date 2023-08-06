@@ -1,0 +1,9 @@
+rnae/__init__.py,sha256=maf1dU1xPEE32f754_3KvO-SZvfmRU65R8Hkunqop-c,89
+rnae/data.py,sha256=a4IQV2KaBmvIHHXijq2WiuLLthtG0EGC0o0cZghH_Qg,793
+rnae/rnae.py,sha256=3fOxv-7l3uo_jVBpMBT71009w8vUd541awWu-QlGL20,6099
+rnae/dados/diagnostico.csv,sha256=JYHUhCcL2GBT3iLNKnZmGZJBWmWcRhDILsjqBSdSz-I,2400
+rnae/dados/iris.csv,sha256=qVTVOvBCUd6Y9W584OozvX-I_G_dvJcmodxNeD3lEg8,2558
+rnae-1.0.1.dist-info/METADATA,sha256=s5mNNUMo_AX88MTuAyzRouO79myabn4RmFCaROymrMg,1920
+rnae-1.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+rnae-1.0.1.dist-info/top_level.txt,sha256=YBWpk71Eqdupus698pFLlD1eFMxwLHCb_YU7Z10xFGw,5
+rnae-1.0.1.dist-info/RECORD,,
