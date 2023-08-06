@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: test-package-ag
+Version: 0.0.6
+Summary: A small test package
+Home-page: https://github.com/alexgorji/ag_pip_test.git
+Author: A. G.
+Author-email: aligorji@hotmail.com
+License: UNKNOWN
+Description: This is only a dummy package to test distribution of packages with pip.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
