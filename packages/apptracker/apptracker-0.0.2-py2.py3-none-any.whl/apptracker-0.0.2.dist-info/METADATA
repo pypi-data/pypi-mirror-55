@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: apptracker
+Version: 0.0.2
+Summary: UNKNOWN
+Home-page: https://github.com/manojpawarsj12/apptracker
+Author: Manoj Pawar SJ
+Author-email: manojpawarsj.mp11@gmail.com
+License: MIT
+Project-URL: Bug Reports, https://github.com/manojpawarsj12/apptracker/issues
+Project-URL: Source, https://github.com/manojpawarsj12/apptracker
+Keywords: application tracker digitalwellbeing website tracker
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: 
+Requires-Dist: python-dateutil
+Requires-Dist: plotly
+Requires-Dist: uiautomation
+Requires-Dist: pywin32 (>=1.0) ; platform_system == "Windows"
+
+UNKNOWN
+
+
