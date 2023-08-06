@@ -1,0 +1,9 @@
+flask_discussion/__init__.py,sha256=fYAWtnxRoexMGYbVxVmWKKxxZC9SWCLz3pk4dxCfQCE,1684
+flask_discussion/templates/flask_discussion/disqus.html,sha256=wSQLLrZKw30uB40kt-7kMaCIvLcIi9C1Hkwf5JnPzQQ,2755
+flask_discussion/templates/flask_discussion/helper.html,sha256=KlcaJOCk7nPwT76n2Rtk3CzhLrMf7NPbAHUFu7OFQH4,2017
+flask_discussion/templates/flask_discussion/isso.html,sha256=hGFRhyJvxCMCCHR2ReMvUxV9TG8Rz44KwJ-fKjitxqw,4711
+Flask_Discussion-0.1.0.dist-info/LICENSE,sha256=vf_TmMtDZU6T4AGy8MOv50HYMnnWPnk4zoaZi821PV8,1101
+Flask_Discussion-0.1.0.dist-info/METADATA,sha256=oksUFw3hLlVShH5k7bZDEudRM58ShrkL8WjSWFfqpvQ,2642
+Flask_Discussion-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+Flask_Discussion-0.1.0.dist-info/top_level.txt,sha256=bNQOZl9-9lf5m8iGWAPjBzSDnSkNozXK3LNkScBhMQI,17
+Flask_Discussion-0.1.0.dist-info/RECORD,,
