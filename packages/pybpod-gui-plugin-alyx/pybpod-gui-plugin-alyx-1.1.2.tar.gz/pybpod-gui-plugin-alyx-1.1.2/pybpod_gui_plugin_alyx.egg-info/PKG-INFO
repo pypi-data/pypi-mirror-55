@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pybpod-gui-plugin-alyx
+Version: 1.1.2
+Summary: PyBpod Alyx API connection module
+Home-page: https://github.com/pybpod/pybpod-gui-plugin-alyx
+Author: ['Sergio Copeto', 'Luís Teixeira']
+Author-email: sergio.copeto@research.fchampalimaud.org, ricardo.ribeiro@research.fchampalimaud.org, micboucinha@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
