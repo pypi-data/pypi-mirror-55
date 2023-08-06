@@ -1,0 +1,7 @@
+astropy>=1.0.2
+corner
+emcee<3.0,>=2.2.0
+h5py
+matplotlib
+pyyaml
+scipy
