@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+plwrap/__init__.py
+plwrap.egg-info/PKG-INFO
+plwrap.egg-info/SOURCES.txt
+plwrap.egg-info/dependency_links.txt
+plwrap.egg-info/requires.txt
+plwrap.egg-info/top_level.txt
