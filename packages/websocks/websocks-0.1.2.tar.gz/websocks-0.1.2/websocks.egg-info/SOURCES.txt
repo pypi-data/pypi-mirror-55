@@ -1,0 +1,16 @@
+README.md
+setup.py
+websocks/__init__.py
+websocks/client.py
+websocks/commands.py
+websocks/exceptions.py
+websocks/rule.py
+websocks/server.py
+websocks/types.py
+websocks/utils.py
+websocks.egg-info/PKG-INFO
+websocks.egg-info/SOURCES.txt
+websocks.egg-info/dependency_links.txt
+websocks.egg-info/entry_points.txt
+websocks.egg-info/requires.txt
+websocks.egg-info/top_level.txt
