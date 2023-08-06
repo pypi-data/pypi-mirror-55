@@ -1,0 +1,7 @@
+README.md
+setup.py
+envvarconf/__init__.py
+envvarconf.egg-info/PKG-INFO
+envvarconf.egg-info/SOURCES.txt
+envvarconf.egg-info/dependency_links.txt
+envvarconf.egg-info/top_level.txt
