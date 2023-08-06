@@ -1,0 +1,3 @@
+[console_scripts]
+kapow = kapow.__main__:kapow
+
