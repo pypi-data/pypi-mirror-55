@@ -1,0 +1,5 @@
+pymongo
+mysql-connector-python
+requests
+python-twitter
+websockets<8,>=7.0
