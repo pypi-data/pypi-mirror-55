@@ -1,0 +1,6 @@
+README.md
+setup.py
+pyspectrum_MTJ.egg-info/PKG-INFO
+pyspectrum_MTJ.egg-info/SOURCES.txt
+pyspectrum_MTJ.egg-info/dependency_links.txt
+pyspectrum_MTJ.egg-info/top_level.txt
