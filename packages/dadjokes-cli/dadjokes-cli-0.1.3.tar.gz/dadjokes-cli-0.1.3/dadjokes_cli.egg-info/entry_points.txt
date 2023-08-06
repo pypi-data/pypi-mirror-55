@@ -1,0 +1,3 @@
+[console_scripts]
+dadjoke = dadjokes.cli:cli
+
