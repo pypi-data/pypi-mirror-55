@@ -1,0 +1,7 @@
+click
+mercantile
+rasterio
+requests
+
+[test]
+pytest
