@@ -1,0 +1,4 @@
+[console_scripts]
+ffdb=ffmirror.cli:run_db_op
+ffdl=ffmirror.cli:run_dl
+

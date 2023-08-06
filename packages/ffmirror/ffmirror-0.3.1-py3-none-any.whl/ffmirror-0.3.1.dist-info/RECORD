@@ -1,0 +1,15 @@
+ffmirror/__init__.py,sha256=Bxt3mCrbJswTTE-J_uIjGbYTyhRayvHB1S2L5h8N9OA,335
+ffmirror/cli.py,sha256=SowtzUvjLjXoYXefRRAJchrj8RyvH71XoIoSyojcPW8,8148
+ffmirror/core.py,sha256=RUNWdNNk2VjBiukhUgDAEKXkpWNlMns8gnGq0_GX1ZU,4527
+ffmirror/handlers/__init__.py,sha256=iPLsaoHra4rO-f-FNGmIrEaJrYscHCY12we0sylgVLk,236
+ffmirror/handlers/ao3.py,sha256=ooP5NARg9xT1crkwHvGJVhQaYRE9CN11S5WE9BCxrUc,5933
+ffmirror/handlers/ffnet.py,sha256=GlKJI2osaejH4gg-o79V5ytYqcMuvWpZHu2ddkRmxZE,16003
+ffmirror/mcstories.py,sha256=xNGyx92rAO-1tARY33P_CGPySDrQDs3Idp042ZtCJqw,8502
+ffmirror/metadb.py,sha256=IcJYW0N_ruuHNQNaJTvfrvA8jjntf9nYjzyWZL-26kI,13980
+ffmirror/mirror.py,sha256=5U9N6_x-cSQE75N--M7rSKQDWPcMMbG-E95XhiiFAuM,9048
+ffmirror/simpletags.py,sha256=w0CofFNdhLpKi-g6m_7up8uxWOIm6Wk-by5IgBmAguI,2887
+ffmirror/util.py,sha256=oz1XrvHpRd3R97zyTCXWYT5QdrqiWWFGEAMyFbT0OFw,4122
+ffmirror-0.3.1.dist-info/entry_points.txt,sha256=mno7rfwbNWXvLsYNCB3mGramcWPpwZJaxoswaIgladk,72
+ffmirror-0.3.1.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+ffmirror-0.3.1.dist-info/METADATA,sha256=TJ0VOkdhgU75Q8IZzM8Jb3pGf85S0b-m5TcR0QirZiY,2419
+ffmirror-0.3.1.dist-info/RECORD,,
