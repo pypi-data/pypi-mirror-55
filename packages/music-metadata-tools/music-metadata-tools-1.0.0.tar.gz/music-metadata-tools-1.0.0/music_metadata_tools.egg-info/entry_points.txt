@@ -1,0 +1,4 @@
+[console_scripts]
+apic-tool = apic_tool.cli:main
+id3autosort = id3autosort.cli:main
+
