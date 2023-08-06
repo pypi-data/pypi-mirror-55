@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: metadsl
+Version: 0.1.0
+Summary: Library to help create DSLs in Python.
+Home-page: https://github.com/Quansight-Labs/metadsl
+Author: Saul Shanabrook
+Author-email: s.shanabrook@gmail.com
