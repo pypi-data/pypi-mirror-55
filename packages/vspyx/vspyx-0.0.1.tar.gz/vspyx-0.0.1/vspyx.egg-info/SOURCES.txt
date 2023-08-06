@@ -1,0 +1,7 @@
+README.md
+setup.py
+vspyx/__init__.py
+vspyx.egg-info/PKG-INFO
+vspyx.egg-info/SOURCES.txt
+vspyx.egg-info/dependency_links.txt
+vspyx.egg-info/top_level.txt

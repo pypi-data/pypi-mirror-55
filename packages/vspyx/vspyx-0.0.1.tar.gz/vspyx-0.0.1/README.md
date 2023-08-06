@@ -1,0 +1,1 @@
+This is a stub for `vspyx`. To use the Python `vspyx` package, [install Vehicle Spy X on your system](https://intrepidcs.com/vspyx). 
