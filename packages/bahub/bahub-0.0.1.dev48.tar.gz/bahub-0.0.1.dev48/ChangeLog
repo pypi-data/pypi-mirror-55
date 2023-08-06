@@ -1,0 +1,52 @@
+CHANGES
+=======
+
+* Updated docs
+* Fixed invalid value instead of date string, detected by functional test on PostgreSQL
+* Tests: Support for testing application on PostgreSQL
+* Makefile: Corrected arguments passing - those should be allowed to contain spaces
+* Resolve: \` Path for output is not writable. Please, set appropriate access mode for output path: /var/www/html/tests/Functional/\_output/\`
+* Resolve: \`chown: cannot access '/var/www/html/var': No such file or directory\`
+* Restored .dockerignore and .env.test at correct places
+* Docker: Add permissions normalization on entrypoint
+* CI: Correct permissions
+* CI: Debugging CI
+* CI: Testz
+* CI: Corrected tests. Created new infrastructure for testing locally and on CI - using docker-compose. There are now a few variants of infrastructure - using s3, postgres, with persistence etc
+* Healthcheck: Correct typing problem (on PostgreSQL it seems that fetchColumn() returns an integer instead of string)
+* Tests/CI: Delete external dependencies from tests, and use internally a docker container that serves static files
+* CI: Correct push to quay and tag recognition
+* Corrected usage after names refactor
+* Updated readmes
+* Structure refactor: Added "push\_container" make task
+* Structure refactor: Trying to set up the CI
+* Project structure refactor + moving from quay.io CI to Travis CI
+* Tests: Refactor usages of internal methods
+* CI: Corrected tests on Travis. Those tests were not working due to bug in docker-compose (compose was adding suffixes to container names which caused bash scripts not working)
+* CI: Clean up containers between test cases
+* - Bahub: Fixed incorrect imports - Clean up: Removed gitver, we didnt use it at all
+* File Repository: Corrected error
+* Client - Bahub: Mainly naming refactor
+* PostgreSQL support, clean up in "nginx features", updated documentation
+* Refactor imports
+* Bump docker image on \`master\` branch
+* Simplifications to the NGINX configuration
+* Simplified the build, the bcmath was moved to base container
+* Added dependency for the MySQL check util from RiotKit's CI Utils
+* Corrected Bahub integration tests
+* Fixes to env support
+* Fixed deployment, improved Docker image size
+* Added --no-dev to composer at Dockerfile to reduce image size
+* Fixed travis build - migrations does not need to be executed in unit tests, they are executed in API tests
+* Clean up and fixes to the Docker container
+* Improved configuration reference
+* Added missing variable \`BACKUP\_MAX\_VERSIONS\` that was not shown in the documentation and .env.dist file
+* Docs: Corrected paths in "first steps"
+* CI: Refactored Makefile, downgraded PHPUnit for compatibility with Codeception
+* CI: Added "skip\_existing: true" to deploy to PIP
+* CI: Corrected notifications
+* Added build notifications, switched base images in Dockerfile
+* Client: Removed pixz as it is not supported by used Alpine
+* Client: Added pigz and pixz for parallel archive creation
+* Server: Updated dependencies, integrated Sentry.io to the application - deleted special Docker container
+* Server: Bump version to rebuild from newest docker's php-app base image. Fixed health check endpoint on sentry
