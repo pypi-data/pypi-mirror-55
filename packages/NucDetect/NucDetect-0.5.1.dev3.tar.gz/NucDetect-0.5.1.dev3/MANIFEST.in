@@ -1,0 +1,12 @@
+# Include important files
+include Nucleus/README.md
+include Nucleus/license.txt
+include Nucleus/requirements.txt
+
+
+# Include UI files
+include Nucleus/gui/*.ui
+include Nucleus/gui/*.png
+include Nucleus/gui/settings/*.ui
+include Nucleus/gui/settings/settings.json
+include Nucleus/gui/settings/settings.ini
