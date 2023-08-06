@@ -1,0 +1,3 @@
+[console_scripts]
+merge-and-mark-textgrid-tiers = textgrid_utils:merge_main
+
