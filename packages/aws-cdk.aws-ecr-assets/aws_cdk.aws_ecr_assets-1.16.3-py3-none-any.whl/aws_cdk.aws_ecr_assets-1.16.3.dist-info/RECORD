@@ -1,0 +1,8 @@
+aws_cdk/aws_ecr_assets/__init__.py,sha256=WMc2ahQooXZFD3aPIVsLynQ15KrvFx2rKbtW5T-c1-Y,11002
+aws_cdk/aws_ecr_assets/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_ecr_assets/_jsii/__init__.py,sha256=weG0IltehLEAs_LwB__GYwa4shjQHxvCEi_XpgIVxf8,372
+aws_cdk/aws_ecr_assets/_jsii/aws-ecr-assets@1.16.3.jsii.tgz,sha256=ORpUpgAhFAvzvczXjmYGKwX9kHZvWwkY4Ubhq1K7dec,43016
+aws_cdk.aws_ecr_assets-1.16.3.dist-info/METADATA,sha256=yrNwAwYTP2_3O-AJD25qC1S9sc8SCckqOmLE3FD2f44,3876
+aws_cdk.aws_ecr_assets-1.16.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+aws_cdk.aws_ecr_assets-1.16.3.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_ecr_assets-1.16.3.dist-info/RECORD,,
