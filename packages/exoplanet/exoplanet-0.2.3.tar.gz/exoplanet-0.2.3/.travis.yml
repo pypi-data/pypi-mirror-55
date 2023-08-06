@@ -1,0 +1,31 @@
+sudo: false
+dist: xenial
+language: python
+matrix:
+    fast_finish: true
+blocklist:
+    - *-pdf
+env:
+    global:
+        - THEANO_FLAGS=floatX=float64,compute_test_value=off
+cache:
+  directories:
+  - "$HOME/.cache/pip"
+jobs:
+  include:
+    - python: '3.6'
+    - python: '3.7'
+
+install:
+    - bash ./.ci/update_docs.sh
+    - travis_retry python -m pip install -U pip
+    - travis_retry python -m pip install -U setuptools
+    - travis_retry python -m pip install -U numpy pybind11
+    - travis_retry python -m pip install -U -r requirements-test.txt
+    - travis_retry python setup.py develop
+
+script:
+    - python -m pytest -vs --durations=0 src/exoplanet
+
+after_success:
+    - coveralls
