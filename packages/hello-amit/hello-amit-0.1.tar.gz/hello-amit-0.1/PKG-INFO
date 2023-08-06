@@ -1,0 +1,22 @@
+Metadata-Version: 1.1
+Name: hello-amit
+Version: 0.1
+Summary: A Hello World package for PyPI
+Home-page: https://github.com/amitgcse/hello-world-for-pipy
+Author: Amit Kumar
+Author-email: amitg.cse@gmail.com
+License: MIT
+Download-URL: https://github.com/amitgcse/hello-world-for-pipy/archive/v0.1.tar.gz
+Description: UNKNOWN
+Keywords: HELLO WORLD,LEARNING,BEGINNERS
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Education
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
