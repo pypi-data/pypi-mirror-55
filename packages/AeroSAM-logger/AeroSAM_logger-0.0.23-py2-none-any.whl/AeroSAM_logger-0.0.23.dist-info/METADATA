@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: AeroSAM-logger
+Version: 0.0.23
+Summary: Package for use on a raspberry pi zero, to log MET data from UH-AeroSAM1.3
+Home-page: https://github.com/JGirdwood/AeroSAM_logger
+Author: Joseph Girdwood
+Author-email: j.girdwood@herts.ac.uk
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+
+# AeroSAM_logger
+
+
