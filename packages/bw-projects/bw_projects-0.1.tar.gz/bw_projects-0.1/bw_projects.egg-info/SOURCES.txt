@@ -1,0 +1,17 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.py
+bw_projects/__init__.py
+bw_projects/base_dir.py
+bw_projects/errors.py
+bw_projects/filesystem.py
+bw_projects/peewee.py
+bw_projects/projects.py
+bw_projects/testing.py
+bw_projects/version.py
+bw_projects.egg-info/PKG-INFO
+bw_projects.egg-info/SOURCES.txt
+bw_projects.egg-info/dependency_links.txt
+bw_projects.egg-info/requires.txt
+bw_projects.egg-info/top_level.txt
