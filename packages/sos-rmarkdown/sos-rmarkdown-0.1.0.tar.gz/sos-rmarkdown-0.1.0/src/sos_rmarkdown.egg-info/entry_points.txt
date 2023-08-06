@@ -1,0 +1,7 @@
+
+[sos_converters]
+rmd-ipynb.parser = sos_rmarkdown.converter:get_Rmarkdown_to_notebook_parser
+rmd-ipynb.func = sos_rmarkdown.converter:Rmarkdown_to_notebook
+
+rmd-html.parser = sos_rmarkdown.converter:get_Rmarkdown_to_html_parser
+rmd-html.func = sos_rmarkdown.converter:Rmarkdown_to_html
