@@ -1,0 +1,10 @@
+starlette_json/__init__.py,sha256=1rXdsUmXPwkZicaoIDXDqEqU7oBqQVWZ_DNcdEcXP-s,272
+starlette_json/starlette_orjson.py,sha256=BzlFA1y6zUWfnUbCe63hRE5a5CgDiAXD5nhqVVN0Afo,1381
+starlette_json/starlette_rapidjson.py,sha256=xp1AL0pAy4ylE0boWq3yOmA4zwUkzqJ7dC7isBBuIEE,2088
+starlette_json/starlette_simplejson.py,sha256=23xOluZNbOhgs73J2OWR83QF3XXM6vjjREn4yMl_c-E,1640
+starlette_json/starlette_ujson.py,sha256=E5xmDWuMSApVLfCTxiB_dr_6F31WAQakaBAgZPKHl3g,1726
+starlette_json-19.11.15.dist-info/LICENSE.md,sha256=4SLOaChRQPAElFsCnxsUsg36r_vCsEcvAP0Yebl95pA,1550
+starlette_json-19.11.15.dist-info/METADATA,sha256=fIIuEfx7vbTzOP6T2m3kkIj97KoTXwEAVzA_CJR6Kyw,3537
+starlette_json-19.11.15.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+starlette_json-19.11.15.dist-info/top_level.txt,sha256=wElhRh2tK-g7-BLaobFcMhEDlgNYNL3WDWfp1xIj1us,15
+starlette_json-19.11.15.dist-info/RECORD,,
