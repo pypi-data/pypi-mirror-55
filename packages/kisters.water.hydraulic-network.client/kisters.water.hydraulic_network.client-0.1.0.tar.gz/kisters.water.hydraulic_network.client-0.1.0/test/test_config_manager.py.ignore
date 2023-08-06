@@ -1,0 +1,339 @@
+import uuid
+from unittest import TestCase
+
+from kisters.water.hydraulic_network.client import ConfigManager
+
+from access import CLIENT
+
+config_manager = ConfigManager(CLIENT)
+
+
+test_rto_config = {
+    "hydraulic-network": "string",
+    "hydraulic-network-store-url": "string",
+    "hydraulic-network-access-token": "string",
+    "input-data-mapping": [
+        {
+            "time-series-path": "string",
+            "element-uid": "string",
+            "element-attribute": "string",
+        },
+        {
+            "time-series-path": "string",
+            "element-uid": "string",
+            "element-attribute": "string",
+        },
+    ],
+    "seed-data-mapping": [
+        {
+            "time-series-path": "string",
+            "element-uid": "string",
+            "element-attribute": "string",
+        }
+    ],
+    "initial-state-mapping": [
+        {
+            "time-series-path": "string",
+            "element-uid": "string",
+            "element-attribute": "string",
+        }
+    ],
+    "output-data-mapping": [
+        {
+            "time-series-path": "string",
+            "element-uid": "string",
+            "element-attribute": "string",
+        },
+        {
+            "time-series-path": "string",
+            "element-uid": "string",
+            "element-attribute": "string",
+        },
+    ],
+    "shadow-cost-mapping": [{"priority": 0, "time-series-path": "string"}],
+    "options": {
+        "step-size": 0,
+        "n-time-steps": 2,
+        "tolerance": 0,
+        "code-generation": True,
+        "scale-rootfinder-unknowns": False,
+        "reach-parallelization": "serial",
+        "hessian-approximation": "exact",
+        "solver-parallelization": "serial",
+        "n-continuation-steps": 2,
+        "integrated-homotopy": False,
+        "objective-relaxation-factor": 0,
+        "linear-solver": "mumps",
+        "require-steady-initial-state": False,
+        "debug-mode": True,
+    },
+    "goals": [
+        {
+            "type": "target",
+            "priority": 0,
+            "states": [
+                {"element-uid": "string", "element-attribute": "string", "weight": 0}
+            ],
+            "order": 2,
+            "absolute": False,
+            "derivative-order": "0",
+        }
+    ],
+}
+
+test_config_id = "test-python-rest-client-{}".format(str(uuid.uuid4())[:6])
+
+
+class TestRest(TestCase):
+    def test00_get_apps(self):
+        self.assertIsInstance(config_manager.apps, list)
+
+    def test00_get_schema(self):
+        schema = config_manager.schema("rto")
+        self.assertIsInstance(schema, dict)
+        self.assertIn("hydraulic-network", schema)
+
+    def test10_get_all_configs(self):
+        rto_configs = config_manager.get("rto")
+        self.assertNotIn(test_config_id, rto_configs)
+
+    def test11_write_config(self):
+        config_manager.write("rto", test_config_id, test_rto_config)
+
+    def test12_get_config(self):
+        config = config_manager.get("rto", test_config_id)
+        self.assertEqual(
+            config["input-data-mapping"], test_rto_config["input-data-mapping"]
+        )
+
+    def test13_modify_config(self):
+        new_value = "foobar"
+        change = {"path": ["hydraulic-network"], "new_value": new_value}
+        config_manager.modify("rto", test_config_id, change)
+
+        config = config_manager.get("rto", test_config_id)
+        self.assertEqual(config["hydraulic-network"], new_value)
+
+    def test14_deep_modify_config(self):
+        new_value = "foobar"
+        change = {
+            "path": ["input-data-mapping", 0, "element-uid"],
+            "new_value": new_value,
+        }
+        config_manager.modify("rto", test_config_id, change)
+
+        config = config_manager.get("rto", test_config_id)
+        self.assertEqual(config["input-data-mapping"][0]["element-uid"], new_value)
+
+    def test14_deep_modify_multiple(self):
+        new_value = "foobar"
+        changes = [
+            {"path": ["output-data-mapping", 0, "element-uid"], "new_value": new_value},
+            {
+                "path": ["output-data-mapping", 0, "element-attribute"],
+                "new_value": new_value,
+            },
+            {"path": ["output-data-mapping", 1, "element-uid"], "new_value": new_value},
+        ]
+        config_manager.modify("rto", test_config_id, changes)
+
+        config = config_manager.get("rto", test_config_id)
+        self.assertEqual(config["output-data-mapping"][0]["element-uid"], new_value)
+        self.assertEqual(
+            config["output-data-mapping"][0]["element-attribute"], new_value
+        )
+        self.assertEqual(config["output-data-mapping"][1]["element-uid"], new_value)
+
+    def test14_deep_modify_config_dry(self):
+        new_value = "foobar"
+        change = {
+            "path": ["input-data-mapping", 1, "element-uid"],
+            "new_value": new_value,
+        }
+        config_manager.modify("rto", test_config_id, change, dry_run=True)
+
+        config = config_manager.get("rto", test_config_id)
+        self.assertEqual(config["input-data-mapping"][1]["element-uid"], "string")
+
+    def test30_get_all_configs(self):
+        rto_configs = config_manager.get("rto")
+        self.assertIn(test_config_id, rto_configs)
+
+    def test40_delete_config(self):
+        config_manager.delete("rto", test_config_id)
+        self.test10_get_all_configs()
+
+
+from unittest import TestCase
+
+from kisters.water.hydraulic_network.config_manager.padp.rest import app
+from kisters.water.hydraulic_network.schemas import app_config_schemas
+from starlette.testclient import TestClient
+
+test_configs = {
+    "real_time_optimization": {
+        "0.0.1": {
+            "version": "0.0.1",
+            "hydraulic-network": "string",
+            "hydraulic-network-store-url": "string",
+            "hydraulic-network-access-token": "string",
+            "input-data-mapping": [
+                {
+                    "time-series-path": "string",
+                    "element-uid": "string",
+                    "element-attribute": "string",
+                },
+                {
+                    "time-series-path": "string",
+                    "element-uid": "string",
+                    "element-attribute": "string",
+                },
+            ],
+            "seed-data-mapping": [
+                {
+                    "time-series-path": "string",
+                    "element-uid": "string",
+                    "element-attribute": "string",
+                }
+            ],
+            "initial-state-mapping": [
+                {
+                    "time-series-path": "string",
+                    "element-uid": "string",
+                    "element-attribute": "string",
+                }
+            ],
+            "output-data-mapping": [
+                {
+                    "time-series-path": "string",
+                    "element-uid": "string",
+                    "element-attribute": "string",
+                },
+                {
+                    "time-series-path": "string",
+                    "element-uid": "string",
+                    "element-attribute": "string",
+                },
+            ],
+            "shadow-cost-mapping": [{"priority": 0, "time-series-path": "string"}],
+            "options": {
+                "step-size": 0,
+                "n-time-steps": 2,
+                "tolerance": 0,
+                "code-generation": True,
+                "scale-rootfinder-unknowns": False,
+                "reach-parallelization": "serial",
+                "hessian-approximation": "exact",
+                "solver-parallelization": "serial",
+                "n-continuation-steps": 2,
+                "integrated-homotopy": False,
+                "objective-relaxation-factor": 0,
+                "linear-solver": "mumps",
+                "require-steady-initial-state": False,
+                "debug-mode": True,
+            },
+            "goals": [
+                {
+                    "type": "target",
+                    "priority": 0,
+                    "target-min": "string",
+                    "target-max": 0.0,
+                    "weight": 1.0,
+                    "states": [
+                        {
+                            "element-uid": "string",
+                            "element-attribute": "string",
+                            "weight": 0,
+                        }
+                    ],
+                    "absolute": False,
+                    "quadratic": True,
+                    "derivative-order": 0,
+                }
+            ],
+        }
+    }
+}
+
+
+base_url = "/config-manager"
+
+client = TestClient(app)
+
+
+class TestRest(TestCase):
+    def test00_clean_up(self):
+        self.test40_delete_all_configs()
+
+    def test00_get_apps(self):
+        apps = client.get("/config-manager/apps").json()
+        self.assertEqual(apps, list(app_config_schemas))
+
+    def test00_get_all_schema(self):
+        for app_id in app_config_schemas:
+            schema = client.get(f"/config-manager/apps/{app_id}/schema").json()
+            self.assertEqual(schema, app_config_schemas[app_id])
+
+    def test10_assert_no_configs(self):
+        for app_id, versions in app_config_schemas.items():
+            configs = client.get(f"/config-manager/apps/{app_id}/configs").json()
+            for version in versions:
+                url_version = version.replace(".", "_")
+                self.assertNotIn(f"test_{app_id}_{url_version}", configs)
+
+    def test10_get_missing_config(self):
+        for app_id, versions in app_config_schemas.items():
+            for version in versions:
+                url_version = version.replace(".", "_")
+                response = client.get(
+                    f"/config-manager/apps/{app_id}/configs/test_{app_id}_{url_version}"
+                )
+                self.assertEqual(response.status_code, 404)
+
+    def test10_write_individual_configs_dry_run(self):
+        for app_id, versions in app_config_schemas.items():
+            for version in versions:
+                url_version = version.replace(".", "_")
+                response = client.put(
+                    f"/config-manager/apps/{app_id}/configs/test_{app_id}_{url_version}",
+                    json=test_configs[app_id][version],
+                    params={"dry_run": True},
+                )
+                response.raise_for_status()
+        self.test10_assert_no_configs()
+
+    def test11_write_individual_configs(self):
+        for app_id, versions in app_config_schemas.items():
+            for version in versions:
+                url_version = version.replace(".", "_")
+                response = client.put(
+                    f"/config-manager/apps/{app_id}/configs/test_{app_id}_{url_version}",
+                    json=test_configs[app_id][version],
+                )
+                response.raise_for_status()
+
+    def test12_get_individual_configs(self):
+        for app_id, versions in app_config_schemas.items():
+            for version in versions:
+                url_version = version.replace(".", "_")
+                config = client.get(
+                    f"/config-manager/apps/{app_id}/configs/test_{app_id}_{url_version}"
+                ).json()
+                self.assertEqual(test_configs[app_id][version], config)
+
+    def test30_get_all_app_configs(self):
+        for app_id, versions in app_config_schemas.items():
+            configs = client.get(f"/config-manager/apps/{app_id}/configs").json()
+            for version, test_conf in test_configs[app_id].items():
+                url_version = version.replace(".", "_")
+                self.assertEqual(test_conf, configs[f"test_{app_id}_{url_version}"])
+
+    def test40_delete_all_configs(self):
+        for app_id, versions in app_config_schemas.items():
+            for version in versions:
+                url_version = version.replace(".", "_")
+                response = client.delete(
+                    f"/config-manager/apps/{app_id}/configs/test_{app_id}_{url_version}"
+                )
+                response.raise_for_status()
+        self.test10_assert_no_configs()
