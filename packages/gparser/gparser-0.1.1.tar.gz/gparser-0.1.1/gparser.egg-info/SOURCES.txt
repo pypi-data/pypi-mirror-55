@@ -1,0 +1,17 @@
+README.md
+setup.cfg
+setup.py
+gparser/__init__.py
+gparser/parser.py
+gparser.egg-info/PKG-INFO
+gparser.egg-info/SOURCES.txt
+gparser.egg-info/dependency_links.txt
+gparser.egg-info/top_level.txt
+gparser/util/__init__.py
+gparser/util/locatedText.py
+gparser/util/result.py
+gparser/util/state.py
+test/__init__.py
+test/test_gparser.py
+test/test_location.py
+test/utils.py
