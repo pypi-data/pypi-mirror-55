@@ -1,0 +1,4 @@
+[console_scripts]
+json2toml=jetblack_tomlutils.toml_json:json2toml
+toml2json=jetblack_tomlutils.toml_json:toml2json
+

@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: jetblack-tomlutils
+Version: 0.1.0
+Summary: Utilities for working with toml files
+Home-page: https://github.com/rob-blackbourn/jetblack-tomlutils
+License: Apache-2.0
+Author: Rob Blackbourn
+Author-email: rblackbourn@gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: qtoml (>=0.2.4,<0.3.0)
+Project-URL: Repository, https://github.com/rob-blackbourn/jetblack-tomlutils
+Description-Content-Type: text/markdown
+
+# bhdg-toml
+
+Some utilities for working with toml files.
+
+## Usage
+
+To convert toml to json:
+
+```bash
+$ toml2json < pyproject.toml > pyproject.json
+$ toml2json pyproject.toml > pyproject.json
+$ toml2json pyproject.toml - > pyproject.json
+$ toml2json pyproject.toml pyproject.json
+$ cat pyproject.toml | toml2json
+$ cat pyproject.toml | toml2json -
+```
+To convert json to toml:
+
+```bash
+$ json2toml < pyproject.json
+$ json2toml pyproject.json
+$ cat pyproject.toml | json2toml
+$ cat pyproject.toml | json2toml -
+```
