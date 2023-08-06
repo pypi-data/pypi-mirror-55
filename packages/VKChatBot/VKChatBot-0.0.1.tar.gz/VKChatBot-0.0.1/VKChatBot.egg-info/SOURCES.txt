@@ -1,0 +1,9 @@
+README.md
+setup.py
+VKChatBot.egg-info/PKG-INFO
+VKChatBot.egg-info/SOURCES.txt
+VKChatBot.egg-info/dependency_links.txt
+VKChatBot.egg-info/requires.txt
+VKChatBot.egg-info/top_level.txt
+vkchatbot/__init__.py
+vkchatbot/objects.py
