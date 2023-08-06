@@ -1,0 +1,5 @@
+boto3>=1.7.55
+configparser>=3.7.4
+paramiko>=2.4.2
+requests>=2.21.0
+retrying>=1.3.3
