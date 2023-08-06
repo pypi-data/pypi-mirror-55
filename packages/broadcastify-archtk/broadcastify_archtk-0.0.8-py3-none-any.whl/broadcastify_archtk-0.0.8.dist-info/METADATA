@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: broadcastify-archtk
+Version: 0.0.8
+Summary: The Broadcastify Archive Tool Kit
+Home-page: https://github.com/ljhopkins2/broadcastify-archtk
+Author: Joseph Hopkins
+Author-email: 49728392+ljhopkins2@users.noreply.github.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: beautifulsoup4 (==4.7.1)
+Requires-Dist: configparser (==3.7.4)
+Requires-Dist: regex (==2019.6.8)
+Requires-Dist: requests (==2.21.0)
+Requires-Dist: selenium (==3.141.0)
+Requires-Dist: tqdm (==4.31.1)
+
+# The Broadcastify Archive Tool Kit (broadcastify-archtk)
+
+The Broadcastify Archive Tool Kit (broadcastify-archtk) for python automates downloading audio archives from [Broadcastify](www.broadcastify.com), "the world's largest source of Public Safety, Airline, Rail, and Marine live audio streams".
+
+broadcastify-archtk was initially developed as part of a group project during the summer 2019 [General Assembly Data Science Immersive program](https://generalassemb.ly/education/data-science-immersive/), in response to a client's need to visualize where first responders were being dispatched during emergencies. We sought out a large repository of emergency radio dispatches to train our audio-to-text-to-geolocation algorithm. Although Broadcastify was the clear winner in terms of breadth and depth, the lack of an API for downloading archived audio meant that the process for acquiring the data was highly manual and time-consuming.
+
+broadcastify-archtk solves that problem.
+
+More at https://github.com/ljhopkins2/broadcastify-archtk/
+
+
