@@ -1,0 +1,8 @@
+README.md
+setup.py
+paper/__init__.py
+paper/tool.py
+papersample.egg-info/PKG-INFO
+papersample.egg-info/SOURCES.txt
+papersample.egg-info/dependency_links.txt
+papersample.egg-info/top_level.txt
