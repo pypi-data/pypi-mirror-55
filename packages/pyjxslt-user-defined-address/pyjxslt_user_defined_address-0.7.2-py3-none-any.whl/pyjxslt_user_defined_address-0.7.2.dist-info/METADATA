@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: pyjxslt-user-defined-address
+Version: 0.7.2
+Summary: Python XSLT 2.0 Gateway
+Home-page: https://github.com/gcool-info/pyjxslt/tree/user-defined-address
+Author: George Koulouris
+Author-email: george.koulouris1@gmail.com
+License: BSD License
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Utilities
+Classifier: Topic :: Text Processing
+Requires-Dist: py4j (>=0.9)
+
+Interface package between native python and the Saxon XSLT 2.0 process, which is java based.  This package requires Java 1.7. Fork of pyjxslt to include user-defined addresses
+
+
