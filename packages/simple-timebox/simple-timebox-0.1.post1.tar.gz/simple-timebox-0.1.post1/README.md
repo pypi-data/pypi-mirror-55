@@ -1,0 +1,67 @@
+Timebox
+=======
+
+Description
+-----------
+Timebox is a simple yet effective tool for staying efficient during a workday.
+
+Timeboxing is a time management technique that is believed to boost productivity by limiting the time during which a task is supposed to be completed. A time box is a fixed period of time alloted for a task or activity. The period of time to spend on the task is decided first (default 45 minutes). The duration of a time box may depend on the task or activity. Alternatively, the task may be scoped in a manner that it can be completed in a fixed size time box. Then a timer is started with the decided time interval. Once the timer notifies that the time interval has expired, any activity or work on the task is stopped, and a short break is taken before beginning another time box.
+
+Timebox is inspired by **[susam/timebox](https://github.com/susam/timebox)**
+
+
+Getting Started
+---------------
+
+Install timebox by running the following command
+```
+pip install simple-timebox
+```
+
+Start a timbeox session with the default config by running
+```
+timebox
+```
+
+Get a full list of all available parameters by running
+```
+timebox --help
+---
+
+Usage: timebox [OPTIONS]
+
+Options:
+  -t, --time INTEGER              Duration of the time box in minutes
+                                  [default: 45]
+  -b, --beeps INTEGER             Numbers of beeps to notify that the session
+                                  is finished  [default: 3]
+  -be, --before_end INTEGER       Notify with an alert X minutes before the
+                                  session ends.  [default: 15]
+  -bis, --beeps_in_session INTEGER
+                                  Number of beeps to notify you that there is
+                                  X minutes left of session  [default: 1]
+  --alert-midway / --no-alert-midway
+  --help                          Show this message and exit.
+```
+
+Set a custom time box session length
+```
+timebox --time 30
+```
+
+License
+-------
+This is free and open source software. You can use, copy, modify,
+merge, publish, distribute, sublicense, and/or sell copies of it,
+under the terms of the MIT License. See [LICENSE.md][L] for details.
+
+This software is provided "AS IS", WITHOUT WARRANTY OF ANY KIND,
+express or implied. See [LICENSE.md][L] for details.
+
+[L]: LICENSE.md
+
+
+Support
+-------
+To report bugs, suggest improvements, or ask questions, please create a
+new issue at <http://github.com/stigoleg/Timebox/issues>.
