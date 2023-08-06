@@ -1,0 +1,11 @@
+README.md
+setup.py
+adventurous_gauging_koplik/__init__.py
+adventurous_gauging_koplik/data_conversion.py
+adventurous_gauging_koplik/model.py
+adventurous_gauging_koplik/train_setup.py
+adventurous_gauging_koplik.egg-info/PKG-INFO
+adventurous_gauging_koplik.egg-info/SOURCES.txt
+adventurous_gauging_koplik.egg-info/dependency_links.txt
+adventurous_gauging_koplik.egg-info/requires.txt
+adventurous_gauging_koplik.egg-info/top_level.txt
