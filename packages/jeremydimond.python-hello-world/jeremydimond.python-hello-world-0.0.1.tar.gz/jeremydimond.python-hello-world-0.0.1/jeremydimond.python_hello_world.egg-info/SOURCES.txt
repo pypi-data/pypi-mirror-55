@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+helloworld/__init__.py
+helloworld/greeter.py
+jeremydimond.python_hello_world.egg-info/PKG-INFO
+jeremydimond.python_hello_world.egg-info/SOURCES.txt
+jeremydimond.python_hello_world.egg-info/dependency_links.txt
+jeremydimond.python_hello_world.egg-info/top_level.txt
