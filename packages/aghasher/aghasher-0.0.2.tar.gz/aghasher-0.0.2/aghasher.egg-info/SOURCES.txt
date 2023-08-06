@@ -1,0 +1,11 @@
+README.md
+setup.py
+aghasher/__init__.py
+aghasher/core.py
+aghasher/utils.py
+aghasher/version.txt
+aghasher.egg-info/PKG-INFO
+aghasher.egg-info/SOURCES.txt
+aghasher.egg-info/dependency_links.txt
+aghasher.egg-info/requires.txt
+aghasher.egg-info/top_level.txt
