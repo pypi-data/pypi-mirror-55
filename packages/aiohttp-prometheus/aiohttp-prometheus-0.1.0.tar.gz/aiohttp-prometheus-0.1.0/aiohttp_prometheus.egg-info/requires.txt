@@ -1,0 +1,9 @@
+aiohttp
+prometheus-client==0.7.1
+
+[tests]
+pytest==5.2.2
+pytest-aiohttp==0.3.0
+nose
+coverage
+flake8
