@@ -1,0 +1,69 @@
+Metadata-Version: 2.1
+Name: pack2048
+Version: 1.0.0
+Summary: Un module pour résoudre le 2048
+Home-page: UNKNOWN
+Author: Jérémy Duron
+Author-email: jlmncddgg@gmail.com
+License: UNKNOWN
+Description: Package 2048 - Projet informatique de 1er semestre ENSAE
+        ========================================================
+        
+        Ce module propose une fonction pour résoudre le 2048.
+        La fonction snake_strategy résout le 2048 en utilisant la stratégie du snake.
+        Afin de juger l'efficacité de cet algorithme, vous pouvez utiliser la fonction evaluate_strategy 
+        qui prend en argument la fonction snake_strategy et le nombre de parties effectuées.
+        
+        Comment notre programme résout-il le 2048 ?
+        -------------------------------------------
+        La fonction snake_strategy prend en argument la grille de 2048 et les trois derniers mouvements effectués.
+        Elle renvoie une direction de jeu en accord avec le principe du programme qui suit.
+        L'idée est d'agencer les cases de manière décroissante, de façon à organiser un "snake" pour faciliter le repli de toutes ces cases.
+        En favorisant la fusion sur une même ligne ou à partir d'une ligne supérieure, notre algorithme assouplit le principe du snake.
+        A partir du score de 512, le programme accorde une grande importance au nombre de zéros présents dans le jeu, pour éviter à tout prix la fin du jeu.
+        De plus, il essaie de prévoir cinq coups en avance afin de maximiser son score.
+        
+        La fonction evaluate_strategy permet d'évaluer une stratégie de jeu.
+        Pour cela, elle effectue le nombre de parties donné en argument et renvoie un générateur.
+        Pour chaque partie, la grille de 2048 est initialisée, puis une direction est choisie grâce à la stratégie donnée en argument.
+        La grille est alors mise à jour en effectuant un mouvement selon cette direction, et simultanément de nouveaux 2 ou 4 sont générés dans la grille.
+        Si la grille arrive en situation de gameover, la partie se termine.
+        
+        
+        Quels tests avons nous programmé pour nos fonctions ?
+        -----------------------------------------------------
+        
+        Le test test_game_play permet de vérifier si la grille de 2048 réagit correctement à l'annonce d'une direction.
+        
+        Le test test_basic permet de vérifier que la direction renvoyée par la stratégie snake_stratégie est bien un élément de {0, 1, 2, 3}.
+        
+        Le test test_advanced permet de vérifier la cohérence de l'évolution de la grille de 2048 avec la stratégie snake_stratégie. 
+        Il se place dans le cas où l'algorithme n'effectue aucune prévision sur les prochains tours.
+        Il s'intéresse particulièrement au choix d'effectuer une fusion ou de favoriser une certaine direction.
+        
+        Quelques commandes utiles.
+        --------------------------
+        
+        Ce module peut être installé avec pip :
+        
+            pip install pack2048
+        
+        Exemple d'usage :
+        
+            >>> from pack2048 import evaluate_strategy, snake_strategy
+            >>> evaluate_strategy(snake_strategy,10)
+        
+        Les tests doivent être effectués en console à l'aide de la commande suivante :
+        
+            python -m pack2048
+        
+        Si vous souhaitez davantages de détails sur les tests, utilisez la commande suivante :
+        
+            python -m pack2048 -v
+        
+        Ce code est sous licence GNU AGPLv3.
+Platform: UNKNOWN
+Classifier: Development Status :: 6 - Mature
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
