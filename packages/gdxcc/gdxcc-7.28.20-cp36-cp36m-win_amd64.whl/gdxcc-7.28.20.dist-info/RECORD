@@ -1,0 +1,14 @@
+_gdxcc.cp36-win_amd64.pyd,sha256=IbdRGM8OSy-XIyB9kcngF6xcbXZ0L2hhc37TzcQGb4U,251904
+gdxcc/__init__.py,sha256=KA90WYO6xqqRj8HYVuD0uW6UC0RIfhMUnFJ6QwTN25s,20
+gdxcc/gdxcc.i,sha256=LUSGQgZN6FeiE8O7DPXeCiHTFsuuak_0mag_OdOKhaU,20595
+gdxcc/gdxcc.py,sha256=oyiXrfWp5IGHo_6j0fYSEHdtye-u3gSgqMi-LB3lzDc,24833
+gdxcc/C/gclgms.c,sha256=MAEMj5pjBBuYLIUm3TD-VfXEKVpY7qSZnihBzxAiejo,5181
+gdxcc/C/gclgms.h,sha256=wmORHkpw2852xgtsa32klJP6ZS56IEI2o7rHAUKu93I,4205
+gdxcc/C/gdxcc.c,sha256=9pl8BG61Fb-cv-CPSJOd-CdBmKCiilToW3OTqQtkLw4,44366
+gdxcc/C/gdxcc.h,sha256=G6dFIOA36l0IN7bdYH0WBVx_and7oIf-wysiSCyL8NM,23250
+gdxcc/C/gdxcc_wrap.c,sha256=6X5Xft8XN8MbHlMYICuxOEUKcoj37ajWtrCMd5OtMsE,351443
+gdxcc-7.28.20.dist-info/LICENSE,sha256=CC0gPTpZCsBdFfpYTvSV2tEJ7Mdz9EbCMupK3kDrzx4,1225
+gdxcc-7.28.20.dist-info/METADATA,sha256=ZkPxT9aBEKlp1GCKUQIoBgxz8j-ckgNszRs7w2i2OiQ,254
+gdxcc-7.28.20.dist-info/WHEEL,sha256=uQaeujkjkt7SlmOZGXO6onhwBPrzw2WTI2otbCZzdNI,106
+gdxcc-7.28.20.dist-info/top_level.txt,sha256=02BsMmc80jxW-8n2In6s0qNYZZsPePBn59tVeaAd8gc,13
+gdxcc-7.28.20.dist-info/RECORD,,
