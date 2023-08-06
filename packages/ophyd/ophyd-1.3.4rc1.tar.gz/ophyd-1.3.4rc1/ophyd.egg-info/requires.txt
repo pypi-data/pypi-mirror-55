@@ -1,0 +1,11 @@
+networkx>=2.0
+numpy
+pyepics
+
+[test]
+caproto[standard]>=0.4.2rc1
+codecov
+coveralls
+matplotlib
+pytest-cov
+pytest>=3.6
