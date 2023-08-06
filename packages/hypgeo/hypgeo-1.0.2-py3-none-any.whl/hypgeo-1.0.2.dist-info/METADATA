@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: hypgeo
+Version: 1.0.2
+Summary: Small library for simple algebraic and geometric operations on the upper half plane, such as Moebius transformations
+Home-page: https://github.com/BgDaniel/hypgeo
+Author: Daniel Berger
+Author-email: daniel.berger@l-p-a.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# HypGeo
+Small library for simple algebraic and geometric operations on the upper half plane, such as Moebius transformations.
+
+

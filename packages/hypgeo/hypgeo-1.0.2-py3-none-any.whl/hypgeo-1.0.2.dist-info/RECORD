@@ -1,0 +1,16 @@
+hypgeo/__init___.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hypgeo/complex_plane.py,sha256=ofUQKWrTJtczn8Yye53KQ_oGVe_XLOFg3MtLAPPQ52I,7810
+hypgeo/geometry.py,sha256=BRfq57ETBtRonWSqgWAlG9Z2Naj1UAqfMtz01-XZYwc,5532
+hypgeo/moebius.py,sha256=h3zyq8EGE33HLdl6PP-Ii1BOX05X60ceD9olsCIjepI,8050
+hypgeo/transformations.py,sha256=-awP8WcoryQ2SGg7OdwfGeHefsBvWY3HhzztsU2amgg,7375
+hypgeo/unittest_complex_plane.py,sha256=wh4rQuD5XPnMfPxWOJFgbzUerA-EQSrPFLMdgXImHO0,3240
+hypgeo/unittest_moebius.py,sha256=_INTftxhDlCWsnyvidbjDrXCRSDtMXz9XPEKHnP7qkI,1908
+hypgeo/unittest_transformation.py,sha256=z8P8uekPxdfY2XLktTZPOfi6v35MZABLxQerCp7DpO0,3843
+hypgeo/helpers/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+hypgeo/helpers/field.py,sha256=B3ocHwmNYqf3NL2wXD8JT346JbFWs8QmHkW57WC8Ids,767
+hypgeo/helpers/group.py,sha256=-cac3AePbyLviciocqbzMC5sc-EhMRNJ0iipy9KSofc,320
+hypgeo-1.0.2.dist-info/LICENSE,sha256=6kbiFSfobTZ7beWiKnHpN902HgBx-Jzgcme0SvKqhKY,1091
+hypgeo-1.0.2.dist-info/METADATA,sha256=98P2K45fxRvbtQbFkbSuwc5bm6iqeO3V_hJI1oF6Yt0,656
+hypgeo-1.0.2.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+hypgeo-1.0.2.dist-info/top_level.txt,sha256=CyVXAkjvU6ut9rrHCza1WiuaS8PueAG1wR-qLjIcTdM,7
+hypgeo-1.0.2.dist-info/RECORD,,
