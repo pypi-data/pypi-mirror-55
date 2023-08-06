@@ -1,0 +1,11 @@
+CHANGELOG.md
+README.md
+setup.py
+containerview/__init__.py
+containerview/cached_iter.py
+containerview/sequence_view.py
+containerview.egg-info/PKG-INFO
+containerview.egg-info/SOURCES.txt
+containerview.egg-info/dependency_links.txt
+containerview.egg-info/top_level.txt
+containerview_data/__init__.py
