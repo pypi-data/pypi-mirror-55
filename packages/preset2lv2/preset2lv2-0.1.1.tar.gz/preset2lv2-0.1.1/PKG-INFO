@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: preset2lv2
+Version: 0.1.1
+Summary: Convert a set of native presets and generate a LV2 bundle containing one or more banks.
+Home-page: https://gitlab.com/Jofemodo/synthv1-preset-converter
+Author: Fernando Moyano
+Author-email: fernando@zynthian.org
+License: GNU General Public License v3 or later (GPLv3+)
+Description: Convert a set of native presets and generate a LV2 bundle containing one or more banks.
+        It supports several native formats and it's easily extensible.
+        
+        ```
+        usage: preset2lv2.py [-h] [-b BANK] format path
+        
+        Convert native presets to LV2.
+        
+        positional arguments:
+          format                Source preset format: synthv1, padthv1, dx7syx
+          path                  Source preset dir or filepath
+        
+        optional arguments:
+          -h, --help            show this help message and exit
+          -b BANK, --bank BANK  LV2 bank name
+        ```
+        
+Keywords: audio,plugin,lv2,dexed,synthv1,padthv1
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: rest
