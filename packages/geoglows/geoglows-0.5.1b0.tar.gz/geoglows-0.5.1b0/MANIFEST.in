@@ -1,0 +1,3 @@
+include geoglows/notebooks/*.ipynb
+include geoglows/delineation_data/bounding_boxes.csv
+recursive-include geoglows/delineation_data *.csv*/*.csv
