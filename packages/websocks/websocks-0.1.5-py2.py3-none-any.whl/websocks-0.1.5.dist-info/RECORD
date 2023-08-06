@@ -1,0 +1,15 @@
+websocks/__init__.py,sha256=w6yoDVGzlGOIx5ZIfuFT5KyhTsaEv7gWc_PQ_HgrqwQ,100
+websocks/client.py,sha256=M3IQElSEOuMi3wBCKKwnfG-ZNYLc2qa0eV-ehOATQ0o,11956
+websocks/commands.py,sha256=klQhYP5MgUwIgtFzJEF7tFKbgCfCSdS86mFYizLjYyE,1308
+websocks/exceptions.py,sha256=UbzpLm85xAViV_soBBUVMvSbzi5vwVhUNCSYMOoO2xQ,199
+websocks/gfwlist.txt,sha256=ad9gtun55DlWcKhM8rtMicSOgF6eNPASMxxLrlI6RUc,140308
+websocks/rule.py,sha256=1MvLBMSsKO_gijSNGy9UQ2MKn5aG_zi_Y4ve083gy8Q,4621
+websocks/server.py,sha256=UZQVICSKiO-kXL69sXoGC6LoSmLEYoRaIa2vRg64jwc,3323
+websocks/types.py,sha256=KeGqh6-N5MMAunbg5ZrQPJ3urEk3ZjEEVFhl4xFycJg,473
+websocks/utils.py,sha256=fD_Yrb-ISISjUXmB10PFh_OFPMR4epTo0NBwS2mju7E,5226
+websocks/whitelist.txt,sha256=U9vFz4k4W-TfCu04Xn3fEdM8WtorvGb1CjQSE4RLe7M,144277
+websocks-0.1.5.dist-info/METADATA,sha256=MPSQQPowUEseaSH27TErrnrUlLW3lwkfbBejMXuw1yI,4043
+websocks-0.1.5.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+websocks-0.1.5.dist-info/entry_points.txt,sha256=sUbrUDhACElHDB9narHN7GyTG-Kk0CjTC_dGvtWzfNE,53
+websocks-0.1.5.dist-info/top_level.txt,sha256=6RGBahYdi6I61pCsV02IVylHqQ3Tyd8UGrACbm5VkcQ,9
+websocks-0.1.5.dist-info/RECORD,,
