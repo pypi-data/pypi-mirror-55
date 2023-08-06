@@ -1,0 +1,12 @@
+piopiy/__init__.py,sha256=8DMroJSSIQOW_8EGMMuH8PHMfrM1mfJtfgwEekySJNg,56
+piopiy/action.py,sha256=bhrkdodT2H50yUCk3sjH33Ufug-PA81aP_5kVxCc8Zg,1156
+piopiy/bridge.py,sha256=648sKZ7SVdjJ2GW_mIliLhe--USbjuL2O3u7cpS4LUQ,702
+piopiy/client.py,sha256=l1kDgJCS2wH6P37W-tDglpACrFxs2rM7cLs9f-o_i6Q,266
+piopiy/input.py,sha256=UNGvTa5UtSwMtSv78q_FTXshaHY0OvPw6hIn1ZEdfQk,406
+piopiy/test.py,sha256=kaCwGrGkJjYE0LnCHjb1CTTFxsqwHQIf2XihzfDcQPo,325
+piopiy/underscore.py,sha256=Mo--Z29mgMuH5jj-sV0pipmwCbTdkMCSlDPm2STNEh4,209
+piopiy/voice.py,sha256=CCcn7jvgl2hHV9jORCZXy4p8-olTKgRTifZGv6axKKA,696
+piopiy-0.6.0.dist-info/METADATA,sha256=Dx13XufP9Iz7R9l4_x6i1Eakh_IDkVb3rjglSTs-fww,811
+piopiy-0.6.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+piopiy-0.6.0.dist-info/top_level.txt,sha256=axmnFmPwATjeKgDhqbdTUVf1EuSYPLvwqAFD_Jl9yTM,7
+piopiy-0.6.0.dist-info/RECORD,,
