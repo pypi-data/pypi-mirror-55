@@ -1,0 +1,3 @@
+[console_scripts]
+preset2lv2 = preset2lv2.__main__:main
+
