@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: iselenium
+Version: 0.0.1
+Summary: 
+
+iselenium (innovata selenium)
+
+Revised Date : 2019-11-14
+
+Home-page: https://github.com/innovata/iselenium
+Author: innovata Sambong
+Author-email: iinnovata@gmail.com
+License: UNKNOWN
+Description: # iselenium (innovata selenium)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
