@@ -1,0 +1,15 @@
+opencroplib/__init__.py,sha256=Bh0p95nCLjdWm1SpFI66QlTXX8UM74CqLAfV4S8AK18,206
+opencroplib/aerodynamic.py,sha256=bx31ATKDRuC6UHZvauSk5FV9vGOqJGrtKQdrhpEste0,8888
+opencroplib/atmophere.py,sha256=u7B_6HIHNiPx4iTt6Y6tWwB-onqQ4eNd3BaOWbrvenk,14660
+opencroplib/evapotranspiration.py,sha256=eXATTZnCAKgEWjyy81qK60aK6uvETI2g13k6L95jlgc,6618
+opencroplib/plant.py,sha256=heD4LwYbneyP_2D0EBaqmvUyT2nUcvwDLpNJul6nE9A,7980
+opencroplib/radiation.py,sha256=eRiIQsQ5GOLxUY-J2p6b6bbKKSlPpIkHz-9IYGvkf0w,22167
+opencroplib/restis.py,sha256=DsZEf1d9O6c5J8u3ttjkrSNzlMZ3t0B49tN4JuXj0mg,1989
+opencroplib/test_opencroplib.py,sha256=PFy_gh2YuOykw-S0GwA7RkvjpLSuLxfiCzBTodwfKS8,5351
+opencroplib/time.py,sha256=1PhlD4qOJIbloCEyhN6HEurFlKMoh_KY9fWqaDWc8T0,3061
+opencroplib/time_utils.py,sha256=1PhlD4qOJIbloCEyhN6HEurFlKMoh_KY9fWqaDWc8T0,3061
+opencroplib-0.1.5.dist-info/LICENSE.txt,sha256=psuoW8kuDP96RQsdhzwOqi6fyWv0ct8CR6Jr7He_P_k,10173
+opencroplib-0.1.5.dist-info/METADATA,sha256=DfxcVOVRD0MObAsspdrARFlwmT1qUAP1KOUQFkMA-M8,2914
+opencroplib-0.1.5.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+opencroplib-0.1.5.dist-info/top_level.txt,sha256=tG4FjNqrmX9opNlS4ISiMelXZKP51bi4NqheZamnZFo,12
+opencroplib-0.1.5.dist-info/RECORD,,
