@@ -1,0 +1,5 @@
+setup.py
+repsci_elplatt.egg-info/PKG-INFO
+repsci_elplatt.egg-info/SOURCES.txt
+repsci_elplatt.egg-info/dependency_links.txt
+repsci_elplatt.egg-info/top_level.txt
