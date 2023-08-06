@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: usb2container
+Version: 0.1.2
+Summary: binding specific USB devices to container
+Home-page: https://github.com/williamfzc/usb2container
+Author: williamfzc
+Author-email: fengzc@vip.qq.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3

@@ -1,0 +1,6 @@
+fastapi
+uvicorn
+loguru
+fire
+pydantic==0.32.2
+pyudevmonitor>=0.1.1
