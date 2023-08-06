@@ -1,0 +1,12 @@
+README.md
+setup.py
+pystatsd_tags.egg-info/PKG-INFO
+pystatsd_tags.egg-info/SOURCES.txt
+pystatsd_tags.egg-info/dependency_links.txt
+pystatsd_tags.egg-info/requires.txt
+pystatsd_tags.egg-info/top_level.txt
+statsd/__init__.py
+statsd/client.py
+statsd/defaults/__init__.py
+statsd/defaults/django.py
+statsd/defaults/env.py
