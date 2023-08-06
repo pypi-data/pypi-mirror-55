@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: pyautoversion
+Version: 1.2.0
+Summary: Tool for managing SemVer versioning of a project.
+Home-page: https://github.com/ARMmbed/autoversion
+Author: David Hyman, Arm Mbed
+Author-email: support@mbed.com
+License: Apache 2.0
+Platform: UNKNOWN
+Requires-Dist: toml
+Requires-Dist: semver
+
+Cross-language tool written in Python for managing SemVer versioning of a project.
+
+
