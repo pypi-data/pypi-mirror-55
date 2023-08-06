@@ -1,0 +1,127 @@
+.. @+leo-ver=5-thin
+.. @+node:ekr.20031218072017.329: * @file ../doc/leoNotes.txt
+.. @@language rest
+.. @@killbeautify
+.. @+all
+.. @+node:ekr.20190123074336.1: ** Backup of public filters
+https://github.com/leo-editor/leo-editor/issues/1064
+
+This issue lists the filters that I use to organize and understand my work flow.  They are a high level overview of what will (and won't) be done.
+
+**About two dozen significant enhancements remain**.  None of these will fundamentally change Leo.  Fixing bugs has a higher priority.
+
+- [Curated unscheduled issues](https://github.com/leo-editor/leo-editor/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+no%3Amilestone+-label%3Amaybe+-label%3Ainfo+-label%3Apip+-label%3Awaiting+-label%3Alvl%3Aminor): Interesting open programming issues that have not been assigned a milestone. See the actual filter for details. Some may be assigned to 5.8.2.
+
+- [Branch info](https://github.com/leo-editor/leo-editor/issues/1058): An info item reminding me what each branch does, and its status.
+
+- [Important bugs](https://github.com/leo-editor/leo-editor/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Abug+-label%3Awaiting+-label%3Alvl%3Aminor): Significant bugs (`-label:lvl:minor`) that can be fixed now (`-label:waiting`).
+
+- [Minor bugs](https://github.com/leo-editor/leo-editor/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Abug+-label%3Awaiting+label%3Alvl%3Aminor), [plugin bugs](https://github.com/leo-editor/leo-editor/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Abug+label%3APlugin+),  and [minor enhancements](https://github.com/leo-editor/leo-editor/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Aenhancement+-label%3Awaiting+label%3Alvl%3Aminor+).  I am responsible for fixing only "core" plugins such as viewrendered.py and mod_scripting.py.
+
+- [5.8.1](https://github.com/leo-editor/leo-editor/issues?utf8=%E2%9C%93&q=is%3Aissue+milestone%3A5.8.1+-label%3Awaiting+-label%3Apip+is%3Aopen+): Programming issues scheduled for 5.8.1.
+
+- [5.8.2](https://github.com/leo-editor/leo-editor/issues?utf8=%E2%9C%93&q=is%3Aissue+milestone%3A5.8.2+is%3Aopen+-label%3Apip): Programming issues scheduled for 5.8.2.
+
+**Links to Labels**
+
+- [Bug](https://github.com/leo-editor/leo-editor/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Abug+): All bugs. Borderline issues can have both the "Bug" and "Enhancement" labels.
+
+- [Best](https://github.com/leo-editor/leo-editor/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Abest): The most significant enhancement issues.
+
+- [EKR](https://github.com/leo-editor/leo-editor/issues?q=is%3Aissue+label%3AEKR+is%3Aopen): Issues in which I have (or have had) a particular interest. This label is no guarantee of action.
+
+- [Info](https://github.com/leo-editor/leo-editor/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Ainfo): All Info items.
+
+- [Summary](https://github.com/leo-editor/leo-editor/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Asummary): All Summary items. *Note*: Summary items are also Info items.
+
+- [Importers](https://github.com/leo-editor/leo-editor/issues?q=is%3Aissue+import+is%3Aopen+label%3AImporter): Importer items are the most important links between Leo and other programs.
+
+- [Emacs](https://github.com/leo-editor/leo-editor/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Aemacs): Issues related to Emacs. Some issues have been downgraded in importance recently.
+
+- [Gui](https://github.com/leo-editor/leo-editor/issues?q=is%3Aissue+label%3Agui+is%3Aopen): Items related to Leo's gui code, especially window code. **These items won't happen unless someone else volunteers to do them**.
+
+- [Maybe](https://github.com/leo-editor/leo-editor/issues?utf8=%E2%9C%93&q=is%3Aissue+is%3Aopen+label%3Amaybe): Open issues which I have no present commitment to do.
+
+- [Won'tDo](https://github.com/leo-editor/leo-editor/issues?utf8=%E2%9C%93&q=is%3Aissue+label%3Awon%27tdo): Closed issues which I am unlikely to do, absent a significant change of opinion.
+
+  Many of my own issues have been relegated to the "Won'tDo" category. I am no longer interested in slavishly adding features from other editors to Leo, nor am I interested in embedding Leo in other editors.
+
+**The "Maybe" and "Won'tDo" labels are not necessarily death sentences.** I often change my mind. Comments are not allowed here. Please argue for an issue in [leo-editor](https://groups.google.com/forum/#!forum/leo-editor), or in the issue itself.
+.. @+node:ekr.20161022035203.1: ** Test code: do not delete
+@language python
+# This tree contains clones. None are contained in any external file.
+.. @+node:ekr.20161006162035.1: *3* cff regex pattern to find section references
+# This works
+<<(\s*)(\w+)(\s+)(\w+)(.*)>>
+
+# These don't work
+<<(\s*)(?!(import|docstring|includes))(\w+)(\s*)>>
+<< xyz >>
+<< import >>
+.. @+node:ekr.20180213054048.1: *3* clean recent files test
+self = g.app.recentFilesManager
+result = [z for z in self.recentFiles if g.os_path_exists(z)]
+if result != self.recentFiles:
+    for path in result:
+        self.updateRecentFiles(path)
+    self.writeRecentFilesFile(c, force=True)
+.. @+node:ekr.20180125040406.1: *3* script: clear g.app.db['shown-tips']
+g.app.db ['shown-tips'] = []
+.. @+node:ekr.20170206165145.1: *3* script: test demo.py
+g.cls()
+# c.frame.log.clearLog()
+if c.isChanged(): c.save()
+import imp
+from leo.core.leoQt import QtGui
+import leo.plugins.demo as demo
+imp.reload(demo)
+table = [
+'''\
+demo.delete_widgets()
+demo.callout('Callout 1 centered')
+demo.subtitle('This is subtitle 1')
+''',
+'''\
+demo.delete_widgets()
+demo.callout('Callout 2 (700, 200)', position=[700, 200])
+demo.subtitle('This is subtitle 2')
+''',
+'''\
+demo.delete_widgets()
+demo.callout('Callout 3 (200, 300)', position=[200, 300])
+demo.subtitle('This is subtitle 3')
+''',
+'''\
+demo.delete_widgets()
+demo.callout('Callout 4 (center, 200)', position=['center', 200])
+demo.subtitle('This is a much much longer subtitle 4')
+''',
+'''\
+demo.delete_widgets()
+demo.callout('Callout 5 (700, center)', position=[700, 'center'])
+demo.subtitle('Short 5')
+''',
+'''\
+demo.delete_widgets()
+demo.next()
+''',
+]
+color = QtGui.QColor('lightblue')
+sub_color = QtGui.QColor('mistyrose')
+demo = demo.Demo(c, color=color, subtitle_color=sub_color, trace=False)
+demo.delete_widgets()
+demo.start(script_list = table)
+.. @+node:ekr.20170317101032.1: *3* test g.unCamel
+g.cls()
+
+table = (
+    'abcXyz',
+    'AbcXyz',
+    'abcXyzW',
+)
+for s in table:
+    print(s)
+    g.printList(g.unCamel(s))
+.. @-all
+.. @@nosearch
+.. @-leo
