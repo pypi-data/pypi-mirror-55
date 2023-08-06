@@ -1,0 +1,36 @@
+(Thu Nov 14 12:42:57 2019)(-0.11742 [s])[Default,Scanner][Warning][Non-fatal]:
+WARNING: A problem has been raised by ScannerBit.
+Could not find plugin library "/home/farmer/.local/lib/python3.7/site-packages/pyscannerbit/ScannerBit/lib/libscanner_diver_1.0.0.so".
+
+Raised at: line 102 in function Gambit::Scanner::Plugins::Plugin_Loader::Plugin_Loader() of /tmp/pip-req-build-oimohcoo/pyscannerbit/scannerbit/untar/ScannerBit/ScannerBit/src/plugin_loader.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Thu Nov 14 12:42:57 2019)(-0.117397 [s])[Default,Scanner][Warning][Non-fatal]:
+WARNING: A problem has been raised by ScannerBit.
+Could not find plugin library "/home/farmer/.local/lib/python3.7/site-packages/pyscannerbit/ScannerBit/lib/libscanner_diver_1.0.2.so".
+
+Raised at: line 102 in function Gambit::Scanner::Plugins::Plugin_Loader::Plugin_Loader() of /tmp/pip-req-build-oimohcoo/pyscannerbit/scannerbit/untar/ScannerBit/ScannerBit/src/plugin_loader.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Thu Nov 14 12:42:57 2019)(-0.106377 [s])[Default,Scanner][Warning][Non-fatal]:
+WARNING: A problem has been raised by ScannerBit.
+Could not find plugin library "/home/farmer/.local/lib/python3.7/site-packages/pyscannerbit/ScannerBit/lib/libscanner_great.so".
+
+Raised at: line 102 in function Gambit::Scanner::Plugins::Plugin_Loader::Plugin_Loader() of /tmp/pip-req-build-oimohcoo/pyscannerbit/scannerbit/untar/ScannerBit/ScannerBit/src/plugin_loader.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Thu Nov 14 12:42:57 2019)(-0.0939628 [s])[Default,Scanner][Warning][Non-fatal]:
+WARNING: A problem has been raised by ScannerBit.
+Could not find plugin library "/home/farmer/.local/lib/python3.7/site-packages/pyscannerbit/ScannerBit/lib/libscanner_multinest_3.10.so".
+
+Raised at: line 102 in function Gambit::Scanner::Plugins::Plugin_Loader::Plugin_Loader() of /tmp/pip-req-build-oimohcoo/pyscannerbit/scannerbit/untar/ScannerBit/ScannerBit/src/plugin_loader.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Thu Nov 14 12:42:58 2019)(0.0137922 [s])[Default,Utilities]:
+Random number engine mt19937_64 (default) selected with seed -1687320238.
+--<>--<>--<>--<>--<>--<>--<>--
+(Thu Nov 14 12:42:58 2019)(0.0143076 [s])[Default,Printers][Info]:
+Running shell command: rm -f pyscannerbit_run_data//samples//results.hdf5
+--<>--<>--<>--<>--<>--<>--<>--
+(Thu Nov 14 12:42:58 2019)(0.0204014 [s])[Default,Scanner][Error][Fatal]:
+ERROR: A problem has been raised by ScannerBit.
+Parameter model1::x requested by x_prior is either not defined by the inifile, is fixed, or is the "same as" another parameter.
+
+Raised at: line 285 in function Gambit::Priors::CompositePrior::CompositePrior(const Gambit::Options&, const Gambit::Options&) of /tmp/pip-req-build-oimohcoo/pyscannerbit/scannerbit/untar/ScannerBit/ScannerBit/src/priors/composite.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
