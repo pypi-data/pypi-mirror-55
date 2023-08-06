@@ -1,0 +1,12 @@
+fattura_elettronica_reader/__init__.py,sha256=5bGFH97qTYzenz-rT4As5SsIwrSIESK24uh2kPZGwvw,1845
+fattura_elettronica_reader/__main__.py,sha256=TjRxt_06JglgmiCIknyvNpQ_CjsiVKEVs3l2h-iGv3U,1357
+fattura_elettronica_reader/api.py,sha256=KxbnnKTKHevI6zDvxgUiyCImiSJx6TUGD9J8gJ7N-WM,31765
+fattura_elettronica_reader/cli.py,sha256=msdakjvrKUulOsaDUaDev-gX_jzaXJdWzGxL2iaXX3w,8138
+fattura_elettronica_reader/constants.py,sha256=iu6ILnYJOa3f4cGAm8cKqgdhk2Nf-QjZH79Je1uWE7k,4117
+fattura_elettronica_reader/exceptions.py,sha256=-JJ9RprubxVwJxGVy_esafOG_eV2ET5s4QPWg7a8LxU,1868
+fattura_elettronica_reader-0.1.0.dist-info/LICENSE.txt,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+fattura_elettronica_reader-0.1.0.dist-info/METADATA,sha256=YKQ09-OH03_l7xWmmdLrCkfq3JVRoks6J79qcNHlkjI,2894
+fattura_elettronica_reader-0.1.0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+fattura_elettronica_reader-0.1.0.dist-info/entry_points.txt,sha256=yMswxgh2yn7E5A2Z8X5zF0HkN8AvIiC4g-RUAzCUeb8,89
+fattura_elettronica_reader-0.1.0.dist-info/top_level.txt,sha256=iqc6fPrqtUS1oODpQqdW2-BVkgAXdFqV5QanCy5IZ_E,27
+fattura_elettronica_reader-0.1.0.dist-info/RECORD,,
