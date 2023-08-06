@@ -1,0 +1,6 @@
+logzero
+requests
+stackprinter
+tqdm
+redis
+pre-commit
