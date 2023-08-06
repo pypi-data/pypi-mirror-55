@@ -1,0 +1,14 @@
+epsproc/IO.py,sha256=4jBt8tp28lxoBGKl3P0lOBFYwFhGJp-JwXdCfZwbER0,62941
+epsproc/MFBLM.py,sha256=HHYnBJrOn5yU9ctLDRZgj7ewSwsIKm7uZpoFeCUYuj8,19865
+epsproc/MFPAD.py,sha256=ihLFUGvVKve1-LuIZ-h2zWihBoRrY5P3-eR_1DxOdk8,8779
+epsproc/__init__.py,sha256=rIevmkBxzwDp1YV6mfhrxU4JhH2TxQzZVZV6KgSI5gs,1208
+epsproc/basicPlotters.py,sha256=GbNhTEp4ajAs7C95zYNhJ5STfalV91N-1OFIKxmTvvo,4352
+epsproc/sphCalc.py,sha256=RpohL92_jocc9DQhgCXyPuG9x7tV1teENAMmsVGHOvo,6674
+epsproc/sphPlot.py,sha256=3NnnKWrE41vNUrZJLf1qcfTjXX5A-KX74NmeC_aCMzc,13402
+epsproc/util.py,sha256=KloKgqloAWFtXzI4-ZxEJsbdRiVDtn-XMD-A9kVfVEU,10744
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ePSproc-1.2.1.dist-info/LICENSE,sha256=U5J70Lc504yHoKgiNv2bBwwt__EcDBGb5QNyAF1QR60,35815
+ePSproc-1.2.1.dist-info/METADATA,sha256=Xhg4ztd0_eVQ41MLZqzMdm10DN-mMngj65Qb0-7HX6Q,9065
+ePSproc-1.2.1.dist-info/WHEEL,sha256=LRS-GSFNyYPLBJaJJ6kxdk4Urtb4kEVXWc5DpA8iv6o,97
+ePSproc-1.2.1.dist-info/top_level.txt,sha256=A7nQtvFoXUmndLRZRrFPHVq8kJ47AFVMOjLSSXPZnQc,14
+ePSproc-1.2.1.dist-info/RECORD,,
