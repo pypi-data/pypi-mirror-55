@@ -1,0 +1,7 @@
+configobj
+pyserial
+docutils
+numpy
+pyusb
+scipy
+pycryptodome
