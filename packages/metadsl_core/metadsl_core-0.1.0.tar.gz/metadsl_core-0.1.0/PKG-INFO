@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: metadsl_core
+Version: 0.1.0
+Summary: Core data types and replacements for metadsl
+Home-page: https://github.com/Quansight-Labs/metadsl
+Author: Saul Shanabrook
+Author-email: s.shanabrook@gmail.com
