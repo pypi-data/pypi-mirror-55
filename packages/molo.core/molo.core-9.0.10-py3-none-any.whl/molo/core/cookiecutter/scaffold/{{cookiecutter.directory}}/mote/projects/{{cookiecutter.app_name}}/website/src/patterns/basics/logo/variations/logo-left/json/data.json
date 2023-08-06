@@ -1,0 +1,9 @@
+{
+    "Logo": {
+        "modifiers": "left",
+        "img": {
+          "src": "/static/img/logo.png",
+          "alt": "Logo"
+        }
+    }
+}

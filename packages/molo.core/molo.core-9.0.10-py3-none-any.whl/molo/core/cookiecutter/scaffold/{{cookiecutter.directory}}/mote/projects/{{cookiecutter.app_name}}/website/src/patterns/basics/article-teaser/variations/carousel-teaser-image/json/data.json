@@ -1,0 +1,9 @@
+{
+  "CarouselTeaserImage": {
+      "modifiers": "",
+      "img": {
+        "src": "/static/img/carousel.jpg",
+        "alt": "Carousel Teaser Image"
+      }
+  }
+}
