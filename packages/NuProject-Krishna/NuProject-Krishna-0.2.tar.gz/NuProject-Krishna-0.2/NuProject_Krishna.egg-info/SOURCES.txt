@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+NuProject_Krishna.egg-info/PKG-INFO
+NuProject_Krishna.egg-info/SOURCES.txt
+NuProject_Krishna.egg-info/dependency_links.txt
+NuProject_Krishna.egg-info/entry_points.txt
+NuProject_Krishna.egg-info/top_level.txt
+nupackage/__init__.py
+nupackage/numodule.py

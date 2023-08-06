@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: NuProject-Krishna
+Version: 0.2
+Summary: First python package class
+Home-page: https://github.com/anhsirkrishna
+Author: Krishna
+Author-email: krishnas.pillai@nutanix.com
+License: UNKNOWN
+Description: # MyProject
+        
+        This project is a test setuptools project.
+        
+Keywords: test,class
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
