@@ -1,0 +1,8 @@
+numpy>=1.10.0
+scipy>=0.18.0
+multipledispatch>=0.4.9
+tensorflow-probability>=0.8
+tabulate
+
+[Tensorflow with GPU]
+tensorflow-gpu
