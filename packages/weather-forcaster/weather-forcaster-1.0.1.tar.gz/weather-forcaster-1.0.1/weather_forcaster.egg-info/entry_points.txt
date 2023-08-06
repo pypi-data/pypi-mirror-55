@@ -1,0 +1,3 @@
+[console_scripts]
+weather-forcaster = weather_forcaster.main:main
+
