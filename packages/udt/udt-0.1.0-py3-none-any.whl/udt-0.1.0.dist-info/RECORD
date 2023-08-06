@@ -1,0 +1,11 @@
+udt/__init__.py,sha256=NdSvfdzlWQVe377jkEuKDJ-vCBXSnkpVutxxrLVbxdo,60
+udt/cli.py,sha256=GA_Olw32pF5-6oyhF3VMdIN_Mfdlkqf1nZTsA7m0JuE,104
+udt/markdown.py,sha256=ZpIWU0WllqhVwG_UYVO92hJHeBwgxSIMNDx-22VpgRU,38
+udt/srt.py,sha256=JTvR5ffAJwW8Jy6v9SRsyXOTJ5-nh0RB5EnEKNbeVoo,28
+udt/yaml.py,sha256=YlSbu9zbX7N9Ups6ULl_ba_fSIZHx0FtPDrY1TTKU0E,30
+udt-0.1.0.dist-info/LICENSE,sha256=VfDtwPBLuEYGKGpZLPBp3tR7llzidZFsg4_HGwnLRkw,1068
+udt-0.1.0.dist-info/METADATA,sha256=LLDwg2pqmWz-isw9mn_7zdn_71jJseFv4xMRNkfAnSs,451
+udt-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+udt-0.1.0.dist-info/entry_points.txt,sha256=jOvb8lfUJZdB_9F_tDemd6MCbZoCDVEYb-cPNsxZq0c,38
+udt-0.1.0.dist-info/top_level.txt,sha256=s1J_okRjVb8m3DimrvWDG7mOfxlW541MpXc99fPV-Ns,4
+udt-0.1.0.dist-info/RECORD,,
