@@ -1,0 +1,93 @@
+Metadata-Version: 2.1
+Name: yapq
+Version: 0.3.4
+Summary: Yet Another Python Queue
+Home-page: https://github.com/ginkooo/yapq
+Author: Piotr Czajka
+Author-email: czajka@protonmail.com
+License: MIT license
+Keywords: yapq
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+
+====
+yapq
+====
+
+
+.. image:: https://img.shields.io/pypi/v/yapq.svg
+        :target: https://pypi.python.org/pypi/yapq
+
+.. image:: https://img.shields.io/travis/ginkooo/yapq.svg
+        :target: https://travis-ci.org/ginkooo/yapq
+
+.. image:: https://readthedocs.org/projects/yapq/badge/?version=latest
+        :target: https://yapq.readthedocs.io/en/latest/?badge=latest
+        :alt: Documentation Status
+
+
+.. image:: https://pyup.io/repos/github/Ginkooo/yapq/shield.svg
+     :target: https://pyup.io/repos/github/Ginkooo/yapq/
+     :alt: Updates
+
+
+
+Yet Another Python Queue
+
+
+* Free software: MIT license
+* Documentation: https://yapq.readthedocs.io.
+
+
+Usage
+-----
+
+>>> from yapq import Yapq
+>>> yapq = Yapq()
+>>> yapq.start()
+>>> result = yapq.enqueue(lambda a, b: a + b, 5, 3)
+>>> result.get()
+8
+
+
+Installing
+----------
+
+``pip install yapq``
+
+
+Features
+--------
+
+* Executing tasks in thread-based workers
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+0.1.0 (2019-10-31)
+------------------
+
+* First release on PyPI.
+
+
