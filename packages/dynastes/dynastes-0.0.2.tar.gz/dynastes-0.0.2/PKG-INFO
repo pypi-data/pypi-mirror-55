@@ -1,0 +1,50 @@
+Metadata-Version: 2.1
+Name: dynastes
+Version: 0.0.2
+Summary: A collection of layers and utils for TensorFlow (Keras) 2.+
+Home-page: https://github.com/veqtor/dynastes
+Author: Göran Sandström (Veqtor)
+Author-email: v3qt0r@gmail.com
+License: UNKNOWN
+Description: # Dynastes
+        [![Version](https://img.shields.io/pypi/v/dynastes.svg)](https://pypi.org/project/dynastes/)
+        ![License](https://img.shields.io/pypi/l/keras-bert.svg)
+        
+        ![](https://img.shields.io/badge/keras-tensorflow-blue.svg)
+        ![](https://img.shields.io/badge/keras-tf.keras-blue.svg)
+        
+        ### Description
+        
+        Collection of various of my custom TensorFlow-Keras 2.0+ layers, utils and such
+        
+        ### Install
+        
+        ```bash
+        pip install dynastes
+        ```
+        
+        ### Layers
+        Localized Attention
+        * Perform attention within "kernels", a bit like convolution
+        
+        Time-Delay Neural Network Layers
+        
+        ### The name "Dynastes"
+        Dynastes is a genus of large beetles belonging to the subfamily Dynastinae, rhinoceros [ῥῑνόκερως (rhīnókerōs)] beetles and it is also the name of the son of Heracles and Erato (Thespius 49th daughter). This is a play on the word Keras [κέρας (kéras, “horn”)].
+        
+        #### Notes about sources:
+        
+        This repository borrows code heavily from:
+        
+        [Tensor2Tensor](https://github.com/tensorflow/tensor2tensor/)
+        
+        [TensorFlow 2.0 Tutorials](https://www.tensorflow.org/tutorials/)
+        
+        _Code is copied for stability onto this repository and attribution available when possible_
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
