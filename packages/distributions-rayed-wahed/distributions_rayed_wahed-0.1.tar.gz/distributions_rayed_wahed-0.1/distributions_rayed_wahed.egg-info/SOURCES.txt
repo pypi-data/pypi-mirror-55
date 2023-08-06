@@ -1,0 +1,10 @@
+setup.py
+distributions_rayed_wahed/Binomialdistribution.py
+distributions_rayed_wahed/Gaussiandistribution.py
+distributions_rayed_wahed/Generaldistribution.py
+distributions_rayed_wahed/__init__.py
+distributions_rayed_wahed.egg-info/PKG-INFO
+distributions_rayed_wahed.egg-info/SOURCES.txt
+distributions_rayed_wahed.egg-info/dependency_links.txt
+distributions_rayed_wahed.egg-info/not-zip-safe
+distributions_rayed_wahed.egg-info/top_level.txt
