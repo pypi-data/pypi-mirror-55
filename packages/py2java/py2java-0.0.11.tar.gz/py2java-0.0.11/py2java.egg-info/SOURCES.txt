@@ -1,0 +1,9 @@
+README.md
+setup.py
+py2java/PythonToJava.py
+py2java/__init__.py
+py2java.egg-info/PKG-INFO
+py2java.egg-info/SOURCES.txt
+py2java.egg-info/dependency_links.txt
+py2java.egg-info/requires.txt
+py2java.egg-info/top_level.txt
