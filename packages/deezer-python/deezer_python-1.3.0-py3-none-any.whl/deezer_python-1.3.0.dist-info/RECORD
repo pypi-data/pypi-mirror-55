@@ -1,0 +1,9 @@
+deezer/__init__.py,sha256=Lnv9KlmmhG8hwQJ0q5mBvUKbikbZiHhDFiEvkqjaRd4,633
+deezer/client.py,sha256=cU9s9bdjm9et56XNVaq8o96jr8rZFJnD97D8vxSZO0Y,9163
+deezer/resources.py,sha256=1DsUuWOGCUnFOhzIPCeBN_Cgr2fMZMs6CgZwRLA1R08,10084
+deezer/utils.py,sha256=VVWIDjmdX7DXMW1EL8uiZSlyLdNHEcfRQhqsuM_IgOg,530
+deezer_python-1.3.0.dist-info/LICENSE.txt,sha256=lGqKEubFaPBoiJVRoHOxg1LYlte1e5kLoq6zWUSRQzQ,1054
+deezer_python-1.3.0.dist-info/METADATA,sha256=r8nVylnIl8Uu1r7MEoupnZAOO2UFVyfYpSw4WHQM6Mw,9721
+deezer_python-1.3.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+deezer_python-1.3.0.dist-info/top_level.txt,sha256=yEWpBI2w2sX3SpyAi-ZGzg-lpP8apYE6uEgvnnb7S44,7
+deezer_python-1.3.0.dist-info/RECORD,,
