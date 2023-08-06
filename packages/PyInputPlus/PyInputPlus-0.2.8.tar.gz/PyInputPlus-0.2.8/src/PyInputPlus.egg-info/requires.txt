@@ -1,0 +1,2 @@
+pysimplevalidate>=0.2.7
+stdiomask>=0.0.3
