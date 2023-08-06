@@ -1,0 +1,5 @@
+#!/bin/bash
+export CHROOT_KERNEL=$(ls -c /boot/initrd.img-* | head -1 | sed 's/^\/boot\/initrd.img-\(.*\)$/\1/')
+export SYSTEM_KERNEL=$(/bin/uname.orig -r)
+CHROOT_UNAME=$($0.orig $@ | sed "s/$SYSTEM_KERNEL/$CHROOT_KERNEL/")
+echo $CHROOT_UNAME
