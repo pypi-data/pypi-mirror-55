@@ -1,0 +1,13 @@
+README.md
+setup.py
+pygamer/Button.py
+pygamer/Game.py
+pygamer/Menu.py
+pygamer/Object.py
+pygamer/Player.py
+pygamer/Window.py
+pygamer/__init__.py
+pygamer8.egg-info/PKG-INFO
+pygamer8.egg-info/SOURCES.txt
+pygamer8.egg-info/dependency_links.txt
+pygamer8.egg-info/top_level.txt
