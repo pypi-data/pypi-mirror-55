@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: bloomfpy
+Version: 1.1.0
+Summary: bloomfpy: Bloom Filter implementation for python, a probabilistic data structure
+Home-page: https://github.com/berkay-dincer/bloompy
+Author: Berkay Dinçer
+Author-email: dincerbberkay@gmail.com
+License: MIT License
+Keywords: data structures,bloom filter,bloom,filter,probabilistic,set
+Platform: any
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Utilities
+Classifier: Topic :: Database :: Database Engines/Servers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: bitarray (>=1.1.0)
+
+
+bloomfpy is a bloom filter implemented in python, bloom filters are probabilistic data structures with sub linear space requirements.
+
+
