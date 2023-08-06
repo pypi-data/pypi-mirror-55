@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: gravtools
+Version: 0.1.1
+Summary: Gravitational tools for Python
+Home-page: http://github.com/JWKennington/gravtools
+Author: James W. Kennington
+Author-email: jameswkennington@gmail.com
+License: MIT
+Description: # Gravitational utilities in Python
+        The `gravtools` module is a complementary module to the existing, well-written libraries
+        [pycbc]() and [gwpy](). This package began as a few simple utilities, such as constants
+        and date conversion helper functions.
+        
+        [![Build Status](https://travis-ci.com/JWKennington/gravtools.svg?branch=master)](https://travis-ci.com/JWKennington/gravtools) 
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
