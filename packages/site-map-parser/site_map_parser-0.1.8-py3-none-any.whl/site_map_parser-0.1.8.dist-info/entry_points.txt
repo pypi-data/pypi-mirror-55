@@ -1,0 +1,3 @@
+[console_scripts]
+smapper = sitemapparser.smapper:main
+
