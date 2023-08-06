@@ -1,0 +1,27 @@
+Metadata-Version: 2.1
+Name: rhml-server
+Version: 0.0.2
+Summary: RhytmicML: A tool for ML models deployment and versioning - server side
+Home-page: https://github.com/PycT/RhythmicML
+Author: Rustem Zakiev
+Author-email: rustem.zakiev@gmail.com
+License: UNKNOWN
+Description: #RhythmicML Client
+        
+        This is a server part of RhythmicML - A tool for ML models deployment and versioning.
+        Server handles deployed models.
+        Read more in documentation on GitHub.
+        
+        First of all run `python setup_db.py` to create databse an tables for models tracking.
+        
+Keywords: machine learning machinelearning deployment deploy versioning
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: System Administrators
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3
+Requires-Python: >=3, <4
+Description-Content-Type: text/markdown
