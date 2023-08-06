@@ -1,0 +1,10 @@
+mypy_boto3_shield/__init__.py,sha256=4q17JyMAnxRCdUgnAaJkhMEX5v7UxeiZmlEwWzxe1fQ,104
+mypy_boto3_shield/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_shield/client.py,sha256=SPeFOLU_1-U5S0Y_PT6a70mqkg0nxJ4ly4SM1mNc5sg,2886
+mypy_boto3_shield/paginator.py,sha256=mWaeTpi3cUE659X_BKJrEl1S6fCkOj6gupp-g_p04Qk,631
+mypy_boto3_shield/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_shield/version.py,sha256=J-ZAXY7tnYw7E5X3eod4-Q1hZ1FtnW7JHRKkkRpff-c,48
+mypy_boto3_shield-0.1.8.dist-info/METADATA,sha256=PFQjM5-_SlANlHi_KcIYSq5QNkEINtQt957tFcAtQjs,1430
+mypy_boto3_shield-0.1.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_shield-0.1.8.dist-info/top_level.txt,sha256=-lTa8Vm71TmD-aaE4KwRoV3zQUOiRXHeS-wKc9AoLek,18
+mypy_boto3_shield-0.1.8.dist-info/RECORD,,
