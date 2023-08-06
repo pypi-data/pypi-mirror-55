@@ -1,0 +1,10 @@
+mypy_boto3_mediastore_data/__init__.py,sha256=FmLrii2uUplEtq9L9G2H1DJPQ5PFoU4a_bxrBwfO7v0,122
+mypy_boto3_mediastore_data/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_mediastore_data/client.py,sha256=mreM6W8ayKDZRo40jlywerFS6JwX7i_svewtVgMbOSc,1273
+mypy_boto3_mediastore_data/paginator.py,sha256=6634v7O3h0tmiUsUT-owUa-7h4wIxHoQlGT3xWp73NA,322
+mypy_boto3_mediastore_data/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_mediastore_data/version.py,sha256=uEY-o5UpO0zjCdZ1SCWaClP-xXaDZDIXmwIfxAtFffI,48
+mypy_boto3_mediastore_data-0.1.6.dist-info/METADATA,sha256=zyc_IVVK4IdhI2XMdK59o7sq9Fxl6aY5lT-JrX8hwAE,1474
+mypy_boto3_mediastore_data-0.1.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_mediastore_data-0.1.6.dist-info/top_level.txt,sha256=l8QJ2DhiGJvMznPivMiunuXnFnEOQ3aM6U17eQo3Hho,27
+mypy_boto3_mediastore_data-0.1.6.dist-info/RECORD,,
