@@ -1,0 +1,31 @@
+<FILE>
+<HEADER>
+GENERATION DATE       : 2019-11-08T10:55:14
+ANTENNA               : VIL-2
+LATITUDE         [DEG]:  40.445611
+LONGITUDE        [DEG]:  -3.952611
+HEIGHT            [KM]: 0.664800
+TARGET                : CASN
+TRAJECTORY DATA SOURCE: TOPO
+S -DL-FREQUENCY  [MHZ]: 2277.000
+X -DL-FREQUENCY  [MHZ]: 0.000
+KA-DL-FREQUENCY  [MHZ]: 0.000
+ANALYSIS PERIOD-START : 2019-11-08T14:02:00.000
+ANALYSIS PERIOD-END   : 2019-11-08T14:22:00.000
+NUMBER OF PASSES      : 1
+</HEADER>
+<PASS>
+2019-11-08T14:02:00.000 2019-11-08T14:22:00.000
+<ZPASS>
+</ZPASS>
+<WRAP>
+</WRAP>
+<INIT_TRAVEL_RANGE>
+<LOWER/>
+</INIT_TRAVEL_RANGE>
+Date/ Time         AZ (Deg)     EL (Deg)        TxRx dXEl (deg) TxRx dEl (deg)  Range (km) Range Rate (km/s)    S-Dop (Hz)      X-Dop (Hz)      Ka-Dop(Hz)      S-EIRP(dBw)     X-EIRP(dBW)     Ka-EIRP(dBW)
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+2019-11-08T14:02:00.000 036.8400 031.0466   0.0000    0.0000  000000.000       0.000       0.000       0.000       0.000    0.000    0.000    0.000
+2019-11-08T14:22:00.000 036.8400 031.0466   0.0000    0.0000  000000.000       0.000       0.000       0.000       0.000    0.000    0.000    0.000
+</PASS>
+</FILE>
