@@ -1,0 +1,10 @@
+README.md
+setup.py
+abc_delegation/__init__.py
+abc_delegation/delegate.py
+abc_delegation.egg-info/PKG-INFO
+abc_delegation.egg-info/SOURCES.txt
+abc_delegation.egg-info/dependency_links.txt
+abc_delegation.egg-info/requires.txt
+abc_delegation.egg-info/top_level.txt
+test/test_delegate.py
