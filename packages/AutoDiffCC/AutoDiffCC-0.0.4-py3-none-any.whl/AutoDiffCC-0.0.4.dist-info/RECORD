@@ -1,0 +1,8 @@
+autodiffcc/__init__.py,sha256=bkV0rjvsVeZMjodo64ihLFIc15F5kMG9Is-eT8hMNlw,59
+autodiffcc/addition.py,sha256=cFOFmFCOJ8GL7EWcIFdCqFVca46c8TjlCQvakGxAPHw,51
+autodiffcc/autodiffcc.py,sha256=aDgvptmU35JqPY_FNGuknGjd_ivB5bnilMN9NGGmvVU,7580
+autodiffcc/test_addition.py,sha256=K-7bo4a7LvVtn3xWRndQv0m6qnG6yrkllFSNm53SdAs,107
+AutoDiffCC-0.0.4.dist-info/METADATA,sha256=0slV3sgPCS_ISRLfVe8RoHD3em-nr0WM_DPn2e60yv8,868
+AutoDiffCC-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+AutoDiffCC-0.0.4.dist-info/top_level.txt,sha256=3IMJDuy0yKmhf2tPvIcZFhNl4ITJxkFmQpgJubDVvyU,11
+AutoDiffCC-0.0.4.dist-info/RECORD,,
