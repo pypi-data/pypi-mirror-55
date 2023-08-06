@@ -1,0 +1,12 @@
+ukv1_toolbox/__init__.py,sha256=UNfaL4CgMhiO4jlJgKP3u9oMLTVmEDXpmXp2pLa0toM,50
+ukv1_toolbox/update_check.py,sha256=cR0EAUa0cz30mlnzZhW-oXyZPWMDyLEW2Nx722WxuQM,421
+ukv1_toolbox/problem1/__init__.py,sha256=02nvL3-6BQCPJveb7RLfLCvEmCJrijoejpY_O6_4SsE,37
+ukv1_toolbox/problem1/problem1_trading_params.py,sha256=VYXmlHaOV0rsOBsPoXOz4SyfuGM5tknM3Z5D-zbeg6Q,7999
+ukv1_toolbox/problem3/Problem3DataSource.py,sha256=yexgYxgNWTPype9ChcRSBsHisrChGTykjBI3r_c4zWc,1313
+ukv1_toolbox/problem3/__init__.py,sha256=PPkqdsKv61VA4Q5B43y6t0dTjud5Mur0X1z3H4gnsXc,43
+ukv1_toolbox/problem3/toolbox.py,sha256=TZMjJko7BMk8Dn6KMaS5FjKkvDe6PNnlbEEx0H-lZ0s,14690
+ukv1_toolbox-0.0.1.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+ukv1_toolbox-0.0.1.dist-info/METADATA,sha256=quftEqsqHped-kX7EKfJdRGKMecxXZzRMd9vy9bmTg8,932
+ukv1_toolbox-0.0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+ukv1_toolbox-0.0.1.dist-info/top_level.txt,sha256=TkjeAGq2fUn_j35SyD_uU94TIF3UUrlo9fCn5-QsGL0,13
+ukv1_toolbox-0.0.1.dist-info/RECORD,,

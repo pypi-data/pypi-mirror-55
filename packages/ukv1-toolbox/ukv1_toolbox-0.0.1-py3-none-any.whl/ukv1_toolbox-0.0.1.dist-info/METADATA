@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: ukv1-toolbox
+Version: 0.0.1
+Summary: Toolbox for UK Data Science Varsity
+Home-page: UNKNOWN
+Author: Auquan Team
+Author-email: qqadmins@auquan.com
+License: MIT
+Keywords: auquan finance trading backtesting development
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: gensim
+Requires-Dist: rouge-score
+Requires-Dist: tqdm
+Requires-Dist: requests
+Requires-Dist: plotly
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: bs4
+Requires-Dist: scipy
+Requires-Dist: sklearn
+Requires-Dist: lxml
+Requires-Dist: auquan-toolbox
+
+# Auquan GRC Toolbox
+
+This package is intended to be used for the Auquan's UK Data Science Varsity
+
