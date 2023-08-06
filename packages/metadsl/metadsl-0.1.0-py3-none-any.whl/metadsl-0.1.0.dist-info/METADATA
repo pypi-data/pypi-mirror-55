@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: metadsl
+Version: 0.1.0
+Summary: Library to help create DSLs in Python.
+Home-page: https://github.com/Quansight-Labs/metadsl
+License: UNKNOWN
+Author: Saul Shanabrook
+Author-email: s.shanabrook@gmail.com
+Requires-Python: >=3.7
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: typing_extensions
+Requires-Dist: typing_inspect
+Requires-Dist: jupyterlab>=1.0.0; extra == "dev"
+Requires-Dist: nbconvert; extra == "dev"
+Requires-Dist: pudb; extra == "dev"
+Requires-Dist: sphinx; extra == "doc"
+Requires-Dist: sphinx-autodoc-typehints; extra == "doc"
+Requires-Dist: sphinx_rtd_theme; extra == "doc"
+Requires-Dist: recommonmark; extra == "doc"
+Requires-Dist: nbsphinx; extra == "doc"
+Requires-Dist: ipykernel; extra == "doc"
+Requires-Dist: IPython; extra == "doc"
+Requires-Dist: sphinx-autobuild; extra == "doc"
+Requires-Dist: pytest; extra == "test"
+Requires-Dist: pytest-cov; extra == "test"
+Requires-Dist: pytest-mypy; extra == "test"
+Requires-Dist: pytest-randomly; extra == "test"
+Requires-Dist: pytest-xdist; extra == "test"
+Requires-Dist: pytest-testmon; extra == "test"
+Requires-Dist: mypy; extra == "test"
+Provides-Extra: dev
+Provides-Extra: doc
+Provides-Extra: test
