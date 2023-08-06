@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: hackthebox-api
+Version: 0.0.3
+Summary: Unofficial hackthebox.eu API wrapper and CLI application.
+Home-page: https://github.com/sp1ral-vx/hackthebox-api
+Author: Sp1ral
+License: UNKNOWN
+Download-URL: https://github.com/sp1ral-vx/hackthebox-api/tarball/0.0.3
+Description: UNKNOWN
+Keywords: hackthebox,htb
+Platform: UNKNOWN
+Requires-Python: >=3.5
