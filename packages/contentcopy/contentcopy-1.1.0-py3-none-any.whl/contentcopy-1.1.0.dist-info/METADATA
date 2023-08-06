@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: contentcopy
+Version: 1.1.0
+Summary: Merge directory contents, deduplicating files based on their content.
+Home-page: https://github.com/KillianMeersman/contentcopy
+Author: Killian Meersman
+Author-email: hi@killianm.dev
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# Contentcopy
+Contentcopy merges directory contents, deduplicating files based on their content.
+
+If a file with differing contents but the same name is encountered, the copied filename will automatically have a number appended, making it easy to see duplicate filenames.
+
+## Usage
+```
+python3 contentcopy.py <source> <dest>
+```
+
+e.g.
+
+```
+python3 contentcopy.py old_pictures new_pictures
+```
+
+Will copy all pictures in old_pictures that are not yet in new_pictures to new_pictures. After this you can safely delete old_pictures without worrying about data loss.
+
+## Installation
+```
+pip install contentcopy
+```
+
