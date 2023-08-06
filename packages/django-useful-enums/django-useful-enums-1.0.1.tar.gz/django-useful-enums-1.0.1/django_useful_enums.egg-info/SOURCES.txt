@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+django_useful_enums.egg-info/PKG-INFO
+django_useful_enums.egg-info/SOURCES.txt
+django_useful_enums.egg-info/dependency_links.txt
+django_useful_enums.egg-info/requires.txt
+django_useful_enums.egg-info/top_level.txt
+usefulenums/__init__.py
+usefulenums/enum.py
+usefulenums/test_enum.py
