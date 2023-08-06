@@ -1,0 +1,5 @@
+jinja2
+ipCorePackager>=0.3
+pycocotb>=0.4
+pyDigitalWaveTools>=0.4
+pyMathBitPrecise>=0.2
