@@ -1,0 +1,7 @@
+README.md
+setup.py
+cicd/onema_cdk.cicd_pipelines.egg-info/PKG-INFO
+cicd/onema_cdk.cicd_pipelines.egg-info/SOURCES.txt
+cicd/onema_cdk.cicd_pipelines.egg-info/dependency_links.txt
+cicd/onema_cdk.cicd_pipelines.egg-info/requires.txt
+cicd/onema_cdk.cicd_pipelines.egg-info/top_level.txt
