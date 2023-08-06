@@ -1,0 +1,30 @@
+Metadata-Version: 2.0
+Name: asyncinotify
+Version: 0.1.0
+Summary: A simple async python inotify library, focused on simplicity of use and operation, and leveraging modern Python features
+Home-page: https://gitlab.com/Taywee/asyncinotify
+Author: Taylor C. Richberger
+License: MIT
+Keywords: async inotify
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Operating System :: POSIX :: Linux
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Intended Audience :: Developers
+Description-Content-Type: text/x-rst
+
+asyncinotify
+============
+
+An async python inotify package.  Kept as simple and easy-to-understand as
+possible, while still being flexible and powerful.
+
+This depends on Python 3.6+ features, and will not work with prior versions.
+
+This works without any other external dependencies.
+
+
