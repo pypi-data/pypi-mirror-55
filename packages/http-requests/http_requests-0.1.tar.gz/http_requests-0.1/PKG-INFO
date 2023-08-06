@@ -1,0 +1,18 @@
+Metadata-Version: 1.2
+Name: http_requests
+Version: 0.1
+Summary: HTTP sync / async python (>=3.6) library that works with requests and aiohttp libraries, exploiting the best of each one
+Home-page: https://github.com/JoseVL92/http-requests
+Author: Jose Alberto Varona Labrada
+Author-email: jovalab92@gmail.com
+License: MIT
+Download-URL: https://github.com/JoseVL92/http-requests/archive/v_01.tar.gz
+Description: UNKNOWN
+Keywords: http,asynchronous,request
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6

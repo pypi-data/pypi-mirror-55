@@ -1,0 +1,10 @@
+LICENSE.txt
+README.md
+setup.py
+http_requests/__init__.py
+http_requests/async_requests.py
+http_requests.egg-info/PKG-INFO
+http_requests.egg-info/SOURCES.txt
+http_requests.egg-info/dependency_links.txt
+http_requests.egg-info/requires.txt
+http_requests.egg-info/top_level.txt
