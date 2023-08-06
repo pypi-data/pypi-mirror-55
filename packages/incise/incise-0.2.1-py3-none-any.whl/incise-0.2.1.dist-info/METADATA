@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: incise
+Version: 0.2.1
+Summary: Live Segmentation Framework.
+Home-page: https://github.com/Exahilosys/incise
+License: MIT
+Platform: UNKNOWN
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+Requires-Dist: incise[events] ; extra == 'docs'
+Provides-Extra: events
+Requires-Dist: wrapio ; extra == 'events'
+Requires-Dist: lineopt ; extra == 'events'
+
+
+Installing
+==========
+
+.. code-block:: bash
+
+  pip3 install incise
+
+Links
+-----
+
+- `Documentation <https://incise.readthedocs.io>`_
+
+
