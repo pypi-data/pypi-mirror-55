@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Estimating a sparse and low rank matrix &#8212; copt  documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../_static/copybutton.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"argmin": "\\DeclareMathOperator*{\\argmin}{\\mathbf{arg\\,min}}", "argmax": "\\DeclareMathOperator*{\\argmin}{\\mathbf{arg\\,max}}", "bs": "\\newcommand{\\bs}[1]{\\boldsymbol{#1}}"}}})</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Total variation regularization" href="plot_tv_deblurring.html" />
+    <link rel="prev" title="Update Direction Overlap in Frank-Wolfe" href="../frank_wolfe/plot_vertex_overlap.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="sphx-glr-download-link-note admonition note">
+<p class="admonition-title">Note</p>
+<p>Click <a class="reference internal" href="#sphx-glr-download-auto-examples-proximal-splitting-plot-sparse-nuclear-norm-py"><span class="std std-ref">here</span></a> to download the full example code</p>
+</div>
+<div class="sphx-glr-example-title section" id="estimating-a-sparse-and-low-rank-matrix">
+<span id="sphx-glr-auto-examples-proximal-splitting-plot-sparse-nuclear-norm-py"></span><h1>Estimating a sparse and low rank matrix<a class="headerlink" href="#estimating-a-sparse-and-low-rank-matrix" title="Permalink to this headline">¶</a></h1>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="vm">__doc__</span><span class="p">)</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">scipy.sparse</span> <span class="k">import</span> <span class="n">linalg</span> <span class="k">as</span> <span class="n">splinalg</span>
+<span class="kn">import</span> <span class="nn">pylab</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">copt</span> <span class="k">as</span> <span class="nn">cp</span>
+
+<span class="c1"># .. Generate synthetic data ..</span>
+<span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">seed</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="n">sigma_2</span> <span class="o">=</span> <span class="mf">0.6</span>
+<span class="n">N</span> <span class="o">=</span> <span class="mi">100</span>
+<span class="n">d</span> <span class="o">=</span> <span class="mi">20</span>
+<span class="n">blocks</span> <span class="o">=</span> <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.array.html#numpy.array" title="View documentation for numpy.array"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">([</span><span class="mi">2</span> <span class="o">*</span> <span class="n">d</span> <span class="o">/</span><span class="mi">10</span><span class="p">,</span><span class="mi">1</span> <span class="o">*</span> <span class="n">d</span> <span class="o">/</span><span class="mi">10</span><span class="p">,</span><span class="mi">1</span> <span class="o">*</span> <span class="n">d</span> <span class="o">/</span><span class="mi">10</span><span class="p">,</span><span class="mi">3</span> <span class="o">*</span> <span class="n">d</span> <span class="o">/</span><span class="mi">10</span><span class="p">,</span><span class="mi">3</span> <span class="o">*</span> <span class="n">d</span> <span class="o">/</span> <span class="mi">10</span><span class="p">])</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">int</span><span class="p">)</span>
+<span class="n">epsilon</span> <span class="o">=</span> <span class="mi">10</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">15</span><span class="p">)</span>
+
+<span class="n">mu</span> <span class="o">=</span> <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html#numpy.zeros" title="View documentation for numpy.zeros"><span class="n">np</span><span class="o">.</span><span class="n">zeros</span></a><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+<span class="n">Sigma</span> <span class="o">=</span> <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html#numpy.zeros" title="View documentation for numpy.zeros"><span class="n">np</span><span class="o">.</span><span class="n">zeros</span></a><span class="p">((</span><span class="n">d</span><span class="p">,</span><span class="n">d</span><span class="p">))</span>
+<span class="n">blck</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="k">for</span> <span class="n">k</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">blocks</span><span class="p">)):</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="mi">2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="nb">int</span><span class="p">(</span><span class="n">blocks</span><span class="p">[</span><span class="n">k</span><span class="p">]),</span><span class="mi">1</span><span class="p">)</span>
+    <span class="n">v</span> <span class="o">=</span> <span class="n">v</span> <span class="o">*</span> <span class="p">(</span><span class="nb">abs</span><span class="p">(</span><span class="n">v</span><span class="p">)</span> <span class="o">&gt;</span> <span class="mf">0.9</span><span class="p">)</span>
+    <span class="n">Sigma</span><span class="p">[</span><span class="n">blck</span><span class="p">:</span><span class="n">blck</span><span class="o">+</span><span class="n">blocks</span><span class="p">[</span><span class="n">k</span><span class="p">],</span><span class="n">blck</span><span class="p">:</span><span class="n">blck</span><span class="o">+</span><span class="n">blocks</span><span class="p">[</span><span class="n">k</span><span class="p">]]</span> <span class="o">=</span> <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.dot.html#numpy.dot" title="View documentation for numpy.dot"><span class="n">np</span><span class="o">.</span><span class="n">dot</span></a><span class="p">(</span><span class="n">v</span><span class="p">,</span> <span class="n">v</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+    <span class="n">blck</span> <span class="o">=</span> <span class="n">blck</span> <span class="o">+</span> <span class="n">blocks</span><span class="p">[</span><span class="n">k</span><span class="p">]</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">multivariate_normal</span><span class="p">(</span><span class="n">mu</span><span class="p">,</span> <span class="n">Sigma</span> <span class="o">+</span> <span class="n">epsilon</span> <span class="o">*</span> <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.eye.html#numpy.eye" title="View documentation for numpy.eye"><span class="n">np</span><span class="o">.</span><span class="n">eye</span></a><span class="p">(</span><span class="n">d</span><span class="p">)</span> <span class="p">,</span><span class="n">N</span><span class="p">)</span> <span class="o">+</span> <span class="n">sigma_2</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">N</span><span class="p">,</span><span class="n">d</span><span class="p">);</span>
+<span class="n">Sigma_hat</span> <span class="o">=</span> <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.cov.html#numpy.cov" title="View documentation for numpy.cov"><span class="n">np</span><span class="o">.</span><span class="n">cov</span></a><span class="p">(</span><span class="n">X</span><span class="o">.</span><span class="n">T</span><span class="p">)</span>
+
+<span class="n">threshold</span> <span class="o">=</span> <span class="mf">1e-5</span>
+<span class="n">Sigma</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">Sigma</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">threshold</span><span class="p">]</span> <span class="o">=</span> <span class="mi">0</span>
+<span class="n">Sigma</span><span class="p">[</span><span class="n">np</span><span class="o">.</span><span class="n">abs</span><span class="p">(</span><span class="n">Sigma</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="n">threshold</span><span class="p">]</span> <span class="o">=</span> <span class="mi">1</span>
+
+<span class="c1"># .. generate some data ..</span>
+
+<span class="n">max_iter</span> <span class="o">=</span> <span class="mi">5000</span>
+
+<span class="n">n_features</span> <span class="o">=</span> <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.multiply.html#numpy.multiply" title="View documentation for numpy.multiply"><span class="n">np</span><span class="o">.</span><span class="n">multiply</span></a><span class="p">(</span><span class="o">*</span><span class="n">Sigma</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+<span class="n">n_samples</span> <span class="o">=</span> <span class="n">n_features</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;#features&#39;</span><span class="p">,</span> <span class="n">n_features</span><span class="p">)</span>
+<span class="n">A</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">n_samples</span><span class="p">,</span> <span class="n">n_features</span><span class="p">)</span>
+
+<span class="n">sigma</span> <span class="o">=</span> <span class="mf">1.</span>
+<span class="n">b</span> <span class="o">=</span> <span class="n">A</span><span class="o">.</span><span class="n">dot</span><span class="p">(</span><span class="n">Sigma</span><span class="o">.</span><span class="n">ravel</span><span class="p">())</span> <span class="o">+</span> <span class="n">sigma</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">randn</span><span class="p">(</span><span class="n">n_samples</span><span class="p">)</span>
+
+<span class="c1"># .. compute the step-size ..</span>
+<span class="n">s</span> <span class="o">=</span> <a href="https://docs.scipy.org/doc/scipy/reference/generated/scipy.sparse.linalg.svds.html#scipy.sparse.linalg.svds" title="View documentation for scipy.sparse.linalg.svds"><span class="n">splinalg</span><span class="o">.</span><span class="n">svds</span></a><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">k</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">return_singular_vectors</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+                  <span class="n">tol</span><span class="o">=</span><span class="mf">1e-3</span><span class="p">,</span> <span class="n">maxiter</span><span class="o">=</span><span class="mi">500</span><span class="p">)[</span><span class="mi">0</span><span class="p">]</span>
+<span class="n">f</span> <span class="o">=</span> <a href="../../generated/copt.utils.HuberLoss.html#copt.utils.HuberLoss" title="View documentation for copt.utils.HuberLoss"><span class="n">cp</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">HuberLoss</span></a><span class="p">(</span><span class="n">A</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
+<span class="n">step_size</span> <span class="o">=</span> <span class="mf">1.</span> <span class="o">/</span> <span class="n">f</span><span class="o">.</span><span class="n">lipschitz</span>
+
+<span class="c1"># .. run the solver for different values ..</span>
+<span class="c1"># .. of the regularization parameter beta ..</span>
+<span class="n">all_betas</span> <span class="o">=</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mf">1e-3</span><span class="p">,</span> <span class="mf">1e-2</span><span class="p">,</span> <span class="mf">1e-1</span><span class="p">]</span>
+<span class="n">all_trace_ls</span><span class="p">,</span> <span class="n">all_trace_nols</span><span class="p">,</span> <span class="n">all_trace_pdhg_nols</span><span class="p">,</span> <span class="n">all_trace_pdhg</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
+<span class="n">all_trace_ls_time</span><span class="p">,</span> <span class="n">all_trace_nols_time</span><span class="p">,</span> <span class="n">all_trace_pdhg_nols_time</span><span class="p">,</span> <span class="n">all_trace_pdhg_time</span> <span class="o">=</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[],</span> <span class="p">[]</span>
+<span class="n">out_img</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">beta</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">all_betas</span><span class="p">):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;beta = </span><span class="si">%s</span><span class="s1">&#39;</span> <span class="o">%</span> <span class="n">beta</span><span class="p">)</span>
+    <span class="n">G1</span> <span class="o">=</span> <a href="../../generated/copt.utils.TraceNorm.html#copt.utils.TraceNorm" title="View documentation for copt.utils.TraceNorm"><span class="n">cp</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">TraceNorm</span></a><span class="p">(</span><span class="n">beta</span><span class="p">,</span> <span class="n">Sigma</span><span class="o">.</span><span class="n">shape</span><span class="p">)</span>
+    <span class="n">G2</span> <span class="o">=</span> <a href="../../generated/copt.utils.L1Norm.html#copt.utils.L1Norm" title="View documentation for copt.utils.L1Norm"><span class="n">cp</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">L1Norm</span></a><span class="p">(</span><span class="n">beta</span><span class="p">)</span>
+
+    <span class="k">def</span> <span class="nf">loss</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
+        <span class="k">return</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">G1</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">+</span> <span class="n">G2</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
+
+    <span class="n">cb_tosls</span> <span class="o">=</span> <a href="../../generated/copt.utils.Trace.html#copt.utils.Trace" title="View documentation for copt.utils.Trace"><span class="n">cp</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">Trace</span></a><span class="p">()</span>
+    <span class="n">x0</span> <span class="o">=</span> <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html#numpy.zeros" title="View documentation for numpy.zeros"><span class="n">np</span><span class="o">.</span><span class="n">zeros</span></a><span class="p">(</span><span class="n">n_features</span><span class="p">)</span>
+    <span class="n">tos_ls</span> <span class="o">=</span> <a href="../../generated/copt.minimize_three_split.html#copt.minimize_three_split" title="View documentation for copt.minimize_three_split"><span class="n">cp</span><span class="o">.</span><span class="n">minimize_three_split</span></a><span class="p">(</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">f_grad</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">G2</span><span class="o">.</span><span class="n">prox</span><span class="p">,</span> <span class="n">G1</span><span class="o">.</span><span class="n">prox</span><span class="p">,</span> <span class="n">step_size</span><span class="o">=</span><span class="mi">5</span> <span class="o">*</span> <span class="n">step_size</span><span class="p">,</span>
+        <span class="n">max_iter</span><span class="o">=</span><span class="n">max_iter</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-14</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">callback</span><span class="o">=</span><span class="n">cb_tosls</span><span class="p">,</span> <span class="n">h_Lipschitz</span><span class="o">=</span><span class="n">beta</span><span class="p">)</span>
+    <span class="n">trace_ls</span> <span class="o">=</span> <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.array.html#numpy.array" title="View documentation for numpy.array"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">([</span><span class="n">loss</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">cb_tosls</span><span class="o">.</span><span class="n">trace_x</span><span class="p">])</span>
+    <span class="n">all_trace_ls</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">trace_ls</span><span class="p">)</span>
+    <span class="n">all_trace_ls_time</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cb_tosls</span><span class="o">.</span><span class="n">trace_time</span><span class="p">)</span>
+
+    <span class="n">cb_tos</span> <span class="o">=</span> <a href="../../generated/copt.utils.Trace.html#copt.utils.Trace" title="View documentation for copt.utils.Trace"><span class="n">cp</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">Trace</span></a><span class="p">()</span>
+    <span class="n">x0</span> <span class="o">=</span> <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html#numpy.zeros" title="View documentation for numpy.zeros"><span class="n">np</span><span class="o">.</span><span class="n">zeros</span></a><span class="p">(</span><span class="n">n_features</span><span class="p">)</span>
+    <span class="n">tos</span> <span class="o">=</span> <a href="../../generated/copt.minimize_three_split.html#copt.minimize_three_split" title="View documentation for copt.minimize_three_split"><span class="n">cp</span><span class="o">.</span><span class="n">minimize_three_split</span></a><span class="p">(</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">f_grad</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">G1</span><span class="o">.</span><span class="n">prox</span><span class="p">,</span> <span class="n">G2</span><span class="o">.</span><span class="n">prox</span><span class="p">,</span>
+        <span class="n">step_size</span><span class="o">=</span><span class="n">step_size</span><span class="p">,</span>
+        <span class="n">max_iter</span><span class="o">=</span><span class="n">max_iter</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-14</span><span class="p">,</span> <span class="n">verbose</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+        <span class="n">line_search</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span> <span class="n">callback</span><span class="o">=</span><span class="n">cb_tos</span><span class="p">)</span>
+    <span class="n">trace_nols</span> <span class="o">=</span> <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.array.html#numpy.array" title="View documentation for numpy.array"><span class="n">np</span><span class="o">.</span><span class="n">array</span></a><span class="p">([</span><span class="n">loss</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="n">cb_tos</span><span class="o">.</span><span class="n">trace_x</span><span class="p">])</span>
+    <span class="n">all_trace_nols</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">trace_nols</span><span class="p">)</span>
+    <span class="n">all_trace_nols_time</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">cb_tos</span><span class="o">.</span><span class="n">trace_time</span><span class="p">)</span>
+    <span class="n">out_img</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">tos</span><span class="o">.</span><span class="n">x</span><span class="p">)</span>
+
+<span class="c1"># .. plot the results ..</span>
+<span class="n">f</span><span class="p">,</span> <span class="n">ax</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="n">sharey</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">xlim</span> <span class="o">=</span> <span class="p">[</span><span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.02</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="n">beta</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">all_betas</span><span class="p">):</span>
+    <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\lambda=</span><span class="si">%s</span><span class="s1">$&#39;</span> <span class="o">%</span> <span class="n">beta</span><span class="p">)</span>
+    <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="sa">r</span><span class="s1">&#39;$\lambda=</span><span class="si">%s</span><span class="s1">$&#39;</span> <span class="o">%</span> <span class="n">beta</span><span class="p">)</span>
+    <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">imshow</span><span class="p">(</span><span class="n">out_img</span><span class="p">[</span><span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">Sigma</span><span class="o">.</span><span class="n">shape</span><span class="p">),</span>
+                    <span class="n">interpolation</span><span class="o">=</span><span class="s1">&#39;nearest&#39;</span><span class="p">,</span> <span class="n">cmap</span><span class="o">=</span><span class="n">plt</span><span class="o">.</span><span class="n">cm</span><span class="o">.</span><span class="n">gray_r</span><span class="p">)</span>
+    <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_xticks</span><span class="p">(())</span>
+    <span class="n">ax</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_yticks</span><span class="p">(())</span>
+
+    <span class="n">fmin</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">all_trace_ls</span><span class="p">[</span><span class="n">i</span><span class="p">]),</span> <span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">all_trace_nols</span><span class="p">[</span><span class="n">i</span><span class="p">]))</span>
+    <span class="n">plot_tos</span><span class="p">,</span> <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+        <span class="n">all_trace_ls</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">fmin</span><span class="p">,</span>
+        <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;o&#39;</span><span class="p">,</span> <span class="n">markevery</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+        <span class="n">markersize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+    <span class="n">plot_nols</span><span class="p">,</span> <span class="o">=</span> <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span>
+        <span class="n">all_trace_nols</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">-</span> <span class="n">fmin</span><span class="p">,</span>
+        <span class="n">lw</span><span class="o">=</span><span class="mi">4</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="s1">&#39;h&#39;</span><span class="p">,</span> <span class="n">markevery</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span>
+        <span class="n">markersize</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
+
+    <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Iterations&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_yscale</span><span class="p">(</span><span class="s1">&#39;log&#39;</span><span class="p">)</span>
+    <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylim</span><span class="p">((</span><span class="mf">1e-15</span><span class="p">,</span> <span class="kc">None</span><span class="p">))</span>
+    <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">set_xlim</span><span class="p">((</span><span class="mi">0</span><span class="p">,</span> <span class="mi">2000</span><span class="p">))</span>
+    <span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="n">i</span><span class="p">]</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
+
+
+<span class="n">plt</span><span class="o">.</span><span class="n">gcf</span><span class="p">()</span><span class="o">.</span><span class="n">subplots_adjust</span><span class="p">(</span><span class="n">bottom</span><span class="o">=</span><span class="mf">0.15</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figlegend</span><span class="p">(</span>
+    <span class="p">(</span><span class="n">plot_tos</span><span class="p">,</span> <span class="n">plot_nols</span><span class="p">),</span>
+    <span class="p">(</span><span class="s1">&#39;TOS with line search&#39;</span><span class="p">,</span> <span class="s1">&#39;TOS without line search&#39;</span><span class="p">),</span> <span class="n">ncol</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span>
+    <span class="n">scatterpoints</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span>
+    <span class="n">loc</span><span class="o">=</span><span class="p">(</span><span class="o">-</span><span class="mf">0.00</span><span class="p">,</span> <span class="o">-</span><span class="mf">0.0</span><span class="p">),</span> <span class="n">frameon</span><span class="o">=</span><span class="kc">False</span><span class="p">,</span>
+    <span class="n">bbox_to_anchor</span><span class="o">=</span><span class="p">[</span><span class="mf">0.05</span><span class="p">,</span> <span class="mf">0.01</span><span class="p">])</span>
+
+<span class="n">ax</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">]</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Objective minus optimum&#39;</span><span class="p">)</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.000 seconds)</p>
+<p><strong>Estimated memory usage:</strong>  0 MB</p>
+<div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-proximal-splitting-plot-sparse-nuclear-norm-py">
+<div class="sphx-glr-download docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/cbf401494f8014823ae8fc0cbf44b44c/plot_sparse_nuclear_norm.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">plot_sparse_nuclear_norm.py</span></code></a></p>
+</div>
+<div class="sphx-glr-download docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/99c18185be6c9e68c41187452085784e/plot_sparse_nuclear_norm.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">plot_sparse_nuclear_norm.ipynb</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/logo.png" alt="Logo"/>
+            </a></p>
+<h1 class="logo"><a href="../../index.html">copt</a></h1>
+
+
+
+<p class="blurb">Optimization in Python</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=openopt&repo=copt&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../proximal_gradient.html">Gradient-based methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../proximal_splitting.html">Proximal splitting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frank_wolfe.html">Frank-Wolfe and other projection-free algorithms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../incremental.html">Incremental methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../loss_functions.html">Loss and regularization functions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Examples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../plot_jax_copt.html">Combining COPT with JAX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plot_accelerated.html">Accelerated gradient descent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plot_saga_vs_svrg.html">SAGA vs SVRG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plot_group_lasso.html">Group Lasso regularization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#frank-wolfe">Frank-Wolfe</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#proximal-splitting">Proximal Splitting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../datasets.html">Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../utils.html">Other utility functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../citing.html">Citing</a></li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;COPT developers.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="../../_sources/auto_examples/proximal_splitting/plot_sparse_nuclear_norm.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/openopt/copt" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>

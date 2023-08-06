@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Update Direction Overlap in Frank-Wolfe &#8212; copt  documentation</title>
+    <link rel="stylesheet" href="../../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/gallery.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../../" src="../../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <script type="text/javascript" src="../../_static/language_data.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.0/clipboard.min.js"></script>
+    <script type="text/javascript" src="../../_static/copybutton.js"></script>
+    <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"TeX": {"Macros": {"argmin": "\\DeclareMathOperator*{\\argmin}{\\mathbf{arg\\,min}}", "argmax": "\\DeclareMathOperator*{\\argmin}{\\mathbf{arg\\,max}}", "bs": "\\newcommand{\\bs}[1]{\\boldsymbol{#1}}"}}})</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Estimating a sparse and low rank matrix" href="../proximal_splitting/plot_sparse_nuclear_norm.html" />
+    <link rel="prev" title="Comparison of different step-sizes in Frank-Wolfe" href="plot_stepsize.html" />
+   
+  <link rel="stylesheet" href="../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="sphx-glr-download-link-note admonition note">
+<p class="admonition-title">Note</p>
+<p>Click <a class="reference internal" href="#sphx-glr-download-auto-examples-frank-wolfe-plot-vertex-overlap-py"><span class="std std-ref">here</span></a> to download the full example code</p>
+</div>
+<div class="sphx-glr-example-title section" id="update-direction-overlap-in-frank-wolfe">
+<span id="sphx-glr-auto-examples-frank-wolfe-plot-vertex-overlap-py"></span><h1>Update Direction Overlap in Frank-Wolfe<a class="headerlink" href="#update-direction-overlap-in-frank-wolfe" title="Permalink to this headline">¶</a></h1>
+<p>This example quantifies how many times the Frank-Wolfe algorithm selects
+the same extremal vertex (which will determine the update direction) twice
+in a row. Selecting the same vertex twice in a row is symptomatic of a poor
+step-size, as it implies that the last two updates could have been replaced
+by a single update with larger step-size.</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">copt</span> <span class="k">as</span> <span class="nn">cp</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pylab</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+
+<span class="c1"># datasets and their respective loading functions</span>
+<span class="n">datasets</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="p">(</span><span class="s2">&quot;Gisette&quot;</span><span class="p">,</span> <a href="../../generated/copt.datasets.load_gisette.html#copt.datasets.load_gisette" title="View documentation for copt.datasets.load_gisette"><span class="n">cp</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">load_gisette</span></a><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;RCV1&quot;</span><span class="p">,</span> <a href="../../generated/copt.datasets.load_rcv1.html#copt.datasets.load_rcv1" title="View documentation for copt.datasets.load_rcv1"><span class="n">cp</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">load_rcv1</span></a><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Madelon&quot;</span><span class="p">,</span> <a href="../../generated/copt.datasets.load_madelon.html#copt.datasets.load_madelon" title="View documentation for copt.datasets.load_madelon"><span class="n">cp</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">load_madelon</span></a><span class="p">),</span>
+    <span class="p">(</span><span class="s2">&quot;Covtype&quot;</span><span class="p">,</span> <a href="../../generated/copt.datasets.load_covtype.html#copt.datasets.load_covtype" title="View documentation for copt.datasets.load_covtype"><span class="n">cp</span><span class="o">.</span><span class="n">datasets</span><span class="o">.</span><span class="n">load_covtype</span></a><span class="p">)</span>
+    <span class="p">]</span>
+
+
+<span class="n">fig</span><span class="p">,</span> <span class="n">axes</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">subplots</span><span class="p">(</span><span class="n">nrows</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">ncols</span><span class="o">=</span><span class="mi">2</span><span class="p">,</span> <span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">5</span><span class="p">))</span>
+<span class="k">for</span> <span class="n">ax</span><span class="p">,</span> <span class="p">(</span><span class="n">dataset_title</span><span class="p">,</span> <span class="n">load_data</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">axes</span><span class="o">.</span><span class="n">ravel</span><span class="p">(),</span> <span class="n">datasets</span><span class="p">):</span>
+  <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Running on the </span><span class="si">%s</span><span class="s2"> dataset&quot;</span> <span class="o">%</span> <span class="n">dataset_title</span><span class="p">)</span>
+
+  <span class="n">X</span><span class="p">,</span> <span class="n">y</span> <span class="o">=</span> <span class="n">load_data</span><span class="p">()</span>
+  <span class="n">n_samples</span><span class="p">,</span> <span class="n">n_features</span> <span class="o">=</span> <span class="n">X</span><span class="o">.</span><span class="n">shape</span>
+
+  <span class="n">l1_ball</span> <span class="o">=</span> <a href="../../generated/copt.utils.L1Ball.html#copt.utils.L1Ball" title="View documentation for copt.utils.L1Ball"><span class="n">cp</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">L1Ball</span></a><span class="p">(</span><span class="n">n_features</span> <span class="o">/</span> <span class="mf">2.</span><span class="p">)</span>
+  <span class="n">f</span> <span class="o">=</span> <a href="../../generated/copt.utils.LogLoss.html#copt.utils.LogLoss" title="View documentation for copt.utils.LogLoss"><span class="n">cp</span><span class="o">.</span><span class="n">utils</span><span class="o">.</span><span class="n">LogLoss</span></a><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+  <span class="n">x0</span> <span class="o">=</span> <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.zeros.html#numpy.zeros" title="View documentation for numpy.zeros"><span class="n">np</span><span class="o">.</span><span class="n">zeros</span></a><span class="p">(</span><span class="n">n_features</span><span class="p">)</span>
+
+  <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">step_size</span><span class="p">,</span> <span class="n">label</span><span class="p">,</span> <span class="n">marker</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">([</span>
+      <span class="p">[</span><span class="s2">&quot;adaptive&quot;</span><span class="p">,</span> <span class="s2">&quot;Frank-Wolfe adaptive step-size&quot;</span><span class="p">,</span> <span class="s2">&quot;^&quot;</span><span class="p">],</span>
+      <span class="p">[</span><span class="s2">&quot;adaptive3&quot;</span><span class="p">,</span> <span class="s2">&quot;adaptive++ step-size&quot;</span><span class="p">,</span> <span class="s2">&quot;s&quot;</span><span class="p">],</span>
+      <span class="p">[</span><span class="kc">None</span><span class="p">,</span> <span class="s2">&quot;Lipschitz step-size&quot;</span><span class="p">,</span> <span class="s2">&quot;d&quot;</span><span class="p">]</span>
+      <span class="p">]):</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Running </span><span class="si">%s</span><span class="s2"> variant&quot;</span> <span class="o">%</span> <span class="n">label</span><span class="p">)</span>
+    <span class="n">dt_prev</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">overlap</span> <span class="o">=</span> <span class="p">[]</span>
+
+    <span class="k">def</span> <span class="nf">trace</span><span class="p">(</span><span class="n">kw</span><span class="p">):</span>
+      <span class="sd">&quot;&quot;&quot;Store vertex overlap during execution of the algorithm.&quot;&quot;&quot;</span>
+      <span class="n">s_t</span> <span class="o">=</span> <span class="n">kw</span><span class="p">[</span><span class="s2">&quot;update_direction&quot;</span><span class="p">]</span> <span class="o">-</span> <span class="n">kw</span><span class="p">[</span><span class="s2">&quot;x&quot;</span><span class="p">]</span>
+      <span class="k">if</span> <span class="n">dt_prev</span><span class="p">:</span>
+        <span class="c1"># check if the vertex of this and the previous iterate</span>
+        <span class="c1"># coincide. Since these might be sparse vectors, we use</span>
+        <span class="c1"># sparse.linalg.norm to make the comparison</span>
+        <span class="n">prev_overlap</span> <span class="o">=</span> <span class="n">overlap</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+        <span class="k">if</span> <a href="https://docs.scipy.org/doc/numpy/reference/generated/numpy.linalg.norm.html#numpy.linalg.norm" title="View documentation for numpy.linalg.norm"><span class="n">np</span><span class="o">.</span><span class="n">linalg</span><span class="o">.</span><span class="n">norm</span></a><span class="p">(</span><span class="n">dt_prev</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">-</span> <span class="n">s_t</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+          <span class="n">overlap</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">prev_overlap</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">else</span><span class="p">:</span>
+          <span class="n">overlap</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">prev_overlap</span><span class="p">)</span>
+        <span class="n">dt_prev</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="n">s_t</span>
+      <span class="k">else</span><span class="p">:</span>
+        <span class="n">overlap</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+        <span class="n">dt_prev</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">s_t</span><span class="p">)</span>
+
+    <span class="k">if</span> <span class="n">label</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;Frank-Wolfe&quot;</span><span class="p">):</span>
+      <a href="../../generated/copt.minimize_frank_wolfe.html#copt.minimize_frank_wolfe" title="View documentation for copt.minimize_frank_wolfe"><span class="n">cp</span><span class="o">.</span><span class="n">minimize_frank_wolfe</span></a><span class="p">(</span>
+          <span class="n">f</span><span class="o">.</span><span class="n">f_grad</span><span class="p">,</span>
+          <span class="n">x0</span><span class="p">,</span>
+          <span class="n">l1_ball</span><span class="o">.</span><span class="n">lmo</span><span class="p">,</span>
+          <span class="n">callback</span><span class="o">=</span><span class="n">trace</span><span class="p">,</span>
+          <span class="n">max_iter</span><span class="o">=</span><span class="mi">50</span><span class="p">,</span>
+          <span class="n">step_size</span><span class="o">=</span><span class="n">step_size</span><span class="p">,</span>
+          <span class="n">verbose</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span>
+          <span class="n">lipschitz</span><span class="o">=</span><span class="n">f</span><span class="o">.</span><span class="n">lipschitz</span><span class="p">,</span>
+      <span class="p">)</span>
+    <span class="k">elif</span> <span class="n">label</span><span class="o">.</span><span class="n">startswith</span><span class="p">(</span><span class="s2">&quot;Pairwise&quot;</span><span class="p">):</span>
+      <span class="k">pass</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">overlap</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="n">label</span><span class="p">,</span> <span class="n">marker</span><span class="o">=</span><span class="n">marker</span><span class="p">,</span> <span class="n">markevery</span><span class="o">=</span><span class="mi">7</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span>
+    <span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
+  <span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s2">&quot;number of iterations&quot;</span><span class="p">)</span>
+  <span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s2">&quot;LMO overlap&quot;</span><span class="p">)</span>
+  <span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="n">dataset_title</span><span class="p">)</span>
+  <span class="n">fig</span><span class="o">.</span><span class="n">tight_layout</span><span class="p">()</span>  <span class="c1"># otherwise the right y-label is slightly clipped</span>
+  <span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">()</span>
+<span class="c1"># plt.legend()</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+<p class="sphx-glr-timing"><strong>Total running time of the script:</strong> ( 0 minutes  0.000 seconds)</p>
+<p><strong>Estimated memory usage:</strong>  0 MB</p>
+<div class="sphx-glr-footer class sphx-glr-footer-example docutils container" id="sphx-glr-download-auto-examples-frank-wolfe-plot-vertex-overlap-py">
+<div class="sphx-glr-download docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/eb11ed479e64ebf003385632134f0b19/plot_vertex_overlap.py"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Python</span> <span class="pre">source</span> <span class="pre">code:</span> <span class="pre">plot_vertex_overlap.py</span></code></a></p>
+</div>
+<div class="sphx-glr-download docutils container">
+<p><a class="reference download internal" download="" href="../../_downloads/84cf0b4d5bf86fe00f67abc2f3471066/plot_vertex_overlap.ipynb"><code class="xref download docutils literal notranslate"><span class="pre">Download</span> <span class="pre">Jupyter</span> <span class="pre">notebook:</span> <span class="pre">plot_vertex_overlap.ipynb</span></code></a></p>
+</div>
+</div>
+<p class="sphx-glr-signature"><a class="reference external" href="https://sphinx-gallery.github.io">Gallery generated by Sphinx-Gallery</a></p>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="../../index.html">
+              <img class="logo" src="../../_static/logo.png" alt="Logo"/>
+            </a></p>
+<h1 class="logo"><a href="../../index.html">copt</a></h1>
+
+
+
+<p class="blurb">Optimization in Python</p>
+
+
+
+
+<p>
+<iframe src="https://ghbtns.com/github-btn.html?user=openopt&repo=copt&type=watch&count=true&size=large&v=2"
+  allowtransparency="true" frameborder="0" scrolling="0" width="200px" height="35px"></iframe>
+</p>
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../proximal_gradient.html">Gradient-based methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../proximal_splitting.html">Proximal splitting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../frank_wolfe.html">Frank-Wolfe and other projection-free algorithms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../incremental.html">Incremental methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../loss_functions.html">Loss and regularization functions</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../index.html">Examples</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="../plot_jax_copt.html">Combining COPT with JAX</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plot_accelerated.html">Accelerated gradient descent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plot_saga_vs_svrg.html">SAGA vs SVRG</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../plot_group_lasso.html">Group Lasso regularization</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html#frank-wolfe">Frank-Wolfe</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../index.html#proximal-splitting">Proximal Splitting</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../datasets.html">Datasets</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../utils.html">Other utility functions</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../citing.html">Citing</a></li>
+</ul>
+
+
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;COPT developers.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 2.2.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.11</a>
+      
+      |
+      <a href="../../_sources/auto_examples/frank_wolfe/plot_vertex_overlap.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+    <a href="https://github.com/openopt/copt" class="github">
+        <img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub"  class="github"/>
+    </a>
+    
+
+    
+  </body>
+</html>
