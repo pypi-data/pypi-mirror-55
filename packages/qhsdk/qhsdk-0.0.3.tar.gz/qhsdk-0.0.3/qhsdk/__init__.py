@@ -1,0 +1,22 @@
+"""qhsdk 是基于 Python 的为奇货可查客户服务的专用API接口"""
+
+"""
+0.0.1
+发布测试版本
+
+0.0.2
+调试接口
+
+0.0.3
+增加lxml=4.4.1
+"""
+
+__version__ = '0.0.3'
+__author__ = 'qhkch'
+
+"""
+奇货可查-工具
+"""
+from qhsdk.qhkc.qhkc_tool import (tool_foreign,
+                                  tool_gdp,
+                                  tool_nebula)
