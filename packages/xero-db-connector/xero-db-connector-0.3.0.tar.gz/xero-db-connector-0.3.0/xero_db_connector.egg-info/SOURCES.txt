@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.py
+xero_db_connector/__init__.py
+xero_db_connector/extract.py
+xero_db_connector/extract_ddl.sql
+xero_db_connector/load.py
+xero_db_connector/load_ddl.sql
+xero_db_connector.egg-info/PKG-INFO
+xero_db_connector.egg-info/SOURCES.txt
+xero_db_connector.egg-info/dependency_links.txt
+xero_db_connector.egg-info/requires.txt
+xero_db_connector.egg-info/top_level.txt
