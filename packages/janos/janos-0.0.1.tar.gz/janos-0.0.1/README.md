@@ -1,0 +1,1 @@
+This is a package for the solver JANOS. You can find additional details here: http://janos.opt-operations.com/.
