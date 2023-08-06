@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.py
+rellax/__init__.py
+rellax/__main__.py
+rellax/rellax.py
+rellax.egg-info/PKG-INFO
+rellax.egg-info/SOURCES.txt
+rellax.egg-info/dependency_links.txt
+rellax.egg-info/entry_points.txt
+rellax.egg-info/requires.txt
+rellax.egg-info/top_level.txt

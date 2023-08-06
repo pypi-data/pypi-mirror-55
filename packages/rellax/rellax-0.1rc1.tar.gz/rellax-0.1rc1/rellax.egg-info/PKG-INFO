@@ -1,0 +1,83 @@
+Metadata-Version: 2.1
+Name: rellax
+Version: 0.1rc1
+Summary: Command Line short term knowledgebase management system.
+Home-page: UNKNOWN
+Author: Jerrad Anderson
+Author-email: 
+License: UNKNOWN
+Description: # Rellax 
+        Command Line Knowledge base
+        
+        ## Description
+        Command line driven knowledge base written in Python to aid and drive short term project focus. This tool is meant to aid in focusing and refocusing pentesting efforts. Imagine that you are on an engagement and wish to capture your iterative thought processes as you progress for later analsys and disection. This tool should be a subtle frictionless method for recording the internal monologue that will help show others and your self how you got from point A to B. I am attempting to avoid sqlite as a backend DB as all output from this exercise should be easily transportable to external documentation.
+        
+        ## Structure of stored data
+        
+        The below is a sample data store for a particular engagement filed called acme_engagement.json
+        
+        <pre>
+            {
+                "engagement" : "acme"
+                "qna" : 
+                    [
+                        {
+                            "question" : 
+                                { "text" : "Is there a web presence for ACME?", 
+                                  "date" : "YYYYMMDD HH:MM:SS", 
+                                  "tags" : ["initial", "access", "permiter"]
+                                }, 
+                            "answers" : [
+                                    {"text" : "Yes there is a web site and a few api backends", 
+                                     "date" : "YYYYMMDD HH:MM:SS", 
+                                     "tags" : " ["web", "IIS"]}
+                                    {"text" : "There is also an email server", 
+                                     "date" : "YYYYMMDD HH:MM:SS"}
+                                ]
+                        },
+                        {
+                            "question" : 
+                                { "text" : "Who administers the web server?",
+                                  "date" : "YYYYMMDD HH:MM:SS"
+                                }, 
+                        },
+        
+                    ]
+            },
+        
+        </pre>
+        
+        As you can tell from the above json structure, the hope is to quickly write down a question to help quell the flow of endless inner thought and allow you to categorize and prioritize next steps. The hope is that you will be able to quickly list  previously asked questions and provide quick answers. Then once attempting to figure out what is left to do you can locate questions you asked of yourself and continue down through the rabbit hole.
+        
+        
+        ## Usage
+        
+        When using this tool for the first time you will need to initialize the data store
+        
+        <pre>
+        usage: rellax.py init [-h]
+        
+        Initialize json datastore
+        
+        optional arguments:
+          -h, --help  show this help message and exit
+        </pre>
+        
+        Once started you can then begin to create your knowledge base. Commands are fairly self explanatory. Add question, search for question, answer question..etc.
+        
+        <pre>
+        
+        usage: rellax.py [-h] {init,add,search,ans} ...
+        
+        Command line Knowledgebase tracker
+        
+        positional arguments:
+          {init,add,search,ans}
+        
+        optional arguments:
+          -h, --help            show this help message and exit
+        </pre>
+        
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
