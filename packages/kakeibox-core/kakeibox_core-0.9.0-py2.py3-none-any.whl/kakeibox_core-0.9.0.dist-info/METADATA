@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: kakeibox-core
+Version: 0.9.0
+Summary: Python Library to manage personal finance using Kakeibo method
+Home-page: https://gitlab.com/kakeibox/kakeibox-core
+Author: Jonathan López
+Author-email: jlopez@fipasoft.com.mx
+License: GNU General Public License v3
+Keywords: kakeibox
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+===============================
+kakeibox_core
+===============================
+
+
+.. image:: https://img.shields.io/pypi/v/kakeibox-core.svg
+        :target: https://pypi.python.org/pypi/kakeibox-core
+
+
+
+Python Library to manage personal finance using Kakeibo method.
+
+
+* Free software: GNU General Public License v3
+
+
+Features
+--------
+
+* TODO
+
+
+
+=======
+History
+=======
+
+0.1.0 (2019-08-22)
+------------------
+
+* First release on PyPI.
+
+
