@@ -1,0 +1,15 @@
+[console_scripts]
+ocrd-cis-align = ocrd_cis.align.cli:cis_ocrd_align
+ocrd-cis-data = ocrd_cis.data.__main__:main
+ocrd-cis-ocropy-binarize = ocrd_cis.ocropy.cli:cis_ocrd_ocropy_binarize
+ocrd-cis-ocropy-clip = ocrd_cis.ocropy.cli:cis_ocrd_ocropy_clip
+ocrd-cis-ocropy-denoise = ocrd_cis.ocropy.cli:cis_ocrd_ocropy_denoise
+ocrd-cis-ocropy-deskew = ocrd_cis.ocropy.cli:cis_ocrd_ocropy_deskew
+ocrd-cis-ocropy-dewarp = ocrd_cis.ocropy.cli:cis_ocrd_ocropy_dewarp
+ocrd-cis-ocropy-rec = ocrd_cis.ocropy.cli:cis_ocrd_ocropy_rec
+ocrd-cis-ocropy-recognize = ocrd_cis.ocropy.cli:cis_ocrd_ocropy_recognize
+ocrd-cis-ocropy-resegment = ocrd_cis.ocropy.cli:cis_ocrd_ocropy_resegment
+ocrd-cis-ocropy-segment = ocrd_cis.ocropy.cli:cis_ocrd_ocropy_segment
+ocrd-cis-profile = ocrd_cis.profile.cli:cis_ocrd_profile
+ocrd-cis-wer = ocrd_cis.wer.cli:cis_ocrd_wer
+
