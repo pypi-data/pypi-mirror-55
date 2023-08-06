@@ -1,0 +1,2 @@
+miner2
+test
