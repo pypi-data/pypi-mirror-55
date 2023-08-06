@@ -1,0 +1,13 @@
+invenio_files_multisum_storage/__init__.py,sha256=U9cghTl7rURPQqpwiote4-0BjHQ5BSkkbTK8PKmd4dI,510
+invenio_files_multisum_storage/checksums.py,sha256=4-Lp4mnH4HUaG8LoWxV5q1a60G5Kt0yQz-iMql60xZs,1095
+invenio_files_multisum_storage/config.py,sha256=WdenOkVQFEp6mZDuY7uqPEx_WADrfr3SGDOIintiuIw,2295
+invenio_files_multisum_storage/ext.py,sha256=_OeCXd3M8_on7kPPGP5HS1yHhRRmHDkjEMQ_O4LLzTM,692
+invenio_files_multisum_storage/storage.py,sha256=zHgrH3B5k0fwwKpiAYwv-IemhoHbQx-I6eQrNkOfhWQ,1792
+invenio_files_multisum_storage/version.py,sha256=Bl7Yp2HZsaQGhGb654bDs9eSczTSpoYKWQLCXWTR-SY,476
+invenio_files_multisum_storage-1.0.4.dist-info/AUTHORS.rst,sha256=4JNI1f5SlA2juj5zbYf-J-R41UX201gNN33EvRR9xfc,317
+invenio_files_multisum_storage-1.0.4.dist-info/LICENSE,sha256=eWnJuQGNTOTRSvy72OXDro9Fbg7omPM7oHqjqp0IBOA,1063
+invenio_files_multisum_storage-1.0.4.dist-info/METADATA,sha256=UDX1pgSBbGHKWfJFi1oD3r3jlnAx7xkUJjZyTPqn-JI,2226
+invenio_files_multisum_storage-1.0.4.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+invenio_files_multisum_storage-1.0.4.dist-info/entry_points.txt,sha256=glBrRo6TFx5P_DhyLTFuHnH3JwxDW_OSTbUiFOGiB2k,118
+invenio_files_multisum_storage-1.0.4.dist-info/top_level.txt,sha256=Dtxw01w-5BV4qsUH0VrtW7Sx9bfiLCQZHKvCQPCYsP4,31
+invenio_files_multisum_storage-1.0.4.dist-info/RECORD,,
