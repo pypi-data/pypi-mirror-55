@@ -1,0 +1,17 @@
+Metadata-Version: 1.2
+Name: oswald
+Version: 0.0.3
+Summary: Organize and rapidly/easily create endpoints for an API. Built on top of Falcon.
+Home-page: https://github.com/ms7m/oswald
+Author: Mustafa Mohamed
+Author-email: mustafa@ms7m.me
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Requires-Python: >=3.6.0
