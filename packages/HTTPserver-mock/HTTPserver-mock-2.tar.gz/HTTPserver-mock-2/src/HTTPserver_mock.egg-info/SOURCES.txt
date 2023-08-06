@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/HTTPserver_mock.py
+src/HTTPserver_mock.egg-info/PKG-INFO
+src/HTTPserver_mock.egg-info/SOURCES.txt
+src/HTTPserver_mock.egg-info/dependency_links.txt
+src/HTTPserver_mock.egg-info/top_level.txt

@@ -1,0 +1,64 @@
+Metadata-Version: 2.1
+Name: HTTPserver-mock
+Version: 2
+Summary: a simple http-server mockup to test web crawler.
+Home-page: https://github.com/YUChoe/noizze_crawler
+Author: Tom YU Choe
+Author-email: yonguk.choe@gmail.com
+License: MIT
+Description: [![PEP8](https://img.shields.io/badge/code%20style-pep8-orange.svg)](https://www.python.org/dev/peps/pep-0008/)
+        
+        # HTTPserver-mock
+        
+        a simple http-server mockup to test web crawler.
+        
+        ## Installation
+        Run the folowing to install:
+        
+        ```shell
+        pip install HTTPserver-mock
+        ```
+        
+        ## Usage
+        
+        ```python
+        from src.HTTPserver_mock import HTTPserver_mock
+        import noizze_crawler as nc
+        
+        
+        @HTTPserver_mock()
+        def test_crawler():
+            (title, desc, image_url, html) = nc.crawler('http://localhost:8000/index.html')
+            print('title:', title)
+            print('desc:', desc)
+            print('image_url:', image_url)
+            print('html:', html[:1000])
+        
+        
+        if __name__ == '__main__':
+            test_crawler()
+        ```
+        
+        ```bash
+        $ python test.py
+        127.0.0.1 - - [07/Nov/2019 13:34:55] "GET /index.html HTTP/1.1" 200 -
+        1573101292.684394 httpserver_mock started
+        <h2>nope</h2>
+        1573101296.704611 httpserver_mock finished
+        
+        ```
+        
+        ## ChangeLog
+        * v2: PyPI published
+        * v1: Test alpha 
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: System Administrators
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX :: Linux
+Description-Content-Type: text/markdown
