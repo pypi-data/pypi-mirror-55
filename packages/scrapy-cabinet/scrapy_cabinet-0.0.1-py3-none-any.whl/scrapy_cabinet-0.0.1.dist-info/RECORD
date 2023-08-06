@@ -1,0 +1,15 @@
+scrapy_cabinet/__init__.py,sha256=zVBihk4tsF4OwWj3qEVEO5TSEmXXHRy0YYZOh6vZVNA,184
+scrapy_cabinet/__version__.py,sha256=uWosB9KL1BOUUpWD3CjGQqLwDg-LTJO9cn5aNLnFCqY,534
+scrapy_cabinet/exceptions.py,sha256=zZtSaX7-6hsGwHEPi32mLSlNpIZIWzNcTO9vX7hZqkU,177
+scrapy_cabinet/types.py,sha256=9zf1FoWr3B5daA5NCIQe_5TpTGsniho9O3KZF82LlKQ,419
+scrapy_cabinet/utils.py,sha256=sJcDxZHFtG8tnO4CyE9Ug3cjiv2z-bGpbxS9xfh2niA,1733
+scrapy_cabinet/downloadermiddlewares/__init__.py,sha256=2V35ib-L4WDeDFg7aQ5dz6BC04C3pLjffr03k1YtSek,205
+scrapy_cabinet/downloadermiddlewares/proxy_downloader_middleware.py,sha256=_jwe0F-9LZ_AvLZwiWIEAXrE9pYYak9xuT3o1VfvRcI,2685
+scrapy_cabinet/extensions/__init__.py,sha256=DesOzlL-GnvEtecpY0XAwB8jlaFOicCgupS2fZSErxU,218
+scrapy_cabinet/extensions/redis_spider_idle_closed_extensions.py,sha256=rravaB6smC8FGgHxaMFkT9On4LyAGrf1910Iw9mMDiY,2655
+scrapy_cabinet/spidermiddlewares/__init__.py,sha256=7xBVMqv5AJxEtV7NSXfriV-6cg9TzLt5QSzNb38MOL0,137
+scrapy_cabinet-0.0.1.dist-info/LICENSE,sha256=N_P49FIWYbLj2p-z3A0Z35ker2xIef-lxsfx9XIeeoE,1077
+scrapy_cabinet-0.0.1.dist-info/METADATA,sha256=yKaToaIXeKC_1Aq6Wf2nSXam789Z1dMzHHd22-VJJP8,1227
+scrapy_cabinet-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+scrapy_cabinet-0.0.1.dist-info/top_level.txt,sha256=q1lAb_LxN_1Nc3T9MNo6nSR-khODjgCWu0AU7Nq8LTA,15
+scrapy_cabinet-0.0.1.dist-info/RECORD,,
