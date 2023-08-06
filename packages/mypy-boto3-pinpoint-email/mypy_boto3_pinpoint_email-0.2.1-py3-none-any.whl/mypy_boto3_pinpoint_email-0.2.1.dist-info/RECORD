@@ -1,0 +1,10 @@
+mypy_boto3_pinpoint_email/__init__.py,sha256=6A-nC1XSNKqGRHOG7q6ZS0GhTbiFf1hsHkQAn299lRA,120
+mypy_boto3_pinpoint_email/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_pinpoint_email/client.py,sha256=0d0ys_9LCdM5uxLZicWc2K8IMhG5hRg0q2D3CzfZ5ZE,192607
+mypy_boto3_pinpoint_email/paginator.py,sha256=B_MiRHPiAPqx4lx8uxAen7gH3ifNk9Bz3JYO-0xBA_s,16111
+mypy_boto3_pinpoint_email/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_pinpoint_email/type_defs.py,sha256=g9ds3uKUErLwHYxa0bebPZWNuZGkRJX3vJaoGTHbpMk,240968
+mypy_boto3_pinpoint_email-0.2.1.dist-info/METADATA,sha256=ajQNX6bLZdY-JRQ9rOb0SU2yMdJH2kKBZu7mCpgaNn0,1081
+mypy_boto3_pinpoint_email-0.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_pinpoint_email-0.2.1.dist-info/top_level.txt,sha256=IcQ5qCKaCamaelQGoL48I5imuQlNrlqLelbsIRhZgdc,26
+mypy_boto3_pinpoint_email-0.2.1.dist-info/RECORD,,
