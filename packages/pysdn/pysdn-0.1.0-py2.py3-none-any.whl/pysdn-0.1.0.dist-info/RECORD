@@ -1,0 +1,9 @@
+pysdn/__init__.py,sha256=G26ccCSMMkfGtEguIH2_0k_AkDpWmEW4joBwVUJnky4,169
+pysdn/cli.py,sha256=SNYDO-9hDPqSKQKeloIk43ywXIZ5F306dtx6DAmukZo,418
+pysdn/pysdn.py,sha256=VYoI-gwqwBKPx84cA0KnYDRofrgIXs8xtASD2nu5fE0,44
+pysdn-0.1.0.dist-info/LICENSE,sha256=JpyU-u_7tRLlNHc8QF-8NorgTy1C4FWnyJ_2PtCeN9s,1088
+pysdn-0.1.0.dist-info/METADATA,sha256=NJvaxBod3kenInNm80fRxvV94sa-gzj3ySdxFxx4pWs,1938
+pysdn-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+pysdn-0.1.0.dist-info/entry_points.txt,sha256=4zy4MfJNOis9owYXBMxfsXK69DlPU9ntLjqFnODQpLk,42
+pysdn-0.1.0.dist-info/top_level.txt,sha256=6iImHQvTW-cQlWrGp4W_NBwCrpqSCoZ0DYaIhmoR9Ec,6
+pysdn-0.1.0.dist-info/RECORD,,
