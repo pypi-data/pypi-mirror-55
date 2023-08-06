@@ -1,0 +1,6 @@
+include README.rst LICENSE CHANGES.rst
+recursive-include docs *
+
+include versioneer.py
+include rstools/_version.py
+include srtools/_version.py
