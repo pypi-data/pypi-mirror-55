@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: pg-stream-copy
+Version: 1.0.1
+Summary: RTB House apps pg_stream_copy
+Home-page: https://github.com/rtbhouse-apps/rtbhouse-pg-bulk-inserter
+Author: RTB House Apps team
+Author-email: apps@rtbhouse.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: ~=3.7
+Provides-Extra: dev
+Provides-Extra: e2e
+Provides-Extra: ci
