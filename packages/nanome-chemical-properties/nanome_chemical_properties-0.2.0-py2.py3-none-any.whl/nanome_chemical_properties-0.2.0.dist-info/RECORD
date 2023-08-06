@@ -1,0 +1,13 @@
+nanome_chemical_properties/ChemicalProperties.py,sha256=UZXaP1jV0A-9D_ByLhXd9FZFyGaAfjw0kjAEaqEXvww,20592
+nanome_chemical_properties/ESOLCalculator.py,sha256=d_gCecNsqeB3pWYwJgeEOt1j3lM3TX1pIy2KimxCmow,2835
+nanome_chemical_properties/PropertyCalculator.py,sha256=MPhT5O15GQP0OT4oXjzX3G8NMhAN7-KCNGzKLd0QGzY,1274
+nanome_chemical_properties/__init__.py,sha256=yFjtGeeflYrrJoBawohrBYAOxqp9TwcrFdjrVnyJq-s,39
+nanome_chemical_properties/menu.json,sha256=5ye6-td5oPVh3zU5FCU-J7WjGiq1uzQm0fIlV9SKxow,25791
+nanome_chemical_properties/icons/check.png,sha256=X88AQIsICkQP9KkcBxM3HJaPH8eHp5QLLbG7cj5zK88,3400
+nanome_chemical_properties/icons/edit.png,sha256=DccNNNEmYjJePTUnBOZQVnE6UYuQ00y8aM98XVuozLU,6398
+nanome_chemical_properties-0.2.0.dist-info/LICENSE,sha256=vqe291l7NhQb7tnrc9qBo7Qt6DrGLnY-9iBeB3Rx7xc,1063
+nanome_chemical_properties-0.2.0.dist-info/METADATA,sha256=DZ5huO6w7AMiI0wPjSvrL-_wYD8psDz5TEbD_qry3Es,2487
+nanome_chemical_properties-0.2.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+nanome_chemical_properties-0.2.0.dist-info/entry_points.txt,sha256=UBE6XV9dt2HCpzoacojm6gJ_vI3V2QBgeebIPzQ8IEw,99
+nanome_chemical_properties-0.2.0.dist-info/top_level.txt,sha256=J3X78HXpxX9v7KTK0JMKJ490umDVY5iUQ9NepWem_0I,27
+nanome_chemical_properties-0.2.0.dist-info/RECORD,,
