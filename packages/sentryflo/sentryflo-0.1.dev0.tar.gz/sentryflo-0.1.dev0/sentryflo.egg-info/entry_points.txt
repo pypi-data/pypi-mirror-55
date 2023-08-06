@@ -1,0 +1,3 @@
+[sentry.plugins]
+sentry_sns = sentryflo.amazon_sns.plugin:AmazonSNSPlugin
+
