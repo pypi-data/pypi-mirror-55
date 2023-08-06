@@ -1,0 +1,3 @@
+[console_scripts]
+dp-dl = dp_dl.cli:main
+
