@@ -1,0 +1,11 @@
+i3egg/__init__.py,sha256=NO1f7OyzJj8jsJwjRWtDa0GJPiHbvFFYZ0xNWgpvTtE,74
+i3egg/egg.py,sha256=h45bShZQa9WFuwllOy10FYKsO-oilm0JGcxR96h1vIo,2488
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_egg.py,sha256=-w8rm8gX2pJkI5u1yDXKUp9C73l7UPcn1lvD_8jK0iQ,2124
+i3egg-0.9.3.dist-info/LICENSE,sha256=hIahDEOTzuHCU5J2nd07LWwkLW7Hko4UFO__ffsvB-8,34523
+i3egg-0.9.3.dist-info/METADATA,sha256=rM3iQU3LHj4V-zvOWzr5W2_Pi5i9C44vUqMi-VI7fiA,3848
+i3egg-0.9.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+i3egg-0.9.3.dist-info/entry_points.txt,sha256=idlwA-qRuDBomJ1TroFxj5goEB3wdzxZoORxuuZJlm0,42
+i3egg-0.9.3.dist-info/top_level.txt,sha256=PUXxGxU-g62cud6nr8FcG0lmMl1aDuTKB4Y2_M5aaAs,11
+i3egg-0.9.3.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+i3egg-0.9.3.dist-info/RECORD,,
