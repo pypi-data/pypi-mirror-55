@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: qsim
+Version: 0.1.0.dev0
+Summary: A simple package for simulating quantum circuits.
+Home-page: https://github.com/jbweston/qsim
+Author: Joseph Weston
+Author-email: joseph@weston.cloud

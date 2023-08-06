@@ -1,0 +1,40 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "qsim"
+author = "Joseph Weston"
+author-email = "joseph@weston.cloud"
+home-page = "https://github.com/jbweston/qsim"
+requires-python=">=3.6"
+description-file="README.md"
+keywords = "quantum simulator"
+classifiers = [
+    "License :: OSI Approved :: MIT License",
+    "Development Status :: 1 - Planning",
+    "Intended Audience :: Science/Research",
+    "Topic :: Scientific/Engineering",
+    "Topic :: Scientific/Engineering :: Physics",
+    "Programming Language :: Python :: 3.6",
+    "Programming Language :: Python :: 3.7",
+]
+requires = [
+    "numpy",
+]
+
+[tool.flit.metadata.requires-extra]
+test = [
+    "pytest",
+    "pytest-cov",
+    "pytest-flake8",
+    "hypothesis",
+    "tox",
+    "flake8-per-file-ignores",
+]
+docs = [
+    "sphinx",
+    "sphinx-rtd-theme",
+    "m2r",  # markdown support
+    "sphinxcontrib.apidoc",  # run sphinx-apidoc when building docs
+]
