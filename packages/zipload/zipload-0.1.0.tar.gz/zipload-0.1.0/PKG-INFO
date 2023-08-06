@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: zipload
+Version: 0.1.0
+Summary: A simply python module to load zip archives into your python path
+Author: Eli Uriegas
+Author-email: eliasuriegas@gmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
