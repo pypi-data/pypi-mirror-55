@@ -1,0 +1,10 @@
+mapequation/__init__.py,sha256=nNtnHVuXXX-jSBQDi1eyAefcQ3jYwknSh0xEHUBHEaI,40
+mapequation/codelength.py,sha256=FeVZvOfJxRhAut93_esUh58d1LWY-2sUXTVIG4PXZAE,6214
+mapequation/grassberger.py,sha256=9ywAJL93HqPxCJeAU3p8-NdOFTRB1Zr_gKDezCNYRZY,503
+mapequation/read_file.py,sha256=tzz3VA7RcPEhLpxE4Lk223vfyKHOdk4jFH6q-TtyJ4U,1556
+mapequation/within_context.py,sha256=NIDiJ7o4S7aPNEvUQY3YgkT2oV1tqnw80z5eznJXuf4,348
+mapequation-0.1.dist-info/LICENSE,sha256=L9u_5-Gj5lFqiksSUalDGuAUPJkxoNQuNX5zQv4ceV4,1077
+mapequation-0.1.dist-info/METADATA,sha256=kA8FCNZPTh1sASnjJaSZ1xcnRi_O_6yPXW9FhxpQ5EU,361
+mapequation-0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mapequation-0.1.dist-info/top_level.txt,sha256=ZZolXvJ7B75s1UXhF9MLIH1mKZAchV2M5CP68WbxecQ,12
+mapequation-0.1.dist-info/RECORD,,
