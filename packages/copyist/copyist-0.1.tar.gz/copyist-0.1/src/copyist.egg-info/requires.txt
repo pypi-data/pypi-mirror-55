@@ -1,0 +1,10 @@
+tomlkit
+
+[:python_version < "3.8"]
+importlib_metadata
+
+[dev]
+isort
+black
+check-manifest
+zest.releaser
