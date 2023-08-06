@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: elio-apep
+Version: 1.0
+Summary: A collection of util functions and methods writ in python the elioWay.
+Home-page: https://elioway.gitlab.io/elioangels/apep
+Author: Tim Bushell
+Author-email: tcbushell@gmail.com
+License: UNKNOWN
+Description: ![](https://elioway.gitlab.io/elioangels/apep/elio-apep-logo.png)
+        
+        > The ancient Egyptian deity who embodied chaos **the elioWay**
+        
+        # apep ![alpha](https://elioway.gitlab.io/static/alpha.png "alpha")
+        
+        A collection of util functions and methods writ in **python** the **elioWay**.
+        
+        - [apep Documentation](https://elioway.gitlab.io/elioangels/apep)
+        
+        ## Installing
+        
+        ```shell
+        pip install apep
+        ```
+        
+        - [Installing apep](https://elioway.gitlab.io/elioangels/apep/installing.html)
+        
+        ## Seeing is Believing
+        
+        ```shell
+        git clone https://gitlab.com/elioangels/apep.git
+        virtualenv --python=python3 venv-apep
+        source venv-apep/bin/activate
+        # or
+        source venv-apep/bin/activate.fish
+        pip install -r requirements/local.txt
+        ```
+        
+        ## Nutshell
+        
+        ### `py.test -x`
+        
+        - [apep Quickstart](https://elioway.gitlab.io/elioangels/apep/quickstart.html)
+        - [apep Credits](https://elioway.gitlab.io/elioangels/apep/credits.html)
+        
+        ![](https://elioway.gitlab.io/elioangels/apep/apple-touch-icon.png)
+        
+        ## License
+        
+        [MIT](LICENSE) [Tim Bushell](mailto:tcbushell@gmail.com)
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Software Development :: Libraries
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
