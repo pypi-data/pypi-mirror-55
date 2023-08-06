@@ -1,0 +1,9 @@
+numpy
+astropy
+bokeh
+pysynphot
+scipy
+astroquery
+dustmaps
+pandas
+svo_filters
