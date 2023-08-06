@@ -1,0 +1,14 @@
+s3parq/__init__.py,sha256=BFVt6OhK6t5iH8gy-b6hqAaD0d9-jsxlZC1Xm92-5hE,242
+s3parq/fetch_parq.py,sha256=zi_r7EVJ-S4d4pNshbjXclO0ojHJuz5MpFWdbyTnvCU,15774
+s3parq/publish_parq.py,sha256=QRdKMOcMzOG4VAadmlzcOucJ8MV7S2oz6w7Q3SK5IfI,14523
+s3parq/publish_redshift.py,sha256=5_QUM8LCHYLFgcXhBHYkrz8VFTy2U8JvDH2jOZqbH84,10957
+s3parq/s3_naming_helper.py,sha256=OuALh_jVYS6myksSo3tFq0QK59mSXqQ5QBP1UOz0KpQ,3909
+s3parq/s3parq.py,sha256=SZQAlYs4iqkpr1OUG2vuCRO6zzEICCubE24R54GQBz4,1706
+s3parq/sample_s3parq.py,sha256=EfC-V5mXeuIm7qh3p13x3NtE7rJosJLAqlhcXWhX4PI,516
+s3parq/session_helper.py,sha256=kp9qfOpI9g3GJINpt3YamlDlxeYmNAgHpsdsVEuDvTU,4121
+s3parq/testing_helper.py,sha256=NvFpoCo_pWpWBOyrf91xfOl6yaPHQKPmmo8zrNdxCXg,305
+s3parq-2.1.5.dist-info/LICENSE,sha256=hnPGr6leln18u39ZC5unPbdO1001leFMZ0J0V5cAzm0,1070
+s3parq-2.1.5.dist-info/METADATA,sha256=nZCQgbDvBk2ZpMlb1lu_QTaEYg7QlSfqE99PQ-1XF48,6622
+s3parq-2.1.5.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+s3parq-2.1.5.dist-info/top_level.txt,sha256=BEMOHfbm8G9EI-2wlnGymmFHB9c8MwB9qzv0OmAr5GE,7
+s3parq-2.1.5.dist-info/RECORD,,
