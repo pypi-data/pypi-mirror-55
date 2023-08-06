@@ -1,0 +1,13 @@
+venim/__init__.py,sha256=NhAXuUWwEP9x14lBS5pddUzcSTe957JjqCfW72Rc3_s,171
+venim/cleaning.py,sha256=RGQty0z3n5OnyXc3sm3BVXB3zxH1P1WbS2DVGX5lhKE,285
+venim/cli.py,sha256=h3qIAxqQYNWdNRJehCg1m_jXgmlAxzszQ5lhqpWs5us,354
+venim/mask_functions.py,sha256=C1raRejEDsc7Y9U5VFe5vm_wP3CJ92r-dT6o5t02mKk,1956
+venim/stats.py,sha256=Atp3yxkbxU-qulGa_3UF91NyrNlbRlEPr4VR5xuqXrM,1621
+venim/venim.py,sha256=VYoI-gwqwBKPx84cA0KnYDRofrgIXs8xtASD2nu5fE0,44
+venim-0.2.0.dist-info/AUTHORS.rst,sha256=SWI4jPNlR8VLec7UKR6Gf-MEHk3ULkAYuD-3DQ9pzjg,162
+venim-0.2.0.dist-info/LICENSE,sha256=3Ipo3JhysVwifNYPkpp2ZBC9HjdMPyWoY3_Vdizoznw,1071
+venim-0.2.0.dist-info/METADATA,sha256=-LhwDMgKWSgc79xqZGiTUYowa_NvZEqpKfigUhD2CKc,2333
+venim-0.2.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+venim-0.2.0.dist-info/entry_points.txt,sha256=UiZl7Lno0BnMFf9ghQNZpGOXXDmxxUH3hJXXSf7vJmE,42
+venim-0.2.0.dist-info/top_level.txt,sha256=nLUXm3l2XQwIktpvtQaCc-rtkxFgFT1by9iSt5s9GPY,6
+venim-0.2.0.dist-info/RECORD,,
