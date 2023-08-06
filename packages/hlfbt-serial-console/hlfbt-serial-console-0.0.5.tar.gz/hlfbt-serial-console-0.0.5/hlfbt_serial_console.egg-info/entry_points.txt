@@ -1,0 +1,3 @@
+[console_scripts]
+serial_console = hlfbt.serial_console.cli:main
+
