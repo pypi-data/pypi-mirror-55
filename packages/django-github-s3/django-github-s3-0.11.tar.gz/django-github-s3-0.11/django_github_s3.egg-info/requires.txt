@@ -1,0 +1,8 @@
+django>=1.11
+Pillow>=6.2.1
+
+[libcloud]
+apache-libcloud
+
+[sftp]
+paramiko
