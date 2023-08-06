@@ -1,0 +1,11 @@
+zope.hookable-5.0.0-py3.6-nspkg.pth,sha256=SWEVH-jEWsKYrL0qoC6GBJaStx_iKxGoAY9PQycFVC4,529
+zope.hookable-5.0.0.dist-info/namespace_packages.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.hookable-5.0.0.dist-info/top_level.txt,sha256=QpUHvpO4wIuZDeEgKY8qZCtD-tAukB0fn_f6utzlb98,5
+zope.hookable-5.0.0.dist-info/RECORD,,
+zope.hookable-5.0.0.dist-info/METADATA,sha256=0DqSf0FbS0TWR_Fx5Dl3iDjBL8WP4eRQHcqsJXIaBWQ,4904
+zope.hookable-5.0.0.dist-info/WHEEL,sha256=J8QCTcKkxhGknm4E-WnHiBUInD4YtJqRjI7PSXFrmP8,110
+zope/hookable/_zope_hookable.c,sha256=rnXI_8dreoBTWz15HB-WW69WDtcE-4tpODtb-_R0eVQ,7751
+zope/hookable/_zope_hookable.cpython-36m-i386-linux-gnu.so,sha256=R6RYqpusJtH693QJ0iZ5N1F7S_6-x5KL10N4RB_QbG4,35212
+zope/hookable/__init__.py,sha256=aSESu7a3bS9ha0BGtTjanFi2wIVQFRPOmwb41BC8boI,2194
+zope/hookable/tests/test_hookable.py,sha256=rVUonwRFQSWErLoJXaa2Wq0QlFy1oMFQSjZl6_UCxh4,6112
+zope/hookable/tests/__init__.py,sha256=Z9EJNKBQorYcdV6oaIRTRgF41SMRZEEoLltZCKyVPI8,47
