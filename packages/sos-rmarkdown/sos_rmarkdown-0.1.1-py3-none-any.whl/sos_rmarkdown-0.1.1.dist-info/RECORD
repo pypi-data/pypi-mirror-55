@@ -1,0 +1,9 @@
+sos_rmarkdown/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sos_rmarkdown/_version.py,sha256=esT8lkaYtu4m7tU5JUc9TsIOJQEzvpbQbfhPfRlCXRg,186
+sos_rmarkdown/converter.py,sha256=qEDqXTN98uhsm0_5EhTkWn72ys33BdlIAcDrzNWiVPE,12892
+sos_rmarkdown-0.1.1.dist-info/LICENSE,sha256=HAFraFfCTJGgY4X3u4O8cosrjJcHtU7qDmKqLDv-Gzo,1555
+sos_rmarkdown-0.1.1.dist-info/METADATA,sha256=N0jR-awU4UV7jC4kx9lsFo5bY0MLEwB10okWVzvcaXs,5528
+sos_rmarkdown-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+sos_rmarkdown-0.1.1.dist-info/entry_points.txt,sha256=YUv6SKH6kERsarO_KBvwW4w8GnrnJKPewV9HlpUHdMM,287
+sos_rmarkdown-0.1.1.dist-info/top_level.txt,sha256=82QEaVD9hfAlM7y6-PB5y2QEtDtzaX7F2k0vjB0WCOg,14
+sos_rmarkdown-0.1.1.dist-info/RECORD,,
