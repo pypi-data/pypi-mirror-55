@@ -1,0 +1,8 @@
+README.md
+setup.py
+codesignal_1_to_5.egg-info/PKG-INFO
+codesignal_1_to_5.egg-info/SOURCES.txt
+codesignal_1_to_5.egg-info/dependency_links.txt
+codesignal_1_to_5.egg-info/top_level.txt
+codesingnal_1_to_10/1_to_5.py
+codesingnal_1_to_10/__init__.py

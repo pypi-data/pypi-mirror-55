@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: codesignal-1-to-5
+Version: 0.0.1
+Summary: Code signals_1_to_5 programs Package
+Home-page: https://github.com/knaresh8464/Codesignals_10_programs
+Author: Kummari Naresh
+Author-email: kummarinaresh35@gmail.com
+License: UNKNOWN
+Description: # Codesignals_10_programs
+        10 programs of code signals
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
