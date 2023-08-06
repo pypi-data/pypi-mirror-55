@@ -1,0 +1,7 @@
+README.md
+setup.py
+pyvivint.egg-info/PKG-INFO
+pyvivint.egg-info/SOURCES.txt
+pyvivint.egg-info/dependency_links.txt
+pyvivint.egg-info/requires.txt
+pyvivint.egg-info/top_level.txt
