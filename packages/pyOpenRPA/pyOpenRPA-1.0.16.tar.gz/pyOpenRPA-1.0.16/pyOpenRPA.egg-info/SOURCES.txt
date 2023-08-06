@@ -1,0 +1,16 @@
+setup.py
+pyOpenRPA/Clipboard.py
+pyOpenRPA/IntegrationOrchestrator.py
+pyOpenRPA/JSONNormalize.py
+pyOpenRPA/ProcessCommunicator.py
+pyOpenRPA/Robot.py
+pyOpenRPA/UIDesktop.py
+pyOpenRPA/ValueVerify.py
+pyOpenRPA/Window.py
+pyOpenRPA/__init__.py
+pyOpenRPA.egg-info/PKG-INFO
+pyOpenRPA.egg-info/SOURCES.txt
+pyOpenRPA.egg-info/dependency_links.txt
+pyOpenRPA.egg-info/not-zip-safe
+pyOpenRPA.egg-info/requires.txt
+pyOpenRPA.egg-info/top_level.txt
