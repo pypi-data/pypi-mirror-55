@@ -1,0 +1,11 @@
+globus_sdk_tokenstorage/__init__.py,sha256=D8pGSbyPIE2dk9iAF3IkDih-vo1EE5rFA6Z0CeRPAx8,193
+globus_sdk_tokenstorage/abstract_base.py,sha256=CJSUFL-Loz1-EKUPP1ZqrWt6o6vR_7Q7c8we7jzpRA4,331
+globus_sdk_tokenstorage/file_adapters.py,sha256=yeCZQLIbOxInIFeafPVte1Sk-zh_2foh-9UyHBSppSY,4410
+globus_sdk_tokenstorage/sqlite_adapter.py,sha256=yXaPZkLfuH-9j7VZU2-Y4TiKIGyG-N8WfSq-LW_IASU,7059
+globus_sdk_tokenstorage/version.py,sha256=WALq7qlQV8Ikr_1B0GQEskq1I9wLTAkuTKiYAQbRWTY,136
+globus_sdk_tokenstorage-0.2.1.dist-info/COPYING,sha256=33WLilB3VWCgDSWJ2ESSzzJHDdknmDsDzwFeQtHpCfU,582
+globus_sdk_tokenstorage-0.2.1.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+globus_sdk_tokenstorage-0.2.1.dist-info/METADATA,sha256=CNaPtQSkzBeLOFvze2EQlpMmbx4Sr2xl2vDs8j8W658,2752
+globus_sdk_tokenstorage-0.2.1.dist-info/WHEEL,sha256=CihQvCnsGZQBGAHLEUMf0IdA4fRduS_NBUTMgCTtvPM,110
+globus_sdk_tokenstorage-0.2.1.dist-info/top_level.txt,sha256=P4VhGFAbN0bQYKx-bOdq8muqPiwGmg8zb_1i1uFOQbM,24
+globus_sdk_tokenstorage-0.2.1.dist-info/RECORD,,
