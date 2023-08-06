@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: rawautoparams
+Version: 0.0.3
+Summary: Thermo/Finnigan .raw file format parameters reader
+Home-page: https://gitlab.science.ru.nl/jzelenka/rawautoparams
+Author: Jan Zelenka
+Author-email: 3yanyanyan@gmail.com
+License: UNKNOWN
+Platform: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering :: Chemistry
+Requires-Dist: numpy
+Requires-Dist: rawprasslib
+
+## RawAutoParams
+
+RawAutoParams is an extension for RawPrassLib library which provides detailed readout of acquisiton parameters.
+
+## Tested instruments
+This code has been briefly tested on TSQ-7000, LCQ Deca and LCQ Advantage Max
+
+## Known drawbacks
+This code is experimental. Do not expect it will work in your case out of the box or you'll be disappointed.
+
+
