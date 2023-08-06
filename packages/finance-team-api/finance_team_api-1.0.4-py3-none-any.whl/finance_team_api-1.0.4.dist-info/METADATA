@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: finance-team-api
+Version: 1.0.4
+Summary: Financial Analysis Tool
+Home-page: https://gitlab.com/qraft_ai_finance/finance-team-api
+Author: Jae Hun Yun
+Author-email: jaehun.yun@qraftec.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: pandas
+Requires-Dist: scipy
+
+UNKNOWN
+
+
