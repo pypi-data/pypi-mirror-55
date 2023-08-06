@@ -1,0 +1,16 @@
+lgm/__init__.py,sha256=GA4JT6khTOtAbMPbOImNNGlMtMGjdvS4cY_CWUtWzV0,236
+lgm/awd_lstm.py,sha256=RvOAYryAZ8Pu0r6qrB7qZ5kyTV3srhwqJCUr6LP8T6g,17553
+lgm/callbacks.py,sha256=QNKawpdzhDG7-oTdJGPNlfYuSj_Y2ytKulUA0-HAo-c,14727
+lgm/data_block.py,sha256=IhWmqLK-7VOen-8JbxVyzreHpZZmIQ6QD5frFls_Fdo,25285
+lgm/datasets.py,sha256=cmxlJoIe-sc0Rm-qG2erIPdECBS354c1hxTevh0Brkg,7393
+lgm/hooks.py,sha256=RpWEohTkrWGBLh2XoWiPkIRMr8l2zTNA3n_djlcAEjQ,2289
+lgm/learner.py,sha256=h4XvDCJ6ipMhV5ACkQ0b7o2mE3twW0wk9hemkDrPMvM,5772
+lgm/metrics.py,sha256=rVDVBUWutpFBeuzIcQ0JJo-e4VdJ0sW4yo_9dNj7fso,905
+lgm/optimizer.py,sha256=6d16yzr5cqFvfy6traiQcNyCTw3MVDEVaTegPikgChU,6401
+lgm/rlearner.py,sha256=fXU-X_RfQsZnpfxi0fGERONuTPINqAi8wnchVmWG390,949
+lgm/utils.py,sha256=fdEAREVFIQt8Q3YjKQ_NmvcAy8KMw3blCUWEZ29Zo4M,8560
+lgm-0.0.8.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+lgm-0.0.8.dist-info/METADATA,sha256=m_H0al7pILUl2j-qPKrzNEw3-zvY3ugfMzPDUTiQKic,682
+lgm-0.0.8.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+lgm-0.0.8.dist-info/top_level.txt,sha256=yJgjk0vQum5P7HCtCVLtKGRLeteU7IIVD-KhpQdNzfg,4
+lgm-0.0.8.dist-info/RECORD,,
