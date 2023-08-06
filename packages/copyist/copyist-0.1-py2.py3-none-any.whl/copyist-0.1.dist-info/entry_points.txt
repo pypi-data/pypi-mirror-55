@@ -1,0 +1,3 @@
+[console_scripts]
+copyist = copyist.cli:main
+
