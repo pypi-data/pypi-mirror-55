@@ -1,0 +1,7 @@
+README.md
+setup.py
+___future___/__init__.py
+print_function.egg-info/PKG-INFO
+print_function.egg-info/SOURCES.txt
+print_function.egg-info/dependency_links.txt
+print_function.egg-info/top_level.txt
