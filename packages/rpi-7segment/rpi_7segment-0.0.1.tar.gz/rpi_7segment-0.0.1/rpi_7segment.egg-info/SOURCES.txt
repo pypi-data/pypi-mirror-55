@@ -1,0 +1,8 @@
+README.md
+setup.py
+rpi_7segment/__init__.py
+rpi_7segment/segments.py
+rpi_7segment.egg-info/PKG-INFO
+rpi_7segment.egg-info/SOURCES.txt
+rpi_7segment.egg-info/dependency_links.txt
+rpi_7segment.egg-info/top_level.txt
