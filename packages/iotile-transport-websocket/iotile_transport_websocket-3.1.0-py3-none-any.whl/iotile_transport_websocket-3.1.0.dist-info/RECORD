@@ -1,0 +1,10 @@
+iotile_transport_websocket/__init__.py,sha256=vWiqQx0rv2zGEXHjbR6dYnnSt85SohetNvXv-8MV_9Y,169
+iotile_transport_websocket/websocket_adapter.py,sha256=R9ODEF36zzOTbxDzv86_aqcZ94VqGZZ1oa7-l2thwF4,999
+iotile_transport_websocket/websocket_implementation.py,sha256=WLTg2mXAG3O9jgEnAED1TOv_H5ksQ5rLvDvDLBlxJ4E,3462
+iotile_transport_websocket/websocket_server.py,sha256=ybxFOUvCyaDjPe7xWTl64owlcSJjIIJuTzCqFiYUD-Y,1482
+iotile_transport_websocket-3.1.0.dist-info/LICENSE.md,sha256=2n6rt7r999OuXp8iOqW9we7ORaxWncIbOwN1ILRGR2g,7651
+iotile_transport_websocket-3.1.0.dist-info/METADATA,sha256=c72cVpMf6m8u__9X68oyQyZCGfk7B3Qn-v6d2dDJ8ew,1210
+iotile_transport_websocket-3.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+iotile_transport_websocket-3.1.0.dist-info/entry_points.txt,sha256=i84F7xMZ09l9pSG7NIFMVezAvn1YbXs7lP0eWP1eUPA,166
+iotile_transport_websocket-3.1.0.dist-info/top_level.txt,sha256=ZkWf6W72_d8mIGZypkVeif9CuNid9mNsANPaAkU2R5U,27
+iotile_transport_websocket-3.1.0.dist-info/RECORD,,
