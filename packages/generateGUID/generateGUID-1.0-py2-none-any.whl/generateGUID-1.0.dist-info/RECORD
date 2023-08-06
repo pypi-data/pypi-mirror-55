@@ -1,0 +1,16 @@
+generateGUID-1.0.dist-info/DESCRIPTION.rst,sha256=jnWzrDIxA35ee-giXSa2MKqmxuGqivzfjCJHyzT8zho,44
+generateGUID-1.0.dist-info/METADATA,sha256=spnPIPcwx1rBBX-0brxnimCeJXd4gCintnS28Kj_vQI,449
+generateGUID-1.0.dist-info/RECORD,,
+generateGUID-1.0.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+generateGUID-1.0.dist-info/metadata.json,sha256=rhc19TFSaggBjq0GIxW75dWFzqkjuowtkCZk4jqpfmA,564
+generateGUID-1.0.dist-info/top_level.txt,sha256=LmBbcEDkOYYi6MhKnLZc2vaNsAIUcr-DjwhuiycVQFo,19
+generate_GUID/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+generate_GUID/generate_GUID.py,sha256=MevsLXCh3lWXosoMGsHAfULJAgcP1Gmp3JMxrRgJe4c,3606
+generate_GUID/strip_accents.py,sha256=fqtAMuODlpIhpjhTMbC3afXbVYThh9xizkY6mt_g2C0,1075
+generator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+generator/generate_GUID.py,sha256=lj_7Jw6cx9UapARz8WB0x6EfK7G6t3pf_6YH76OAXCA,3605
+generator/strip_accents.py,sha256=D8JSr3r3wX-WYD7ZgEulrghFXz2mQQytkrY_f7snOUo,1074
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_GUID.py,sha256=TJdXVoCOt7XBbmxlaRkIz2oqH6JXLXLitFeIhmJyiX4,1570
+test/test_GUID2.py,sha256=XqPQKi6-Drlp2_Rmn6ByzFOwc7ybWlxaM3v1feiG7Js,2094
+test/test_GUID_Bash.py,sha256=kQPX6KmJOGlygAI1Zl0MK0wNT14wD0ewTjlEpTRN9oY,1489
