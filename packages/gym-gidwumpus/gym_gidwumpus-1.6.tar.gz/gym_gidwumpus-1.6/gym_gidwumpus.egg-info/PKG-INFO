@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: gym-gidwumpus
+Version: 1.6
+Summary: This is an environment for the wumpus world that you can reference as an openai gym environment.
+Home-page: https://github.com/Gid8/gym-gidwumpus
+Author: Gideon Jacobus Pieterse
+Author-email: Gideondeonjacobus@gmail.com
+License: MIT
+Description: UNKNOWN
+Keywords: openai,ai,reinforcement,learning,reinforcement learning,wimpus,env,environment,machine,machine learning
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
