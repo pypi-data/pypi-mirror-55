@@ -1,0 +1,3 @@
+[console_scripts]
+numn = numapi.numapi_command_line:main
+

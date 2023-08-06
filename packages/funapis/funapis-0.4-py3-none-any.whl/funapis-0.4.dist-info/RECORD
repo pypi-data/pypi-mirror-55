@@ -1,0 +1,9 @@
+numapi/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+numapi/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+numapi/numapi_command_line.py,sha256=H0ZdY79Y3xgrXMADZGBSKRRl-_pLU_AMKQxQoJltdFU,4736
+numapi/token.txt,sha256=m-HqNEoxNZwwNYj3G2UrzHyPfdAbyga1CqOjJw8083Y,50
+funapis-0.4.dist-info/METADATA,sha256=DPTVlAqUahniq1CdlxZug2IyAqynuIVHwpEBVDf298s,2191
+funapis-0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+funapis-0.4.dist-info/entry_points.txt,sha256=gs4V1UbWCt-dBK6VvvmIWiPjmuA6GIuPGnGp3SiXRWQ,58
+funapis-0.4.dist-info/top_level.txt,sha256=SRPtKGudpnSENSZz6Cwv7Us9vRXyWmOHw6MSbZm-Wt8,7
+funapis-0.4.dist-info/RECORD,,
