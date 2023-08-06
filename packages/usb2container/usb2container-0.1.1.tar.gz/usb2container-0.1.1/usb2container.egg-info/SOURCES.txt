@@ -1,0 +1,12 @@
+README.md
+setup.py
+usb2container/__init__.py
+usb2container/config.py
+usb2container/monitor.py
+usb2container/server.py
+usb2container.egg-info/PKG-INFO
+usb2container.egg-info/SOURCES.txt
+usb2container.egg-info/dependency_links.txt
+usb2container.egg-info/entry_points.txt
+usb2container.egg-info/requires.txt
+usb2container.egg-info/top_level.txt
