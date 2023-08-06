@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+airflowscan/__init__.py
+airflowscan/cli.py
+airflowscan.egg-info/PKG-INFO
+airflowscan.egg-info/SOURCES.txt
+airflowscan.egg-info/dependency_links.txt
+airflowscan.egg-info/entry_points.txt
+airflowscan.egg-info/requires.txt
+airflowscan.egg-info/top_level.txt
+airflowscan/data/CHECKLIST.md
+airflowscan/data/airflow_cfg.schema
+airflowscan/data/default_airflow.cfg
+airflowscan/data/hardened_airflow.cfg
