@@ -1,0 +1,36 @@
+sudo: false
+dist: xenial
+language: python
+matrix:
+  fast_finish: true
+cache:
+  directories:
+  - "$HOME/.cache/pip"
+
+python:
+  - "3.6"
+  - "3.7"
+env:
+  - NUMPY_VERSION=1.17
+  - NUMPY_VERSION=1.16
+  - NUMPY_VERSION=1.15
+
+jobs:
+  include:
+    - python: "2.7"
+      env: NUMPY_VERSION=1.16
+
+install:
+  - travis_retry pip install --upgrade pip
+  - travis_retry pip install --upgrade setuptools
+  - travis_retry pip install --upgrade numpy==$NUMPY_VERSION
+  - pip install -vv .
+  - python -c 'import emcee;print(emcee.__version__)'
+  - travis_retry pip install --upgrade -r requirements-dev.txt
+  - travis_retry python setup.py develop
+
+script:
+  - pytest -v src/emcee/tests --cov emcee
+
+after_success:
+  - coveralls
