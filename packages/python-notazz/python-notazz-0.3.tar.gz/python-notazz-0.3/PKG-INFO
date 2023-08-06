@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: python-notazz
+Version: 0.3
+Summary: Notazz Python Binding
+Home-page: https://github.com/jdcarvalho/python-notazz
+Author: Joao Carvalho
+Author-email: joao.carvalho@maestrus.com
+License: UNKNOWN
+Description: # Notazz NFSE binding
+        
+        Este projeto tem como objetivo fazer binding não oficial de criação de notas fiscais (inicialmente de serviço) com a API do https://notazz.com/
+        
+        
+        # Instalação
+        
+        `pip install python-notazz`
+        
+        # Dependências
+        
+        * requests
+        * urllib
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Framework :: Django
+Classifier: Environment :: Web Environment
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Description-Content-Type: text/markdown
