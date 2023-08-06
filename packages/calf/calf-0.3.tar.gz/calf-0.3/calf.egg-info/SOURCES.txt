@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+calf/__init__.py
+calf/__main__.py
+calf/py.typed
+calf.egg-info/PKG-INFO
+calf.egg-info/SOURCES.txt
+calf.egg-info/dependency_links.txt
+calf.egg-info/entry_points.txt
+calf.egg-info/top_level.txt
+docs/design.md
+docs/examples/composite.py
+docs/examples/simple.py
