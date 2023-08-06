@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Oswald:700|Poppins|Roboto&display=swap" rel="stylesheet">    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script>
+    function downloadURI(uri, name) {
+        var link = document.createElement("a");
+        link.download = name;
+        link.href = uri;
+        link.click();
+    }
+    </script>
+
+    <title>{{ page_data.title }}</title>
+  </head>
+  <body>
+    <div class="main-container">
+        <div class="side-bar">
+            <div class="side-bar-content">
+                <div class="avatar-container" onclick="window.location.href = '{{ data.profile_url }}';">
+                    <img class="avatar clickable no-highlight" src="{{data.avatar_url}}">
+                </div>
+                <div class="username clickable no-highlight" onclick="window.location.href = '{{ data.profile_url }}';" >
+                    @{{data.config.username}}
+                </div>
+                {% if data.config.cv_path is defined and data.config.cv_path %}
+                <div class="cv-download-container" onclick="downloadURI('{{ data.config.cv_path }}', 'CV.pdf');">
+                    <div class="cv-download">
+                        <i class="fa fa-cloud-download"></i>
+                        <div class="cv-download-label"> CV </div>
+                    </div>
+                </div>
+                {% endif %}
+                <div class="social">
+                    {% if data.config.social.linkedin is defined and data.config.social.linkedin  %}
+                    <i class="fa fa-linkedin social-icon" aria-hidden="true" onclick="window.location.href = 'https://www.linkedin.com/in/{{ data.config.social.linkedin }}/';"></i>
+                    {% endif %}
+                    {% if data.config.social.twitter is defined and data.config.social.twitter %}
+                    <i class="fa fa-twitter social-icon" aria-hidden="true" onclick="window.location.href = 'https://twitter.com/{{ data.config.social.twitter }}';"></i>
+                    {% endif %}
+                    {% if data.config.social.bitbucket is defined and data.config.social.bitbucket %}
+                    <i class="fa fa-bitbucket social-icon" aria-hidden="true" onclick="window.location.href = 'https://bitbucket.org/{{ data.config.social.bitbucket }}/';"></i>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+        <div class="repo-container">
+            <div class="repo-container-header">MY WORKS</div>
+            <div class="owner-repo-container">
+                {% for repo in data.own_repos %}
+                <div class="repo-details no-highlight" onclick="window.location.href = '{{ repo.html_url }}';">
+                    <div class="repo-header">{{repo.name}}</div>
+                    <div class="repo-desc">
+                        {{repo.description}}
+                    </div>
+                    <div class="repo-stats">
+                        <div class="repo-language repo-stat-individual">
+                            <i class="fa fa-code" aria-hidden="true">&nbsp;{{repo.language}} </i>
+                        </div>
+                        <div class="repo-forks repo-stat-individual">
+                            <i class="fa fa-code-fork" aria-hidden="true">&nbsp;{{repo.forks_count}}</i>
+                        </div>
+                        <div class="repo-stars repo-stat-individual">
+                            <i class="fa fa-star" aria-hidden="true">&nbsp;{{repo.stargazers_count}}</i>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="repo-container-header">MY FORKS</div>
+            <div class="owner-repo-container">
+                {% for repo in data.forked_repos %}
+                <div class="repo-details no-highlight" onclick="window.location.href = '{{ repo.html_url }}';">
+                    <div class="repo-header">{{repo.name}}</div>
+                    <div class="repo-desc">
+                        {{repo.description}}
+                    </div>
+                    <div class="repo-stats">
+                        <div class="repo-language repo-stat-individual">
+                            <i class="fa fa-code" aria-hidden="true">&nbsp;{{repo.language}} </i>
+                        </div>
+                        <div class="repo-forks repo-stat-individual">
+                            <i class="fa fa-code-fork" aria-hidden="true">&nbsp;{{repo.forks_count}}</i>
+                        </div>
+                        <div class="repo-stars repo-stat-individual">
+                            <i class="fa fa-star" aria-hidden="true">&nbsp;{{repo.stargazers_count}}</i>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
