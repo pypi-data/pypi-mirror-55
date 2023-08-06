@@ -1,0 +1,16 @@
+Metadata-Version: 2.0
+Name: janos
+Version: 0.0.1
+Summary: JANOS
+Home-page: http://janos.opt-operations.com
+Author: David Bergman
+Author-email: david.bergman@uconn.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+This is a package for the solver JANOS. You can find additional details here: http://janos.opt-operations.com/.
+
+
