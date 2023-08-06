@@ -1,0 +1,12 @@
+README.md
+setup.py
+torchstruct.py
+test/test_indexing.py
+test/test_init.py
+test/test_torch.py
+test/test_utils.py
+torchstruct.egg-info/PKG-INFO
+torchstruct.egg-info/SOURCES.txt
+torchstruct.egg-info/dependency_links.txt
+torchstruct.egg-info/requires.txt
+torchstruct.egg-info/top_level.txt
