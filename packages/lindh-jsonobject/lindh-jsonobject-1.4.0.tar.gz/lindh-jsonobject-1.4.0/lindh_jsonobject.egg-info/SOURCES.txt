@@ -1,0 +1,11 @@
+README.rst
+setup.cfg
+setup.py
+lindh/jsonobject/__init__.py
+lindh/jsonobject/noschema.py
+lindh/jsonobject/schema.py
+lindh/jsonobject/types.py
+lindh_jsonobject.egg-info/PKG-INFO
+lindh_jsonobject.egg-info/SOURCES.txt
+lindh_jsonobject.egg-info/dependency_links.txt
+lindh_jsonobject.egg-info/top_level.txt
