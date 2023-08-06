@@ -1,0 +1,86 @@
+                   ****************************
+                   *                          *
+                   *  USING PASA WITH CUTEst  *
+                   *                          *
+                   ****************************
+
+                (Last modified on 25 October 2019)
+
+WHAT IS PASA?
+-------------
+
+The PASA package is for solving optimization problems whose feasible
+set is a polyhedron (a system of linear equalities and inequalities).
+It is the main component of the optimization package SuiteOPT. Any
+polyhedral constrained optimization problem can be fed to pasa, and it
+will automatically call any of solvers in CGDESCENT, NAPHEAP, or PPROJ
+based on an analysis of the problem structure.
+
+HOW DO I GET SUITEOPT?
+------------------
+
+It can be downloaded from the web site of William W. Hager:
+http://users.clas.ufl.edu/hager/papers/Software/
+
+INSTALLING PASA IN CUTEst
+-------------------------
+
+You first need to download and install the CUTEst package. It can
+currently be download from here: https://github.com/ralna/CUTEst/wiki
+(authors: Nicholas Gould, Dominique Orban, and Philippe Toint).
+As you will see, there are three components to CUTE: archdefs,
+cutest, and sifdecode. Also, you will want to download the CUTE
+set of test problems. When CUTE is installed, it is also necessary to
+create some environment variables. The environment variables that are
+used in the installation of PASA are $CUTEST, which is the full path
+to the location of your cutest directory, and $MYARCH, which is a string
+providing information about your operating system and computer architecture.
+After setting up CUTE, go to the directory $CUTEST/bin/sys and add two
+lines to provide your BLAS and LAPACK information. This same information
+should also be stored in your Userconfig.mk file. If using OpenBLAS, the
+lines added to the file in $CUTEST/bin/sys could be of the following form:
+
+BLAS="/usr/lib64/libopenblaso64-r0.3.3.so -lgfortran -lpthread"
+LAPACK="/usr/lib64/liblapack.so.3.2.1"
+
+If using MKL (Intel's Math Kernel Library) BLAS, these lines might
+have the following structure:
+
+BLAS="-L/opt/intel/mkl/lib/intel64 -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -L/opt/intel/compilers_and_libraries_2019.4.243/linux/compiler/lib/intel64 -liomp5 -lpthread -lm"
+LAPACK="-lmkl_lapack95_lp64"
+
+Another environment variable which is likely needed is LD_LIBRARY_PATH.
+This provides the path to dynamic libraries that are loaded at run time.
+If the MKL BLAS are used, then the LD_LIBRARY_PATH should contain both of the
+paths given for LDLIBS in the Userconf.mk file.  In addition the full path
+to the ldlibs directory at the top level of SuiteOPT is need.  The command
+for setting up this environment variable is something like the following
+when three paths are needed:
+
+setenv LD_LIBRARY_PATH "path1:path2:path3"
+
+NOTE: If you already have a version of CUTEst installed on your computer,
+it is important to update to a version after August, 2019, since
+CUTE was modified at that date to enable use with PASA.
+
+Before using PASA in cutest, the setup explained in the README at the
+top level directory of SuiteOPT must be performed. Once this is done,
+and the installation of CUTE is complete, the installation of
+PASA in CUTE is accomplished by typing "make" in this directory.
+An output of make is the runcutest command for using pasa with
+cutest. This command is also placed in the file "runcutest" in this directory.
+The command in the runcutest file is formulated as an alias that should be
+placed in a file such as .cshrc or .bashrc that is executed at startup.
+After this is done, any window that is subsequently opened can solve a
+polyhedral constrained test problem from CUTE using the command
+"runpasa PROB" where PROB is the name of the CUTE problem.
+
+The default parameter values and their documentation appear in the
+files pasa_default.c, pproj_default.c, cg_default.c, and napheap_default.c,
+which are found in the "Source" directories for PASA, PPROJ, CG, and NAPHEAP
+respectively.  New values can be set in the pasa_main.c file of this directory.
+Of course, when new parameter values are set, then the pasa_main must
+be recompiled by typing "make". New parameter values could also be read
+from a spec file, and when parameter values are read from a spec file, there
+is no need to type "make" after changing parameter values.
+=====================================

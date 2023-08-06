@@ -1,0 +1,2252 @@
+sifdecoder -A pc64.lnx.gfo -st   ALLINIT
+
+ Problem name: ALLINIT
+
+ Double precision version will be formed
+
+ The objective function uses 2 linear groups
+ The objective function uses 10 nonlinear groups
+ 
+ There is 1 free variable 
+ There is 1 variable bounded only from below 
+ There is 1 variable bounded from below and above 
+ There is 1 fixed variable
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: ALLINIT
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 3.745345e-08 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 3.745344834271691e-08    
+Final f                               : 1.670596843287990e+01    
+
+Iterations of gradient projection (GP): 2         
+Iterations of active set GP           : 2         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 2         
+Function evaluations in active set GP : 2         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 1         
+Gradient evaluations in active set GP : 2         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  1.670596843287990e+01
+sup-norm of gradient:  3.745344834271691e-08
+Number of iterations: 11        
+Function evaluations: 23        
+Gradient evaluations: 12        
+
+!!   ALLINIT      4    2    2    1    2    2    2     11     23     12       1       0     0    3.7453448e-08    1.6705968e+01    0.000157
+ Final f                         = 1.6705968e+01   
+ Function value at final x       = 1.6705968432879899e+01   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   BDEXP
+
+ Problem name: BDEXP
+
+ Double precision version will be formed
+
+ The objective function uses 4998 nonlinear groups
+ 
+ There are 5000 variables bounded only from below 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: BDEXP
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 4.725601e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 4.725600693112168e-07    
+Final f                               : 2.859346747312323e-05    
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 1         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 1         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 1         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  2.859346747312323e-05
+sup-norm of gradient:  4.725600693112168e-07
+Number of iterations: 4         
+Function evaluations: 8         
+Gradient evaluations: 4         
+
+!!     BDEXP   5000    0    0    0    1    1    1      4      8      4       1       0     0    4.7256007e-07    2.8593467e-05    0.006181
+ Final f                         = 2.8593467e-05   
+ Function value at final x       = 2.8593467473123225e-05   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   BRATU1D
+
+ Problem name: BRATU1D
+
+ Double precision version will be formed
+
+ The objective function uses 3004 nonlinear groups
+ 
+ There are 1001 free variables
+ There are 2 fixed variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: BRATU1D
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+CG_DESCENT (Version 7.0, October 21, 2019) run status: 0
+
+Success: Error inf satisfies error tolerance 1.000000e-06.
+
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 8.907634e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 8.907634310162393e-07    
+Final f                               : -8.518927279102391e+00   
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             : -8.518927279102391e+00
+sup-norm of gradient:  8.907634310162393e-07
+Number of iterations: 7003      
+Function evaluations: 7205      
+Gradient evaluations: 14196     
+
+!!   BRATU1D   1003    0    0    0    0    0    0   7003   7205  14196       1       0     0    8.9076343e-07   -8.5189273e+00    4.679586
+ Final f                         = -8.5189273e+00  
+ Function value at final x       = -8.5189272791023907e+00  
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   CAMEL6
+
+ Problem name: CAMEL6
+
+ Double precision version will be formed
+
+ The objective function uses 1 nonlinear group
+ 
+ There are 2 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: CAMEL6
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 1.593640e-09 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 1.593639886721121e-09    
+Final f                               : -1.031628453489878e+00   
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 1         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 1         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 1         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             : -1.031628453489878e+00
+sup-norm of gradient:  1.593639886721121e-09
+Number of iterations: 8         
+Function evaluations: 16        
+Gradient evaluations: 8         
+
+!!    CAMEL6      2    0    0    0    1    1    1      8     16      8       1       0     0    1.5936399e-09   -1.0316285e+00    0.000133
+ Final f                         = -1.0316285e+00  
+ Function value at final x       = -1.0316284534898779e+00  
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   CLPLATEA
+
+ Problem name: CLPLATEA
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ The objective function uses 19600 nonlinear groups
+ 
+ There are 4970 free variables
+ There are 71 fixed variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: CLPLATEA
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+CG_DESCENT (Version 7.0, October 21, 2019) run status: 0
+
+Success: Error inf satisfies error tolerance 1.000000e-06.
+
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 9.210931e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 9.210931176950599e-07    
+Final f                               : -1.259209458237632e-02   
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             : -1.259209458237632e-02
+sup-norm of gradient:  9.210931176950599e-07
+Number of iterations: 853       
+Function evaluations: 1708      
+Gradient evaluations: 855       
+
+!!  CLPLATEA   5041    0    0    0    0    0    0    853   1708    855       1       0     0    9.2109312e-07   -1.2592095e-02    0.735483
+ Final f                         = -1.2592095e-02  
+ Function value at final x       = -1.2592094582376324e-02  
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   CLPLATEB
+
+ Problem name: CLPLATEB
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ The objective function uses 19600 nonlinear groups
+ 
+ There are 4970 free variables
+ There are 71 fixed variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: CLPLATEB
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+CG_DESCENT (Version 7.0, October 21, 2019) run status: 0
+
+Success: Error inf satisfies error tolerance 1.000000e-06.
+
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 9.769360e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 9.769360193900369e-07    
+Final f                               : -5.094786167790573e-03   
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             : -5.094786167790573e-03
+sup-norm of gradient:  9.769360193900369e-07
+Number of iterations: 307       
+Function evaluations: 616       
+Gradient evaluations: 309       
+
+!!  CLPLATEB   5041    0    0    0    0    0    0    307    616    309       1       0     0    9.7693602e-07   -5.0947862e-03    0.283720
+ Final f                         = -5.0947862e-03  
+ Function value at final x       = -5.0947861677905727e-03  
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   CLPLATEC
+
+ Problem name: CLPLATEC
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ The objective function uses 19600 nonlinear groups
+ 
+ There are 4970 free variables
+ There are 71 fixed variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: CLPLATEC
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+CG_DESCENT (Version 7.0, October 21, 2019) run status: 0
+
+Success: Error inf satisfies error tolerance 1.000000e-06.
+
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 9.328728e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 9.328727523124592e-07    
+Final f                               : -5.020724214436474e-03   
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             : -5.020724214436474e-03
+sup-norm of gradient:  9.328727523124592e-07
+Number of iterations: 36547     
+Function evaluations: 36553     
+Gradient evaluations: 73088     
+
+!!  CLPLATEC   5041    0    0    0    0    0    0  36547  36553  73088       1       0     0    9.3287275e-07   -5.0207242e-03   36.468683
+ Final f                         = -5.0207242e-03  
+ Function value at final x       = -5.0207242144364736e-03  
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   DRCAV1LQ
+
+ Problem name: DRCAV1LQ
+
+ Double precision version will be formed
+
+ The objective function uses 3969 nonlinear groups
+ 
+ There are 3969 free variables
+ There are 520 fixed variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: DRCAV1LQ
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+CG_DESCENT (Version 7.0, October 21, 2019) run status: 0
+
+Success: Error inf satisfies error tolerance 1.000000e-06.
+
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 9.984833e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 9.984832987532306e-07    
+Final f                               : 1.490650263104133e-07    
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  1.490650263104133e-07
+sup-norm of gradient:  9.984832987532306e-07
+Number of iterations: 240062    
+Function evaluations: 261923    
+Gradient evaluations: 458263    
+
+!!  DRCAV1LQ   4489    0    0    0    0    0    0 240062 261923 458263       1       0     0    9.9848330e-07    1.4906503e-07  390.510664
+ Final f                         = 1.4906503e-07   
+ Function value at final x       = 1.4906502631041326e-07   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   DRCAV2LQ
+
+ Problem name: DRCAV2LQ
+
+ Double precision version will be formed
+
+ The objective function uses 3969 nonlinear groups
+ 
+ There are 3969 free variables
+ There are 520 fixed variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: DRCAV2LQ
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+CG_DESCENT (Version 7.0, October 21, 2019) run status: 0
+
+Success: Error inf satisfies error tolerance 1.000000e-06.
+
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 9.941853e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 9.941853128601109e-07    
+Final f                               : 1.201473263729679e-07    
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  1.201473263729679e-07
+sup-norm of gradient:  9.941853128601109e-07
+Number of iterations: 441448    
+Function evaluations: 465268    
+Gradient evaluations: 859076    
+
+!!  DRCAV2LQ   4489    0    0    0    0    0    0 441448 465268 859076       1       0     0    9.9418531e-07    1.2014733e-07  730.903306
+ Final f                         = 1.2014733e-07   
+ Function value at final x       = 1.2014732637296789e-07   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   DRCAV3LQ
+
+ Problem name: DRCAV3LQ
+
+ Double precision version will be formed
+
+ The objective function uses 3969 nonlinear groups
+ 
+ There are 3969 free variables
+ There are 520 fixed variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: DRCAV3LQ
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000000
+
+CG_DESCENT (Version 7.0, October 21, 2019) run status: 0
+
+Success: Error inf satisfies error tolerance 1.000000e-06.
+
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 8.998038e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 8.998037557649940e-07    
+Final f                               : 3.713822819354992e-07    
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  3.713822819354992e-07
+sup-norm of gradient:  8.998037557649940e-07
+Number of iterations: 1786849   
+Function evaluations: 1978138   
+Gradient evaluations: 3382413   
+
+!!  DRCAV3LQ   4489    0    0    0    0    0    0 1786849 1978138 3382413       1       0     0    8.9980376e-07    3.7138228e-07 2914.816421
+ Final f                         = 3.7138228e-07   
+ Function value at final x       = 3.7138228193549918e-07   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   EG1
+
+ Problem name: EG1
+
+ Double precision version will be formed
+
+ The objective function uses 3 nonlinear groups
+ 
+ There is 1 free variable 
+ There are 2 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: EG1
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 2.138020e-09 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 2.138019816744219e-09    
+Final f                               : -1.132800782583661e+00   
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 1         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 1         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 1         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             : -1.132800782583661e+00
+sup-norm of gradient:  2.138019816744219e-09
+Number of iterations: 6         
+Function evaluations: 12        
+Gradient evaluations: 6         
+
+!!       EG1      3    0    0    0    1    1    1      6     12      6       1       0     0    2.1380198e-09   -1.1328008e+00    0.000110
+ Final f                         = -1.1328008e+00  
+ Function value at final x       = -1.1328007825836615e+00  
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   EXPLIN
+
+ Problem name: EXPLIN
+
+ Double precision version will be formed
+
+ The objective function uses 1 nonlinear group
+ 
+ There are 1200 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: EXPLIN
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 6.153576e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 6.153576350698131e-07    
+Final f                               : -7.192548399947344e+07   
+
+Iterations of gradient projection (GP): 5         
+Iterations of active set GP           : 53        
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 3         
+Function evaluations in active set GP : 101       
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 3         
+Gradient evaluations in active set GP : 74        
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             : -7.192548399947344e+07
+sup-norm of gradient:  6.153576350698131e-07
+Number of iterations: 220       
+Function evaluations: 394       
+Gradient evaluations: 260       
+
+!!    EXPLIN   1200    5    3    3   53  101   74    220    394    260       1       0     0    6.1535764e-07   -7.1925484e+07    0.007763
+ Final f                         = -7.1925484e+07  
+ Function value at final x       = -7.1925483999473438e+07  
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   EXPLIN2
+
+ Problem name: EXPLIN2
+
+ Double precision version will be formed
+
+ The objective function uses 1 nonlinear group
+ 
+ There are 1200 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: EXPLIN2
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 5.315121e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 5.315121143212309e-07    
+Final f                               : -7.199883367983918e+07   
+
+Iterations of gradient projection (GP): 16        
+Iterations of active set GP           : 32        
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 9         
+Function evaluations in active set GP : 38        
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 8         
+Gradient evaluations in active set GP : 36        
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             : -7.199883367983918e+07
+sup-norm of gradient:  5.315121143212309e-07
+Number of iterations: 73        
+Function evaluations: 129       
+Gradient evaluations: 80        
+Subspace iterations : 1         
+Number of subspaces : 1         
+
+!!   EXPLIN2   1200   16    9    8   32   38   36     73    129     80       1       0     0    5.3151211e-07   -7.1998834e+07    0.003003
+ Final f                         = -7.1998834e+07  
+ Function value at final x       = -7.1998833679839179e+07  
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   EXPQUAD
+
+ Problem name: EXPQUAD
+
+ Double precision version will be formed
+
+ The objective function uses 1 nonlinear group
+ 
+ There are 1100 free variables
+ There are 100 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: EXPQUAD
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 9.615076e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 9.615075668989448e-07    
+Final f                               : -3.684939565731771e+09   
+
+Iterations of gradient projection (GP): 13        
+Iterations of active set GP           : 99        
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 3         
+Function evaluations in active set GP : 153       
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 3         
+Gradient evaluations in active set GP : 118       
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             : -3.684939565731771e+09
+sup-norm of gradient:  9.615075668989448e-07
+Number of iterations: 305       
+Function evaluations: 623       
+Gradient evaluations: 402       
+Subspace iterations : 15        
+Number of subspaces : 7         
+
+!!   EXPQUAD   1200   13    3    3   99  153  118    305    623    402       1       0     0    9.6150757e-07   -3.6849396e+09    0.033575
+ Final f                         = -3.6849396e+09  
+ Function value at final x       = -3.6849395657317705e+09  
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   HADAMALS
+
+ Problem name: HADAMALS
+
+ Double precision version will be formed
+
+ The objective function uses 590 nonlinear groups
+ 
+ There are 380 variables bounded from below and above 
+ There are 20 fixed variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: HADAMALS
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000000
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 1.033270e-08 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 1.033270147221543e-08    
+Final f                               : 7.311843149959088e+03    
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 4         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 5         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 4         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  7.311843149959088e+03
+sup-norm of gradient:  1.033270147221543e-08
+Number of iterations: 7         
+Function evaluations: 23        
+Gradient evaluations: 17        
+Subspace iterations : 1         
+Number of subspaces : 1         
+
+!!  HADAMALS    400    0    0    0    4    5    4      7     23     17       1       0     0    1.0332701e-08    7.3118431e+03    0.003977
+ Final f                         = 7.3118431e+03   
+ Function value at final x       = 7.3118431499590879e+03   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   HART6
+
+ Problem name: HART6
+
+ Double precision version will be formed
+
+ The objective function uses 4 nonlinear groups
+ 
+ There are 6 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: HART6
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 1.154592e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 1.154592402013141e-07    
+Final f                               : -3.322886891589317e+00   
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 1         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 1         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 1         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             : -3.322886891589317e+00
+sup-norm of gradient:  1.154592402013141e-07
+Number of iterations: 11        
+Function evaluations: 22        
+Gradient evaluations: 11        
+
+!!     HART6      6    0    0    0    1    1    1     11     22     11       1       0     0    1.1545924e-07   -3.3228869e+00    0.000121
+ Final f                         = -3.3228869e+00  
+ Function value at final x       = -3.3228868915893166e+00  
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   HIMMELP1
+
+ Problem name: HIMMELP1
+
+ Double precision version will be formed
+
+ The objective function uses 1 nonlinear group
+ 
+ There are 2 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: HIMMELP1
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 1.002758e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 1.002758098778145e-07    
+Final f                               : -2.389741895043875e+01   
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 2         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 3         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 2         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             : -2.389741895043875e+01
+sup-norm of gradient:  1.002758098778145e-07
+Number of iterations: 3         
+Function evaluations: 6         
+Gradient evaluations: 3         
+
+!!  HIMMELP1      2    0    0    0    2    3    2      3      6      3       1       0     0    1.0027581e-07   -2.3897419e+01    0.000095
+ Final f                         = -2.3897419e+01  
+ Function value at final x       = -2.3897418950438748e+01  
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   HOLMES
+
+ Problem name: HOLMES
+
+ Double precision version will be formed
+
+ The objective function uses 2039 nonlinear groups
+ 
+ There are 180 variables bounded only from below 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: HOLMES
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 4.124119e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 4.124119420967354e-07    
+Final f                               : 1.248150348141313e+03    
+
+Iterations of gradient projection (GP): 2         
+Iterations of active set GP           : 22        
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 3         
+Function evaluations in active set GP : 27        
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 1         
+Gradient evaluations in active set GP : 22        
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  1.248150348141313e+03
+sup-norm of gradient:  4.124119420967354e-07
+Number of iterations: 21        
+Function evaluations: 32        
+Gradient evaluations: 23        
+
+!!    HOLMES    180    2    3    1   22   27   22     21     32     23       1       0     0    4.1241194e-07    1.2481503e+03    0.075739
+ Final f                         = 1.2481503e+03   
+ Function value at final x       = 1.2481503481413133e+03   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   HS38
+
+ Problem name: HS38
+
+ Double precision version will be formed
+
+ The objective function uses 7 nonlinear groups
+ 
+ There are 4 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: HS38
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000000
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 1.388923e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 1.388922813205794e-07    
+Final f                               : 3.701512083004871e-15    
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 1         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 1         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 1         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  3.701512083004871e-15
+sup-norm of gradient:  1.388922813205794e-07
+Number of iterations: 25        
+Function evaluations: 55        
+Gradient evaluations: 31        
+
+!!      HS38      4    0    0    0    1    1    1     25     55     31       1       0     0    1.3889228e-07    3.7015121e-15    0.000149
+ Final f                         = 3.7015121e-15   
+ Function value at final x       = 3.7015120830048707e-15   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   HS4
+
+ Problem name: HS4
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ The objective function uses 1 nonlinear group
+ 
+ There are 2 variables bounded only from below 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: HS4
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000000
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 0.000000000000000e+00    
+Final f                               : 2.666666664000000e+00    
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 1         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 1         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 1         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Number of iterations: 0         
+Function evaluations: 0         
+Gradient evaluations: 0         
+
+!!       HS4      2    0    0    0    1    1    1      0      0      0       1       0     0    0.0000000e+00    2.6666667e+00    0.000070
+ Final f                         = 2.6666667e+00   
+ Function value at final x       = 2.6666666640000001e+00   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   HS45
+
+ Problem name: HS45
+
+ Double precision version will be formed
+
+ The objective function uses 1 nonlinear group
+ 
+ There are 5 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: HS45
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 0.000000000000000e+00    
+Final f                               : 1.000000000400000e+00    
+
+Iterations of gradient projection (GP): 1         
+Iterations of active set GP           : 2         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 2         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 2         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Number of iterations: 0         
+Function evaluations: 0         
+Gradient evaluations: 0         
+
+!!      HS45      5    1    0    0    2    2    2      0      0      0       1       0     0    0.0000000e+00    1.0000000e+00    0.000066
+ Final f                         = 1.0000000e+00   
+ Function value at final x       = 1.0000000004000000e+00   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   HS5
+
+ Problem name: HS5
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ The objective function uses 2 nonlinear groups
+ 
+ There are 2 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: HS5
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 2.229711e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 2.229710558410147e-07    
+Final f                               : -1.913222954981016e+00   
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 1         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 1         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 1         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             : -1.913222954981016e+00
+sup-norm of gradient:  2.229710558410147e-07
+Number of iterations: 5         
+Function evaluations: 10        
+Gradient evaluations: 5         
+
+!!       HS5      2    0    0    0    1    1    1      5     10      5       1       0     0    2.2297106e-07   -1.9132230e+00    0.000117
+ Final f                         = -1.9132230e+00  
+ Function value at final x       = -1.9132229549810158e+00  
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   LMINSURF
+
+ Problem name: LMINSURF
+
+ Double precision version will be formed
+
+ The objective function uses 5476 nonlinear groups
+ 
+ There are 5329 free variables
+ There are 296 fixed variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: LMINSURF
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+CG_DESCENT (Version 7.0, October 21, 2019) run status: 0
+
+Success: Error inf satisfies error tolerance 1.000000e-06.
+
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 9.450769e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 9.450769133494130e-07    
+Final f                               : 8.999999994058504e+00    
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  8.999999994058504e+00
+sup-norm of gradient:  9.450769133494130e-07
+Number of iterations: 511       
+Function evaluations: 1025      
+Gradient evaluations: 514       
+
+!!  LMINSURF   5625    0    0    0    0    0    0    511   1025    514       1       0     0    9.4507691e-07    9.0000000e+00    0.509925
+ Final f                         = 9.0000000e+00   
+ Function value at final x       = 8.9999999940585038e+00   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   LOGROS
+
+ Problem name: LOGROS
+
+ Double precision version will be formed
+
+ The objective function uses 1 nonlinear group
+ 
+ There are 2 variables bounded only from below 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: LOGROS
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000000
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 2.887468e-08 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 2.887468042445103e-08    
+Final f                               : 1.332267629550187e-15    
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 1         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 1         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 1         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  1.332267629550187e-15
+sup-norm of gradient:  2.887468042445103e-08
+Number of iterations: 73        
+Function evaluations: 191       
+Gradient evaluations: 118       
+
+!!    LOGROS      2    0    0    0    1    1    1     73    191    118       1       0     0    2.8874680e-08    1.3322676e-15    0.000242
+ Final f                         = 1.3322676e-15   
+ Function value at final x       = 1.3322676295501871e-15   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   MAXLIKA
+
+ Problem name: MAXLIKA
+
+ Double precision version will be formed
+
+ The objective function uses 235 nonlinear groups
+ 
+ There are 8 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: MAXLIKA
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 7.947553e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 7.947553388731876e-07    
+Final f                               : 1.136307296897006e+03    
+
+Iterations of gradient projection (GP): 5         
+Iterations of active set GP           : 7         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 3         
+Function evaluations in active set GP : 9         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 2         
+Gradient evaluations in active set GP : 8         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  1.136307296897006e+03
+sup-norm of gradient:  7.947553388731876e-07
+Number of iterations: 94        
+Function evaluations: 188       
+Gradient evaluations: 101       
+
+!!   MAXLIKA      8    5    3    2    7    9    8     94    188    101       1       0     0    7.9475534e-07    1.1363073e+03    0.015982
+ Final f                         = 1.1363073e+03   
+ Function value at final x       = 1.1363072968970057e+03   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   MCCORMCK
+
+ Problem name: MCCORMCK
+
+ Double precision version will be formed
+
+ The objective function uses 4999 nonlinear groups
+ 
+ There are 5000 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: MCCORMCK
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 9.702605e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 9.702605399120046e-07    
+Final f                               : -4.566580552800192e+03   
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 2         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 2         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 2         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             : -4.566580552800192e+03
+sup-norm of gradient:  9.702605399120046e-07
+Number of iterations: 11        
+Function evaluations: 19        
+Gradient evaluations: 14        
+
+!!  MCCORMCK   5000    0    0    0    2    2    2     11     19     14       1       0     0    9.7026054e-07   -4.5665806e+03    0.019866
+ Final f                         = -4.5665806e+03  
+ Function value at final x       = -4.5665805528001920e+03  
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   MDHOLE
+
+ Problem name: MDHOLE
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ The objective function uses 1 nonlinear group
+ 
+ There is 1 free variable 
+ There is 1 variable bounded only from below 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: MDHOLE
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 0.000000000000000e+00    
+Final f                               : 0.000000000000000e+00    
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 2         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 3         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 2         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  0.000000000000000e+00
+sup-norm of gradient:  0.000000000000000e+00
+Number of iterations: 55        
+Function evaluations: 130       
+Gradient evaluations: 78        
+
+!!    MDHOLE      2    0    0    0    2    3    2     55    130     78       1       0     0    0.0000000e+00    0.0000000e+00    0.000203
+ Final f                         = 0.0000000e+00   
+ Function value at final x       = 0.0000000000000000e+00   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   MINSURF
+
+ Problem name: MINSURF
+
+ Double precision version will be formed
+
+ The objective function uses 49 nonlinear groups
+ 
+ There are 36 free variables
+ There are 28 fixed variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: MINSURF
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+CG_DESCENT (Version 7.0, October 21, 2019) run status: 0
+
+Success: Error inf satisfies error tolerance 1.000000e-06.
+
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 2.453373e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 2.453372871253928e-07    
+Final f                               : 1.000000001700355e+00    
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  1.000000001700355e+00
+sup-norm of gradient:  2.453372871253928e-07
+Number of iterations: 12        
+Function evaluations: 24        
+Gradient evaluations: 12        
+Subspace iterations : 6         
+Number of subspaces : 1         
+
+!!   MINSURF     64    0    0    0    0    0    0     12     24     12       1       0     0    2.4533729e-07    1.0000000e+00    0.000284
+ Final f                         = 1.0000000e+00   
+ Function value at final x       = 1.0000000017003547e+00   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   MINSURFO
+
+ Problem name: MINSURFO
+
+ Double precision version will be formed
+
+ The objective function uses 10302 nonlinear groups
+ 
+ There are 5002 variables bounded only from below 
+ There are 304 fixed variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: MINSURFO
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 8.727574e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 8.727573747648607e-07    
+Final f                               : 2.506949264276260e+00    
+
+Iterations of gradient projection (GP): 4         
+Iterations of active set GP           : 4         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 9         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 6         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  2.506949264276260e+00
+sup-norm of gradient:  8.727573747648607e-07
+Number of iterations: 420       
+Function evaluations: 841       
+Gradient evaluations: 421       
+
+!!  MINSURFO   5306    4    0    0    4    9    6    420    841    421       1       0     0    8.7275737e-07    2.5069493e+00    0.664549
+ Final f                         = 2.5069493e+00   
+ Function value at final x       = 2.5069492642762601e+00   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   NLMSURF
+
+ Problem name: NLMSURF
+
+ Double precision version will be formed
+
+ The objective function uses 5476 nonlinear groups
+ 
+ There are 5329 free variables
+ There are 296 fixed variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: NLMSURF
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+CG_DESCENT (Version 7.0, October 21, 2019) run status: 0
+
+Success: Error inf satisfies error tolerance 1.000000e-06.
+
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 9.222208e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 9.222208050609104e-07    
+Final f                               : 3.894898481487326e+01    
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  3.894898481487326e+01
+sup-norm of gradient:  9.222208050609104e-07
+Number of iterations: 3604      
+Function evaluations: 7144      
+Gradient evaluations: 3674      
+
+!!   NLMSURF   5625    0    0    0    0    0    0   3604   7144   3674       1       0     0    9.2222081e-07    3.8948985e+01    3.147393
+ Final f                         = 3.8948985e+01   
+ Function value at final x       = 3.8948984814873263e+01   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   ODC
+
+ Problem name: ODC
+
+ Double precision version will be formed
+
+ The objective function uses 10082 nonlinear groups
+ 
+ There are 4900 free variables
+ There are 284 fixed variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: ODC
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+CG_DESCENT (Version 7.0, October 21, 2019) run status: 0
+
+Success: Error inf satisfies error tolerance 1.000000e-06.
+
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 9.719933e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 9.719932557891416e-07    
+Final f                               : -1.137179620585191e-02   
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             : -1.137179620585191e-02
+sup-norm of gradient:  9.719932557891416e-07
+Number of iterations: 263       
+Function evaluations: 526       
+Gradient evaluations: 263       
+
+!!       ODC   5184    0    0    0    0    0    0    263    526    263       1       0     0    9.7199326e-07   -1.1371796e-02    0.540147
+ Final f                         = -1.1371796e-02  
+ Function value at final x       = -1.1371796205851910e-02  
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   POWELLBC
+
+ Problem name: POWELLBC
+
+ Double precision version will be formed
+
+ The objective function uses 1 nonlinear group
+ 
+ There are 1000 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: POWELLBC
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 9.899069e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 9.899068986185533e-07    
+Final f                               : 3.103640310825538e+05    
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 123       
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 154       
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 123       
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  3.103640310825538e+05
+sup-norm of gradient:  9.899068986185533e-07
+Number of iterations: 2213      
+Function evaluations: 3624      
+Gradient evaluations: 3457      
+
+!!  POWELLBC   1000    0    0    0  123  154  123   2213   3624   3457       1       0     0    9.8990690e-07    3.1036403e+05   18.560014
+ Final f                         = 3.1036403e+05   
+ Function value at final x       = 3.1036403108255379e+05   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   PROBPENL
+
+ Problem name: PROBPENL
+
+ Double precision version will be formed
+
+ The objective function uses 500 nonlinear groups
+ 
+ There are 500 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: PROBPENL
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 1.992004e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 1.992004347982958e-07    
+Final f                               : 3.991983927190978e-07    
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 1         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 1         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 1         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  3.991983927190978e-07
+sup-norm of gradient:  1.992004347982958e-07
+Number of iterations: 1         
+Function evaluations: 2         
+Gradient evaluations: 1         
+
+!!  PROBPENL    500    0    0    0    1    1    1      1      2      1       1       0     0    1.9920043e-07    3.9919839e-07    0.000384
+ Final f                         = 3.9919839e-07   
+ Function value at final x       = 3.9919839271909780e-07   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   QRTQUAD
+
+ Problem name: QRTQUAD
+
+ Double precision version will be formed
+
+ The objective function uses 1 nonlinear group
+ 
+ There are 3900 free variables
+ There are 1100 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: QRTQUAD
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000000
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 9.533342e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 9.533341653877869e-07    
+Final f                               : -2.648561822315248e+11   
+
+Iterations of gradient projection (GP): 11        
+Iterations of active set GP           : 328       
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 9         
+Function evaluations in active set GP : 567       
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 9         
+Gradient evaluations in active set GP : 489       
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             : -2.648561822315248e+11
+sup-norm of gradient:  9.533341653877869e-07
+Number of iterations: 2943      
+Function evaluations: 5054      
+Gradient evaluations: 6291      
+Subspace iterations : 676       
+Number of subspaces : 133       
+
+!!   QRTQUAD   5000   11    9    9  328  567  489   2943   5054   6291       1       0     0    9.5333417e-07   -2.6485618e+11    1.200644
+ Final f                         = -2.6485618e+11  
+ Function value at final x       = -2.6485618223152478e+11  
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   RAYBENDL
+
+ Problem name: RAYBENDL
+
+ Double precision version will be formed
+
+ The objective function uses 1024 nonlinear groups
+ 
+ There are 2046 free variables
+ There are 4 fixed variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: RAYBENDL
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+CG_DESCENT (Version 7.0, October 21, 2019) run status: 0
+
+Success: Error inf satisfies error tolerance 1.000000e-06.
+
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 9.490021e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 9.490021052327435e-07    
+Final f                               : 9.624237838109690e+01    
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  9.624237838109690e+01
+sup-norm of gradient:  9.490021052327435e-07
+Number of iterations: 13044     
+Function evaluations: 22434     
+Gradient evaluations: 16706     
+
+!!  RAYBENDL   2050    0    0    0    0    0    0  13044  22434  16706       1       0     0    9.4900211e-07    9.6242378e+01    2.522882
+ Final f                         = 9.6242378e+01   
+ Function value at final x       = 9.6242378381096898e+01   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   RAYBENDS
+
+ Problem name: RAYBENDS
+
+ Double precision version will be formed
+
+ The objective function uses 1026 nonlinear groups
+ 
+ There are 2046 free variables
+ There are 4 fixed variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: RAYBENDS
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+CG_DESCENT (Version 7.0, October 21, 2019) run status: 0
+
+Success: Error inf satisfies error tolerance 1.000000e-06.
+
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 9.512090e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 9.512089507168753e-07    
+Final f                               : 9.624171097879515e+01    
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             :  9.624171097879515e+01
+sup-norm of gradient:  9.512089507168753e-07
+Number of iterations: 1765      
+Function evaluations: 3349      
+Gradient evaluations: 1954      
+
+!!  RAYBENDS   2050    0    0    0    0    0    0   1765   3349   1954       1       0     0    9.5120895e-07    9.6241711e+01   11.468121
+ Final f                         = 9.6241711e+01   
+ Function value at final x       = 9.6241710978795155e+01   
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   S368
+
+ Problem name: S368
+
+ Double precision version will be formed
+
+ The objective function uses 128 nonlinear groups
+ 
+ There are 8 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: S368
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 6.332060e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 6.332059878655372e-07    
+Final f                               : -7.499999999998372e-01   
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 2         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 2         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 2         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             : -7.499999999998372e-01
+sup-norm of gradient:  6.332059878655372e-07
+Number of iterations: 6         
+Function evaluations: 12        
+Gradient evaluations: 6         
+
+!!      S368      8    0    0    0    2    2    2      6     12      6       1       0     0    6.3320599e-07   -7.5000000e-01    0.000224
+ Final f                         = -7.5000000e-01  
+ Function value at final x       = -7.4999999999983724e-01  
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   SINEALI
+
+ Problem name: SINEALI
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ The objective function uses 999 nonlinear groups
+ 
+ There are 1000 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: SINEALI
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000000
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 6.270373e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 6.270372980927772e-07    
+Final f                               : -9.990096164870949e+04   
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 1         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 1         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 1         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             : -9.990096164870949e+04
+sup-norm of gradient:  6.270372980927772e-07
+Number of iterations: 43        
+Function evaluations: 75        
+Gradient evaluations: 62        
+
+!!   SINEALI   1000    0    0    0    1    1    1     43     75     62       1       0     0    6.2703730e-07   -9.9900962e+04    0.015103
+ Final f                         = -9.9900962e+04  
+ Function value at final x       = -9.9900961648709490e+04  
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 
+sifdecoder -A pc64.lnx.gfo -st   SSC
+
+ Problem name: SSC
+
+ Double precision version will be formed
+
+ The objective function uses 10082 nonlinear groups
+ 
+ There are 4900 free variables
+ There are 284 fixed variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+
+ Problem: SSC
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+walltime at start:     0.000001
+
+CG_DESCENT (Version 7.0, October 21, 2019) run status: 0
+
+Success: Error inf satisfies error tolerance 1.000000e-06.
+
+
+PASA run status (Version 1.0, October 21, 2019):
+
+PASA success: Error 7.878113e-07 satisfies error tolerance 1.000000e-06.
+
+
+PASA run statistics (Version 1.0, October 21, 2019):
+|| P (x - g) - x ||                   : 7.878113489443329e-07    
+Final f                               : -2.078173275083308e+00   
+
+Iterations of gradient projection (GP): 0         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 1         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 1         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+CG_DESCENT (Version 7.0, October 21, 2019) run statistics:
+
+Final f             : -2.078173275083308e+00
+sup-norm of gradient:  7.878113489443329e-07
+Number of iterations: 132       
+Function evaluations: 186       
+Gradient evaluations: 210       
+
+!!       SSC   5184    0    0    0    0    0    0    132    186    210       1       0     0    7.8781135e-07   -2.0781733e+00    0.395416
+ Final f                         = -2.0781733e+00  
+ Function value at final x       = -2.0781732750833082e+00  
+ ====================================================
+
+
+ ** SUBROUTINE CUTEST_csetup: Warning. The problem has no general constraints. 
+ ** Other tools may be preferable ** 

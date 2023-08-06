@@ -1,0 +1,1 @@
+alias runcg 'runcutest -p cg_descent -L/home/hager/math1/progs/SuiteOPT/ldlibs -lcg_descent -D' 
