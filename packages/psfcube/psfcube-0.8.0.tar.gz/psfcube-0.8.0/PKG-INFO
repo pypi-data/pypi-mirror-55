@@ -1,0 +1,21 @@
+Metadata-Version: 1.2
+Name: psfcube
+Version: 0.8.0
+Summary: psfcube: Python library to fit PSF profile + Background on Integral Field Unit cubes 
+Home-page: https://github.com/MickaelRigault/psfcube
+Author: Mickael Rigault
+Author-email: m.rigault@ipnl.in2p3.fr
+Maintainer: Mickael Rigault
+Maintainer-email: m.rigault@ipnl.in2p3.fr
+License: Apache 2.0
+Download-URL: https://github.com/MickaelRigault/psfcube/0.8
+Description:   Python library to fit PSF profile + Background on Integral Field Unit cubes 
+Platform: UNKNOWN
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Topic :: Scientific/Engineering :: Astronomy
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: Unix
+Classifier: Operating System :: MacOS
