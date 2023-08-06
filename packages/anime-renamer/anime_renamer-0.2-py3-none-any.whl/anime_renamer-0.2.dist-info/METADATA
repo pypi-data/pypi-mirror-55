@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: anime-renamer
+Version: 0.2
+Summary: UNKNOWN
+Home-page: https://github.com/smsriharsha/anime-renamer
+Author: kudoark
+Author-email: UNKNOWN
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: requests
+Requires-Dist: tvdbsimple
+
+UNKNOWN
+
+
