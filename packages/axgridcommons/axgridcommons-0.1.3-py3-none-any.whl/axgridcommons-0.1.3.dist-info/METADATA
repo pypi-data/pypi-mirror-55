@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: axgridcommons
+Version: 0.1.3
+Summary: AxGrid commons
+Home-page: http://axgrid.com
+License: MIT
+Keywords: commons
+Author: Dmitry Vysochin
+Author-email: dmitry.vysochin@gmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries
+Requires-Dist: asq (>=1.3,<2.0)
+Requires-Dist: pytoml (>=0.1.21,<0.2.0)
+Requires-Dist: pyyaml (>=5.1,<6.0)
+Project-URL: Repository, https://github.com/AxGrid/commons
+Description-Content-Type: text/markdown
+
+AxGrid Commons
+==============
+
+Abstract path
+-------------
+
+```python
+p = Path(ct_root="/ctx/", fs_root="/tmp/fs/ctx/")
+p.item(ct_target="/tk/a.txt").fs
+# "/tmp/fs/tk/a.txt"
+``` 
+
+
