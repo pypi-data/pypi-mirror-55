@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: pytorchresearch
+Version: 1.0.2-alpha
+Summary: Tools to automate research with PyTorch framework
+Home-page: https://github.com/VoIlAlex/pytorchresearch
+Author: Ilya Vouk
+Author-email: ilya.vouk@gmail.com
+License: MIT
+Download-URL: https://github.com/VoIlAlex/pytorchresearch/archive/v1.0.0-alpha.tar.gz
+Description: UNKNOWN
+Keywords: framework,automation,research,science,machine learning,deep learning,pytorch
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
