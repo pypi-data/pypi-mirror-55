@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+src/baseutils/__init__.py
+src/baseutils/iter.py
+src/baseutils/option.py
+src/baseutils/py.typed
+src/baseutils.egg-info/PKG-INFO
+src/baseutils.egg-info/SOURCES.txt
+src/baseutils.egg-info/dependency_links.txt
+src/baseutils.egg-info/requires.txt
+src/baseutils.egg-info/top_level.txt
