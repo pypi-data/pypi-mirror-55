@@ -1,0 +1,3 @@
+[console_scripts]
+tfrecords-convert = wai.tfrecords.adams:sys_main
+
