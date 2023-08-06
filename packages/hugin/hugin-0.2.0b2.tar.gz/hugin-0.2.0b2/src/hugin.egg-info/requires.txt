@@ -1,0 +1,15 @@
+Keras
+geojson
+rasterio
+scikit-image
+scipy
+geopandas
+Shapely
+Fiona
+h5py
+backoff
+matplotlib
+scikit-learn
+
+[hugin_data_augmentation]
+imgaug
