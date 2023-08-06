@@ -1,0 +1,59 @@
+Metadata-Version: 2.1
+Name: toxicbl
+Version: 2.3.1
+Summary: The official API package for Toxic's bot list using Python 3
+Home-page: https://github.com/kokkoooo/tbl.py
+Author: Jake
+Author-email: jakediserin@gmail.com
+License: MIT
+Description: # Welcome to toxicbl.py
+         this PyPi package helps you get info of bots , users and post data about user
+         / server count with your token on [Toxic Bot List](https://www.toxic-bot-list.ml)
+        # Getting started
+        You need to import the module first
+        ```py
+        from toxicbl import bots # or users 
+        ```
+        An example about scraping info for bots (Same can be done with users)
+        ```py
+        bots.get_info('your_id') # returns a usable info object
+        ```
+        An example about updating your bot's info (discord.py used)
+        ```py
+        from toxicbl import data
+        @client.event
+        async def on_ready()
+          data.update({
+        'token': 'your_token',
+        'serversCount' : str(len(client.servers)),
+        'usersCount' : str(len(client.users))
+        })
+        ```
+        # Bot Info Object
+        Returns an object containing: 
+        ```py
+        bot_tag: String # Bot's tag
+        avatar_url: String # Bot avatarUrl
+        library: String # Library of bot
+        prefix: String # Prefix of bot
+        short_description: String # Short description of bot in TBL site
+        long_description: String # Long description of bot in TBL site (contains markdown & html)
+        owner_tag: String # Full tag of owner
+        authorize_link: String # Invite link of the bot
+        server_count: String : Number of servers
+        user_count: String : Number of users
+        ```
+        # User Info Object
+        Returns an object containing: 
+        ```py
+        biography: String # User's biography if set
+        avatar_url: String # User's avatar url
+        username: String # User's username
+        num_of_bots: Integer # Number of bots created by user
+        ```
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
