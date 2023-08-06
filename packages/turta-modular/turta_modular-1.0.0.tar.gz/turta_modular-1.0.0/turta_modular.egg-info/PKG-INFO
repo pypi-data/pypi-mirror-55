@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: turta-modular
+Version: 1.0.0
+Summary: Python Libraries for Turta Modular System
+Home-page: https://www.turta.io/modular
+Author: Turta LLC
+Author-email: hello@turta.io
+License: UNKNOWN
+Project-URL: Documentation, https://docs.turta.io
+Project-URL: Community, https://community.turta.io
+Project-URL: GitHub Repository, https://github.com/Turta-io/Modular
+Description: # Turta Modular System for Raspberry Pi
+        Turta Modular System is a plug-and-play sensor interface.
+        
+        ## Features
+        - Accel Tilt Module
+        - Air Quality Module
+        - ALS (Ambient Light) Gesture Module
+        - Buzzer Button Module
+        - DIY Module
+        - Environmental Module
+        - IR Remote Module
+        - Photocoupler Module
+        - PIR Motion Detect Module
+        - Solid State Relay Module
+        - Temp RH Module
+        
+        ## Documentation
+        Visit [docs.turta.io](https://docs.turta.io) for documentation.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Topic :: System :: Hardware
+Description-Content-Type: text/markdown

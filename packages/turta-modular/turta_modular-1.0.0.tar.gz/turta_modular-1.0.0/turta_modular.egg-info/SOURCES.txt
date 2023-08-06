@@ -1,0 +1,16 @@
+README.md
+setup.py
+turta_modular/Turta_ALS_Gesture_Module.py
+turta_modular/Turta_Accel_Tilt_Module.py
+turta_modular/Turta_Buzzer_Button_Module.py
+turta_modular/Turta_Environmental_Module.py
+turta_modular/Turta_IRRemote_Module.py
+turta_modular/Turta_PIR_Motion_Module.py
+turta_modular/Turta_Photocoupler_Module.py
+turta_modular/Turta_SS_Relay_Module.py
+turta_modular/__init__.py
+turta_modular.egg-info/PKG-INFO
+turta_modular.egg-info/SOURCES.txt
+turta_modular.egg-info/dependency_links.txt
+turta_modular.egg-info/requires.txt
+turta_modular.egg-info/top_level.txt
