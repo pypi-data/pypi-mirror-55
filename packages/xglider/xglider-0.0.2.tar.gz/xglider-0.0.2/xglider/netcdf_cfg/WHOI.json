@@ -1,0 +1,10 @@
+{
+"inherit": "spray",
+"global_attributes": {
+    "summary": "Woods Hole Oceanographic Institution Spray glider data",
+    "creator_name": "Woods Hole Oceanographic Institution",
+    "creator_url": "http://gliders.ucsd.edu",
+    "creator_email": "rtodd@whoi.edu",
+    "institution": "Woods Hole Oceanographic Institution"
+    }
+}

@@ -1,0 +1,13 @@
+{
+"inherit": "spray",
+"global_attributes": {
+    "title": "Seasonal-to-Interannual Modulation of Fine-Scale Thermohaline Structure",
+    "acknowledgement": "Funded by the National Science Foundation, grant number OCE0452574.",
+    "references": "Rudnick, D. L. (2016). Ocean research enabled by underwater gliders. Annual review of marine science, 8, 519-541, doi:10.1146/annurev-marine-122414-033913\n Rudnick, D. L., Davis, R. E., & Sherman, J. T. (2016). Spray Underwater Glider Operations. Journal of Atmospheric and Oceanic Technology, 33(6), 1113-1122, doi:10.1175/JTECH-D-15-0252.1\n Rudnick, D. L., Davis, R. E., Eriksen, C. C., Fratantoni, D. M., & Perry, M. J. (2004). Underwater gliders for ocean research. Marine Technology Society Journal, 38(2), 73-84, doi:10.4031/002533204787522703\n Sherman, J., Davis, R. E., Owens, W. B., & Valdes, J. (2001). The autonomous underwater glider 'Spray'. IEEE Journal of oceanic Engineering, 26(4), 437-446, doi:10.1109/48.972076\n Rudnick, D. L. and S. T. Cole, 2011: On sampling the ocean using underwater gliders. Journal of Geophysical Research, 116, C08010, doi: 10.1029/2010JC006849; Cole, S. T. and D. L. Rudnick, 2012: The spatial distribution and annual cycle of upper ocean thermohaline structure. Journal of Geophysical Research, 117, C02027, doi: 10.1029/2011JC007033.",
+    "contributor_name": "Daniel Rudnick, Guilherme Castelao",
+    "contributor_role": "Principal Investigator, Database Manager",    
+    "product_version": "v2",
+    "doi": "10.21238/S8SPRAY4863",
+    "summary": "The overarching goal of this project was sustained sampling of upper ocean hydrography to resolve the seasonal-to-interannual modulation of meso- and fine-scale thermohaline structure. To achieve this goal, Spray underwater gliders made repeated occupations of a 1300-km meridional section northward from Hawaii to 34.5N along 158W.  The data set includes 1014 glider-days, covering 22566 km over ground, 22720 km through water, with 4641 dives."
+    }
+}

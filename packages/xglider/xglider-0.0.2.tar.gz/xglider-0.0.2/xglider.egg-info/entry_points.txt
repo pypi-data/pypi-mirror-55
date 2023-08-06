@@ -1,0 +1,3 @@
+[console_scripts]
+xglider = xglider.cli:main
+

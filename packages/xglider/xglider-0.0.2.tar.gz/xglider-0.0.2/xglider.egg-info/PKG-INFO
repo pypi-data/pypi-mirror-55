@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: xglider
+Version: 0.0.2
+Summary: Generic tools to handle underwater gliders' data
+Home-page: https://github.com/castelao/xglider
+Author: Guilherme Castelão
+Author-email: castelao@ucsd.edu
+License: Apache Software License 2.0
+Project-URL: Documentation, https://xglider.readthedocs.io/en/latest/
+Project-URL: Source Code, https://github.com/castelao/xglider
+Description: =======
+        xglider
+        =======
+        
+        
+        .. image:: https://zenodo.org/badge/DOI/10.5281/zenodo.1297697.svg
+           :target: https://doi.org/10.5281/zenodo.1297697
+        
+        .. image:: https://img.shields.io/pypi/v/xglider.svg
+           :target: https://pypi.python.org/pypi/xglider
+        
+        .. image:: https://img.shields.io/travis/castelao/xglider.svg
+           :target: https://travis-ci.org/castelao/xglider
+        
+        .. image:: https://readthedocs.org/projects/xglider/badge/?version=latest
+           :target: https://xglider.readthedocs.io/en/latest/?badge=latest
+           :alt: Documentation Status
+        
+        .. image:: https://pyup.io/repos/github/castelao/xglider/shield.svg
+           :target: https://pyup.io/repos/github/castelao/xglider/
+           :alt: Updates
+        
+        
+        
+        Generic tools to handle underwater gliders' data
+        
+        
+        * Free software: Apache Software License 2.0
+        * Documentation: https://xglider.readthedocs.io.
+        
+        
+        Features
+        --------
+        
+        * TODO
+        
+        Credits
+        -------
+        
+        
+        =======
+        History
+        =======
+        
+        0.0.1 (2018-05-30)
+        ------------------
+        
+        * First release on PyPI.
+        * Migrating/refactoring some functionalities from internal Spray glider tools.
+        
+Keywords: underwater glider oceanography
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/x-rst
+Provides-Extra: cmocean
+Provides-Extra: plot
