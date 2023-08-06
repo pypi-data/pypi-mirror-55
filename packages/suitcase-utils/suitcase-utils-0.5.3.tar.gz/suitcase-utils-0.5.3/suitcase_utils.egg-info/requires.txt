@@ -1,0 +1,12 @@
+
+[complete]
+bluesky
+caproto
+ophyd
+pytest>=3.9
+
+[test_fixtures]
+bluesky
+caproto
+ophyd
+pytest>=3.9
