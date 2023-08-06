@@ -1,0 +1,11 @@
+mypy_boto3_signer/__init__.py,sha256=Q1qNQ8ZL9NlOXkrzwQ6SklwjGUktU6UoFf1crJBiqkg,104
+mypy_boto3_signer/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_signer/client.py,sha256=eE7xd5aoEjvZ7WokbF5IiL_-lOqyFQATepHWR6U_Ewk,2435
+mypy_boto3_signer/paginator.py,sha256=XZSY0UfGBU9AOloa8jKJ8XwBr6mP2pyH3OKPnhyoPI8,919
+mypy_boto3_signer/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_signer/version.py,sha256=uEY-o5UpO0zjCdZ1SCWaClP-xXaDZDIXmwIfxAtFffI,48
+mypy_boto3_signer/waiter.py,sha256=64AVxMob2_IY1LeHvscvmB-OTGfFlh0l0eXHm1n5Yro,287
+mypy_boto3_signer-0.1.6.dist-info/METADATA,sha256=cxEH34l6oexjKqorvb3lhTVI02ZS-Ovr_wMmX9JXRNg,1402
+mypy_boto3_signer-0.1.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_signer-0.1.6.dist-info/top_level.txt,sha256=L5b1OH-8D7nWEVGpCekTktk78b030O3bDpwNQL-HABA,18
+mypy_boto3_signer-0.1.6.dist-info/RECORD,,
