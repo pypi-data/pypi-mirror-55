@@ -1,0 +1,27 @@
+---
+language: python
+dist: xenial
+branches:
+  only:
+    - master
+cache:
+  directories:
+    - $HOME/.cache/pip
+    - $HOME/.cache/pre-commit
+
+python:
+  - "3.6"
+  - "3.7"
+  - "pypy3"
+
+services:
+  - postgresql
+
+install:
+  - pip install tox-travis
+
+script:
+  - tox
+
+after_success:
+  coveralls
