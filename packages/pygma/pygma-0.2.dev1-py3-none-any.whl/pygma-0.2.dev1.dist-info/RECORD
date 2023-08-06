@@ -1,0 +1,12 @@
+pygma/__init__.py,sha256=RMyaz4uJwXLD5oDn-430hEkypwQ1_65Iqw42-KfGdfY,62
+pygma/version.py,sha256=x8Vm8DNNLtssD4cuiwmbWZxD6eiWJDyjwy08_RHwAts,139
+pygma/agents/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygma/agents/base_agent.py,sha256=1PQg__N_iu-bUgEkja0wrOog7AvJWi6HcC8g42P_hIg,78
+pygma/agents/pg_agent.py,sha256=vuTGk4NUwhCjzENd5_7ssq451-4LRd3XeuQNVCulRj4,111
+pygma/agents/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pygma/agents/tests/test_pg_agent.py,sha256=Ddzn_3y3GISJV9Yl5HjLj1JBvbk5MihcwHELSyRhUz4,325
+pygma-0.2.dev1.dist-info/LICENSE,sha256=A0-DdacYWudzkTFTp3h9TQMKyocNzYtQySk5lFD8gpc,1074
+pygma-0.2.dev1.dist-info/METADATA,sha256=Q2uunNLPpQkubsoPkJs-Tab_EW1j2BXGgsEDjYE5bcE,537
+pygma-0.2.dev1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pygma-0.2.dev1.dist-info/top_level.txt,sha256=SW8-Ghlvn6Iywepsv_3Mlm7Y3NSIKoah--GTBYmyNzg,6
+pygma-0.2.dev1.dist-info/RECORD,,
