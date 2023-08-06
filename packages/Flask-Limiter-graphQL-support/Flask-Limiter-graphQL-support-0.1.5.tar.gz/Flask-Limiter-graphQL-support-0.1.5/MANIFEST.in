@@ -1,0 +1,2 @@
+include versioneer.py
+include flask_limiter_graphQL_support/_version.py
