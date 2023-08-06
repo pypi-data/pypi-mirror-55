@@ -1,0 +1,9 @@
+fetchcommandwrapper/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fetchcommandwrapper/main.py,sha256=vm1335tXdZFKPpWVEaDo7suz8buPjVDQ-Rv7lZ_dwtc,6704
+fetchcommandwrapper/version.py,sha256=58UVKEr-BYJKXlyvTg7cyOb6HgrqTL2qBa80N-OzWMQ,170
+fetchcommandwrapper-0.8.2.data/data/share/fetchcommandwrapper/make.conf,sha256=88QLK7-OnQXD1-4FnbppyOkNmyd1eFOTbyHI4KURuFQ,620
+fetchcommandwrapper-0.8.2.data/scripts/fetchcommandwrapper,sha256=l_40C8Z76HQbI9F7y1Wu80jkuxHoGzNHvXk4r2U5848,473
+fetchcommandwrapper-0.8.2.dist-info/METADATA,sha256=HAfPqY28US5a6fe8etHWrXxpyKYoFOErpl4MX8bz3rM,299
+fetchcommandwrapper-0.8.2.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+fetchcommandwrapper-0.8.2.dist-info/top_level.txt,sha256=16JduM7MZPOm_S_INb8zWOQ79MdOJnOBuIMltYzj-GY,20
+fetchcommandwrapper-0.8.2.dist-info/RECORD,,
