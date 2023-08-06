@@ -1,0 +1,13 @@
+pyOpenRPA/Clipboard.py,sha256=q76X8L21zJwcwdoJJNPeCEwAV30xS6ylHP1WwvtxoWI,722
+pyOpenRPA/GUI.py,sha256=SzbCIZMAf53vEM5cwY55itseM5gcMSowF7POo2KwyeM,68726
+pyOpenRPA/IntegrationOrchestrator.py,sha256=T1g1jJM7_JMTSVP50DTM5WHrMh1w8wovvcBXl1nEokU,2656
+pyOpenRPA/JSONNormalize.py,sha256=aIuVzuZDazhxkCOzoOjfhHVz66mp2FWdfPv5E7KWF5Y,3890
+pyOpenRPA/ProcessCommunicator.py,sha256=eT_NgoAQBUxSu9alCGxuauuussrP50HDoiBA9JcUkOc,8114
+pyOpenRPA/Robot.py,sha256=a_xiI4SuSpGFAfnSrvhL8qeuFVHrBUEGOFwelRWIvTA,9407
+pyOpenRPA/ValueVerify.py,sha256=ObskxU4fOMoCGw74_nzYt6-a5jjrAckb3sdBLYyhYxY,777
+pyOpenRPA/Window.py,sha256=UJl-sg4RvvJ35aG9jZOzqGVwE15XK7qPHqoOBD13xFk,431
+pyOpenRPA/__init__.py,sha256=-DE-vIEDXeuo_tRSaZO9Sg62K8xUCnniQ1bNcqmktu4,372
+pyOpenRPA-1.0.14.dist-info/METADATA,sha256=GlSmt2FmkZ73JKC22I0Y8ab0t6b4eEodfD_WUduI-18,3510
+pyOpenRPA-1.0.14.dist-info/WHEEL,sha256=qB97nP5e4MrOsXW5bIU5cUn_KSVr10EV0l-GCHG9qNs,97
+pyOpenRPA-1.0.14.dist-info/top_level.txt,sha256=RPzwQXgYBRo_m5L3ZLs6Voh8aEkMeT29Xsul1w1qE0g,10
+pyOpenRPA-1.0.14.dist-info/RECORD,,
