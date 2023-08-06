@@ -1,0 +1,11 @@
+tagfiles/__init__.py,sha256=WY6wc2pxnakXlLFpxeTzH0IEM2oKUjySgbBCw5Almts,735
+tagfiles/_common.py,sha256=dTgAAbCwcPaxZ3wf6pwft7IeoPepLpjbXjMUgxTlyWc,770
+tagfiles/base.py,sha256=siwNWSG7cG6Ub3s3vYTg0dBtMkno8KMswbeWLMXJeMw,8043
+tagfiles/errors.py,sha256=2Ya_nmczKqvZGKsOzGISpnISj0GZpZ4IcR4gvcm_fkQ,91
+tagfiles/id3.py,sha256=v2pu2RWNxb_kdDZ7nKHCOYh_hQJ7vxo0yxh8Js9jfKg,5909
+tagfiles/mp4.py,sha256=8p1_fxwdZ261BKGGIfPekBx96GiL3Khon4itqX3BfOI,5818
+tagfiles/vorbis.py,sha256=wdywowUbpjj6NyvjEkVCj_7EdEMvcHM8yD1VVP6hlaI,1376
+tagfiles-0.2.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+tagfiles-0.2.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+tagfiles-0.2.0.dist-info/METADATA,sha256=SZh4DnmPEeMzdFlMMs7lBII0T2KT672H0u8FFL6h800,3427
+tagfiles-0.2.0.dist-info/RECORD,,
