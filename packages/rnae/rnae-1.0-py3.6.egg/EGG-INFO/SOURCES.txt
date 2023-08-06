@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/rnae/__init__.py
+src/rnae/data.py
+src/rnae/rnae.py
+src/rnae.egg-info/PKG-INFO
+src/rnae.egg-info/SOURCES.txt
+src/rnae.egg-info/dependency_links.txt
+src/rnae.egg-info/not-zip-safe
+src/rnae.egg-info/requires.txt
+src/rnae.egg-info/top_level.txt
