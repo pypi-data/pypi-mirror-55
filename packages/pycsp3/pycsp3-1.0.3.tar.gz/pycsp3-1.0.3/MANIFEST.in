@@ -1,0 +1,9 @@
+
+include pycsp3/version.txt
+recursive-include pycsp3/problems/ *.*
+global-exclude __pycache__
+global-exclude *.pyc
+global-exclude pycsp3/problems/g7_todo/*
+prune __pycache__
+prune *.pyc
+prune pycsp3/problems/g7_todo/*
