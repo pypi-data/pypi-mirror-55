@@ -1,0 +1,16 @@
+README.md
+setup.py
+da4py/__init__.py
+da4py.egg-info/PKG-INFO
+da4py.egg-info/SOURCES.txt
+da4py.egg-info/dependency_links.txt
+da4py.egg-info/top_level.txt
+da4py/main/__init__.py
+da4py/main/conformanceArtefacts.py
+da4py/main/distancesToFormulas.py
+da4py/main/formulas.py
+da4py/main/logToFormulas.py
+da4py/main/pnToFormulas.py
+da4py/main/variablesGenerator.py
+da4py/tests/Test_variablesGenerator.py
+da4py/tests/__init__.py
