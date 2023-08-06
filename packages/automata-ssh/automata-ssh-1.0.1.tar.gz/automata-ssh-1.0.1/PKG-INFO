@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: automata-ssh
+Version: 1.0.1
+Summary: A CLI application to create user accounts on Linux systems from Gitlab users/group information.
+Home-page: https://github.com/slimm609/automata_ng
+Author: Brian Davis
+Author-email: slimm609@gmail.com
+License: GPLv3
+Description: UNKNOWN
+Platform: UNKNOWN
