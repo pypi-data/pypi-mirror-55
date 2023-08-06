@@ -1,0 +1,8 @@
+README.md
+setup.py
+dnts/__init__.py
+dnts/parse.py
+dnts.egg-info/PKG-INFO
+dnts.egg-info/SOURCES.txt
+dnts.egg-info/dependency_links.txt
+dnts.egg-info/top_level.txt
