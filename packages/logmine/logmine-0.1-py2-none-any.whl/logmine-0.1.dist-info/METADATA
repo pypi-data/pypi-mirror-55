@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: logmine
+Version: 0.1
+Summary: Log pattern analyzer
+Home-page: https://github.com/trungdq88/logmine
+Author: Tony Dinh
+Author-email: trungdq88@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+TODO:
+- Same pattern but different cluster?
+- -Cluster merge is not showing pattern-
+- Disadvantages of using space as delimiter combine with the sequencely
+comparation of the scoring function
+- Introduce sampling
+- Benchmark
+
+
