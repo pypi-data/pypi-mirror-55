@@ -1,0 +1,3 @@
+[console_scripts]
+camacq = camacq.__main__:main
+

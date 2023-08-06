@@ -1,0 +1,45 @@
+logging:
+  version: 1
+  disable_existing_loggers: false
+  formatters:
+    colored:
+      (): colorlog.ColoredFormatter
+      format: '%(log_color)s%(asctime)s;%(levelname)-8s;%(name)-16s;%(message)s'
+      log_colors:
+        DEBUG: cyan
+        INFO: green
+        WARNING: yellow
+        ERROR: red
+        CRITICAL: red
+    simple:
+      format: '%(name)-16s: %(levelname)-8s %(message)s'
+    verbose:
+      format: '%(asctime)s;%(name)-16s;%(levelname)-8s;%(message)s'
+  handlers:
+    console:
+      class: logging.StreamHandler
+      level: INFO
+      formatter: colored
+      stream: ext://sys.stdout
+    filelog:
+      backupCount: 9
+      level: INFO
+      encoding: utf-8
+      filename: /tmp/camacq.log
+      formatter: verbose
+      class: logging.handlers.RotatingFileHandler
+      maxBytes: 1048576
+  loggers:
+    '':
+      level: DEBUG
+      handlers:
+        - console
+        - filelog
+port: 8895
+host: localhost
+last_well: 'U11--V07'
+fields_x: 2
+fields_y: 2
+first_job: 2
+objective: end_63x
+gain_only: false
