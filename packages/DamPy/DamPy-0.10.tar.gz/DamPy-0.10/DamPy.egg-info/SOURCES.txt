@@ -1,0 +1,14 @@
+README.md
+setup.cfg
+setup.py
+DamPy.egg-info/PKG-INFO
+DamPy.egg-info/SOURCES.txt
+DamPy.egg-info/dependency_links.txt
+DamPy.egg-info/requires.txt
+DamPy.egg-info/top_level.txt
+dampy/__init__.py
+dampy.egg-info/PKG-INFO
+dampy.egg-info/SOURCES.txt
+dampy.egg-info/dependency_links.txt
+dampy.egg-info/requires.txt
+dampy.egg-info/top_level.txt
