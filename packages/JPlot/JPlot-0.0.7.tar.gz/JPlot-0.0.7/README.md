@@ -1,0 +1,2 @@
+## JPlot 
+This is a package for creating publication ready plots, this is used to unify the plot setting for generating plots for publication. It also supports replotting using saved data and saving as tex source.
