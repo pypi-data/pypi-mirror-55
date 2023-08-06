@@ -1,0 +1,14 @@
+digiarch/__init__.py,sha256=VrXpHDu3erkzwl_WXrqINBm9xWkcyUy53IQOj042dOs,22
+digiarch/data.py,sha256=WFdPUQDlzMlgncEoYsk6RJxnjFi-ZpjmaZqGrXG0Ymo,2158
+digiarch/digiarch.py,sha256=9Kr7KeYmTC_fsVqm1AHWcVbYj0eJI5w0fgDSnENe1yk,2270
+digiarch/identify/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+digiarch/identify/identify_files.py,sha256=_ArVAwZmGWynctqblLW2fxd3qEkGSVJN9L8t7dTRwoU,838
+digiarch/identify/reports.py,sha256=XjDutnGTdQ1dQOUZfFEsK85waU5wMVRoxZOWqzq_-bU,2197
+digiarch/utils/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+digiarch/utils/click_utils.py,sha256=yl1HZiCrsAoUcBRLuM6xqjv9osJhNrnEZzIgqZRQ7Zc,963
+digiarch/utils/path_utils.py,sha256=sDmw7_jpozK282G2mASIRdf3_8Sv1GZB5S7zS7oDfbM,2465
+digiarch-0.3.0.dist-info/entry_points.txt,sha256=jKu4igvJA68hPNA-9h8xJ-ADXFSPj0_92gX6qDCJxkk,50
+digiarch-0.3.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+digiarch-0.3.0.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+digiarch-0.3.0.dist-info/METADATA,sha256=pMAwj7Zf2c8mA5DmTL6sAR6yFoKsaZMgVbH8WewjCEI,1573
+digiarch-0.3.0.dist-info/RECORD,,
