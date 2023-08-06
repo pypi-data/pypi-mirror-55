@@ -1,0 +1,10 @@
+raincoat/__init__.py,sha256=Jm8wSza-1lZeyxwMvK-puaZCa-7mss9RMfYbM-qe_f8,34
+raincoat/config.py,sha256=ybjZaPSJmdyp-bG5s37w2whnqbFzglu6jpJphfkDVFs,201
+raincoat/helpers.py,sha256=zkEE9BP0BnOnIoxOgrojHnVlBBXIL0pN4d6sEq0v8mU,1128
+raincoat/raincoat.py,sha256=KRC_uBNSz-deaeFwruJ71y3pMbwaPXfpSLUodNBN7lI,6302
+raincoat/torrent.py,sha256=zNvc43Uou-Y7RojozAGxSvFF82NPNKpRQ5ztSiP-bBk,3908
+raincoat_jackett-0.4.dist-info/METADATA,sha256=xNBNs0NRinTmrNX2Z570FD1WvMTq0Zh5qLXxVNxLQGM,3129
+raincoat_jackett-0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+raincoat_jackett-0.4.dist-info/entry_points.txt,sha256=_GAi94iYAinM4qO26hkwua9rAJe3oagMMJPo0ywSE48,53
+raincoat_jackett-0.4.dist-info/top_level.txt,sha256=KtGlPl4XaQ686OKh2oqFdHNaDENOjY1r68YQwulzAkc,9
+raincoat_jackett-0.4.dist-info/RECORD,,
