@@ -1,0 +1,40 @@
+Metadata-Version: 1.0
+Name: WuFeiLiuGuang_first_package
+Version: 2.0.1
+Summary: test pkg ignore
+Home-page: https://testpypi.python.org/pypi/WuFeiLiuGuang_first_package/
+Author: WuFeiLiuGuang
+Author-email: 20611873@qq.com
+License: LICENSE.txt
+Description: Test package .
+        ==================
+        
+        Introduction
+        -------------
+        This is a command line test pkg. ignore.
+        
+        Documentation
+        --------------
+        Documentation can be found at...
+        
+        Example Usage
+        --------------
+        Here is an example to import the modules from this package.
+        
+        .. code:: python
+        
+            from something import Foo
+            f = Foo()
+        
+        Contributing
+        ------------
+        To contribute...
+        
+        LICENSE
+        -------
+        See LICENSE.txt file.
+        
+        
+        
+        
+Platform: UNKNOWN
