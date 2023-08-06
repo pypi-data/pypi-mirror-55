@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: pangeamt-tea
+Version: 0.0.9
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Pangeamt
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: aiohttp
+
+# pangeamt-tea
+
+
