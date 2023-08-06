@@ -1,0 +1,21 @@
+numpy
+scipy
+pandas
+imageio
+imageio-ffmpeg
+tifffile
+h5py
+vispy
+pyopengl
+lark-parser
+mako
+click
+coloredlogs
+prompt_toolkit>2.0.0
+tqdm
+
+[:platform_system != "Darwin"]
+cupy-cuda101
+
+[:platform_system == "Darwin"]
+cupy
