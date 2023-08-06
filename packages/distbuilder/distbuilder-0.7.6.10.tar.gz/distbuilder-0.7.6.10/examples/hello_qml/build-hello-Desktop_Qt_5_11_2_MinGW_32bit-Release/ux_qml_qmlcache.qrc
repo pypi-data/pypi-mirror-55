@@ -1,0 +1,6 @@
+<?xml version="1.0"?>
+<RCC>
+    <qresource prefix="/">
+        <file alias="drumroll.wav">../hello/ux/drumroll.wav</file>
+    </qresource>
+</RCC>
