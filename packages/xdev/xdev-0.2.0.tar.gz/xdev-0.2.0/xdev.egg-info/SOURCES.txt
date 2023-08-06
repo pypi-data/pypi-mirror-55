@@ -1,0 +1,16 @@
+README.rst
+setup.py
+xdev/__init__.py
+xdev/autogen_imports.py
+xdev/class_reloader.py
+xdev/embeding.py
+xdev/interactive_iter.py
+xdev/introspect.py
+xdev/misc.py
+xdev/profiler.py
+xdev/util.py
+xdev.egg-info/PKG-INFO
+xdev.egg-info/SOURCES.txt
+xdev.egg-info/dependency_links.txt
+xdev.egg-info/requires.txt
+xdev.egg-info/top_level.txt
