@@ -1,0 +1,9 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+lat_month_inc.egg-info/PKG-INFO
+lat_month_inc.egg-info/SOURCES.txt
+lat_month_inc.egg-info/dependency_links.txt
+lat_month_inc.egg-info/top_level.txt
+latitude_mon_inc/cal_month_inc.py

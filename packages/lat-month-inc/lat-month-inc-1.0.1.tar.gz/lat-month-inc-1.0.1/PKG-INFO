@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: lat-month-inc
+Version: 1.0.1
+Summary: A Python package that input pandas dataframe and gives you the next calendar month date column embedded.
+Home-page: https://github.com/arundubey6215/lat-month-inc
+Author: Samar Dubey
+Author-email: adudubey2615@gmail.com
+License: MIT
+Description: # A calender month
+        
+        A Python package that input pandas dataframe and gives you the next calendar month date column embedded
+        
+        ## Usage
+        
+        Please refer to the tutorial.ipynb file ( ipython notebook )
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
