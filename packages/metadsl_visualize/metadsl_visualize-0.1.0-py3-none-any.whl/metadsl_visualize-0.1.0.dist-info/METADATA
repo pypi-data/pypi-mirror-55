@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: metadsl_visualize
+Version: 0.1.0
+Summary: Visualize metadsl objects with graphviz
+Home-page: https://github.com/Quansight-Labs/metadsl
+License: UNKNOWN
+Author: Saul Shanabrook
+Author-email: s.shanabrook@gmail.com
+Requires-Python: >=3.7
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: metadsl
+Requires-Dist: black
+Requires-Dist: typez
