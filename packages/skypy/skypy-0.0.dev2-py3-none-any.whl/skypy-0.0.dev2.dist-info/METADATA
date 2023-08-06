@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: skypy
+Version: 0.0.dev2
+Summary: skypy
+Home-page: http://docs.astropy.org/projects/package-template/
+Author: Astropy Developers
+Author-email: UNKNOWN
+License: BSD 3-Clause
+Platform: UNKNOWN
+Requires-Dist: astropy
+
+UNKNOWN
+
+
