@@ -1,0 +1,11 @@
+#!python
+
+from otter import cli
+from otter import gs_generator
+import sys
+
+if __name__ == "__main__":
+	if sys.argv[1] == "gen":
+		gs_generator.main()
+	else:
+		cli.main()
