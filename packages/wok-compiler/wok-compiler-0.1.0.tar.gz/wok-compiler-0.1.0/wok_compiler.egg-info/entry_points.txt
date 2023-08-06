@@ -1,0 +1,3 @@
+[console_scripts]
+wok = wok.cli:run
+
