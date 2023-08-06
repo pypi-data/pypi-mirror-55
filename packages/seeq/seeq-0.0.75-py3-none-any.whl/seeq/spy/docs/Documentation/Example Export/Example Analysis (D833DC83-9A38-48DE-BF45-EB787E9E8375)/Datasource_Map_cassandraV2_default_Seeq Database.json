@@ -1,0 +1,22 @@
+{
+    "Datasource Class": "cassandraV2",
+    "Datasource ID": "default",
+    "Datasource Name": "Seeq Database",
+    "Tag-Level Map Files": [],
+    "RegEx-Based Maps": [
+        {
+            "Old": {
+                "Type": "(?<type>.*)",
+                "Datasource Class": "cassandraV2",
+                "Datasource Name": "Seeq Database",
+                "Data ID": "(?<data_id>.*)"
+            },
+            "New": {
+                "Type": "${type}",
+                "Datasource Class": "cassandraV2",
+                "Datasource Name": "Seeq Database",
+                "Data ID": "${data_id}"
+            }
+        }
+    ]
+}

@@ -1,0 +1,22 @@
+{
+    "Datasource Class": "Seeq - FileSignal",
+    "Datasource ID": "default",
+    "Datasource Name": "Seeq Cache",
+    "Tag-Level Map Files": [],
+    "RegEx-Based Maps": [
+        {
+            "Old": {
+                "Type": "(?<type>.*)",
+                "Datasource Class": "Seeq - FileSignal",
+                "Datasource Name": "Seeq Cache",
+                "Data ID": "(?<data_id>.*)"
+            },
+            "New": {
+                "Type": "${type}",
+                "Datasource Class": "Seeq - FileSignal",
+                "Datasource Name": "Seeq Cache",
+                "Data ID": "${data_id}"
+            }
+        }
+    ]
+}

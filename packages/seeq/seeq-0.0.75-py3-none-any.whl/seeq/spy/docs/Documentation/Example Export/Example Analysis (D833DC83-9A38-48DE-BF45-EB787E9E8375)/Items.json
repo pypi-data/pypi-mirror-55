@@ -1,0 +1,911 @@
+{
+    "15359EB5-57E9-4A60-A5DA-454885854076": {
+        "Cache Enabled": true,
+        "Data ID": "15359EB5-57E9-4A60-A5DA-454885854076",
+        "Datasource Class": "Seeq - FileSignal",
+        "Datasource ID": "default",
+        "Formula": [
+            "$trainingRange = $inputCondition.toGroup(capsule(\"2018-01-01T21:08:41.352Z\", \"2018-02-01T21:08:41.352Z\"))",
+            "referenceTable(5min)",
+            "  .addRows($inputSignal, $trainingRange)",
+            "  .repeatOver($repeatOverCondition.fragment(), ReferenceTableStat.AveDev, 3)"
+        ],
+        "Formula Parameters": {
+            "inputCondition": "C1C00D7E-5FFC-43CC-9901-8CB99E7E996E",
+            "inputSignal": "9564A6B8-8A8F-4F6D-AC63-00EA38962B7A",
+            "repeatOverCondition": "C1C00D7E-5FFC-43CC-9901-8CB99E7E996E"
+        },
+        "ID": "15359EB5-57E9-4A60-A5DA-454885854076",
+        "Interpolation Method": "Linear",
+        "Key Unit Of Measure": "ns",
+        "Maximum Interpolation": "5",
+        "Name": "Temp HiHi",
+        "Scoped To": "D833DC83-9A38-48DE-BF45-EB787E9E8375",
+        "Type": "CalculatedSignal",
+        "UIConfig": {
+            "advancedParametersCollapsed": true,
+            "griddingPeriod": {
+                "units": "min",
+                "value": 5
+            },
+            "maximumDuration": {
+                "units": "day",
+                "value": 1
+            },
+            "multiplier": 3,
+            "referenceStat": "AveDev",
+            "type": "reference",
+            "windowEnd": 1517519321352,
+            "windowStart": 1514840921352
+        },
+        "Value Unit Of Measure": "\u00b0F"
+    },
+    "1E1AA2F6-1C15-45A1-9EEC-62D2A0BD4DE5": {
+        "Cache Enabled": true,
+        "Data ID": "[None] 018335D9-42AC-4ED2-A8EC-4A5362EC084E",
+        "Datasource Class": "Seeq Data Lab",
+        "Datasource ID": "Seeq Data Lab",
+        "Formula": [
+            "$trainingRange = $inputCondition.toGroup(capsule(\"2019-01-02T00:17:38.294Z\", \"2019-01-09T00:17:38.294Z\"), CapsuleBoundary.EnclosedBy)",
+            "referenceTable(5min)",
+            "  .addRows($inputSignal, $trainingRange)",
+            "  .repeatOver($repeatOverCondition.fragment(), ReferenceTableStat.AveDev, 3)"
+        ],
+        "Formula Parameters": {
+            "inputCondition": "34B07CE8-F6B9-4195-9E8D-8E498FD8F708",
+            "inputSignal": "8A4F0E26-8A0C-4127-9E11-B67E031C6049",
+            "repeatOverCondition": "34B07CE8-F6B9-4195-9E8D-8E498FD8F708"
+        },
+        "ID": "1E1AA2F6-1C15-45A1-9EEC-62D2A0BD4DE5",
+        "Interpolation Method": "Linear",
+        "Key Unit Of Measure": "ns",
+        "Maximum Interpolation": "5",
+        "Name": "Temperature Warning Upper",
+        "Scoped To": "54C62C9E-629B-4A76-B8D6-5348D7D59D5F",
+        "Type": "CalculatedSignal",
+        "UIConfig": {
+            "advancedParametersCollapsed": true,
+            "griddingPeriod": {
+                "units": "min",
+                "value": 5
+            },
+            "multiplier": 3,
+            "referenceStat": "AveDev",
+            "type": "reference",
+            "windowEnd": 1546993058294,
+            "windowStart": 1546388258294
+        },
+        "Value Unit Of Measure": "\u00b0F"
+    },
+    "2913AEA3-0D61-4271-AF3D-C44CA975B4D7": {
+        "Cache Enabled": true,
+        "Formula": "$b.max(capsule('2018-01-01T00:00:00Z', '2018-02-01T00:00:00Z')).getValue()",
+        "Formula Parameters": {
+            "b": "9564A6B8-8A8F-4F6D-AC63-00EA38962B7A"
+        },
+        "ID": "2913AEA3-0D61-4271-AF3D-C44CA975B4D7",
+        "Name": "Temperature Limit",
+        "Scoped To": "D833DC83-9A38-48DE-BF45-EB787E9E8375",
+        "Type": "CalculatedScalar",
+        "UIConfig": {
+            "advancedParametersCollapsed": true,
+            "maximumDuration": {
+                "units": "day",
+                "value": 1
+            },
+            "type": "power-search"
+        },
+        "Unit Of Measure": "\u00b0F"
+    },
+    "2E09EBCB-1A2B-4BB9-85C6-24AB7B6E01AF": {
+        "Cache Enabled": true,
+        "Data ID": "2E09EBCB-1A2B-4BB9-85C6-24AB7B6E01AF",
+        "Datasource Class": "Seeq - FileSignal",
+        "Datasource ID": "default",
+        "Formula": [
+            "$trainingRange = $inputCondition.toGroup(capsule(\"2018-01-01T21:08:41.352Z\", \"2018-02-01T21:08:41.352Z\"))",
+            "referenceTable(5min)",
+            "  .addRows($inputSignal, $trainingRange)",
+            "  .repeatOver($repeatOverCondition.fragment(), ReferenceTableStat.AveDev, -3)"
+        ],
+        "Formula Parameters": {
+            "inputCondition": "C1C00D7E-5FFC-43CC-9901-8CB99E7E996E",
+            "inputSignal": "9564A6B8-8A8F-4F6D-AC63-00EA38962B7A",
+            "repeatOverCondition": "C1C00D7E-5FFC-43CC-9901-8CB99E7E996E"
+        },
+        "ID": "2E09EBCB-1A2B-4BB9-85C6-24AB7B6E01AF",
+        "Interpolation Method": "Linear",
+        "Key Unit Of Measure": "ns",
+        "Maximum Interpolation": "5",
+        "Name": "Temp LoLo",
+        "Scoped To": "D833DC83-9A38-48DE-BF45-EB787E9E8375",
+        "Type": "CalculatedSignal",
+        "UIConfig": {
+            "advancedParametersCollapsed": true,
+            "griddingPeriod": {
+                "units": "min",
+                "value": 5
+            },
+            "maximumDuration": {
+                "units": "day",
+                "value": 1
+            },
+            "multiplier": -3,
+            "referenceStat": "AveDev",
+            "type": "reference",
+            "windowEnd": 1517519321352,
+            "windowStart": 1514840921352
+        },
+        "Value Unit Of Measure": "\u00b0F"
+    },
+    "32302B01-EE96-4A96-B00B-59DBEA2678EE": {
+        "Cache Enabled": true,
+        "Data ID": "32302B01-EE96-4A96-B00B-59DBEA2678EE",
+        "Datasource Class": "Seeq - FileSignal",
+        "Datasource ID": "default",
+        "Formula": [
+            "$trainingRange = $inputCondition.toGroup(capsule(\"2019-01-01T23:23:27.130Z\", \"2019-02-01T23:23:27.130Z\"), CapsuleBoundary.EnclosedBy)",
+            "referenceTable(5min)",
+            "  .addRows($inputSignal, $trainingRange)",
+            "  .repeatOver($repeatOverCondition.fragment(), ReferenceTableStat.AveDev, 3)"
+        ],
+        "Formula Parameters": {
+            "inputCondition": "C1C00D7E-5FFC-43CC-9901-8CB99E7E996E",
+            "inputSignal": "8A4F0E26-8A0C-4127-9E11-B67E031C6049",
+            "repeatOverCondition": "C1C00D7E-5FFC-43CC-9901-8CB99E7E996E"
+        },
+        "ID": "32302B01-EE96-4A96-B00B-59DBEA2678EE",
+        "Interpolation Method": "Linear",
+        "Key Unit Of Measure": "ns",
+        "Maximum Interpolation": "5",
+        "Name": "Temperature Warning Upper",
+        "Scoped To": "D833DC83-9A38-48DE-BF45-EB787E9E8375",
+        "Type": "CalculatedSignal",
+        "UIConfig": {
+            "advancedParametersCollapsed": false,
+            "griddingPeriod": {
+                "units": "min",
+                "value": 5
+            },
+            "multiplier": 3,
+            "referenceStat": "AveDev",
+            "type": "reference",
+            "windowEnd": 1549063407130,
+            "windowStart": 1546385007130
+        },
+        "Value Unit Of Measure": "\u00b0F"
+    },
+    "34B07CE8-F6B9-4195-9E8D-8E498FD8F708": {
+        "Cache Enabled": true,
+        "Data ID": "[None] 8C61111D-8034-49E3-ABA8-20AEE5E0CD14",
+        "Datasource Class": "Seeq Data Lab",
+        "Datasource ID": "Seeq Data Lab",
+        "Formula": "days()",
+        "Formula Parameters": {},
+        "ID": "34B07CE8-F6B9-4195-9E8D-8E498FD8F708",
+        "Key Unit Of Measure": "ns",
+        "Maximum Duration": "1.0416666666666667",
+        "Maximum Interpolation": "2.0833333333333335",
+        "Name": "Daily",
+        "Scoped To": "54C62C9E-629B-4A76-B8D6-5348D7D59D5F",
+        "Type": "CalculatedCondition"
+    },
+    "355DE70E-5478-45D9-B14C-94BF76B81F0C": {
+        "Formula": "<ThresholdMetric>",
+        "Formula Parameters": {
+            "Measured Item": "9564A6B8-8A8F-4F6D-AC63-00EA38962B7A",
+            "Process Type": "Simple",
+            "Thresholds": [
+                {
+                    "Item ID": "15359EB5-57E9-4A60-A5DA-454885854076",
+                    "Priority": {
+                        "Color": "#ffdd52",
+                        "Level": 2,
+                        "Name": "HiHi"
+                    }
+                },
+                {
+                    "Item ID": "9564A6B8-8A8F-4F6D-AC63-00EA38962B7A",
+                    "Priority": {
+                        "Color": "#6263AD",
+                        "Level": 1,
+                        "Name": "Hi"
+                    }
+                },
+                {
+                    "Item ID": "2E09EBCB-1A2B-4BB9-85C6-24AB7B6E01AF",
+                    "Priority": {
+                        "Color": "#ffdd52",
+                        "Level": -2,
+                        "Name": "LoLo"
+                    }
+                }
+            ]
+        },
+        "ID": "355DE70E-5478-45D9-B14C-94BF76B81F0C",
+        "Name": "Temperature With Bounds",
+        "Scoped To": "D833DC83-9A38-48DE-BF45-EB787E9E8375",
+        "Type": "ThresholdMetric",
+        "UIConfig": {
+            "advancedParametersCollapsed": true,
+            "type": "threshold-metric"
+        }
+    },
+    "38E66380-26C1-4374-B6F2-C8CC91B4932D": {
+        "Datasource Class": "cassandraV2",
+        "Datasource ID": "default",
+        "Formula": "conditionTable($yValueSignal1.toStates(capsule(10%, 85%).partition(5%)).toCondition(\"yValueCol1\").toGroup($viewCapsule, CapsuleBoundary.Intersect), \"yValueCol1\", $condition2.toGroup($viewCapsule), \"Value\").addStatColumn(\"signalToAggregate\", $signalToAggregate, average())",
+        "Formula Parameters": {
+            "condition2": "88BF5D71-421F-45BE-92C1-C907DF978191",
+            "signalToAggregate": "9564A6B8-8A8F-4F6D-AC63-00EA38962B7A",
+            "viewCapsule": "capsule(\"2018-11-05T04:59:48.188Z\", \"2018-11-12T04:59:48.188Z\")",
+            "yValueSignal1": "D581F7B7-9678-4586-A811-1A1F9F878459"
+        },
+        "ID": "38E66380-26C1-4374-B6F2-C8CC91B4932D",
+        "Name": "Temp vs Avg Humidity",
+        "Scoped To": "D833DC83-9A38-48DE-BF45-EB787E9E8375",
+        "Type": "Chart",
+        "UIConfig": {
+            "advancedParametersCollapsed": true,
+            "aggregationConfigs": [
+                {
+                    "binSize": "5",
+                    "id": 1,
+                    "mode": "by_y_value",
+                    "valid": true,
+                    "yValueBinMax": "85",
+                    "yValueBinMin": "10",
+                    "yValueBinMode": "size"
+                },
+                {
+                    "conditionProperty": "Value",
+                    "id": 2,
+                    "mode": "by_condition",
+                    "valid": true,
+                    "yValueBinMode": "size"
+                }
+            ],
+            "includeEmptyBuckets": false,
+            "maximumDuration": {
+                "units": "day",
+                "value": 1
+            },
+            "mode": "by_y_value",
+            "stat": {
+                "key": "average",
+                "timeUnits": "s"
+            },
+            "type": "aggregation-bins-table",
+            "yValueSignal": ""
+        }
+    },
+    "47D091C1-1780-4EA0-BD54-AA6E13213EB8": {
+        "Cache Enabled": false,
+        "Data ID": "[Tag] Area A_Optimizer.sim.ts.csv",
+        "Datasource Class": "Time Series CSV Files",
+        "Datasource ID": "Example Data",
+        "ID": "47D091C1-1780-4EA0-BD54-AA6E13213EB8",
+        "Interpolation Method": "Linear",
+        "Key Unit Of Measure": "ns",
+        "Maximum Interpolation": "2min",
+        "Name": "Area A_Optimizer",
+        "Source Maximum Interpolation": "2min",
+        "Source Value Unit Of Measure": "",
+        "Sync Token": "2019-10-31T00:01:10.201138800Z",
+        "Type": "StoredSignal",
+        "Value Unit Of Measure": ""
+    },
+    "51297B6C-9E44-4815-9C17-297ABC4A5D46": {
+        "Access Control": [
+            {
+                "Access Level": "FULL_CONTROL",
+                "Created At": "2019-10-22T14:10:14.336224900Z",
+                "ID": "4A334BE3-E904-4332-BC82-F675F0F1FB8E",
+                "Identity": {
+                    "Datasource Class": "Auth",
+                    "Datasource ID": "Seeq",
+                    "Datasource Name": "Seeq",
+                    "ID": "0BFA187F-6AC5-4DFB-8AC4-25D53EA57FEF",
+                    "Name": "Everyone",
+                    "Type": "UserGroup"
+                }
+            }
+        ],
+        "Ancestors": [],
+        "Created At": "1542474564838000000",
+        "Description": "This folder contains workbooks to illustrate import/export functionality.",
+        "ID": "51297B6C-9E44-4815-9C17-297ABC4A5D46",
+        "Name": "Example Export",
+        "Owner": {
+            "Datasource Class": "Auth",
+            "Datasource ID": "Seeq",
+            "Datasource Name": "Seeq",
+            "Email": "mark.derbecker@seeq.com",
+            "First Name": "Mark",
+            "ID": "AA61A752-1579-4191-AC30-3BBB21696D4F",
+            "Is Admin": true,
+            "Last Name": "Derbecker",
+            "Name": "Mark Derbecker",
+            "Type": "User",
+            "Username": "mark.derbecker@seeq.com"
+        },
+        "Type": "Folder",
+        "Updated At": "1571753347497016700"
+    },
+    "553DFA1F-BF27-4679-83FB-B6415B1FECB3": {
+        "Cache Enabled": true,
+        "Datasource Class": "cassandraV2",
+        "Datasource ID": "default",
+        "Formula": "$a.validValues().valueSearch(1day, isGreaterThan(90), 5min, isLessThanOrEqualTo(90), 5min)",
+        "Formula Parameters": {
+            "a": "9564A6B8-8A8F-4F6D-AC63-00EA38962B7A"
+        },
+        "ID": "553DFA1F-BF27-4679-83FB-B6415B1FECB3",
+        "Key Unit Of Measure": "ns",
+        "Maximum Duration": "1",
+        "Name": "High Temperature",
+        "Scoped To": "D833DC83-9A38-48DE-BF45-EB787E9E8375",
+        "Type": "CalculatedCondition",
+        "UIConfig": {
+            "advancedParametersCollapsed": true,
+            "limitsParams": {
+                "entryCondition": {
+                    "duration": {
+                        "units": "min",
+                        "value": 5
+                    },
+                    "operator": ">",
+                    "value": "90",
+                    "value2": null
+                },
+                "exitCondition": {
+                    "duration": {
+                        "units": "min",
+                        "value": 5
+                    },
+                    "operator": "<=",
+                    "value": "90",
+                    "value2": null
+                }
+            },
+            "maximumDuration": {
+                "units": "day",
+                "value": 1
+            },
+            "type": "limits"
+        }
+    },
+    "5C09B1E4-8E3C-44FC-AFFA-0060D3557D0C": {
+        "Cache Enabled": true,
+        "Data ID": "5C09B1E4-8E3C-44FC-AFFA-0060D3557D0C",
+        "Datasource Class": "Seeq - FileSignal",
+        "Datasource ID": "default",
+        "Formula": "$b.delay(12h)",
+        "Formula Parameters": {
+            "b": "9564A6B8-8A8F-4F6D-AC63-00EA38962B7A"
+        },
+        "ID": "5C09B1E4-8E3C-44FC-AFFA-0060D3557D0C",
+        "Interpolation Method": "Linear",
+        "Key Unit Of Measure": "ns",
+        "Maximum Interpolation": "2",
+        "Name": "Delayed Smooth Temperature",
+        "Scoped To": "D833DC83-9A38-48DE-BF45-EB787E9E8375",
+        "Type": "CalculatedSignal",
+        "UIConfig": {
+            "advancedParametersCollapsed": true,
+            "maximumDuration": {
+                "units": "day",
+                "value": 1
+            },
+            "type": "power-search"
+        },
+        "Value Unit Of Measure": "\u00b0F"
+    },
+    "6ABEEA79-1D4A-4EE8-A237-6C1B8B40B065": {
+        "Cache Enabled": true,
+        "Datasource Class": "cassandraV2",
+        "Datasource ID": "default",
+        "Formula": [
+            "$deviation1 = $input - $boundary1",
+            "$results1 = valueSearch($deviation1, 40h, isGreaterThan(0), 5min, true, isLessThan(0), 5min, true)",
+            "$deviation2 = $input - $boundary2",
+            "$results2 = valueSearch($deviation2, 40h, isLessThan(0), 5min, true, isGreaterThan(0), 5min, true)",
+            "combineWith($results1, $results2)"
+        ],
+        "Formula Parameters": {
+            "boundary1": "32302B01-EE96-4A96-B00B-59DBEA2678EE",
+            "boundary2": "D5586EDF-FF35-4C8B-85AC-50764C8A806F",
+            "input": "8A4F0E26-8A0C-4127-9E11-B67E031C6049"
+        },
+        "ID": "6ABEEA79-1D4A-4EE8-A237-6C1B8B40B065",
+        "Key Unit Of Measure": "ns",
+        "Maximum Duration": "40",
+        "Name": "Temperature Deviation",
+        "Scoped To": "D833DC83-9A38-48DE-BF45-EB787E9E8375",
+        "Type": "CalculatedCondition",
+        "UIConfig": {
+            "advancedParametersCollapsed": false,
+            "condition": "OUTSIDE",
+            "endDuration": {
+                "units": "min",
+                "value": 5
+            },
+            "endLocation": true,
+            "startDuration": {
+                "units": "min",
+                "value": 5
+            },
+            "startLocation": true,
+            "type": "deviation"
+        }
+    },
+    "7CFD2CC6-EB1A-4489-BDCC-B702C40065DA": {
+        "Cache Enabled": true,
+        "Data ID": "[None] 82006DDE-57E4-4299-843B-46EE4B6A4160",
+        "Datasource Class": "Seeq Data Lab",
+        "Datasource ID": "Seeq Data Lab",
+        "Formula": [
+            "$trainingRange = $inputCondition.toGroup(capsule(\"2019-01-02T00:17:38.294Z\", \"2019-01-09T00:17:38.294Z\"), CapsuleBoundary.EnclosedBy)",
+            "referenceTable(5min)",
+            "  .addRows($inputSignal, $trainingRange)",
+            "  .repeatOver($repeatOverCondition.fragment(), ReferenceTableStat.AveDev, -3)"
+        ],
+        "Formula Parameters": {
+            "inputCondition": "34B07CE8-F6B9-4195-9E8D-8E498FD8F708",
+            "inputSignal": "8A4F0E26-8A0C-4127-9E11-B67E031C6049",
+            "repeatOverCondition": "34B07CE8-F6B9-4195-9E8D-8E498FD8F708"
+        },
+        "ID": "7CFD2CC6-EB1A-4489-BDCC-B702C40065DA",
+        "Interpolation Method": "Linear",
+        "Key Unit Of Measure": "ns",
+        "Maximum Interpolation": "5",
+        "Name": "Temperature Warning Lower",
+        "Scoped To": "54C62C9E-629B-4A76-B8D6-5348D7D59D5F",
+        "Type": "CalculatedSignal",
+        "UIConfig": {
+            "advancedParametersCollapsed": true,
+            "griddingPeriod": {
+                "units": "min",
+                "value": 5
+            },
+            "multiplier": -3,
+            "referenceStat": "AveDev",
+            "type": "reference",
+            "windowEnd": 1546993058294,
+            "windowStart": 1546388258294
+        },
+        "Value Unit Of Measure": "\u00b0F"
+    },
+    "88BF5D71-421F-45BE-92C1-C907DF978191": {
+        "Cache Enabled": true,
+        "Datasource Class": "cassandraV2",
+        "Datasource ID": "default",
+        "Formula": "$b.toCapsules()",
+        "Formula Parameters": {
+            "b": "D2C089B6-CE85-46FC-8392-E11CC0C08336"
+        },
+        "ID": "88BF5D71-421F-45BE-92C1-C907DF978191",
+        "Key Unit Of Measure": "ns",
+        "Maximum Duration": "2",
+        "Name": "Optimizer Condition",
+        "Scoped To": "D833DC83-9A38-48DE-BF45-EB787E9E8375",
+        "Type": "CalculatedCondition",
+        "UIConfig": {
+            "advancedParametersCollapsed": true,
+            "maximumDuration": {
+                "units": "day",
+                "value": 1
+            },
+            "type": "power-search"
+        }
+    },
+    "8A4F0E26-8A0C-4127-9E11-B67E031C6049": {
+        "Ancillaries": [
+            {
+                "Data ID": null,
+                "Datasource Class": null,
+                "Datasource ID": null,
+                "Description": null,
+                "ID": "315538F2-38EE-448E-A9FE-CB53A2771261",
+                "Items": [
+                    {
+                        "ID": "1E1AA2F6-1C15-45A1-9EEC-62D2A0BD4DE5",
+                        "Name": "Temperature Warning Upper",
+                        "Order": 1,
+                        "Type": "CalculatedSignal"
+                    },
+                    {
+                        "ID": "7CFD2CC6-EB1A-4489-BDCC-B702C40065DA",
+                        "Name": "Temperature Warning Lower",
+                        "Order": 0,
+                        "Type": "CalculatedSignal"
+                    }
+                ],
+                "Name": "Warning",
+                "Scoped To": "54C62C9E-629B-4A76-B8D6-5348D7D59D5F",
+                "Type": "Ancillary"
+            },
+            {
+                "Data ID": null,
+                "Datasource Class": null,
+                "Datasource ID": null,
+                "Description": null,
+                "ID": "4EBD3C59-3AC0-492B-AAE7-6A3CA152E7EA",
+                "Items": [
+                    {
+                        "ID": "D5586EDF-FF35-4C8B-85AC-50764C8A806F",
+                        "Name": "Temperature Warning Lower",
+                        "Order": 0,
+                        "Type": "CalculatedSignal"
+                    },
+                    {
+                        "ID": "32302B01-EE96-4A96-B00B-59DBEA2678EE",
+                        "Name": "Temperature Warning Upper",
+                        "Order": 1,
+                        "Type": "CalculatedSignal"
+                    }
+                ],
+                "Name": "Warning",
+                "Scoped To": "D833DC83-9A38-48DE-BF45-EB787E9E8375",
+                "Type": "Ancillary"
+            }
+        ],
+        "Cache Enabled": false,
+        "Data ID": "Area A_Temperature.sim.ts.csv",
+        "Datasource Class": "Time Series CSV Files",
+        "Datasource ID": "Example Data",
+        "ID": "8A4F0E26-8A0C-4127-9E11-B67E031C6049",
+        "Interpolation Method": "Linear",
+        "Key Unit Of Measure": "ns",
+        "Maximum Interpolation": "2min",
+        "Name": "Temperature",
+        "Source Maximum Interpolation": "2min",
+        "Source Value Unit Of Measure": "\u00b0F",
+        "Sync Token": "2019-10-31T00:01:10.201138800Z",
+        "Type": "StoredSignal",
+        "Value Unit Of Measure": "\u00b0F"
+    },
+    "8C048548-8E83-4380-8B24-9DAD56B5C2CF": {
+        "Cache Enabled": true,
+        "Datasource Class": "cassandraV2",
+        "Datasource ID": "default",
+        "Formula": "$a.validValues().valueSearch(1day, isGreaterThan(30), 5min, isLessThanOrEqualTo(30), 5min)",
+        "Formula Parameters": {
+            "a": "DCED9C36-A4BE-4783-9216-DC06B3F57D8C"
+        },
+        "ID": "8C048548-8E83-4380-8B24-9DAD56B5C2CF",
+        "Key Unit Of Measure": "ns",
+        "Maximum Duration": "1",
+        "Name": "High Power",
+        "Scoped To": "D833DC83-9A38-48DE-BF45-EB787E9E8375",
+        "Type": "CalculatedCondition",
+        "UIConfig": {
+            "advancedParametersCollapsed": true,
+            "limitsParams": {
+                "entryCondition": {
+                    "duration": {
+                        "units": "min",
+                        "value": 5
+                    },
+                    "operator": ">",
+                    "value": "30",
+                    "value2": null
+                },
+                "exitCondition": {
+                    "duration": {
+                        "units": "min",
+                        "value": 5
+                    },
+                    "operator": "<=",
+                    "value": "30",
+                    "value2": null
+                }
+            },
+            "maximumDuration": {
+                "units": "day",
+                "value": 1
+            },
+            "type": "limits"
+        }
+    },
+    "9564A6B8-8A8F-4F6D-AC63-00EA38962B7A": {
+        "Cache Enabled": false,
+        "Data ID": "[Tag] Area A_Temperature.sim.ts.csv",
+        "Datasource Class": "Time Series CSV Files",
+        "Datasource ID": "Example Data",
+        "ID": "9564A6B8-8A8F-4F6D-AC63-00EA38962B7A",
+        "Interpolation Method": "Linear",
+        "Key Unit Of Measure": "ns",
+        "Maximum Interpolation": "2min",
+        "Name": "Area A_Temperature",
+        "Source Maximum Interpolation": "2min",
+        "Source Value Unit Of Measure": "\u00b0F",
+        "Sync Token": "2019-10-31T00:01:10.201138800Z",
+        "Type": "StoredSignal",
+        "Value Unit Of Measure": "\u00b0F"
+    },
+    "B396F2A6-CD3C-4AC6-9649-EA5E56379578": {
+        "Cache Enabled": false,
+        "Data ID": "[Tag] Area A_Wet Bulb.sim.ts.csv",
+        "Datasource Class": "Time Series CSV Files",
+        "Datasource ID": "Example Data",
+        "ID": "B396F2A6-CD3C-4AC6-9649-EA5E56379578",
+        "Interpolation Method": "Linear",
+        "Key Unit Of Measure": "ns",
+        "Maximum Interpolation": "2min",
+        "Name": "Area A_Wet Bulb",
+        "Source Maximum Interpolation": "2min",
+        "Source Value Unit Of Measure": "\u00b0F",
+        "Sync Token": "2019-10-31T00:01:10.201138800Z",
+        "Type": "StoredSignal",
+        "Value Unit Of Measure": "\u00b0F"
+    },
+    "C1C00D7E-5FFC-43CC-9901-8CB99E7E996E": {
+        "Cache Enabled": true,
+        "Datasource Class": "cassandraV2",
+        "Datasource ID": "default",
+        "Formula": "days()",
+        "Formula Parameters": {},
+        "ID": "C1C00D7E-5FFC-43CC-9901-8CB99E7E996E",
+        "Key Unit Of Measure": "ns",
+        "Maximum Duration": "1.0416666666666667",
+        "Maximum Interpolation": "2.0833333333333335",
+        "Name": "Daily",
+        "Scoped To": "D833DC83-9A38-48DE-BF45-EB787E9E8375",
+        "Type": "CalculatedCondition",
+        "UIConfig": {
+            "advancedParametersCollapsed": true,
+            "duration": "days",
+            "frequencies": [],
+            "maximumDuration": {
+                "units": "day",
+                "value": 1
+            },
+            "offset": {},
+            "quarterStart": {
+                "day": 1,
+                "month": "Month.January"
+            },
+            "shift": {
+                "duration": 8,
+                "offset": 8
+            },
+            "type": "periodic-condition",
+            "weekStart": "Day.Sunday"
+        }
+    },
+    "CCD70C84-F21E-4983-822F-5480BC50191D": {
+        "Cache Enabled": true,
+        "Data ID": "CCD70C84-F21E-4983-822F-5480BC50191D",
+        "Datasource Class": "Seeq - FileSignal",
+        "Datasource ID": "default",
+        "Formula": "$a.lowPassFilter(120min, 15s).derivative() * 3600 s/h",
+        "Formula Parameters": {
+            "a": "B396F2A6-CD3C-4AC6-9649-EA5E56379578"
+        },
+        "ID": "CCD70C84-F21E-4983-822F-5480BC50191D",
+        "Interpolation Method": "Linear",
+        "Key Unit Of Measure": "ns",
+        "Maximum Interpolation": "15.0",
+        "Name": "Rate of Change of Wet Bulb",
+        "Type": "CalculatedSignal",
+        "UIConfig": {
+            "advancedParametersCollapsed": true,
+            "maximumDuration": {
+                "units": "day",
+                "value": 1
+            },
+            "type": "power-search"
+        },
+        "Value Unit Of Measure": "\u00b0F/h"
+    },
+    "CE98C80E-838D-46E6-8250-2F5D887E86C6": {
+        "Formula": "<ThresholdMetric>",
+        "Formula Parameters": {
+            "Aggregation Function": "average()",
+            "Bounding Condition": "C1C00D7E-5FFC-43CC-9901-8CB99E7E996E",
+            "Measured Item": "9564A6B8-8A8F-4F6D-AC63-00EA38962B7A",
+            "Process Type": "Condition",
+            "Thresholds": [
+                {
+                    "Priority": {
+                        "Color": "#ff0000",
+                        "Level": 3,
+                        "Name": "HiHiHi"
+                    },
+                    "Value": {
+                        "Unit Of Measure": "",
+                        "Value": 130
+                    }
+                },
+                {
+                    "Priority": {
+                        "Color": "#ff0000",
+                        "Level": -3,
+                        "Name": "LoLoLo"
+                    },
+                    "Value": {
+                        "Unit Of Measure": "",
+                        "Value": 30
+                    }
+                }
+            ]
+        },
+        "ID": "CE98C80E-838D-46E6-8250-2F5D887E86C6",
+        "Name": "Average Daily Temperature",
+        "Scoped To": "D833DC83-9A38-48DE-BF45-EB787E9E8375",
+        "Type": "ThresholdMetric",
+        "UIConfig": {
+            "advancedParametersCollapsed": true,
+            "type": "threshold-metric"
+        }
+    },
+    "D2C089B6-CE85-46FC-8392-E11CC0C08336": {
+        "Cache Enabled": false,
+        "Data ID": "[Tag] Area A_Compressor Stage.sim.ts.csv",
+        "Datasource Class": "Time Series CSV Files",
+        "Datasource ID": "Example Data",
+        "ID": "D2C089B6-CE85-46FC-8392-E11CC0C08336",
+        "Interpolation Method": "Step",
+        "Key Unit Of Measure": "ns",
+        "Maximum Interpolation": "2min",
+        "Name": "Area A_Compressor Stage",
+        "Source Maximum Interpolation": "2min",
+        "Source Value Unit Of Measure": "string",
+        "Sync Token": "2019-10-31T00:01:10.201138800Z",
+        "Type": "StoredSignal",
+        "Value Unit Of Measure": "string"
+    },
+    "D5586EDF-FF35-4C8B-85AC-50764C8A806F": {
+        "Cache Enabled": true,
+        "Data ID": "D5586EDF-FF35-4C8B-85AC-50764C8A806F",
+        "Datasource Class": "Seeq - FileSignal",
+        "Datasource ID": "default",
+        "Formula": [
+            "$trainingRange = $inputCondition.toGroup(capsule(\"2019-01-01T23:23:27.130Z\", \"2019-02-01T23:23:27.130Z\"), CapsuleBoundary.EnclosedBy)",
+            "referenceTable(5min)",
+            "  .addRows($inputSignal, $trainingRange)",
+            "  .repeatOver($repeatOverCondition.fragment(), ReferenceTableStat.AveDev, -3)"
+        ],
+        "Formula Parameters": {
+            "inputCondition": "C1C00D7E-5FFC-43CC-9901-8CB99E7E996E",
+            "inputSignal": "8A4F0E26-8A0C-4127-9E11-B67E031C6049",
+            "repeatOverCondition": "C1C00D7E-5FFC-43CC-9901-8CB99E7E996E"
+        },
+        "ID": "D5586EDF-FF35-4C8B-85AC-50764C8A806F",
+        "Interpolation Method": "Linear",
+        "Key Unit Of Measure": "ns",
+        "Maximum Interpolation": "5",
+        "Name": "Temperature Warning Lower",
+        "Scoped To": "D833DC83-9A38-48DE-BF45-EB787E9E8375",
+        "Type": "CalculatedSignal",
+        "UIConfig": {
+            "advancedParametersCollapsed": false,
+            "griddingPeriod": {
+                "units": "min",
+                "value": 5
+            },
+            "multiplier": -3,
+            "referenceStat": "AveDev",
+            "type": "reference",
+            "windowEnd": 1549063407130,
+            "windowStart": 1546385007130
+        },
+        "Value Unit Of Measure": "\u00b0F"
+    },
+    "D581F7B7-9678-4586-A811-1A1F9F878459": {
+        "Cache Enabled": false,
+        "Data ID": "[Tag] Area A_Relative Humidity.sim.ts.csv",
+        "Datasource Class": "Time Series CSV Files",
+        "Datasource ID": "Example Data",
+        "ID": "D581F7B7-9678-4586-A811-1A1F9F878459",
+        "Interpolation Method": "Linear",
+        "Key Unit Of Measure": "ns",
+        "Maximum Interpolation": "2min",
+        "Name": "Area A_Relative Humidity",
+        "Source Maximum Interpolation": "2min",
+        "Source Value Unit Of Measure": "%",
+        "Sync Token": "2019-10-31T00:01:10.201138800Z",
+        "Type": "StoredSignal",
+        "Value Unit Of Measure": "%"
+    },
+    "DCED9C36-A4BE-4783-9216-DC06B3F57D8C": {
+        "Cache Enabled": false,
+        "Data ID": "[Tag] Area A_Compressor Power.sim.ts.csv",
+        "Datasource Class": "Time Series CSV Files",
+        "Datasource ID": "Example Data",
+        "ID": "DCED9C36-A4BE-4783-9216-DC06B3F57D8C",
+        "Interpolation Method": "Linear",
+        "Key Unit Of Measure": "ns",
+        "Maximum Interpolation": "2min",
+        "Name": "Area A_Compressor Power",
+        "Source Maximum Interpolation": "2min",
+        "Source Value Unit Of Measure": "kW",
+        "Sync Token": "2019-10-31T00:01:10.201138800Z",
+        "Type": "StoredSignal",
+        "Value Unit Of Measure": "kW"
+    },
+    "DF3E0953-12D6-444C-8F9C-3DEDB2999D5A": {
+        "Cache Enabled": false,
+        "Data ID": "[Tag] Area C_Temperature.sim.ts.csv",
+        "Datasource Class": "Time Series CSV Files",
+        "Datasource ID": "Example Data",
+        "ID": "DF3E0953-12D6-444C-8F9C-3DEDB2999D5A",
+        "Interpolation Method": "Linear",
+        "Key Unit Of Measure": "ns",
+        "Maximum Interpolation": "2min",
+        "Name": "Area C_Temperature",
+        "Source Maximum Interpolation": "2min",
+        "Source Value Unit Of Measure": "F",
+        "Sync Token": "2019-10-31T00:01:10.201138800Z",
+        "Type": "StoredSignal",
+        "Value Unit Of Measure": "\u00b0F"
+    },
+    "DFC5A100-8C92-4809-8044-102AAAB62EEA": {
+        "Duration": "12",
+        "Formula": "<ThresholdMetric>",
+        "Formula Parameters": {
+            "Aggregation Function": "maxValue()",
+            "Duration": {
+                "Unit Of Measure": "h",
+                "Value": 12
+            },
+            "Measured Item": "9564A6B8-8A8F-4F6D-AC63-00EA38962B7A",
+            "Period": {
+                "Unit Of Measure": "min",
+                "Value": 30
+            },
+            "Process Type": "Continuous"
+        },
+        "ID": "DFC5A100-8C92-4809-8044-102AAAB62EEA",
+        "Name": "Rolling Temperature 12-hour Maximum",
+        "Period": "30",
+        "Scoped To": "D833DC83-9A38-48DE-BF45-EB787E9E8375",
+        "Type": "ThresholdMetric",
+        "UIConfig": {
+            "advancedParametersCollapsed": true,
+            "type": "threshold-metric"
+        }
+    },
+    "FBBCD4E0-CE26-4A33-BE59-3E215553FB1F": {
+        "Cache Enabled": true,
+        "Data ID": "FBBCD4E0-CE26-4A33-BE59-3E215553FB1F",
+        "Datasource Class": "Seeq - FileSignal",
+        "Datasource ID": "default",
+        "Formula": "$series.lowPassFilter(100min, 2min, 333)",
+        "Formula Parameters": {
+            "series": "9564A6B8-8A8F-4F6D-AC63-00EA38962B7A"
+        },
+        "ID": "FBBCD4E0-CE26-4A33-BE59-3E215553FB1F",
+        "Interpolation Method": "Linear",
+        "Key Unit Of Measure": "ns",
+        "Maximum Interpolation": "120.0",
+        "Name": "Smooth Temperature",
+        "Scoped To": "D833DC83-9A38-48DE-BF45-EB787E9E8375",
+        "Type": "CalculatedSignal",
+        "UIConfig": {
+            "advancedParametersCollapsed": true,
+            "autoPeriod": true,
+            "autoTaps": true,
+            "cutoff": {
+                "units": "min",
+                "value": 100
+            },
+            "maximumDuration": {
+                "units": "day",
+                "value": 1
+            },
+            "period": {
+                "units": "min",
+                "value": 2
+            },
+            "samplePeriod": {
+                "units": "min",
+                "value": 2
+            },
+            "taps": 333,
+            "type": "low-pass-filter"
+        },
+        "Value Unit Of Measure": "\u00b0F"
+    }
+}

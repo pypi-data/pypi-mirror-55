@@ -1,0 +1,10 @@
+{
+    "5CE3F65A-13D3-49EE-8B80-25CCAF5EC8E8": {
+        "Cache Enabled": false,
+        "Datasource Class": "Auth",
+        "Datasource ID": "Seeq",
+        "ID": "5CE3F65A-13D3-49EE-8B80-25CCAF5EC8E8",
+        "Name": "Seeq",
+        "Type": "Datasource"
+    }
+}
