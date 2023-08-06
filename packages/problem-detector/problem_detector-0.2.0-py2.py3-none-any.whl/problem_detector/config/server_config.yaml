@@ -1,0 +1,2 @@
+slack_proxy_server_ip: '192.168.100.100'
+slack_proxy_server_port: '39512'

@@ -1,0 +1,9 @@
+Moving:
+  message: ''
+  log: false
+Pause:
+  message: 'Pause is detected!'
+  log: false
+FixMe:
+  message: 'FixMe is detected!!!'
+  log: true
