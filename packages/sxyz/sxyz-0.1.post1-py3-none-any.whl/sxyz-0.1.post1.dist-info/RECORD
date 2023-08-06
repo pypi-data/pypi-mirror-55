@@ -1,0 +1,11 @@
+sxyz/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sxyz/backend.py,sha256=55-5J3N-pBSCHix78TFSqrLtXGWr9hfUaI1yBHwfaE0,8363
+sxyz/config.py,sha256=a1HchFJ9zNEaof0MrMhWbxsFGMCxGtFaiRRg6pv1zHY,6168
+sxyz/sxyz.py,sha256=-W2x5IHE0vBJgxOv20eJTCzD3ZPVLwyjnuEG8Dtv-IM,5268
+sxyz/utils.py,sha256=Kj77mjAJZwrfAI15oBuenBxriaBCY-ksCkU1sC1elNo,1197
+sxyz-0.1.post1.dist-info/LICENSE,sha256=waBCcNq6iUiX1h9gp6_IjuEXTiXQBT6JWEZdTrcWIE0,1062
+sxyz-0.1.post1.dist-info/METADATA,sha256=f4KwD7YgIYxwB5OmD93NF1x6v7w8B8jhs9P9k1Cr7lM,4090
+sxyz-0.1.post1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+sxyz-0.1.post1.dist-info/entry_points.txt,sha256=dPJXo410KENSyDk6IymdFylPLjMf07jqMPtHfMNlRb0,41
+sxyz-0.1.post1.dist-info/top_level.txt,sha256=JBHZSzY58lBsk1VqiXkN0__f6_KZFwe6-GwQ7Qn22Us,5
+sxyz-0.1.post1.dist-info/RECORD,,

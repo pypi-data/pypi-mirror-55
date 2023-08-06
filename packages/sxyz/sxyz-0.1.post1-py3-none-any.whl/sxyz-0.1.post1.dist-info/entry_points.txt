@@ -1,0 +1,3 @@
+[console_scripts]
+sxyz = sxyz.sxyz:main
+
