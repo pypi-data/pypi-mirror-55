@@ -1,0 +1,17 @@
+.DS_Store
+.gitignore
+.ssl_domains
+Ohne Titel.code-workspace
+README.rst
+pyvenv.cfg
+requirements.txt
+setup.py
+.vscode/settings.json
+zopyx/__init__.py
+zopyx/checker.py
+zopyx.check_ssl_domains.egg-info/PKG-INFO
+zopyx.check_ssl_domains.egg-info/SOURCES.txt
+zopyx.check_ssl_domains.egg-info/dependency_links.txt
+zopyx.check_ssl_domains.egg-info/entry_points.txt
+zopyx.check_ssl_domains.egg-info/requires.txt
+zopyx.check_ssl_domains.egg-info/top_level.txt
