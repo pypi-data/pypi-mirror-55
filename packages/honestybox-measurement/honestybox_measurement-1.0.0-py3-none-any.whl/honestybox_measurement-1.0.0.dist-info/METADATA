@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: honestybox-measurement
+Version: 1.0.0
+Summary: 
+Author: Stuart Dines
+Author-email: me@stuartdines.com
+Requires-Python: >=3.5
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: dataclasses (>=0.6.0,<0.7.0); python_version == "3.6"
+Requires-Dist: six (>=1.12,<2.0)
+Requires-Dist: validators (>=0.13.0,<0.14.0)
