@@ -1,0 +1,9 @@
+README.md
+setup.py
+rawautoparams/__init__.py
+rawautoparams/rawautoparams.py
+rawautoparams.egg-info/PKG-INFO
+rawautoparams.egg-info/SOURCES.txt
+rawautoparams.egg-info/dependency_links.txt
+rawautoparams.egg-info/requires.txt
+rawautoparams.egg-info/top_level.txt
