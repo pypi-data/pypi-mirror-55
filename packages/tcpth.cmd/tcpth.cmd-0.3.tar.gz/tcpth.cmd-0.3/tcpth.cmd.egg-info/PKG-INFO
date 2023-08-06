@@ -1,0 +1,13 @@
+Metadata-Version: 1.2
+Name: tcpth.cmd
+Version: 0.3
+Summary: The cmd which can modify tcp through server config
+Home-page: https://github.com/wanglongshengdf
+Author: wls
+Author-email: wanglongshengdf@gmail.com
+License: GNU
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Keywords: tcp through cmd
+Platform: UNKNOWN
+Requires-Python: ==2.7.*
