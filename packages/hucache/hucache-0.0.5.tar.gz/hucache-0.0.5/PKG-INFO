@@ -1,0 +1,14 @@
+Metadata-Version: 1.1
+Name: hucache
+Version: 0.0.5
+Summary: A Declarative Caching Library for Human
+Home-page: https://github.com/wayhome/hucache
+Author: wayhome
+Author-email: yanckin@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
