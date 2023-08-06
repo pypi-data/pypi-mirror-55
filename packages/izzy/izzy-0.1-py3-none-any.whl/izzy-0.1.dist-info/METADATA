@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: izzy
+Version: 0.1
+Summary: A toolkit for executing and analyzing machine learning models
+Home-page: https://www.lockhartlab.org
+Author: C. Lockhart
+Author-email: chris@lockhartlab.org
+License: UNKNOWN
+Platform: UNKNOWN
+Requires: googleapiclient.discovery
+Requires: google.cloud
+Requires: google_auth_oauthlib.flow
+Requires: google.auth.transport.requests
+Requires: hashlib
+Requires: numpy
+Requires: os
+Requires: pandas
+Requires: pickle
+Requires: sklearn
+Requires: tempfile
+Requires: wheel
+
+UNKNOWN
+
+
