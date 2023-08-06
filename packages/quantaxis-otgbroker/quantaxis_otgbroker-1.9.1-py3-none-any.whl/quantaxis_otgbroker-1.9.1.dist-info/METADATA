@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: quantaxis-otgbroker
+Version: 1.9.1
+Summary: QUANTAXIS OTGBroker:QUANTAXIS OPEN_TRADE_GATEWAY BROKER
+Home-page: https://gitee.com/yutiansut/QAOTGBROKERS
+Author: yutiansut
+Author-email: yutiansut@qq.com
+License: MIT
+Keywords: quantaxis,quant,finance,Backtest,Framework
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Requires-Dist: websocket-client
+Requires-Dist: quantaxis (>=1.5.3)
+
+publisher and subscriber
+
+
