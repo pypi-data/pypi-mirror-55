@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+backchodi_project.egg-info/PKG-INFO
+backchodi_project.egg-info/SOURCES.txt
+backchodi_project.egg-info/dependency_links.txt
+backchodi_project.egg-info/entry_points.txt
+backchodi_project.egg-info/requires.txt
+backchodi_project.egg-info/top_level.txt
+mypackage/__init__.py
+mypackage/mymodule.py
+mypackage/template.txt
