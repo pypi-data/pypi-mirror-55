@@ -1,0 +1,9 @@
+LICENSE,sha256=rwohdnnI3bunipMrD91dBY37whrO4c3IH5zkm92lJX4,1075
+inbac/__init__.py,sha256=IMjkMO3twhQzluVTo8Z6rE7Eg-9U79_LGKMcsWLKBkY,22
+inbac/inbac.py,sha256=o4EYYReEhl4PtSaqKhe1iBqsB7Qft3_xVgKneihQOeQ,9103
+inbac/parse_arguments.py,sha256=17wAdLZK9yT2HnOkE6OqhGcoPhfRkDp-tW-f3Rdgn1c,1886
+inbac-1.1.0.dist-info/entry_points.txt,sha256=V0egkht3Vp9Lvk2zEcdBqzX-72fn3UmD4yQ8Y0Ae-rI,69
+inbac-1.1.0.dist-info/LICENSE,sha256=rwohdnnI3bunipMrD91dBY37whrO4c3IH5zkm92lJX4,1075
+inbac-1.1.0.dist-info/WHEEL,sha256=vZ9uOqWz9Nn_iQiloIvXrEesMclaDmme0lZSy9xq2xk,85
+inbac-1.1.0.dist-info/METADATA,sha256=AXxpr_-IoV0Nqa-GXIJS0HlestpNPBijM4RcVit63yM,3470
+inbac-1.1.0.dist-info/RECORD,,
