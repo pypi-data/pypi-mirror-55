@@ -1,0 +1,13 @@
+xdev/__init__.py,sha256=2fE9qGn-ioQC0Ml8-k8RrhAfnY-bRJ4FImRgGbkOtFY,2536
+xdev/autogen_imports.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xdev/class_reloader.py,sha256=aDBi9cJzJZBujo22ks1cefRRcv9ostxjGQd5LUIghPM,3855
+xdev/embeding.py,sha256=_feLWeLdRES0mzrvFHgS-yzIkWnS3kUIbQlHpNMWl5U,5768
+xdev/interactive_iter.py,sha256=PAgNDs8YVPXgZ1D6ISu4t042gMnZTHNoClebDrdDUmM,9366
+xdev/introspect.py,sha256=bWBV9J41wOnpfOmMp2kAC7RTbJ5hxIpztVgrme50EII,60
+xdev/misc.py,sha256=_hB6neOh1xAnKcHmO-BGN0mVskPXnsbptg_xNg4zhCo,7306
+xdev/profiler.py,sha256=usZzp4GSU1WOOcceUp3ZQYcARdHTVlrfPxRXIRlkJtg,17029
+xdev/util.py,sha256=SLLtS5QdUveVmlwRYB8bcIPPWYTWBHv8PplDtNghtDA,1760
+xdev-0.2.0.dist-info/METADATA,sha256=kFQbbWRRDN5lQbBIag_T_UDXdjr-s1Strhv9QrPRsCQ,3000
+xdev-0.2.0.dist-info/RECORD,,
+xdev-0.2.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+xdev-0.2.0.dist-info/top_level.txt,sha256=1YzelIxXTDp1fOjNttA4ESkrrrpn3I3zRp7XMaTqorM,5
