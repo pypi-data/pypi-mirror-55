@@ -1,0 +1,15 @@
+CODE_OF_CONDUCT.md
+CONTRIBUTING.md
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+i3egg/__init__.py
+i3egg/egg.py
+i3egg.egg-info/PKG-INFO
+i3egg.egg-info/SOURCES.txt
+i3egg.egg-info/dependency_links.txt
+i3egg.egg-info/entry_points.txt
+i3egg.egg-info/top_level.txt
+i3egg.egg-info/zip-safe
