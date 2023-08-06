@@ -1,0 +1,14 @@
+Benchmark/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Benchmark/_version.py,sha256=l-g2qIZFepUIbK3UY-j2XoCiMxC9w9buz2xuawthCVQ,127
+Benchmark/bfunctions.py,sha256=mAztEuuMdOWvkkGTF_wpqeiO4WHYLgs0JLggw8KuNdQ,21262
+Benchmark/byteformat.py,sha256=FvTnCipZamxG6UykAFxso5EIAy3kmTyb7Q7IecU3I34,305
+Benchmark/classes.py,sha256=gNhmeVt06JviurVVqEsz2seWocCncHnofI80AxsnhuU,7035
+Benchmark/run.py,sha256=nx3Di6bdxkP36zyXJZJBzNei_rLABaEdXEBjpk_gH3k,2460
+Benchmark/aws/Amazon EC2 Instance Comparison.csv,sha256=Nfvl2MNrRjrr8Jfw3aoSRkg3VCOFSmbevxppVjlHCCE,112589
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test.py,sha256=9D4NQkdEdb9GRN0K_z1ljHtrFwxV2-rNSpvy8rwKbEU,16292
+Benchmark_4dn-0.5.8.dist-info/LICENSE.txt,sha256=InLZNyrICvNa9WFkpMN0fTbPaJABkuwpJdkHR4IRI0c,1083
+Benchmark_4dn-0.5.8.dist-info/METADATA,sha256=kIK74Iqalx0MQ1-8TiLEXd7E-r2LSRbtkwjDf78Uh2E,3274
+Benchmark_4dn-0.5.8.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+Benchmark_4dn-0.5.8.dist-info/top_level.txt,sha256=0X6_rkKNMbJFJhHLc2kVHBc9nWk_4-68OAbJQHhwRNw,16
+Benchmark_4dn-0.5.8.dist-info/RECORD,,
