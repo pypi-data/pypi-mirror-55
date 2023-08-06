@@ -1,0 +1,15 @@
+pysclump/__init__.py,sha256=3QgiDpy7N7fnKPWi7QJRo4BeapQsByGiqsDqxiMMNkg,200
+pysclump/sclump.py,sha256=S_-1fjxIkWakkczzhRO1skooxIasueXRp8U4qqJikoo,6347
+pysclump/utils.py,sha256=xj1necna5_iiPH8U410zAWI0P9FGbFWLW5PkNDKzfLU,2238
+pysclump/PathSim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pysclump/PathSim/pathsim.py,sha256=Pd71u-bXnijMoQhAuKzgHQTGicwzWVJvpbjwop_7w5E,3705
+src/__init__.py,sha256=3gHEmhQ9KACWSMeGVxZSy8S8u30L6uEkk7V-lHrgakw,63
+src/sclump.py,sha256=Ubq6wXQWHUxqgXd2OFwsV5brdAkwV5eWGinIKWB6SgQ,5469
+src/utils.py,sha256=xj1necna5_iiPH8U410zAWI0P9FGbFWLW5PkNDKzfLU,2238
+src/PathSim/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+src/PathSim/pathsim.py,sha256=Pd71u-bXnijMoQhAuKzgHQTGicwzWVJvpbjwop_7w5E,3705
+pysclump-0.0.4.dist-info/LICENSE,sha256=6lNNhVFXXPXgWIjYu6PnIDw3iZYcSlipiQFxC9zdNLY,1071
+pysclump-0.0.4.dist-info/METADATA,sha256=VRCWIL0AykWMIhk7bE2NS10Bi37RX1Lg7et3IeruiMk,3438
+pysclump-0.0.4.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pysclump-0.0.4.dist-info/top_level.txt,sha256=5w9uK97sDyjp6BbTxI41SgtVqjnFWjew6V5_0jXK94g,9
+pysclump-0.0.4.dist-info/RECORD,,
