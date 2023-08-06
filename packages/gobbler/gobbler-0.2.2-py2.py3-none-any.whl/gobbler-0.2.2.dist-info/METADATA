@@ -1,0 +1,62 @@
+Metadata-Version: 2.1
+Name: gobbler
+Version: 0.2.2
+Summary: Turkey-themed image catalog to boost the holiday mood.
+Home-page: https://github.com/rayssharma/gobble
+Author: Ray Sharma
+Author-email: ramon.sharma1@gmail.com
+License: MIT
+Download-URL: https://github.com/rayssharma/gobble/tarball/0.2.2
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Office/Business :: Financial
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
+Requires-Dist: pillow (>=6.2.1)
+Requires-Dist: pytest
+
+# gobbler
+[![Travis CI](https://travis-ci.com/RaySSharma/gobble.svg?branch=master)](https://travis-ci.com/RaySSharma/gobble) 
+[![Wheel](https://img.shields.io/pypi/wheel/gobble.svg)](https://pypi.org/project/gobbler/)
+[![codecov](https://codecov.io/gh/RaySSharma/gobble/branch/master/graph/badge.svg)](https://codecov.io/gh/RaySSharma/gobble)
+
+
+
+A turkey-themed image catalog featuring over 99 hand-picked images to boost the holiday mood.
+
+## Installation
+```python
+pip install gobbler
+```
+## Usage
+
+### Python
+```python
+from gobble import gobble
+
+gobble()
+gobble(99)
+```
+### Command line
+```
+usage: gobble [-h] [-n NUM]
+
+A turkey-themed image catalog featuring over 99 hand-picked images to boost
+the holiday mood.
+
+optional arguments:
+-h, --help         show this help message and exit
+-n NUM, --num NUM  Specify image number
+```
+
+## License
+
+MIT © [Ray Sharma](http://rayssharma.com)
+
+
