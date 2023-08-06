@@ -1,0 +1,6 @@
+simpleeval
+python-sql>=0.4
+trytond_country<4.7,>=4.6
+trytond_currency<4.7,>=4.6
+trytond_product<4.7,>=4.6
+trytond<4.7,>=4.6
