@@ -1,0 +1,13 @@
+dbt-core==0.14.4
+snowflake-connector-python==2.0.3
+requests<2.23
+urllib3<1.25
+azure-common<2
+azure-storage-blob<3
+pycryptodomex!=3.5.0,<4,>=3.2
+pyOpenSSL>=16.2.0
+cffi<2,>=1.9
+cryptography<3,>2
+pyjwt<2
+idna<3
+ijson<2.6
