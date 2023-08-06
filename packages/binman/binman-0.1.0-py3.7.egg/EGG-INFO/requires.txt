@@ -1,0 +1,4 @@
+fire
+colorama
+requests
+click
