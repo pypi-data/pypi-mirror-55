@@ -1,0 +1,4 @@
+include geoglows/notebooks/*.ipynb
+recursive-include geoglows/streamflow *
+include geoglows/streamflow/delineation_data/bounding_boxes.csv
+recursive-include geoglows/streamflow/delineation_data *.csv*/*.csv
