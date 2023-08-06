@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: typez
+Version: 0.1.0
+Summary: Meta language for describing DSLs in JSON.
+Home-page: https://github.com/Quansight-Labs/metadsl
+Author: Saul Shanabrook
+Author-email: s.shanabrook@gmail.com
