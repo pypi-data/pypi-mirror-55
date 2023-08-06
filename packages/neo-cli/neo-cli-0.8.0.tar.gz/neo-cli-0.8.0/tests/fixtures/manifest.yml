@@ -1,0 +1,11 @@
+deploy:
+- instances.awesome-project
+instances:
+  awesome-project:
+    parameters:
+      flavor: SX48.8
+      image: CentOS 6.9
+      key_name: vm-key
+      private_network: vm-net
+      username: john
+    template: vm
