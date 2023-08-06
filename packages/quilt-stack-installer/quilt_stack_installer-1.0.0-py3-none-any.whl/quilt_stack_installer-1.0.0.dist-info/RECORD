@@ -1,0 +1,15 @@
+quilt_stack_installer/VERSION,sha256=klIfw8vZZL3J9YSpkbif3apXVO0cyW1tQkRTOGacEwU,5
+quilt_stack_installer/__init__.py,sha256=SJbwyo2hJMjC8gBkxhjCLmX0U3XdBox-U9yV2T6nn04,90
+quilt_stack_installer/cli.py,sha256=LyS_bx0iQg6C-JZG9lN0yQDwbbVXLhB1bbCGzQwVl78,1289
+quilt_stack_installer/cli_input.py,sha256=G6VcyFGoKrlJxDVxLCB56n1vlvv9uKJJ8r8D8eNmpck,1094
+quilt_stack_installer/cloudformation.py,sha256=vNdVLChNZvt2Mbss3VopUPqWYRsC6MUr9FgS5PXWmqY,4701
+quilt_stack_installer/config.py,sha256=3knN-VPb2skFUrAmxiX2mBRrvfRfZulKtdJ2UMn9ACw,2967
+quilt_stack_installer/install_flow.py,sha256=K7yCchIuWItySKoePqSqt62grTqO1cB-KqbSZi8qTd8,11673
+quilt_stack_installer/route53.py,sha256=GYaFtfpfSjGCJrQ4MTbTZy4iS8c9Z7g5rdfFhyiO48E,1270
+quilt_stack_installer/session_log.py,sha256=swfqrhh6bbZJMLsbFHVP2Gf0cxSV-uiSTK0xWxbPjIQ,5432
+quilt_stack_installer/user_input_params.py,sha256=RRlAiVf_OjB9KHQfoqq3ENWm-_oizuwjhSKmhzj0JZw,1367
+quilt_stack_installer-1.0.0.dist-info/METADATA,sha256=SVU5F5pTSgb3PJPhjkIgO1AJIfSze2ULO4Imme0Mnos,762
+quilt_stack_installer-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+quilt_stack_installer-1.0.0.dist-info/entry_points.txt,sha256=fUMZ5fjV07O0fJf3SfhyMnhWwEvUjN0qeCHGiCiFBBs,73
+quilt_stack_installer-1.0.0.dist-info/top_level.txt,sha256=mpNFDhQiifB60_DTmMkmVFLuRDHwaSf_azcmm3_P8-w,22
+quilt_stack_installer-1.0.0.dist-info/RECORD,,
