@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: vtpl-api
+Version: 1.0.4
+Summary: Vtpl Engine api
+Home-page: UNKNOWN
+Author-email: 
+License: UNKNOWN
+Keywords: OpenAPI,OpenAPI-Generator,Vtpl Engine api,vtpl
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Requires-Dist: urllib3 (>=1.15)
+Requires-Dist: six (>=1.10)
+Requires-Dist: certifi
+Requires-Dist: python-dateutil
+
+Engine APIs  # noqa: E501
+
+
