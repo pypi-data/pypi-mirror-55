@@ -1,0 +1,10 @@
+staple/__init__.py,sha256=tEGgW6wtW4dkHLS8-Ce0dc8R8ERMJ0TVqMtGh9HZt_4,196
+staple/cli.py,sha256=4rZOCV7oeDB_vGZNACIeIhSf9Rb0MrpHlVqkK1xeSBE,782
+staple/staple.py,sha256=Uz81cYP9CKpU3K6BinyGJ8RqxGrZLADC8zldZe9nNbE,6951
+staple-0.3.2.dist-info/AUTHORS.rst,sha256=8F_TOmV9loQXfd9dG1tYKrFdwSQaoIzy8spcT74Rr2s,180
+staple-0.3.2.dist-info/LICENSE,sha256=Vh34pCo9Owd76xcXcqdRaduhKzg7Jj1c4RQIFxqU2Ww,1080
+staple-0.3.2.dist-info/METADATA,sha256=lkqf7HuDBsa2CQpWiZB9QDroI12YNIiXPr3D16TI50Y,3334
+staple-0.3.2.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+staple-0.3.2.dist-info/entry_points.txt,sha256=FEStCbQLRGajFeCb4gXiPp_Hdny7tC-XBY6v4DbGy0U,44
+staple-0.3.2.dist-info/top_level.txt,sha256=U06dLtSMyzGIi8jlicdWv6dqUvvQn_fopiP02SNQjtY,7
+staple-0.3.2.dist-info/RECORD,,
