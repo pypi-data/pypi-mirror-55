@@ -1,0 +1,9 @@
+stocker/__init__.py,sha256=JggJpGJKB3sGrXi1t_ZUzyzCIOHSrysol7fPw7QnuUc,88
+stocker/error.py,sha256=9Z4i9OzwmabQv1o4yjxHDLvBPE1042Wt5OA_JxncyPs,549
+stocker/get_data.py,sha256=QfS_LpQ8gYVvwwY6_nM9TJYPC31QhSeRT0dTif3A2IA,5446
+stocker/lstm.py,sha256=f5BjFMXxfa_Quc1_BD6BWAyF2LZNYrVwIK_pXTmuu-8,2286
+stocker/predict.py,sha256=d3Sf9O5h9h-uhXBQXb7KG0sIephIkEeGWu_6Dq-vjnA,535
+stocker-0.1.1.dist-info/METADATA,sha256=OPhJHRW204ljW8wg-34qSphIqPbffs5WIKxIa59J-JY,1436
+stocker-0.1.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+stocker-0.1.1.dist-info/top_level.txt,sha256=Sw0eIGsbjTvyP3YxE6tORHXbGgcCb3Npw5o-y_oSkHI,8
+stocker-0.1.1.dist-info/RECORD,,
