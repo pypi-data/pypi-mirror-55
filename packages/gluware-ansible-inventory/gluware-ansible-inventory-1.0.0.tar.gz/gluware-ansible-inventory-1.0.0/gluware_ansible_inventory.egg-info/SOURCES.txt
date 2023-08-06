@@ -1,0 +1,7 @@
+README.md
+glu_devices.py
+setup.py
+gluware_ansible_inventory.egg-info/PKG-INFO
+gluware_ansible_inventory.egg-info/SOURCES.txt
+gluware_ansible_inventory.egg-info/dependency_links.txt
+gluware_ansible_inventory.egg-info/top_level.txt
