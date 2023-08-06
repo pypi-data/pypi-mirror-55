@@ -1,0 +1,4 @@
+numpy
+requests
+qcloud_cos
+pymysql
