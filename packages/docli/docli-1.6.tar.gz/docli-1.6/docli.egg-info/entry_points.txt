@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        docli=docli.main:docli
+    
