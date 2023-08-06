@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: plotcdf
+Version: 0.0.1
+Summary: This python package allows us to plot beautiful cumulative distributions functions for discrete random variables.
+Home-page: https://github.com/parcr/plotcdf
+Author: PedroCR
+Author-email: pedro.cortereal@magentakoncept.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: matplotlib (>=3.1)
+Requires-Dist: numpy (>=1.16)
+
+# plotcdf
+This python package allows us to plot beautiful cumulative distributions functions and quantile functions 
+for discrete random variables.
+
+## Installation
+```
+$ pip install plotcdf
+```
+
+## Usage
+Get it in the [GitHub](https://github.com/parcr/plotcdf)
+
+## Help
+Get it in the [GitHub](https://parcr.github.io/plotcdf_doc/)
+
+## License
+This module is released under the MIT license. Please, see LICENSE for details
+
+## Contact
+pedro.cortereal@magentakoncept.com
+
