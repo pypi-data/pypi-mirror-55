@@ -1,0 +1,12 @@
+mysodexo/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mysodexo/api.py,sha256=PqvjGrIUIqb4oJb2mdHSDUYbCzZlDmpqDRtNXZD8PsI,3708
+mysodexo/cli.py,sha256=vKG3iEW3EXE-PvwEBXcU045vR0SFgs-mlCWgmApGKt0,3128
+mysodexo/constants.py,sha256=8egA1Lxuq0ufOUp-KUK2BAhIo-iwa_GMeoYqy8wGNeU,837
+mysodexo/sodexows.mo2o.com_client-android.crt.pem,sha256=1_ewrlSTSQ3zdrHuHB9qRzCgpd9si_17K6-wVuIPcDw,1611
+mysodexo/sodexows.mo2o.com_client-android.key.pem,sha256=cRJpsdKtKwH8GdJO2a5eahzvDtZfhcyab0qUHMPukqs,1828
+mysodexo-20191114.dist-info/LICENSE,sha256=lZObJfNxog-qDY1HJxmMBR_kD12BuscbVT88UW41Ngc,1068
+mysodexo-20191114.dist-info/METADATA,sha256=ePpD-K3lAiP48XE0Endp3iU0peBGEmt73DKD9940taQ,1276
+mysodexo-20191114.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mysodexo-20191114.dist-info/entry_points.txt,sha256=249nAlkNj1ckGlxCk7k4kOIv_gTjsR67UKaXzMlEz1M,48
+mysodexo-20191114.dist-info/top_level.txt,sha256=Ss_Y_dnELypEuUvqtAqLcit9Dk-ZqM5yW-8QRsDVD1o,9
+mysodexo-20191114.dist-info/RECORD,,
