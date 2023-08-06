@@ -1,0 +1,17 @@
+sysapi/__init__.py,sha256=naX7qQe1n08r7K3sTLnk0nq21k7IpVUZVhSuNSFXri4,21
+sysapi/backend.py,sha256=GRj-gwiqpOvOMTaOcrHVftR2RFqcKQE1ro4cdw1YDYk,19416
+sysapi/env.py,sha256=mqzb2WJ6-KKFyChAlrMfPVQkCo3cXVG1sVr6A7X3G0Y,296
+sysapi/file.py,sha256=x5tHfenI__1TbYQZhf1fT4xtxvljcr3konFT0qac6bo,2524
+sysapi/main.py,sha256=KrnpKGr_gl7H3d7J-BVtur872OUcW83EJVsUemL3ekE,7796
+sysapi/preptest.py,sha256=wnrSZWUJM7O_L9LWBNGnyaUwjFLv3j1oKZLmD3OIW1c,507
+sysapi/snapshot.py,sha256=hXaliKTkxckbE_bocdEylKmMgflT7sg__r1eLqUksug,4046
+sysapi/user.py,sha256=s1MdkM37XjrtT60YrKUJohXogYzgFLs-4uezWxf3L2k,1482
+sysapi/zfilesystem.py,sha256=lmKp7zXBSL2MxSehyPz4zMn5sbJGgiS-UwPUH8PuIIk,71
+sysapi-0.0.31.data/data/config.json,sha256=DjjWmW0OI88Ce3EYt1hLsoWnL0rbUSD2kZ9yqnwBA_o,5111
+sysapi-0.0.31.data/data/params.json,sha256=2hJhz7T27WyIc-LmVoX-pFIQvg5VZC8O_yXyiA4NAG8,304
+sysapi-0.0.31.data/scripts/cleanup.sh,sha256=AwluVPZSgG-6gFACR5gf02J_EDjxuZ1LMtXWh1KWwdY,334
+sysapi-0.0.31.data/scripts/preptest.sh,sha256=pST8UPej_Lnn0mUP6N5beRvxrKQdFyORMFF6QF61Qpg,1011
+sysapi-0.0.31.dist-info/METADATA,sha256=35nmVQOf-Ujc9Uytzp8nCCjDqDbsBBvLfSwwyFJG9cU,4409
+sysapi-0.0.31.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+sysapi-0.0.31.dist-info/top_level.txt,sha256=WAl3H77V4IZ9i8nQjTdGtDr0AasGfI9A8-RxDcaG_zM,7
+sysapi-0.0.31.dist-info/RECORD,,
