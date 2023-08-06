@@ -1,0 +1,14 @@
+soupstars/cli/__init__.py,sha256=GYnCoY_RFybRoGV_MM6KUeg9Md-N9U4QwCzOVamdb94,195
+soupstars/cli/base.py,sha256=5Gar2ZryxV67BwCE7o2Mm-e3s_9kMspOMYTqz256Ob0,2205
+soupstars/cli/cloud.py,sha256=VdDbBbPKekZ53usfevwbyVmIWIqI8IjnIEyn_ir1_M8,5578
+soupstars/cli/printers.py,sha256=P97RjlSxoYUvXi1F3lrlfq1tSoD5IGb3uLg-9H0etmA,765
+soupstars/examples/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+soupstars/examples/economist.py,sha256=iBvpH37rwfRjkZ4qt-55R6sdgGEel6LcXygCbkIe0TY,636
+soupstars/examples/nytimes.py,sha256=_6AKSq6B_KqieRUM8prW476RXops40dNob2LTcwVoJ0,382
+soupstars/examples/wsj.py,sha256=uPHNnXsbDVqT03oRtoNSFlMYS5Sx5apbLh6MqoSRWqc,259
+soupstars-2.11.13.dist-info/LICENSE,sha256=W7wsWLoRMSL78VAQG7iA-u_71pnz-mb3q8qzATGGES0,1069
+soupstars-2.11.13.dist-info/METADATA,sha256=xUQIll0w9l7eljtUng_-Sp33pQlhEnSynxwxKVHpjN8,2739
+soupstars-2.11.13.dist-info/WHEEL,sha256=pqI-DBMA-Z6OTNov1nVxs7mwm6Yj2kHZGNp_6krVn1E,92
+soupstars-2.11.13.dist-info/entry_points.txt,sha256=qivBPvLIYV1sx0LB8HdqYYK5tKATXi6H7QzCa_ILCGg,50
+soupstars-2.11.13.dist-info/top_level.txt,sha256=l0Z0JR7vVjotkU8Wjv-613alI7mzIc-WdiaY5jaG51Q,10
+soupstars-2.11.13.dist-info/RECORD,,
