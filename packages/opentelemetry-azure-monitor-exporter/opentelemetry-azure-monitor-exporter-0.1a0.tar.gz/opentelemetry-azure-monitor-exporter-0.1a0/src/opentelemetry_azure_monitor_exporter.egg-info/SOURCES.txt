@@ -1,0 +1,13 @@
+README.rst
+setup.cfg
+setup.py
+src/azure_monitor/__init__.py
+src/azure_monitor/protocol.py
+src/azure_monitor/trace.py
+src/azure_monitor/util.py
+src/azure_monitor/version.py
+src/opentelemetry_azure_monitor_exporter.egg-info/PKG-INFO
+src/opentelemetry_azure_monitor_exporter.egg-info/SOURCES.txt
+src/opentelemetry_azure_monitor_exporter.egg-info/dependency_links.txt
+src/opentelemetry_azure_monitor_exporter.egg-info/requires.txt
+src/opentelemetry_azure_monitor_exporter.egg-info/top_level.txt
