@@ -1,0 +1,15 @@
+swagger_client/__init__.py,sha256=YW6tQUTrpsgCQLfaMeEHjLcxY8sg1g51GSYWdjQ-0Ao,674
+swagger_client/api_client.py,sha256=ocJ-KwZ2m8CcXt48I5fxoItPshhF5rpzg5IN9Dz6qyQ,25670
+swagger_client/configuration.py,sha256=NsqjUDC2LqLSlvGb4PpKEfwiTcM0cFU8nZ_6irA2MI4,7977
+swagger_client/rest.py,sha256=hVTLrtFcfuh607wEpHj1IxCyYYV3zHxXeFzYa33sK5I,13528
+swagger_client/api/__init__.py,sha256=5citoN1m85YpyXbje48VwhDR_OjBuCo7jP3ZK3V-H5E,157
+swagger_client/api/kount_ris_app_api.py,sha256=LEGnHo0ikQriHK_7AXDneHPs_tbuoptxwUtv5iCnXq0,18871
+swagger_client/models/__init__.py,sha256=115-pvRKHSilUj2EgrReXaUkiae-0KDDSr-a2Ludq8Q,450
+swagger_client/models/product_details.py,sha256=7K-YkG5SmCNov3S8w1Mg9-JgP7CaIInoh_4iTPYOol4,13322
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_kount_ris_app_api.py,sha256=RCPHAGC8xH-3o1xseoloYYgCRhQDeLqyUairHXnRw0k,1379
+test/test_product_details.py,sha256=o7E-n5w-o1vuilcIA1CjyrAtet0TNPJWkz8eQiey9mg,979
+san_swagger_test-1.0.0.dist-info/METADATA,sha256=cX00mLjbL_AWaMs3WIr8DWMbT0tXdXMknXckd5D_XXc,476
+san_swagger_test-1.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+san_swagger_test-1.0.0.dist-info/top_level.txt,sha256=5SWD8Q4i_CyOLpmPH6yTCHJaMUE1RZM0Wy6-4oN27ss,20
+san_swagger_test-1.0.0.dist-info/RECORD,,
