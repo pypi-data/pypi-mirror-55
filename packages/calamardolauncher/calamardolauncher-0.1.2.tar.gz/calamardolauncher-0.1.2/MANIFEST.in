@@ -1,0 +1,11 @@
+include calamardolauncher/web/bootstrap/css/*
+include calamardolauncher/web/bootstrap/css/theme/*
+include calamardolauncher/web/bootstrap/css/theme2/*
+include calamardolauncher/web/bootstrap/js/*
+include calamardolauncher/web/bootstrap-select/css/*
+include calamardolauncher/web/bootstrap-select/js/*
+include calamardolauncher/web/bootstrap4-toggle/css/*
+include calamardolauncher/web/bootstrap4-toggle/js/*
+include calamardolauncher/web/js/*
+include calamardolauncher/web/*
+include calamardolauncher/*
