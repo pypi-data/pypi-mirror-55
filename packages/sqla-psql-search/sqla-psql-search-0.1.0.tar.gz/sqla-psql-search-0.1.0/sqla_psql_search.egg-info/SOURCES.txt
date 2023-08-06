@@ -1,0 +1,9 @@
+README.rst
+setup.py
+sqla_psql_search/__init__.py
+sqla_psql_search/search.py
+sqla_psql_search.egg-info/PKG-INFO
+sqla_psql_search.egg-info/SOURCES.txt
+sqla_psql_search.egg-info/dependency_links.txt
+sqla_psql_search.egg-info/requires.txt
+sqla_psql_search.egg-info/top_level.txt

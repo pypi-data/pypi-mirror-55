@@ -1,0 +1,40 @@
+Metadata-Version: 1.2
+Name: sqla-psql-search
+Version: 0.1.0
+Summary: Utilities for SQLAlchemy PostgreSQL's natural search.
+Home-page: https://github.com/bustawin/sqla-psql-search
+Author: Xavier Bustamante Talavera
+Author-email: xavier@bustawin.com
+License: AGPLV3
+Project-URL: Documentation, https://github.com/bustawin/sqla-psql-search
+Project-URL: Code, https://github.com/bustawin/sqla-psql-search
+Project-URL: Issue tracker, https://github.com/bustawin/poli-enum/issues
+Description: SQLA PSQL Search
+        ################
+        Methods for building queries with Postgre's Full text search.
+        
+        Based on `Rachid Belaid's post <http://rachbelaid.com/
+        postgres-full-text-search-is-good-enough/>`_,
+        `Code for America's post <https://www.codeforamerica.org/blog/2015/07/02/
+        multi-table-full-text-search-with-postgres-flask-and-sqlalchemy/>`_,
+        and `PSQL's search documentation <https://www.postgresql.org/docs/
+        11/textsearch-controls.html>`_.
+        
+        This library requires PostgreSQL 11 or newer due to the usage of
+        ``websearch_to_tsquery``.
+        
+        
+        Although the library is tested, automatic tests are required.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Database
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.6
