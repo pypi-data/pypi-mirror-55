@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: deepscan
+Version: 0.65
+Summary: DeepScan is a source extraction tool designed to identify extended low surface brightness features in large astronomical datasets.
+Home-page: https://github.com/danjampro/DeepScan
+Author: danjampro
+Author-email: danjampro@sky.com
+License: GPL v3.0
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: scipy
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: astropy
+Requires-Dist: shapely
+
+UNKNOWN
+
+
