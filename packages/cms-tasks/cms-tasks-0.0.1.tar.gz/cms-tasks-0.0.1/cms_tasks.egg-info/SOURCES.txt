@@ -1,0 +1,15 @@
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+cms_tasks.egg-info/PKG-INFO
+cms_tasks.egg-info/SOURCES.txt
+cms_tasks.egg-info/dependency_links.txt
+cms_tasks.egg-info/not-zip-safe
+cms_tasks.egg-info/top_level.txt
+tasks/__init__.py
+tasks/admin.py
+tasks/apps.py
+tasks/models.py
+tasks/schema.py
