@@ -1,0 +1,8 @@
+exchange/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+exchange/app.py,sha256=XEFjoJi5e4RNFhtB7DDExB4hmQZ1RDwB2R4szLRO0Ig,562
+exchange/services.py,sha256=0zfSMcjU0O-o2tXJREojMR_u0DDzRw51Arxp1_3Teh4,2539
+test/fixtures/__init__.py,sha256=DVx5_EyqFId2xp7UdDyJAlgtPdxod10rcgc3B8-3-Bo,806
+exchange_rates_last_hm_alex-0.0.1.dist-info/METADATA,sha256=1QpPa4JiFuRiOn0LKG3F1NDTJ-PfBI7DF9o9FFv3wu4,2584
+exchange_rates_last_hm_alex-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+exchange_rates_last_hm_alex-0.0.1.dist-info/top_level.txt,sha256=DDowajPpdcjXf4kLpR2vlVIL9apyvhFluR-489AqNHc,14
+exchange_rates_last_hm_alex-0.0.1.dist-info/RECORD,,

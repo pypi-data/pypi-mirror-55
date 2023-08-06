@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: exchange-rates-last-hm-alex
+Version: 0.0.1
+Summary: Exchange rates getter
+Home-page: https://gitlab.com/ExampleUserForYandex/last
+Author: BiggiPiggi
+Author-email: aszmey.war@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp (==3.6.2)
+Requires-Dist: aiomisc
+Requires-Dist: aiomisc-dependency
+
+# Exchange rates service
+Yandex last homework task. Realization of exchange rates service
+
+## Getting project from gitlab
+Firstly you must download source code of project from gitlab repository
+```
+$ git clone https://gitlab.com/ExampleUserForYandex/last
+```
+and go inside project's folder
+```
+$ cd /path/to/cloned/project
+```
+
+## Run project's tests
+For run tests firstly activate virtual environment by:
+```
+$ source venv/bin/activate
+```
+and after that install requirements by:
+```
+$ (venv) pip3 install -r requirements.txt
+$ (venv) pip3 install -r requirements.tests.txt
+```
+Now we can run tests
+```
+$ (venv) pytest test
+```
+If all is ok you'll get 
+```
+=============================================================================================== test session starts ===============================================================================================
+platform linux -- Python 3.7.3, pytest-5.2.2, py-1.8.0, pluggy-0.13.0
+rootdir: /path/to/cloned/project
+plugins: aiohttp-0.3.0, aiomisc-9.4.1
+collected 5 items                                                                                                                                                                                                 
+
+test/test_rest.py ..                                                                                                                                                                                        [ 40%]
+test/test_services.py .                                                                                                                                                                                     [ 60%]
+test/test_updater.py ..                                                                                                                                                                                     [100%]
+
+================================================================================================ 5 passed in 1.28s ================================================================================================
+```
+## Next step
+
+
