@@ -1,0 +1,9 @@
+README.md
+setup.py
+pyedgeloop/DetectLoopsEdges.py
+pyedgeloop/__init__.py
+pyedgeloop.egg-info/PKG-INFO
+pyedgeloop.egg-info/SOURCES.txt
+pyedgeloop.egg-info/dependency_links.txt
+pyedgeloop.egg-info/requires.txt
+pyedgeloop.egg-info/top_level.txt
