@@ -1,0 +1,15 @@
+goss/__init__.py,sha256=9_ZDS-u7QG5UOPkWhKrrLyf6MwzHp5DRue0X8ExpYKo,107
+goss/client.py,sha256=upIx-TMB03fcNMfAjwwgodJECrYzoc3Y2TD0RRmp0Ic,1020
+goss/comm.py,sha256=u8c_P-BfCGqGfpBiCLgNM5Y_EKI-JXl3BjO_N-Et1OI,178
+goss/exception.py,sha256=lR-LPmhhSE23NqNXdkQgz2EJlVtbIpYHrf23uG-kWOE,127
+goss/cloud/__init__.py,sha256=vApv-_0XYG9Ers0d1T4mNUDORBV8eCQRxYBtvITRPT4,205
+goss/cloud/aliyun_oss.py,sha256=TojOgZBLy9tVoLRxDGAaM1vPQhVk7-O4QjtghWhmDzo,917
+goss/cloud/amazon_s3.py,sha256=cAjLmzVrYn55jGOs4n22CkizVrJB7qUS7cTheSJL58M,983
+goss/cloud/base.py,sha256=ZXTpYGnXE7jv0f_fBSWhdm7I_k_VR7kdfg8_86US0tA,530
+goss/cloud/huaweicloud_obs.py,sha256=GtV8QuQHqy2r4rBIZPkV46sdfPPig9eeQjASIWxumuI,969
+goss/cloud/tencent_cos.py,sha256=ezL4mc91ZzfEuiJ-56MHSTEaPlPjtoKyzcm3yRFaSP8,908
+goss_sdk_python-0.4.0.dist-info/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+goss_sdk_python-0.4.0.dist-info/METADATA,sha256=BYZ2C8AGE1ZwG_Bjm3YCYGdAKfCsQz9G30ZwIl_sxEg,363
+goss_sdk_python-0.4.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+goss_sdk_python-0.4.0.dist-info/top_level.txt,sha256=mLYTEihljoCM5asG61oZVc8xqaWNk6uz2kSpsVbqJdc,5
+goss_sdk_python-0.4.0.dist-info/RECORD,,
