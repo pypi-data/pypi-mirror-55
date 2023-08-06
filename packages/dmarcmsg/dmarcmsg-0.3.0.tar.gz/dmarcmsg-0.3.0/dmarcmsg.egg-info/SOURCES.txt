@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+dmarcmsg/__init__.py
+dmarcmsg/construct.py
+dmarcmsg.egg-info/PKG-INFO
+dmarcmsg.egg-info/SOURCES.txt
+dmarcmsg.egg-info/dependency_links.txt
+dmarcmsg.egg-info/top_level.txt
+dmarcmsg/__pycache__/__init__.cpython-37.pyc
+dmarcmsg/__pycache__/construct.cpython-37.pyc
+dmarcmsg/util/__init__.py
+dmarcmsg/util/content_disposition.py
