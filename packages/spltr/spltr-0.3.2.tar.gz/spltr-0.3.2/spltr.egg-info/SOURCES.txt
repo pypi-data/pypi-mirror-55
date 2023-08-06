@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+spltr/__init__.py
+spltr/spltr.py
+spltr.egg-info/PKG-INFO
+spltr.egg-info/SOURCES.txt
+spltr.egg-info/dependency_links.txt
+spltr.egg-info/top_level.txt
+spltr/mods/__init__.py
+spltr/mods/process_variable.py
