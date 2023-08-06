@@ -1,0 +1,17 @@
+restless_client/__init__.py,sha256=w8IihALrsKImwVzKJixu6939VHCrRuSuT_utGqYxweg,41
+restless_client/client.py,sha256=eQVMHl4y23QNKGkGGKsDLoAylhingX-FocMxMIt95GU,8211
+restless_client/collections.py,sha256=7YH6KhN8DoryIsLSnBFPHx3DJ6JnomfBXDR_GsgX_yg,4066
+restless_client/connection.py,sha256=K3_gosLgN1gSdTzal7Td2Axdj2SKFsu15ZFQ0KxMy6Y,3395
+restless_client/filter.py,sha256=BhmHjRzWFlb2llmbV98B1inRNOsy8YFq7wmUUCUngYw,6037
+restless_client/marshal.py,sha256=SsX_BpfW-nIz59yOpoWX1mhsElCxL9ID1iB61hibJ4Y,3866
+restless_client/models.py,sha256=WfXrJX8zIMfRCkLN1CHUx4CFGACyo7HOeY6T_5ULoVE,3212
+restless_client/property.py,sha256=P5gqmwrQX-fdOKE-VFHd6CqfB5Q0OitJ0L8V9Eym6YI,3300
+restless_client/utils.py,sha256=38kxP_mlyPzPo_xo_RCSrlBXaRIM0nRcrqXmVAaTJIQ,2862
+restless_client/ext/auth.py,sha256=8E4EQHj05N3RP1xHLs9s0TWMI2NaVupi6eFhQ8E7yuQ,2975
+flask_restless_client-0.0.4.dist-info/AUTHORS,sha256=WoMLhX_RA_FGIG8i_5sT11W7H_EMnHZ4oLb3KVmpVz4,97
+flask_restless_client-0.0.4.dist-info/LICENSE,sha256=aabd1ogGalkeeKAf8YACEk_tFqaTMbEdFay1xBJrDh0,1069
+flask_restless_client-0.0.4.dist-info/METADATA,sha256=nrGPR2IclDv5c5TkGFswMMXCcLIvPWwEnP13faZRhxE,1360
+flask_restless_client-0.0.4.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+flask_restless_client-0.0.4.dist-info/pbr.json,sha256=kq-g1Ng9umwLUMl0va2C6aHRGaEle5GEfrFNgH2nMi0,47
+flask_restless_client-0.0.4.dist-info/top_level.txt,sha256=2ltMXKnEdotVFB_ryHivJdZdAVpMog8Pl16cSP-MSSQ,16
+flask_restless_client-0.0.4.dist-info/RECORD,,
