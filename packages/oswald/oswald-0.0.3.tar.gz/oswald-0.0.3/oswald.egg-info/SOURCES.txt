@@ -1,0 +1,13 @@
+README.md
+setup.py
+modules/__init__.py
+modules/sample.py
+oswald/__init__.py
+oswald/oswald.py
+oswald.egg-info/PKG-INFO
+oswald.egg-info/SOURCES.txt
+oswald.egg-info/dependency_links.txt
+oswald.egg-info/top_level.txt
+oswald/tools/__init__.py
+oswald/tools/generatePlainAPI.py
+oswald/tools/moduleFolder.py
