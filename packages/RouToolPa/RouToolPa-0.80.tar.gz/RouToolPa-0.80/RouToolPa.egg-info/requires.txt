@@ -1,0 +1,9 @@
+scipy
+numpy
+pandas
+matplotlib
+matplotlib-venn
+biopython
+xmltodict
+bcbio-gff
+statsmodels
