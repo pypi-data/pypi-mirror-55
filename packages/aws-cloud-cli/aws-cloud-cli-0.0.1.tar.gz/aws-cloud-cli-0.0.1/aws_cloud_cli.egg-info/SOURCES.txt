@@ -1,0 +1,6 @@
+setup.cfg
+setup.py
+aws_cloud_cli.egg-info/PKG-INFO
+aws_cloud_cli.egg-info/SOURCES.txt
+aws_cloud_cli.egg-info/dependency_links.txt
+aws_cloud_cli.egg-info/top_level.txt
