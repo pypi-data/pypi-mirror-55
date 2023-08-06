@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: omnio
+Version: 1.0.0
+Summary: Python 3 library for opening URIs as streaming file-like objects
+License: MIT
+Author: Bob Green
+Author-email: rgreen@goscoutgo.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: boto3 (>=1.10,<2.0)
+Requires-Dist: requests (>=2.22,<3.0)
