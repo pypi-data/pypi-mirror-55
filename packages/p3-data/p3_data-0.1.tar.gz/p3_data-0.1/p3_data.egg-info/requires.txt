@@ -1,0 +1,8 @@
+IPython
+pandas
+PyYaml
+matplotlib
+numpy
+scipy
+six
+sklearn

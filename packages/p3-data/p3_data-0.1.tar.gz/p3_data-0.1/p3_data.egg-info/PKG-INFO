@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: p3-data
+Version: 0.1
+Summary: A variety of utility functions to analyze results data produced by the P3 Test Driver.
+Home-page: http://github.com/claudiofahey/p3_test_driver
+Author: Claudio Fahey
+Author-email: claudio.fahey@dell.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
