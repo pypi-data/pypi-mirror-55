@@ -1,0 +1,10 @@
+python-dateutil
+PyYAML
+requests
+hjson
+PyJWT
+
+[jupyter]
+pandas
+ipython
+termcolor
