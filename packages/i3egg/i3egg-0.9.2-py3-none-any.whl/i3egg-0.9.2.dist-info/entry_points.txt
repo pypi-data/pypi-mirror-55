@@ -1,0 +1,3 @@
+[console_scripts]
+i3egg = i3egg.egg:main
+
