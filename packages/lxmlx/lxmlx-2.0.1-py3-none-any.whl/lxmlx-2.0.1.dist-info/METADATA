@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: lxmlx
+Version: 2.0.1
+Summary: Helpers and utilities to be used with lxml
+Home-page: https://github.com/innodatalabs/lxmlx
+Author: Mike Kroutikov
+Author-email: mkroutikov@innodata.com
+License: MIT
+Keywords: lxml xml events sax
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: lxml
+
+UNKNOWN
+
+
