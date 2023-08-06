@@ -1,0 +1,8 @@
+opencv-python
+mysqlclient
+pymysql
+sklearn
+pandas
+
+[:platform_system == "Windows"]
+windows-curses
