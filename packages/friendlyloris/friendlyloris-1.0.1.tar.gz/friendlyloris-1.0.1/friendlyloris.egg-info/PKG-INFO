@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: friendlyloris
+Version: 1.0.1
+Summary: A Slow Loris package for Python
+Home-page: https://github.com/jackdcasey/friendlyloris
+Author: Jack Casey
+Author-email: jackdcasey@gmail.com
+License: UNKNOWN
+Description: #TODO
+Keywords: slowloris,http,https,dos,testing
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

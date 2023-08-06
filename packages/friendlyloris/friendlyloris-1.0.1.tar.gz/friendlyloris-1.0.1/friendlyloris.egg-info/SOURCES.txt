@@ -1,0 +1,8 @@
+README.md
+setup.py
+friendlyloris/__init__.py
+friendlyloris/friendlyloris.py
+friendlyloris.egg-info/PKG-INFO
+friendlyloris.egg-info/SOURCES.txt
+friendlyloris.egg-info/dependency_links.txt
+friendlyloris.egg-info/top_level.txt
