@@ -1,0 +1,16 @@
+README.md
+setup.py
+dumpster/__init__.py
+dumpster/model.py
+dumpster/storage.py
+dumpster/test_.py
+dumpster/utils.py
+dumpster.egg-info/PKG-INFO
+dumpster.egg-info/SOURCES.txt
+dumpster.egg-info/dependency_links.txt
+dumpster.egg-info/requires.txt
+dumpster.egg-info/top_level.txt
+dumpster/registries/__init__.py
+dumpster/registries/base.py
+dumpster/registries/file.py
+dumpster/registries/storage.py
