@@ -1,0 +1,13 @@
+README.md
+setup.py
+sxyz/__init__.py
+sxyz/backend.py
+sxyz/config.py
+sxyz/sxyz.py
+sxyz/utils.py
+sxyz.egg-info/PKG-INFO
+sxyz.egg-info/SOURCES.txt
+sxyz.egg-info/dependency_links.txt
+sxyz.egg-info/entry_points.txt
+sxyz.egg-info/requires.txt
+sxyz.egg-info/top_level.txt
