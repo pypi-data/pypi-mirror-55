@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: metadsl_visualize
+Version: 0.1.0
+Summary: Visualize metadsl objects with graphviz
+Home-page: https://github.com/Quansight-Labs/metadsl
+Author: Saul Shanabrook
+Author-email: s.shanabrook@gmail.com
