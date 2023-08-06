@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: pybpod-gui-plugin-soundcard
+Version: 0.1.6
+Summary: PyBpod Sound card module
+Home-page: https://github.com/pybpod/pybpod-gui-plugin-soundcard
+Author: Luís Teixeira
+Author-email: micboucinha@gmail.com
+License: MIT
+Description: Library to control the Harp Sound Card board developed by the Scientific Hardware Platform at
+            the Champalimaud Foundation.
+Platform: UNKNOWN
