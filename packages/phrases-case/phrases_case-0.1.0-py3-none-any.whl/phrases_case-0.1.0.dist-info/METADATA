@@ -1,0 +1,9 @@
+Metadata-Version: 2.1
+Name: phrases-case
+Version: 0.1.0
+Summary: Convert phrases between diffrent cases.
+Author: NateScarlet
+Author-email: NateScarlet@Gmail.com
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
