@@ -1,0 +1,4 @@
+[console_scripts]
+oda-kb = odakb.sparql:cli
+oda-kb-eval = odakb.evaluator:evaluate
+
