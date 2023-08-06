@@ -1,0 +1,10 @@
+mobio/libs/license/__init__.cpython-35m-darwin.so,sha256=yEw-W2cb42myHOVDtfdz94EaMRpf0m-jggWQE6auAsE,18116
+mobio/libs/license/__init__.cpython-35m-x86_64-linux-gnu.so,sha256=PnkXxOntZrwpKmXmG3kKsKOKSLv_8QC-cwCKl177aw8,49552
+mobio/libs/license/mobio_crypt_client.cpython-35m-darwin.so,sha256=GMNnHY1qZUonBj22WEvu7Z6JfSawMfBMGYcSp_i7ato,143584
+mobio/libs/license/mobio_crypt_client.cpython-35m-x86_64-linux-gnu.so,sha256=tt7Jqk7Ct0UMfaGSgALttv65wQYYK5aDj7j8TSngLJA,635800
+mobio/libs/license/mobio_license_client.cpython-35m-darwin.so,sha256=v380garH6nzYeC0QurHQntGfs2-HWYBwCJMhgXm60Vg,185076
+mobio/libs/license/mobio_license_client.cpython-35m-x86_64-linux-gnu.so,sha256=XGpw6VcqMj4lYTXcmZEZsfhMbUQwCmD8zU5AVL10enM,1014928
+m_license-1.4.dist-info/METADATA,sha256=rYDZZy1kM0boMY-H0Wz6B3gEWmowrXEDRM79sVYVhxc,289
+m_license-1.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+m_license-1.4.dist-info/top_level.txt,sha256=DrhLcnvVFWepkTlBQCYWnuyvIm9qENZ4wAi94oUrZXM,19
+m_license-1.4.dist-info/RECORD,,
