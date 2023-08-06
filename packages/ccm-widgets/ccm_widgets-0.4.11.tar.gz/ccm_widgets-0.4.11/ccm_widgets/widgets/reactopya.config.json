@@ -1,0 +1,140 @@
+{
+    "project_name": "ccm_widgets",
+    "version": "0.4.11",
+    "description": "Reactopya widgets of relevance to the Center for Computational Mathematics, Flatiron Institute",
+    "author": "Jeremy Magland",
+    "license": "Apache-2.0",
+    "setup_py": {
+        "install_requires": [
+            "numpy",
+            "mountaintools",
+            "kachery",
+            "vtk"
+        ]
+    },
+    "additional_jupyter_imports": [
+        "from .widgets.jupyter import *"
+    ],
+    "adjust_webpack_rules": [
+        "var vtkRules = require('vtk.js/Utilities/config/dependency.js').webpack.core.rules;",
+        "rules = rules.concat(vtkRules);"
+    ],
+    "dev_widget": {
+        "type": "Clustering",
+        "props": {}
+    },
+    "package_json": {
+        "dependencies": {
+            "@material-ui/core": "^4.2.0",
+            "@material-ui/icons": "^4.2.1",
+            "@material-ui/styles": "^4.2.0",
+            "canvas2svg": "^1.0.16",
+            "express": "^4.17.1",
+            "plotly.js": "^1.49.4",
+            "react-accessible-accordion": "^3.0.0",
+            "react-collapsing-table": "^0.4.2",
+            "react-icons": "^3.7.0",
+            "react-markdown": "^4.2.2",
+            "react-plotly.js": "^2.3.0",
+            "react-tabs": "^3.0.0",
+            "styled-components": "^4.3.2",
+            "tmp": "^0.1.0",
+            "vtk.js": "^11.1.0",
+            "ws": "^7.1.2"
+        },
+        "devDependencies": {
+            "autoprefixer": "^9.6.1",
+            "shader-loader": "^1.3.1"
+        }
+    },
+    "reactopya_version": "0.10.0",
+    "widgets": [
+        {
+            "project_name": "ccm_widgets",
+            "type": "Accordion",
+            "description": "Accordion",
+            "defaultProps": {}
+        },
+        {
+            "project_name": "ccm_widgets",
+            "type": "VBox",
+            "description": "Vertical layout",
+            "galleryProps": {}
+        },
+        {
+            "project_name": "ccm_widgets",
+            "type": "SectorPlot",
+            "description": "Sector plot",
+            "defaultProps": {}
+        },
+        {
+            "project_name": "ccm_widgets",
+            "type": "Surface3dVtp",
+            "description": "Vtk surface rendering from .vtp file",
+            "defaultProps": {
+                "vtp_path": "sha1://22f242215ed2625db02b3a1f9d89364defa013f6/quas3.vtp",
+                "download_from": "spikeforest.public",
+                "scalar_info": {
+                    "name": "value",
+                    "component": 0
+                },
+                "preset_color_map_name": "erdc_rainbow_bright"
+            },
+            "alternateProps": {
+                "triangle": {
+                    "vtp_path": "sha1://9bc22a4ff5cb6b6ac064b03f54b20c6880aa4a28/Triangle.vtp",
+                    "download_from": "spikeforest.public"
+                }
+            }
+        },
+        {
+            "project_name": "ccm_widgets",
+            "type": "Clustering",
+            "description": "Evaluate clustering algorithms",
+            "defaultProps": {}
+        },
+        {
+            "project_name": "ccm_widgets",
+            "type": "HBox",
+            "description": "Horizontal layout",
+            "defaultProps": {}
+        },
+        {
+            "project_name": "ccm_widgets",
+            "type": "Surface3d",
+            "description": "Vtk surface rendering",
+            "defaultProps": {
+                "vertices": [
+                    [
+                        0,
+                        0,
+                        0
+                    ],
+                    [
+                        0,
+                        1,
+                        0
+                    ],
+                    [
+                        1,
+                        0,
+                        0
+                    ]
+                ],
+                "faces": [
+                    3,
+                    0,
+                    1,
+                    2
+                ]
+            }
+        },
+        {
+            "project_name": "ccm_widgets",
+            "type": "Tabs",
+            "description": "Tabs",
+            "defaultProps": {}
+        }
+    ],
+    "ReactopyaModelCode": "/*\nThis file is duplicated between\n* reactopya_jup/lib/ReactopyaModel.js and\n* reactopya/templates/__project_name___dev/src/components/ReactopyaModel.js\n* reactopya/templates/__project_name__/__project_name__/electron/src/ReactopyaModel.js\n* reactopya/templates/__project_name___bundle/ReactopyaModel.js\nOnly edit the one in\nreactopya/templates/__project_name___dev/src/components/ReactopyaModel.js\nOther edits will get overwritten when you run\n\n> reactopya/devel/sync_code.py\n\n*/\n\nclass ReactopyaModel {\n    constructor(projectName, type) {\n        this._projectName = projectName;\n        this._type = type;\n\n        this._pythonStateStringified = {};\n        this._javaScriptStateStringified = {};\n        this._childModels = {};\n\n        this._pythonStateChangedHandlers = [];\n        this._javaScriptStateChangedHandlers = [];\n        this._sendCustomMessageHandlers = [];\n        this._customMessageHandlers = [];\n        this._childModelAddedHandlers = [];\n        this._startHandlers = [];\n        this._stopHandlers = [];\n        this._running = false;\n    }\n    projectName() {\n        return this._projectName;\n    }\n    type() {\n        return this._type;\n    }\n\n    setPythonState(state) {\n        if (state._childId) {\n            this._childModels[state._childId + ''].setPythonState(state.state);\n            return;\n        }\n        this._setStateHelper(state, this._pythonStateStringified, this._pythonStateChangedHandlers);\n    }\n    setJavaScriptState(state) {\n        this._setStateHelper(state, this._javaScriptStateStringified, this._javaScriptStateChangedHandlers);\n    }\n    getPythonState() {\n        let ret = {};\n        for (let key in this._pythonStateStringified) {\n            ret[key] = JSON.parse(this._pythonStateStringified[key]);\n        }\n        return ret;\n    }\n    getJavaScriptState() {\n        let ret = {};\n        for (let key in this._javaScriptStateStringified) {\n            ret[key] = JSON.parse(this._javaScriptStateStringified[key]);\n        }\n        return ret;\n    }\n    addChildModelsFromSerializedChildren(children) {\n        for (let i in children) {\n            let child = children[i];\n            let chmodel = this.addChild(i, child.project_name || this._projectName, child.type, false);\n            chmodel.addChildModelsFromSerializedChildren(child.children || []);\n        }\n    }\n    addChild(childId, projectName, type, isDynamic) {\n        // if ((childId + '') in this._childModels) {\n        //     return this._childModels[childId + ''];\n        // }\n        let model = new ReactopyaModel(projectName, type);\n        model.onJavaScriptStateChanged((state) => {\n            for (let handler of this._javaScriptStateChangedHandlers) {\n                handler({\n                    _childId: childId,\n                    state: state\n                });\n            }\n        });\n        model.onSendCustomMessage((msg) => {\n            for (let handler of this._sendCustomMessageHandlers) {\n                handler({\n                    _childId: childId,\n                    message: msg\n                });\n            }\n        });\n        model.onChildModelAdded((data) => {\n            for (let handler of this._childModelAddedHandlers) {\n                handler({\n                    _childId: childId,\n                    data: data\n                });\n            }\n        });\n        model.onStart(() => {\n            this.start();\n        });\n        model.onStop(() => {\n            // actually we don't stop just because a child stopped!\n            // this.stop();\n        });\n        this._childModels[childId + ''] = model;\n        for (let handler of this._childModelAddedHandlers) {\n            handler({\n                childId: childId,\n                projectName: projectName,\n                type: type,\n                isDynamic: isDynamic\n            });\n        }\n        return model;\n    }\n    sendCustomMessage(message) {\n        if (message._childId) {\n            this._childModels[state._childId + ''].sendCustomMessage(message.message);\n            return;\n        }\n        for (let handler of this._sendCustomMessageHandlers) {\n            handler(message);\n        }\n    }\n    childModel(childId) {\n        return this._childModels[childId + ''];\n    }\n    start() {\n        // the following two lines would mess up html snapshots\n        // this._pythonStateStringified = {};\n        // this._javaScriptStateStringified = {};\n        for (let handler of this._startHandlers)\n            handler();\n    }\n    stop() {\n        this._running = false;\n        for (let handler of this._stopHandlers)\n            handler();\n\n        // is this going to cause a problem?\n        this._pythonStateStringified = {};\n        this._javaScriptStateStringified = {};\n        this._childModels = {};\n    }\n    onPythonStateChanged(handler) {\n        this._pythonStateChangedHandlers.push(handler);\n    }\n    onJavaScriptStateChanged(handler) {\n        this._javaScriptStateChangedHandlers.push(handler);\n    }\n    onSendCustomMessage(handler) {\n        this._sendCustomMessageHandlers.push(handler);\n    }\n    onCustomMessage(handler) {\n        this._customMessageHandlers.push(handler);\n    }\n    onChildModelAdded(handler) {\n        this._childModelAddedHandlers.push(handler);\n    }\n    onStart(handler) {\n        this._startHandlers.push(handler);\n    }\n    onStop(handler) {\n        this._stopHandlers.push(handler);\n    }\n    handleCustomMessage(message) {\n        if (message._childId) {\n            this._childModels[message._childId + ''].handleCustomMessage(message.message);\n            return;\n        }\n        for (let handler of this._customMessageHandlers) {\n            handler(message);\n        }\n    }\n    _setStateHelper(state, existingStateStringified, handlers) {\n        let changedState = {};\n        let somethingChanged = false;\n        for (let key in state) {\n            let val = state[key];\n            let valstr = JSON.stringify(val);\n            if (valstr !== existingStateStringified[key]) {\n                existingStateStringified[key] = valstr;\n                changedState[key] = JSON.parse(valstr);\n                somethingChanged = true;\n            }\n        }\n        if (somethingChanged) {\n            for (let handler of handlers) {\n                handler(changedState);\n            }\n        }\n    }\n}\n\n"
+}
