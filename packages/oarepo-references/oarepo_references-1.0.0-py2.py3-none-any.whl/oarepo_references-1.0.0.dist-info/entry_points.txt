@@ -1,0 +1,15 @@
+[invenio_base.apps]
+oarepo_references = oarepo_references:OARepoReferences
+
+[invenio_base.blueprints]
+oarepo_references = oarepo_references.views:blueprint
+
+[invenio_db.alembic]
+oarepo_references = oarepo_references:alembic
+
+[invenio_db.models]
+oarepo_references = oarepo_references.models
+
+[invenio_i18n.translations]
+messages = oarepo_references
+
