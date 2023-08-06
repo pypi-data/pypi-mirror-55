@@ -1,0 +1,9 @@
+gregorian/__init__.py,sha256=Znq4azs9H-jufss0nwq3k5HfuYwa_bA57msohmVq0aM,88
+gregorian/calendar.py,sha256=xuDlavFK7eNPOs0FTNA9Eslfj1E3Wy5UDe4ohlZlGLk,16875
+gregorian/internals.py,sha256=hw_Slu-djyswVO6ICqZqelLViZvWbzcJH9jlphh_J-A,975
+gregorian/utils.py,sha256=jVU1_hJB2SHmpxnmt7HGrLGPosml4VeDMHFnOXmfuMw,1041
+gregorian-0.0.3.dist-info/LICENCE,sha256=uF-phKTg-OT3AAI0as4EuhR2hWrkkQo6jNxppUP3xFU,1097
+gregorian-0.0.3.dist-info/METADATA,sha256=nFypAyQ1_MkC-hw0YyudAMGDPiAQpODd_ka5jQe5Ywo,2396
+gregorian-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+gregorian-0.0.3.dist-info/top_level.txt,sha256=pSgCUpr_zjqWRr8HO07O1087uVgnMjRjnkUbLciHCYg,10
+gregorian-0.0.3.dist-info/RECORD,,
