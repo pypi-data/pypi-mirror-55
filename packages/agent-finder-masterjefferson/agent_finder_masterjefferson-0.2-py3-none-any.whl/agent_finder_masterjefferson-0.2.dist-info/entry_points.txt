@@ -1,0 +1,3 @@
+[console_scripts]
+agent-finder = finder.finder:main
+
