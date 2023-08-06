@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: lumber-cloud
+Version: 0.0.2
+Summary: A Python package for cloud logging
+Home-page: https://github.com/infinitetoken/Lumber-Python
+Author: InfiniteToken
+Author-email: infinitetoken@gmail.com
+License: MIT
+Download-URL: https://github.com/infinitetoken/Lumber-Python/archive/0.0.2.tar.gz
+Description: ## Lumber
+        A Python package for cloud logging
+        
+Keywords: LUMBER,LOGGING,LOG,CLOUD,OUTPUT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
