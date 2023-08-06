@@ -1,0 +1,16 @@
+.gitignore
+LICENSE
+README.md
+TODO
+setup.py
+recommend/__init__.py
+recommend/main.py
+recommend/utils.py
+recommend.egg-info/PKG-INFO
+recommend.egg-info/SOURCES.txt
+recommend.egg-info/dependency_links.txt
+recommend.egg-info/requires.txt
+recommend.egg-info/top_level.txt
+tests/test_adjacent_neighbors.py
+tests/test_recommend.py
+tests/test_thing_vectorizer.py
