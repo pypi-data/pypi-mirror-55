@@ -1,0 +1,105 @@
+BLASTN 2.6.0+
+
+
+Reference: Zheng Zhang, Scott Schwartz, Lukas Wagner, and Webb
+Miller (2000), "A greedy algorithm for aligning DNA sequences", J
+Comput Biol 2000; 7(1-2):203-14.
+
+
+
+Database: /home/valentin/.local/share/genome_collector/511145_genomic.fa
+           3 sequences; 5,594,605 total letters
+
+
+
+Query= sample_1
+
+Length=160
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  NC_002695.2 Escherichia coli O157:H7 str. Sakai DNA, complete g...  296     4e-81
+
+
+> NC_002695.2 Escherichia coli O157:H7 str. Sakai DNA, complete 
+genome
+Length=5498578
+
+ Score = 296 bits (160),  Expect = 4e-81
+ Identities = 160/160 (100%), Gaps = 0/160 (0%)
+ Strand=Plus/Plus
+
+Query  1     AAGAACTGGCGCAAGCCAAAGAGCCGTTTAATCTCGGGCGCTTAATTCGCCTCGTGAAAG  60
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1921  AAGAACTGGCGCAAGCCAAAGAGCCGTTTAATCTCGGGCGCTTAATTCGCCTCGTGAAAG  1980
+
+Query  61    AATATCATCTGCTGAACCCGGTCATTGTTGACTGCACCTCCAGCCAGGCAGTGGCGGATC  120
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  1981  AATATCATCTGCTGAACCCGGTCATTGTTGACTGCACCTCCAGCCAGGCAGTGGCGGATC  2040
+
+Query  121   AATATGCCGACTTCCTGCGCGAAGGTTTCCACGTTGTCAC  160
+             ||||||||||||||||||||||||||||||||||||||||
+Sbjct  2041  AATATGCCGACTTCCTGCGCGAAGGTTTCCACGTTGTCAC  2080
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 777641338
+
+
+Query= sample_2
+
+Length=160
+                                                                      Score     E
+Sequences producing significant alignments:                          (Bits)  Value
+
+  NC_002695.2 Escherichia coli O157:H7 str. Sakai DNA, complete g...  296     4e-81
+
+
+> NC_002695.2 Escherichia coli O157:H7 str. Sakai DNA, complete 
+genome
+Length=5498578
+
+ Score = 296 bits (160),  Expect = 4e-81
+ Identities = 160/160 (100%), Gaps = 0/160 (0%)
+ Strand=Plus/Plus
+
+Query  1     ATCCAACGCGATGGACGTGAGTCAGCCGAACAACTGGCCGCGTGTGGAAGAGTTGTTCCG  60
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  4641  ATCCAACGCGATGGACGTGAGTCAGCCGAACAACTGGCCGCGTGTGGAAGAGTTGTTCCG  4700
+
+Query  61    CCGCAAAATCTGGCAACTGAAAGAGCTGGGTTATGCCGCCGTGGATGATGAAACCACGCA  120
+             ||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||
+Sbjct  4701  CCGCAAAATCTGGCAACTGAAAGAGCTGGGTTATGCCGCCGTGGATGATGAAACCACGCA  4760
+
+Query  121   ACAGACAATGCGTGAGTTAAAAGAACTGGGCTACACTTCG  160
+             ||||||||||||||||||||||||||||||||||||||||
+Sbjct  4761  ACAGACAATGCGTGAGTTAAAAGAACTGGGCTACACTTCG  4800
+
+
+
+Lambda      K        H
+    1.33    0.621     1.12 
+
+Gapped
+Lambda      K        H
+    1.28    0.460    0.850 
+
+Effective search space used: 777641338
+
+
+  Database: /home/valentin/.local/share/genome_collector/511145_genomic.fa
+    Posted date:  Nov 8, 2019  2:30 PM
+  Number of letters in database: 5,594,605
+  Number of sequences in database:  3
+
+
+
+Matrix: blastn matrix 1 -2
+Gap Penalties: Existence: 0, Extension: 2.5
