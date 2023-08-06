@@ -1,0 +1,195 @@
+import os
+import os.path as op
+from copy import copy
+import banana
+from banana.requirement import fsl_req
+from arcana.exceptions import ArcanaError
+from arcana import Fileset, FilesetSlice
+
+
+class BaseReference():
+
+    frequency = 'per_dataset'
+
+    def __init__(self, format, name=None):
+        self._name = name
+        self._format = format
+        self._analysis = None
+
+    def bind(self, analysis):
+        bound = copy(self)
+        bound._analysis = analysis
+        return bound
+
+    @property
+    def analysis(self):
+        if self._analysis is None:
+            raise ArcanaError(
+                "Can't access analysis property as {} has not been bound"
+                .format(self))
+        return self._analysis
+
+    @property
+    def name(self):
+        if self._name is None:
+            raise ArcanaError(
+                "Name for atlas hasn't been set, it should be set in when "
+                "it is passed as a default")
+        return self._name
+
+    @name.setter
+    def name(self, name):
+        self._name = name
+
+    def __hash__(self):
+        return hash(self.name)
+
+    @property
+    def slice(self):
+        return FilesetSlice(
+            self.name,
+            [Fileset.from_path(self.path, frequency=self.frequency)],
+            format=self._format,
+            frequency=self.frequency)
+
+    @property
+    def format(self):
+        return self.slice.format
+
+    @property
+    def path(self):
+        return NotImplementedError
+
+    def __repr__(self):
+        return '{}(name={})'.format(type(self).__name__, self._name)
+
+    def __eq__(self, other):
+        return self._name == other._name
+
+
+class FslReferenceData(BaseReference):
+    """
+    Class to retrieve the path to an atlas shipped with a FSL installation
+
+    Parameters
+    ----------
+    atlas_name : str
+        Name of atlas or family of atlases
+    resolution : str | float
+        The resolution of the atlas to use. Can either be a fixed floating
+        point value or the name of a parameter in the analysis to draw the
+        value from
+    dataset : str | None
+        Name of the dataset (i.e. 'brain', 'brain_mask', 'eye_mask', 'edges')
+        will be append to the atlas name using '_' as a delimeter
+    sub_path : str
+        Relative path to atlas directory from FSL 'data' directory
+    """
+
+    DEFAULT_SUB_PATH = ('standard',)
+
+    def __init__(self, atlas_name, format, name=None, resolution=1,
+                 dataset=None, sub_path=DEFAULT_SUB_PATH):
+        super().__init__(format, name)
+        self._atlas_name = atlas_name
+        self._resolution = resolution
+        self._dataset = dataset
+        self._sub_path = tuple(sub_path.split('/') if isinstance(sub_path, str)
+                               else sub_path)
+
+    def __repr__(self):
+        return ("FslReferenceData({},{}{})"
+                .format(self._atlas_name,
+                        self._resolution,
+                        (',{}'.format(self._dataset)
+                         if self._dataset is not None else '')))
+
+    def __str__(self):
+        return ('{}:{}:{}'.format(
+            self._atlas_name,
+            (self._dataset if self._dataset is not None else ''),
+            self._resolution))
+
+    @property
+    def path(self):
+        # If resolution is a string then it is assumed to be a parameter name
+        # of the analysis
+        if isinstance(self._resolution, str):
+            resolution = getattr(self.analysis, self._resolution)
+        else:
+            resolution = self._resolution
+        full_atlas_name = '{}_{}mm'.format(self._atlas_name, resolution)
+        if self._dataset is not None:
+            full_atlas_name += '_' + self._dataset
+        fsl_ver = self.analysis.environment.satisfy(fsl_req.v('5.0.8'))[0]
+        if hasattr(self.analysis.environment, 'load'):
+            self.analysis.environment.load(fsl_ver)
+            fsl_dir = os.environ['FSLDIR']
+            self.analysis.environment.unload(fsl_ver)
+        else:
+            fsl_dir = os.environ['FSLDIR']  # Static environments
+        return op.join(fsl_dir, 'data', *self._sub_path,
+                       full_atlas_name + '.nii.gz')
+
+    def translate(self, subcomp_spec):
+        """
+        Translate resolution parameter name if used to namespace of multi-analysis
+
+        Parameters
+        ----------
+        subcomp_spec : SubCompSpec
+            The sub-analysis that the spec belongs to
+        """
+        if isinstance(self._resolution, str):
+            self._resolution = subcomp_spec.map(self._resolution)
+
+    def __eq__(self, other):
+        return (
+            super().__eq__(other) and
+            self._atlas_name == other._atlas_name and
+            self._resolution == other._resolution and
+            self._dataset == other._dataset and
+            self._sub_path == other._sub_path)
+
+    def __hash__(self):
+        return (super().__hash__() ^
+                hash(self._atlas_name) ^
+                hash(self._resolution) ^
+                hash(self._dataset) ^
+                hash(self._sub_path))
+
+    @property
+    def _error_msg_loc(self):
+        return "'{}' FSL atlas passed to '{}' in {} ".format(
+            self._atlas_name, self.name, self.analysis)
+
+
+class LocalReferenceData(BaseReference):
+    """
+    Several atlases used in the composite-vein analysis in the T2* analysis,
+    stored within the banana package.
+
+    Parameters
+    ----------
+    atlas_name : str
+        Base name of the atlas file (i.e. without extension) in the 'atlases'
+        directory
+    """
+
+    BASE_PATH = op.abspath(op.join(op.dirname(__file__), 'data'))
+
+    def __init__(self, atlas_name, format, name=None):
+        super().__init__(format, name)
+        self._atlas_name = atlas_name
+
+    @property
+    def path(self):
+        return op.join(self.BASE_PATH, self._atlas_name + '.nii.gz')
+
+    def __eq__(self, other):
+        return (super().__eq__(other) and
+                self._atlas_name == other._atlas_name)
+
+    def __hash__(self):
+        return (super().__hash__() ^
+                hash(self._atlas_name))
