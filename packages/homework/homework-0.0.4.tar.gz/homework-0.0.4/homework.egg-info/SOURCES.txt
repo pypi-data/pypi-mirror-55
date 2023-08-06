@@ -1,0 +1,11 @@
+README.md
+setup.py
+homework/__init__.py
+homework/cli.py
+homework/homework.py
+homework.egg-info/PKG-INFO
+homework.egg-info/SOURCES.txt
+homework.egg-info/dependency_links.txt
+homework.egg-info/entry_points.txt
+homework.egg-info/requires.txt
+homework.egg-info/top_level.txt
