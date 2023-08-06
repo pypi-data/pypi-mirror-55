@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: django-protected-files
+Version: 2019.1
+Summary: Simple django protected media and static
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: django (>=2.2.3)
+
+UNKNOWN
+
+
