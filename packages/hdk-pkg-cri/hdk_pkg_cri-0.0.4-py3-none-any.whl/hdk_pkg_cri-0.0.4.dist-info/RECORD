@@ -1,0 +1,14 @@
+hdk_pkg/__init__.py,sha256=dc_fWTBKvy-wZKy4SqbwvuMMggHVzt7SLa9Cc32mIfE,56
+hdk_pkg/critest.py,sha256=Yt7e4TG3SntnCuOiL3mePm7XDh2JaHJ9TgUNppDoRVQ,1837
+hdk_pkg/backtest/__init__.py,sha256=dc_fWTBKvy-wZKy4SqbwvuMMggHVzt7SLa9Cc32mIfE,56
+hdk_pkg/backtest/func_Momentum.py,sha256=jafIOiPdFfIMIA4j9-69ZrlDYvp5x7nsW1gnXiVZM3U,1703
+hdk_pkg/backtest/func_Status.py,sha256=P2-dpPww6UVvaCUNsFWRtjzyqZI92c54W1zcUdQI9Ws,1755
+hdk_pkg/plotting/__init__.py,sha256=dc_fWTBKvy-wZKy4SqbwvuMMggHVzt7SLa9Cc32mIfE,56
+hdk_pkg/plotting/func_plot_type1.py,sha256=K7B_JfO_XCatQY7R2cpv8PaDs7TzWFqx2kDONHHoYWg,1195
+hdk_pkg/sampledata/__init__.py,sha256=dc_fWTBKvy-wZKy4SqbwvuMMggHVzt7SLa9Cc32mIfE,56
+hdk_pkg/sampledata/data.py,sha256=xfusGloTtEZ2j_9QdsxgH8fAQUHPyk0Qo9sYIVG44m4,273
+hdk_pkg_cri-0.0.4.dist-info/LICENSE,sha256=Y8FumzoG_cCatWPKwgN9ZC6gEHwIi45-eN2PIrJWl7c,1088
+hdk_pkg_cri-0.0.4.dist-info/METADATA,sha256=pJzB6A3UUtvrCrWV-ohlYP1P6xsp4fxXEGT1UDd6WWE,9220
+hdk_pkg_cri-0.0.4.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+hdk_pkg_cri-0.0.4.dist-info/top_level.txt,sha256=T-xcHIAPbLtiifmaDvegCRrFVhnZLXYGNMoPxUqxIdA,8
+hdk_pkg_cri-0.0.4.dist-info/RECORD,,
