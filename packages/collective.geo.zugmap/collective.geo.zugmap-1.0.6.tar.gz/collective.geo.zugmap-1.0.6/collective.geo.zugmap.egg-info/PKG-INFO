@@ -1,0 +1,84 @@
+Metadata-Version: 1.1
+Name: collective.geo.zugmap
+Version: 1.0.6
+Summary: Zugmap Layer for collective.geo
+Home-page: https://github.com/collective/collective.geo.zugmap
+Author: Seantis GmbH
+Author-email: info@seantis.ch
+License: GPL v2
+Description: # Introduction
+        
+        collective.geo.zugmap provides a maplayer for zugmap
+        
+        # License
+        
+        collective.geo.zugmap is released under GPL v2
+        
+        # Maintainer
+        
+        collective.geo.zugmap is maintained by Seantis GmbH (www.seantis.ch)
+        Changelog
+        =========
+        
+        1.0.6 (2019-11-11)
+        ------------------
+        
+        - Update classifiers (incl. Plone 5 support) [Nachtalb]
+        - Remove empty css-/jsregistry.xml from genericsetup [Nachtalb]
+        
+        1.0.5 (2017-02-17)
+        ------------------
+        
+        - Load maps from "maps.zg.ch" instead of "maps.zug.ch".
+          [mbaechtold]
+        
+        1.0.4
+        -----
+        
+        - Fix manifest.
+          [msom]
+        
+        1.0.3
+        -----
+        
+        - Rename "Luftbild+" back to "LuftbildPlus+".
+          [msom]
+        
+        - Rename "GIS Zug" to "GIS Kanton Zug".
+          [msom]
+        
+        - Show the source in the layer name-
+          [msom]
+        
+        
+        1.0.2
+        -----
+        
+        - Rename "LuftbildPlus+" to "Luftbild+" and change the url accordingly. No
+          upgrade step necessary.
+          [href]
+        
+        1.0.1
+        -----
+        
+        - Adds missing pt files to release
+          [jone]
+        
+        1.0
+        ---
+        
+        - Removed unnecessary GS profile dependency on plone.app.dexterity:default.
+          [lgraf]
+        
+        - Removed unnecessary grokking of package.
+          [lgraf]
+        
+        - Initial release.
+          [href]
+        
+Keywords: directory plone dexterity
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 4.3
+Classifier: Framework :: Plone :: 5.1
+Classifier: Programming Language :: Python
