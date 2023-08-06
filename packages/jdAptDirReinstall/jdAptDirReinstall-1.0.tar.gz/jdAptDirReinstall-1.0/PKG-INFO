@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: jdAptDirReinstall
+Version: 1.0
+Summary: Reinstall all packages that have files in a directory
+Home-page: https://gitlab.com/JakobDev/jdAptDirReinstall
+Author: JakobDev
+License: BSD
+Description: # jdAptDirReinstall
+        
+        This script helps you, if you accidentally removed a system directory. It will reinstall all packages, that had files in the directory.  
+        `Usage: jdAptDirReinstall <directory>`
+        
+        This script needs apt and apt-file. Please run apt-file update before executing this script.
+Keywords: JakobDev,ubuntu,debian,apt,apt-file
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX
+Classifier: Operating System :: POSIX :: BSD
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
