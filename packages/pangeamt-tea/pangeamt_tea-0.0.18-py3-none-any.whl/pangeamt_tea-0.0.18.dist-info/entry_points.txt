@@ -1,0 +1,4 @@
+[console_scripts]
+tea = pangeamt_tea.main:main
+tea2 = pangeamt_tea.cmd:hello
+
