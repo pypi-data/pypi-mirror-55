@@ -1,0 +1,16 @@
+graphannis/__init__.py,sha256=mfYtUfhBFl2Nq29WhP7_c_ubpKEGzsUC_TpMPGdRnqI,78
+graphannis/_ffi.py,sha256=N5xbOq81PO-WtkNGnhMa51z4-qmtbg-u73t--kvLGNc,11952
+graphannis/common.py,sha256=79oz-TrM5TC_5A-iUcI4eel7oe1kUfG2fCtAsjsv28Y,1520
+graphannis/cs.py,sha256=QMvBDzoYgY1QJc_0yVSYYJFo2uFkSZr5XTqEKbdZgNA,12711
+graphannis/errors.py,sha256=P508rpoptQZN1dudJKsrzV_qsGq9OysYWhK2mHo95G4,2379
+graphannis/graph.py,sha256=jPIfjCnqRdhDW7TqBFxsRfWoFja29n8Mfiywvlx1PF8,10090
+graphannis/test_cs.py,sha256=uKw5Awu7ZMSYKYDA-LJKhFJl4XMwLjfwSHQCGVNJqpw,3129
+graphannis/util.py,sha256=0qtn9xz7M14ifo27aEOYtKAKQfk6ji1K-7BDJcOTq5k,783
+graphannis/darwin-x86-64/libgraphannis.dylib,sha256=SOgZ6hjwYOP9woY9TuKU27NO1mJSZjKZBcuyPEwuQPA,4124052
+graphannis/linux-x86-64/libgraphannis.so,sha256=peGPN5AB1ehbs9L9bmdJq4uHNiC3g_a7pelG3RgUU-I,6998968
+graphannis/win32-x86-64/graphannis.dll,sha256=8LZQoYPrf_o5o6Adv6v6hF3X2hqo5TojvMXwO3KUwhc,3736576
+graphannis-0.25.0.dist-info/LICENSE,sha256=qK0xscP0DcpahBGTUbj6jdyGjt13-tio6_bY8tFvpK4,11324
+graphannis-0.25.0.dist-info/METADATA,sha256=kW6vXVoTFpwDPT8VINVENYxzCcTEi5m_evtRnWyFioY,832
+graphannis-0.25.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+graphannis-0.25.0.dist-info/top_level.txt,sha256=CjXP-bv0n3IL570Wr6HjUhOfnxCxQK-lLPEj_zdAYXk,11
+graphannis-0.25.0.dist-info/RECORD,,
