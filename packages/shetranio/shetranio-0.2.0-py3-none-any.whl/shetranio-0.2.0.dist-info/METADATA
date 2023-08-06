@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: shetranio
+Version: 0.2.0
+Summary: A python package to complement the SHETran hydrological model.
+Home-page: https://github.com/nclwater/shetranio
+Author: Fergus McClean
+Author-email: fergus.mcclean@ncl.ac.uk
+License: MIT
+Platform: UNKNOWN
+Requires-Dist: numpy
+Requires-Dist: h5py
+Requires-Dist: matplotlib
+Requires-Dist: pandas
+Requires-Dist: beautifulsoup4
+
+UNKNOWN
+
+
