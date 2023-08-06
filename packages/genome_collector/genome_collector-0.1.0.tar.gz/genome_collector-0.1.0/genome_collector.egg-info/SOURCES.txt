@@ -1,0 +1,15 @@
+LICENCE.txt
+MANIFEST.in
+README.rst
+ez_setup.py
+setup.py
+examples/basic_example.py
+genome_collector/GenomeCollection.py
+genome_collector/__init__.py
+genome_collector/__main__.py
+genome_collector/version.py
+genome_collector.egg-info/PKG-INFO
+genome_collector.egg-info/SOURCES.txt
+genome_collector.egg-info/dependency_links.txt
+genome_collector.egg-info/requires.txt
+genome_collector.egg-info/top_level.txt
