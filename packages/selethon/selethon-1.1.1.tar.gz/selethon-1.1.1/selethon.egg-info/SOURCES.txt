@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+selethon/__init__.py
+selethon/__version__.py
+selethon/selethon.py
+selethon.egg-info/PKG-INFO
+selethon.egg-info/SOURCES.txt
+selethon.egg-info/dependency_links.txt
+selethon.egg-info/entry_points.txt
+selethon.egg-info/requires.txt
+selethon.egg-info/top_level.txt
