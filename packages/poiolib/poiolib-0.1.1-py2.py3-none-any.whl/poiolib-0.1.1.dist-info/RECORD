@@ -1,0 +1,14 @@
+poiolib/WikiExtractor.py,sha256=NsBnKT5owtBNiGvUEMx1KbeRxuo8-hxGs-Ayg4KYRxo,119222
+poiolib/__init__.py,sha256=cKE37NKpZhZ20GNwJpfX-4oQIlNjgpyp8NVqnzcVGKM,31
+poiolib/langinfo.py,sha256=UywFQS86u7aid7dd6hJuhSomm_dimTN6pjkjtHufJBI,2866
+poiolib/wikipedia.py,sha256=j64CmVV8rNVB23hHPZJQwzrHut95A_OEmNUWcqha8U0,6096
+poiolib/data/README.md,sha256=rB9FE0w81MBqFn8NGvZrp3hJqdGy3zcx_tMTkMXC1hs,128
+poiolib/data/iso-639-3.tab,sha256=4rTLvdF5_OBJC4pYXbqTe9KyuVVe7qOn4HrT5BxD6B8,184451
+poiolib/data/langinfo.json,sha256=DgNRd-vzI-yJTLVIES39eu3ov-zFiBON8cW3a_gwC5M,1059064
+poiolib/data/update_langinfo.py,sha256=l7Y1Ytw_v5HVyVDaVIllYzrKuyp7vHub-o5uyYXuCiI,1611
+poiolib/data/update_langinfo.py~,sha256=eblPXyO0KrYI_fnyDvjP1CaiOu-weA9vKWPYZWmInes,1663
+poiolib-0.1.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+poiolib-0.1.1.dist-info/METADATA,sha256=qwmNsA-n8nQ19yCVRhkSdX48rG6Ule0roz0zC9Ncmuk,968
+poiolib-0.1.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+poiolib-0.1.1.dist-info/top_level.txt,sha256=iPlfMsFeq8IZvy-JRJp_Ik6FCR8Gr_SZfHioj6mDJC0,8
+poiolib-0.1.1.dist-info/RECORD,,

@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: poiolib
+Version: 0.1.1
+Summary: A NLP lirary with common functionality of the Poio project.
+Home-page: https://github.com/Poio-NLP/poio-lib
+Author: Peter Bouda
+Author-email: pbouda@outlook.com
+License: Apache License, Version 2.0
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Requires-Python: >=3.6.0
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: beautifulsoup4
+
+
+# Poio Library
+
+A NLP library of common functionality within the Poio project.
+
+## Install package
+
+Local install:
+
+    $ pip install path/to/poio-lib
+
+Install from PyPI:
+
+    $ pip install poio-lib
+
+## Usage
+
+```
+import poiolib
+langinfo = poiolib.LangInfo()
+iso_639_1 = langinfo.iso_639_1_for_3("deu")
+```
+
+## Running the tests
+
+    $ python -m unittest discover
+
+
+
