@@ -1,0 +1,6 @@
+Metadata-Version: 2.1
+Name: pyzmq
+Version: 18.1.0
+License: BSD 3-clause
+Summary: Python bindings for zeromq
+Home-page: https://github.com/zeromq/pyzmq
