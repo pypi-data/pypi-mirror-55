@@ -1,0 +1,14 @@
+bert_service/__init__.py,sha256=iRlQ3xUcS8Gjul1p9T-XHkGEPXI6CM1fvHj0spYvNwU,648
+bert_service/batching.py,sha256=dCKS0Fj4_bctiErPDf8eiH41TDBBo1ZwEjgqDQrjOO0,4339
+bert_service/bert_service.py,sha256=tjT10lFVGtqC5EWEbw_8YWftFlK2mWDlHu6D_TLxGzY,6054
+bert_service/nlp_reader.py,sha256=YTM7tDH8HpJ-Uuf182ux1dzTxQNWBXjkdeQaIYXuCrI,14733
+bert_service/tokenization.py,sha256=d7xPc_c54MPwS9ed9IuYojqUoka41KNm5TjNIMZ-0h8,12538
+bert_service/vocab/cased_vocab.txt,sha256=7qqYdbI7BLTFTvdZ0D250boVVIOPj7JsXZb6VR35PQI,213450
+bert_service/vocab/chinese_vocab.txt,sha256=RbusazQcMZrcmKUyUyiC6Rqc78AymqV7rJrnYcJ7KRw,109540
+bert_service/vocab/multi_cased_vocab.txt,sha256=_g_afEJbSMUW_I8WDVlMgCKggIRHR1wafG1keXY_MQw,995526
+bert_service/vocab/uncased_vocab.txt,sha256=B-ztN1zsFE0nyQAkHz4zlHjeyVj5L928VR8pXJkgOKM,231508
+bert_service-0.3.7.dist-info/LICENSE,sha256=7EI8xVBu6h_7_JlVw-yPhhOZlpY9hP8wal7kHtqKT_E,1074
+bert_service-0.3.7.dist-info/METADATA,sha256=0fKDy8EUJLjxz7UDMfeJNqwYWQZT1uhRS9KOuYhulBY,465
+bert_service-0.3.7.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+bert_service-0.3.7.dist-info/top_level.txt,sha256=ocx1hVqN4DVx36pqN7K_OYJHTrBUu2v8aY-EGRn7EBc,13
+bert_service-0.3.7.dist-info/RECORD,,
