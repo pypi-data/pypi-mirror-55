@@ -1,0 +1,10 @@
+LICENSE
+README.md
+babi.py
+setup.cfg
+setup.py
+babi.egg-info/PKG-INFO
+babi.egg-info/SOURCES.txt
+babi.egg-info/dependency_links.txt
+babi.egg-info/entry_points.txt
+babi.egg-info/top_level.txt
