@@ -1,0 +1,10 @@
+gtasks_api/__init__.py,sha256=2eDTUMfIYkXG-p1AJ8yaPBOkd58tmKROgfKM6hNSQKw,84
+gtasks_api/gtasks_api.py,sha256=sBWWVQUChMlzJ20XelGxdMYrs4wBN4hP0ONo2EnX3K0,2057
+gtasks_api/utils.py,sha256=-jQkE6WBimACL9d1x9MWJmSsgEReNmwjVCSSqerv7a4,137
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_gtasks_api.py,sha256=jSZ5rb5GGDw-EXR15vShHETNimszelfH8qSLtwyAHkw,575
+gtasks_api-0.0.1.dist-info/LICENSE,sha256=zx6rJOJHc1zTyV3hY2YfQAhHJuCslggtYVpH8znasdA,1075
+gtasks_api-0.0.1.dist-info/METADATA,sha256=b_3yxUJlLe0CcifCOzxNLM0VRU6CnXsSMsHesN0-kxg,1229
+gtasks_api-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+gtasks_api-0.0.1.dist-info/top_level.txt,sha256=S9gHSIYZx-GiM-n0ez7k1BhwtjPEk3_nzAjH-5-KojQ,11
+gtasks_api-0.0.1.dist-info/RECORD,,
