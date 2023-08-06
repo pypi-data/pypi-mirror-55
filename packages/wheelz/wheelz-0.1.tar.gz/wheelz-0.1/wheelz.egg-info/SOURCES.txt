@@ -1,0 +1,16 @@
+.gitignore
+LICENSE.txt
+README.rst
+setup.cfg
+setup.py
+docs/wheelz.gif
+wheelz/__init__.py
+wheelz/core.py
+wheelz/version.py
+wheelz.egg-info/PKG-INFO
+wheelz.egg-info/SOURCES.txt
+wheelz.egg-info/dependency_links.txt
+wheelz.egg-info/entry_points.txt
+wheelz.egg-info/not-zip-safe
+wheelz.egg-info/requires.txt
+wheelz.egg-info/top_level.txt
