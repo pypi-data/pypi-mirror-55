@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "digiarch"
+version = "0.3.0"
+description = "Tools for the Digital Archive Project at Aarhus Stadsarkiv"
+authors = ["Nina Jensen <jnik@aarhus.dk>", "Aarhus Stadsarkiv <stadsarkiv@aarhus.dk>"]
+license = "GPL-3.0"
+readme = "docs/README.md"
+homepage = "https://stadsarkiv.aarhus.dk/"
+repository = "https://github.com/aarhusstadsarkiv/digital-archive"
+documentation = "https://digital-archive.readthedocs.io/en/latest/"
+keywords = ["archiving", "preservation", "digital-archive"]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+pandas = "^0.25.1"
+click = "^7.0"
+tqdm = "^4.36"
+dacite = "^1.0"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2"
+pytest-cov = "^2.8"
+mypy = "^0.730.0"
+black = {version = "^18.3-alpha.0", allows-prereleases = true}
+flake8 = "^3.7"
+
+[tool.poetry.scripts]
+digiarch = "digiarch.digiarch:cli"
+
+[tool.black]
+line-length = 79
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
+

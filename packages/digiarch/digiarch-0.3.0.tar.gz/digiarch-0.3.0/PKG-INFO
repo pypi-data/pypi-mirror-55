@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: digiarch
+Version: 0.3.0
+Summary: Tools for the Digital Archive Project at Aarhus Stadsarkiv
+Home-page: https://stadsarkiv.aarhus.dk/
+License: GPL-3.0
+Keywords: archiving,preservation,digital-archive
+Author: Nina Jensen
+Author-email: jnik@aarhus.dk
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: dacite (>=1.0,<2.0)
+Requires-Dist: pandas (>=0.25.1,<0.26.0)
+Requires-Dist: tqdm (>=4.36,<5.0)
+Project-URL: Documentation, https://digital-archive.readthedocs.io/en/latest/
+Project-URL: Repository, https://github.com/aarhusstadsarkiv/digital-archive
+Description-Content-Type: text/markdown
+
+![Aarhus Stadsarkiv](Stadsarkiv.png)
+# Digital Archive [![CircleCI](https://circleci.com/gh/aarhusstadsarkiv/digital-archive/tree/master.svg?style=shield)](https://circleci.com/gh/aarhusstadsarkiv/digital-archive/tree/master) [![codecov](https://codecov.io/gh/aarhusstadsarkiv/digital-archive/branch/master/graph/badge.svg)](https://codecov.io/gh/aarhusstadsarkiv/digital-archive) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/74e85419f1334761ae22b447468835db)](https://www.codacy.com/manual/jnik-aarhus/digital-archive?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=aarhusstadsarkiv/digital-archive&amp;utm_campaign=Badge_Grade)
+This repository contains code pertaining to the Digital Archive Project at Aarhus Stadsarkiv.
+
