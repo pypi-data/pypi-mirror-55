@@ -1,0 +1,10 @@
+numpy
+scipy
+
+[extra]
+Pillow
+codecov
+mpi4py
+pytest
+pytest-cov
+vtk
