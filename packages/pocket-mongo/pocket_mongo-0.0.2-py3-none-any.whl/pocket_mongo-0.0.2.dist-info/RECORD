@@ -1,0 +1,11 @@
+pocket_mongo/__init__.py,sha256=LpiyDUqf_Bb2ia6gVA3ccdGOxylDWgModb-LH5uoOug,278
+pocket_mongo/base_collection.py,sha256=P8MeKvwDNp2W43jy7Q6_bDBEBOFTu6ULzYVBkVxyCc8,2334
+pocket_mongo/exceptions.py,sha256=E1SvmxliuU8p3jvisPglhcOaW7nYcA_OVXCkG0GPhIA,525
+pocket_mongo/settings.py,sha256=nRWR4YTLrTfSkcnrqwNYxrRzBxQcr8E0cVq1rs5rmvg,437
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_connection.py,sha256=ELf1IsmDsYu0pRe_o0BhJB1MHY1UU_y06HmehEjZIzo,1539
+pocket_mongo-0.0.2.dist-info/LICENSE,sha256=62cbNHc0pYMN_QDFrPCeNn4TaZT53a3YIx05DVA4-6I,1083
+pocket_mongo-0.0.2.dist-info/METADATA,sha256=oRe-guQbWg6ILpFq1BpZOsVS53r3Gy3gdy3X92B_C9w,1686
+pocket_mongo-0.0.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pocket_mongo-0.0.2.dist-info/top_level.txt,sha256=2ntS5XNmG_N5P8kqvkW8N19uAecDVFaqaARW-sWqe5Y,19
+pocket_mongo-0.0.2.dist-info/RECORD,,
