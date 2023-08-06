@@ -1,0 +1,12 @@
+README.md
+setup.py
+reqqie/__init__.py
+reqqie/__main__.py
+reqqie/app.py
+reqqie/requirements.py
+reqqie.egg-info/PKG-INFO
+reqqie.egg-info/SOURCES.txt
+reqqie.egg-info/dependency_links.txt
+reqqie.egg-info/entry_points.txt
+reqqie.egg-info/requires.txt
+reqqie.egg-info/top_level.txt
