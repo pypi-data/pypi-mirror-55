@@ -1,0 +1,12 @@
+{
+  "no_libzmq_extension": false,
+  "allow_legacy_libzmq": false,
+  "skip_check_zmq": false,
+  "have_sys_un_h": true,
+  "libzmq_extension": false,
+  "build_ext": {},
+  "zmq_prefix": "/usr/local",
+  "bdist_egg": {},
+  "bundle_msvcp": null,
+  "zmq_draft_api": false
+}
