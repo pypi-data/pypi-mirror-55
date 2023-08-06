@@ -1,0 +1,8 @@
+README.md
+setup.py
+pytorchvis/__init__.py
+pytorchvis/visualize_layers.py
+pytorchvis.egg-info/PKG-INFO
+pytorchvis.egg-info/SOURCES.txt
+pytorchvis.egg-info/dependency_links.txt
+pytorchvis.egg-info/top_level.txt
