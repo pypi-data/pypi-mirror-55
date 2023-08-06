@@ -1,0 +1,9 @@
+mypy_boto3_kinesis_video_media/__init__.py,sha256=Lg1W65sv1nGI95yZ0zKO8sVbN5BIJo-B5A_foDDuErY,130
+mypy_boto3_kinesis_video_media/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_kinesis_video_media/client.py,sha256=G1lykNvMQ500lC3-f29EmKPKfnCK8nkWkxslfhnJqNE,1043
+mypy_boto3_kinesis_video_media/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_kinesis_video_media/version.py,sha256=-w_IYq2qirUd-aSQcHEODBy3Q_jqwhPRWywcT_M1mMc,48
+mypy_boto3_kinesis_video_media-0.1.7.dist-info/METADATA,sha256=DpqT_GCbXehlc24oucI-wHqdMoXEnn2F5iXaVFMPGPA,1534
+mypy_boto3_kinesis_video_media-0.1.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_kinesis_video_media-0.1.7.dist-info/top_level.txt,sha256=WlpJ8jfTEf0ZwZZVmx78OOA5vQNfH_LXSpCbljGiQlc,31
+mypy_boto3_kinesis_video_media-0.1.7.dist-info/RECORD,,
