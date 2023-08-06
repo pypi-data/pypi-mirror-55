@@ -1,0 +1,17 @@
+techrec/__init__.py,sha256=m3-b89cz5MjHzeVev_0wVKX7RtN8zuTD8iPVId6jw14,25
+techrec/cli.py,sha256=lOG_g4RYfF-um5KwSte4dYMiLg_QBUD74qLalzzn22I,4606
+techrec/config_manager.py,sha256=OuCUJFf7PhA0gXlvQMQ0mhqVyNGRZeor0TrLtVM3sv0,7358
+techrec/default_config.py,sha256=LflW9cR9upbCJdtT7wF9TlgH3FwbtDEbrAflEUjdlc0,839
+techrec/forge.py,sha256=vjF7lqlEiYF4ZG9No7aM3nPq6VeVc8j_F2-9jSLFcsg,5304
+techrec/maint.py,sha256=1crw3_GS0pd9TnoEuMd2Np9TYTeYPNNPwxZ3UEqIWx4,708
+techrec/processqueue.py,sha256=T5Z7zxSXV_5Bbr1TeUQl6Qnn7-K-Z-XYjvRqTBxn5wA,1966
+techrec/server.py,sha256=RXBf7O9VPDkceUuV-Opn7mK1yw3k0vGu36EYxg8OwV0,12674
+techrec/techrec.py,sha256=IY5faNkcRp5-OeslTzhFQGePUOUu5H3ZlQF2d-rvcpM,8088
+techrec/test_forge.py,sha256=jCIVX95ksFfqQg4V1VpEr_XZk95qSyOtJIRWMCUMm_8,4470
+techrec-1.1.dist-info/DESCRIPTION.rst,sha256=fP7sopi2M56DLZO1B4gqq1zdMcyKmH9vem-qyt8Bqks,1833
+techrec-1.1.dist-info/METADATA,sha256=Mwknbj5qgmMCrx1MQGYpRJQXBamZ7z4AYZeRGvdk20g,2253
+techrec-1.1.dist-info/RECORD,,
+techrec-1.1.dist-info/WHEEL,sha256=hZvi-8L6mc2COqhOUWREM_h2lvnJbaHycZt8eohtmso,92
+techrec-1.1.dist-info/entry_points.txt,sha256=tYFCdxEwAPukCYY6wkG7q_2LKTJQ7teaaTZSQIuU5OI,46
+techrec-1.1.dist-info/metadata.json,sha256=RKrl8aQOZhZAK5QEt4435i77X1suNg7DEXEqwMlXfRA,694
+techrec-1.1.dist-info/top_level.txt,sha256=yjtOvlLVKrf63fkzRWBJNcq3I3WjProMnt7DvQRwIng,8
