@@ -1,0 +1,9 @@
+README.md
+setup.py
+ansiblepy/__init__.py
+ansiblepy/ansiblepy.py
+ansiblepy.egg-info/PKG-INFO
+ansiblepy.egg-info/SOURCES.txt
+ansiblepy.egg-info/dependency_links.txt
+ansiblepy.egg-info/requires.txt
+ansiblepy.egg-info/top_level.txt
