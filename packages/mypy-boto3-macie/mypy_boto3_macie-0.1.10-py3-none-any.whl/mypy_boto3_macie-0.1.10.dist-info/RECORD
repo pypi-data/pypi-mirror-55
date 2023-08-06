@@ -1,0 +1,9 @@
+mypy_boto3_macie/__init__.py,sha256=Y5s404i0z1jucNJap87TL87guS-UdKpTZNHZZOx-OO8,102
+mypy_boto3_macie/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_macie/client.py,sha256=L59tmFzNx634Glaj-W_jgoBnJOmfErk0NxJohWdGXgk,21378
+mypy_boto3_macie/paginator.py,sha256=kB8Kw3j6FKEN3OwiuRQs9W8K0uDn_vXkddV4yHEhkj8,5833
+mypy_boto3_macie/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_macie-0.1.10.dist-info/METADATA,sha256=b6-LdYBUgRud7Wvk1RSUyiptB7nshrRq0Kfjt1j6QU0,1056
+mypy_boto3_macie-0.1.10.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_macie-0.1.10.dist-info/top_level.txt,sha256=Bb7n5VyHvBOH8bDBg9tC1rfg6HLUdsPp32K9bWaKjpw,17
+mypy_boto3_macie-0.1.10.dist-info/RECORD,,
