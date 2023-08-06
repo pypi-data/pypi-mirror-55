@@ -1,0 +1,12 @@
+Metadata-Version: 1.0
+Name: cvtorch
+Version: 0.0.8
+Summary: vision tools based on opencv
+Home-page: UNKNOWN
+Author: iHateTa11B0y
+Author-email: 1187203155@qq.com
+License: UNKNOWN
+Description: 
+        This repository is intended to offer some common augmentataion functions in computer vision task base on opencv. The functions' prototype comes from FAIR's maskrcnn-benchmark. I tried my best to implement these functions strictly follow the details of torchvision and pillow. Any discussions are welcomed.
+        
+Platform: UNKNOWN
