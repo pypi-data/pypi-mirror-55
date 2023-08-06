@@ -1,0 +1,12 @@
+gensim
+rouge_score
+tqdm
+requests
+plotly
+numpy
+pandas
+bs4
+scipy
+sklearn
+lxml
+auquan_toolbox
