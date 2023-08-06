@@ -1,0 +1,13 @@
+txdatadog/__init__.py,sha256=lN-IV_qbtuZLPHVxl46WIbCTC4K5tNZdh_z-2KsAY8A,77
+txdatadog/client.py,sha256=wyTmu9CBPAxFIyilE-yrUwpi7OkVfOLwn28brMepPtQ,902
+txdatadog/metrics.py,sha256=rsQkocKIK7NH1S_PeN7melo1CdOmFaGT8D_dviiidBE,1772
+txdatadog/tests/__init__.py,sha256=MOxJPo-TMLVJnEhSyCr-s7O3KO6NM-saw10N_j8eG8E,324
+txdatadog/tests/fakes.py,sha256=MB6eNJS02YTGneMJjgwX2IgEgMKJ528hzv4DwZUssao,1862
+txdatadog/tests/strategies.py,sha256=ymHcamkZGMS4ElMMSdxRNyErXijnzDZRN4Vk3EwLwNI,946
+txdatadog/tests/test_fakes.py,sha256=JS4Pw7iI2T_0samYGZCChVf3P2rwrq2SaUUp2m2Ezc8,469
+txdatadog/tests/test_metrics.py,sha256=-PE6oBndPoNStFTA2ptn34oOzcr53_hdkc2fQQMtIMk,3345
+txdatadog-1.3.0.dist-info/COPYING,sha256=jzucg_4G0Xrvykp7TOmzQ7VaUK-EP58jEikz9uKxQqU,1057
+txdatadog-1.3.0.dist-info/METADATA,sha256=Zd2YiTFHIsesrS89KnOU2iTDbcgPQIvDpZwHxrSNn2U,1689
+txdatadog-1.3.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+txdatadog-1.3.0.dist-info/top_level.txt,sha256=SqRiaW111l24pyRl8w6NdPoUJPTj2-XVe-qfDJCO7zU,10
+txdatadog-1.3.0.dist-info/RECORD,,
