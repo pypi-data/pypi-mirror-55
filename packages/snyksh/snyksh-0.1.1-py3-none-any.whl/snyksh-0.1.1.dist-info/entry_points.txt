@@ -1,0 +1,3 @@
+[console_scripts]
+snyksh=snyksh:run
+
