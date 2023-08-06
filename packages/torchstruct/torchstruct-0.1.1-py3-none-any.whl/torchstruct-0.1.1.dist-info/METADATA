@@ -1,0 +1,40 @@
+Metadata-Version: 2.1
+Name: torchstruct
+Version: 0.1.1
+Summary: UNKNOWN
+Home-page: https://github.com/iamhatesz/torchstruct
+Author: Tomasz Wrona
+Author-email: tomasz@wrona.me
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Software Development :: Version Control :: Git
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: torch
+
+# torchstruct
+
+Wrap your multiple `torch.Tensor`s into single `TensorStruct` 
+and use it like you are using `torch.Tensor`.
+
+## Installation
+
+```bash
+pip install torchstruct 
+```
+
+## Testing
+
+```bash
+pytest
+```
+
+
