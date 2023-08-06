@@ -1,0 +1,1 @@
+from lusidtools.apps.upsert_instruments_from_csv import load_instruments
