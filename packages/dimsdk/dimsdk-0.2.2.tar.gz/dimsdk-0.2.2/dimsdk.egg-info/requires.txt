@@ -1,0 +1,4 @@
+dimp>=0.7.8
+mkm>=0.7.11
+apns2
+numpy
