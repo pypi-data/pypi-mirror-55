@@ -1,0 +1,6 @@
+sphinx>=1.7
+astropy-sphinx-theme
+numpydoc
+sphinx-automodapi
+sphinx-gallery
+pillow
