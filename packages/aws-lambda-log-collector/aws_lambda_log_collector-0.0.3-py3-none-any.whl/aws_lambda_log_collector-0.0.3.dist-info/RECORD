@@ -1,0 +1,11 @@
+collector/__init__.py,sha256=YQbf0t8gqSqHIOpPIoGdhhrfR016lBSQB6XfJkuEjfQ,698
+collector/__main__.py,sha256=_AYO5ASGtxWW_MaChTFqqVgw08aJ6ypLr-BmY8npGLU,90
+collector/cli.py,sha256=_AvSVRmjBJWGASpXu_sAk7cCdYty0Zu3Wet5VaZ-z10,2706
+collector/lambda_log_collector.py,sha256=fcMRRBunfOVYRxVPzf0BUxgOBtBt3KZ9isitDznnWzw,3656
+collector/utils.py,sha256=34qkkfwyTT3hKgkc9D-h-qGBAJfZgVzMuhfKTHNjSIo,1276
+aws_lambda_log_collector-0.0.3.dist-info/LICENSE,sha256=hJNQr75Fo-mgSts6MMRyLGIVBsLPt2TuDkEcAenwolc,1068
+aws_lambda_log_collector-0.0.3.dist-info/METADATA,sha256=N-kuW9yJV02sRGAI2IXSPzJJb58pJJsDpSUkywSblX8,3472
+aws_lambda_log_collector-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+aws_lambda_log_collector-0.0.3.dist-info/entry_points.txt,sha256=R3gEfkk5zG3fswaO02wKyeEFqaOslVRo1NfqoMGvewQ,82
+aws_lambda_log_collector-0.0.3.dist-info/top_level.txt,sha256=Rdib0jA0_UlGj-L4v_QQj-9cZ3hT9B5gZZJpQeAPlQ0,10
+aws_lambda_log_collector-0.0.3.dist-info/RECORD,,
