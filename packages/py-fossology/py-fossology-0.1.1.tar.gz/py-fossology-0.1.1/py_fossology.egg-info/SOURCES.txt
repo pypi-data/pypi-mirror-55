@@ -1,0 +1,12 @@
+README.md
+setup.py
+fossology/__init__.py
+fossology/api.py
+fossology/exceptions.py
+fossology/resources.py
+fossology/utils.py
+py_fossology.egg-info/PKG-INFO
+py_fossology.egg-info/SOURCES.txt
+py_fossology.egg-info/dependency_links.txt
+py_fossology.egg-info/requires.txt
+py_fossology.egg-info/top_level.txt
