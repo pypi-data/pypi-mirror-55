@@ -1,0 +1,17 @@
+redexpect
+pyte
+
+[docs]
+sphinx_rtd_theme
+redexpect
+pyte
+sphinx
+
+[tests]
+pyte
+coveralls
+sftpserver
+pytest-cov
+redexpect
+asyncssh
+paramiko
