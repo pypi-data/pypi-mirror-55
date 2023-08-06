@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+pack2048/__init__.py
+pack2048/__main__.py
+pack2048/class2048.py
+pack2048/strategy2048.py
+pack2048.egg-info/PKG-INFO
+pack2048.egg-info/SOURCES.txt
+pack2048.egg-info/dependency_links.txt
+pack2048.egg-info/top_level.txt
