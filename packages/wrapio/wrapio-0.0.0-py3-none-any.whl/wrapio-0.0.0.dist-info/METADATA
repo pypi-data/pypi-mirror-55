@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: wrapio
+Version: 0.0.0
+Summary: Handling event-based streams.
+Home-page: https://github.com/Exahilosys/wrapio
+Author: Exahilosys
+License: MIT
+Platform: UNKNOWN
+Provides-Extra: docs
+Requires-Dist: sphinx ; extra == 'docs'
+
+This is still in testing phase, pypi and readthedocs up soon!
+
+
