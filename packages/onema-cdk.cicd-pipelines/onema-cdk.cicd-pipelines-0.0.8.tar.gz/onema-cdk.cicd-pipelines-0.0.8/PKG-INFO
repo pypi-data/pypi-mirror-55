@@ -1,0 +1,29 @@
+Metadata-Version: 2.1
+Name: onema-cdk.cicd-pipelines
+Version: 0.0.8
+Summary: Constructs to deploy CICD pipelines using CodePipeline and CodeBuild
+Home-page: UNKNOWN
+Author: Juan Manuel Torres
+Author-email: software@onema.io
+License: UNKNOWN
+Description: 
+        # CICD Pipelines
+        
+        CDK Constructs to build CICD deployment pipelines.
+        
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Software Development :: Code Generators
+Classifier: Topic :: Utilities
+Classifier: Typing :: Typed
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
