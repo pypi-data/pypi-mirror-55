@@ -1,0 +1,11 @@
+QAStrategy/__init__.py,sha256=9E9evo2s8N6Nu14mWUoBuIHTmTjfTEfQbboOZpZSQY4,155
+QAStrategy/qactabase.py,sha256=d7bGklyhZ6Ma-1o6AUBLYFALzeNKWqqWmaZ0OE5zEMA,16425
+QAStrategy/qahedgebase.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+QAStrategy/qastockbase.py,sha256=xJJ4C0ylq6m6A_YtHnOwsaDMoRiDEkxc9n4jNrhfG50,10552
+QAStrategy/util.py,sha256=Vx51KzTWZZsOdg8L0cWCkud_efBS0HeHS8bJk952Pbk,635
+QAStrategy-0.0.8.dist-info/LICENSE,sha256=DneG6V2zOIoe2nGLpRUyP4MwIr0pQCvo3mbJh9o0wjc,1067
+QAStrategy-0.0.8.dist-info/METADATA,sha256=q3J3PBD0nKHa9yEWmhoM3MQLEFypYMjyd33su2oJQRw,575
+QAStrategy-0.0.8.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+QAStrategy-0.0.8.dist-info/top_level.txt,sha256=B2mV3eNm1SGfHbF9Xjvmf1FEZ4_mCJo8bwfpdt3ptAA,11
+QAStrategy-0.0.8.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+QAStrategy-0.0.8.dist-info/RECORD,,
