@@ -1,0 +1,2 @@
+apache-airflow<2,>=1.8
+newrelic-telemetry-sdk~=0.2
