@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>InfoDialog</class>
+ <widget class="QDialog" name="InfoDialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>566</width>
+    <height>421</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Info dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(41, 41, 49);</string>
+  </property>
+  <widget class="QPlainTextEdit" name="plainTextEdit">
+   <property name="geometry">
+    <rect>
+     <x>20</x>
+     <y>50</y>
+     <width>521</width>
+     <height>291</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPlainTextEdit {
+    background-color: gray;
+    background-attachment: scroll;
+    border-style: outset;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: beige;
+    color: white;
+    font: 13pt &quot;Monaco&quot;;
+}
+</string>
+   </property>
+   <property name="plainText">
+    <string>Meson-ui (C), permission granted to Michael Brockus, by the creators of Meson and this application is a free software licensed under Apache 2.0, compatible with version 3 of the GNU GPL.
+
+Please note that this license is not compatible with GPL version 2, because it has some requirements that are not in that GPL version. These include certain patent termination and indemnification provisions. The patent termination provision is a good thing, which is why we recommend the Apache 2.0 license for substantial programs over other lax permissive licenses.
+
+Meson-ui is intended to conform to PyQt5 terms of agreements for development of open source projects.  Meson is copyrighted by all members of the Meson development team.  Meson is licensed under the Apache 2.0 license.
+
+Meson is a registered trademark of Jussi Pakkanen.
+
+Meson's logo is (C) Jussi Pakkanen and used by the Meson project with specific permission. The Meson logo is used with permission in this app given by Jussi Pakkanen himself.</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>20</y>
+     <width>211</width>
+     <height>20</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(255, 255, 255);
+font: 19pt &quot;Gill Sans&quot;</string>
+   </property>
+   <property name="text">
+    <string>Meson-ui legel information</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="push_ok">
+   <property name="geometry">
+    <rect>
+     <x>200</x>
+     <y>360</y>
+     <width>166</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton {
+    background-color: rgb(105, 105, 105);
+    border-style: outset;
+    border-width: 2px;
+    border-radius: 10px;
+    border-color: rgb(127, 127, 127);
+    color: rgb(255, 255, 255);
+    font: 13pt &quot;Gill Sans&quot;;
+    min-width: 10em;
+    padding: 6px;
+}
+
+QPushButton:pressed {
+    background-color: rgb(127, 127, 127);
+    border-style: inset;
+    color: rgb(36, 255, 6);
+}</string>
+   </property>
+   <property name="text">
+    <string>Ok</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
