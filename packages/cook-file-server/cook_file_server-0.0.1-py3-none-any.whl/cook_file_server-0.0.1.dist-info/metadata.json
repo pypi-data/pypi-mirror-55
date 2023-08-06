@@ -1,0 +1,1 @@
+{"extensions": {"python.details": {"document_names": {"description": "DESCRIPTION.rst"}}}, "extras": [], "generator": "bdist_wheel (0.30.0)", "metadata_version": "2.0", "name": "cook-file-server", "run_requires": [{"requires": ["Flask (==1.1.0)", "gunicorn (==19.9.0)"]}], "summary": "Two Sigma's Cook File Server", "test_requires": [{"requires": []}], "version": "0.0.1"}
