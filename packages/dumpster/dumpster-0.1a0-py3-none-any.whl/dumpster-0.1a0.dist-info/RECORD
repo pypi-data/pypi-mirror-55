@@ -1,0 +1,13 @@
+dumpster/__init__.py,sha256=9gv50dfmZpwNrnokGF5IW54j1_vFH5aFVAIHUpdjIOk,45
+dumpster/model.py,sha256=ua6UjF18-35Iw-XJEPyCZRl9kXm1u9OWAb3q0cx2cvY,310
+dumpster/storage.py,sha256=4yAfOP6Nvoe0ery-lTUk9z6YWBBBhAlF8AXzYJq1CGQ,309
+dumpster/test_.py,sha256=B0h9WQbMFtS1vcG9i2rjjcVlIDvs72nAUBOyynwsdLg,734
+dumpster/utils.py,sha256=K1WMm2JQUpQbV0s9l989jarKcMKUEmLcyPDdcwamW7Q,606
+dumpster/registries/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dumpster/registries/base.py,sha256=-xNs0PBPtCP544uc3KTQlKlS3SCXLFr6QkD3gTlhiD0,2571
+dumpster/registries/file.py,sha256=VSQnQovMQ4XEGcNMTZkuhGpK3y2x4GxYUB0UZv3cEKQ,1446
+dumpster/registries/storage.py,sha256=e4AjJNhRCS_Wg2WKlNItJbDUiHMITXli7E_oVCAPjco,1677
+dumpster-0.1a0.dist-info/METADATA,sha256=0Vn3TCjXADicyfENn5d4JHL5TvdfK0jvE0BNR1XQ1OQ,279
+dumpster-0.1a0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+dumpster-0.1a0.dist-info/top_level.txt,sha256=a2pEVVdRDgeObiwDAkoJiv0rR6TXk2E5rRzHvUlSlKY,19
+dumpster-0.1a0.dist-info/RECORD,,
