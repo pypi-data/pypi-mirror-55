@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: django2-asyncmailer
+Version: 0.0.4
+Summary: Async email solution w/ multiple SMTP credentials, load-balancing and blacklist.
+
+Home-page: https://github.com/ChouBaoDxs/django2-asyncmailer
+Author: Dong
+Author-email: choubaodxs@163.com
+License: The MIT License
+Description: ### Django AsyncMailer
+        
+        Fork from [django-asyncmailer](https://github.com/andyfangdz/django-asyncmailer).
+        
+        
+        #### Installation
+        
+        ```bash
+        pip install django2-asyncmailer
+        ```
+        
+Keywords: django,async,email
+Platform: OS Independent
+Description-Content-Type: text/markdown
+Provides-Extra: dev

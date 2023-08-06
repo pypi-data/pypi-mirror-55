@@ -1,0 +1,9 @@
+django
+celery
+django-compat
+html2text
+django-jsonfield
+premailer
+
+[dev]
+flake8
