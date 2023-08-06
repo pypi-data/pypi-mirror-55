@@ -1,0 +1,5 @@
+[console_scripts]
+elb-filter = elb_log_tools.filter:main
+elb-logs = elb_log_tools.logs:main
+elb-patterncounts = elb_log_tools.patterncounts:main
+
