@@ -1,0 +1,13 @@
+django_filemaker_pyodbc/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+django_filemaker_pyodbc/base.py,sha256=S_SNF0I5QPcWt8loDyUgR6l-oqaIVzDwThHxpQtGXwI,14643
+django_filemaker_pyodbc/client.py,sha256=ylm3iu70xjJrVhdTLoGySZP-gMHwAQfhTGY2OPyY2sk,3074
+django_filemaker_pyodbc/compat.py,sha256=aYGirwejidJEXPmd8f1Ei15gQTO4629RnZd7wv5_P8s,4313
+django_filemaker_pyodbc/compiler.py,sha256=ky9o-5K_Pp1KTk7ag31zitc2CZKEH3udceWu4H8Sdbo,29062
+django_filemaker_pyodbc/creation.py,sha256=rndc5WYlvj9Z_g4fF5UdNqSSE7pKhvpncV2EzMH6alA,9430
+django_filemaker_pyodbc/features.py,sha256=CHxlcI-JYTnOVRhOtzX6xHvYzBm6BHYzHEXdXTUnaYk,155
+django_filemaker_pyodbc/operations.py,sha256=T0wuSD8LFIM4SixZiNR16gSY9rUYR95eH-eohEIw2sc,18183
+django_filemaker_pyodbc-0.0.3.dist-info/LICENSE,sha256=Jnfo154pNG7fFlAuSpOwMdGPvNI2dqWYgUJdBmVGgaE,2069
+django_filemaker_pyodbc-0.0.3.dist-info/METADATA,sha256=5xuofRmHLgSS6Ih5xth8mtW_W_3P_o7HVcLqeXEJuKg,3526
+django_filemaker_pyodbc-0.0.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_filemaker_pyodbc-0.0.3.dist-info/top_level.txt,sha256=07o248CjuWSn_AEJQ4Y7OnAtk6o6Q597IgmQmCz8CVk,24
+django_filemaker_pyodbc-0.0.3.dist-info/RECORD,,
