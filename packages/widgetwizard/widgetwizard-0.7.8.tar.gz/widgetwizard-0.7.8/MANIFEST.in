@@ -1,0 +1,2 @@
+include widgetwizard/config.json
+recursive-include widgetwizard/config.json
