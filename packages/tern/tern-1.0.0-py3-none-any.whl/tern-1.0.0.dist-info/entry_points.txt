@@ -1,0 +1,13 @@
+[console_scripts]
+tern = tern.__main__:main
+
+[tern.extensions]
+cve_bin_tool = tern.extensions.cve_bin_tool.executor:CveBinTool
+scancode = tern.extensions.scancode.executor:Scancode
+
+[tern.formats]
+default = tern.formats.default.generator:Default
+json = tern.formats.json.generator:JSON
+spdxtagvalue = tern.formats.spdx.spdxtagvalue.generator:SpdxTagValue
+yaml = tern.formats.yaml.generator:YAML
+
