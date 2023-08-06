@@ -1,0 +1,9 @@
+setup.py
+document_ocr.egg-info/PKG-INFO
+document_ocr.egg-info/SOURCES.txt
+document_ocr.egg-info/dependency_links.txt
+document_ocr.egg-info/not-zip-safe
+document_ocr.egg-info/requires.txt
+document_ocr.egg-info/top_level.txt
+ocr/__init__.py
+ocr/pan.py
