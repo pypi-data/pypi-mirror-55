@@ -1,0 +1,5 @@
+case-conversion~=2.1
+configupdater~=1.0
+packaging~=19.2
+requests~=2.22
+setuptools~=41.6
