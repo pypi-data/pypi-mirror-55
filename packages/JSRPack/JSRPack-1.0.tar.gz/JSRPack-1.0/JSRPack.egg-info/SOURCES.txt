@@ -1,0 +1,9 @@
+README.md
+setup.py
+JSRPack/__init__.py
+JSRPack/firstmodule.py
+JSRPack/secondmodule.py
+JSRPack.egg-info/PKG-INFO
+JSRPack.egg-info/SOURCES.txt
+JSRPack.egg-info/dependency_links.txt
+JSRPack.egg-info/top_level.txt
