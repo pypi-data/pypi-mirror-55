@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: obelixtools
+Version: 1.1.0
+Summary: Useful tools I need in many projects.
+Home-page: https://github.com/loelkes/pypi-obelixtools
+Author: Christian Lölkes
+Author-email: christian.loelkes@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: requests
+Requires-Dist: sseclient
+
+# obelixtools
+
+1. Install it with ```pip install obelixtools```
+
+## API
+
+```from obelixtools import API```
+
+This is a small wrapper I wrote around the reuqests library. It has some extra features like a speedtestand connectivity check.
+
+
