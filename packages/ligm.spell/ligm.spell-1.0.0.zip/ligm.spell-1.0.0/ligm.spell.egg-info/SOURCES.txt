@@ -1,0 +1,13 @@
+LICENSE
+MANIFEST.in
+README.txt
+setup.py
+./ligm/resources/dict/en_US.aff
+./ligm/resources/dict/en_US.dic
+./ligm/resources/dict/russian-aot.aff
+./ligm/resources/dict/russian-aot.dic
+ligm/__init__.py
+ligm.spell.egg-info/PKG-INFO
+ligm.spell.egg-info/SOURCES.txt
+ligm.spell.egg-info/dependency_links.txt
+ligm.spell.egg-info/top_level.txt
