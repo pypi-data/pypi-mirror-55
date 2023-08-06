@@ -1,0 +1,15 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "dots"
+author = "Pradyun Gedam"
+author-email = "pradyunsg@gmail.com"
+home-page = "https://github.com/pradyunsg/dots"
+classifiers = ["License :: OSI Approved :: MIT License"]
+requires-python = ">=3.5"
+requires = [
+  "click ~= 7.0.0",
+  "pyyaml ~= 5.1.2",
+]
