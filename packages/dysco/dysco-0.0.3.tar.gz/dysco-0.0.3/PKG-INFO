@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: dysco
+Version: 0.0.3
+Summary: Dysco provides configurable dynamic scoping behavior in Python.
+License: BSD-2-Clause
+Author: Evan Sangaline
+Author-email: evan@intoli.com
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: python-slugify (>=4.0,<5.0)
