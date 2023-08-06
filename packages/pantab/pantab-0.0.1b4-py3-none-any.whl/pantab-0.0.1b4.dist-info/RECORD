@@ -1,0 +1,9 @@
+pantab/__init__.py,sha256=URU0TYmXQ3EeiJGmG6bxrYj0qWmz3UBr70OD_6Kuv5M,138
+pantab/_pantab.py,sha256=WnBaA-Bjd9xiAOO_-1wLsn8xa_xFyfYlsF5PPFhsAZ4,11289
+pantab/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pantab/tests/test_pantab.py,sha256=gj6uEKPnkIP3L20dS1MIuXutZ6jJiRaiSfJH1WHRK6U,8454
+pantab-0.0.1b4.dist-info/LICENSE.txt,sha256=G4XCNoBEv2VS0Rru8AXuTrbNaMMJmKtZGSMitLpJJ_U,1526
+pantab-0.0.1b4.dist-info/METADATA,sha256=XxvVxj-Y76bYBCqHFRbNTuu_NCQXZUqzaflurpuefuQ,990
+pantab-0.0.1b4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pantab-0.0.1b4.dist-info/top_level.txt,sha256=9H1a8BGQiFRIZMHaRZ1bu4otPrWHRNVFeaftWjGq2Kw,7
+pantab-0.0.1b4.dist-info/RECORD,,
