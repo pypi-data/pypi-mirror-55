@@ -1,0 +1,14 @@
+include *.py
+include *.rst
+include LICENSE
+include MANIFEST.in
+include pyproject.toml
+include tox.ini
+
+recursive-include .circleci *
+recursive-include .github *
+
+include mopidy_alsamixer/ext.conf
+
+recursive-include tests *.py
+recursive-include tests/data *
