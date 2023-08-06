@@ -1,0 +1,29 @@
+{% extends "./base.html" %}
+{% load comment_block %}
+{% block title %} {{ task.task_content }} {% endblock %}
+
+{% block extra_head %}
+<link rel="stylesheet" href="http://cdn.bootcss.com/highlight.js/8.0/styles/monokai_sublime.min.css">
+<script src="https://cdn.bootcss.com/highlight.js/9.12.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+{% endblock %}
+
+{% block main %}
+    {% if task %}
+    <h2>{{ task.task_content }}</h2>
+    <div>
+        <span>部门:<a href="{% url 'task_category-list' task.task_category_id %}">{{ task.task_category.name }}</a></span>
+        <span>用户:<a href="{% url 'author' task.owner_id %}">{{ task.owner.username }}</a></span>
+        <span>创建时间:{{ task.created_time }}</span>
+        <span>pv/uv:{{ post.pv }}/{{ post.uv }}</span>
+    </div>
+    <hr/>
+    <p>
+        {% autoescape off %}
+        {{ task.content_html }}
+        {% endautoescape %}
+    </p>
+    {% endif %}
+
+    {% comment_block request.path %}
+{% endblock %}

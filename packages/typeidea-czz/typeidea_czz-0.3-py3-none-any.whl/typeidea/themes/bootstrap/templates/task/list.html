@@ -1,0 +1,42 @@
+{% extends "./base.html" %}
+
+{% block title %}
+    {% if tag %}
+    标签页: {{ tag.name }}
+    {% elif task_category %}
+    部门页: {{ task_category.name }}
+    {% else %}
+    首页
+    {% endif %}
+{% endblock %}
+
+
+{% block main %}
+    {% for task in task_list %}
+    <div class="card task">
+        <div class="card-body">
+            <h6 class="card-title"><a href="{% url 'task-detail' task.id %}">{{ task.task_content }}</a></h6>
+{#            <span class="card-link">用户:<a href="{% url 'author' task.owner_id %}">{{ task.owner.username }}</a></span>#}
+            <span class="card-link">部门:<a href="{% url 'task_category-list' task.task_category_id %}">{{ task.task_category.name }}</a></span>
+            <span class="card-link">标签:
+                {% for tag in task.tag.all %}
+                <a href="{% url 'tag-list' tag.id %}">{{ tag.name }}</a>
+                {% endfor %}
+            </span>
+            <hr/>
+            <p class="card-text">{{ task.responsible }}_{{ task.issue_no }} /{{ task.task_no }} 任务状态：{{ task.color_state }}><a href="{% url 'task-detail' task.id %} ">完整内容</a></p>
+        </div>
+    </div>
+    {% endfor %}
+
+    {% if page_obj %}
+    {% if page_obj.has_previous %}
+        <a href="?page={{ page_obj.previous_page_number }}&keyword={{ keyword }}">上一页</a>
+    {% endif %}
+        Page {{ page_obj.number }} of {{ paginator.num_pages }}.
+    {% if page_obj.has_next %}
+        <a href="?page={{ page_obj.next_page_number }}&keyword={{ keyword }}">下一页</a>
+    {% endif %}
+    {% endif %}
+
+{% endblock %}
