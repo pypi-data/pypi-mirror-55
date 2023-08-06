@@ -1,0 +1,98 @@
+MANIFEST.in
+README.md
+setup.py
+DigiPathAI/Segmentation.py
+DigiPathAI/__init__.py
+DigiPathAI/main_server.py
+DigiPathAI.egg-info/PKG-INFO
+DigiPathAI.egg-info/SOURCES.txt
+DigiPathAI.egg-info/dependency_links.txt
+DigiPathAI.egg-info/entry_points.txt
+DigiPathAI.egg-info/not-zip-safe
+DigiPathAI.egg-info/requires.txt
+DigiPathAI.egg-info/top_level.txt
+DigiPathAI/helpers/__init__.py
+DigiPathAI/helpers/convert_to_pyramidal.py
+DigiPathAI/helpers/utils.py
+DigiPathAI/loaders/__init__.py
+DigiPathAI/loaders/dataloader.py
+DigiPathAI/models/__init__.py
+DigiPathAI/models/deeplabv3.py
+DigiPathAI/models/densenet.py
+DigiPathAI/models/inception.py
+DigiPathAI/static/css/bootstrap-grid.css
+DigiPathAI/static/css/bootstrap-grid.css.map
+DigiPathAI/static/css/bootstrap-grid.min.css
+DigiPathAI/static/css/bootstrap-grid.min.css.map
+DigiPathAI/static/css/bootstrap-reboot.css
+DigiPathAI/static/css/bootstrap-reboot.css.map
+DigiPathAI/static/css/bootstrap-reboot.min.css
+DigiPathAI/static/css/bootstrap-reboot.min.css.map
+DigiPathAI/static/css/bootstrap.css
+DigiPathAI/static/css/bootstrap.css.map
+DigiPathAI/static/css/bootstrap.min.css
+DigiPathAI/static/css/bootstrap.min.css.map
+DigiPathAI/static/css/dark-mode.css
+DigiPathAI/static/css/style.css
+DigiPathAI/static/images/fullpage_grouphover.png
+DigiPathAI/static/images/fullpage_hover.png
+DigiPathAI/static/images/fullpage_pressed.png
+DigiPathAI/static/images/fullpage_rest.png
+DigiPathAI/static/images/home_grouphover.png
+DigiPathAI/static/images/home_hover.png
+DigiPathAI/static/images/home_pressed.png
+DigiPathAI/static/images/home_rest.png
+DigiPathAI/static/images/next_grouphover.png
+DigiPathAI/static/images/next_hover.png
+DigiPathAI/static/images/next_pressed.png
+DigiPathAI/static/images/next_rest.png
+DigiPathAI/static/images/previous_grouphover.png
+DigiPathAI/static/images/previous_hover.png
+DigiPathAI/static/images/previous_pressed.png
+DigiPathAI/static/images/previous_rest.png
+DigiPathAI/static/images/rotateleft_grouphover.png
+DigiPathAI/static/images/rotateleft_hover.png
+DigiPathAI/static/images/rotateleft_pressed.png
+DigiPathAI/static/images/rotateleft_rest.png
+DigiPathAI/static/images/rotateright_grouphover.png
+DigiPathAI/static/images/rotateright_hover.png
+DigiPathAI/static/images/rotateright_pressed.png
+DigiPathAI/static/images/rotateright_rest.png
+DigiPathAI/static/images/zoomin_grouphover.png
+DigiPathAI/static/images/zoomin_hover.png
+DigiPathAI/static/images/zoomin_pressed.png
+DigiPathAI/static/images/zoomin_rest.png
+DigiPathAI/static/images/zoomout_grouphover.png
+DigiPathAI/static/images/zoomout_hover.png
+DigiPathAI/static/images/zoomout_pressed.png
+DigiPathAI/static/images/zoomout_rest.png
+DigiPathAI/static/js/bootstrap.bundle.js
+DigiPathAI/static/js/bootstrap.bundle.js.map
+DigiPathAI/static/js/bootstrap.bundle.min.js
+DigiPathAI/static/js/bootstrap.bundle.min.js.map
+DigiPathAI/static/js/bootstrap.js
+DigiPathAI/static/js/bootstrap.js.map
+DigiPathAI/static/js/bootstrap.min.js
+DigiPathAI/static/js/bootstrap.min.js.map
+DigiPathAI/static/js/dark-mode-switch.js
+DigiPathAI/static/js/jquery-3.4.1.min.js
+DigiPathAI/static/js/openseadragon-latest.js
+DigiPathAI/static/js/openseadragon-scalebar.js
+DigiPathAI/static/js/openseadragon.js
+DigiPathAI/static/js/openseadragon.js.map
+DigiPathAI/static/js/openseadragon.min.js
+DigiPathAI/static/js/openseadragon.min.js.map
+DigiPathAI/templates/files.html
+DigiPathAI/templates/viewer.html
+examples/18-00530B_2019-05-07 23_56_22-lv1-11712-16122-7372-7686.jpg
+examples/18-00530B_2019-05-07 23_56_22-lv1-11712-16122-7372-7686_mask.jpg
+examples/18-01080B_2019-05-07 21_33_52-lv1-11930-21381-3264-4008.jpg
+examples/18-01080B_2019-05-07 21_33_52-lv1-11930-21381-3264-4008_mask.jpg
+examples/18-01080B_2019-05-07 21_33_52-lv1-15262-19621-5715-4803.jpg
+examples/18_00991B_2019-05-07 21_27_54-lv1-16174-30030-3538-5736.jpg
+examples/18_00991B_2019-05-07 21_27_54-lv1-16174-30030-3538-5736_mask.jpg
+examples/18_00991B_2019-05-07 21_27_54-lv1-21230-29833-4835-6374.jpg
+examples/18_00991B_2019-05-07 21_27_54-lv1-21230-29833-4835-6374_mask.jpg
+examples/im1-mask.jpg
+examples/im1-mask.tiff
+examples/im1-slide.tiff

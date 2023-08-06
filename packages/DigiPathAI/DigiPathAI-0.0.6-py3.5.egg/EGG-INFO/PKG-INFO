@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: DigiPathAI
+Version: 0.0.6
+Summary: Deep Learning toolbox for WSI (digital histopatology) analysis
+Home-page: https://github.com/haranrk/DigiPathAI
+Author: Avinash Kori, Haran Rajkumar
+Author-email: koriavinash1@gmail.com, haranrajkumar97@gmail.com
+License: UNKNOWN
+Description: # DigiPathAI
+        A software application for viewing [whole slide images (WSI)](https://www.ncbi.nlm.nih.gov/pubmed/30307746) and performing pathological analysis 
+        
+        # Features
+        - Responsive WSI image viewer 
+        - State of the art cancer AI pipeline to segment the and display the cancer cell
+        
+        # Usage 
+        ##Requirements
+        Just for the viewer 
+        - `openslide`
+        
+        For the segmentation as well
+        - `tensorflow<2.0.0`
+        - `pytorch`
+        
+        ## Installation 
+        ```
+        pip install digipathai
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
