@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: text-translator
+Version: 1.2
+Summary: Multilingual text translation
+Home-page: https://github.com/srijan14/text-translation
+Author: Srijan Sharma
+Author-email: srijan.sharma.1404@gmail.com
+License: Apache
+Description: UNKNOWN
+Keywords: TEXT TRANSLATION,MACHINE TRANSLATION
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
