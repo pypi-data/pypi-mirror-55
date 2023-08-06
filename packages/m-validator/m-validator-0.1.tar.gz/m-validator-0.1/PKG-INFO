@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: m-validator
+Version: 0.1
+Summary: Thư viện validate dữ liệu đầu vào
+Home-page: https://github.com/mobiovn
+Author: MOBIO
+Author-email: contact@mobio.vn
+License: MIT
+Description: # <h2 id="title">Validator là thư viện validate dữ liệu input</h2>
+        
+        # <h2 id="version">Version</h2>
+        Phiên bản hiện tại `0.1`
+        
+        # Cài đặt:
+        `pip3 install m-validator`
+        
+        # Sử dụng:
+        ```
+        rules = {
+            'key1': [Required, InstanceOf(str)],
+            'status': [InstanceOf(int), In([1,2,3])],
+            'lang': []
+        }
+        data1 = {
+            'key1': 'abc',
+            'status': 1,
+            'lang': 'vi'
+        }
+        data2 = {
+            'status': 1,
+            'lang': 'vi'
+        }
+        valid = HttpValidator(rules)
+        val_result = valid.validate_object(data1)
+        if not val_result[VALIDATION_RESULT.VALID]:
+            errors = val_result[VALIDATION_RESULT.ERRORS]
+            raise ParamInvalidError(LANG.VALIDATE_ERROR, errors)
+        
+        data1 --> OK
+        data2 --> Fail, key1 must be present
+        ```
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Provides-Extra: get_lang_from_request
