@@ -1,0 +1,5 @@
+uplink==0.7.0
+pandas==0.25.3
+
+[test]
+coverage
