@@ -1,0 +1,10 @@
+mypy_boto3_snowball/__init__.py,sha256=UWqtavm_85mDGOQ46cW8DZW7BMhUOVOlJP63naxEBKU,108
+mypy_boto3_snowball/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_snowball/client.py,sha256=D1rr71hH0XERdyEjW8clXumj6vhKKS6yVbFIkRTPILg,4062
+mypy_boto3_snowball/paginator.py,sha256=Wf07YyGmqKY0TyK0NnENaQ24zMs3HgaHvWTtk4_wQqM,1011
+mypy_boto3_snowball/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_snowball/version.py,sha256=uEY-o5UpO0zjCdZ1SCWaClP-xXaDZDIXmwIfxAtFffI,48
+mypy_boto3_snowball-0.1.6.dist-info/METADATA,sha256=jZEzc50IPeH0HTFFDjs0O6Q_j_3OB9r1TAN3iQNSrAk,1418
+mypy_boto3_snowball-0.1.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_snowball-0.1.6.dist-info/top_level.txt,sha256=MTYNvTDPCMQlrOs8guJhdIS3Zhf_hAAZ-EGQfI2SUUg,20
+mypy_boto3_snowball-0.1.6.dist-info/RECORD,,
