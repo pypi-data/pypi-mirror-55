@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: memorizesrs
+Version: 1.0.0
+Summary: The Memorize algorithm for scheduling flashcard review time
+Home-page: https://github.com/fasiha/memorize-py
+Author: Ahmed Fasih
+Author-email: wuzzyview@gmail.com
+License: Unlicense
+Keywords: memorize quiz review schedule spaced repetition system srs
+Platform: UNKNOWN
+
+The algorithm by Tabibian et al. that balances the rate of reviews with probability of forgetting
+
+
