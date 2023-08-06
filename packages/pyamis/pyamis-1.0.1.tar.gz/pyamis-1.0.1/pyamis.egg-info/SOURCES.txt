@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+pyamis.egg-info/PKG-INFO
+pyamis.egg-info/SOURCES.txt
+pyamis.egg-info/dependency_links.txt
+pyamis.egg-info/not-zip-safe
+pyamis.egg-info/top_level.txt
+src/pyamis/__init__.py
+src/pyamis/mod.py
