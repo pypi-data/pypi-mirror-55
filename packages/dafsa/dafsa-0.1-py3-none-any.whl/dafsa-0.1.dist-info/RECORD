@@ -1,0 +1,9 @@
+dafsa/__init__.py,sha256=7k60MgnXJptnz802Y4JcJtuBdj6D778lvvARGMssI4E,198
+dafsa/__main__.py,sha256=9qD5rEDRd3zZ1C6ZjYPQ7jFDCadN_GjfQv-B5PxUQLs,1069
+dafsa/dafsa.py,sha256=Ndkrji-eJGymabYpBXaFx4XOG2wUPTzmVMpp5ydw-qU,8414
+dafsa/utils.py,sha256=1XLeQKFbahPFjE7VXhCG2XcGKxKmtWT0mqL5Gpzn248,633
+dafsa-0.1.dist-info/METADATA,sha256=7QbwbN1RhAoMNcHn5_kBFnVUAa2HeI_ZSW3Wipg1z2A,7120
+dafsa-0.1.dist-info/RECORD,,
+dafsa-0.1.dist-info/WHEEL,sha256=FRuHuBX28RTgsOL603qIpbSc2WeDgbsFBWKj9XFOCpg,92
+dafsa-0.1.dist-info/entry_points.txt,sha256=gzWlvJ_jb01G6wDAWpIK2s2VrZ8JwzWEqEhL_VNOx5U,47
+dafsa-0.1.dist-info/top_level.txt,sha256=KNvA0V7BZvlrucanKzRrMaYTcWzyU3loN5nfWA6DZt4,6
