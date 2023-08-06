@@ -1,0 +1,8 @@
+README.rst
+setup.py
+tenmactl/__init__.py
+tenmactl.egg-info/PKG-INFO
+tenmactl.egg-info/SOURCES.txt
+tenmactl.egg-info/dependency_links.txt
+tenmactl.egg-info/requires.txt
+tenmactl.egg-info/top_level.txt
