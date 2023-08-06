@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: metadsl_core
+Version: 0.1.0
+Summary: Core data types and replacements for metadsl
+Home-page: https://github.com/Quansight-Labs/metadsl
+License: UNKNOWN
+Author: Saul Shanabrook
+Author-email: s.shanabrook@gmail.com
+Requires-Python: >=3.7
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Dist: metadsl
+Requires-Dist: numpy
