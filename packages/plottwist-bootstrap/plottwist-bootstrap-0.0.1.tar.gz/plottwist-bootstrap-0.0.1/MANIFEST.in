@@ -1,0 +1,2 @@
+include plottwist/bootstrap/houdini/*.bat
+include plottwist/bootstrap/houdini/*.xml
