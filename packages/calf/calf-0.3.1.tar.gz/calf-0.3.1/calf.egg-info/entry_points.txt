@@ -1,0 +1,3 @@
+[console_scripts]
+calf = calf.__main__:main
+
