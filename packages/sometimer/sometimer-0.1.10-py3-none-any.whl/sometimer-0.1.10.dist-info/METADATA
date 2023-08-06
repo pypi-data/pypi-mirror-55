@@ -1,0 +1,97 @@
+Metadata-Version: 2.1
+Name: sometimer
+Version: 0.1.10
+Summary: Easy-to-use timer for tracking runtimes
+Home-page: https://github.com/ViktorStagge/timer
+Author: Viktor Stagge
+Author-email: viktor.stagge@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# timer
+Easy-to-use timer for tracking runtimes. <br><br>
+`pip install sometimer`
+
+## Examples
+### Main functionality: summary function
+
+```python
+from sometimer import timer
+
+# Main functionality is the summary function:
+timer.new_checkpoint()
+do_stuff()
+
+timer.new_checkpoint(name='useful-name')
+do_other_stuff()
+
+...
+
+summary = timer.summary()
+print(summary)
+```
+
+```
+
+timer summary
+               -duration-     -start-
+start                           0.00s
+checkpoint_0:       2.36s       0.10s      
+useful-name:        0.41s       2.46s
+victory lap :      12.01s       2.87s
+end                            14.87s
+
+```
+<br>
+
+### `timer.__call__()` returns a one-liner
+```python
+timer()
+>>> 'timer:	 0.202s'
+```
+
+```python
+# and with an active checkpoint:
+timer()
+>>> 'timer:	 0.303s	    checkpoint_0:  0.050s'
+```
+
+<br>
+
+### `@time_this_method` decorator to avoid clutter
+Some functions are always heavy (e.g. _load_, _data preprocessing_, _data augmentation_)
+and might be useful to time:
+
+```python
+from sometimer import time_this_method
+
+@time_this_method
+def heavy_preprocessing(data):
+    pass
+
+@time_this_method(name='more-descriptive-name')
+def inefficient_method(data):
+    pass
+```
+
+when run, yields:
+
+```
+heavy_preprocessing(data)
+inefficient_method(data)
+
+timer.summary()
+>>> 'timer summary
+                        -duration-     -start-
+start:                       0.00s       0.00s
+heavy_preprocessing:         0.00s      25.10s
+more-descriptive-name:      25.10s      13.01s
+end:                        38.10s'
+```
+
+
+
