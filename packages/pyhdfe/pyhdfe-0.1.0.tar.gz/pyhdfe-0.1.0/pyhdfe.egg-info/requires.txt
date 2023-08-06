@@ -1,0 +1,14 @@
+numpy>=1.12.0
+scipy>=1.0.0
+
+[docs]
+sphinx
+ipython
+astunparse
+sphinx-rtd-theme
+nbsphinx
+jupyter_client
+
+[tests]
+pytest
+pytest-xdist
