@@ -1,0 +1,15 @@
+[paths]
+source =
+   src/locked_dict
+   */site-packages/locked_dict
+
+[run]
+branch = true
+source =
+    locked_dict
+parallel = true
+
+[report]
+show_missing = true
+precision = 2
+omit = *migrations*
