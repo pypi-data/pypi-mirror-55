@@ -1,0 +1,10 @@
+tap_holidays/__init__.py,sha256=10xZtorFMUELHz7cktNw1buanBVlyW7MtxwxFPWxYiU,2553
+tap_holidays/client.py,sha256=2fsjMt0dPoToKtoL6kV7g_8UARK4USiR-Pe_qtGLTNE,4508
+tap_holidays/version.py,sha256=oklfaV_M5bvHU9tWlv1O9c7sfWaYAf07dMBUHZ3wLHs,24
+tap_holidays/schemas/holidays.json,sha256=DdlbKNr5085Zx5QvdjqC7wnOL3E1eAOxavfblFqcQgg,1099
+tap_holidays-0.1.0a1.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+tap_holidays-0.1.0a1.dist-info/METADATA,sha256=tL1ziqyVfbg8zvpgtHDTPnhDR2I_e_6KOpnNXckkuqA,7779
+tap_holidays-0.1.0a1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+tap_holidays-0.1.0a1.dist-info/entry_points.txt,sha256=MLJ3N49NGcl1moEsaenILVRpl5741gMKZ_xFNOC8iCc,52
+tap_holidays-0.1.0a1.dist-info/top_level.txt,sha256=QRPfkpzWilPzI4wJV3mBkzaaKwQv0ytrBIGtYWayE-A,13
+tap_holidays-0.1.0a1.dist-info/RECORD,,
