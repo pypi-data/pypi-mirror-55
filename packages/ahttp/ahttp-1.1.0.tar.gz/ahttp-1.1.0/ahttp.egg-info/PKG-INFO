@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: ahttp
+Version: 1.1.0
+Summary: Based on aiohttp and asyncio requests
+Home-page: https://github.com/web-trump/ahttp.git
+Author: LiShenGang
+Author-email: cszy2013@163.com
+License: BSD License
+Description: The Instructions of ahttp at https://github.com/web-trump/ahttp.git
+Platform: python 3.7
+Classifier: Development Status :: 6 - Mature
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Programming Language :: Python :: 3.7
