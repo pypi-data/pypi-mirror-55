@@ -1,0 +1,9 @@
+README.rst
+setup.py
+plight/__init__.py
+plight/plight.py
+plight.egg-info/PKG-INFO
+plight.egg-info/SOURCES.txt
+plight.egg-info/dependency_links.txt
+plight.egg-info/entry_points.txt
+plight.egg-info/top_level.txt
