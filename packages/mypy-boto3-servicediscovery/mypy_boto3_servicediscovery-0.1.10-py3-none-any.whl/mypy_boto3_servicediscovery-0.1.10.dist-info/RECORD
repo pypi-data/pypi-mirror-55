@@ -1,0 +1,9 @@
+mypy_boto3_servicediscovery/__init__.py,sha256=M7CRMvWlXuukJglkiBNOPJLbOORFiZY9jU0C6VJjmE4,124
+mypy_boto3_servicediscovery/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_servicediscovery/client.py,sha256=2GbrIJGCJ_QjKGnD3xf2O5TEVvsI1PAg40j__5rZrfE,138575
+mypy_boto3_servicediscovery/paginator.py,sha256=6PCCG07uObiRXF32K8ooLTkIkGaZJ55A1AvlmFGftTw,37437
+mypy_boto3_servicediscovery/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_servicediscovery-0.1.10.dist-info/METADATA,sha256=iEo8pv7l4-9l6x-m5EVhc7Rl0Ax0vByNOf0GeLWjn5k,1078
+mypy_boto3_servicediscovery-0.1.10.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_servicediscovery-0.1.10.dist-info/top_level.txt,sha256=K94mvHugmVg-e4PhqS0JtAHvTj57vrb0njLRfCLoN64,28
+mypy_boto3_servicediscovery-0.1.10.dist-info/RECORD,,
