@@ -1,0 +1,7 @@
+pdoc3>=0.5.3
+nbconvert>=5.3.1
+jupytext>=1.1.6
+matplotlib
+numpy
+plotly>=4.1.1
+statsmodels==0.10.1
