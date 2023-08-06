@@ -1,0 +1,12 @@
+-r base.txt
+-e .
+ipython
+pytest
+pytest-cov
+pytest-flakes
+pytest-pep8
+pytest-sugar
+pytest-watch
+setuptools
+twine
+wheel
