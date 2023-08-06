@@ -1,0 +1,8 @@
+mypy_boto3_kinesisanalytics/__init__.py,sha256=vhAEn3WwBtV1Z3NMjO9zaLJzpABQe89EltkXae0UPxc,132
+mypy_boto3_kinesisanalytics/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_kinesisanalytics/client.py,sha256=IouzG5hYwwoXts_1NZKX9IgLyruT6tP8geJQjljnSiM,139607
+mypy_boto3_kinesisanalytics/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_kinesisanalytics-0.1.9.dist-info/METADATA,sha256=Yxy07tvJdMsncUfKkmnZo395yH_f_QUXY-oglMjrrm8,1077
+mypy_boto3_kinesisanalytics-0.1.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_kinesisanalytics-0.1.9.dist-info/top_level.txt,sha256=fbLXsJCc1Rx7dVBh2ytmixpL9NeY12wKNyQ1XGL5SUU,28
+mypy_boto3_kinesisanalytics-0.1.9.dist-info/RECORD,,
