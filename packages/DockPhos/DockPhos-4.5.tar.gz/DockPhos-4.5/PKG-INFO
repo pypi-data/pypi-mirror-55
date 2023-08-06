@@ -1,0 +1,167 @@
+Metadata-Version: 2.1
+Name: DockPhos
+Version: 4.5
+Summary: Helper script for using the Phosphoros Docker container
+Home-page: https://gitlab.euclid-sgs.uk//SDC-CH/SDCCH_DockerPhosphoros
+Author: SDC-CH
+Author-email: sdc-ch@unige.ch
+License: UNKNOWN
+Description: # Using DockerPhosphoros
+        
+        ## Starting the container
+        
+        Using DockerPhosphoros is straight forward. First you have to start the Phosphoros docker container (which will continue running in the background):
+        
+        ```bash
+        DockPhos start
+        ```
+        
+        Note that when you start the container, your Phosphoros root directory will be mounted to the container (see Directory Organization for more information of what this directory is). If this directory does not exist (by default is the directory Phosphoros under your home directory) the container will not start and you will get an error message. To fix this you just have to create the directory.
+        
+        **Tip**:  The first time you start the Phosphoros docker container, it will be downloaded from the internet. This may take a while, so be patient. The next time you start the container everything will be available locally and it will start much faster.
+        
+        
+        ## Using a different Phosphoros root directory
+        
+        If you do not want to use the default Phosphoros root directory you can either set the environment variable `PHOSPHOROS_ROOT` or your can pass the -d option to the start command:
+        
+        ```bash
+        DockPhos start -d "/your/phosphoros/root/dir"
+        ```
+        
+        If the Phosphoros container was already running it will be restarted and the new directory will be mounted. Again, the directory must already exist, otherwise you will get an error message.
+        
+        ## Connecting to the container
+        
+        To connect to the container you can use the following command:
+        
+        ```bash
+        DockPhos connect
+        ```
+        
+        After running this command your terminal will be moved in the Phosphoros container. From there you can use any of the Phosphoros commands, for example:
+        
+        ```bash
+        Phosphoros GUI
+        ```
+        
+        **Tip:**  You can run the `DockPhos` connect command in multiple terminals and all of them will connect to the same container
+        Note that when you are inside the container you are the user phosphoros and that the Phosphoros root directory is mounted under `/home/phosphoros/Phosphoros`.
+        
+        **Warning:** The filesystem of the container is NOT the same with yours! Your local files will not be accessible from inside the container. The only exception is the Phosphoros root directory, which can be used to move files in and out of the container.
+        
+        When you want to leave the container and return back to your machine you can just type exit. This will not stop the Phosphoros container. You can re-connect using the `DockPhos` connect command.
+        
+        ## Choosing the Phosphoros version
+        
+        By default, when run the start command the latest stable version of Phosphoros is used. If you want to use a different version you can use the -v option when you start the container:
+        
+        ```bash
+        DockPhos start -v "<VERSION>"
+        ```
+        
+        If you want to get a list of all the available versions you can run the command:
+        
+        ```bash
+        DockPhos versions
+        ```
+        
+        ## Stopping the container
+        
+        After you finish you work and you exit the container using the exit command you can stop stop the Phosphoros container to release your resources by running:
+        
+        ```bash
+        DockPhos stop
+        ```
+        
+        ## Advanced options
+        
+        ### Mounting extra directories
+        
+        Sometimes you might need to have access to files which are not under the Phosphoros root directory. To mount extra directories, so they are visible from inside the container you can use the -m option when you start the container:
+        
+        ```bash
+        DockPhos start -m "/directory/to/mount"
+        ```
+        
+        All directories mounted this way are visible in the container under the /mount directory and they contain the full absolute path of the mounted directory. For example, the above command will make the directory available inside the container user:
+        
+        ```
+        /mount/directory/to/mount
+        ```
+        
+        If the directory path is too long, you can use an alias name, by prefixing the directory to mount with : and the alias name:
+        
+        ```bash
+        DockPhos start -m "/directory/to/mount:mydir"
+        ```
+        
+        The above command will make the directory available inside the container under:
+        
+        ```
+        /mount/mydir
+        ```
+        
+        If you want to mount more than one directories you can pass multiple directories to the `-m` option, separated by space:
+        
+        ```bash
+        DockPhos start -m /first/dir/to/mount:first /second/dir/to/mount:second
+        ```
+        
+        ### Deleting the Phosphoros docker images
+        
+        When you run the `DockPhos` start command, docker will download from the internet the Phosphoros docker images. The location where these files are stored depends on the OS and they are managed by the docker itself. If you want to delete all these images to get back your disk space you can run the command:
+        
+        ```bash
+        DockPhos cleanup
+        ```
+        
+        **Tip:** The next time you start the docker container the images will be re-downloaded automatically
+        
+        ### Minimizing the disk space usage
+        
+        The Phosphoros docker images can be quite big. This is to support extra functionality above the core Phosphoros. If you have disk space limitations and you are not interested on the post-processing functionality you can use the `-l` option when you start the container, which will download a smaller image:
+        
+        ```bash
+        DockPhos start -l "<LABEL>"
+        ```
+        
+        The currently available labels are the following:
+        
+        topcat (1.07 GB)
+        : Contains all the Phosphoros tools as well as topcat for examining the results (see Connecting with TOPCAT for more details). This is the default and recommended option.
+        
+        full (870 MB)
+        : Contains all the Phosphoros tools except the topcat (topcat and JRE are removed).
+        
+        light (491 MB)
+        : Contains the Phosphoros GUI and all the core functionality. numpy, astropy and matplotlib are removed, so most of the post processing Phosphoros tools will not work.
+        
+        cli (386 MB)
+        : The smallest available image. Only the core functionality of the Phosphoros can be used from the command line.
+        
+        To get a full up to date list of the available labels you can use the command:
+        
+        ```bash
+        DockPhos labels
+        ```
+        
+        **Tip:** The Phosphoros docker images are built as a stack, so if you run multiple labels, the total size occupied will by only the size of the biggest one.
+        
+        ### Retrieving the status of the Phosphoros container
+        
+        To check if the Phosphoros docker container is already running and to get information about it you can run the command:
+        
+        ```bash
+        DockPhos status
+        ```
+        
+        If the container is running, this command will return its docker ID, the local port used to connect to the container and all the directories mounted.
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Development Status :: 4 - Beta
+Requires-Python: >=3.1
+Description-Content-Type: text/markdown

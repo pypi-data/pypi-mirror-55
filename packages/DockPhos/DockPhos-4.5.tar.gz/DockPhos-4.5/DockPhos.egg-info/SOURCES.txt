@@ -1,0 +1,9 @@
+DockPhos.py
+README.md
+setup.py
+DockPhos.egg-info/PKG-INFO
+DockPhos.egg-info/SOURCES.txt
+DockPhos.egg-info/dependency_links.txt
+DockPhos.egg-info/entry_points.txt
+DockPhos.egg-info/requires.txt
+DockPhos.egg-info/top_level.txt
