@@ -1,0 +1,75 @@
+Metadata-Version: 2.1
+Name: negetis
+Version: 0.1.3
+Summary: Static site generator
+Home-page: http://negetis.com
+License: MIT
+Keywords: static,generator,web,html,markdown
+Author: Dmitry Vysochin
+Author-email: dmitry.vysochin@gmail.com
+Requires-Python: >=3.5,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development :: Build Tools
+Requires-Dist: Click (>=7.0,<8.0)
+Requires-Dist: asq (>=1.3,<2.0)
+Requires-Dist: deepmerge (>=0.1.0,<0.2.0)
+Requires-Dist: deprecation (>=2.0,<3.0)
+Requires-Dist: jinja2 (>=2.10,<3.0)
+Requires-Dist: markdown (>=3.1,<4.0)
+Requires-Dist: pillow (>=6.2,<7.0)
+Requires-Dist: python-i18n[YAML] (>=0.3.7,<0.4.0)
+Requires-Dist: python-thumbnails (>=0.5.1,<0.6.0)
+Requires-Dist: pytz (>=2019.3,<2020.0)
+Requires-Dist: pyyaml (>=5.1,<6.0)
+Requires-Dist: pyyaml-include (>=1.1,<2.0)
+Requires-Dist: watchdog (>=0.9.0,<0.10.0)
+Requires-Dist: werkzeug (>=0.16.0,<0.17.0)
+Project-URL: Repository, https://github.com/AxGrid/neGetiS
+Description-Content-Type: text/markdown
+
+neGetiS
+=======
+
+Static site generator
+
+
+Instalation
+-----------
+
+```
+pip install negetis 
+```
+
+Usage
+-----
+
+```
+negetis newsite my-first-site
+cd ./my-first-site
+negetis addtheme basic
+negetis post my-first-post
+nano ./content/posts/my-first-post.md
+negetis server -D
+```
+
+open browser at `http://localhost:8888/`
+
+
+
+Develop
+-------
+
+Requirements:
+
+* poetry
+
+
+```
+git clone https://github.com/AxGrid/neGetiS.git
+cd ./neGetiS
+poetry install
+```
