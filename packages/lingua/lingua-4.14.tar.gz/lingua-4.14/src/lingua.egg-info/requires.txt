@@ -1,0 +1,15 @@
+setuptools
+polib
+click
+
+[:python_version < "3.0"]
+ordereddict
+
+[:python_version < "3.3"]
+mock
+
+[chameleonextractor]
+Chameleon
+
+[tests]
+pytest
