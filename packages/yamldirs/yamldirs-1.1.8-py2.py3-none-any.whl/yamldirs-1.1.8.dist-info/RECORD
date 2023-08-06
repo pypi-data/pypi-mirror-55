@@ -1,0 +1,16 @@
+tests/__init__.py,sha256=fly1tWTxcKHAWUgJzFJ0bXW_3KEpEhqBn4R0lrLtTOc,29
+tests/test_os_fileops.py,sha256=w76UACWPiqN80zDodEnbmyKQUeLwQy-u15E3aVugmUk,1028
+tests/test_yamldir.py,sha256=rldJ-xb_uf1GIe_1nbgwZR_1YQwSS7gzK2nGN7AVh6M,8668
+tests/test_yamldirs_cmd.py,sha256=GgdixklguqkBCPznaYMVmpbMQd3qLs8C-ESeYESElhc,1434
+tests/test_yamldirs_import.py,sha256=idd1c2yBQAFDRpACgIw3q96qYPnZeo3JPxySYWMKSpA,312
+tests/testpkg/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/testpkg/foo.py,sha256=WGXE4rBoYpZEXFMaYe8NayW4rpPk9sAx48z40wGPJUI,27
+yamldirs/__init__.py,sha256=oDmnj-FR4FSB9pRsGK70AGeVGav1sUUs7JMeG58dpfY,91
+yamldirs/filemaker.py,sha256=qLGD6G_9I_8GKyFSyDy0-YFC1oWmOPMq9hRkj3CxO8I,3986
+yamldirs/yamldirs_cmd.py,sha256=ghsOYOl9u2W4lkg44LP9H3OkH7Q-ID5hkSPf6K1Pgxc,1479
+yamldirs-1.1.8.dist-info/LICENSE,sha256=1K8rXwNSnxkHIb5-ZfjzS1EaMfKrR_JbORklFWKdxSA,1090
+yamldirs-1.1.8.dist-info/METADATA,sha256=JAPhTeUDztNgNRgtLkwpDYgWcl6uHwWjlc2jU_zHww0,7730
+yamldirs-1.1.8.dist-info/WHEEL,sha256=aEiWNTQcG6AiGGAYQ9qHTifyKRnmFJvDeTI0hP5aohY,116
+yamldirs-1.1.8.dist-info/entry_points.txt,sha256=z-OloISbKxly7aPxpA1tg7mgFRN-IgpFu0I98rvE5Yc,57
+yamldirs-1.1.8.dist-info/top_level.txt,sha256=WhNVPg3ppHChgv1XdEE8Nus8n1wo5yap4a_p_nl1X7Q,15
+yamldirs-1.1.8.dist-info/RECORD,,
