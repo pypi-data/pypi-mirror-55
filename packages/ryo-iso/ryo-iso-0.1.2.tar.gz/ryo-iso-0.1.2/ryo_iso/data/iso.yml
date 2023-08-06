@@ -1,0 +1,29 @@
+# ryo-iso config file
+################################
+
+# Base ISO image to rebuild
+image: ubuntu/xenial
+
+# Hardware Architecture
+arch: amd64
+
+# Base ISO Variant
+#   ['desktop', 'server']
+variant: desktop
+
+# APT subtasks
+apt:
+  # add-apt-repository
+  repository:
+    - universe
+
+  # apt-get install
+  install:
+    - git
+    - python3-pip
+
+# PIP subtasks
+pip:
+  # pip3 install
+  install:
+    - doit
