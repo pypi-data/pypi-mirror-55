@@ -1,0 +1,12 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+ChainTranslator/__init__.py
+ChainTranslator/__main__.py
+ChainTranslator.egg-info/PKG-INFO
+ChainTranslator.egg-info/SOURCES.txt
+ChainTranslator.egg-info/dependency_links.txt
+ChainTranslator.egg-info/entry_points.txt
+ChainTranslator.egg-info/requires.txt
+ChainTranslator.egg-info/top_level.txt
