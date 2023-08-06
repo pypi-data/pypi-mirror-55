@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: tflarrivals
+Version: 0.1.1
+Summary: Library to fetch arrival times from TfL Unified API
+Home-page: https://github.com/Giannie/tflarrivals
+Author: Giancarlo Grasso
+Author-email: ggrasso.dev@gmail.com
+License: MIT
+Download-URL: https://github.com/Giannie/tflarrivals/archive/tflarrivals-v_0-1-1.tar.gz
+Description: # tflarrivals
+        A python library to fetch live arrival times from the TfL Unified API. Requires Python >=3.6.
+        
+Keywords: tfl,transport,london
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
