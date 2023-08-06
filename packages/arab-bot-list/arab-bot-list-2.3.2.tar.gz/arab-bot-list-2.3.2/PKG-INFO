@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: arab-bot-list
+Version: 2.3.2
+Summary: The official API package for Arab's bot list using Python 3
+Home-page: https://github.com
+Author: Jake
+Author-email: jakediserin@gmail.com
+License: MIT
+Description: # Welcome to toxicbl.py
+         this PyPi package helps you get info of bots , users and post data.
+         TODO : users and post data
+         / server count with your token on [Arab Bot List](https://arabbotlist.tk)
+        # Getting started
+        You need to import the module first
+        ```py
+        from arab-bot-list import bots # or users 
+        ```
+        An example about scraping info for bots (Same can be done with users)
+        ```py
+        bots.get_info('your_id') # returns a usable info object
+        ```
+        # Bot Info Object
+        # TODO
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

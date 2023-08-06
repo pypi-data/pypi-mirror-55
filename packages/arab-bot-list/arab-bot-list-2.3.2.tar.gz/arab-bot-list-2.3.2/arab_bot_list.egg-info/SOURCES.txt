@@ -1,0 +1,9 @@
+README.md
+setup.py
+arab-bot-list/__init__.py
+arab-bot-list/bots.py
+arab_bot_list.egg-info/PKG-INFO
+arab_bot_list.egg-info/SOURCES.txt
+arab_bot_list.egg-info/dependency_links.txt
+arab_bot_list.egg-info/requires.txt
+arab_bot_list.egg-info/top_level.txt
