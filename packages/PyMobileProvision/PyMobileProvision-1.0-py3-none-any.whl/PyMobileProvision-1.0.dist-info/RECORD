@@ -1,0 +1,10 @@
+mobileprovision/__init__.py,sha256=cGqNTIXoAVWINkTJTriFtTvUOQLYq5BgYH_8ulYHChE,80
+mobileprovision/command.py,sha256=XZP6pfi_KSvG0C4zJN_zTPajqQLCQZwJ4Rg7ScfsjX0,2084
+mobileprovision/parser.py,sha256=4y8ka7Cz2FrXTVA3bHWocG2BoEtXEkMIXrFtcxPl7OM,1244
+mobileprovision/util.py,sha256=BmkISR3gAuKb1xdv-_E6IIWrlT1xe02Z_8aMe6w5JPs,2467
+PyMobileProvision-1.0.dist-info/LICENSE,sha256=INDiG0-WBxevq7__Lq8OUSQ6AwglVHXhQtDH6OcUCBM,1065
+PyMobileProvision-1.0.dist-info/METADATA,sha256=IUGVjv9urf8PHS9ckbvowrXKtLMTgx6WKTcSggwBxYA,2291
+PyMobileProvision-1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+PyMobileProvision-1.0.dist-info/entry_points.txt,sha256=hptl7NwuqCfhwJ02AB_Tipuls7AqSbFo59J2gH023Ec,66
+PyMobileProvision-1.0.dist-info/top_level.txt,sha256=IZQ3pVO6kC71tBWf6LfWA_iaiHOqtEldIKhgGMdyAlM,16
+PyMobileProvision-1.0.dist-info/RECORD,,
