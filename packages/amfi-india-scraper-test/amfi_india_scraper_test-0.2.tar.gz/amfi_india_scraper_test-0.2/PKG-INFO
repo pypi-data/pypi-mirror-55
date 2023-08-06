@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: amfi_india_scraper_test
+Version: 0.2
+Summary: Scrape Mutual Fund Related Information From AMFI India
+Home-page: https://github.com/harishbisht29/
+Author: Harish Singh
+Author-email: harishbisht29@gmail.com
+License: MIT
+Download-URL: https://github.com/harishbisht29/amfi_india_scraper_test/archive/V_02.tar.gz
+Description: UNKNOWN
+Keywords: scrape,MUTUAL_FUND,AMFI
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
