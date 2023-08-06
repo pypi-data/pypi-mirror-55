@@ -1,0 +1,3 @@
+[console_scripts]
+oblivion = oblivion.cli:cli
+
