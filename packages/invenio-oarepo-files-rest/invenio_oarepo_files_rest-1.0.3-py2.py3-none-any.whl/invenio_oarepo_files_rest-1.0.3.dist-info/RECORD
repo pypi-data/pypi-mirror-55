@@ -1,0 +1,15 @@
+invenio_oarepo_files_rest/__init__.py,sha256=bpExq_9RIqo64K9IHPjP6booB7AMMpoYu01n2-3aUyA,519
+invenio_oarepo_files_rest/buckets.py,sha256=YG6bgPGqneivgprIueJ2Nu8netXNiJwE3Ha5vmtwrA8,805
+invenio_oarepo_files_rest/cli.py,sha256=Gh7O_kyPYslBmMcEZ2rB64V1RZFNeUz3cs-0WQeRIPc,3573
+invenio_oarepo_files_rest/config.py,sha256=7UoZoJ8mEnGD52Lr2D8exKlhPH0EbNpyhZqIiEmLpa0,551
+invenio_oarepo_files_rest/ext.py,sha256=2OKrEHBhsUq5l0Z0_vi17xxtzhRApR772sNy8ZPaMjI,2511
+invenio_oarepo_files_rest/locations.py,sha256=OEokUueTyOr7hzVBom1V5KCgMh1rUi_daCk7Dx84JT8,1265
+invenio_oarepo_files_rest/proxies.py,sha256=rFaqkPS8a5ZaEfchQ-23w045crnzQFQonTYCT7Ptf6o,633
+invenio_oarepo_files_rest/version.py,sha256=pvz_3_vhwufp2DpE4U-RcbTIOpkuutZgtoGkr7WsdPI,433
+invenio_oarepo_files_rest-1.0.3.dist-info/AUTHORS.rst,sha256=-7Ibbk_VsqzCJUdXQxGTANJ6aY2QEN9ddEbSrcYp1NE,280
+invenio_oarepo_files_rest-1.0.3.dist-info/LICENSE,sha256=eWnJuQGNTOTRSvy72OXDro9Fbg7omPM7oHqjqp0IBOA,1063
+invenio_oarepo_files_rest-1.0.3.dist-info/METADATA,sha256=7GtyavNJTvNUmhIIACQ4Nhd4np_5VbTyc9N35nURay0,2000
+invenio_oarepo_files_rest-1.0.3.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+invenio_oarepo_files_rest-1.0.3.dist-info/entry_points.txt,sha256=8RHlpuwiJCfh51ZEMI1lq1vooxSoPxz27zsnU18pMCI,269
+invenio_oarepo_files_rest-1.0.3.dist-info/top_level.txt,sha256=zdSVfbha6k-QNQEacMKtb_j5RNsc-cElY2AxgGFDrjA,26
+invenio_oarepo_files_rest-1.0.3.dist-info/RECORD,,
