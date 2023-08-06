@@ -1,0 +1,13 @@
+apep/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+apep/dictioners.py,sha256=7vqg4jK3YkT00NXKfD0DXWyjvw89dx63ollQSyxEf2U,1970
+apep/env_var.py,sha256=cmf-1Uzgj59FgriWOWelLXaDxrxT29yakkskqrWpnOw,991
+apep/numero.py,sha256=gMFlpI-DDVtAWRDOOX0seEoXWVP0T4q2q-qvqiF1_z0,521
+apep/picklejar.py,sha256=_Ow47OK2q2mT7BR8pKSSxe9ncdFq-ilCq6XokCS0h7w,1487
+apep/tests/test_dictioners.py,sha256=Dnxg4WzMfugso18iHTuRj-Rh9LuACnq2BUzGLm3NlNI,3123
+apep/tests/test_numero.py,sha256=qUPA7o7LrenypLk3Nw-EGBSZXw-_vtJBiH9GRSopUag,1422
+apep/tests/test_picklejar.py,sha256=OKhGIyVqD-vCZqyDSk14Cc28th74UT2_bHxg2XCb7wo,1240
+elio_apep-1.0.dist-info/LICENSE,sha256=RKlxG7waysxM1zuwV6Wg6ZQQYy0ejgIE-jykUi6HGSM,1100
+elio_apep-1.0.dist-info/METADATA,sha256=IlIvRP0GRiDqWv2p_ch1wyey7btQTLBG-Wz4XoUK7Mw,1783
+elio_apep-1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+elio_apep-1.0.dist-info/top_level.txt,sha256=oMx2T5lqgS4gD8rf0ukH7sPcS4ApezwYCc06LB3rMCo,5
+elio_apep-1.0.dist-info/RECORD,,
