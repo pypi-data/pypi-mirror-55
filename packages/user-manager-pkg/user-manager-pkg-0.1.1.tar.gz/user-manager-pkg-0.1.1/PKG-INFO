@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: user-manager-pkg
+Version: 0.1.1
+Summary: A small example package
+Home-page: https://github.com/sujindab/labos
+Author: Example Author
+Author-email: author@example.com
+License: UNKNOWN
+Description: This is a ubuntu package using python 3 for user management
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
