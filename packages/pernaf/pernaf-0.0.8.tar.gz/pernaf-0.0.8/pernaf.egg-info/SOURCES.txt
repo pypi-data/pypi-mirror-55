@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+pernaf.egg-info/PKG-INFO
+pernaf.egg-info/SOURCES.txt
+pernaf.egg-info/dependency_links.txt
+pernaf.egg-info/requires.txt
+pernaf.egg-info/top_level.txt
+src/__init__.py
+src/core.py
+src/naf.py
+src/statistic.py
+utils/__init__.py
+utils/prioritised_experience_replay.py
+utils/segment_tree.py
+utils/sum_tree.py
