@@ -1,0 +1,10 @@
+tweepy_trc/__init__.py,sha256=mHpajeg7LdfZ6zCP-aiOpi4WcK4vNdIGILUjnGTHEUc,730
+tweepy_trc/__version__.py,sha256=n_K0M_s_SMeBTR2zUHL3S2FXj90lqdIiqsQ5gqjbNcQ,361
+tweepy_trc/config.py,sha256=AROWZMLXUlPcMfM_ybRV1TOQ3tzH1cfqUxTgWwM8wmE,184
+tweepy_trc/models.py,sha256=IZO-GauaxEMdSHqDF35e2rlLZW9IqZ5EtKtVzICNnJ0,2021
+tweepy_trc/utils.py,sha256=fXTBFG2rQvHVvIR6lVfo_mePh8d4nXJ0bd5gAzS2AKg,229
+tweepy_trc-0.2.2.dist-info/LICENSE,sha256=WGEPpnAJtg2T7YB8gOCU8UohbYKKCbJGUNTEwAUg0z0,1074
+tweepy_trc-0.2.2.dist-info/METADATA,sha256=PEZKNWgbns9ldoUB3iRiDKK33_UPDffN4EfJKtVUUnE,1395
+tweepy_trc-0.2.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tweepy_trc-0.2.2.dist-info/top_level.txt,sha256=JWyDF_19OfTFPVWdqO1YPnJnglnOLOiDxKYEhL2GKHg,11
+tweepy_trc-0.2.2.dist-info/RECORD,,
