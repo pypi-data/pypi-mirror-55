@@ -1,0 +1,11 @@
+README.md
+setup.py
+vcs_uploader/__init__.py
+vcs_uploader/__main__.py
+vcs_uploader/consts.py
+vcs_uploader.egg-info/PKG-INFO
+vcs_uploader.egg-info/SOURCES.txt
+vcs_uploader.egg-info/dependency_links.txt
+vcs_uploader.egg-info/entry_points.txt
+vcs_uploader.egg-info/requires.txt
+vcs_uploader.egg-info/top_level.txt
