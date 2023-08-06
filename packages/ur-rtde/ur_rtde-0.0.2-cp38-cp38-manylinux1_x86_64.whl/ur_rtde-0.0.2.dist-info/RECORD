@@ -1,0 +1,8 @@
+rtde_io.cpython-38-x86_64-linux-gnu.so,sha256=ConqQ6aCfIkw8-oDf3CO8lG_hVXMbnUpNH6sGrBhzD8,760808
+rtde_receive.cpython-38-x86_64-linux-gnu.so,sha256=Z-6SK8eb_XokSmJBhDQEHw1QbOUqaW5OCYDw1gZBQVk,760808
+rtde_control.cpython-38-x86_64-linux-gnu.so,sha256=oijfcJC73QE32PoDIe7fF9gOtdDqju39ZtxE9NWwnwg,760840
+librtde.so,sha256=P3hG4fquAFs3tsyjbil8gZUx4nObTqYHVylt9HOWw5E,859421
+ur_rtde-0.0.2.dist-info/WHEEL,sha256=VEyGcIFAmk_1KbI6gaZGw_mMiT-pdGweASQLX-DzYaY,108
+ur_rtde-0.0.2.dist-info/RECORD,,
+ur_rtde-0.0.2.dist-info/top_level.txt,sha256=cQHKhzqRqcreja5_610bk4zuPL8gRTlbyD9EqDEkiy8,8
+ur_rtde-0.0.2.dist-info/METADATA,sha256=8erm1Ofdd-kb_OjW0MfceZ-s12xWEbfdpA_ocmZwSi0,2631
