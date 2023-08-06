@@ -1,0 +1,10 @@
+import wpkit
+# a=wpkit.data.get_data('demos/app.py')
+# print(a)
+app=wpkit.web.App(__name__)
+# app.add_default_route()
+app.register_blueprint(app.bp_root())
+app.register_blueprint(app.bp_board())
+app.register_blueprint(app.bp_static())
+print(app.url_map)
+app.run(host='127.0.0.1',port=80)
