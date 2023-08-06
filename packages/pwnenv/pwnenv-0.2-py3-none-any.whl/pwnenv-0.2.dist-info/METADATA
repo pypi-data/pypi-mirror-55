@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pwnenv
+Version: 0.2
+Summary: My env for pwning things
+Home-page: https://github.com/bieganski/pwnenv
+Author: Mateusz Bieganski
+Author-email: bieganski.m@wp.pl
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# pwnenv
+
+Mateusz Bieganski's environment for pwn purposes (CTF-like)
+
+## install
+
+./install.sh
+
+
+
