@@ -1,0 +1,85 @@
+Metadata-Version: 2.1
+Name: hua-tool
+Version: 0.1.6
+Summary: Hua777 專用的 Python 工具
+Home-page: https://github.com/Hua777
+Author: Hua777
+Author-email: liao.700529@gmail.com
+License: MIT License
+Keywords: hua tool
+Platform: any
+Description-Content-Type: text/markdown
+Requires-Dist: python-dateutil
+Requires-Dist: beautifulsoup4
+Requires-Dist: requests
+
+# HUA Tool
+
+### 说明
+
+一些简单的工具。
+
+---
+
+#### 容器 Contrainer
+
+###### MongoDB Batch
+
+    huatool.container.MongoBatch
+
+###### Batch
+
+    huatool.container.Batch
+
+#### 侦测器 Detector
+
+###### 函数执行时间类（修饰器）
+
+    huatool.detector.Timer
+
+###### 函数执行时间（函数呼叫）
+
+    huatool.detector.timer
+
+#### 解析器 Parser
+
+###### Bytes 转 UTF-8
+
+    huatool.parser.bytesToUTF8
+
+###### 函数源码
+
+    huatool.parser.sourceCode
+
+###### 动态建立函数
+
+    huatool.parser.strToFunct
+
+###### 日期类
+
+    huatool.parser.Date
+
+###### 日期解析异常类
+
+    huatool.parser.ParseDateStringException
+
+#### 代理
+
+###### Headers
+
+    huatool.proxy.HEADERS
+
+###### 代理单位类
+
+    huatool.proxy.Proxy
+
+###### XiCi 代理池类
+
+    huatool.proxy.XiCi
+
+---
+
+### 开发
+
+[Hua777](https://github.com/Hua777)
+
