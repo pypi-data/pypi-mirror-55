@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+django_handy_converters.egg-info/PKG-INFO
+django_handy_converters.egg-info/SOURCES.txt
+django_handy_converters.egg-info/dependency_links.txt
+django_handy_converters.egg-info/not-zip-safe
+django_handy_converters.egg-info/requires.txt
+django_handy_converters.egg-info/top_level.txt
+handy_converters/__init__.py
+handy_converters/base64uuid.py
