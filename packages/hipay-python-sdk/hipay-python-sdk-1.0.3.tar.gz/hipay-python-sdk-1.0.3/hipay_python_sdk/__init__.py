@@ -1,0 +1,1 @@
+from hipay_python_sdk.HiPayMBService import HiPayMBService
