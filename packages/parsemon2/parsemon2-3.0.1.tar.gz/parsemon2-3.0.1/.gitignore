@@ -1,0 +1,14 @@
+*~
+*.pyc
+/.cache/
+/.mypy_cache/
+/result
+/.pytest_cache/
+/build
+/testenv
+/dist
+/MANIFEST
+/htmlcov
+/.coverage
+/.hypothesis
+/prof/
