@@ -1,0 +1,47 @@
+Metadata-Version: 1.1
+Name: zpcpssupport
+Version: 0.3
+Summary: ZaloPay support upload file to svn
+Home-page: https://github.com/phucpv89
+Author: eris mabu
+Author-email: phucpv89@gmail.com
+License: MIT
+Download-URL: https://github.com/phucpv89/zalopay-svn-upload/archive/v_01.tar.gz
+Description: Used
+        ----
+        
+        To use, simple do::
+        
+        >>> from zalopaysupport import prepareResourceBeforeUpload, uploadImagesToZPSVN
+        >>> input = './images'
+        >>> output = './output'
+        >>> subFolderOnSVN = 'subfolder'
+        >>> prepareResourceBeforeUpload(input, target)
+        >>> uploadImagesToZPSVN(output, subFolderOnSVN)
+        
+        Functions
+        ---------
+        >>> prepareResourceBeforeUpload
+        
+        >>> uploadImagesToZPSVN
+        
+        >>> renameAllFolderAndFile
+        
+        >>> renameToRemoveResolutionSuffix
+        
+        >>> yes_no
+        
+        >>> choose_environment
+        
+        >>> choose_multi_environment
+        
+        
+        Public python package
+        ---------------------
+        
+        >>> python3 setup.py sdist
+        >>> twine check dist/*
+        >>> twine upload dist/*
+Keywords: ZaloPay,SVN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
