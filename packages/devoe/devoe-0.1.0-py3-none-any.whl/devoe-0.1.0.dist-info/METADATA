@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: devoe
+Version: 0.1.0
+Summary: Python ETL framework.
+Home-page: https://github.com/t3eHawk/devoe
+Author: Timur Faradzhov
+Author-email: timurfaradzhov@gmail.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: pepperoni
+Requires-Dist: sqlalchemy
+Requires-Dist: cx-Oracle
+Requires-Dist: paramiko
+
+devoe
+=====
+
+Devoe is a Python ETL framework allowing you to create pipelines and customize
+your ETL process as you wish.
+
+Features
+--------
+
+Installation
+------------
+```
+$ pip install devoe
+```
+
+How to use
+----------
+Below is the example of simple ETL task to extract data from one table to
+another.
+```python
+import devoe as de
+
+
+select = de.Select(database='billing', file='select.sql')
+table = de.Table(database='dwh', schema='billing', name='invoices')
+pipeline = de.Pipeline(select, table)
+pipeline.run()
+```
+
+
