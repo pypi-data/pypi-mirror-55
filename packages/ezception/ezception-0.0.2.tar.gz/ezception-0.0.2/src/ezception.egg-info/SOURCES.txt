@@ -1,0 +1,7 @@
+README.md
+setup.py
+src/ezception.py
+src/ezception.egg-info/PKG-INFO
+src/ezception.egg-info/SOURCES.txt
+src/ezception.egg-info/dependency_links.txt
+src/ezception.egg-info/top_level.txt
