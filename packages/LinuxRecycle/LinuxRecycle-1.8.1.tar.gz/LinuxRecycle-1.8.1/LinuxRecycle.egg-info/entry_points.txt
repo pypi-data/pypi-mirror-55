@@ -1,0 +1,6 @@
+[console_scripts]
+rm = linuxrecycle.main:main
+rm.clean = linuxrecycle.auto_clear:main
+rm.printDB = linuxrecycle.printDB:main
+rm.recover = linuxrecycle.recover:main
+
