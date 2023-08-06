@@ -1,0 +1,11 @@
+Metadata-Version: 1.2
+Name: teensypower
+Version: 0.0.2
+Summary: teensy controlled power switch
+Home-page: UNKNOWN
+Author: Jaehee Park
+Author-email: jaehee@ramonaoptics.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6

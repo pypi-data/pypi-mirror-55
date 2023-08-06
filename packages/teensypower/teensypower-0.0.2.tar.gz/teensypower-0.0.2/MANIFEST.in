@@ -1,0 +1,2 @@
+include versioneer.py
+include teensypower/_version.py
