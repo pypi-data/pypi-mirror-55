@@ -1,0 +1,23 @@
+Metadata-Version: 2.0
+Name: sqlagg
+Version: 0.14.0
+Summary: SQL aggregation tool
+Home-page: http://github.com/dimagi/sql-agg
+Author: Dimagi
+Author-email: dev@dimagi.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Provides-Extra: test
+Requires-Dist: SQLAlchemy (>=1.0.9)
+Provides-Extra: test
+Requires-Dist: SQLAlchemy-Fixtures (>=0.1.5); extra == 'test'
+Requires-Dist: fixture (>=1.4); extra == 'test'
+Requires-Dist: nose; extra == 'test'
+Requires-Dist: psycopg2; extra == 'test'
+
+UNKNOWN
+
+

@@ -1,0 +1,13 @@
+sqlagg/__init__.py,sha256=WgStDrRPEoE3Mcw69XRVuPKFzxNHyQxVXbVLQP3w1Sg,126
+sqlagg/base.py,sha256=8FKSKHDk89jlNvWMRFsSCvxU0j6RvKIY_ddPweAPqO0,13415
+sqlagg/columns.py,sha256=3bu9R5_IBvsUOBzZGe-LgylyoXz3Xhia7PokB99a7pk,4610
+sqlagg/exceptions.py,sha256=7nB_tdAoAzCLrsNAjF-kFlaBAZDRqkyrBXffPkljuQw,163
+sqlagg/filters.py,sha256=Gp0tTCoRw42QB2TE6sb9eVgE5bmuawxJxZrBbdmKEEk,6743
+sqlagg/sorting.py,sha256=HOL2lSc025LmAjAMzF6cKmShj0Mt4nUVNPADGTawGZA,680
+sqlagg-0.14.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+sqlagg-0.14.0.dist-info/LICENSE.txt,sha256=4yGFuCg_x-L27VhepbVDoxc2pVyzM-or9O-LalB7ARM,1556
+sqlagg-0.14.0.dist-info/METADATA,sha256=szihFpVqs85n5rigirgGSihZmB9be8KNOANN5Kt8tLM,627
+sqlagg-0.14.0.dist-info/RECORD,,
+sqlagg-0.14.0.dist-info/WHEEL,sha256=o2k-Qa-RMNIJmUdIc7KU6VWR_ErNRbWNlxDIpl7lm34,110
+sqlagg-0.14.0.dist-info/metadata.json,sha256=4bxcgKZ8YfQOFUnxsRiQTNqHlDdyzDUVtciaPo4qEls,843
+sqlagg-0.14.0.dist-info/top_level.txt,sha256=aHvEE56oGssMSFyrzHR1MuDb0eNlLrkmlTb8c3rPJ54,7
