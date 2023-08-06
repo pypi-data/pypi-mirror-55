@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: quintagroup.xmlsec.init
+Version: 0.2.0
+Summary: A simple package for dm.xmlsec.binding initialization
+Home-page: https://github.com/quintagroup/quintagroup.xmlsec.init
+Author: Taras Dyshkant
+Author-email: hitori@quintagroup.org
+License: UNKNOWN
+Description: # quintagroup.xmlsec.init
+        
+        A simple package for dm.xmlsec.binding initialization
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
