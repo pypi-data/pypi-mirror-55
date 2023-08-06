@@ -1,0 +1,4 @@
+
+    [console_scripts]
+    tap-iterable=tap_iterable:main
+    
