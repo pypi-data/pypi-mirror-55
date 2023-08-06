@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: kbastroutils
+Version: 1.0
+Summary: UNKNOWN
+Home-page: https://github.com/bkornpob/kbastroutils
+Author: Kornpob Bhirombhakdi
+Author-email: kbhirombhakdi@stsci.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# KBAstroUtils
+
+This is a collection of modules for analyses related to astrophysics by Dr. Kornpob Bhirombhakdi.
+
