@@ -1,0 +1,21 @@
+import colorama
+
+from kubernetes import client, config
+
+colorama.init()
+config.load_kube_config()
+
+
+def main():
+    v1 = client.CoreV1Api()
+    print(f"{colorama.Fore.WHITE}Listing pods with their IPs:{colorama.Fore.RESET}")
+    ret = v1.list_pod_for_all_namespaces(watch=False)
+    for i in ret.items:
+        print(
+            f"%s\t{colorama.Fore.GREEN}%s{colorama.Fore.BLUE}\t%s{colorama.Fore.RESET}"
+            % (i.status.pod_ip, i.metadata.namespace, i.metadata.name)
+        )
+
+
+if __name__ == "__main__":
+    main()
