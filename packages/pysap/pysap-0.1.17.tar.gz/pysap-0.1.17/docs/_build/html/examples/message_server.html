@@ -1,0 +1,398 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Message Server Example scripts &#8212; pysap 0.1.17 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Router Example scripts" href="router.html" />
+    <link rel="prev" title="Internet Graphic Service Example scripts" href="igs.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="message-server-example-scripts">
+<h1>Message Server Example scripts<a class="headerlink" href="#message-server-example-scripts" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ms-change-param">
+<h2><code class="docutils literal notranslate"><span class="pre">ms_change_param</span></code><a class="headerlink" href="#ms-change-param" title="Permalink to this headline">¶</a></h2>
+<p>This example script changes a parameter using SAP Message Server Administration requests. In order to
+be able to change a parameter the Message Server should be configured in monitoring mode
+(<code class="docutils literal notranslate"><span class="pre">ms/monitor=1</span></code>, see corresponding <a class="reference external" href="https://help.sap.com/saphelp_nw70/helpdata/en/4e/cffdb69d10424e97eb1d993b1e2cfd/content.html">help</a>
+for more details) and the internal port should be reachable. Keep in mind that some of the
+parameters are not “dynamic” and can’t be changed using this method. If the parameter value is not
+specified, the script retrieve the current value.</p>
+</div>
+<div class="section" id="ms-dos-exploit">
+<h2><code class="docutils literal notranslate"><span class="pre">ms_dos_exploit</span></code><a class="headerlink" href="#ms-dos-exploit" title="Permalink to this headline">¶</a></h2>
+<p>This example script can be used to tests a Denial of Service vulnerability
+affecting the Message Server (<a class="reference external" href="://cve.mitre.org/cgi-bin/cvename.cgi?name=2017-5997">CVE-2017-5997</a>).
+For more details about the vulnerability see
+<a class="reference external" href="https://erpscan.com/advisories/erpscan-16-038-sap-message-server-http-remote-dos/">ERPScan’s Security Advisory</a>
+and SAP <a class="reference external" href="https://launchpad.support.sap.com/#/notes/2358972">Security Note 2358972</a>.</p>
+<p>This example script was contributed by <a class="reference external" href="https://github.com/vah13">Vahagn Vardanyan</a> and
+<a class="reference external" href="ttps://github.com/gelim">Mathieu Geli</a>.</p>
+</div>
+<div class="section" id="ms-dump-info">
+<h2><code class="docutils literal notranslate"><span class="pre">ms_dump_info</span></code><a class="headerlink" href="#ms-dump-info" title="Permalink to this headline">¶</a></h2>
+<p>This example script provides a way to dump different type of configuration and parameters about an SAP’s instance
+made available via the Message Server service. The script connects to the internal port of the <code class="docutils literal notranslate"><span class="pre">MS</span></code> service
+(by default <code class="docutils literal notranslate"><span class="pre">39NN</span></code>) and by running the <code class="docutils literal notranslate"><span class="pre">dump</span></code> command it will obtain the configuration values.</p>
+<p>The following is an example result of running the command:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ examples/ms_dump_info.py -d XXX.XXX.XXX.XXX -p 3901
+[*] Connected to the message server XXX.XXX.XXX.XXX:3901
+[*] Sending login packet:
+[*] Login OK, Server string: MSG_SERVER
+(&#39;[*] Sending dump info&#39;, &#39;MS_DUMP_CON&#39;)
+-------------------------- dump of mscon table -----------------------------
+  NR ADDRESS &gt; Unique key                      FIHDL NEXTREQ NEXTREP
+----------------------------------------------------------------------------
+
+#entries = 0
+
+
+(&#39;[*] Sending dump info&#39;, &#39;MS_DUMP_PARAMS&#39;)
+
+Release = 753
+Release no = 7530
+Build version = 753.2017.08.01
+System name = SYS
+Instance name = ASCS01
+Trace level = 1
+Trace logging = active (52428800)
+Trace logging string = on, 50 m
+comment = message server SYS
+start time = Fri May  3 07:14:19 2019
+start time (seconds) = 1556892859
+up time = 0:30:35 (1835 secs)
+build time = Aug 18 2017 23:27:38
+build with Unicode = TRUE
+build with Threads = TRUE
+system type = AMD/Intel x86_64 with Linux
+system id = 0x186
+server host = sapserver
+server host (fqn) = sapserver
+server addr = XXX.XXX.XXX.XXX
+server service = sapmsSYS
+server port = 3601
+server service (internal) = 3901
+server port (internal) = 3901
+use unix domain sockets = TRUE
+J2EE send notification = message/request
+J2EE advanced login = on
+J2EE broadcast time = 0/Wed Dec 31 16:00:00 1969
+J2EE reconnect support = 1
+ms/timeout = 5000
+ms/timeout2 = 10000
+ms/conn_timeout = 300
+ms/max_sleep = 20
+ms/sapevt_lb = 0
+ms/keepalive = 300
+ms/max_clients = 600
+ms/ext_client_quota = 50
+#clients = 2
+#clients external = 0
+ms/max_counter = 100
+ms/max_vhost = 16
+ms/audit = LOGIN/OUT  (0x1)
+statistic activated
+ms/max_queue = 600
+ms/warn_queue = 5
+ms/cache_check = 900
+cache count = 0
+cache size = 10
+allocated buffer = 2
+ms/max_open_requests = 10000
+#max_open_requests = 0
+ms/server_port_0 = PROT=HTTP,PORT=8101,TIMEOUT=20,PROCTIMEOUT=60
+ms/http_port = 8101
+http state = LISTEN
+ms/https_port =
+https state = INIT
+ms/http_lookup = 1
+ms/http_domain = TRUE
+ms/http_timeout = 20
+ms/http_proctime = 60
+ms/http_bufferln = 65536
+ms/redirect_version = 1
+ms/http_max_clients = 500
+ms/http_max_ports = 20
+ms/http_enable_handler = TRUE
+ms/http_handler_retry = 10
+ms/http_handler_timeout = 60
+ms/http_was_required = FALSE
+ms/url_fqn = 1
+is/HTTP/default_root_hdl = abap
+is/instname_encoding = none
+#http client = 0
+#https client = 0
+</pre></div>
+</div>
+</div>
+<div class="section" id="ms-dump-param">
+<h2><code class="docutils literal notranslate"><span class="pre">ms_dump_param</span></code><a class="headerlink" href="#ms-dump-param" title="Permalink to this headline">¶</a></h2>
+<p>This example script connects to the internal Message Server port and retrieves the SAP’s instance profile parameters
+configured and available to the service. While similar to <code class="docutils literal notranslate"><span class="pre">ms_dump_info</span></code>, instead of just dumping the values it will
+allow for performing checks against a defined set of expected values. The list of expected parameters and their values
+should be provided in a file with the following format:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>#&lt;SAP parameter&gt;:&lt;check type in [FILE|EQUAL|NOTEQUAL|INF|SUP|REGEX]&gt;:&lt;expected value&gt;
+</pre></div>
+</div>
+<p>The supported check types are:</p>
+<ul class="simple">
+<li><code class="docutils literal notranslate"><span class="pre">FILE</span></code>: The parameter defines an external configuration file.</li>
+<li><code class="docutils literal notranslate"><span class="pre">EQUAL</span></code>: The parameter is compared with an expected value and checked if equal.</li>
+<li><code class="docutils literal notranslate"><span class="pre">NOTEQUAL</span></code>: The parameter is compared with an expected value and checked if not equal.</li>
+<li><code class="docutils literal notranslate"><span class="pre">INF</span></code>: The parameter is compared with an expected integer value and checked if inferior.</li>
+<li><code class="docutils literal notranslate"><span class="pre">SUP</span></code>: The parameter is compared with an expected integer value and checked if superior.</li>
+<li><code class="docutils literal notranslate"><span class="pre">REGEX</span></code>: The parameter is compared against a regular expression and expected to be matched.</li>
+</ul>
+<p>A set of of default recommended values is provided in <code class="docutils literal notranslate"><span class="pre">examples/list_sap_parameters</span></code> but each user should create their
+own set of expected values. The script can be used then to create a baseline configuration and automate the validation
+of a set of Application Servers against it. It’s worth noting that due to the way parameters are stored and made
+available to the Message Server service there might be false positives. Additionally, configuration stored in external
+files (e.g. ACL files, <code class="docutils literal notranslate"><span class="pre">secinfo</span></code>, <code class="docutils literal notranslate"><span class="pre">reginfo</span></code>) need to be checked by other means as the script will only point out
+the location of the file but not it’s content. Other <code class="docutils literal notranslate"><span class="pre">dump</span></code> commands might be helpful as to obtain those values
+programmatically, check the output of <code class="docutils literal notranslate"><span class="pre">ms_dump_info</span></code> for more details.</p>
+<p>The following is an example result of running the command:</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>$ examples/ms_dump_param.py -d XXX.XXX.XXX.XXX -p 3901 -f examples/list_sap_parameters
+[*] Initiate connection to message server XXX.XXX.XXX.XXX:3901
+[*] Connected. I check parameters...
+[*] Sending login packet:
+[*] Login OK, Server string: MSG_SERVER
+
+[+] auth/no_check_in_some_cases = Y
+[+] auth/rfc_authority_check = 1
+[ ] dbms/type = syb
+[ ] DIR_AUDIT = /usr/sap/SYS/ASCS01/log
+[ ] FN_AUDIT = audit_++++++++
+[+] gw/acl_mode = 1
+[+] gw/logging = ACTION=Ss LOGFILE=gw_log-%y-%m-%d SWITCHTF=day MAXSIZEKB=100
+[+] gw/monitor = 1
+[ ] gw/proxy_check = *
+[ ] gw/prxy_info = /usr/sap/SYS/ASCS01/data/prxyinfo
+[ ] gw/reg_info = /usr/sap/SYS/ASCS01/data/reginfo
+[!] gw/reg_no_conn_info = 1
+[ ] gw/sec_info = /usr/sap/SYS/SYS/global/secinfo
+[+] gw/sim_mode = 0
+[!] icm/HTTP/logging_0 = *
+[!] icm/HTTP/logging_1 = *
+[!] icm/HTTP/logging_2 = *
+[!] icm/HTTP/logging_3 = *
+[!] icm/HTTP/logging_4 = *
+[ ] icm/server_port_0 = PROT=HTTP,PORT=0,TIMEOUT=60,PROCTIMEOUT=60
+[ ] icm/server_port_1 = PROT=SMTP,PORT=0,TIMEOUT=120,PROCTIMEOUT=120
+[ ] icm/server_port_2 = NOT_EXIST
+[ ] icm/server_port_3 = NOT_EXIST
+[ ] icm/server_port_4 = NOT_EXIST
+[ ] INSTANCE_NAME = ASCS01
+[ ] j2ee/dbname = SYS
+[ ] j2ee/dbtype = syb
+[+] login/fails_to_user_lock = 5
+[!] login/min_password_lng = 6
+[+] login/no_automatic_user_sapstar = 1
+[!] login/password_compliance_to_current_policy = 0
+[+] login/password_downwards_compatibility = 0
+[ ] login/system_client = 001
+[ ] ms/acl_file_admin = NOT_EXIST
+[ ] ms/acl_file_extbnd = NOT_EXIST
+[ ] ms/acl_file_ext = NOT_EXIST
+[ ] ms/acl_file_int = NOT_EXIST
+[ ] ms/acl_info = /usr/sap/SYS/SYS/global/ms_acl_info
+[+] ms/admin_port = 0
+[+] ms/audit = 1
+[!] ms/http_logging = PREFIX=/,LOGFILE=dev_ms_logging,LOGFORMAT=SAPMSG
+[+] ms/monitor = 0
+[ ] rdisp/extbnd_port = *
+[!] rdisp/msserv = sapmsSYS
+[+] rdisp/msserv_internal = 3901
+[!] rec/client = OFF
+[!] rsau/enable = 0
+[+] rsau/ip_only = *
+[+] rsau/max_diskspace/local = 1000000000
+[+] rsau/max_diskspace/per_day = 0
+[+] rsau/max_diskspace/per_file = 0
+[+] rsdb/ssfs_connect = 1
+[ ] rslg/local/file = /usr/sap/SYS/ASCS01/log/SLOG01
+[+] rslg/max_diskspace/local = 10000000
+[ ] SAPDBHOST = sapserver
+[ ] SAPFQDN = NOT_EXIST
+[ ] SAPSYSTEM = 01
+[ ] SAPSYSTEMNAME = SYS
+[ ] service/http/acl_file = NOT_EXIST
+[ ] service/https/acl_file = NOT_EXIST
+[+] service/protectedwebmethods = SDEFAULT
+[!] snc/enable = 0
+[!] system/secure_communication = OFF
+[ ] system/type = ABAP
+</pre></div>
+</div>
+<p>The script’s output will contain a <code class="docutils literal notranslate"><span class="pre">[+]</span></code> mark if the value obtained from the Message Server matched the expected one
+in the provided file or a <code class="docutils literal notranslate"><span class="pre">[!]</span></code> mark if that’s not the case. Other parameters not checked will have an empty mark
+<code class="docutils literal notranslate"><span class="pre">[</span> <span class="pre">]</span></code>.</p>
+<p>This example script was contributed by <a class="reference external" href="https://twitter.com/_1ggy">Ivan Genuer</a>. The recommended values and
+parameters related to the Gateway and Message Server services were obtained from the
+<a class="reference external" href="https://support.sap.com/content/dam/support/en_us/library/ssp/offerings-and-programs/support-services/sap-security-optimization-services-portfolio/SAP_Security_Notes_Webinar.pdf">May 2019 Security Notes Webinar</a>
+by Frank Buchholz.</p>
+</div>
+<div class="section" id="ms-impersonator">
+<h2><code class="docutils literal notranslate"><span class="pre">ms_impersonator</span></code><a class="headerlink" href="#ms-impersonator" title="Permalink to this headline">¶</a></h2>
+<p>This example script is a proof of concept that connects with the Message Server service of
+a SAP Netweaver Application Server and impersonates an application server registering as a
+Dialog instance server.</p>
+</div>
+<div class="section" id="ms-listener">
+<h2><code class="docutils literal notranslate"><span class="pre">ms_listener</span></code><a class="headerlink" href="#ms-listener" title="Permalink to this headline">¶</a></h2>
+<p>This example script connects with the Message Server service and listen for messages coming
+from the server. Along with the <code class="docutils literal notranslate"><span class="pre">ms_messenger</span></code> script, it can be used as an example for
+using the Message Server as a messenger service and send packets from one client to
+another connected to the service.</p>
+</div>
+<div class="section" id="ms-messenger">
+<h2><code class="docutils literal notranslate"><span class="pre">ms_messenger</span></code><a class="headerlink" href="#ms-messenger" title="Permalink to this headline">¶</a></h2>
+<p>This example script connects with the Message Server service and sends a message to another
+client connected to it. Along with the <code class="docutils literal notranslate"><span class="pre">ms_listener</span></code> script, it can be used as an example
+for using the Message Server as a messenger service and send packets from one client to
+another connected to the service.</p>
+</div>
+<div class="section" id="ms-monitor">
+<h2><code class="docutils literal notranslate"><span class="pre">ms_monitor</span></code><a class="headerlink" href="#ms-monitor" title="Permalink to this headline">¶</a></h2>
+<p>This script is an example implementation of SAP’s Message Server Monitor program (<code class="docutils literal notranslate"><span class="pre">msmon</span></code>).
+It allows the monitoring of a Message Server service and allows sending different commands and
+opcodes. Includes some commands not available on the <code class="docutils literal notranslate"><span class="pre">msmon</span></code> program. Some commands requires the
+server running in monitor mode, while most of them requires access to the Message Server internal port.</p>
+<p>The script implements a console-like interface that can be used to specify the operations to
+perform on the Message Server. A list of implemented commands can be obtained by running <code class="docutils literal notranslate"><span class="pre">help</span></code>.</p>
+</div>
+<div class="section" id="ms-observer">
+<h2><code class="docutils literal notranslate"><span class="pre">ms_observer</span></code><a class="headerlink" href="#ms-observer" title="Permalink to this headline">¶</a></h2>
+<p>This example script connects with the Message Server service of a SAP Netweaver Application Server
+and monitors the clients to identify new application servers. As the Message Server broadcast
+the addition, removal or change of clients to all the clients connected to it, it’s possible to
+identify those state changes and print them. Similar to SAP’s <code class="docutils literal notranslate"><span class="pre">msprot</span></code> tool.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">pysap</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">User guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../protocols/index.html">Protocols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fileformats/index.html">File formats</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Example scripts</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="diag.html">Diag Example scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dlmanager.html">Download Manager scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enqueue.html">Enqueue Example scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gw.html">Gateway Example scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="igs.html">Internet Graphic Service Example scripts</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Message Server Example scripts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#ms-change-param"><code class="docutils literal notranslate"><span class="pre">ms_change_param</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ms-dos-exploit"><code class="docutils literal notranslate"><span class="pre">ms_dos_exploit</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ms-dump-info"><code class="docutils literal notranslate"><span class="pre">ms_dump_info</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ms-dump-param"><code class="docutils literal notranslate"><span class="pre">ms_dump_param</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ms-impersonator"><code class="docutils literal notranslate"><span class="pre">ms_impersonator</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ms-listener"><code class="docutils literal notranslate"><span class="pre">ms_listener</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ms-messenger"><code class="docutils literal notranslate"><span class="pre">ms_messenger</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ms-monitor"><code class="docutils literal notranslate"><span class="pre">ms_monitor</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ms-observer"><code class="docutils literal notranslate"><span class="pre">ms_observer</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="router.html">Router Example scripts</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev/index.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Developer Interface</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Example scripts</a><ul>
+      <li>Previous: <a href="igs.html" title="previous chapter">Internet Graphic Service Example scripts</a></li>
+      <li>Next: <a href="router.html" title="next chapter">Router Example scripts</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;SECUREAUTH LABS. Copyright (C) 2019 SecureAuth Corporation. All rights reserved..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.9</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/examples/message_server.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

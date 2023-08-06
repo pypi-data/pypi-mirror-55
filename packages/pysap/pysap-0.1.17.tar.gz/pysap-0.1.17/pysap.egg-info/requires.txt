@@ -1,0 +1,15 @@
+scapy==2.4.3
+
+[docs]
+Sphinx==1.7.9
+ipykernel
+nbsphinx
+pyx==0.12.1
+ipython<6.0
+m2r==0.2.1
+
+[examples]
+tabulate==0.8.3
+netaddr==0.7.19
+cryptography==2.8
+requests

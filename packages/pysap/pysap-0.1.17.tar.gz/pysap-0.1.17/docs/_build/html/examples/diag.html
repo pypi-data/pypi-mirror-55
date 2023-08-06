@@ -1,0 +1,213 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Diag Example scripts &#8212; pysap 0.1.17 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Download Manager scripts" href="dlmanager.html" />
+    <link rel="prev" title="Example scripts" href="index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="diag-example-scripts">
+<h1>Diag Example scripts<a class="headerlink" href="#diag-example-scripts" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="diag-capturer">
+<h2><code class="docutils literal notranslate"><span class="pre">diag_capturer</span></code><a class="headerlink" href="#diag-capturer" title="Permalink to this headline">¶</a></h2>
+<p>This example script can be used to grab SAP GUI login credentials from a <code class="docutils literal notranslate"><span class="pre">pcap</span></code> file or by
+directly sniffing on a network interface. The SAP Diag protocol packets are parsed and
+processed to obtain login credentials from the login form submissions. Identification of the
+password field is performed by means of looking at the “invisible” property used by SAP to
+denote password or other sensitive fields that should be masked by the SAP GUI.</p>
+</div>
+<div class="section" id="diag-dos-exploit">
+<h2><code class="docutils literal notranslate"><span class="pre">diag_dos_exploit</span></code><a class="headerlink" href="#diag-dos-exploit" title="Permalink to this headline">¶</a></h2>
+<p>This example script can be used to tests against Denial of Service vulnerabilities affecting the
+Dispatcher service. Currently 5 different vulnerabilities can be triggered:</p>
+<ul class="simple">
+<li><a class="reference external" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=2012-2612">CVE-2012-2612</a></li>
+<li><a class="reference external" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=2012-2511">CVE-2012-2511</a></li>
+<li><a class="reference external" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=2012-2512">CVE-2012-2512</a></li>
+<li><a class="reference external" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=2012-2513">CVE-2012-2513</a></li>
+<li><a class="reference external" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=2012-2514">CVE-2012-2514</a></li>
+</ul>
+</div>
+<div class="section" id="diag-interceptor">
+<h2><code class="docutils literal notranslate"><span class="pre">diag_interceptor</span></code><a class="headerlink" href="#diag-interceptor" title="Permalink to this headline">¶</a></h2>
+<p>This example script is aimed at demonstrating the use of the <code class="docutils literal notranslate"><span class="pre">SAPNIProxy</span></code> and <code class="docutils literal notranslate"><span class="pre">SAPNIProxyHandler</span></code>
+interfaces. It can be used to establish a proxy between a SAP GUI client and a SAP Netweaver
+Application Server and inspect the traffic via the <code class="docutils literal notranslate"><span class="pre">filter_client</span></code> and <code class="docutils literal notranslate"><span class="pre">filter_server</span></code> functions.</p>
+<p>The given example implements a simple function that grabs input fields sent by the client and prints
+them.</p>
+</div>
+<div class="section" id="diag-login-brute-force">
+<h2><code class="docutils literal notranslate"><span class="pre">diag_login_brute_force</span></code><a class="headerlink" href="#diag-login-brute-force" title="Permalink to this headline">¶</a></h2>
+<p>This example script can be used to perform a brute force attack against a SAP Netweaver
+application server. The scripts performs a login through the Diag protocol, by submitting
+username and passwords to the login screen. It can also be used to discover available clients.</p>
+<p>Usernames, passwords and SAP clients to test can be provided as individual files (using
+<code class="docutils literal notranslate"><span class="pre">--usernames</span></code>, <code class="docutils literal notranslate"><span class="pre">--passwords</span></code> and <code class="docutils literal notranslate"><span class="pre">--clients</span></code> command line options), in which case the
+script will calculate and test the combination of those, or provided in a credentials file
+(via the <code class="docutils literal notranslate"><span class="pre">--credentials</span></code> parameter). The credential file is expected to have a format
+containing <code class="docutils literal notranslate"><span class="pre">username:password:client</span></code> and blank lines or lines starting with the <code class="docutils literal notranslate"><span class="pre">#</span></code> are
+ignored.</p>
+<p>Clients discovery can be also performed as a firs step of the brute-force attack, by specifying
+the <code class="docutils literal notranslate"><span class="pre">--discovery</span></code> option and providing a list of clients to test using the <code class="docutils literal notranslate"><span class="pre">--discovery-range</span></code>
+parameter.</p>
+<p>Testing of the credentials can be performed using multiple parallel threads using the <code class="docutils literal notranslate"><span class="pre">--threads</span></code>
+parameter as a way to increase performance.</p>
+<p>A list of default credentials and their associated default clients is also provided in the
+<code class="docutils literal notranslate"><span class="pre">examples/default_sap_credentials</span></code> file. This credentials file can be used to perform basic
+checks.</p>
+<p>Note that as error responses might vary across versions it might be possible that the script
+generates false positive. In addition, it should be noted that there’s no mechanism implemented
+to prevent the lockout of user accounts if the server is configured with a lockout policy. Use
+with care and at your own risk.</p>
+</div>
+<div class="section" id="diag-login-screen-info">
+<h2><code class="docutils literal notranslate"><span class="pre">diag_login_screen_info</span></code><a class="headerlink" href="#diag-login-screen-info" title="Permalink to this headline">¶</a></h2>
+<p>This example script can be used to gather information provided by a SAP Netweaver Application
+Server during the login process. This information includes generally hostname, instance, database
+name, language and other technical information about the application server.</p>
+</div>
+<div class="section" id="diag-render-login-screen">
+<h2><code class="docutils literal notranslate"><span class="pre">diag_render_login_screen</span></code><a class="headerlink" href="#diag-render-login-screen" title="Permalink to this headline">¶</a></h2>
+<p>This example script is a proof of concept of how the library can be used to obtain and interpret
+the screen components and fields provided by an SAP Netweaver Application Server. It takes the
+login screen presented by the application server and renders it using <code class="docutils literal notranslate"><span class="pre">wxPython</span></code> widgets and user
+interface components. Take into account that not all field types and Diag protocol packets
+are completely implemented in the library, and that those change from version to version.</p>
+</div>
+<div class="section" id="diag-rogue-server">
+<h2><code class="docutils literal notranslate"><span class="pre">diag_rogue_server</span></code><a class="headerlink" href="#diag-rogue-server" title="Permalink to this headline">¶</a></h2>
+<p>This example script is a proof of concept that implements a rogue server using the SAP Diag protocol.
+It offers users a customizable login screen and gathers credentials provided by the clients
+connecting to it. A basic interaction is implemented that allows for the user to introduce the
+credentials and then returns a generic error message.</p>
+<p>Tested with SAP Gui for Java 7.20 Patch Level 5 running on Ubuntu.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">pysap</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">User guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../protocols/index.html">Protocols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fileformats/index.html">File formats</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Example scripts</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Diag Example scripts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#diag-capturer"><code class="docutils literal notranslate"><span class="pre">diag_capturer</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#diag-dos-exploit"><code class="docutils literal notranslate"><span class="pre">diag_dos_exploit</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#diag-interceptor"><code class="docutils literal notranslate"><span class="pre">diag_interceptor</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#diag-login-brute-force"><code class="docutils literal notranslate"><span class="pre">diag_login_brute_force</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#diag-login-screen-info"><code class="docutils literal notranslate"><span class="pre">diag_login_screen_info</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#diag-render-login-screen"><code class="docutils literal notranslate"><span class="pre">diag_render_login_screen</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#diag-rogue-server"><code class="docutils literal notranslate"><span class="pre">diag_rogue_server</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="dlmanager.html">Download Manager scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="enqueue.html">Enqueue Example scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="gw.html">Gateway Example scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="igs.html">Internet Graphic Service Example scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="message_server.html">Message Server Example scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="router.html">Router Example scripts</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev/index.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Developer Interface</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Example scripts</a><ul>
+      <li>Previous: <a href="index.html" title="previous chapter">Example scripts</a></li>
+      <li>Next: <a href="dlmanager.html" title="next chapter">Download Manager scripts</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;SECUREAUTH LABS. Copyright (C) 2019 SecureAuth Corporation. All rights reserved..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.9</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/examples/diag.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

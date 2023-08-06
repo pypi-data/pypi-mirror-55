@@ -1,0 +1,432 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>pysap.SAPRFC module &#8212; pysap 0.1.17 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="pysap.SAPRouter module" href="pysap.SAPRouter.html" />
+    <link rel="prev" title="pysap.SAPPSE module" href="pysap.SAPPSE.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="module-pysap.SAPRFC">
+<span id="pysap-saprfc-module"></span><h1>pysap.SAPRFC module<a class="headerlink" href="#module-pysap.SAPRFC" title="Permalink to this headline">¶</a></h1>
+<dl class="class">
+<dt id="pysap.SAPRFC.DEF_FIELDS">
+<em class="property">class </em><code class="descclassname">pysap.SAPRFC.</code><code class="descname">DEF_FIELDS</code><a class="reference internal" href="../_modules/pysap/SAPRFC.html#DEF_FIELDS"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pysap.SAPRFC.DEF_FIELDS" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pysap.utils.fields.html#pysap.utils.fields.PacketNoPadded" title="pysap.utils.fields.PacketNoPadded"><code class="xref py py-class docutils literal notranslate"><span class="pre">pysap.utils.fields.PacketNoPadded</span></code></a></p>
+<p>SAP RFC Def Fields structure</p>
+<dl class="attribute">
+<dt id="pysap.SAPRFC.DEF_FIELDS.aliastypes">
+<code class="descname">aliastypes</code><em class="property"> = [&lt;class 'pysap.SAPRFC.DEF_FIELDS'&gt;, &lt;class 'pysap.utils.fields.PacketNoPadded'&gt;, &lt;class 'scapy.packet.Packet'&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.DEF_FIELDS.aliastypes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pysap.SAPRFC.DEF_FIELDS.fields_desc">
+<code class="descname">fields_desc</code><em class="property"> = [&lt;Field (DEF_FIELDS).start_padd&gt;, &lt;Field (DEF_FIELDS).start_field1_len&gt;, &lt;Field (DEF_FIELDS).start_field1&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.DEF_FIELDS.fields_desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pysap.SAPRFC.SAPCPIC">
+<em class="property">class </em><code class="descclassname">pysap.SAPRFC.</code><code class="descname">SAPCPIC</code><a class="reference internal" href="../_modules/pysap/SAPRFC.html#SAPCPIC"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pysap.SAPRFC.SAPCPIC" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pysap.utils.fields.html#pysap.utils.fields.PacketNoPadded" title="pysap.utils.fields.PacketNoPadded"><code class="xref py py-class docutils literal notranslate"><span class="pre">pysap.utils.fields.PacketNoPadded</span></code></a></p>
+<p>SAP CPIC Packet</p>
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPCPIC.aliastypes">
+<code class="descname">aliastypes</code><em class="property"> = [&lt;class 'pysap.SAPRFC.SAPCPIC'&gt;, &lt;class 'pysap.utils.fields.PacketNoPadded'&gt;, &lt;class 'scapy.packet.Packet'&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPCPIC.aliastypes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPCPIC.fields_desc">
+<code class="descname">fields_desc</code><em class="property"> = [&lt;Field (SAPCPIC).cpic_start_padd&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd0003&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd0002&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd0001&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd001&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd002&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd003&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd004&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd005&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd006&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd007&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd008&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd009&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd010&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd011&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd012&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd013&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd014&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd015_0&gt;, &lt;Field (SAPCPIC).cpic_padd015_1&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd016&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd017&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd018&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd019&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd020&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd021&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd022&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd023&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_padd024&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_end_padd&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC).cpic_end_sig&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPCPIC.fields_desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pysap.SAPRFC.SAPCPIC2">
+<em class="property">class </em><code class="descclassname">pysap.SAPRFC.</code><code class="descname">SAPCPIC2</code><a class="reference internal" href="../_modules/pysap/SAPRFC.html#SAPCPIC2"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pysap.SAPRFC.SAPCPIC2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pysap.utils.fields.html#pysap.utils.fields.PacketNoPadded" title="pysap.utils.fields.PacketNoPadded"><code class="xref py py-class docutils literal notranslate"><span class="pre">pysap.utils.fields.PacketNoPadded</span></code></a></p>
+<p>SAP CPIC2 Packet</p>
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPCPIC2.aliastypes">
+<code class="descname">aliastypes</code><em class="property"> = [&lt;class 'pysap.SAPRFC.SAPCPIC2'&gt;, &lt;class 'pysap.utils.fields.PacketNoPadded'&gt;, &lt;class 'scapy.packet.Packet'&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPCPIC2.aliastypes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPCPIC2.fields_desc">
+<code class="descname">fields_desc</code><em class="property"> = [&lt;Field (SAPCPIC2).cpic_padd015_1&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC2).cpic_padd016&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC2).cpic_padd017&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC2).cpic_padd018&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC2).cpic_padd019&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC2).cpic_padd021&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC2).cpic_padd022&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC2).cpic_padd023&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC2).cpic_padd024&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC2).cpic_end_padd&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPIC2).cpic_end_sig&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPCPIC2.fields_desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pysap.SAPRFC.SAPCPICPARAM">
+<em class="property">class </em><code class="descclassname">pysap.SAPRFC.</code><code class="descname">SAPCPICPARAM</code><a class="reference internal" href="../_modules/pysap/SAPRFC.html#SAPCPICPARAM"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pysap.SAPRFC.SAPCPICPARAM" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pysap.utils.fields.html#pysap.utils.fields.PacketNoPadded" title="pysap.utils.fields.PacketNoPadded"><code class="xref py py-class docutils literal notranslate"><span class="pre">pysap.utils.fields.PacketNoPadded</span></code></a></p>
+<p>SAP CPIC PARAM Structure</p>
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPCPICPARAM.aliastypes">
+<code class="descname">aliastypes</code><em class="property"> = [&lt;class 'pysap.SAPRFC.SAPCPICPARAM'&gt;, &lt;class 'pysap.utils.fields.PacketNoPadded'&gt;, &lt;class 'scapy.packet.Packet'&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPCPICPARAM.aliastypes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPCPICPARAM.fields_desc">
+<code class="descname">fields_desc</code><em class="property"> = [&lt;Field (SAPCPICPARAM).pref&gt;, &lt;Field (SAPCPICPARAM).param1&gt;, &lt;Field (SAPCPICPARAM).param2&gt;, &lt;Field (SAPCPICPARAM).param_sess_1&gt;, &lt;Field (SAPCPICPARAM).param_sess_2&gt;, &lt;Field (SAPCPICPARAM).mask&gt;, &lt;Field (SAPCPICPARAM).ip&gt;, &lt;Field (SAPCPICPARAM).flag&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPCPICPARAM.fields_desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pysap.SAPRFC.SAPCPICPARAM2">
+<em class="property">class </em><code class="descclassname">pysap.SAPRFC.</code><code class="descname">SAPCPICPARAM2</code><a class="reference internal" href="../_modules/pysap/SAPRFC.html#SAPCPICPARAM2"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pysap.SAPRFC.SAPCPICPARAM2" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pysap.utils.fields.html#pysap.utils.fields.PacketNoPadded" title="pysap.utils.fields.PacketNoPadded"><code class="xref py py-class docutils literal notranslate"><span class="pre">pysap.utils.fields.PacketNoPadded</span></code></a></p>
+<p>SAP CPIC PARAM Structure</p>
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPCPICPARAM2.aliastypes">
+<code class="descname">aliastypes</code><em class="property"> = [&lt;class 'pysap.SAPRFC.SAPCPICPARAM2'&gt;, &lt;class 'pysap.utils.fields.PacketNoPadded'&gt;, &lt;class 'scapy.packet.Packet'&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPCPICPARAM2.aliastypes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPCPICPARAM2.fields_desc">
+<code class="descname">fields_desc</code><em class="property"> = [&lt;Field (SAPCPICPARAM2).param1&gt;, &lt;Field (SAPCPICPARAM2).mask&gt;, &lt;Field (SAPCPICPARAM2).ip&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPCPICPARAM2.fields_desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pysap.SAPRFC.SAPCPICSUFFIX">
+<em class="property">class </em><code class="descclassname">pysap.SAPRFC.</code><code class="descname">SAPCPICSUFFIX</code><a class="reference internal" href="../_modules/pysap/SAPRFC.html#SAPCPICSUFFIX"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pysap.SAPRFC.SAPCPICSUFFIX" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pysap.utils.fields.html#pysap.utils.fields.PacketNoPadded" title="pysap.utils.fields.PacketNoPadded"><code class="xref py py-class docutils literal notranslate"><span class="pre">pysap.utils.fields.PacketNoPadded</span></code></a></p>
+<p>SAP CPIC SUFFIX structure</p>
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPCPICSUFFIX.aliastypes">
+<code class="descname">aliastypes</code><em class="property"> = [&lt;class 'pysap.SAPRFC.SAPCPICSUFFIX'&gt;, &lt;class 'pysap.utils.fields.PacketNoPadded'&gt;, &lt;class 'scapy.packet.Packet'&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPCPICSUFFIX.aliastypes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPCPICSUFFIX.fields_desc">
+<code class="descname">fields_desc</code><em class="property"> = [&lt;Field (SAPCPICSUFFIX).suff_padd1&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk1_len&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk1&gt;, &lt;Field (SAPCPICSUFFIX).suff_padd2&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk2_len&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk2&gt;, &lt;Field (SAPCPICSUFFIX).suff_padd3&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk3_len&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk3&gt;, &lt;Field (SAPCPICSUFFIX).suff_padd4&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk4_len&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk4&gt;, &lt;Field (SAPCPICSUFFIX).suff_padd5&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk5_len&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk5&gt;, &lt;Field (SAPCPICSUFFIX).suff_padd6&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk6_len&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk6&gt;, &lt;Field (SAPCPICSUFFIX).suff_padd7&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk7_len&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk7&gt;, &lt;Field (SAPCPICSUFFIX).suff_padd8&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk8_len&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk8&gt;, &lt;Field (SAPCPICSUFFIX).suff_padd9&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk9_len&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk9&gt;, &lt;Field (SAPCPICSUFFIX).suff_padd10k&gt;, &lt;Field (SAPCPICSUFFIX).suff_kernel_len&gt;, &lt;Field (SAPCPICSUFFIX).suff_kernel&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;Field (SAPCPICSUFFIX).suff_padd14&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk14_len&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk14&gt;, &lt;Field (SAPCPICSUFFIX).suff_padd15&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk15_len&gt;, &lt;Field (SAPCPICSUFFIX).suff_unk15&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPCPICSUFFIX.fields_desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pysap.SAPRFC.SAPCPIC_CUT">
+<em class="property">class </em><code class="descclassname">pysap.SAPRFC.</code><code class="descname">SAPCPIC_CUT</code><a class="reference internal" href="../_modules/pysap/SAPRFC.html#SAPCPIC_CUT"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pysap.SAPRFC.SAPCPIC_CUT" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pysap.utils.fields.html#pysap.utils.fields.PacketNoPadded" title="pysap.utils.fields.PacketNoPadded"><code class="xref py py-class docutils literal notranslate"><span class="pre">pysap.utils.fields.PacketNoPadded</span></code></a></p>
+<p>SAP CPIC CUT structure.</p>
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPCPIC_CUT.aliastypes">
+<code class="descname">aliastypes</code><em class="property"> = [&lt;class 'pysap.SAPRFC.SAPCPIC_CUT'&gt;, &lt;class 'pysap.utils.fields.PacketNoPadded'&gt;, &lt;class 'scapy.packet.Packet'&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPCPIC_CUT.aliastypes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPCPIC_CUT.fields_desc">
+<code class="descname">fields_desc</code><em class="property"> = [&lt;Field (SAPCPIC_CUT).keke1&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPCPIC_CUT.fields_desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pysap.SAPRFC.SAPRFC">
+<em class="property">class </em><code class="descclassname">pysap.SAPRFC.</code><code class="descname">SAPRFC</code><a class="reference internal" href="../_modules/pysap/SAPRFC.html#SAPRFC"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pysap.SAPRFC.SAPRFC" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pysap.utils.fields.html#pysap.utils.fields.PacketNoPadded" title="pysap.utils.fields.PacketNoPadded"><code class="xref py py-class docutils literal notranslate"><span class="pre">pysap.utils.fields.PacketNoPadded</span></code></a></p>
+<p>SAP Remote Function Call packet</p>
+<p>This packet is used for the Remote Function Call (RFC) protocol.</p>
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPRFC.aliastypes">
+<code class="descname">aliastypes</code><em class="property"> = [&lt;class 'pysap.SAPRFC.SAPRFC'&gt;, &lt;class 'pysap.utils.fields.PacketNoPadded'&gt;, &lt;class 'scapy.packet.Packet'&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPRFC.aliastypes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPRFC.fields_desc">
+<code class="descname">fields_desc</code><em class="property"> = [&lt;Field (SAPRFC).version&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;, &lt;scapy.fields.ConditionalField object&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPRFC.fields_desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pysap.SAPRFC.SAPRFCDTStruct">
+<em class="property">class </em><code class="descclassname">pysap.SAPRFC.</code><code class="descname">SAPRFCDTStruct</code><a class="reference internal" href="../_modules/pysap/SAPRFC.html#SAPRFCDTStruct"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pysap.SAPRFC.SAPRFCDTStruct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pysap.utils.fields.html#pysap.utils.fields.PacketNoPadded" title="pysap.utils.fields.PacketNoPadded"><code class="xref py py-class docutils literal notranslate"><span class="pre">pysap.utils.fields.PacketNoPadded</span></code></a></p>
+<p>SAP RFC DT structure.</p>
+<p>This structure is used to setup started program.</p>
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPRFCDTStruct.aliastypes">
+<code class="descname">aliastypes</code><em class="property"> = [&lt;class 'pysap.SAPRFC.SAPRFCDTStruct'&gt;, &lt;class 'pysap.utils.fields.PacketNoPadded'&gt;, &lt;class 'scapy.packet.Packet'&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPRFCDTStruct.aliastypes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPRFCDTStruct.fields_desc">
+<code class="descname">fields_desc</code><em class="property"> = [&lt;Field (SAPRFCDTStruct).version&gt;, &lt;Field (SAPRFCDTStruct).padd1&gt;, &lt;Field (SAPRFCDTStruct).root_id&gt;, &lt;Field (SAPRFCDTStruct).conn_id&gt;, &lt;Field (SAPRFCDTStruct).conn_id_suff&gt;, &lt;Field (SAPRFCDTStruct).timeout&gt;, &lt;Field (SAPRFCDTStruct).keepalive_timeout&gt;, &lt;Field (SAPRFCDTStruct).export_trace&gt;, &lt;Field (SAPRFCDTStruct).start_type&gt;, &lt;Field (SAPRFCDTStruct).net_protocol&gt;, &lt;Field (SAPRFCDTStruct).local_addrv6&gt;, &lt;Field (SAPRFCDTStruct).long_lu&gt;, &lt;Field (SAPRFCDTStruct).padd3&gt;, &lt;Field (SAPRFCDTStruct).user&gt;, &lt;Field (SAPRFCDTStruct).padd4&gt;, &lt;Field (SAPRFCDTStruct).padd5&gt;, &lt;Field (SAPRFCDTStruct).padd6&gt;, &lt;Field (SAPRFCDTStruct).padd7&gt;, &lt;Field (SAPRFCDTStruct).addr_ipv4&gt;, &lt;Field (SAPRFCDTStruct).padd8&gt;, &lt;Field (SAPRFCDTStruct).long_tp&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPRFCDTStruct.fields_desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pysap.SAPRFC.SAPRFCEXTEND">
+<em class="property">class </em><code class="descclassname">pysap.SAPRFC.</code><code class="descname">SAPRFCEXTEND</code><a class="reference internal" href="../_modules/pysap/SAPRFC.html#SAPRFCEXTEND"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pysap.SAPRFC.SAPRFCEXTEND" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pysap.utils.fields.html#pysap.utils.fields.PacketNoPadded" title="pysap.utils.fields.PacketNoPadded"><code class="xref py py-class docutils literal notranslate"><span class="pre">pysap.utils.fields.PacketNoPadded</span></code></a></p>
+<p>SAP RFC EXTEND INFO structure</p>
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPRFCEXTEND.aliastypes">
+<code class="descname">aliastypes</code><em class="property"> = [&lt;class 'pysap.SAPRFC.SAPRFCEXTEND'&gt;, &lt;class 'pysap.utils.fields.PacketNoPadded'&gt;, &lt;class 'scapy.packet.Packet'&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPRFCEXTEND.aliastypes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPRFCEXTEND.fields_desc">
+<code class="descname">fields_desc</code><em class="property"> = [&lt;Field (SAPRFCEXTEND).short_dest_name&gt;, &lt;Field (SAPRFCEXTEND).ncpic_lu&gt;, &lt;Field (SAPRFCEXTEND).ncpic_tp&gt;, &lt;Field (SAPRFCEXTEND).ctype&gt;, &lt;Field (SAPRFCEXTEND).clientInfo&gt;, &lt;Field (SAPRFCEXTEND).ncpic_parameters_padd&gt;, &lt;Field (SAPRFCEXTEND).comm_idx&gt;, &lt;Field (SAPRFCEXTEND).conn_idx&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPRFCEXTEND.fields_desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pysap.SAPRFC.SAPRFCPING">
+<em class="property">class </em><code class="descclassname">pysap.SAPRFC.</code><code class="descname">SAPRFCPING</code><a class="reference internal" href="../_modules/pysap/SAPRFC.html#SAPRFCPING"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pysap.SAPRFC.SAPRFCPING" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pysap.utils.fields.html#pysap.utils.fields.PacketNoPadded" title="pysap.utils.fields.PacketNoPadded"><code class="xref py py-class docutils literal notranslate"><span class="pre">pysap.utils.fields.PacketNoPadded</span></code></a></p>
+<p>SAP Started program packets RFCPING.</p>
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPRFCPING.aliastypes">
+<code class="descname">aliastypes</code><em class="property"> = [&lt;class 'pysap.SAPRFC.SAPRFCPING'&gt;, &lt;class 'pysap.utils.fields.PacketNoPadded'&gt;, &lt;class 'scapy.packet.Packet'&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPRFCPING.aliastypes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPRFCPING.fields_desc">
+<code class="descname">fields_desc</code><em class="property"> = [&lt;Field (SAPRFCPING).fields_test&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPRFCPING.fields_desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pysap.SAPRFC.SAPRFCTHStruct">
+<em class="property">class </em><code class="descclassname">pysap.SAPRFC.</code><code class="descname">SAPRFCTHStruct</code><a class="reference internal" href="../_modules/pysap/SAPRFC.html#SAPRFCTHStruct"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pysap.SAPRFC.SAPRFCTHStruct" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pysap.utils.fields.html#pysap.utils.fields.PacketNoPadded" title="pysap.utils.fields.PacketNoPadded"><code class="xref py py-class docutils literal notranslate"><span class="pre">pysap.utils.fields.PacketNoPadded</span></code></a></p>
+<p>SAP RFC TH structure.</p>
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPRFCTHStruct.aliastypes">
+<code class="descname">aliastypes</code><em class="property"> = [&lt;class 'pysap.SAPRFC.SAPRFCTHStruct'&gt;, &lt;class 'pysap.utils.fields.PacketNoPadded'&gt;, &lt;class 'scapy.packet.Packet'&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPRFCTHStruct.aliastypes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPRFCTHStruct.fields_desc">
+<code class="descname">fields_desc</code><em class="property"> = [&lt;Field (SAPRFCTHStruct).th_eyec1&gt;, &lt;Field (SAPRFCTHStruct).th_version&gt;, &lt;Field (SAPRFCTHStruct).th_len&gt;, &lt;Field (SAPRFCTHStruct).th_trace_flag&gt;, &lt;Field (SAPRFCTHStruct).th_sysid&gt;, &lt;Field (SAPRFCTHStruct).th_serevice&gt;, &lt;Field (SAPRFCTHStruct).th_userid&gt;, &lt;Field (SAPRFCTHStruct).th_action&gt;, &lt;Field (SAPRFCTHStruct).th_presysid&gt;, &lt;Field (SAPRFCTHStruct).th_acttype&gt;, &lt;Field (SAPRFCTHStruct).th_id&gt;, &lt;Field (SAPRFCTHStruct).th_unused_comm1&gt;, &lt;Field (SAPRFCTHStruct).th_some_cpic_params&gt;, &lt;Field (SAPRFCTHStruct).th_unused_comm2&gt;, &lt;Field (SAPRFCTHStruct).th_eyec2&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPRFCTHStruct.fields_desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pysap.SAPRFC.SAPRFXPG">
+<em class="property">class </em><code class="descclassname">pysap.SAPRFC.</code><code class="descname">SAPRFXPG</code><a class="reference internal" href="../_modules/pysap/SAPRFC.html#SAPRFXPG"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pysap.SAPRFC.SAPRFXPG" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pysap.utils.fields.html#pysap.utils.fields.PacketNoPadded" title="pysap.utils.fields.PacketNoPadded"><code class="xref py py-class docutils literal notranslate"><span class="pre">pysap.utils.fields.PacketNoPadded</span></code></a></p>
+<p>SAP Started program packets.</p>
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPRFXPG.aliastypes">
+<code class="descname">aliastypes</code><em class="property"> = [&lt;class 'pysap.SAPRFC.SAPRFXPG'&gt;, &lt;class 'pysap.utils.fields.PacketNoPadded'&gt;, &lt;class 'scapy.packet.Packet'&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPRFXPG.aliastypes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPRFXPG.fields_desc">
+<code class="descname">fields_desc</code><em class="property"> = [&lt;Field (SAPRFXPG).xpg_padd100&gt;, &lt;Field (SAPRFXPG).xpg_convid_l_len&gt;, &lt;Field (SAPRFXPG).xpg_convid_l&gt;, &lt;Field (SAPRFXPG).xpg_padd101&gt;, &lt;Field (SAPRFXPG).xpg_strstat_l_len&gt;, &lt;Field (SAPRFXPG).xpg_strstat_l&gt;, &lt;Field (SAPRFXPG).xpg_padd102&gt;, &lt;Field (SAPRFXPG).xpg_xpgid_l_len&gt;, &lt;Field (SAPRFXPG).xpg_xpgid_l&gt;, &lt;Field (SAPRFXPG).xpg_padd103&gt;, &lt;Field (SAPRFXPG).xpg_extprog_l_len&gt;, &lt;Field (SAPRFXPG).xpg_extprog_l&gt;, &lt;Field (SAPRFXPG).xpg_padd104&gt;, &lt;Field (SAPRFXPG).xpg_extprog_val_len&gt;, &lt;Field (SAPRFXPG).xpg_extprog_val&gt;, &lt;Field (SAPRFXPG).xpg_padd105&gt;, &lt;Field (SAPRFXPG).xpg_longparam_l_len&gt;, &lt;Field (SAPRFXPG).xpg_longparam_l&gt;, &lt;Field (SAPRFXPG).xpg_padd106&gt;, &lt;Field (SAPRFXPG).xpg_longparam_val_len&gt;, &lt;Field (SAPRFXPG).xpg_longparam_val&gt;, &lt;Field (SAPRFXPG).xpg_padd107&gt;, &lt;Field (SAPRFXPG).xpg_param_l_len&gt;, &lt;Field (SAPRFXPG).xpg_param_l&gt;, &lt;Field (SAPRFXPG).xpg_padd108&gt;, &lt;Field (SAPRFXPG).xpg_param_val_len&gt;, &lt;Field (SAPRFXPG).xpg_param_val&gt;, &lt;Field (SAPRFXPG).xpg_padd109&gt;, &lt;Field (SAPRFXPG).xpg_stderrcntl_l_len&gt;, &lt;Field (SAPRFXPG).xpg_stderrcntl_l&gt;, &lt;Field (SAPRFXPG).xpg_padd110&gt;, &lt;Field (SAPRFXPG).xpg_stderrcntl_val_len&gt;, &lt;Field (SAPRFXPG).xpg_stderrcntl_val&gt;, &lt;Field (SAPRFXPG).xpg_padd111&gt;, &lt;Field (SAPRFXPG).xpg_stdincntl_l_len&gt;, &lt;Field (SAPRFXPG).xpg_stdincntl_l&gt;, &lt;Field (SAPRFXPG).xpg_padd112&gt;, &lt;Field (SAPRFXPG).xpg_stdincntl_val_len&gt;, &lt;Field (SAPRFXPG).xpg_stdincntl_val&gt;, &lt;Field (SAPRFXPG).xpg_padd113&gt;, &lt;Field (SAPRFXPG).xpg_stdoutcntl_l_len&gt;, &lt;Field (SAPRFXPG).xpg_stdoutcntl_l&gt;, &lt;Field (SAPRFXPG).xpg_padd114&gt;, &lt;Field (SAPRFXPG).xpg_stdoutcntl_val_len&gt;, &lt;Field (SAPRFXPG).xpg_stdoutcntl_val&gt;, &lt;Field (SAPRFXPG).xpg_padd115&gt;, &lt;Field (SAPRFXPG).xpg_termcntl_l_len&gt;, &lt;Field (SAPRFXPG).xpg_termcntl_l&gt;, &lt;Field (SAPRFXPG).xpg_padd116&gt;, &lt;Field (SAPRFXPG).xpg_termcntl_val_len&gt;, &lt;Field (SAPRFXPG).xpg_termcntl_val&gt;, &lt;Field (SAPRFXPG).xpg_padd117&gt;, &lt;Field (SAPRFXPG).xpg_tracecntl_l_len&gt;, &lt;Field (SAPRFXPG).xpg_tracecntl_l&gt;, &lt;Field (SAPRFXPG).xpg_padd118&gt;, &lt;Field (SAPRFXPG).xpg_tracecntl_val_len&gt;, &lt;Field (SAPRFXPG).xpg_tracecntl_val&gt;, &lt;Field (SAPRFXPG).xpg_padd119&gt;, &lt;Field (SAPRFXPG).xpg_log_l_len&gt;, &lt;Field (SAPRFXPG).xpg_log_l&gt;, &lt;Field (SAPRFXPG).xpg_padd120&gt;, &lt;Field (SAPRFXPG).xpg_log_val1_len&gt;, &lt;Field (SAPRFXPG).xpg_log_val1&gt;, &lt;Field (SAPRFXPG).xpg_padd121&gt;, &lt;Field (SAPRFXPG).xpg_unk1_len&gt;, &lt;Field (SAPRFXPG).xpg_unk1&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPRFXPG.fields_desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="class">
+<dt id="pysap.SAPRFC.SAPRFXPG_END">
+<em class="property">class </em><code class="descclassname">pysap.SAPRFC.</code><code class="descname">SAPRFXPG_END</code><a class="reference internal" href="../_modules/pysap/SAPRFC.html#SAPRFXPG_END"><span class="viewcode-link">[source]</span></a><a class="headerlink" href="#pysap.SAPRFC.SAPRFXPG_END" title="Permalink to this definition">¶</a></dt>
+<dd><p>Bases: <a class="reference internal" href="pysap.utils.fields.html#pysap.utils.fields.PacketNoPadded" title="pysap.utils.fields.PacketNoPadded"><code class="xref py py-class docutils literal notranslate"><span class="pre">pysap.utils.fields.PacketNoPadded</span></code></a></p>
+<p>SAP Started program packets SAPRFXPG_END.</p>
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPRFXPG_END.aliastypes">
+<code class="descname">aliastypes</code><em class="property"> = [&lt;class 'pysap.SAPRFC.SAPRFXPG_END'&gt;, &lt;class 'pysap.utils.fields.PacketNoPadded'&gt;, &lt;class 'scapy.packet.Packet'&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPRFXPG_END.aliastypes" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+<dl class="attribute">
+<dt id="pysap.SAPRFC.SAPRFXPG_END.fields_desc">
+<code class="descname">fields_desc</code><em class="property"> = [&lt;Field (SAPRFXPG_END).xpg_end_padd001&gt;, &lt;Field (SAPRFXPG_END).xpg_end_ecode_l_len&gt;, &lt;Field (SAPRFXPG_END).xpg_end_ecode_l&gt;, &lt;Field (SAPRFXPG_END).xpg_end_padd002&gt;, &lt;Field (SAPRFXPG_END).xpg_end_estat_l_len&gt;, &lt;Field (SAPRFXPG_END).xpg_end_estat_l&gt;, &lt;Field (SAPRFXPG_END).xpg_end_padd003&gt;, &lt;Field (SAPRFXPG_END).xpg_end_log_l_len&gt;, &lt;Field (SAPRFXPG_END).xpg_end_log_l&gt;, &lt;Field (SAPRFXPG_END).xpg_end_padd004&gt;, &lt;Field (SAPRFXPG_END).xpg_end_unk1_len&gt;, &lt;Field (SAPRFXPG_END).xpg_end_unk1&gt;, &lt;Field (SAPRFXPG_END).xpg_end_padd005&gt;, &lt;Field (SAPRFXPG_END).xpg_end_unk2_len&gt;, &lt;Field (SAPRFXPG_END).xpg_end_unk2&gt;]</em><a class="headerlink" href="#pysap.SAPRFC.SAPRFXPG_END.fields_desc" title="Permalink to this definition">¶</a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+<dl class="data">
+<dt id="pysap.SAPRFC.appc_protocol_values">
+<code class="descclassname">pysap.SAPRFC.</code><code class="descname">appc_protocol_values</code><em class="property"> = {3: 'CPIC'}</em><a class="headerlink" href="#pysap.SAPRFC.appc_protocol_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>RFC APPC Protocol values</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="pysap.SAPRFC.appc_rc_values">
+<code class="descclassname">pysap.SAPRFC.</code><code class="descname">appc_rc_values</code><em class="property"> = {0: 'CM_OK', 1: 'CM_ALLOCATE_FAILURE_NO_RETRY', 2: 'CM_ALLOCATE_FAILURE_RETRY', 3: 'CM_CONVERSATION_TYPE_MISMATCH', 5: 'CM_PIP_NOT_SPECIFIED_CORRECTLY', 6: 'CM_SECURITY_NOT_VALID', 7: 'CM_SYNC_LVL_NOT_SUPPORTED_SYS', 8: 'CM_SYNC_LVL_NOT_SUPPORTED_PGM', 9: 'CM_TPN_NOT_RECOGNIZED', 10: 'CM_TP_NOT_AVAILABLE_NO_RETRY', 11: 'CM_TP_NOT_AVAILABLE_RETRY', 17: 'CM_DEALLOCATED_ABEND', 18: 'CM_DEALLOCATED_NORMAL', 19: 'CM_PARAMETER_ERROR', 20: 'CM_PRODUCT_SPECIFIC_ERROR', 21: 'CM_PROGRAM_ERROR_NO_TRUNC', 22: 'CM_PROGRAM_ERROR_PURGING', 23: 'CM_PROGRAM_ERROR_TRUNC', 24: 'CM_PROGRAM_PARAMETER_CHECK', 25: 'CM_PROGRAM_STATE_CHECK', 26: 'CM_RESOURCE_FAILURE_NO_RETRY', 27: 'CM_RESOURCE_FAILURE_RERTY', 28: 'CM_UNSUCCESSFUL', 30: 'CM_DEALLOCATED_ABEND_SVC', 31: 'CM_DEALLOCATED_ABEND_TIMER', 32: 'CM_SVC_ERROR_NO_TRUNC', 33: 'CM_SVC_ERROR_PURGING', 34: 'CM_SVC_ERROR_TRUNC', 35: 'CM_OPERATION_INCOMPLETE', 36: 'CM_SYSTEM_EVENT', 37: 'CM_OPERATION_NOT_ACCEPTED', 38: 'CM_CONVERSATION_ENDING', 39: 'CM_SEND_RCV_MODE_NOT_SUPPORTED', 40: 'CM_BUFFER_TOO_SMALL', 41: 'CM_EXP_DATA_NOT_SUPPORTED', 42: 'CM_DEALLOC_CONFIRM_REJECT', 43: 'CM_ALLOCATION_ERROR', 44: 'CM_RETRY_LIMIT_EXCEEDED', 45: 'CM_NO_SECONDARY_INFORMATION', 46: 'CM_SECURITY_NOT_SUPPORTED', 47: 'CM_SECURITY_MUTUAL_FAILED', 48: 'CM_CALL_NOT_SUPPORTED', 49: 'CM_PARM_VALUE_NOT_SUPPORTED', 100: 'CM_TAKE_BACKOUT', 130: 'CM_DEALLOCATED_ABEND_BO', 131: 'CM_DEALLOCATED_ABEND_SVC_BO', 132: 'CM_DEALLOCATED_ABEND_TIMER_BO', 133: 'CM_RESOURCE_FAIL_NO_RETRY_BO', 134: 'CM_RESOURCE_FAILURE_RETRY_BO', 135: 'CM_DEALLOCATED_NORMAL_BO', 136: 'CM_CONV_DEALLOC_AFTER_SYNCPT', 137: 'CM_INCLUDE_PARTNER_REJECT_BO', 10001: 'CM_SAP_TIMEOUT_RETRY', 10002: 'CM_CANCEL_REQUEST'}</em><a class="headerlink" href="#pysap.SAPRFC.appc_rc_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>RFC APPC Return Code values</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="pysap.SAPRFC.cpic_ctypes">
+<code class="descclassname">pysap.SAPRFC.</code><code class="descname">cpic_ctypes</code><em class="property"> = {67: 'R_2', 69: 'STARTED_PRG', 73: 'R_3', 82: 'REGISTRED_PRG'}</em><a class="headerlink" href="#pysap.SAPRFC.cpic_ctypes" title="Permalink to this definition">¶</a></dt>
+<dd><p>RFC CPIC CType values</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="pysap.SAPRFC.cpic_padd">
+<code class="descclassname">pysap.SAPRFC.</code><code class="descname">cpic_padd</code><em class="property"> = {'cpic_RFC_f_padd': '\x00\x0b\x01\x02', 'cpic_cli_nbr1_padd': '\x01\x11\x01\x14', 'cpic_cli_nbr2_padd': '\x00\t\x014', 'cpic_convid_label_padd': '\x016\x05\x02', 'cpic_dest_padd': '\x00\x12\x00\x06', 'cpic_end_padd': '\x01\x04\xff\xff', 'cpic_host_sid_inbr_padd': '\x00\x18\x00\x08', 'cpic_ip_padd': '\x01\x06\x00\x07', 'cpic_ip_padd2': '\x00\x07\x00\x18', 'cpic_kernel1_padd': '\x00\x11\x00\x13', 'cpic_kernel2_padd': '\x00\x13\x00\x12', 'cpic_kernel3_padd': '\x05\x02\x00\x0b', 'cpic_program_padd': '\x00\x06\x010', 'cpic_rfc_type_padd': '\x00\x08\x00\x11', 'cpic_some_params2_padd': '\x011\x05\x14', 'cpic_some_params_0_padd': '\x05\x01', 'cpic_some_params_1_padd': '\x016', 'cpic_start_padd': '\x01\x01\x00\x08', 'cpic_suff_padd': '\x03\x02\x01\x04', 'cpic_th_struct_padd': '\x05\x03\x011', 'cpic_unk00_padd': '\x01\x03\x01\x06', 'cpic_unk01_padd': '\x01\x01\x01\x03', 'cpic_unk02_padd': '\x01\x01\x01\x01', 'cpic_unk1_padd': '\x01\x14\x01\x15', 'cpic_unk2_padd': '\x014\x05\x01', 'cpic_unk4_padd': '\x01\x02\x05\x03', 'cpic_unk6_padd': '\x05\x14\x04 ', 'cpic_unk7_padd': '\x04 \x05\x12', 'cpic_username1_padd': '\x010\x01\x11', 'cpic_username2_padd': '\x01\x15\x00\t'}</em><a class="headerlink" href="#pysap.SAPRFC.cpic_padd" title="Permalink to this definition">¶</a></dt>
+<dd><p>RFC CPIC Padding values</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="pysap.SAPRFC.cpic_suff_padd">
+<code class="descclassname">pysap.SAPRFC.</code><code class="descname">cpic_suff_padd</code><em class="property"> = {'suff_padd1': '\x10\x04\x02', 'suff_padd10': '\x10\x04\x1d', 'suff_padd10k': '\x10\x04\t', 'suff_padd11': '\x10\x04\x1f', 'suff_padd12': '\x10\x04 ', 'suff_padd13': '\x10\x04!', 'suff_padd14': '\x10\x04$', 'suff_padd15': '\x10\x04$', 'suff_padd2': '\x10\x04\x0b', 'suff_padd3': '\x10\x04\x04', 'suff_padd4': '\x10\x04\r', 'suff_padd5': '\x10\x04\x16', 'suff_padd6': '\x10\x04\x17', 'suff_padd7': '\x10\x04\x19', 'suff_padd8': '\x10\x04\x1e', 'suff_padd9': '\x10\x04%'}</em><a class="headerlink" href="#pysap.SAPRFC.cpic_suff_padd" title="Permalink to this definition">¶</a></dt>
+<dd><p>RFC CPIC Stuff Padding values</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="pysap.SAPRFC.rfc_func_type_values">
+<code class="descclassname">pysap.SAPRFC.</code><code class="descname">rfc_func_type_values</code><em class="property"> = {0: 'F_NO_REQUEST', 1: 'F_INITIALIZE_CONVERSATION', 3: 'F_ACCEPT_CONVERSATION', 5: 'F_ALLOCATE', 7: 'F_SEND_DATA', 8: 'F_ASEND_DATA', 9: 'F_RECEIVE', 10: 'F_ARECEIVE', 11: 'F_DEALLOCATE', 13: 'F_SET_TP_NAME', 15: 'F_SET_PARTNER_LU_NAME', 17: 'F_SET_SECURITY_PASSWORD', 19: 'F_SET_SECURITY_USER_ID', 21: 'F_SET_SECURITY_TYPE', 23: 'F_SET_CONVERSATION_TYPE', 25: 'F_EXTRACT_TP_NAME', 27: 'F_FLUSH', 201: 'F_SAP_ALLOCATE', 202: 'F_SAP_INIT', 203: 'F_SAP_SEND', 204: 'F_ASAP_SEND', 205: 'F_SAP_SYNC', 206: 'F_SAP_PING', 207: 'F_SAP_REGTP', 208: 'F_SAP_UNREGTP', 209: 'F_SAP_ACCPTP', 210: 'F_SAP_UNACCPTP', 211: 'F_SAP_CANCTP', 212: 'F_SAP_SET_UID', 213: 'F_SAP_CANCEL', 214: 'F_SAP_CANCELED', 215: 'F_SAP_STOP_STREAMING', 216: 'F_SAP_CONT_STREAMING'}</em><a class="headerlink" href="#pysap.SAPRFC.rfc_func_type_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>RFC Request Type values</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="pysap.SAPRFC.rfc_monitor_cmd_values">
+<code class="descclassname">pysap.SAPRFC.</code><code class="descname">rfc_monitor_cmd_values</code><em class="property"> = {1: 'NOOP', 2: 'DELETE_CONN', 3: 'CANCEL_CONN', 4: 'RST_SINGLE_ERR_CNT', 5: 'RST_ALL_ERR_CNT', 6: 'INCREASE_TRACE', 7: 'DECREASE_TRACE', 8: 'READ_SEC_INFO', 9: 'REFRESH_SEC_INFO', 10: 'READ_GWSYS_TBL', 11: 'READ_CONN_TBL', 12: 'READ_PROC_TBL', 13: 'READ_CONN_ATTR', 14: 'READ_MEMORY', 15: 'READ_REQ_BLK', 16: 'ACT_STATISTIC', 17: 'DEACT_STATISTIC', 18: 'READ_STATISTIC', 19: 'RESET_STATISTIC', 20: 'READ_PARAMETER', 25: 'DUMP_NIBUFFER', 32: 'RESET_NIBUFFER', 33: 'ACT_EXTPGM_TRACE', 34: 'DEACT_EXTPGM_TRACE', 35: 'ACT_CONN_TRACE', 36: 'DEACT_CONN_TRACE', 37: 'RESET_TRACE', 38: 'SUICIDE', 39: 'READ_SEC_INFO2', 40: 'CANCEL_REG_TP', 41: 'DUMP', 42: 'READ_GWSYS_TBL2', 43: 'CHANGE_PARAMETER', 44: 'GET_CONN_PARTNER', 45: 'DELETE_CLIENT', 46: 'DELETE_REMGW', 47: 'DISCONNECT', 48: 'ENABLE_RESTART', 49: 'DISABLE_RESTART', 50: 'NI_TRACE', 51: 'CLI_INFO', 52: 'GW_INFO', 53: 'CONVID_INFO', 54: 'GET_NO_REG_TP', 55: 'CV_INFO', 56: 'SO_KEEPALIVE', 57: 'READ_CONN_TBL2', 64: 'READ_GWSYS_TBL3', 65: 'RELOAD_ACL'}</em><a class="headerlink" href="#pysap.SAPRFC.rfc_monitor_cmd_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>RFC Monitor Command values</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="pysap.SAPRFC.rfc_rfc_types">
+<code class="descclassname">pysap.SAPRFC.</code><code class="descname">rfc_rfc_types</code><em class="property"> = {50: 'R_2_CONN', 51: 'ABAP_CONN', 73: 'INTERNAL_CONN', 76: 'LOGIC_CONN', 77: 'CMC_CONN', 83: 'SNA_CPIC_CONN', 84: 'TCP_CONN', 88: 'ABAP_DRIVER_CONN'}</em><a class="headerlink" href="#pysap.SAPRFC.rfc_rfc_types" title="Permalink to this definition">¶</a></dt>
+<dd><p>RFC Type values</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="pysap.SAPRFC.rfc_start_type">
+<code class="descclassname">pysap.SAPRFC.</code><code class="descname">rfc_start_type</code><em class="property"> = {0: 'DEFAULT', 1: 'REMOTE_SHELL', 2: 'REXEC', 3: 'DISABLED', 4: 'SECURE_SHELL'}</em><a class="headerlink" href="#pysap.SAPRFC.rfc_start_type" title="Permalink to this definition">¶</a></dt>
+<dd><p>RFC Start Type values</p>
+</dd></dl>
+
+<dl class="data">
+<dt id="pysap.SAPRFC.sap_rc_values">
+<code class="descclassname">pysap.SAPRFC.</code><code class="descname">sap_rc_values</code><em class="property"> = {}</em><a class="headerlink" href="#pysap.SAPRFC.sap_rc_values" title="Permalink to this definition">¶</a></dt>
+<dd><p>RFC Return Code values</p>
+</dd></dl>
+
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">pysap</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">User guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../protocols/index.html">Protocols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fileformats/index.html">File formats</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../examples/index.html">Example scripts</a></li>
+</ul>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../dev/index.html">Development</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Developer Interface</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="pysap.html">pysap package</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="pysap.html#pysap">pysap</a></li>
+<li class="toctree-l3"><a class="reference internal" href="pysap.html#subpackages">Subpackages</a></li>
+<li class="toctree-l3 current"><a class="reference internal" href="pysap.html#submodules">Submodules</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="pysapcompress.html">pysapcompress library</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Developer Interface</a><ul>
+  <li><a href="pysap.html">pysap package</a><ul>
+      <li>Previous: <a href="pysap.SAPPSE.html" title="previous chapter">pysap.SAPPSE module</a></li>
+      <li>Next: <a href="pysap.SAPRouter.html" title="next chapter">pysap.SAPRouter module</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;SECUREAUTH LABS. Copyright (C) 2019 SecureAuth Corporation. All rights reserved..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.9</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/api/pysap.SAPRFC.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

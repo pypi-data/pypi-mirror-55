@@ -1,0 +1,150 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Enqueue Example scripts &#8212; pysap 0.1.17 documentation</title>
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script type="text/javascript" id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Gateway Example scripts" href="gw.html" />
+    <link rel="prev" title="Download Manager scripts" href="dlmanager.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="enqueue-example-scripts">
+<h1>Enqueue Example scripts<a class="headerlink" href="#enqueue-example-scripts" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="enqueue-dos-exploit">
+<h2><code class="docutils literal notranslate"><span class="pre">enqueue_dos_exploit</span></code><a class="headerlink" href="#enqueue-dos-exploit" title="Permalink to this headline">¶</a></h2>
+<p>This example script can be used to tests against a Denial of Service vulnerability affecting
+the Enqueue service (<a class="reference external" href="https://cve.mitre.org/cgi-bin/cvename.cgi?name=2016-4015">CVE-2016-4015</a>).
+For more details about the vulnerability see
+<a class="reference external" href="https://erpscan.com/advisories/erpscan-16-019-sap-netweaver-enqueue-server-dos-vulnerability/">ERPScan’s Security Advisory</a>.</p>
+<p>This example script was contributed by <a class="reference external" href="https://github.com/vah13">Vahagn Vardanyan</a>.</p>
+</div>
+<div class="section" id="enqueue-monitor">
+<h2><code class="docutils literal notranslate"><span class="pre">enqueue_monitor</span></code><a class="headerlink" href="#enqueue-monitor" title="Permalink to this headline">¶</a></h2>
+<p>This script is an example implementation of SAP’s Enqueue Server Monitor program (<code class="docutils literal notranslate"><span class="pre">ens_mon</span></code>).
+It allows the monitoring of a Enqueue Server service and allows sending different admin commands
+and opcodes. Includes some commands not available on the <code class="docutils literal notranslate"><span class="pre">ensmon</span></code> program.</p>
+<p>The script implements a console-like interface that can be used to specify the operations to
+perform on the Enqueue Server. A list of implemented commands can be obtained by running <code class="docutils literal notranslate"><span class="pre">help</span></code>.</p>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">pysap</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../user/index.html">User guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../protocols/index.html">Protocols</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../fileformats/index.html">File formats</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Example scripts</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="diag.html">Diag Example scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="dlmanager.html">Download Manager scripts</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Enqueue Example scripts</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#enqueue-dos-exploit"><code class="docutils literal notranslate"><span class="pre">enqueue_dos_exploit</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#enqueue-monitor"><code class="docutils literal notranslate"><span class="pre">enqueue_monitor</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="gw.html">Gateway Example scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="igs.html">Internet Graphic Service Example scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="message_server.html">Message Server Example scripts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="router.html">Router Example scripts</a></li>
+</ul>
+</li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../dev/index.html">Development</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../api/index.html">Developer Interface</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+  <li><a href="index.html">Example scripts</a><ul>
+      <li>Previous: <a href="dlmanager.html" title="previous chapter">Download Manager scripts</a></li>
+      <li>Next: <a href="gw.html" title="next chapter">Gateway Example scripts</a></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3>Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" />
+      <input type="submit" value="Go" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+    </div>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;SECUREAUTH LABS. Copyright (C) 2019 SecureAuth Corporation. All rights reserved..
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 1.7.9</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/examples/enqueue.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
