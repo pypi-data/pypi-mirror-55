@@ -1,0 +1,128 @@
+{
+  "_args": [
+    [
+      "@material-ui/lab@^4.0.0-alpha.27",
+      "/home/gabe/src/point-label-sharing/frontend"
+    ]
+  ],
+  "_from": "@material-ui/lab@>=4.0.0-alpha.27 <5.0.0",
+  "_hasShrinkwrap": false,
+  "_id": "@material-ui/lab@4.0.0-alpha.31",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/@material-ui/lab",
+  "_nodeVersion": "12.12.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/lab_4.0.0-alpha.31_1572972118382_0.5859424219585423"
+  },
+  "_npmUser": {
+    "email": "olivier.tassinari@gmail.com",
+    "name": "oliviertassinari"
+  },
+  "_npmVersion": "6.11.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "@material-ui/lab",
+    "raw": "@material-ui/lab@^4.0.0-alpha.27",
+    "rawSpec": "^4.0.0-alpha.27",
+    "scope": "@material-ui",
+    "spec": ">=4.0.0-alpha.27 <5.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@material-ui/lab/-/lab-4.0.0-alpha.31.tgz",
+  "_shasum": "d566678bd1a9ac969d515145b3b1a2fef4a16a26",
+  "_shrinkwrap": null,
+  "_spec": "@material-ui/lab@^4.0.0-alpha.27",
+  "_where": "/home/gabe/src/point-label-sharing/frontend",
+  "author": {
+    "name": "Material-UI Team"
+  },
+  "bugs": {
+    "url": "https://github.com/mui-org/material-ui/issues"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.4",
+    "@material-ui/utils": "^4.5.2",
+    "clsx": "^1.0.4",
+    "prop-types": "^15.7.2"
+  },
+  "description": "Material-UI Lab - Incubator for Material-UI React components.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "fileCount": 128,
+    "integrity": "sha512-sn9G2llXVMFbgIqkHvoYLMh5Z4Ea8O1qrecxvQEBs1aWs/0X1GOs8jpX+QkSs6MHvMQXijPmXNH5KVabS2aDUQ==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdwaZWCRA9TVsSAnZWagAAXusP/A409DjrplkEmJ31P0RC\np09D1q8IzylSURGVdpGEtW0MDo7guboIIiaa9lNwoRvIX4Pyj94QdG6UO/Y6\nw4shkBhifaJfIlD2Gm7vlzdiEJ+nwZ8gqIzJ1el58Z7rlQr4pkcKb9/tCzBA\nv+LlwYgwwcXXObk0acPKJ6+0b9kk6G4MTiroFuusn1+FRTIklRnOqD5/19WR\nr0CnhkRk4flTVqtiy+p3EbtJck+FDSv5iYktd4Sf9B34dUy11xajcM3vvvb+\nJXi/4ZgMHYUdKe+cleagd27LzB8WeC2i2F4aF53XMZtiOKwHVipwJO5ei9HP\nrxzOaVFvMxPsDF0BH3XmDJMA4ZnAk+bJUxAHnznAacsAbqPBDopwVQB3mWCR\n3GZos49ZTgBxtsvqqdSOgYWoJvxEqY96eCwMD75OMNnCdPkAwCtM05a+TLSC\np7l3jU6AQ4ijc+a4NM16NHtnB5QstAa9uJO61BnSS5pre4NyqR/iSxf3XPQD\nNTkKwCqn3nHdO7dhZ8rRBELEpnRM+cSfcAIB3nKP3hVbfN3ZuGwjmq3odaap\nrmdmcUx5//TvOTqQvEqp4otc4mxie/CQDzNfPiB01VdFRRhpbG+XnJhbksSK\nJlcyJvrOFrSwNjyk5y7CDYaJbUBa2rEIKjllRbbCmgyNYTXDuzOmHWdsoD9z\ny8GK\r\n=a2vV\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "d566678bd1a9ac969d515145b3b1a2fef4a16a26",
+    "tarball": "https://registry.npmjs.org/@material-ui/lab/-/lab-4.0.0-alpha.31.tgz",
+    "unpackedSize": 890857
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "homepage": "https://github.com/mui-org/material-ui/next/master/packages/material-ui-lab",
+  "keywords": [
+    "lab",
+    "material design",
+    "material-ui",
+    "react",
+    "react-component"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "maintainers": [
+    {
+      "name": "eps1lon",
+      "email": "silbermann.sebastian@gmail.com"
+    },
+    {
+      "name": "hai-cea",
+      "email": "hai@call-em-all.com"
+    },
+    {
+      "name": "joshwooding",
+      "email": "joshwooding.npm@gmail.com"
+    },
+    {
+      "name": "kof",
+      "email": "oleg008@gmail.com"
+    },
+    {
+      "name": "mbrookes",
+      "email": "npm@nospam.33m.co"
+    },
+    {
+      "name": "oliviertassinari",
+      "email": "olivier.tassinari@gmail.com"
+    },
+    {
+      "name": "rosskevin",
+      "email": "kevin.ross@alienfast.com"
+    }
+  ],
+  "module": "./esm/index.js",
+  "name": "@material-ui/lab",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "@material-ui/core": "^4.5.2",
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "directory": "packages/material-ui-lab",
+    "type": "git",
+    "url": "git+https://github.com/mui-org/material-ui.git"
+  },
+  "sideEffects": false,
+  "typings": "./index.d.ts",
+  "version": "4.0.0-alpha.31"
+}

@@ -1,0 +1,103 @@
+{
+  "_args": [
+    [
+      "@babel/plugin-transform-typescript@^7.6.0",
+      "/home/gabe/src/point-label-sharing/frontend/node_modules/@babel/preset-typescript"
+    ]
+  ],
+  "_from": "@babel/plugin-transform-typescript@>=7.6.0 <8.0.0",
+  "_hasShrinkwrap": false,
+  "_id": "@babel/plugin-transform-typescript@7.7.0",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/@babel/plugin-transform-typescript",
+  "_nodeVersion": "13.0.1",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/plugin-transform-typescript_7.7.0_1572951248420_0.5096740989664812"
+  },
+  "_npmUser": {
+    "email": "nicolo.ribaudo@gmail.com",
+    "name": "nicolo-ribaudo"
+  },
+  "_npmVersion": "lerna/3.16.4/node@v13.0.1+x64 (linux)",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "@babel/plugin-transform-typescript",
+    "raw": "@babel/plugin-transform-typescript@^7.6.0",
+    "rawSpec": "^7.6.0",
+    "scope": "@babel",
+    "spec": ">=7.6.0 <8.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/@babel/preset-typescript"
+  ],
+  "_resolved": "https://registry.npmjs.org/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.7.0.tgz",
+  "_shasum": "182be03fa8bd2ffd0629791a1eaa4373b7589d38",
+  "_shrinkwrap": null,
+  "_spec": "@babel/plugin-transform-typescript@^7.6.0",
+  "_where": "/home/gabe/src/point-label-sharing/frontend/node_modules/@babel/preset-typescript",
+  "dependencies": {
+    "@babel/helper-create-class-features-plugin": "^7.7.0",
+    "@babel/helper-plugin-utils": "^7.0.0",
+    "@babel/plugin-syntax-typescript": "^7.2.0"
+  },
+  "description": "Transform TypeScript into ES.next",
+  "devDependencies": {
+    "@babel/core": "^7.7.0",
+    "@babel/helper-plugin-test-runner": "^7.0.0"
+  },
+  "directories": {},
+  "dist": {
+    "fileCount": 6,
+    "integrity": "sha512-y3KYbcfKe+8ziRXiGhhnGrVysDBo5+aJdB+x8sanM0K41cnmK7Q5vBlQLMbOnW/HPjLG9bg7dLgYDQZZG9T09g==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdwVTQCRA9TVsSAnZWagAAun0P/2hcuCgNSRZkTS8y4hfO\nxm90YiZg8gaYJyOnLk8QAXMOVVa3XwR7Lfpd0Et44AwL5cM/4iYhwCbm46LL\nvKZDNkEOCL9OTo48jbLJXD+9UQ83TMFvXlM6gjJ07EjMRGTbVRQI5DZILQDb\nQi5yBB74R3xgSmzog23QCpEcPLLWonxy2NwtA4+4t65ii+3gSor6j2bL2Ykr\n6bYOQnFEU2+MB+juF2LLLphvVpZiETBiKlBICFKAYIkhpYLvFWJ5j/i7HeO7\ncF43lNS3RJYMglLArwZW9vpYy+ogvFciz7emC6HThtqTGlflGFZPcy1Obuyb\nmlICDpqEApJRaSrm5181E8DxuqZ6xKvUQhJYK6eNSrv8xc4wcgeihvTlWkHw\nzLQN0psRWemXoHAPNQvoZNO4FZ/LJP87OsMsREnko20TxSWJ8FiPFPIf3ON0\nQ9P7FxGWac+B0BJ0JRPbfdnzKs5ApaOaXCl1nXEm9jLym5ExWkSea4Gr6QLy\nn/eq1WENlj6Kb8HeevKK98kbj1wnhVlTvctKSqcEYhTIfPsJkJwp48gtNt12\n89stgU2Uoywellv3DWc7EaBuIwZTgU6Or4B9ScHRtoQ7fp+mZJOSOCVc/lFR\ncY5xp/YPptT2w4zEkniam8NOA7s3i6dcmsB03uk03e3+ZVzfh210wITsGEHf\ngfKj\r\n=qF1n\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "182be03fa8bd2ffd0629791a1eaa4373b7589d38",
+    "tarball": "https://registry.npmjs.org/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.7.0.tgz",
+    "unpackedSize": 23273
+  },
+  "gitHead": "97faa83953cb87e332554fa559a4956d202343ea",
+  "keywords": [
+    "babel-plugin",
+    "typescript"
+  ],
+  "license": "MIT",
+  "main": "lib/index.js",
+  "maintainers": [
+    {
+      "name": "danez",
+      "email": "daniel@tschinder.de"
+    },
+    {
+      "name": "existentialism",
+      "email": "bng412@gmail.com"
+    },
+    {
+      "name": "hzoo",
+      "email": "hi@henryzoo.com"
+    },
+    {
+      "name": "loganfsmyth",
+      "email": "loganfsmyth@gmail.com"
+    },
+    {
+      "name": "nicolo-ribaudo",
+      "email": "nicolo.ribaudo@gmail.com"
+    }
+  ],
+  "name": "@babel/plugin-transform-typescript",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "@babel/core": "^7.0.0-0"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/babel/babel/tree/master/packages/babel-plugin-transform-typescript"
+  },
+  "version": "7.7.0"
+}
