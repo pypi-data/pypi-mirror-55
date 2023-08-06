@@ -1,0 +1,5 @@
+[console_scripts]
+pibooth = pibooth.booth:main
+pibooth-diag = pibooth.scripts.diagnostic:main
+pibooth-regen = pibooth.scripts.regenerate:main
+
