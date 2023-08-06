@@ -1,0 +1,11 @@
+ckanext_heroku-0.5.0-py2.7-nspkg.pth,sha256=VaH--vNo0_vzXvZAeqyq-Bg6m47pBBRlxwvBj0KQxe0,544
+ckanext/heroku/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ckanext/heroku/plugin.py,sha256=lVW5jDvb5jhXXrC4NPS7ER6mv13j1JS5_Qh9dz4FJUo,1186
+ckanext/heroku/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ckanext/heroku/tests/test_plugin.py,sha256=DomAdr6I1AK0gkbmx6b-d8wCW1oVYpARqBcy5mwrIyw,96
+ckanext_heroku-0.5.0.dist-info/METADATA,sha256=I07kI3eL-5I1lhIWantm8MWYz0nR3oKxcdewDTpFoys,5282
+ckanext_heroku-0.5.0.dist-info/RECORD,,
+ckanext_heroku-0.5.0.dist-info/WHEEL,sha256=gduuPyBvFJQSQ0zdyxF7k0zynDXbIbvg5ZBHoXum5uk,110
+ckanext_heroku-0.5.0.dist-info/entry_points.txt,sha256=ycvKiNIHlRPBcw1Zc886OjwRKiJlX8J_bkS6TRHN5Ko,151
+ckanext_heroku-0.5.0.dist-info/namespace_packages.txt,sha256=5yjNwq-s42weaiMMUuA5lZ45g99ANsfcRBCvac1JMS4,8
+ckanext_heroku-0.5.0.dist-info/top_level.txt,sha256=5yjNwq-s42weaiMMUuA5lZ45g99ANsfcRBCvac1JMS4,8
