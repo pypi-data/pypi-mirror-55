@@ -1,0 +1,8 @@
+README.md
+setup.py
+ids_lib/__init__.py
+ids_lib.egg-info/PKG-INFO
+ids_lib.egg-info/SOURCES.txt
+ids_lib.egg-info/dependency_links.txt
+ids_lib.egg-info/requires.txt
+ids_lib.egg-info/top_level.txt
