@@ -1,0 +1,255 @@
+.main-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    background-color: #070707;
+}
+
+.cv-download-container {
+    display: inline-block;
+    cursor: pointer;
+    user-select: none;
+}
+
+.cv-download {
+    display: inline-block;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 25px;
+    color: black;
+    background-color: whitesmoke;
+}
+
+.cv-download-label {
+    display: inline-block;
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px; 
+}
+
+.side-bar {
+    height: 100%;
+    background-color: black;
+    flex:1;
+    background-image: linear-gradient(
+        90deg,
+        rgba(10, 10, 10, 0.3),
+        rgb(10, 10, 10, 1)
+      ),
+      url("{{ data.config.side_background }}");
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.no-highlight {
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.side-bar-content {
+    text-align: center;
+}
+
+.username {
+    color: white;
+    font-size: 140%;
+    margin: 15px;
+    margin-left: 0px !important;
+    font-family: "Poppins";
+    display: inline-block;
+}
+
+
+.repo-container {
+    flex:3;
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background-color: black;
+}
+
+.owner-repo-container {
+    flex: 1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(min-content, max-content);
+    margin: 35px;
+    
+}
+
+.repo-details {
+    border: 1px solid black;
+    font-family: "Poppins", sans-serif;
+    display: grid;
+    grid-template-rows: 1fr 1fr 0.5fr;
+    margin: 15px;
+    background-color: #161616;
+    color: white;
+    border-radius: 10px;
+    transform: scale(1);
+    word-break: break-word;
+}
+
+.social-icon {
+    background-color: white;
+    color: black;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+}
+
+
+.owner-repo-container :hover{
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+.repo-details :hover{
+    transform: scale(1);
+}
+
+.avatar-container {
+    transform: scale(1);
+}
+
+.avatar-container :hover{
+    transform: scale(1.1);
+}
+
+.repo-header {
+    font-size: 200%;
+    font-weight: bold;
+    padding: 15px;
+    padding-left: 25px;
+    color: lightcyan;
+}
+
+.repo-desc {
+    font-size: 110%;
+    font-weight: 100;
+    padding: 15px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-family: 'Roboto', sans-serif;
+}
+
+@media (max-width: 1000px) {
+    .owner-repo-container {
+        grid-template-columns: 1fr;
+    }
+
+    .repo-container-header {
+        text-align: center;
+    }
+
+    .repo-header {
+        text-align: center;
+    }
+
+    .side-bar {
+        flex: 1;
+    }
+
+    .repo-container {
+        flex: 1.5;
+    }
+}
+
+.repo-stat-individual {
+    padding: 10px
+}
+
+.repo-container-header {
+    color: whitesmoke;
+    font-size: 300%;
+    font-weight: bolder;
+    margin-top: 7%;
+    font-family: 'Oswald', "Poppins", sans-serif;
+    margin-left: 25px;
+}
+
+.repo-language {
+    color: lightblue;
+}
+
+.repo-forks {
+    color: lightgreen;
+}
+
+.repo-stars {
+    color: lightgoldenrodyellow;
+}
+
+.repo-stats {
+    display: flex;
+    flex-direction: row;
+}
+
+.avatar {
+    border-radius: 50%;
+    max-width: 150px;
+    max-height: 150px;
+}
+
+@media (max-width: 750px) {
+    .main-container {
+        flex-direction: column;
+    }
+
+    .repo-header{
+        font-size: 150%;
+    }
+
+
+    .side-bar {
+        flex: 3;
+        background-image: linear-gradient(
+            180deg,
+            rgba(10, 10, 10, 0.3),
+            rgb(10, 10, 10, 1)
+          ),
+          url("{{ data.config.side_background }}");
+    }
+
+    .repo-container {
+        overflow: unset;
+    }
+
+    .owner-repo-container {
+        margin: 5px;
+    }
+
+    .repo-container-header {
+        margin-left: 0px;
+    }
+
+    .side-bar-content {
+        margin-top: 15%;
+    }
+    
+}
