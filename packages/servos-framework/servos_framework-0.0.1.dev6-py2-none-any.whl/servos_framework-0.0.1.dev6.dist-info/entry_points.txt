@@ -1,0 +1,3 @@
+[console_scripts]
+servos = servos.manage:main
+

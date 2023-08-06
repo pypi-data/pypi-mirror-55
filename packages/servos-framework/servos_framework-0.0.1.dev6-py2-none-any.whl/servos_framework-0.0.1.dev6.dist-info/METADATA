@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: servos-framework
+Version: 0.0.1.dev6
+Summary: Pure-Python SM2/SM3/SM4 implementation
+Home-page: https://github.com/knitmesh/gmssl
+Author: jingh
+Author-email: jingh.lib@gmail.com
+License: BSD
+Platform: all platform
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2.7
+Requires-Dist: pbr (>=1.8)
+Requires-Dist: Babel (>=2.3)
+Requires-Dist: six (>=1.9.0)
+Requires-Dist: i18n (==0.2)
+Requires-Dist: jsonpath-rw-ext (==1.0.0)
+Requires-Dist: pylibmc (==1.5.1)
+Requires-Dist: oslo.service (==1.16.0)
+Requires-Dist: oslo.messaging (==5.10.0)
+
+False
+
+
