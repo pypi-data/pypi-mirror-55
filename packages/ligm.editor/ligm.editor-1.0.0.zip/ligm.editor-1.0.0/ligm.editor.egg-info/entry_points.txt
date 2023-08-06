@@ -1,0 +1,3 @@
+[console_scripts]
+ligm.editor = ligm.demos.editor:Main.start
+
