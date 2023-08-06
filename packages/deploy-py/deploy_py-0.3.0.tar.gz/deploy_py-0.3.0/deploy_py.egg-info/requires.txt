@@ -1,0 +1,10 @@
+bumpv==0.3.0
+Click>=6.0
+docker==4.0.2
+Jinja2==2.10.1
+pykube-ng[gcp]==19.9.2
+pyaml==19.4.1
+pyhelm
+requests==2.22.0
+google-cloud-storage==1.20.0
+pytz
