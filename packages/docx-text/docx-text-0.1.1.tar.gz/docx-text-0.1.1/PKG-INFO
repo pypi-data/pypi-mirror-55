@@ -1,0 +1,58 @@
+Metadata-Version: 2.1
+Name: docx-text
+Version: 0.1.1
+Summary: A python module for converting docx files from SharePoint, One Drive to text
+Home-page: https://github.com/shubhamdipt/docx-text
+Author: Shubham Dipt
+Author-email: shubham.dipt@gmail.com
+License: MIT License
+
+Copyright (c) 2019 Dr. Shubham Dipt
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Description: # docx-text
+        
+        Converts docx file from Sharepoint, One drive as well as individual files to text format.
+        
+        
+        ## Installation
+        
+            $pip install docx-text
+        
+        ## Dependencies
+        
+          - Python3
+          
+        ## Usage
+        
+            >>>import doctext
+            >>>doc_text = doctext.DocFile(url=download_url_of_file)
+            >>>text = doc_text.get_text()
+            # or you may directly enter the path to docs file.
+            >>>doc_text = doctext.DocFile(doc=path_to_docx_file)
+        
+        
+        Adapted from https://github.com/ankushshah89/python-docx2txt
+        
+Platform: any
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
