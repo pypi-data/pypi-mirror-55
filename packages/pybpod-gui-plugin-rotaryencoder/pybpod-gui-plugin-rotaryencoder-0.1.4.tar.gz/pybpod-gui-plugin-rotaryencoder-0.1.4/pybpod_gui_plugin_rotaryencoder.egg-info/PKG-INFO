@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: pybpod-gui-plugin-rotaryencoder
+Version: 0.1.4
+Summary: PyBpod rotary encoder module controller
+Home-page: https://github.com/pybpod/pybpod-gui-plugin-rotaryencoder
+Author: ['Ricardo Ribeiro', 'Luís Teixeira']
+Author-email: ricardojvr@gmail.com, micboucinha@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
