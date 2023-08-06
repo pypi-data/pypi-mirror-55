@@ -1,0 +1,10 @@
+pycbc
+numpy
+scipy
+gwpy
+matplotlib
+astropy
+ligo-gracedb
+lalsuite
+pesummary
+tqdm

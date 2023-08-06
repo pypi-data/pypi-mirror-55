@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: varaha
+Version: 0.0.1
+Summary: A Fast Non-Markovian Parameter Sampler for Coalescing Compact Binaries
+Home-page: https://git.ligo.org/charlie.hoy/varaha
+Author: Vaibhav Tiwari, Charlie Hoy, Stephen Fairhurst
+Author-email: vaibhav.tiwari@ligo.org, charlie.hoy@ligo.org, stephen.fairhurst@ligo.org
+License: MIT
+Download-URL: https://git.ligo.org/charlie.hoy/varaha
+Description: # varaha
+        
+        [![Pipeline Status](https://git.ligo.org/charlie.hoy/varaha/badges/master/pipeline.svg)](https://git.ligo.org/lscsoft/pesummary/commits/master)
+        
+        This package provides the user with a fast non-Markovian parameter sampler for coalescing compact binaries.
+        
+         * [Installation instructions](https://docs.ligo.org/charlie.hoy/varaha/installation.html)
+         * [Documentation](https://docs.ligo.org/charlie.hoy/varaha)
+         * [Issue Tracker](https://git.ligo.org/charlie.hoy/varaha/issues)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown

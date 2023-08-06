@@ -1,0 +1,3 @@
+[console_scripts]
+varaha_pipe = varaha.bin.fast_pe:main
+
