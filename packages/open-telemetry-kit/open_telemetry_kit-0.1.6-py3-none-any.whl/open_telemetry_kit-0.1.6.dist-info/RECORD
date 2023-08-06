@@ -1,0 +1,17 @@
+open_telemetry_kit/__init__.py,sha256=Xzr9Z9HrMQ1mImHIR4Fc64tl02M851fytL-LIJS_x-E,187
+open_telemetry_kit/csvparser.py,sha256=Uyy0Bivz-zID8j9m7TsLSArMEA0ursCNvurzbwxVjY0,2075
+open_telemetry_kit/detector.py,sha256=pf2nDmP2utHwbvDdIMuxvERGNKl4BtuZn0sEpoFPSMk,2585
+open_telemetry_kit/element.py,sha256=1EGwXH7WOMWK9dQKPiKCMSYADIT6J2LQQxt425uGPqU,12630
+open_telemetry_kit/elementdict.py,sha256=YOgyYjsYGqVVA4rDHWLVrqx-Ij0HZ2Uf2fEnYOfZsXQ,3517
+open_telemetry_kit/gpxparser.py,sha256=j822WCv1B09TvMtQX8cQi4MgQnExaRac8MoLo14PQ6A,2672
+open_telemetry_kit/kmlparser.py,sha256=D5nnz6o0IjspSXAwMG2s4gUq6f-FoRi5eUwMXHcVLMo,3463
+open_telemetry_kit/packet.py,sha256=q7Cxn-c_Go9U0mxQHO8gtzN-Bw06TpbaIHY94KUp5d0,294
+open_telemetry_kit/parser.py,sha256=kxtKUKjJIdQ-lrBmvBf3XkO-ZdP-3gy866Mp1KWE_tY,864
+open_telemetry_kit/srtparser.py,sha256=2nZe1PSUKcjtIr5k-Xzvv-ez66SkrcWdz_j86cvLtvw,8349
+open_telemetry_kit/telemetry.py,sha256=w0I2Eas2AnK4dTdtrHsVbRsMp_0PKT9iaJkS3VG_3Qo,360
+open_telemetry_kit/writers.py,sha256=SSmXyYKryGnVd4Ozi21IQhyadkqyQ7AfG4nSYxTbChU,405
+open_telemetry_kit-0.1.6.dist-info/LICENSE,sha256=13Lrch2wvrHU-Fh4nZdrwN2szG_r46gsnBovwLzCEEM,1522
+open_telemetry_kit-0.1.6.dist-info/METADATA,sha256=njYYo9hkmnKahR02YtGJ1BIR49sDvHevignd3TupvuA,4168
+open_telemetry_kit-0.1.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+open_telemetry_kit-0.1.6.dist-info/top_level.txt,sha256=S_Sjccr4BbHQA-dHBX387Dp0D3CddAGxvrgsZg-H3j8,19
+open_telemetry_kit-0.1.6.dist-info/RECORD,,
