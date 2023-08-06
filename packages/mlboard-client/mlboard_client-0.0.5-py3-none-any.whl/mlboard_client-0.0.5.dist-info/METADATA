@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: mlboard-client
+Version: 0.0.5
+Summary: TODO
+Home-page: UNKNOWN
+Author: Xinyuan Yao
+Author-email: yao.ntno@google.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: cytoolz
+Requires-Dist: uvicorn
+Requires-Dist: fastapi
+Requires-Dist: pyyaml
+Requires-Dist: asyncpg
+Requires-Dist: ujson
+Provides-Extra: dev
+Requires-Dist: requests ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-mock ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: faker ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: autopep8 ; extra == 'dev'
+Requires-Dist: pytest-asyncio ; extra == 'dev'
+Requires-Dist: profilehooks ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pytest-mypy ; extra == 'dev'
+Requires-Dist: typing-extensions ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+
+UNKNOWN
+
+
