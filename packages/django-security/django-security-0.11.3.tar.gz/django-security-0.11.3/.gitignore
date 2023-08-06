@@ -1,0 +1,20 @@
+# python compiled files
+*.pyc
+*.pyo
+
+# back up files from VIM / Emacs
+*~
+*.swp
+
+# ignore setup.py build dir
+build/
+
+# ignore sphinx built documentation
+_build/
+
+# ignore tox files
+.tox/
+
+# ignore coverage files
+.coverage
+htmlcov/
