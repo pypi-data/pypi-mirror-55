@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+gitbatch/__init__.py
+gitbatch/__main__.py
+gitbatch/config.py
+gitbatch/gitbatch.py
+gitbatch/parallel.py
+gitbatch/repos.py
+gitbatch/tasks.py
+gitbatch.egg-info/PKG-INFO
+gitbatch.egg-info/SOURCES.txt
+gitbatch.egg-info/dependency_links.txt
+gitbatch.egg-info/entry_points.txt
+gitbatch.egg-info/requires.txt
+gitbatch.egg-info/top_level.txt
