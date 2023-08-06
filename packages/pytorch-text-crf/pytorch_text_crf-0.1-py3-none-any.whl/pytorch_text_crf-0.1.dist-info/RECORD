@@ -1,0 +1,8 @@
+crf/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+crf/crf.py,sha256=OSWGYbCxsweKvXA49g48Mvc27J5ruEB0heOdAaGPLZw,12374
+crf/utils.py,sha256=8KG_NmZzUbW3gabjLw6KFCsh8nW3ff5R7qRhs5AQv8c,14417
+pytorch_text_crf-0.1.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+pytorch_text_crf-0.1.dist-info/METADATA,sha256=xuZVGOwVJintKUf1laDw2_nz85vtngvKjAkkdqKY_UE,2993
+pytorch_text_crf-0.1.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pytorch_text_crf-0.1.dist-info/top_level.txt,sha256=kG_FZFG337dtEgzA7OEm-GjCD4qDWNDhqIafRRYJK9U,4
+pytorch_text_crf-0.1.dist-info/RECORD,,
