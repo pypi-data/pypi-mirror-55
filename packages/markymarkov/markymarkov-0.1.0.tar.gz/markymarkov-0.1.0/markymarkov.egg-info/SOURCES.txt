@@ -1,0 +1,9 @@
+README.md
+setup.py
+markymarkov/__init__.py
+markymarkov/load.py
+markymarkov.egg-info/PKG-INFO
+markymarkov.egg-info/SOURCES.txt
+markymarkov.egg-info/dependency_links.txt
+markymarkov.egg-info/requires.txt
+markymarkov.egg-info/top_level.txt
