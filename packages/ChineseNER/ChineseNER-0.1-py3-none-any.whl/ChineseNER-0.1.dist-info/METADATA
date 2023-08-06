@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ChineseNER
+Version: 0.1
+Summary: 基于BiLSTM-CRF的字级别中文命名实体识别模型
+Home-page: https://github.com/cswangjiawei/ChineseNER
+Author: wangjiawei
+Author-email: cswangjiawei@163.com
+License: MIT
+Requires-Dist: numpy
+Requires-Dist: torch
+Requires-Dist: tensorboardX
+
+# NERChinese
+
+
