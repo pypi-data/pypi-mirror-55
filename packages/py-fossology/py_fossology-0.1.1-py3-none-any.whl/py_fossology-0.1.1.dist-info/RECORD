@@ -1,0 +1,10 @@
+fossology/__init__.py,sha256=nkCg3gH0gkH3Evpywt_qKY9nT6pGnE92YxkMULfXPFQ,88
+fossology/api.py,sha256=7EA0wOx_OxNozRp6Yd-JVaINztEVd-qkrq01Knb0_yQ,12658
+fossology/exceptions.py,sha256=yx25gPu4hGcOfzNT7AxIK3ThMKDrbmV_vjzsRlqbzxg,1593
+fossology/resources.py,sha256=OyjTwjVyj8XleCFHhHsr2u_K4pIN2_09baa80F9Pwvk,11266
+fossology/utils.py,sha256=rEib6st1HI8iYCYa-UL3Q-E7lnECfjfzJ82MADPu2tA,4978
+py_fossology-0.1.1.dist-info/LICENSE,sha256=ZEr_zUqh4u0QcQ9pXWpuA6mgglgAxv9dljWGh0ERXk0,1069
+py_fossology-0.1.1.dist-info/METADATA,sha256=zKGHXZsEr2sCDTZ8xVkA8pLmK39CFKXDBOVDWJ_lJ1o,1722
+py_fossology-0.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+py_fossology-0.1.1.dist-info/top_level.txt,sha256=Ao86HELjerr6FrVmPZRuxYlPrL-RdIZ0vpgol9wO_8M,10
+py_fossology-0.1.1.dist-info/RECORD,,
