@@ -1,0 +1,139 @@
+Metadata-Version: 2.1
+Name: call-to-dxcc
+Version: 0.0.1
+Summary: Finds DXCC entry for given amateur callsign.
+Home-page: https://gitlab.com/andreas_krueger_py/call_to_dxcc
+Author: Andreas Krüger (DJ3EI)
+Author-email: dj3ei@famsik.de
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Topic :: Communications :: Ham Radio
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+# Find DXCC from call sign.
+
+For radio amateur purposes, the land on the earth's surfaces has been
+compartmentalized into "DXCC regions".  Given a radio amateur's
+officially assigned call sign, it is possible to find out to which
+DXCC region that call sign belongs.  This is what this software does.
+
+Or, more precisely, strives to do.  Read on.
+
+## Legal situation: Owned by ARRL
+
+But before explaining the known bugs, let me touch another
+unpleasent subject: The legal situation.
+
+The list of all DXCC regions is under ARRL copyright.  It can be
+downloaded from the ARRL web page, but I have no license to
+redistribute this material.  See the ARRL [publication on
+copyright](http://www.arrl.org/copyright) to learn more.
+
+I'm not a layer, but my impression is that the ARRL, through its
+pertinent [page](http://www.arrl.org/country-lists-prefixes), allows
+personal use without obtaining (further) permission of the copyrighted
+list of all DXCC regions.
+
+So, if you figured out a way to be allowed to use the ARRL list, I'm
+entitled to provide software to you that helps you do that.  (I
+actually asked the ARRL to make sure.)
+
+This is that software.  It will download the DXCC list (as a text
+file) from the ARRL web site on first use, to the current directory,
+and use the copy thus obtained from there on to analyze callsigns
+you feed it.
+
+## Limitations
+
+That ARRL list is an unwieldly beast to be tamed.  The list's format
+is not well specified (I wish they had used regular expressions), so
+it's some guesswork.
+
+Now I'm not much of a DXer myself, which does not really help.  So
+there are some details in the DXCC list which I do not presently
+understand.
+
+For starters, I do not understand which call signs belong to "Spratly
+Is.".
+
+Also, I do not know how to distinguish which "CE9"-calls belong to
+Antarctica and which to South Shetland.  So this software lumps all
+"CE9" to South Shetland.
+
+Other notes I do not understand:
+
+* FT/G,TO for Glorioso Is.
+* FT/J,E,TO for Juan de Nova, Europa
+* FT/T,TO for Tromelin I.
+* FT/W for Crozet I.
+* FT/X for Kerguelen Is.
+* FT/Z for Amsterdam & St. Paul Is.
+* R1/F for Franz Josef Land
+* SV/A for Mount Athos
+
+## Present limitations
+
+Here is what is presently implemented, even some of this
+is clearly incorrect:
+
+* All calls starting with "FT" belong to France in
+Europe.
+
+* All SV calls belong to Greece.
+
+* All KC0, .. KC3 and KC5 .. KC9 calls belong to USA / NA.
+
+* (The "," after T8 is considered a typo.)
+
+* 4U_ITU is meant to represent 4U0ITU through 4UZITU.
+
+* 4U_UN is meant to represent 4U0UN through 4UZUN
+
+* R1 through R7 and RA1 through RZ7 belong where UA1 through UA7 go.
+
+* R8, R9, R0 and RA8 through RZ0 all belong where UA8 though UA0 go.
+
+* PP0-PY0F and PP0-PY0S and PP0-PY0T are not comprehensible for me
+  right now, so they are lumped with plain Brazil.
+
+Stuff collected elsewhere, with a decent dose of guesswork thrown in:
+
+* CT8 and CR2Y - calls belong to the Azores in EU, DXCC 149
+
+* CR3 and CT9 - calls belong to Madeira in AF, DXCC 256
+
+* TM - calls belong to France in EU, DXCC 227
+
+* 3Z - calls belong to Poland in EU, DXCC 269
+
+* 4U1A belongs to the United Nations in Vienna, EU, DXCC 117
+
+If I find time, I may try to clean up this mess.  In the meantime,
+if you have better information, tell me.
+
+## Example usage
+
+```
+import call_to_dxcc
+
+country, continent, dxcc_number = call_to_dxcc.data_for_call("DJ3EI")
+```
+
+The `import` will download the DXCC list to the working directory,
+unless that file is already present there.  It will use the
+information from that file.
+
+You can then ask for data for an amateur radio call sign.  In the
+example given above, `country` will contain "Federal Republic of
+Germany", `continent` will contain "EU", and `dxcc_number` will
+contain the number 230.
+
+If you want to proceed when the DXCC for a callsign cannot be found,
+catch `call_to_dxcc.DxccUnknownException`.
+
+
