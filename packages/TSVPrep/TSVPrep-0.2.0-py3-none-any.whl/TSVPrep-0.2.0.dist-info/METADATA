@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: TSVPrep
+Version: 0.2.0
+Summary: Module for locating and proofreading .tsv files.
+Home-page: https://github.com/learnsometing/TSVPrep
+Author: Brian Monaccio
+Author-email: brianmonaccio@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.8
+Description-Content-Type: text/markdown
+
+# TSVPrep
+Python modules used to preprocess delimited text files.
+
+The locate module is used to locate files of the specified ext type.
+
+The preprocess module contains methods that can be used to check the integrity of the data in a delimited text file, and sort the
+data in a delimited text file by a specific fieldname.
+
+
