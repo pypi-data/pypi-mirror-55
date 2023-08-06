@@ -1,0 +1,3 @@
+[console_scripts]
+lee = main:command_main
+

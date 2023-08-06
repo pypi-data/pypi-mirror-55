@@ -1,0 +1,13 @@
+diskcache
+beautifulsoup4
+html2markdown
+requests
+termcolor
+Pygments
+halo
+
+[dev]
+check-manifest
+
+[test]
+coverage
