@@ -1,0 +1,47 @@
+Changelog
+=========
+
+
+1.3.0 (2019-11-11)
+------------------
+
+- Drop support for Plone 4.0 and 4.1. [jone]
+- Add support for Plone 5.1 [Nachtalb]
+
+
+1.2 (2012-06-05)
+----------------
+
+- Declare zope dependencies.
+  [jone]
+
+- Update README.
+  [jone]
+
+
+1.1 (2012-03-28)
+----------------
+
+- Remove "self" from IDictStorage interface definitions.
+  This makes it possible to validate a implementation with verifyClass.
+  [jone]
+
+
+1.0 (2011-11-17)
+----------------
+
+- added test-buildout for plone 4.1
+  [eschmutz]
+
+1.0a4 (2011-07-12)
+------------------
+
+- Fixed signature of some class methods
+  [lgraf]
+
+
+1.0a3
+-----
+
+1.0a2
+-----
