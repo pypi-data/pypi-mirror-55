@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: rnae
+Version: 1.0
+Summary: Rede Neural Artifical Evolucionária
+Home-page: https://bitbucket.org/PereiraSomoza/rnae
+Author: Eduardo S. Pereira
+Author-email: pereira.somoza@gmail.com
+License: Apache License 2.0
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pygenec
+
+# RNAE
+Rede Neural Artificial Evolucionária
+
+## Instalation
+
+```bash
+$ pip install rnea
+```
+
+ou
+
+
+```bash
+$ python setup.py install
+```
+
+
+
+## Utilização
+
+
