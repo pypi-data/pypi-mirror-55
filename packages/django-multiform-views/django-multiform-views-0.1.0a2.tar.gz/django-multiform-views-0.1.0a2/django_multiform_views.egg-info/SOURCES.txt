@@ -1,0 +1,9 @@
+README.md
+setup.py
+django_multiform_views.egg-info/PKG-INFO
+django_multiform_views.egg-info/SOURCES.txt
+django_multiform_views.egg-info/dependency_links.txt
+django_multiform_views.egg-info/requires.txt
+django_multiform_views.egg-info/top_level.txt
+multiform_views/__init__.py
+multiform_views/edit.py
