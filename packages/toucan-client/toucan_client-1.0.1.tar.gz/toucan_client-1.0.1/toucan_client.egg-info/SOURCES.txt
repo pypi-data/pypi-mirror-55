@@ -1,0 +1,9 @@
+setup.cfg
+setup.py
+toucan_client/__init__.py
+toucan_client/client.py
+toucan_client.egg-info/PKG-INFO
+toucan_client.egg-info/SOURCES.txt
+toucan_client.egg-info/dependency_links.txt
+toucan_client.egg-info/requires.txt
+toucan_client.egg-info/top_level.txt
