@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: snowoptics
+Version: 0.90
+Summary: Set of functions to compute spectral albedo and extinction of snow, and to correct albedo measurements from slope distortion.
+License: MIT
+Author: Ghislain Picard
+Author-email: ghislain.picard@univ-grenoble-alpes.fr
+Requires-Python: >=3.6,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: numpy (>=1.10,<2.0)
