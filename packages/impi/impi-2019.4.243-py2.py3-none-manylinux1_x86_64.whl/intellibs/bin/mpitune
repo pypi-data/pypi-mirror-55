@@ -1,0 +1,8 @@
+#!/bin/bash
+params=""
+bin="$I_MPI_ROOT/intel64/bin/tune/mpitune"
+if ! [ $# -eq 0 ]
+then
+    params=$*
+fi
+$bin $params
