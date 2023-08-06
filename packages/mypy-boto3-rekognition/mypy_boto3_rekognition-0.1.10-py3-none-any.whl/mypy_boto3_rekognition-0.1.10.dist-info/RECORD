@@ -1,0 +1,9 @@
+mypy_boto3_rekognition/__init__.py,sha256=8nSNq1AFY-ISW6ittep4-3bG6t56mC9UxmXj4XBKWRc,114
+mypy_boto3_rekognition/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_rekognition/client.py,sha256=GbTuFno0C8s-7o8koxD4H_4vuZzBYfj5SFzIevRsJ_4,273915
+mypy_boto3_rekognition/paginator.py,sha256=HLrRXfA7YuBsVeVZFBnxbQM__9MRkAZ60nMcBFk_lDQ,8611
+mypy_boto3_rekognition/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_rekognition-0.1.10.dist-info/METADATA,sha256=xEpjJgz0sYF5zMJM0di3J0Vvho1pDyrwYG3GTxksJA0,1068
+mypy_boto3_rekognition-0.1.10.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_rekognition-0.1.10.dist-info/top_level.txt,sha256=rmX3tzk_TTQGCTx46VaeTbDSRM19nfZ4QfCIpWdeZzw,23
+mypy_boto3_rekognition-0.1.10.dist-info/RECORD,,
