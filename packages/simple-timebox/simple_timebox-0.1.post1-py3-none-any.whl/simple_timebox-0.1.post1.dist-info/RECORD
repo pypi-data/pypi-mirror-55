@@ -1,0 +1,13 @@
+simple_timebox-0.1.post1.data/scripts/app.py,sha256=WjcmwGOMwRLF1TJmcEDdzgAoE9gSCWkF-VubXq7oOhs,1956
+timebox/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+timebox/app.py,sha256=WjcmwGOMwRLF1TJmcEDdzgAoE9gSCWkF-VubXq7oOhs,1956
+timebox/lib/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+timebox/lib/hue.py,sha256=2sfbRWfP9ub27FLbGeHN-DOBeykB072l01Eb2G57paM,1206
+timebox/lib/sound.py,sha256=ZrKuOr5wvTvGY6Mp7lIdis5PM4i7Scp122Tta6-1W_8,548
+timebox/lib/support.py,sha256=VL0JGfSw9c67zmqVqSbwIz_H79RFZdikZbKrEJlJBO8,75
+simple_timebox-0.1.post1.dist-info/LICENSE.md,sha256=zH8HF80yTRFw4iLE0gkkq9wz0synk99ndw15BPsdfg8,1071
+simple_timebox-0.1.post1.dist-info/METADATA,sha256=1rsfaNEChfm7hghZfrK0Wsg29JFRn1dKzk-TssCXIjE,3215
+simple_timebox-0.1.post1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+simple_timebox-0.1.post1.dist-info/entry_points.txt,sha256=jigqoWU8Hf4ABuJMewMPnfL7TtIv9HWtJ_gNr6BhXDo,94
+simple_timebox-0.1.post1.dist-info/top_level.txt,sha256=U5e4OF5oK_SyP3BkXTggwRkROFKjOayRQw0CMOrW2CI,8
+simple_timebox-0.1.post1.dist-info/RECORD,,
