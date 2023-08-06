@@ -1,0 +1,10 @@
+markdown_kernel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+markdown_kernel/_version.py,sha256=iF0BtkukDwIj3qWw-1JxsTYK_eJN2NmXvcn8ghYIAlk,185
+markdown_kernel/install.py,sha256=i0ZJyb2ubrMbLPzps27XJzTJw6nN9y9Od_miUaU9fbU,2430
+markdown_kernel/kernel.py,sha256=YqEE_j5bWBArMGely08yq2XZ0Z2fwBFuPJOXPunncwQ,1432
+markdown_kernel/logo-64x64.png,sha256=giBmszxAACBxTkNVBNKCPTofJ7rPmhWX78VBnwuh7E0,591
+markdown_kernel-0.2.1.dist-info/LICENSE,sha256=HAFraFfCTJGgY4X3u4O8cosrjJcHtU7qDmKqLDv-Gzo,1555
+markdown_kernel-0.2.1.dist-info/METADATA,sha256=dvDa-oUcL_wXmKr722mGXFcckRZc2ItjPpF3GMJBYjw,4429
+markdown_kernel-0.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+markdown_kernel-0.2.1.dist-info/top_level.txt,sha256=LUl2zuQiwT4-7SN0vZ0rvFnvribevpemeRX54pPLwQ4,16
+markdown_kernel-0.2.1.dist-info/RECORD,,
