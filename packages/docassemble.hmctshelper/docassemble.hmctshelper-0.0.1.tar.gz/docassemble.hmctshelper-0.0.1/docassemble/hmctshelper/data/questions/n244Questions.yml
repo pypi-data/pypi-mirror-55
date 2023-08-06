@@ -1,0 +1,426 @@
+question: |
+  Application Notice (N244) Helper
+subquestion: |
+    <p>This helper has been created to help someone who doesn't have legal representation (a Litigant in Person) complete an Application Notice using <a href="https://www.gov.uk/government/publications/form-n244-application-notice" target="_blank">Form N244</a>.
+    <p>In order to use this tool you will need the following information before continuing:</p>
+    <ul>
+       <li>A copy of your orginal claim, showing the <b>claim number, and details of the claimant and defendant (along with any reference numbers)</b></li>
+       <li>If you've completed a <a href="https://www.gov.uk/get-help-with-court-fees" target="_blank">Help With Fees form</a> online you will need your reference number</li>
+    </ul>
+    <p>If you intend to set out your evidence within this form itself (rather than attaching a seperate witness statement or statement of case) then you should <b>write your evidence into a document first and save it in a safe place</b>, so you can cut and paste it into this application when requested.</p>
+field: user_saw_intro
+---
+################# COURT INFO TOP RHS BOX #################
+---
+question: |
+  What is the claim number?
+fields:
+  - Claim number: claim_number
+    datatype: text
+  - note: |
+      The number shown on your original claim
+---
+#question: |
+#  What is fee account number (if applicable)?
+#fields:
+#  - Fee Account Number: fee_account_number
+#    datatype: text
+#    required: False
+---
+question: |
+  What is the Help with Fees reference number (if applicable)?
+subquestion: |
+  <p>You might be able to get money off your court or tribunal fees if you have little or no savings, are on certain benefits or have a low income.</p>
+  <p>You can find out more about whether you may be eligible on the <a href="https://www.gov.uk/get-help-with-court-fees" target="_blank">gov.uk website</a></p>
+  <p>If you have already completed a Help With Fees form online, you will have been provided with a reference number which you should include here.</p>
+  <p>If you are completing a paper (offline) version of the Help With Fees form and submitting it along with this form, you can leave the number blank.</p>
+fields:
+  - First three characters: help_with_fees_reference_number_one
+    datatype: text
+    maxlength: 3
+    required: False
+  - Second three characters: help_with_fees_reference_number_two
+    datatype: text
+    maxlength: 3
+    required: False
+---
+question: |
+  What is the warrant number (if applicable)?
+subquestion: |
+  You will generally have a warrant number if this case is a repossession, evicition or involves bailiffs.
+fields:
+  - Warrant Number: warrant_number
+    datatype: text
+    required: False
+---
+#question: |
+#  What is today's date?
+#fields:
+#  - Date: date_of_filing
+#    datatype: date
+---
+################# SECTION ONE + TWO #################
+---
+question: |
+  Are you the claimant or the defendant in the existing case?
+subquestion: |
+  When the case started you were either the claimant or the defendant - this will be shown on the original paperwork.
+field: role_player_completing
+buttons:
+  - Claimant
+  - Defendant
+---
+code: |
+  if role_player_completing == "Claimant":
+    application_role = "claimant"
+    claimant_question = "What is your name?"
+    claimant_subquestion = ""
+    defendant_question = "What is the name of the defendant?"
+    defendant_subquestion = "If there is a reference number given for the defendant please include it."
+  else:
+    application_role = "tickbox - defendant"
+    claimant_question = "What is the name of the claimant?"
+    claimant_subquestion = "If there is a reference number given for the claimant please include it."
+    defendant_question = "What is your name?"
+    defendant_subquestion = ""
+---
+question: |
+  ${claimant_question}
+subquestion: |
+  ${claimant_subquestion}
+fields:
+  - Claimant Name: claimant_name
+    datatype: text
+  - Claimant Reference: claimant_reference
+    datatype: text
+    required: False
+---
+question: |
+  ${defendant_question}
+subquestion: |
+  ${defendant_subquestion}
+fields:
+  - Defendant Name: defendant_name
+    datatype: text
+  - Defendant Reference: defendant_reference
+    datatype: text
+    required: False
+---
+code: |
+  if role_player_completing == "Claimant":
+    name_on_application = claimant_name
+    service_name = defendant_name
+  else:
+    name_on_application = defendant_name
+    service_name = claimant_name
+
+---
+################# SECTION THREE #################
+---
+question: |
+  What order are you asking the court to make and why?
+subquestion: |
+  <p>You are required to both describe the order you are asking the judge to make and to say why it should be made. Be sure to do both, but keep your statement as brief as possible - you will have the opportunity to make a more detailed statement later in this process.</p>
+  <p>Some examples of this statement would be things like:</p>
+  <ul>
+  <li><i>"To adjourn the hearing because..."</i></li>
+  <li><i>"To set aside a judgment against me because..."</i></li>
+  <li><i>"To suspend an eviction due to take place on 12/01/19 because..."</i></li>
+  <li><i>"To reinstate the case because the hearing fee was not paid"</i></li>
+  </ul>
+fields:
+  - no label: order_requested
+    datatype: area
+    rows: 5
+    maxlength: 400
+---
+################# SECTION FOUR #################
+#---
+#question: |
+#  Will you be attaching a draft of the order you are applying for?
+#subquestion: |
+#  If you do not have legal assistance, it is probably better not to attempt this.
+#fields:
+#  - no label: draft_order
+#    datatype: radio
+#    code: |
+#      [
+#        {'tickbox - Yes - 4. Have you attached a draft of the order you are applying for?': "Yes"},
+#        {'tickbox - No - 4. Have you attached a draft of the order you are applying for?': "No"}
+#      ]
+---
+################# SECTION FIVE #################
+---
+question: |
+  How do you want to have this application dealt with?
+subquestion: |
+  <p><b>Most applications will require a hearing and you
+  will be expected to attend. The court will allocate a
+  hearing date and time for the application. Please
+  indicate in a covering letter any dates that you are
+  unavailable within the next six weeks.</b></p>
+  <p>The court will only deal with the application without a
+  hearing if:</p>
+  <ul>
+    <li>all the parties agree to the terms of the
+            order being asked for;</li>
+    <li>all the parties agree that the court should
+            deal with the application without a hearing, or</li>
+    <li>the court does not consider that a hearing
+            would be appropriate.</li>
+  </ul>
+  <p>Telephone hearings are only available in applications
+  where at least one of the parties involved in the case
+  is legally represented. Not all applications will be
+  suitable for a telephone hearing and the court may
+  refuse your request.</p>
+fields:
+  - no label: application_dealt_with
+    datatype: radio
+    code: |
+      [
+        {'tickbox - hearing - 5. How do you want to have this application dealt with?': "at a hearing"},
+        {'tickbox - without a hearing - 5. How do you want to have this application dealt with?': "without a hearing"},
+        {'tickbox - at a telephone hearing - 5. How do you want to have this application dealt with?': "at a telephone hearing"}
+      ]
+---
+################# SECTION SIX #################
+---
+#question: |
+#  How long do you think the hearing will last and is this time estimate agreed by all parties??
+#subquestion: |
+#  If you do not know how long the hearing will take do
+#  not guess but leave these boxes blank.
+#fields:
+#  - Hours: hearing_length_hours
+#    datatype: number
+#    min: 0
+#    max: 24
+#    required: False
+#  - Minutes: hearing_length_minutes
+#    datatype: number
+#    min: 0
+#    max: 59
+#    required: False
+#  - Agreed by All Parties: hearing_length_estimate_agreed
+#    datatype: radio
+#    required: False
+#    code: |
+#      [
+#        {'tickbox - Yes - Is this time estimate agreed by all parties?': "Yes"},
+#        {'tickbox No - Is this time estimate agreed by all parties?': "No"}
+#      ]
+---
+################# SECTION SEVEN #################
+---
+question: |
+  Do you have any fixed trial date or period?
+subquestion: |
+  If your case has already been allocated a hearing/trial
+  date or trial period please include details of those dates.
+fields:
+  - no label: fixed_trial_date_period
+    datatype: radio
+    code: |
+      [
+        {'Fixed Trial Date': "Yes - I have a Fixed Hearing Date"},
+        {'Fixed Trial Period': "Yes - I have a Trial Period Set"},
+        {'No': "No"}
+      ]
+  - Fixed Hearing/Trial Date: fixed_trial_date
+    datatype: date
+    show if:
+      variable: fixed_trial_date_period
+      is: 'Fixed Trial Date'
+    required: False
+  - Fixed Hearing/Trial Period: fixed_trial_date_period_length
+    datatype: text
+    show if:
+      variable: fixed_trial_date_period
+      is: 'Fixed Trial Period'
+    required: False
+---
+code: |
+  if fixed_trial_date_period == 'Fixed Trial Date':
+    fixed_trial_date_period_length = ''
+  elif fixed_trial_date_period == 'Fixed Trial Period':
+    fixed_trial_date = ''
+  else:
+    fixed_trial_date = ''
+    fixed_trial_date_period_length = ''
+---
+################# SECTION EIGHT #################
+---
+question: |
+  Do you know what level of Judge you need?
+subquestion: |
+  If you are not sure, then pick "I don't know".
+field: level_of_judge
+buttons:
+  - code: |
+      [
+        {'': "I don't know"},
+        {'District Judge': "District Judge"},
+        {'Circuit Judge': "Circuit Judge"},
+        {'High Court Judge': "High Court Judge"}
+      ]
+---
+################# SECTION NINE #################
+---
+#question: |
+#  Who should be served with this application and at what address?
+#subquestion: |
+#  Who you want the court to send a copy of this application to, and what is their address. Generally it will be the other party or parties to the case. If the application is dealt with without a hearing, the notice will still be served.
+#fields:
+#  - Name of person to serve: service_name
+#    hint: e.g., ${ defendant_name }
+#    datatype: text
+#  - Address of person to serve: service_address
+#    datatype: area
+#    maxlength: 200
+---
+################# Section TEN #################
+---
+
+question: |
+  What information will you be relying on, in support of your application?
+fields:
+  - html: |
+      <p>In this section please set out the information you
+      want the court to take account of in support of the
+      application you are making.</p>
+      <p><b>In most cases it's easiest to choose to include evidence below (rather than a Witness Statement or Statement of Case).</b></p>
+      <p>If you decide to include a statement, you should keep it as brief as possible, and ONLY TALK ABOUT the reasons for making this specific appliction (expanding on what you told us earlier) rather than talking about the full case (as the full case is not relevant to this application).</p>
+      <p>Please note: <span style="color:red;">Proceedings for contempt of court may be brought against a person who signs a statement of truth without an honest belief in its truth.</span></p>
+  - no label: evidence_choice
+    datatype: choices
+    code: |
+      [{'evidence_statement': "I want to include my evidence in this application and will set it out below"},
+       {'witness_statement': "I am going to attach a witness statement to this application"},
+       {'case_statement': "I am going to attach a statement of case to this application"}]
+  - no label: evidence_statement_content
+    datatype: area
+    required: False
+    rows: 10
+    hint: |
+      You can write up to 1650 characters here and they will be added within the
+      evidence statement on the form. If you have more to say then you can continue
+      on a new sheet. We suggest you write and save your statement and then cut and
+      paste it into this form, so you have it safely stored.
+
+      If you need to continue on a new sheet, use a plain document and include the parties names, case number, the date this form was completed, the claim reference and state that it's 'Continued from Form N244' at the top of the document.
+    maxlength: 1650
+    show if:
+          variable: evidence_choice
+          is: evidence_statement
+---
+code: |
+  if evidence_choice == 'witness_statement':
+    witness_statement = 'tickbox - the attached witness statement'
+    case_statement = ''
+    evidence_statement = ''
+    evidence_statement_content = ''
+    evidence_statement_dated = ''
+    signatory_statement_is = 0
+  elif evidence_choice == 'case_statement':
+    witness_statement = ''
+    case_statement = 'tickbox - the statement of case'
+    evidence_statement = ''
+    evidence_statement_content = ''
+    evidence_statement_dated = ''
+    signatory_statement_is = 0
+  else:
+    witness_statement = ''
+    case_statement = ''
+    evidence_statement = 'tickbox - the evidence set out in the box below'
+    evidence_statement_dated = format_date(today(), format='dd/MM/yyyy')
+---
+#question: |
+#  Who is signing this statement of truth?
+#fields:
+#  - Signatory: signatory_statement_is
+#    datatype: dropdown
+#    code: |
+#      [
+#        {1: "Applicant"},
+#        {2: "Applicant's Legal Representative"},
+#        {3: "Applicant's Litigation Friend"}
+#      ]
+#  - Your Firm Name: evidence_applicant_legal_representative_firm
+#    datatype: text
+#    required: False
+#    show if:
+#      variable: signatory_statement_is
+#      is: 2
+#  - Position or office held (if signing on behalf of a firm or company): evidence_statement_position_office
+#    datatype: text
+#    required: False
+---
+################# Section ELEVEN #################
+---
+question: |
+  Who is signing this form?
+fields:
+  - no label: signatory_is
+    datatype: dropdown
+    code: |
+      [
+        {1: "Me (The Applicant)"},
+        {3: "The Applicant's Litigation Friend"}
+      ]
+---
+code: |
+  if int(signatory_is) == 1:
+    lr_signature_wipeout = "---------------------------"
+    lf_signature_wipeout = "--------------------"
+  #elif int(signatory_is) == 2:
+  #  lr_signature_wipeout = ""
+  #  lf_signature_wipeout = "--------------------"
+  elif int(signatory_is) == 3:
+    lr_signature_wipeout = "---------------------------"
+    lf_signature_wipeout = ""
+---
+code: |
+  if int(signatory_is) == 1:
+    i_believe_wipeout = ""
+    applicant_believe_wipeout = "---------------------------"
+    lr_signature_wipeout_statement = "---------------------------"
+    lf_signature_wipeout_statement = "--------------------"
+  #elif int(signatory_is) == 2:
+  #  i_believe_wipeout = "--------------------"
+  #  applicant_believe_wipeout = ""
+  #  lr_signature_wipeout_statement = ""
+  #  lf_signature_wipeout_statement = "--------------------"
+  elif int(signatory_is) == 3:
+    i_believe_wipeout = "--------------------"
+    applicant_believe_wipeout = ""
+    lr_signature_wipeout_statement = "---------------------------"
+    lf_signature_wipeout_statement = ""
+---
+question: |
+  Where would you like documents about this application sending?
+subquestion: |
+  The application must be signed and include your
+  current address and contact details. If you agree that
+  the court and the other parties may communicate with
+  you by Document Exchange, telephone, facsimile or
+  email, complete the details.
+fields:
+  - E-mail: applicants_email_address
+    datatype: email
+    required: False
+  - Postal Address (excluding postcode): applicants_postal_address
+    datatype: area
+    maxlength: 200
+    required: False
+  - Postcode Outcode (e.g. LS13): applicants_postcode_outcode
+    datatype: text
+    maxlength: 4
+    required: False
+  - Postcode Incode (e.g. 5DF): applicants_postcode_incode
+    datatype: text
+    maxlength: 4
+    required: False
+  - Phone: applicants_phone
+    datatype: text
+    required: False

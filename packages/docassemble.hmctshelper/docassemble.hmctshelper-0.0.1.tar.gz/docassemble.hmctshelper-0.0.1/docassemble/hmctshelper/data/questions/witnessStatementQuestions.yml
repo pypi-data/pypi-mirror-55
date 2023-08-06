@@ -1,0 +1,188 @@
+---
+##################### DO AN INTRO #####################
+---
+question: |
+  Witness Statement Helper
+subquestion: |
+    <p>In order to use this tool your will need the following information before continuing:</p>
+    <ul>
+       <li>Your case number</li>
+       <li>The facts you wish to present to support your case and that will form the basis of your statement</li>
+    </ul>
+    <p>You can learn more about Witness Statements on the <a href="https://www.justice.gov.uk/courts/procedure-rules/civil/rules/part32/pd_part32#witness" target="_blank">justice.gov.uk website</a>.</p>
+field: user_saw_intro
+---
+##################### DETERMINE THE BASIC CASE INFO #####################
+---
+---
+question: |
+  What's the case number?
+fields:
+  - Case Number: case_number
+    datatype: text
+---
+question: |
+  What type of case is this?
+field: case_type
+buttons:
+  - Divorce
+  - Family
+  - Employment
+  - Money
+  - Housing
+---
+code: |
+  if case_type == "Family":
+    claimant_term = "APPLICANT"
+    defendant_term = "RESPONDENT"
+    court_type = "IN THE FAMILY COURT AT " + court_name.upper()
+  elif case_type == "Divorce":
+    claimant_term = "PETITIONER"
+    defendant_term = "RESPONDENT"
+    court_type = "IN THE FAMILY COURT AT " + court_name.upper()
+  elif case_type == "Employment":
+    claimant_term = "CLAIMANT"
+    defendant_term = "DEFENDANT"
+    court_type = "EMPLOYMENT TRIBUNAL AT " + court_name.upper() + " COUNTY COURT"
+  elif case_type == "Housing":
+    claimant_term = "CLAIMANT"
+    defendant_term = "DEFENDANT"
+    court_type = "IN THE COUNTY COURT AT " + court_name.upper()
+  else:
+    claimant_term = "CLAIMANT"
+    defendant_term = "DEFENDANT"
+    court_type = "IN THE COUNTY COURT AT " + court_name.upper()
+---
+objects:
+  - claimants: DAList.using(object_type=Individual,there_is_another=False,there_are_any=True)
+  - defendants: DAList.using(object_type=Individual,there_is_another=False,there_are_any=True)
+  - paragraphs: DAList.using(object_type=Thing,there_is_another=False,there_are_any=True)
+---
+##################### GET CLAIMANT DETAILS #####################
+---
+mandatory: True
+code: |
+  if claimants.there_are_any:
+    review_claimants
+---
+table: claimants.table
+rows: claimants
+columns:
+  - Name: row_item
+  - Address: row_item.address
+edit:
+  - name.first
+---
+question: |
+  ALL ${claimant_term}(S)
+subquestion: |
+  So far you have added ${claimants.number_as_word()} ${claimant_term}(S).
+
+  ${claimants.table}
+
+  ${claimants.add_action()}
+field: review_claimants
+---
+question: |
+  Please add the details about the ${ordinal(i)} ${claimant_term}.
+subquestion: |
+  "${claimant_term}" means the person or persons making this Witness Statement
+fields:
+  - First name: claimants[i].name.first
+  - Last name: claimants[i].name.last
+  - Address: claimants[i].address
+    datatype: text
+---
+##################### GET DEFENDANT DETAILS #####################
+---
+mandatory: True
+code: |
+  if defendants.there_are_any:
+    review_defendants
+---
+table: defendants.table
+rows: defendants
+columns:
+  - Name: row_item
+  #- Address: row_item.address
+edit:
+  - name.first
+---
+question: |
+  ALL ${defendant_term}(S)
+subquestion: |
+  So far you have added ${defendants.number_as_word()} ${defendant_term}(S).
+
+  ${defendants.table}
+
+  ${defendants.add_action()}
+field: review_defendants
+---
+question: |
+  Please add the details about the ${ordinal(i)} ${defendant_term}.
+subquestion: |
+  "${defendant_term}" means the person or persons that this Witness Statement is being made against.  
+fields:
+  - First name: defendants[i].name.first
+  - Last name: defendants[i].name.last
+  #- Address: defendants[i].address
+  #  datatype: text
+
+---
+##################### GENERATE THE OPENING PARAGRAPH #####################
+---
+code: |
+  if claimants.number() == 1:
+    first_paragraph = "I, " + claimants[0].name.full() + " of " + claimants[0].address + " am the " + claimant_term.lower() + " in this claim. The facts in this statement come from my personal knowledge."
+    statement_of = "STATEMENT OF: " + claimants[0].name.full()
+    last_paragraph = "I believe that the facts stated in this statement are true."
+  else:
+    counter = 0
+    first_paragraph = "We, "
+    statement_of = "STATEMENT OF: "
+    for claimant in claimants:
+      if counter > 0:
+        first_paragraph += ", and "
+        statement_of += " AND "
+      first_paragraph += claimant.name.full() + " of " + claimant.address
+      statement_of += claimant.name.full()
+      counter += 1
+    first_paragraph += " are the " + claimant_term.lower() + "s in this claim. The facts in this statement come from our personal knowledge."
+    last_paragraph = "We believe that the facts stated in this statement are true."
+  paragraphs[0].name.text = first_paragraph
+---
+##################### GET STATEMENT PARAGRAPHS #####################
+---
+mandatory: True
+code: |
+  if paragraphs.there_are_any:
+    review_paragraphs
+---
+table: paragraphs.table
+rows: paragraphs
+columns:
+  - Paragraph: row_item.name
+edit:
+  - table
+---
+question: |
+  Your Statement
+subquestion: |
+  So far you have added ${paragraphs.number_as_word()} paragraph(s) - the first paragraph is mandatory in the format it is in, so do not change it undless there are errors in the names or addresses.
+
+  Add more paragraphs to explain what happened.
+  
+  It's best to keep each paragraph short and to the point, and should include date and times or relevant events in the case where relevant.
+
+  ${paragraphs.table}
+
+  ${paragraphs.add_action()}
+field: review_paragraphs
+---
+question: |
+  Please add the ${ordinal(i)} paragraph about what happened.
+subquestion: |
+  It's best to keep each paragraph short and to the point, and should include date and times or relevant events in the case where relevant.
+fields:
+  - Paragraph: paragraphs[i].name.text
+    datatype: area

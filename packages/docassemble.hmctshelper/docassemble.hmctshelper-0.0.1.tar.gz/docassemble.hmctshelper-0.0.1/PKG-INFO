@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: docassemble.hmctshelper
+Version: 0.0.1
+Summary: Interviews that help Litigants in Person complete HM Courts and Tribunals Service Forms
+Home-page: https://docassemble.org
+Author: Matt Pennington
+Author-email: mp@tonic.works
+License: The MIT License (MIT)
+Description: This package contains interviews that help Litigants in Person 
+        to complete court forms for HM Courts and Tribunals Service when
+        **support from a lawyer is not available**.
+        
+        The package currently contains interviews to help a LIP:
+        
+        - complete form N244 - an application notice 
+            (https://www.gov.uk/government/publications/form-n244-application-notice)
+        - produce a witness statement in the correct prescribed format
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

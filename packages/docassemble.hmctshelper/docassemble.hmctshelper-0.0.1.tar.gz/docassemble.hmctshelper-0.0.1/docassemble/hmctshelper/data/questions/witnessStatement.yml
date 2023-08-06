@@ -1,0 +1,47 @@
+---
+metadata:
+  title: |
+    Witness Statement Helper
+  short title: |
+    Witness Statement Helper
+  description: |
+    A tool to help Litigants in Person write a witness statement without legal assistance
+  authors:
+    - name: Matthew Pennington
+      organization: n/a
+  revision_date: 2019-11-14
+  tags:
+    - LIP
+    - Witness Statement
+    - HMCTS
+---
+features:
+  question back button: True
+  navigation back button: False
+  progress bar: True
+---
+#control the flow of the interview at the beginning
+mandatory: True
+code: |
+  user_saw_intro
+  case_number
+  case_type
+---
+include:
+  - witnessStatementQuestions.yml
+  - courts.yml
+---  
+question: |
+  Your completed statement is now available to download
+subquestion: |
+  Click on one of the links below to download it. You can make further changes to it offline afterwards.
+attachment:
+  name: Your Witness Statement
+  filename: statement
+  docx template file: witnessStatement.docx
+  valid formats:
+    - pdf
+    - docx
+buttons:
+  - Exit: exit
+mandatory: True

@@ -1,0 +1,141 @@
+---
+metadata:
+  title: |
+    Application Notice (N244) Helper
+  short title: |
+    N244
+  description: |
+    A tool to help Litigants in Person complete an N244 form without legal assistance
+  authors:
+    - name: Matthew Pennington
+      organization: n/a
+  revision_date: 2019-11-14
+  tags:
+    - LIP
+    - N244
+    - HMCTS
+---
+features:
+  question back button: True
+  navigation back button: False
+  progress bar: True
+---
+include:
+  - n244Questions.yml
+  - courts.yml
+---
+question: |
+  Your Application Notice (N244) is now available to download
+subquestion: |
+  <p>Please note:</p>
+  <ul>
+     <li>The form is not saved on our website, therefore please download it and keep it somewhere safe.</li>
+     <li>Remember to SIGN AND DATE the form before submitting it to the courts</li>
+  </ul>
+attachment:
+  name: Completed N244
+  filename: n244-form
+  pdf template file: n244.pdf
+  fields:
+    - User Saw Intro: |
+        ${ user_saw_intro }
+    - Text16: |
+        ${ court_name.upper() }
+    - Text17: |
+        ${ claim_number.upper() }
+    #Fee Account Number irrelevant for Litigants in person - this for solicitors/councils making regular applications
+    #- Text35: |
+    #    ${ fee_account_number }
+    - Text1: |
+        ${ help_with_fees_reference_number_one.upper() }
+    - Text2: |
+        ${ help_with_fees_reference_number_two.upper() }
+    - Text18: |
+        ${ warrant_number.upper() }
+    - Text19: |
+        ${ claimant_name.upper() } ${ claimant_reference.upper() }
+    - Text20: |
+        ${ defendant_name.upper() } ${ defendant_reference.upper() }
+    - Text21: |
+        ${ format_date(today(), format='dd/MM/yyyy') }
+    - Text22: |
+        ${ name_on_application.upper() }
+    - Check Box23: |
+        ${ application_role }
+#    - Text24: |
+#        ${ application_role_other }
+#    - Text25: |
+#        ${ representing_whom }
+    - Text26: |
+        ${ order_requested }
+    - Check Box27: |
+        ${ 'tickbox - No - 4. Have you attached a draft of the order you are applying for?' }
+    - Check Box28: |
+        ${ application_dealt_with }
+    #- Text29: |
+    #    ${ hearing_length_hours }
+    #- Text30: |
+    #    ${ hearing_length_minutes }
+    #- Check Box31: |
+    #    ${ hearing_length_estimate_agreed }
+    - Text32: |
+        ${ fixed_trial_date }${ fixed_trial_date_period_length }
+    - Text33: |
+        ${ level_of_judge }
+    - Text34: |
+        ${ service_name }
+    #- Text36: |
+    #    ${ service_address }
+
+    - Check Box35: |
+        ${ witness_statement }
+    - Check Box36: |
+        ${ case_statement }
+    - Check Box37: |
+        ${ evidence_statement }
+    - Text38: |
+        ${ evidence_statement_content }
+        
+    - Text53: |
+        ${ i_believe_wipeout }
+    - Text54: |
+        ${ applicant_believe_wipeout }
+    - Text57: |
+        ${ lr_signature_wipeout_statement }
+    - Text58: |
+        ${ lf_signature_wipeout_statement }
+    - Text39: |
+        ${ evidence_statement_dated }        
+    # Name of applicants legal representative firm
+    #- Text41: |
+    #statement position or office held
+    #- Text42: |
+    - Text60: |
+        ${ lr_signature_wipeout }
+    - Text61: |
+        ${ lf_signature_wipeout }
+    - Text43: |        
+        ${ format_date(today(), format='dd/MM/yyyy') }    
+    #signatory position or office held    
+    #- Text44: |
+
+    - Text52: |
+        ${ applicants_email_address }
+    - Text45: |
+        ${ applicants_postal_address }
+    - Text46: |
+        ${ applicants_postcode_outcode }
+    - Text47: |
+        ${ applicants_postcode_incode }
+    - Text48: |
+        ${ applicants_phone }
+    #fax no 
+    #- Text49: |
+    #dx no 
+    #- Text50: |
+    #ref no    
+    #- Text51: |
+buttons:
+  - Exit: exit
+mandatory: True
+---
