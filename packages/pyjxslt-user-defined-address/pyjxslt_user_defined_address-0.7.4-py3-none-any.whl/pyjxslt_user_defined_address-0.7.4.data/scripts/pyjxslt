@@ -1,0 +1,5 @@
+#!/bin/bash
+pushd "`dirname $0`"
+cd ../lib/pyjxslt
+java -jar pyjxslt.jar $*
+popd
