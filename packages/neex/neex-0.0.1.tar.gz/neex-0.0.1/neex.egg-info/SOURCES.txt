@@ -1,0 +1,6 @@
+README.md
+setup.py
+neex.egg-info/PKG-INFO
+neex.egg-info/SOURCES.txt
+neex.egg-info/dependency_links.txt
+neex.egg-info/top_level.txt
