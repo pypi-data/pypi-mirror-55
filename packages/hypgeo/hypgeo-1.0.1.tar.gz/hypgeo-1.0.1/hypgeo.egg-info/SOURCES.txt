@@ -1,0 +1,17 @@
+README.md
+setup.py
+hypgeo/__init___.py
+hypgeo/complex_plane.py
+hypgeo/geometry.py
+hypgeo/moebius.py
+hypgeo/transformations.py
+hypgeo/unittest_complex_plane.py
+hypgeo/unittest_moebius.py
+hypgeo/unittest_transformation.py
+hypgeo.egg-info/PKG-INFO
+hypgeo.egg-info/SOURCES.txt
+hypgeo.egg-info/dependency_links.txt
+hypgeo.egg-info/top_level.txt
+hypgeo/helpers/__init__.py
+hypgeo/helpers/field.py
+hypgeo/helpers/group.py
