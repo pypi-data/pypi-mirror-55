@@ -1,0 +1,11 @@
+kosmorro-0.1.0.data/scripts/kosmorro,sha256=geLojD8T0PAh8X7Kzi7ZtUxob_eEoQJxdUbcQr-NikI,3461
+kosmorrolib/__init__.py,sha256=U3x9ofWz4Y2jvlnkVA9UmxmGOrVSXaot367qpslVd3g,823
+kosmorrolib/core.py,sha256=30QXT03W_H0xxlL_UulVmRDr1zem0yiRixLAQSg5K98,1618
+kosmorrolib/data.py,sha256=9gvy78_WVxnP7CIkoZmg6NoZscgXnHn4LrzBKuk-Pgs,2804
+kosmorrolib/dumper.py,sha256=6Y2zvtDzT9OMPLhtDYjwmTUx4Fs6ZsBEPL-T2zj45dI,2615
+kosmorrolib/ephemerides.py,sha256=z4OeURRTHu1I_j0F0mPNskckMpZtGuddnWDPgEm44z8,5694
+kosmorro-0.1.0.dist-info/LICENSE.md,sha256=RJ2-swY_vL3Gml_ztYPGMBd7WuPJBnfdWw1Tf_KbOvc,32089
+kosmorro-0.1.0.dist-info/METADATA,sha256=l2KFEommNZKuXjUWU_U1OTXJhUTDhwSOgACUWayZXu4,3700
+kosmorro-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+kosmorro-0.1.0.dist-info/top_level.txt,sha256=tI1b-v3oryyCLtJYhH2iUpWnwK8lZnW-wU1hFdaYwlg,12
+kosmorro-0.1.0.dist-info/RECORD,,
