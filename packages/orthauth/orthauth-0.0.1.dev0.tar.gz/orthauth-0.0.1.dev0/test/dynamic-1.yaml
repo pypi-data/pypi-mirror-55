@@ -1,0 +1,58 @@
+auth-stores:  # per dynamic config only 1 source per type
+  # list in order of precedence ??
+  secrets:
+    path: secrets-test-1.yaml  # relative paths start from the location of the config in question
+    # path: ~/.config/orthauth/secrets.yaml  # default ...
+  authinfo:
+    path: ~/.authinfo
+  mypass:
+    path: ~/.mypass
+  ssh-config:
+    path: ~/.ssh/config
+  other:
+    key-relevant-for-some-non-file-based-store
+path-sources:  # on failure to match only secrets is searched
+  mysql: mypass
+  magithub: authinfo
+  magithub other: secrets
+  hrm does this: secrets
+auth-variables:
+  env-example:
+    environment-variables: I_PREFER_MY_OWN_ENV_VARS_THANK_YOU_VERY_MUCH
+  paths-example:  # path must be defined in the user config otherwise failure will ensue
+    path: user defined path to key
+  full-complexity-example:
+    environment-variables:
+      shading: HIGHEST_PRIORITY HIGHER_PRIORITY_API_KEY {insecure-dynamic-env}
+      shaded: LOW_PRIORITY_API_KEY LOWEST_PRIORITY_API_KEY
+      #dev: MY_PROD_VAR  # do dynamic options work here? no, because we don't know the checking logic
+      #test: MY_TEST_VAR
+    paths:  # alternate syntax ? maybe ?
+    - look here first
+    - look here second
+    paths-nested:  # insecure nested paths to secret
+      secret:
+        path:
+          1:
+          2:
+      failover-secret:
+        path:
+      path:
+        with:
+          hrm:
+            in-the:
+              path:
+      api:
+        some-user:
+        some-other-user:
+  
+  paths-as-list-example:
+    paths:
+      - ['k1', 'k2']
+      - ['k3', 'k4']
+  test-as-property:
+    path: api as-property
+  test-at-init:
+    path: api at-init
+  test-tang-init: tiapi  # don't do this irl please
+  test-value-2: a dynamic value
