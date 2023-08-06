@@ -1,0 +1,3 @@
+[console_scripts]
+login = surn3k:login
+
