@@ -1,0 +1,13 @@
+README.md
+setup.py
+tdbase/__init__.py
+tdbase/__main__.py
+tdbase/lineinfo.py
+tdbase/nodes.py
+tdbase/parser.py
+tdbase/py.typed
+tdbase.egg-info/PKG-INFO
+tdbase.egg-info/SOURCES.txt
+tdbase.egg-info/dependency_links.txt
+tdbase.egg-info/not-zip-safe
+tdbase.egg-info/top_level.txt
