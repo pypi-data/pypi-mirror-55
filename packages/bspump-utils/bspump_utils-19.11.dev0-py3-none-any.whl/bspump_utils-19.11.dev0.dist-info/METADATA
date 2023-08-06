@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: bspump-utils
+Version: 19.11.dev0
+Summary: BSPump utils for ElasticSearch and Kibana. Tiny subset of BSPump
+Home-page: https://github.com/LibertyAces/BitSwanPump
+Author: Liberty Aces Ltd
+Author-email: info@libertyaces.com
+License: BSD-3-Clause
+Project-URL: Source, https://github.com/LibertyAces/BitSwanPump
+Keywords: asyncio asab bspump
+Platform: any
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: Jinja2 (<3.0,>=2.10.1)
+Requires-Dist: requests (<3.0,>=2.21.0)
+
+UNKNOWN
+
+
