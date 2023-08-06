@@ -1,0 +1,14 @@
+crc/__about__.py,sha256=tDY1aymNGmr3Nhxbdz_yySWm2tHP-tDyf2qjCzDIHdw,1144
+crc/__init__.py,sha256=S6YiGAY-645MwIqqRTCzADO4EabR_Wn43RGl6srRBxU,5089
+crc/_dll.py,sha256=rYrEPL70VoGQTy5vsrokDicbrrAkhsAOej0rfyZvObo,287
+crc/_platform/__init__.py,sha256=bLDOTHP6G2H4KnFqymTAg4IYDBJB1REcek_lxbKV9qQ,894
+crc/_platform/_linux.py,sha256=3kolKf16DdMnhXJSELDM57ne3AkcdmzJ-ukLwwrx16g,798
+crc/_platform/_osx.py,sha256=3kolKf16DdMnhXJSELDM57ne3AkcdmzJ-ukLwwrx16g,798
+crc/_platform/_windows.py,sha256=spBoATkmjfdJdXc0GUkQcpygtOz1NjiTZzK54V-_Wrw,957
+crc/_platform/crc.cp35-win_amd64.pyd,sha256=82gigp3uo-4gtXyb64V3plYWFEni8BmejVr810Xq-Og,132096
+crc_ct-1.0.0rc6.dist-info/LICENSE,sha256=ZPfCh9aw0d7zbqv361LD16v59Z6mkcN-FT0Jb9241KM,860
+crc_ct-1.0.0rc6.dist-info/METADATA,sha256=ArRiusM7B4j8RSg7jgd5QpMfcS2Qu0jOiXt3sPLGAvE,3689
+crc_ct-1.0.0rc6.dist-info/WHEEL,sha256=FLKKguMQuZ4WHVBty5iiZ9evDhm22pJLvfCt6in1SfU,102
+crc_ct-1.0.0rc6.dist-info/top_level.txt,sha256=Sjp3wVWQG8_qLNeLkkNYc9X3s7g1nmetgoXfq_yIEZ0,4
+crc_ct-1.0.0rc6.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+crc_ct-1.0.0rc6.dist-info/RECORD,,
