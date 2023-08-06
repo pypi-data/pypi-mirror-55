@@ -1,0 +1,13 @@
+clcache/__init__.py,sha256=t57JLDOEJI-JFO3nIXJresQiHg8LaqTr9gZAbvtO3d8,31
+clcache/__main__.py,sha256=ZZdMJu4ii9EF7vJ1rrnrmjeSSnfsMce4yEuba5H7_Yw,69392
+clcache/monkey.py,sha256=l27oDuMou_InAafK8zW0Ud3BhcpOKKVKAjnBH3ixDE4,1503
+clcache/storage.py,sha256=9CAVjMd3CNav45NmbIft5BC8SggQFAJVzX3yjDTWK-Y,8944
+clcache/server/__init__.py,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+clcache/server/__main__.py,sha256=ycn7i5xTLHQie0EHmkUlfcylchW6PAj1l7FIF9S67bU,5759
+clcache_alt-4.2.1.data/data/clcache.pth,sha256=bojocbZKM_KFzy8zWfZ-bUeFqe-h0Lw8Sx2YoQkxkZ0,112
+clcache_alt-4.2.1.dist-info/LICENSE,sha256=5GqvR6ToNVpyI903vMeEi_8WlHwvS5gZBXHXa2A2d9Q,1615
+clcache_alt-4.2.1.dist-info/METADATA,sha256=zKTxe7rQAKQwRfxRbBik1r7pPe6a5Jju8SlaHMDHooc,404
+clcache_alt-4.2.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+clcache_alt-4.2.1.dist-info/entry_points.txt,sha256=9mb29tPA3NUOxw4XRkqMHJT5G5LbpO5MUsDcycfelG8,130
+clcache_alt-4.2.1.dist-info/top_level.txt,sha256=PMqybHwVf7QUxEthKcYWRv0r818x-emUAqvRD9Mbyng,8
+clcache_alt-4.2.1.dist-info/RECORD,,

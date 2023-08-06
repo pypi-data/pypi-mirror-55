@@ -1,0 +1,5 @@
+[console_scripts]
+cl.cache = clcache.__main__:main
+clcache = clcache.__main__:main
+clcache-server = clcache.server.__main__:main
+

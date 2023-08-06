@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: clcache-alt
+Version: 4.2.1
+Summary: MSVC compiler cache
+Home-page: https://github.com/frerich/clcache
+Author: Frerich Raabe
+Author-email: raabe@froglogic.com
+License: UNKNOWN
+Platform: any
+Requires-Dist: atomicwrites
+Requires-Dist: pymemcache
+Requires-Dist: pyuv
+Requires-Dist: typing ; python_version < "3.5"
+Requires-Dist: subprocess.run ; python_version < "3.5"
+
+UNKNOWN
+
+
