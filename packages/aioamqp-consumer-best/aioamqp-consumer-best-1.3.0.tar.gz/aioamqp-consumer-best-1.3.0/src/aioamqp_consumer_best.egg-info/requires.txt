@@ -1,0 +1,14 @@
+aioamqp
+aionursery<0.3.0
+
+[:python_version < "3.7"]
+dataclasses
+
+[test]
+mypy
+pycodestyle
+pylint
+pytest
+pytest-asyncio
+pytest-cov
+pytest-mock
