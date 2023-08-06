@@ -1,0 +1,9 @@
+README.md
+setup.py
+Py2MobileProvision.egg-info/PKG-INFO
+Py2MobileProvision.egg-info/SOURCES.txt
+Py2MobileProvision.egg-info/dependency_links.txt
+Py2MobileProvision.egg-info/top_level.txt
+mobileprovision/__init__.py
+mobileprovision/parser.py
+mobileprovision/util.py
