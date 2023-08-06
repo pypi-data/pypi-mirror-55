@@ -1,0 +1,10 @@
+README.md
+setup.py
+slicerfiducials/__init__.py
+slicerfiducials/enums.py
+slicerfiducials/slicerfiducials.py
+slicerfiducials/test_SlicerFiducials.py
+slicerfiducials.egg-info/PKG-INFO
+slicerfiducials.egg-info/SOURCES.txt
+slicerfiducials.egg-info/dependency_links.txt
+slicerfiducials.egg-info/top_level.txt
