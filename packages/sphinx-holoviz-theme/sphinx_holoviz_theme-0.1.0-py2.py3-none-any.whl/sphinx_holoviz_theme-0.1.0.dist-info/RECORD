@@ -1,0 +1,17 @@
+sphinx_holoviz_theme/__init__.py,sha256=v-vLJxwoHk5U5Y67PCYRnkaEnpmg0vOSOQwvVgzZ5a0,209
+sphinx_holoviz_theme/_version.py,sha256=2IkdcRo9OHzbicwEwdcnjyI4mfWEHuKwuzQOTTmxaCY,18482
+sphinx_holoviz_theme/layout.html,sha256=pCAixHtnpo_815tXKTq2N5bcIAqCQRwTFm590orkhbc,5983
+sphinx_holoviz_theme/search.html,sha256=cAbcEkDrRA_vrswxVS_3lKk-j688pGOdT2BJXqO-BKQ,1399
+sphinx_holoviz_theme/theme.conf,sha256=Xoon7s7OLOJC0etJe24BuzhEGYoZWxJr127NKPSJKI8,283
+sphinx_holoviz_theme/includes/ga.html,sha256=7sYH0jdyzBznU0GFkoJ8vf2vBTlOldf4gpUy5ilc9Ec,409
+sphinx_holoviz_theme/includes/searchbox.html,sha256=PYSknD3zX3c2HwQn_JsH72Nm1nzcHqBRbSFeBbwshVY,310
+sphinx_holoviz_theme/static/css/main.css_t,sha256=QtsW2MiT0QdKgVwR3a2SWcNu97vNtrkATnNeeAB9dXc,35529
+sphinx_holoviz_theme/static/images/favicon.ico,sha256=BvKwX95gROqTg9tG4Jm5sIkPzYpOXdmcBm3pGI4OODo,5430
+sphinx_holoviz_theme/static/images/logo.png,sha256=snQD7M2qVJiyaHIOLLjI3IN-XLzg36JHC6Wll6mEkhE,19391
+sphinx_holoviz_theme/static/js/main.js,sha256=Ku9SoOY5GToEaW5FHYKAWFPCgkK_286A3md7zKlgCDw,28
+sphinx_holoviz_theme-0.1.0.dist-info/LICENSE.txt,sha256=sF9VKi_u64uCKEhgGXzSt4rl4CKW9IeSUjG8Z3QhNzI,1501
+sphinx_holoviz_theme-0.1.0.dist-info/METADATA,sha256=lTxxFybvyTZn1re0F6Guz2n4MRdIcw5sD8WM3Cqa5IY,3319
+sphinx_holoviz_theme-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+sphinx_holoviz_theme-0.1.0.dist-info/entry_points.txt,sha256=0-vGAlhizVTlndJqpWutiMPeq0cOe1S6bfLLVtgeRCw,66
+sphinx_holoviz_theme-0.1.0.dist-info/top_level.txt,sha256=6XCRcX1w8gPd6VAGEpzB2272kLg4VNyZHmIc39k6VgY,21
+sphinx_holoviz_theme-0.1.0.dist-info/RECORD,,
