@@ -1,0 +1,5 @@
+aarc_g002_entitlement>=0.0.5
+flask
+pyjwt>=1.7.1
+requests
+requests_cache
