@@ -1,0 +1,10 @@
+fink_science/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fink_science/tester.py,sha256=f4qikhh066bIX-CETP-WEnKNi91BUhfGzW7hX-HMu5o,3207
+fink_science/xmatch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+fink_science/xmatch/classification.py,sha256=EtYOfzAXLNlXgmdQZjAhri5875WqUNRVQfPWqMFfhfA,12424
+fink_science/xmatch/processor.py,sha256=87B0Qc_7OXCdcuwdqnXVh5EYWnu4MoGfxNYuaVW_MJI,4226
+fink_science-0.1.2.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+fink_science-0.1.2.dist-info/METADATA,sha256=fNQJYZOdu8rkS_jMTEAkuGvlIPGaE7jXH_slkzx9YXE,6596
+fink_science-0.1.2.dist-info/WHEEL,sha256=-ZFxwj8mZJPIVcZGLrsQ8UGRcxVAOExzPLVBGR7u7bE,92
+fink_science-0.1.2.dist-info/top_level.txt,sha256=1PDpMSNZrjaj-Lsg15z7_LLT_EoI78je_IkJQFzlJBA,13
+fink_science-0.1.2.dist-info/RECORD,,
