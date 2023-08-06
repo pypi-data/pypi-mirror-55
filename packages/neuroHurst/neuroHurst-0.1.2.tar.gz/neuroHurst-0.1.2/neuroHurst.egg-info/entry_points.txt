@@ -1,0 +1,3 @@
+[console_scripts]
+neuroHurst = neuroHurst.cli.run:main
+
