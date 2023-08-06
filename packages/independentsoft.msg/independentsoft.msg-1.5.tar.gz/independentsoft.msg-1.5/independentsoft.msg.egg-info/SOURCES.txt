@@ -1,0 +1,9 @@
+README.rst
+setup.cfg
+setup.py
+independentsoft.msg.egg-info/PKG-INFO
+independentsoft.msg.egg-info/SOURCES.txt
+independentsoft.msg.egg-info/dependency_links.txt
+independentsoft.msg.egg-info/top_level.txt
+independentsoft/msg/__init__.py
+independentsoft/msg/msg.py
