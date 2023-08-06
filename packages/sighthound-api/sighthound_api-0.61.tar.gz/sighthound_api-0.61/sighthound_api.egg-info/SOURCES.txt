@@ -1,0 +1,7 @@
+README.md
+setup.py
+sighthound_api/__init__.py
+sighthound_api.egg-info/PKG-INFO
+sighthound_api.egg-info/SOURCES.txt
+sighthound_api.egg-info/dependency_links.txt
+sighthound_api.egg-info/top_level.txt
