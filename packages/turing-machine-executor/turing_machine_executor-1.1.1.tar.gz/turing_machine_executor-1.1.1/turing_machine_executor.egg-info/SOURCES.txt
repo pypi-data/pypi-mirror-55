@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+turing_machine_executor/__init__.py
+turing_machine_executor/__main__.py
+turing_machine_executor/executor.py
+turing_machine_executor/machine.py
+turing_machine_executor.egg-info/PKG-INFO
+turing_machine_executor.egg-info/SOURCES.txt
+turing_machine_executor.egg-info/dependency_links.txt
+turing_machine_executor.egg-info/entry_points.txt
+turing_machine_executor.egg-info/requires.txt
+turing_machine_executor.egg-info/top_level.txt

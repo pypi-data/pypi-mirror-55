@@ -1,0 +1,4 @@
+[console_scripts]
+emt = turing_machine_executor.__main__:run
+turing-machine-executor = turing_machine_executor.__main__:run
+
