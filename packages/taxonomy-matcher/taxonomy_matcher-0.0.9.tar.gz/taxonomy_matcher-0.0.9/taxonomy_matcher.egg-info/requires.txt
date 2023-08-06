@@ -1,0 +1,1 @@
+easy_tokenizer>=0.0.8
