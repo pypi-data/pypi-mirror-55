@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: Neighborhoodize
+Version: 0.9.6
+Summary: Utility for translating lat, long coordinates into neighborhoods in various cities
+Home-page: https://github.com/bjlange/neighborhoodize
+Author: Brian Lange
+Author-email: thebrianlange@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/bjlange/neighborhoodize/releases/tag/0.9.6
+Keywords: neighborhood,gis,boundaries
+Platform: UNKNOWN
+Requires-Dist: Shapely (>=1.5.7)
+Requires-Dist: beautifulsoup4 (>=4.4.0)
+Requires-Dist: fastkml (>=0.9)
+Requires-Dist: fiona (>=1.6.2)
+
+UNKNOWN
+
+
