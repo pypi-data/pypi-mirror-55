@@ -1,0 +1,34 @@
+Metadata-Version: 2.1
+Name: serdataclasses
+Version: 0.1.0
+Summary: Serialize/deserialize Python objects from/to dataclasses
+License: MIT
+Author: Sam Roeca
+Author-email: samuel.roeca@gmail.com
+Requires-Python: >=3.8,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
+
+# serdataclasses
+
+*Warning: vaporware, subject to change at any time, for any reason, in any way.*
+
+This library has two goals:
+
+1. Deserialize JSON into python dataclasses
+2. Serialize Python data classes into JSON
+
+It has no external dependencies. Python 3.8+.
+
+## Notes
+
+* Recursive types aren't currently supported by mypy. I have them anyway because recursive types will allegedly be supported soon. That said, the type checker isn't super happy with me at the moment.
+* Edge cases haven't been considered. This library is a learning project, for now.
+* Inspired by [undictify](https://github.com/Dobiasd/undictify), but special-cased to dataclasses and more-focused on serde instead of general function signature overrides.
+
+## Written by
+
+* Samuel Roeca
+
