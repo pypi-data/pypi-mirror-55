@@ -1,0 +1,10 @@
+cython
+javaproperties
+argparse
+contextlib2
+pillow
+lxml
+jupyter
+matplotlib
+numpy
+wai.common
