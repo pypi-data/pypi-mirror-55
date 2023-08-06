@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: ddcmakerVirtual
+Version: 0.0.2
+Summary: This is a package for virtual robot 、car 、spider …… 
+Home-page: https://github.com/NocoldBob/robot
+Author: fastbiubiu
+Author-email: fastbiubiu@163.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+虚拟机器人库
+用于调用虚拟的机器人动作组，目前版本为测试版，只能调用Robot相关库函数
+
+
+
+
