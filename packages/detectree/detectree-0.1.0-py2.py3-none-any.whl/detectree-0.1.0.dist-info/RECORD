@@ -1,0 +1,17 @@
+detectree/__init__.py,sha256=6_4HrQ1Q4hzhuooXJEFKiH-hU-uKCgCQ5I7f43nWqGw,160
+detectree/classifier.py,sha256=OrURFfn3lHfSheuU38EPotuXgUG3rEU2wgaJuKROaC8,18149
+detectree/filters.py,sha256=3OYM9kUU6q8f794bpBEIQ0apKSd4LacZxdzl_FniB2E,1529
+detectree/image_descriptor.py,sha256=FrZg009CB4BTvTocD9UVT94l-bcZD9eG3s0GthONA0M,2318
+detectree/pixel_features.py,sha256=ct0HXM484tmmdbLwgPW0ZfMtpUY3oOpo9v6mCiwc2FU,9075
+detectree/pixel_response.py,sha256=6o28khiT9GZFqoWq-sGU32o0Tx57KrBX-U0nsE702kE,4743
+detectree/settings.py,sha256=HeCEa7dcWGcK287P6B3zlWYCMBCeIS3rorSRLTBVkzY,1077
+detectree/train_test_split.py,sha256=9dbznQCaUgesSEYWbwQ_e6g-TTiw5EAj5QMWyo09KLk,9808
+detectree/utils.py,sha256=CNqe0JKEvt7L9U73vc644DkfNLAFRQA00zP1kmxNf3U,9106
+detectree/cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+detectree/cli/main.py,sha256=yhv_yksVycVSmh9aMgJUB56zHWs1tnXRaNNME4-ALgI,12255
+detectree-0.1.0.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+detectree-0.1.0.dist-info/METADATA,sha256=C3cajKW4Bb-y7HW0UryHTwVEbvCRbfstyPjLq01AcnU,1739
+detectree-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+detectree-0.1.0.dist-info/entry_points.txt,sha256=eBS6oOQ6s6umye2YFhBSA3KysjiJY8MfAR6V8AdvIu4,64
+detectree-0.1.0.dist-info/top_level.txt,sha256=a1rLF53APjAjh0VJZRpoqAFvoI8dXODdMU8HRwnV99w,10
+detectree-0.1.0.dist-info/RECORD,,
