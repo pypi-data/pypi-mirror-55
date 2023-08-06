@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: greentext
+Version: 2019.11.5
+Summary: A 4chan object library for navigating the 4chan API intuitively
+Home-page: https://github.com/StarCityIndustries/greentext
+Author: Star City Industries
+Author-email: pypi@starcity.su
+License: UNKNOWN
+Download-URL: https://github.com/StarCityIndustries/greentext/archive/0.1.tar.gz
+Keywords: 4chan,chan,boards,4chan.org,4channel.org,4cdn.org
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Natural Language :: English
+Classifier: Typing :: Typed
+Requires: requests
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+#greentext
+
+##About
+greentext is a 4chan object library for navigating the 4chan API intuitively.
+
+When using **greentext**, it goes without saying that you need to adhere to the [4chan API rules](https://github.com/4chan/4chan-API#api-rules).
+
