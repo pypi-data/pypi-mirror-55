@@ -1,0 +1,15 @@
+nqm/iotdatabase/__init__.py,sha256=ddqzBdLYV3dS_IMohgUMPebjiDO_CHKmquKTCRdM9D0,1182
+nqm/iotdatabase/_datasetdata.py,sha256=Y6KourJQzBVPYAlRKv_ucp2LZLPcfhPmzmEuVNZVRMA,2577
+nqm/iotdatabase/_sqlitealchemyconverter.py,sha256=IfwjZnNM6LkO1aKE6ABS2zik3yRJMliaFSDDDrjZeqc,5959
+nqm/iotdatabase/_sqliteconstants.py,sha256=3JvRJAk8EUEiNXBX-rrAemcEIw_hvNtuebwQjZ1cwlA,1990
+nqm/iotdatabase/_sqliteinfotable.py,sha256=9H0znL9g826Rxuy4uy8xPB8JMIb1fGL4LFP3R99vFt4,3096
+nqm/iotdatabase/_sqliteschemaconverter.py,sha256=BwM9klsLdEUcgstThvEaO_9clLkKwkOm0qiu73Mm4FM,9917
+nqm/iotdatabase/_sqliteutils.py,sha256=LnCWsN3EOoZZu3TMWjBCJlsnf0qJE9uuLi4NeKbBS4o,4829
+nqm/iotdatabase/database.py,sha256=MbMS3jf6nH-zrgBFmQg4WtPYJNmJjmzzT3RzIgKrOC8,24113
+nqm/iotdatabase/ndarray/__init__.py,sha256=4AV_ZFEZvX02Rmt13fY3597eeIAbcbXwjLCDkHs3sEU,920
+nqm/iotdatabase/ndarray/fileio.py,sha256=-lSQsTVzrncpLGupuiKMU83CMDyn3dcTz8lNKsv1oQ4,2323
+nqm/iotdatabase/ndarray/ndarray.py,sha256=jDhXj53X7ppk1Uxfh5ggNh8damG0HuXuRVPyc3yH4Mg,5540
+nqm/iotdatabase/ndarray/storageformats.py,sha256=4BCEFF9XobIEK98FFDD_NG1TGPh99IqKnleLgZxqAbE,6338
+nqm.iotdatabase-1.1.5.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+nqm.iotdatabase-1.1.5.dist-info/METADATA,sha256=E_gUu4Z9wSU_bJBaR6rF-j2uN_vdAgV2dPy-n66IxiI,2128
+nqm.iotdatabase-1.1.5.dist-info/RECORD,,
