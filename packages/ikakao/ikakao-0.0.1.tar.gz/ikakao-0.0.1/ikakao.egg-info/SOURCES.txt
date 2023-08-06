@@ -1,0 +1,7 @@
+README.md
+setup.py
+ikakao/__init__.py
+ikakao.egg-info/PKG-INFO
+ikakao.egg-info/SOURCES.txt
+ikakao.egg-info/dependency_links.txt
+ikakao.egg-info/top_level.txt
