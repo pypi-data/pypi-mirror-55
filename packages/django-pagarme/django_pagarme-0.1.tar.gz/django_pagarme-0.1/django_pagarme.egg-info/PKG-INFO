@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: django-pagarme
+Version: 0.1
+Summary: App Django para Automatizar Integração com Gateway de Pagamento Pagarme
+Home-page: https://github.com/renzon/django_pagarme
+Author: Renzo Nuccitelli
+Author-email: renzo@python.pro.br
+License: GNU Affero General Public License v3 or later (AGPLv3+)
+Description: # django_pagarme
+        App Django para Automatizar Integração com Gateway de Pagamento Pagarme
+        
+        ## Contribuidores
+        
+        @renzon
+        
+        ## Como Contribuir
+        
+        Seguimos a convenção de código da [PEP8](https://www.python.org/dev/peps/pep-0008/), com excessão do tamanho máximo de
+        linha que pode ter 120 caracteres.
+        
+        Faça um fork do projeto e mande um pull request. PR sem testes serão rejeitados.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Affero General Public License v3 or later (AGPLv3+)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Framework :: Django
+Description-Content-Type: text/markdown

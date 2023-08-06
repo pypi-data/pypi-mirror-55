@@ -1,0 +1,9 @@
+README.md
+setup.py
+django_pagarme/__init__.py
+django_pagarme.egg-info/PKG-INFO
+django_pagarme.egg-info/SOURCES.txt
+django_pagarme.egg-info/dependency_links.txt
+django_pagarme.egg-info/not-zip-safe
+django_pagarme.egg-info/requires.txt
+django_pagarme.egg-info/top_level.txt
