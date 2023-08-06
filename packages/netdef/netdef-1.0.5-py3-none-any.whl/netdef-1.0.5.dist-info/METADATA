@@ -1,0 +1,137 @@
+Metadata-Version: 2.1
+Name: netdef
+Version: 1.0.5
+Summary: An application framework with built-in drivers (Controllers), data holders (Sources) and config parsers (Rules). Also includes a web interface for configuration and troubleshooting.
+Home-page: https://bitbucket.org/fholmer/netdef
+Author: Frode Holmer
+Author-email: fholmer+netdef@gmail.com
+License: GNU Lesser General Public License v3 or later
+Project-URL: Documentation, https://netdef.readthedocs.io/en/latest/
+Project-URL: Source Code, https://bitbucket.org/fholmer/netdef
+Keywords: Application Framework Networking Monitoring
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Console
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: System :: Networking :: Monitoring
+Classifier: Topic :: System :: Monitoring
+Requires-Python: >=3.5
+Requires-Dist: Flask
+Requires-Dist: Flask-Admin
+Requires-Dist: Flask-BasicAuth
+Requires-Dist: Flask-Login
+Requires-Dist: Jinja2
+Requires-Dist: psutil
+Requires-Dist: Werkzeug
+Provides-Extra: full
+Requires-Dist: aiohttp ; extra == 'full'
+Requires-Dist: crontab ; extra == 'full'
+Requires-Dist: cryptography ; extra == 'full'
+Requires-Dist: Flask ; extra == 'full'
+Requires-Dist: Flask-Admin ; extra == 'full'
+Requires-Dist: Flask-BasicAuth ; extra == 'full'
+Requires-Dist: Flask-Login ; extra == 'full'
+Requires-Dist: freeopcua ; extra == 'full'
+Requires-Dist: Jinja2 ; extra == 'full'
+Requires-Dist: paho-mqtt ; extra == 'full'
+Requires-Dist: psutil ; extra == 'full'
+Requires-Dist: pymodbus ; extra == 'full'
+Requires-Dist: pytz ; extra == 'full'
+Requires-Dist: PyYAML ; extra == 'full'
+Requires-Dist: pyzmq ; extra == 'full'
+Requires-Dist: schema ; extra == 'full'
+Requires-Dist: six (==1.11.0) ; extra == 'full'
+Requires-Dist: waitress ; extra == 'full'
+Requires-Dist: Werkzeug ; extra == 'full'
+Requires-Dist: pywin32 ; (sys_platform == "win32") and extra == 'full'
+Provides-Extra: windows-service
+Requires-Dist: pywin32 ; extra == 'windows-service'
+
+Netdef
+======
+
+* Documentation: https://netdef.readthedocs.io/en/latest/
+* Bitbucket: https://bitbucket.org/fholmer/netdef
+* GitHub: https://github.com/fholmer/netdef
+* GitLab: https://gitlab.com/fholmer/netdef
+* PyPI: https://pypi.org/project/netdef/
+* License: GNU Lesser General Public License v3 or later (LGPLv3+)
+
+Summary
+-------
+
+An application framework with built-in drivers (Controllers),
+data holders (Sources) and config parsers (Rules).
+Also includes a web interface for configuration and troubleshooting.
+
+Features
+--------
+
+* Abstract base classes for creating custom controllers, sources and rules
+* The configuration is done using configparser with extended interpolation
+* Start a new netdef project with
+  `cookiecutter <https://pypi.org/project/cookiecutter>`_ or
+  `make-project <https://pypi.org/project/make>`_.
+  Templates available at https://bitbucket.org/fholmer/cookiecutter-netdef.
+* Built-in Controllers:
+
+  * OpcUa server / client (`freeopcua <https://pypi.org/project/opcua>`_)
+  * TcpModbus server / client (`pymodbus <https://pypi.org/project/pymodbus>`_)
+  * icmp ping / url ping
+  * XmlRpc client
+  * trigger events by using crontab format
+    (`crontab <https://pypi.org/project/crontab>`_)
+  * disk, memory and CPU monitoring
+    (`psutil <https://pypi.org/project/psutil>`_)
+  * MQTT client (using a simple messaging format called DataAccess)
+    (`paho-mqtt <https://pypi.org/project/paho-mqtt>`_)
+  * Simple RESTJson client
+
+* Built-in Rules:
+
+  * Generic CSV config parser
+  * Generic INI config parser
+  * Generic Yaml config parser
+
+* Built-in application engines:
+
+  * threaded engine with stdout/stderr only
+  * threaded engine with web-interface (webadmin)
+  * serve webadmin behind nginx reverse proxy
+
+Use Cases
+---------
+
+Netdef is useful if you want to create a middleware that can translate a
+protocol into a completely different protocol or data format into a completely
+different data format.
+
+Getting started
+---------------
+
+First install make-project::
+
+    $ python3 -m pip --user install make
+
+Create your first application::
+
+    $ python3 -m make project gl:fholmer/cookiecutter-netdef/cookiecutter-minimal-app First-App
+
+Setup your application::
+
+    $ cd your-application
+    $ python3 -m venv venv
+    $ source venv/bin/activate
+    $ pip install -r requirements-dev.txt
+    $ pip install -r requirements.txt
+
+
