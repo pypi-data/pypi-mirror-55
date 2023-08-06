@@ -1,0 +1,31 @@
+[tool.poetry]
+name = "sortables"
+version = "0.1.1"
+description = "sanely sortable Python data structures"
+authors = ["Scott Bradley <scott@scott2b.com>"]
+licence = "MIT"
+readme = "README.md"
+homepage = "https://github.com/scott2b/sortables"
+repository = "https://github.com/scott2b/sortables"
+keywords = ["sort", "sorting", "data structures", "dict", "tuple", "list", "set"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python",
+    "Topic :: Software Development :: Libraries",
+    "Topic :: Software Development :: Libraries :: Python Modules"
+]
+include = [
+    "LICENSE"
+]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
