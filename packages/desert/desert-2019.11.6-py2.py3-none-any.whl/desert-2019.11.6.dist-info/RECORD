@@ -1,0 +1,14 @@
+desert/__init__.py,sha256=_gxfCmCoYY1rjgvIjKcjS6392PgrbccebRCwVHIdUiw,1653
+desert/_make.py,sha256=xpbXe2NiakhntaS2dyrkvr2e2dudi28HgfM-VxI5D0Q,11940
+desert/_version.py,sha256=f-HgqNera3L6je4DsbXwMe4buOBB6-1koGaxBH2LiDI,27
+desert/exceptions.py,sha256=PGY1jXPZZZWHXZzB12RZd7ztvA6d-Z-KO-EwMSNPTEg,225
+desert/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+marshmallow_attrs/__init__.py,sha256=rnObPjuBcEStqSO0S6gsdS_ot8ITOQjVj_-P1LUUYpg,22
+marshmallow_dataclass/__init__.py,sha256=vURHXKniW6mBpFpbCZv045L79Cs4lppgkA-RRijFQz0,12536
+marshmallow_dataclass/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+desert-2019.11.6.dist-info/AUTHORS.rst,sha256=JfDY5_UZLYuoT7VyNk-_Q4APWsk2moSztLNUHd1x4H8,87
+desert-2019.11.6.dist-info/LICENSE,sha256=45uGt3J3PQjfRz98Nd21BF_fsfarUiQrUn9ttG6CBYg,1077
+desert-2019.11.6.dist-info/METADATA,sha256=dne5jKQsggFbOXsjVSPt402SQNldfWFOouOnWt248ws,3744
+desert-2019.11.6.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+desert-2019.11.6.dist-info/top_level.txt,sha256=T_MbACRfGAiUgAdg0YVNfttM1pDA5OfFC8inTd9KLoU,7
+desert-2019.11.6.dist-info/RECORD,,
