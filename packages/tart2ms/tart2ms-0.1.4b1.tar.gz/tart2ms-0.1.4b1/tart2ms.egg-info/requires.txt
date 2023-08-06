@@ -1,0 +1,6 @@
+astropy
+dask-ms
+numpy
+python-casacore
+tart
+tart_tools
