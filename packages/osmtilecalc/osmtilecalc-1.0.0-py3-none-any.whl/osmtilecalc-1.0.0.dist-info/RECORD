@@ -1,0 +1,14 @@
+osmtilecalc/__init__.py,sha256=lkOiWLrsqynL5qLYIULqZ-3ipjuTChL0qCEpKxGdplY,73
+osmtilecalc/calculators.py,sha256=UnJ5_aA4ja_XRkWzyNfvs0hRH_wFlKAhVpaGw9-LRSM,3007
+osmtilecalc/main.py,sha256=ulORDYpR_t017tc46pd0EPogYr1nyjUznAEa0d5JNpM,1864
+osmtilecalc/validators.py,sha256=vsogyndmoTPdrqqT8HPUZqn2eedR2xcLmjnG0qpH0-Y,743
+tile_calculator/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tile_calculator/calculators.py,sha256=9KXpIvGRRiAfZ1b822Ouh8owHz-uSLcOQBoSsJNT8iY,3007
+tile_calculator/main.py,sha256=kra1fbCxVP81VP7DyryxE5LbWqoJ0HyHqI9QLSnDaCM,1877
+tile_calculator/validators.py,sha256=XgbIUqeQv8IiOiFPU5LMXM6LibZlc50RvZrA9y3QsyM,711
+osmtilecalc-1.0.0.dist-info/LICENSE,sha256=arDU2KGwNeGqyuqnLv-magDB4ZcQ9Ybtlxz3VnFPInE,1072
+osmtilecalc-1.0.0.dist-info/METADATA,sha256=KubPb3Bu5K_kAWAnzOWXvBBopVtrpjLo1vgTJNbc1Uw,1983
+osmtilecalc-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+osmtilecalc-1.0.0.dist-info/entry_points.txt,sha256=R5Ap7CFfMkJCRjgOYAdZjwWKjUpbpHzLoHl5SnwtlY0,55
+osmtilecalc-1.0.0.dist-info/top_level.txt,sha256=kRQd4PWJYzTubHqfmQ9WdWLnKZU0wrHfN_YjZ3Rqq2c,12
+osmtilecalc-1.0.0.dist-info/RECORD,,
