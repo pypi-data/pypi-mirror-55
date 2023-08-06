@@ -1,0 +1,39 @@
+# README
+
+Log to an SQL database from multiple threads.
+
+This program allows you to log information to different topics stored in a database file, extract subsets based on certain condition, as well as converting such selections into dataframes.
+
+            
+## Run instructions
+> Note, only tested with Python 3
+
+0. Create an account with Amazon Web Services and create a [MySQL RDS database instance](https://aws.amazon.com/rds/)
+
+1. Clone the repository
+
+       git clone https://github.com/robotpt/sql-logger
+    
+1. Install the dependencies and setup the project with your Python path
+
+       pip install -e sql-logger
+
+1. Go into the sql-logger
+    
+       cd sql-logger
+       
+1. Create a `config.yml` file in the home directory that mirrors the following. 
+   If `id` is left blank, then one is assigned based on the next available `id` in the database.
+
+       log_info:
+         database_name: my_database
+         id: 
+       sql_database:
+         host: <url>
+         password: mysecretpassword
+         port: 3306
+         user: <user name>
+         
+1. Tests can be run with the following commands.
+
+       python3 -m unittest
