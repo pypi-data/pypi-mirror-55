@@ -1,0 +1,5 @@
+[console_scripts]
+cil = cilantro_ee.cli:main
+storage = cilantro_ee.networking.storage:serve
+witness = cilantro_ee.networking.witness:serve
+
