@@ -1,0 +1,13 @@
+README.md
+setup.py
+latticeJSON.egg-info/PKG-INFO
+latticeJSON.egg-info/SOURCES.txt
+latticeJSON.egg-info/dependency_links.txt
+latticeJSON.egg-info/entry_points.txt
+latticeJSON.egg-info/requires.txt
+latticeJSON.egg-info/top_level.txt
+latticejson/__about__.py
+latticejson/__init__.py
+latticejson/cli.py
+latticejson/convert.py
+latticejson/validate.py
