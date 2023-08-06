@@ -1,0 +1,19 @@
+import random
+import pygame
+import sys
+import os
+from pygame.locals import *
+from Resources.sprites.sprite import Sprite
+class spikes(Sprite):
+    def __init__(self):
+        Sprite.__init__(self)
+        n=0
+        for x in range(2):
+            self.element.append(pygame.image.load(Get('spikes_' + str(n) + '.png')))
+            n+=1
+    def GetEement(self,x):
+        return self.element[x]
+
+def Get(name):
+    return os.path.dirname(os.path.realpath(__file__))+"\\"+name
+
