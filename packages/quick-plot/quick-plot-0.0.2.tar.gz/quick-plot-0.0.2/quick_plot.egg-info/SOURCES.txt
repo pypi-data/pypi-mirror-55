@@ -1,0 +1,6 @@
+README.md
+setup.py
+quick_plot.egg-info/PKG-INFO
+quick_plot.egg-info/SOURCES.txt
+quick_plot.egg-info/dependency_links.txt
+quick_plot.egg-info/top_level.txt
