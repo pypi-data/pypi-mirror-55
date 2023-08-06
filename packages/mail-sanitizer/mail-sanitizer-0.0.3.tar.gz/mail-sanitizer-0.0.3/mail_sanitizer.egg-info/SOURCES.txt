@@ -1,0 +1,12 @@
+README.md
+setup.py
+cli/__init__.py
+cli/mail_dump_ops.py
+cli/main.py
+cli/utils.py
+mail_sanitizer.egg-info/PKG-INFO
+mail_sanitizer.egg-info/SOURCES.txt
+mail_sanitizer.egg-info/dependency_links.txt
+mail_sanitizer.egg-info/entry_points.txt
+mail_sanitizer.egg-info/requires.txt
+mail_sanitizer.egg-info/top_level.txt
