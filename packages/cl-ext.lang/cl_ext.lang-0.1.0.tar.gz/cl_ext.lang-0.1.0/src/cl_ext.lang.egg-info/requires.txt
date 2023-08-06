@@ -1,0 +1,2 @@
+parsimonious
+compare_locales
