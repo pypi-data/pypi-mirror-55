@@ -1,0 +1,9 @@
+README.md
+setup.py
+test/test_type_templating.py
+type_templating/__init__.py
+type_templating/_version.py
+type_templating.egg-info/PKG-INFO
+type_templating.egg-info/SOURCES.txt
+type_templating.egg-info/dependency_links.txt
+type_templating.egg-info/top_level.txt
