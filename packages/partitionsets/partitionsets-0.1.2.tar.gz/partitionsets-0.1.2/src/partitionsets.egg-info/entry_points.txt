@@ -1,0 +1,3 @@
+[console_scripts]
+partition_sets.py = partitionsets.cli:main
+
