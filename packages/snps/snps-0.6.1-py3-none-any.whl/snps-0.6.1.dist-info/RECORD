@@ -1,0 +1,12 @@
+snps/__init__.py,sha256=uXDfg8n0wNEkpsaVRTQqJv2aowTmorS8fYQQqH9hHhQ,39615
+snps/_version.py,sha256=gLIfgUd8eqk6mmHYjBDb6-SbKrryI7u1CMsSukyNo9E,497
+snps/ensembl.py,sha256=BM5UcZfT1rUi7fznBdUqBKYFWvs-odslQS2BDTq-PlE,4395
+snps/io.py,sha256=alXB8UDGYUILbanU6nYJtFSLO9kkvv-but8U3MTghuE,32343
+snps/resources.py,sha256=SoGijUS9Hk9KSqNFGILJWVRiOSeZk5APYNDIsfP798A,26203
+snps/utils.py,sha256=AoazYL7cSzFGVdoJTIPE2CKtvt-uAUa5Lw5l8zy22uU,6317
+snps-0.6.1.dist-info/LICENSE.txt,sha256=H0rRf-6CLZSyphSmm1LiN-5j8RSst9Y3xWoC4fbCPuw,1519
+snps-0.6.1.dist-info/LICENSES-3RD-PARTY.txt,sha256=DZ-zyxTVjcRj6KlhGHli5-ESbWB8LvFZsojXdVO-cIw,12174
+snps-0.6.1.dist-info/METADATA,sha256=_mEM_rddrKmGGfbfMKy8P-PTv8a1V1HFG5fyAcskS9I,9235
+snps-0.6.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+snps-0.6.1.dist-info/top_level.txt,sha256=8L7UcgewDWaUUZ7nE4Yiiy_i4HIVpQLc2A3d29gSGvA,5
+snps-0.6.1.dist-info/RECORD,,
