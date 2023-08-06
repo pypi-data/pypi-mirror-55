@@ -1,0 +1,14 @@
+_optcc.cp38-win_amd64.pyd,sha256=TNTvSLhBzj8HNu5MuFmZ5lVMR7VYTzOi2IBEi-q-s_E,188928
+optcc/__init__.py,sha256=_pNhehGpw9OjIC0K6rCqtZ0Ap-ZjjeR8gbG3MlVlnr8,20
+optcc/optcc.i,sha256=T4GjF5rmSm5ejVxhmL8GgK2Q4HMZIpAST4uD7f_6ANc,12134
+optcc/optcc.py,sha256=Gx1w0PHBMSr_NsFycwGXXtafH8yFG1b5piXXFKXU6Ho,24995
+optcc/C/gclgms.c,sha256=MAEMj5pjBBuYLIUm3TD-VfXEKVpY7qSZnihBzxAiejo,5181
+optcc/C/gclgms.h,sha256=RJjXrrvXOomPm0WtNhY7O82MISDlZ6gQUJMp2hUc_3M,4071
+optcc/C/optcc.c,sha256=27cxr9Jn_03s4XQONhrXoP1ov5psme3-qnh1EnsbbyU,42499
+optcc/C/optcc.h,sha256=lRfooUr2-nM4it0100zatm-m7ENOu7zxGPcuJMMhhhs,21612
+optcc/C/optcc_wrap.c,sha256=YAKpxifBHv5spFwYO99YnnMYRz5m53IYEfJMP03uot0,341515
+optcc-2.post2492.dist-info/LICENSE,sha256=tf0eGUPT_KgWtt9Km9lRWgrVCaOuIbDbvRccrIz8bn0,1104
+optcc-2.post2492.dist-info/METADATA,sha256=w_7-da4HM1-ZMA51t9o1vLUGDVxH4QPhQqh2kVq5Jos,737
+optcc-2.post2492.dist-info/WHEEL,sha256=z-ezgbNu1Y2ixypRrBmFDHP9mmiBhiGywozViqVfAIc,105
+optcc-2.post2492.dist-info/top_level.txt,sha256=zj9QWTG4mBA6sozclQCMbTCYQYkd3xSSmMvK5q1Ompc,13
+optcc-2.post2492.dist-info/RECORD,,
