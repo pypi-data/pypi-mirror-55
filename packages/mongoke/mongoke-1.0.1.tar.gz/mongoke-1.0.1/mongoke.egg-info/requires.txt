@@ -1,0 +1,7 @@
+funcy
+populate>=0.0.8
+requests
+fire
+prtty
+asynctest
+pytest-asyncio
