@@ -1,0 +1,11 @@
+cobs_index.so,sha256=MTyab_zuZUhmfr9q1ybMV7VkpvohsPF6COGZ58NuhQM,1314408
+cobs.bin,sha256=aUEoFYXEG57gs7wRpBJf7_tS4NbkK2cxlHsJL2K-uEs,904016
+.libscobs_index/libz-eb09ad1d.so.1.2.3,sha256=2uJu8RIWphORVNS2noiABa4wo041-h11BGDImiYQFvI,92080
+.libscobs_index/libgomp-f7e03b3e.so.1.0.0,sha256=76BVnL8zq1gHU5iuCWYO6_i6Icpp-63rCGU0xGxZdII,93080
+.libscobs/libz-eb09ad1d.so.1.2.3,sha256=2uJu8RIWphORVNS2noiABa4wo041-h11BGDImiYQFvI,92080
+.libscobs/libgomp-f7e03b3e.so.1.0.0,sha256=76BVnL8zq1gHU5iuCWYO6_i6Icpp-63rCGU0xGxZdII,93080
+cobs_index-0.1.2.data/scripts/cobs,sha256=-2QXG7NW5ofg0YjKM67fcU9GVsKya6ST06-JxY8YjQc,162
+cobs_index-0.1.2.dist-info/RECORD,,
+cobs_index-0.1.2.dist-info/top_level.txt,sha256=mp8E_a-SeKr26q2tQ26_VtTvsOPZaz2txNd3BID85tI,11
+cobs_index-0.1.2.dist-info/METADATA,sha256=N1pR6pE0_Dc99xYI6wUTdkyJovNeVuGMJzWSIIGNLPQ,3823
+cobs_index-0.1.2.dist-info/WHEEL,sha256=eGX-MHK0v1h-Bc_uVrnvtszZoafGXw5wtwguJWqXPuc,113
