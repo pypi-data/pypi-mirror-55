@@ -1,0 +1,33 @@
+# Path to docker socket.
+docker_socket_path: /var/run/docker.sock
+# Path to filtered socket. May be relative to working directory.
+filtered_socket_path: ./dockershield.sock
+# Verbose logging
+verbose: False
+# Watch this config file and reload if it changes
+watch_config: False
+
+# Set the filters.
+# You can find the API documentation per version eg:
+#  https://docs.docker.com/engine/api/v1.40/#
+# Psuedo code for filtering is:
+#  any(match(blacklist)) and not any(match(whitelist))
+# You can set the filter lists to null to disable
+filters:
+  # The method is filtered first.
+  method:
+    blacklist:
+      - DELETE
+    whitelist: null
+  # If method passes, then URL is filtered
+  url:
+    # Set this to True if you want your regex to parse the version part of the API
+    include_version: False
+    # Set this to True to prevent the whitelist from overriding the blacklist
+    strict_blacklist: False
+    blacklist:
+      - .*
+    whitelist:
+      - images/create
+      - images/.*/push
+      - build
