@@ -1,0 +1,8 @@
+djmongoengine/__init__.py,sha256=eAzz22b3X4HDL7QSQmNtBFI54ku2pBZeDBGJt_-n2hk,64
+djmongoengine/config.py,sha256=J-YTI0E2AeCQZ-NGBu4vS-87JzPWfXJXxx_YvnMNKzQ,528
+djmongoengine/connector.py,sha256=89OnWtPVa9hUfEJd32sjWQuRvkvSgqMuzQlPtNAFnms,1158
+djmongoengine/models.py,sha256=n6GhGiraS-7l3V1OyvKxIGkkteIKx7utLMycONcChr0,442
+djmongoengine-1.0.dist-info/METADATA,sha256=DBnToVl1ph1cf4vSEWgATRzawNAd-4sP2QN6YnfeqC0,3549
+djmongoengine-1.0.dist-info/WHEEL,sha256=_NOXIqFgOaYmlm9RJLPQZ13BJuEIrp5jx5ptRD5uh3Y,92
+djmongoengine-1.0.dist-info/top_level.txt,sha256=RvRbW9zjtuomciLEI42ynbH53mH6yPoTbzINo0gROI8,14
+djmongoengine-1.0.dist-info/RECORD,,
