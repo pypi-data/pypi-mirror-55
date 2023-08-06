@@ -1,0 +1,5 @@
+setup.py
+herd.egg-info/PKG-INFO
+herd.egg-info/SOURCES.txt
+herd.egg-info/dependency_links.txt
+herd.egg-info/top_level.txt
