@@ -1,0 +1,26 @@
+Metadata-Version: 1.1
+Name: addext
+Version: 2.0.1
+Summary: Adds file extensions based on PRONOM ID
+Home-page: https://github.com/timothyryanwalsh/addext
+Author: Tim Walsh
+Author-email: timothyryanwalsh@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Keywords: extensions identification
+Platform: POSIX
+Platform: Windows
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: System :: Filesystems
+Classifier: Topic :: Utilities
