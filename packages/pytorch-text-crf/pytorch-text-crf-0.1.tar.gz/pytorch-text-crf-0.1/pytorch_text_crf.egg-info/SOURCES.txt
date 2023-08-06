@@ -1,0 +1,10 @@
+README.md
+setup.py
+crf/__init__.py
+crf/crf.py
+crf/utils.py
+pytorch_text_crf.egg-info/PKG-INFO
+pytorch_text_crf.egg-info/SOURCES.txt
+pytorch_text_crf.egg-info/dependency_links.txt
+pytorch_text_crf.egg-info/requires.txt
+pytorch_text_crf.egg-info/top_level.txt
