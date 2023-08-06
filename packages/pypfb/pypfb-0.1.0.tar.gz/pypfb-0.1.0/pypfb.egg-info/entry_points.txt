@@ -1,0 +1,3 @@
+[console_scripts]
+pfb = pypfb.__main__:main
+
