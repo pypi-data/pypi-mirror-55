@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: SONYC_CAPSTONE_VIS
+Version: 0.3.2
+Summary: SONYC Capstone Visualization Pacakge
+Home-page: https://github.com/Distancs/SONYC_CAPSTONE_VIS
+Author: Biao
+Author-email: biaoh66@gmail.com
+License: MIT
+Description: This Package is used for NYU SONYC and CDS CAPSTONE TEAM. Five Modules are included, Fetch Data, Dimension Reduction, Clustering, Visualization, Debiasing
+Keywords: SONYC,visualization
+Platform: any
