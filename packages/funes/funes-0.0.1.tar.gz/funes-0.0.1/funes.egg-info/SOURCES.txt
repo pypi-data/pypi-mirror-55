@@ -1,0 +1,15 @@
+README.md
+setup.cfg
+setup.py
+funes/__init__.py
+funes/co_tools.py
+funes/hashing.py
+funes/load.py
+funes/logging.py
+funes/memorious.py
+funes/pickling.py
+funes.egg-info/PKG-INFO
+funes.egg-info/SOURCES.txt
+funes.egg-info/dependency_links.txt
+funes.egg-info/requires.txt
+funes.egg-info/top_level.txt
