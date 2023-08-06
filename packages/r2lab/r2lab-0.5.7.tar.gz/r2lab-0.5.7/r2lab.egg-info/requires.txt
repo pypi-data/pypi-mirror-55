@@ -1,0 +1,17 @@
+websockets
+asynciojobs
+apssh
+
+[all]
+apssh
+websockets
+pandas
+
+[mapdataframe]
+pandas
+
+[prepare]
+apssh
+
+[sidecar]
+websockets
