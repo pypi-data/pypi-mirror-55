@@ -1,0 +1,14 @@
+MANIFEST.in
+README.rst
+requirements.txt
+setup.cfg
+setup.py
+versioneer.py
+src/docsclient/__init__.py
+src/docsclient/_version.py
+src/docsclient/client.py
+src/docsclient.egg-info/PKG-INFO
+src/docsclient.egg-info/SOURCES.txt
+src/docsclient.egg-info/dependency_links.txt
+src/docsclient.egg-info/requires.txt
+src/docsclient.egg-info/top_level.txt
