@@ -1,0 +1,6 @@
+recursive-include IITD_speech_vone/Accept_Reject *
+recursive-include IITD_speech_vone/Transcript *
+recursive-include IITD_speech_vone/Theme *
+recursive-include IITD_speech_vone/Gender *
+recursive-include IITD_speech_vone/Silence_Removal *
+recursive-include IITD_speech_vone/models *
