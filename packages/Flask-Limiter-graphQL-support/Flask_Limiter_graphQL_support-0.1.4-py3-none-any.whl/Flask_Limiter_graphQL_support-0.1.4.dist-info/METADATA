@@ -1,0 +1,37 @@
+Metadata-Version: 2.1
+Name: Flask-Limiter-graphQL-support
+Version: 0.1.4
+Summary: Rate limiting for flask applications with graphQL queries and mutations support
+Home-page: https://github.com/jgaye-luko/Flask-Limiter-graphQL-support
+Author: Julien Gaye
+Author-email: julien@getluko.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: Implementation :: PyPy
+Description-Content-Type: text/markdown
+Requires-Dist: limits
+Requires-Dist: Flask (>=0.8)
+Requires-Dist: six (>=1.4.1)
+
+# Flask-Limiter-graphQL-support
+
+A fork of the excellent flask-limiter project : `Read the docs <http://flask-limiter.readthedocs.org>`_  
+Aims at adding a rate limiting feature for graphQL queries and mutations.  
+
+# Changelog
+
+### 0.1.0 2019-11-12
+
+
+* Supports limiting specific functions and not just endpoints. To apply to resolver functions in graphQL schemas.
+
