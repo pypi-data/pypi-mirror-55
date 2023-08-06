@@ -1,0 +1,5 @@
+thonny
+esptool
+adafruit-ampy
+ipdb
+darkdetect
