@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: dbvirus-searcher
+Version: 0.1.1
+Summary: SRA data searcher w/ local caching for the DBVirus project
+License: MIT
+Author: Felipe Rodrigues
+Author-email: felipe@felipevr.com
+Requires-Python: >=3.7,<4.0
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: biopython (>=1.74,<2.0)
+Requires-Dist: dbvirus-cacher (>=0.0.2,<0.0.3)
+Requires-Dist: fire (>=0.2.1,<0.3.0)
+Requires-Dist: pytz (>=2019.2,<2020.0)
+Requires-Dist: tqdm (>=4.36,<5.0)
+Requires-Dist: xmltodict (>=0.12,<0.13)
+Description-Content-Type: text/markdown
+
+# DBVirus - Searcher
+
+Searcher is a CLI tool that provides a locally cached search for NCBI data,
+mainly focused on the SRA dataset.
+
+## Usage
+
+You can find this project on [Docker Hub](https://hub.docker.com/r/fbidu/dbvirus-searcher)
+
+```
+docker pull fbidu/dbvirus-searcher
+```
+
