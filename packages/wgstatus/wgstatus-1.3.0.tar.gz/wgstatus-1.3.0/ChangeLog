@@ -1,0 +1,82 @@
+CHANGES
+=======
+
+1.3.0
+-----
+
+* Add download drafts option and fix rest API access
+* Run through yapf and turn auto-format on
+* Update gitignore
+* Work around datatracker bug
+
+1.2.0
+-----
+
+* fix more bugs
+* fix reference to historical docs
+
+1.1.2
+-----
+
+* use requests, fixes for py versions
+* fixes for py27
+* increase cache times
+* increase cache times
+
+1.0.0
+-----
+
+* version 1.0
+* finally add back new/updated check for 00 and more published in one cycle
+* more fixes
+* add back shepherd functionality
+* add caching
+* some fixes, a couple bugs to fix
+
+0.9.9
+-----
+
+* Add short opts and version
+
+0.9.8
+-----
+
+* Import reduce from functools (py3 compat)
+
+0.9.7
+-----
+
+* Add shepherd update version
+* up version
+* add shepherd
+
+0.9.5
+-----
+
+* update to latest datatracker
+* Update readme with better install instructions
+* add meeting lookup for last, and new format
+
+0.9.2
+-----
+
+* incr release
+* improve group search url, print rfc title
+
+0.9.1
+-----
+
+* Update version and fix spelling
+* Fix invoking directly
+* README cleanup
+* More readme fixes
+* Literal block for example
+* Update usage
+* Fix args, add to readme
+* add formatting options
+* fix original date fetch
+* work with other than isis
+* udpate readme
+* change name
+* add check for original date of publication
+* initial commit
