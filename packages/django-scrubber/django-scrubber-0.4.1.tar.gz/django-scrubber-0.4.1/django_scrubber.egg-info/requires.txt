@@ -1,0 +1,4 @@
+django-model-utils>=2.0
+
+[:python_version<'3']
+future>=0.16.0
