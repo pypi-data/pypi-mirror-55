@@ -1,0 +1,15 @@
+aiobotocore/__init__.py,sha256=DuOZKYcDkG-hLxJ5zlTov3XV4qLHzNYSlKyw99Xwy34,109
+aiobotocore/_endpoint_helpers.py,sha256=WXrYJpj_Ce0kF2SK7FzZmeywbPC1zr4RM7BZvcBsdP4,3127
+aiobotocore/args.py,sha256=jzop0AhAOKXLoVSYwXdmuNZW_tDxuOqqoNGUb55nGF4,3587
+aiobotocore/client.py,sha256=RlXMFqyqzao3NEymeF7TjMf7hXkL30ZnaC1NEfkz1o4,8824
+aiobotocore/config.py,sha256=JoO9EJtBDV7PokmoJ-bKJFG2RWeJXFCK_kTZpcQFsyQ,2308
+aiobotocore/endpoint.py,sha256=cjyfkuhz_9dkIXiJElwMDBheNm98ewVThZXlTUMvn_o,13083
+aiobotocore/paginate.py,sha256=nX4tiBazhwp7vjqpB1Ut_RqrZSg9Savcp8yBdGy7kDM,8754
+aiobotocore/response.py,sha256=QLmBX40fh9BvNNxbu2mWN7Jz6fC9g-zCNOn9Pf9e44Y,3978
+aiobotocore/session.py,sha256=7InBjiSnbBmzfPZQInnS2noiXGHkhXMj-yMXxN6Cs9U,3711
+aiobotocore/waiter.py,sha256=8U9Udpgkx_HeZdiPxdcYzJFCyffUh4rPWanj5orIPeE,4557
+aiobotocore-0.11.0.dist-info/LICENSE,sha256=bk3419QmXyqqjDTbXPf_BIuqkgoWW6w8rCPxBFPR5j4,11516
+aiobotocore-0.11.0.dist-info/METADATA,sha256=G6NnRLEOI9E9L1UFPVGFJi9BvfT0ML4LwAsVW70LJJ8,11032
+aiobotocore-0.11.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+aiobotocore-0.11.0.dist-info/top_level.txt,sha256=T3M9xMgiH7ds2FkMWbkut4LzgZx48MrZw8xmntgzGu0,12
+aiobotocore-0.11.0.dist-info/RECORD,,
