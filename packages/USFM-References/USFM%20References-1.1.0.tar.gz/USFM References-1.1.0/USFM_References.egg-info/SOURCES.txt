@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+USFM_References.egg-info/PKG-INFO
+USFM_References.egg-info/SOURCES.txt
+USFM_References.egg-info/dependency_links.txt
+USFM_References.egg-info/not-zip-safe
+USFM_References.egg-info/top_level.txt
+usfm_references/__init__.py
