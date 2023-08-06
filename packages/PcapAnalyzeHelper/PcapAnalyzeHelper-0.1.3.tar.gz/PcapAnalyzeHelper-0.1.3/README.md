@@ -1,0 +1,14 @@
+### PcapAnalyzeHelper
+PcapAnalyzeHelper is a package offers a statistics summary of pcap file with specified destination IP. It offers statistics summary of distribution of protocol, source port, source IP, destination port, IP length, IP flags, checksum, ttl, udp payload, TCP flags, window scale.
+
+#### To use (with causion), please do 
+```
+import PcapAnalyzeHelper
+from os import listdir
+### need a folder which contains all the pcap file you need to parse ###
+folder = <folder name>
+print("Opening {}...".format(folder))
+files = [folder + file for file in listdir(folder)]
+PcapAnalyzeHelper.pcap_stat(files)
+
+```
