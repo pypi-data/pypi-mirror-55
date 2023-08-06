@@ -1,0 +1,50 @@
+Metadata-Version: 1.1
+Name: invenio-oarepo-files-rest
+Version: 1.0.3
+Summary: REST API for uploading/downloading files for OArepo.
+Home-page: https://github.com/oarepo/invenio-oarepo-files-rest
+Author: Miroslav Bauer
+Author-email: bauer@cesnet.cz
+License: MIT
+Description: ..
+            Copyright (C) 2019 CESNET.
+        
+            OArepo Files REST is free software; you can redistribute it and/or modify it
+            under the terms of the MIT License; see LICENSE file for more details.
+        
+        ===================
+         OArepo Files REST
+        ===================
+        
+        .. image:: https://img.shields.io/github/license/oarepo/oarepo-files-rest.svg
+                :target: https://github.com/oarepo/oarepo-files-rest/blob/master/LICENSE
+        
+        .. image:: https://img.shields.io/travis/oarepo/oarepo-files-rest.svg
+                :target: https://travis-ci.org/oarepo/oarepo-files-rest
+        
+        .. image:: https://img.shields.io/coveralls/oarepo/oarepo-files-rest.svg
+                :target: https://coveralls.io/r/oarepo/oarepo-files-rest
+        
+        .. image:: https://img.shields.io/pypi/v/oarepo-files-rest.svg
+                :target: https://pypi.org/pypi/oarepo-files-rest
+        
+        REST API for uploading/downloading files for OArepo.
+        
+        Further documentation is available on
+        https://oarepo-files-rest.readthedocs.io/
+        
+        
+Keywords: invenio-oarepo-files-rest Invenio
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Development Status :: 4 - Beta
