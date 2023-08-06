@@ -1,0 +1,42 @@
+# Settings of the session object
+[session]
+connections = 10
+headers = {}
+
+
+# Return plain text
+[service.ifconfig]
+url = "https://ifconfig.co/ip"
+
+[service.icanhazip]
+url = "https://icanhazip.com"
+
+[service.ipinfo]
+url = "https://ipinfo.io/ip"
+
+[service.ipecho]
+url = "https://ipecho.net/plain"
+
+[service.ident]
+url = "https://ident.me"
+
+[service.curlmyip]
+url = "http://curlmyip.net"
+
+
+# Return JSON
+[service.ipify]
+url = "https://api.ipify.org?format=json"
+attr = "ip"
+
+[service.ip-api]
+url = "http://ip-api.com/json"
+attr = "query"
+
+
+# Disfunctional
+[service.ipaddr]
+url = "https://ipaddr.site"
+
+[service.dsdasdsadasdsadasdd]
+url = "https://dsdasdsadasdsadasdd.com"
