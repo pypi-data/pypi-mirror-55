@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: PTIAndante
+Version: 1.0.1
+Summary: PTI Demand Planner Utilities
+Home-page: https://gitlab.com/paragon-is/erp/pti_andante.git
+Author: Agustianes Umbara Suwardi
+Author-email: agustianes.us@pti-cosmetics.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: Click (==7.0)
+Requires-Dist: loguru (==0.3.2)
+Requires-Dist: xlrd (==1.2.0)
+
+PTI Andante
+===========
+
+## About
+
+PTI Andante is a collection of script utilities for demand planners to help their daily tasks.
+
+## Installing
+
+To install, simply run:
+
+```
+pip install PTIAndante
+```
+
+## Usage
+
+Type `andante` in the terminal to see commands options.
+
+### Pivoting Tool
+
+This tool is invoked with `pivot` command. It reads Input Revision (Pre-Demand) file and produces a 'pivot' file that can be read by Raw Revisi file.
+
+## Develop
+
+Contact me if you need access to the GitLab repository.
+
+
