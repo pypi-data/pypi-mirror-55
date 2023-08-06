@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: gravtools
+Version: 0.0.1
+Summary: Gravitational tools for Python
+Home-page: http://github.com/JWKennington/gravtools
+Author: James W. Kennington
+Author-email: jameswkennington@gmail.com
+License: MIT
+Description: # gravtools
+        Utilities for gravitational physics
+        
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
