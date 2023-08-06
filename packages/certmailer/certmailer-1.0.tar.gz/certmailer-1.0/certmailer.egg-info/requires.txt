@@ -1,0 +1,5 @@
+PyYaml
+mailjet_rest
+certg
+appdirs
+click
