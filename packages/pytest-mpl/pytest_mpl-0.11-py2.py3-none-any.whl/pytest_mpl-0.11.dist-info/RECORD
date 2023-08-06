@@ -1,0 +1,9 @@
+pytest_mpl/__init__.py,sha256=eq5-E_AGXQWzrp-PHIiCuhVzXWktPhr1JbGnNDufsCQ,21
+pytest_mpl/classic.mplstyle,sha256=xo45nxWK49qd3bg-GCpuwmK9em2Z4NHG4azCoPADJnw,22385
+pytest_mpl/plugin.py,sha256=Ne-a9xH4fkFmRCULUsSspfV4tiL-5ifvkQ2C3xw3O8A,14190
+pytest_mpl-0.11.dist-info/LICENSE,sha256=c4017wF4cuxAxw5ak6-kiG0xXGpK0XMPD0pb6NZoJmk,1471
+pytest_mpl-0.11.dist-info/METADATA,sha256=p1uI6-wZvUV6zveh6sIgMerd4Dglrhyr5_87LHhM1Jw,9479
+pytest_mpl-0.11.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+pytest_mpl-0.11.dist-info/entry_points.txt,sha256=3fvdwDyHQdlxzPeHZYyu2VgXwSTA37JUIp-Oo25ckfQ,43
+pytest_mpl-0.11.dist-info/top_level.txt,sha256=DWgdrFhGrhaevInhV5fpHdiwsZtpB5KjtE-hFiHQsxs,11
+pytest_mpl-0.11.dist-info/RECORD,,
