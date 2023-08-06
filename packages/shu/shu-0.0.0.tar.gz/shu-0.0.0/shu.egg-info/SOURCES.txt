@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+setup.py
+docs/source/description.rst
+shu.egg-info/PKG-INFO
+shu.egg-info/SOURCES.txt
+shu.egg-info/dependency_links.txt
+shu.egg-info/top_level.txt
+src/shu/__init__.py
