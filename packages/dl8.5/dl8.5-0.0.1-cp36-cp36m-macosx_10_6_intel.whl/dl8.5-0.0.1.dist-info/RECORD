@@ -1,0 +1,14 @@
+dl85Optimizer.cpython-36m-darwin.so,sha256=6joD0rcw_6Zrus1IZLzPI4hXO32k3VumVDdTYzB_Mlw,750804
+dl85/__init__.py,sha256=hLjm3RVIC3mvF7MoS_oJYZSaMLQHeBXCoEgafmia9Kg,110
+dl85/_version.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+dl85/classifiers/__init__.py,sha256=zE9u4abDAaFl5rWeD7I3DrfP9EZ5b8NGBva99WngHJg,37
+dl85/classifiers/predictors.py,sha256=_gWaZcXaoMA7DqOAHEKPbt6NWXsVq8ACJRyr-zA5mxk,8658
+dl85/classifiers/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dl85/classifiers/tests/test_ODTClassifier.py,sha256=P09yW-K2hrSmWu08zIbGItfDd79Q1YdMaJbtONRbXJ4,1413
+dl85/errors/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+dl85/errors/errors.py,sha256=ilz4BClir0_guHP_4vdzf17BJrV8_fRavXTymkR62ns,751
+dl8.5-0.0.1.dist-info/LICENSE.txt,sha256=GFuNZz3r4hG4ABRxb2RNBChBvvPJZjAdXKDYJJTEyl4,1054
+dl8.5-0.0.1.dist-info/METADATA,sha256=DCCR0aaSByJV2fTDnkbLrhE5l48lOrZpkGKIboPD-I4,2352
+dl8.5-0.0.1.dist-info/WHEEL,sha256=NALWuZoyU1AH-adYaiMj2ia9Gibn5jcQQ6LL9rSLAE4,109
+dl8.5-0.0.1.dist-info/top_level.txt,sha256=78XY7Kqkzoe8GFaqMaxp6P2qxz3v9gfVH_CYQRTQB9Y,19
+dl8.5-0.0.1.dist-info/RECORD,,
