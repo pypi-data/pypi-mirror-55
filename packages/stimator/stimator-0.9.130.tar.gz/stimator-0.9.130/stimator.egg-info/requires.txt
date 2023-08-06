@@ -1,0 +1,6 @@
+six
+pytest
+sympy
+numpy
+scipy
+matplotlib>=2.0
