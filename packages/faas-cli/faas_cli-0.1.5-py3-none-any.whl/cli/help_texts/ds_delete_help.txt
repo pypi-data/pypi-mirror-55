@@ -1,0 +1,7 @@
+/033[37m*******************************************************************
+source_data delete sub-command
+----------
+Deletes Source Data resource
+    Usage:
+    /033[32mfaascli source_data delete --name <Source Data name>/033[37m
+*******************************************************************/033[0m

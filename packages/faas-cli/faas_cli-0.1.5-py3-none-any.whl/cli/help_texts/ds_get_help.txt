@@ -1,0 +1,8 @@
+/033[37m*******************************************************************
+source_data get sub-command
+----------
+Gets a Source Data resource
+    Usage:
+    /033[32mfaascli source_data get --name <Source Data name>/033[37m
+*******************************************************************/033[0m
+

@@ -1,0 +1,17 @@
+/033[37m*******************************************************************
+source_data create sub-command
+----------
+Creates Source Data resource
+-----
+    In case of local file uploading
+    Usage:
+    /033[32mfaascli source_data create file --name <Source Data name>
+    --type <xml|json> --file <path to a file to upload>/033[37m
+-----
+    In case of S3 bucket usage
+    Usage:
+    /033[32mfaascli source_data create s3 --name <Source Data name>
+    --type <xml|json> --path <s3://bucket/key>
+    --role_arn <S3 Role ARN with access to provided path>/033[37m
+*******************************************************************/033[0m
+

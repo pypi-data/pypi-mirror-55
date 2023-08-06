@@ -1,0 +1,8 @@
+/033[37m*******************************************************************
+conversion create sub-command
+----------
+Creates a Conversion.
+    Usage:
+    /033[32mfaascli conversion create --name <name of a conversion>
+--data <name of source data> --schema <name of source schema> --target <name of target connection>/033[37m
+*******************************************************************/033[0m
