@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+setup.py
+pyreleaser_io/__init__.py
+pyreleaser_io/cli.py
+pyreleaser_io/create.py
+pyreleaser_io/github.py
+pyreleaser_io/template.py
+pyreleaser_io/util.py
+pyreleaser_io.egg-info/PKG-INFO
+pyreleaser_io.egg-info/SOURCES.txt
+pyreleaser_io.egg-info/dependency_links.txt
+pyreleaser_io.egg-info/entry_points.txt
+pyreleaser_io.egg-info/top_level.txt
