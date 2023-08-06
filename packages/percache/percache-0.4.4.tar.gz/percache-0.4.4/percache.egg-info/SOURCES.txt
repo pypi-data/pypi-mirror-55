@@ -1,0 +1,9 @@
+MANIFEST.in
+README.md
+percache.py
+setup.py
+tests.py
+percache.egg-info/PKG-INFO
+percache.egg-info/SOURCES.txt
+percache.egg-info/dependency_links.txt
+percache.egg-info/top_level.txt
