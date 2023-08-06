@@ -1,0 +1,7 @@
+MANIFEST.in
+README.md
+setup.py
+netcontrol.egg-info/PKG-INFO
+netcontrol.egg-info/SOURCES.txt
+netcontrol.egg-info/dependency_links.txt
+netcontrol.egg-info/top_level.txt
