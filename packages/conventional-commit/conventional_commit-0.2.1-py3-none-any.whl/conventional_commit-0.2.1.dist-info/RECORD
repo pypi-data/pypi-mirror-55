@@ -1,0 +1,13 @@
+gitcommit/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitcommit/__main__.py,sha256=TVZyIQ9dWdoV9qQPQRx2aV2atbImn4QAceXvbB_Pswg,36
+gitcommit/__version__.py,sha256=HfjVOrpTnmZ-xVFCYSVmX50EXaBQeJteUHG-PD6iQs8,22
+gitcommit/ansi.py,sha256=Xz7gSO7X2KqTkoea73ieQOOa7vMtiZVh__t8-fO65HU,2229
+gitcommit/completers.py,sha256=A_u-FeOAK3SUPxwYvC4eV8fCxJ9NFbsAoPxGBwVEFks,2698
+gitcommit/gitcommit.py,sha256=0kesuWco19EwdA30A8s08qEaDGkqqFdKMhZHRn0YmKU,12814
+gitcommit/updater.py,sha256=ra6fzD_nmbLkY-M9QOZJLQjcKYCY2mY5nmD04Y-Djm0,1724
+gitcommit/validators.py,sha256=G1LlBgVtbD2uAUwwzRh7-VsUOo8J9b3-7rdMtmvgR3k,3376
+conventional_commit-0.2.1.dist-info/entry_points.txt,sha256=205fdh-RXM_rNYKnKkOyAZphgel0A8PIT6eD7L-nMdU,54
+conventional_commit-0.2.1.dist-info/LICENSE,sha256=ixuiBLtpoK3iv89l7ylKkg9rs2GzF9ukPH7ynZYzK5s,35148
+conventional_commit-0.2.1.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+conventional_commit-0.2.1.dist-info/METADATA,sha256=H4Lrs6Qnl1UsCZGpT8m23t2313gNtO8LVH6O0sPDiQQ,3955
+conventional_commit-0.2.1.dist-info/RECORD,,
