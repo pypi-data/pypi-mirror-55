@@ -1,0 +1,57 @@
+{
+    "context": {
+        "p-genecards": "https://previous.genecards.org/cgi-bin/carddisp.pl?gene=",
+        "en-genecards": "https://www.genecards.org/Search/Keyword?queryString="
+    },
+    "source_plan": {
+        "rep_column": "EnhancerRep",
+        "node_name_column": "Enhancer",
+        "property_columns": [
+            {
+                "column_name": "Chromosome",
+                "attribute_name": "Chromosome"
+            },
+            {
+                "column_name": "StartLocation",
+                "attribute_name": "StartLocation"
+            },
+            {
+                "column_name": "EndLocation",
+                "attribute_name": "EndLocation"
+            },
+            {
+                "column_name": "EnhancerConfidenceScore",
+                "attribute_name": "EnhancerConfidenceScore",
+                "data_type": "double"
+            },
+            {
+                "column_name": "EnhancerType",
+                "attribute_name": "type"
+            }
+        ]
+    },
+    "target_plan": {
+        "rep_column": "GeneRep",
+        "node_name_column": "Gene",
+        "property_columns": [
+            {
+                "column_name": "GeneType",
+                "attribute_name": "type"
+            },
+            {
+                "column_name": "GeneGeneType",
+                "attribute_name": "GeneType"
+            }
+        ]
+    },
+    "edge_plan": {
+        "default_predicate": "enhances",
+        "property_columns": [
+            {
+                "column_name": "GeneEnhancerScore",
+                "attribute_name": "GeneEnhancerScore",
+                "data_type": "double"
+            }
+        ]
+    }
+}
