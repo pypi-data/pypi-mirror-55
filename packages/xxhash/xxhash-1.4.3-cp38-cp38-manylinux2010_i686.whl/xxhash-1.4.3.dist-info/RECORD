@@ -1,0 +1,6 @@
+xxhash-1.4.3.dist-info/top_level.txt,sha256=1PPSBP-gnjG59E5bigzMTzmT6BVWjHwnpzMiisPWZ5I,15
+xxhash-1.4.3.dist-info/RECORD,,
+xxhash-1.4.3.dist-info/METADATA,sha256=bERc-eBlls5oNT6CUBZH_D8SA_8iOgAfUVbAvWfhGt4,8360
+xxhash-1.4.3.dist-info/WHEEL,sha256=UVnjqCM-lGS-6xJlRARWHkY-vdywPnxjC1vkPq6irso,109
+xxhash/_xxhash.cpython-38-i386-linux-gnu.so,sha256=zJsF-mHac1HhFBakkWfL7utuDzIjVWII4owAGLs3NJE,314872
+xxhash/__init__.py,sha256=7Fv54VNcBcx4l-x-dDW7NgXQ8dX3uloCX2tetpmVeDE,515
