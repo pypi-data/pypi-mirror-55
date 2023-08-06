@@ -1,0 +1,156 @@
+{
+    "flask_app": {
+        "BASIC_AUTH_PASSWORD": "demo",
+        "BASIC_AUTH_USERNAME": "demo",
+        "SECRET_KEY": "MySuperUltraSecret"
+    },
+    "server": {
+        "host": "127.0.0.1",
+        "port": 5001
+    },
+    "iqr_service": {
+        "plugins": {
+            "classification_factory": {
+                "MemoryClassificationElement": {},
+                "type": "MemoryClassificationElement"
+            },
+            "classifier_config": {
+                "LibSvmClassifier": {
+                    "normalize": 2,
+                    "svm_label_map_uri": null,
+                    "svm_model_uri": null,
+                    "train_params": {
+                        "-b": 1,
+                        "-c": 2,
+                        "-s": 0,
+                        "-t": 0
+                    }
+                },
+                "type": "LibSvmClassifier"
+            },
+            "descriptor_factory": {
+                "DescriptorMemoryElement": {},
+                "type": "DescriptorMemoryElement"
+            },
+            "descriptor_generator": {
+                "CaffeDescriptorGenerator": {
+                    "batch_size": 128,
+                    "data_layer": "data",
+                    "gpu_device_id": 0,
+                    "image_mean_uri": "~/dev/caffe/source/data/ilsvrc12/imagenet_mean.binaryproto",
+                    "input_scale": null,
+                    "load_truncated_images": false,
+                    "network_is_bgr": true,
+                    "network_model_uri": "~/dev/caffe/source/models/bvlc_alexnet/bvlc_alexnet.caffemodel",
+                    "network_prototxt_uri": "~/dev/caffe/source/models/bvlc_alexnet/deploy.prototxt",
+                    "pixel_rescale": null,
+                    "return_layer": "fc7",
+                    "use_gpu": true
+                },
+                "type": "CaffeDescriptorGenerator"
+            },
+            "descriptor_index": {
+                "MemoryDescriptorIndex": {
+                    "cache_element": {
+                        "DataFileElement": {
+                            "explicit_mimetype": null,
+                            "filepath": "workdir/butterflies_alexnet_fc7/descriptor_index.pickle",
+                            "readonly": false
+                        },
+                        "type": "DataFileElement"
+                    },
+                    "pickle_protocol": -1
+                },
+                "type": "MemoryDescriptorIndex"
+            },
+            "neighbor_index": {
+                "FlannNearestNeighborsIndex": {
+                    "autotune": false,
+                    "descriptor_cache_uri": "workdir/butterflies_alexnet_fc7/flann/index.cache",
+                    "distance_method": "hik",
+                    "index_uri": "workdir/butterflies_alexnet_fc7/flann/index.flann",
+                    "parameters_uri": "workdir/butterflies_alexnet_fc7/flann/index.parameters",
+                    "random_seed": 42
+                },
+                "LSHNearestNeighborIndex": {
+                    "descriptor_index": {
+                        "MemoryDescriptorIndex": {
+                            "cache_element": {
+                                "DataFileElement": {
+                                    "explicit_mimetype": null,
+                                    "filepath": "workdir/butterflies_alexnet_fc7/descriptor_index.pickle",
+                                    "readonly": false
+                                },
+                                "type": "DataFileElement"
+                            },
+                            "pickle_protocol": -1
+                        },
+                        "type": "MemoryDescriptorIndex"
+                    },
+                    "distance_method": "cosine",
+                    "hash2uuids_kvstore": {
+                        "MemoryKeyValueStore": {
+                            "cache_element": {
+                                "DataFileElement": {
+                                    "explicit_mimetype": null,
+                                    "filepath": "workdir/butterflies_alexnet_fc7/hash2uuids.mem_kvstore.pickle",
+                                    "readonly": false
+                                },
+                                "type": "DataFileElement"
+                            }
+                        },
+                        "type": "MemoryKeyValueStore"
+                    },
+                    "hash_index": {
+                        "type": null
+                    },
+                    "hash_index_comment": "'hash_index' may also be null to default to a linear index built at query time.",
+                    "lsh_functor": {
+                        "ItqFunctor": {
+                            "bit_length": 64,
+                            "itq_iterations": 50,
+                            "mean_vec_cache": {
+                                "DataFileElement": {
+                                    "explicit_mimetype": null,
+                                    "filepath": "workdir/butterflies_alexnet_fc7/itqnn/mean_vec.npy",
+                                    "readonly": false
+                                },
+                                "type": "DataFileElement"
+                            },
+                            "normalize": null,
+                            "random_seed": 42,
+                            "rotation_cache": {
+                                "DataFileElement": {
+                                    "explicit_mimetype": null,
+                                    "filepath": "workdir/butterflies_alexnet_fc7/itqnn/rotation.npy",
+                                    "readonly": false
+                                },
+                                "type": "DataFileElement"
+                            }
+                        },
+                        "type": "ItqFunctor"
+                    },
+                    "read_only": false
+                },
+                "type": "LSHNearestNeighborIndex"
+            },
+            "relevancy_index_config": {
+                "LibSvmHikRelevancyIndex": {
+                    "autoneg_select_ratio": 1,
+                    "cores": null,
+                    "descr_cache_filepath": null,
+                    "multiprocess_fetch": false
+                },
+                "type": "LibSvmHikRelevancyIndex"
+            }
+        },
+        "session_control": {
+            "positive_seed_neighbors": 500,
+            "session_expiration": {
+                "check_interval_seconds": 30,
+                "enabled": false,
+                "session_timeout": 3600
+            }
+        }
+    }
+}
