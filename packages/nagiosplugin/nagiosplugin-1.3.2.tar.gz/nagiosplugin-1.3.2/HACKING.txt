@@ -1,0 +1,128 @@
+Development
+===========
+
+Getting the source
+------------------
+
+The source can be obtained via git from
+https://github.com/mpounsett/nagiosplugin.git::
+
+   git clone https://github.com/mpounsett/nagiosplugin.git
+
+This package supports installation in a virtualenv::
+
+   python3 -m venv .
+   pip install -e .
+
+
+Tests
+-----
+
+**nagiosplugin** tests are run by `tox`_, which is configured to expect all of
+the supported `python` versions to be present.  The easiest way to accomplish
+this is by installing and using `pyenv`_.  
+
+.. _tox: https://tox.readthedocs.io/en/latest/
+.. _pyenv: https://github.com/pyenv/pyenv
+
+Once you have `pyenv` set up, make sure you have each of the supported
+versions of python specified by the `envlist` in `tox.ini`.  This will likely
+look something like::
+
+   pyenv install 2.7.16
+   pyenv install 3.4.10
+   pyenv install 3.5.7
+   pyenv install 3.6.9
+   pyenv install 3.7.4
+   pyenv global 3.7.4 3.6.9 3.5.7 3.4.10 2.7.16
+
+Install test dependencies::
+
+   pip install -r requirements_test.txt
+
+After doing so, run the unit tests::
+
+   tox
+
+To limit tests to a particular python environment::
+
+   tox -e py37
+
+Run only linting tests::
+
+   tox -e lint
+
+**nagiosplugin** also includes support for test coverage reports. Coverage
+reports are updated automatically by `tox`. Open `htmlcov/index.html` to see
+coverage reports.
+
+You may run the supplied examples with the local interpreter::
+
+   python3 nagiosplugin/examples/check_load.py
+
+
+Documentation
+-------------
+
+The documentation depends on Sphinx.  Install the necessary dependencies, and
+then build the documentation::
+
+   pip install -r requirements_docs.txt
+   make docs
+
+HTML documentation will be built and installed in `doc/_build/html/`.  You can
+read the documentation by opening `doc/_build/html/index.html`.
+
+Versioning
+----------
+
+**nagiosplugin** obeys the semantic version numbering specification
+published on SemVer_, adapted slightly to be `PEP 440`_ compliant.
+
+.. _SemVer: http://semver.org/
+.. _PEP 440: https://www.python.org/dev/peps/pep-0440/
+
+
+How to release
+--------------
+
+Begin by making sure you have the build prerequisites installed::
+
+   pip install -r requirements_build.txt
+
+Update the version number in `nagiosplugin/version.py`, update the version
+release date in the `HISTORY.txt` file,  and tag the release.  Make sure both
+of the file changes are in the same commit.  For a new version `0.1.2`::
+
+   sed -i '' -e 's/\(__VERSION__ =\).*/\1 "0.1.2"/' nagiosplugin/version.py
+   sed -i '' -e 's/0.1.2 (unreleased)/0.1.2 (2019-11-07)/' HISTORY.txt
+   git stage HISTORY.txt nagiosplugin/version.py
+   git commit -m "Preparing release 0.1.2"
+   git tag 0.1.2
+   git push
+   git push --tags
+
+Build the **nagiosplugin** distribution for PyPi::
+
+   python3 setup.py sdist bdist_wheel
+
+Check the contents of the packages in `dist/` to ensure they contain all of
+the expected files.
+
+Test your package upload with TestPyPi::
+
+   twine upload --repository-url https://test.pypi.org/legacy dist/*
+
+Check on https://test.pypi.org/nagiosplugin that the package metadata looks
+correct.  If everything is fine, upload the release::
+
+   twine upload dist/*
+
+After updating PyPi, advance the version number again to the next patch
+version plus a `.dev0` suffix.
+
+Go to https://readthedocs.io/ and ensure the new stable and dev releases are
+available.
+
+
+.. vim: set ft=rst sw=3 sts=3 et:
