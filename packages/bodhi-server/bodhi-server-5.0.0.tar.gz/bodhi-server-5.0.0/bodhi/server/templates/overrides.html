@@ -1,0 +1,61 @@
+<%!
+def inherit(context):
+  if context.get('chrome'):
+    return 'master.html'
+  return None
+%>
+<%inherit file="${inherit(context)}"/>
+
+<%namespace name="fragments" file="fragments.html"/>
+
+% if chrome:
+<%block name="css">
+${parent.css()}
+<link rel="alternate" type="application/atom+xml" title="New Buildroot Overrides" href="${request.route_url('overrides_rss') + '?' + request.query_string}"/>
+</%block>
+% endif
+
+% if chrome:
+<div class="subheader">
+    <div class="container py-4">
+      <div class="row">
+        <div class="col">
+            <h3 class="font-weight-bold m-0 d-flex align-items-center">Overrides
+                % if request.user:
+                <a class="btn btm-sm font-weight-bold btn-outline-primary ml-auto" href="${request.route_url('new_override')}"><i class="fa fa-plus pr-2"></i>New Override</a>
+                % endif
+            </h3>
+        </div>
+      </div>
+    </div>
+  </div>
+<div class="container pt-4">
+<div class="row">
+  <div class="col-md-12">
+%endif
+      <div class="list-group">
+        %if chrome:
+          <div class="list-group-item bg-light d-flex font-weight-bold">
+            ${total} Overrides
+            % if page == 1:
+            <a class="ml-1" href="${request.route_url('overrides_rss') + '?' + request.query_string}">
+              <span class="fa fa-rss"></span>
+            </a>
+            % endif
+          </div>
+        % endif
+  % for override in overrides:
+    ${fragments.override(override, display_user)}
+  %endfor
+
+% if chrome:
+<div class="list-group-item bg-light">
+    %if pages > 1:
+      ${self.pager.render(page, pages)}
+    %endif
+  </div>
+    </div>
+  </div>
+</div>
+</div>
+% endif
