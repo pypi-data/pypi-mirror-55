@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+mysodexo/__init__.py
+mysodexo/mysodexo.py
+mysodexo.egg-info/PKG-INFO
+mysodexo.egg-info/SOURCES.txt
+mysodexo.egg-info/dependency_links.txt
+mysodexo.egg-info/requires.txt
+mysodexo.egg-info/top_level.txt
