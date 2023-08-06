@@ -1,0 +1,8 @@
+aws_cdk/aws_gamelift/__init__.py,sha256=EU0MqcatIFEYgk44lXf1TBy0WW7VWiwO0jDOLmPKBGE,37440
+aws_cdk/aws_gamelift/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_gamelift/_jsii/__init__.py,sha256=HYe19HfCWrirGkrqrUGvtl106_J-W58jjF_KCBu5J0w,200
+aws_cdk/aws_gamelift/_jsii/aws-gamelift@1.16.0.jsii.tgz,sha256=EqtQtdhON15K27RxkUVJiDEabhsb0OMfBmDeYUI2I_I,24834
+aws_cdk.aws_gamelift-1.16.0.dist-info/METADATA,sha256=OiV8X7IeI5inIW7q2rLraJcwkHJ4iqBD0HL9zphhOy0,1148
+aws_cdk.aws_gamelift-1.16.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+aws_cdk.aws_gamelift-1.16.0.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_gamelift-1.16.0.dist-info/RECORD,,
