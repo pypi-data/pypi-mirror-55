@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: pyxag
+Version: 0.0.3
+Summary: Hobby research
+Home-page: https://github.com/daviddoret/pyxag/wiki
+Author: David Doret
+Author-email: david.doret@me.com
+License: UNKNOWN
+Description: # pyxag
+        
+        A hobby research project mixing up a bit of maths, algorithms, graphs and the like.
+        
+        Wiki: https://github.com/daviddoret/pyxag/wiki
+        
+        Source: https://github.com/daviddoret/pyxag
+        
+        Package: https://pypi.org/project/pyxag/
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
