@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: olive
+Version: 0.2.3
+Summary: a python wrapper for an AIS Database API
+Home-page: https://github.com/GeoBigData/AISDatabase
+Author: Elizabeth Golden, Rachel Wegener, Melissa Dozier
+Author-email: elizabeth.golden@digitalglobe.com
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3
+Requires-Dist: requests
+Requires-Dist: requests-aws4auth
+Requires-Dist: boto3
+Requires-Dist: botocore
+
+UNKNOWN
+
+
