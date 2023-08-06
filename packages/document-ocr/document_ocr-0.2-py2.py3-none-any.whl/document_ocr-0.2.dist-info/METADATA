@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: document-ocr
+Version: 0.2
+Summary: Ocr For documents
+Home-page: UNKNOWN
+Author: Shashank Singh
+Author-email: shashank.s.1903@gmail.com
+License: CUBE
+Platform: UNKNOWN
+Requires-Dist: pytesseract
+Requires-Dist: opencv-python
+Requires-Dist: numpy
+
+UNKNOWN
+
+

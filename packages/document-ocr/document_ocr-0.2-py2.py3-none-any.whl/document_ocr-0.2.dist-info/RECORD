@@ -1,0 +1,8 @@
+document_ocr-0.2.dist-info/METADATA,sha256=UF2IjoxHhqfcnb2SX88RWYWxzpbHsCbpuzmcH4gbASI,283
+document_ocr-0.2.dist-info/RECORD,,
+document_ocr-0.2.dist-info/WHEEL,sha256=CG516Me1TEyQqkQMqQpnDadrWi7ujPk88poSAu3OliQ,116
+document_ocr-0.2.dist-info/top_level.txt,sha256=KyNJgRLJaoLguntMg1qobvoOzL2HjR8AZvH6i15mAow,4
+ocr/__init__.py,sha256=ZYPUAab2V_UKRaG914AQwGo9cMMzBJM4Kpm1Lz5cRL8,24
+ocr/pan.py,sha256=uMoyg3ytQcNahuCVk29mpzmc1TqbZOaH_D7nl6ytDAc,5867
+panocr/__init__.py,sha256=ZYPUAab2V_UKRaG914AQwGo9cMMzBJM4Kpm1Lz5cRL8,24
+panocr/parse.py,sha256=uMoyg3ytQcNahuCVk29mpzmc1TqbZOaH_D7nl6ytDAc,5867
