@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: databrazil
+Version: 0.1
+Summary: Helper package to download, extract, clean and analyze Brazilian public data
+Home-page: https://github.com/javatechy/dokr
+Author: Lucas Kawazoi
+Author-email: lucas.key.kawazoi@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+# data-brazil
+My repository to download, extract, clean and analyze Brazilian data
+
+
