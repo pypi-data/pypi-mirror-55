@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: ics_ipa_interface
+Version: 1.0.3
+Summary: API used to to allow users to make scripts that work local and on wivi server
+Home-page: https://github.com/intrepidcs/ics_ipa_interface
+Maintainer: Zaid Nackasha
+Maintainer-email: ZNackasha@intrepidcs.com
+License: UNKNOWN
+Download-URL: https://github.com/intrepidcs/ics_ipa_interface/archive/1.0.3.tar.gz
+Description: This project is designed to allow users of IPA to seamlessly                       transition between Desktop and WiVi.
+Platform: UNKNOWN
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: Unix
+Classifier: Programming Language :: Python :: 3.6
