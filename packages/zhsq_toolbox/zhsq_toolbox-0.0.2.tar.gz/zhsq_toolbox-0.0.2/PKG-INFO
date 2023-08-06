@@ -1,0 +1,23 @@
+Metadata-Version: 2.1
+Name: zhsq_toolbox
+Version: 0.0.2
+Summary: Some def and class for several projects.
+Home-page: https://git.dev.tencent.com/zhengwenjie/toolbox.git
+Author: Waket Zheng
+Author-email: waketzheng@gmail.com
+License: MIT
+Description: # Toolbox (backend project)
+          def and class for multiply projects
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Internet :: WWW/HTTP
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
