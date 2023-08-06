@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: gaussian-wrangler
+Version: 0.3.1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Heather B Mayes
+Author-email: hmayes@hmayes.com
+License: MIT
+Platform: Linux
+Platform: Mac OS-X
+Platform: Unix
+Platform: Windows
+Requires-Python: >=3.0
+Requires-Dist: numpy
+Requires-Dist: six
+Requires-Dist: matplotlib
+Requires-Dist: common-wrangler
+
+UNKNOWN
+
+
