@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: pykneer
+Version: 0.0.4
+Summary: pyKNEEr: An image analysis workflow for open and reproducible research on femoral knee cartilage
+Home-page: https://sbonaretti.github.io/pyKNEEr/
+Author: Serena Bonaretti
+Author-email: serena.bonaretti.research@gmail.edu
+License: GNU General Public License v3 (GPLv3)
+Description: ## *pyKNEEr* - code folder containing:
+        
+        - `notebooks`: collections of Jupyter notebooks used as a user-interface:   
+        - `pykneer`: source code
+        - files to create the `Pypi` package:  
+        
+          - `setup.py`  
+          - `setup.cfg`  
+          - `requirements.txt`  
+          - `MANIFEST.in`   
+          - `LICENSE`  
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
