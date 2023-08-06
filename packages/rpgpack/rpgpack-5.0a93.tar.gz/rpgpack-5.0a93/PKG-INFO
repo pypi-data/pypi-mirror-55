@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: rpgpack
+Version: 5.0a93
+Summary: A Royalnet pack to play D&D by-chat
+Home-page: https://github.com/Steffo99/rpgpack
+Author: Stefano Pigozzi
+Author-email: ste.pigozzi@gmail.com
+License: UNKNOWN
+Description: # `{packname}` [![PyPI](https://img.shields.io/pypi/v/{packname}.svg)](https://pypi.org/project/{packname}/)
+        
+        {Replace everything surrounded by braces with your own data, including this description!}
+        
+        {Files to be changed are the package folder, setup.py, to_pypi.sh and this README!}
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
