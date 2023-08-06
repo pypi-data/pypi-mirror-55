@@ -1,0 +1,46 @@
+Metadata-Version: 2.1
+Name: luminos
+Version: 0.3.5
+Summary: Desktop application SDK for creating Universal Linux Applications.
+Home-page: https://gitlab.com/fisma/luminos
+Author: Fisma Linux Project
+Author-email: muhammad.sayuti94@gmail.com
+License: MIT
+Description: Browser based application framework
+        ======================================
+        
+        Luminos is a browser based application framework to create a desktop application
+        using html, javascript, css or webgl.
+        
+        How does it work?
+        -----------------
+        
+        Dependencies
+        -------------
+        
+        You will need the following components installed, including their development
+        headers and libraries:
+        
+        * Python 3.5, or newer
+        * PyQt5
+        * QtWebEngine
+        * A working PyGObject installation.
+        
+        
+Keywords: desktop-application-sdk framework sdk javascript universal html5
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Environment :: X11 Applications
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: JavaScript
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Software Development
+Classifier: Topic :: Software Development :: Libraries :: Application Frameworks
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Software Development :: User Interfaces
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
