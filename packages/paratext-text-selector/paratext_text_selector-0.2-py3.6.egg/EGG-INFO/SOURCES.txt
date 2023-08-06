@@ -1,0 +1,12 @@
+README.md
+setup.py
+paratext_text_selector.egg-info/PKG-INFO
+paratext_text_selector.egg-info/SOURCES.txt
+paratext_text_selector.egg-info/dependency_links.txt
+paratext_text_selector.egg-info/entry_points.txt
+paratext_text_selector.egg-info/not-zip-safe
+paratext_text_selector.egg-info/requires.txt
+paratext_text_selector.egg-info/top_level.txt
+pt_text_selector/__init__.py
+pt_text_selector/main.py
+pt_text_selector/paratextTextPicker.py
