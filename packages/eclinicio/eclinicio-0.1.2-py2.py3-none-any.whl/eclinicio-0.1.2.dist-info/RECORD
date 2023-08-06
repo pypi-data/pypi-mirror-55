@@ -1,0 +1,9 @@
+eclinicio/__init__.py,sha256=eBCu7b-0x-eFsm2AKZ-D8BVlTX8Wi1R28sy8XiCfu5k,1196
+eclinicio/evloop.py,sha256=NKb8i4altHaX9o-Zm_DrtIym7JYuvWoHDwjduK_CCxA,2543
+eclinicio/io.py,sha256=yy_A0rwJugObLsMRWi1pQKs5bpSVrn7shUUGw3XpEyg,1001
+eclinicio/server_factory.py,sha256=yPoOiKCPUbrkc1g4Zwi2GUsN4G7RreuuyMnWlSCBxs4,3084
+eclinicio/sslsocket.py,sha256=6TjLOMWkH1dUdxkq4QO9FNrzk_43KG3ithWJDvAfseI,7576
+eclinicio-0.1.2.dist-info/METADATA,sha256=nkz50NZbjViNMZbMXRNe3P7zrjZWLbVDVyiun-9sBb4,787
+eclinicio-0.1.2.dist-info/WHEEL,sha256=JZXtYepZFsf4IoivNpnSgKIc4qTHan08DRd56koo_DM,116
+eclinicio-0.1.2.dist-info/top_level.txt,sha256=5El99w_Il-99zyFtQ7-kmw7MnDmaBMP-jt8IeFcl7GQ,10
+eclinicio-0.1.2.dist-info/RECORD,,
