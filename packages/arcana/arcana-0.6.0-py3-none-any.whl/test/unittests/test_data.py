@@ -1,0 +1,304 @@
+import tempfile
+import shutil
+import os
+import os.path as op
+import unittest
+from unittest import TestCase
+from nipype.interfaces.utility import IdentityInterface
+from arcana.utils.testing import BaseTestCase, BaseMultiSubjectTestCase
+from arcana.analysis.base import Analysis, AnalysisMetaClass
+from arcana.analysis.parameter import SwitchSpec
+from arcana.data import (
+    InputFilesetSpec, FilesetSpec, FieldSpec, FilesetFilter)
+from arcana.data.file_format import text_format, FileFormat
+from arcana.exceptions import ArcanaDesignError, ArcanaError
+from future.utils import PY2
+from future.utils import with_metaclass
+import pydicom
+if PY2:
+    import pickle as pkl  # @UnusedImport
+else:
+    import pickle as pkl  # @Reimport
+
+# For testing DICOM tag matching
+
+
+class DicomFormat(FileFormat):
+
+    SERIES_NUMBER_TAG = ('0020', '0011')
+
+    def extract_id(self, fileset):
+        return int(fileset.dicom_values([self.SERIES_NUMBER_TAG])[0])
+
+    def dicom_values(self, fileset, tags):
+        """
+        Returns a dictionary with the DICOM header fields corresponding
+        to the given tag names
+
+        Parameters
+        ----------
+        tags : List[Tuple[str, str]]
+            List of DICOM tag values as 2-tuple of strings, e.g.
+            [('0080', '0020')]
+        repository_login : <repository-login-object>
+            A login object for the repository to avoid having to relogin
+            for every dicom_header call.
+
+        Returns
+        -------
+        dct : Dict[Tuple[str, str], str|int|float]
+        """
+        try:
+            if (fileset._path is None and fileset._dataset is not None
+                    and hasattr(fileset.dataset.repository, 'dicom_header')):
+                hdr = fileset.dataset.repository.dicom_header(fileset)
+                if not hdr:
+                    raise ArcanaError(
+                        "No DICOM tags retrieved from {} by {}".format(
+                            fileset.dataset.repository, fileset))
+                values = [hdr[t] for t in tags]
+            else:
+                # Get the DICOM object for the first file in the fileset
+                dcm_files = [f for f in os.listdir(fileset.path)
+                             if f.endswith('.dcm')]
+                dcm = pydicom.dcmread(op.join(fileset.path, dcm_files[0]))
+                values = [dcm[t].value for t in tags]
+        except KeyError as e:
+            fileset.dataset.repository.dicom_header(fileset)
+            raise ArcanaError("{} does not have dicom tag {}".format(
+                              self, str(e)))
+        return values
+
+
+dicom_format = DicomFormat(name='dicom', extension=None,
+                           resource_names={'xnat': ['DICOM']},
+                           directory=True, within_dir_exts=['.dcm'])
+
+
+class TestFilesetSpecPickle(TestCase):
+
+    filesets = []
+    fields = []
+
+    def setUp(self):
+        self.tmp_dir = tempfile.mkdtemp()
+        self.pkl_dir = tempfile.mkdtemp()
+
+    def tearDown(self):
+        shutil.rmtree(self.tmp_dir)
+        shutil.rmtree(self.pkl_dir)
+
+    def test_fileset_and_field(self):
+        objs = [FilesetSpec('a', text_format,
+                            'dummy_pipeline1'),
+                FieldSpec('b', int, 'dummy_pipeline2')]
+        for i, obj in enumerate(objs):
+            fname = op.join(self.pkl_dir, '{}.pkl'.format(i))
+            with open(fname, 'wb') as f:
+                pkl.dump(obj, f)
+            with open(fname, 'rb') as f:
+                re_obj = pkl.load(f)
+            self.assertEqual(obj, re_obj)
+
+
+class TestMatchAnalysis(with_metaclass(AnalysisMetaClass, Analysis)):
+
+    add_data_specs = [
+        InputFilesetSpec('gre_phase', dicom_format),
+        InputFilesetSpec('gre_mag', dicom_format)]
+
+    def dummy_pipeline1(self):
+        pass
+
+    def dummy_pipeline2(self):
+        pass
+
+
+class TestFilesetSelecting(BaseMultiSubjectTestCase):
+
+    @unittest.skip("Test not implemented")
+    def test_match_pattern(self):
+        pass
+
+
+class TestDicomTagMatch(BaseTestCase):
+
+    IMAGE_TYPE_TAG = ('0008', '0008')
+    GRE_PATTERN = 'gre_field_mapping_3mm.*'
+    PHASE_IMAGE_TYPE = ['ORIGINAL', 'PRIMARY', 'P', 'ND']
+    MAG_IMAGE_TYPE = ['ORIGINAL', 'PRIMARY', 'M', 'ND', 'NORM']
+    DICOM_MATCH = [
+        FilesetFilter('gre_phase', GRE_PATTERN, dicom_format,
+                      dicom_tags={IMAGE_TYPE_TAG: PHASE_IMAGE_TYPE},
+                      is_regex=True),
+        FilesetFilter('gre_mag', GRE_PATTERN, dicom_format,
+                      dicom_tags={IMAGE_TYPE_TAG: MAG_IMAGE_TYPE},
+                      is_regex=True)]
+
+    INPUTS_FROM_REF_DIR = True
+    REF_FORMATS = [dicom_format]
+
+    def test_dicom_match(self):
+        analysis = self.create_analysis(
+            TestMatchAnalysis, 'test_dicom',
+            inputs=self.DICOM_MATCH)
+        phase = list(analysis.data('gre_phase', derive=True))[0]
+        mag = list(analysis.data('gre_mag', derive=True))[0]
+        self.assertEqual(phase.name, 'gre_field_mapping_3mm_phase')
+        self.assertEqual(mag.name, 'gre_field_mapping_3mm_mag')
+
+    def test_order_match(self):
+        analysis = self.create_analysis(
+            TestMatchAnalysis, 'test_dicom',
+            inputs=[
+                FilesetFilter('gre_phase', pattern=self.GRE_PATTERN,
+                              valid_formats=dicom_format, order=1,
+                              is_regex=True),
+                FilesetFilter('gre_mag', pattern=self.GRE_PATTERN,
+                              valid_formats=dicom_format, order=0,
+                              is_regex=True)])
+        phase = list(analysis.data('gre_phase', derive=True))[0]
+        mag = list(analysis.data('gre_mag', derive=True))[0]
+        self.assertEqual(phase.name, 'gre_field_mapping_3mm_phase')
+        self.assertEqual(mag.name, 'gre_field_mapping_3mm_mag')
+
+
+class TestDerivableAnalysis(with_metaclass(AnalysisMetaClass, Analysis)):
+
+    add_data_specs = [
+        InputFilesetSpec('required', text_format),
+        InputFilesetSpec('optional', text_format, optional=True),
+        FilesetSpec('derivable', text_format, 'pipeline1'),
+        FilesetSpec('missing_input', text_format, 'pipeline2'),
+        FilesetSpec('another_derivable', text_format, 'pipeline3'),
+        FilesetSpec('requires_switch', text_format, 'pipeline3'),
+        FilesetSpec('requires_switch2', text_format, 'pipeline4'),
+        FilesetSpec('requires_foo', text_format, 'pipeline5'),
+        FilesetSpec('requires_bar', text_format, 'pipeline5')]
+
+    add_param_specs = [
+        SwitchSpec('switch', False),
+        SwitchSpec('branch', 'foo', ('foo', 'bar', 'wee'))]
+
+    def pipeline1(self, **name_maps):
+        pipeline = self.new_pipeline(
+            'pipeline1',
+            desc="",
+            citations=[],
+            name_maps=name_maps)
+        identity = pipeline.add('identity', IdentityInterface(['a']))
+        pipeline.connect_input('required', identity, 'a')
+        pipeline.connect_output('derivable', identity, 'a')
+        return pipeline
+
+    def pipeline2(self, **name_maps):
+        pipeline = self.new_pipeline(
+            'pipeline2',
+            desc="",
+            citations=[],
+            name_maps=name_maps)
+        identity = pipeline.add('identity', IdentityInterface(['a', 'b']))
+        pipeline.connect_input('required', identity, 'a')
+        pipeline.connect_input('optional', identity, 'b')
+        pipeline.connect_output('missing_input', identity, 'a')
+        return pipeline
+
+    def pipeline3(self, **name_maps):
+        pipeline = self.new_pipeline(
+            'pipeline3',
+            desc="",
+            citations=[],
+            name_maps=name_maps)
+        identity = pipeline.add('identity', IdentityInterface(['a', 'b']))
+        pipeline.connect_input('required', identity, 'a')
+        pipeline.connect_input('required', identity, 'b')
+        pipeline.connect_output('another_derivable', identity, 'a')
+        if self.branch('switch'):
+            pipeline.connect_output('requires_switch', identity, 'b')
+        return pipeline
+
+    def pipeline4(self, **name_maps):
+        pipeline = self.new_pipeline(
+            'pipeline4',
+            desc="",
+            citations=[],
+            name_maps=name_maps)
+        identity = pipeline.add('identity', IdentityInterface(['a']))
+        pipeline.connect_input('requires_switch', identity, 'a')
+        pipeline.connect_output('requires_switch2', identity, 'a')
+        return pipeline
+
+    def pipeline5(self, **name_maps):
+        pipeline = self.new_pipeline(
+            'pipeline5',
+            desc="",
+            citations=[],
+            name_maps=name_maps)
+        identity = pipeline.add('identity', IdentityInterface(['a']))
+        pipeline.connect_input('required', identity, 'a')
+        if self.branch('branch', 'foo'):
+            pipeline.connect_output('requires_foo', identity, 'a')
+        elif self.branch('branch', 'bar'):
+            pipeline.connect_output('requires_bar', identity, 'a')
+        else:
+            self.unhandled_branch('branch')
+        return pipeline
+
+
+class TestDerivable(BaseTestCase):
+
+    INPUT_FILESETS = {'required': 'blah'}
+
+    def test_derivable(self):
+        # Test vanilla analysis
+        analysis = self.create_analysis(
+            TestDerivableAnalysis,
+            'analysis',
+            inputs={'required': 'required'})
+        self.assertTrue(analysis.spec('derivable').derivable)
+        self.assertTrue(
+            analysis.spec('another_derivable').derivable)
+        self.assertFalse(
+            analysis.spec('missing_input').derivable)
+        self.assertFalse(
+            analysis.spec('requires_switch').derivable)
+        self.assertFalse(
+            analysis.spec('requires_switch2').derivable)
+        self.assertTrue(analysis.spec('requires_foo').derivable)
+        self.assertFalse(analysis.spec('requires_bar').derivable)
+        # Test analysis with 'switch' enabled
+        analysis_with_switch = self.create_analysis(
+            TestDerivableAnalysis,
+            'analysis_with_switch',
+            inputs=[FilesetFilter('required', 'required', text_format)],
+            parameters={'switch': True})
+        self.assertTrue(
+            analysis_with_switch.spec('requires_switch').derivable)
+        self.assertTrue(
+            analysis_with_switch.spec('requires_switch2').derivable)
+        # Test analysis with branch=='bar'
+        analysis_bar_branch = self.create_analysis(
+            TestDerivableAnalysis,
+            'analysis_bar_branch',
+            inputs=[FilesetFilter('required', 'required', text_format)],
+            parameters={'branch': 'bar'})
+        self.assertFalse(analysis_bar_branch.spec('requires_foo').derivable)
+        self.assertTrue(analysis_bar_branch.spec('requires_bar').derivable)
+        # Test analysis with optional input
+        analysis_with_input = self.create_analysis(
+            TestDerivableAnalysis,
+            'analysis_with_inputs',
+            inputs=[FilesetFilter('required', 'required', text_format),
+                    FilesetFilter('optional', 'required', text_format)])
+        self.assertTrue(
+            analysis_with_input.spec('missing_input').derivable)
+        analysis_unhandled = self.create_analysis(
+            TestDerivableAnalysis,
+            'analysis_unhandled',
+            inputs=[FilesetFilter('required', 'required', text_format)],
+            parameters={'branch': 'wee'})
+        self.assertRaises(
+            ArcanaDesignError,
+            getattr,
+            analysis_unhandled.spec('requires_foo'),
+            'derivable')
