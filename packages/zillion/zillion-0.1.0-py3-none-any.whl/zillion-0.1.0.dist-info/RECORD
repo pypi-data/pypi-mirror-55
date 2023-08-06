@@ -1,0 +1,12 @@
+zillion/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+zillion/configs.py,sha256=g9exFsLWhoV4vEYiwEU2EHizM5J0dgb77I5C2PPLytk,7229
+zillion/core.py,sha256=ULdcjgrcUG91dO-6nKV4OFcyNWGYlrjcIe9WMEDE0pc,1817
+zillion/report.py,sha256=FfmcEbADhG5XX5VilcklWynRPVNSwmuazoH_wOcbpcQ,30386
+zillion/sql_utils.py,sha256=-aN8aCreQKum9iHUO0kvOCnf31503zk4fE1-UL3lEAo,7830
+zillion/version.py,sha256=B79RooYD5QJblqBngG3f0ox7j3PFiJJcXKRZ1ccmC1w,44
+zillion/warehouse.py,sha256=pxBl6FiBZqZSh1SnurbuUdodiYrZ2aCMEicqxEbeoHw,57634
+zillion-0.1.0.dist-info/LICENSE,sha256=V_H54Ya1EAeZH9U5QijmfmUaZHlCGNOlfGcsQMI1-6g,1066
+zillion-0.1.0.dist-info/METADATA,sha256=SNGGdQw5pOyV-9lIMR29iMbvRMwKdDwNlyJFAaGc3Bg,1520
+zillion-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+zillion-0.1.0.dist-info/top_level.txt,sha256=pP7-2_VDsSQfkW6ZPLb6JRBCfjgmW_zAuyaJbPIutQ8,8
+zillion-0.1.0.dist-info/RECORD,,
