@@ -1,0 +1,13 @@
+README.md
+setup.py
+webdavconvert/Converter.py
+webdavconvert/Util.py
+webdavconvert/Video.py
+webdavconvert/WebDAV.py
+webdavconvert/__init__.py
+webdavconvert/__main__.py
+webdavconvert.egg-info/PKG-INFO
+webdavconvert.egg-info/SOURCES.txt
+webdavconvert.egg-info/dependency_links.txt
+webdavconvert.egg-info/requires.txt
+webdavconvert.egg-info/top_level.txt
