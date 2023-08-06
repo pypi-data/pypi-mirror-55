@@ -1,0 +1,29 @@
+Metadata-Version: 2.0
+Name: tenmactl
+Version: 0.1.0
+Summary: Tenma power supplies control utility.
+Home-page: https://github.com/gmarull/tenmactl
+Author: Gerard Marull-Paretas
+Author-email: gerard@teslabs.com
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3 :: Only
+Requires-Dist: pyserial
+
+Tenma Power Supplies Control Library
+------------------------------------
+
+This repository contains ``tenmactl`` a simple library to control Tenma 72-XXXX
+power supplies using serial communications. Check the ``examples`` folder for
+usage examples.
+
+
