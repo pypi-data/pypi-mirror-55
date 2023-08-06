@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: stringsxlsx
+Version: 0.0.1
+Summary: A simple converter from xcode .strings file to xlsx file.
+Home-page: UNKNOWN
+Author: Łukasz Szyszkowski
+Author-email: dropski@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+
+UNKNOWN
+
+
