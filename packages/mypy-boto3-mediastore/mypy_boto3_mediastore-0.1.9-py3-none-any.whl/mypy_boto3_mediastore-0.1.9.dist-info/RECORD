@@ -1,0 +1,9 @@
+mypy_boto3_mediastore/__init__.py,sha256=5oW1ow-d5kRTJ5oxhO9LynQJI4Ee4-MyeFxNqkACWS8,120
+mypy_boto3_mediastore/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_mediastore/client.py,sha256=iwNLpq9SNLvBERy8mxymiVEElb1qFcVzpBuQ4peK-_U,41126
+mypy_boto3_mediastore/paginator.py,sha256=m6XMx6TpJLH9S--GKn64WyIvGChgmK7kBBZZpkZ4xfM,3931
+mypy_boto3_mediastore/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_mediastore-0.1.9.dist-info/METADATA,sha256=V_ZR5im71hfWSKbKNJyQMtC8b2UcOxX0LB66PSDVWGo,1065
+mypy_boto3_mediastore-0.1.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_mediastore-0.1.9.dist-info/top_level.txt,sha256=kri-xdGIHsqdqldiIhtzSNKAYEXPRbjnq2sl_pIy6Do,22
+mypy_boto3_mediastore-0.1.9.dist-info/RECORD,,
