@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: protencoder
+Version: 0.0.1
+Summary: Python utility to implement various encoding methods for protein structures
+Home-page: https://github.com/chinokenochkan/protencoder
+Author: Chi Nok Enoch Kan
+Author-email: kanxx030@gmail.com
+License: MIT
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
