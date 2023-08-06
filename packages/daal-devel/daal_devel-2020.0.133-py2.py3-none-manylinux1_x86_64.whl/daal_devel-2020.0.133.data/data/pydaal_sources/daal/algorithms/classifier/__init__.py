@@ -1,0 +1,251 @@
+# Copyright 2014-2019 Intel Corporation
+#
+# Licensed under the Apache License, Version 2.0 (the "License");
+# you may not use this file except in compliance with the License.
+# You may obtain a copy of the License at
+#
+#     http://www.apache.org/licenses/LICENSE-2.0
+#
+# Unless required by applicable law or agreed to in writing, software
+# distributed under the License is distributed on an "AS IS" BASIS,
+# WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+# See the License for the specific language governing permissions and
+# limitations under the License.
+
+
+
+from sys import version_info
+if version_info >= (2, 6, 0):
+    def swig_import_helper():
+        from os.path import dirname
+        import imp
+        fp = None
+        try:
+            fp, pathname, description = imp.find_module('_classifier_', [dirname(__file__)])
+        except ImportError:
+            import _classifier_
+            return _classifier_
+        if fp is not None:
+            try:
+                _mod = imp.load_module('_classifier_', fp, pathname, description)
+            finally:
+                fp.close()
+            return _mod
+    _classifier_ = swig_import_helper()
+    del swig_import_helper
+else:
+    import _classifier_
+del version_info
+try:
+    _swig_property = property
+except NameError:
+    pass  # Python < 2.2 doesn't have 'property'.
+
+
+def _swig_setattr_nondynamic(self, class_type, name, value, static=1):
+    if (name == "thisown"):
+        return self.this.own(value)
+    if (name == "this"):
+        if type(value).__name__ == 'SwigPyObject':
+            self.__dict__[name] = value
+            return
+    method = class_type.__swig_setmethods__.get(name, None)
+    if method:
+        return method(self, value)
+    if (not static):
+        if _newclass:
+            object.__setattr__(self, name, value)
+        else:
+            self.__dict__[name] = value
+    else:
+        raise AttributeError("You cannot add attributes to %s" % self)
+
+
+def _swig_setattr(self, class_type, name, value):
+    return _swig_setattr_nondynamic(self, class_type, name, value, 0)
+
+
+def _swig_getattr_nondynamic(self, class_type, name, static=1):
+    if (name == "thisown"):
+        return self.this.own()
+    method = class_type.__swig_getmethods__.get(name, None)
+    if method:
+        return method(self)
+    if (not static):
+        return object.__getattr__(self, name)
+    else:
+        raise AttributeError(name)
+
+def _swig_getattr(self, class_type, name):
+    return _swig_getattr_nondynamic(self, class_type, name, 0)
+
+
+def _swig_repr(self):
+    try:
+        strthis = "proxy of " + self.this.__repr__()
+    except:
+        strthis = ""
+    return "<%s.%s; %s >" % (self.__class__.__module__, self.__class__.__name__, strthis,)
+
+try:
+    _object = object
+    _newclass = 1
+except AttributeError:
+    class _object:
+        pass
+    _newclass = 0
+
+
+try:
+    import weakref
+    weakref_proxy = weakref.proxy
+except:
+    weakref_proxy = lambda x: x
+
+
+import daal.algorithms
+import daal.data_management
+import daal
+import daal.services
+import daal.data_management.features
+import daal.data_management.modifiers.csv
+import daal.data_management.modifiers
+
+_classifier_.computeClassLabels_swigconstant(_classifier_)
+computeClassLabels = _classifier_.computeClassLabels
+
+_classifier_.computeClassProbabilities_swigconstant(_classifier_)
+computeClassProbabilities = _classifier_.computeClassProbabilities
+
+_classifier_.computeClassLogProbabilities_swigconstant(_classifier_)
+computeClassLogProbabilities = _classifier_.computeClassLogProbabilities
+class Parameter(daal.algorithms.Parameter):
+    __swig_setmethods__ = {}
+    for _s in [daal.algorithms.Parameter]:
+        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
+    __setattr__ = lambda self, name, value: _swig_setattr(self, Parameter, name, value)
+    __swig_getmethods__ = {}
+    for _s in [daal.algorithms.Parameter]:
+        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
+    __getattr__ = lambda self, name: _swig_getattr(self, Parameter, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, nClasses=2):
+        this = _classifier_.new_Parameter(nClasses)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+    __swig_setmethods__["nClasses"] = _classifier_.Parameter_nClasses_set
+    __swig_getmethods__["nClasses"] = _classifier_.Parameter_nClasses_get
+    if _newclass:
+        nClasses = _swig_property(_classifier_.Parameter_nClasses_get, _classifier_.Parameter_nClasses_set)
+
+    def check(self):
+        return _classifier_.Parameter_check(self)
+    __swig_destroy__ = _classifier_.delete_Parameter
+    __del__ = lambda self: None
+Parameter_swigregister = _classifier_.Parameter_swigregister
+Parameter_swigregister(Parameter)
+
+class interface2_Parameter(daal.algorithms.Parameter):
+    __swig_setmethods__ = {}
+    for _s in [daal.algorithms.Parameter]:
+        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
+    __setattr__ = lambda self, name, value: _swig_setattr(self, interface2_Parameter, name, value)
+    __swig_getmethods__ = {}
+    for _s in [daal.algorithms.Parameter]:
+        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
+    __getattr__ = lambda self, name: _swig_getattr(self, interface2_Parameter, name)
+    __repr__ = _swig_repr
+
+    def __init__(self, nClasses=2):
+        this = _classifier_.new_interface2_Parameter(nClasses)
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+    __swig_setmethods__["nClasses"] = _classifier_.interface2_Parameter_nClasses_set
+    __swig_getmethods__["nClasses"] = _classifier_.interface2_Parameter_nClasses_get
+    if _newclass:
+        nClasses = _swig_property(_classifier_.interface2_Parameter_nClasses_get, _classifier_.interface2_Parameter_nClasses_set)
+    __swig_setmethods__["resultsToEvaluate"] = _classifier_.interface2_Parameter_resultsToEvaluate_set
+    __swig_getmethods__["resultsToEvaluate"] = _classifier_.interface2_Parameter_resultsToEvaluate_get
+    if _newclass:
+        resultsToEvaluate = _swig_property(_classifier_.interface2_Parameter_resultsToEvaluate_get, _classifier_.interface2_Parameter_resultsToEvaluate_set)
+
+    def check(self):
+        return _classifier_.interface2_Parameter_check(self)
+    __swig_destroy__ = _classifier_.delete_interface2_Parameter
+    __del__ = lambda self: None
+interface2_Parameter_swigregister = _classifier_.interface2_Parameter_swigregister
+interface2_Parameter_swigregister(interface2_Parameter)
+
+class Model(daal.algorithms.Model):
+    __swig_setmethods__ = {}
+    for _s in [daal.algorithms.Model]:
+        __swig_setmethods__.update(getattr(_s, '__swig_setmethods__', {}))
+    __setattr__ = lambda self, name, value: _swig_setattr(self, Model, name, value)
+    __swig_getmethods__ = {}
+    for _s in [daal.algorithms.Model]:
+        __swig_getmethods__.update(getattr(_s, '__swig_getmethods__', {}))
+    __getattr__ = lambda self, name: _swig_getattr(self, Model, name)
+
+    def __init__(self, *args, **kwargs):
+        raise AttributeError("No constructor defined - class is abstract")
+    __repr__ = _swig_repr
+    __swig_destroy__ = _classifier_.delete_Model
+    __del__ = lambda self: None
+
+    def getNFeatures(self):
+        return _classifier_.Model_getNFeatures(self)
+
+    def getNumberOfFeatures(self):
+        return _classifier_.Model_getNumberOfFeatures(self)
+
+    def setNFeatures(self, nFeatures):
+        return _classifier_.Model_setNFeatures(self, nFeatures)
+Model_swigregister = _classifier_.Model_swigregister
+Model_swigregister(Model)
+
+class TreeNodeVisitor(_object):
+    __swig_setmethods__ = {}
+    __setattr__ = lambda self, name, value: _swig_setattr(self, TreeNodeVisitor, name, value)
+    __swig_getmethods__ = {}
+    __getattr__ = lambda self, name: _swig_getattr(self, TreeNodeVisitor, name)
+    __repr__ = _swig_repr
+    __swig_destroy__ = _classifier_.delete_TreeNodeVisitor
+    __del__ = lambda self: None
+
+    def onLeafNode(self, level, response):
+        return _classifier_.TreeNodeVisitor_onLeafNode(self, level, response)
+
+    def onSplitNode(self, level, featureIndex, featureValue):
+        return _classifier_.TreeNodeVisitor_onSplitNode(self, level, featureIndex, featureValue)
+
+    def __init__(self):
+        if self.__class__ == TreeNodeVisitor:
+            _self = None
+        else:
+            _self = self
+        this = _classifier_.new_TreeNodeVisitor(_self, )
+        try:
+            self.this.append(this)
+        except:
+            self.this = this
+    def __disown__(self):
+        self.this.disown()
+        _classifier_.disown_TreeNodeVisitor(self)
+        return weakref_proxy(self)
+TreeNodeVisitor_swigregister = _classifier_.TreeNodeVisitor_swigregister
+TreeNodeVisitor_swigregister(TreeNodeVisitor)
+
+from numpy import float64, float32, intc
+
+
+from . import prediction
+from . import training
+
+# This file is compatible with both classic and new-style classes.
+
+
