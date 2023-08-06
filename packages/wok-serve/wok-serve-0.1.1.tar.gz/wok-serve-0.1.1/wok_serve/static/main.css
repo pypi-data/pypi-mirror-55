@@ -1,0 +1,154 @@
+:root {
+    --color: rgb(55, 53, 47);
+    --bg-color: white;
+    --bg-color-accent: rgba(135, 131, 120, 0.15);
+    --page-ref-border-color: rgba(135, 131, 120, 0.4);
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --color: #e5e5e6;
+        --bg-color: #2f3437;
+    }
+}
+
+body {
+    background-color: var(--bg-color);
+    margin: 0;
+
+    color: var(--color);
+    line-height: 1.5;
+    font-family: system-ui, "Segoe UI", Helvetica, "Apple Color Emoji", Arial,
+        sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+* {
+    box-sizing: border-box;
+}
+
+::selection {
+    background: rgba(45, 170, 219, 0.3);
+}
+
+pre,
+code {
+    font-size: 0.95em;
+    font-family: "Fira Code", SFMono-Regular, Consolas, Liberation Mono, Menlo,
+        monospace;
+}
+
+p,
+pre {
+    padding: 8px 0;
+    margin: 0;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 750px;
+    padding: 15px;
+    margin: auto;
+    margin: 90px auto;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin: 0 -10px;
+}
+
+.column {
+    flex: 1 0 0;
+    margin: 0 10px;
+}
+
+a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: inherit;
+}
+
+code {
+    background-color: var(--bg-color-accent);
+    color: #eb5757;
+    border-radius: 3px;
+    font-size: 85%;
+    padding: 0.2em 0.4em;
+}
+
+.emoji span {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-color: var(--bg-color-accent);
+    padding: 5px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 50px;
+}
+
+.embed,
+.callout {
+    margin: 2px 0;
+    display: block;
+    padding: 4px 8px;
+    transition: background-color 0.2s;
+    border-radius: 3px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    color: inherit;
+    text-decoration: none;
+    justify-content: stretch;
+    outline: none;
+}
+
+.callout {
+    margin: 8px 0;
+}
+
+.embed:hover,
+.callout {
+    background-color: var(--bg-color-accent);
+}
+
+.embed > span,
+.callout > span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.embed-emoji,
+.callout-emoji {
+    margin-right: 8px;
+    flex: 0 0 auto;
+}
+
+.embed-title {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    font-weight: 500;
+    line-height: 1.3;
+    border-bottom: 1px solid var(--page-ref-border-color);
+}
+
+blockquote {
+    padding: 6px 8px;
+    margin: 2px 0;
+    border-left: 3px solid var(--color);
+    border-radius: 2px;
+}
+
+.callout p {
+    padding: 0;
+}
