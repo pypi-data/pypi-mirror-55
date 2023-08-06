@@ -1,0 +1,8 @@
+glcontext-1.0.0.dist-info/RECORD,,
+glcontext-1.0.0.dist-info/WHEEL,sha256=e1_WZKsoHV1IIaYJKFwXtC2sSoi0Dll6iY6tWNRvKIA,107
+glcontext-1.0.0.dist-info/top_level.txt,sha256=IosXQkJ9R4RvrG2uHZJtIQAHYoKmvTeBTb-zdwzFLDE,10
+glcontext-1.0.0.dist-info/METADATA,sha256=4eduBvglwhVCNfTdq0RuRfGjkidr5P53JC8aZr3pf_g,754
+glcontext/egl.cpython-37m-i386-linux-gnu.so,sha256=n63EJX3HteODWX4D5_YX6pgDFNkp3vSrL1HUJuMiuQw,30098
+glcontext/__init__.py,sha256=g7UZHEkXebvkU3kRaYBjfDC2vk3WLPoDH1-nGDBrWRI,912
+glcontext/x11.cpython-37m-i386-linux-gnu.so,sha256=Jr17d7yTM-zzWvWbxS1nWprJT0W2WDvwHwrBYJxemyw,36807
+glcontext/empty.py,sha256=VKFrqfVCIo1IlyWoEO5sCzeFt3Bw3J520mH7diMgcBM,260
