@@ -1,0 +1,10 @@
+aiger_coins/__init__.py,sha256=SiaDHTyzLuhGcMzAPTmc1gXp4TluZlJT45cEr1IY7Vc,81
+aiger_coins/dice.py,sha256=uPPNC_ptmfGwbysGP3XzEHKMXsWAgk0Bdkh-n0Z1KbQ,3011
+aiger_coins/distributions.py,sha256=JqvhFxoXOJD7GFzz4om0Gik1wWLdFvq1IzE7G9MLe7s,1443
+aiger_coins/test_dict.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+aiger_coins/test_distributions.py,sha256=nUIWLD1YGUsKGIj-VyV5NYK5jV3crXRB4EC-Wq7-N9g,1856
+aiger_coins/utils.py,sha256=-qDHkoQycobBqXBD9FHCdupsVFwdfJIul7HvfuAKNNE,972
+py_aiger_coins-0.1.1.dist-info/LICENSE,sha256=TsIcmtcb4ejYUV6d6hxHqCVHR1c-hWgWfv03ZBk9Xto,1082
+py_aiger_coins-0.1.1.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+py_aiger_coins-0.1.1.dist-info/METADATA,sha256=24CIiQnTOOo0cL5QanKg5Md9747mlNXrRJhYVnhD9aU,4941
+py_aiger_coins-0.1.1.dist-info/RECORD,,
