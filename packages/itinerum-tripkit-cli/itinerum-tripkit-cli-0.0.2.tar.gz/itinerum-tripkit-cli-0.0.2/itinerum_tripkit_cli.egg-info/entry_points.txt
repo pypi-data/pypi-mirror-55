@@ -1,0 +1,4 @@
+
+        [console_scripts]
+        tripkit-cli=tripkit_cli:main
+    
