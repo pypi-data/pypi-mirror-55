@@ -1,0 +1,12 @@
+omnia_timeseries_sdk/__init__.py,sha256=NDnZev0Df8T3c3GDyEcbpz8_BuCYAstYmbBNUmTa7uY,352
+omnia_timeseries_sdk/_config.py,sha256=aChCZaFhI8bZ98Ybmf5VBjk2E9Kdv38pFqrqajOFTnU,257
+omnia_timeseries_sdk/_utils.py,sha256=7gXrM9cATd9KT0dTHntf-qqJQXpY3SVf6QyiqLJEIYI,5047
+omnia_timeseries_sdk/client.py,sha256=VAAudnwQLtpJZhOferKZtKRO40GFF-liz9Od6jZ2wQs,9091
+omnia_timeseries_sdk/resources.py,sha256=-u1VX60N1n06pubHShvKGxtk211St887Qi6ZevLesA4,14958
+omnia_timeseries_sdk/timeseries.py,sha256=OqiJI17td1n0dQJR7L7jqPBYpWqQ4vq2VV3FeMY5PvE,8121
+omnia_timeseries_sdk-0.1.0.dist-info/LICENSE,sha256=0bMU7qXfU-TGEcYeIVgq5ybpXI6IN0wHvYL3_fGrDs0,1067
+omnia_timeseries_sdk-0.1.0.dist-info/METADATA,sha256=4rY8oZHGFJbgjCXwEAHa8zaUxb8sudMYDtqMvYT_S78,4808
+omnia_timeseries_sdk-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+omnia_timeseries_sdk-0.1.0.dist-info/top_level.txt,sha256=1iR7Qh7jiAhvfzDuI4_9Frh71zyLusRUuuUvKICokes,21
+omnia_timeseries_sdk-0.1.0.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+omnia_timeseries_sdk-0.1.0.dist-info/RECORD,,
