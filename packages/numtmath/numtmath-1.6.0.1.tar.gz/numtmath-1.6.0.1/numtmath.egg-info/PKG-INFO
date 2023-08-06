@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: numtmath
+Version: 1.6.0.1
+Summary: Module for research in number theory concepts
+Home-page: https://github.com/mad-scientist-8/numtmath
+Author: Max Saganyuk
+Author-email: makssagan1@mail.ru
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6

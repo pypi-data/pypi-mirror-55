@@ -1,0 +1,8 @@
+README.md
+setup.py
+numtmath/__init__.py
+numtmath/numtmath.py
+numtmath.egg-info/PKG-INFO
+numtmath.egg-info/SOURCES.txt
+numtmath.egg-info/dependency_links.txt
+numtmath.egg-info/top_level.txt
