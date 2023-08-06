@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+ProductionalizingProject_maggi.egg-info/PKG-INFO
+ProductionalizingProject_maggi.egg-info/SOURCES.txt
+ProductionalizingProject_maggi.egg-info/dependency_links.txt
+ProductionalizingProject_maggi.egg-info/requires.txt
+ProductionalizingProject_maggi.egg-info/top_level.txt
+mypackage/__init__.py
+mypackage/mymodule.py
+mypackage/template.txt
