@@ -1,0 +1,10 @@
+mypy_boto3_machinelearning/__init__.py,sha256=w3MRSRUIcpW2J3S86xws_bD-BQnN97GmeOEpRGUxh40,122
+mypy_boto3_machinelearning/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_machinelearning/client.py,sha256=vDer3EcNtsCihiKKvi07F5l8juRJ4OaJbI78MlecgYY,160956
+mypy_boto3_machinelearning/paginator.py,sha256=Ta-C04PcY9PCvUqs1BAOml77r8XluZVqZCTd5_Y7ZE0,47629
+mypy_boto3_machinelearning/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_machinelearning/waiter.py,sha256=8-ziUxPlN40Wgdf5jMkSuioUqNXEBCLjNQPg5nyt-NY,20498
+mypy_boto3_machinelearning-0.1.10.dist-info/METADATA,sha256=gL9tbmeXaNcEuiGl39_5qhgXwp4GGtDzKhBJnhkWVeE,1076
+mypy_boto3_machinelearning-0.1.10.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_machinelearning-0.1.10.dist-info/top_level.txt,sha256=GxhoFZgB8Lc6t41CAtyFiIXIDmOnRCRdjR79dpovrhU,27
+mypy_boto3_machinelearning-0.1.10.dist-info/RECORD,,
