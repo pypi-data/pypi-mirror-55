@@ -1,0 +1,31 @@
+Metadata-Version: 1.2
+Name: pxpy
+Version: 1.0a5
+Summary: discrete undirected probabilistic models
+Home-page: https://www.randomfields.org/px
+Author: Nico Piatkowski
+Author-email: nico.piatkowski@gmail.com
+License: UNKNOWN
+Description: # pxpy
+        
+        The python library for discrete pairwise undirected graphical models.
+        
+        **FULL-FLEDGED README COMING SOON**
+        
+        # Changelog
+        
+        * 1.0a5: Fixed model management
+        * 1.0a4: Added model access in regularization and proximal hooks
+        * 1.0a3: Lower GLIBC requirement + removed libgomp dependency (linux)
+        * 1.0a2: Python 3.5 compatibility
+        * 1.0a1: Initial release
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Free for non-commercial use
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Requires-Python: >=3.5
