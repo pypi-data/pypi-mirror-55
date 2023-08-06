@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+matrix_calculator/__init__.py
+matrix_calculator/calculator.py
+matrix_calculator.egg-info/PKG-INFO
+matrix_calculator.egg-info/SOURCES.txt
+matrix_calculator.egg-info/dependency_links.txt
+matrix_calculator.egg-info/not-zip-safe
+matrix_calculator.egg-info/top_level.txt
