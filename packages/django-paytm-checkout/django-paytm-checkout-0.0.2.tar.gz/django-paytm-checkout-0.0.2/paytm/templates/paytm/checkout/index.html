@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Welcome to Paytm checkout</title>
+</head>
+<body>
+<h1>
+    Welcome to Paytm checkout
+</h1>
+<form action="{% url 'paytm:checkout:initiate' %}" method="post">
+    {% csrf_token %}
+    <input type="hidden" name="channel" value="WEB">
+    <label>
+        Amount
+        <input name="amount" type="text">
+    </label>
+    <br>
+    <button type="submit">
+        Initiate
+    </button>
+</form>
+</body>
+</html>
