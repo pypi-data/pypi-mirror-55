@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: d2ltorch
+Version: 0.0.2
+Summary: PyTorch-based Dive into Deep Learning (in Chinese) Utils
+Home-page: https://github.com/sangyx/d2l-torch
+Author: Contributors
+Author-email: sangyunxin@gmail.com
+License: Apache-2.0
+Description: PyTorch-based Dive into Deep Learning Book (in Chinese) Utilities
+Platform: UNKNOWN
