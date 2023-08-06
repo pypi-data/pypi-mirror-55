@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: Firestore auth function
+Version: 0.0.1
+Summary: Firestore user authentication function for Python
+Home-page: https://github.com/fatcat2/firestore-auth
+Author: Ryan Chen
+Author-email: ryanjchen2@gmail.com
+License: GNU
+Description: UNKNOWN
+Keywords: google,cloud,firestore,authentication
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.7
