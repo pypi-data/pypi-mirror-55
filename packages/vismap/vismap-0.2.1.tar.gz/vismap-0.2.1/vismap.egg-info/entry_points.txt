@@ -1,0 +1,4 @@
+[console_scripts]
+vismap-example = vismap.examples.basic:main
+vismap-grid = vismap.examples.grid:main
+
