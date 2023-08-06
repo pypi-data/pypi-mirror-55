@@ -1,0 +1,30 @@
+Metadata-Version: 1.1
+Name: shu
+Version: 0.1.0
+Summary: 
+    REST API on top of Airflow
+    
+Home-page: https://gitlab.com/greenhousegroup/ai/libraries/shu/
+Author: Greenhouse AI team
+Author-email: ai@greenhousegroup.com
+License: UNKNOWN
+Description: Description
+        ============
+        
+        Introduction
+        ------------
+        
+        The `shu` package provides a simple REST API on top of Airflow. It is
+        implemented as an plugin. To enable the API simply install `shu` in the
+        environment.
+        
+        To explore the API refer your browser to the path `<airflow-server>/internal`,
+        where `<airflow-server>` is the host and port on which the Airflow webserver
+        listens.
+        
+Keywords: airflow,api,rest
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
