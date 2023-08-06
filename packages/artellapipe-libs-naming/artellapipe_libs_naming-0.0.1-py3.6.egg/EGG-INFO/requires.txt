@@ -1,0 +1,13 @@
+Qt.py
+pytest
+pytest-cov
+coveralls
+sphinx
+sphinx_rtd_theme
+lucidity
+
+[dev]
+wheel
+
+[test]
+pytest
