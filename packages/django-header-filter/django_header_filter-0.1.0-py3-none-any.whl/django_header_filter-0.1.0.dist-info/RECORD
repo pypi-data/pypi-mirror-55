@@ -1,0 +1,10 @@
+header_filter/__init__.py,sha256=ThGDbngEpU3jgu6m-CfCeQost8NOqgr2INAMavMAj4U,269
+header_filter/decorator.py,sha256=hxqAP1QCG7Y0xKyDFfmyhaEKV00edgsxW46FVZLOPR8,805
+header_filter/matchers.py,sha256=4MpR0pYv6BI1NwxCUixmJXHooQ6WgfJdzQobaspEvj8,6373
+header_filter/middleware.py,sha256=s-CqFaYcvXH5qDrMgHUV64UeWmy1mREuFjk7CsIqrLc,934
+header_filter/rules.py,sha256=442JpSnYarAr_6tRDuC-jKxJzZaUmEl_CvxQetboeKs,1577
+django_header_filter-0.1.0.dist-info/LICENSE,sha256=0yMpWHTiU2BD96pHmaq-r2IxxpaprI-7acve9vdnALs,1074
+django_header_filter-0.1.0.dist-info/METADATA,sha256=mbOOhxcclme7ydCGUMt9cMU-oI3wt4HI_x7Eli2MdV4,11879
+django_header_filter-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+django_header_filter-0.1.0.dist-info/top_level.txt,sha256=hXmSK_16wW9M4TIvn-Jg1NnkfvGN03YuK6jzqWo4MYU,14
+django_header_filter-0.1.0.dist-info/RECORD,,
