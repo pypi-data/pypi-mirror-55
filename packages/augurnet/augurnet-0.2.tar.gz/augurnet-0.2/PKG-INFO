@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: augurnet
+Version: 0.2
+Summary: Network Traffic Predictions. We develop the product with the mindset of ease. The predictions are done by using the temporal history of the events from the multiple host. The model take into account the effect of multiple host (network) on user’s traffic and contention between different hosts.
+Home-page: https://github.com/vedic-partap/augurnet
+Author: Vedic Partap
+Author-email: me@vedicpartap.com
+License: MIT
+Download-URL: https://github.com/vedic-partap/augurnet/archive/v_02.tar.gz
+Description: UNKNOWN
+Keywords: networ,reinforcement-learning,predictions,generative models
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
