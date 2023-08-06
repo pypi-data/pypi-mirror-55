@@ -1,0 +1,12 @@
+nptsne/__init__.py,sha256=b9mgRQgBxf-08o90vb-5DvBvkwKlvz7DnXzfH0tQLUk,133
+nptsne/_version.txt,sha256=klIfw8vZZL3J9YSpkbif3apXVO0cyW1tQkRTOGacEwU,5
+nptsne/example.py,sha256=ZVFJ4ne2Bf23VJZQ7A1AFKomEzsUA36WNDnS6lur3XU,327
+nptsne/version.py,sha256=yPCWXGDn0OoZbyTwNQ2z0N4u3-UtVfVttiXi7I1Vflc,563
+nptsne/libs/_nptsne.cpython-36m-darwin.so,sha256=LTv1jxleiHSZW8Y5JjZAal67MTz8JmM7UFlmxUEH9bo,647704
+nptsne/libs/libflann_cpp.1.9.dylib,sha256=nCdN9jEu0y4X_weJgeaG1NJ3LaoGaenXMGGcC5ZXG3E,49832
+nptsne/libs/libglfw.3.dylib,sha256=w_-1SQ7l5kcUepxxiJBh99UQfbiawXzI-9h6ZU5pB7o,258188
+nptsne/libs/liblz4.1.dylib,sha256=pcSvUlYo47B_L_G12s0Hip40xaPJubBpN7246R1Fncc,135524
+nptsne-1.0.0.dist-info/METADATA,sha256=wP30wJEvM-GZ_f6Cq-94Yh5k3eF5Jy3fg1EwNJwpIaU,3201
+nptsne-1.0.0.dist-info/WHEEL,sha256=1miAgK0lyTyjfA73Eo5e-7PszEGbSKh2y8MIEH-FKos,100
+nptsne-1.0.0.dist-info/top_level.txt,sha256=NJVD67ibyRmc70mgCf1yzrdfRLsnMCIoEsVvU1NAiJA,7
+nptsne-1.0.0.dist-info/RECORD,,
