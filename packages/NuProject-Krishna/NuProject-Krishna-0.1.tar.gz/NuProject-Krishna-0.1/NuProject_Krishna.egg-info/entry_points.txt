@@ -1,0 +1,3 @@
+[console_scripts]
+my-greet = nupackage.numodule:greet_main
+
