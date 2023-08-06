@@ -1,0 +1,3 @@
+[console_scripts]
+alien-invasion-spbe = alien_invasion_spbe.alien_invasion:run_game
+
