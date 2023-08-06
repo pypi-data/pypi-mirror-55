@@ -1,0 +1,3 @@
+[airflow.plugins]
+newrelic_plugin = newrelic_airflow_plugin.newrelic_plugin:NewRelicStatsPlugin
+
