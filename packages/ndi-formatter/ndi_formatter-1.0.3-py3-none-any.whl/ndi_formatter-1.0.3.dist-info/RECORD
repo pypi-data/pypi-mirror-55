@@ -1,0 +1,12 @@
+ndi_formatter/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+ndi_formatter/attributes.py,sha256=R6t2SkDbQGzS_ZhuURIHNX7XLZJYG6OCg5PBct9nJHI,9981
+ndi_formatter/format.py,sha256=kPfz9Mx8s7D-S3MMm2Nac2svxVLx4X5nh2S39pJiJe4,22439
+ndi_formatter/lookup.py,sha256=yIJ6aZAr-8bHacwjrJJott_BnFmBs2cPrAvy3_R3buk,4198
+ndi_formatter/utils.py,sha256=tJwhD_zpp2dDpd707KNzPQ_8u-BdNQqoIzVQoa9K0mA,474
+ndi_formatter/validate.py,sha256=tafPyQR2Wh8IUAeVNWJv1mDRQqR-euSUlU5U7lGrT98,6328
+ndi_formatter-1.0.3.dist-info/LICENSE,sha256=CWBEovGbtAV-GpDMLTKkUOeK1x2O9eX075ULjyj0tpc,1133
+ndi_formatter-1.0.3.dist-info/METADATA,sha256=_2KpoVD6TNJAdfRM4nDgDwztUgrzXYG8B-p_HRnadtE,10190
+ndi_formatter-1.0.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+ndi_formatter-1.0.3.dist-info/entry_points.txt,sha256=B01G53LKp0ds8NRcVmxOpIOnK7uq1XDDftAd8DoeRq4,61
+ndi_formatter-1.0.3.dist-info/top_level.txt,sha256=nl0ydCeG0WmuJiSP8BN1st4dQG-xChg2mzGJjSe9GRs,14
+ndi_formatter-1.0.3.dist-info/RECORD,,
