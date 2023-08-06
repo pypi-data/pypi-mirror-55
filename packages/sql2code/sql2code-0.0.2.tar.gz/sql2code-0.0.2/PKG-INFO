@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: sql2code
+Version: 0.0.2
+Summary: Convert SQL to import-able code!
+Home-page: http://github.com/scientifichackers/sql2code
+Author: Dev Aggarwal
+Author-email: devxpy@gmail.com
