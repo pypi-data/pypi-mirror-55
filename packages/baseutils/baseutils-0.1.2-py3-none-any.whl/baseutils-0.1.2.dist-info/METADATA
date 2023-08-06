@@ -1,0 +1,47 @@
+Metadata-Version: 2.1
+Name: baseutils
+Version: 0.1.2
+Summary: Base python utilities usable in any project
+Home-page: https://www.github.com/mplanchard/baseutils
+Author: Matthew Planchard
+Author-email: msplanchard@gmail.com
+License: UNKNOWN
+Keywords: python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Provides-Extra: dev
+Requires-Dist: black ; extra == 'dev'
+Requires-Dist: coverage ; extra == 'dev'
+Requires-Dist: flake8 ; extra == 'dev'
+Requires-Dist: mypy ; extra == 'dev'
+Requires-Dist: pydocstyle ; extra == 'dev'
+Requires-Dist: pylint ; extra == 'dev'
+Requires-Dist: pytest ; extra == 'dev'
+Requires-Dist: pytest-cov ; extra == 'dev'
+Requires-Dist: tox ; extra == 'dev'
+Requires-Dist: ipdb ; extra == 'dev'
+Requires-Dist: ipython ; extra == 'dev'
+Requires-Dist: twine ; extra == 'dev'
+Requires-Dist: wheel ; extra == 'dev'
+
+# baseutils
+
+[![Build Status](https://dev.azure.com/msplanchard/baseutils/_apis/build/status/mplanchard.baseutils?branchName=master)](https://dev.azure.com/msplanchard/baseutils/_build/latest?definitionId=4&branchName=master)
+[![Coverage](https://img.shields.io/azure-devops/coverage/msplanchard/baseutils/4)](https://dev.azure.com/msplanchard/baseutils/_build/latest?definitionId=4&branchName=master)
+
+Base python utilities useful in any project
+
+
