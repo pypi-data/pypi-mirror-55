@@ -1,0 +1,12 @@
+ddadevops/__init__.py,sha256=72HqhRYFFTV8BVDB5e5JPD6ibqj5wMYGLKTUS_hb61M,539
+ddadevops/credential.py,sha256=Vghd123EO6ediQ7pA-5hHLE2LZH4XXMVY4trbM5D3ac,462
+ddadevops/dda_pallet.py,sha256=jn8o7g1QR0JUaOFU-tPsj8RzwvvTC8HShl7tKdM_plE,995
+ddadevops/meissa_build.py,sha256=hk8-7nNXcsUfMgwjnHQ_91pDXyEvCTl4dxTwzKER7iE,1768
+ddadevops/python_util.py,sha256=vkoHvy_v2cx6WAw9HBn0ACepu4bx9AOiJCuifLSIkEA,217
+ddadevops/terraform.py,sha256=WedSiHQKycdJJpCXg735HOK3gdLuRCjH4s4IfFQT32Q,2312
+ddadevops-0.3.5.dev2.dist-info/METADATA,sha256=x-Ihzh7nON6WUJeAOLyP03PbdV7vfqH18_ctHepE5H8,702
+ddadevops-0.3.5.dev2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ddadevops-0.3.5.dev2.dist-info/namespace_packages.txt,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ddadevops-0.3.5.dev2.dist-info/top_level.txt,sha256=UQ6jSG3_zphaFkh99ZfvnqC7YLwRS7jXNs18VXc9bao,10
+ddadevops-0.3.5.dev2.dist-info/zip-safe,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+ddadevops-0.3.5.dev2.dist-info/RECORD,,
