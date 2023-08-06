@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: PySymbol
+Version: 1.0
+Summary: US Stock Market Symbol/Company lookup
+Home-page: https://github.com/Larz60p/PySymbol
+Author: Larz60+
+Author-email: larry@pypython.com
+License: MIT
+Download-URL: https://github.com/Larz60p/PySymbol
+Description: UNKNOWN
+Keywords: Stock,Symbol,Ticker,Company
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
