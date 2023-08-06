@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: clustering_jhk
+Version: 0.2
+Summary: practice for K-Means algorithm
+Home-page: UNKNOWN
+Author: Ji-Hoon Kim
+Author-email: genesis717.jhk@gmail.com
+License: MIT
+Description-Content-Type: UNKNOWN
+Description: This is implemented for K-Means clustering
+        
+        This is originated from scikit-learn framework
+        
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
