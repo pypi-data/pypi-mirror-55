@@ -1,0 +1,13 @@
+autopy-3.0.1.dist-info/top_level.txt,sha256=XZwopO5i8LsCkf3cJbCQeQLMiBD7XwTozpS9kMDQ_N4,7
+autopy-3.0.1.dist-info/RECORD,,
+autopy-3.0.1.dist-info/METADATA,sha256=DItiU5ap5m_D2bqkCrgNwKyjFu-EjkeJVMAWVR-AKx4,7979
+autopy-3.0.1.dist-info/WHEEL,sha256=PWd-EwfTPrcGgTUYEYBq1Vt0pkZseKY1DH1kIfK9YkU,110
+autopy/mouse.so,sha256=shaYGrZH2Rv8b7jt-unVyp9FOS2FbjaNvnSJwgvGxFo,4415364
+autopy/bitmap.so,sha256=shaYGrZH2Rv8b7jt-unVyp9FOS2FbjaNvnSJwgvGxFo,4415364
+autopy/color.so,sha256=shaYGrZH2Rv8b7jt-unVyp9FOS2FbjaNvnSJwgvGxFo,4415364
+autopy/key.so,sha256=shaYGrZH2Rv8b7jt-unVyp9FOS2FbjaNvnSJwgvGxFo,4415364
+autopy/alert.so,sha256=shaYGrZH2Rv8b7jt-unVyp9FOS2FbjaNvnSJwgvGxFo,4415364
+autopy/screen.so,sha256=shaYGrZH2Rv8b7jt-unVyp9FOS2FbjaNvnSJwgvGxFo,4415364
+autopy/__init__.py,sha256=E6_Zub_PBrFXG-5fl0l03-wxefahE8Z2GyH9mYD4iy4,277
+autopy/.libs/libXi-22808bad.so.6.1.0,sha256=SaJ43ZWOjdnZ972r-GR4BO4fdCnEVrC6Z46hslyk7gw,63604
+autopy/.libs/libXtst-8ccac291.so.6.1.0,sha256=AYGVWOQSTn27V2lQ84ebGdObEwi7N9DHFP4V-EwFaMw,26032
