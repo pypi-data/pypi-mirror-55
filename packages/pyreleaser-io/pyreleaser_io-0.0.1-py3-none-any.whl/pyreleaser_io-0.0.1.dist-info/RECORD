@@ -1,0 +1,14 @@
+pyreleaser_io/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyreleaser_io/cli.py,sha256=q3VEnAS32ZUQw-tgMBuOKaH0rsoaC-1rNRID6tMvkVU,1262
+pyreleaser_io/create.py,sha256=2XAVVgou8svaAP_N9ddvOYjIAvscbPkn3P3JuMbjiw8,2184
+pyreleaser_io/github.py,sha256=iuYvlTBXX5TDu6TfT9VTrvdC9fkoR_RaMUMbmjY4A1E,704
+pyreleaser_io/template.py,sha256=GEDwG56AWtZmjlKCuWlFKx0W2DYuKVofBXTMhlmyOJ4,790
+pyreleaser_io/util.py,sha256=U-LjYwypVrSUW3FcEGvZ83Lkimh7MoBHmw6r_v5c-7o,1180
+pyreleaser_io/vcs/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pyreleaser_io/vcs/github.py,sha256=oUBUWlx2ofK1AgKk_XpUcPWZ9-kd3tcbKpgFqMOpPWU,1130
+pyreleaser_io/vcs/missing.py,sha256=ud1pf653k96LM-Qi5dYZegxBU7zfSf18c3AWSccH63M,208
+pyreleaser_io-0.0.1.dist-info/METADATA,sha256=bBVH12lkcDyMYWBy71tZwWTe8tq3sTVW8R813XzVmBc,2365
+pyreleaser_io-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyreleaser_io-0.0.1.dist-info/entry_points.txt,sha256=-txC83HSjaBNYdrp4XZ4AdzltlbNg89ruP6jcBg8AJw,55
+pyreleaser_io-0.0.1.dist-info/top_level.txt,sha256=zTdOStlMf0mU5v_PefjNlMYwcs-pds1ZQ0R737raF6g,14
+pyreleaser_io-0.0.1.dist-info/RECORD,,
