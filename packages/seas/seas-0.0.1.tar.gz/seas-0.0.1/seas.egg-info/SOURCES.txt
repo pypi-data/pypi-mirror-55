@@ -1,0 +1,7 @@
+README.md
+setup.py
+seas/__init__.py
+seas.egg-info/PKG-INFO
+seas.egg-info/SOURCES.txt
+seas.egg-info/dependency_links.txt
+seas.egg-info/top_level.txt
