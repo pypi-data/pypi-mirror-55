@@ -1,0 +1,12 @@
+README.rst
+setup.py
+xinspect/__init__.py
+xinspect/auto_argparse.py
+xinspect/autogen.py
+xinspect/dynamic_kwargs.py
+xinspect/static_kwargs.py
+xinspect.egg-info/PKG-INFO
+xinspect.egg-info/SOURCES.txt
+xinspect.egg-info/dependency_links.txt
+xinspect.egg-info/requires.txt
+xinspect.egg-info/top_level.txt
