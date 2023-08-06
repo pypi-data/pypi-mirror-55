@@ -1,0 +1,10 @@
+mypy_boto3_neptune/__init__.py,sha256=wQdmErNuZT5UngZg2tWhZVqqgsiajoPOENe7JK_nL3k,106
+mypy_boto3_neptune/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_neptune/client.py,sha256=q0pAulxOz1z23Zajdu1u6XvJjoFsOHONLc7Xfds9ivY,504381
+mypy_boto3_neptune/paginator.py,sha256=nKNpqFoyPhdN0Pwsul_JpFrZfrrO0slGQZgoxnjgycY,116819
+mypy_boto3_neptune/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_neptune/waiter.py,sha256=_PVD_EtQVvxTZG9Xa0NYUA85GyiFJ_qOyaUxnW6y8m8,7088
+mypy_boto3_neptune-0.1.10.dist-info/METADATA,sha256=4Kfq05l3CeaEsLCOdh6AA1uq47MBVgDochGqoLJDKME,1060
+mypy_boto3_neptune-0.1.10.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_neptune-0.1.10.dist-info/top_level.txt,sha256=_nWnYa5dnFcdko4NxAu4IjbYABz29P4ycMOE3zj1y1I,19
+mypy_boto3_neptune-0.1.10.dist-info/RECORD,,
