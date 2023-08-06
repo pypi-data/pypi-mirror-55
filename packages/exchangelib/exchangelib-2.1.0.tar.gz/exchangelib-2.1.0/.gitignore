@@ -1,0 +1,15 @@
+.eggs
+.idea
+.coverage
+
+*.html
+*.pyc
+*.swp
+*.egg-info
+
+build
+dist
+__pycache__
+
+settings.yml
+scratch*.py
