@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: iotile-transport-socket-lib
+Version: 1.0.0
+Summary: IOTile Transport Socket Library Plugin
+Home-page: http://github.com/iotile/coretools
+Author: Arch
+Author-email: info@arch-iot.com
+License: LGPLv3
+Keywords: iotile,arch,embedded,hardware,firmware
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: GNU Library or Lesser General Public License (LGPL)
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Requires-Python: >=3.5,<4
+Requires-Dist: iotile-core (<6,>=5.0.0)
+Requires-Dist: msgpack (<1,>=0.6.1)
+
+IOTile Transport Socket Library Plugin
+--------------------------------------
+
+A python plug for IOTile CoreTools that provides common message formats, packing routines and
+other code that is useful for performing iotile operations via socket or 
+socket-like protocols. Not particularily useful on it's own.
+
+
