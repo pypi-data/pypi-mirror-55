@@ -1,0 +1,12 @@
+README.md
+setup.cfg
+setup.py
+SunilNtnxMyProject.egg-info/PKG-INFO
+SunilNtnxMyProject.egg-info/SOURCES.txt
+SunilNtnxMyProject.egg-info/dependency_links.txt
+SunilNtnxMyProject.egg-info/entry_points.txt
+SunilNtnxMyProject.egg-info/requires.txt
+SunilNtnxMyProject.egg-info/top_level.txt
+mypackage/__init__.py
+mypackage/mymodule.py
+mypackage/template.txt
