@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: arbory
+Version: 0.0.5
+Summary: Nice directory trees.
+Home-page: https://github.com/n8jhj/arbory
+Author: Nathaniel Jones
+Author-email: nathaniel.j.jones@wsu.edu
+License: BSD
+Description: 
+        # arbory
+        
+        Nice directory trees.
+        
+        Install from [PyPI](https://pypi.org/project/arbory/):
+        `pip install arbory`
+        
+        ---
+        
+        > Written with [StackEdit](https://stackedit.io/).
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: Environment :: Console
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: System :: Filesystems
+Classifier: Topic :: Utilities
+Requires-Python: >=3.5.0
+Description-Content-Type: text/markdown
