@@ -1,0 +1,10 @@
+README.md
+setup.py
+pyudevmonitor/__init__.py
+pyudevmonitor/event.py
+pyudevmonitor/monitor.py
+pyudevmonitor.egg-info/PKG-INFO
+pyudevmonitor.egg-info/SOURCES.txt
+pyudevmonitor.egg-info/dependency_links.txt
+pyudevmonitor.egg-info/requires.txt
+pyudevmonitor.egg-info/top_level.txt
