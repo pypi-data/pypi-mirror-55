@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: roomservice
+Version: 0.0.7
+Summary: A Library for interacting with Google Sheets, changing your sheets
+Home-page: UNKNOWN
+Author: Rory Murdock
+Author-email: rmurdock@woolworths.com.au
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
