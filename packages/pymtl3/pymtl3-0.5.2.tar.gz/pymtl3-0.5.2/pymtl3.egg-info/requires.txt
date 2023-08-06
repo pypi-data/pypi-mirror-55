@@ -1,0 +1,4 @@
+cffi
+greenlet
+hypothesis>=4.18.1
+pytest
