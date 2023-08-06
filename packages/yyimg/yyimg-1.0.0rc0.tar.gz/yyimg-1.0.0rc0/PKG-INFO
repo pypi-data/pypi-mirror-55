@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: yyimg
+Version: 1.0.0rc0
+Summary: image tools for deep learning
+Home-page: https://github.com/YunYang1994/yyimg.git
+Author: YunYang1994
+Author-email: dreameryangyun@sjtu.edu.cn
+License: UNKNOWN
+Description: # yyimg
+        image augmentation and visulization
+        
+        ```
+        $ pip3 install yyimg
+        ```
+        
+Keywords: deep-learning,image
+Platform: UNKNOWN
+Description-Content-Type: text/markdown

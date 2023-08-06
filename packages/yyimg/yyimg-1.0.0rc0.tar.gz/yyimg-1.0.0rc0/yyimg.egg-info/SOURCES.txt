@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+yyimg/__init__.py
+yyimg/draw_box.py
+yyimg/utils.py
+yyimg/version.py
+yyimg.egg-info/PKG-INFO
+yyimg.egg-info/SOURCES.txt
+yyimg.egg-info/dependency_links.txt
+yyimg.egg-info/top_level.txt
