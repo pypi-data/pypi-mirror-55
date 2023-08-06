@@ -1,0 +1,14 @@
+LICENSE.txt
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+data/data_file
+huasampleproject.egg-info/PKG-INFO
+huasampleproject.egg-info/SOURCES.txt
+huasampleproject.egg-info/dependency_links.txt
+huasampleproject.egg-info/entry_points.txt
+huasampleproject.egg-info/requires.txt
+huasampleproject.egg-info/top_level.txt
+sample/__init__.py
+sample/package_data.dat
