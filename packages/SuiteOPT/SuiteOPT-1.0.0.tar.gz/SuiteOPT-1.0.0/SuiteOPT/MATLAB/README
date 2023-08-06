@@ -1,0 +1,28 @@
+% ========================== SuiteOPT MATLAB README ============================
+%  To compile a mex function for one or all of the solvers contained within
+%  SuiteOPT, startup MATLAB in this directory, and then enter the following 
+%  command in MATLAB:
+%
+%    >> make
+%
+%  After entering this command, respond to the prompt by MATLAB to install
+%  the desired solver(s) for use with MATLAB.
+%
+%  NOTE: The installation of pproj and pasa require SuiteSparse (version  
+%  5.4.0 or later). If the user does not have SuiteSparse, it should be 
+%  downloaded and placed in the SuiteOPT directory (at the same level as the
+%  directories CGDESCENT, MATLAB, NAPHEAP, PASA, PPROJ, SuiteOPTconfig, ...).
+%  Alternatively, a symbolic link to the user's copy of SuiteSparse can be set 
+%  in the SuiteOPT directory.
+%
+% ===================== Using SuiteOPT solvers with MATLAB =====================
+%  To use one of the SuiteOPT solvers in MATLAB, navigate to the  
+%  MATLAB subdirectory for that solver. Note that the upper level MATLAB
+%  directory where the mex functions were compiled includes symbolic links
+%  to each of the MATLAB subdirectories. Thus, commands of the form
+%  "cd pasa" or "cd pproj" or "cd napheap" or "cd cg" take you to the MATLAB
+%  subdirectory for the associated solver.  After navigating to one of
+%  these subdirectories, information on how to set up and solve a problem
+%  can be viewed by typing "demo". Additional help can be accesed 
+%  in this directory by typing the solver name in the MATLAB command window.
+%  The solver names are pasa, pproj, napheap, and cg_descent.

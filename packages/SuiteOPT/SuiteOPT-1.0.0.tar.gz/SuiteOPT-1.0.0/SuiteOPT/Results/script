@@ -1,0 +1,3 @@
+grep '\!\!' run17.cg > /tmp/a
+grep '\!\!' run16.cg > /tmp/b
+paste -d '\n' /tmp/a /tmp/b > /tmp/c

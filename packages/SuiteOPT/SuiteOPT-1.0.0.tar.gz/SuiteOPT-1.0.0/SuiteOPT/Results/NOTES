@@ -1,0 +1,72 @@
+2018
+run0: 20180507 CG, results for unconstrained problem using
+      CGDESCENT (this version has lots of printing, and the autoregularize
+      code, note some difference in problem size with new SIF directory)
+run1: 20180508 CG (without printing and no autoregularize)
+run2: 20180510a CG (added nonconvex quadratic step adjust to CG)
+run3: 20180513 PASA (after changing start of cg_line)
+run4: 20180513 CG (after changing start of cg_line)
+run5: 20180515 CG (gives similar results to run2, however,
+      there were some bugs in run2 in the last phase of the line search
+      (cubic was used even when fb was not the value at b). Despite this
+      bug, run2 gave better results than run5 on HAIRY, LOGHAIRY, ....
+      since the problems were so unstable.
+run6: 20180515 PASA for polyhedral constraints (after update of CG)
+run7: 20180519 PASA for bound constrained problem
+run8: 20180520a PASA for polyhedral an bound constrained problems
+      after fixing the fg versus f and g problem
+run9: 20180521b all problems after making adjustments to cg_line
+      note that PARKCH was found to go to -1.e10 and lower, hence, this
+      problem was deleted
+run10: 20180604 all problems. Includes the new napheap installation and
+      a modification to cg_line in the expansion phase where we evaluate
+      the function value all the time. Without this, VIBRBEAM does not
+      work. This causes more function evaluations but better stability,
+      and better overall performance in the entire problem set.
+run11: 20180613 all problems. After adding the LP stuff, the problem
+      SMBANK did not solve. Hongchao corrected a bug in cg_descent. This
+      run is after implementing Hongchao's correction. The results for
+      the polyhedral problems improved, but the bound constrained results
+      were worse, especially the problem BRATU1D. If NOBLAS is used in
+      cg_descent, then the codes 20180604 and 20180613 give the same
+      results for BRATU1D. There may still be a bug in the bound constrained
+      stuff.
+run12: 20190623 The code has been updated with routines for handling column
+      singletons in an LP. Got the code to solve the three problem set cg, bound
+      constrained, and linearly constrained. This file contains the results
+      for these 3 problem sets. There were no LP and no debugging yet for
+      the LP part of the code.
+run13: 20190710 The LP code with inequalities seems to work.
+run14: 20190722 The LP code with singletons running. Run corresponds to
+      grad_tol of 1.e-8 for pasa and 1.e-10 for pproj, the other runs use
+      1.e-6 tolerance for pasa.
+run15: 20191005 The run corresponds to GOTO2 BLAS and a #if 0 to skip
+      the execution of the supernodal code; grad_tol is 1.e-6.
+      X20191005 is the run on X laptop and MKL BLAS. SuiteSparse 5.4 and
+      openMP threading.
+
+openblas:
+BLAS   = -lopenblas  -lgfortran -lpthread
+LAPACK = -llapack
+LDLIBS = -L/usr/lib64
+OPTFLAGS += -DNSUPER
+
+intel mkl blas:
+BLAS   = -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -liomp5 -lpthread
+LAPACK = -lmkl_lapack95_lp64
+LDLIBS = -L/opt/intel/mkl/lib/intel64 \
+        -L/opt/intel/compilers_and_libraries_2019.4.243/linux/compiler/lib/intel64
+
+goto2 blas:
+BLAS = /home/data/GotoBLAS2old/libgoto2_nehalemp-r1.13.so -lgfortran -lpthread
+LAPACK = /home/data/GotoBLAS2old/libgoto2_nehalemp-r1.13.a
+LDLIBS =
+OPTFLAGS += -DNSUPER
+
+setenv OMP_NUM_THREADS <number of threads to use>
+intel: /opt/intel/mkl/lib/intel64_lin/libmkl_intel_lp64.so
+       (see config for all the stuff needed)
+       libmkl_scalapack_lp64.so
+
+BLAS   = /usr/lib64/libopenblaso64-r0.3.3.so
+LAPACK = /usr/lib64/liblapack.so.3.2.1

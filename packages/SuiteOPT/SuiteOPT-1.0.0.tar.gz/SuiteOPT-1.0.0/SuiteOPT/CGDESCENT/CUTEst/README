@@ -1,0 +1,69 @@
+                   **********************************
+                   *                                *
+                   *  USING CG_DESCENT WITH CUTEst  *
+                   *                                *
+                   **********************************
+
+                   (Last modified on 25 October 2019)
+
+WHAT IS CG_DESCENT?
+-------------
+
+The CG_DESCENT package is for solving unconstrained optimization problems.
+It is one component of the package SuiteOPT.
+
+HOW DO I GET SuiteOPT?
+------------------
+
+It can be downloaded from the following web site of William W. Hager
+(hager@ufl.edu):
+
+http://users.clas.ufl.edu/hager/papers/Software/
+
+INSTALLING CG_DESCENT IN CUTEst
+-------------------------
+
+You first need to download and install the CUTEst package. It can
+currently be download from here: https://github.com/ralna/CUTEst/wiki
+(authors: Nicholas Gould, Dominique Orban, and Philippe Toint).
+As you will see, there are three components to CUTE: archdefs,
+cutest, and sifdecode. Also, you will want to download the CUTE
+set of test problems. When CUTE is installed, it is also necessary to
+create some environment variables. The environment variables that are
+used in the installation of CG_DESCENT are $CUTEST, which is the full path
+to the location of your cutest directory, and $MYARCH, which is a string
+providing information about your operating system and computer architecture.
+After setting up CUTE, go to the directory $CUTEST/bin/sys and add two
+lines to provide your BLAS and LAPACK information. This same information
+should also be stored in your Userconfig.mk file. If using OpenBLAS, the
+lines added to the file in $CUTEST/bin/sys could be of the following form:
+
+BLAS="/usr/lib64/libopenblaso64-r0.3.3.so -lgfortran -lpthread"
+LAPACK="/usr/lib64/liblapack.so.3.2.1"
+
+If using MKL (Intel's Math Kernel Library) BLAS, these lines might
+have the following structure:
+
+BLAS="-L/opt/intel/mkl/lib/intel64 -lmkl_intel_lp64 -lmkl_intel_thread -lmkl_core -L/opt/intel/compilers_and_libraries_2019.4.243/linux/compiler/lib/intel64 -liomp5 -lpthread -lm"
+LAPACK="-lmkl_lapack95_lp64"
+
+Before using CG_DESCENT in cutest, the setup explained in the README at the
+top level directory of SuiteOPT must be performed. Once this is done,
+and the installation of CUTE is complete, the installation of CG_DESCENT
+in CUTE is accomplished by typing "make" in this directory.  An output
+of make is the runcutest command for using cg_descent with cutest.
+This command is also placed in the file "runcutest" in this directory.
+The command in the runcutest file is formulated as an alias that should be
+placed in a file such as .cshrc or .bashrc that is executed at startup.
+After this is done, any window that is subsequently opened can solve an
+unconstrained test problem from CUTE using the command "runcg PROB" where
+PROB is the name of the CUTE problem.
+
+The default parameter values and their documentation appear in the
+file cg_default.c which are located in the CG "Source" directory.
+New values can be set in the cg_descent_main.c file of this directory.
+Of course, when new parameter values are set, then cg_descent_main must
+be recompiled by typing "make". New parameter values could also be read
+from a spec file, and when parameter values are read from a spec file, there
+is no need to type "make" after changing parameter values.
+=====================================

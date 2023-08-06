@@ -1,0 +1,1 @@
+runcutest -p cg_descent -LLibs -lcg_descent --blas --lapack -D  

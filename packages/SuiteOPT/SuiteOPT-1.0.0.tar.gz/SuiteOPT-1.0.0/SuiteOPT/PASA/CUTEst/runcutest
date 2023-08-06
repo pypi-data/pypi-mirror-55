@@ -1,0 +1,1 @@
+alias runpasa 'runcutest -p pasa -L/home/hager/math1/progs/SuiteOPT/ldlibs -lpasa -lnapheap -lcg_descent -lpproj -lcholmod -lamd -lcamd -lccolamd -lcolamd -lmetis -lsuitesparseconfig -D' 
