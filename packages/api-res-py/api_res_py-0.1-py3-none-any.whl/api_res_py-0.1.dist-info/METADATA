@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: api-res-py
+Version: 0.1
+Summary: AS api response python package
+Home-page: https://github.com/rakeshrkz7/as_api_res
+Author: Rakesh
+Author-email: rakesh.r@payoda.com
+License: MIT
+Keywords: as api res
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Dist: request
+
+AS api response python package
+
+
