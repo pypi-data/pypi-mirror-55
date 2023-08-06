@@ -1,0 +1,34 @@
+README.md
+setup.cfg
+setup.py
+e5/__init__.py
+e5/__main__.py
+e5/blockdata.py
+e5/colorscheme.py
+e5/constants.py
+e5/dbs.py
+e5/e5.kv
+e5/e5_widgets.py
+e5/main.py
+e5/misc.py
+e5/requirements.txt
+e5.egg-info/PKG-INFO
+e5.egg-info/SOURCES.txt
+e5.egg-info/dependency_links.txt
+e5.egg-info/requires.txt
+e5.egg-info/top_level.txt
+e5/cfgs/__init__.py
+e5/cfgs/ap_shannon.cfg
+e5/cfgs/camera.cfg
+e5/cfgs/conditions.cfg
+e5/cfgs/field_types.cfg
+e5/cfgs/gps (conflicted copy 2019-06-08 151409).cfg
+e5/cfgs/gps.cfg
+e5/cfgs/pech layer 8 small fraction - Copy.cfg
+e5/cfgs/pech layer 8 small fraction.cfg
+e5/cfgs/pechivlayer8.cfg
+e5/cfgs/pivl8_stratigraphy.cfg
+e5/cfgs/small.cfg
+e5/cfgs/small_linux.cfg
+e5/cfgs/species.cfg
+e5/cfgs/typelist.cfg
