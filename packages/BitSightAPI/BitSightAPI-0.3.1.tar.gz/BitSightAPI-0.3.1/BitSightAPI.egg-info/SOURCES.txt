@@ -1,0 +1,6 @@
+README.md
+setup.py
+BitSightAPI.egg-info/PKG-INFO
+BitSightAPI.egg-info/SOURCES.txt
+BitSightAPI.egg-info/dependency_links.txt
+BitSightAPI.egg-info/top_level.txt
