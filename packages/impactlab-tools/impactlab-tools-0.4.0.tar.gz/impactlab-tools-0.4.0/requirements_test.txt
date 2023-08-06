@@ -1,0 +1,11 @@
+Sphinx
+sphinx-rtd-theme
+pip
+wheel
+flake8
+tox
+pytest
+coverage
+pytest-cov
+pytest-runner
+coveralls
