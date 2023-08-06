@@ -1,0 +1,7 @@
+Jinja2
+PyYAML
+six
+
+[test]
+pytest
+pytest-cov
