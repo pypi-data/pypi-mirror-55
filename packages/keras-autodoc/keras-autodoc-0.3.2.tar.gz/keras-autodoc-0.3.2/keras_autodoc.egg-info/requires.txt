@@ -1,0 +1,6 @@
+markdown
+sphinx
+
+[tests]
+pytest
+pytest-pep8
