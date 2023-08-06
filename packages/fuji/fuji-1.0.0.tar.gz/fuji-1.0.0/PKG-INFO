@@ -1,0 +1,21 @@
+Metadata-Version: 1.1
+Name: fuji
+Version: 1.0.0
+Summary: A small library made to make common tasks easier
+Home-page: https://github.com/startechsheffield/fuji
+Author: Star Technology
+Author-email: startechsheffield@gmx.com
+License: MIT
+Download-URL: https://github.com/startechsheffield/fuji/archive/1.0.0.tar.gz
+Description: UNKNOWN
+Keywords: SMALL,CONVENIENCE,RELEASE-CANDIDATE
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
