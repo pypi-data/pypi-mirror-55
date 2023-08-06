@@ -1,0 +1,16 @@
+statar/__init__.py,sha256=8vUxTL3k6sFwLabwhLB53JkfZnyiPnX4Wimk0FBGswE,1337
+statar/__main__.py,sha256=nQGCRmKEHQjNN-q9ibDqGd2nr4QyLvbur7uHNKwDDhc,61
+statar/_attrs.py,sha256=ewyF6Xj-SLNTpLeCVLNda4N9UPyzU2SWlWYxO82EWes,30139
+statar/_core.py,sha256=PXa0v73e--dfxF8ohsjVvQWRtYQyncafRKmydlbnkls,1187
+statar/_format.py,sha256=tCPEVdmCKTzYxfWGlxDaxe-NIpHc7b337yMa2771J64,30414
+statar/_ops.py,sha256=uYhN4xTI-xw3gU7z1JfAKTHR2RXTvVfCj3LrwwmR774,18887
+statar/_sem.py,sha256=3N3lXuPtGrX0I0WNcdypMhw5BT9fwJRhv097-sTqEGA,11959
+statar/_util.py,sha256=z_-PGlwATrEciRyaLl58Ku1kmBWl06OQLnuoMtRrff8,11362
+statar/app.py,sha256=KyOxAziNHSWvGwEWuB0g-TVn7mREsCbm6HGr2rZcfl0,25066
+statar/version.py,sha256=0ov4CbfVi3-MJHknGqoBIpJKyGh6CQITgzTkY2HLRUI,1276
+statar-0.8.0.data/scripts/statar,sha256=ZhLYoth4qxUFVqqPc_kbrm85c_UrgN-YxZCAHsKAgwI,48
+statar-0.8.0.dist-info/LICENSE.txt,sha256=SHMIx4hWYb-KcxdRklVwOdNdN_upvEWCB12KbIMA_f8,973
+statar-0.8.0.dist-info/METADATA,sha256=hnJaqoLd-rmAWe8x042EWWZXoVeQDGvdGVsgtEQzO3U,844
+statar-0.8.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+statar-0.8.0.dist-info/top_level.txt,sha256=ExJAfhrVrc7ylPzpnyKlXOrt1VVdpdEHL1z1po1ArKU,7
+statar-0.8.0.dist-info/RECORD,,
