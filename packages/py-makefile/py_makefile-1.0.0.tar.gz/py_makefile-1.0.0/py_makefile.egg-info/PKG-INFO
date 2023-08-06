@@ -1,0 +1,23 @@
+Metadata-Version: 1.2
+Name: py-makefile
+Version: 1.0.0
+Summary: implement makefile
+Home-page: https://github.com/Myriad-Dreamin/py-make
+Author: Myriad Dreamin
+Author-email: camiyoru@gmail.com
+Maintainer: Myriad-Dreamin
+Maintainer-email: camiyoru@gmail.com
+License: UNKNOWN
+Description: both python2 or python3 are ok to run this script
+Platform: MacOS
+Platform: Windows
+Platform: Linux
+Classifier: Operating System :: MacOS
+Classifier: Operating System :: Microsoft :: Windows :: Windows 10
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Utilities
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Natural Language :: Chinese (Simplified)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 3
