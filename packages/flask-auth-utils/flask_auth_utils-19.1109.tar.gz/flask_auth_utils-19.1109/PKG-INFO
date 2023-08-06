@@ -1,0 +1,11 @@
+Metadata-Version: 1.1
+Name: flask_auth_utils
+Version: 19.1109
+Summary: An opinionated library for easily setting up auth using flask
+Home-page: https://github.com/norwoodj/flask_auth_utils
+Author: John Norwood
+Author-email: norwood.john.m@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/norwoodj/jconfigure/archive/19.1109.tar.gz
+Description: UNKNOWN
+Platform: UNKNOWN
