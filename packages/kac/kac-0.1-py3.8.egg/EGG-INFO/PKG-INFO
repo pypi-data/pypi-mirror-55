@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: kac
+Version: 0.1
+Summary: Automatic version bumping for Keep-a-Changelog style Changelog files.
+Home-page: https://github.com/atwalsh/kac
+Author: Adam Walsh
+Author-email: adam@grid.sh
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
