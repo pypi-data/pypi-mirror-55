@@ -1,0 +1,13 @@
+Flask
+prometheus_client
+prometheus-flask-exporter
+six
+blinker
+raven
+
+[gunicorn]
+gunicorn
+
+[twisted]
+flask-twisted
+twisted
