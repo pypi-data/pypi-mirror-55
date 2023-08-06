@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: Jason-s-Demo
+Version: 2019.11.12
+Summary: My Project demo test
+Home-page: https://github.com/jjaasson
+Author: Jason
+Author-email: jasony0129@hotmail.com
+License: MIT
+Keywords: demo
+Platform: UNKNOWN
+Requires-Dist: nose
+
+UNKNOWN
+
+
