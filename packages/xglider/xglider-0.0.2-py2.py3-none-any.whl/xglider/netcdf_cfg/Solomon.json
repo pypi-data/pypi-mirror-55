@@ -1,0 +1,13 @@
+{
+"inherit": "spray",
+"global_attributes": {
+    "title": "Solomon Sea Ocean Transport from Gliders",
+    "acknowledgement": "This project is funded by the Ocean Observing and Monitoring Division of NOAA. These data were gathered by the staff of the Instrument Development Group of Scripps Institution of Oceanography with assistance of William Kessler of NOAA's PMEL.  Much of the field work was carried out by Dive Gizo. Residents of the Solomon Islands and Papua New Guinea were extremely helpful, particularly in rescuing errant gliders.",
+    "contributor_name": "Russ Davis, Guilherme Castelao",
+    "contributor_role": "Principal Investigator, Database Manager",
+    "product_version": "v2",
+    "doi": "10.21238/S8SPRAY2718",
+    "summary": "The western boundary current of the South Pacific Tropical Gyre flows through the Solomon Sea and then to the equator. The degree to which this flow affects the equatorial zone and global climate depends on its transport of water and heat. These transports have been measured since 2007 by underwater gliders crossing the Sea seasonally to monthly. Ocean temperature and salinity profiles and depth-average current are measured every few km to depths of 500 to 1000 m. Velocity shear can be inferred from measured density. Phenomena of interest are ENSO and flow in the Equatorial Undercurrent.",
+    "references": "Rudnick, D. L. (2016). Ocean research enabled by underwater gliders. Annual review of marine science, 8, 519-541, doi:10.1146/annurev-marine-122414-033913\n Rudnick, D. L., Davis, R. E., & Sherman, J. T. (2016). Spray Underwater Glider Operations. Journal of Atmospheric and Oceanic Technology, 33(6), 1113-1122, doi:10.1175/JTECH-D-15-0252.1\n Rudnick, D. L., Davis, R. E., Eriksen, C. C., Fratantoni, D. M., & Perry, M. J. (2004). Underwater gliders for ocean research. Marine Technology Society Journal, 38(2), 73-84, doi:10.4031/002533204787522703\n Sherman, J., Davis, R. E., Owens, W. B., & Valdes, J. (2001). The autonomous underwater glider 'Spray'. IEEE Journal of oceanic Engineering, 26(4), 437-446, doi:10.1109/48.972076\n Rudnick, D. L., Davis, R. E., & Sherman, J. T. (2016). Spray Underwater Glider Operations. Journal of Atmospheric and Oceanic Technology, 33(6), 1113-1122, doi:10.1175/JTECH-D-15-0252.1\n Rudnick, D. L., Davis, R. E., Eriksen, C. C., Fratantoni, D. M., & Perry, M. J. (2004). Underwater gliders for ocean research. Marine Technology Society Journal, 38(2), 73-84, doi:10.4031/002533204787522703\n Sherman, J., Davis, R. E., Owens, W. B., & Valdes, J. (2001). The autonomous underwater glider 'Spray'. IEEE Journal of oceanic Engineering, 26(4), 437-446, doi:10.1109/48.972076"
+    }
+}

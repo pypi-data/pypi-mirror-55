@@ -1,0 +1,164 @@
+{
+"global_attributes": null,
+"variables_standard": {
+    "attrs": {
+        "cf_role": null,
+        "long_name": null,
+        "standard_name": null,
+	"calendar": null,
+	"units": null,
+        "accuracy": null,
+	"ancillary_variables": null,
+	"instrument": null,
+	"observation_type": null,
+	"platform": null,
+	"positive": null,
+	"precision": null,
+	"reference": null,
+	"reference_datum": null,
+       	"resolution": null,
+	"standard_name": null,
+	"valid_max": null,
+	"valid_min": null,
+	"coverage_content_type": null,
+	"coordinates": null,
+	"comment": null
+    }
+},
+"variables": {
+    "mission_name": {
+        "attrs": {
+            "long_name": "Mission name of each trajectory."
+            }
+        },
+    "mission": {
+        "attrs": {
+            "long_name": "Mission name of each trajectory"
+            }
+        },
+    "trajectory_index": {
+        "attrs": {
+            "long_name": "Mission id"
+            }
+        },
+    "depth": {
+        "attrs": {
+            "long_name": "Depth",
+            "positive": "down",
+            "standard_name": "depth",
+            "units": "m",
+            "coverage_content_type": "coordinate"
+            }
+        },
+    "profile": {
+        "attrs": {
+            "long_name": "Profile"
+            }
+        },
+    "lat": {
+        "attrs": {
+            "long_name": "Latitude",
+            "standard_name": "latitude",
+            "units": "degrees_north",
+            "coverage_content_type": "coordinate"
+            }
+        },
+    "lon": {
+        "attrs": {
+            "long_name": "Longitude",
+            "standard_name": "longitude",
+            "units": "degrees_east",
+            "coverage_content_type": "coordinate"
+            }
+        },
+    "temp": {
+        "attrs": {
+            "long_name": "Sea Water Temperature",
+            "standard_name": "sea_water_temperature",
+            "units": "Celsius",
+            "valid_max": 40,
+            "valid_min": -5,
+            "coordinates": null,
+            "coverage_content_type": "physicalMeasurement"
+            }
+        },
+    "sal": {
+        "attrs": {
+            "long_name": "Sea Water Salinity",
+            "standard_name": "sea_water_practical_salinity",
+            "units": "1",
+            "valid_max": 40,
+            "valid_min": 0,
+            "coordinates": null,
+            "coverage_content_type": "physicalMeasurement"
+            }
+        },
+    "cndc": {
+        "attrs": {
+            "long_name": "Conductivity",
+            "standard_name": "sea_water_electrical_conductivity",
+            "units": "S m-1",
+            "valid_max": 10,
+            "valid_min": 0,
+            "coordinates": null,
+            "coverage_content_type": "physicalMeasurement"
+            }
+        },
+    "dens": {
+        "attrs": {
+            "long_name": "Density",
+            "standard_name": "sea_water_density",
+            "units": "kg m-3",
+            "valid_max": 1040,
+            "valid_min": 1015,
+            "coordinates": null,
+            "coverage_content_type": "physicalMeasurement"
+            }
+        },
+    "fl": {
+        "attrs": {
+            "long_name": "Fluorescence",
+            "standard_name": null,
+            "units": null,
+            "coordinates": null,
+            "coverage_content_type": "physicalMeasurement"
+            }
+        },
+    "u_doppler": {
+        "attrs": {
+            "long_name": "Eastward Sea Water Velocity",
+            "standard_name": "eastward_sea_water_velocity",
+            "units": "m s-1",
+            "coordinates": null,
+            "coverage_content_type": "physicalMeasurement"
+            }
+        },
+    "v_doppler": {
+        "attrs": {
+            "long_name": "Northward Sea Water Velocity",
+            "standard_name": "northward_sea_water_velocity",
+            "units": "m s-1",
+            "coordinates": null,
+            "coverage_content_type": "physicalMeasurement"
+            }
+        },
+    "u_mean": {
+        "attrs": {
+            "long_name": "Depth-Averaged Eastward Sea Water Velocity",
+            "standard_name": "eastward_sea_water_velocity",
+            "units": "m s-1",
+            "coordinates": null,
+            "coverage_content_type": "physicalMeasurement"
+            }
+        },
+    "v_mean": {
+        "attrs": {
+            "long_name": "Depth-Averaged Northward Sea Water Velocity",
+            "standard_name": "northward_sea_water_velocity",
+            "units": "m s-1",
+            "coordinates": null,
+            "coverage_content_type": "physicalMeasurement"
+            }
+        }
+    }
+}

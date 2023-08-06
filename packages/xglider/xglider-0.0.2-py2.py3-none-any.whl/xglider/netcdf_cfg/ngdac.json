@@ -1,0 +1,603 @@
+{
+"inherit": "xglider",
+"global_attributes": {
+    "Conventions": "CF-1.7, COARDS",
+    "Metadata_Conventions": "CF-1.7, Unidata Dataset Discovery v1.0",
+    "acknowledgement": " ",
+    "comment": " ",
+    "contributor_name": " ",
+    "contributor_role": " ",
+    "creator_name": " ",
+    "creator_email": " ",
+    "creator_url": " ",
+    "date_created": " ",
+    "date_issued": " ",
+    "date_modified": " ",
+    "format_version": "IOOS_Glider_NetCDF_v3.0.nc",
+    "history": " ",
+    "id": " ",
+    "institution": " ",
+    "keywords":  "AUVS > Autonomous Underwater Vehicles",
+    "keywords_vocabulary": "GCMD Science Keywords",
+    "license": " ",
+    "metadata_link": " ",
+    "naming_authority": " ",
+    "platform_type": " ",
+    "processing_level": " ",
+    "project": " ",
+    "publisher_email": " ",
+    "publisher_name": " ",
+    "publisher_url": " ",
+    "references": " ",
+    "sea_name": " ",
+    "source": " ",
+    "standard_name_vocabulary": " ",
+    "summary": " ",
+    "title": " ",
+    "wmo_id": " "
+},
+"variables_standard": {
+    "attrs": {
+        "comment": " ",
+        "valid_min": " ",
+        "valid_max": " ",
+        "accuracy": " ",
+        "precision": " ",
+        "resolution": " "
+    }
+},
+"variables": {
+    "trajectory": {
+        "attrs": {
+            "cf_role": "trajectory_id",
+            "comment": "A trajectory is a single deployment of a glider and may span multiple data files.",
+            "long_name": "Trajectory/Deployment Name",
+            "accuracy": null,
+            "precision": null,
+            "resolution": null
+        },
+	"encoding": {
+            "char_dim_name": "traj_strlen"
+	}
+    },
+    "profile_id": {
+        "attrs": {
+            "comment": "Sequential profile number within the trajectory.  This value is unique in each file that is part of a single trajectory/deployment.",
+            "long_name": "Profile ID",
+            "valid_max": "2147483647",
+            "valid_min": "1"
+       	},
+       	"encoding": {
+            "_FillValue": -999
+       	}
+    },
+    "datetime": {
+        "varname": "profile_time",
+        "attrs": {
+            "comment": "Timestamp corresponding to the mid-point of the profile",
+            "long_name": "Profile Center Time",
+            "observation_type": "calculated",
+            "platform": " ",
+            "standard_name": "time",
+            "ancillary_variables": "profile_time_qc"
+       	},
+	"encoding": {
+            "_FillValue": -999,
+            "calendar": "gregorian",
+            "units": "seconds since 1970-01-01T00:00:00Z",
+	    "dtype": "int32"
+       	}
+    },
+    "profile_time_qc": {
+        "attrs": {
+            "long_name": "profile_time Quality Flag",
+            "standard_name": "time status_flag",
+            "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used not_used interpolated_value missing_value",
+            "flag_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "valid_max": 9,
+            "valid_min": 0
+            },
+	"encoding": {
+            "_FillValue": -127,
+            "dtype": "int8"
+            }
+        },
+    "profile_lat": {
+        "dtype": "double",
+        "attrs": {
+            "comment": "Value is interpolated to provide an estimate of the latitude at the mid-point of the profile",
+            "long_name": "Profile Center Latitude",
+            "observation_type": "calculated",
+            "platform": " ",
+            "standard_name": "latitude",
+            "units": "degrees_north",
+            "valid_max": 90,
+            "valid_min": -90,
+            "ancillary_variables": "profile_lat_qc"
+       	},
+	"encoding": {
+            "_FillValue": -999
+       	}
+    },
+    "profile_lat_qc": {
+        "attrs": {
+            "long_name": "profile_lat Quality Flag",
+            "standard_name": "latitude status_flag",
+            "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used not_used interpolated_value missing_value",
+            "flag_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "valid_max": 9,
+            "valid_min": 0
+            },
+	"encoding": {
+            "_FillValue": -127,
+            "dtype": "int8"
+            }
+        },
+    "profile_lon": {
+        "dtype": "double",
+        "attrs": {
+            "comment": "Value is interpolated to provide an estimate of the longitude at the mid-point of the profile",
+            "long_name": "Profile Center Latitude",
+            "observation_type": "calculated",
+            "platform": " ",
+            "standard_name": "longitude",
+            "units": "degrees_north",
+            "valid_max": 180.0,
+            "valid_min": -180.0,
+            "ancillary_variables": "profile_lon_qc"
+       	},
+	"encoding": {
+            "_FillValue": -999
+       	}
+    },
+    "profile_lon_qc": {
+        "attrs": {
+            "long_name": "profile_lon Quality Flag",
+            "standard_name": "longitude status_flag",
+            "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used not_used interpolated_value missing_value",
+            "flag_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "valid_max": 9,
+            "valid_min": 0
+            },
+	"encoding": {
+            "_FillValue": -127,
+            "dtype": "int8"
+            }
+        },
+    "time": {
+        "attrs": {
+            "standard_name": "time",
+            "long_name": "Time",
+            "observation_type": "measured",
+            "ancillary_variables": "time_qc"
+	},
+	"encoding": {
+            "_FillValue": -999,
+            "calendar": "gregorian",
+            "units": "seconds since 1970-01-01T00:00:00Z",
+	    "dtype": "int32"
+	}
+    },
+    "time_qc": {
+        "attrs": {
+            "standard_name": "time status_flag",
+            "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used not_used interpolated_value missing_value",
+            "flag_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "long_name": "time Quality Flag",
+            "valid_max": 9,
+            "valid_min": 0
+            },
+	"encoding": {
+            "_FillValue": -127,
+	    "dtype": "int8"
+            }
+        },
+    "lat": {
+        "attrs": {
+            "long_name": "Latitude",
+            "observation_type": "measured",
+            "platform": " ",
+            "standard_name": "latitude",
+            "units": "degrees_north",
+            "valid_max": 90,
+            "valid_min": -90,
+            "ancillary_variables": "lat_qc",
+	    "reference": "WGS84",
+            "comment": "Values may be interpolated between measured GPS fixes",
+            "coordinate_reference_frame": "urn:ogc:crs:EPSG::4326"
+            },
+	"encoding": {
+            "_FillValue": -999
+            }
+        },
+    "lat_qc": {
+        "attrs": {
+            "long_name": "latitude Quality Flag",
+            "standard_name": "latitude status_flag",
+            "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used not_used interpolated_value missing_value",
+            "flag_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "valid_max": 9,
+            "valid_min": 0
+            },
+	"encoding": {
+            "_FillValue": -127,
+            "dtype": "int8"
+            }
+        },
+    "lon": {
+        "attrs": {
+            "comment": "Value is interpolated to provide an estimate of the latitude at the mid-point of the profile",
+            "long_name": "Longitude",
+            "observation_type": "calculated",
+            "platform": " ",
+            "standard_name": "longitude",
+            "units": "degrees_east",
+            "valid_max": 180,
+            "valid_min": -180,
+            "ancillary_variables": "lon_qc",
+	    "reference": "WGS84",
+            "comment": "Values may be interpolated between measured GPS fixes",
+            "coordinate_reference_frame": "urn:ogc:crs:EPSG::4326"
+            },
+	"encoding": {
+            "_FillValue": -999
+            }
+        },
+    "lon_qc": {
+        "attrs": {
+            "long_name": "longitude Quality Flag",
+            "standard_name": "longitude status_flag",
+            "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used not_used interpolated_value missing_value",
+            "flag_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "valid_max": 9,
+            "valid_min": 0
+            },
+	"encoding": {
+            "_FillValue": -127,
+            "dtype": "int8"
+            }
+        },
+    "time_uv": {
+        "attrs": {
+            "long_name": "Depth-Averaged Time",
+            "ancillary_variables": "time_uv_qc",
+            "observation_type": "calculated",
+            "standard_name": "time",
+            "comment": "The depth-averaged current is an estimate of the net current measured while the glider is underwater.  The value is calculated over the entire underwater segment, which may consist of 1 or more dives."
+            },
+	"encoding": {
+            "_FillValue": -999,
+            "calendar": "gregorian",
+            "units": "seconds since 1970-01-01T00:00:00Z"
+            }
+        },
+    "time_uv_qc": {
+        "attrs": {
+            "long_name": "time_uv Quality Flag",
+            "standard_name": "time status_flag",
+            "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used not_used interpolated_value missing_value",
+            "flag_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "valid_max": 9,
+            "valid_min": 0
+            },
+	"encoding": {
+            "_FillValue": -127,
+            "dtype": "int8"
+            }
+        },
+    "lat_uv": {
+        "attrs": {
+            "long_name": "Depth-Averaged Latitude",
+            "ancillary_variables": "lat_uv_qc",
+            "observation_type": "calculated",
+            "standard_name": "latitude",
+            "units": "degrees_north",
+            "valid_max": 90.0,
+            "valid_min": -90.0,
+            "platform": " ",
+            "comment": "The depth-averaged current is an estimate of the net current measured while the glider is underwater.  The value is calculated over the entire underwater segment, which may consist of 1 or more dives."
+            },
+	"encoding": {
+            "_FillValue": -999
+            }
+        },
+    "lat_uv_qc": {
+        "attrs": {
+            "long_name": "lat_uv Quality Flag",
+            "standard_name": " ",
+            "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used not_used interpolated_value missing_value",
+            "flag_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "valid_max": 9,
+            "valid_min": 0
+            },
+	"encoding": {
+            "_FillValue": -127,
+            "dtype": "int8"
+            }
+        },
+    "lon_uv": {
+        "attrs": {
+            "long_name": "Depth-Averaged Longitude",
+            "ancillary_variables": "lon_uv_qc",
+            "observation_type": "calculated",
+            "standard_name": "longitude",
+            "units": "degrees_east",
+            "valid_max": 180.0,
+            "valid_min": -180.0,
+            "platform": " ",
+            "comment": "The depth-averaged current is an estimate of the net current measured while the glider is underwater.  The value is calculated over the entire underwater segment, which may consist of 1 or more dives."
+            },
+	"encoding": {
+            "_FillValue": -999
+            }
+        },
+    "lon_uv_qc": {
+        "attrs": {
+            "long_name": "lon_uv Quality Flag",
+            "standard_name": " ",
+            "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used not_used interpolated_value missing_value",
+            "flag_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "valid_max": 9,
+            "valid_min": 0
+            },
+	"encoding": {
+            "_FillValue": -127,
+            "dtype": "int8"
+            }
+        },
+    "depth": {
+        "attrs": {
+            "long_name": "Depth",
+            "ancillary_variables": "depth_qc",
+            "instrument": "instrument_ctd",
+            "observation_type": "calculated",
+            "reference_datum": "sea-surface",
+            "platform": " ",
+            "valid_max": 2000.0,
+            "valid_min": 0.0
+            },
+	"encoding": {
+            "_FillValue": -999
+            }
+        },
+    "depth_qc": {
+        "attrs": {
+            "long_name": "depth Quality Flag",
+            "standard_name": "depth status_flag",
+            "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used not_used interpolated_value missing_value",
+            "flag_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "valid_max": 9,
+            "valid_min": 0
+            },
+	"encoding": {
+            "_FillValue": -127,
+            "dtype": "int8"
+            }
+        },
+    "pressure": {
+        "attrs": {
+            "long_name": "Pressure",
+            "ancillary_variables": "pressure_qc",
+            "instrument": "instrument_ctd",
+            "observation_type": "measured",
+            "positive": "down",
+            "reference_datum": "sea-surface",
+            "standard_name": "sea_water_pressure",
+            "platform": " ",
+            "units": "dbar",
+            "valid_max": 2000.0,
+            "valid_min": 0.0
+            },
+	"encoding": {
+            "_FillValue": -999
+            }
+        },
+    "pressure_qc": {
+        "attrs": {
+            "long_name": "pressure Quality Flag",
+            "standard_name": "sea_water_pressure status_flag",
+            "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used not_used interpolated_value missing_value",
+            "flag_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "valid_max": 9,
+            "valid_min": 0
+            },
+	"encoding": {
+            "_FillValue": -127,
+            "dtype": "int8"
+            }
+        },
+    "temp_qc": {
+        "varname": "temperature_qc",
+        "attrs": {
+            "long_name": "temperature Quality Flag",
+            "standard_name": "sea_water_temperature status_flag",
+            "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used not_used interpolated_value missing_value",
+            "flag_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "valid_max": 9,
+            "valid_min": 0
+            },
+	"encoding": {
+            "_FillValue": -127,
+            "dtype": "int8"
+            }
+        },
+    "cndc": {
+        "varname": "conductivity",
+        "attrs": {
+            "long_name": "Conductivity",
+            "observation_type": "measured",
+            "standard_name": "sea_water_electrical_conductivity",
+            "ancillary_variables": "conductivity_qc",
+            "platform": " ",
+            "instrument": "instrument_ctd"
+            }
+        },
+    "cndc_qc": {
+        "varname": "conductivity_qc",
+        "attrs": {
+            "long_name": "conductivity Quality Flag",
+            "standard_name": "sea_water_electrical_conductivity status_flag",
+            "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used not_used interpolated_value missing_value",
+            "flag_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "valid_max": 9,
+            "valid_min": 0
+            },
+	"encoding": {
+            "_FillValue": -127,
+            "dtype": "int8"
+            }
+        },
+    "sal_qc": {
+        "varname": "salinity_qc",
+        "attrs": {
+            "long_name": "salinity Quality Flag",
+            "standard_name": "sea_water_salinity status_flag",
+            "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used not_used interpolated_value missing_value",
+            "flag_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "valid_max": 9,
+            "valid_min": 0
+            },
+	"encoding": {
+            "_FillValue": -127,
+            "dtype": "int8"
+            }
+        },
+    "density": {
+        "attrs": {
+            "observation_type": "calculated",
+            "ancillary_variables": "density_qc",
+            "platform": " ",
+            "instrument": "instrument_ctd"
+            }
+        },
+    "density_qc": {
+        "attrs": {
+            "long_name": "density Quality Flag",
+            "standard_name": "sea_water_density status_flag",
+            "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used not_used interpolated_value missing_value",
+            "flag_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "valid_max": 9,
+            "valid_min": 0
+            },
+	"encoding": {
+            "_FillValue": -127,
+            "dtype": "int8"
+            }
+        },
+    "u": {
+        "attrs": {
+            "long_name": "Depth-Averaged Eastward Sea Water Velocity",
+            "standard_name": "eastward_sea_water_velocity",
+            "units": "m s-1",
+            "observation_type": "calculated",
+            "ancillary_variables": "u_qc",
+            "comment": "The depth-averaged current is an estimate of the net current measured while the glider is underwater.  The value is calculated over the entire underwater segment, which may consist of 1 or more dives.",
+            "platform": " ",
+            "valid_max": 10.0,
+            "valid_min": -10.0
+            },
+	"encoding": {
+            "_FillValue": -999
+            }
+        },
+    "u_qc": {
+        "attrs": {
+            "long_name": "Quality Flag",
+            "standard_name": "eastward_sea_water_velocity status_flag",
+            "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used not_used interpolated_value missing_value",
+            "flag_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "valid_max": 9,
+            "valid_min": 0
+            },
+	"encoding": {
+            "_FillValue": -127,
+            "dtype": "int8"
+            }
+        },
+    "v": {
+        "attrs": {
+            "long_name": "Depth-Averaged Northward Sea Water Velocity",
+            "standard_name": "northward_sea_water_velocity",
+            "units": "m s-1",
+            "observation_type": "calculated",
+            "ancillary_variables": "v_qc",
+            "comment": "The depth-averaged current is an estimate of the net current measured while the glider is underwater.  The value is calculated over the entire underwater segment, which may consist of 1 or more dives.",
+            "platform": " ",
+            "valid_max": 10.0,
+            "valid_min": -10.0
+            },
+	"encoding": {
+            "_FillValue": -999
+            }
+        },
+    "v_qc": {
+        "attrs": {
+            "long_name": "Quality Flag",
+            "standard_name": "northward_sea_water_velocity status_flag",
+            "flag_meanings": "no_qc_performed good_data probably_good_data bad_data_that_are_potentially_correctable bad_data value_changed not_used not_used interpolated_value missing_value",
+            "flag_values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9],
+            "valid_max": 9,
+            "valid_min": 0
+            },
+	"encoding": {
+            "_FillValue": -127,
+            "dtype": "int8"
+            }
+        },
+    "temp": {
+        "varname": "temperature",
+        "attrs": {
+            "ancillary_variables": "temperature_qc",
+            "observation_type": "measured",
+            "platform": " ",
+            "instrument": "instrument_ctd"
+            },
+	"encoding": {
+            "_FillValue": -999
+            }
+    },
+    "sal": {
+        "varname": "salinity",
+        "attrs": {
+            "long_name": "Salinity",
+            "observation_type": "calculated",
+            "ancillary_variables": "salinity_qc",
+            "platform": " ",
+            "instrument": "instrument_ctd"
+            },
+	"encoding": {
+            "_FillValue": -999
+            }
+    },
+    "platform": {
+        "attrs": {
+            "id": " ",
+            "instrument": " ",
+            "long_name": " ",
+            "type": " ",
+            "wmo_id": " "
+            },
+	"encoding": {
+            "_FillValue": -999,
+            "dtype": "int32"
+            }
+        },
+    "instrument_ctd": {
+        "attrs": {
+            "calibration_date": " ",
+            "calibration_report": " ",
+            "comment": "pumped CTD",
+            "factory_calibrated": " ",
+            "long_name": " ",
+            "make_model": " ",
+            "platform": " ",
+            "serial_number": " ",
+            "type": " "
+            },
+	"encoding": {
+            "_FillValue": -999,
+            "dtype": "int32"
+            }
+        }
+    }
+}

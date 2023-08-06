@@ -1,0 +1,17 @@
+{
+"inherit": "spray",
+"global_attributes": {
+    "title": "Spray glider data in support of mooring observations from the CORC project in the California Current starting 2007",
+    "acknowledgement": "CORC was funded by the Ocean Observing and Monitoring Division, National Oceanic and Atmospheric Administration, U.S. Department of Commerce (grant NA15OAR4320071). Collaboration with and services by the Instrument Development Group at Scripps Institution of Oceanography are greatly appreciated.",
+    "project": "Consortium on the Ocean's Role in Climate",
+    "creator_name": "Uwe Send",
+    "creator_email": "usend@ucsd.edu",
+    "creator_url": "http://mooring.ucsd.edu",
+    "contributor_name": "Uwe Send, Jeff Sevadjian, Guilherme Castelao",
+    "contributor_role": "Principal Investigator, Database Manager, Database Manager",
+    "product_version": "v2",
+    "doi": "10.21238/S8SPRAY1618",
+    "summary": "CORC (Consortium on the Ocean's Role in Climate) has been making observations of the California Current systems with moorings since 2008. In support of these mooring deployments, gliders have been used that serve as data shuttles to communicate with the underwater mooring gear, as well as collect additional data near or between the moorings. These glider operations are done by PI U. Send, and are in addition to repeat glider sections by PI D. Rudnick in the same general area. Glider data reported here are temperature and salinity, as well as column-average currents based on lateral glider displacement between dives.",
+    "references": "Rudnick, D. L. (2016). Ocean research enabled by underwater gliders. Annual review of marine science, 8, 519-541, doi:10.1146/annurev-marine-122414-033913\n Rudnick, D. L., Davis, R. E., & Sherman, J. T. (2016). Spray Underwater Glider Operations. Journal of Atmospheric and Oceanic Technology, 33(6), 1113-1122, doi:10.1175/JTECH-D-15-0252.1\n Rudnick, D. L., Davis, R. E., Eriksen, C. C., Fratantoni, D. M., & Perry, M. J. (2004). Underwater gliders for ocean research. Marine Technology Society Journal, 38(2), 73-84, doi:10.4031/002533204787522703\n Sherman, J., Davis, R. E., Owens, W. B., & Valdes, J. (2001). The autonomous underwater glider 'Spray'. IEEE Journal of oceanic Engineering, 26(4), 437-446, doi:10.1109/48.972076"
+    }
+}

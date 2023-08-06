@@ -1,0 +1,19 @@
+{
+"inherit": "spray",
+"global_attributes": {
+    "title": "Gliders in the Gulf Stream",
+    "acknowledgement": "This project is funded by National Science Foundation, Office of Naval Research, NOAA Ocean Observing and Monitoring Division, Eastman, WHOI",
+    "project": "Gliders in the Gulf Stream",
+    "creator_name": "Robert Todd, Brechner Owens",
+    "creator_email": "rtodd@whoi.edu",
+    "creator_url": "http://gliders.whoi.edu",
+    "creator_institution": "Woods Hole Oceanographic Institution",
+    "institution": "Woods Hole Oceanographic Institution",
+    "contributor_name": "Robert Todd, Brechner Owens, Guilherme Castelao",
+    "contributor_role": "Principal Investigator, Principal Investigator, Database Manager",
+    "product_version": "v2",
+    "doi": "10.21238/S8SPRAY2675",
+    "summary": "The overarching goal of this project is to collect high resolution transects across the Gulf Stream. Though the speed of the Gulf Stream greatly exceeds the speed of a glider, gliders can be flown across the current as they are advected downstream. Missions prior to 2015 were conducted downstream (northeast) of Cape Hatteras, primarily between Cape Cod and Bermuda; missions since 2015 begin in Miami, FL and are planned to end on the New England continental shelf. During a typical 100-day mission between Miami and Cape Cod, a single glider completes 6-10 crossings of the Gulf Stream, returning approximately 800 profiles to the shallower of the sea floor or 1000 m. The current operational goal is to maintain at least one glider in the Gulf Stream at all times. Additional plots of these data are available at http://gliders.whoi.edu.",
+    "references": "Todd, R. E., D. L. Rudnick, J. T. Sherman, W. B. Owens, and L. George, 2016: Absolute velocity estimates from autonomous underwater gliders equipped with Doppler current profilers. Journal of Atmospheric and Oceanic Technology, in press; doi: 10.1175/JTECH-D-16-0156.1\n Todd, R. E., Owens, W. B., & Rudnick, D. L. (2016). Potential vorticity structure in the North Atlantic western boundary current from underwater glider observations. Journal of Physical Oceanography, 46(1), 327-348.; doi: 10.1175/JPO-D-15-0112.1"
+    }
+}

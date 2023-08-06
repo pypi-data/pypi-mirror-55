@@ -1,0 +1,154 @@
+{
+"inherit": "trajectoryProfile_ragged2D",
+"global_attributes": {
+    "keywords": "underwater glider, pressure, temperature, salinity",
+    "featureType": "trajectoryProfile",
+    "naming_authority": "edu.ucsd.spray",
+    "processing_level": "Manually quality controled and only good data was binned in a regular structure.",
+    "standard_name_vocabulary": "CF Standard Name Table v62",
+    "creator_name": "Instrument Development Group",
+    "creator_email": "idgdata@ucsd.edu",
+    "creator_url": "http://spraydata.ucsd.edu",
+    "creator_type": "group",
+    "creator_institution": "University of California - San Diego; Scripps Institution of Oceanography",
+    "institution": "University of California - San Diego; Scripps Institution of Oceanography",
+    "project": "Spray Underwater Glider",
+    "publisher_name": "Instrument Development Group",
+    "publisher_email": "idgdata@ucsd.edu",
+    "publisher_url": "https://spraydata.ucsd.edu",
+    "publisher_type": "group",
+    "publisher_institution": "University of California - San Diego; Scripps Institution of Oceanography",
+    "geospatial_bounds_vertical_crs": "EPSG:5831",
+    "geospatial_vertical_positive": "down",
+    "geospatial_vertical_units": "m",
+    "keywords_vocabulary": "GCMD Science Keywords",
+    "instrument": "Sea-Bird 41CP",
+    "metadata_link": "http://spraydata.ucsd.edu",
+    "ctd_make_model": "Sea-Bird 41CP"
+    },
+"variables": {
+    "mission": {
+        "attrs": {
+            "comment": "Mission name related to the variable mission, so that every record with mission=0 is related to the first record in mission_name, mission=1 related to second record on mission_name, and so on. The individual trajectories (missions) are also available in separated files with the same name (mission_name) used here."
+            }
+        },
+    "trajectory_index": {
+        "attrs": {
+	    "comment": "This dataset combines several Spray underwater missions, i.e. several deployments. Profiles originated from the same mission have the same mission number. The names of the missions can be obtained from mission_name."
+            }
+        },
+    "profile": {
+        "attrs": {
+            "cf_role": "profile_id"
+            }
+        },
+    "time": {
+        "attrs": {
+            "long_name": "Time",
+            "standard_name": "time",
+            "coverage_content_type": "coordinate",
+            "comment": "The estimated time of the midpoint of the profile.\nFor a glider profiling continuously, this time is 3/4 of the way between GPS fixes at the beginning and end of dives.  This is the time to use with the temperature and salinity variables, which are measured on the ascent only."
+            }
+        },
+    "datetime": {
+        "attrs": {
+            "long_name": "Time",
+            "standard_name": "time",
+            "coverage_content_type": "coordinate",
+            "comment": "The estimated time of the midpoint of the profile.\nFor a glider profiling continuously, this time is 3/4 of the way between GPS fixes at the beginning and end of dives.  This is the time to use with the temperature and salinity variables, which are measured on the ascent only."
+            },
+	"encoding": {
+            "calendar": "gregorian",
+            "units": "seconds since 1970-01-01T00:00:00Z"
+	    }
+        },
+    "depth": {
+        "attrs": {
+            "long_name": "Depth",
+	    "standard_name": "depth",
+	    "positive": "down",
+	    "coverage_content_type": "coordinate"
+	}
+    },
+    "lat": {
+        "attrs": {
+            "comment": "The estimated latitude of the midpoint of the profile.\nFor a glider profiling continuously, this latitude is 3/4 of the way between GPS fixes at the beginning and end of dives.  This is the latitude to use with the temperature and salinity variables, which are measured on the ascent only."
+            }
+        },
+    "lon": {
+        "attrs": {
+            "comment": "The estimated longitude of the midpoint of the profile.\nFor a glider profiling continuously, this longitude is 3/4 of the way between GPS fixes at the beginning and end of dives.  This is the longitude to use with the temperature and salinity variables, which are measured on the ascent only."
+            }
+        },
+    "temp": {
+        "varname": "temperature",
+        "attrs": {
+            "coordinates": "time lon lat depth"
+            }
+        },
+    "sal": {
+        "varname": "salinity",
+        "attrs": {
+            "coordinates": "time lon lat depth"
+            }
+        },
+    "datetime_uv": {
+        "attrs": {
+            "long_name": "Time",
+            "standard_name": "time",
+            "coverage_content_type": "coordinate",
+            "comment": "The estimated time of the midpoint of the dive.\nFor a glider profiling continuously, this time is 1/2 of the way between GPS fixes at the beginning and end of dives.  This is the time to use with depth-averaged velocity (u_depth_mean, v_depth_mean) which is an average throughout the dive."
+            },
+	"encoding": {
+            "calendar": "gregorian",
+            "units": "seconds since 1970-01-01T00:00:00Z"
+	    }
+        },	    
+    "lat_uv": {
+        "attrs": {
+            "long_name": "Latitude",
+            "standard_name": "latitude",
+            "units": "degrees_north",
+            "coverage_content_type": "coordinate",
+	    "comment": "The estimated latitude of the midpoint of the dive.\nFor a glider profiling continuously, this latitude is 1/2 of the way between GPS fixes at the beginning and end of dives.  This is the latitude to use with depth-averaged velocity (u_depth_mean, v_depth_mean) which is an average throughout the dive"
+            }
+        },
+    "lon_uv": {
+        "attrs": {
+            "long_name": "Longitude",
+            "standard_name": "longitude",
+            "units": "degrees_east",
+            "coverage_content_type": "coordinate",
+	    "comment": "The estimated longitude of the midpoint of the dive.\nFor a glider profiling continuously, this longitude is 1/2 of the way between GPS fixes at the beginning and end of dives.  This is the longitude to use with depth-averaged velocity (u_depth_mean, v_depth_mean) which is an average throughout the dive"
+            }
+        },
+    "u_mean": {
+        "varname": "u_depth_mean",
+        "attrs": {
+            "coordinates": "time_uv lon_uv lat_uv",
+            "comment": "Depth-averaged water velocity (zonal component) which is an average throughout the dive as defined by Rudnick et. al. 2018 (doi: 10.1175/JTECH-D-17-0200.1)."
+            }
+        },
+    "v_mean": {
+        "varname": "v_depth_mean",
+        "attrs": {
+            "coordinates": "time_uv lon_uv lat_uv",
+            "comment": "Depth-averaged water velocity (meridional component) which is an average throughout the dive as defined by Rudnick et. al. 2018 (doi: 10.1175/JTECH-D-17-0200.1)."
+            }
+        },
+    "u_doppler": {
+        "varname": "u",
+        "attrs": {
+            "coordinates": "time lon lat",
+            "comment": "Zonal component of the water velocity measured with ADCP on different depths and processed according to Todd et. al. 2017 (doi: 10.1002/2017GL072580)"
+            }
+        },
+    "v_doppler": {
+        "varname": "v",
+        "attrs": {
+            "coordinates": "time lon lat",
+            "comment": "Meridional component of the water velocity measured with ADCP on different depths and processed according to Todd et. al. 2017 (doi: 10.1002/2017GL072580)"
+            }
+        }
+    }
+}

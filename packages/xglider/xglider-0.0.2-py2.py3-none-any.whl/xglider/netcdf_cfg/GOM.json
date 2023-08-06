@@ -1,0 +1,14 @@
+{
+"inherit": "spray",
+"global_attributes": {
+    "title": "Gliders in the Gulf of Mexico",
+    "acknowledgement": "This project was funded by BP and National Science Foundation",
+    "project": "Gliders in the Gulf of Mexico",
+    "contributor_name": "Daniel Rudnick, Guilherme Castelao",
+    "contributor_role": "Principal Investigator, Database Manager",    
+    "product_version": "v2",
+    "doi": "10.21238/S8SPRAY0420",
+    "summary": "The overarching goal of Spray underwater glider operations in the Gulf of Mexico was to improve dynamical knowledge of oceanographic conditions in the Loop Current and associated eddies.  A specific objective was to provide data to data assimilating models to establish the predictability of currents in the region.",
+    "references": "Rudnick, D. L. (2016). Ocean research enabled by underwater gliders. Annual review of marine science, 8, 519-541, doi:10.1146/annurev-marine-122414-033913\n Rudnick, D. L., Davis, R. E., & Sherman, J. T. (2016). Spray Underwater Glider Operations. Journal of Atmospheric and Oceanic Technology, 33(6), 1113-1122, doi:10.1175/JTECH-D-15-0252.1\n Rudnick, D. L., Davis, R. E., Eriksen, C. C., Fratantoni, D. M., & Perry, M. J. (2004). Underwater gliders for ocean research. Marine Technology Society Journal, 38(2), 73-84, doi:10.4031/002533204787522703\n Sherman, J., Davis, R. E., Owens, W. B., & Valdes, J. (2001). The autonomous underwater glider 'Spray'. IEEE Journal of oceanic Engineering, 26(4), 437-446, doi:10.1109/48.972076\n Gopalakrishnan, G., B. D. Cornuelle, I. Hoteit, D. L. Rudnick, and W. B. Owens, 2013: State estimates and forecasts of the loop current in the Gulf of Mexico using the MITgcm and its adjoint. Journal of Geophysical Research-Oceans, 118, 3292-3314, doi: 10.1002/jgrc.20239.\n Rudnick, D. L., G. Gopalakrishnan, and B. D. Cornuelle, 2015: Cyclonic eddies in the Gulf of Mexico: Observations by underwater gliders and simulations by numerical model. Journal of Physical Oceanography, 45, 313-326, doi: 10.1175/JPO-D-14-0138.1.\n Todd, R. E., W. B. Owens, and D. L. Rudnick, 2016: Potential vorticity structure in the North Atlantic western boundary current from underwater glider observations. Journal of Physical Oceanography, 46, 327-348, doi: 10.1175/JPO-D-15-0112.1."
+    }
+}

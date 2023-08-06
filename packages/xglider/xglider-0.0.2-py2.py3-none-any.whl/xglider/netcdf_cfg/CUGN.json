@@ -1,0 +1,14 @@
+{
+"inherit": "spray",
+"global_attributes": {
+    "title": "California Underwater Glider Network",
+    "keywords": "underwater glider, pressure, temperature, salinity, currents, oxygen, fluorescence",
+    "acknowledgement": "Funded by National Oceanic and Atmospheric Administration (NOAA): Ocean Observing and Monitoring Division, and Integrated Ocean Observing System. Supported by Instrument Development Group - Scripps Institution of Oceanography",
+    "contributor_name": "Daniel Rudnick, Guilherme Castelao",
+    "contributor_role": "Principal Investigator, Database Manager",    
+    "product_version": "v2",
+    "doi": "10.21238/S8SPRAY1618",
+    "summary": "The overarching goal of the California Underwater Glider Network is to sustain baseline observations of climate variability off the coast of California. The technical approach is to deploy autonomous underwater gliders in a network to provide real-time data.\nThe CUGN uses Spray underwater gliders making repeated dives from the surface to 500 m and back, repeating the cycle every 3 hours, and traveling 3 km in the horizontal during that time. The CUGN includes gliders on three of the traditional cross-shore CalCOFI lines: line 66.7 off Monterey Bay, line 80 off Point Conception, and line 90 off Dana Point.\n The glider missions typically last about 100 days, and cover over 2000 km, thus providing 4-6 sections on lines extending 300-500 km offshore. Since 2005 the CUGN has covered 200,000 km over ground in 28 glider-years, while doing 90,000 dives.",
+    "references": "Rudnick, D. L. (2016). Ocean research enabled by underwater gliders. Annual review of marine science, 8, 519-541, doi:10.1146/annurev-marine-122414-033913\n Rudnick, D. L., Davis, R. E., & Sherman, J. T. (2016). Spray Underwater Glider Operations. Journal of Atmospheric and Oceanic Technology, 33(6), 1113-1122, doi:10.1175/JTECH-D-15-0252.1\n Rudnick, D. L., Davis, R. E., Eriksen, C. C., Fratantoni, D. M., & Perry, M. J. (2004). Underwater gliders for ocean research. Marine Technology Society Journal, 38(2), 73-84, doi:10.4031/002533204787522703\n Sherman, J., Davis, R. E., Owens, W. B., & Valdes, J. (2001). The autonomous underwater glider 'Spray'. IEEE Journal of oceanic Engineering, 26(4), 437-446, doi:10.1109/48.972076"
+    }
+}

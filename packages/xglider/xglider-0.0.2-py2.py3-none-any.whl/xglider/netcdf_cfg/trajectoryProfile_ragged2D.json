@@ -1,0 +1,7 @@
+{
+"inherit": "xglider",
+"global_attributes": {
+    "Conventions": "CF-1.7, ACDD-1.3",
+    "featureType": "trajectoryProfile"
+    }
+}
