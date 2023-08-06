@@ -1,0 +1,10 @@
+discognition/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+discognition/discognition.py,sha256=L3-9dnHfWh-oGhoaNjhIzNOfMnIPQ8natuS2MKB3yEc,16309
+discognition/parser.py,sha256=Z3UWlgJnAGjk47RFxaInHD7qN94zrfzHYSZJpoOMQ0M,1954
+discognition/version.py,sha256=pKh2_hmFNUwG0JxbL18qxdmi_nmFpgRbR8X6IPZr08o,21
+discognition-0.2.2.data/scripts/discognition,sha256=6rHAmpC6lMzp6fmF8n9CMAkwV1ob39vVLvgBIGQwqeY,101
+discognition-0.2.2.dist-info/LICENSE.md,sha256=QwMuVS6XJCdDnKxlNUkBqXXBZZ_T40pPMN4OaxetpBg,1072
+discognition-0.2.2.dist-info/METADATA,sha256=0ImYZje9IMH2H-hPwkmYNxrM5U092yBuXvP8H_q3YUw,9784
+discognition-0.2.2.dist-info/WHEEL,sha256=ZenmQtjt4etEZlyoFFA3Bd8pVkjneWord4ycgKmVLx4,92
+discognition-0.2.2.dist-info/top_level.txt,sha256=fh4I8KGqrQbVPc1qZr877xngm6zTuan4PJvde87jPbo,13
+discognition-0.2.2.dist-info/RECORD,,
