@@ -1,0 +1,12 @@
+resplendent/__init__.py,sha256=newkkMqyJ2eQyn3sSsKQjZDL5uSoQ9N1pC5Cq2WHYAY,120
+resplendent/__main__.py,sha256=pLgMtXHnAio0XuI0LZ63Kjd-gZl5Hw_ds_CToqne7x0,367
+resplendent/util.py,sha256=5rLn6qX0bQTjr0OobiyejC_yIn2KsJiAoMY1IsLC9yo,245
+resplendent/version.py,sha256=0FsPajScGllhioUY8LHT9LGsq9_ABflvdvYoeiTlKs0,63
+resplendent/filters/__init__.py,sha256=STbJSUuvQh7zGD7NL4QS46KEHBFgNPW-REwv-RCqT4Q,90
+resplendent/filters/filterdump.py,sha256=PDLaSg7iT28c1oqUq8i5dX_BXymd1_FG-SmFrj-zQvk,976
+resplendent/filters/restructuredtext.py,sha256=gu9fIw6AFjHXldqMzwVl5105-ZcYeZnpCglrxfl2NqE,1454
+resplendent-0.3.4.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+resplendent-0.3.4.dist-info/METADATA,sha256=Us1bTVRm2vqEJWI6UaKdZ9WRRhXYBo73yY5cz85TeG0,4362
+resplendent-0.3.4.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+resplendent-0.3.4.dist-info/top_level.txt,sha256=5pr3W-eL-xoxu3kOlVR57iDr57kGuFc3ae6N3safUws,12
+resplendent-0.3.4.dist-info/RECORD,,
