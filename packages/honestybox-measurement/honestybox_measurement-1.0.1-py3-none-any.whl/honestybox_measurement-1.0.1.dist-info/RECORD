@@ -1,0 +1,16 @@
+measurement/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+measurement/measurements.py,sha256=iNjOawKWvm6pvgj5qDpabz1x7DeU9TOR4TlVxgUeBdE,1415
+measurement/plugins/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+measurement/plugins/download_speed/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+measurement/plugins/download_speed/measurements.py,sha256=pFXHE2sPSNXO6ZfZ5Lp4e_THBlEQohgbfBFQx2t5R64,10876
+measurement/plugins/download_speed/results.py,sha256=yQSUgv0Y2C1-YhEswTfoLGfY5TH1fx4SsUIXfZ2u69E,547
+measurement/plugins/download_speed/results_py3.py,sha256=qCMQ4IvirvuqinuaYkSB8PNLWXwGHwTY_0tQZDOvmho,1848
+measurement/plugins/download_speed/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+measurement/plugins/download_speed/tests/test_measurements.py,sha256=9H6Lho8MsD_MoeDFGhbegyQxZFtTDNm9fAY1nrNLaf8,12411
+measurement/results.py,sha256=lbtQHIHVUXisd2lrIsqB7stgSy-O_reYn3L-i5h-kiA,313
+measurement/results_py3.py,sha256=-LmFGh1eBvvLQgTDmT6GWgOzyGhPselpbWXzaTNscsI,913
+measurement/units.py,sha256=HhZmcBsH6Tg2_jwZWWzRL9sJMP6qYxbI8EUtWaNMHuQ,532
+honestybox_measurement-1.0.1.dist-info/LICENSE.txt,sha256=weVgAhTCMd9XmOt6toB-gNCwUTyi5U_9v0Cgm2jJWRo,32475
+honestybox_measurement-1.0.1.dist-info/WHEEL,sha256=f_L0I4hqSDuunYLcjib7afhVEQa4uCwremk0_wPx54s,85
+honestybox_measurement-1.0.1.dist-info/METADATA,sha256=AsmIiQ2x6tddHENFs4d7bCH6neDGLp13XezZnLrdkbw,2275
+honestybox_measurement-1.0.1.dist-info/RECORD,,
