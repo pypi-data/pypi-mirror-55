@@ -1,0 +1,20 @@
+Metadata-Version: 2.1
+Name: jflask
+Version: 0.0.2
+Summary: JSON flask helpers
+Home-page: https://github.com/jfudally/jflask
+Author: jfudally
+Author-email: justinfudally@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: flask (==1.1.1)
+Requires-Dist: pytest (==5.2.2)
+Requires-Dist: flake8
+Requires-Dist: setuptools
+Requires-Dist: wheel
+Requires-Dist: twine
+
+UNKNOWN
+
+
