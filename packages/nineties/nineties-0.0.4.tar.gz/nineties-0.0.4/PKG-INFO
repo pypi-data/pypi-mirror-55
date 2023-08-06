@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: nineties
+Version: 0.0.4
+Summary: Ease the reading of relics from the Nineties
+Home-page: https://github.com/sthagen/python-nineties
+Author: Stefan Hagen
+Author-email: stefan@hagen.link
+License: MIT
+Description: # python-nineties
+        Ease the reading of relics from the Nineties
+        
+        ## What is in it
+        A small but growing collection of parsers and filters
+        to ease dealing with specific information structures that
+        drop off of REST backends ;-)
+        
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown
