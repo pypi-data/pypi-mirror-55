@@ -1,0 +1,25 @@
+Metadata-Version: 2.0
+Name: ansiblepy
+Version: 1.1
+Summary: AnsiblePy is an Ansible Playbook and Roles generator with vast information on Ansible Modules.
+Home-page: https://github.com/maheshkrishnagopal/Ansibly
+Author: Maheshkrishna A G
+Author-email: maheshkrishnagopal@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.6
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.2
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.4
+Description-Content-Type: text/markdown
+Requires-Dist: pymongo
+
+#Ansibly
+Welcome to Ansibly
+
+
