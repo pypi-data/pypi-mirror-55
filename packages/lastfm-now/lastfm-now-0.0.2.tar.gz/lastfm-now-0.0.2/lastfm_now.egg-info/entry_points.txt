@@ -1,0 +1,3 @@
+[console_scripts]
+lastfm-now = lastfm_now.lastfm_now:run
+

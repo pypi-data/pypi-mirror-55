@@ -1,0 +1,9 @@
+README.md
+setup.py
+lastfm_now/lastfm_now.py
+lastfm_now.egg-info/PKG-INFO
+lastfm_now.egg-info/SOURCES.txt
+lastfm_now.egg-info/dependency_links.txt
+lastfm_now.egg-info/entry_points.txt
+lastfm_now.egg-info/requires.txt
+lastfm_now.egg-info/top_level.txt
