@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: cpythreads
+Version: 0.0.2
+Summary: Thread executor for Python3
+Home-page: https://github.com/cristiansteib/cpythreads/
+Author: Steib Cristian
+Author-email: cristiansteib@gmail.com
+License: LICENSE.txt
+Description: UNKNOWN
+Keywords: Threads,PoolThreads,thread
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: POSIX 
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Development Status :: 5 - Production/Stable
+Description-Content-Type: text/markdown

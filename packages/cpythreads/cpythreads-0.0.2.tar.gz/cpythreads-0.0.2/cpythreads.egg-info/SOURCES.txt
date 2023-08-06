@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+cpythreads/__init__.py
+cpythreads/taskthreadrunner.py
+cpythreads/threadspoolmanager.py
+cpythreads.egg-info/PKG-INFO
+cpythreads.egg-info/SOURCES.txt
+cpythreads.egg-info/dependency_links.txt
+cpythreads.egg-info/top_level.txt
