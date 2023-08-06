@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: lgsvl-tools
+Version: 0.1.6
+Summary: Command Line Tools for LGSVL Simulator
+Home-page: https://github.com/tier4/lgsvl_tools.git
+Author: Masaya Kataoka
+Author-email: ms.kataoka@gmail.com
+License: MIT
+Keywords: simulation ROS
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6
+
+UNKNOWN
+
+
