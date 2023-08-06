@@ -1,0 +1,31 @@
+language: python
+dist: xenial
+sudo: required
+
+python:
+  - 3.5
+  - 3.6
+  - 3.7
+  - 3.8
+  - pypy3
+
+matrix:
+  allow_failures:
+     - python: pypy3
+
+before_install:
+  - sudo apt-get update -qq
+  - sudo apt-get install -qq libdiscid-dev
+
+install:
+  - pip install setuptools
+  - pip install pkgconfig
+  - pip install 'cython >= 0.15'
+  # documentation specific dependencies
+  - pip install sphinx
+  - python setup.py build
+  - python setup.py build_ext -i
+  - python setup.py build_sphinx
+
+script:
+  - nosetests libdiscid/tests
