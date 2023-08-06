@@ -1,0 +1,15 @@
+pyradigm/__init__.py,sha256=rArf_VVwr_sYDdWvZh98K6sCQKEl4wetDLEJM5iVq_Y,779
+pyradigm/__main__.py,sha256=yl4FewPlgU73XYIJMvtLDuYLWWjZEeOOa8XkOdKrNF8,374
+pyradigm/_version.py,sha256=ykpADyN7icvdooCbr-MrgGUSyLtXm2KS1X-MAd1ZOH4,495
+pyradigm/base.py,sha256=2PTn5JQt8Mj5X09OJqXOn3uSgIskgh6DGmtnfgltuWQ,49440
+pyradigm/classify.py,sha256=B1qV0CiOPRFn9zeIWkYvtizKx-GtJ7BIO1NquFBvQBk,19372
+pyradigm/multiple.py,sha256=Kb3gT1o3oUgSlTctYHkhUbr4XIDg3gRndoOjkN698mY,8650
+pyradigm/pyradigm.py,sha256=xOWUckGgjAhJ87lcqcOaKg-lRzjamOT7RDrspD8SJgI,60732
+pyradigm/regress.py,sha256=IFw7teFOhrupvdvEhkM5eUEH0UVFLlNLLZChM4gTtP4,15973
+pyradigm/utils.py,sha256=yqum1OxtjlIvbosrNreGetWJRA2wd2KL_tQxUBOvqLM,9597
+pyradigm-0.6.dist-info/LICENSE.txt,sha256=XhIIHhaZ_S6_cyr-6T2B0K_DrtXbUA30WomNBiQTXUw,1078
+pyradigm-0.6.dist-info/METADATA,sha256=qDfNdxPlfH0grLv4ByHmLS-TvlGzG9N1s-D9Z4Itr_I,920
+pyradigm-0.6.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+pyradigm-0.6.dist-info/entry_points.txt,sha256=EXjSfozhDOCUdtv8IkQmkznXufsBUUZivySYaVF0F6U,53
+pyradigm-0.6.dist-info/top_level.txt,sha256=uAlYDmO0e7P4gpzDyURsI0QjQu19jv_lQCTSUfp3CE4,9
+pyradigm-0.6.dist-info/RECORD,,
