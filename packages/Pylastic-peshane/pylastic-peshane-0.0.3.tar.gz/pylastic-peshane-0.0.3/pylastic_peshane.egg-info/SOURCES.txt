@@ -1,0 +1,9 @@
+README.md
+setup.py
+pylastic/__init__.py
+pylastic/pylastic.py
+pylastic_peshane.egg-info/PKG-INFO
+pylastic_peshane.egg-info/SOURCES.txt
+pylastic_peshane.egg-info/dependency_links.txt
+pylastic_peshane.egg-info/requires.txt
+pylastic_peshane.egg-info/top_level.txt
