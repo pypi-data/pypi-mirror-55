@@ -1,0 +1,7 @@
+youtube_dl
+mutagen
+itunespy
+requests
+colorama
+bs4
+downloader-cli
