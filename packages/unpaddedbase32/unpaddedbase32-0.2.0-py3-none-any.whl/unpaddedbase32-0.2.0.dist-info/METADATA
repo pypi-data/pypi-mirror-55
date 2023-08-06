@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: unpaddedbase32
+Version: 0.2.0
+Summary: Enables the ability to use base32 without padding
+Home-page: https://github.com/beardog108/python-unpaddedbase32
+Author: Kevin Froman
+Author-email: beardog@mailbox.org
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+Use base32 without padding in Python
+
+[![Build Status](https://travis-ci.org/beardog108/python-unpaddedbase32.svg?branch=master)](https://travis-ci.org/beardog108/python-unpaddedbase32)
+
+Allowed by [RFC 4648](https://tools.ietf.org/html/rfc4648#section-3.2)
+
+Install: pip install unpaddedbase32
+
+Python 3.6+
+
+
