@@ -1,0 +1,36 @@
+Metadata-Version: 2.1
+Name: generic
+Version: 1.0.0b1
+Summary: Generic programming library for Python
+Home-page: https://generic.readthedocs.io/
+Keywords: generic,multi dispatch,dispatch,event
+Author: Andrey Popp
+Author-email: 8mayday@gmail.com
+Maintainer: Arjan Molenaar
+Maintainer-email: gaphor@gmail.com
+Requires-Python: >=3.6,<4.0
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Information Technology
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Project-URL: Documentation, https://generic.readthedocs.io/
+Project-URL: Repository, https://github.com/gaphor/generic
+Description-Content-Type: text/markdown
+
+# Generic programming library for Python
+
+Generic is trying to provide a Python programmer with primitives for creating
+reusable software components by employing advanced techniques of OOP and other
+programming paradigms.
+
+You can read
+[documentation](http://generic.readthedocs.org/en/latest/index.html) hosted at
+excellent readthedocs.org project. Development takes place on
+[github](http://github.com/gaphor/generic).
+
+
