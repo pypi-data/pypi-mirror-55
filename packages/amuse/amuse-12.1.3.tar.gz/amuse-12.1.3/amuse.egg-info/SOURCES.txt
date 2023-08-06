@@ -1,0 +1,12 @@
+MANIFEST.in
+pyproject.toml
+setup.py
+amuse.egg-info/PKG-INFO
+amuse.egg-info/SOURCES.txt
+amuse.egg-info/dependency_links.txt
+amuse.egg-info/requires.txt
+amuse.egg-info/top_level.txt
+support/__init__.py
+support/classifiers.py
+support/setup_codes.py
+support/version.py
