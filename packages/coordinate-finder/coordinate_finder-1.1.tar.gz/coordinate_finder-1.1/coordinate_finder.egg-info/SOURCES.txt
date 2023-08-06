@@ -1,0 +1,13 @@
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+coordinate_finder/__init__.py
+coordinate_finder/point_finder.py
+coordinate_finder/water_8k.png
+coordinate_finder.egg-info/PKG-INFO
+coordinate_finder.egg-info/SOURCES.txt
+coordinate_finder.egg-info/dependency_links.txt
+coordinate_finder.egg-info/not-zip-safe
+coordinate_finder.egg-info/requires.txt
+coordinate_finder.egg-info/top_level.txt
