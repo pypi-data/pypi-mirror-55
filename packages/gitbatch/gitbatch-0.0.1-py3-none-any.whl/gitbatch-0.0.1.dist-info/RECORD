@@ -1,0 +1,13 @@
+gitbatch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+gitbatch/__main__.py,sha256=oe9P6lO1loD7Flldl4dSL_UqO38da0SgmLOODVK1asA,135
+gitbatch/config.py,sha256=v_ul90iFYJHAwx12ERCALSIxk_Ai9QSqFQmV74KtqAk,954
+gitbatch/gitbatch.py,sha256=0Vszx2XBEjUvEsYnC9hnIz8Cwa5pZtQx0BszsHVWIEs,4077
+gitbatch/parallel.py,sha256=fuspzAWTalx3yJIwdx_niml4onMPUu13pBectvhkzLo,1632
+gitbatch/repos.py,sha256=TKNZvC4NdjwlsI-BiBMqDTKSYFtQXncSs3-A0WCkeo4,2674
+gitbatch/tasks.py,sha256=z__nMmzBgfKvpVWyW7YLGNNSHTaVp0-c5nOjFzAzNmM,4206
+gitbatch-0.0.1.dist-info/LICENSE.txt,sha256=A1JPms-m27yMUeRImer12D8xIWgXQyJvRWGoKGI4LD8,466
+gitbatch-0.0.1.dist-info/METADATA,sha256=v3zPOiz6ohMTVjwIEpTBFySzph21_SH4lQZjCY5jDNM,1544
+gitbatch-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+gitbatch-0.0.1.dist-info/entry_points.txt,sha256=0KE2YJfQb4S2M-tjBYArWa5K_PS6bGyQR3kguOtQBBk,52
+gitbatch-0.0.1.dist-info/top_level.txt,sha256=THCu4vAWA2lbT3hUoYypoH26ujtGYFlmf5lOPyWckUk,9
+gitbatch-0.0.1.dist-info/RECORD,,
