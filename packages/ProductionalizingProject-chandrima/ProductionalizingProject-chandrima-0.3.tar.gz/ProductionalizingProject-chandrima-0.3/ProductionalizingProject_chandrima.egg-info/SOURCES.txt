@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+ProductionalizingProject_chandrima.egg-info/PKG-INFO
+ProductionalizingProject_chandrima.egg-info/SOURCES.txt
+ProductionalizingProject_chandrima.egg-info/dependency_links.txt
+ProductionalizingProject_chandrima.egg-info/requires.txt
+ProductionalizingProject_chandrima.egg-info/top_level.txt
+mypackage/__init__.py
+mypackage/mymodule.py
+mypackage/template.txt
