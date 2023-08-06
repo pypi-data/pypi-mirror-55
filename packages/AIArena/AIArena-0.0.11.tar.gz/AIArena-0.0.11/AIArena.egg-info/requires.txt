@@ -1,0 +1,4 @@
+requests
+memex_client
+gym
+json
