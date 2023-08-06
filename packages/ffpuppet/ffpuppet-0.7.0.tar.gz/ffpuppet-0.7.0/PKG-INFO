@@ -1,0 +1,12 @@
+Metadata-Version: 1.2
+Name: ffpuppet
+Version: 0.7.0
+Summary: A python module that aids in the automation of Firefox at the process level
+Home-page: https://github.com/MozillaSecurity/ffpuppet
+Author: Tyson Smith
+Maintainer: Mozilla Fuzzing Team
+Maintainer-email: fuzzing@mozilla.com
+License: MPL 2.0
+Description: UNKNOWN
+Keywords: fuzz fuzzing security test testing
+Platform: UNKNOWN
