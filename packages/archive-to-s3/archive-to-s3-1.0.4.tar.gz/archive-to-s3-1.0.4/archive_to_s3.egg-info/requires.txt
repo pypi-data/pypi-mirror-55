@@ -1,0 +1,2 @@
+pytoolbox[aws]>=13.0.4<14
+JSON-log-formatter>=0.2.0<1.0
