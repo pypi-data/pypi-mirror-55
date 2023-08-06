@@ -1,0 +1,24 @@
+Metadata-Version: 1.1
+Name: pylint-starlark-plugin
+Version: 1.0.2
+Summary: Run pylint on Starlark files.
+Home-page: https://github.com/phgn0/pylint-starlark-plugin
+Author: Peter Hagen
+Author-email: peter@phgn.io
+License: MIT
+Download-URL: https://github.com/phgn0/pylint-starlark-plugin/archive/1.0.2.tar.gz
+Description: 
+        This plugin allows you to run pylint on Starlark files, by doing an AST transform of load() calls into python import statements.
+        
+        To use it, run `pip3 install pylint-starlark-plugin`, then you can call pytlint via `pylint --load-plugins pylint_starlark_plugin file.py`.
+          
+Keywords: pylint,starlark,plugin
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
