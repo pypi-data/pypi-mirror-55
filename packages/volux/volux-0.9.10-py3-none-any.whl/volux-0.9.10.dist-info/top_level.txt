@@ -1,0 +1,10 @@
+cpaudio
+volux
+voluxaudio
+voluxbar
+voluxcliprint
+voluxdisplay
+voluxgui
+voluxlight
+voluxlightvisualiser
+voluxvolume
