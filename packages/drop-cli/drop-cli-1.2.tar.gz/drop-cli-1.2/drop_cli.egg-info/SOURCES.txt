@@ -1,0 +1,9 @@
+README.md
+drop.py
+setup.py
+drop_cli.egg-info/PKG-INFO
+drop_cli.egg-info/SOURCES.txt
+drop_cli.egg-info/dependency_links.txt
+drop_cli.egg-info/entry_points.txt
+drop_cli.egg-info/requires.txt
+drop_cli.egg-info/top_level.txt
