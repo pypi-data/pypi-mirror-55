@@ -1,0 +1,44 @@
+Metadata-Version: 2.1
+Name: py2java
+Version: 0.0.11
+Summary: Python to Java language translator
+Home-page: https://github.com/Ethosa/py2java
+Author: Ethosa
+Author-email: social.ethosa@gmail.com
+License: LGPLv3
+Project-URL: Github, https://github.com/Ethosa/py2java
+Project-URL: Documentation, https://github.com/Ethosa/py2java
+Keywords: python to java language translator ethosa konard
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: GNU Lesser General Public License v3 (LGPLv3)
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3
+Description-Content-Type: text/markdown
+Requires-Dist: retranslator
+
+<h1 align="center">Python to Java language Translator</h1>
+Install: ```pip install py2java```
+import:
+```python
+from py2java import PythonToJava
+```
+Usage:
+```python
+sourceText = """
+sourceText = "test"
+def main():
+    print(sourceText)
+class lol(object):
+    \"\"\"docstring for lol\"\"\"
+    _LOL = "test" # test variable
+"""
+translator = PythonToJava(useRegex=1)
+print(translator.compile(sourceText))
+```
+
