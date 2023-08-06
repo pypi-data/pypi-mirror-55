@@ -1,0 +1,13 @@
+anon/__init__.py,sha256=KhzGrBD7BKYWTE7UWdFhRD4JgAU0ktBOn7OFyC0kl34,735
+anon/base.py,sha256=B7Y5b0D49Vjf9qlw2j-EZMNZqWIe-9ViM9f7YrLCb3U,5781
+anon/utils.py,sha256=Vkvm04lV62iJqeSPprOXEnqKJg9y0DRYSdGdCgo1A48,7158
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/compat.py,sha256=34b1Bh-jI0QreXGYf2J7x4IdHJm1_eZFo3g2n0ieupw,123
+tests/settings.py,sha256=rk5h-eK9VxnvMFMZmGXvR5Lp5JGnGe2qk7Oe4RirstE,181
+tests/test_base.py,sha256=6yD1xLSHtIJnE3oxyY5FKdV1gnUFCZiIrzsAKvZXFY4,4468
+tests/test_utils.py,sha256=qJGTucGCR-nLdvIckSKRUv3nX7r6WxV45XyAT_TmmUY,1827
+django_anon-0.1.dist-info/LICENSE,sha256=MnwgMOUe8dQ72u4SqX99Jl7znLkZ0-AvikbsuPlEYJ8,1064
+django_anon-0.1.dist-info/METADATA,sha256=T2xpiHdTnIJNHEthkoVwuwlYI9ZeFXIv-08FnNY0xBQ,5149
+django_anon-0.1.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+django_anon-0.1.dist-info/top_level.txt,sha256=xqtE1_fqb2tKLYay_F2HVTWF6nUrFq2vd7Q4BON3TV0,11
+django_anon-0.1.dist-info/RECORD,,
