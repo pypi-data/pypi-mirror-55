@@ -1,0 +1,11 @@
+markdown_kernel/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+markdown_kernel/_version.py,sha256=oDM0MRjz4o5roYPMfZ3lCnv6Cr-omUVJ8jpYKqQ_l7E,187
+markdown_kernel/install.py,sha256=8e_ktIWqCwESbxpP56hFYrQKtrxWcqJQm-LMzYYS2GY,2628
+markdown_kernel/kernel.js,sha256=9TEUZ3C1s10tBxiYgLaVoFAhkvIBpWcjPasV6S3lbyY,303
+markdown_kernel/kernel.py,sha256=le7FF-J4pqHCHrTBqgXG4dZ9QhLAM9cj6KitwxZ9AO0,1353
+markdown_kernel/logo-64x64.png,sha256=giBmszxAACBxTkNVBNKCPTofJ7rPmhWX78VBnwuh7E0,591
+markdown_kernel-0.2.0.dist-info/LICENSE,sha256=HAFraFfCTJGgY4X3u4O8cosrjJcHtU7qDmKqLDv-Gzo,1555
+markdown_kernel-0.2.0.dist-info/METADATA,sha256=GQK2BiRKwkO0C61gY4Aege_nRN0M-_8tTEHyqf31E5c,3535
+markdown_kernel-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+markdown_kernel-0.2.0.dist-info/top_level.txt,sha256=LUl2zuQiwT4-7SN0vZ0rvFnvribevpemeRX54pPLwQ4,16
+markdown_kernel-0.2.0.dist-info/RECORD,,
