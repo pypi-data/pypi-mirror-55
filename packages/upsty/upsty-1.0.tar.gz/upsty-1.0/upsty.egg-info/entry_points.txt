@@ -1,0 +1,3 @@
+[console_scripts]
+upsty = upsty.__main__:main
+

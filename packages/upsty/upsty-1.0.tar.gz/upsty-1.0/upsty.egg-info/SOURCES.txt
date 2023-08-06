@@ -1,0 +1,11 @@
+setup.py
+upsty/__init__.py
+upsty/__main__.py
+upsty/lib.py
+upsty.egg-info/PKG-INFO
+upsty.egg-info/SOURCES.txt
+upsty.egg-info/dependency_links.txt
+upsty.egg-info/entry_points.txt
+upsty.egg-info/requires.txt
+upsty.egg-info/top_level.txt
+upsty.egg-info/zip-safe
