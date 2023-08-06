@@ -1,0 +1,9 @@
+README.md
+setup.cfg
+setup.py
+mymodule/__init__.py
+mymodule/module.py
+myxyz.egg-info/PKG-INFO
+myxyz.egg-info/SOURCES.txt
+myxyz.egg-info/dependency_links.txt
+myxyz.egg-info/top_level.txt

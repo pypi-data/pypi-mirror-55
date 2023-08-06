@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: myxyz
+Version: 0.2
+Summary: This should be a short description of our project
+Home-page: https://www.google.com/
+Author: amritesh patidar
+Author-email: somebody@example.com
+License: UNKNOWN
+Description: Hi, 
+        It's Me
+        
+        
+Keywords: test,class
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
