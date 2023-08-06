@@ -1,0 +1,76 @@
+Metadata-Version: 2.1
+Name: invenio-oarepo-ui
+Version: 1.0.9
+Summary: OARepo UI module for invenio
+Home-page: https://github.com/tbd
+Author: CESNET
+Author-email: miroslav.simek@vscht.cz
+License: MIT
+Keywords: invenio oarepo ui
+Platform: any
+Classifier: Environment :: Web Environment
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Dynamic Content
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Development Status :: 1 - Planning
+Requires-Dist: Flask-BabelEx (>=0.9.3)
+Provides-Extra: all
+Requires-Dist: Sphinx (>=1.5.1) ; extra == 'all'
+Requires-Dist: check-manifest (>=0.25) ; extra == 'all'
+Requires-Dist: coverage (>=4.0) ; extra == 'all'
+Requires-Dist: isort (>=4.3.3) ; extra == 'all'
+Requires-Dist: pydocstyle (>=2.0.0) ; extra == 'all'
+Requires-Dist: pytest-cov (>=2.5.1) ; extra == 'all'
+Requires-Dist: pytest-pep8 (>=1.0.6) ; extra == 'all'
+Requires-Dist: pytest-invenio (>=1.0.5) ; extra == 'all'
+Provides-Extra: docs
+Requires-Dist: Sphinx (>=1.5.1) ; extra == 'docs'
+Provides-Extra: tests
+Requires-Dist: check-manifest (>=0.25) ; extra == 'tests'
+Requires-Dist: coverage (>=4.0) ; extra == 'tests'
+Requires-Dist: isort (>=4.3.3) ; extra == 'tests'
+Requires-Dist: pydocstyle (>=2.0.0) ; extra == 'tests'
+Requires-Dist: pytest-cov (>=2.5.1) ; extra == 'tests'
+Requires-Dist: pytest-pep8 (>=1.0.6) ; extra == 'tests'
+Requires-Dist: pytest-invenio (>=1.0.5) ; extra == 'tests'
+
+..
+    Copyright (C) 2019 CESNET.
+
+    invenio-oarepo-ui is free software; you can redistribute it and/or modify it
+    under the terms of the MIT License; see LICENSE file for more details.
+
+==================
+ invenio-oarepo-ui
+==================
+
+.. image:: https://img.shields.io/travis/tbd.svg
+        :target: https://travis-ci.org/tbd
+
+.. image:: https://img.shields.io/coveralls/tbd.svg
+        :target: https://coveralls.io/r/tbd
+
+.. image:: https://img.shields.io/github/tag/tbd.svg
+        :target: https://github.com/tbd/releases
+
+.. image:: https://img.shields.io/pypi/dm/invenio-oarepo-ui.svg
+        :target: https://pypi.python.org/pypi/invenio-oarepo-ui
+
+.. image:: https://img.shields.io/github/license/tbd.svg
+        :target: https://github.com/tbd/blob/master/LICENSE
+
+Invenio OARepo UI module for invenio
+
+TODO: Please provide feature overview of module
+
+Further documentation is available on
+https://invenio-oarepo-ui.readthedocs.io/
+
+

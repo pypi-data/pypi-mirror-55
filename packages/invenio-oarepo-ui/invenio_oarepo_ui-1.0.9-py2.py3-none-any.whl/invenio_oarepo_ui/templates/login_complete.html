@@ -1,0 +1,12 @@
+<html>
+<body>
+Login has been successful, redirecting to application.
+</body>
+<script>
+  if (window.opener) {
+    window.opener.postMessage('popup-login-finished');
+  } else {
+    parent.postMessage('popup-login-finished');
+  }
+</script>
+</html>
