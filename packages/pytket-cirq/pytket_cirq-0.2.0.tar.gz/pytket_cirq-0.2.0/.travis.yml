@@ -1,0 +1,20 @@
+branches:
+  only:
+  - master
+language: python
+python:
+  - "3.6"      # current default Python on Travis CI
+# command to install dependencies
+install:
+  - pip install --pre -r requirements.txt
+  - pip install .
+# command to run tests
+script:
+  - pytest
+
+deploy:
+  skip_cleanup: true
+  provider: script
+  script: bash ./.travis/deploy.sh
+  on:
+    branch: master
