@@ -1,0 +1,55 @@
+Metadata-Version: 2.1
+Name: tweepy-trc
+Version: 0.2.3
+Summary: Integrates .trc / .twurlrc credentials into Tweepy
+Home-page: https://github.com/palevell/tweepy-trc
+Author: Patrick A. Levell
+Author-email: patrick29501@gmx.com
+License: MIT
+Description: tweepy-trc
+        ==========
+        
+        .. :version: '0.2.3'
+        
+        .. contents:: **Table of Contents**
+            :backlinks: none
+        
+        Description
+        -----------
+        This is a wrapper for the config files used by Ruby gems 't'
+        and 'twurl.'  The idea is to keep Twitter credentials stored
+        separately from programs that use them.
+        
+        Prerequisites
+        -------------
+        
+        * Tweepy
+        * Either of the following Ruby gems:
+            - t https://github.com/sferik/t
+            - twurl https://github.com/twitter/twurl
+        
+        
+        Installation
+        ------------
+        
+        tweepy-trc is distributed on `PyPI <https://pypi.org>`_ as a universal
+        wheel, is available on Linux/macOS and Windows, and supports
+        Python 3.6+.
+        
+        .. code-block:: bash
+        
+            $ pip install tweepy-trc
+        
+        
+Keywords: Tweepy,twurl,t
+Platform: UNKNOWN
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: License :: OSI Approved :: MIT License
+Requires-Python: >=3.6
+Description-Content-Type: text/x-rst
