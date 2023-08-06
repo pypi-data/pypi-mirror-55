@@ -1,0 +1,8 @@
+faas/__init__.py,sha256=Wzf5T3NBDfhQoTnhnRNHSlAsE0XMqbclXG-M81Vas70,22
+faas/core/__init__.py,sha256=lLugWerbfKcptWkp4IJenmKnm0bdDnKz_RvCuHvEQPI,102
+faas/core/configuration.py,sha256=PJNmg0Hye2h2vfvCCdqSfCW4U3K0hGD0gRnLoS2P-24,1996
+faas/core/faas_api_client.py,sha256=R5BasuGTFSzUbyegJh4GBhx28zql3lJ6c2Xpvja5khI,11761
+faas_sdk-0.1.4.dist-info/METADATA,sha256=H6Ux1dUS6nC4oztr0khtMZTTRwG3uLkQ8-eFXaE3yjU,568
+faas_sdk-0.1.4.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+faas_sdk-0.1.4.dist-info/top_level.txt,sha256=SAorEqldn_4_Wr8dXTHRAtZb2wRF1r0XKDUkfD48eEA,5
+faas_sdk-0.1.4.dist-info/RECORD,,
