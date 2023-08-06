@@ -1,0 +1,6 @@
+include README README.*
+include LICENSE
+include CHANGELOG
+global-exclude *~
+prune doc/build
+

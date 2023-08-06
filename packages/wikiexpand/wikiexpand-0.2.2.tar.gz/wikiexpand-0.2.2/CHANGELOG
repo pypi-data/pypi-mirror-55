@@ -1,0 +1,16 @@
+
+0.2.1
+=====
+
+* fixed dependencies versions
+* fixed caching for parameterized templates
+
+0.2
+===
+
+* new parser function & variable ARTICLEPAGENAME, ARTICLEPAGENAMEE
+* new parser function & variable SUBPAGENAME, SUBPAGENAMEE
+* new parser function & variable ROOTPAGENAME, ROOTPAGENAMEE
+* new parser function & variable BASEPAGENAME, BASEPAGENAMEE
+* new parser function #titleparts
+* site context: clean and canonical title perform previous space cleaning and unescaping of html entities.
