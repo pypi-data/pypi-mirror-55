@@ -1,0 +1,10 @@
+mailtools/__init__.py,sha256=xp0hVRFvvZytfUfn1aevdFk7cOpEnDHTsLFzdvJXwnw,422
+mailtools/mailer.py,sha256=FU6da8U9Zj_GJTtBAsYUVsmVPXQcP4w8MUqJF3M2LlI,19238
+mailtools/threadedmailer.py,sha256=ziZSkZdktMtCZ-s8fA_mVNNFuGueGLINEGaNZP6HZC4,8162
+mailtools/utils.py,sha256=Z7DPavvwD32pwf6cLXIA5yDyXAbgU7m-Xydf4RJSpoA,6185
+mailtools-3.0.0.dist-info/DESCRIPTION.rst,sha256=OCTuuN6LcWulhHS3d5rfjdsQtW22n7HENFRh6jC6ego,10
+mailtools-3.0.0.dist-info/METADATA,sha256=S_pSOmx7IK0LY9GCGCVfzD5fmEO-SrcVlYre2GmaAIw,577
+mailtools-3.0.0.dist-info/RECORD,,
+mailtools-3.0.0.dist-info/WHEEL,sha256=8Lm45v9gcYRm70DrgFGVe4WsUtUMi1_0Tso1hqPGMjA,92
+mailtools-3.0.0.dist-info/metadata.json,sha256=y1gosYfRW2kBevGkf0be4drvksNtl6Ge16QTxiYZzsQ,707
+mailtools-3.0.0.dist-info/top_level.txt,sha256=OjAD9nyBp2laLtUULYyd4SHJ904tsOXTzOY3X5FAh4M,10
