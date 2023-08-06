@@ -1,0 +1,16 @@
+MANIFEST.in
+README.md
+setup.py
+appupup/__init__.py
+appupup/__version__.py
+appupup/arg_conf.py
+appupup/configure.py
+appupup/constants.py
+appupup/log.py
+appupup/main.py
+appupup/parse_args.py
+appupup.egg-info/PKG-INFO
+appupup.egg-info/SOURCES.txt
+appupup.egg-info/dependency_links.txt
+appupup.egg-info/requires.txt
+appupup.egg-info/top_level.txt
