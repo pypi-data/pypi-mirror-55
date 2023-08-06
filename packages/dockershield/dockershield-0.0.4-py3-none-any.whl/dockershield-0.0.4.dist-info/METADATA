@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: dockershield
+Version: 0.0.4
+Summary: Interface to protect your docker socket, so that you can pass it to containers but prevent them running dangerous commands
+Home-page: UNKNOWN
+Author: Sam Moore
+Author-email: smoore@elementengineering.com.au
+License: BSD
+Keywords: docker
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Topic :: Utilities
+Classifier: License :: OSI Approved :: BSD License
+Requires-Dist: pyyaml
+
+UNKNOWN
+
+
