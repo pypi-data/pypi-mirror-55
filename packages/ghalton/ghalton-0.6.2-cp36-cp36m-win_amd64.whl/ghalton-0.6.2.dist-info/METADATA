@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: ghalton
+Version: 0.6.2
+Summary: Generalized Halton number generator
+Home-page: https://github.com/fmder/ghalton
+Author: Francois-Michel De Rainville
+Author-email: f.derainville@gmail.com
+License: LICENSE.txt
+Download-URL: https://github.com/fmder/ghalton/tarball/master#egg=ghalton-0.6.2
+
+Generalized Halton Number Generator
+
+
