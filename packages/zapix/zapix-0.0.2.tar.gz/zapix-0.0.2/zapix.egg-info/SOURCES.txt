@@ -1,0 +1,8 @@
+README.md
+setup.py
+zapix/__init__.py
+zapix/zabbix_api.py
+zapix.egg-info/PKG-INFO
+zapix.egg-info/SOURCES.txt
+zapix.egg-info/dependency_links.txt
+zapix.egg-info/top_level.txt
