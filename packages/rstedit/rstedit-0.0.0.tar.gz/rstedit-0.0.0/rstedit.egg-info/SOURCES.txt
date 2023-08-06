@@ -1,0 +1,12 @@
+README.rst
+setup.cfg
+setup.py
+rstedit/__init__.py
+rstedit/main.py
+rstedit.egg-info/PKG-INFO
+rstedit.egg-info/SOURCES.txt
+rstedit.egg-info/dependency_links.txt
+rstedit.egg-info/entry_points.txt
+rstedit.egg-info/requires.txt
+rstedit.egg-info/top_level.txt
+rstedit.egg-info/zip-safe

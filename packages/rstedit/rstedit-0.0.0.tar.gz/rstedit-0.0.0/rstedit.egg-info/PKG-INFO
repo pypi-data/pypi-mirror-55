@@ -1,0 +1,39 @@
+Metadata-Version: 1.0
+Name: rstedit
+Version: 0.0.0
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Monika Ilieva
+Author-email: UNKNOWN
+License: MIT License
+Description: Rstedit
+        ------------
+        
+        Something about the project
+        
+        Installation
+        ************
+        
+        >>> pip install rstedit
+        
+        Documentation
+        *************
+        
+        Add `link <add-link-to-doc-here>`_ to it.
+        
+        Example
+        *******
+        
+        Example usage of rstedit
+        
+        
+        Code of conduct
+        ***************
+        
+        
+        LICENSE
+        *******
+        
+        `MIT License <add-link-to-license-here>`_
+Keywords: rstedit
+Platform: UNKNOWN

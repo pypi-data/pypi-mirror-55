@@ -1,0 +1,1 @@
+Rstedit------------Something about the projectInstallation************>>> pip install rsteditDocumentation*************Add `link <add-link-to-doc-here>`_ to it.Example*******Example usage of rsteditCode of conduct***************LICENSE*******`MIT License <add-link-to-license-here>`_
