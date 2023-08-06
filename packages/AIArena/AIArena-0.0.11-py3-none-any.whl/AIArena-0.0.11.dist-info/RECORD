@@ -1,0 +1,13 @@
+AIArena/AI.py,sha256=1OHi2uicaMQJiBpnCIC3Ti4saKZwkF3kur4l6YX1aUM,2009
+AIArena/Human.py,sha256=7o_64XFHwU1oznESh3UpNLnTOiSQ0sA1ilO1TWtZjpo,656
+AIArena/Ref.py,sha256=rCYgzKJuZUIiP9btlWTCmlkH1dozjIgeJZpWEpjmAd0,2365
+AIArena/__init__.py,sha256=C9kHBCEtAgqxoquAIi3_pMk0Aoc5WZpKujgLkDPLrRI,2171
+AIArena/games/Connect4.py,sha256=_EaF_cbLY-AA_GDQKEtoIO6JLLckv1-Ph4DLxWOvzHU,2481
+AIArena/games/GymBlackjack.py,sha256=a_eSRo8FEh0K84UwJ5wrXZaAOwcHSpaFM1QPagVkJMQ,2353
+AIArena/games/GymFrozenLake.py,sha256=3SVow6DCRpY9nmGImsywvXAIRPiyLszs3JWJRIf_O-I,1988
+AIArena/games/__init__.py,sha256=0_WDL8frXIGDvCqHYAp-_L4YBW56hpTEr54fsMrJrXc,196
+AIArena-0.0.11.dist-info/LICENSE,sha256=roJu8bTKcBPMg8yJ9hnlQ-z8DnRNkk4uvr5qPvzXt_s,1068
+AIArena-0.0.11.dist-info/METADATA,sha256=of5NEiJkN-Y_bSx6bS8zH4rPtWAlcZu9wojFOgNJBbk,576
+AIArena-0.0.11.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+AIArena-0.0.11.dist-info/top_level.txt,sha256=FKIgQlSEGOA21Cl9GqtkQ3KHTzjW-v-eZ9xWlIvowMs,8
+AIArena-0.0.11.dist-info/RECORD,,
