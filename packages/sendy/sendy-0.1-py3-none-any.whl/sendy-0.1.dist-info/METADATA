@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: sendy
+Version: 0.1
+Summary: Sendy.co API wrapper
+Home-page: https://github.com/Volsor/sendy
+Author: Stanislav Shershnev
+Author-email: shershnev.stas@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Requires-Dist: requests
+
+UNKNOWN
+
+
