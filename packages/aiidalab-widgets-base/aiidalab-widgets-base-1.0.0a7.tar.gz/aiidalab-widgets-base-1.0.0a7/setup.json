@@ -1,0 +1,32 @@
+{
+    "version": "1.0.0a7",
+    "name": "aiidalab-widgets-base",
+    "author_email": "aiidateam@gmail.com",
+    "url": "https://github.com/aiidalab/aiidalab-widgets-base",
+    "license": "MIT",
+    "classifiers": [
+        "Programming Language :: Python"
+    ],
+    "install_requires": [
+        "ase",
+        "bokeh",
+        "numpy",
+        "ipywidgets",
+        "fileupload",
+        "nglview"
+    ],
+    "extras_require": {
+        "testing": [
+            "aiida-core[testing]>=1.0.b6"
+        ],
+        "pre-commit": [
+            "pre-commit==1.17.0",
+            "yapf==0.28.0",
+            "prospector==1.1.7",
+      	    "pylint==2.3.1"
+        ],
+        "docs": [
+            "sphinx"
+        ]
+    }
+}
