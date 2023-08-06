@@ -1,0 +1,12 @@
+kakeibox_core/__init__.py,sha256=JpjegIio5v0N_3i_AC6jVB_lCp0Ag-AfxOIbyG6mF7o,256
+kakeibox_core/entry_points/__init__.py,sha256=yvA7orM2GUNthxKVmWjayZNJKJiFvyAqKmkqkrCayV0,57
+kakeibox_core/entry_points/adapters.py,sha256=BWCdfXC2ANugdAYCSI3XuHNETaXRbMLWa36pOYHBvyA,373
+kakeibox_core/entry_points/commands.py,sha256=dt-DCAxi_vnGdibM0VwGDDQ_5BY1Ofdn4lRo-4uSCck,4032
+kakeibox_core/use_cases/__init__.py,sha256=wlBWQbQeRsZimTeyZCCbt8K6HusV7KKqoKWy9I_mZiY,307
+kakeibox_core/use_cases/strategy.py,sha256=_ibJIRwWNG-4fJntiTU2yrJm3AJ_rfJHHgoBZXxjjrg,520
+kakeibox_core-0.9.1.dist-info/AUTHORS.rst,sha256=ak64ZkvFh8MHdjvP0lP1g3OsAkhV8NGZdMdgFUQxQ1Y,163
+kakeibox_core-0.9.1.dist-info/LICENSE,sha256=lQ6qWczTVrb_YmyFlB86wk_j4WjffxAEm9mWZqbwvKU,1580
+kakeibox_core-0.9.1.dist-info/METADATA,sha256=BKbSpwB5rPGpZ38YPZD6R0u7b0S0LnXBYSPjsAkQCg0,1214
+kakeibox_core-0.9.1.dist-info/WHEEL,sha256=8T8fxefr_r-A79qbOJ9d_AaEgkpCGmEPHc-gpCq5BRg,110
+kakeibox_core-0.9.1.dist-info/top_level.txt,sha256=U35QcKFY5PrQRET3VI7vWS5u5O638BsDutQVOAwdvss,14
+kakeibox_core-0.9.1.dist-info/RECORD,,
