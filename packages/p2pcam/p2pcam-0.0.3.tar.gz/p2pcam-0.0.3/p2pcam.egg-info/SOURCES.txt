@@ -1,0 +1,7 @@
+README.md
+setup.py
+p2pcam/__init__.py
+p2pcam.egg-info/PKG-INFO
+p2pcam.egg-info/SOURCES.txt
+p2pcam.egg-info/dependency_links.txt
+p2pcam.egg-info/top_level.txt
