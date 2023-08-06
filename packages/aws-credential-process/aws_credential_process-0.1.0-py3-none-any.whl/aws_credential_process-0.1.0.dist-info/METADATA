@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: aws-credential-process
+Version: 0.1.0
+Summary: AWS Credential Process
+Author: Dick Marinus
+Author-email: dick@mrns.nl
+Requires-Python: >=3.7,<4.0
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: boto3 (>=1.10,<2.0)
+Requires-Dist: click (>=7.0,<8.0)
+Requires-Dist: keyring (>=19.2,<20.0)
+Requires-Dist: yubikey-manager (==3.0.0)
