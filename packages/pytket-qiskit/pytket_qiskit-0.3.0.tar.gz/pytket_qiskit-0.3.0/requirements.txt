@@ -1,0 +1,9 @@
+--index-url https://${FURY_AUTH}:@pypi.fury.io/cqcl/
+--extra-index-url https://pypi.org/simple/
+
+pytket >= 0.4.0
+qiskit >=0.12.0
+qiskit-chemistry ~=0.5
+matplotlib ~=2.2
+sympy ~=1.3
+numpy
