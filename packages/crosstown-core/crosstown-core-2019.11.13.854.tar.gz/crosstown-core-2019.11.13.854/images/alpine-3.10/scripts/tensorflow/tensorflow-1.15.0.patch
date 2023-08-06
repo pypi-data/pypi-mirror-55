@@ -1,0 +1,78 @@
+diff --git a/tensorflow/core/platform/default/stacktrace.h b/tensorflow/core/platform/default/stacktrace.h
+index 808ef25c43..a8ed84401d 100644
+--- a/tensorflow/core/platform/default/stacktrace.h
++++ b/tensorflow/core/platform/default/stacktrace.h
+@@ -22,7 +22,6 @@ limitations under the License.
+ 
+ #if !defined(IS_MOBILE_PLATFORM) && !defined(PLATFORM_WINDOWS) && \
+     defined(PLATFORM_POSIX) && (defined(__clang__) || defined(__GNUC__))
+-#define TF_GENERATE_BACKTRACE
+ #endif
+ 
+ #if defined(TF_GENERATE_BACKTRACE)
+diff --git a/tensorflow/core/platform/default/stacktrace_handler.cc b/tensorflow/core/platform/default/stacktrace_handler.cc
+index 72907ecb52..d7c9f38e3e 100644
+--- a/tensorflow/core/platform/default/stacktrace_handler.cc
++++ b/tensorflow/core/platform/default/stacktrace_handler.cc
+@@ -17,7 +17,6 @@ limitations under the License.
+ 
+ #if !defined(IS_MOBILE_PLATFORM) && defined(PLATFORM_POSIX) && \
+     (defined(__clang__) || defined(__GNUC__))
+-#define TF_GENERATE_STACKTRACE
+ #endif
+ 
+ #if defined(TF_GENERATE_STACKTRACE)
+diff --git a/tensorflow/core/platform/posix/env.cc b/tensorflow/core/platform/posix/env.cc
+index ba2a979df1..89da133cc5 100644
+--- a/tensorflow/core/platform/posix/env.cc
++++ b/tensorflow/core/platform/posix/env.cc
+@@ -138,7 +138,7 @@ class PosixEnv : public Env {
+     int res = 0;
+     pthread_get_name_np(pthread_self(), buf, static_cast<size_t>(100));
+ #else
+-    int res = pthread_getname_np(pthread_self(), buf, static_cast<size_t>(100));
++    int res = 0; strncpy(buf, "thread", 7);
+ #endif
+     if (res != 0) {
+       return false;
+diff --git a/third_party/hwloc/BUILD.bazel b/third_party/hwloc/BUILD.bazel
+index 3f93910ed7..547692a1a2 100644
+--- a/third_party/hwloc/BUILD.bazel
++++ b/third_party/hwloc/BUILD.bazel
+@@ -110,7 +110,6 @@ _INCLUDE_PRIVATE_HWLOC_AUTOIGEN_CONFIG_H_COMMON_SUBS = {
+     "#undef HAVE_SYS_MMAN_H": "#define HAVE_SYS_MMAN_H 1",
+     "#undef HAVE_SYS_PARAM_H": "#define HAVE_SYS_PARAM_H 1",
+     "#undef HAVE_SYS_STAT_H": "#define HAVE_SYS_STAT_H 1",
+-    "#undef HAVE_SYS_SYSCTL_H": "#define HAVE_SYS_SYSCTL_H 1",
+     "#undef HAVE_SYS_TYPES_H": "#define HAVE_SYS_TYPES_H 1",
+     "#undef HAVE_SYS_UTSNAME_H": "#define HAVE_SYS_UTSNAME_H 1",
+     "#undef HAVE_TIME_H": "#define HAVE_TIME_H 1",
+diff --git a/third_party/llvm/llvm.bzl b/third_party/llvm/llvm.bzl
+index 8b0fdec048..0be676ed17 100644
+--- a/third_party/llvm/llvm.bzl
++++ b/third_party/llvm/llvm.bzl
+@@ -183,7 +183,6 @@ posix_cmake_vars = {
+     "HAVE_DIRENT_H": 1,
+     "HAVE_DLFCN_H": 1,
+     "HAVE_ERRNO_H": 1,
+-    "HAVE_EXECINFO_H": 1,
+     "HAVE_FCNTL_H": 1,
+     "HAVE_INTTYPES_H": 1,
+     "HAVE_PTHREAD_H": 1,
+@@ -201,8 +200,6 @@ posix_cmake_vars = {
+     "HAVE_ZLIB_H": 1,
+ 
+     # Features
+-    "HAVE_BACKTRACE": 1,
+-    "BACKTRACE_HEADER": "execinfo.h",
+     "HAVE_DLOPEN": 1,
+     "HAVE_FUTIMES": 1,
+     "HAVE_GETCWD": 1,
+@@ -243,7 +240,6 @@ posix_cmake_vars = {
+ linux_cmake_vars = {
+     "HAVE_MALLOC_H": 1,
+     "HAVE_LINK_H": 1,
+-    "HAVE_MALLINFO": 1,
+     "HAVE_FUTIMENS": 1,
+ }
+ 

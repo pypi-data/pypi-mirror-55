@@ -1,0 +1,13 @@
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+dist-name = "crosstown-core"
+module = "crosstown_core"
+author = "Seth Michael Larson"
+author-email = "sethmichaellarson@gmail.com"
+description-file = "README.md"
+home-page = "https://docs.crosstown.dev"
+classifiers = ["License :: OSI Approved :: GNU Lesser General Public License v3 or later (LGPLv3+)"]
+requires = ["attrs", "click", "packaging", "requests"]
