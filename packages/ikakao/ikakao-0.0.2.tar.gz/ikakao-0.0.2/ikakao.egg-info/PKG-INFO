@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: ikakao
+Version: 0.0.2
+Summary: Kakao i Open Builder SDK
+Home-page: https://github.com/hallazzang/ikakao
+Author: Hanjun Kim
+Author-email: hallazzang@gmail.com
+License: UNKNOWN
+Description: # ikakao
+        
+        Currently work in progress.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
