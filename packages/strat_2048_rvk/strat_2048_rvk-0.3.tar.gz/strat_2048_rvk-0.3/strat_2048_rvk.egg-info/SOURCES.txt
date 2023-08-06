@@ -1,0 +1,10 @@
+README.rst
+setup.py
+strat_2048_rvk/__init__.py
+strat_2048_rvk/cp2048.py
+strat_2048_rvk/evaluate.py
+strat_2048_rvk/strategy.py
+strat_2048_rvk.egg-info/PKG-INFO
+strat_2048_rvk.egg-info/SOURCES.txt
+strat_2048_rvk.egg-info/dependency_links.txt
+strat_2048_rvk.egg-info/top_level.txt
