@@ -1,0 +1,3 @@
+[console_scripts]
+nboost = nboost.cli.__main__:main
+
