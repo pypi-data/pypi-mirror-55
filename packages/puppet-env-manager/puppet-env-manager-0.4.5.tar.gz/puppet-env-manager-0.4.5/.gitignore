@@ -1,0 +1,8 @@
+# Generated content
+*.pyc
+*.egg-info
+
+# Build artefacts
+/MANIFEST
+build/*
+dist/*
