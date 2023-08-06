@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: MyPythonPkg
+Version: 0.1
+Summary: A demo package setup by me
+Home-page: https://github.com/bharatsahu/MyPythonPkg
+Author: Bharat Sahu
+Author-email: bharat.sahu@litmusworld.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+
+This is an demo python package created by me. Once we know how to create a python package will apply the same steps for client librarary.
+
+
