@@ -1,0 +1,8 @@
+mort_jams/__init__.py,sha256=ysQlUCqRq50RBAdMx5YX8eOd_syExhOqEoPH6ycTvwQ,28
+mort_jams/core.py,sha256=x-bqHipSy-Dk97JIjEmXKP4szGP8TUdYL6IA3KZK8zM,5020
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_jams.py,sha256=WQvnud-9Ekhx40TnfWBELUcI1e8oFa6Tu_oAL5PSzt8,477
+mort_jams-1.1.0.dist-info/METADATA,sha256=bmLV0PLtRYXf_D6fSGI1HtBjxfIiM7D5vyw3z5SofRc,753
+mort_jams-1.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mort_jams-1.1.0.dist-info/top_level.txt,sha256=o8cEREQLuX796WOmrb_DY2lY1SFk6X85w83i4_5BWeA,16
+mort_jams-1.1.0.dist-info/RECORD,,
