@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.md
+requirements.txt
+setup.py
+armmwave/__init__.py
+armmwave/core.py
+armmwave/layer.py
+armmwave/model.py
+armmwave.egg-info/PKG-INFO
+armmwave.egg-info/SOURCES.txt
+armmwave.egg-info/dependency_links.txt
+armmwave.egg-info/requires.txt
+armmwave.egg-info/top_level.txt
+test/test_core.py
+test/test_layer.py
+test/test_model.py
