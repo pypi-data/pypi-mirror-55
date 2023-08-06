@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: idem_azurerm
+Version: 1.0
+Summary: Idem language provider for Azure
+Home-page: UNKNOWN
+Author: Nicholas Hughes
+Author-email: UNKNOWN
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Development Status :: 5 - Production/Stable
