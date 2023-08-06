@@ -1,0 +1,15 @@
+otter/__init__.py,sha256=Vx54A0j4nPGuuPfBuJ3StEja3QqQtDZe7CLu8nYFBI8,30
+otter/cli.py,sha256=r37_ac5mAVQ4UYTZVw4brZ6Gc2ge__5diHyWCIaG0Eg,3984
+otter/docker.py,sha256=WOaJgjFQq0FgcVXA2yYHxwV-s0yoOqkeddQPSbbbj7Q,4380
+otter/grade.py,sha256=p1JKeKnTVsnp86ozVa9QD30jprfHrQM4xEl5eZF7zLk,5804
+otter/gs_generator.py,sha256=xTqowCLCFdBSZb7VZmjtIIhpWiGqpy5luOXYhLQ78QU,4239
+otter/metadata.py,sha256=-Qqza0gbmkigS8Tf0VxVs3J72FKtmFzx7WloQUK1c9Y,7185
+otter/notebook.py,sha256=q1ERE7YcDGbun7gD02noY-i0w3sL5axld2P5MNcKAVI,1163
+otter/parallel.py,sha256=yAsTdn-HwfFELJTbUOcMdiWI_SgRpILL3A1OYxGxiBg,1887
+otter/utils.py,sha256=RTEbFPVZHyICHwppiiIOOv3MOXueLAINseSUxbgaI9c,200
+otter_grader-0.0.20.data/scripts/otter,sha256=fLQm7rnP_r9xIr_1_rmGusDffss3KDBkzrAnXfd0f6Y,169
+otter_grader-0.0.20.dist-info/LICENSE,sha256=avID1BoB3wjOvxdBCRJzEFRK5PXze2p_aW0oezjThY4,1560
+otter_grader-0.0.20.dist-info/METADATA,sha256=lUsVYgc6i5j038eQ6OvkbLXte3GBJPljlTeigLEaPKo,551
+otter_grader-0.0.20.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+otter_grader-0.0.20.dist-info/top_level.txt,sha256=Wth72sCwBRUk3KZGknSKvLQDMFuJk6qiaAavMDOdG5k,6
+otter_grader-0.0.20.dist-info/RECORD,,
