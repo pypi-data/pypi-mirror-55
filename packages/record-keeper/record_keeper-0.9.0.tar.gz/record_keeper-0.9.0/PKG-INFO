@@ -1,0 +1,15 @@
+Metadata-Version: 2.1
+Name: record_keeper
+Version: 0.9.0
+Summary: Record experiment data easily
+Home-page: https://github.com/TakeshiMusgrave/record_keeper
+Author: Kevin Musgrave
+Author-email: tkm45@cornell.edu
+License: UNKNOWN
+Description: # record_keeper
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
