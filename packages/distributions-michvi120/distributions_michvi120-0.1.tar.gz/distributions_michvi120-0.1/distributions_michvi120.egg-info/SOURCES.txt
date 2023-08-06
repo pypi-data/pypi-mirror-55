@@ -1,0 +1,10 @@
+setup.py
+distributions_michvi120/Binomialdistribution.py
+distributions_michvi120/Gaussiandistribution.py
+distributions_michvi120/Generaldistribution.py
+distributions_michvi120/__init__.py
+distributions_michvi120.egg-info/PKG-INFO
+distributions_michvi120.egg-info/SOURCES.txt
+distributions_michvi120.egg-info/dependency_links.txt
+distributions_michvi120.egg-info/not-zip-safe
+distributions_michvi120.egg-info/top_level.txt
