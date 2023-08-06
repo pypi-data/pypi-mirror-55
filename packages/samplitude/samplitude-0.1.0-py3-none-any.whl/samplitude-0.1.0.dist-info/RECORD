@@ -1,0 +1,11 @@
+samplitude/__init__.py,sha256=y93iqNg8dJ6-vfb-A3oZgQ4rBnMJ5HlH8lhgdZmui1Y,12571
+samplitude/__main__.py,sha256=RKB-azO5Yea_Z4-WYm1oJOiJXUGs8Cc-rBZC9-me6-c,35
+samplitude/_generators.py,sha256=1K1aiUWc66J9UVJ60kicK0udxyUmcO-XVBh_wqc9hxQ,325
+samplitude/_samplitude.py,sha256=6xH_2tMaY1EVKKby6pgF0bZDLDke17Igc-Fjj6LacTg,2511
+samplitude/_utils.py,sha256=DuFEEkv5hc4tkMgmGU-HfXxEia5Tuhv-USy9z6MZZsk,304
+samplitude-0.1.0.dist-info/LICENSE,sha256=jOtLnuWt7d5Hsx6XXB2QxzrSe2sWWh3NgMfFRetluQM,35147
+samplitude-0.1.0.dist-info/METADATA,sha256=7sgT1FnczUBXXbNKYs3LTjz4tRloTJyccuGG8CZvUj8,15186
+samplitude-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+samplitude-0.1.0.dist-info/entry_points.txt,sha256=X9UAXDlnsgEm4tPcxalR53LSeMNh954L0ZAFVCyxv0E,70
+samplitude-0.1.0.dist-info/top_level.txt,sha256=AwQk69xeDnOk2lA2IYGYygGtjRCTxNSgsiv1-rY_9B0,11
+samplitude-0.1.0.dist-info/RECORD,,
