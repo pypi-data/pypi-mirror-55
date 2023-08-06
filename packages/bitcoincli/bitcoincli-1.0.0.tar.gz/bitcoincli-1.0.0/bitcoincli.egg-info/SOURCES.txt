@@ -1,0 +1,10 @@
+MANIFEST.in
+README.md
+setup.py
+bitcoincli/__init__.py
+bitcoincli/client.py
+bitcoincli.egg-info/PKG-INFO
+bitcoincli.egg-info/SOURCES.txt
+bitcoincli.egg-info/dependency_links.txt
+bitcoincli.egg-info/requires.txt
+bitcoincli.egg-info/top_level.txt
