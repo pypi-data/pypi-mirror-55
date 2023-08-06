@@ -1,0 +1,15 @@
+README.txt
+setup.py
+simpletexteditor/__init__.py
+simpletexteditor.egg-info/PKG-INFO
+simpletexteditor.egg-info/SOURCES.txt
+simpletexteditor.egg-info/dependency_links.txt
+simpletexteditor.egg-info/top_level.txt
+simpletexteditor/cursor/__init__.py
+simpletexteditor/cursor/cursor.py
+simpletexteditor/editor/__init__.py
+simpletexteditor/editor/editor.py
+simpletexteditor/helper/__init__.py
+simpletexteditor/helper/helper.py
+simpletexteditor/text/__init__.py
+simpletexteditor/text/text.py
