@@ -1,0 +1,22 @@
+{% extends 'otp_auth/base.html' %}
+{% load widget_tweaks %}
+
+{% block title %}Inicio de sesión{% endblock %}
+
+{% block content %}
+<form class="form" method="post" action="">
+    {% csrf_token %}
+    <div class="field">
+        <label class="field__label">Ingresa el código que te hemos enviado.</label>
+        {% render_field form.code class+='text-center' %}
+        {{ form.code.errors }}
+    </div>
+    {% for hidden in form.hidden_fields %}
+    {{ hidden }}
+    {% endfor %}
+    <p>¿No recibiste el código? <a class="link" href="{{ sms_url }}">Solicita uno nuevo</a></p>
+    <div class="form__action">
+        <button class="btn btn_is-full-width form__btn" type="submit">Validar</button>
+    </div>
+</form>
+{% endblock %}
