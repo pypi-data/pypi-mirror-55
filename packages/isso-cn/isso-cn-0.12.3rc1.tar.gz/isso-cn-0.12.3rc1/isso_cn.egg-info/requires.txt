@@ -1,0 +1,10 @@
+itsdangerous
+Jinja2
+misaka<3.0,>=2.0
+html5lib
+werkzeug>=0.9
+bleach
+
+[:python_version=="2.7"]
+ipaddr>=2.1
+configparser
