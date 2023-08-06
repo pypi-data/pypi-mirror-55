@@ -1,0 +1,20 @@
+Metadata-Version: 1.1
+Name: SuiteOPT
+Version: 1.0.1
+Summary: Python Wrapper for Optimization Software Suite SuiteOPT
+Home-page: https://github.com/chrundle
+Author: James Diffenderfer
+Author-email: jdiffen1@ufl.edu
+License: GPLv2
+Description: UNKNOWN
+Keywords: optimization
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Intended Audience :: Science/Research
+Classifier: Topic :: Scientific/Engineering
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

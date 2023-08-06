@@ -1,0 +1,4449 @@
+sifdecoder -A pc64.lnx.gfo -st   BOEING2.SIF
+
+ Problem name: BOEING2
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 4 linear equality constraints
+ There are 162 linear inequality constraints
+ 
+ There are 89 variables bounded only from below 
+ There are 54 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: BOEING2 (143)
+sup norm of Ax: 3.000000e+03
+walltime at start:     0.000001
+normb: 2.500000e+04 normc: 2.600000e+00
+nbrk: 73 fd: 7.979210e-05
+nbrk: 78 fd: 4.614263e-08
+nbrk: 48 fd: 1.005921e-07
+nbrk: 72 fd: 7.690234e-11
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 6.223350107058053e-12    
+Final f                               : -3.150187279747341e+02   
+
+Iterations of gradient projection (GP): 5         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 27
+Depth of multilevel partition tree ...... 1
+Phase 1 iterations ...................... 5
+Coordinate ascent iterations ............ 13
+    variables freed in coordinate ascent  84
+    rows dropped in coordinate ascent ... 12
+Gradient ascent iterations .............. 0
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 0
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 4
+    nonzeros in final factor ............ 432 96.9% sparse
+    rows dropped from L ................. 94
+    rows added to L ..................... 45
+    rank 1 downdates to L ............... 49
+    rank 1 updates to L ................. 77
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 48
+        updowns [  2]: 15
+        updowns [  3]: 6
+        updowns [  5]: 1
+        updowns [  8]: 2
+        updowns [  9]: 1
+    No. of solves by depth in the multilevel partition tree:
+        (deeper <=> further from root of tree <=> fewer flops)
+        depth [ 0]: 0
+        depth [ 1]: 110
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 3.669262e-04
+Initialization (includes partition) ..... 4.339218e-04
+Phase 1 ................................. 1.690388e-04
+Coordinate ascent ....................... 1.077652e-04
+SSOR0 ................................... 0.000000e+00
+SSOR1 ................................... 0.000000e+00
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 2.136230e-03
+DASA line search ........................ 4.086494e-04
+Check error ............................. 2.598763e-04
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 3.912449e-04
+Column modifications of Cholesky factor . 3.087521e-04
+Cholesky factorization .................. 2.088547e-04
+Partial Cholesky factorization .......... 0.000000e+00
+Back solves ............................. 1.776218e-04
+Forward solves .......................... 3.314018e-05
+
+!!   BOEING2    143    5    4     0    6.2233501e-12   -3.1501872797473408e+02    0.003129
+ Final f                         = -3.1501873e+02  
+ Function value at final x       = -3.1501872797473396e+02  
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   FIT1D.SIF
+
+ Problem name: FIT1D
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There is 1 linear equality constraint
+ There are 23 linear inequality constraints
+ 
+ There are 1026 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: FIT1D (1026)
+sup norm of Ax: 1.890000e+03
+walltime at start:     0.000001
+normb: 1.000000e+00 normc: 1.350000e+02
+nbrk: 365 fd: 6.307774e-04
+nbrk: 313 fd: 3.532198e-04
+nbrk: 470 fd: 3.967847e-08
+nbrk: 540 fd: 1.124078e-12
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 4.893330185495870e-10    
+Final f                               : -9.146378092112087e+03   
+
+Iterations of gradient projection (GP): 4         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 1
+Depth of multilevel partition tree ...... 0
+Phase 1 iterations ...................... 5
+Coordinate ascent iterations ............ 14
+    variables freed in coordinate ascent  88
+    rows dropped in coordinate ascent ... 16
+Gradient ascent iterations .............. 9
+    variables freed in gradient ascent .. 3
+    rows dropped in gradient ascent ..... 1
+Preconditioned CG iterations ............ 27
+    variables freed in CG ............... 13
+    rows dropped in CG .................. 4
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 5
+    nonzeros in final factor ............ 78 74.0% sparse
+    rows dropped from L ................. 20
+    rows added to L ..................... 8
+    rank 1 downdates to L ............... 76
+    rank 1 updates to L ................. 167
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 18
+        updowns [  2]: 10
+        updowns [  3]: 10
+        updowns [  4]: 3
+        updowns [  5]: 2
+        updowns [  6]: 2
+        updowns [  7]: 1
+        updowns [  9]: 1
+        updowns [ 10]: 1
+        updowns [ 13]: 2
+        updowns [ 29]: 1
+        updowns [ 60]: 1
+    No. of solves:   54
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 3.178120e-04
+Initialization (includes partition) ..... 6.442070e-04
+Phase 1 ................................. 7.009506e-04
+Coordinate ascent ....................... 5.221367e-04
+SSOR0 ................................... 1.647472e-04
+SSOR1 ................................... 2.238750e-04
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 3.321171e-03
+DASA line search ........................ 9.558201e-04
+Check error ............................. 4.076958e-04
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 1.451969e-04
+Column modifications of Cholesky factor . 2.944469e-04
+Cholesky factorization .................. 2.510548e-04
+Partial Cholesky factorization .......... 0.000000e+00
+Back solves ............................. 3.886223e-05
+Forward solves .......................... 1.502037e-05
+
+!!     FIT1D   1026    4    5     0    4.8933302e-10   -9.1463780921120870e+03    0.005685
+ Final f                         = -9.1463781e+03  
+ Function value at final x       = -9.1463780921120851e+03  
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   FIT2D.SIF
+
+ Problem name: FIT2D
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There is 1 linear equality constraint
+ There are 24 linear inequality constraints
+ 
+ There are 10500 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: FIT2D (10500)
+sup norm of Ax: 2.564000e+03
+walltime at start:     0.000000
+normb: 1.000000e+00 normc: 2.032500e+03
+nbrk: 2694 fd: 4.506865e-05
+nbrk: 4886 fd: 1.311432e-04
+nbrk: 4987 fd: 2.786050e-08
+nbrk: 5277 fd: 1.683081e-11
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 9.703017556095261e-11    
+Final f                               : -6.846429329392189e+04   
+
+Iterations of gradient projection (GP): 4         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 1
+Depth of multilevel partition tree ...... 0
+Phase 1 iterations ...................... 5
+Coordinate ascent iterations ............ 12
+    variables freed in coordinate ascent  367
+    rows dropped in coordinate ascent ... 1
+Gradient ascent iterations .............. 11
+    variables freed in gradient ascent .. 13
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 15
+    variables freed in CG ............... 24
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 8
+    nonzeros in final factor ............ 210 35.4% sparse
+    rows dropped from L ................. 40
+    rows added to L ..................... 17
+    rank 1 downdates to L ............... 641
+    rank 1 updates to L ................. 1557
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 23
+        updowns [  2]: 17
+        updowns [  3]: 5
+        updowns [  4]: 3
+        updowns [  5]: 4
+        updowns [  6]: 2
+        updowns [  7]: 3
+        updowns [  8]: 2
+        updowns [  9]: 1
+        updowns [ 10]: 2
+        updowns [ 11]: 1
+        updowns [ 12]: 4
+        updowns [ 13]: 2
+        updowns [ 14]: 1
+        updowns [ 15]: 1
+        updowns [ 17]: 1
+        updowns [ 18]: 1
+        updowns [ 20]: 1
+        updowns [ 26]: 1
+        updowns [ 29]: 2
+        updowns [ 30]: 1
+        updowns [ 35]: 2
+        updowns [ 37]: 1
+        updowns [ 38]: 1
+        updowns [ 47]: 1
+        updowns [ 48]: 1
+        updowns [ 50]: 1
+        updowns [ 58]: 2
+        updowns [ 61]: 1
+        updowns [ 65]: 1
+        updowns [ 67]: 1
+        updowns [ 84]: 1
+        updowns [ 89]: 1
+        updowns [ 91]: 1
+        updowns [101]: 1
+        updowns [102]: 1
+        updowns [108]: 1
+        updowns [125]: 2
+        updowns [138]: 1
+        updowns [171]: 1
+    No. of solves:   104
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 2.842903e-03
+Initialization (includes partition) ..... 6.645918e-03
+Phase 1 ................................. 7.659912e-03
+Coordinate ascent ....................... 5.230665e-03
+SSOR0 ................................... 1.924038e-03
+SSOR1 ................................... 1.008272e-03
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 3.587985e-02
+DASA line search ........................ 2.027893e-02
+Check error ............................. 3.005505e-03
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 5.981922e-04
+Column modifications of Cholesky factor . 2.040625e-03
+Cholesky factorization .................. 2.078295e-03
+Partial Cholesky factorization .......... 0.000000e+00
+Back solves ............................. 8.702278e-05
+Forward solves .......................... 3.123283e-05
+
+!!     FIT2D  10500    4    8     0    9.7030176e-11   -6.8464293293921888e+04    0.057693
+ Final f                         = -6.8464293e+04  
+ Function value at final x       = -6.8464293293921888e+04  
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   PT.SIF
+
+ Problem name: PT
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 501 linear inequality constraints
+ 
+ There are 2 free variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: PT (2)
+sup norm of Ax: 1.083332e+00
+walltime at start:     0.000000
+normb: 1.250000e-01 normc: 6.250000e-02
+nbrk: 1 fd: 2.900387e+00
+nbrk: 0 fd: 6.750380e-12
+nbrk: 1 fd: 6.147696e-08
+nbrk: 1 fd: 1.945078e-11
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 8.467980616978315e-13    
+Final f                               : 1.783942254303165e-01    
+
+Iterations of gradient projection (GP): 5         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 1
+Depth of multilevel partition tree ...... 0
+Phase 1 iterations ...................... 7
+Coordinate ascent iterations ............ 12
+    variables freed in coordinate ascent  0
+    rows dropped in coordinate ascent ... 110
+Gradient ascent iterations .............. 30
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 27
+Preconditioned CG iterations ............ 36
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 12
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 6
+    nonzeros in final factor ............ 3 100.0% sparse
+    rows dropped from L ................. 501
+    rows added to L ..................... 89
+    rank 1 downdates to L ............... 0
+    rank 1 updates to L ................. 0
+    Size breakdown of the updates ([size]: number of this size):
+    No. of solves:   379
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 6.699562e-05
+Initialization (includes partition) ..... 1.642704e-04
+Phase 1 ................................. 1.919270e-04
+Coordinate ascent ....................... 2.765656e-05
+SSOR0 ................................... 1.285076e-04
+SSOR1 ................................... 1.068115e-04
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 1.365781e-02
+DASA line search ........................ 5.283356e-04
+Check error ............................. 1.618862e-04
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 9.253979e-03
+Column modifications of Cholesky factor . 0.000000e+00
+Cholesky factorization .................. 1.560926e-03
+Partial Cholesky factorization .......... 0.000000e+00
+Back solves ............................. 1.082182e-03
+Forward solves .......................... 3.075600e-05
+
+!!        PT      2    5    6     0    8.4679806e-13    1.7839422543031649e-01    0.014302
+ Final f                         = 1.7839423e-01   
+ Function value at final x       = 1.7839422543031649e-01   
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   SC105.SIF
+
+ Problem name: SC105
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 45 linear equality constraints
+ There are 60 linear inequality constraints
+ 
+ There are 103 variables bounded only from below 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: SC105 (103)
+sup norm of Ax: 2.000000e+00
+walltime at start:     0.000000
+normb: 1.000000e+02 normc: 1.000000e+00
+nbrk: 13 fd: 4.770265e-26
+nbrk: 8 fd: 3.816245e-26
+nbrk: 10 fd: -4.819074e-36
+nbrk: 16 fd: 5.428836e-06
+nbrk: 11 fd: 1.637432e-09
+nbrk: 35 fd: 2.609896e-16
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 4.912412175280568e-15    
+Final f                               : -5.220206121170724e+01   
+
+Iterations of gradient projection (GP): 7         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 2
+Depth of multilevel partition tree ...... 1
+Phase 1 iterations ...................... 5
+Coordinate ascent iterations ............ 11
+    variables freed in coordinate ascent  19
+    rows dropped in coordinate ascent ... 2
+Gradient ascent iterations .............. 0
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 0
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 5
+    nonzeros in final factor ............ 457 91.8% sparse
+    rows dropped from L ................. 31
+    rows added to L ..................... 17
+    rank 1 downdates to L ............... 15
+    rank 1 updates to L ................. 43
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 21
+        updowns [  2]: 3
+        updowns [  3]: 5
+        updowns [  4]: 1
+        updowns [  5]: 1
+        updowns [  7]: 1
+    No. of solves by depth in the multilevel partition tree:
+        (deeper <=> further from root of tree <=> fewer flops)
+        depth [ 0]: 0
+        depth [ 1]: 49
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 1.058578e-04
+Initialization (includes partition) ..... 1.509190e-04
+Phase 1 ................................. 8.797646e-05
+Coordinate ascent ....................... 4.315376e-05
+SSOR0 ................................... 0.000000e+00
+SSOR1 ................................... 0.000000e+00
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 9.994507e-04
+DASA line search ........................ 1.208782e-04
+Check error ............................. 1.490116e-04
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 1.397133e-04
+Column modifications of Cholesky factor . 1.509190e-04
+Cholesky factorization .................. 1.847744e-04
+Partial Cholesky factorization .......... 0.000000e+00
+Back solves ............................. 7.438660e-05
+Forward solves .......................... 3.194809e-05
+
+!!     SC105    103    7    5     0    4.9124122e-15   -5.2202061211707239e+01    0.001506
+ Final f                         = -5.2202061e+01  
+ Function value at final x       = -5.2202061211707239e+01  
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   SC50A.SIF
+
+ Problem name: SC50A
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 20 linear equality constraints
+ There are 30 linear inequality constraints
+ 
+ There are 48 variables bounded only from below 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: SC50A (48)
+sup norm of Ax: 2.000000e+00
+walltime at start:     0.000000
+normb: 8.500000e+01 normc: 1.000000e+00
+nbrk: 6 fd: 6.819269e-31
+nbrk: 2 fd: 5.736316e-05
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 1.133422086007783e-15    
+Final f                               : -6.457507705856450e+01   
+
+Iterations of gradient projection (GP): 3         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 2
+Depth of multilevel partition tree ...... 1
+Phase 1 iterations ...................... 5
+Coordinate ascent iterations ............ 6
+    variables freed in coordinate ascent  10
+    rows dropped in coordinate ascent ... 0
+Gradient ascent iterations .............. 0
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 0
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 2
+    nonzeros in final factor ............ 191 85.0% sparse
+    rows dropped from L ................. 8
+    rows added to L ..................... 16
+    rank 1 downdates to L ............... 2
+    rank 1 updates to L ................. 10
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 6
+        updowns [  2]: 3
+    No. of solves by depth in the multilevel partition tree:
+        (deeper <=> further from root of tree <=> fewer flops)
+        depth [ 0]: 0
+        depth [ 1]: 18
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 8.583069e-05
+Initialization (includes partition) ..... 1.270771e-04
+Phase 1 ................................. 5.698204e-05
+Coordinate ascent ....................... 1.883507e-05
+SSOR0 ................................... 0.000000e+00
+SSOR1 ................................... 0.000000e+00
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 3.259182e-04
+DASA line search ........................ 3.194809e-05
+Check error ............................. 5.626678e-05
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 5.102158e-05
+Column modifications of Cholesky factor . 3.600121e-05
+Cholesky factorization .................. 5.507469e-05
+Partial Cholesky factorization .......... 0.000000e+00
+Back solves ............................. 1.692772e-05
+Forward solves .......................... 9.775162e-06
+
+!!     SC50A     48    3    2     0    1.1334221e-15   -6.4575077058564503e+01    0.000664
+ Final f                         = -6.4575077e+01  
+ Function value at final x       = -6.4575077058564503e+01  
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   SC50B.SIF
+
+ Problem name: SC50B
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 20 linear equality constraints
+ There are 30 linear inequality constraints
+ 
+ There are 48 variables bounded only from below 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: SC50B (48)
+sup norm of Ax: 3.000000e+00
+walltime at start:     0.000001
+normb: 1.500000e+02 normc: 1.000000e+00
+nbrk: 12 fd: 6.596579e-04
+nbrk: 5 fd: 5.125464e-07
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 9.803186278222590e-15    
+Final f                               : -6.999999999999999e+01   
+
+Iterations of gradient projection (GP): 3         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 3
+Depth of multilevel partition tree ...... 1
+Phase 1 iterations ...................... 5
+Coordinate ascent iterations ............ 5
+    variables freed in coordinate ascent  5
+    rows dropped in coordinate ascent ... 0
+Gradient ascent iterations .............. 0
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 0
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 4
+    nonzeros in final factor ............ 237 81.4% sparse
+    rows dropped from L ................. 5
+    rows added to L ..................... 2
+    rank 1 downdates to L ............... 0
+    rank 1 updates to L ................. 7
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 5
+        updowns [  2]: 1
+    No. of solves by depth in the multilevel partition tree:
+        (deeper <=> further from root of tree <=> fewer flops)
+        depth [ 0]: 0
+        depth [ 1]: 13
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 7.104874e-05
+Initialization (includes partition) ..... 1.049042e-04
+Phase 1 ................................. 5.698204e-05
+Coordinate ascent ....................... 1.478195e-05
+SSOR0 ................................... 0.000000e+00
+SSOR1 ................................... 0.000000e+00
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 2.965927e-04
+DASA line search ........................ 2.622604e-05
+Check error ............................. 4.696846e-05
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 3.886223e-05
+Column modifications of Cholesky factor . 2.312660e-05
+Cholesky factorization .................. 8.821487e-05
+Partial Cholesky factorization .......... 0.000000e+00
+Back solves ............................. 1.621246e-05
+Forward solves .......................... 8.583069e-06
+
+!!     SC50B     48    3    4     0    9.8031863e-15   -6.9999999999999986e+01    0.000589
+ Final f                         = -7.0000000e+01  
+ Function value at final x       = -6.9999999999999986e+01  
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   SHARE2B.SIF
+
+ Problem name: SHARE2B
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 13 linear equality constraints
+ There are 83 linear inequality constraints
+ 
+ There are 79 variables bounded only from below 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: SHARE2B (79)
+sup norm of Ax: 1.030000e+02
+walltime at start:     0.000001
+normb: 1.050000e+01 normc: 3.700000e+00
+nbrk: 33 fd: 3.889803e-01
+nbrk: 6 fd: 2.941274e-08
+nbrk: 7 fd: 5.114522e-09
+nbrk: 37 fd: 1.831526e-14
+nbrk: 56 fd: 5.835018e-15
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 2.948648173335427e-15    
+Final f                               : -4.157322407414157e+02   
+
+Iterations of gradient projection (GP): 6         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 1
+Depth of multilevel partition tree ...... 0
+Phase 1 iterations ...................... 5
+Coordinate ascent iterations ............ 6
+    variables freed in coordinate ascent  5
+    rows dropped in coordinate ascent ... 10
+Gradient ascent iterations .............. 0
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 0
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 3
+    nonzeros in final factor ............ 299 93.6% sparse
+    rows dropped from L ................. 53
+    rows added to L ..................... 54
+    rank 1 downdates to L ............... 30
+    rank 1 updates to L ................. 39
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 7
+        updowns [  2]: 8
+        updowns [  3]: 5
+        updowns [  4]: 2
+        updowns [  5]: 1
+        updowns [  6]: 1
+        updowns [ 12]: 1
+    No. of solves:   43
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 1.239777e-04
+Initialization (includes partition) ..... 1.742840e-04
+Phase 1 ................................. 8.106232e-05
+Coordinate ascent ....................... 3.385544e-05
+SSOR0 ................................... 0.000000e+00
+SSOR1 ................................... 0.000000e+00
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 8.535385e-04
+DASA line search ........................ 9.846687e-05
+Check error ............................. 1.420975e-04
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 2.288818e-04
+Column modifications of Cholesky factor . 1.289845e-04
+Cholesky factorization .................. 9.393692e-05
+Partial Cholesky factorization .......... 0.000000e+00
+Back solves ............................. 4.529953e-05
+Forward solves .......................... 1.859665e-05
+
+!!   SHARE2B     79    6    3     0    2.9486482e-15   -4.1573224074141569e+02    0.001385
+ Final f                         = -4.1573224e+02  
+ Function value at final x       = -4.1573224074141575e+02  
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   TFI2.SIF
+
+ Problem name: TFI2
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 101 linear inequality constraints
+ 
+ There are 3 free variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: TFI2 (3)
+sup norm of Ax: 1.000000e+00
+walltime at start:     0.000000
+normb: 7.787039e-01 normc: 1.250000e-01
+nbrk: 1 fd: 2.947822e-01
+nbrk: 1 fd: 2.605088e-13
+nbrk: 1 fd: 4.821915e-11
+nbrk: 1 fd: 2.722387e-12
+nbrk: 1 fd: 7.473385e-14
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 8.905699084678442e-16    
+Final f                               : 6.490311069639092e-01    
+
+Iterations of gradient projection (GP): 6         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 1
+Depth of multilevel partition tree ...... 0
+Phase 1 iterations ...................... 5
+Coordinate ascent iterations ............ 9
+    variables freed in coordinate ascent  0
+    rows dropped in coordinate ascent ... 153
+Gradient ascent iterations .............. 31
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 55
+Preconditioned CG iterations ............ 10
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 2
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 5
+    nonzeros in final factor ............ 6 99.9% sparse
+    rows dropped from L ................. 150
+    rows added to L ..................... 130
+    rank 1 downdates to L ............... 0
+    rank 1 updates to L ................. 0
+    Size breakdown of the updates ([size]: number of this size):
+    No. of solves:   91
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 4.601479e-05
+Initialization (includes partition) ..... 8.988380e-05
+Phase 1 ................................. 6.508827e-05
+Coordinate ascent ....................... 2.074242e-05
+SSOR0 ................................... 4.696846e-05
+SSOR1 ................................... 2.312660e-05
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 1.534939e-03
+DASA line search ........................ 1.032352e-04
+Check error ............................. 7.724762e-05
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 8.823872e-04
+Column modifications of Cholesky factor . 0.000000e+00
+Cholesky factorization .................. 7.772446e-05
+Partial Cholesky factorization .......... 0.000000e+00
+Back solves ............................. 8.559227e-05
+Forward solves .......................... 1.120567e-05
+
+!!      TFI2      3    6    5     0    8.9056991e-16    6.4903110696390920e-01    0.001882
+ Final f                         = 6.4903111e-01   
+ Function value at final x       = 6.4903110696390920e-01   
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   SHELL.SIF
+
+ Problem name: SHELL
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 534 linear equality constraints
+ There are 2 linear inequality constraints
+ 
+ There are 1408 variables bounded only from below 
+ There are 117 variables bounded from below and above 
+ There are 250 fixed variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: SHELL (1775)
+sup norm of Ax: 1.000000e+00
+walltime at start:     0.000000
+normb: 1.421500e+05 normc: 4.055000e+03
+nbrk: 485 fd: 3.095782e-02
+nbrk: 556 fd: 4.859588e-06
+nbrk: 566 fd: 1.536449e-08
+nbrk: 497 fd: 1.074609e-10
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 7.020288192566543e-12    
+Final f                               : 1.208825346017265e+09    
+
+Iterations of gradient projection (GP): 4         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 8
+Depth of multilevel partition tree ...... 1
+Phase 1 iterations ...................... 8
+Coordinate ascent iterations ............ 1
+    variables freed in coordinate ascent  108
+    rows dropped in coordinate ascent ... 0
+Gradient ascent iterations .............. 0
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 0
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 10
+    nonzeros in final factor ............ 1300 99.1% sparse
+    rows dropped from L ................. 4
+    rows added to L ..................... 1
+    rank 1 downdates to L ............... 107
+    rank 1 updates to L ................. 696
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 80
+        updowns [  2]: 50
+        updowns [  3]: 29
+        updowns [  4]: 24
+        updowns [  5]: 11
+        updowns [  6]: 7
+        updowns [  7]: 2
+        updowns [  8]: 7
+        updowns [  9]: 7
+        updowns [ 10]: 3
+        updowns [ 12]: 1
+        updowns [ 13]: 1
+        updowns [ 15]: 1
+        updowns [ 16]: 1
+        updowns [ 18]: 2
+        updowns [ 19]: 1
+        updowns [ 21]: 1
+        updowns [ 23]: 1
+        updowns [ 25]: 1
+    No. of solves by depth in the multilevel partition tree:
+        (deeper <=> further from root of tree <=> fewer flops)
+        depth [ 0]: 116
+        depth [ 1]: 320
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 1.497030e-03
+Initialization (includes partition) ..... 1.662016e-03
+Phase 1 ................................. 8.549690e-04
+Coordinate ascent ....................... 4.792213e-05
+SSOR0 ................................... 0.000000e+00
+SSOR1 ................................... 0.000000e+00
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 9.501219e-03
+DASA line search ........................ 4.023790e-03
+Check error ............................. 8.227825e-04
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 1.873970e-04
+Column modifications of Cholesky factor . 1.139879e-03
+Cholesky factorization .................. 1.008272e-03
+Partial Cholesky factorization .......... 1.778603e-04
+Back solves ............................. 1.246691e-03
+Forward solves .......................... 2.298355e-04
+
+!!     SHELL   1775    4   10     0    7.0202882e-12    1.2088253460172653e+09    0.013146
+ Final f                         = 1.2088253e+09   
+ Function value at final x       = 1.2088253460172675e+09   
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   SIERRA.SIF
+
+ Problem name: SIERRA
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 528 linear equality constraints
+ There are 699 linear inequality constraints
+ 
+ There are 20 variables bounded only from above 
+ There are 2016 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: SIERRA (2036)
+sup norm of Ax: 1.000000e+05
+walltime at start:     0.000001
+normb: 5.000000e+03 normc: 4.775900e+04
+nbrk: 857 fd: 1.129240e-02
+nbrk: 633 fd: 3.367487e-06
+nbrk: 676 fd: 9.841285e-07
+nbrk: 695 fd: 1.755964e-08
+nbrk: 717 fd: 1.050412e-10
+nbrk: 726 fd: 7.718300e-13
+nbrk: 716 fd: 6.701498e-16
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 1.074260330004177e-17    
+Final f                               : 1.539436218363192e+07    
+
+Iterations of gradient projection (GP): 8         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 15
+Depth of multilevel partition tree ...... 2
+Phase 1 iterations ...................... 10
+Coordinate ascent iterations ............ 1
+    variables freed in coordinate ascent  89
+    rows dropped in coordinate ascent ... 2
+Gradient ascent iterations .............. 0
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 0
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 9
+    nonzeros in final factor ............ 3460 99.5% sparse
+    rows dropped from L ................. 84
+    rows added to L ..................... 27
+    rank 1 downdates to L ............... 111
+    rank 1 updates to L ................. 738
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 43
+        updowns [  2]: 36
+        updowns [  3]: 17
+        updowns [  4]: 16
+        updowns [  5]: 6
+        updowns [  6]: 12
+        updowns [  7]: 5
+        updowns [  8]: 7
+        updowns [  9]: 3
+        updowns [ 10]: 4
+        updowns [ 11]: 1
+        updowns [ 12]: 6
+        updowns [ 13]: 1
+        updowns [ 14]: 2
+        updowns [ 15]: 4
+        updowns [ 17]: 1
+        updowns [ 18]: 1
+        updowns [ 19]: 1
+        updowns [ 21]: 1
+        updowns [ 22]: 1
+        updowns [ 23]: 1
+        updowns [ 26]: 1
+        updowns [ 29]: 1
+    No. of solves by depth in the multilevel partition tree:
+        (deeper <=> further from root of tree <=> fewer flops)
+        depth [ 0]: 72
+        depth [ 1]: 253
+        depth [ 2]: 319
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 3.931999e-03
+Initialization (includes partition) ..... 4.179239e-03
+Phase 1 ................................. 1.513004e-03
+Coordinate ascent ....................... 5.793571e-05
+SSOR0 ................................... 0.000000e+00
+SSOR1 ................................... 0.000000e+00
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 1.409292e-02
+DASA line search ........................ 4.262209e-03
+Check error ............................. 1.327515e-03
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 5.774498e-04
+Column modifications of Cholesky factor . 2.321482e-03
+Cholesky factorization .................. 1.405239e-03
+Partial Cholesky factorization .......... 1.276255e-03
+Back solves ............................. 1.598835e-03
+Forward solves .......................... 5.540848e-04
+
+!!    SIERRA   2036    8    9     0    1.0742603e-17    1.5394362183631925e+07    0.021985
+ Final f                         = 1.5394362e+07   
+ Function value at final x       = 1.5394362183631932e+07   
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   SIPOW1M.SIF
+
+ Problem name: SIPOW1M
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 2000 linear inequality constraints
+ 
+ There are 2 free variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: SIPOW1M (2)
+sup norm of Ax: 9.999988e-01
+walltime at start:     0.000001
+normb: 1.000000e+00 normc: 3.125000e-02
+nbrk: 0 fd: 5.493182e-04
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 1.122376673241932e-13    
+Final f                               : -1.000001234001523e+00   
+
+Iterations of gradient projection (GP): 3         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 1
+Depth of multilevel partition tree ...... 0
+Phase 1 iterations ...................... 12
+Coordinate ascent iterations ............ 1
+    variables freed in coordinate ascent  0
+    rows dropped in coordinate ascent ... 0
+Gradient ascent iterations .............. 1
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 3
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 3
+    nonzeros in final factor ............ 3 100.0% sparse
+    rows dropped from L ................. 417
+    rows added to L ..................... 0
+    rank 1 downdates to L ............... 0
+    rank 1 updates to L ................. 0
+    Size breakdown of the updates ([size]: number of this size):
+    No. of solves:   183
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 1.740456e-04
+Initialization (includes partition) ..... 4.010201e-04
+Phase 1 ................................. 2.958775e-04
+Coordinate ascent ....................... 2.861023e-06
+SSOR0 ................................... 4.053116e-06
+SSOR1 ................................... 1.192093e-05
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 7.667804e-02
+DASA line search ........................ 4.799366e-04
+Check error ............................. 7.390976e-05
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 5.543852e-02
+Column modifications of Cholesky factor . 0.000000e+00
+Cholesky factorization .................. 1.712203e-02
+Partial Cholesky factorization .......... 0.000000e+00
+Back solves ............................. 2.464771e-03
+Forward solves .......................... 2.868176e-04
+
+!!   SIPOW1M      2    3    3     0    1.1223767e-13   -1.0000012340015227e+00    0.077684
+ Final f                         = -1.0000012e+00  
+ Function value at final x       = -1.0000012340015227e+00  
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   SIPOW1.SIF
+
+ Problem name: SIPOW1
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 2000 linear inequality constraints
+ 
+ There are 2 free variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: SIPOW1 (2)
+sup norm of Ax: 1.000000e+00
+walltime at start:     0.000001
+normb: 1.000000e+00 normc: 3.125000e-02
+nbrk: 0 fd: 5.493164e-04
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 5.014912096685095e-14    
+Final f                               : -1.000000000000000e+00   
+
+Iterations of gradient projection (GP): 3         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 1
+Depth of multilevel partition tree ...... 0
+Phase 1 iterations ...................... 12
+Coordinate ascent iterations ............ 1
+    variables freed in coordinate ascent  0
+    rows dropped in coordinate ascent ... 0
+Gradient ascent iterations .............. 1
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 1
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 3
+    nonzeros in final factor ............ 1 100.0% sparse
+    rows dropped from L ................. 419
+    rows added to L ..................... 0
+    rank 1 downdates to L ............... 0
+    rank 1 updates to L ................. 0
+    Size breakdown of the updates ([size]: number of this size):
+    No. of solves:   184
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 1.881123e-04
+Initialization (includes partition) ..... 4.029274e-04
+Phase 1 ................................. 3.020763e-04
+Coordinate ascent ....................... 4.053116e-06
+SSOR0 ................................... 5.006790e-06
+SSOR1 ................................... 5.006790e-06
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 7.702994e-02
+DASA line search ........................ 5.044937e-04
+Check error ............................. 8.106232e-05
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 5.579567e-02
+Column modifications of Cholesky factor . 0.000000e+00
+Cholesky factorization .................. 1.707506e-02
+Partial Cholesky factorization .......... 0.000000e+00
+Back solves ............................. 2.449036e-03
+Forward solves .......................... 2.901554e-04
+
+!!    SIPOW1      2    3    3     0    5.0149121e-14   -1.0000000000000000e+00    0.078051
+ Final f                         = -1.0000000e+00  
+ Function value at final x       = -1.0000000000000000e+00  
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   SIPOW2M.SIF
+
+ Problem name: SIPOW2M
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 2000 linear inequality constraints
+ 
+ There are 2 free variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: SIPOW2M (2)
+sup norm of Ax: 1.000000e+00
+walltime at start:     0.000001
+normb: 1.000000e+00 normc: 3.125000e-02
+nbrk: 0 fd: 5.493236e-04
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 7.557977418615779e-14    
+Final f                               : -1.000004935024355e+00   
+
+Iterations of gradient projection (GP): 3         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 1
+Depth of multilevel partition tree ...... 0
+Phase 1 iterations ...................... 12
+Coordinate ascent iterations ............ 1
+    variables freed in coordinate ascent  0
+    rows dropped in coordinate ascent ... 0
+Gradient ascent iterations .............. 1
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 3
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 3
+    nonzeros in final factor ............ 3 100.0% sparse
+    rows dropped from L ................. 208
+    rows added to L ..................... 0
+    rank 1 downdates to L ............... 0
+    rank 1 updates to L ................. 0
+    Size breakdown of the updates ([size]: number of this size):
+    No. of solves:   111
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 1.878738e-04
+Initialization (includes partition) ..... 3.750324e-04
+Phase 1 ................................. 2.620220e-04
+Coordinate ascent ....................... 4.053116e-06
+SSOR0 ................................... 5.006790e-06
+SSOR1 ................................... 1.287460e-05
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 1.473308e-02
+DASA line search ........................ 2.150536e-04
+Check error ............................. 7.009506e-05
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 7.954121e-03
+Column modifications of Cholesky factor . 0.000000e+00
+Cholesky factorization .................. 5.483150e-03
+Partial Cholesky factorization .......... 0.000000e+00
+Back solves ............................. 5.352497e-04
+Forward solves .......................... 7.987022e-05
+
+!!   SIPOW2M      2    3    3     0    7.5579774e-14   -1.0000049350243545e+00    0.015643
+ Final f                         = -1.0000049e+00  
+ Function value at final x       = -1.0000049350243545e+00  
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   SIPOW2.SIF
+
+ Problem name: SIPOW2
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 2000 linear inequality constraints
+ 
+ There are 2 free variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: SIPOW2 (2)
+sup norm of Ax: 1.000000e+00
+walltime at start:     0.000000
+normb: 1.000000e+00 normc: 3.125000e-02
+nbrk: 0 fd: 5.493164e-04
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 5.092194027539362e-14    
+Final f                               : -1.000000000000000e+00   
+
+Iterations of gradient projection (GP): 3         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 1
+Depth of multilevel partition tree ...... 0
+Phase 1 iterations ...................... 12
+Coordinate ascent iterations ............ 1
+    variables freed in coordinate ascent  0
+    rows dropped in coordinate ascent ... 0
+Gradient ascent iterations .............. 1
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 1
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 3
+    nonzeros in final factor ............ 1 100.0% sparse
+    rows dropped from L ................. 210
+    rows added to L ..................... 0
+    rank 1 downdates to L ............... 0
+    rank 1 updates to L ................. 0
+    Size breakdown of the updates ([size]: number of this size):
+    No. of solves:   112
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 1.800060e-04
+Initialization (includes partition) ..... 3.621578e-04
+Phase 1 ................................. 2.720356e-04
+Coordinate ascent ....................... 4.053116e-06
+SSOR0 ................................... 4.053116e-06
+SSOR1 ................................... 5.006790e-06
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 1.477194e-02
+DASA line search ........................ 2.183914e-04
+Check error ............................. 6.699562e-05
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 8.045435e-03
+Column modifications of Cholesky factor . 0.000000e+00
+Cholesky factorization .................. 5.452871e-03
+Partial Cholesky factorization .......... 0.000000e+00
+Back solves ............................. 5.314350e-04
+Forward solves .......................... 7.915497e-05
+
+!!    SIPOW2      2    3    3     0    5.0921940e-14   -1.0000000000000000e+00    0.015669
+ Final f                         = -1.0000000e+00  
+ Function value at final x       = -1.0000000000000000e+00  
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   SIPOW3.SIF
+
+ Problem name: SIPOW3
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 2000 linear inequality constraints
+ 
+ There are 4 free variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: SIPOW3 (4)
+sup norm of Ax: 1.000000e+00
+walltime at start:     0.000001
+normb: 4.980000e-01 normc: 6.250000e-02
+nbrk: 3 fd: 1.373119e+01
+nbrk: 3 fd: 1.729632e-14
+nbrk: 3 fd: 2.919327e-06
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 4.087701675412310e-15    
+Final f                               : 5.346586469505030e-01    
+
+Iterations of gradient projection (GP): 4         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 1
+Depth of multilevel partition tree ...... 0
+Phase 1 iterations ...................... 12
+Coordinate ascent iterations ............ 7
+    variables freed in coordinate ascent  0
+    rows dropped in coordinate ascent ... 28
+Gradient ascent iterations .............. 13
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 10
+Preconditioned CG iterations ............ 41
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 7
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 3
+    nonzeros in final factor ............ 15 100.0% sparse
+    rows dropped from L ................. 1528
+    rows added to L ..................... 14
+    rank 1 downdates to L ............... 0
+    rank 1 updates to L ................. 0
+    Size breakdown of the updates ([size]: number of this size):
+    No. of solves:   123
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 2.779961e-04
+Initialization (includes partition) ..... 5.140305e-04
+Phase 1 ................................. 6.270409e-04
+Coordinate ascent ....................... 1.525879e-05
+SSOR0 ................................... 3.004074e-05
+SSOR1 ................................... 1.108646e-04
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 1.641151e+00
+DASA line search ........................ 4.568100e-04
+Check error ............................. 3.302097e-04
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 1.593368e+00
+Column modifications of Cholesky factor . 0.000000e+00
+Cholesky factorization .................. 4.132080e-02
+Partial Cholesky factorization .......... 0.000000e+00
+Back solves ............................. 4.370451e-03
+Forward solves .......................... 5.881786e-04
+
+!!    SIPOW3      4    4    3     0    4.0877017e-15    5.3465864695050302e-01    1.642868
+ Final f                         = 5.3465865e-01   
+ Function value at final x       = 5.3465864695050302e-01   
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   SIPOW4.SIF
+
+ Problem name: SIPOW4
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 2000 linear inequality constraints
+ 
+ There are 4 free variables
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: SIPOW4 (4)
+sup norm of Ax: 1.207107e+00
+walltime at start:     0.000000
+normb: 5.000000e-01 normc: 6.250000e-02
+nbrk: 2 fd: 2.211301e+00
+nbrk: 0 fd: 7.971654e-09
+nbrk: 2 fd: 8.813002e-08
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 1.343085245440554e-14    
+Final f                               : 2.723619987436328e-01    
+
+Iterations of gradient projection (GP): 4         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 1
+Depth of multilevel partition tree ...... 0
+Phase 1 iterations ...................... 12
+Coordinate ascent iterations ............ 9
+    variables freed in coordinate ascent  0
+    rows dropped in coordinate ascent ... 1676
+Gradient ascent iterations .............. 23
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 31
+Preconditioned CG iterations ............ 28
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 134
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 3
+    nonzeros in final factor ............ 10 100.0% sparse
+    rows dropped from L ................. 1555
+    rows added to L ..................... 739
+    rank 1 downdates to L ............... 0
+    rank 1 updates to L ................. 0
+    Size breakdown of the updates ([size]: number of this size):
+    No. of solves:   552
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 2.582073e-04
+Initialization (includes partition) ..... 5.269051e-04
+Phase 1 ................................. 7.700920e-04
+Coordinate ascent ....................... 1.037121e-04
+SSOR0 ................................... 1.718998e-04
+SSOR1 ................................... 3.995895e-04
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 5.233197e-01
+DASA line search ........................ 1.490831e-03
+Check error ............................. 4.937649e-04
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 4.978392e-01
+Column modifications of Cholesky factor . 0.000000e+00
+Cholesky factorization .................. 1.166010e-02
+Partial Cholesky factorization .......... 0.000000e+00
+Back solves ............................. 8.429050e-03
+Forward solves .......................... 2.233982e-04
+
+!!    SIPOW4      4    4    3     0    1.3430852e-14    2.7236199874363276e-01    0.525273
+ Final f                         = 2.7236200e-01   
+ Function value at final x       = 2.7236199874363276e-01   
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   CRE-A.SIF
+
+ Problem name: CRE-A
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 335 linear equality constraints
+ There are 3181 linear inequality constraints
+ 
+ There are 4067 variables bounded only from below 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: CRE-A (4067)
+sup norm of Ax: 7.100000e+01
+walltime at start:     0.000001
+normb: 1.111500e+03 normc: 2.224338e+04
+nbrk: 1798 fd: 1.503337e-01
+nbrk: 1964 fd: 9.605853e-06
+nbrk: 1872 fd: 4.913379e-05
+nbrk: 1608 fd: 4.582027e-06
+nbrk: 1776 fd: 2.336609e-07
+nbrk: 1921 fd: 3.454039e-10
+nbrk: 1973 fd: 2.106824e-13
+nbrk: 1812 fd: 5.317391e-17
+nbrk: 1594 fd: 7.128278e-16
+nbrk: 1616 fd: 1.018944e-20
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 2.966219160530605e-10    
+Final f                               : 2.359540706097218e+07    
+
+Iterations of gradient projection (GP): 11        
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 286
+Depth of multilevel partition tree ...... 4
+Phase 1 iterations ...................... 15
+Coordinate ascent iterations ............ 1
+    variables freed in coordinate ascent  612
+    rows dropped in coordinate ascent ... 6
+Gradient ascent iterations .............. 0
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 0
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 26
+    nonzeros in final factor ............ 8698 99.9% sparse
+    rows dropped from L ................. 1692
+    rows added to L ..................... 157
+    rank 1 downdates to L ............... 176
+    rank 1 updates to L ................. 4805
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 169
+        updowns [  2]: 108
+        updowns [  3]: 73
+        updowns [  4]: 46
+        updowns [  5]: 40
+        updowns [  6]: 28
+        updowns [  7]: 20
+        updowns [  8]: 20
+        updowns [  9]: 18
+        updowns [ 10]: 14
+        updowns [ 11]: 16
+        updowns [ 12]: 9
+        updowns [ 13]: 6
+        updowns [ 14]: 6
+        updowns [ 15]: 7
+        updowns [ 16]: 8
+        updowns [ 17]: 10
+        updowns [ 18]: 3
+        updowns [ 19]: 7
+        updowns [ 20]: 9
+        updowns [ 21]: 3
+        updowns [ 22]: 4
+        updowns [ 24]: 5
+        updowns [ 28]: 1
+        updowns [ 29]: 1
+        updowns [ 30]: 3
+        updowns [ 32]: 1
+        updowns [ 33]: 2
+        updowns [ 34]: 1
+        updowns [ 36]: 2
+        updowns [ 37]: 1
+        updowns [ 38]: 2
+        updowns [ 39]: 2
+        updowns [ 43]: 3
+        updowns [ 44]: 1
+        updowns [ 46]: 1
+        updowns [ 47]: 1
+        updowns [ 49]: 1
+        updowns [ 54]: 1
+        updowns [ 60]: 1
+        updowns [ 62]: 1
+        updowns [ 63]: 1
+        updowns [ 68]: 1
+        updowns [ 69]: 2
+        updowns [102]: 1
+        updowns [104]: 1
+        updowns [110]: 1
+        updowns [118]: 1
+    No. of solves by depth in the multilevel partition tree:
+        (deeper <=> further from root of tree <=> fewer flops)
+        depth [ 0]: 154
+        depth [ 1]: 5557
+        depth [ 2]: 3997
+        depth [ 3]: 7757
+        depth [ 4]: 4049
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 1.597691e-02
+Initialization (includes partition) ..... 1.645184e-02
+Phase 1 ................................. 5.942106e-03
+Coordinate ascent ....................... 1.759529e-04
+SSOR0 ................................... 0.000000e+00
+SSOR1 ................................... 0.000000e+00
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 1.836064e-01
+DASA line search ........................ 6.613493e-02
+Check error ............................. 9.439707e-03
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 1.011729e-02
+Column modifications of Cholesky factor . 1.393342e-02
+Cholesky factorization .................. 1.163936e-02
+Partial Cholesky factorization .......... 1.167393e-02
+Back solves ............................. 3.211331e-02
+Forward solves .......................... 4.935980e-03
+
+!!     CRE-A   4067   11   26     0    2.9662192e-10    2.3595407060972176e+07    0.216262
+ Final f                         = 2.3595407e+07   
+ Function value at final x       = 2.3595407060972176e+07   
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   CRE-B.SIF
+
+ Problem name: CRE-B
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 4958 linear equality constraints
+ There are 4690 linear inequality constraints
+ 
+ There are 72447 variables bounded only from below 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: CRE-B (72447)
+sup norm of Ax: 7.100000e+01
+walltime at start:     0.000001
+normb: 1.111500e+03 normc: 2.224338e+04
+nbrk: 48532 fd: 9.275643e-02
+nbrk: 41088 fd: 5.469696e-06
+nbrk: 41994 fd: 2.941908e-05
+nbrk: 42781 fd: 1.394694e-05
+nbrk: 37874 fd: 8.044997e-07
+nbrk: 41717 fd: 1.128820e-09
+nbrk: 32822 fd: 6.348791e-14
+nbrk: 31610 fd: 1.373233e-16
+nbrk: 31123 fd: 1.371278e-15
+nbrk: 26823 fd: 2.642475e-25
+nbrk: 28251 fd: 3.563380e-23
+nbrk: 32236 fd: 2.517478e-22
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 1.159203935684141e-09    
+Final f                               : 2.312963989613998e+07    
+
+Iterations of gradient projection (GP): 13        
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 2409
+Depth of multilevel partition tree ...... 1
+Phase 1 iterations ...................... 21
+Coordinate ascent iterations ............ 74
+    variables freed in coordinate ascent  54739
+    rows dropped in coordinate ascent ... 2795
+Gradient ascent iterations .............. 733
+    variables freed in gradient ascent .. 40855
+    rows dropped in gradient ascent ..... 6632
+Preconditioned CG iterations ............ 126
+    variables freed in CG ............... 8586
+    rows dropped in CG .................. 1105
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 70
+    nonzeros in final factor ............ 138178 99.7% sparse
+    rows dropped from L ................. 9558
+    rows added to L ..................... 95
+    rank 1 downdates to L ............... 217
+    rank 1 updates to L ................. 38274
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 98
+        updowns [  2]: 45
+        updowns [  3]: 14
+        updowns [  4]: 21
+        updowns [  5]: 15
+        updowns [  6]: 18
+        updowns [  7]: 20
+        updowns [  8]: 16
+        updowns [  9]: 8
+        updowns [ 10]: 13
+        updowns [ 11]: 12
+        updowns [ 12]: 16
+        updowns [ 13]: 10
+        updowns [ 14]: 11
+        updowns [ 15]: 10
+        updowns [ 16]: 9
+        updowns [ 17]: 12
+        updowns [ 18]: 14
+        updowns [ 19]: 4
+        updowns [ 20]: 6
+        updowns [ 21]: 1
+        updowns [ 22]: 7
+        updowns [ 23]: 5
+        updowns [ 24]: 2
+        updowns [ 25]: 8
+        updowns [ 26]: 3
+        updowns [ 27]: 5
+        updowns [ 28]: 3
+        updowns [ 29]: 3
+        updowns [ 30]: 5
+        updowns [ 31]: 4
+        updowns [ 32]: 8
+        updowns [ 33]: 9
+        updowns [ 34]: 1
+        updowns [ 35]: 6
+        updowns [ 36]: 3
+        updowns [ 37]: 6
+        updowns [ 38]: 1
+        updowns [ 39]: 3
+        updowns [ 40]: 1
+        updowns [ 41]: 6
+        updowns [ 42]: 1
+        updowns [ 43]: 1
+        updowns [ 44]: 1
+        updowns [ 45]: 2
+        updowns [ 46]: 5
+        updowns [ 47]: 4
+        updowns [ 48]: 2
+        updowns [ 49]: 5
+        updowns [ 50]: 3
+        updowns [ 51]: 4
+        updowns [ 52]: 3
+        updowns [ 53]: 2
+        updowns [ 54]: 2
+        updowns [ 55]: 3
+        updowns [ 56]: 4
+        updowns [ 57]: 3
+        updowns [ 58]: 1
+        updowns [ 60]: 2
+        updowns [ 61]: 3
+        updowns [ 63]: 1
+        updowns [ 65]: 3
+        updowns [ 66]: 2
+        updowns [ 67]: 4
+        updowns [ 69]: 1
+        updowns [ 70]: 1
+        updowns [ 72]: 1
+        updowns [ 74]: 2
+        updowns [ 75]: 2
+        updowns [ 77]: 1
+        updowns [ 80]: 1
+        updowns [ 82]: 2
+        updowns [ 83]: 2
+        updowns [ 84]: 1
+        updowns [ 86]: 3
+        updowns [ 87]: 1
+        updowns [ 88]: 2
+        updowns [ 89]: 2
+        updowns [ 90]: 3
+        updowns [ 91]: 3
+        updowns [ 92]: 3
+        updowns [ 95]: 1
+        updowns [ 96]: 2
+        updowns [ 98]: 2
+        updowns [ 99]: 1
+        updowns [100]: 3
+        updowns [101]: 1
+        updowns [102]: 3
+        updowns [104]: 2
+        updowns [105]: 1
+        updowns [106]: 3
+        updowns [107]: 2
+        updowns [108]: 3
+        updowns [109]: 1
+        updowns [110]: 1
+        updowns [111]: 1
+        updowns [113]: 2
+        updowns [115]: 1
+        updowns [116]: 1
+        updowns [119]: 1
+        updowns [121]: 1
+        updowns [122]: 1
+        updowns [123]: 1
+        updowns [126]: 1
+        updowns [127]: 2
+        updowns [128]: 1
+        updowns [129]: 2
+        updowns [134]: 3
+        updowns [135]: 1
+        updowns [142]: 1
+        updowns [148]: 1
+        updowns [152]: 1
+        updowns [155]: 1
+        updowns [159]: 1
+        updowns [160]: 1
+        updowns [161]: 2
+        updowns [162]: 2
+        updowns [164]: 2
+        updowns [166]: 1
+        updowns [177]: 1
+        updowns [179]: 2
+        updowns [180]: 1
+        updowns [185]: 1
+        updowns [186]: 1
+        updowns [191]: 1
+        updowns [192]: 3
+        updowns [199]: 1
+        updowns [210]: 1
+        updowns [212]: 1
+        updowns [217]: 1
+        updowns [219]: 1
+        updowns [220]: 1
+        updowns [232]: 2
+        updowns [236]: 1
+        updowns [238]: 1
+        updowns [250]: 1
+        updowns [255]: 1
+        updowns [260]: 1
+        updowns [264]: 1
+        updowns [265]: 1
+        updowns [274]: 1
+        updowns [279]: 1
+        updowns [302]: 1
+        updowns [317]: 1
+        updowns [318]: 1
+        updowns [344]: 1
+        updowns [345]: 1
+        updowns [347]: 2
+        updowns [353]: 1
+        updowns [367]: 1
+        updowns [371]: 1
+        updowns [373]: 2
+        updowns [420]: 1
+        updowns [426]: 1
+        updowns [447]: 1
+        updowns [455]: 1
+        updowns [481]: 1
+        updowns [489]: 1
+        updowns [505]: 1
+        updowns [513]: 1
+        updowns [516]: 1
+        updowns [554]: 1
+        updowns [619]: 1
+        updowns [649]: 1
+        updowns [651]: 1
+        updowns [>=807]: 3
+    No. of solves by depth in the multilevel partition tree:
+        (deeper <=> further from root of tree <=> fewer flops)
+        depth [ 0]: 78
+        depth [ 1]: 455146
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 1.715629e-01
+Initialization (includes partition) ..... 1.783488e-01
+Phase 1 ................................. 7.749701e-02
+Coordinate ascent ....................... 8.202720e-02
+SSOR0 ................................... 7.200859e-01
+SSOR1 ................................... 8.154655e-02
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 1.046412e+01
+DASA line search ........................ 8.728604e-01
+Check error ............................. 9.665227e-02
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 2.114172e+00
+Column modifications of Cholesky factor . 2.856623e+00
+Cholesky factorization .................. 2.679717e+00
+Partial Cholesky factorization .......... 9.846687e-05
+Back solves ............................. 3.927333e-01
+Forward solves .......................... 1.605248e-02
+
+!!     CRE-B  72447   13   70     0    1.1592039e-09    2.3129639896139979e+07   10.833907
+ Final f                         = 2.3129640e+07   
+ Function value at final x       = 2.3129639896139916e+07   
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   CRE-C.SIF
+
+ Problem name: CRE-C
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 335 linear equality constraints
+ There are 2733 linear inequality constraints
+ 
+ There are 3678 variables bounded only from below 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: CRE-C (3678)
+sup norm of Ax: 7.100000e+01
+walltime at start:     0.000001
+normb: 1.079500e+03 normc: 2.224338e+04
+nbrk: 2965 fd: 6.260157e-01
+nbrk: 1919 fd: 7.255503e-07
+nbrk: 1797 fd: 1.956821e-06
+nbrk: 1223 fd: 2.899726e-06
+nbrk: 1976 fd: 2.378396e-09
+nbrk: 1547 fd: 1.905399e-11
+nbrk: 1721 fd: 2.118927e-12
+nbrk: 1875 fd: 3.878344e-15
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 6.995301941455572e-10    
+Final f                               : 2.527511614111417e+07    
+
+Iterations of gradient projection (GP): 9         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 202
+Depth of multilevel partition tree ...... 3
+Phase 1 iterations ...................... 14
+Coordinate ascent iterations ............ 1
+    variables freed in coordinate ascent  506
+    rows dropped in coordinate ascent ... 9
+Gradient ascent iterations .............. 0
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 0
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 30
+    nonzeros in final factor ............ 10283 99.8% sparse
+    rows dropped from L ................. 1844
+    rows added to L ..................... 64
+    rank 1 downdates to L ............... 134
+    rank 1 updates to L ................. 5704
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 190
+        updowns [  2]: 100
+        updowns [  3]: 69
+        updowns [  4]: 48
+        updowns [  5]: 42
+        updowns [  6]: 32
+        updowns [  7]: 27
+        updowns [  8]: 16
+        updowns [  9]: 15
+        updowns [ 10]: 18
+        updowns [ 11]: 16
+        updowns [ 12]: 12
+        updowns [ 13]: 9
+        updowns [ 14]: 6
+        updowns [ 15]: 9
+        updowns [ 16]: 5
+        updowns [ 17]: 4
+        updowns [ 19]: 7
+        updowns [ 20]: 3
+        updowns [ 21]: 4
+        updowns [ 22]: 4
+        updowns [ 23]: 4
+        updowns [ 24]: 2
+        updowns [ 25]: 4
+        updowns [ 26]: 3
+        updowns [ 27]: 2
+        updowns [ 28]: 1
+        updowns [ 29]: 2
+        updowns [ 30]: 1
+        updowns [ 31]: 2
+        updowns [ 32]: 2
+        updowns [ 33]: 4
+        updowns [ 34]: 4
+        updowns [ 35]: 1
+        updowns [ 38]: 1
+        updowns [ 40]: 4
+        updowns [ 41]: 1
+        updowns [ 46]: 1
+        updowns [ 48]: 1
+        updowns [ 50]: 2
+        updowns [ 51]: 3
+        updowns [ 54]: 1
+        updowns [ 55]: 1
+        updowns [ 59]: 1
+        updowns [ 67]: 1
+        updowns [ 70]: 1
+        updowns [ 83]: 1
+        updowns [ 84]: 1
+        updowns [ 86]: 1
+        updowns [ 88]: 1
+        updowns [ 94]: 1
+        updowns [102]: 1
+        updowns [107]: 1
+        updowns [116]: 1
+        updowns [130]: 1
+        updowns [148]: 1
+    No. of solves by depth in the multilevel partition tree:
+        (deeper <=> further from root of tree <=> fewer flops)
+        depth [ 0]: 225
+        depth [ 1]: 3860
+        depth [ 2]: 6172
+        depth [ 3]: 2892
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 1.310110e-02
+Initialization (includes partition) ..... 1.352096e-02
+Phase 1 ................................. 5.069017e-03
+Coordinate ascent ....................... 1.609325e-04
+SSOR0 ................................... 0.000000e+00
+SSOR1 ................................... 0.000000e+00
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 1.620386e-01
+DASA line search ........................ 5.767775e-02
+Check error ............................. 8.994818e-03
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 1.005507e-02
+Column modifications of Cholesky factor . 1.510024e-02
+Cholesky factorization .................. 1.358247e-02
+Partial Cholesky factorization .......... 1.220751e-02
+Back solves ............................. 2.711892e-02
+Forward solves .......................... 3.900766e-03
+
+!!     CRE-C   3678    9   30     0    6.9953019e-10    2.5275116141114168e+07    0.189459
+ Final f                         = 2.5275116e+07   
+ Function value at final x       = 2.5275116141114149e+07   
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   CRE-D.SIF
+
+ Problem name: CRE-D
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 4958 linear equality constraints
+ There are 3968 linear inequality constraints
+ 
+ There are 69980 variables bounded only from below 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: CRE-D (69980)
+sup norm of Ax: 7.100000e+01
+walltime at start:     0.000000
+normb: 1.079500e+03 normc: 2.224338e+04
+nbrk: 40789 fd: 2.017981e-01
+nbrk: 36956 fd: 2.348618e-06
+nbrk: 35909 fd: 7.715529e-05
+nbrk: 46669 fd: 9.923852e-06
+nbrk: 34921 fd: 3.687757e-08
+nbrk: 36657 fd: 3.642564e-12
+nbrk: 32010 fd: 7.409874e-13
+nbrk: 20154 fd: 3.499119e-16
+nbrk: 26309 fd: 5.555171e-16
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 1.504451572841600e-09    
+Final f                               : 2.445496978044158e+07    
+
+Iterations of gradient projection (GP): 10        
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 2451
+Depth of multilevel partition tree ...... 1
+Phase 1 iterations ...................... 20
+Coordinate ascent iterations ............ 76
+    variables freed in coordinate ascent  49924
+    rows dropped in coordinate ascent ... 3274
+Gradient ascent iterations .............. 623
+    variables freed in gradient ascent .. 24778
+    rows dropped in gradient ascent ..... 3080
+Preconditioned CG iterations ............ 102
+    variables freed in CG ............... 3533
+    rows dropped in CG .................. 492
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 71
+    nonzeros in final factor ............ 142631 99.6% sparse
+    rows dropped from L ................. 10083
+    rows added to L ..................... 31
+    rank 1 downdates to L ............... 260
+    rank 1 updates to L ................. 53327
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 90
+        updowns [  2]: 37
+        updowns [  3]: 25
+        updowns [  4]: 19
+        updowns [  5]: 12
+        updowns [  6]: 20
+        updowns [  7]: 19
+        updowns [  8]: 10
+        updowns [  9]: 9
+        updowns [ 10]: 14
+        updowns [ 11]: 11
+        updowns [ 12]: 12
+        updowns [ 13]: 12
+        updowns [ 14]: 14
+        updowns [ 15]: 10
+        updowns [ 16]: 6
+        updowns [ 17]: 8
+        updowns [ 18]: 13
+        updowns [ 19]: 11
+        updowns [ 20]: 7
+        updowns [ 21]: 8
+        updowns [ 22]: 8
+        updowns [ 23]: 9
+        updowns [ 24]: 2
+        updowns [ 25]: 4
+        updowns [ 26]: 6
+        updowns [ 27]: 2
+        updowns [ 28]: 10
+        updowns [ 29]: 8
+        updowns [ 30]: 7
+        updowns [ 31]: 7
+        updowns [ 32]: 4
+        updowns [ 33]: 5
+        updowns [ 34]: 4
+        updowns [ 35]: 2
+        updowns [ 36]: 7
+        updowns [ 37]: 4
+        updowns [ 38]: 2
+        updowns [ 39]: 5
+        updowns [ 40]: 3
+        updowns [ 41]: 6
+        updowns [ 42]: 3
+        updowns [ 43]: 3
+        updowns [ 44]: 4
+        updowns [ 45]: 3
+        updowns [ 46]: 3
+        updowns [ 47]: 6
+        updowns [ 48]: 5
+        updowns [ 49]: 3
+        updowns [ 51]: 4
+        updowns [ 52]: 1
+        updowns [ 53]: 1
+        updowns [ 54]: 2
+        updowns [ 55]: 3
+        updowns [ 56]: 3
+        updowns [ 57]: 1
+        updowns [ 58]: 2
+        updowns [ 59]: 3
+        updowns [ 60]: 3
+        updowns [ 61]: 1
+        updowns [ 62]: 3
+        updowns [ 63]: 2
+        updowns [ 64]: 3
+        updowns [ 65]: 2
+        updowns [ 66]: 2
+        updowns [ 68]: 5
+        updowns [ 70]: 1
+        updowns [ 72]: 1
+        updowns [ 73]: 1
+        updowns [ 74]: 2
+        updowns [ 77]: 2
+        updowns [ 78]: 1
+        updowns [ 79]: 2
+        updowns [ 80]: 4
+        updowns [ 81]: 4
+        updowns [ 82]: 2
+        updowns [ 83]: 1
+        updowns [ 86]: 1
+        updowns [ 87]: 2
+        updowns [ 88]: 2
+        updowns [ 89]: 2
+        updowns [ 90]: 2
+        updowns [ 92]: 2
+        updowns [ 93]: 1
+        updowns [ 98]: 5
+        updowns [102]: 2
+        updowns [103]: 1
+        updowns [104]: 3
+        updowns [107]: 1
+        updowns [108]: 2
+        updowns [109]: 2
+        updowns [111]: 3
+        updowns [112]: 1
+        updowns [113]: 4
+        updowns [115]: 2
+        updowns [116]: 3
+        updowns [117]: 3
+        updowns [118]: 3
+        updowns [120]: 3
+        updowns [121]: 4
+        updowns [123]: 1
+        updowns [124]: 1
+        updowns [125]: 1
+        updowns [126]: 1
+        updowns [133]: 1
+        updowns [134]: 1
+        updowns [135]: 1
+        updowns [140]: 1
+        updowns [142]: 1
+        updowns [143]: 1
+        updowns [145]: 1
+        updowns [146]: 2
+        updowns [151]: 2
+        updowns [152]: 1
+        updowns [154]: 1
+        updowns [156]: 3
+        updowns [159]: 1
+        updowns [164]: 1
+        updowns [166]: 2
+        updowns [168]: 1
+        updowns [172]: 1
+        updowns [175]: 1
+        updowns [177]: 1
+        updowns [179]: 1
+        updowns [180]: 1
+        updowns [181]: 1
+        updowns [184]: 1
+        updowns [185]: 1
+        updowns [187]: 1
+        updowns [193]: 1
+        updowns [194]: 1
+        updowns [197]: 2
+        updowns [200]: 1
+        updowns [205]: 1
+        updowns [207]: 1
+        updowns [210]: 1
+        updowns [217]: 1
+        updowns [227]: 1
+        updowns [232]: 1
+        updowns [235]: 1
+        updowns [236]: 1
+        updowns [241]: 2
+        updowns [244]: 2
+        updowns [245]: 1
+        updowns [246]: 1
+        updowns [250]: 1
+        updowns [255]: 1
+        updowns [258]: 1
+        updowns [259]: 1
+        updowns [263]: 1
+        updowns [266]: 1
+        updowns [267]: 1
+        updowns [268]: 1
+        updowns [271]: 1
+        updowns [274]: 1
+        updowns [282]: 2
+        updowns [285]: 1
+        updowns [290]: 1
+        updowns [293]: 1
+        updowns [296]: 1
+        updowns [299]: 1
+        updowns [301]: 1
+        updowns [310]: 1
+        updowns [317]: 1
+        updowns [321]: 1
+        updowns [334]: 1
+        updowns [337]: 1
+        updowns [358]: 1
+        updowns [360]: 1
+        updowns [368]: 1
+        updowns [378]: 4
+        updowns [380]: 1
+        updowns [386]: 1
+        updowns [388]: 1
+        updowns [408]: 1
+        updowns [411]: 1
+        updowns [426]: 1
+        updowns [430]: 1
+        updowns [451]: 1
+        updowns [453]: 1
+        updowns [459]: 1
+        updowns [462]: 1
+        updowns [474]: 1
+        updowns [485]: 1
+        updowns [493]: 1
+        updowns [507]: 1
+        updowns [529]: 1
+        updowns [552]: 1
+        updowns [560]: 1
+        updowns [563]: 1
+        updowns [577]: 1
+        updowns [614]: 1
+        updowns [643]: 1
+        updowns [693]: 1
+        updowns [698]: 1
+        updowns [>=793]: 6
+    No. of solves by depth in the multilevel partition tree:
+        (deeper <=> further from root of tree <=> fewer flops)
+        depth [ 0]: 76
+        depth [ 1]: 394572
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 1.701200e-01
+Initialization (includes partition) ..... 1.764259e-01
+Phase 1 ................................. 7.281899e-02
+Coordinate ascent ....................... 7.887530e-02
+SSOR0 ................................... 5.788097e-01
+SSOR1 ................................... 6.101537e-02
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 1.027638e+01
+DASA line search ........................ 8.506768e-01
+Check error ............................. 9.167385e-02
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 1.916287e+00
+Column modifications of Cholesky factor . 3.255183e+00
+Cholesky factorization .................. 2.601103e+00
+Partial Cholesky factorization .......... 9.465218e-05
+Back solves ............................. 3.558257e-01
+Forward solves .......................... 1.464009e-02
+
+!!     CRE-D  69980   10   71     0    1.5044516e-09    2.4454969780441578e+07   10.619605
+ Final f                         = 2.4454970e+07   
+ Function value at final x       = 2.4454969780441150e+07   
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   OSA-07.SIF
+
+ Problem name: OSA-07
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 1118 linear inequality constraints
+ 
+ There are 23949 variables bounded only from below 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: OSA-07 (23949)
+sup norm of Ax: 1.307460e+01
+walltime at start:     0.000001
+normb: 2.610720e+03 normc: 1.265843e+03
+nbrk: 332 fd: 1.808027e-06
+nbrk: 10053 fd: 1.071872e-25
+nbrk: 9353 fd: -3.270929e-26
+nbrk: 6973 fd: 3.020218e-34
+nbrk: 10011 fd: 3.290743e-13
+nbrk: 8629 fd: 1.252159e-14
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 2.793853476772260e-17    
+Final f                               : 5.357225172993512e+05    
+
+Iterations of gradient projection (GP): 7         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 970
+Depth of multilevel partition tree ...... 2
+Phase 1 iterations ...................... 10
+Coordinate ascent iterations ............ 1
+    variables freed in coordinate ascent  13
+    rows dropped in coordinate ascent ... 1
+Gradient ascent iterations .............. 0
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 0
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 4
+    nonzeros in final factor ............ 790 99.9% sparse
+    rows dropped from L ................. 18
+    rows added to L ..................... 219
+    rank 1 downdates to L ............... 489
+    rank 1 updates to L ................. 980
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 26
+        updowns [  2]: 17
+        updowns [  3]: 9
+        updowns [  4]: 11
+        updowns [  5]: 10
+        updowns [  6]: 5
+        updowns [  7]: 5
+        updowns [  9]: 3
+        updowns [ 10]: 1
+        updowns [ 11]: 3
+        updowns [ 12]: 1
+        updowns [ 13]: 3
+        updowns [ 14]: 2
+        updowns [ 15]: 1
+        updowns [ 16]: 1
+        updowns [ 18]: 1
+        updowns [ 21]: 1
+        updowns [ 24]: 1
+        updowns [ 28]: 2
+        updowns [ 29]: 3
+        updowns [ 30]: 1
+        updowns [ 31]: 3
+        updowns [ 32]: 2
+        updowns [ 35]: 2
+        updowns [ 36]: 4
+        updowns [ 39]: 2
+        updowns [ 41]: 2
+        updowns [ 44]: 1
+        updowns [ 49]: 1
+        updowns [ 53]: 1
+        updowns [ 63]: 1
+        updowns [ 67]: 1
+    No. of solves by depth in the multilevel partition tree:
+        (deeper <=> further from root of tree <=> fewer flops)
+        depth [ 0]: 70
+        depth [ 1]: 132
+        depth [ 2]: 7673
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 1.047802e-02
+Initialization (includes partition) ..... 1.485777e-02
+Phase 1 ................................. 6.129980e-03
+Coordinate ascent ....................... 1.809597e-04
+SSOR0 ................................... 0.000000e+00
+SSOR1 ................................... 0.000000e+00
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 4.251003e-02
+DASA line search ........................ 2.222776e-02
+Check error ............................. 3.913403e-03
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 4.975796e-04
+Column modifications of Cholesky factor . 6.308556e-04
+Cholesky factorization .................. 2.369881e-04
+Partial Cholesky factorization .......... 6.580353e-05
+Back solves ............................. 5.150795e-03
+Forward solves .......................... 3.108978e-04
+
+!!    OSA-07  23949    7    4     0    2.7938535e-17    5.3572251729935117e+05    0.075696
+ Final f                         = 5.3572252e+05   
+ Function value at final x       = 5.3572251729935105e+05   
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   OSA-14.SIF
+
+ Problem name: OSA-14
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 2337 linear inequality constraints
+ 
+ There are 52460 variables bounded only from below 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: OSA-14 (52460)
+sup norm of Ax: 1.307460e+01
+walltime at start:     0.000001
+normb: 5.221440e+03 normc: 1.265843e+03
+nbrk: 777 fd: 9.517488e-07
+nbrk: 10834 fd: 7.350583e-20
+nbrk: 22282 fd: 2.186959e-24
+nbrk: 20083 fd: -1.687060e-28
+nbrk: 5672 fd: 8.013816e-13
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 1.870918607080953e-09    
+Final f                               : 1.106462844866577e+06    
+
+Iterations of gradient projection (GP): 6         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 1268
+Depth of multilevel partition tree ...... 2
+Phase 1 iterations ...................... 13
+Coordinate ascent iterations ............ 1
+    variables freed in coordinate ascent  26
+    rows dropped in coordinate ascent ... 2
+Gradient ascent iterations .............. 0
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 0
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 4
+    nonzeros in final factor ............ 2341 99.9% sparse
+    rows dropped from L ................. 38
+    rows added to L ..................... 628
+    rank 1 downdates to L ............... 876
+    rank 1 updates to L ................. 2018
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 37
+        updowns [  2]: 20
+        updowns [  3]: 11
+        updowns [  4]: 6
+        updowns [  5]: 7
+        updowns [  6]: 3
+        updowns [  7]: 1
+        updowns [  8]: 2
+        updowns [  9]: 6
+        updowns [ 10]: 1
+        updowns [ 11]: 4
+        updowns [ 12]: 1
+        updowns [ 13]: 3
+        updowns [ 14]: 3
+        updowns [ 15]: 4
+        updowns [ 16]: 3
+        updowns [ 20]: 2
+        updowns [ 24]: 1
+        updowns [ 25]: 2
+        updowns [ 29]: 1
+        updowns [ 31]: 1
+        updowns [ 32]: 1
+        updowns [ 34]: 3
+        updowns [ 35]: 2
+        updowns [ 37]: 1
+        updowns [ 38]: 1
+        updowns [ 39]: 1
+        updowns [ 40]: 1
+        updowns [ 43]: 1
+        updowns [ 44]: 1
+        updowns [ 46]: 1
+        updowns [ 47]: 1
+        updowns [ 51]: 1
+        updowns [ 54]: 1
+        updowns [ 55]: 1
+        updowns [ 57]: 2
+        updowns [ 63]: 1
+        updowns [ 71]: 1
+        updowns [ 76]: 1
+        updowns [ 80]: 1
+        updowns [ 84]: 1
+        updowns [ 90]: 4
+        updowns [ 97]: 1
+        updowns [115]: 1
+        updowns [126]: 1
+        updowns [141]: 1
+        updowns [176]: 1
+    No. of solves by depth in the multilevel partition tree:
+        (deeper <=> further from root of tree <=> fewer flops)
+        depth [ 0]: 109
+        depth [ 1]: 137
+        depth [ 2]: 4287
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 1.715493e-02
+Initialization (includes partition) ..... 2.725792e-02
+Phase 1 ................................. 2.182508e-02
+Coordinate ascent ....................... 1.257896e-03
+SSOR0 ................................... 0.000000e+00
+SSOR1 ................................... 0.000000e+00
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 8.433723e-02
+DASA line search ........................ 6.070542e-02
+Check error ............................. 1.060128e-02
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 8.807182e-04
+Column modifications of Cholesky factor . 1.156569e-03
+Cholesky factorization .................. 5.412102e-04
+Partial Cholesky factorization .......... 1.409054e-04
+Back solves ............................. 4.015684e-03
+Forward solves .......................... 8.647442e-04
+
+!!    OSA-14  52460    6    4     0    1.8709186e-09    1.1064628448665768e+06    0.158774
+ Final f                         = 1.1064628e+06   
+ Function value at final x       = 1.1064628448665780e+06   
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   OSA-30.SIF
+
+ Problem name: OSA-30
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 4350 linear inequality constraints
+ 
+ There are 100024 variables bounded only from below 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: OSA-30 (100024)
+sup norm of Ax: 1.319030e+01
+walltime at start:     0.000001
+normb: 1.118880e+04 normc: 1.265843e+03
+nbrk: 3118 fd: 2.746223e-05
+nbrk: 18445 fd: 5.623126e-20
+nbrk: 41761 fd: 7.091778e-22
+nbrk: 35573 fd: 2.584082e-24
+nbrk: 43011 fd: 1.596688e-31
+nbrk: 34577 fd: 6.200293e-11
+nbrk: 35943 fd: 4.745587e-14
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 1.542709501183589e-09    
+Final f                               : 2.142139873733854e+06    
+
+Iterations of gradient projection (GP): 8         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 3769
+Depth of multilevel partition tree ...... 3
+Phase 1 iterations ...................... 16
+Coordinate ascent iterations ............ 1
+    variables freed in coordinate ascent  174
+    rows dropped in coordinate ascent ... 0
+Gradient ascent iterations .............. 0
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 0
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 6
+    nonzeros in final factor ............ 4564 100.0% sparse
+    rows dropped from L ................. 182
+    rows added to L ..................... 733
+    rank 1 downdates to L ............... 1553
+    rank 1 updates to L ................. 4801
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 47
+        updowns [  2]: 31
+        updowns [  3]: 14
+        updowns [  4]: 6
+        updowns [  5]: 8
+        updowns [  6]: 6
+        updowns [  7]: 6
+        updowns [  8]: 3
+        updowns [  9]: 2
+        updowns [ 10]: 2
+        updowns [ 11]: 5
+        updowns [ 12]: 1
+        updowns [ 13]: 3
+        updowns [ 14]: 1
+        updowns [ 17]: 1
+        updowns [ 18]: 1
+        updowns [ 20]: 1
+        updowns [ 21]: 1
+        updowns [ 22]: 1
+        updowns [ 23]: 2
+        updowns [ 24]: 2
+        updowns [ 25]: 5
+        updowns [ 26]: 1
+        updowns [ 28]: 1
+        updowns [ 32]: 2
+        updowns [ 33]: 1
+        updowns [ 35]: 2
+        updowns [ 39]: 1
+        updowns [ 40]: 2
+        updowns [ 41]: 1
+        updowns [ 42]: 1
+        updowns [ 45]: 1
+        updowns [ 50]: 1
+        updowns [ 51]: 1
+        updowns [ 55]: 1
+        updowns [ 57]: 1
+        updowns [ 58]: 1
+        updowns [ 59]: 1
+        updowns [ 63]: 1
+        updowns [ 65]: 1
+        updowns [ 75]: 2
+        updowns [ 78]: 1
+        updowns [ 83]: 1
+        updowns [ 84]: 1
+        updowns [ 94]: 1
+        updowns [102]: 1
+        updowns [103]: 1
+        updowns [104]: 1
+        updowns [120]: 1
+        updowns [126]: 1
+        updowns [145]: 1
+        updowns [167]: 1
+        updowns [173]: 1
+        updowns [200]: 1
+        updowns [201]: 1
+        updowns [273]: 1
+        updowns [297]: 1
+        updowns [303]: 1
+        updowns [309]: 1
+        updowns [323]: 1
+        updowns [337]: 1
+        updowns [376]: 1
+        updowns [488]: 1
+    No. of solves by depth in the multilevel partition tree:
+        (deeper <=> further from root of tree <=> fewer flops)
+        depth [ 0]: 82
+        depth [ 1]: 134
+        depth [ 2]: 22608
+        depth [ 3]: 21505
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 3.057408e-02
+Initialization (includes partition) ..... 4.916453e-02
+Phase 1 ................................. 4.915500e-02
+Coordinate ascent ....................... 9.050369e-04
+SSOR0 ................................... 0.000000e+00
+SSOR1 ................................... 0.000000e+00
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 2.385292e-01
+DASA line search ........................ 1.265378e-01
+Check error ............................. 2.037406e-02
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 1.717567e-03
+Column modifications of Cholesky factor . 2.068043e-03
+Cholesky factorization .................. 1.405239e-03
+Partial Cholesky factorization .......... 6.766319e-04
+Back solves ............................. 2.940917e-02
+Forward solves .......................... 1.735687e-03
+
+!!    OSA-30 100024    8    6     0    1.5427095e-09    2.1421398737338544e+06    0.397746
+ Final f                         = 2.1421399e+06   
+ Function value at final x       = 2.1421398737338390e+06   
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   OSA-60.SIF
+
+ Problem name: OSA-60
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 10280 linear inequality constraints
+ 
+ There are 232966 variables bounded only from below 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: OSA-60 (232966)
+sup norm of Ax: 1.320640e+01
+walltime at start:     0.000001
+normb: 2.237760e+04 normc: 1.264919e+03
+nbrk: 5737 fd: 1.302829e-05
+nbrk: 47670 fd: 2.284249e-20
+nbrk: 46148 fd: 2.521515e-21
+nbrk: 27889 fd: 2.095005e-26
+nbrk: 81539 fd: 8.777041e-12
+nbrk: 20960 fd: 8.853995e-12
+nbrk: 23478 fd: 2.863618e-14
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 2.050221499268086e-09    
+Final f                               : 4.044072505324473e+06    
+
+Iterations of gradient projection (GP): 8         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 10068
+Depth of multilevel partition tree ...... 3
+Phase 1 iterations ...................... 21
+Coordinate ascent iterations ............ 1
+    variables freed in coordinate ascent  153
+    rows dropped in coordinate ascent ... 0
+Gradient ascent iterations .............. 0
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 0
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 6
+    nonzeros in final factor ............ 8804 100.0% sparse
+    rows dropped from L ................. 274
+    rows added to L ..................... 1515
+    rank 1 downdates to L ............... 2985
+    rank 1 updates to L ................. 8042
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 42
+        updowns [  2]: 37
+        updowns [  3]: 11
+        updowns [  4]: 12
+        updowns [  5]: 10
+        updowns [  6]: 2
+        updowns [  7]: 4
+        updowns [  8]: 3
+        updowns [  9]: 5
+        updowns [ 10]: 4
+        updowns [ 11]: 1
+        updowns [ 12]: 2
+        updowns [ 13]: 4
+        updowns [ 14]: 3
+        updowns [ 15]: 3
+        updowns [ 16]: 3
+        updowns [ 17]: 1
+        updowns [ 18]: 2
+        updowns [ 19]: 4
+        updowns [ 20]: 2
+        updowns [ 21]: 1
+        updowns [ 22]: 1
+        updowns [ 23]: 2
+        updowns [ 24]: 2
+        updowns [ 26]: 1
+        updowns [ 27]: 1
+        updowns [ 28]: 1
+        updowns [ 29]: 2
+        updowns [ 30]: 1
+        updowns [ 33]: 1
+        updowns [ 35]: 1
+        updowns [ 36]: 2
+        updowns [ 39]: 1
+        updowns [ 45]: 1
+        updowns [ 52]: 2
+        updowns [ 60]: 1
+        updowns [ 62]: 1
+        updowns [ 63]: 1
+        updowns [ 66]: 1
+        updowns [ 74]: 1
+        updowns [ 89]: 1
+        updowns [ 92]: 1
+        updowns [ 93]: 1
+        updowns [ 96]: 3
+        updowns [ 99]: 1
+        updowns [102]: 1
+        updowns [104]: 1
+        updowns [111]: 1
+        updowns [116]: 1
+        updowns [133]: 1
+        updowns [143]: 1
+        updowns [145]: 1
+        updowns [150]: 1
+        updowns [153]: 1
+        updowns [154]: 1
+        updowns [156]: 1
+        updowns [163]: 1
+        updowns [164]: 1
+        updowns [166]: 1
+        updowns [170]: 1
+        updowns [177]: 1
+        updowns [183]: 2
+        updowns [194]: 1
+        updowns [199]: 1
+        updowns [203]: 1
+        updowns [220]: 1
+        updowns [241]: 1
+        updowns [247]: 1
+        updowns [251]: 1
+        updowns [252]: 1
+        updowns [253]: 1
+        updowns [311]: 1
+        updowns [348]: 1
+        updowns [359]: 1
+        updowns [425]: 1
+        updowns [553]: 1
+        updowns [574]: 1
+        updowns [650]: 1
+        updowns [667]: 1
+    No. of solves by depth in the multilevel partition tree:
+        (deeper <=> further from root of tree <=> fewer flops)
+        depth [ 0]: 144
+        depth [ 1]: 79184
+        depth [ 2]: 27476
+        depth [ 3]: 22545
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 6.060505e-02
+Initialization (includes partition) ..... 1.211474e-01
+Phase 1 ................................. 1.193912e-01
+Coordinate ascent ....................... 1.955986e-03
+SSOR0 ................................... 0.000000e+00
+SSOR1 ................................... 0.000000e+00
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 6.057277e-01
+DASA line search ........................ 2.971811e-01
+Check error ............................. 6.960130e-02
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 3.063679e-03
+Column modifications of Cholesky factor . 3.795385e-03
+Cholesky factorization .................. 2.816200e-03
+Partial Cholesky factorization .......... 1.786709e-03
+Back solves ............................. 8.313990e-02
+Forward solves .......................... 3.917217e-03
+
+!!    OSA-60 232966    8    6     0    2.0502215e-09    4.0440725053244727e+06    1.017106
+ Final f                         = 4.0440725e+06   
+ Function value at final x       = 4.0440725053244801e+06   
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   PDS-02.SIF
+
+ Problem name: PDS-02
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 2772 linear equality constraints
+ There are 181 linear inequality constraints
+ 
+ There are 5401 variables bounded only from below 
+ There are 2134 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: PDS-02 (7535)
+sup norm of Ax: 1.000000e+00
+walltime at start:     0.000000
+normb: 4.683000e+04 normc: 9.999900e+04
+nbrk: 1240 fd: 6.363950e+00
+nbrk: 3035 fd: 6.285871e-08
+nbrk: 2489 fd: 1.607957e-09
+nbrk: 2116 fd: 9.951865e-13
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 7.220702266780636e-12    
+Final f                               : 2.885786201000089e+10    
+
+Iterations of gradient projection (GP): 5         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 224
+Depth of multilevel partition tree ...... 3
+Phase 1 iterations ...................... 14
+Coordinate ascent iterations ............ 1
+    variables freed in coordinate ascent  625
+    rows dropped in coordinate ascent ... 0
+Gradient ascent iterations .............. 0
+    variables freed in gradient ascent .. 0
+    rows dropped in gradient ascent ..... 0
+Preconditioned CG iterations ............ 0
+    variables freed in CG ............... 0
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 10
+    nonzeros in final factor ............ 10469 99.8% sparse
+    rows dropped from L ................. 59
+    rows added to L ..................... 1
+    rank 1 downdates to L ............... 76
+    rank 1 updates to L ................. 3479
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 23
+        updowns [  2]: 21
+        updowns [  3]: 10
+        updowns [  4]: 12
+        updowns [  5]: 16
+        updowns [  6]: 8
+        updowns [  7]: 7
+        updowns [  8]: 5
+        updowns [  9]: 3
+        updowns [ 10]: 9
+        updowns [ 11]: 10
+        updowns [ 12]: 1
+        updowns [ 13]: 4
+        updowns [ 14]: 3
+        updowns [ 15]: 3
+        updowns [ 16]: 2
+        updowns [ 17]: 4
+        updowns [ 18]: 4
+        updowns [ 19]: 1
+        updowns [ 20]: 3
+        updowns [ 21]: 2
+        updowns [ 22]: 4
+        updowns [ 23]: 1
+        updowns [ 24]: 3
+        updowns [ 25]: 1
+        updowns [ 26]: 1
+        updowns [ 27]: 1
+        updowns [ 29]: 1
+        updowns [ 31]: 1
+        updowns [ 33]: 2
+        updowns [ 34]: 2
+        updowns [ 35]: 1
+        updowns [ 36]: 1
+        updowns [ 38]: 1
+        updowns [ 41]: 1
+        updowns [ 46]: 1
+        updowns [ 47]: 2
+        updowns [ 48]: 1
+        updowns [ 50]: 1
+        updowns [ 52]: 1
+        updowns [ 53]: 3
+        updowns [ 56]: 1
+        updowns [ 57]: 1
+        updowns [ 58]: 1
+        updowns [ 63]: 1
+        updowns [ 65]: 1
+        updowns [ 70]: 1
+        updowns [ 79]: 2
+        updowns [ 83]: 1
+        updowns [ 86]: 1
+        updowns [ 95]: 3
+        updowns [ 98]: 1
+        updowns [103]: 1
+        updowns [121]: 1
+        updowns [167]: 1
+    No. of solves by depth in the multilevel partition tree:
+        (deeper <=> further from root of tree <=> fewer flops)
+        depth [ 0]: 78
+        depth [ 1]: 1387
+        depth [ 2]: 1401
+        depth [ 3]: 980
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 1.195717e-02
+Initialization (includes partition) ..... 1.247692e-02
+Phase 1 ................................. 7.282972e-03
+Coordinate ascent ....................... 2.021790e-04
+SSOR0 ................................... 0.000000e+00
+SSOR1 ................................... 0.000000e+00
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 4.722142e-02
+DASA line search ........................ 1.731133e-02
+Check error ............................. 3.029823e-03
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 5.033016e-04
+Column modifications of Cholesky factor . 6.398916e-03
+Cholesky factorization .................. 4.028082e-03
+Partial Cholesky factorization .......... 3.363609e-03
+Back solves ............................. 7.166624e-03
+Forward solves .......................... 1.342535e-03
+
+!!    PDS-02   7535    5   10     0    7.2207023e-12    2.8857862010000893e+10    0.071574
+ Final f                         = 2.8857862e+10   
+ Function value at final x       = 2.8857862010000900e+10   
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   PDS-06.SIF
+
+ Problem name: PDS-06
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 9185 linear equality constraints
+ There are 696 linear inequality constraints
+ 
+ There are 19415 variables bounded only from below 
+ There are 9240 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: PDS-06 (28655)
+sup norm of Ax: 1.000000e+00
+walltime at start:     0.000000
+normb: 4.683000e+04 normc: 9.999900e+04
+nbrk: 9688 fd: 6.083451e+00
+nbrk: 9682 fd: 3.684803e-07
+nbrk: 9097 fd: 3.445650e-08
+nbrk: 9276 fd: 4.067318e-11
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 1.941617149172998e-09    
+Final f                               : 2.776103760320428e+10    
+
+Iterations of gradient projection (GP): 5         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 153
+Depth of multilevel partition tree ...... 5
+Phase 1 iterations ...................... 21
+Coordinate ascent iterations ............ 1
+    variables freed in coordinate ascent  1682
+    rows dropped in coordinate ascent ... 2
+Gradient ascent iterations .............. 54
+    variables freed in gradient ascent .. 524
+    rows dropped in gradient ascent ..... 2
+Preconditioned CG iterations ............ 3
+    variables freed in CG ............... 416
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 29
+    nonzeros in final factor ............ 54442 99.9% sparse
+    rows dropped from L ................. 484
+    rows added to L ..................... 19
+    rank 1 downdates to L ............... 329
+    rank 1 updates to L ................. 30836
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 74
+        updowns [  2]: 57
+        updowns [  3]: 47
+        updowns [  4]: 49
+        updowns [  5]: 35
+        updowns [  6]: 40
+        updowns [  7]: 37
+        updowns [  8]: 25
+        updowns [  9]: 36
+        updowns [ 10]: 24
+        updowns [ 11]: 31
+        updowns [ 12]: 22
+        updowns [ 13]: 28
+        updowns [ 14]: 19
+        updowns [ 15]: 17
+        updowns [ 16]: 17
+        updowns [ 17]: 13
+        updowns [ 18]: 10
+        updowns [ 19]: 12
+        updowns [ 20]: 10
+        updowns [ 21]: 11
+        updowns [ 22]: 9
+        updowns [ 23]: 11
+        updowns [ 24]: 14
+        updowns [ 25]: 6
+        updowns [ 26]: 11
+        updowns [ 27]: 10
+        updowns [ 28]: 7
+        updowns [ 29]: 6
+        updowns [ 30]: 8
+        updowns [ 31]: 13
+        updowns [ 32]: 7
+        updowns [ 33]: 5
+        updowns [ 34]: 3
+        updowns [ 35]: 4
+        updowns [ 36]: 8
+        updowns [ 37]: 7
+        updowns [ 38]: 7
+        updowns [ 39]: 4
+        updowns [ 40]: 8
+        updowns [ 41]: 6
+        updowns [ 42]: 5
+        updowns [ 43]: 4
+        updowns [ 44]: 4
+        updowns [ 45]: 5
+        updowns [ 46]: 3
+        updowns [ 47]: 3
+        updowns [ 48]: 3
+        updowns [ 49]: 4
+        updowns [ 50]: 3
+        updowns [ 51]: 4
+        updowns [ 52]: 4
+        updowns [ 54]: 5
+        updowns [ 55]: 2
+        updowns [ 56]: 6
+        updowns [ 57]: 5
+        updowns [ 58]: 1
+        updowns [ 59]: 3
+        updowns [ 60]: 4
+        updowns [ 61]: 3
+        updowns [ 62]: 2
+        updowns [ 63]: 6
+        updowns [ 64]: 3
+        updowns [ 65]: 2
+        updowns [ 66]: 2
+        updowns [ 67]: 3
+        updowns [ 68]: 4
+        updowns [ 69]: 2
+        updowns [ 70]: 3
+        updowns [ 71]: 1
+        updowns [ 72]: 2
+        updowns [ 73]: 2
+        updowns [ 74]: 3
+        updowns [ 75]: 1
+        updowns [ 76]: 2
+        updowns [ 77]: 1
+        updowns [ 78]: 3
+        updowns [ 79]: 1
+        updowns [ 81]: 1
+        updowns [ 83]: 5
+        updowns [ 84]: 1
+        updowns [ 85]: 1
+        updowns [ 86]: 2
+        updowns [ 87]: 1
+        updowns [ 90]: 1
+        updowns [ 91]: 2
+        updowns [ 92]: 2
+        updowns [ 93]: 2
+        updowns [ 94]: 4
+        updowns [ 98]: 1
+        updowns [ 99]: 2
+        updowns [102]: 2
+        updowns [103]: 1
+        updowns [104]: 1
+        updowns [106]: 1
+        updowns [108]: 1
+        updowns [110]: 1
+        updowns [112]: 1
+        updowns [116]: 1
+        updowns [120]: 1
+        updowns [121]: 2
+        updowns [123]: 1
+        updowns [124]: 1
+        updowns [125]: 1
+        updowns [129]: 1
+        updowns [131]: 2
+        updowns [132]: 1
+        updowns [133]: 1
+        updowns [134]: 1
+        updowns [135]: 1
+        updowns [137]: 1
+        updowns [139]: 1
+        updowns [141]: 1
+        updowns [142]: 1
+        updowns [151]: 1
+        updowns [152]: 1
+        updowns [162]: 1
+        updowns [166]: 3
+        updowns [167]: 1
+        updowns [171]: 2
+        updowns [175]: 1
+        updowns [177]: 2
+        updowns [179]: 1
+        updowns [181]: 1
+        updowns [202]: 1
+        updowns [203]: 1
+        updowns [205]: 1
+        updowns [209]: 1
+        updowns [210]: 1
+        updowns [211]: 1
+        updowns [213]: 1
+        updowns [217]: 1
+        updowns [232]: 1
+        updowns [234]: 1
+        updowns [235]: 1
+        updowns [238]: 1
+        updowns [245]: 1
+        updowns [252]: 1
+        updowns [262]: 1
+        updowns [269]: 1
+        updowns [287]: 1
+        updowns [289]: 1
+        updowns [292]: 1
+        updowns [295]: 1
+        updowns [319]: 1
+        updowns [387]: 1
+        updowns [427]: 1
+        updowns [439]: 1
+        updowns [>=507]: 1
+    No. of solves by depth in the multilevel partition tree:
+        (deeper <=> further from root of tree <=> fewer flops)
+        depth [ 0]: 463
+        depth [ 1]: 2477
+        depth [ 2]: 3067
+        depth [ 3]: 2551
+        depth [ 4]: 591
+        depth [ 5]: 725
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 5.169106e-02
+Initialization (includes partition) ..... 5.374384e-02
+Phase 1 ................................. 3.415608e-02
+Coordinate ascent ....................... 6.039143e-04
+SSOR0 ................................... 3.201008e-02
+SSOR1 ................................... 2.444029e-03
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 8.157969e-01
+DASA line search ........................ 2.552631e-01
+Check error ............................. 2.732038e-02
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 1.044941e-02
+Column modifications of Cholesky factor . 2.399228e-01
+Cholesky factorization .................. 4.512286e-02
+Partial Cholesky factorization .......... 9.848547e-02
+Back solves ............................. 9.177160e-02
+Forward solves .......................... 1.089025e-02
+
+!!    PDS-06  28655    5   29     0    1.9416171e-09    2.7761037603204281e+10    0.929740
+ Final f                         = 2.7761038e+10   
+ Function value at final x       = 2.7761037603204285e+10   
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   PDS-10.SIF
+
+ Problem name: PDS-10
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 15389 linear equality constraints
+ There are 1169 linear inequality constraints
+ 
+ There are 32615 variables bounded only from below 
+ There are 16148 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: PDS-10 (48763)
+sup norm of Ax: 1.000000e+00
+walltime at start:     0.000000
+normb: 4.683000e+04 normc: 9.999900e+04
+nbrk: 17352 fd: 5.821801e+00
+nbrk: 16838 fd: 1.770432e-06
+nbrk: 17917 fd: 1.266472e-07
+nbrk: 16468 fd: 3.256231e-10
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 2.367904480613017e-09    
+Final f                               : 2.672709498321750e+10    
+
+Iterations of gradient projection (GP): 5         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 216
+Depth of multilevel partition tree ...... 5
+Phase 1 iterations ...................... 25
+Coordinate ascent iterations ............ 2
+    variables freed in coordinate ascent  8556
+    rows dropped in coordinate ascent ... 13
+Gradient ascent iterations .............. 146
+    variables freed in gradient ascent .. 1761
+    rows dropped in gradient ascent ..... 6
+Preconditioned CG iterations ............ 3
+    variables freed in CG ............... 60
+    rows dropped in CG .................. 0
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 45
+    nonzeros in final factor ............ 118819 99.9% sparse
+    rows dropped from L ................. 1068
+    rows added to L ..................... 42
+    rank 1 downdates to L ............... 635
+    rank 1 updates to L ................. 82332
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 143
+        updowns [  2]: 146
+        updowns [  3]: 100
+        updowns [  4]: 113
+        updowns [  5]: 87
+        updowns [  6]: 71
+        updowns [  7]: 71
+        updowns [  8]: 80
+        updowns [  9]: 68
+        updowns [ 10]: 58
+        updowns [ 11]: 50
+        updowns [ 12]: 50
+        updowns [ 13]: 41
+        updowns [ 14]: 51
+        updowns [ 15]: 41
+        updowns [ 16]: 31
+        updowns [ 17]: 34
+        updowns [ 18]: 25
+        updowns [ 19]: 34
+        updowns [ 20]: 40
+        updowns [ 21]: 24
+        updowns [ 22]: 29
+        updowns [ 23]: 28
+        updowns [ 24]: 20
+        updowns [ 25]: 25
+        updowns [ 26]: 19
+        updowns [ 27]: 12
+        updowns [ 28]: 20
+        updowns [ 29]: 14
+        updowns [ 30]: 10
+        updowns [ 31]: 17
+        updowns [ 32]: 9
+        updowns [ 33]: 16
+        updowns [ 34]: 13
+        updowns [ 35]: 9
+        updowns [ 36]: 18
+        updowns [ 37]: 7
+        updowns [ 38]: 8
+        updowns [ 39]: 10
+        updowns [ 40]: 16
+        updowns [ 41]: 14
+        updowns [ 42]: 4
+        updowns [ 43]: 14
+        updowns [ 44]: 7
+        updowns [ 45]: 8
+        updowns [ 46]: 9
+        updowns [ 47]: 9
+        updowns [ 48]: 5
+        updowns [ 49]: 10
+        updowns [ 50]: 6
+        updowns [ 51]: 9
+        updowns [ 52]: 7
+        updowns [ 53]: 8
+        updowns [ 54]: 6
+        updowns [ 55]: 6
+        updowns [ 56]: 7
+        updowns [ 57]: 6
+        updowns [ 58]: 6
+        updowns [ 59]: 7
+        updowns [ 60]: 5
+        updowns [ 61]: 6
+        updowns [ 62]: 4
+        updowns [ 63]: 5
+        updowns [ 64]: 7
+        updowns [ 65]: 1
+        updowns [ 66]: 5
+        updowns [ 67]: 5
+        updowns [ 68]: 5
+        updowns [ 69]: 7
+        updowns [ 70]: 4
+        updowns [ 71]: 9
+        updowns [ 72]: 6
+        updowns [ 73]: 11
+        updowns [ 74]: 2
+        updowns [ 75]: 4
+        updowns [ 76]: 3
+        updowns [ 77]: 4
+        updowns [ 78]: 6
+        updowns [ 79]: 2
+        updowns [ 80]: 4
+        updowns [ 81]: 2
+        updowns [ 82]: 2
+        updowns [ 83]: 4
+        updowns [ 84]: 4
+        updowns [ 85]: 4
+        updowns [ 87]: 6
+        updowns [ 89]: 4
+        updowns [ 90]: 8
+        updowns [ 91]: 5
+        updowns [ 92]: 4
+        updowns [ 93]: 4
+        updowns [ 94]: 2
+        updowns [ 95]: 1
+        updowns [ 96]: 1
+        updowns [ 97]: 4
+        updowns [ 98]: 3
+        updowns [ 99]: 3
+        updowns [100]: 2
+        updowns [102]: 3
+        updowns [103]: 1
+        updowns [104]: 1
+        updowns [105]: 3
+        updowns [106]: 1
+        updowns [107]: 3
+        updowns [108]: 1
+        updowns [109]: 1
+        updowns [111]: 2
+        updowns [112]: 1
+        updowns [114]: 3
+        updowns [115]: 1
+        updowns [116]: 4
+        updowns [117]: 1
+        updowns [118]: 3
+        updowns [119]: 5
+        updowns [122]: 2
+        updowns [123]: 2
+        updowns [124]: 1
+        updowns [125]: 4
+        updowns [126]: 2
+        updowns [127]: 2
+        updowns [128]: 2
+        updowns [129]: 2
+        updowns [130]: 1
+        updowns [131]: 2
+        updowns [132]: 4
+        updowns [133]: 2
+        updowns [134]: 4
+        updowns [136]: 1
+        updowns [137]: 1
+        updowns [138]: 2
+        updowns [139]: 4
+        updowns [142]: 1
+        updowns [143]: 1
+        updowns [144]: 1
+        updowns [145]: 2
+        updowns [147]: 3
+        updowns [148]: 2
+        updowns [149]: 1
+        updowns [151]: 1
+        updowns [153]: 1
+        updowns [154]: 1
+        updowns [155]: 1
+        updowns [156]: 2
+        updowns [157]: 1
+        updowns [158]: 5
+        updowns [160]: 1
+        updowns [161]: 1
+        updowns [162]: 4
+        updowns [163]: 1
+        updowns [165]: 1
+        updowns [167]: 1
+        updowns [169]: 1
+        updowns [170]: 1
+        updowns [172]: 4
+        updowns [173]: 1
+        updowns [174]: 2
+        updowns [177]: 1
+        updowns [180]: 3
+        updowns [181]: 1
+        updowns [189]: 1
+        updowns [192]: 3
+        updowns [193]: 1
+        updowns [198]: 3
+        updowns [200]: 1
+        updowns [203]: 1
+        updowns [204]: 1
+        updowns [205]: 1
+        updowns [208]: 1
+        updowns [211]: 1
+        updowns [212]: 1
+        updowns [213]: 1
+        updowns [216]: 1
+        updowns [217]: 1
+        updowns [218]: 1
+        updowns [219]: 1
+        updowns [220]: 1
+        updowns [225]: 1
+        updowns [227]: 1
+        updowns [228]: 1
+        updowns [229]: 3
+        updowns [230]: 1
+        updowns [231]: 1
+        updowns [235]: 2
+        updowns [239]: 1
+        updowns [240]: 1
+        updowns [245]: 1
+        updowns [249]: 1
+        updowns [250]: 1
+        updowns [254]: 1
+        updowns [256]: 1
+        updowns [279]: 1
+        updowns [282]: 1
+        updowns [286]: 1
+        updowns [293]: 1
+        updowns [299]: 1
+        updowns [304]: 1
+        updowns [306]: 1
+        updowns [313]: 1
+        updowns [315]: 1
+        updowns [318]: 1
+        updowns [330]: 1
+        updowns [331]: 1
+        updowns [332]: 1
+        updowns [334]: 1
+        updowns [348]: 1
+        updowns [352]: 1
+        updowns [364]: 1
+        updowns [372]: 1
+        updowns [391]: 1
+        updowns [411]: 1
+        updowns [414]: 1
+        updowns [427]: 1
+        updowns [439]: 1
+        updowns [445]: 1
+        updowns [448]: 1
+        updowns [462]: 1
+        updowns [468]: 2
+        updowns [485]: 1
+        updowns [509]: 1
+        updowns [514]: 1
+        updowns [577]: 1
+        updowns [>=662]: 7
+    No. of solves by depth in the multilevel partition tree:
+        (deeper <=> further from root of tree <=> fewer flops)
+        depth [ 0]: 828
+        depth [ 1]: 8632
+        depth [ 2]: 4737
+        depth [ 3]: 3235
+        depth [ 4]: 4753
+        depth [ 5]: 2503
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 1.031182e-01
+Initialization (includes partition) ..... 1.068199e-01
+Phase 1 ................................. 6.650400e-02
+Coordinate ascent ....................... 2.466917e-03
+SSOR0 ................................... 1.517119e-01
+SSOR1 ................................... 2.884865e-03
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 4.020129e+00
+DASA line search ........................ 8.889644e-01
+Check error ............................. 7.179618e-02
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 5.239511e-02
+Column modifications of Cholesky factor . 1.682645e+00
+Cholesky factorization .................. 1.204407e-01
+Partial Cholesky factorization .......... 6.587706e-01
+Back solves ............................. 3.399446e-01
+Forward solves .......................... 3.351879e-02
+
+!!    PDS-10  48763    5   45     0    2.3679045e-09    2.6727094983217499e+10    4.250829
+ Final f                         = 2.6727095e+10   
+ Function value at final x       = 2.6727094983217510e+10   
+ ====================================================
+
+sifdecoder -A pc64.lnx.gfo -st   PDS-20.SIF
+
+ Problem name: PDS-20
+
+ Double precision version will be formed
+
+ The objective function uses 1 linear group
+ 
+ There are 31427 linear equality constraints
+ There are 2447 linear inequality constraints
+ 
+ There are 70840 variables bounded only from below 
+ There are 34888 variables bounded from below and above 
+ 
+ 
+ File successfully decoded
+ CUTEST: tools (double precision version) compiled successfully
+ CUTEst: pasa (double precision version) compiled successfully
+Initializing PASAdata structure.
+Successfully initialized PASAdata structure.
+
+ Problem: PDS-20 (105728)
+sup norm of Ax: 1.000000e+00
+walltime at start:     0.000001
+normb: 4.683000e+04 normc: 9.999900e+04
+nbrk: 38975 fd: 5.211159e+00
+nbrk: 35486 fd: 3.066116e-06
+nbrk: 38199 fd: 3.111066e-07
+nbrk: 36504 fd: 1.143146e-08
+nbrk: 37846 fd: 1.839447e-11
+nbrk: 37500 fd: 1.542832e-18
+
+PASA run status (Version 1.0, July 1, 2019): 0
+
+PASA success: Error 0.000000e+00 satisfies error tolerance 1.000000e-08.
+
+
+PASA run statistics (Version 1.0, July 1, 2019):
+|| P (x - g) - x ||                   : 3.338408936421428e-10    
+Final f                               : 2.382165864013076e+10    
+
+Iterations of gradient projection (GP): 7         
+Iterations of active set GP           : 0         
+Function evaluation in main code      : 0         
+Function evaluations in GP            : 0         
+Function evaluations in active set GP : 0         
+Gradient evaluations in main code     : 0         
+Gradient evaluations in GP            : 0         
+Gradient evaluations in active set GP : 0         
+
+
+PPROJ run statistics (Version 2.0, July 1, 2019):
+
+No. blocks in multilevel partition of A . 676
+Depth of multilevel partition tree ...... 7
+Phase 1 iterations ...................... 32
+Coordinate ascent iterations ............ 92
+    variables freed in coordinate ascent  103463
+    rows dropped in coordinate ascent ... 346
+Gradient ascent iterations .............. 4944
+    variables freed in gradient ascent .. 86930
+    rows dropped in gradient ascent ..... 2255
+Preconditioned CG iterations ............ 273
+    variables freed in CG ............... 13305
+    rows dropped in CG .................. 298
+SpaRSA iterations ....................... 0
+    change in column activity ........... 0
+    change in row activity .............. 0
+    failures of Armijo step ............. 0
+Proximal updates ........................ 0
+Cholesky factorizations ................. 56
+    nonzeros in final factor ............ 493745 99.9% sparse
+    rows dropped from L ................. 657
+    rows added to L ..................... 128
+    rank 1 downdates to L ............... 10942
+    rank 1 updates to L ................. 54729
+    Size breakdown of the updates ([size]: number of this size):
+        updowns [  1]: 368
+        updowns [  2]: 249
+        updowns [  3]: 215
+        updowns [  4]: 166
+        updowns [  5]: 155
+        updowns [  6]: 139
+        updowns [  7]: 120
+        updowns [  8]: 112
+        updowns [  9]: 86
+        updowns [ 10]: 81
+        updowns [ 11]: 68
+        updowns [ 12]: 79
+        updowns [ 13]: 69
+        updowns [ 14]: 60
+        updowns [ 15]: 45
+        updowns [ 16]: 51
+        updowns [ 17]: 50
+        updowns [ 18]: 37
+        updowns [ 19]: 35
+        updowns [ 20]: 27
+        updowns [ 21]: 27
+        updowns [ 22]: 31
+        updowns [ 23]: 21
+        updowns [ 24]: 26
+        updowns [ 25]: 18
+        updowns [ 26]: 19
+        updowns [ 27]: 23
+        updowns [ 28]: 16
+        updowns [ 29]: 17
+        updowns [ 30]: 14
+        updowns [ 31]: 14
+        updowns [ 32]: 16
+        updowns [ 33]: 13
+        updowns [ 34]: 14
+        updowns [ 35]: 9
+        updowns [ 36]: 10
+        updowns [ 37]: 12
+        updowns [ 38]: 17
+        updowns [ 39]: 4
+        updowns [ 40]: 13
+        updowns [ 41]: 8
+        updowns [ 42]: 9
+        updowns [ 43]: 5
+        updowns [ 44]: 10
+        updowns [ 45]: 9
+        updowns [ 46]: 12
+        updowns [ 47]: 6
+        updowns [ 48]: 14
+        updowns [ 49]: 8
+        updowns [ 50]: 9
+        updowns [ 51]: 5
+        updowns [ 52]: 7
+        updowns [ 53]: 7
+        updowns [ 54]: 6
+        updowns [ 55]: 3
+        updowns [ 56]: 4
+        updowns [ 57]: 2
+        updowns [ 58]: 6
+        updowns [ 59]: 4
+        updowns [ 60]: 5
+        updowns [ 61]: 10
+        updowns [ 62]: 4
+        updowns [ 63]: 3
+        updowns [ 64]: 3
+        updowns [ 65]: 2
+        updowns [ 66]: 4
+        updowns [ 67]: 1
+        updowns [ 68]: 1
+        updowns [ 69]: 5
+        updowns [ 70]: 2
+        updowns [ 71]: 1
+        updowns [ 72]: 3
+        updowns [ 73]: 3
+        updowns [ 74]: 7
+        updowns [ 75]: 1
+        updowns [ 76]: 3
+        updowns [ 77]: 2
+        updowns [ 78]: 2
+        updowns [ 79]: 7
+        updowns [ 80]: 2
+        updowns [ 81]: 2
+        updowns [ 82]: 5
+        updowns [ 83]: 2
+        updowns [ 84]: 2
+        updowns [ 85]: 2
+        updowns [ 86]: 2
+        updowns [ 89]: 2
+        updowns [ 91]: 2
+        updowns [ 92]: 2
+        updowns [ 93]: 1
+        updowns [ 94]: 4
+        updowns [ 95]: 1
+        updowns [ 96]: 3
+        updowns [ 97]: 4
+        updowns [ 98]: 4
+        updowns [ 99]: 1
+        updowns [100]: 1
+        updowns [101]: 1
+        updowns [103]: 2
+        updowns [106]: 3
+        updowns [108]: 1
+        updowns [109]: 1
+        updowns [114]: 1
+        updowns [116]: 1
+        updowns [117]: 2
+        updowns [119]: 1
+        updowns [120]: 1
+        updowns [123]: 1
+        updowns [124]: 3
+        updowns [125]: 1
+        updowns [127]: 2
+        updowns [130]: 1
+        updowns [131]: 2
+        updowns [132]: 2
+        updowns [133]: 3
+        updowns [135]: 1
+        updowns [136]: 1
+        updowns [137]: 1
+        updowns [138]: 2
+        updowns [139]: 2
+        updowns [140]: 1
+        updowns [141]: 1
+        updowns [142]: 2
+        updowns [143]: 1
+        updowns [147]: 1
+        updowns [148]: 1
+        updowns [149]: 1
+        updowns [151]: 2
+        updowns [153]: 1
+        updowns [154]: 1
+        updowns [158]: 1
+        updowns [160]: 3
+        updowns [162]: 2
+        updowns [164]: 1
+        updowns [168]: 1
+        updowns [170]: 1
+        updowns [171]: 1
+        updowns [172]: 1
+        updowns [177]: 1
+        updowns [181]: 2
+        updowns [183]: 1
+        updowns [186]: 1
+        updowns [187]: 1
+        updowns [198]: 1
+        updowns [202]: 3
+        updowns [203]: 2
+        updowns [208]: 1
+        updowns [213]: 1
+        updowns [214]: 1
+        updowns [217]: 1
+        updowns [222]: 1
+        updowns [234]: 1
+        updowns [236]: 1
+        updowns [245]: 1
+        updowns [246]: 1
+        updowns [248]: 1
+        updowns [253]: 1
+        updowns [271]: 1
+        updowns [279]: 1
+        updowns [280]: 1
+        updowns [297]: 1
+        updowns [306]: 1
+        updowns [311]: 1
+        updowns [314]: 1
+        updowns [315]: 1
+        updowns [329]: 1
+        updowns [335]: 1
+        updowns [336]: 1
+        updowns [340]: 1
+        updowns [355]: 1
+        updowns [370]: 2
+        updowns [373]: 1
+        updowns [396]: 1
+        updowns [399]: 1
+        updowns [401]: 1
+        updowns [403]: 1
+        updowns [405]: 1
+        updowns [414]: 1
+        updowns [419]: 1
+        updowns [422]: 1
+        updowns [440]: 1
+        updowns [477]: 1
+        updowns [481]: 1
+        updowns [503]: 1
+        updowns [522]: 1
+        updowns [524]: 1
+        updowns [576]: 1
+        updowns [737]: 1
+        updowns [762]: 1
+    No. of solves by depth in the multilevel partition tree:
+        (deeper <=> further from root of tree <=> fewer flops)
+        depth [ 0]: 92
+        depth [ 1]: 12095
+        depth [ 2]: 7469
+        depth [ 3]: 25167
+        depth [ 4]: 11740
+        depth [ 5]: 9622
+        depth [ 6]: 11494
+        depth [ 7]: 6058
+
+-------- Time spent in routines ---------
+Multilevel partition and reorder A ...... 2.416189e-01
+Initialization (includes partition) ..... 2.509909e-01
+Phase 1 ................................. 1.750200e-01
+Coordinate ascent ....................... 1.789141e-01
+SSOR0 ................................... 9.324302e+00
+SSOR1 ................................... 4.312153e-01
+SpaRSA .................................. 0.000000e+00
+DASA .................................... 5.017010e+01
+DASA line search ........................ 3.036331e+00
+Check error ............................. 3.044064e-01
+Proximal update ......................... 0.000000e+00
+Invert permutation ...................... 0.000000e+00
+Row modifications of Cholesky factor .... 4.410105e-01
+Column modifications of Cholesky factor . 2.027874e+01
+Cholesky factorization .................. 3.287222e-01
+Partial Cholesky factorization .......... 1.364730e+01
+Back solves ............................. 1.788020e+00
+Forward solves .......................... 2.607272e-01
+
+!!    PDS-20 105728    7   56     0    3.3384089e-10    2.3821658640130760e+10   50.828736
+ Final f                         = 2.3821659e+10   
+ Function value at final x       = 2.3821658640130749e+10   
+ ====================================================
+

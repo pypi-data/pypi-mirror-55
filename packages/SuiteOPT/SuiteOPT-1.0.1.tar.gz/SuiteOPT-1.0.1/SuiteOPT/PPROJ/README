@@ -1,0 +1,77 @@
+The code pproj computes the Euclidean projection of a given point y onto the
+polyhedron defined by
+
+                    lo <= x <= hi, bl <= Ax <= bu
+
+The code basically solves the optimization problem
+
+      min ||x - y|| subject to  lo <= x <= hi, bl <= Ax <= bu,
+
+where || . || is the Euclidean norm. The algorithm is developed in the
+following paper:
+
+W. W. Hager and H. Zhang, Sparse Techniques for Polyhedral Projection,
+December 29, 2014, http://people.clas.ufl.edu/hager/
+
+pproj makes use of both Tim Davis' SuiteSparse and George Karypis' METIS.
+First, download SuiteSparse and then put metis-4.0 into a directory in
+SuiteSparse. When SuiteSparse is compiled, it will compile METIS.
+At the end of the file metis-4.0/Lib/rename.h, it is likely necessary
+that "__log2" must be replaced by something else such as "METIS__log2."
+
+If pproj is used in the update/downdate mode rather than the iterative mode,
+then it will compute the Cholesky factorization of a matrix using the
+cholesky routine in SuiteSparse/CHOLMOD. The cholesky routine exploits the
+BLAS. At the top of pproj Makefile, the path to SuiteSparse,
+to the BLAS, and to LAPACK should be given. The path to the BLAS and LAPACK
+also should be given in SuiteSparse/SuiteSparse_config/SuiteSparse_config.mk.
+
+The code run_pproj.c illustrates how to call pproj. run_pproj is setup to read
+a collection of polyhedra whose names are given in the "names" file.
+A set of test problems are available in the same directory where the pproj
+code was downloaded. At the top of run_pproj, the string following the variable
+"testprobs" should give the path to where the test problems are stored.
+pproj can be invoked as follows:
+
+status = pproj (x, lambda, NULL, grad_tol, NULL, NULL, y,
+                nrow, ncol, Ap, Ai, Ax, lo, hi, bl, bu) ;
+
+The returned values of x and lambda are the least squares solution and the
+multipliers for the constraint on Ax. If a starting guess for lambda is
+known, it can be provided as input. In this case, the parameter parm->use_lambda
+needs to be set to TRUE. The run_pproj code shows how to set nondefault
+parameter values. Basically, a PPparm structure is declared at the start of
+the code, the routine pproj_default sets the default parameter values, and
+then any nondefault values are set before invoking pproj. The second NULL
+argument of pproj above is replaced by a pointer to the parameter structure.
+The third null argument of pproj above could be replaced by a structure
+to store statistics for the run. The statistics are printed by pproj_print_stat.
+Currently, the pproj_timer is wall time as measured by gettimeofday.
+The problem variables are as follows:
+
+y    - point to project onto the polyhedron
+nrow - number of rows in A
+ncol - number of columns in A
+Ap   - column pointers
+Ai   - row indices for A in increasing order in each column
+Ax   - numerical entries of A
+lo   - lower bounds for x
+hi   - upper bounds for x
+bl   - lower bounds for Ax
+bu   - upper bounds for Ax
+
+The default stopping criterion is relative condition:
+
+   ||grad L (lambda)||_sup / absAx_sup <= grad_tol
+
+where L is the dual function defined by
+
+L (lambda) = inf { .5||y-x||^2 + lambda'(b-Ax) : lo <= x <= hi, bl <= b <= bu },
+
+absAx_sup  = max_i sum_j |a_{ij} * x_j| where x achieves min in dual function,
+
+|| . ||_sup is the infinity norm or maximum absolute component of a vector
+
+If parm->stopabs = TRUE, then the stopping criterion is the absolute condition:
+
+   ||grad L (lambda)||_sup <= grad_tol

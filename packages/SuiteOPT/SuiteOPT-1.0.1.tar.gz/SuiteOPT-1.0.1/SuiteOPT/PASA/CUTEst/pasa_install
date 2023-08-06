@@ -1,0 +1,79 @@
+#!/bin/csh -f
+mkdir -p $CUTEST/src/pasa
+cp pasa $CUTEST/packages/defaults
+rm $CUTEST/src/pasa/*
+touch $CUTEST/src/pasa/pasa_main.c
+touch $CUTEST/src/pasa/pasa.c
+cp ../Source/pasa_default.c makemaster README $CUTEST/src/pasa
+set SUITESPARSE = ../../SuiteSparseX
+if ( $1 == debug ) then
+    gcc -g -lm -c -DPASA -W -Wall -pedantic -Wmissing-prototypes -std=c99 \
+            -Wredundant-decls -Wnested-externs -Wdisabled-optimization \
+            -fexceptions -Wno-parentheses -Wshadow -Wcast-align \
+            -Winline -Wstrict-prototypes -Wno-unknown-pragmas -lpthread \
+            -I$CUTEST/include -I$SUITESPARSE/CHOLMOD/Include \
+            -I$SUITESPARSE/CCOLAMD/Include -I$SUITESPARSE/SuiteSparse_config \
+            -I../Include -I../../PPROJ/Include -I../../SuiteOPTconfig \
+            -I../../NAPHEAP/Include -I../../CGDESCENT/Include pasa_main.c
+else if ( $1 == nopproj ) then
+    gcc -O3 -c -std=c99 -lpthread -DNDEBUG -DPASA -I$CUTEST/include \
+            -I../Include -I../../PPROJ/Include -I../../SuiteOPTconfig \
+            -I$SUITESPARSE/CHOLMOD/Include \
+            -I$SUITESPARSE/CCOLAMD/Include -I$SUITESPARSE/SuiteSparse_config \
+            -I../../NAPHEAP/Include -I../../CGDESCENT/Include pasa_main.c
+else
+    gcc -O3 -c -std=c99 -lpthread -DNDEBUG -DPASA -I$CUTEST/include \
+            -I$SUITESPARSE/CHOLMOD/Include -I$SUITESPARSE/CCOLAMD/Include \
+            -I$SUITESPARSE/SuiteSparse_config -I../Include \
+            -I../../PPROJ/Include -I../../SuiteOPTconfig \
+            -I../../NAPHEAP/Include -I../../CGDESCENT/Include pasa_main.c
+endif
+cp pasa_main.o  $CUTEST/objects/$MYARCH/double
+set CUTESTDIR = `pwd` ;
+cd ../..
+#make suitesparse
+cd NAPHEAP
+make lib
+cd ../CGDESCENT
+make lib
+if ( $1 != nopproj ) then
+cd ../PPROJ
+make lib
+endif
+cd ../PASA
+make lib
+cp Lib/pasa.o $CUTEST/objects/$MYARCH/double
+rehash
+cd CUTEst
+# --- Write pwd to the hidden file '.cutest_location' --------------------------
+echo "cutest_dir = "\""$CUTESTDIR"\"" ;" > .cutest_location
+#echo
+#echo "Installation of PASA for use with CUTEst complete."
+#echo ""
+
+cd ../..
+set LDLIBS = `pwd`/ldlibs
+cd PASA/CUTEst
+if ( -e runcutest ) then
+else
+    echo ""
+    echo "-------------------------------------------------------------"
+    echo "The command for using pasa to solve a polyhedral constrained"
+    echo "optimization problem stored in PROB.SIF is the following:"
+    echo ""
+    echo "runcutest -p pasa -L$LDLIBS -lpasa -lnapheap -lcg_descent -lpproj -lcholmod -lamd -lcamd -lccolamd -lcolamd -lmetis -lsuitesparseconfig -D PROB"
+    echo ""
+    echo "This command, excluding the problem name, could be stored as"
+    echo "an alias such as runpasa, in which case the command to solve"
+    echo "the problem stored in PROB.SIF would be: runpasa PROB"
+    echo "This alias is created for use in this window by typing"
+    echo ""\""source runcutest"\"" in this directory. Alternatively,"
+    echo "place the alias contained in the runcutest file found in"
+    echo "this directory inside a file that is executed at startup"
+    echo "such as the .cshrc or .bashrc file. When this is done, the"
+    echo "alias is valid in any window that is subsequently opened."
+    echo "-------------------------------------------------------------"
+endif
+
+# --- Write runcutest command to 'runcutest' file ------------------------------
+echo "alias runpasa "\'"runcutest -p pasa -L$LDLIBS -lpasa -lnapheap -lcg_descent -lpproj -lcholmod -lamd -lcamd -lccolamd -lcolamd -lmetis -lsuitesparseconfig -D"\'" " > runcutest

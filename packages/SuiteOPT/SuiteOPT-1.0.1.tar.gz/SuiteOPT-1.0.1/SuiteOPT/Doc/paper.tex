@@ -1,0 +1,651 @@
+%%
+%% This is file `lexample.tex',
+%% Sample file for siam macros for use with LaTeX 2e
+%%
+%% By Paul Duggan for the Society for Industrial and Applied
+%% Mathematics.
+%%
+%% October 1, 1995
+%%
+%% Version 1.0
+%%
+%% You are not allowed to change this file.
+%%
+%% You are allowed to distribute this file under the condition that
+%% it is distributed together with all of the files in the siam macro
+%% distribution. These are:
+%%
+%%  siamltex.cls (main LaTeX macro file for SIAM)
+%%  siamltex.sty (includes siamltex.cls for compatibility mode)
+%%  siam10.clo   (size option for 10pt papers)
+%%  subeqn.clo   (allows equation numbers with lettered subelements)
+%%  siam.bst     (bibliographic style file for BibTeX)
+%%  docultex.tex (documentation file)
+%%  lexample.tex (this file)
+%%
+%% If you receive only some of these files from someone, complain!
+%%
+%% \CharacterTable
+%%  {Upper-case    \A\B\C\D\E\F\G\H\I\J\K\L\M\N\O\P\Q\R\S\T\U\V\W\X\Y\Z
+%%   Lower-case    \a\b\c\d\e\f\g\h\i\j\k\l\m\n\o\p\q\r\s\t\u\v\w\x\y\z
+%%   Digits        \0\1\2\3\4\5\6\7\8\9
+%%   Exclamation   \!     Double quote  \"     Hash (number) \#
+%%   Dollar        \$     Percent       \%     Ampersand     \&
+%%   Acute accent  \'     Left paren    \(     Right paren   \)
+%%   Asterisk      \*     Plus          \+     Comma         \,
+%%   Minus         \-     Point         \.     Solidus       \/
+%%   Colon         \:     Semicolon     \;     Less than     \<
+%%   Equals        \=     Greater than  \>     Question mark \?
+%%   Commercial at \@     Left bracket  \[     Backslash     \\
+%%   Right bracket \]     Circumflex    \^     Underscore    \_
+%%   Grave accent  \`     Left brace    \{     Vertical bar  \|
+%%   Right brace   \}     Tilde         \~}
+
+
+\documentclass[final]{siamltex}
+
+\usepackage{graphicx}
+\usepackage{xcolor}
+\usepackage{longtable}
+%\usepackage[usenames]{color}
+
+
+% for bold math symbols, \bm command:
+\usepackage{bm}
+% for real number set symbol, \mathbb{R}:
+\usepackage{amsfonts}
+
+\newcommand{\rn}{{\bf R}}
+\newcommand{\tr}{^{\sf T}}
+\newcommand{\m}[1]{{\bf{#1}}}
+\newcommand{\g}[1]{\mbox{\boldmath $#1$}}
+\newcommand{\C}[1]{{\cal {#1}}}
+\input epsf
+\newcommand{\postscript}[2]
+ {\setlength{\epsfxsize}{#2\hsize}
+  \centerline{\epsfbox{#1}}}
+\colorlet{DarkGreen}{green!50!black}
+\title{SuiteOPT 1.0.0, November 1, 2019}
+\author{William W. Hager\\
+University of Florida}
+\begin{document}
+\maketitle
+%-------------------------------------------------------------------------------
+\section{\textcolor{blue}{Introduction}}
+%-------------------------------------------------------------------------------
+SuiteOPT is a software package that is currently designed to solve
+problems of the form
+\[
+\min \; f (\m{x}) \quad \mbox{subject to} \quad
+\m{bl} \le \m{Ax} \le \m{bu}, \quad \m{lo} \le \m{x} \le \m{hi}.
+\]
+Here $\m{A} \in \mathbb{R}^{m \times n}$,
+$\m{bl}$ and $\m{bu} \in \mathbb{R}^m$,
+and $\m{lo}$ and $\m{hi} \in \mathbb{R}^n$.
+The solution algorithm is based on the polyhedral active set algorithm
+(PASA) developed in \cite{HagerZhang16}.
+There are four different packages contained in SuiteOPT.
+\smallskip
+\begin{enumerate}
+\item
+\textcolor{DarkGreen}{PPROJ:}
+Given $\m{y} \in \mathbb{R}^n$, PPROJ
+uses the algorithm of \cite{hz16} along
+with the Dual Active Set Algorithm
+\cite{DavisHager08b, DavisHager08, Hager92, H93, Hager99,
+Hager02c, Hager03, HagerHearn93}
+and techniques for updating and downdating sparse Cholesky factorizations
+\cite{ChenDavisHagerRajamanickam09, DavisHager99, DavisHager01, DavisHager05,
+DavisHager09}
+to solve the projection problem
+\[
+\min \; \|\m{y} - \m{x}\| \quad \mbox{subject to} \quad
+\m{bl} \le \m{Ax} \le \m{bu}, \quad \m{lo} \le \m{x} \le \m{hi}.
+\]
+\item
+\textcolor{DarkGreen}{NAPHEAP:}
+Given $\m{a} \in \mathbb{R}^n$ and
+a diagonal matrix $\m{D}$ with nonnegative diagonal,
+NAPHEAP uses the algorithm of \cite{DavisHagerHungerford16}
+to solve the problem
+\[
+\min \; \left( \frac{1}{2}\right)
+\m{x}\tr \m{Dx} - \m{y}\tr \m{x} \quad \mbox{subject to} \quad
+bl \le \m{a}\tr\m{x} \le bu, \quad \m{lo} \le \m{x} \le \m{hi}.
+\]
+\item
+\textcolor{DarkGreen}{CG\_DESCENT:} The algorithms of
+\cite{hz03, hzACM04, HagerZhang13c} are used to
+solve an unconstrained optimization problem.
+\item
+\textcolor{DarkGreen}{PASA:}
+The framework of \cite{HagerZhang16} is used to combine the previous
+algorithms and solve a general polyhedral constrained optimization problem.
+\end{enumerate}
+\smallskip
+Since the update and downdate techniques used by PPROJ are contained in
+the CHOLMOD package of Timothy A Davis' SuiteSparse, a copy of
+the relevant parts of SuiteSparse, denoted SuiteSparseX,
+are included in the SuiteOPT software.
+Although there are four different solvers,
+they are all accessible through PASA, so by focusing on PASA,
+the user will be able to solve any polyhedral constrained optimization
+problem, and the PASA software will determine which of the other routines
+should be used.
+
+There are four different interfaces to the software:
+\smallskip
+\begin{itemize}
+\item[(a)]
+Since the codes are written in C, they can be invoked inside a
+C program.
+\item[(b)]
+Problems can be formulated and solved using MATLAB.
+\item[(c)]
+There is an interface to the software through Python.
+\item[(d)]
+There is an interface based on CUTEst
+(Constained and Unconstrained Testing Environment with Safe Threads)
+of Gould, Orban, and Toint \cite{GouldOrbanToint15}.
+\end{itemize}
+\smallskip
+We now explain how to install the software.
+
+%-------------------------------------------------------------------------------
+\section{\textcolor{blue}{Installation and Use in MATLAB}}
+\label{MATLAB}
+%-------------------------------------------------------------------------------
+
+Installing the software in MATLAB is relatively easy.
+At the top level of SuiteOPT, there is a directory called MATLAB.
+Inside this MATLAB directory, the user should start up MATLAB
+and type ``make'' in the command window, followed by a carriage return.
+This opens a menu that lets you decide which solvers to install.
+
+To use a solver in MATLAB, a structure must be defined which contains
+the problem data and any changes to the default parameter values.
+If SSdata denotes the data structure for solver SS, then the command
+to solve the problem is simply
+\smallskip
+\begin{center}
+{\tt x = SS (SSdata) ;}
+\end{center}
+\smallskip
+
+The important elements of the input data structure that the user wish to modify
+are listed in readme.m file in the solver's MATLAB subdirectory.
+By default, if an element of the problem data structure is not present,
+then the code assumes that the associated constraint does not exist.
+For example, if the constraint {\tt x <= hi} does not exist,
+then do not specify a value for the data element SSdata.hi.
+Generally, there is no need to specify a value for SSdata.ncol or SSdata.n
+since MATLAB can usually figure out the problem dimension from the
+provided data.
+
+For a list of the default parameters and their definitions,
+see the SS\_default.c code in the Source directory for each solver.
+For any of the solvers except PASA, the value of a parameter PP
+is changed using a statement of the form ``SSdata.PP = (new value)''.
+On the other hand, since PASA uses all the solvers,
+the corresponding statement in PASA
+is ``pasadata.SS.PP = (new value)'',
+where SS is pasa, pproj, napheap, or cg.
+
+See the demo files in the MATLAB subdirectories of NAPHEAP, PASA, PPROJ, or
+CGDESCENT for examples showing how to set up a problem.
+If MATLAB is started in any of these subdirectories directories where the
+associated solver has been installed, type
+``(solver\_name) readme'' for additional information on how to set up a problem.
+
+%-------------------------------------------------------------------------------
+\section{\textcolor{blue}{The User Configuration File and Compilation/Use in C}}
+\label{C}
+%-------------------------------------------------------------------------------
+If SuiteOPT is used in C, CUTEst, or Python, then the user
+will need to provide a file
+\textcolor{red}{Userconfig.mk} in the directory SuiteOPTconfig
+that contains the following information:
+\begin{itemize}
+\item[(1)]
+The C compiler denoted \textcolor{red}{CC}.
+\item[(2)]
+The optimization flags denoted \textcolor{red}{OPTFLAGS}.
+\item[(3)]
+A specification of the user's \textcolor{red}{BLAS} and \textcolor{red}{LAPACK}
+routines.
+\item[(4)]
+The path to the BLAS denoted \textcolor{red}{LDLIBS}.
+\end{itemize}
+The choice of the BLAS has a significant impact on the efficiency
+of the algorithms due to the following:
+The current version of SuiteSparse is based on OpenMP threading.
+In experiments, it was discovered that the OpenBLAS routine
+DGEMM performed poorly when OpenMP threading was used.
+The time for a Cholesky factorization using the OpenBLAS routine
+could be 800 times slower when OpenMP threading was used, compared to
+the time without OpenMP threading.
+Since DGEMM is used in the supernodal routines of CHOLMOD,
+this catastophe can be avoided by not using the supernodal routines
+(add to OPTFLAGS ``-DNSUPER'').
+Of course, bypassing the supernodal routines may cause a performance loss
+since these routines can accelerate a factorization when the matrix
+has dense blocks; on the other hand, this avoids the huge potential performance
+loss associated with the OpenBLAS routine DGEMM.
+
+Alternatively, the user can employ a different version of the BLAS
+that works correctly with OpenMP threading.
+Since Intel's MKL (Math Kernel Library) BLAS are currently free and
+seem to work properly with OpenMP threading, the user could benefit from
+the supernodal routines of CHOLMOD when using the MKL BLAS.
+The Userconfig.mk file provides examples showing possible way to set up
+this file.
+
+Once the Userconfig.mk file is setup, the codes are compiled in C by
+returning to the top level SuiteOPT directory and typing ``make'' followed
+by carriage return.
+This compiles the libraries in CGDESCENT, NAPHEAP, PPROJ, PASA, and
+SuiteSparseX, as well as the examples provided in the Demo subdirectories
+of each solver.
+
+%-------------------------------------------------------------------------------
+\section{\textcolor{blue}{Installation and Use in CUTEst}}
+\label{CUTE}
+%-------------------------------------------------------------------------------
+To install either PASA or CGDESCENT in CUTEst, the user must first download
+and install the CUTEst package.
+It can currently be downloaded from
+\begin{center}
+https://github.com/ralna/CUTEst/wiki
+\end{center}
+Be sure to install the three components of the package: archdefs, cutest,
+and sifdecode.
+Also, you can download the CUTE collection of test problems from this
+web site.
+After installing CUTE, be sure to set the environment variables that are
+highlighted during the installation process.
+The two variables need by SuiteOPT are \$CUTEST,
+which is the full path to the location of your cutest directory,
+and \$MYARCH, which is a string providing information about your
+operating system and computer architecture.
+After setting up CUTE, go to the directory \$CUTEST/bin/sys and add two
+lines to provide your BLAS and LAPACK information.
+This is the same information should also be stored in your Userconfig.mk file,
+although the format is slightly bit different.
+If using OpenBLAS, the lines added to the file in \$CUTEST/bin/sys
+could be of the following form:
+
+\bigskip
+\noindent
+{\tt BLAS="/usr/lib64/libopenblaso64-r0.3.3.so -lgfortran -lpthread"}
+\newline
+
+\noindent
+{\tt LAPACK="/usr/lib64/liblapack.so.3.2.1"}
+\bigskip
+
+\noindent
+If using MKL (Intel's Math Kernel Library) BLAS, these lines might
+have the following structure:
+
+\bigskip
+\noindent
+{\tt BLAS="-L/opt/intel/mkl/lib/intel64 -lmkl\_intel\_lp64 -lmkl\_intel\_thread -lmkl\_core}
+\newline
+{\tt -L/opt/intel/compilers\_and\_libraries\_2019.4.243/linux/compiler/lib/intel64 -liomp5 -lpthread -lm"}
+\newline
+
+\noindent
+{\tt LAPACK="-lmkl\_lapack95\_lp64"}
+\bigskip
+
+Another environment variable likely needed is LD\_LIBRARY\_PATH.
+This provides the path to dynamic libraries that are loaded at run time.
+If the MKL BLAS are used, then the LD\_LIBRARY\_PATH should contain both of the
+paths given for LDLIBS in the Userconf.mk file.
+In addition the full path to the ldlibs directory at the top level of
+SuiteOPT is need.
+The command for setting up this environment variable is something like the
+following when three paths are needed:
+\bigskip
+\begin{center}
+{\tt setenv LD\_LIBRARY\_PATH "path1:path2:path3"}
+\end{center}
+\bigskip
+
+At this point, PASA and CGDESCENT can be installed in CUTEst by going to the
+top level directory in SuiteOPT and typing ``make cute'' followed by
+carriage return.
+As the codes are compiled and installed into CUTEst, the following two
+files are created: CGDESCENT/CUTEst/runcutest and PASA/CUTEst/runcutest.
+These files contain the commands for using either pasa or cg\_descent
+with CUTEst.
+If these aliases are placed in a file such as ``.cshrc'' or ``.bashrc''
+that are executed at startup, then the aliases can be used in any window
+that is subsequently opened.
+Exploiting these aliases,
+the command for solving a polyhedral constrained optimization
+problem PROB.SIF from CUTEst would be ``runpasa PROB'' while for an
+unconstrained optimization problem, the command would be
+``runcg PROB''.
+
+The default parameter values and their documentation appear in the files
+\smallskip
+\begin{center}
+pasa\_default.c, pproj\_default.c, cg\_default.c, and napheap\_default.c,
+\end{center}
+\smallskip
+which are found in the Source directories for PASA, PPROJ, CG, and NAPHEAP
+respectively.
+New values for the pasa parameter
+can be set in
+\smallskip
+\begin{center}
+PASA/CUTEst/pasa\_main.c
+\end{center}
+\smallskip
+right before the call to ``pasa (pasadata)''.
+New values for the CG\_DESCENT parameters can be set right before the call to
+``cg\_descent (cgdata)'' in
+\smallskip
+\begin{center}
+PASA/CUTEst/pasa\_main.c and in CGDESCENT/CUTEst/cg\_descent\_main.c.
+\end{center}
+\smallskip
+Of course, when new parameter values are set, then the pasa\_main
+or the cg\_descent\_main codes must be recompiled by typing ``make''
+in their respective directories.
+\section{\textcolor{blue}{Appendix: Elements of Input Data Structures}}
+This appendix provides a list of the elements in the solver input data
+structure that the user may wish to provide.
+All of the solvers in SuiteOPT
+use floating point and integer variables of the same size,
+which are denoted SuiteOPTfloat and SuiteOPTint respectively in the
+file SuiteOPTconfig.h.
+Throughout this appendix, these sizes are denoted SF and SI.
+Also, Ps and Pp are abbreviations used for the
+PASAstats and PASAparms structures.
+\bigskip
+
+\noindent
+\textcolor{DarkGreen}{\bf Structure Name: PASAdata}
+\bigskip
+
+\noindent
+\textcolor{red}{Optimization Problem:}
+\[
+\min \; f (\m{x}) \quad \mbox{subject to} \quad
+\m{bl} \le \m{Ax} \le \m{bu}, \quad \m{lo} \le \m{x} \le \m{hi}.
+\]
+
+\noindent
+\textcolor{red}{Special Cases Treated by PASA:}
+\smallskip
+\begin{enumerate}
+\item
+Unconstrained optimization, the constraints are not present.
+\item
+Bound constrained optimization, the constraint
+is $\m{lo} \le \m{x} \le \m{hi}$.
+\item
+The objective is linear $\m{c}\tr \m{x}$.
+\item
+The objective is quadratic $0.5\m{x}\tr \m{Qx} + \m{c}\tr \m{x}$.
+\item
+The objective is $\|\m{y} - \m{x}\|^2$, $\m{x}$ is the projection of
+$\m{y}$ on the polyhedron.
+\item
+The problem is $\min ~ 0.5\m{x}\tr\m{Dx}$ subject to
+$\m{lo} \le \m{x} \le \m{hi}$ and $bl \le \m{a}\tr\m{x} \le bu$,
+where $\m{D}$ is a diagonal matrix with nonnegative diagonal.
+\end{enumerate}
+\smallskip
+
+\noindent
+\textcolor{red}{NOTE:} User only needs to define the portion of the
+data structure relevant to the problem case being solved.
+\smallskip
+
+
+{\tt
+\begin{longtable}{l|l|p{3.5in}}
+Name & Type & Description \\
+\hline
+lambda & SF * & Size nrow. If parameter use\_lambda is TRUE,
+                      then lambda points to a starting guess for the multiplier.
+                      If lambda is NULL, then PASA allocates memory
+                      for lambda. PASA returns in lambda the multiplier
+                      associated with the constraint
+                      $\m{bl} \le \m{Ax} \le \m{bu}$.
+                      Any allocated memory is freed by pasa\_terminate. \\
+\hline
+x & SF *      & Size ncol. Points to a starting guess for
+                      routines that require one (NAPHEAP,
+                      PPROJ, and the LP solver do not require a
+                      starting guess).  If NULL, then
+                      PASA allocates memory for x. If x is NULL and
+                      a starting guess is needed, then x is set to zero.
+                      The problem solution is returned in x.
+                      Any allocated memory is freed by pasa\_terminate. \\
+\hline
+nrow &  PI        & Number of rows in \m{A} if it exists. \\
+\hline
+ncol &  PI        & Number of components in x (= number of cols in
+                         \m{A} if it exists). \\
+\hline
+Ap & PI *         & Size ncol + 1. Column pointers. \\
+\hline
+Ai & PI *         & Size Ap [ncol]. Row indices in increasing order in
+                         each column. \\
+\hline
+Ax & SF *       & Size Ap [ncol]. Numerical entries in $\m{A}$
+                         coresponding to the row indices in Ai. \\
+\hline
+bl & SF *       & Size nrow. Lower bound in the constraint
+                         $\m{bl} \le \m{Ax}$. NULL implies use $-\infty$ for
+                         lower bound. \\
+\hline
+bu & SF *       & Size nrow. Upper bound in the constraint
+                         $\m{Ax} \le \m{bu}$. NULL implies use $+\infty$ for
+                         upper bound. \\
+\hline
+lo & SF *        & Size ncol. Lower bound in the constraint
+                         $\m{lo} \le \m{x}$. NULL implies use $-\infty$ for
+                         lower bound. \\
+\hline
+hi & SF *        & Size ncol. Upper bound in the constraint
+                         $\m{x} \le \m{hi}$. NULL implies use $+\infty$ for
+                         upper bound. \\
+\hline
+y & SF *        & Size ncol. A vector to be projected on polyhedron
+                         $\m{bl} \le \m{Ax} \le \m{bu}$,
+                         $\m{lo} \le  \m{x} \le \m{hi}$ \\
+\hline
+c & SF *        &  Size ncol. Linear term when objective is quadratic
+                              or linear. \\
+\hline
+a & SF *        &  Size ncol. The coefficient matrix in the case where
+                          nrow = 1. \\
+\hline
+d & SF *        & Size ncol. Hessian diagonal when the objective Hessian
+                         is a diagonal matrix. \\
+\hline
+hprod &             & hprod (SF *p, SF *x, PI *F, PI n, PI m)
+                      computes p = H(:, F)*x(F) where H is the n by n Hessian
+                      of the objective and F denotes a collection of m indices
+                      from 1:n (used for constrained quadratic objectives) \\
+\hline
+cg\_prod &          & cg\_hprod (SF *p, SF *x, PI n) computes
+                      p = H*x where H is the n by n Hessian of the
+                      objective (used for unconstrained quadratic objectives) \\
+\hline
+value &             & value (SF *f, SF *x, PI n)
+                      put the value of the objective at x in *f
+                      (not needed when hprod/cg\_prod and c provided)\\
+\hline
+grad &             & grad (SF *g, SF *x, PI n)
+                     put the gradient of the objective at x in g
+                     (not needed when hprod/cg\_prod and c provided) \\
+\hline
+valgrad &       & valgrad (SF *f, SF *g, SF *x, PI n)
+                  put the value of the objective at x in *f and
+                  the gradient in g (this routine is optional, but it can
+                  speed up the computations when the objective and its
+                  gradient can be computed faster together than separately. \\
+\hline
+Parms & Pp * & Contains pointers to four parameter structures
+                      pasa, cg, pproj, napheap. Example:
+                      Parms{\tt ->}pasa is a PASAparm parameter structure. \\
+\hline
+Stats & Ps * & Contains pointers to four statistics structures corresponding
+                      to solvers SS = pasa, cg, pproj, or napheap.
+                      Stats{\tt ->}use\_SS is TRUE if solver SS was used during
+                      the run and there are statistics in Stats{\tt ->}SS. \\
+\end{longtable}
+}
+\bigskip
+
+The following elements of the PASAdata structure are used internally,
+and the user should not touch them.
+\bigskip
+
+{\tt
+\begin{tabular}{l|l|p{3in}}
+Name & Type & Description \\
+\hline
+cgdata & CGdata *      & Input data for CG\_DESCENT. \\
+\hline
+ppdata & PPdata *      & Input data for PPROJ. \\
+\hline
+napdata & NAPdata *    & Input data for NAPHEAP. \\
+\hline
+x\_created & SF * & Size ncol. Pointer to memory created for x. \\
+\hline
+lambda\_created & SF * & Size ncol.
+                                Pointer to memory created for lambda. \\
+\hline
+xwork & SF * & Pointer to the pasa float work area \\
+\hline
+iwork & PI * & Pointer to the pasa integer work area \\
+\hline
+\end{tabular}
+}
+\bigskip
+\bigskip
+
+\noindent
+\textcolor{DarkGreen}{\bf Structure Name: PPdata}
+\bigskip
+%\bigskip
+
+\noindent
+\textcolor{red}{\bf Optimization Problem:}
+\[
+\min \; \|\m{y} - \m{x}\|^2
+%+ \m{y_1}\tr\m{x_2}
+\quad \mbox{subject to} \quad
+\m{bl} \le \m{Ax} \le \m{bu}, \quad \m{lo} \le \m{x} \le \m{hi}.
+\]
+%where $\m{A} = [\m{A_0} -\m{A_1}]$, $\m{x}\tr = [\m{x_0}\tr \m{x_1}]$
+where $\|\cdot\|$ is the Euclidean norm.
+%The data $\m{y_1}$ and $\m{A_1}$ could be vacuous.
+%When they are present, it is required that
+%$\m{A_1}$ is a matrix for which each column
+%is zero except for a single 1, $\m{bl} = \m{bu}$, and the
+%elements of $\m{y_1}$ corresponding to the nonzeros in any row
+%of $\m{A_1}$ are all distinct and in increasing order.
+%The $(\m{y_1}, \m{A_1})$ elements in this optimization problem
+%were introduced so that PASA can quickly solve linear programs.
+
+
+{\tt
+\begin{longtable}{l|l|p{3.5in}}
+Name & Type & Description \\
+\hline
+lambda & SF * & Size nrow.  If parameter start\_guess = 3, then
+                            stores the starting guess for the constraint
+                            multiplier.  If NULL, then malloc'd by pproj.
+                            Used to return final multiplier for constraint
+                            $\m{bl} \le \m{Ax} \le \m{bu}$.
+                            Any allocated memory is freed by
+                            pproj\_terminate \\
+\hline
+x & SF *      & Size ncol. Projection of y on the polyhedral constraint.
+                      If NULL, then PPROJ allocates memory for x.
+                      Any allocated memory is freed by pproj\_terminate. \\
+\hline
+priordata & PPcom & Data from a prior run of PPROJ. Used to compute a series
+                    of projections where y changes, but not the polyhedron.
+                    The prior projection can be used to get a starting guess
+                    for the active constraints in the new projection.  \\
+nrow &  SI        & Number of rows in \m{A} if it exists. \\
+\hline
+ncol &  SI        & Number of components in x (= number of cols in
+                         \m{A} if it exists). \\
+\hline
+Ap & SI *         & Size ncol + 1. Column pointers. \\
+\hline
+Ai & SI *         & Size Ap [ncol]. Row indices in increasing order in
+                         each column. \\
+\hline
+Ax & SF *       & Size Ap [ncol]. Numerical entries in $\m{A}$
+                         coresponding to the row indices in Ai. \\
+\hline
+bl & SF *       & Size nrow. Lower bound in the constraint
+                         $\m{bl} \le \m{Ax}$. NULL implies use $-\infty$ for
+                         lower bound. \\
+\hline
+bu & SF *       & Size nrow. Upper bound in the constraint
+                         $\m{Ax} \le \m{bu}$. NULL implies use $+\infty$ for
+                         upper bound. \\
+\hline
+lo & SF *        & Size ncol. Lower bound in the constraint
+                         $\m{lo} \le \m{x}$. NULL implies use $-\infty$ for
+                         lower bound. \\
+\hline
+hi & SF *        & Size ncol. Upper bound in the constraint
+                         $\m{x} \le \m{hi}$. NULL implies use $+\infty$ for
+                         upper bound. \\
+\hline
+y & SF *        & Size ncol. A vector to be projected on polyhedron
+                         $\m{bl} \le \m{Ax} \le \m{bu}$,
+                         $\m{lo} \le  \m{x} \le \m{hi}$ \\
+\hline
+Parm & PPparm * & Parameter structure. \\
+\hline
+Stat & PPstat * & Statistics structure. \\
+\end{longtable}
+}
+\bigskip
+
+The following elements of the PASAdata structure are used internally,
+and the user should not touch them.
+\bigskip
+
+{\tt
+\begin{tabular}{l|l|p{3in}}
+Name & Type & Description \\
+\hline
+x\_created & SF * & Size ncol. Pointer to memory created for x. \\
+\hline
+lambda\_created & SF * & Size ncol.
+                                Pointer to memory created for lambda. \\
+\hline
+ni    & SI   & Number of strict inequalities where $bl_i < bu_i$. \\
+\hline
+nsing & SI   & Number of column singletons in A \\
+\hline
+row\_sing & SI *  & Size nrow + 1. Pointers connected with column singletons. \\
+\hline
+singlo    & SF *  & Size nsing. Lower bounds associated with column
+                    singletons.\\
+\hline
+singhi    & SF *  & Size nsing. Upper bounds associated with column
+                    singletons.\\
+\hline
+singc     & SF *  & Size nsing. Cost vector associated with column singletons.\\
+\end{tabular}
+}
+
+\bibliographystyle{siam}
+\bibliography{library.bib}
+\end{document}
