@@ -1,0 +1,10 @@
+xero_db_connector/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+xero_db_connector/extract.py,sha256=3tapTgMXFHDAppQioUEQaSsCItn0bjQ11GxRvHKzBWU,6065
+xero_db_connector/extract_ddl.sql,sha256=MU2CW9JAiLfu4tpPtPAwkuK51mGaR4iVa2LiNVK5M3g,1647
+xero_db_connector/load.py,sha256=0qfqo6E1sCXzHauqsfWdFwrJ8fJ4Gibntb1joVaj6bA,2866
+xero_db_connector/load_ddl.sql,sha256=QUWejfomUpQIgnXP2aPSJIb7lgljUpMzghMB603GvCQ,1071
+xero_db_connector-0.3.1.dist-info/LICENSE,sha256=04EJnF8lBuGQQIC2dnxB6eAFcc_sbyqN1QGQrmhJV9o,1082
+xero_db_connector-0.3.1.dist-info/METADATA,sha256=0zccdy9KHOA4SQZaNB77ybcxm8M_PsI2Vwq_8Ux6zUI,5351
+xero_db_connector-0.3.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+xero_db_connector-0.3.1.dist-info/top_level.txt,sha256=Q_YZLtjj_PYq-oMIMGMI7aRAfGipX7tTAVUsLcGKOJo,18
+xero_db_connector-0.3.1.dist-info/RECORD,,
