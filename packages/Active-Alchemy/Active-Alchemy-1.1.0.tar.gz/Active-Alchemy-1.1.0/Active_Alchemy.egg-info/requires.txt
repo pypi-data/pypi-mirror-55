@@ -1,0 +1,7 @@
+SQLAlchemy
+PyMySQL
+pg8000
+Paginator
+inflection
+arrow
+sqlalchemy-utils
