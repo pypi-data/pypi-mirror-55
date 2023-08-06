@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: achan-test
+Version: 0.0.1b8
+Summary: Proto IDL for Data Catalog Service
+Home-page: https://www.github.com/lyft/datacatalog
+Maintainer: Andrew Chan-test
+Maintainer-email: achan@lyft.com
+License: apache2
+Platform: UNKNOWN
+Requires-Python: >=2.7
+Requires-Dist: protobuf (<4.0.0,>=3.5.0)
+Requires-Dist: flyteidl (<1.0.0,>=0.14.0)
+Requires-Dist: typing (>=3.6) ; python_version=="2.7"
+
+UNKNOWN
+
+

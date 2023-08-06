@@ -1,0 +1,9 @@
+datacatalog/__init__.py,sha256=WOYvsIEGYvbDtN1utf_3fKON6H6yWFA2ZlqHBLsOkfE,17
+datacatalog/service_pb2.py,sha256=Ik_X5ilhx9DHtG2q9-aSA4JPhi_kk09uG7A75sGFXpo,30382
+datacatalog/service_pb2_grpc.py,sha256=vj_E37sHe4G33RxObxSb_vit-cYLyotcfj9WpFMnci0,4953
+achan_test-0.0.1b8.dist-info/LICENSE,sha256=489ZXeW9G90up6ep-D1n-lJgk9ciNT2yxXpFgRSidtk,11341
+achan_test-0.0.1b8.dist-info/METADATA,sha256=5mYJSK9vysCb7wQnS93j1AM_N4bRvsxDlYOZuQDiapQ,419
+achan_test-0.0.1b8.dist-info/NOTICE,sha256=e8s0_81fyXVbhDyNmCBZXumDOeRLOs6fD1Oo8D2oHOs,98
+achan_test-0.0.1b8.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+achan_test-0.0.1b8.dist-info/top_level.txt,sha256=rMYKcTWea4a2S10OZaI8f-ig8c00_MtwsqaD_LyEOIo,12
+achan_test-0.0.1b8.dist-info/RECORD,,
