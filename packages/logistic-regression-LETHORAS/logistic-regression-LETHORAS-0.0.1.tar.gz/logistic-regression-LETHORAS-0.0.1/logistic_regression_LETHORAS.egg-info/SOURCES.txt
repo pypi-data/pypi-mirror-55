@@ -1,0 +1,7 @@
+setup.py
+logistic_regression/__init__.py
+logistic_regression/regression_fuctions.py
+logistic_regression_LETHORAS.egg-info/PKG-INFO
+logistic_regression_LETHORAS.egg-info/SOURCES.txt
+logistic_regression_LETHORAS.egg-info/dependency_links.txt
+logistic_regression_LETHORAS.egg-info/top_level.txt

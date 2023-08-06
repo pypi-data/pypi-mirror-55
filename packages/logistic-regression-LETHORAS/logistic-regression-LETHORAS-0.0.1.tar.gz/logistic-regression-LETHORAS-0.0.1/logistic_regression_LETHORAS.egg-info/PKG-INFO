@@ -1,0 +1,15 @@
+Metadata-Version: 1.2
+Name: logistic-regression-LETHORAS
+Version: 0.0.1
+Summary: stochastic regression
+Home-page: UNKNOWN
+Author: Sebastian Koenig
+Author-email: sebastian@koenig-global.org
+License: UNKNOWN
+Description-Content-Type: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
