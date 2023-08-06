@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: sftdyn
+Version: 0.10
+Summary: HTTP(S)-based dynamic DNS updater server
+Home-page: https://github.com/SFTtech/sftdyn
+Author: Michael Ensslin
+Author-email: michael@ensslin.cc
+License: GPL3+
+Description: dyndns.org-like service that accepts update requests via HTTP(S) and forwards them to a locally running DNS server via nsupdate -l.
+        Works with most routers.
+        Readme: https://github.com/SFTtech/sftdyn/blob/master/README.md
+Platform: Linux
+Classifier: License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)
+Classifier: Topic :: Internet :: WWW/HTTP
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: Operating System :: POSIX :: Linux
