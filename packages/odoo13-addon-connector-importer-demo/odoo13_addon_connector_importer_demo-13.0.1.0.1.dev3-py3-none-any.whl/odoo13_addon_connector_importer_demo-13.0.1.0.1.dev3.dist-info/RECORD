@@ -1,0 +1,17 @@
+odoo/addons/connector_importer_demo/README.rst,sha256=VLadEGTEgeFvN9ncUCzaxE-PYBSxNL_WeE470G83J5I,2487
+odoo/addons/connector_importer_demo/__init__.py,sha256=2i_tQlW8aIhh1n10Ur_I2FbbXYGEbjBjx7tcc7_Chlc,34
+odoo/addons/connector_importer_demo/__manifest__.py,sha256=FsdyLTtMHRCLkGSVuWMwJRsZ0V8dF2s9gbou_h5sxW4,641
+odoo/addons/connector_importer_demo/hooks.py,sha256=1b7EIPFM6arqnUMWQLgHa-RSarTGiZp31J_8pQCt5Rs,682
+odoo/addons/connector_importer_demo/data/import_backend.xml,sha256=ckzLjFF2P48QklxqtgWLtMx4A1QixOPMs39GDTa0KqM,321
+odoo/addons/connector_importer_demo/data/import_recordset.xml,sha256=3QzIeuoPUAlNnTaW748RmrfH_-1hTuI81yCU1JOejwI,519
+odoo/addons/connector_importer_demo/data/import_source.xml,sha256=vKPrmoqO55t11xkJhMkHgwmepTDhpMGxNt69yH7eAUA,593
+odoo/addons/connector_importer_demo/data/import_type.xml,sha256=UV47Y1d1dCQM6_nbWGJhMLYMvC-NYelfkYLj7m4NIJg,384
+odoo/addons/connector_importer_demo/example/res.partner.csv,sha256=naC8IVDVy9HmCu9SpNi9Y2nZi84RPFqGRKncHEH0esU,124064
+odoo/addons/connector_importer_demo/i18n/connector_importer_demo.pot,sha256=DSoZvi3Yi_MHcxFXi2AFQSEsCID4KGLbvwoBM_xL6ik,341
+odoo/addons/connector_importer_demo/readme/DESCRIPTION.rst,sha256=68s7P98K709A4CZXgFDmkSPV5AueWzCyYK25qi5cMh0,36
+odoo/addons/connector_importer_demo/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo/addons/connector_importer_demo/static/description/index.html,sha256=7CRP1RCn6-Ur4W5VvXZ6VOIygnARlLRQ6lBM_aR3Ddo,11306
+odoo13_addon_connector_importer_demo-13.0.1.0.1.dev3.dist-info/METADATA,sha256=gA4M2kGXo16E7IbFBGpsXbHbGqOZv3ZwPcVkd3P4b2Q,3066
+odoo13_addon_connector_importer_demo-13.0.1.0.1.dev3.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+odoo13_addon_connector_importer_demo-13.0.1.0.1.dev3.dist-info/top_level.txt,sha256=qBj40grFkGOfDZ2WDSw3y1RnDlgG0u8rP8pvGNdbz4w,5
+odoo13_addon_connector_importer_demo-13.0.1.0.1.dev3.dist-info/RECORD,,
