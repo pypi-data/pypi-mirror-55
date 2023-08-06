@@ -1,0 +1,39 @@
+Metadata-Version: 2.1
+Name: turta_protohat
+Version: 1.0.0
+Summary: Python Libraries for Turta Proto HAT
+Home-page: https://www.turta.io/protohat
+Author: Turta LLC
+Author-email: hello@turta.io
+License: UNKNOWN
+Project-URL: Documentation, https://docs.turta.io/raspberry-pi-hats/proto-hat
+Project-URL: Community, https://community.turta.io
+Project-URL: GitHub Repository, https://github.com/Turta-io/Proto-HAT
+Description: # Turta Proto HAT for Raspberry Pi
+        Proto HAT is a prototyping board with on-board ADC for Raspberry Pi.
+        
+        ## Features
+        - 5x22 Free pads.
+        - 2x22 Columns breadboard style pads.
+        - 13 GPIO, I2C, SPI, UART (Serial), and 5V pads on the top row.
+        - 2 Rows 3.3V, 2 Rows GND pads.
+        - Additional I2C Pads on the breadboard area.
+        - Analog-to-Digital Converter over the SPI CS0.
+        - 4Ch single-ended or 2Ch differential analog inputs are available.
+        - Board temperature reading on the ADC IC.
+        - Slot for Raspberry Pi's CSI Camera Port.
+        - Stackable Raspberry Pi header.
+        - ID EEPROM for Raspberry Pi HAT specification compliance.
+        - Pads are numbered for easy content creation.
+        
+        ## Documentation
+        Visit [docs.turta.io](https://docs.turta.io) for documentation.
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Intended Audience :: Developers
+Classifier: Programming Language :: Python
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: Unix
+Classifier: Topic :: System :: Hardware
+Description-Content-Type: text/markdown
