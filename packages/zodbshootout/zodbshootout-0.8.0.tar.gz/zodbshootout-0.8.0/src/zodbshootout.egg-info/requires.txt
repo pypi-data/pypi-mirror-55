@@ -1,0 +1,24 @@
+objgraph
+setuptools
+pyperf
+ZODB>=4.4.2
+ZEO>=4.2.0
+
+[:python_version == "2.7"]
+statistics
+
+[mysql]
+relstorage[mysql]>=2.0rc1
+
+[mysql:platform_python_implementation == "CPython" and python_version >= "3.3" and sys_platform != "win32"]
+mysqlclient<1.4,>=1.3.7
+
+[oracle]
+relstorage[oracle]>=2.0rc1
+
+[postgresql]
+relstorage[postgresql]>=2.0rc1
+
+[test]
+zope.testrunner
+nti.testing
