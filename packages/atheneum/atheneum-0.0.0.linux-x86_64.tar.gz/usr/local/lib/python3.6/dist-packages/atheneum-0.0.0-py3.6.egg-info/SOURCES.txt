@@ -1,0 +1,5 @@
+setup.py
+atheneum.egg-info/PKG-INFO
+atheneum.egg-info/SOURCES.txt
+atheneum.egg-info/dependency_links.txt
+atheneum.egg-info/top_level.txt
