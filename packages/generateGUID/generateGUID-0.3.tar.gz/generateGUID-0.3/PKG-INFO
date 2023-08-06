@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: generateGUID
+Version: 0.3
+Summary: UNKNOWN
+Home-page: https://github.com/Slowblitz/GUID-core
+Author: jeremy garcia
+Author-email: jeremy.garcia@univ-amu.fr
+License: UNKNOWN
+Description: # GUID-core
+        Core code for GUID generation
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
