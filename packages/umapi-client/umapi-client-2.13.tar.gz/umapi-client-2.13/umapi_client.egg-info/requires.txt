@@ -1,0 +1,7 @@
+requests>=2.4.2
+cryptography
+PyJWT
+six
+
+[:python_version < "3.4"]
+enum34
