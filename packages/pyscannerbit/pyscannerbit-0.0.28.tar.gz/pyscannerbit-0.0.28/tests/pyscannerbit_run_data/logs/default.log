@@ -1,0 +1,63 @@
+(Fri Nov 15 16:48:07 2019)(-0.118647 [s])[Default,Scanner][Warning][Non-fatal]:
+WARNING: A problem has been raised by ScannerBit.
+Could not find plugin library "/home/farmer/anaconda3/lib/python3.7/site-packages/pyscannerbit/ScannerBit/lib/libscanner_diver_1.0.0.so".
+
+Raised at: line 102 in function Gambit::Scanner::Plugins::Plugin_Loader::Plugin_Loader() of /tmp/pip-req-build-vkke4x5u/pyscannerbit/scannerbit/untar/ScannerBit/ScannerBit/src/plugin_loader.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Fri Nov 15 16:48:07 2019)(-0.118626 [s])[Default,Scanner][Warning][Non-fatal]:
+WARNING: A problem has been raised by ScannerBit.
+Could not find plugin library "/home/farmer/anaconda3/lib/python3.7/site-packages/pyscannerbit/ScannerBit/lib/libscanner_diver_1.0.2.so".
+
+Raised at: line 102 in function Gambit::Scanner::Plugins::Plugin_Loader::Plugin_Loader() of /tmp/pip-req-build-vkke4x5u/pyscannerbit/scannerbit/untar/ScannerBit/ScannerBit/src/plugin_loader.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Fri Nov 15 16:48:07 2019)(-0.107772 [s])[Default,Scanner][Warning][Non-fatal]:
+WARNING: A problem has been raised by ScannerBit.
+Could not find plugin library "/home/farmer/anaconda3/lib/python3.7/site-packages/pyscannerbit/ScannerBit/lib/libscanner_great.so".
+
+Raised at: line 102 in function Gambit::Scanner::Plugins::Plugin_Loader::Plugin_Loader() of /tmp/pip-req-build-vkke4x5u/pyscannerbit/scannerbit/untar/ScannerBit/ScannerBit/src/plugin_loader.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Fri Nov 15 16:48:07 2019)(-0.0957045 [s])[Default,Scanner][Warning][Non-fatal]:
+WARNING: A problem has been raised by ScannerBit.
+Could not find plugin library "/home/farmer/anaconda3/lib/python3.7/site-packages/pyscannerbit/ScannerBit/lib/libscanner_multinest_3.10.so".
+
+Raised at: line 102 in function Gambit::Scanner::Plugins::Plugin_Loader::Plugin_Loader() of /tmp/pip-req-build-vkke4x5u/pyscannerbit/scannerbit/untar/ScannerBit/ScannerBit/src/plugin_loader.cpp.
+--<>--<>--<>--<>--<>--<>--<>--
+(Fri Nov 15 16:48:07 2019)(0.00904505 [s])[Default,Utilities]:
+Random number engine mt19937_64 (default) selected with seed 1964222940.
+--<>--<>--<>--<>--<>--<>--<>--
+(Fri Nov 15 16:48:07 2019)(0.00956327 [s])[Default,Printers][Info]:
+Running shell command: rm -f pyscannerbit_run_data//samples//results.hdf5
+--<>--<>--<>--<>--<>--<>--<>--
+(Fri Nov 15 16:48:07 2019)(0.015766 [s])[Default,Core]:
+Starting scan.
+--<>--<>--<>--<>--<>--<>--<>--
+(Fri Nov 15 16:48:07 2019)(0.017512 [s])[Default,Printers][Info]:
+Assigned printer ID '0' to output quantity with label 'LogLike'
+--<>--<>--<>--<>--<>--<>--<>--
+(Fri Nov 15 16:48:07 2019)(0.0175839 [s])[Default,Printers][Info]:
+Assigned printer ID '1' to output quantity with label 'pointID'
+--<>--<>--<>--<>--<>--<>--<>--
+(Fri Nov 15 16:48:07 2019)(0.0176344 [s])[Default,Printers][Info]:
+Assigned printer ID '2' to output quantity with label 'MPIrank'
+--<>--<>--<>--<>--<>--<>--<>--
+(Fri Nov 15 16:48:07 2019)(0.0187736 [s])[Default,Printers][Info]:
+Assigned printer ID '3' to output quantity with label 'mult'
+--<>--<>--<>--<>--<>--<>--<>--
+(Fri Nov 15 16:48:07 2019)(0.0188232 [s])[Default,Printers][Info]:
+Assigned printer ID '4' to output quantity with label 'chain'
+--<>--<>--<>--<>--<>--<>--<>--
+(Fri Nov 15 16:48:07 2019)(0.0197128 [s])[Default,Printers][Info]:
+Assigned printer ID '5' to output quantity with label 'model1::x'
+--<>--<>--<>--<>--<>--<>--<>--
+(Fri Nov 15 16:48:07 2019)(0.0198954 [s])[Default,Printers][Info]:
+Assigned printer ID '6' to output quantity with label 'my_param'
+--<>--<>--<>--<>--<>--<>--<>--
+(Fri Nov 15 16:48:07 2019)(0.0200193 [s])[Default,Printers][Info]:
+Assigned printer ID '7' to output quantity with label 'unitCubeParameters'
+--<>--<>--<>--<>--<>--<>--<>--
+(Fri Nov 15 16:48:13 2019)(5.72122 [s])[Default]:
+Synchronised buffers flushed for rank 0 printers. Waiting for all processes to flush their sync data before we try to write the RA data.
+--<>--<>--<>--<>--<>--<>--<>--
+(Fri Nov 15 16:48:13 2019)(5.7747 [s])[Default]:
+GAMBIT run completed successfully.
+--<>--<>--<>--<>--<>--<>--<>--
