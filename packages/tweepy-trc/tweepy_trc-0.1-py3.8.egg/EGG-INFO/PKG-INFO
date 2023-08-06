@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: tweepy-trc
+Version: 0.1
+Summary: Tweepy wrapper for .trc / .twurlrc
+Home-page: https://github.com/palevell/tweepy-trc
+Author: Patrick A. Levell
+Author-email: patrick.a.levell@gmail.com
+License: MIT License
+Description: UNKNOWN
+Platform: UNKNOWN
