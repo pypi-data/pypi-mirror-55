@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: status-reminder
+Version: 0.0.2
+Summary: Task status reminder and API exception reminder
+Home-page: https://github.com/alazycoder/Reminder
+Author: Hongjie Gao
+Author-email: 1801213783@pku.edu.cn
+License: UNKNOWN
+Description: # Reminder
+        Task status reminder and API exception reminder.
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.0
+Description-Content-Type: text/markdown
