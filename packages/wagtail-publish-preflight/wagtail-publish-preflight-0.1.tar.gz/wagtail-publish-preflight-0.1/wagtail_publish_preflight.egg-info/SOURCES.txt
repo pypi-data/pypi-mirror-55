@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+publish_preflight/__init__.py
+publish_preflight/apps.py
+publish_preflight/forms.py
+publish_preflight/tests.py
+publish_preflight/migrations/__init__.py
+publish_preflight/static/css/messages.css
+publish_preflight/static/js/script.js
+wagtail_publish_preflight.egg-info/PKG-INFO
+wagtail_publish_preflight.egg-info/SOURCES.txt
+wagtail_publish_preflight.egg-info/dependency_links.txt
+wagtail_publish_preflight.egg-info/requires.txt
+wagtail_publish_preflight.egg-info/top_level.txt
