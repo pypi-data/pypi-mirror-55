@@ -1,0 +1,3 @@
+[console_scripts]
+jupyembed = jupyembed.cli:main
+
