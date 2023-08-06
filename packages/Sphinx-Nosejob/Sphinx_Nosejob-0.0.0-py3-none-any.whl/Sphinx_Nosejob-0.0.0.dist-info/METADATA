@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: Sphinx-Nosejob
+Version: 0.0.0
+Summary: A Sphinx extention with complimentary features
+Home-page: http://www.manaikan.com/
+Author: Carel van Dam
+Author-email: carelvdam@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Description-Content-Type: text/x-rst
+
+===============
+Sphinx: Nosejob
+===============
+
+.. image:: https://readthedocs.org/projects/sphinx-nosejob/badge/?version=latest
+    :target: https://sphinx-nosejob.readthedocs.io/en/latest/?badge=latest
+    :alt: Documentation Status
+
+.. Originally from the original Cookie Cutter template
+..
+.. .. image:: https://travis-ci.org/sphinx-contrib/sphinxcontrib-nosejob.svg?branch=master
+..     :target: https://travis-ci.org/sphinx-contrib/sphinxcontrib-nosejob
+
+
+A collection of directives to compliment those provided by `Sphinx <https://github.com/sphinx-doc/sphinx>`_
+
+Background
+----------
+
+On occasion the features offered by Sphinx and its various extention packages do not provide all of the functionality necessary for authorisng a document.
+Fortunately Sphinx is readily extended and one may implement the features one requires; after traversing the Sphinx and Docutils documentation.
+
+Purpose
+-------
+
+This package hopes to collect such efforts into a common package.
+Additionally, by documenting such efforts, the package hopes to assist other extention writers in contributing to its development.
+
+Installation
+------------
+
+The package can be installed directly through `pip` ::
+
+    pip install Sphinx-Nosejob
+
+Usage
+-----
+
+Within ones Sphinx configuration file, ``source/conf.py``, include either all of the festures provided by ``Sphinx-Nosejob`` ::
+
+    extensions = [...
+        'sphinxcontrib.nosejob',
+        ...]
+
+Alternatively one may selectively include a subset of the provided features by explicitly specifying them ::
+
+    extensions = [...
+        'sphinxcontrib.nosejob.FEATURE(S)',
+        ...]
+
+Documentation
+-------------
+
+Documentation are available at `Gitlab.io <https://manaikan.gitlab.io/sphinx-nosejob>`_.
+
+
