@@ -1,0 +1,33 @@
+Metadata-Version: 2.1
+Name: skelevision
+Version: 0.0.1.dev0
+Summary: Log Skeleton Visualizer and Browser
+Home-page: https://github.com/RCoanda/skelevision
+License: UNKNOWN
+Description: # skelevision
+        An implementation of the Log - Skeleton Visualiser in python.
+        
+        # Installation
+        As the package isn't at the moment on pypi, we recommend installing it by cloning this repository, and from the root of it run the following command:
+        ```shell
+        pip install - e .
+        ```
+        
+        # Development
+        Make sure to first install all dependencies via:
+        ```shell
+        pip install - r requirements.txt
+        ```
+        
+        # Testing
+        You can run the following command from the root directory to start the test suit:
+        ```shell
+        pytest
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
