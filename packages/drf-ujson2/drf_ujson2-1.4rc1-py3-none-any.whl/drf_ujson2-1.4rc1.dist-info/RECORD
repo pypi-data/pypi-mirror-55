@@ -1,0 +1,11 @@
+drf_ujson/__init__.py,sha256=D6k3VlvzVgcmpDp7T_r58ydt_nFnfbYgcrsvEFchPD4,43
+drf_ujson/parsers.py,sha256=bm0ddLftj9N2ZNTd0Y2UkeQFy7zMSMJXSHwWd2oQgvw,1119
+drf_ujson/renderers.py,sha256=Uku9JTAKCn5rPjW5LYGtndRsYwWAn9JLo05I-oyOqmk,1722
+tests/__init__.py,sha256=KdNpN9so6Svo0ktGRdSUL0OmKzR5EZpL49j4Lfl5WT4,55
+tests/parser_tests.py,sha256=m8b1o-Rn-Z1VI3meXqyyNaNRsInXiR-kpcvqiDuSBys,1147
+tests/renderer_tests.py,sha256=FlJvKLDmiixvv-t_kVKvxKICcLW3qmTETsvZaa2btbo,839
+drf_ujson2-1.4rc1.dist-info/LICENSE,sha256=idvI0PTA_NFM4J3YzPR-D8krkl8DJTsUa4H1MpVy3x8,1073
+drf_ujson2-1.4rc1.dist-info/METADATA,sha256=mzUEzeAn6OV0oh_6EZGQ_0X-jVuoOEDnnr_M4_7s7-Q,2965
+drf_ujson2-1.4rc1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+drf_ujson2-1.4rc1.dist-info/top_level.txt,sha256=06cNg7lbEfe914ItwBMjIZQdOp78XwIu6jE3AF69tcY,16
+drf_ujson2-1.4rc1.dist-info/RECORD,,
