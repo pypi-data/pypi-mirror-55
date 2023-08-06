@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: pylocus
+Version: 0.0.5
+Summary: Localization Package
+Home-page: https://github.com/LCAV/pylocus
+Author: Frederike Dümbgen
+Author-email: frederike.duembgen@epfl.ch
+License: BSD
+Project-URL: Source, https://github.com/lcav/pylocus
+Project-URL: Documentation, http://pylocus.readthedocs.io/en/latest/
+Keywords: localization,lateration,EDM,MDS,positioning
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: matplotlib
+Requires-Dist: numpy
+
+
+
+Localization package. Source code and more information can be found on github at https://github.com/LCAV/pylocus.
+
+
+
