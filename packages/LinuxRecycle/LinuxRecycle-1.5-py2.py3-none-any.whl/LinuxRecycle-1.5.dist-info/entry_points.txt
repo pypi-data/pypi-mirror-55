@@ -1,0 +1,6 @@
+[console_scripts]
+rm = core.main:main
+rm.clean = core.auto_clear:main
+rm.printDB = core.printDB:main
+rm.recover = core.recover:main
+
