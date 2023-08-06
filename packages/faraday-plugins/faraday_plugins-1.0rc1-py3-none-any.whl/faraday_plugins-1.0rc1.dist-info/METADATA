@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: faraday-plugins
+Version: 1.0rc1
+Summary: UNKNOWN
+Home-page: UNKNOWN
+Author: Faradaysec
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: Click
+Requires-Dist: simplejson
+Requires-Dist: requests
+
+UNKNOWN
+
+
