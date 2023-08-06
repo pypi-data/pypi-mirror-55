@@ -1,0 +1,23 @@
+Metadata-Version: 1.1
+Name: firestore user authentication
+Version: 0.0.3
+Summary: Firestore user authentication function for Python
+Home-page: https://github.com/fatcat2/firestore-auth
+Author: Ryan Chen
+Author-email: ryanjchen2@gmail.com
+License: GNU
+Description: # firestore-auth
+        [![Build Status](https://travis-ci.com/fatcat2/firestore_auth.svg?branch=master)](https://travis-ci.com/fatcat2/firestore_auth)
+        
+        An authentication function with Google Firestore.
+        
+        I wrote this because I found myself writing just about the same function 18 times. Every time I wrote a Python application with a Firestore backend.
+        
+        So I just decided to write this module.
+        
+Keywords: google,cloud,firestore,authentication
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.7
