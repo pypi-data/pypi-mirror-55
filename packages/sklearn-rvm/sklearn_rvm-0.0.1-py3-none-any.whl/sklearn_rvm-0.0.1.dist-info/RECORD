@@ -1,0 +1,16 @@
+sklearn_rvm/__init__.py,sha256=8Efz462BKeqpJ02hZxkkGmpl6n50iUh5JpE-aw9kfXQ,118
+sklearn_rvm/_template.py,sha256=cvIdV3h0kZwGal_a4hFWvO_-UV-6W6kG-iahFXH-1VI,6205
+sklearn_rvm/_version.py,sha256=ugyuFliEqtAwQmH4sTlc16YXKYbFWDmfyk87fErB8-8,21
+sklearn_rvm/example4.py,sha256=oVHr8qfiVLiW_GUEGopAqTBR1PklA4dkX6jQx1bNoQ4,1011
+sklearn_rvm/playground.py,sha256=DPoxNVdfLflthITP_NEZ5IKBjPzaWSjd0tl4NG3EmJM,7602
+sklearn_rvm/playground2.py,sha256=wVfOkN7oyuv8LZe9mRfnPAqr1yLlpI9L5XcF9XmlEFE,6310
+sklearn_rvm/playground3.py,sha256=FN8WXxpyC4C7ojpB1IHOwHM_VslT9yeOVv0RPaooz6k,7272
+sklearn_rvm/rvm.py,sha256=9W-W5n5MRLwZ4GVfA9TOMWvAK7HhpHsxuDLpMgVlsW8,21771
+sklearn_rvm/tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+sklearn_rvm/tests/test_common.py,sha256=q6jso7UjDw-HgTgc1Q29Jlk0UQSEpHpMJxBAvwMyGFs,386
+sklearn_rvm/tests/test_template.py,sha256=lL-JuHeCVGIU8_jBngrM7UWjItqlwq7o_bPOP0pd6TI,1575
+sklearn_rvm-0.0.1.dist-info/LICENSE,sha256=KehzBa-Lt_GzmRsfEAy5YOk6KZAqs8FzvO35F00uvcc,1529
+sklearn_rvm-0.0.1.dist-info/METADATA,sha256=5F_JtFw-nDgYzXOFvPVMAo-BrZp3ZCKvCDZuzIJDDl4,2855
+sklearn_rvm-0.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+sklearn_rvm-0.0.1.dist-info/top_level.txt,sha256=xZi5udjbNT-fnuvpGv2bykJ5QZzafY-Sd7OhmH2zhv8,12
+sklearn_rvm-0.0.1.dist-info/RECORD,,
