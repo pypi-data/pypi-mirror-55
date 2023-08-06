@@ -1,0 +1,15 @@
+weather/__init__.py,sha256=iHyCrEZjs7TxBDm6jYfUH8mQYFruBCdqEba4WE_bWNI,2097
+weather/observations.py,sha256=TMpEAdYaSWlc7bhHF5AU-P03OF4Uo-aLky2d79rvDK4,1565
+weather/place.py,sha256=NR7RUs2KZ5F8pkzw9BiSpIpfaK95Hc91pRfC0CSkuJ0,3453
+weather/uv_index.py,sha256=uLfCkdVTnnT35EgF8OoK_AEdK3MjdBJ5Lni9GSHCfNM,1792
+weather_au/__init__.py,sha256=nXQzYku9UeylMPlXviKsYpg2SM5Em4ztKdRnrlCqJTs,2153
+weather_au/api.py,sha256=ZcuX45GkoKl2WbP_AkmMY0qlBKSEXobI6NJu_4e92Yg,8401
+weather_au/observations.py,sha256=2FdOKocLNa1L6si8JKYP78jr2Ie6M1yafV4TW88Z5Qk,1619
+weather_au/place.py,sha256=jxXEQ4DC89ssJZlxvCXAK6h3NoGEo7CRIHF2yrtWMr0,3859
+weather_au/summary.py,sha256=7tYCMR1WBOq_r48-7KMd5Nc7PUCoZsw84f52VofCgUs,2940
+weather_au/uv_index.py,sha256=KDoWlIEp2S1O0kThi16iBPpEj8rfgzZFQUt64ZQGpGw,1831
+weather_au-0.0.7.dist-info/LICENSE,sha256=OXLcl0T2SZ8Pmy2_dmlvKuetivmyPd5m1q-Gyd-zaYY,35149
+weather_au-0.0.7.dist-info/METADATA,sha256=gLitmGpxOiDNIpco3dgg4O0dooS8dX_NJKx-vEZRoNQ,5169
+weather_au-0.0.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+weather_au-0.0.7.dist-info/top_level.txt,sha256=c8dsWLa1s1T_cQtGCoUlx94geMdDx2bsTvK_fmlv5Lg,11
+weather_au-0.0.7.dist-info/RECORD,,
