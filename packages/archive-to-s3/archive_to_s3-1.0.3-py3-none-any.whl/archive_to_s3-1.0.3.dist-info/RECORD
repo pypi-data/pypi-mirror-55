@@ -1,0 +1,6 @@
+archive_to_s3/__init__.py,sha256=qKK4BMzdt84HiCorJPWqgEfa_DbJeuGx_bIPrDui2vc,22
+archive_to_s3/process.py,sha256=-Bo9i_MIXFROyG1946wRSCVWIlHifTiy9HflXyN56GE,4713
+archive_to_s3-1.0.3.dist-info/METADATA,sha256=44L-j9T3HbWUfIds9_dOHB203TFlb1irTKB1DBRzvTw,1388
+archive_to_s3-1.0.3.dist-info/WHEEL,sha256=-ZFxwj8mZJPIVcZGLrsQ8UGRcxVAOExzPLVBGR7u7bE,92
+archive_to_s3-1.0.3.dist-info/top_level.txt,sha256=cnGbZ-Pzn-jQ9d4RmVUV3Roqx9WysqX92aT4b6i6NXI,14
+archive_to_s3-1.0.3.dist-info/RECORD,,
