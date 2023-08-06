@@ -1,0 +1,7 @@
+pillow
+piexif
+attrs
+sty
+opencv-python
+numpy
+plotille
