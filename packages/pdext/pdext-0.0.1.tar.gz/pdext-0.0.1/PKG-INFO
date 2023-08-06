@@ -1,0 +1,79 @@
+Metadata-Version: 1.1
+Name: pdext
+Version: 0.0.1
+Summary: Pandas Extention python module
+Home-page: https://github.com/malneni/PdExt
+Author: Venkatesh Malneni
+Author-email: malneni258@gmail.com
+License: MIT
+Download-URL: https://github.com/malneni/PdExt/archive/V_001.tar.gz
+Description: Pandas Extention \_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_ A set of
+        Python modules intended to be [Extention to
+        pandas](https://github.com/malneni/PdExt)
+        
+        The primary purpose of this package is to allow developers to use pandas
+        module for more applications
+        
+        **Application:**
+        
+        -   Add pandas DataFrame to word document as table
+        -   Split columns to multiple columns with Pandas
+        -   Split column to multiple rows with pandas
+        -   Compare column string with another column string with pandas
+        
+        Prerequisites
+        =============
+        
+        -   [panads](https://pypi.org/project/pandas/)
+        -   [docx](https://pypi.org/project/python-docx/)
+        
+        Installation
+        ============
+        
+        Windows (cmd):
+        
+        `>python setup.py install`
+        
+        Documentation
+        =============
+        
+        The Python API and its documentation are currently being worked. You can
+        find an early preview [here](https://pdext.readthedocs.io/en/latest/).
+        
+        How to use
+        ==========
+        
+        -   **Splitting columns to multiple columns with Pandas**
+        
+        ![image](/Pictures/Capture1.PNG)
+        
+        **Output**
+        
+        ![image](/Pictures/Capture1_output.PNG)
+        
+        -   **Splitting columns to multiple Rows with Pandas**
+        
+        ![image](/Pictures/Capture2.PNG)
+        
+        **Output**
+        
+        ![image](/Pictures/Capture2_output.PNG)
+        
+        -   **Add pandas DataFrame to word document as table**
+        
+        With DataFrame Header as Table header .. image:: /Pictures/Capture3.PNG
+        **Output**
+        
+        ![image](/Pictures/Capture3_output.PNG)
+        
+        Without DataFrame Header as Table header .. image::
+        /Pictures/Capture4.PNG **Output**
+        
+        ![image](/Pictures/Capture4_output.PNG)
+        
+Keywords: pandas,Split Columns,Multiple Rows
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.7

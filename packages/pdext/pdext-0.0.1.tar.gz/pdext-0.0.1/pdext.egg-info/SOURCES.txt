@@ -1,0 +1,10 @@
+README.rst
+pdext.py
+setup.cfg
+setup.py
+pdext.egg-info/PKG-INFO
+pdext.egg-info/SOURCES.txt
+pdext.egg-info/dependency_links.txt
+pdext.egg-info/not-zip-safe
+pdext.egg-info/requires.txt
+pdext.egg-info/top_level.txt
