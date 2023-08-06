@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+ics_ipa_interface/__init__.py
+ics_ipa_interface/ics_ipa_interface.py
+ics_ipa_interface.egg-info/PKG-INFO
+ics_ipa_interface.egg-info/SOURCES.txt
+ics_ipa_interface.egg-info/dependency_links.txt
+ics_ipa_interface.egg-info/top_level.txt
+test/test.py
