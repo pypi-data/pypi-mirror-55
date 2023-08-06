@@ -1,0 +1,2 @@
+include flowkit/resources/*.xsd
+recursive-include flowkit *.h
