@@ -1,0 +1,14 @@
+CREDITS.md
+LICENSE
+MANIFEST.in
+README.md
+setup.cfg
+setup.py
+linkedin/__init__.py
+linkedin/linkedin.py
+linkedin_client.egg-info/PKG-INFO
+linkedin_client.egg-info/SOURCES.txt
+linkedin_client.egg-info/dependency_links.txt
+linkedin_client.egg-info/not-zip-safe
+linkedin_client.egg-info/requires.txt
+linkedin_client.egg-info/top_level.txt

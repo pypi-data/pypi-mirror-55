@@ -1,0 +1,28 @@
+Metadata-Version: 2.1
+Name: linkedin-client
+Version: 1.0.0a4
+Summary: Python wrapper for the LinkedIn API V2
+Home-page: https://github.com/robintiwari/linkedin-client
+Author: Robin Tiwari
+License: Apache License 2.0
+Description: # Python LinkedIn Client
+        
+        Python wrapper for the LinkedIn API V2
+        
+        ## Installation
+        
+        via pip:
+        
+        ```bash
+        pip install linkedin-client
+        ```
+        
+Keywords: linkedin python
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
