@@ -1,0 +1,9 @@
+mypy_boto3_iot1click_projects/__init__.py,sha256=PLXHPPeIIn1RkPBAei45Li_iAyvjDUhqHa-ohQB6N8A,136
+mypy_boto3_iot1click_projects/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_iot1click_projects/client.py,sha256=5a3Geg51tslzNloVSck70cO-w5BdjFJO5Io8JPL74dY,32869
+mypy_boto3_iot1click_projects/paginator.py,sha256=JLtGl9wMuMoo-IGA7QhHIHGqPF5jShhXzhJNZ4p7Pj8,6247
+mypy_boto3_iot1click_projects/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_iot1click_projects-0.1.9.dist-info/METADATA,sha256=XQ1wW29z-8s10ITD6Nv95cBUFy8hX61SoKT5LFWCgKE,1081
+mypy_boto3_iot1click_projects-0.1.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_iot1click_projects-0.1.9.dist-info/top_level.txt,sha256=Qsu6IISX2co3ULEOdIHXJFrNWaYiio5ROIDoMLit1Ak,30
+mypy_boto3_iot1click_projects-0.1.9.dist-info/RECORD,,
