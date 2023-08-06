@@ -1,0 +1,7 @@
+os_package_registry/__init__.py,sha256=tZ-CBcAIiJUnVxJsGR9DPo9HslhSRXjIo1AwezrG1EE,46
+os_package_registry/package_registry.py,sha256=s-XokqVXYgCkwG9tX4ieIhAPCY4OlC23IRW5uD7PzLU,11891
+os_package_registry-0.0.20.dist-info/LICENSE,sha256=_LpzbGxIOSrHPvHaVLLCjRwWnVRo07iqZuTylX-fA98,1096
+os_package_registry-0.0.20.dist-info/METADATA,sha256=0TIQA8SJcvgwE2aTkUyyFRBL7KrK7cCJAhvhBSiSP9A,1437
+os_package_registry-0.0.20.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+os_package_registry-0.0.20.dist-info/top_level.txt,sha256=yQQaf3oMT-HyQAonA_Ia9O-0CYzLacx870MLX_yctY8,20
+os_package_registry-0.0.20.dist-info/RECORD,,
