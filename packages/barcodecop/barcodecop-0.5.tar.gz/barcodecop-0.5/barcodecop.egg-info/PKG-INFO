@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: barcodecop
+Version: 0.5
+Summary: Enforce barcode match stringency and read quality in demultiplexed MiSeq reads
+Home-page: https://github.com/nhoffman/barcodecop
+Author: Noah Hoffman
+Author-email: noah.hoffman@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6

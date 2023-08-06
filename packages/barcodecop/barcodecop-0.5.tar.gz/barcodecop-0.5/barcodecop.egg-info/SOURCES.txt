@@ -1,0 +1,13 @@
+README.rst
+setup.py
+barcodecop/__init__.py
+barcodecop/barcodecop.py
+barcodecop.egg-info/PKG-INFO
+barcodecop.egg-info/SOURCES.txt
+barcodecop.egg-info/dependency_links.txt
+barcodecop.egg-info/entry_points.txt
+barcodecop.egg-info/requires.txt
+barcodecop.egg-info/top_level.txt
+barcodecop/data/ver
+tests/__init__.py
+tests/test.py
