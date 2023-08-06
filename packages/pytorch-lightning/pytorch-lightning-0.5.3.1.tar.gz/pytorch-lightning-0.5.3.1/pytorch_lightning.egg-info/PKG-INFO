@@ -1,0 +1,28 @@
+Metadata-Version: 1.2
+Name: pytorch-lightning
+Version: 0.5.3.1
+Summary: # PyTorch Lightning
+
+The lightweight PyTorch wrapper for ML researchers. Scale your models. Write less boilerplate.
+
+Home-page: https://github.com/williamFalcon/pytorch-lightning
+Author:  William Falcon et al.
+Author-email: waf2107@columbia.edu
+License: Apache-2.0
+Download-URL: https://github.com/williamFalcon/pytorch-lightning
+Description: UNKNOWN
+Keywords: deep learning,pytorch,AI
+Platform: UNKNOWN
+Classifier: Environment :: Console
+Classifier: Natural Language :: English
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Scientific/Engineering :: Image Recognition
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=3.6
