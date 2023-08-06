@@ -1,0 +1,13 @@
+weaviate/__init__.py,sha256=jUTVlThqnTjhNQAkkRkBqisKdoDB3XncZ4AxiA1ixn4,199
+weaviate/batch.py,sha256=ZQN1J9Q8C_AN5Dxdr_KSE3XnCBeXJDbdnfwabi6niMY,3565
+weaviate/client.py,sha256=KpD8-gNbycsQOCzfxXnSaB_a53yCIs8ozCjOKeHkvyQ,26782
+weaviate/exceptions.py,sha256=vIro5bP3DWzI8vGs-4MlOymNv_CZKcgdXGC_NG5qeIA,1084
+weaviate/util.py,sha256=EjWQCQxetRiJwdbQm2QXogB8hSVYM5CYvVA-c2meoTE,2151
+weaviate/connect/__init__.py,sha256=etbE_SM8sXPubyRh_ZyFeaM7B9RiNbtouoCaX2fUkg4,94
+weaviate/connect/connection.py,sha256=_f3MnRFfvTaDEq_uZTRJ49bSETLp03i-OqIKKT0QGYU,5974
+weaviate/connect/constants.py,sha256=RItclyQ2a_tAOqlDJwHdlysV8Z6TpKwPdrsdnZSkpM8,82
+weaviate/connect/util.py,sha256=vIXFQWTbFifSXHRN3nlZ9ThesswF7R7ztr_ncDCuenQ,160
+weaviate_client-0.1.2.dist-info/METADATA,sha256=oBysDlBpkokz4f-2xwCvTEdxrBPIp1scj_D0Mk3iL5I,2661
+weaviate_client-0.1.2.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+weaviate_client-0.1.2.dist-info/top_level.txt,sha256=5GnPZvSj_bmnwOVSKsXi_nchnRRoRs-3kddr_j-6xU8,9
+weaviate_client-0.1.2.dist-info/RECORD,,
