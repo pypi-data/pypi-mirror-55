@@ -1,0 +1,6 @@
+setuptools==41.0.1
+boto3
+progressbar
+awscli
+progressbar2
+mecab-python3
