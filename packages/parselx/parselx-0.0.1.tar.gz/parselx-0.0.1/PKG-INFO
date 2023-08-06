@@ -1,0 +1,14 @@
+Metadata-Version: 1.2
+Name: parselx
+Version: 0.0.1
+Summary: Enhanced version of parsel, extracting data from HTML and XML using complex rules
+Home-page: https://github.com/wooddance/aCrawler
+Author: wooddance
+Author-email: zireael.me@gmail.com
+License: UNKNOWN
+Description: # parselx
+        
+        Enhanced version of parsel, extracting data from HTML and XML using complex rules
+        
+Platform: UNKNOWN
+Requires-Python: >=3.6.0

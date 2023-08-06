@@ -1,0 +1,13 @@
+README.md
+setup.py
+parselx/__init__.py
+parselx/exceptions.py
+parselx/process.py
+parselx/selector.py
+parselx/utils.py
+parselx/x.py
+parselx.egg-info/PKG-INFO
+parselx.egg-info/SOURCES.txt
+parselx.egg-info/dependency_links.txt
+parselx.egg-info/requires.txt
+parselx.egg-info/top_level.txt
