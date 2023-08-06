@@ -1,0 +1,9 @@
+mypy_boto3_sagemaker_runtime/__init__.py,sha256=IHmmXQlTRp-AsXO4UPqXmmJbmW0WOATF7QfRJs7wSjg,126
+mypy_boto3_sagemaker_runtime/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_sagemaker_runtime/client.py,sha256=Md4QLdTqybYDjQlcdfdajMhJGkxKmbWFDCLWPo1X9VM,922
+mypy_boto3_sagemaker_runtime/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_sagemaker_runtime/version.py,sha256=uEY-o5UpO0zjCdZ1SCWaClP-xXaDZDIXmwIfxAtFffI,48
+mypy_boto3_sagemaker_runtime-0.1.6.dist-info/METADATA,sha256=Ov7Z_ek2a2W_wDTQ9fsk1eweHNWWMSPfTN_yvH72q1A,1490
+mypy_boto3_sagemaker_runtime-0.1.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_sagemaker_runtime-0.1.6.dist-info/top_level.txt,sha256=zDYlofhbVgRWlL5hxVe3r5lOqPZlBintc8kX0Eu4YI8,29
+mypy_boto3_sagemaker_runtime-0.1.6.dist-info/RECORD,,
