@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: codesignal 1to10-srikanth gummadi
+Version: 0.0.1
+Summary: codesignal 1_10_prog
+Home-page: https://github.com/gummadi-srikanth/srikanth
+Author: srikanth gummadi
+Author-email: srikanth0466@gmail.com
+License: UNKNOWN
+Description: # codesignal
+        programs
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.7
+Description-Content-Type: text/markdown
