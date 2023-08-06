@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: jdTextEdit
+Version: 4.0
+Summary:  A powerful texteditor with a lot of features .
+Home-page: https://gitlab.com/JakobDev/jdTextEdit
+Author: JakobDev
+Author-email: jakobdev@gmx.de
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Other Environment
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Topic :: Text Editors
