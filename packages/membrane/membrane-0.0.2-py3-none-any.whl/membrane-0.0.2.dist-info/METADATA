@@ -1,0 +1,104 @@
+Metadata-Version: 2.1
+Name: membrane
+Version: 0.0.2
+Summary: A Flask and Flask-RESTful argument parser.
+Home-page: https://github.com/jscul/membrane.py
+Author: jscul
+Author-email: cullen.scott.john@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# membrane.py 🦠
+A [Flask](https://palletsprojects.com/p/flask/) arg-parser &amp; splitter to ensure wanted data gets through, unwanted data stays out, and required data shows up.
+
+Compatible with [Flask-RESTful](https://flask-restful.readthedocs.io/en/latest/). 👍
+
+## Basic Usage 🐍
+
+```python
+from flask import Flask
+app = Flask(__name__)
+
+
+@app.route('/')
+def route_handler():
+    return "No args~!"
+```
+
+Above we see a basic `Flask` application with a root API handler. No query options are yet passed to our root.
+
+Let's say we wanted to handle the query parameter `?limit=0` in the request handler. We can use membrane to do this.
+
+```python
+from flask import Flask, jsonify
+from membrane import membrane
+app = Flask(__name__)
+
+
+@app.route('/')
+@membrane({'limit': int})
+def route_handler(microbe):
+	'''Here microbe should be either an empty dict: {} or dict: {"limit": ?}'''
+
+    return jsonify(microbe)
+```
+
+## Defining Membranes 🔬
+
+The *membrane*, a wrapper function, can take multiple layers of type *dict* which will act as a filter for the: 1) query parameters; 2) body; and 3) headers passed to the request handler. The route_handler will take these filtered dicts as `*args`.
+
+The basic structure is as follows:
+
+```python
+simple_membrane = {"limit": int}
+complex_membrane = {
+	"other_parameter": {
+		"type": lambda x: int(x),
+		"options": (1, 2, 3,),
+		"default": 1,
+		"required": False,
+		"location": "params"
+	}
+}
+```
+
+In the simple_membrane, we want to take limit from either the params, body, or headers and convert it to an int (or verify that it is of type int). We're also allowed to use custom functions to handle conversions here.
+
+The complex_membrane is different in that it's a dict with additional options.
+
+ - `type`: any callable function or class.
+ - `options`: a tuple of accepted values.
+ - `default`: if not provided, use this as a default. If you need this value to be generated at the time of parsing, provide a callable function that returns the proper value.
+ - `required`: should the server throw an error if this value is not provided?
+ - `location`: where in the request should we search for this value: ("params", "body", "headers", "files").
+
+To use multiple layers for a route handler, simply list them out.
+
+```python
+@app.route('/')
+@membrane(simple_membrane, complex_membrane)
+def route_handler(simple_microbe, complex_microbe):
+    return jsonify([simple_microbe, complex_microbe])
+```
+
+## Error Handling ⚠️
+
+Exported from membrane are exceptions: `RequiredFieldError`, `NotAnOptionError`, `TypeConversionError`.
+
+You can handle these errors yourself or use our default error handler.
+
+```python
+from membrane import error_handler
+
+app = Flask(__name__)
+error_handler(app)
+```
+
+Otherwise you can handle these errors however you like.
+
+
