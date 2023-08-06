@@ -1,0 +1,6 @@
+query_debugger/__init__.py,sha256=SVzSQqc1wE5ZpiQjQYSijeyuMevt_7HyOPabkM2wEPE,29
+query_debugger/query_debugger.py,sha256=TB8H6Zkq1y4QK-YMhlbMUkONGlkES2o8I-v2N0JdXag,2917
+django_query_debugger-0.0.4.dist-info/METADATA,sha256=nTgUevKGvulcrhchzeMJoTbE0_jL9hqVFAZvyxI2UJA,7439
+django_query_debugger-0.0.4.dist-info/WHEEL,sha256=h_aVn5OB2IERUjMbi2pucmR_zzWJtk303YXvhh60NJ8,110
+django_query_debugger-0.0.4.dist-info/top_level.txt,sha256=peXd3F1fFrf0w4tDVZYbinzj5kw4rP-9gzYgg6HZhRI,15
+django_query_debugger-0.0.4.dist-info/RECORD,,
