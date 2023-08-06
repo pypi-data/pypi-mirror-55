@@ -1,0 +1,10 @@
+README.md
+setup.py
+sitesize/__init__.py
+sitesize/core.py
+sitesize.egg-info/PKG-INFO
+sitesize.egg-info/SOURCES.txt
+sitesize.egg-info/dependency_links.txt
+sitesize.egg-info/top_level.txt
+test/__init__.py
+test/test_url.py
