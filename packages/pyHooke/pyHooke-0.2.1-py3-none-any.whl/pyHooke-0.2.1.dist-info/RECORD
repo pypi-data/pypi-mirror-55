@@ -1,0 +1,13 @@
+Hooke/__init__.py,sha256=z-17en1zi-oLwKRNR2KmQa6PEpZp7g4YljjPtqAqozA,35
+Hooke/compare.py,sha256=EmXq-YteiI0Wg8wkVd7UPk4XGz64utOqg6DUw_kYIO4,6328
+Hooke/extract.py,sha256=xSXAYu_HJgxv30jgA3ublAOw8dJdbLe9C9Q1534S7-4,1724
+Hooke/main.py,sha256=M-r4FL6W4WH9778B_ZTHzatDBdGFBr8FkAQv1SkvzlI,6831
+Hooke/order.py,sha256=VlpCcoA6HIfGDtNLraUDpjJyzfWdSLD2UpvIJhd7ZtY,5147
+Hooke/search.py,sha256=HCKpS2JIPATgXhQ_4yZWS4-RMY-5bTjDBvTtfgjjqOE,1185
+Hooke/test/test.txt,sha256=bM80U3uGahMiOedujUSUUFmwb9XkkktsfveKMhikhas,442
+pyHooke-0.2.1.dist-info/LICENSE,sha256=HrhfyXIkWY2tGFK11kg7vPCqhgh5DcxleloqdhrpyMY,11558
+pyHooke-0.2.1.dist-info/METADATA,sha256=I0mYL6sjFFtFX2Yw2VaFrnnlbnHVqUNsozW3GFejPZ4,1283
+pyHooke-0.2.1.dist-info/WHEEL,sha256=QBOOAdG2icRHGBs2s94rfaUlHrdfNBp-TceubUYCwOE,97
+pyHooke-0.2.1.dist-info/dependency_links.txt,sha256=6AL_Z6BGprf5pano3Bb0lwCJmDOV5NH9NVn5t3rtuLM,113
+pyHooke-0.2.1.dist-info/top_level.txt,sha256=fP5RZ-CPdzXjlyqFNVd2OZHN92vXL7qCVXghZVOzifs,6
+pyHooke-0.2.1.dist-info/RECORD,,
