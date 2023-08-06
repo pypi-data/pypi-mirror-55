@@ -1,0 +1,12 @@
+ssh_ipykernel/__init__.py,sha256=3R_hf8-REYBS0o4t-rrb6Mem-hiYN3SD_uS_luIiQlk,185
+ssh_ipykernel/__main__.py,sha256=oPu19C8mV0wsLd99HJAOWcFj-8xi9dmnJbXHXIXwLFs,2250
+ssh_ipykernel/_version.py,sha256=l76_UsWKf8iUzQW3N2VlHJA_vxN8fCiDiaYetxTqsoI,526
+ssh_ipykernel/kernel.py,sha256=3pZeGuSCNgsdX5DPB0S1hVKVawFHi73dTHeuaJ0j6Kw,12267
+ssh_ipykernel/manage.py,sha256=PX-nTNXUtbgX-gMFBLNuoIgdiETNNdw97nHfWIevWI0,3548
+ssh_ipykernel/status.py,sha256=BewWn5sAbQuaitt8o-pC9MzNu3Ps4sNIojfwtXPTAZ4,5789
+ssh_ipykernel-0.9.4.dist-info/AUTHORS.md,sha256=cQYRZjFOINB0uT-7Ig0AW-17Uh6ENLKeUEGzyOEepUo,70
+ssh_ipykernel-0.9.4.dist-info/LICENSE,sha256=ZnJpfXVniiC65YU2aVnASVZIPaLdkGVyEColdpmFJbA,1074
+ssh_ipykernel-0.9.4.dist-info/METADATA,sha256=I_w5SvqcdFq6H4V8CC2wc3UAUc38KFIdMIsrHz1m8nY,5151
+ssh_ipykernel-0.9.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+ssh_ipykernel-0.9.4.dist-info/top_level.txt,sha256=WJeJ1MIg8xoaXuRTze4htuKvom7jefRQS_8a9zNQZZM,14
+ssh_ipykernel-0.9.4.dist-info/RECORD,,
