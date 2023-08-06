@@ -1,0 +1,40 @@
+Metadata-Version: 1.1
+Name: impartial-text-cls
+Version: 0.0.4
+Summary: Text classifier, based on the BERT and a Bayesian neural network, which can train on small labeled texts and doubt its decision
+Home-page: https://github.com/bond005/impartial_text_cls
+Author: Ivan Bondarenko
+Author-email: bond005@yandex.ru
+License: Apache License Version 2.0
+Description: 
+        Impartial Text Classifier
+        =========================
+        Text classifier, based on the BERT and a Bayesian neural network, which
+        can train on small labeled texts and doubt its decision.
+        
+        The goal of this project is developing of simple and power text classifier
+        based on transfer learning and bayesian neural networks.
+        
+        A transfer learning (particulary, well-known BERT model) helps to generate
+        special contextual embeddings for text tokens, which provide a better
+        discrimination ability in feature space, than classical word embeddings.
+        Therefore we can use smaller labeled data for training of final classifier.
+        
+        Bayesian neural network in final classifier models uncertainty in data,
+        owing to this fact probabilities of recognized classes returned by this
+        network are more fair, and bayesian neural network is more robust to
+        overfitting.
+        
+Keywords: bert,bayesian,intent,text,nlp,tensorflow,scikit-learn
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Science/Research
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development
+Classifier: Topic :: Scientific/Engineering
+Classifier: Topic :: Scientific/Engineering :: Artificial Intelligence
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Linguistic
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

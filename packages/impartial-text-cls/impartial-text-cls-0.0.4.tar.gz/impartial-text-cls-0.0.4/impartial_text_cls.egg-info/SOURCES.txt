@@ -1,0 +1,10 @@
+README.md
+setup.py
+impartial_text_cls/__init__.py
+impartial_text_cls/impartial_text_cls.py
+impartial_text_cls/utils.py
+impartial_text_cls.egg-info/PKG-INFO
+impartial_text_cls.egg-info/SOURCES.txt
+impartial_text_cls.egg-info/dependency_links.txt
+impartial_text_cls.egg-info/requires.txt
+impartial_text_cls.egg-info/top_level.txt
