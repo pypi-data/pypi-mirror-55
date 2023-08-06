@@ -1,0 +1,126 @@
+{
+  "_args": [
+    [
+      "@material-ui/system@^4.5.2",
+      "/home/gabe/src/point-label-sharing/frontend/node_modules/@material-ui/core"
+    ]
+  ],
+  "_from": "@material-ui/system@>=4.5.2 <5.0.0",
+  "_hasShrinkwrap": false,
+  "_id": "@material-ui/system@4.5.2",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/@material-ui/system",
+  "_nodeVersion": "12.12.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/system_4.5.2_1572303192267_0.40168066248362466"
+  },
+  "_npmUser": {
+    "email": "olivier.tassinari@gmail.com",
+    "name": "oliviertassinari"
+  },
+  "_npmVersion": "6.11.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "@material-ui/system",
+    "raw": "@material-ui/system@^4.5.2",
+    "rawSpec": "^4.5.2",
+    "scope": "@material-ui",
+    "spec": ">=4.5.2 <5.0.0",
+    "type": "range"
+  },
+  "_requiredBy": [
+    "/@material-ui/core"
+  ],
+  "_resolved": "https://registry.npmjs.org/@material-ui/system/-/system-4.5.2.tgz",
+  "_shasum": "7143bd8422a3f33f435c23f378136254004bbd60",
+  "_shrinkwrap": null,
+  "_spec": "@material-ui/system@^4.5.2",
+  "_where": "/home/gabe/src/point-label-sharing/frontend/node_modules/@material-ui/core",
+  "author": {
+    "name": "Material-UI Team"
+  },
+  "bugs": {
+    "url": "https://github.com/mui-org/material-ui/issues"
+  },
+  "dependencies": {
+    "@babel/runtime": "^7.4.4",
+    "@material-ui/utils": "^4.5.2",
+    "prop-types": "^15.7.2"
+  },
+  "description": "Material-UI System - Design system for Material-UI.",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "fileCount": 56,
+    "integrity": "sha512-h9RWvdM9XKlHHqwiuhyvWdobptQkHli+m2jJFs7i1AI/hmGsIc4reDmS7fInhETgt/Txx7uiAIznfRNIIVHmQw==",
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJdt3FYCRA9TVsSAnZWagAAjQQQAJOjq5gKWOUiLCmxB/Gd\ncaKfBACtr2/NJuGkENMXPhxq49HBEUfQ6tyDPgXp/LwQImCjDFvvT0FU80gO\nPQd3X/31iVlxqPh4Zk/FXqUTPkNkK4yIUbMPUCuqrvaitjV6lJ8kfiHzmyzj\nqt3e2KC3+I+DAD3ti/MH2kbRY8h2hdNgEHBv5+Xq9JNHbSUjVWNuuKglXbD2\nymhevTT1lxL2tdY6dXdMib45yj+BCyWWHRQnVf8/qS1BJjY7YZI2K/plq3mO\noIX+fA9vvQTn0DiD8N7wTq29dSgdqV4kYOHfkAmaMSV1iNoqBBLW8DvGlJEn\nueOcFGoaadtKsUdpMJGwuuE/Uu3+wNyrR1sML9SUSIcGoUKoPS4bKNFo1XaP\nVRKHV/l/nchQ3BvpxI26xYN2+KFdAfii4TiZKlND4pwrXq1aDQxRqF+CDnyM\n8yLq530lD6QRZu36s/iqEMBi9185D0fU5UhgIyPV5yYlZ1xzNVa7h+5WESdT\no9ztyDRBtrCptgmU6lF6uaKGU8O7O85wbsLahNcKiNpyA038HWzfBk/2s8M9\nnWq2q5Xz0an/AnACq3sp/CxyBc/jVVUV1PCVwYosogYhXHu+KIFMGQOw/URN\nWsfhN9dEZFzb3cQplrwrjzE6YKTm6V8JAa6+Xk01BnS/aCBAj+qrDzXxL2Ik\nQp8r\r\n=vFy+\r\n-----END PGP SIGNATURE-----\r\n",
+    "shasum": "7143bd8422a3f33f435c23f378136254004bbd60",
+    "tarball": "https://registry.npmjs.org/@material-ui/system/-/system-4.5.2.tgz",
+    "unpackedSize": 558387
+  },
+  "engines": {
+    "node": ">=8.0.0"
+  },
+  "homepage": "https://github.com/mui-org/material-ui/tree/master/packages/material-ui-system",
+  "keywords": [
+    "material design",
+    "material-ui",
+    "react",
+    "react-component",
+    "system"
+  ],
+  "license": "MIT",
+  "main": "./index.js",
+  "maintainers": [
+    {
+      "name": "eps1lon",
+      "email": "silbermann.sebastian@gmail.com"
+    },
+    {
+      "name": "hai-cea",
+      "email": "hai@call-em-all.com"
+    },
+    {
+      "name": "joshwooding",
+      "email": "joshwooding.npm@gmail.com"
+    },
+    {
+      "name": "kof",
+      "email": "oleg008@gmail.com"
+    },
+    {
+      "name": "mbrookes",
+      "email": "npm@nospam.33m.co"
+    },
+    {
+      "name": "oliviertassinari",
+      "email": "olivier.tassinari@gmail.com"
+    },
+    {
+      "name": "rosskevin",
+      "email": "kevin.ross@alienfast.com"
+    }
+  ],
+  "module": "./esm/index.js",
+  "name": "@material-ui/system",
+  "optionalDependencies": {},
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "private": false,
+  "publishConfig": {
+    "access": "public"
+  },
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "directory": "packages/material-ui-system",
+    "type": "git",
+    "url": "git+https://github.com/mui-org/material-ui.git"
+  },
+  "sideEffects": false,
+  "typings": "./index.d.ts",
+  "version": "4.5.2"
+}
