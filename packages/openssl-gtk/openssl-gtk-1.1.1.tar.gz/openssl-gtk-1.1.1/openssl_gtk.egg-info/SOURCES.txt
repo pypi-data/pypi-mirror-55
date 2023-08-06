@@ -1,0 +1,14 @@
+MANIFEST.in
+README.md
+openssl-gui.py
+setup.py
+openssl_gtk/__init__.py
+openssl_gtk/app_info.py
+openssl_gtk/logo.png
+openssl_gtk/thread.py
+openssl_gtk/window.py
+openssl_gtk.egg-info/PKG-INFO
+openssl_gtk.egg-info/SOURCES.txt
+openssl_gtk.egg-info/dependency_links.txt
+openssl_gtk.egg-info/requires.txt
+openssl_gtk.egg-info/top_level.txt
