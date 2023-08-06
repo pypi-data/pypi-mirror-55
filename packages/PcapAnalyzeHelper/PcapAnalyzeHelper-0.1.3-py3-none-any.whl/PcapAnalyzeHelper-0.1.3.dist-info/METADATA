@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: PcapAnalyzeHelper
+Version: 0.1.3
+Summary: A python package for quick analysis on pcap file
+Home-page: UNKNOWN
+Author: wenjwang
+Author-email: wenjade91@gmail.com
+License: MIT
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: numpy
+Requires-Dist: pandas
+Requires-Dist: scapy
+Requires-Dist: matplotlib
+Requires-Dist: seaborn
+
+### PcapAnalyzeHelper
+PcapAnalyzeHelper is a package offers a statistics summary of pcap file with specified destination IP. It offers statistics summary of distribution of protocol, source port, source IP, destination port, IP length, IP flags, checksum, ttl, udp payload, TCP flags, window scale.
+
+#### To use (with causion), please do 
+```
+import PcapAnalyzeHelper
+from os import listdir
+### need a folder which contains all the pcap file you need to parse ###
+folder = <folder name>
+print("Opening {}...".format(folder))
+files = [folder + file for file in listdir(folder)]
+PcapAnalyzeHelper.pcap_stat(files)
+
+```
+
