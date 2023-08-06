@@ -1,0 +1,11 @@
+MANIFEST.in
+README.md
+setup.py
+agent_finder_masterjefferson.egg-info/PKG-INFO
+agent_finder_masterjefferson.egg-info/SOURCES.txt
+agent_finder_masterjefferson.egg-info/dependency_links.txt
+agent_finder_masterjefferson.egg-info/entry_points.txt
+agent_finder_masterjefferson.egg-info/requires.txt
+agent_finder_masterjefferson.egg-info/top_level.txt
+finder/__init__.py
+finder/finder.py
