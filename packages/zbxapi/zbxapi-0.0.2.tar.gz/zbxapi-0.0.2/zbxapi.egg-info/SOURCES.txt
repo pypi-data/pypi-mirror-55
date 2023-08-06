@@ -1,0 +1,8 @@
+README.md
+setup.py
+zapi/__init__.py
+zapi/zabbix_api.py
+zbxapi.egg-info/PKG-INFO
+zbxapi.egg-info/SOURCES.txt
+zbxapi.egg-info/dependency_links.txt
+zbxapi.egg-info/top_level.txt
