@@ -1,0 +1,11 @@
+from __future__ import absolute_import
+
+# flake8: noqa
+
+# import apis into api package
+from spmo_client.api.organizations_api import OrganizationsApi
+from spmo_client.api.person_stakeholders_api import PersonStakeholdersApi
+from spmo_client.api.software_projects_api import SoftwareProjectsApi
+from spmo_client.api.tracked_activities_api import TrackedActivitiesApi
+from spmo_client.api.tracked_project_processes_api import TrackedProjectProcessesApi
+from spmo_client.api.tracked_stakeholder_participation_api import TrackedStakeholderParticipationApi
