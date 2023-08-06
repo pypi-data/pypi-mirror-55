@@ -1,0 +1,11 @@
+InterviewTranscriber-0.0.2.dist-info/METADATA,sha256=tbIUCc-SIMJFjLFyoVHSUZ0kpX_2StoFSBEUmEQ9FIU,2330
+InterviewTranscriber-0.0.2.dist-info/RECORD,,
+InterviewTranscriber-0.0.2.dist-info/WHEEL,sha256=NzFAKnL7g-U64xnS1s5e3mJnxKpOTeOtlXdFwS9yNXI,92
+InterviewTranscriber-0.0.2.dist-info/top_level.txt,sha256=WZ8ci0O5MjVe_MNqH2Wodh_jG6eBrpW__i8ITbFBH8s,22
+TestCases/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+TestCases/test_Transcriber.py,sha256=v9SmvFNb0U12eiuzQ6oV67ZZtwrm2OjVXTGeNZGveRU,3807
+Transcriber/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+Transcriber/Google/Base.py,sha256=ZZli0RKW_2bk4x5ZYQZ9sbtMfsN7R89BpbZHppzt1KQ,9488
+Transcriber/Google/Storage.py,sha256=H9h1Qwel21UINoiDkCF-l9Kcx5dcG1Nw91OEFskew8s,1718
+Transcriber/Google/Transcriber.py,sha256=V4uMB6Gt2wA2dQOMtvvSUpnfzdhZHourg14_JOHmIMc,2676
+Transcriber/Google/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
