@@ -1,0 +1,15 @@
+Metadata-Version: 1.1
+Name: treeart
+Version: 0.0.1
+Summary: Draw ASCII trees easily
+Home-page: https://github.com/taliesinb/treeart
+Author: Taliesin Beynon
+Author-email: contact@taliesin.ai
+License: MIT
+Download-URL: https://github.com/taliesinb/treeart/archive/v0.0.1.tar.gz
+Description: UNKNOWN
+Keywords: ascii,tree,art,binary
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
