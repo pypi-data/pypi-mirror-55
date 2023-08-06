@@ -1,0 +1,35 @@
+Metadata-Version: 2.1
+Name: pydiscotool-cli
+Version: 0.1.3
+Summary: A cli for a suite of python tools to help with Disco
+Home-page: https://github.com/Wundr-Disco/pydiscotool-cli
+Author: Daniel Carrera
+Author-email: daniel.r.carrera@outlook.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Description-Content-Type: text/markdown
+Requires-Dist: click
+Requires-Dist: pydiscotools
+
+# pydiscotool-cli
+
+pydiscotool-cli is a cli wrapper of pydiscotools
+
+| OS      | Tested             |
+| ------- | ------------------ |
+| Windows | :heavy_check_mark: |
+| MacOs   | :x:                |
+| Linux   | :x:                |
+
+## Getting Started
+
+Install: pydiscotool-cli with `pip install pydiscotool-cli`
+
+### Create .tfrecords file from csv data file
+
+Run `pydiscotool-cli create-tfrecords-from-csv`
+
+

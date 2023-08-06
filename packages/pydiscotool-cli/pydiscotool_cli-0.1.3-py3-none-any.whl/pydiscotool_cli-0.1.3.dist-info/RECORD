@@ -1,0 +1,12 @@
+pydiscotool/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydiscotool/create_tfrecords_from_csv.py,sha256=ZMYOv37U8jjRmRo6pyf1NCvby3Py2347s8EPKUQpNKk,1252
+pydiscotool/init.py,sha256=P7HVOYJSjlFbqgq2n3N82gjBLj3XgKDopuNUcosX9Hg,2077
+pydiscotool/tfrecords_creator.py,sha256=tQk9gq1hWYm6Jmf0KPsydeWxYrkb4Yd3P45Ay6Nbm-Q,1756
+pydiscotool-cli/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pydiscotool-cli/init.py,sha256=4ukmMoLN7At9AjaBJf2nNAiVDAJRnLxosOVU2Z0HEQM,403
+pydiscotool_cli-0.1.3.dist-info/LICENSE.txt,sha256=fMQf5i5tSUDpqmzyzqSl-5x7AwTyCKCo5kIA2hCy8mk,1119
+pydiscotool_cli-0.1.3.dist-info/METADATA,sha256=xGDvy9O8yxU2MR7rKdMneIktpIVtDeUdnPllLU5sJWk,929
+pydiscotool_cli-0.1.3.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+pydiscotool_cli-0.1.3.dist-info/entry_points.txt,sha256=ozoZeUta3FgB_tA-17r_QkrhpCVunZPJTIyd3UIyPEk,73
+pydiscotool_cli-0.1.3.dist-info/top_level.txt,sha256=XsnblsaXCXed1aAT3cQbwOFjBgChcKtdufrPuipivbA,16
+pydiscotool_cli-0.1.3.dist-info/RECORD,,
