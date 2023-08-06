@@ -1,0 +1,14 @@
+simfin/__init__.py,sha256=dwljF-fgQBb9H5ibD5KLrtJ6odUoLAzcnVqUfHqd63w,850
+simfin/bulk.py,sha256=S3xSOdJTKTwDvLxXAVOKKsoeHg9amkrlc76fo_FIpAg,19931
+simfin/config.py,sha256=tIxWo5yn-QFVwRzT1CovRZQjduzO8jZVGnNp8-7HjtM,3263
+simfin/datasets.py,sha256=HCh8_xPGKLfu_Hg2D3FNKh6Qqxn1iNLAwJxi3_i-jqc,10559
+simfin/exceptions.py,sha256=rwHDmdEYDudEop1-O9Hxu6bcyyuj4byIb4qUTVhZ8V0,743
+simfin/names.py,sha256=jQd3tdbwQJWmZOUwbh1c_JeWakddj6fE19lJZ5MFoXU,18757
+simfin/names_extra.py,sha256=JngzvLt9M1I2A8qfKXPkrW28xrlPmLbLhci880u-W9s,1426
+simfin/resample.py,sha256=fDYChhO026dhERjs0pxaGxEAmQQVhJ2Bsb8EGysXlCY,16520
+simfin/utils.py,sha256=u4BKP50Xuf-80hze4xrEbvlzsC19ivpkmElYRV2GCA8,2361
+simfin-0.2.0.dist-info/LICENSE.txt,sha256=E8Lt3RfiuhbOUgKTehtgUeRH_VXZx2cngR3D83LvNKg,1259
+simfin-0.2.0.dist-info/METADATA,sha256=hgj0igCmd0F-2HcPvCPw3DUGnq3Eb294c2UxHmYF8D4,581
+simfin-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+simfin-0.2.0.dist-info/top_level.txt,sha256=tlKUSIJp7KQ8iXFJZoI-0ENM9CUE8jvLNLz3gQZpZ74,7
+simfin-0.2.0.dist-info/RECORD,,
