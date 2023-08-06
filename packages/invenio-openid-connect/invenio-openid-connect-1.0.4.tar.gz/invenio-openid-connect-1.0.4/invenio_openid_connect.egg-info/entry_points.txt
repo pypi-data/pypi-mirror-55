@@ -1,0 +1,3 @@
+[invenio_base.apps]
+invenio_openid_connect = invenio_openid_connect:InvenioOpenIDConnect
+
