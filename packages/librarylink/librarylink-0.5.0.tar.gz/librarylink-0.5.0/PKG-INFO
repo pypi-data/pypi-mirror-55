@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: librarylink
+Version: 0.5.0
+Summary: ('Tools for working with Library.Link',)
+Home-page: http://zepheira.com/
+Author: Uche Ogbuji
+Author-email: uche@ogbuji.net
+Maintainer: Zepheira
+Maintainer-email: uche@zepheira.com
+License: License :: OSI Approved :: Apache Software License
+Description: Library.Link
+        Tools for processing data from the Library.Link project
+        
+        Uche Ogbuji < uche@ogbuji.net >
+        
+        # Install
+        
+        Requires Python 3.5+
+        
+            pip install LibraryLink
+        
+        # liblink_resource_summary
+        
+        Command Tool to parse RDFa 1.1 Lite (from the Library.Link pages or other HTML). Example:
+        
+            liblink_resource_summary "http://link.houstonlibrary.org/portal/Half-of-a-yellow-sun-Chimamanda-Ngozi/n7KqqbZFJuM/"
+        
+Keywords: xml,web,data
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Classifier: Topic :: Internet :: WWW/HTTP
+Description-Content-Type: text/markdown
