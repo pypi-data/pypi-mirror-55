@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: svety
+Version: 1.0.0
+Summary: Reader of a Swedish etymological dictionary
+Home-page: https://github.com/clemsciences/svety
+Author: Clément Besnier
+Author-email: clemsciences@aol.com
+License: License :: OSI Approved :: MIT License
+Keywords: swedish,etymology,dictionary
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Text Processing
+Classifier: Topic :: Text Processing :: Markup :: XML
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: lxml
+Requires-Dist: requests
+
+[![Build Status](https://travis-ci.org/clemsciences/svety.svg?branch=master)](https://travis-ci.org/clemsciences/svety) [![PyPI](https://img.shields.io/pypi/v/svety)](https://pypi.org/project/svety/)
+
+
+# Reader of the *Hellquists Svensk etymologisk ordbok* 
+
+This package provides a etymological dictionary of Swedish.
+
+## Sources
+Although texts are in public domain, we must thank those who digitalised and normalized these texts.
+
+- [Hellquists Svensk etymologisk ordbok](https://spraakbanken.gu.se/swe/resurs/hellqvist#tabs=information)
+
+## Installation
+
+```bash
+$ pip install svety
+```
+
+## How to use **svety**
+
+```python
+from svety import reader, retriever
+retriever.retrieve_dictionary()
+root = reader.get_xml_root("hellqvist.xml")
+word = reader.read_entry(root, "enkom")
+```
+And you got the "enkom" entry.
+
+

@@ -1,0 +1,11 @@
+svety/__init__.py,sha256=WdRLna4-8wuoCmsmi3qjY1cdDkNzoZEZ7LYP_j5ByZc,65
+svety/hellqvist.xml,sha256=TpsOk9DWo6MLMbbDY-x6DCV6jfAGI4AzM51jODar9V0,22232751
+svety/reader.py,sha256=ZdRVhbSIxl-dzT9gnea1vrqcNvHiZyAB9Cc08pR6ei4,808
+svety/retriever.py,sha256=p28mDdGJ_jmSY0bfxtZdORwvwefmuoxlpWGdLcCMavM,368
+svety/tests.py,sha256=URlTPK_enCGVBfqzZeVbhoJssN1vD-b4nbP2olE2w4g,944
+svety-1.0.0.dist-info/LICENSE,sha256=otSHM_SRLMw8yB8BKskIke_pfWOufTztD51fmQTQPeQ,1092
+svety-1.0.0.dist-info/METADATA,sha256=ICaWmCP83fBXSptYIMlKyncUdSpObl-OKYWCCXJMiEY,1476
+svety-1.0.0.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+svety-1.0.0.dist-info/top_level.txt,sha256=48ZFkBKdq7KA4kfnpSqeodyXvJ3br8rOdEkS6U2SsNE,6
+svety-1.0.0.dist-info/zip-safe,sha256=frcCV1k9oG9oKj3dpUqdJg1PxRT2RSN_XKdLCPjaYaY,2
+svety-1.0.0.dist-info/RECORD,,
