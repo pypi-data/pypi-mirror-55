@@ -1,0 +1,53 @@
+Metadata-Version: 2.1
+Name: kakeibox-presenter-json
+Version: 0.1.0
+Summary: A package description.
+Home-page: https://gitlab.com/kakeibox/plugins/storage/kakeibox-presenter-json
+Author: Jonathan López
+Author-email: jlopez@fipasoft.com.mx
+License: GNU General Public License v3
+Keywords: kakeibox_presenter_json
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: GNU General Public License v3 (GPLv3)
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+
+===============================
+kakeibox_presenter_json
+===============================
+
+
+.. image:: https://img.shields.io/pypi/v/kakeibox_presenter_json.svg
+        :target: https://pypi.python.org/pypi/kakeibox-presenter-json
+
+
+
+A package description.
+
+
+* Free software: GNU General Public License v3
+
+
+Features
+--------
+
+* TODO
+
+
+
+=======
+History
+=======
+
+0.1.0 (2019-08-28)
+------------------
+
+* First release on PyPI.
+
+
