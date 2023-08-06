@@ -1,0 +1,1 @@
+logger==1.4Click==7.0fylesdk==0.10.0
