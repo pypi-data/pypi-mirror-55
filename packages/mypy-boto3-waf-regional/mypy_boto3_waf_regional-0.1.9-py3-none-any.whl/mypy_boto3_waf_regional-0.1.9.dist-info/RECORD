@@ -1,0 +1,8 @@
+mypy_boto3_waf_regional/__init__.py,sha256=A12b3oi-L7P0hfW5QE2sSk6TA6C0d0wK8HzmSc7iIMs,124
+mypy_boto3_waf_regional/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_waf_regional/client.py,sha256=jCnaUugea3k8GUhdak8xFQJ6sbCXAim2Y2hjvvAIErM,429606
+mypy_boto3_waf_regional/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_waf_regional-0.1.9.dist-info/METADATA,sha256=d0j9aR25C5hJ7LObvl-bLhUQklQF6dTj6lYQOpfrL8c,1069
+mypy_boto3_waf_regional-0.1.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_waf_regional-0.1.9.dist-info/top_level.txt,sha256=JjdM6Qw2d2OAcuHG7aTcw86B81MzN4HHktN5AMMi4Tg,24
+mypy_boto3_waf_regional-0.1.9.dist-info/RECORD,,
