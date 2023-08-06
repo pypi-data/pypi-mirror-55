@@ -1,0 +1,16 @@
+pyscal/__init__.py,sha256=-Z782PsdD6wT47xyX1TEqWaZJ5itw262hIobstIQh5E,507
+pyscal/_version.py,sha256=hKvvR0RnSlOwByE63EEcoSAgzMakk4NN2B5xUAgIkLo,498
+pyscal/constants.py,sha256=bqBszQtnoBhmBbU-RjdHuU1VmIHdLT1PF25XQhun9iI,764
+pyscal/factory.py,sha256=2JOuaxuVJN-YqbBLoK5D8X6lXr5xSmDSQFbJ1ln12TU,14545
+pyscal/gasoil.py,sha256=UGss-qgZjcoN51h2QyFxA1T28fCg6x9JJz_hMyd0MPQ,31815
+pyscal/scal.py,sha256=bHjJNitTGjaOMU0s3DKgrYfo-fpyGCXRjeWI3acFKYc,12628
+pyscal/scalrecommendation.py,sha256=QR-xmtNZvzO3WUe6SETyx2R1jBTr-wSTNjPwSHYgLfk,12439
+pyscal/utils.py,sha256=eESUgqOAuz2SPdzHgK4dZMa3xG4IIOWF8dpvxPqF8gQ,6237
+pyscal/wateroil.py,sha256=7-Pe0aF52bFFToP4FAOsETfeU1diLs4VBGbae0tRYho,38768
+pyscal/wateroilgas.py,sha256=KOH-THoMQaG_ir70_zldbedlFQNd41RXdT9O98kE6dc,7501
+pyscal-0.2.0.dist-info/LICENSE,sha256=46mU2C5kSwOnkqkw9XQAJlhBL2JAf1_uCD8lVcXyMRg,7652
+pyscal-0.2.0.dist-info/METADATA,sha256=tTcWJ_oNwLFQWjQx-DiSKX3q4YchGcq-0_FMyibK3qE,2423
+pyscal-0.2.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+pyscal-0.2.0.dist-info/entry_points.txt,sha256=eqGnTHtEVMYwfXVk1Z9MhC8O2N8wuqAbr0lisLmrkxs,20
+pyscal-0.2.0.dist-info/top_level.txt,sha256=ZcAOAW7Cc_2RdALaKM7krIdok8Pqbef2XN-S6m1udhw,7
+pyscal-0.2.0.dist-info/RECORD,,
