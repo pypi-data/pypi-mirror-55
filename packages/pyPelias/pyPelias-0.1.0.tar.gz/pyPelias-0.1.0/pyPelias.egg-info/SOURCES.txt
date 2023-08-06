@@ -1,0 +1,7 @@
+README.md
+setup.py
+pyPelias/__init__.py
+pyPelias.egg-info/PKG-INFO
+pyPelias.egg-info/SOURCES.txt
+pyPelias.egg-info/dependency_links.txt
+pyPelias.egg-info/top_level.txt
