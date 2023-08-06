@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: faas-sdk
+Version: 0.1.3
+Summary: FaaS Python SDK
+Home-page: UNKNOWN
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Dist: requests
+
+UNKNOWN
+
+
