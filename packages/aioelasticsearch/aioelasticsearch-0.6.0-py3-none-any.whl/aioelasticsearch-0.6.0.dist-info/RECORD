@@ -1,0 +1,11 @@
+aioelasticsearch/__init__.py,sha256=dy1E_-tqRVzreWVuJ2YO1Sm2mcj8SbYlZGWa__C7a0o,1107
+aioelasticsearch/connection.py,sha256=eyZq-0dO8ZEpSgfgPMtIgPvAUyCMP2Ek6Uovo0t7G3I,5028
+aioelasticsearch/exceptions.py,sha256=2nnWfzYjp4FwQNIhV4sVqY4UGNU4nCeyOTaQgUrmxWQ,206
+aioelasticsearch/helpers.py,sha256=BJfk-toXcs4X0o1SFv1Tf_zFLsENhU-urOOgyqddPgQ,4037
+aioelasticsearch/pool.py,sha256=q6XKj62GxpBsSCcQuA_NgUrQzieynXs1rtKeJ6wyycY,4099
+aioelasticsearch/transport.py,sha256=KaD2IlHiDFSKtKgOsoiVkHshFVhFFiadocLoFyNwvxw,11790
+aioelasticsearch-0.6.0.dist-info/LICENSE,sha256=4MfZhjtcRRDl4B-lW0B6lbDAnX5uvSNZw2Aruf5ZmGw,1226
+aioelasticsearch-0.6.0.dist-info/METADATA,sha256=0dIz8TC1RWALxokU9ygy1cmEL_YlSfKI3XBI5VivFRI,2627
+aioelasticsearch-0.6.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+aioelasticsearch-0.6.0.dist-info/top_level.txt,sha256=OdnQkhoV14-VgV5fNPHocA7qxky0fPLfeANusYAmeL0,17
+aioelasticsearch-0.6.0.dist-info/RECORD,,
