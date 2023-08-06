@@ -1,0 +1,13 @@
+# Used for testing
+pytest
+pytest-cov
+
+# Used at runtime
+selenium
+requests
+tox
+geojson
+
+# Used to build documentation
+sphinx
+recommonmark
