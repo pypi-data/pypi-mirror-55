@@ -1,0 +1,13 @@
+minpair/__init__.py,sha256=ioHvtO3L5B9N-SE2l_FbsERXOjxh1vUILCPow6TQeck,421
+minpair/_version.py,sha256=M8cEjYdN9vBGjEXaSSiB4r5czDRr8aBrld4I17AE7Z0,116
+minpair/arpabet.py,sha256=7u9lriEDb8rq33IQPyDDwbUzVe2eTXiHeRiD3Fz7CWs,1649
+minpair/corpus.py,sha256=bCNtTxRAXEBfswT6G501iJchJ6RNdpC-iVYPIepCEXM,377
+minpair/generator.py,sha256=tUrHs6r87RbwgwrKdxTlNLyCTS9rAyUfrHneZNxxoJw,4443
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_arpabet.py,sha256=mp7RF-crdpecEqGPf_to6d2QlDGX4o85NUKG315ymYA,840
+tests/test_minpair.py,sha256=KQllTakonbh8HzYJzdogWiWbimCeLzfYegfS36yOuq8,1058
+minpair-0.1.3.dist-info/LICENSE,sha256=MVFK4YAQbDtyEkln3O5CvKT2UzM-I0VefUzYHunTFwo,1068
+minpair-0.1.3.dist-info/METADATA,sha256=Mk9p43EZVDmymabm5vSl6W0Zm-PV3K5HamHi93Zbxj4,2673
+minpair-0.1.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+minpair-0.1.3.dist-info/top_level.txt,sha256=YDFe7haA8iJMlL4tewAzSmaAr7_nwzy-zc_9JnhhFwU,14
+minpair-0.1.3.dist-info/RECORD,,
