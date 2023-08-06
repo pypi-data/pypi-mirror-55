@@ -1,0 +1,418 @@
+MANIFEST.in
+README.md
+setup.py
+certobs/CERT-Cat.dat
+certobs/__init__.py
+certobs/ajuste.py
+certobs/fit.py
+certobs/grid_otf.py
+certobs/healpix.py
+certobs/hmsdec.py
+certobs/otf.py
+certobs/plot.py
+certobs.egg-info/PKG-INFO
+certobs.egg-info/SOURCES.txt
+certobs.egg-info/dependency_links.txt
+certobs.egg-info/top_level.txt
+certobs/__pycache__/__init__.cpython-36.pyc
+certobs/__pycache__/__init__.cpython-37.pyc
+certobs/obs2019-11-05/2019-11-5   tip1.png
+certobs/obs2019-11-05/2019-11-5   transitCasA.png
+certobs/obs2019-11-05/2019-11-5   transitSgAS.png
+certobs/obs2019-11-05/coords-2019.11.05-14.41.txt
+certobs/obs2019-11-05/coords-2019.11.05-16.09.txt
+certobs/obs2019-11-05/power1105.dat
+certobs/obs2019-11-05/powerantitip1.dat
+certobs/obs2019-11-05/powerantitip2.dat
+certobs/obs2019-11-05/powerscanCasA.dat
+certobs/obs2019-11-05/powerscanSgAS.dat
+certobs/obs2019-11-05/powertip1.dat
+certobs/obs2019-11-05/powertrackCasA.dat
+certobs/obs2019-11-05/powertrackSgAS.dat
+certobs/obs2019-11-05/powertransitCasA.dat
+certobs/obs2019-11-05/powertransitSgAS.dat
+certobs/obs2019-11-05/scan2019-11-5 _scanCasA.png
+certobs/obs2019-11-05/tabla.fits
+certobs/obs2019-11-05/pointings/CASN.topo
+certobs/obs2019-11-05/pointings/anti-az2019.11.05-15.26.topo
+certobs/obs2019-11-05/pointings/anti-az2019.11.05-16.36.topo
+certobs/obs2019-11-05/pointings/scan-2019.11.05-14.41.topo
+certobs/obs2019-11-05/pointings/scan-2019.11.05-16.09.topo
+certobs/obs2019-11-05/pointings/tip-az2019.11.05-14.00.topo
+certobs/obs2019-11-05/pointings/track-CasA---2019.11.05-14.25.topo
+certobs/obs2019-11-05/pointings/track-SgAS---2019.11.05-15.53.topo
+certobs/obs2019-11-05/pointings/transit-CasA---2019.11.05-14.10.topo
+certobs/obs2019-11-05/pointings/transit-SgAS---2019.11.05-15.37.topo
+certobs/obs2019-11-08/2019-11-8   _antitip1.png
+certobs/obs2019-11-08/2019-11-8   _antitip2.png
+certobs/obs2019-11-08/2019-11-8   _tip1.png
+certobs/obs2019-11-08/2019-11-8   _tip2.png
+certobs/obs2019-11-08/2019-11-8   _trackCasA.png
+certobs/obs2019-11-08/2019-11-8   _trackSgAS.png
+certobs/obs2019-11-08/2019-11-8   _transitCasA.png
+certobs/obs2019-11-08/2019-11-8   _transitSgAS.png
+certobs/obs2019-11-08/CASN.topo
+certobs/obs2019-11-08/CERTPowerMeter-20191106T084549-20191108T153321.dat
+certobs/obs2019-11-08/CERTPowerMeter-20191108T153322-20191111T083849.dat
+certobs/obs2019-11-08/anti-az2019.11.08-13.49.topo
+certobs/obs2019-11-08/anti-az2019.11.08-15.35.topo
+certobs/obs2019-11-08/coords-CasA.txt
+certobs/obs2019-11-08/coords-SgAS.txt
+certobs/obs2019-11-08/power_antitip1.dat
+certobs/obs2019-11-08/power_antitip2.dat
+certobs/obs2019-11-08/power_scan1.dat
+certobs/obs2019-11-08/power_scanCasA.dat
+certobs/obs2019-11-08/power_scanSgAS.dat
+certobs/obs2019-11-08/power_tip1.dat
+certobs/obs2019-11-08/power_tip2.dat
+certobs/obs2019-11-08/power_trackCasA.dat
+certobs/obs2019-11-08/power_trackSgAS.dat
+certobs/obs2019-11-08/power_transitCasA.dat
+certobs/obs2019-11-08/power_transitSgAS.dat
+certobs/obs2019-11-08/scan-2019.11.08-14.45.topo
+certobs/obs2019-11-08/scan-2019.11.08-15.15.topo
+certobs/obs2019-11-08/scan2019-11-8CasA.png
+certobs/obs2019-11-08/scan2019-11-8SgAS.png
+certobs/obs2019-11-08/tip-az2019.11.08-13.02.topo
+certobs/obs2019-11-08/tip-az2019.11.08-13.57.topo
+certobs/obs2019-11-08/track-CasA---2019.11.08-14.27.topo
+certobs/obs2019-11-08/track-SgAS---2019.11.08-13.32.topo
+certobs/obs2019-11-08/transit-CasA---2019.11.08-14.07.topo
+certobs/obs2019-11-08/transit-SgAS---2019.11.08-13.11.topo
+certobs/obs2019-11-08/transit-mercury2019.11.08-15.33.topo
+certobs/obs2019-11-08/Ajustes/Gaussian 2019-11-8CasA.png
+certobs/obs2019-11-08/Ajustes/Gaussian 2019-11-8_SgAS.png
+certobs/obs2019-11-08/Ajustes/Mexican Hat 2019-11-8_transitCasA.png
+certobs/obs2019-11-08/Ajustes/MexicanHat 2019-11-8_2.png
+certobs/obs2019-11-08/Ajustes/MexicanHat 2019-11-8_SgAS.png
+certobs/obs2019-11-08/Ajustes/Polynomial 2019-11-8_.png
+certobs/obs2019-11-08/Ajustes/Polynomial 2019-11-8_tip1.png
+certobs/obs2019-11-08/Ajustes/Ajustes/Polynomial 2019-11-8_.png
+certobs/obs2019-11-08/Ajustes/Ajustes/Polynomial 2019-11-8_tip1.png
+certobs/obs2019-11-11/transit-jupiter2019.11.11-17.00.topo
+certobs/obs2019-11-11/transit-jupiter2019.11.11-17.30.topo
+certobs/obs2019-11-11/transit-moon2019.11.11-17.00.topo
+certobs/obs2019-11-11/transit-moon2019.11.11-17.20.topo
+certobs/obs2019-11-11/transit-saturn2019.11.11-17.00.topo
+certobs/obs2019-11-11/transit-saturn2019.11.11-17.30.topo
+certobs/obs2019-11-13/CASN.topo
+certobs/obs2019-11-13/anti-az2019.11.13-14.40.topo
+certobs/obs2019-11-13/coords-2019.11.13-12.47.txt
+certobs/obs2019-11-13/coords-2019.11.13-13.20.txt
+certobs/obs2019-11-13/coords-2019.11.13-13.30.txt
+certobs/obs2019-11-13/scan-2019.11.13-12.47.topo
+certobs/obs2019-11-13/scan-2019.11.13-13.20.topo
+certobs/obs2019-11-13/tip-az2019.11.13-12.00.topo
+certobs/obs2019-11-13/track-jupiter2019.11.13-12.32.topo
+certobs/obs2019-11-13/track-saturn2019.11.13-14.25.topo
+certobs/obs2019-11-13/transit-jupiter2019.11.13-12.15.topo
+certobs/obs2019-11-13/transit-saturn2019.11.13-14.07.topo
+certobs/obs2019-11-14/transit-saturn2019.11.14-13.30.topo
+certobs/octubre/obs2019-10-01/CASN1030.topo
+certobs/octubre/obs2019-10-01/CASN11.topo
+certobs/octubre/obs2019-10-01/CASN12.topo
+certobs/octubre/obs2019-10-01/CASN13.topo
+certobs/octubre/obs2019-10-01/CASN14.topo
+certobs/octubre/obs2019-10-01/CASN15.topo
+certobs/octubre/obs2019-10-01/CASN16.topo
+certobs/octubre/obs2019-10-01/CASN17.topo
+certobs/octubre/obs2019-10-02/track-CasA---2019.10.02-13.25.topo
+certobs/octubre/obs2019-10-02/track-CasA---2019.10.02-13.40.topo
+certobs/octubre/obs2019-10-02/track-CasA---2019.10.02-13.45.topo
+certobs/octubre/obs2019-10-02/track-CasA---2019.10.02-13.55.topo
+certobs/octubre/obs2019-10-02/track-CasA---2019.10.02-14.05.topo
+certobs/octubre/obs2019-10-03/CASN.topo
+certobs/octubre/obs2019-10-03/prueba.png
+certobs/octubre/obs2019-10-03/scan-2019.10.03-13.05.topo
+certobs/octubre/obs2019-10-03/tip-az2019.10.03-09.05.topo
+certobs/octubre/obs2019-10-03/track-OriA---2019.10.03-09.20.topo
+certobs/octubre/obs2019-10-03/transit-OriA---2019.10.03-09.13.topo
+certobs/octubre/obs2019-10-06/track-CygA---2019.10.06-18.00.topo
+certobs/octubre/obs2019-10-07/datascan-2019.10.07-09.30.txt
+certobs/octubre/obs2019-10-07/scan-2019.10.07-09.30.topo
+certobs/octubre/obs2019-10-09/CASN.topo
+certobs/octubre/obs2019-10-09/CASN10-10-9.30.topo
+certobs/octubre/obs2019-10-09/datascan-2019.10.09-09.41.txt
+certobs/octubre/obs2019-10-09/scan-2019.10.09-09.41.topo
+certobs/octubre/obs2019-10-09/tip-az2019.10.09-09.35.topo
+certobs/octubre/obs2019-10-09/track-VirA---2019.10.09-10.05.topo
+certobs/octubre/obs2019-10-09/transit-VirA---2019.10.09-09.57.topo
+certobs/octubre/obs2019-10-09/transit-VirA---2019.10.09-10.00.topo
+certobs/octubre/obs2019-10-10/power.dat
+certobs/octubre/obs2019-10-10/powerdata1010.dat
+certobs/octubre/obs2019-10-10/powerscan.dat
+certobs/octubre/obs2019-10-10/powerscan1010.dat
+certobs/octubre/obs2019-10-10/scan1010.png
+certobs/octubre/obs2019-10-10/tip1010.png
+certobs/octubre/obs2019-10-10/track-VirA---2019.10.10-10.07.topo
+certobs/octubre/obs2019-10-10/track1010.png
+certobs/octubre/obs2019-10-10/transit-VirA---2019.10.10-09.57.topo
+certobs/octubre/obs2019-10-10/transit1010.png
+certobs/octubre/obs2019-10-15/CASN.topo
+certobs/octubre/obs2019-10-15/CERTPowerMeter-20191015T095949-20191015T132956.dat
+certobs/octubre/obs2019-10-15/Tipping curve 15-10-2019.png
+certobs/octubre/obs2019-10-15/Tracking 3C270 15-10-2019.png
+certobs/octubre/obs2019-10-15/Tracking 3C273 15-10-2019.png
+certobs/octubre/obs2019-10-15/Transit (3C273) 15-10-2019.png
+certobs/octubre/obs2019-10-15/Transit 2 (3C270) 15-10-2019.png
+certobs/octubre/obs2019-10-15/coords-2019.10.15-11.04.txt
+certobs/octubre/obs2019-10-15/image2.png
+certobs/octubre/obs2019-10-15/powerscan1510.dat
+certobs/octubre/obs2019-10-15/powerscan1510b.dat
+certobs/octubre/obs2019-10-15/powertip1510.dat
+certobs/octubre/obs2019-10-15/powertip2-1510.dat
+certobs/octubre/obs2019-10-15/powertrack1510.dat
+certobs/octubre/obs2019-10-15/powertrack2-1510.dat
+certobs/octubre/obs2019-10-15/powertransit1510.dat
+certobs/octubre/obs2019-10-15/powertransit2-1510.dat
+certobs/octubre/obs2019-10-15/scan-2019.10.15-11.04.topo
+certobs/octubre/obs2019-10-15/scan1510b.png
+certobs/octubre/obs2019-10-15/scan2019-10-15.fits
+certobs/octubre/obs2019-10-15/tabla.fits
+certobs/octubre/obs2019-10-15/tip-az2019.10.15-10.02.topo
+certobs/octubre/obs2019-10-15/tip-az2019.10.15-13.19.topo
+certobs/octubre/obs2019-10-15/track-3C270--2019.10.15-10.20.topo
+certobs/octubre/obs2019-10-15/track-3C273--2019.10.15-10.48.topo
+certobs/octubre/obs2019-10-15/transit-3C270--2019.10.15-10.10.topo
+certobs/octubre/obs2019-10-15/transit-3C273--2019.10.15-10.38.topo
+certobs/octubre/obs2019-10-15/transit-PerA---2019.10.15-08.08.topo
+certobs/octubre/obs2019-10-19/.directory
+certobs/octubre/obs2019-10-19/CASN.topo
+certobs/octubre/obs2019-10-19/CASNopenday.topo
+certobs/octubre/obs2019-10-19/transit-M17----2019.10.19-17.06.topo
+certobs/octubre/obs2019-10-19/transit-M31----2019.10.19-16.55.topo
+certobs/octubre/obs2019-10-19/transit-SCUTUM-2019.10.19-16.00.topo
+certobs/octubre/obs2019-10-19/transit-SgAS---2019.10.19-17.17.topo
+certobs/octubre/obs2019-10-19/Primera ronda/tip-az2019.10.19-08.00.topo
+certobs/octubre/obs2019-10-19/Primera ronda/tip-az2019.10.19-13.02.topo
+certobs/octubre/obs2019-10-19/Primera ronda/tip-az2019.10.19-13.07.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-3C123--2019.10.19-08.41.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-3C147--2019.10.19-09.25.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-3C161--2019.10.19-08.52.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-3C218--2019.10.19-09.14.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-3C227--2019.10.19-09.36.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-3C249.12019.10.19-10.42.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-3C270--2019.10.19-10.09.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-3C273--2019.10.19-09.58.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-3C286--2019.10.19-10.20.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-3C295--2019.10.19-10.31.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-3C309.12019.10.19-10.53.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-3C348--2019.10.19-11.37.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-3C353--2019.10.19-11.48.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-BL-Lac2019.10.19-12.43.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-CasA---2019.10.19-11.15.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-CgX3--2019.10.19-11.59.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-CygA---2019.10.19-11.04.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-DR21---2019.10.19-12.10.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-DR4----2019.10.19-11.26.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-NGC70272019.10.19-12.32.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-OriA---2019.10.19-08.19.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-OriB---2019.10.19-08.30.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-PerA---2019.10.19-08.08.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-SCUTUM-2019.10.19-12.21.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-TauA---2019.10.19-09.03.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-VirA---2019.10.19-09.47.topo
+certobs/octubre/obs2019-10-19/Primera ronda/transit-jupiter2019.10.19-12.54.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-3C227--2019.10.19-13.15.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-3C249.12019.10.19-14.21.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-3C270--2019.10.19-13.48.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-3C273--2019.10.19-13.37.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-3C286--2019.10.19-13.59.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-3C295--2019.10.19-14.10.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-3C309.12019.10.19-14.32.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-3C348--2019.10.19-15.16.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-3C353--2019.10.19-15.27.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-BL-Lac 2019.10.19-16.22.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-CasA---2019.10.19-14.54.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-CgX3---2019.10.19-15.38.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-CygA---2019.10.19-14.43.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-DR21---2019.10.19-15.49.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-DR4----2019.10.19-15.05.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-NGC70272019.10.19-16.11.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-SCUTUM-2019.10.19-16.00.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-VirA---2019.10.19-13.26.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-jupiter2019.10.19-16.33.topo
+certobs/octubre/obs2019-10-19/Segunda ronda/transit-saturn2019.10.19-16.44.topo
+certobs/octubre/obs2019-10-29/transit-mars2019.10.29-20.03.topo
+certobs/octubre/obs2019-10-30/2019-10-30  _tip1.png
+certobs/octubre/obs2019-10-30/2019-10-30  _transitCygA.png
+certobs/octubre/obs2019-10-30/CASN.topo
+certobs/octubre/obs2019-10-30/CERTPowerMeter-20191030T090346-20191030T143524.dat
+certobs/octubre/obs2019-10-30/CERTPowerMeter-20191030T143526-20191031T075549.dat
+certobs/octubre/obs2019-10-30/anti-az2019.10.30-13.44.topo
+certobs/octubre/obs2019-10-30/coords-2019.10.30-12.35.txt
+certobs/octubre/obs2019-10-30/power20191030.dat
+certobs/octubre/obs2019-10-30/power_scan.dat
+certobs/octubre/obs2019-10-30/power_tip1.dat
+certobs/octubre/obs2019-10-30/power_transitCygA.dat
+certobs/octubre/obs2019-10-30/scan-2019.10.30-12.35.topo
+certobs/octubre/obs2019-10-30/scan-2019.10.30-12.35a.topo
+certobs/octubre/obs2019-10-30/scan1510b.png
+certobs/octubre/obs2019-10-30/tabla.fits
+certobs/octubre/obs2019-10-30/tip-az2019.10.30-12.00.topo
+certobs/octubre/obs2019-10-30/tip-az2019.10.30-13.41.topo
+certobs/octubre/obs2019-10-30/track-CygA---2019.10.30-12.19.topo
+certobs/octubre/obs2019-10-30/transit-CygA---2019.10.30-12.08.topo
+certobs/octubre/obs2019-10-30/transit-DR4----2019.10.30-13.25.topo
+certobs/octubre/openday/.directory
+certobs/octubre/openday/Tipping curve 15-10-2019.png
+certobs/octubre/openday/pars.dat
+certobs/octubre/openday/power_3C123.dat
+certobs/octubre/openday/power_3C147.dat
+certobs/octubre/openday/power_3C161.dat
+certobs/octubre/openday/power_3C218.dat
+certobs/octubre/openday/power_3C227.dat
+certobs/octubre/openday/power_3C227b.dat
+certobs/octubre/openday/power_3C249.dat
+certobs/octubre/openday/power_3C249b.dat
+certobs/octubre/openday/power_3C270.dat
+certobs/octubre/openday/power_3C270b.dat
+certobs/octubre/openday/power_3C273.dat
+certobs/octubre/openday/power_3C273b.dat
+certobs/octubre/openday/power_3C286.dat
+certobs/octubre/openday/power_3C286b.dat
+certobs/octubre/openday/power_3C295.dat
+certobs/octubre/openday/power_3C295b.dat
+certobs/octubre/openday/power_3C309.dat
+certobs/octubre/openday/power_3C309b.dat
+certobs/octubre/openday/power_3C348.dat
+certobs/octubre/openday/power_3C348b.dat
+certobs/octubre/openday/power_3C353.dat
+certobs/octubre/openday/power_3C353b.dat
+certobs/octubre/openday/power_7027.dat
+certobs/octubre/openday/power_7027b.dat
+certobs/octubre/openday/power_Bl-Lac.dat
+certobs/octubre/openday/power_Bl-Lacb.dat
+certobs/octubre/openday/power_CasA.dat
+certobs/octubre/openday/power_CasAb.dat
+certobs/octubre/openday/power_CgX3.dat
+certobs/octubre/openday/power_CgX3b.dat
+certobs/octubre/openday/power_CygA.dat
+certobs/octubre/openday/power_CygAb.dat
+certobs/octubre/openday/power_DR21.dat
+certobs/octubre/openday/power_DR21b.dat
+certobs/octubre/openday/power_DR4.dat
+certobs/octubre/openday/power_DR4b.dat
+certobs/octubre/openday/power_Jupiter.dat
+certobs/octubre/openday/power_Jupiterb.dat
+certobs/octubre/openday/power_OriA.dat
+certobs/octubre/openday/power_OriB.dat
+certobs/octubre/openday/power_PerA.dat
+certobs/octubre/openday/power_SCUTUM.dat
+certobs/octubre/openday/power_SCUTUMb.dat
+certobs/octubre/openday/power_TauA.dat
+certobs/octubre/openday/power_VirA.dat
+certobs/octubre/openday/power_VirAb.dat
+certobs/octubre/openday/power_saturn.dat
+certobs/octubre/openday/power_tip2_az0.dat
+certobs/octubre/openday/power_tip2_az180.dat
+certobs/octubre/openday/powertip1.dat
+certobs/octubre/openday/tabla.fits
+certobs/octubre/openday/vals.dat
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C123.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C147.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C161.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C218.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C227.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C227b.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C249.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C249b.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C270.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C270b.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C273.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C273b.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C286.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C286b.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C295.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C295b.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C309.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C309b.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C348.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C348b.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C353.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_3C353b.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_7027.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_7027b.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_Bl-Lac.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_Bl-Lacb.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_CasA.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_CasAb.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_CgX3.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_CgX3b.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_CygA.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_CygAb.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_DR21.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_DR21b.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_DR4.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_DR4b.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_Jupiter.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_Jupiterb.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_OriA.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_OriB.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_PerA.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_SCUTUM.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_SCUTUMb.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_TauA.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_VirA.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_VirAb.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19__OriA.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_ip1.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_saturn.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_tip2_az0.png
+certobs/octubre/openday/Ajustes/Ajuste2019-10-19_tip2_az180.png
+certobs/power_separados/CERTPowerMeter-20191019T161225-20191021T071730.dat
+certobs/power_separados/Tipping curve 15-10-2019.png
+certobs/power_separados/Tracking 3C273 15-10-2019.png
+certobs/power_separados/Transit 15-10-2019.png
+certobs/power_separados/coords-2019.10.15-11.04.txt
+certobs/power_separados/power_3C123.dat
+certobs/power_separados/power_3C147.dat
+certobs/power_separados/power_3C161.dat
+certobs/power_separados/power_3C218.dat
+certobs/power_separados/power_3C227.dat
+certobs/power_separados/power_3C227b.dat
+certobs/power_separados/power_3C249.dat
+certobs/power_separados/power_3C249b.dat
+certobs/power_separados/power_3C270.dat
+certobs/power_separados/power_3C270b.dat
+certobs/power_separados/power_3C273.dat
+certobs/power_separados/power_3C273b.dat
+certobs/power_separados/power_3C286.dat
+certobs/power_separados/power_3C286b.dat
+certobs/power_separados/power_3C295.dat
+certobs/power_separados/power_3C295b.dat
+certobs/power_separados/power_3C309.dat
+certobs/power_separados/power_3C309b.dat
+certobs/power_separados/power_3C348.dat
+certobs/power_separados/power_3C348b.dat
+certobs/power_separados/power_3C353.dat
+certobs/power_separados/power_3C353b.dat
+certobs/power_separados/power_7027.dat
+certobs/power_separados/power_7027b.dat
+certobs/power_separados/power_Bl-Lac.dat
+certobs/power_separados/power_Bl-Lacb.dat
+certobs/power_separados/power_CasA.dat
+certobs/power_separados/power_CasAb.dat
+certobs/power_separados/power_CgX3.dat
+certobs/power_separados/power_CgX3b.dat
+certobs/power_separados/power_CygA.dat
+certobs/power_separados/power_CygAb.dat
+certobs/power_separados/power_DR21.dat
+certobs/power_separados/power_DR21b.dat
+certobs/power_separados/power_DR4.dat
+certobs/power_separados/power_DR4b.dat
+certobs/power_separados/power_Jupiter.dat
+certobs/power_separados/power_Jupiterb.dat
+certobs/power_separados/power_OriA.dat
+certobs/power_separados/power_OriB.dat
+certobs/power_separados/power_PerA.dat
+certobs/power_separados/power_SCUTUM.dat
+certobs/power_separados/power_SCUTUMb.dat
+certobs/power_separados/power_TauA.dat
+certobs/power_separados/power_VirA.dat
+certobs/power_separados/power_VirAb.dat
+certobs/power_separados/power_saturn.dat
+certobs/power_separados/power_tip2_az0.dat
+certobs/power_separados/power_tip2_az180.dat
+certobs/power_separados/poweropenday.dat
+certobs/power_separados/powertip1.dat
