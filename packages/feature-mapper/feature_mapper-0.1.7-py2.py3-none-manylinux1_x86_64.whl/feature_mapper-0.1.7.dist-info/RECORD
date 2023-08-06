@@ -1,0 +1,13 @@
+feature_mapper-0.1.7.dist-info/METADATA,sha256=gXfzWznVDdsIuFrkhpUZ9UlO_2s3vuPa2DkgHMLkXnA,405
+feature_mapper-0.1.7.dist-info/WHEEL,sha256=5PlEHEeaz9vEcbIivbaOiBXTX2HpPKd4Ud5nhTaSmmw,133
+feature_mapper/__init__.py,sha256=wFmxijDYYCZ4owRh98o67OlOtWCMYFPdv09IbINYiWE,240
+feature_mapper/.gitignore,sha256=lMScNQdvHdJXUMDbazGX65bRKwKL4piGi-50dtaYAFE,50
+feature_mapper/__pycache__/__init__.cpython-37.pyc,sha256=GG5N1JnHuURg6rRuYsQEJGWZUani-gmuxL0bfsZMhvE,314
+feature_mapper/__pycache__/wrapper.cpython-37.pyc,sha256=jFkIwWLDgYM1gMv6jHEL0IKDlKLK-cEuJGm-JshmHXY,1439
+feature_mapper/__pycache__/pure.cpython-37.pyc,sha256=ZZgGwnOS1MrM4Mw0h5iQ-78BHPVQ0Yr6nhCI1CZ6CJM,7275
+feature_mapper/pure.py,sha256=VTIJ9kMVff6F5WMdywmJQIhv51KKGilbe1ZIN1KSdqo,10563
+feature_mapper/wrapper.py,sha256=FoXwGu5vru-Jf997AmJcKkqKL__5uf9q6d2MdVzVOB4,1102
+feature_mapper/feature_mapper/__init__.py,sha256=fAua8dQbFJlLpwheN-qdKEbbyLPRoS-P40C4XkthPaQ,142
+feature_mapper/feature_mapper/ffi.py,sha256=nhjhQP_qDSdQGvszol0jY5liHBOLI5R4elYqHkv7VBI,1010
+feature_mapper/feature_mapper/native.so,sha256=8pv59Xo0TQFvqCuUsIG_rDw3SxxnzpPhc-1b-J9bJpo,1665272
+feature_mapper-0.1.7.dist-info/RECORD,,
