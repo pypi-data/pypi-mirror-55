@@ -1,0 +1,9 @@
+lvmcache2mqtt/__init__.py,sha256=gLG7-2jQw6hOQG5qNPKo0SksN-txj2ClL0A4osMFGPs,85
+lvmcache2mqtt/__main__.py,sha256=jFqWk9ltx_MFW7PD8-A1nfxY70nvRu3NRs0EiiK4A1o,805
+lvmcache2mqtt/collect.py,sha256=n7NdBcTGzZVYl0kp6SNpqBmdF0OVbprhwEaY-jGkIE8,547
+lvmcache2mqtt/config.py,sha256=ib1NFfRJ0p6eaETscWqD_CBFNOQDMCBmW3LXnW9z5Dw,269
+lvmcache2mqtt-0.1.0.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+lvmcache2mqtt-0.1.0.dist-info/METADATA,sha256=CdyFLsgemuP9W-pDtHgN7QIvE-dMh9H03INBIKjUfpo,975
+lvmcache2mqtt-0.1.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+lvmcache2mqtt-0.1.0.dist-info/top_level.txt,sha256=nFJXjneiSc4T1WPAdwuMMnngCGaxG3Pl046T4I3rjJI,14
+lvmcache2mqtt-0.1.0.dist-info/RECORD,,
