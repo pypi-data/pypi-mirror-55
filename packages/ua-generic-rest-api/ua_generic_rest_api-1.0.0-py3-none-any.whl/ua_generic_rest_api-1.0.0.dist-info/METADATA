@@ -1,0 +1,14 @@
+Metadata-Version: 2.1
+Name: ua-generic-rest-api
+Version: 1.0.0
+Summary: Tools that interact with Agilent's iLab REST architecture.
+Home-page: https://github.com/UACoreFacilitiesIT/UA-Generic-Rest-API
+Author: Stephen Stern, Rafael Lopez, Etienne Thompson
+Author-email: sterns1@email.arizona.edu
+License: MIT
+Platform: UNKNOWN
+Description-Content-Type: text/markdown
+
+# UA-Generic-Rest-Api
+
+
