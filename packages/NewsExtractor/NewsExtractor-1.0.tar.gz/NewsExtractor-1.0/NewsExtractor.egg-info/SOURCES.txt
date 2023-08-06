@@ -1,0 +1,16 @@
+README.md
+setup.cfg
+setup.py
+NewsExtractor/__init__.py
+NewsExtractor/defaults.py
+NewsExtractor/utils.py
+NewsExtractor.egg-info/PKG-INFO
+NewsExtractor.egg-info/SOURCES.txt
+NewsExtractor.egg-info/dependency_links.txt
+NewsExtractor.egg-info/requires.txt
+NewsExtractor.egg-info/top_level.txt
+NewsExtractor/extractor/AuthorExtractor.py
+NewsExtractor/extractor/ContentExtractor.py
+NewsExtractor/extractor/TimeExtractor.py
+NewsExtractor/extractor/TitleExtractor.py
+NewsExtractor/extractor/__init__.py
