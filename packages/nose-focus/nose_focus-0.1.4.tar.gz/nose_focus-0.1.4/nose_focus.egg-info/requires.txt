@@ -1,0 +1,6 @@
+six
+
+[tests]
+nose
+noseOfYeti
+nose-pattern-exclude>=0.1.3
