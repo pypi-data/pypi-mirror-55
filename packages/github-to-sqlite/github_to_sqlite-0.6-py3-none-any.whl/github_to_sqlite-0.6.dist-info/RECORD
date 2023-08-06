@@ -1,0 +1,9 @@
+github_to_sqlite/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+github_to_sqlite/cli.py,sha256=OVihmOiSH1AJK8G-wuVfFJ-5OKxEHfGlQJaL-uwPnQE,5742
+github_to_sqlite/utils.py,sha256=Y8FQuUR-dEyij5aj8lH5xAGAovMTgeradls2yPbhvP8,8739
+github_to_sqlite-0.6.dist-info/LICENSE,sha256=xx0jnfkXJvxRnG63LTGOxlggYnIysveWIZ6H3PNdCrQ,11357
+github_to_sqlite-0.6.dist-info/METADATA,sha256=3unWCjb65REmXVaU66iZ0RC4n0gYmMz-URlbhwbu0UE,3536
+github_to_sqlite-0.6.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+github_to_sqlite-0.6.dist-info/entry_points.txt,sha256=XEmCvWXu8ObFt_ZKeuXIqJo_feZ0tDDrugFvhG8RYyU,81
+github_to_sqlite-0.6.dist-info/top_level.txt,sha256=bur6DmbPzE5A4FKDQpi9AkSa-AIjAGKdRor_kyLlllA,17
+github_to_sqlite-0.6.dist-info/RECORD,,
