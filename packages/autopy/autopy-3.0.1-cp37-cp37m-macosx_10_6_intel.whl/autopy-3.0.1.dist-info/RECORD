@@ -1,0 +1,12 @@
+autopy/__init__.py,sha256=E6_Zub_PBrFXG-5fl0l03-wxefahE8Z2GyH9mYD4iy4,277
+autopy/alert.cpython-37m-darwin.so,sha256=hkChInk2TCIasiwWr_ah3vLObXzRR24r06Z1FX17PsM,1853984
+autopy/bitmap.cpython-37m-darwin.so,sha256=hkChInk2TCIasiwWr_ah3vLObXzRR24r06Z1FX17PsM,1853984
+autopy/color.cpython-37m-darwin.so,sha256=hkChInk2TCIasiwWr_ah3vLObXzRR24r06Z1FX17PsM,1853984
+autopy/key.cpython-37m-darwin.so,sha256=hkChInk2TCIasiwWr_ah3vLObXzRR24r06Z1FX17PsM,1853984
+autopy/mouse.cpython-37m-darwin.so,sha256=hkChInk2TCIasiwWr_ah3vLObXzRR24r06Z1FX17PsM,1853984
+autopy/screen.cpython-37m-darwin.so,sha256=hkChInk2TCIasiwWr_ah3vLObXzRR24r06Z1FX17PsM,1853984
+autopy-3.0.1.dist-info/LICENSE,sha256=sL4M2LplXN7Sy6YuSFzjbnw3nb2pX7BjiLsTVuQc3H8,11346
+autopy-3.0.1.dist-info/METADATA,sha256=DItiU5ap5m_D2bqkCrgNwKyjFu-EjkeJVMAWVR-AKx4,7979
+autopy-3.0.1.dist-info/WHEEL,sha256=ZAPg4sh1IYHKqp2FoarXKab2VRxd7s7md0doFSVDALY,109
+autopy-3.0.1.dist-info/top_level.txt,sha256=XZwopO5i8LsCkf3cJbCQeQLMiBD7XwTozpS9kMDQ_N4,7
+autopy-3.0.1.dist-info/RECORD,,
