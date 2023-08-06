@@ -1,0 +1,34 @@
+[console_scripts]
+DSA = hashtools:DSA
+DSA_SHA = hashtools:DSA_SHA
+MD4 = hashtools:MD4
+MD5 = hashtools:MD5
+RIPEMD160 = hashtools:RIPEMD160
+SHA = hashtools:SHA
+SHA1 = hashtools:SHA1
+SHA224 = hashtools:SHA224
+SHA256 = hashtools:SHA256
+SHA384 = hashtools:SHA384
+SHA512 = hashtools:SHA512
+blake2b = hashtools:blake2b
+blake2s = hashtools:blake2s
+dsaEncryption = hashtools:dsaEncryption
+dsaWithSHA = hashtools:dsaWithSHA
+ecdsa_with_SHA1 = hashtools:ecdsa_with_SHA1
+md4 = hashtools:md4
+md5 = hashtools:md5
+ripemd160 = hashtools:ripemd160
+sha = hashtools:sha
+sha1 = hashtools:sha1
+sha224 = hashtools:sha224
+sha256 = hashtools:sha256
+sha384 = hashtools:sha384
+sha3_224 = hashtools:sha3_224
+sha3_256 = hashtools:sha3_256
+sha3_384 = hashtools:sha3_384
+sha3_512 = hashtools:sha3_512
+sha512 = hashtools:sha512
+shake_128 = hashtools:shake_128
+shake_256 = hashtools:shake_256
+whirlpool = hashtools:whirlpool
+
