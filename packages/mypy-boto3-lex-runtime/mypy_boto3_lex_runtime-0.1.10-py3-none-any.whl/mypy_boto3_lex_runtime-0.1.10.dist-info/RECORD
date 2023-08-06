@@ -1,0 +1,8 @@
+mypy_boto3_lex_runtime/__init__.py,sha256=eaz2hIInLSMrUUEHEK8ssEie68RvaB75w4IgsijhHzE,114
+mypy_boto3_lex_runtime/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_lex_runtime/client.py,sha256=MNzjgB12jlq00ggPiH9NUQfxtKATPaXTLbfcP52C0Vs,57729
+mypy_boto3_lex_runtime/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_lex_runtime-0.1.10.dist-info/METADATA,sha256=bdBJ-bHu-eQ4i_1-SpAYpMjY-zB2Mutyii3bWBi-osg,1068
+mypy_boto3_lex_runtime-0.1.10.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_lex_runtime-0.1.10.dist-info/top_level.txt,sha256=VKqyGRjOlJokoNK0hmIzOdwUk1MIEXBeNQZU4nPLPBs,23
+mypy_boto3_lex_runtime-0.1.10.dist-info/RECORD,,
