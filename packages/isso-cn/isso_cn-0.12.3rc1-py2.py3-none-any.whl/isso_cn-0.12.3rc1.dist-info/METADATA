@@ -1,0 +1,67 @@
+Metadata-Version: 2.1
+Name: isso-cn
+Version: 0.12.3rc1
+Summary: lightweight Disqus alternative
+Home-page: https://github.com/staugur/isso-cn/
+Author: Martin Zimmermann
+Author-email: info@posativ.org
+License: MIT
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Topic :: Internet
+Classifier: Topic :: Internet :: WWW/HTTP :: HTTP Servers
+Classifier: Topic :: Internet :: WWW/HTTP :: WSGI :: Application
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
+Requires-Dist: itsdangerous
+Requires-Dist: Jinja2
+Requires-Dist: misaka (<3.0,>=2.0)
+Requires-Dist: html5lib
+Requires-Dist: werkzeug (>=0.9)
+Requires-Dist: bleach
+Requires-Dist: ipaddr (>=2.1) ; python_version=="2.7"
+Requires-Dist: configparser ; python_version=="2.7"
+
+Isso – a commenting server similar to Disqus
+============================================
+
+## **English**
+
+Isso – *Ich schrei sonst* – is a lightweight commenting server written in
+Python and JavaScript. It aims to be a drop-in replacement for
+[Disqus](http://disqus.com).
+
+![Isso in Action](http://posativ.org/~tmp/isso-sample.png)
+
+This project fork is **Isso** ( [github](https://github.com/posativ/isso),
+[pypi](https://pypi.org/project/isso) ), which is suitable for China.
+The new features of the environment, for ease of use, are now re-released to
+pypi, renamed to **isso-cn** ( [github](https://github.com/staugur/isso-cn),
+[pypi](https://pypi.org/project/isso-cn) ).
+
+See [isso-cn.rtfd.vip](https://isso-cn.rtfd.vip) for more details.
+
+## **中文**
+
+Isso – 是一个使用Python和JavaScript编写的轻量级的评论服务，
+它旨在成为 [Disqus](http://disqus.com) 的替代产品。
+
+本项目fork自 **isso** （ [github](https://github.com/posativ/isso),
+[pypi](https://pypi.org/project/isso) ），
+增加了适合中国国内环境的新功能，为了方便使用，现在重新发布到pypi，
+重命名为 **isso-cn** （ [github](https://github.com/staugur/isso-cn),
+[pypi](https://pypi.org/project/isso-cn) ）。
+
+详细文档请参考 [isso-cn.rtfd.vip](https://isso-cn.rtfd.vip)
+
+> [![](https://open.saintic.com/rtfd/badge/isso-cn "文档构建状态")](https://isso-cn.rtfd.vip)
+>
+> 此仓库用以翻译isso中文文档，并增加一些适合国内环境的小功能，且会保持与原仓库代码更新合并。
+>
+> 1. 新评论微信提醒、审核，参考[文档-服务端-Wechat](https://isso-cn.rtfd.vip/zh_CN/latest/docs/configuration/server/#wechat)。
+
+
