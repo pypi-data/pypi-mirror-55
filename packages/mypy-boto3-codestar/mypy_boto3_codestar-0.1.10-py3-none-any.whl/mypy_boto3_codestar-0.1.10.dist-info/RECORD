@@ -1,0 +1,9 @@
+mypy_boto3_codestar/__init__.py,sha256=wRFm0mlnHsxlpYBbnZ4sOMpSEiHPHlqQRJAbLJLs1vo,108
+mypy_boto3_codestar/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_codestar/client.py,sha256=rJA0gxVhWyhIOhu4JuIQPp7wUYLp970RTXnSipz4pXM,44992
+mypy_boto3_codestar/paginator.py,sha256=8Ty0XHNs7bisAswbJC4DzAax0ytIlvPSkxYjrDPDf2c,10782
+mypy_boto3_codestar/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_codestar-0.1.10.dist-info/METADATA,sha256=A95GgIdMX0wvA4wqV5Vv0Do_C4OH7VSkxmA1Wxsv5-4,1062
+mypy_boto3_codestar-0.1.10.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_codestar-0.1.10.dist-info/top_level.txt,sha256=yr_mizgi02k0hsa81Y2j__FtGrT8HbpivARupsSQSTo,20
+mypy_boto3_codestar-0.1.10.dist-info/RECORD,,
