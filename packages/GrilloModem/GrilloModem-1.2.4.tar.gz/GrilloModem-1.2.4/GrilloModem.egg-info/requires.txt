@@ -1,0 +1,5 @@
+chirpsdk==3.4.6
+docopt
+pyperclip
+termcolor
+traitlets
