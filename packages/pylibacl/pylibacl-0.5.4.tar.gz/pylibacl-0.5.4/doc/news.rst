@@ -1,0 +1,142 @@
+News
+====
+
+Version 0.5.4
+-------------
+
+*released Thu, 14 Nov 2019*
+
+Maintenance release:
+
+- Switch build system to Python 3 by default (can be overridden if
+  needed).
+- Internal improvements for better cpychecker support.
+- Fix compatibility with PyPy.
+- Test improvements (both local and on Travis), testing more variations
+  (debug, PyPy).
+- Improve test coverage, and allow gathering test coverage results.
+- Drop support (well, drop testing) for Python lower than 2.7.
+- Minor documentation improvements (closes #9, #12).
+
+Version 0.5.3
+-------------
+
+*released Thu, 30 Apr 2015*
+
+FreeBSD fixes:
+
+- Enable all FreeBSD versions after 7.x at level 2 (thanks to Garrett
+  Cooper).
+- Make test suite pass under FreeBSD, which has a stricter behaviour
+  with regards to invalid ACLs (which we do exercise in the test suite),
+  thanks again to Garret for the bug reports.
+
+Version 0.5.2
+-------------
+
+*released Sat, 24 May 2014*
+
+No visible changes release: just fix tests when running under pypy.
+
+Version 0.5.1
+-------------
+
+*released Sun, 13 May 2012*
+
+A bug-fix only release. Critical bugs (memory leaks and possible
+segmentation faults) have been fixed thanks to Dave Malcolm and his
+``cpychecker`` tool. Additionally, some compatibility issues with Python
+3.x have been fixed (str() methods returning bytes).
+
+The documentation has been improved and changed from epydoc to sphinx;
+note however that the documentation is still auto-generated from the
+docstrings.
+
+Project reorganisation: the project home page has been moved from
+SourceForge to GitHub.
+
+
+Version 0.5
+-----------
+
+*released Sun, 27 Dec 2009*
+
+Added support for Python 3.x and improved support for Unicode filenames.
+
+Version 0.4
+-----------
+
+*released Sat, 28 Jun 2008*
+
+License
+~~~~~~~
+
+Starting with this version, pylibacl is licensed under LGPL 2.1,
+Febryary 1999 or any later versions (see README.rst and COPYING).
+
+Linux support
+~~~~~~~~~~~~~
+
+A few more Linux-specific functions:
+
+- add the ACL.equiv_mode() method, which will return the equivalent
+  octal mode if this is a basic ACL and raise an IOError exception
+  otherwise
+
+- add the acl_extended(...) function, which will check if an fd or path
+  has an extended ACL
+
+FreeBSD support
+~~~~~~~~~~~~~~~
+
+FreeBSD 7.x will have almost all the acl manipulation functions that
+Linux has, with the exception of __getstate__/__setstate__. As a
+workaround, use the str() and ACL(text=...) methods to pass around
+textual representations.
+
+Interface
+~~~~~~~~~
+
+At module level there are now a few constants exported for easy-checking
+at runtime what features have been compiled in:
+
+- HAS_ACL_FROM_MODE, denoting whether the ACL constructor supports the
+  mode=0xxx parameter
+
+- HAS_ACL_CHECK, denoting whether ACL instances support the check()
+  method
+
+- HAS_ACL_ENTRY, denoting whether ACL manipulation is possible and the
+  Entry and Permset classes are available
+
+- HAS_EXTENEDED_CHECK, denoting whether the acl_extended function is
+  supported
+
+- HAS_EQUIV_MODE, denoting whether ACL instances support the
+  equiv_mode() method
+
+Internals
+~~~~~~~~~
+
+Many functions have now unittests, which is a good thing.
+
+
+Version 0.3
+-----------
+
+*released Sun, 21 Oct 2007*
+
+Linux support
+~~~~~~~~~~~~~
+
+Under Linux, implement more functions from libacl:
+
+- add ACL(mode=...), implementing acl_from_mode
+- add ACL().to_any_text, implementing acl_to_any_text
+- add ACL comparison, using acl_cmp
+- add ACL().check, which is a more descriptive function than validate
+
+.. Local Variables:
+.. mode: rst
+.. fill-column: 72
+.. End:
