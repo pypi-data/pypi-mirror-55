@@ -1,0 +1,98 @@
+Metadata-Version: 2.1
+Name: ikakao
+Version: 0.0.6
+Summary: Kakao i Open Builder SDK
+Home-page: https://github.com/hallazzang/ikakao
+Author: Hanjun Kim
+Author-email: hallazzang@gmail.com
+License: UNKNOWN
+Description: # ikakao
+        
+        [![shields-pypi-badge]](https://pypi.org/project/ikakao/)
+        
+        [shields-pypi-badge]: https://img.shields.io/pypi/v/ikakao?style=flat-square&color=blue
+        
+        Kakao i Open Builder SDK (Currently WIP)
+        
+        ## Roadmap
+        
+        ### Supported Components
+        
+        - [x] SimpleText
+        - [x] SimpleImage
+        - [ ] BasicCard (Partial support)
+        - [ ] CommerceCard
+        - [ ] ListCard
+        - [ ] Carousel (Partial support)
+        - [ ] QuickReply (Partial support)
+        
+        ## Usage Examples
+        
+        ### Simple Text Response
+        
+        ```python
+        import json
+        
+        from ikakao.skill import Response
+        
+        r = Response("Hello, Kakao i!")
+        print(json.dumps(r.to_dict(), indent=2))
+        ```
+        
+        Output:
+        ```json
+        {
+          "version": "2.0",
+          "template": {
+            "outputs": [
+              {
+                "simpleText": {
+                  "text": "Hello, Kakao i!"
+                }
+              }
+            ]
+          }
+        }
+        ```
+        
+        ### Multiple Text Response
+        
+        ```python
+        import json
+        
+        from ikakao.skill import Response
+        
+        r = Response("Hello", "Kakao", "i")
+        print(json.dumps(r.to_dict(), indent=2))
+        ```
+        
+        Output:
+        ```json
+        {
+          "version": "2.0",
+          "template": {
+            "outputs": [
+              {
+                "simpleText": {
+                  "text": "Hello"
+                }
+              },
+              {
+                "simpleText": {
+                  "text": "Kakao"
+                }
+              },
+              {
+                "simpleText": {
+                  "text": "i"
+                }
+              }
+            ]
+          }
+        }
+        ```
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
