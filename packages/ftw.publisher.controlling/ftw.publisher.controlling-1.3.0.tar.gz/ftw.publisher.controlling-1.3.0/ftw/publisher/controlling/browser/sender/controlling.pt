@@ -1,0 +1,96 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      lang="en"
+      metal:use-macro="here/prefs_main_template/macros/master"
+      i18n:domain="ftw.publisher.controlling">
+
+  <body>
+
+    <div metal:fill-slot="prefs_configlet_content">
+      <div class="documentContent" id="content" class="controlling-view">
+
+        <div metal:use-macro="here/global_statusmessage/macros/portal_message">
+          Portal status message
+        </div>
+
+        <h1 class="documentFirstHeading"
+            i18n:translate="heading_publishment_controlling">Publishment Controlling</h1>
+
+        <a href=""
+           class="link-parent"
+           tal:attributes="href string:$portal_url/plone_control_panel"
+           i18n:translate="label_up_to_plone_setup">
+          Up to Site Setup
+        </a>
+
+        <fieldset>
+          <legend i18n:translate="legend_select_realm">Select Realm</legend>
+          <p i18n:translate="text_select_realm">
+            Select the realm to perform the statistics on. Every realm has its own
+            statistics cache.
+          </p>
+          <form action="./@@publisher-controlling" method="POST">
+            <select name="realm">
+              <tal:realms repeat="opt view/get_realm_options">
+                <option tal:content="opt/label"
+                        tal:attributes="value opt/id;
+                                        selected opt/selected" />
+              </tal:realms>
+            </select>
+            <input type="submit" name="form.selectrealm.submitted"
+                   value="Select Realm"
+                   i18n:attributes="value label_select_realm" />
+          </form>
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend i18n:translate="legend_refresh_statistics">Refresh Statistics</legend>
+          <p i18n:translate="text_refresh">
+            The statistics are cached for fast access. It is will not refresh
+            automatically, so you need to push the button below for refreshing
+            it.
+          </p>
+          <p i18n:translate="last_refresh">
+            Last update:
+            <span i18n:name="date" tal:replace="view/last_updated" />
+          </p>
+          <form action="@@publisher-controlling-refresh-statistics" method="POST">
+            <button id="refresh_statistics"
+                    i18n:translate="button_refresh_statistics">
+            Refresh Statistics
+            </button>
+            <span tal:replace="structure context/@@authenticator/authenticator"/>
+          </form>
+        </fieldset>
+        <br />
+
+        <fieldset>
+          <legend i18n:translate="legend_statistics">Statistics</legend>
+
+          <dl class="actionItems"
+              id="content-views"
+              i18n:domain="plone">
+
+            <tal:views repeat="action view/get_actions">
+              <dt tal:attributes="id string:action/id">
+                <a href=""
+                   tal:content="action/title"
+                   tal:attributes="href action/url;">
+                  View name
+                </a>
+              </dt>
+              <dd tal:content="action/description"
+                  tal:condition="action/description" />
+            </tal:views>
+
+          </dl>
+        </fieldset>
+
+      </div>
+    </div>
+
+  </body>
+</html>

@@ -1,0 +1,120 @@
+Metadata-Version: 2.1
+Name: ftw.publisher.controlling
+Version: 1.3.0
+Summary: An ftw.publisher addon for statistics on published objects in a workflow based setup.
+Home-page: https://github.com/4teamwork/ftw.publisher.controlling
+Author: 4teamwork AG
+Author-email: mailto:info@4teamwork.ch
+License: GPL2
+Description: ftw.publisher.controlling
+        =========================
+        
+        This package is an `ftw.publisher`_ addon, providing views for comparing
+        the state of the editorial and the public site, show inconsistent objects.
+        
+        It is designed for use in a workflow based publisher environment.
+        
+        
+        Usage
+        -----
+        
+        - Add ``ftw.publisher.controlling`` to your buildout configuration on
+          the **editoral site** and run ``bin/buildout``:
+        
+        ::
+        
+            [instance]
+            eggs +=
+                ftw.publisher.sender
+                ftw.publisher.controlling
+        
+        - Configure the report in the publisher control panel.
+        
+        
+        
+        Links
+        -----
+        
+        - github project repository: https://github.com/4teamwork/ftw.publisher.controlling
+        - Main publisher github project repository: https://github.com/4teamwork/ftw.publisher.sender
+        - Issues: https://github.com/4teamwork/ftw.publisher.controlling/issues
+        - Pypi: http://pypi.python.org/pypi/ftw.publisher.controlling
+        - Continuous integration: https://jenkins.4teamwork.ch/search?q=ftw.publisher.controlling
+        
+        
+        Copyright
+        ---------
+        
+        This package is copyright by `4teamwork <http://www.4teamwork.ch/>`_.
+        
+        ``ftw.publisher.controlling`` is licensed under GNU General Public License, version 2.
+        
+        
+        .. _ftw.publisher: https://github.com/4teamwork/ftw.publisher.sender
+        
+        Changelog
+        =========
+        
+        
+        1.3.0 (2019-11-11)
+        ------------------
+        
+        - Add plone 5.1 compatibility [Nachtalb]
+        
+        
+        1.2 (2018-05-01)
+        ----------------
+        
+        - Store cache on portal instead of the realm. [mbaechtold]
+        
+        - Add a new statistics view which lists objects existing on the remote
+          system (receiver) but not on the local system (sender). [mbaechtold]
+        
+        - Use the workflow config to determine the published and unpublished
+          states. [mbaechtold]
+        
+        - Translates names of workflow and states. [mbaechtold]
+        
+        - Enable filling the cache for the first time. [mbaechtold]
+        
+        - Fix filling the cache. [mbaechtold]
+        
+        
+        1.1 (2011-01-19)
+        ----------------
+        
+        - Made dependency to ftw.publisher.sender optional
+          [jone]
+        
+        
+        1.0 (2010-07-21)
+        ----------------
+        
+        - Added translations for workflow states
+          [jone]
+        
+        - Ignore blacklisted items in controlling views too
+          [jone]
+        
+        - Using new path blacklist for controlling views
+          [jone]
+        
+        - Send getURL, not absolute_url since the latter is alyways the portal_catalog url
+          [jone]
+        
+        - Made statistics adapter more robust
+          [jone]
+        
+        - Added translations.
+          [jone]
+        
+Keywords: ftw publisher controlling
+Platform: UNKNOWN
+Classifier: Framework :: Plone
+Classifier: Framework :: Plone :: 4.3
+Classifier: Framework :: Plone :: 5.1
+Classifier: License :: OSI Approved :: GNU General Public License v2 (GPLv2)
+Classifier: Programming Language :: Python
+Classifier: Topic :: Software Development :: Libraries :: Python Modules
+Provides-Extra: tests
+Provides-Extra: sender

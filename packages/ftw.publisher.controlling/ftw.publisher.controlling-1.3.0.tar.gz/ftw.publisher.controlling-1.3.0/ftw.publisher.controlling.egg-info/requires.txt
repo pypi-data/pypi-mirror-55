@@ -1,0 +1,7 @@
+setuptools
+ftw.table
+
+[sender]
+ftw.publisher.sender>2.2.0
+
+[tests]

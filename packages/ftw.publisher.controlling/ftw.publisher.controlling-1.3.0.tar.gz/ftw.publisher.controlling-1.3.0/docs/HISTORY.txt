@@ -1,0 +1,55 @@
+Changelog
+=========
+
+
+1.3.0 (2019-11-11)
+------------------
+
+- Add plone 5.1 compatibility [Nachtalb]
+
+
+1.2 (2018-05-01)
+----------------
+
+- Store cache on portal instead of the realm. [mbaechtold]
+
+- Add a new statistics view which lists objects existing on the remote
+  system (receiver) but not on the local system (sender). [mbaechtold]
+
+- Use the workflow config to determine the published and unpublished
+  states. [mbaechtold]
+
+- Translates names of workflow and states. [mbaechtold]
+
+- Enable filling the cache for the first time. [mbaechtold]
+
+- Fix filling the cache. [mbaechtold]
+
+
+1.1 (2011-01-19)
+----------------
+
+- Made dependency to ftw.publisher.sender optional
+  [jone]
+
+
+1.0 (2010-07-21)
+----------------
+
+- Added translations for workflow states
+  [jone]
+
+- Ignore blacklisted items in controlling views too
+  [jone]
+
+- Using new path blacklist for controlling views
+  [jone]
+
+- Send getURL, not absolute_url since the latter is alyways the portal_catalog url
+  [jone]
+
+- Made statistics adapter more robust
+  [jone]
+
+- Added translations.
+  [jone]
