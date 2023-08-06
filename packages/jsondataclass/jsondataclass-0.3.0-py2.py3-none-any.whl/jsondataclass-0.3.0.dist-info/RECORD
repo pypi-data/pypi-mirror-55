@@ -1,0 +1,13 @@
+jsondataclass/__init__.py,sha256=S1zkaVWn8PVo22rPwvXIAfOqmIrM1G2A8UqoksmvWBQ,318
+jsondataclass/config.py,sha256=Ap-CAWd3nytYBbzDc25g5mbGjQ4Nn1Fy76KjV4uzQ34,508
+jsondataclass/exceptions.py,sha256=zLyHb5ktdmASxXvNu4HfObmyLrZyZtYCda_Mab5NRIE,1646
+jsondataclass/field.py,sha256=ULFgyg0ufZrvSrsT4cQc8aQDC5fnYBU2F-F9KRLELZg,2233
+jsondataclass/mapper.py,sha256=VIfAvoTxA-35rNWeZFukaLovQoVF9I4RCKHVTaAeGlI,3173
+jsondataclass/serializers.py,sha256=tdIbDqyEGj_ldsvlgOTaRPXxpiykoa3BrXQ2MK6H2D8,12577
+jsondataclass/typing.py,sha256=YPCn8ErX3Ei3y6bLFjBh_-zAY8FYT4OtbPnw5kx5RAo,725
+jsondataclass/utils.py,sha256=kN9xAzUuoOY9m8tLG8KM5G63hANliDyajdldSclV-9E,2580
+jsondataclass-0.3.0.dist-info/LICENSE,sha256=Wn_DEvUm-yxOy-T4q4j2J8ZUaJ2tAQo6-mvnhZIWbnc,1074
+jsondataclass-0.3.0.dist-info/METADATA,sha256=TTRAtj8Njw3wh7PTmXUb8WLjBoG5rapzDgiJmPUmKoU,18006
+jsondataclass-0.3.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+jsondataclass-0.3.0.dist-info/top_level.txt,sha256=JWF83cxB2WFIBeJr0ow1EZXl5-Fgcp2zP8Ll_6fW0xA,14
+jsondataclass-0.3.0.dist-info/RECORD,,
