@@ -1,0 +1,12 @@
+dots/__init__.py,sha256=2N-Jlo-TMvBdzoSWK1VR9wN4cwfQ4cUcnsUOjOJEqow,57
+dots/__main__.py,sha256=JlR-u96lZsZxxw00HwGrWn3x0zNOF6nqFYeQK8ggvd8,95
+dots/checker.py,sha256=5kwG4CLlrFpwccognIOJI6v4Bm8UD47PI_WWNnCAHTM,5458
+dots/cli.py,sha256=HqdjmdZ7_hq4aqIKwRcbuS3NgqzGppxIkO95KyZIwRY,1712
+dots/config.py,sha256=WXiKZP6JlHCXASXHX6GAMQHEM4b6eMLljv8Oxej1YjM,400
+dots/logging.py,sha256=mSZZbKl_hXfERDombfJ621y80P997kr65dJJ2HTwfc8,1408
+dots/repository.py,sha256=V-KV8T2VaRtlU3o3M4K0VbvqSbMgNEMv0bHq5veWBpo,5989
+dots/utils.py,sha256=f8lNNUgptrbrq6nj2MehJPfJaZJHwctqPx9MzMYMO68,792
+dots-0.0.1a0.dist-info/LICENSE,sha256=DMKvd6OVj-FfnGQU1-5DosSm8ki1of1E-UYmkLbvk2A,1080
+dots-0.0.1a0.dist-info/WHEEL,sha256=JXk7EE_UnY8Q4113Zu8f6SlrMizLH61VvvtIzqzkSKE,79
+dots-0.0.1a0.dist-info/METADATA,sha256=RlD1nCXAsSA6aXqQcgEQVjI-ZCW5znmzc1gzPNSt47M,337
+dots-0.0.1a0.dist-info/RECORD,,

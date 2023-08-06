@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: dots
+Version: 0.0.1a0
+Summary: dots: dotfiles made easy
+Home-page: https://github.com/pradyunsg/dots
+License: UNKNOWN
+Author: Pradyun Gedam
+Author-email: pradyunsg@gmail.com
+Requires-Python: >=3.5
+Classifier: License :: OSI Approved :: MIT License
+Requires-Dist: click ~= 7.0.0
+Requires-Dist: pyyaml ~= 5.1.2
