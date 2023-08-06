@@ -1,0 +1,12 @@
+tfignite/__init__.py,sha256=ahsoGVLxdT2VRpZu32o-_bvgna3cr_UPXl9j92j3IFY,219
+tfignite/callbacks.py,sha256=NHO5dDsjkfnJoBlBv5V-inHURbZuebnYVNUo74PnUFY,8265
+tfignite/dataset.py,sha256=ZC-u_2Kk3U9OgfADl6SMe_I8k6DQHpy9bD5hD2KqnoM,3287
+tfignite/engine.py,sha256=v20dz7gdV5kTp0PeuW4_XHJ9newwLWsPMDv6ZL6vP4M,14022
+tfignite/model.py,sha256=DX_FxEA2RKKDXxAjvk9ojd4URB4iRmKB5VinwkadXtY,1819
+tfignite/parser.py,sha256=kQZQBq74-LF3rSsBAZcAFo5IcOtodBuFbxUzt_9Mh6c,666
+tfignite/util.py,sha256=-ynNHj9Ub7ZRNYIEw0YwBX8qWXp6cpEXza0UpM96Ra4,244
+tfignite-0.0.4.dist-info/LICENSE,sha256=rWI3uEZMw0Ej_EDDqYSFIDRJQ4oc9AupHmzn5KVLFgI,1411
+tfignite-0.0.4.dist-info/METADATA,sha256=FyUbiWdmWaQhEnt5gBagtywxvaiuDIfG5MR7NslEPTc,2726
+tfignite-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+tfignite-0.0.4.dist-info/top_level.txt,sha256=E-OhOhO-FL41S141VLt7lVOexrpjHhqkp1BVGpp3xYM,9
+tfignite-0.0.4.dist-info/RECORD,,
