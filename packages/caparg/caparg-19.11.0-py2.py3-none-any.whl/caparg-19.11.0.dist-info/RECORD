@@ -1,0 +1,11 @@
+caparg/__init__.py,sha256=oGL-20ECL-iGaPwaGs6GXqGhlo5nJOX0NxMMqGpunp0,363
+caparg/_api.py,sha256=m69VDxNx-X4BbFoo8TnxaJQ16xmmwYPJ9fAb-0sS21g,11578
+caparg/_version.py,sha256=DzdrHln8KADTcgwlpmrlPn3Cq7k5Oc1BXKpQVHZ5fAA,258
+caparg/test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+caparg/test/__main__.py,sha256=YAg1AoP2mFhBPOiXXs5jAlUjVVCBfNr-PH2ojKHRKx4,299
+caparg/test/helper_subcommands.py,sha256=ZvJwqmthtWDj97xjf7J0bsezGhrdYECEchiubzGJOE0,2234
+caparg/test/test_subcommands.py,sha256=GBnmjChv_4vIDkMzXm50oKcgYyAXDxhvoGCsAogc5W8,5906
+caparg-19.11.0.dist-info/METADATA,sha256=-SMKq31bwDPuYqG_Lk8zguD2oq0hrLiTh7y_wMbV1RQ,411
+caparg-19.11.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+caparg-19.11.0.dist-info/top_level.txt,sha256=_CDy089C-AgFbK4STjErWT3BV7Vl1KbZhCqsFjV1A5M,7
+caparg-19.11.0.dist-info/RECORD,,
