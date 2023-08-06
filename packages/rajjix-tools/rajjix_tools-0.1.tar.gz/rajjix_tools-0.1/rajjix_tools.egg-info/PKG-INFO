@@ -1,0 +1,13 @@
+Metadata-Version: 1.1
+Name: rajjix-tools
+Version: 0.1
+Summary: a set of somewhat useful tools
+Home-page: https://github.com/rajjix/rajjix_tools
+Author: Asaad Najjar
+Author-email: rajjix@rajjix.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
