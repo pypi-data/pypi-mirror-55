@@ -1,0 +1,7 @@
+Metadata-Version: 1.1
+Name: project_runpy
+Version: 1.0.1
+Summary: Helper utilities for Python projects
+Home-page: https://github.com/crccheck/project_runpy
+Author: Chris Chang
+Author-email: c@crccheck.com
