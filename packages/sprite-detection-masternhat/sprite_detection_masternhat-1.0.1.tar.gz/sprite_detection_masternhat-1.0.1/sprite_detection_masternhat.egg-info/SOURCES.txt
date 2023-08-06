@@ -1,0 +1,9 @@
+README.md
+setup.py
+sprite_detection_masternhat/__init__.py
+sprite_detection_masternhat/spriteutil.py
+sprite_detection_masternhat.egg-info/PKG-INFO
+sprite_detection_masternhat.egg-info/SOURCES.txt
+sprite_detection_masternhat.egg-info/dependency_links.txt
+sprite_detection_masternhat.egg-info/requires.txt
+sprite_detection_masternhat.egg-info/top_level.txt
