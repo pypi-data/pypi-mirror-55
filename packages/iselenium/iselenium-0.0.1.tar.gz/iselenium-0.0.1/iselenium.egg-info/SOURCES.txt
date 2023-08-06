@@ -1,0 +1,7 @@
+README.md
+setup.py
+iselenium/__init__.py
+iselenium.egg-info/PKG-INFO
+iselenium.egg-info/SOURCES.txt
+iselenium.egg-info/dependency_links.txt
+iselenium.egg-info/top_level.txt
