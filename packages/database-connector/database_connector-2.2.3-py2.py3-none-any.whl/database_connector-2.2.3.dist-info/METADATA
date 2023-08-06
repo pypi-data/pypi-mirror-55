@@ -1,0 +1,63 @@
+Metadata-Version: 2.1
+Name: database-connector
+Version: 2.2.3
+Summary: Database Connector Class
+Home-page: https://github.com/gleasona/database_connector
+Author: Adam Gleason
+Author-email: gleasona@email.chop.edu
+License: UNKNOWN
+Keywords: database_connector
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Natural Language :: English
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Dist: cx-Oracle (==7.2.2)
+Requires-Dist: pymongo (==3.9.0)
+Requires-Dist: PyMySQL (==0.9.3)
+Requires-Dist: PyYAML (==5.1.2)
+Requires-Dist: psycopg2-binary (==2.8.4)
+
+==================
+database_connector
+==================
+
+
+
+
+
+
+Database Connector Class
+
+
+
+Features
+--------
+
+* TODO
+
+Credits
+-------
+
+This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
+
+.. _Cookiecutter: https://github.com/audreyr/cookiecutter
+.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
+
+=======
+History
+=======
+
+2.0.0 (2019-08-21)
+------------------
+
+* First release on PyPI.
+
+
