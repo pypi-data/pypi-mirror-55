@@ -1,0 +1,11 @@
+git_taxbreak/__init__.py,sha256=kUR5RAFc7HCeiqdlX36dZOHkUI5wI6V_43RpEcD8b-0,22
+git_taxbreak/cmd.py,sha256=A60Wv_gDeusDWtYLXD98LT-NmOAF2Gpt2K_Gc4Whpd0,853
+git_taxbreak/modules/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+git_taxbreak/modules/argument_parser.py,sha256=FIcgvu5vWtWApER3jiV3ujL_a00z9YpNizl_B2PZGTw,1906
+git_taxbreak/modules/artifacts_collector.py,sha256=udIPml-b60EUzVW-Lut6uFu7vBpmINvg0XThvwgDQNY,1821
+git_taxbreak/modules/writter.py,sha256=l3uwUXu1YOHJoDZsK7cAbmpB4H1y5CaB4YulXw1_-ls,658
+git_taxbreak-0.1.0.dist-info/entry_points.txt,sha256=4KzEZvTBCwHsJxyXyThmrm4VT-WFlFtL1z0tmdXGTqE,54
+git_taxbreak-0.1.0.dist-info/LICENSE,sha256=5LBqDAfdNO6QlwtbOeyfLnakCtzY11KffVTfOnTSPsA,1069
+git_taxbreak-0.1.0.dist-info/WHEEL,sha256=6upcAAvX4rd7BhxBF-R5FqXT39G-3jJUye5-930hcrk,85
+git_taxbreak-0.1.0.dist-info/METADATA,sha256=L3U-rBnsMhSzLhRUIBgthsP1n_b_x7qHpAlpSLsykp0,1650
+git_taxbreak-0.1.0.dist-info/RECORD,,

@@ -1,0 +1,49 @@
+Metadata-Version: 2.1
+Name: git-taxbreak
+Version: 0.1.0
+Summary: Tool for collect artifacts from git for register creative work
+Home-page: https://github.com/kamil1b/git-taxbreak
+License: MIT
+Keywords: git,taxbreak,tool
+Author: Luczak Kamil
+Author-email: kamilluczak@luczakweb.com
+Requires-Python: >=3.5
+Classifier: Development Status :: 3 Alpha
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Topic :: Utilities
+Requires-Dist: gitpython (>=3,<4)
+Requires-Dist: pre-commit (>=1.20,<2.0)
+Project-URL: Repository, https://github.com/kamil1b/git-taxbreak
+Description-Content-Type: text/x-rst
+
+Git taxbreak
+------------
+
+.. image:: https://github.com/kamil1b/git-taxbreak/workflows/Master/badge.svg
+
+.. image:: https://img.shields.io/badge/code%20style-black-000000.svg
+   :target: https://github.com/ambv/black
+
+.. image:: https://api.codeclimate.com/v1/badges/6ad9e9549fdf496138c6/maintainability
+   :target: https://codeclimate.com/github/kamil1b/git-taxbreak/maintainability
+   :alt: Maintainability
+
+.. image:: https://codecov.io/gh/kamil1b/git-taxbreak/branch/master/graph/badge.svg
+  :target: https://codecov.io/gh/kamil1b/git-taxbreak
+
+Tool for collect artifacts from git for register creative work
+
+Install
+-------
+
+.. code-block:: sh
+
+   pip install git+https://github.com/kamil1b/git-taxbreak.git
+
