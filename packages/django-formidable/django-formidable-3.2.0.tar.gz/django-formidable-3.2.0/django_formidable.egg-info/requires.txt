@@ -1,0 +1,7 @@
+Django
+djangorestframework<4.0.0
+markdown
+python-dateutil
+jsonfield
+pytz
+six
