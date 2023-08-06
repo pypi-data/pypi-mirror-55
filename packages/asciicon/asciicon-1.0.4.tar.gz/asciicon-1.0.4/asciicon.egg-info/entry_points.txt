@@ -1,0 +1,3 @@
+[console_scripts]
+asciicon = asciicon.cli:start
+
