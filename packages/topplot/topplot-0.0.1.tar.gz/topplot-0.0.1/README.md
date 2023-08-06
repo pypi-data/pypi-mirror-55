@@ -1,0 +1,171 @@
+# topplot
+
+<a href="https://codethink.co.uk" target="_blank"><img src="resources/codethink_logo.svg" width=200 align="right"></a>
+<img src="resources/logo.png" style="align: right">
+
+### Munge logs from the commandline utility `top` in to useful graphs
+
+## Introduction
+
+`topplot` produces graphs of information it munges from `top` logs. It can select which processes to focus on, and it can split out information by cpu core (if `top` was configured to record the cpu core column, and/or display the cpu summary info by core).
+
+`topplot` can save the graphs as PNG files. It can also print information derived from the logs to stdout, with or without emitting the graphs.
+
+There may be better, more efficient ways of collecting live system information, but if for some reason you've hundreds of thousands of lines of `top` logs and you want to *see* what's in them, `topplot` can help. 
+
+(I wrote `topplot` when one of[Codethink](https://codethink.co.uk)'s clients asked us to investigate an issues which had 300,000 lines of `top` logs attached to it.)
+
+
+#### The overview graph:
+
+![An image of the overview graphs appears here on the website](resources/top.multicore4.log_overview.png)
+
+
+#### Processes of interest by cpu core:
+
+![An image of the processes of interest by cpu core graphs appears here on the webpage](resources/top.multicore4.log_poi_by_cpu.png)
+
+
+## Assumptions:
+
+* running Linux (although there's very little Linux specific code remaining, so porting to Windows/Max should be trivial. Patches welcome.)
+* the following Python modules are installed: `matplotlib`, `numpy`, `pandas`,  and (optionally) `mplcursors`.
+
+(`mplcursors` enables clicking on plotted lines to display data annotations.)
+
+## Specifying which log file to use
+
+By default `topplot` expects the log to be a file called `top.log` in the current working directory. You can use the `-f` commandline option to specify a file path.
+
+
+## Filtering the output
+
+Limit the range of log entries by timestamp: `topplot -s 18:38:00 -S 18:39:15`
+
+```
+  -s TIMESTAMP, --start TIMESTAMP      Start with time stamp ([D:]HH:MM:SS)
+  -S TIMESTAMP, --stop TIMESTAMP       Stop with time stamp  ([D:]HH:MM:SS)
+```
+
+
+
+These arguments select processes of interest for graphing:
+
+```
+  -c [N], --acc-cpu [N]        Top N processes ranked by accumulated CPU use (default: 10)
+  -m [N], --acc-mem [N]        Top N processes ranked by accumulated MEM use (default: 10)
+
+         --peak-cpu [N]        Top N processes ranked by peak CPU use (default: 10)
+         --peak-mem [N]        Top N processes ranked by peak MEM use (default: 10)
+
+        --pct-cpu [PCT]        Any process using more than pct% of memory will be graphed (default: 20)
+        --pct-mem [PCT]        Any process using more than pct% of cpu will be graphed (default: 3)
+
+        --prio [cmpPRIO]       Any process with priority =, <=, >=, <, or > to PRIO (default: '=RT', note the prefixed comparison operator)
+```
+
+
+These two arguments can make the processes graph clearer by plotting only one or the other of CPU or MEM related information:
+
+```
+    -C, --only-proc-cpu         Don't plot processes' mem info
+    -M, --only-proc-mem         Don't plot processes' cpu info
+```
+
+
+Filtering by process name:
+
+```
+  REGEX                        Python style regex for names of processes to graph
+  -I REGEX, --ignore REGEX     Python style regex for names of processes to completely ignore
+
+  -i                           Use case insensitive matching
+```
+
+
+
+## Textual output
+
+Use one or more instances of the ```--list``` argument, or ```-l``` or ```-ll``` or ```-lll```, to display increasing levels of information about processes.
+
+Use ```-v``` to increase the verbosity of other optional filtering arguments such as ```--peak-cpu```.
+
+Use ```--no-graph``` or ```-G``` to surpress graphing.
+
+
+## More commandline options
+
+To see the full set of commandline options:
+
+```
+  -h, --help                   show this help message and exit
+```
+
+
+## The GUI
+
+Once `topplot` has parsed and munged the data, by default it will display the overview graph.
+
+Press the `1` key to display the top left graph in a separate window, `2` to display the top right, `3` lower left, `4` lower right, or `0` to re-open the overview graph from another window.
+
+Press `h` to display helpful infomation about using `topplot`.
+
+### Limiting the displayed data
+
+If you want to narrow down the data displayed, click on the items in a graph's legend to toggle their visibility.
+
+Click on a legend's title to toggle all of its lines.
+
+Right click on a legend's title to make all of its lines visible.
+
+Caveat: the "mem data" graph's legend doesn't need or implement toggling.
+
+
+### Legends
+
+Press `l` (lowercase 'ell') to toggle legend visibility. If the mouse pointer is over a particular graph, then only the legend(s) on that graph will be affected. If the mouse pointer is between graphs, the legends on all graphs on that figure will be toggled.
+
+Legends can be dragged around within their windows but be careful to not leave a legend from one graph entire within a separate graph - it will not be possible to interact with it any more, including moving it off of that graph!
+
+### Saving to png files
+
+Press `p` to 'print' an image of the current figure to a PNG file to the current working directory.
+
+Press `P` to 'print' images of all the open figures to PNG files to the current working directoty.
+
+Press `s` to save an image of the current figure via a file dialogue window.
+
+
+### Zooming in
+
+tl;dr: Click on the Pan/Zoom button (the arrow-headed cross), then whilst keeping the CONTROL key depressed, **right** click on the area of a graph you wish to zoom in on and drag the mouse around.
+
+For full details see: [https://matplotlib.org/3.1.1/users/navigation_toolbar.html](https://matplotlib.org/3.1.1/users/navigation_toolbar.html). [Note that some keypress are overridden by `topplot`.]
+
+### Special features of the "processes of interest" graph
+
+Press `t` swap between having both axes, the mem axes, and the cpu axes visible.
+
+### Special features of the "cpu data" graph
+
+
+For top logs with per core cpu data available, the "cpu (grouped)" legend toggles lines across all cores.
+
+
+## Caveat emptor
+
+### top versions
+
+Please be aware that `topplot` is known to work with log formats generated by `top` from `procps` versions **3.2.8** and **3.3.15**.
+
+Handling further formats may be as simple as adding new regexs to the Re_Variants instances.
+
+
+### Issues with pandas and mplcursors
+
+In developing `topplot` I've come across and fixed a couple of minor issues with the `pandas` and `mplcursors` libraries. I've submitted my the fixes so future versions of these libraries should be good to go.
+
+The `pandas` issue  means that the timestamp labels are only displayed on the bottom row of some multi-graph figures. (The fix [here](https://github.com/pandas-dev/pandas/pull/29288/commits/9fee620abd3618b05b75ccf50d66c99312114034) is awaiting code review at the time of writing.)
+
+The `mplcursors` issue (fixed [here](https://github.com/anntzer/mplcursors/commit/c97ed243ba39460b82ac4e41e3728f813abdc9d4)) is that when a
+line has been made invisible by clicking on its legend line, clicking on the invisible line still evinces an annotation.
