@@ -1,0 +1,7 @@
+azure/eventhub/extensions/checkpointstoreblob/__init__.py,sha256=ZTXKd7J24N7ENWdBH9gvzHhKr179956-aDWtBRTP72M,462
+azure/eventhub/extensions/checkpointstoreblob/blobstoragepm.py,sha256=EMVHZl2NRqQ7qMvEGBTjG31kqd8pcXIWLRLKePXO_UI,7643
+azure_eventhub_checkpointstoreblob-1.0.0b5.dist-info/LICENSE,sha256=J-vanVHwpWt-KBzNgjCicjbctRwF9ksHhp7PbpZdaLA,1162
+azure_eventhub_checkpointstoreblob-1.0.0b5.dist-info/METADATA,sha256=ucyE1yDvuOpKJBSTxuEWoRFevbZpLUjl2hBo-Dv3LrA,10668
+azure_eventhub_checkpointstoreblob-1.0.0b5.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+azure_eventhub_checkpointstoreblob-1.0.0b5.dist-info/top_level.txt,sha256=S7DhWV9m80TBzAhOFjxDUiNbKszzoThbnrSz5MpbHSQ,6
+azure_eventhub_checkpointstoreblob-1.0.0b5.dist-info/RECORD,,
