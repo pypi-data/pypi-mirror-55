@@ -1,0 +1,9 @@
+fireREST/__init__.py,sha256=wr6IswqHG33k0KVRxRr-QdkJNmd3J_MQKAwolYr9Ol4,39851
+fireREST/version.py,sha256=-Wqu9UyJphp-2_EahEsqQvkcE0VBhm1-N7D6e5rANdY,22
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_fireREST.py,sha256=liBSjLZG80YtCvS2UIvEEbS_IZq0SRNqliegttk_Xhg,4361
+fireREST-0.0.4.dist-info/LICENSE,sha256=WJ7YI-moTFb-uVrFjnzzhGJrnL9P2iqQe8NuED3hutI,35141
+fireREST-0.0.4.dist-info/METADATA,sha256=CVTO4DHI4VnOGFAhJLOjrriJeiqnaHgHqNTvLUa0_6w,1310
+fireREST-0.0.4.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+fireREST-0.0.4.dist-info/top_level.txt,sha256=f1SBMBc2zV-JW8vVKlhbkcK7zoIMRlvuyUWkW7i24ms,14
+fireREST-0.0.4.dist-info/RECORD,,
