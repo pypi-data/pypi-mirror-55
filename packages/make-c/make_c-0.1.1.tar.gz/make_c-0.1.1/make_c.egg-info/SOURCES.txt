@@ -1,0 +1,14 @@
+README.md
+setup.py
+make_c/__about__.py
+make_c/__init__.py
+make_c/command_line.py
+make_c/editors.py
+make_c/make_c.py
+make_c/meta.py
+make_c/version.py
+make_c.egg-info/PKG-INFO
+make_c.egg-info/SOURCES.txt
+make_c.egg-info/dependency_links.txt
+make_c.egg-info/entry_points.txt
+make_c.egg-info/top_level.txt
