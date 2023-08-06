@@ -1,0 +1,5 @@
+german-lemmatizer
+clean-text
+joblib
+tqdm
+unidecode

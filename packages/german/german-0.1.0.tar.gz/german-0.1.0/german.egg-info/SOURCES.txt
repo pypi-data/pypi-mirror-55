@@ -1,0 +1,9 @@
+README.md
+setup.py
+german/__init__.py
+german/preprocessing.py
+german.egg-info/PKG-INFO
+german.egg-info/SOURCES.txt
+german.egg-info/dependency_links.txt
+german.egg-info/requires.txt
+german.egg-info/top_level.txt
