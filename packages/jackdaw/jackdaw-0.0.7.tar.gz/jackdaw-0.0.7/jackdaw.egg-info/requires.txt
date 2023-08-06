@@ -1,0 +1,9 @@
+aiosmb>=0.1.1
+msldap>=0.2.2
+sqlalchemy
+dnspython
+tqdm
+networkx
+connexion
+flask-sqlalchemy
+connexion[swagger-ui]
