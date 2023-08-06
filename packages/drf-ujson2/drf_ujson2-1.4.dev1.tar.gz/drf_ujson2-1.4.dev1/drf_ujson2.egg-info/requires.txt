@@ -1,0 +1,9 @@
+django
+ujson>=1.35
+djangorestframework
+
+[dev]
+pytest
+pytest-runner
+pytest-cov
+pytest-mock
