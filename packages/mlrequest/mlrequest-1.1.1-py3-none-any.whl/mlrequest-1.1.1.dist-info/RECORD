@@ -1,0 +1,11 @@
+mlrequest/__init__.py,sha256=7dPHGl4RVYUyxofqGq1wFXfgvKe9JR4DXG98LpRroKo,90
+mlrequest/mlrequest.py,sha256=-D0rjGOICPLx_qHRecd0TGAeNVCKc6jKaJTcd__xRVc,16279
+mlrequest-python/__init__.py,sha256=JWSHtI4PydxZyVwo-fVlXhpcDG2NBgqiJhrbPM-2iaw,66
+mlrequest-python/mlrequest.py,sha256=FAIDx6GiMtMS9eqx77xW5g-7RC8RXZ0RKIHIJg3l0MU,14051
+test/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+test/test_mlrequest.py,sha256=6vVM-ZhTe0d-faYE1f-7HBRTf7Oh7Hv3FdS6T-Uxr_w,6028
+mlrequest-1.1.1.dist-info/LICENSE,sha256=LPc9Ye77GFQIA849dvQFj9EYQmcuwJNJDaiKJwAzqfM,1060
+mlrequest-1.1.1.dist-info/METADATA,sha256=Uuiy1XrgyXBGBcVrSVQL2TAxT6tB4TwXYXSC80xhELc,5050
+mlrequest-1.1.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mlrequest-1.1.1.dist-info/top_level.txt,sha256=SPPO6GqnWcokkZEgGVWS9AYVgxx8bgd7zBFXWmAoS8w,15
+mlrequest-1.1.1.dist-info/RECORD,,
