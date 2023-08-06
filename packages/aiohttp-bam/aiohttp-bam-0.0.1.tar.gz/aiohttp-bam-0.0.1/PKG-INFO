@@ -1,0 +1,34 @@
+Metadata-Version: 1.1
+Name: aiohttp-bam
+Version: 0.0.1
+Summary: aiohttp basic auth middleware.
+Home-page: https://github.com/codeif/aiohttp-bam
+Author: codeif
+Author-email: me@codeif.com
+License: MIT
+Description: aiohttp basic auth middleware
+        ===================================
+        
+        HTTP basic authentication middleware for aiohttp.
+        
+        Usage
+        --------
+        
+        .. code-block:: py
+        
+            # server_simple.py
+            from aiohttp import web
+            from aiohttp_bam import bam_factory
+        
+        
+            async def handle(request):
+                return web.Response(text="Hello")
+        
+        
+            app = web.Application(middlewares=[bam_factory('your username', 'your password')])
+            app.add_routes([web.get("/", handle)])
+        
+            web.run_app(app)
+        
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
