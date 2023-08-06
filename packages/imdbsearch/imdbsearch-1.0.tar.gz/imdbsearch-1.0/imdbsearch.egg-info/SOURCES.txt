@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+imdbsearch/__init__.py
+imdbsearch/__main__.py
+imdbsearch.egg-info/PKG-INFO
+imdbsearch.egg-info/SOURCES.txt
+imdbsearch.egg-info/dependency_links.txt
+imdbsearch.egg-info/entry_points.txt
+imdbsearch.egg-info/requires.txt
+imdbsearch.egg-info/top_level.txt
