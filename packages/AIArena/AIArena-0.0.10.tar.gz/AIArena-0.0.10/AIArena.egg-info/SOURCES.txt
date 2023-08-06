@@ -1,0 +1,15 @@
+README.md
+setup.py
+AIArena/AI.py
+AIArena/Human.py
+AIArena/Ref.py
+AIArena/__init__.py
+AIArena.egg-info/PKG-INFO
+AIArena.egg-info/SOURCES.txt
+AIArena.egg-info/dependency_links.txt
+AIArena.egg-info/requires.txt
+AIArena.egg-info/top_level.txt
+AIArena/games/Connect4.py
+AIArena/games/GymBlackjack.py
+AIArena/games/GymFrozenLake.py
+AIArena/games/__init__.py
