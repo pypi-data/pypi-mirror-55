@@ -1,0 +1,12 @@
+recursive-include etc *
+recursive-include docs *
+recursive-include examples *
+recursive-include debian.upstream *
+include AUTHORS
+include LICENSE
+include README.md
+include CHANGES
+include pynag.spec
+include Makefile
+include man/pynag.1
+include man/pynag.1.gz
