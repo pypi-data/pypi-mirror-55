@@ -1,0 +1,16 @@
+#!/usr/bin/env python
+# -*- coding:utf8 -*-
+
+import sys
+import signal
+from tcpth_cmd import main
+
+
+def intur_hander(signal, frame):
+    sys.exit(0)
+
+if __name__ == "__main__":
+    signal.signal(signal.SIGINT, intur_hander)
+    main.main()
+
+
