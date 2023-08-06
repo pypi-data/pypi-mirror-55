@@ -1,0 +1,10 @@
+% rebase('base.html', title = 'index')
+<br>
+<%
+repos = tpl.get('repos', None)
+if repos:
+	for r in repos.list:
+		include('repo/info.html', repo = r)
+	end
+end
+%>

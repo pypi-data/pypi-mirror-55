@@ -1,0 +1,15 @@
+% setdefault('navbar', [])
+% setdefault('title', '')
+% itemClass = 'w3-bar-item w3-button w3-border-right'
+% itemColorClass = 'w3-hover-dark-grey'
+% curColorClass = 'w3-dark-grey w3-hover-dark-grey'
+% for item in navbar:
+<%
+	colorClass = itemColorClass
+	if item['desc'] == title:
+		colorClass = curColorClass
+	end
+%>
+	<a href="{{item['href']}}"
+		class="{{itemClass}} {{colorClass}}">{{item['desc']}}</a>
+% end

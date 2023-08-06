@@ -1,0 +1,12 @@
+% setdefault('navbar', [])
+% setdefault('title', '')
+<%
+navbarPre = [
+	{'desc': 'index',    'href': tpl.url('index')},
+]
+navbarPost = []
+if navbar is not None:
+	include('navbar-items.html', title = title, navbar = navbarPre)
+	include('navbar-items.html', title = title, navbar = navbar)
+	include('navbar-items.html', title = title, navbar = navbarPost)
+%>
