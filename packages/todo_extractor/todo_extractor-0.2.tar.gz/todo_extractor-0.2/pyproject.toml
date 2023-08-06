@@ -1,0 +1,36 @@
+[tool.black]
+line-length = 110
+
+[build-system]
+requires = ["flit"]
+build-backend = "flit.buildapi"
+
+[tool.flit.metadata]
+module = "todo_extractor"
+author = "Viktor Ahlqvist"
+author-email = "flit@site.rxbc.se"
+home-page = "https://github.com/vikahl/todo-extractor"
+description-file = "README.md"
+requires-python=">=3.6"
+classifiers = [
+  "License :: OSI Approved :: GNU General Public License v3 or later (GPLv3+)",
+  "Development Status :: 3 - Alpha",
+  "Programming Language :: Python",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.6",
+  "Programming Language :: Python :: 3.7",
+  "Programming Language :: Python :: 3.8",
+]
+
+[tool.flit.metadata.requires-extra]
+test = ["pytest",
+        "pytest-cov",
+        "pytest-mock",
+        "tox",
+        "black",
+        "pylint",
+        "mypy"
+]
+
+[tool.flit.scripts]
+todo_extractor = "todo_extractor:main"
