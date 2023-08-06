@@ -1,0 +1,3 @@
+[invenio_base.apps]
+invenio_files_multisum_storage = invenio_files_multisum_storage:InvenioFilesMultiChecksumStorage
+
