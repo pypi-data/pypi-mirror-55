@@ -1,0 +1,41 @@
+{
+    "classification_factory": {
+        "MemoryClassificationElement": {},
+        "type": "MemoryClassificationElement"
+    },
+    "classifier": {
+        "LibSvmClassifier": {
+            "normalize": 2,
+            "svm_label_map_uri": "workdir/iqr_classifier/label_map",
+            "svm_model_uri": "workdir/iqr_classifier/model",
+            "train_params": {
+                "-b": 1,
+                "-c": 2,
+                "-s": 0,
+                "-t": 0
+            }
+        },
+        "type": "LibSvmClassifier"
+    },
+    "descriptor_factory": {
+        "DescriptorMemoryElement": {},
+        "type": "DescriptorMemoryElement"
+    },
+    "descriptor_generator": {
+        "CaffeDescriptorGenerator": {
+            "batch_size": 128,
+            "data_layer": "data",
+            "gpu_device_id": 0,
+            "image_mean_uri": "~/dev/caffe/source/data/ilsvrc12/imagenet_mean.binaryproto",
+            "input_scale": null,
+            "load_truncated_images": false,
+            "network_is_bgr": true,
+            "network_model_uri": "~/dev/caffe/source/models/bvlc_alexnet/bvlc_alexnet.caffemodel",
+            "network_prototxt_uri": "~/dev/caffe/source/models/bvlc_alexnet/deploy.prototxt",
+            "pixel_rescale": null,
+            "return_layer": "fc7",
+            "use_gpu": true
+        },
+        "type": "CaffeDescriptorGenerator"
+    }
+}

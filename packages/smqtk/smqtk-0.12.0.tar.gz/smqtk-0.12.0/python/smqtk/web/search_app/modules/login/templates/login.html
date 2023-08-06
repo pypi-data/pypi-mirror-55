@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% set active_page = "login" %}
+
+{% block body_content %}
+    <div class="container">
+        <div class="auth-form-header">
+            <h1>Sign In</h1>
+        </div>
+        <!--suppress HtmlUnknownTarget -->
+        <form class="form-horizontal" accept-charset="UTF-8"
+              action="/login.passwd" method="post">
+            <div class="control-group">
+                <label for="login_field">Username</label>
+                <input autocapitalize="off" autofocus="autofocus"
+                       id="login_field" name="login" tabindex="1" type="text"
+                       value="{{username}}"/>
+            </div>
+            <div class="control-group">
+                <label for="password">Password</label>
+                <input autocomplete="off" class="input-block" id="password"
+                       name="passwd" tabindex="2" type="password"/>
+            </div>
+            <div class="control-group">
+                <!-- holds the next page to proceed to -->
+                <input type="hidden" name="next" value="{{next}}"/>
+                <input class="btn" name="commit" tabindex="3" type="submit"
+                       value="Sign in"/>
+            </div>
+            {# csrf_token_gen() function defined in base dispatcher app -#}
+            <input name="{{ csrf_form_key }}" type="hidden" value="{{ csrf_token_gen() }}"/>
+        </form>
+    </div>
+{% endblock body_content %}
