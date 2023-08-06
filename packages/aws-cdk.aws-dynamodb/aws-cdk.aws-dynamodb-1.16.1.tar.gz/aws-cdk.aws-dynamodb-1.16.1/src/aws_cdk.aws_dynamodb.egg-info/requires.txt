@@ -1,0 +1,5 @@
+jsii~=0.20.3
+publication>=0.0.3
+aws-cdk.aws-applicationautoscaling>=1.16.1,~=1.16
+aws-cdk.aws-iam>=1.16.1,~=1.16
+aws-cdk.core>=1.16.1,~=1.16
