@@ -1,0 +1,17 @@
+Metadata-Version: 2.1
+Name: bert4tf
+Version: 1.0.2
+Summary: bert for tensorflow
+Home-page: https://github.com/charlesXu86/Time_Convert
+Author: xu
+Author-email: charlesxu86@163.com
+License: MIT Licence
+Keywords: bert4tf,tensorflow
+Platform: any
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.6
+Requires-Dist: tensorflow-gpu (==1.14.0)
+
+...
+
+
