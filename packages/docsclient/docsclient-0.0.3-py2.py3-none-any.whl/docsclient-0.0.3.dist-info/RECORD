@@ -1,0 +1,9 @@
+docsclient/__init__.py,sha256=u48Mq_5CJ-fl9yxkoHphTNUzdgvz6JDf-Vc1FEJCLw4,425
+docsclient/_version.py,sha256=8yPGUpi8MkvtqUkDK-hrv1YMWDICfyAK333TNpyc-f0,518
+docsclient/client.py,sha256=iY13goqKfnShWT3hAYyTF7H54vEkDd-vz3S38Hu5PfM,2349
+docsclient-0.0.3.dist-info/DESCRIPTION.rst,sha256=EyIZH99Ej6mvu9p_rriMaLHFIPuGLWHH5CeLgBrEjbY,72
+docsclient-0.0.3.dist-info/METADATA,sha256=Wmzg0rHSacLBPBXZHuOPbSqZsq3Jo9E6DPKx9QQDIPc,828
+docsclient-0.0.3.dist-info/RECORD,,
+docsclient-0.0.3.dist-info/WHEEL,sha256=BTHHj6QhsHpWhRUrxioIvCAgjx81u-a8gkPTO6bi_A0,116
+docsclient-0.0.3.dist-info/metadata.json,sha256=43_GDpqpe9XXBfCIHb6kjvJZOHu6iKp6skW7YwVAPP4,880
+docsclient-0.0.3.dist-info/top_level.txt,sha256=h4l-GaMBGMbNNqXYQA0lPN2-5eBV1fWOZ4a3UeIeEzg,11

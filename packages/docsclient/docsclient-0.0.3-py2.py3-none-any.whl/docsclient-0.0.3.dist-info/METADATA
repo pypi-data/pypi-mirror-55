@@ -1,0 +1,27 @@
+Metadata-Version: 2.0
+Name: docsclient
+Version: 0.0.3
+Summary: Document server using fastapi, starlett and uvicorn
+Home-page: https://github.com/djugh/docserver-client/
+Author: David Pugh
+Author-email: djpugh@gmail.com
+License: MIT
+Project-URL: Source, https://github.com/djugh/docserver-client/
+Project-URL: Tracker, https://github.com/djugh/docserver-client/issues
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Topic :: Software Development :: Documentation
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Provides: docsclient
+Requires-Dist: requests
+
+docsclient
+##########
+
+
+Lightweight client for uploading to docserver
+
+
