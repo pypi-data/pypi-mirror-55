@@ -1,0 +1,44 @@
+from kcweb.config import *
+#下面的配置都是全局的
+
+# 应用配置
+app['app_debug']=True  #是否开启调试模式
+app['tpl_folder']='./${appname}'  #设置模板文件目录名 注意：所有的配置目录都是以您的运行文件所在目录开始
+app['before_request']='before_request'  #设置请求前要执行的函数名
+app['after_request']='after_request'    #设置请求后要执行的函数名
+app['staticpath']='${appname}/${modular}/static'          #静态主要目录
+
+# redis配置
+redis['host']='127.0.0.1' #服务器地址
+redis['port']=6379 #端口
+redis['password']=''  #密码
+redis['db']=0 #Redis数据库    注：Redis用0或1或2等表示
+redis['pattern']=True # True连接池链接 False非连接池链接
+redis['ex']=0  #过期时间 （秒）
+
+#缓存配置
+cache['type']='File' #驱动方式 支持 File Redis
+cache['path']='./${appname}/runtime/cachepath' #缓存保存目录 
+cache['expire']=120 #缓存有效期 0表示永久缓存
+cache['host']=redis['host'] #Redis服务器地址
+cache['port']=redis['port'] #Redis 端口
+cache['password']=redis['password'] #Redis登录密码
+cache['db']=1 #Redis数据库    注：Redis用1或2或3等表示
+
+# session配置
+session['type']='File' #session 存储类型  支持 file、Redis
+session['path']='./${appname}/runtime/session/temp' #session缓存目录
+session['expire']=86400 #session默认有效期 该时间是指session在服务的保留时间，通常情况下浏览器上会保留该值的10倍
+session['prefix']="KCW" # SESSION 前缀
+session['host']=redis['host'] #Redis服务器地址
+session['port']=redis['port'] #Redis 端口
+session['password']=redis['password'] #Redis登录密码
+session['db']=2 #Redis数据库    注：Redis用1或2或3等表示
+
+#路由配置
+route['default']=True #是否开启默认路由  默认路由开启后面不影响以下配置的路由，模块名/版本名/控制器文件名/方法名 作为路由地址   如：http://www.kcw.com/api/v1/index/index/
+route['modular']=[{"www":"${modular}"},{"127":"${modular}"},{"192":"${modular}"}] #配置域名模块 配置后地址为：http://www.kcw.com/v1/index/index/  注意:如果使用的是代理服务器需要把代理名称设置为当前配置的域名，否则不生效
+route['edition']='v1' #默认路由版本，配置后地址为 http://www.kcw.com/index/index/
+route['files']='index' #默认路由文件 
+route['funct']='index'  #默认路由函数
+route['methods']=['POST','GET'] #默认请求方式
