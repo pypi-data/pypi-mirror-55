@@ -1,0 +1,17 @@
+Metadata-Version: 1.1
+Name: migration_detector
+Version: 0.1.1
+Summary: A general approach to detect human migration events in digital trace data
+Home-page: http://www.guanghuachi.com
+Author: Guanghua Chi
+Author-email: guanghua@berkeley.edu
+License: MIT
+Download-URL: https://github.com/g-chi/migration_detector/archive/v0.1.1.tar.gz
+Description: UNKNOWN
+Keywords: migration,trajectory,trace data
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 2.7
