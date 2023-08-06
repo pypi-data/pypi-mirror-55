@@ -1,0 +1,8 @@
+mypy_boto3_firehose/__init__.py,sha256=kwg-zPMHWczMTzCG_230bYZVzvfJjw_kdrdEBcG3vyw,108
+mypy_boto3_firehose/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_firehose/client.py,sha256=UMq8vv1WrH2L87m3nUKcsaj-2Bk33WvQ_Nd_G60yPsk,253359
+mypy_boto3_firehose/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_firehose-0.1.10.dist-info/METADATA,sha256=5tlj7j2IL0ENiDJhNEoRyMTsepU-iifUPNl28UyAxrw,1062
+mypy_boto3_firehose-0.1.10.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_firehose-0.1.10.dist-info/top_level.txt,sha256=FyoakDdB2qJ62z28NFGGzhRU0xe4X-4owyStqZZsiss,20
+mypy_boto3_firehose-0.1.10.dist-info/RECORD,,
