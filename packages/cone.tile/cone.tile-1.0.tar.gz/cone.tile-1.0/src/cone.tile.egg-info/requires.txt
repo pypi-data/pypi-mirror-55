@@ -1,0 +1,9 @@
+setuptools
+zope.component
+zope.deprecation
+zope.exceptions
+pyramid>=1.5
+pyramid_chameleon
+
+[test]
+zope.testrunner
