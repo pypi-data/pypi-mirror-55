@@ -1,0 +1,20 @@
+version: 2.1
+jobs:
+  build:
+
+    machine: true
+    steps:
+      - checkout
+      - run:
+          name: build images
+          command: |
+            make docker-build
+      - run:
+          name: unit tests
+          command: |
+            make docker-unit-test
+
+      - run:
+          name: lint
+          command: |
+            make docker-lint
