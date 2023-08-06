@@ -1,0 +1,9 @@
+README.rst
+setup.py
+lttb/__init__.py
+lttb/lttb.py
+lttb.egg-info/PKG-INFO
+lttb.egg-info/SOURCES.txt
+lttb.egg-info/dependency_links.txt
+lttb.egg-info/requires.txt
+lttb.egg-info/top_level.txt
