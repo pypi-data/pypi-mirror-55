@@ -1,0 +1,27 @@
+[tool.poetry]
+name = "axgridcommons"
+version = "0.1.2"
+description = "AxGrid commons"
+license = "MIT"
+homepage = "http://axgrid.com"
+repository = "https://github.com/AxGrid/commons"
+authors = ["Dmitry Vysochin <dmitry.vysochin@gmail.com>"]
+keywords = ["commons"]
+readme = "README.md"
+classifiers = [
+    "Topic :: Software Development :: Libraries"
+]
+
+
+[tool.poetry.dependencies]
+python = "^3.5"
+asq = "^1.3"
+pyyaml = "^5.1"
+pytoml = "^0.1.21"
+
+[tool.poetry.dev-dependencies]
+pytest = "^3.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
