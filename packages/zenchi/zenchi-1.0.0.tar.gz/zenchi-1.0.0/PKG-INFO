@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: zenchi
+Version: 1.0.0
+Summary: python interface for communication with AniDB API
+Home-page: https://github.com/fnzr/zenchi
+Author: fnzr
+Author-email: 5471818+fnzr@users.noreply.github.com
+License: MIT
+Download-URL: https://github.com/fnzr/zenchi/archive/v1.0.0.tar.gz
+Description: UNKNOWN
+Keywords: anime,anidb,udp api
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.8
