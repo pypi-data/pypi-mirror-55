@@ -1,0 +1,9 @@
+mypy_boto3_mediatailor/__init__.py,sha256=6x2z1P8J0QGmBQuHVyAa4O294l4arslWDKbjy5vCPN0,122
+mypy_boto3_mediatailor/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_mediatailor/client.py,sha256=D1659S_ejZ4pmeWGln3noXKEs99Fnoptk62gix18JnM,34052
+mypy_boto3_mediatailor/paginator.py,sha256=PiyFKpO38DEZ44VkRw_mN0XTFS_QWa0fTPeb_WSm_zk,8468
+mypy_boto3_mediatailor/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_mediatailor-0.1.9.dist-info/METADATA,sha256=eDHX2wrR5uoXQW1JaADH6rXqva2xH6D4imYNVbdWs0Q,1067
+mypy_boto3_mediatailor-0.1.9.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_mediatailor-0.1.9.dist-info/top_level.txt,sha256=Qlg3x_5UJELGHTkCuJFRNVMJhg5o8N_su-eRV8CNV5s,23
+mypy_boto3_mediatailor-0.1.9.dist-info/RECORD,,
