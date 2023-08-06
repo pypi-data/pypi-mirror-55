@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+gobble/__init__.py
+gobble/gobble.py
+gobbler.egg-info/PKG-INFO
+gobbler.egg-info/SOURCES.txt
+gobbler.egg-info/dependency_links.txt
+gobbler.egg-info/entry_points.txt
+gobbler.egg-info/requires.txt
+gobbler.egg-info/top_level.txt
