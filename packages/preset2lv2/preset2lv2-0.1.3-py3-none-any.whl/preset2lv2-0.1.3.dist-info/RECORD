@@ -1,0 +1,13 @@
+preset2lv2/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+preset2lv2/__main__.py,sha256=J9mm8DHiqm_3qK72j0dDkUYXJ2jap7OxPAKN6lg-zj4,2162
+preset2lv2/dx7syx2lv2.py,sha256=wlXQNk1WmVJoENa-vi1NpbMSr5_ogb-CAjxd62VC0vI,3003
+preset2lv2/native2lv2.py,sha256=4yXv1R7STMWeo3Njc7meyRf8kmz1yJjcODquk2wKEQ0,6060
+preset2lv2/v12lv2.py,sha256=EKUm3OdYqEEksMl-XgNH9efMuqW46ZjF3j8dqH7kSVA,2252
+preset2lv2/templates/manifest.ttl.tpl,sha256=0UcH0jgNwoI-LFlljgpjvRdq1NPJ1kycQt_EziQHf6g,757
+preset2lv2/templates/preset.ttl.tpl,sha256=i-jEwdTkpBYL66URZL4jECruR6FUmMg0c52BJurJab4,634
+preset2lv2-0.1.3.dist-info/LICENSE,sha256=o_dCsd-ICsV4V9gl1wuToBlaRkZXDBAgrAuDk7PebL4,35099
+preset2lv2-0.1.3.dist-info/METADATA,sha256=cJvumjrdaEW7sJo2dX6f9pjSEZB6v-5Y1AT3vJAGzVk,1216
+preset2lv2-0.1.3.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+preset2lv2-0.1.3.dist-info/entry_points.txt,sha256=Viu_Vzn7ZALbDdUK6e3mqWcLyXLGIpg6qLZWOi9z5tM,57
+preset2lv2-0.1.3.dist-info/top_level.txt,sha256=Dphqbt_-jO2p6Qmo7KeeaW3eCbtW6PJZ0SPn-qOBJGY,11
+preset2lv2-0.1.3.dist-info/RECORD,,
