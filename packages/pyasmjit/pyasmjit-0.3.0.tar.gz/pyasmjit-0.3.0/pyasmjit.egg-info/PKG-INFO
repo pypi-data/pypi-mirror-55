@@ -1,0 +1,19 @@
+Metadata-Version: 1.1
+Name: pyasmjit
+Version: 0.3.0
+Summary: JIT assemby code generation and execution
+Home-page: http://github.com/programa-stic/pyasmjit
+Author: Christian Heitman
+Author-email: barfframework@gmail.com
+License: BSD 2-Clause
+Download-URL: https://github.com/programa-stic/pyasmjit/tarball/v0.3.0
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 2 - Pre-Alpha
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Natural Language :: English
+Classifier: Operating System :: POSIX :: Linux
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: C
+Classifier: Topic :: Software Development :: Assemblers

@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+pyasmjit/__init__.py
+pyasmjit/main.py
+pyasmjit/pyasmjit.c
+pyasmjit.egg-info/PKG-INFO
+pyasmjit.egg-info/SOURCES.txt
+pyasmjit.egg-info/dependency_links.txt
+pyasmjit.egg-info/requires.txt
+pyasmjit.egg-info/top_level.txt
