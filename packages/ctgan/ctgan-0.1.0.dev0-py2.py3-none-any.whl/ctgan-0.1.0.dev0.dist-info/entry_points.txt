@@ -1,0 +1,3 @@
+[console_scripts]
+ctgan = ctgan.cli:main
+

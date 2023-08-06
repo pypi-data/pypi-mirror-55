@@ -1,0 +1,10 @@
+ctgan/__init__.py,sha256=jTwBul-V015zDEzWhMV4SfqXMZ2pKfGYXeNGKNeZ-oU,237
+ctgan/cli.py,sha256=mERI8nv4qNFYse_xLLuGavzAz5PcW4v6IYp6RaRK3bs,2432
+ctgan/model.py,sha256=PyxeVU1h0KhAFSQXFkXmVUbEqiqgu8u80KFuskekkHM,18793
+ctgan-0.1.0.dev0.dist-info/AUTHORS.rst,sha256=N75e3tp6y4inp8V0l9dBpDitSmXDIolcEAkuwTWUxqI,41
+ctgan-0.1.0.dev0.dist-info/LICENSE,sha256=nETtJPUU_b3lsjVc850QLX_d-J0LXskUFfqf2bXmk8Y,1077
+ctgan-0.1.0.dev0.dist-info/METADATA,sha256=M1RUYErFwrQkAfU6-2PDkbd2g6JwIMOweoIUPVKMdjk,6275
+ctgan-0.1.0.dev0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+ctgan-0.1.0.dev0.dist-info/entry_points.txt,sha256=_xTTtGw5vy08-KhaSi4PW2OOab97Rrrm6v1EVVQe3N4,42
+ctgan-0.1.0.dev0.dist-info/top_level.txt,sha256=-aYb4jzlnJnHU32JhAedmI47TYqK9OLaNdNDBquj1l4,6
+ctgan-0.1.0.dev0.dist-info/RECORD,,
