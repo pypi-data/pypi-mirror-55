@@ -1,0 +1,12 @@
+autopy/__init__.py,sha256=E6_Zub_PBrFXG-5fl0l03-wxefahE8Z2GyH9mYD4iy4,277
+autopy/alert.cp38-win32.pyd,sha256=-P1-pj539P1kPj-2HUeQQqD8hzlOGU1csUWEHdvTTqg,1271296
+autopy/bitmap.cp38-win32.pyd,sha256=-P1-pj539P1kPj-2HUeQQqD8hzlOGU1csUWEHdvTTqg,1271296
+autopy/color.cp38-win32.pyd,sha256=-P1-pj539P1kPj-2HUeQQqD8hzlOGU1csUWEHdvTTqg,1271296
+autopy/key.cp38-win32.pyd,sha256=-P1-pj539P1kPj-2HUeQQqD8hzlOGU1csUWEHdvTTqg,1271296
+autopy/mouse.cp38-win32.pyd,sha256=-P1-pj539P1kPj-2HUeQQqD8hzlOGU1csUWEHdvTTqg,1271296
+autopy/screen.cp38-win32.pyd,sha256=-P1-pj539P1kPj-2HUeQQqD8hzlOGU1csUWEHdvTTqg,1271296
+autopy-3.0.1.dist-info/LICENSE,sha256=sL4M2LplXN7Sy6YuSFzjbnw3nb2pX7BjiLsTVuQc3H8,11346
+autopy-3.0.1.dist-info/METADATA,sha256=DItiU5ap5m_D2bqkCrgNwKyjFu-EjkeJVMAWVR-AKx4,7979
+autopy-3.0.1.dist-info/WHEEL,sha256=jovIjvNuo6l5lHtTPdXyjKVQ_5SCkmdptE5fkPNfjyM,101
+autopy-3.0.1.dist-info/top_level.txt,sha256=XZwopO5i8LsCkf3cJbCQeQLMiBD7XwTozpS9kMDQ_N4,7
+autopy-3.0.1.dist-info/RECORD,,
