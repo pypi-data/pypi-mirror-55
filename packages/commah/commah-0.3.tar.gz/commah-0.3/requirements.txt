@@ -1,0 +1,4 @@
+numpy>=1.4
+scipy>=0.13
+cosmolopy>=0.4
+
