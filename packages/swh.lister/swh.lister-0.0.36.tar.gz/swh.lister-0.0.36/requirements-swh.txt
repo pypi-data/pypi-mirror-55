@@ -1,0 +1,2 @@
+swh.core >= 0.0.75
+swh.scheduler >= 0.0.58
