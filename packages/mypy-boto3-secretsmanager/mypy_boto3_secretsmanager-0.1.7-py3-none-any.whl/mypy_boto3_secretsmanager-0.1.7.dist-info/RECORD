@@ -1,0 +1,10 @@
+mypy_boto3_secretsmanager/__init__.py,sha256=sz5faPR9lcS8DG-WT_QRBJd27HlWRYqXWqs_jFbqGCo,120
+mypy_boto3_secretsmanager/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_secretsmanager/client.py,sha256=oTaIKXmPNutDKmrvkKrD2cNRU-xsj7d_aS8bSUFUgU8,2994
+mypy_boto3_secretsmanager/paginator.py,sha256=bh6HdnQ7ggc8aQWZJpOvCpqc_-vEum3krXrqMTk0h54,292
+mypy_boto3_secretsmanager/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_secretsmanager/version.py,sha256=-w_IYq2qirUd-aSQcHEODBy3Q_jqwhPRWywcT_M1mMc,48
+mypy_boto3_secretsmanager-0.1.7.dist-info/METADATA,sha256=EpvKerVqKn26gBtpSufJauMI80eCTshnmHZ4j6BEDTc,1494
+mypy_boto3_secretsmanager-0.1.7.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_secretsmanager-0.1.7.dist-info/top_level.txt,sha256=dV8rn4ihJC9NrYQt4mBLIMk7NRqkzJm9jh_jJtAK3ho,26
+mypy_boto3_secretsmanager-0.1.7.dist-info/RECORD,,
