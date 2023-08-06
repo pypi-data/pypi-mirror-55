@@ -1,0 +1,16 @@
+LICENSE
+MANIFEST.in
+README.md
+package.json
+setup.py
+dash_dropdown_tree_select/DashDropdownTreeSelect.py
+dash_dropdown_tree_select/__init__.py
+dash_dropdown_tree_select/_imports_.py
+dash_dropdown_tree_select/dash_dropdown_tree_select.min.js
+dash_dropdown_tree_select/dash_dropdown_tree_select.min.js.map
+dash_dropdown_tree_select/metadata.json
+dash_dropdown_tree_select/package-info.json
+dash_dropdown_tree_select.egg-info/PKG-INFO
+dash_dropdown_tree_select.egg-info/SOURCES.txt
+dash_dropdown_tree_select.egg-info/dependency_links.txt
+dash_dropdown_tree_select.egg-info/top_level.txt
