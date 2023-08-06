@@ -1,0 +1,16 @@
+numpy
+python-dateutil
+
+[lint]
+flake8
+mypy
+
+[plot]
+xarray
+matplotlib
+
+[tests]
+pytest
+
+[timezone]
+pytz
