@@ -1,0 +1,4 @@
+---
+ENV: production
+AWS_REGION: ap-northeast-2
+RETRY_TASK_COUNT: 3
