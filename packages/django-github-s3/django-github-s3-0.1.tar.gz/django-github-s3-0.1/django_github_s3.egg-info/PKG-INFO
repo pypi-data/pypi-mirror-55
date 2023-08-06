@@ -1,0 +1,32 @@
+Metadata-Version: 2.1
+Name: django-github-s3
+Version: 0.1
+Summary: Support for many storage backends in Django
+Home-page: https://github.com/vivekchandrabs/django-github-s3/archive/v_01.tar.gz
+Author: Vivek Chandra B S
+Author-email: vivek.chandra.301096@gmail.com
+License: Mozilla Public License Version 2.0
+Description: # django-github-s3
+Platform: UNKNOWN
+Classifier: Development Status :: 5 - Production/Stable
+Classifier: Environment :: Web Environment
+Classifier: Framework :: Django
+Classifier: Framework :: Django :: 1.11
+Classifier: Framework :: Django :: 2.0
+Classifier: Framework :: Django :: 2.1
+Classifier: Framework :: Django :: 2.2
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 2
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.4
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Requires-Python: >=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*
+Description-Content-Type: text/markdown
+Provides-Extra: sftp
+Provides-Extra: libcloud
