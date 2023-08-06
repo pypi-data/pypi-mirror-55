@@ -1,0 +1,15 @@
+COPYING
+README.rst
+setup.cfg
+setup.py
+lib/argparse_deco/__init__.py
+lib/argparse_deco/arguments.py
+lib/argparse_deco/cli.py
+lib/argparse_deco/command.py
+lib/argparse_deco/compat.py
+lib/argparse_deco/version.py
+lib/argparse_deco.egg-info/PKG-INFO
+lib/argparse_deco.egg-info/SOURCES.txt
+lib/argparse_deco.egg-info/dependency_links.txt
+lib/argparse_deco.egg-info/requires.txt
+lib/argparse_deco.egg-info/top_level.txt

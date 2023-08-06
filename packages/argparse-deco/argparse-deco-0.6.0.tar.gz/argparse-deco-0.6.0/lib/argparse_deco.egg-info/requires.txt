@@ -1,0 +1,8 @@
+
+[test]
+pytest
+pytest-cov
+pytest-flakes
+pytest-mock
+pytest-pep8
+pytest-runner
