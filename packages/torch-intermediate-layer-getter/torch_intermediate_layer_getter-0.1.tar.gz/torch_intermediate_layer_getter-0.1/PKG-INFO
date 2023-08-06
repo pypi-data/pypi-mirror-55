@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: torch_intermediate_layer_getter
+Version: 0.1
+Summary: Simple easy to use module to get the intermediate results from chosen submodules
+Home-page: https://github.com/sebamenabar/Pytorch-IntermediateLayerGetter
+Author: Sebastian Amenabar
+Author-email: amenabars@gmail.com
+License: GNU General Public License v3.0
+Description: UNKNOWN
+Platform: UNKNOWN
