@@ -1,0 +1,18 @@
+Metadata-Version: 2.1
+Name: youtube-search
+Version: 0.1.2
+Summary: Perform YouTube video searches without the API
+Home-page: https://github.com/joetats/youtube_search
+Author: Joe Tatusko
+Author-email: tatuskojc@gmail.com
+License: MIT
+Description: # youtube_search
+        
+        Python function for searching for youtube videos to avoid using their heavily rate-limited API
+        
+        This basically scrapes the search results from the website, and will have more and more customization as I get around to adding it.
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Description-Content-Type: text/markdown
