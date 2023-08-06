@@ -1,0 +1,9 @@
+README
+rfc6266.py
+setup.py
+test_rfc6266.py
+rfc6266_content_disposition.egg-info/PKG-INFO
+rfc6266_content_disposition.egg-info/SOURCES.txt
+rfc6266_content_disposition.egg-info/dependency_links.txt
+rfc6266_content_disposition.egg-info/requires.txt
+rfc6266_content_disposition.egg-info/top_level.txt
