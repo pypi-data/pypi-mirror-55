@@ -1,0 +1,26 @@
+Metadata-Version: 2.1
+Name: tweepy-trc
+Version: 0.1
+Summary: Tweepy wrapper for .trc / .twurlrc
+Home-page: https://github.com/palevell/tweepy-trc
+Author: Patrick A. Levell
+Author-email: palevell@gmx.com
+License: MIT License
+Description: This is a wrapper for the config files used by Ruby gems 't'
+        and 'twurl.'  The idea is to keep Twitter credentials stored
+        separately from programs that use them.
+        
+        ### Requirements
+        1) Tweepy
+        2) Either of the following Ruby gems:
+            - t
+            - twurl
+        
+        
+Keywords: Tweepy,twurl,t
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

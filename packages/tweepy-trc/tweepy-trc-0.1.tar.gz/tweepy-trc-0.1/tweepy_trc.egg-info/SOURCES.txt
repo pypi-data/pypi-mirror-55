@@ -1,0 +1,8 @@
+README.md
+setup.py
+tweepy_trc/__init__.py
+tweepy_trc/config.py
+tweepy_trc.egg-info/PKG-INFO
+tweepy_trc.egg-info/SOURCES.txt
+tweepy_trc.egg-info/dependency_links.txt
+tweepy_trc.egg-info/top_level.txt
