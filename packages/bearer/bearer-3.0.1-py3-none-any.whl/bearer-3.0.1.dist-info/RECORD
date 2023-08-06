@@ -1,0 +1,8 @@
+bearer/__init__.py,sha256=bWKyTS9A6dezkrspDs6vj6Trl0ZdRePMZv6xbRfC05k,10349
+tests/__init__.py,sha256=V_3UmT7KkxnFng1wQzz-uyXtrhrNb5otXo01IGwihy8,34
+tests/test_client.py,sha256=tkizamVXA3K5DwA4bltl3FYAu0pQ7xBp17Yj4sAd35M,7361
+bearer-3.0.1.dist-info/LICENSE,sha256=VzbFJ6HKj2L8XHYL_U2RrDZpfAT01V-cyB08dsxxqP4,1073
+bearer-3.0.1.dist-info/METADATA,sha256=BgNhyO6Y4nmvk4ygf2ukm9UjHklUjs_2p-Z864J3Y0c,2616
+bearer-3.0.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+bearer-3.0.1.dist-info/top_level.txt,sha256=0nRwTWODeuI4avS3NF9HcrTj6UT6xqmAY1hJ9FmbCXY,13
+bearer-3.0.1.dist-info/RECORD,,
