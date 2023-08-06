@@ -1,0 +1,13 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/apig_wsgi.py
+src/apig_wsgi.egg-info/PKG-INFO
+src/apig_wsgi.egg-info/SOURCES.txt
+src/apig_wsgi.egg-info/dependency_links.txt
+src/apig_wsgi.egg-info/not-zip-safe
+src/apig_wsgi.egg-info/top_level.txt
+tests/test_apig_wsgi.py
