@@ -1,0 +1,16 @@
+Metadata-Version: 2.1
+Name: vspyx
+Version: 0.0.1
+Summary: Vehicle Spy X
+Home-page: https://intrepidcs.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: Other/Proprietary License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.5
+Description-Content-Type: text/markdown
+
+This is a stub for `vspyx`. To use the Python `vspyx` package, [install Vehicle Spy X on your system](https://intrepidcs.com/vspyx). 
+
+
