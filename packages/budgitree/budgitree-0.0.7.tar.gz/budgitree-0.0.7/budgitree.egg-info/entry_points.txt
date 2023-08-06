@@ -1,0 +1,3 @@
+[console_scripts]
+budgitree = budgitree.__main__:main
+
