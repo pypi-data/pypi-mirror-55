@@ -1,0 +1,3 @@
+[console_scripts]
+udt = udt.cli:main
+
