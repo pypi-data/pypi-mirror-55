@@ -1,0 +1,2 @@
+from sql_extract import main
+main()
