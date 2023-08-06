@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: mypy-boto3-ce
+Version: 0.1.7
+Summary: Mypy-friendly boto3 type annotations for ce service.
+Home-page: https://github.com/vemel/mypy_boto3
+Author: Vlad Emelianov
+Author-email: vlad.emelianov.nz@gmail.com
+License: MIT License
+Description: # mypy-boto3-ce submodule
+        
+        Provides type annotations for `boto3.ce` service
+        
+        ## Installation
+        
+        ```bash
+        pip install mypy-boto3[ce]
+        ```
+        
+        ## Usage
+        
+        ```python
+        import boto3
+        from mypy_boto3.ce import Client, ServiceResource
+        
+        client: Client = boto3.client("ce")
+        resource: ServiceResource = boto3.resource("ce")
+        
+        # now your IDE can suggest you method and arguments names
+        # and mypy can check types
+        ```
+        
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
