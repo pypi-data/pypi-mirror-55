@@ -1,0 +1,2 @@
+# https://packaging.python.org/guides/using-manifest-in/
+graft pyreleaser_io/res
