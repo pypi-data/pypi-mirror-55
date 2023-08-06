@@ -1,0 +1,3 @@
+[console_scripts]
+calamardolauncher = calamardolauncher.__main__:run
+
