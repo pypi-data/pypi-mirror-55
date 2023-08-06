@@ -1,0 +1,8 @@
+README.md
+setup.py
+spriteutil_final/__init__.py
+spriteutil_final/spriteutil.py
+spriteutil_longlamduc.egg-info/PKG-INFO
+spriteutil_longlamduc.egg-info/SOURCES.txt
+spriteutil_longlamduc.egg-info/dependency_links.txt
+spriteutil_longlamduc.egg-info/top_level.txt
