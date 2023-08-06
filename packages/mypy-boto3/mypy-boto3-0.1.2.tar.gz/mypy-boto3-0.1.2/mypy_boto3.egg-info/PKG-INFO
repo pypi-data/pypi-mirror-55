@@ -1,0 +1,503 @@
+Metadata-Version: 2.1
+Name: mypy-boto3
+Version: 0.1.2
+Summary: Mypy-friendly boto3 type annotations master module.
+Home-page: https://github.com/vemel/mypy_boto3
+Author: Vlad Emelianov
+Author-email: vlad.emelianov.nz@gmail.com
+License: MIT License
+Description: # mypy_boto3
+        
+        Mypy-friendly type annotations for boto3.
+        
+        - [mypy_boto3](#mypyboto3)
+          - [Installation](#installation)
+            - [Usage](#usage)
+            - [How it works](#how-it-works)
+            - [Differences from boto3-type-annotations](#differences-from-boto3-type-annotations)
+            - [What's next](#whats-next)
+            - [Thank you](#thank-you)
+        
+        ## Installation
+        
+        ```bash
+        # install only `mypy_boto3.s3` for S3 service annotations
+        pip install mypy-boto3[s3]
+        
+        # or install multiple services
+        pip install mypy-boto3[s3][ec2]
+        
+        # or install S3 service with docs
+        pip install mypy-boto3[s3-with-docs]
+        
+        # or install all services
+        pip install mypy-boto3[all]
+        
+        # or even install all boto3 services annotations
+        # WARNING: this will eat ~70 MB of space
+        pip install mypy-boto3[all-with-docs]
+        ```
+        
+        ### Usage
+        
+        - Install [mypy](https://github.com/python/mypy) and optionally enable it in your IDE
+        - Install [boto3](https://github.com/boto/boto3)
+        - Use `mypy-boto3` to annotate your code to discover errors
+        
+            ```python
+            import boto3
+        
+            from mypy_boto3.s3 import Client, ServiceResource
+        
+            client: Client = boto3.client("s3")
+        
+            # IDE autocomplete suggests function name and arguemnts here
+            client.create_bucket(Bucket="bucket")
+        
+            # (mypy) error: Missing positional argument "Key" in call to "get_object" of "Client"
+            client.get_object(Bucket="bucket")
+        
+            # (mypy) error: Argument "Key" to "get_object" of "Client" has incompatible type "None"; expected "str"
+            client.get_object(Bucket="bucket", Key=None)
+        
+            # explicitly set type to S3 ServiceResource
+            resource: ServiceResource = boto3.Session(region_name="us-west-1").resource("s3")
+        
+            # IDE autocomplete suggests function name and arguments here
+            bucket = resource.Bucket("bucket")
+        
+            # (mypy) error: Unexpected keyword argument "key" for "upload_file" of "Bucket"
+            bucket.upload_file(Filename="my.txt", key="my-txt")
+            ```
+        
+        ### How it works
+        
+        There is also a package `mypy-boto3-builder` that builds interface files from `boto3` documentation.
+        
+        ### Differences from boto3-type-annotations
+        
+        - Fully type annotated
+        - `mypy` compatibility
+        - Generated types for return values and arguments
+        - Added ServiceResource sub-collections
+        - Support service-specific sub-modules (in progress)
+        - CLI interface for `builder`
+        - Modules documentation
+        
+        ### What's next
+        
+        - Add `TypedDict` types for arguments and return types to check keys and values
+        - Allow installation of sub-modules
+        - Always include docs and support them in generated documentation
+        
+        ### Thank you
+        
+        - Guys behind [boto3-type-annotations](https://pypi.org/project/boto3-type-annotations/),
+          this package is based on top of their work
+        - [black](https://github.com/psf/black) developers for awesome formatting tool
+        - [mypy](https://github.com/python/mypy) for doing all dirty work for us
+        
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Environment :: Console
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Natural Language :: English
+Classifier: Operating System :: OS Independent
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Programming Language :: Python :: 3 :: Only
+Classifier: Programming Language :: Python :: Implementation :: CPython
+Classifier: Typing :: Typed
+Description-Content-Type: text/markdown
+Provides-Extra: all
+Provides-Extra: all-with-docs
+Provides-Extra: acm
+Provides-Extra: acm-with-docs
+Provides-Extra: acm-pca
+Provides-Extra: acm-pca-with-docs
+Provides-Extra: alexaforbusiness
+Provides-Extra: alexaforbusiness-with-docs
+Provides-Extra: amplify
+Provides-Extra: amplify-with-docs
+Provides-Extra: apigateway
+Provides-Extra: apigateway-with-docs
+Provides-Extra: apigatewaymanagementapi
+Provides-Extra: apigatewaymanagementapi-with-docs
+Provides-Extra: apigatewayv2
+Provides-Extra: apigatewayv2-with-docs
+Provides-Extra: application-autoscaling
+Provides-Extra: application-autoscaling-with-docs
+Provides-Extra: application-insights
+Provides-Extra: application-insights-with-docs
+Provides-Extra: appmesh
+Provides-Extra: appmesh-with-docs
+Provides-Extra: appstream
+Provides-Extra: appstream-with-docs
+Provides-Extra: appsync
+Provides-Extra: appsync-with-docs
+Provides-Extra: athena
+Provides-Extra: athena-with-docs
+Provides-Extra: autoscaling
+Provides-Extra: autoscaling-with-docs
+Provides-Extra: autoscaling-plans
+Provides-Extra: autoscaling-plans-with-docs
+Provides-Extra: backup
+Provides-Extra: backup-with-docs
+Provides-Extra: batch
+Provides-Extra: batch-with-docs
+Provides-Extra: budgets
+Provides-Extra: budgets-with-docs
+Provides-Extra: ce
+Provides-Extra: ce-with-docs
+Provides-Extra: chime
+Provides-Extra: chime-with-docs
+Provides-Extra: cloud9
+Provides-Extra: cloud9-with-docs
+Provides-Extra: clouddirectory
+Provides-Extra: clouddirectory-with-docs
+Provides-Extra: cloudformation
+Provides-Extra: cloudformation-with-docs
+Provides-Extra: cloudfront
+Provides-Extra: cloudfront-with-docs
+Provides-Extra: cloudhsm
+Provides-Extra: cloudhsm-with-docs
+Provides-Extra: cloudhsmv2
+Provides-Extra: cloudhsmv2-with-docs
+Provides-Extra: cloudsearch
+Provides-Extra: cloudsearch-with-docs
+Provides-Extra: cloudsearchdomain
+Provides-Extra: cloudsearchdomain-with-docs
+Provides-Extra: cloudtrail
+Provides-Extra: cloudtrail-with-docs
+Provides-Extra: cloudwatch
+Provides-Extra: cloudwatch-with-docs
+Provides-Extra: codebuild
+Provides-Extra: codebuild-with-docs
+Provides-Extra: codecommit
+Provides-Extra: codecommit-with-docs
+Provides-Extra: codedeploy
+Provides-Extra: codedeploy-with-docs
+Provides-Extra: codepipeline
+Provides-Extra: codepipeline-with-docs
+Provides-Extra: codestar
+Provides-Extra: codestar-with-docs
+Provides-Extra: codestar-notifications
+Provides-Extra: codestar-notifications-with-docs
+Provides-Extra: cognito-identity
+Provides-Extra: cognito-identity-with-docs
+Provides-Extra: cognito-idp
+Provides-Extra: cognito-idp-with-docs
+Provides-Extra: cognito-sync
+Provides-Extra: cognito-sync-with-docs
+Provides-Extra: comprehend
+Provides-Extra: comprehend-with-docs
+Provides-Extra: comprehendmedical
+Provides-Extra: comprehendmedical-with-docs
+Provides-Extra: config
+Provides-Extra: config-with-docs
+Provides-Extra: connect
+Provides-Extra: connect-with-docs
+Provides-Extra: cur
+Provides-Extra: cur-with-docs
+Provides-Extra: datapipeline
+Provides-Extra: datapipeline-with-docs
+Provides-Extra: datasync
+Provides-Extra: datasync-with-docs
+Provides-Extra: dax
+Provides-Extra: dax-with-docs
+Provides-Extra: devicefarm
+Provides-Extra: devicefarm-with-docs
+Provides-Extra: directconnect
+Provides-Extra: directconnect-with-docs
+Provides-Extra: discovery
+Provides-Extra: discovery-with-docs
+Provides-Extra: dlm
+Provides-Extra: dlm-with-docs
+Provides-Extra: dms
+Provides-Extra: dms-with-docs
+Provides-Extra: docdb
+Provides-Extra: docdb-with-docs
+Provides-Extra: ds
+Provides-Extra: ds-with-docs
+Provides-Extra: dynamodb
+Provides-Extra: dynamodb-with-docs
+Provides-Extra: dynamodbstreams
+Provides-Extra: dynamodbstreams-with-docs
+Provides-Extra: ec2
+Provides-Extra: ec2-with-docs
+Provides-Extra: ec2-instance-connect
+Provides-Extra: ec2-instance-connect-with-docs
+Provides-Extra: ecr
+Provides-Extra: ecr-with-docs
+Provides-Extra: ecs
+Provides-Extra: ecs-with-docs
+Provides-Extra: efs
+Provides-Extra: efs-with-docs
+Provides-Extra: eks
+Provides-Extra: eks-with-docs
+Provides-Extra: elasticache
+Provides-Extra: elasticache-with-docs
+Provides-Extra: elasticbeanstalk
+Provides-Extra: elasticbeanstalk-with-docs
+Provides-Extra: elastictranscoder
+Provides-Extra: elastictranscoder-with-docs
+Provides-Extra: elb
+Provides-Extra: elb-with-docs
+Provides-Extra: elbv2
+Provides-Extra: elbv2-with-docs
+Provides-Extra: emr
+Provides-Extra: emr-with-docs
+Provides-Extra: es
+Provides-Extra: es-with-docs
+Provides-Extra: events
+Provides-Extra: events-with-docs
+Provides-Extra: firehose
+Provides-Extra: firehose-with-docs
+Provides-Extra: fms
+Provides-Extra: fms-with-docs
+Provides-Extra: forecast
+Provides-Extra: forecast-with-docs
+Provides-Extra: forecastquery
+Provides-Extra: forecastquery-with-docs
+Provides-Extra: fsx
+Provides-Extra: fsx-with-docs
+Provides-Extra: gamelift
+Provides-Extra: gamelift-with-docs
+Provides-Extra: glacier
+Provides-Extra: glacier-with-docs
+Provides-Extra: globalaccelerator
+Provides-Extra: globalaccelerator-with-docs
+Provides-Extra: glue
+Provides-Extra: glue-with-docs
+Provides-Extra: greengrass
+Provides-Extra: greengrass-with-docs
+Provides-Extra: groundstation
+Provides-Extra: groundstation-with-docs
+Provides-Extra: guardduty
+Provides-Extra: guardduty-with-docs
+Provides-Extra: health
+Provides-Extra: health-with-docs
+Provides-Extra: iam
+Provides-Extra: iam-with-docs
+Provides-Extra: importexport
+Provides-Extra: importexport-with-docs
+Provides-Extra: inspector
+Provides-Extra: inspector-with-docs
+Provides-Extra: iot
+Provides-Extra: iot-with-docs
+Provides-Extra: iot-data
+Provides-Extra: iot-data-with-docs
+Provides-Extra: iot-jobs-data
+Provides-Extra: iot-jobs-data-with-docs
+Provides-Extra: iot1click-devices
+Provides-Extra: iot1click-devices-with-docs
+Provides-Extra: iot1click-projects
+Provides-Extra: iot1click-projects-with-docs
+Provides-Extra: iotanalytics
+Provides-Extra: iotanalytics-with-docs
+Provides-Extra: iotevents
+Provides-Extra: iotevents-with-docs
+Provides-Extra: iotevents-data
+Provides-Extra: iotevents-data-with-docs
+Provides-Extra: iotthingsgraph
+Provides-Extra: iotthingsgraph-with-docs
+Provides-Extra: kafka
+Provides-Extra: kafka-with-docs
+Provides-Extra: kinesis
+Provides-Extra: kinesis-with-docs
+Provides-Extra: kinesis-video-archived-media
+Provides-Extra: kinesis-video-archived-media-with-docs
+Provides-Extra: kinesis-video-media
+Provides-Extra: kinesis-video-media-with-docs
+Provides-Extra: kinesisanalytics
+Provides-Extra: kinesisanalytics-with-docs
+Provides-Extra: kinesisanalyticsv2
+Provides-Extra: kinesisanalyticsv2-with-docs
+Provides-Extra: kinesisvideo
+Provides-Extra: kinesisvideo-with-docs
+Provides-Extra: kms
+Provides-Extra: kms-with-docs
+Provides-Extra: lakeformation
+Provides-Extra: lakeformation-with-docs
+Provides-Extra: lambda
+Provides-Extra: lambda-with-docs
+Provides-Extra: lex-models
+Provides-Extra: lex-models-with-docs
+Provides-Extra: lex-runtime
+Provides-Extra: lex-runtime-with-docs
+Provides-Extra: license-manager
+Provides-Extra: license-manager-with-docs
+Provides-Extra: lightsail
+Provides-Extra: lightsail-with-docs
+Provides-Extra: logs
+Provides-Extra: logs-with-docs
+Provides-Extra: machinelearning
+Provides-Extra: machinelearning-with-docs
+Provides-Extra: macie
+Provides-Extra: macie-with-docs
+Provides-Extra: managedblockchain
+Provides-Extra: managedblockchain-with-docs
+Provides-Extra: marketplace-entitlement
+Provides-Extra: marketplace-entitlement-with-docs
+Provides-Extra: marketplacecommerceanalytics
+Provides-Extra: marketplacecommerceanalytics-with-docs
+Provides-Extra: mediaconnect
+Provides-Extra: mediaconnect-with-docs
+Provides-Extra: mediaconvert
+Provides-Extra: mediaconvert-with-docs
+Provides-Extra: medialive
+Provides-Extra: medialive-with-docs
+Provides-Extra: mediapackage
+Provides-Extra: mediapackage-with-docs
+Provides-Extra: mediapackage-vod
+Provides-Extra: mediapackage-vod-with-docs
+Provides-Extra: mediastore
+Provides-Extra: mediastore-with-docs
+Provides-Extra: mediastore-data
+Provides-Extra: mediastore-data-with-docs
+Provides-Extra: mediatailor
+Provides-Extra: mediatailor-with-docs
+Provides-Extra: meteringmarketplace
+Provides-Extra: meteringmarketplace-with-docs
+Provides-Extra: mgh
+Provides-Extra: mgh-with-docs
+Provides-Extra: mobile
+Provides-Extra: mobile-with-docs
+Provides-Extra: mq
+Provides-Extra: mq-with-docs
+Provides-Extra: mturk
+Provides-Extra: mturk-with-docs
+Provides-Extra: neptune
+Provides-Extra: neptune-with-docs
+Provides-Extra: opsworks
+Provides-Extra: opsworks-with-docs
+Provides-Extra: opsworkscm
+Provides-Extra: opsworkscm-with-docs
+Provides-Extra: organizations
+Provides-Extra: organizations-with-docs
+Provides-Extra: personalize
+Provides-Extra: personalize-with-docs
+Provides-Extra: personalize-events
+Provides-Extra: personalize-events-with-docs
+Provides-Extra: personalize-runtime
+Provides-Extra: personalize-runtime-with-docs
+Provides-Extra: pi
+Provides-Extra: pi-with-docs
+Provides-Extra: pinpoint
+Provides-Extra: pinpoint-with-docs
+Provides-Extra: pinpoint-email
+Provides-Extra: pinpoint-email-with-docs
+Provides-Extra: pinpoint-sms-voice
+Provides-Extra: pinpoint-sms-voice-with-docs
+Provides-Extra: polly
+Provides-Extra: polly-with-docs
+Provides-Extra: pricing
+Provides-Extra: pricing-with-docs
+Provides-Extra: qldb
+Provides-Extra: qldb-with-docs
+Provides-Extra: qldb-session
+Provides-Extra: qldb-session-with-docs
+Provides-Extra: quicksight
+Provides-Extra: quicksight-with-docs
+Provides-Extra: ram
+Provides-Extra: ram-with-docs
+Provides-Extra: rds
+Provides-Extra: rds-with-docs
+Provides-Extra: rds-data
+Provides-Extra: rds-data-with-docs
+Provides-Extra: redshift
+Provides-Extra: redshift-with-docs
+Provides-Extra: rekognition
+Provides-Extra: rekognition-with-docs
+Provides-Extra: resource-groups
+Provides-Extra: resource-groups-with-docs
+Provides-Extra: resourcegroupstaggingapi
+Provides-Extra: resourcegroupstaggingapi-with-docs
+Provides-Extra: robomaker
+Provides-Extra: robomaker-with-docs
+Provides-Extra: route53
+Provides-Extra: route53-with-docs
+Provides-Extra: route53domains
+Provides-Extra: route53domains-with-docs
+Provides-Extra: route53resolver
+Provides-Extra: route53resolver-with-docs
+Provides-Extra: s3
+Provides-Extra: s3-with-docs
+Provides-Extra: s3control
+Provides-Extra: s3control-with-docs
+Provides-Extra: sagemaker
+Provides-Extra: sagemaker-with-docs
+Provides-Extra: sagemaker-runtime
+Provides-Extra: sagemaker-runtime-with-docs
+Provides-Extra: savingsplans
+Provides-Extra: savingsplans-with-docs
+Provides-Extra: sdb
+Provides-Extra: sdb-with-docs
+Provides-Extra: secretsmanager
+Provides-Extra: secretsmanager-with-docs
+Provides-Extra: securityhub
+Provides-Extra: securityhub-with-docs
+Provides-Extra: serverlessrepo
+Provides-Extra: serverlessrepo-with-docs
+Provides-Extra: service-quotas
+Provides-Extra: service-quotas-with-docs
+Provides-Extra: servicecatalog
+Provides-Extra: servicecatalog-with-docs
+Provides-Extra: servicediscovery
+Provides-Extra: servicediscovery-with-docs
+Provides-Extra: ses
+Provides-Extra: ses-with-docs
+Provides-Extra: shield
+Provides-Extra: shield-with-docs
+Provides-Extra: signer
+Provides-Extra: signer-with-docs
+Provides-Extra: sms
+Provides-Extra: sms-with-docs
+Provides-Extra: sms-voice
+Provides-Extra: sms-voice-with-docs
+Provides-Extra: snowball
+Provides-Extra: snowball-with-docs
+Provides-Extra: sns
+Provides-Extra: sns-with-docs
+Provides-Extra: sqs
+Provides-Extra: sqs-with-docs
+Provides-Extra: ssm
+Provides-Extra: ssm-with-docs
+Provides-Extra: stepfunctions
+Provides-Extra: stepfunctions-with-docs
+Provides-Extra: storagegateway
+Provides-Extra: storagegateway-with-docs
+Provides-Extra: sts
+Provides-Extra: sts-with-docs
+Provides-Extra: support
+Provides-Extra: support-with-docs
+Provides-Extra: swf
+Provides-Extra: swf-with-docs
+Provides-Extra: textract
+Provides-Extra: textract-with-docs
+Provides-Extra: transcribe
+Provides-Extra: transcribe-with-docs
+Provides-Extra: transfer
+Provides-Extra: transfer-with-docs
+Provides-Extra: translate
+Provides-Extra: translate-with-docs
+Provides-Extra: waf
+Provides-Extra: waf-with-docs
+Provides-Extra: waf-regional
+Provides-Extra: waf-regional-with-docs
+Provides-Extra: workdocs
+Provides-Extra: workdocs-with-docs
+Provides-Extra: worklink
+Provides-Extra: worklink-with-docs
+Provides-Extra: workmail
+Provides-Extra: workmail-with-docs
+Provides-Extra: workmailmessageflow
+Provides-Extra: workmailmessageflow-with-docs
+Provides-Extra: workspaces
+Provides-Extra: workspaces-with-docs
+Provides-Extra: xray
+Provides-Extra: xray-with-docs
