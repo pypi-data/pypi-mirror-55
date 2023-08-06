@@ -1,0 +1,12 @@
+/033[37m*******************************************************************
+source_data command
+    Source Data is the data that you feed to Flexter for conversion. XML and JSON
+    are currently supported
+----------
+    Source Data sub-commands:
+    /033[32mfaascli source_data create --help/033[37m
+    /033[32mfaascli source_data list --help/033[37m
+    /033[32mfaascli source_data get --help/033[37m
+    /033[32mfaascli source_data delete --help/033[37m
+*******************************************************************/033[0m
+

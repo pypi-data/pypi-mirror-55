@@ -1,0 +1,23 @@
+/033[37m*******************************************************************
+FaaS CLI
+----------
+    FaaS CLI commands:
+    /033[32mfaascli login --help/033[37m
+    /033[32mfaascli source_data --help/033[37m
+    /033[32mfaascli source_schema --help/033[37m
+    /033[32mfaascli target_connection --help/033[37m
+    /033[32mfaascli conversion --help/033[37m
+    /033[32mfaascli webhook --help/033[37m
+----------
+    Examples:
+
+    To login into FaaS use the following command:
+    /033[32mfaascli login --username <email> --password <password>/033[37m
+
+    To create Source Data with name [my_data] from local XML file (/home/user/sample.xml) use the following command:
+    /033[32mfaascli source_data create file --name my_data --type xml --file "/home/user/sample.xml"/033[37m
+
+    To create Conversion with name [my_conv] for processing Source Data [my_data] use the following command:
+    /033[32mfaascli conversion create --name my_conv --data my_data --target="download_link"/033[37m
+*******************************************************************/033[0m
+
