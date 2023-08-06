@@ -1,0 +1,92 @@
+# -*- coding: utf-8 -*-
+# @Time    : 2019/11/7 13:44
+# @E-Mail  : aberstone.hk@gmail.com
+# @File    : extract_spider_middleware.py
+# @Software: PyCharm
+from typing import Iterator, Dict
+
+from scrapy import signals
+
+from scrapy_cabinet.constants import ExtractType
+from scrapy_cabinet.utils import LOGGER
+from scrapy_cabinet.libs.gne import GeneralNewsExtractor
+
+from scrapy_cabinet.types import _Crawler, _Response, _Spider, _Result, _Request, _Item
+
+
+class ExtractSpiderMiddleware(object):
+    """A base DownloaderMiddleware to set proxy to Scrapy request.
+
+    To use this Middleware, Project should set proxy_url or proxy_pool in settings.py.
+    When use PROXY_URL, PROXY_TYPE should be set at the same time.
+        PROXY_TYPE == 1 or PROXY_TYPE == 0.
+
+    Attributes:
+        proxies : _Proxies : A _Proxies type to store proxy_url.
+        is_init : bool     : A bool value to check the proxies is set successfully
+
+    Methods:
+        get_proxies  | Args: NaN | A method to get proxy_url, when use proxy_url and proxy_type == 1
+                                   this method can not be implemented.
+
+    """
+
+    def __init__(self):
+        self.gne = GeneralNewsExtractor()
+
+    @classmethod
+    def from_crawler(cls, crawler: _Crawler) -> object:
+        # This method is used by Scrapy to create your spiders.
+        s = cls()
+        crawler.signals.connect(s.spider_opened, signal=signals.spider_opened)
+        return s
+
+    def process_spider_input(self, response: _Response, spider: _Spider) -> None:
+        # Called for each response that goes through the spider
+        # middleware and into the spider.
+
+        # Should return None or raise an exception.
+        return None
+
+    def process_spider_output(self, response: _Response, result: _Result, spider: _Spider) -> _Result:
+        # Called with the results returned from the Spider, after
+        # it has processed the response.
+
+        # Must return an iterable of Request, dict or Item objects.
+        for i in result:
+            if isinstance(i, dict) and i.get("need_extract"):
+                yield self.extract(i, response, i['need_extract'])
+            yield i
+
+    def process_spider_exception(self, response: _Response, exception: Exception, spider: _Spider):
+        # Called when a spider or process_spider_input() method
+        # (from other spider middleware) raises an exception.
+
+        # Should return either None or an iterable of Response, dict
+        # or Item objects.
+        pass
+
+    def process_start_requests(self, start_requests: Iterator[_Request], spider: _Spider) -> Iterator[_Request]:
+        # Called with the start requests of the spider, and works
+        # similarly to the process_spider_output() method, except
+        # that it doesn’t have a response associated.
+
+        # Must return only requests (not items).
+        for r in start_requests:
+            yield r
+
+    def spider_opened(self, spider: _Spider):
+        spider.logger.info('Spider opened: %s' % spider.name)
+
+    def extract(self, result: Dict, response: _Response, type: ExtractType) -> _Item:
+        target_cls = result['target_cls']
+        source_page = result['source_page']
+        item = target_cls()
+        if type == ExtractType.NEWS:
+            _result = self.gne.extract(source_page)
+            for k, v in _result.items():
+                item[k] = v
+        elif type == ExtractType.LIST:
+            pass
+        LOGGER.error(item)
+        return item
