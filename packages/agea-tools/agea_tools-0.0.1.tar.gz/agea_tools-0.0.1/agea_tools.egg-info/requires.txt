@@ -1,0 +1,4 @@
+ibis-framework==0.14.0
+numexpr==2.7.0
+numpy==1.16.5
+pandas==0.25.1
