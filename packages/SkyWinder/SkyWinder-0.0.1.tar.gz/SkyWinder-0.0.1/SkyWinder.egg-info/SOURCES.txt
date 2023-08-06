@@ -1,0 +1,7 @@
+README.md
+setup.py
+SkyWinder.egg-info/PKG-INFO
+SkyWinder.egg-info/SOURCES.txt
+SkyWinder.egg-info/dependency_links.txt
+SkyWinder.egg-info/top_level.txt
+skywinder/__init__.py
