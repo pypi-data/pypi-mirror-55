@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "nqm.iotdatabase"
+version = "1.1.4"
+description = "Library for accessing a local nqm-iot-database"
+authors = ["Alois Klink <alois.klink@gmail.com>"]
+readme = "README.md"
+repository = "https://github.com/nqminds/nqm-iot-database-py"
+homepage = "https://github.com/nqminds/nqm-iot-database-py"
+packages = [
+    {include = "nqm" },
+]
+
+[tool.poetry.dependencies]
+python = "^3.6"
+shortuuid = "^0.5.0"
+numpy = "^1.17.4"
+future = "^0.18.2"
+mongosql = "^2.0.8"
+sqlalchemy = "^1.3.11"
+
+[tool.poetry.dev-dependencies]
+pytest = "^5.2.2"
+mypy = "^0.740"
+coverage = "^4.5.4"
+sphinxcontrib-napoleon = "^0.7"
+sphinx = "^2.2.1"
+sphinx-autodoc-typehints = "^1.10.3"
+recommonmark = "^0.6.0"
+pylint = "^2.4.3"
+pytest-dependency = "^0.4.0"
+tomlkit = "^0.5.8"
+pre-commit = "^1.20.0"
+
+[build-system]
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
