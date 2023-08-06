@@ -1,0 +1,24 @@
+Metadata-Version: 2.1
+Name: ccs_setuptest_v1
+Version: 1.0.1
+Summary: a try to make the setuptest for the CYBR CSCW-SUITE (CCS) available - so, after your docker-compose --build up  you simply run this setuptest for setting up and test your just deployed CCS on your own server - via setting-up with the IP or localhost, setting-up the application-admin, the email-provider and so on - and install it with these values and run a show-up-test to show how it works and that it works
+Home-page: https://c-c-s.sourceforge.io/
+Author: Florian Strahberger
+Author-email: flori@ctemplar.com
+License: MIT
+Description: #  The python-based setuptest for the CYBR CSCW-SUITE (CCS) Version 0.9.6 
+         (python3, selenium, pytest, ChromeDriver - you can get ChromeDriver from: https://chromedriver.chromium.org/)
+         
+        ## The setuptest will:
+          * Open the Conf/test_configVars.py file, so you can modify the values (The IP of your CCS, the SendGrid API-Key, E-Mail-Address & publicPGP-Key ..)
+          * Call the installation-script for creating the database-tables of your CCS
+          * Make the automated setup for your first 5 projects
+          * Will create a testing-project and simulate an admin who is creating a project, a WBS, creates a user-profile, testst the user's CFLX, starts to make a posting. 
+        
+        You can call the skripts manually from your terminal / console/ bash/ shell/ as well. with the use of pytest: pytest filename.py
+Keywords: CYBR CSCW-SUITE,CCS,digital workplace,project management,digitalization,communication,collaboration,groupware,setup.install,test,selenium,pytest,chromedriver,setuptest
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Description-Content-Type: text/markdown
