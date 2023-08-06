@@ -1,0 +1,12 @@
+_cache
+_static
+_templates
+
+TODO
+venv
+.idea
+__pycache__
+.eggs
+build
+*.egg-info
+dist
