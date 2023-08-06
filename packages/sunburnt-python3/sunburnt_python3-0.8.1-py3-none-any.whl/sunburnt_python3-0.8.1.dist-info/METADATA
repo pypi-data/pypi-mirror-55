@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: sunburnt-python3
+Version: 0.8.1
+Summary: Python interface to Solr
+Home-page: https://github.com/christopher-im/sunburnt-python3
+Author: Chris Murray
+Author-email: chris@chrismurray.scot
+License: MIT
+Keywords: solr
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: Programming Language :: Python :: 3
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Topic :: Internet :: WWW/HTTP :: Indexing/Search
+Classifier: Topic :: Software Development :: Libraries
+Requires: lxml
+Requires: pytz
+Requires: requests
+
+Sunburnt
+========
+
+This is a fork of Toby White's <toby@timetric.com> sunburnt, updated for Python 3.
+This is mostly useful as a library that supports very old versions of Solr,
+while supporting python 3.
+
+Sunburnt is a Python-based interface for working with the `Apache Solr
+<http://lucene.apache.org/solr/>`_ search engine.
+
+It's tested with Solr 3.5; previous versions were known to work
+with 1.3, 1.4, 1.4.1 & 3.1.
+
+It was originally written by Toby White <toby@timetric.com> for use in the `Timetric
+platform <http://timetric.com>`_.
+
+
