@@ -1,0 +1,6 @@
+README.md
+setup.py
+finkfilters.egg-info/PKG-INFO
+finkfilters.egg-info/SOURCES.txt
+finkfilters.egg-info/dependency_links.txt
+finkfilters.egg-info/top_level.txt
