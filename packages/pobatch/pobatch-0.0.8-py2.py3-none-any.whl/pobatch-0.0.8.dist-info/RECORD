@@ -1,0 +1,14 @@
+pobatch/__init__.py,sha256=Bj3qr76rDgCFXMpmAwK7ZOQaophJ9-z8BURcQokNh1g,119
+pobatch/__main__.py,sha256=CXRu25MbMaIcSphOoQ3MhXuOk6o9cIDEvowFgJ3UXHk,69
+pobatch/bundles.json,sha256=eK7KcevgrVVgII3j3ervS_BddlYlQg-RIiDxHFdu6o4,20436
+pobatch/geojson2id.py,sha256=aRxR6mxjO71dKmlzRDJlIdSYJgV5YoTAqW9RQLn5Mic,11279
+pobatch/idlist_orders.py,sha256=Mg4yRcMubRq5uwAzBukrlsr2mAntrJl_YbYFJpnGbyE,5980
+pobatch/mdown.py,sha256=-PW6m-C7lbupYJA3vzI8VDdIxVjxLmy7GWYm3zOoJ78,2968
+pobatch/msize.py,sha256=LIzXSjyes6Z9cZXjUxxwA3Suc5-_KqurNflkBP0G_V0,946
+pobatch/pobatch.py,sha256=fqaQZdSI9Am5O4SiBtWTnZC9JUtjyteAfFFgOdJGANA,15417
+pobatch/text_split.py,sha256=8s9HnGtS951mciIDjh08wJzhgiET1wTinkiufQl8VdA,1337
+pobatch-0.0.8.dist-info/METADATA,sha256=XWQBY71WjQW6mTDuUG_L_rvep0T-iVJpf7ICXw5k-l8,23485
+pobatch-0.0.8.dist-info/RECORD,,
+pobatch-0.0.8.dist-info/WHEEL,sha256=saUSQBLOUjf5ACZdNkhQ0lB6XrHU-l4vpzxq_W1n_AY,116
+pobatch-0.0.8.dist-info/entry_points.txt,sha256=arC304W-go_lECC_F5LYqSChDC9q-_LX7vAQhBCTJpA,50
+pobatch-0.0.8.dist-info/top_level.txt,sha256=cBOco6lejg0X-ntbOhsEoOwa0lKMjJlAkE5zWSTrxmU,8
