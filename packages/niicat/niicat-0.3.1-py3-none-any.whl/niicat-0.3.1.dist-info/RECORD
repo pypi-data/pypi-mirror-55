@@ -1,0 +1,12 @@
+niicat/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+niicat/niipre.py,sha256=S6gUjReUKUMSK8IfzQhrXQk9tq00m6c_I0S_Rm32X-g,5598
+niicat/resources/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+niicat/resources/imgcat.sh,sha256=BmWza7q4M_Wmj7F75FSYgdE2L3AIMo4DeJLP4DXooA8,3408
+niicat/resources/niipre.py,sha256=Fw1ZxFhKsJhXVdwFDtbvRU3Qa8pMm5Wne1bvosoTdTE,4077
+niicat/resources/niipre_to_buffer.py,sha256=Tu4yj_5MqII3MrtP9lrtcTpBhTypkylAhtcYvW2YkdI,204
+niicat-0.3.1.data/scripts/niicat,sha256=02aSeNER_U7CLsGyvNevn70PWn7m1xrQGlu9vXdRneU,1327
+niicat-0.3.1.dist-info/LICENSE,sha256=BLscIF5pCK6cnd8DPZYg45-Nsxz3cYhMV3bQxt1ftWI,14815
+niicat-0.3.1.dist-info/METADATA,sha256=b5hUauIScEivt0lkEbFdJwZK6RF3TJPgmQ1bPsIHR48,1719
+niicat-0.3.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+niicat-0.3.1.dist-info/top_level.txt,sha256=IaQ3zGHjj5-SLR6-WxcUw01sEjhFDNfz0nsjL1j82S0,7
+niicat-0.3.1.dist-info/RECORD,,
