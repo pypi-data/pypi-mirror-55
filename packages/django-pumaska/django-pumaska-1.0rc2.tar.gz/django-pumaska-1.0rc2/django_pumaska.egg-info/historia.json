@@ -1,0 +1,20 @@
+[
+  {
+    "tyyppi": "muutos",
+    "tunnus": "e9b94784e09daeb17e2e7622cada257d9e87b634",
+    "versio": "1.0rc2",
+    "kuvaus": "Korjattu `avain_{a,b}`-parametrien automaattinen muodostus"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "17f1889ec061decb22b42a5adabe4d5f6e9be78f",
+    "versio": "1.0rc1",
+    "kuvaus": "P\u00e4ivitetty `jquery.formset.js`"
+  },
+  {
+    "tyyppi": "muutos",
+    "tunnus": "dc77325b330975c3482408bb69bb3e3ba586b7ef",
+    "versio": "1.0rc0",
+    "kuvaus": "Alustava toteutus"
+  }
+]
