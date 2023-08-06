@@ -1,0 +1,17 @@
+LICENSE
+MANIFEST.in
+README.rst
+pyproject.toml
+setup.cfg
+setup.py
+src/copyist/__init__.py
+src/copyist/cli.py
+src/copyist/exceptions.py
+src/copyist/helpers.py
+src/copyist/sync.py
+src/copyist.egg-info/PKG-INFO
+src/copyist.egg-info/SOURCES.txt
+src/copyist.egg-info/dependency_links.txt
+src/copyist.egg-info/entry_points.txt
+src/copyist.egg-info/requires.txt
+src/copyist.egg-info/top_level.txt
