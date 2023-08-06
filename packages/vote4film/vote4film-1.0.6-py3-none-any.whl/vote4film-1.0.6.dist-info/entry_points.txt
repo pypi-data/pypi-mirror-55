@@ -1,0 +1,3 @@
+[console_scripts]
+vote4film=manage:main
+
