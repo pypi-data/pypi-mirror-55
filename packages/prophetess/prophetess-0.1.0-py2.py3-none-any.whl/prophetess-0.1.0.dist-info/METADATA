@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: prophetess
+Version: 0.1.0
+Summary: YAML driven ETL
+Home-page: https://github.com/vapor-ware/prophetess
+Author: Marco Ceppi
+Author-email: marco@vapor.io
+License: UNKNOWN
+Platform: UNKNOWN
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: aiohttp[speedups]
+Requires-Dist: PyYAML
+
+# Prophetess
+
+A tool for extracting data from extractors, transforming that data and loading it into loaders.
+
+## Development
+
+
