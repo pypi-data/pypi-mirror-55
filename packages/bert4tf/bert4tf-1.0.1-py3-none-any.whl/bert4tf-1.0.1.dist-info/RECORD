@@ -1,0 +1,14 @@
+bert4tf/__init__.py,sha256=Ab-MCl8yaElgwZ2_4eV_63g2D_bgfjOzwUUSkJjQD8U,257
+bert4tf/extract_features.py,sha256=v7hDHyLeHtZVTQk13JcJHxVG9ixivE2EzPQD0JFQPtU,20344
+bert4tf/modeling.py,sha256=JtBHlhonwjgmabZhTIubqcq5RRgbAq1vd0Cw-O1hcNQ,40918
+bert4tf/modeling_test.py,sha256=rIb6DCb6OG-Qb4yyXI6T5Xm-yTnIS_mVmKA4UE-US20,9191
+bert4tf/optimization.py,sha256=fTdD7aLNtqirfRAc5jZN13eT0Bivx3sVllyAqFJ5thQ,6634
+bert4tf/optimization_test.py,sha256=1FOJuaUcwme8PRkEiYoNkkKFBi89y4S4m8fjaB14eHE,1721
+bert4tf/run_pretraining.py,sha256=ca3JBs7Idcd5BvzFIFwkXl7tJkE7rJ1nxj7pzLRyZes,18700
+bert4tf/tf_metrics.py,sha256=SUnGTaTZyp6JnnVkTm9qcRZI-5rS_dNZs1vLTHpLUD8,8153
+bert4tf/tokenization.py,sha256=FtG1trQ_yQi2ikn7-mI4O1Aq_skiyAaTzp4EcNsOR3I,13052
+bert4tf/tokenization_test.py,sha256=prlazv35bYOaoNBPawKTcSKSVZQeKD1rkA37_HOO1RQ,4386
+bert4tf-1.0.1.dist-info/METADATA,sha256=eAnnnYj77SuJqXactFdwG4WTOUVJ0IVV6DsJINyyYL0,392
+bert4tf-1.0.1.dist-info/WHEEL,sha256=U88EhGIw8Sj2_phqajeu_EAi3RAo8-C6zV3REsWbWbs,92
+bert4tf-1.0.1.dist-info/top_level.txt,sha256=lvzgNysnT_R5s5FLrrf6VjTkrBn64xS7b47qqTjzvmU,8
+bert4tf-1.0.1.dist-info/RECORD,,
