@@ -1,0 +1,37 @@
+#!/usr/bin/env python3
+import csv
+import logging
+import sys
+from argparse import ArgumentDefaultsHelpFormatter, ArgumentParser
+
+from orangebox import Parser
+
+
+def main(args):
+    output = open(args.output, "w") if args.output is not None else sys.stdout
+    parser = Parser.load(args.path)
+    with output as f:
+        writer = csv.writer(f)
+        writer.writerow(parser.field_names)
+        for frame in parser.frames():
+            writer.writerow(frame.data)
+
+
+if __name__ == "__main__":
+    argparser = ArgumentParser(formatter_class=ArgumentDefaultsHelpFormatter)
+    argparser.add_argument("path", help="Path to a blackbox log file")
+    argparser.add_argument("-o", "--output", default=None,
+                           help="Optional path to an output file (otherwise use standard output)")
+    argparser.add_argument("-v", dest="verbosity", action="count", default=0,
+                           help="Control verbosity (can be used multiple times)")
+
+    args = argparser.parse_args()
+
+    levels = [logging.ERROR, logging.WARNING, logging.INFO, logging.DEBUG]
+    if args.verbosity >= len(levels):
+        raise IndexError("Verbosity must be 0 <= n < 4")
+    logging.basicConfig(level=levels[args.verbosity],
+                        format='%(asctime)s %(name)s %(levelname)s %(message)s',
+                        datefmt='%Y-%m-%d %H:%M:%S')
+
+    main(args)
