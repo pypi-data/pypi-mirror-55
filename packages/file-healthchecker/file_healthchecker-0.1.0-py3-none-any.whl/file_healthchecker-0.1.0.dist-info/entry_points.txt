@@ -1,0 +1,3 @@
+[console_scripts]
+checkhealth = file_healthchecker.entrypoint:health_check
+
