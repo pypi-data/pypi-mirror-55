@@ -1,0 +1,21 @@
+Metadata-Version: 2.1
+Name: selen-kaa
+Version: 0.0.1
+Summary: A lightweight wrapper around Selenium python repo.
+Home-page: https://github.com/VicGrygorchyk/selen_kaa.git
+Author: Viktor Grygorchuk
+Author-email: vvgrygorchuk@gmail.com
+License: UNKNOWN
+Download-URL: https://github.com/VicGrygorchyk/selen_kaa/archive/0.0.1.tar.gz
+Description: A lightweight wrapper of Selenium Python binding.
+        
+Keywords: Selenium,Test Automation
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: Programming Language :: Python :: 3.6
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
