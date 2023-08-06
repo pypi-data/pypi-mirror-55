@@ -1,0 +1,12 @@
+CHANGELOG.md
+README.md
+setup.py
+member/__init__.py
+member/decorator.py
+member/member_descriptor.py
+member/util.py
+member.egg-info/PKG-INFO
+member.egg-info/SOURCES.txt
+member.egg-info/dependency_links.txt
+member.egg-info/top_level.txt
+member_data/__init__.py
