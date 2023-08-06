@@ -1,0 +1,8 @@
+earthengine-api>=0.1.191
+gitpython>=2.1.11
+pendulum>=2.0.2
+Pygments>=2.2.0
+prettytable>=0.7.2
+
+[:platform_system != "Windows"]
+shapely>=1.6.4

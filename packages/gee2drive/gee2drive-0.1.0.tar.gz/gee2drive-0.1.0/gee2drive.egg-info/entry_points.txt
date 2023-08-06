@@ -1,0 +1,3 @@
+[console_scripts]
+gee2drive = gee2drive.gee2drive:main
+
