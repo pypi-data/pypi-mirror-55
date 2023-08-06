@@ -1,0 +1,8 @@
+aws_cdk/aws_elasticsearch/__init__.py,sha256=-GA_zVGGyMZuh0Gz8ga0HNSlnTC6ZRzk2twYxk89oxw,46933
+aws_cdk/aws_elasticsearch/py.typed,sha256=AbpHGcgLb-kRsJGnwFEktk7uzpZOCcBY74-YBdrKVGs,1
+aws_cdk/aws_elasticsearch/_jsii/__init__.py,sha256=HYe19HfCWrirGkrqrUGvtl106_J-W58jjF_KCBu5J0w,200
+aws_cdk/aws_elasticsearch/_jsii/aws-elasticsearch@1.16.1.jsii.tgz,sha256=_N7Ig6mWWw7ElHjlegWa8LXqB07OxGheQquAg2kjYIo,25394
+aws_cdk.aws_elasticsearch-1.16.1.dist-info/METADATA,sha256=_P5Psw6BfgduG37uN0JI_652C0hO6Hk4LH862ge5cl8,1171
+aws_cdk.aws_elasticsearch-1.16.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+aws_cdk.aws_elasticsearch-1.16.1.dist-info/top_level.txt,sha256=1TALAKbuUGsMSrfKWEf268lySCmcqSEO6cDYe_XlLHM,8
+aws_cdk.aws_elasticsearch-1.16.1.dist-info/RECORD,,
