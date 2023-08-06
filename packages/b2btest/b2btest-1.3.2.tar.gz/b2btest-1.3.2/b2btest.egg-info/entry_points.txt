@@ -1,0 +1,9 @@
+[back2back.diff]
+audio = b2btest.diffaudio:differences [audio]
+text = b2btest.difftext:differences
+xml = b2btest.diffxml:differences [xml]
+
+[console_scripts]
+diffaudio = b2btest.diffaudio:main [audio]
+diffxml = b2btest.diffxml:main [xml]
+
