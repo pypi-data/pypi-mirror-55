@@ -1,0 +1,16 @@
+canal-dispatch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+canal-dispatch/binlogdispatch.py,sha256=co0xwdbbZtiuvynCg7inLLb8KJUPv4topXn12nAMkmM,3114
+canal-dispatch/dispatch.py,sha256=sOop5EtsEmx5KY5PKq-PHPYKofKf1lyWf6PIXjplAPo,1303
+canal-dispatch/eventimpl.py,sha256=0ZmQPkIaNRj0j5vY2lGW9e4YFcGH6E8WKugDcBcM864,402
+canal-dispatch/events.py,sha256=j5xeuf-gTLgR5Yeey2GZBu30m9DUveaBAWg-QYGAc2M,664
+canal-dispatch/example.py,sha256=x7mSum7p-tr0JO75-pIJlS1cnxaKJy7sVaAMH_B8fWo,668
+canalDispatch/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+canalDispatch/binlogdispatch.py,sha256=Gs6EF2liDIN7MNHQFi_A-vbgyN2S-CSgNIQIhMpPcjc,3049
+canalDispatch/dispatch.py,sha256=Ql1fH71e1GIzO6gM5bOcorp1RmbWkde3n6HCGjlvhRk,1277
+canalDispatch/eventimpl.py,sha256=onbUjQ9w3_ESI4zPFCizIO7EluKvUWKswPGNR3FYNNs,544
+canalDispatch/events.py,sha256=kX1wEcEMD3NX1EOIVVB_jGsozn7y6u0rNdxzgL7sc3Y,640
+canalDispatch/example.py,sha256=h5xdsauDZlLEcNIE_-oKkR08Ga4cVzbikhHIIL1ctds,650
+canal_dispatch-0.1.1.dist-info/METADATA,sha256=__k0NbTypqKa5M4MuXPOEN0S4xAvm2b4RC0mun9TkWM,229
+canal_dispatch-0.1.1.dist-info/WHEEL,sha256=v8slff5hmCpvciQ3G55d2d1CnOBupjDFJHDE2dUb1Ao,97
+canal_dispatch-0.1.1.dist-info/top_level.txt,sha256=WpCq6w3_m8Oq0HlBsHIKqu6-HYzM9N2fGuu1eWGgwak,14
+canal_dispatch-0.1.1.dist-info/RECORD,,
