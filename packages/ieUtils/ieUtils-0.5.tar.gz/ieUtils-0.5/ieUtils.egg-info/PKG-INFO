@@ -1,0 +1,18 @@
+Metadata-Version: 1.1
+Name: ieUtils
+Version: 0.5
+Summary: Utility functions
+Home-page: https://github.com/sinishadj/ie-utils
+Author: Sinisa Derasevic
+Author-email: sinishadj@gmail.com
+License: MIT
+Download-URL: https://github.com/sinishadj/ie-utils/archive/v_05.tar.gz
+Description: UNKNOWN
+Keywords: UTILITIES,S3,DYNAMO DB
+Platform: UNKNOWN
+Classifier: Development Status :: 3 - Alpha
+Classifier: Intended Audience :: Developers
+Classifier: Topic :: Software Development :: Build Tools
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7

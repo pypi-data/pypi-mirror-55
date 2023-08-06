@@ -1,0 +1,10 @@
+README.md
+setup.cfg
+setup.py
+ieUtils.egg-info/PKG-INFO
+ieUtils.egg-info/SOURCES.txt
+ieUtils.egg-info/dependency_links.txt
+ieUtils.egg-info/requires.txt
+ieUtils.egg-info/top_level.txt
+ie_utils/__init__.py
+ie_utils/constants.py
