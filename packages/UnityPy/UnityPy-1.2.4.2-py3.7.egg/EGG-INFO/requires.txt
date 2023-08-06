@@ -1,0 +1,21 @@
+lz4
+brotli
+colorama
+termcolor
+Pillow
+
+[ASTC Texture Support]
+astc_decomp
+
+[Decrunch Support]
+decrunch
+decrunch_unity
+
+[ETC Texture Support]
+etcpack
+
+[FSB Audio Sample Support]
+fsb5
+
+[PVRTC Texture Support]
+pvrtc_decoder
