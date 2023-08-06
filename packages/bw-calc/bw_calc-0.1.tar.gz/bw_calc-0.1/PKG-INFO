@@ -1,0 +1,31 @@
+Metadata-Version: 2.1
+Name: bw_calc
+Version: 0.1
+Summary: Matrix calculations for Brightway framework
+Home-page: https://github.com/brightway-lca/bw_calc
+Author: Chris Mutel
+Author-email: cmutel@gmail.com
+License: BSD 3-clause
+Description: # bw_calc
+        
+        Matrix calculations for Brightway framework.
+        
+        [![Build Status](https://travis-ci.org/brightway-lca/bw_calc.svg?branch=master)](https://travis-ci.org/brightway-lca/bw_calc) [![Coverage Status](https://coveralls.io/repos/github/brightway-lca/bw_calc/badge.svg?branch=master)](https://coveralls.io/github/brightway-lca/bw_calc?branch=master) [![Build status](https://ci.appveyor.com/api/projects/status/9lfrb8j1ab1dmoti?svg=true)](https://ci.appveyor.com/project/cmutel/bw-calc)
+        
+Platform: UNKNOWN
+Classifier: Intended Audience :: End Users/Desktop
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: License :: OSI Approved :: BSD License
+Classifier: Operating System :: MacOS :: MacOS X
+Classifier: Operating System :: Microsoft :: Windows
+Classifier: Operating System :: POSIX
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Topic :: Scientific/Engineering :: Information Analysis
+Classifier: Topic :: Scientific/Engineering :: Mathematics
+Classifier: Topic :: Scientific/Engineering :: Visualization
+Description-Content-Type: text/markdown
