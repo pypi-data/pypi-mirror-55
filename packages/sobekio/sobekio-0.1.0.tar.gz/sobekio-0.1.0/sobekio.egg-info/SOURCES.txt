@@ -1,0 +1,11 @@
+README.md
+setup.py
+sobekio/__init__.py
+sobekio/his_file.py
+sobekio/sobek_prj.py
+sobekio.egg-info/PKG-INFO
+sobekio.egg-info/SOURCES.txt
+sobekio.egg-info/dependency_links.txt
+sobekio.egg-info/not-zip-safe
+sobekio.egg-info/requires.txt
+sobekio.egg-info/top_level.txt
