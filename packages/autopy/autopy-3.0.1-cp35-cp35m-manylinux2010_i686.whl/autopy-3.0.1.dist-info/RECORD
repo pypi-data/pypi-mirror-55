@@ -1,0 +1,13 @@
+autopy-3.0.1.dist-info/top_level.txt,sha256=XZwopO5i8LsCkf3cJbCQeQLMiBD7XwTozpS9kMDQ_N4,7
+autopy-3.0.1.dist-info/RECORD,,
+autopy-3.0.1.dist-info/METADATA,sha256=DItiU5ap5m_D2bqkCrgNwKyjFu-EjkeJVMAWVR-AKx4,7979
+autopy-3.0.1.dist-info/WHEEL,sha256=a9ZIsWOBTpAZiUOADB9tURiwqnpn9ET3u8XtZfXk9j4,110
+autopy/bitmap.cpython-35m-i386-linux-gnu.so,sha256=sa61k_Qa7QPjj65gXFMDnxKVRiBz0vnnzxaVZrg1kXc,4407340
+autopy/mouse.cpython-35m-i386-linux-gnu.so,sha256=sa61k_Qa7QPjj65gXFMDnxKVRiBz0vnnzxaVZrg1kXc,4407340
+autopy/alert.cpython-35m-i386-linux-gnu.so,sha256=sa61k_Qa7QPjj65gXFMDnxKVRiBz0vnnzxaVZrg1kXc,4407340
+autopy/color.cpython-35m-i386-linux-gnu.so,sha256=sa61k_Qa7QPjj65gXFMDnxKVRiBz0vnnzxaVZrg1kXc,4407340
+autopy/screen.cpython-35m-i386-linux-gnu.so,sha256=sa61k_Qa7QPjj65gXFMDnxKVRiBz0vnnzxaVZrg1kXc,4407340
+autopy/__init__.py,sha256=E6_Zub_PBrFXG-5fl0l03-wxefahE8Z2GyH9mYD4iy4,277
+autopy/key.cpython-35m-i386-linux-gnu.so,sha256=sa61k_Qa7QPjj65gXFMDnxKVRiBz0vnnzxaVZrg1kXc,4407340
+autopy/.libs/libXi-22808bad.so.6.1.0,sha256=SaJ43ZWOjdnZ972r-GR4BO4fdCnEVrC6Z46hslyk7gw,63604
+autopy/.libs/libXtst-8ccac291.so.6.1.0,sha256=AYGVWOQSTn27V2lQ84ebGdObEwi7N9DHFP4V-EwFaMw,26032
