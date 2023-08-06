@@ -1,0 +1,3 @@
+[console_scripts]
+QAOTG_test = QA_OTGBroker.app:app
+
