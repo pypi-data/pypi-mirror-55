@@ -1,0 +1,10 @@
+mypy_boto3_support/__init__.py,sha256=ZztRm2kxJVFdllrbiN9nZHD6xCrfTwAhgWyvhJ18ZBk,106
+mypy_boto3_support/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_support/client.py,sha256=m9u95CwMNmaxAhw32tIjIAIB71e1T1QcVqdlwheqpM4,65081
+mypy_boto3_support/paginator.py,sha256=zaigYXCI9K0bBfI1yzi0dAHZNoqbY1D0YOLQ6mJxw-E,17835
+mypy_boto3_support/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_support/type_defs.py,sha256=kNlbILh6deZVQpnotYvzdbs1WAch7yQnsGlUnv3e5Mo,89402
+mypy_boto3_support-0.2.1.dist-info/METADATA,sha256=3WVNMDoNPmzt8DgiBDdLi4H1AyrqarkBK7WqZR8v1g8,1067
+mypy_boto3_support-0.2.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_support-0.2.1.dist-info/top_level.txt,sha256=3dxYlnfrazs_tGaV8ZYQw9EV18Xuv_ywOFweODaVIjI,19
+mypy_boto3_support-0.2.1.dist-info/RECORD,,
