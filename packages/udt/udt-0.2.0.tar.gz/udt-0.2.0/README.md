@@ -1,0 +1,24 @@
+# udt
+udacity 翻译助手
+
+## 安装
+
+``` sh
+pip install udt
+```
+
+## 命令行
+
+```
+udt -s
+udt -y
+
+udt -s "Part 5"
+udt -y "Part 5"
+
+udt -l srt
+udt -l yaml
+
+udt -l srt "Part 5"
+udt -l yaml "Part 5"
+```
