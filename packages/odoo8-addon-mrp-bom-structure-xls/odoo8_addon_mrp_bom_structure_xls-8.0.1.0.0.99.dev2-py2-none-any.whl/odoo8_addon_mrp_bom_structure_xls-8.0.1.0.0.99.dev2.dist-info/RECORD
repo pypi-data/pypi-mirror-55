@@ -1,0 +1,15 @@
+odoo8_addon_mrp_bom_structure_xls-8.0.1.0.0.99.dev2-nspkg.pth,sha256=byZRehCeET5bIG0AMyMXPLGoXAE887IW4f1j_Rh4alU,564
+odoo_addons/mrp_bom_structure_xls/README.rst,sha256=sm2nkJvn9sb1r9npsloUYywbyvq_0mL5UamHsxLXYIY,1752
+odoo_addons/mrp_bom_structure_xls/__init__.py,sha256=NFc1TgI2dchColKPAOlDHPeTeREA04l6SQIt_z9oUW8,215
+odoo_addons/mrp_bom_structure_xls/__openerp__.py,sha256=Xpu0kqVSZLLG7RZdQvsKNPGfqeZSoiHzVKL-IZoSt04,575
+odoo_addons/mrp_bom_structure_xls/i18n/sl.po,sha256=z_KXh8Ys2SFllOBCTLhbGpj_3J6zj4i6GPbt7agnMb4,2198
+odoo_addons/mrp_bom_structure_xls/report/__init__.py,sha256=C4CR5w7DuSVf0rjpl7qUCFi_l-BMZQvisqkEe_EjZMw,226
+odoo_addons/mrp_bom_structure_xls/report/bom_structure_xls.py,sha256=zCHn61CQEA5njFuKi7O4harUJjTZqDKDFs2j8tuKIgY,5698
+odoo_addons/mrp_bom_structure_xls/report/bom_structure_xls.xml,sha256=fgRYTOVobQ68HinYqL_xShAUejFpzakfZNqYvjOn2ik,962
+odoo_addons/mrp_bom_structure_xls/static/description/icon.png,sha256=6xBPJauaFOF0KDHfHgQopSc28kKvxMaeoQFQWZtfZDo,9455
+odoo_addons/mrp_bom_structure_xls/static/description/index.html,sha256=6rmmTqEzsXZdL1toqcEH3c5Lrz1wN2OK81OU_iyPYi0,2859
+odoo8_addon_mrp_bom_structure_xls-8.0.1.0.0.99.dev2.dist-info/METADATA,sha256=5CsTG57Z4eQ-LtU_p8gtgZDsAPjTJ8HliZ5YHDTVDP4,2309
+odoo8_addon_mrp_bom_structure_xls-8.0.1.0.0.99.dev2.dist-info/WHEEL,sha256=Ph_z28wTcU7HnQwSQ6yCQ-zkcGK4h4ehDfP8b6UoHVE,92
+odoo8_addon_mrp_bom_structure_xls-8.0.1.0.0.99.dev2.dist-info/namespace_packages.txt,sha256=zhjxn3lgwTXeAiTvAlKWYlCdmGhlOYAY9CuT2hfLb40,12
+odoo8_addon_mrp_bom_structure_xls-8.0.1.0.0.99.dev2.dist-info/top_level.txt,sha256=zhjxn3lgwTXeAiTvAlKWYlCdmGhlOYAY9CuT2hfLb40,12
+odoo8_addon_mrp_bom_structure_xls-8.0.1.0.0.99.dev2.dist-info/RECORD,,
