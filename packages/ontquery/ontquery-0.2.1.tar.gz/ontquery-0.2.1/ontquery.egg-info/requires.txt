@@ -1,0 +1,17 @@
+
+[dev]
+pyontutils>=0.1.5
+pytest-cov
+wheel
+
+[services]
+rdflib
+requests
+orthauth>=0.0.3
+
+[test]
+pytest
+pytest-runner
+rdflib
+requests
+orthauth>=0.0.3
