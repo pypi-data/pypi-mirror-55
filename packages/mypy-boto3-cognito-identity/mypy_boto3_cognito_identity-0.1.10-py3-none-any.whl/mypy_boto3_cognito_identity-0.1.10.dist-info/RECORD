@@ -1,0 +1,9 @@
+mypy_boto3_cognito_identity/__init__.py,sha256=zqTzXSVfkzqkgrYkX2XEebltpFytPNBLKlYcfS89fU0,124
+mypy_boto3_cognito_identity/__main__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_cognito_identity/client.py,sha256=jsXiDyBxh0ffch4evZNLP2LqFc_IrK7rI7EPU8SzMMM,69337
+mypy_boto3_cognito_identity/paginator.py,sha256=_iaRhgGTF_Spwri9Tr9xUA0krlDyLhcyBjyO41QwJqQ,2382
+mypy_boto3_cognito_identity/py.typed,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+mypy_boto3_cognito_identity-0.1.10.dist-info/METADATA,sha256=kxOYjDZYHdU7Q5CLoAF71gUQS_ss4FfjVE5_26I0mg8,1078
+mypy_boto3_cognito_identity-0.1.10.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+mypy_boto3_cognito_identity-0.1.10.dist-info/top_level.txt,sha256=ZFUlso3gwMNbsKg3Fkl4rwx-sPqAEQo4EJCI9CfeULc,28
+mypy_boto3_cognito_identity-0.1.10.dist-info/RECORD,,
