@@ -1,0 +1,8 @@
+README.md
+setup.cfg
+setup.py
+EasyJsonDB/easyjsondb.py
+EasyJsonDB.egg-info/PKG-INFO
+EasyJsonDB.egg-info/SOURCES.txt
+EasyJsonDB.egg-info/dependency_links.txt
+EasyJsonDB.egg-info/top_level.txt
