@@ -1,0 +1,14 @@
+turta_modular/Turta_ALS_Gesture_Module.py,sha256=E2KkxUaKhWzyA8fUknQvSdPp1-m9iyTQ51VhblNnSNQ,20003
+turta_modular/Turta_Accel_Tilt_Module.py,sha256=ZcD7qBckAJsQNYAc2IhS3S9L2YaJ1SNl6dJSopCiH6o,7313
+turta_modular/Turta_Buzzer_Button_Module.py,sha256=_9da0QiE48ql_v87bg7Yn3rtqzH9PS_kgTkyC37t4QI,2424
+turta_modular/Turta_Environmental_Module.py,sha256=Flk5Tet3aht0_9cSO8MrI6bWd78Iu1sJFP5xgLPBzfU,23985
+turta_modular/Turta_IRRemote_Module.py,sha256=hITkMzgUzY3vHLz_G0pZtptjGrnZXekcqZmcGeI1-mA,3370
+turta_modular/Turta_PIR_Motion_Module.py,sha256=5ItmzH2sdn6UFDyxsgLeZCSMG2wB6TrdQB6oMflaIss,1499
+turta_modular/Turta_Photocoupler_Module.py,sha256=KAG7tlBGtjxJmca-0e53IvMJqrTueEk9aC5psQEGZTY,1861
+turta_modular/Turta_SS_Relay_Module.py,sha256=2o9YcUZE-XMZJbCxrWBxaciH970muaGx5xfKnw_r9lo,1886
+turta_modular/__init__.py,sha256=bliaRX6IE9tQSYXSTMP0cZj0AwQ90XvnZnbM_pqJFXI,24
+turta_modular-1.0.0.dist-info/LICENSE,sha256=Ec-nFl3DC6Qd_qiknLzuJ0L83_O-dnAXmOB06w83yr0,1087
+turta_modular-1.0.0.dist-info/METADATA,sha256=W-yQyTTBqL_eB3BfcWPQ2ogoOP0DRVlQz4w-mYYT5SQ,1222
+turta_modular-1.0.0.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+turta_modular-1.0.0.dist-info/top_level.txt,sha256=IV-lTLVT31Xwmu8OsdTOlATF1u0O6mJj5we1-ukFKUw,14
+turta_modular-1.0.0.dist-info/RECORD,,
