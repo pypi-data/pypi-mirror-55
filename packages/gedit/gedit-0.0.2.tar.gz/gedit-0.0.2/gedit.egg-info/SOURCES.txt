@@ -1,0 +1,7 @@
+README.md
+setup.py
+gedit/__init__.py
+gedit.egg-info/PKG-INFO
+gedit.egg-info/SOURCES.txt
+gedit.egg-info/dependency_links.txt
+gedit.egg-info/top_level.txt
