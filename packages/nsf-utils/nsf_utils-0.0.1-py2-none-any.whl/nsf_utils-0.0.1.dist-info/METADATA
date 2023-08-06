@@ -1,0 +1,19 @@
+Metadata-Version: 2.1
+Name: nsf-utils
+Version: 0.0.1
+Summary: some common tools
+Home-page: https://github.com/ethan-su/nsf-utils
+Author: ethan.su
+Author-email: su930116@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=2.7
+Description-Content-Type: text/markdown
+
+# nsf-utils
+Python项目常用工具，为避免多次copy and paste，因此打包成公共库
+
+
