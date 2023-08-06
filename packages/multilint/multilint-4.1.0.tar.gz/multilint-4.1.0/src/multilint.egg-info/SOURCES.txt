@@ -1,0 +1,14 @@
+HISTORY.rst
+LICENSE
+MANIFEST.in
+README.rst
+setup.cfg
+setup.py
+src/multilint/__init__.py
+src/multilint/__main__.py
+src/multilint.egg-info/PKG-INFO
+src/multilint.egg-info/SOURCES.txt
+src/multilint.egg-info/dependency_links.txt
+src/multilint.egg-info/entry_points.txt
+src/multilint.egg-info/not-zip-safe
+src/multilint.egg-info/top_level.txt
