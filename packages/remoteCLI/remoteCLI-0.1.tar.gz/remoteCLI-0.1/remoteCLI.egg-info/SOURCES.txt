@@ -1,0 +1,9 @@
+setup.py
+remoteCLI/__init__.py
+remoteCLI/example_client.py
+remoteCLI/example_server.py
+remoteCLI/remoteCLI.py
+remoteCLI.egg-info/PKG-INFO
+remoteCLI.egg-info/SOURCES.txt
+remoteCLI.egg-info/dependency_links.txt
+remoteCLI.egg-info/top_level.txt
