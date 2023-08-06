@@ -1,0 +1,8 @@
+[
+  {
+    "directory": "/Users/shnitzel/Developer/workspaces/python/subprojects/meson-ui/test-cases/meson/06-introspection/builddir",
+    "command": "cc -Iprog/src/613ec74@@exe@exe -Iprog/src -I../prog/src -Iprog -I../prog -Iprog/./src -I../prog/./src -Xclang -fcolor-diagnostics -pipe -Wall -Winvalid-pch -g -MD -MQ 'prog/src/613ec74@@exe@exe/main.c.o' -MF 'prog/src/613ec74@@exe@exe/main.c.o.d' -o 'prog/src/613ec74@@exe@exe/main.c.o' -c ../prog/src/main.c",
+    "file": "../prog/src/main.c",
+    "output": "prog/src/613ec74@@exe@exe/main.c.o"
+  }
+]

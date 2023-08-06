@@ -1,0 +1,1 @@
+[{"cmd": ["/Users/shnitzel/Developer/workspaces/python/subprojects/meson-ui/test-cases/meson/06-introspection/builddir/prog/src/exe"], "env": {}, "name": "Run benchmark exe", "workdir": null, "timeout": 30, "suite": ["c-exe"], "is_parallel": true, "priority": 0}]
