@@ -1,0 +1,13 @@
+README.md
+setup.cfg
+setup.py
+src/osmtilecalc/__init__.py
+src/osmtilecalc/calculators.py
+src/osmtilecalc/main.py
+src/osmtilecalc/validators.py
+src/osmtilecalc.egg-info/PKG-INFO
+src/osmtilecalc.egg-info/SOURCES.txt
+src/osmtilecalc.egg-info/dependency_links.txt
+src/osmtilecalc.egg-info/entry_points.txt
+src/osmtilecalc.egg-info/requires.txt
+src/osmtilecalc.egg-info/top_level.txt
