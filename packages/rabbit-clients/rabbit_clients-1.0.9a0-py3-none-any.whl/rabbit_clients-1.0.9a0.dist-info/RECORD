@@ -1,0 +1,11 @@
+rabbit_clients/__init__.py,sha256=N_PKRp9iRzPfs7ae0jjlh4NelVpDkcLJ8bIDyHrd4Qc,221
+rabbit_clients/clients/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rabbit_clients/clients/base.py,sha256=asrfDasYxDgPnz1ndzIIxowm1Ks_pcsSlidDOvEubUw,5857
+rabbit_clients/clients/state_manager.py,sha256=sY8TeKbXEudTGImpN7s2D40Ir2tnu7a73hTgATNo-hs,2717
+tests/__init__.py,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+tests/test_base.py,sha256=yUk9K4QVlMdL2rONKy-W0DqyAKE9LIwcps8Dxf9tlkU,1836
+rabbit_clients-1.0.9a0.dist-info/LICENSE.txt,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+rabbit_clients-1.0.9a0.dist-info/METADATA,sha256=An_eDJcfsJxWKrmnq2z9MmA6alOSe-HjdD-86I9FpRg,481
+rabbit_clients-1.0.9a0.dist-info/WHEEL,sha256=S8S5VL-stOTSZDYxHyf0KP7eds0J72qrK0Evu3TfyAY,92
+rabbit_clients-1.0.9a0.dist-info/top_level.txt,sha256=auqGMoGT1OyALKzRJTpGN7R-S8V9jpeW4579w5xeBnM,21
+rabbit_clients-1.0.9a0.dist-info/RECORD,,
