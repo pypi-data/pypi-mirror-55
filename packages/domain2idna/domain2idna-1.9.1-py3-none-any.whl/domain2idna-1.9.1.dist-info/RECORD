@@ -1,0 +1,10 @@
+domain2idna/__init__.py,sha256=8B4W8QBO473G3NMaXsP-W04m7_jegNIrateTpP9FPvo,3571
+domain2idna/cli.py,sha256=jn6ekHPoD5RCYowcyvPyG5mw55RerpJ7Hh8ey9WpvEs,3106
+domain2idna/core.py,sha256=HvSRDEZQubbiriDfclqfKr0zPstj16XIaQEbj1wG3hU,4174
+domain2idna/helpers.py,sha256=k7-TZUgGZeIu7Biw314HULF7iXi_3GUe50zepBdr4jU,2865
+domain2idna-1.9.1.dist-info/LICENSE,sha256=OM8QZFxlcbHDziZrGXY62V8RAjlH70AlH2JVhIOgJsc,1106
+domain2idna-1.9.1.dist-info/METADATA,sha256=Hnoz5i4z3GDOOQOMx03gHfYoJV5CnGBkJCdK7HxS33w,4460
+domain2idna-1.9.1.dist-info/WHEEL,sha256=p46_5Uhzqz6AzeSosiOnxK-zmFja1i22CrQCjmYe8ec,92
+domain2idna-1.9.1.dist-info/entry_points.txt,sha256=qn-o8OAJOMQBIBIlxaBE6p50NCs6Tq1Nh11OcZJ3Rd8,54
+domain2idna-1.9.1.dist-info/top_level.txt,sha256=8IB59QbJhqfEZBSkizveiK1Pry5tAkZlpzbiJPzPHIs,12
+domain2idna-1.9.1.dist-info/RECORD,,
