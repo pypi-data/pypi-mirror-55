@@ -1,0 +1,8 @@
+README.txt
+setup.py
+simpletexteditor/__init__.py
+simpletexteditor/core.py
+simpletexteditor.egg-info/PKG-INFO
+simpletexteditor.egg-info/SOURCES.txt
+simpletexteditor.egg-info/dependency_links.txt
+simpletexteditor.egg-info/top_level.txt
