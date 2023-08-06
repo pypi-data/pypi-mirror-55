@@ -1,0 +1,16 @@
+apic_tool/__init__.py,sha256=196Fn5nn7avrLhVCMSNruo2ckE94NYUFMtzSGQ89ZMw,626
+apic_tool/cli.py,sha256=COlu6TemnJbIAsiwZBaLg-x1hd8vJf_0JXR6F_emo2o,6375
+apic_tool/extraction.py,sha256=kjR1dznzrCK3QtO1uEeuMEcdMXhYgdqCUp_ptTqfvMs,4539
+apic_tool/insertion.py,sha256=GQSn4Ev-LztIQ4iggPtQsvYQST-bpbtdgeYxUvEkK6U,3079
+apic_tool/workers/__init__.py,sha256=NJTmgKJar17AE8Cv2JSag-ff06SeiJYv9in15GKdxD8,1117
+apic_tool/workers/baseworker.py,sha256=8f3vYlXsWAD3r00zYswwyuBdLrMXLo5N-RQDOiB8-9o,2204
+apic_tool/workers/mp3worker.py,sha256=y-oi1fc4JcVVTel3PkuTcnQq3kTUFdfBa8BdTdU9cLU,5306
+id3autosort/__init__.py,sha256=4imKxq9AXtfuMiF4JbR0T3tRcxY_1KuZ2QSDvUyWwbw,527
+id3autosort/cli.py,sha256=i-gkTIIxmVHMo1HdBsunoSbuaFs5uZLksyHs8Hna7c0,4318
+id3autosort/sorter.py,sha256=Fu7r688R8NUUXy6FhjFFR0HWVgUi0erWt96IH6oJsrY,7079
+music_metadata_tools-1.0.0.dist-info/LICENSE,sha256=vFp2WyxNibNO1tLjAlq4qBuNRgYGY1iLYPF4B0XjxnE,11855
+music_metadata_tools-1.0.0.dist-info/METADATA,sha256=cL-kt4oudP-PbGQPq_cn2VwpFYeLL-vQ33htOi_adcY,4480
+music_metadata_tools-1.0.0.dist-info/WHEEL,sha256=_wJFdOYk7i3xxT8ElOkUJvOdOvfNGbR9g-bf6UQT6sU,110
+music_metadata_tools-1.0.0.dist-info/entry_points.txt,sha256=fMJJO0yP5CxQS0VxTZFaGCweUaSCnHfujj8hXdAP-_o,85
+music_metadata_tools-1.0.0.dist-info/top_level.txt,sha256=Kn7QTyQMNRR6CJ-29wt8FehdY-DdbLaF_OLxb4stP98,22
+music_metadata_tools-1.0.0.dist-info/RECORD,,
