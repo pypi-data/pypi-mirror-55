@@ -1,0 +1,16 @@
+six
+numpy
+scipy
+pandas>=0.19.0
+tables
+pyomo>=5.3
+matplotlib
+networkx>=1.10
+
+[cartopy]
+cartopy>=0.16
+
+[docs]
+numpydoc
+sphinx
+sphinx_rtd_theme
