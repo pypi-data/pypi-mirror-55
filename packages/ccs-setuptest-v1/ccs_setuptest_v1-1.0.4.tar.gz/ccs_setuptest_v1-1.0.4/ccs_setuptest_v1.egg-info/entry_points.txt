@@ -1,0 +1,3 @@
+[console_scripts]
+ccs-setuptest.py = Start.__main__:main
+
