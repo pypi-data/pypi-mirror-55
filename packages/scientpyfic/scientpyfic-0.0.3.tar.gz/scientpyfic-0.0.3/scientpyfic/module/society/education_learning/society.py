@@ -1,0 +1,40 @@
+from scientpyfic.API import API
+
+
+class Society:
+
+    URLS = {
+        "education_and_employment": "science_society/education_and_employment",
+        "stem_education": "science_society/stem_education",
+        "poverty_and_learning": "science_society/poverty_and_learning",
+        "educational_policy": "science_society/educational_policy",
+    }
+
+    """
+    For more information check the official documentation:
+        https://github.com/monzita/scientpyfic/wiki/Society
+    """
+
+    def __init__(self, url, title, description, pub_date, body, journals):
+        self._url = url
+        self._title = title
+        self._description = description
+        self._pub_date = pub_date
+        self._body = body
+        self._journals = journals
+
+    def __getattr__(self, name):
+        def handler(**kwargs):
+            options = {
+                "title": kwargs.get("title", None) or self._title,
+                "description": kwargs.get("description", None) or self._description,
+                "pub_date": kwargs.get("pub_date", None) or self._pub_date,
+                "body": kwargs.get("body", None) or self._body,
+                "journals": kwargs.get("journals", None) or self._journals,
+            }
+
+            url = "{}/{}.xml".format(self._url, self.URLS[name])
+            result = API.get(url, name=name.title(), **options, **kwargs)
+            return result
+
+        return handler
