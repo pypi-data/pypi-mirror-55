@@ -1,0 +1,10 @@
+Metadata-Version: 1.0
+Name: panda-server
+Version: 0.0.22
+Summary:  PanDA Server Package
+Home-page: https://twiki.cern.ch/twiki/bin/view/Atlas/PanDA
+Author: Panda Team
+Author-email: atlas-adc-panda@cern.ch
+License: GPL
+Description: This package contains PanDA Server Components
+Platform: UNKNOWN

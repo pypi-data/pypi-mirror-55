@@ -1,0 +1,369 @@
+[server]
+
+
+##########################
+#
+# Logger parameters
+#
+
+# log directory
+logdir=/var/log/panda
+
+# logger name
+loggername = prod
+
+
+
+##########################
+#
+# Transaction parameters
+#
+
+# lock file for getJobs
+lockfile_getJobs = %(logdir)s/getJobs.lock
+
+# lock file for getSerialNumber
+lockfile_getSN = %(logdir)s/getSN.lock
+
+# lock file for accessing email DB
+lockfile_getMail = %(logdir)s/getMail.lock
+
+# lock file for updateDatasetStatus
+lockfile_setDS = %(logdir)s/setDS.lock
+
+# lock file for getCloudTask
+lockfile_getCT = %(logdir)s/getCT.lock
+
+# lock file for uuidgen
+lockfile_getUU = %(logdir)s/getUU.lock
+
+
+
+##########################
+#
+# DA parameters
+#
+
+# cache space
+cache_dir = /var/cache/pandaserver
+
+
+
+##########################
+#
+# DDM parameters
+#
+
+# dq2 dir
+dq2_dir = /opt/dq2
+
+# globus dir
+globus_dir = /opt/globus
+
+# path to native python 
+native_python = @@virtual_env@@/usr/bin
+
+# path to python for lfc client (/data/atlpan/bin/python cannot be used due to lack of libpythonX.Y.so)
+native_python32 = @@virtual_env@@/usr/bin
+
+# location for Panda common
+pandaCommon_dir = @@install_purelib@@/pandacommon
+
+# location for Panda server
+pandaPython_dir = @@install_purelib@@/pandaserver
+
+# location for LFCclient
+lfcClient_dir = %(pandaPython_dir)s/brokerage
+
+# home dir to change CWD
+home_dir_cwd = /home/atlpan
+
+
+
+##########################
+#
+# Database parameters
+#
+
+# host
+dbhost = ADCR_PANDA
+
+# user
+dbuser = ATLAS_PANDA_WRITER
+
+# password
+dbpasswd = FIXME
+
+# database
+dbname = PandaDB
+
+# number of connections
+nDBConnection = 2
+
+# number of connections for FastCGI/WSGI
+nDBConForFastCGIWSGI = 1
+
+# use timeout
+usedbtimeout = True
+
+# timout value
+dbtimeout = 300
+
+# verbose in bridge
+dbbridgeverbose = False
+
+# SQL dumper
+dump_sql = False
+
+
+
+##########################
+#
+# MySQL DB parameters: don't use for Oracle
+#
+#backend = mysql
+
+#schemaPANDA = ATLAS_PANDA
+#schemaMETA = ATLAS_PANDAMETA
+#schemaGRISLI = ATLAS_GRISLI
+#schemaPANDAARCH = ATLAS_PANDAARCH
+#schemaJEDI = ATLAS_PANDA
+#schemaDEFT = ATLAS_DEFT
+
+#dbhostmysql = pandawms.org
+#dbportmysql = 23306
+#dbnamemysql = pandadb1
+#dbusermysql = pansrusr1
+#dbpasswdmysql = FIXME
+
+
+##########################
+#
+# Panda server parameters
+#
+
+# port for https
+pserverport = 25443
+
+# port for http
+pserverporthttp = 25080
+
+# port for cache
+pserverportcache = 25085
+
+# alias
+pserveralias = pandaserver.cern.ch
+
+# space to keep key pairs
+keyDir = /var/keys
+
+
+
+##########################
+#
+# proxy parameters
+#
+
+# http 
+httpProxy = ""
+
+
+
+##########################
+#
+# E-mail DB parameters
+#
+
+# database name for local caching
+emailDB = %(logdir)s/email_db
+
+# SMTP server
+emailSMTPsrv = cernmx.cern.ch
+
+# sender address for notification
+emailSender = atlas-adc-panda-no-reply@cern.ch
+
+# login name for SMTP
+emailLogin  = atlpan
+
+# login password for SMTP
+emailPass = FIXME
+
+
+
+##########################
+#
+# parameters for dynamic task assignment 
+#
+
+# enable dynamic task assignment 
+enableDynamicTA = True
+
+
+
+##########################
+#
+# parameters for redirection service
+#
+
+# enable redirection service
+enableRedirection = False
+
+
+
+##########################
+#
+# parameters for FastCGI/WSGI
+#
+
+# use FastCGI with flup
+useFastCGI = False
+
+# use WSGI without flup
+useWSGI = True
+
+# verbose in entry point
+entryVerbose = False
+
+
+##########################
+#
+# nRunning parameters
+#
+
+# interval
+nrun_interval = 5
+
+# the number of hosts
+nrun_hosts = 3
+
+# serial number
+nrun_snum = 999
+
+
+
+##########################
+#
+# Cassandra
+#
+
+# use Cassandra for PandaCache
+cacheUseCassandra = False
+
+# ignore Cassandra error
+cacheIgnoreCassandraError = True
+
+# keyspace for PandaCache
+cacheKeySpace = PandaCacheKeySpace
+
+# column family for files
+cacheFileTable = FileTable
+
+
+
+##########################
+#
+# Job Status Monitor
+#
+
+# enable job status change monitoring
+record_statuschange = True
+
+
+
+##########################
+#
+# JEDI
+#
+
+# use JEDI
+useJEDI = False
+
+
+
+##########################
+#
+# Proxy Cache
+#
+
+# use Proxy Cache
+useProxyCache = False
+
+
+
+##########################
+#
+# Plugin setup
+#
+
+# plugins for Adder. format=vo1(|vo2(vo3...):moduleName:className(,vo4...) 
+adder_plugins = local:dataservice.AdderDummyPlugin:AdderDummyPlugin
+
+# plugins for Setupper. format=vo1(|vo2(vo3...):moduleName:className(,vo4...) 
+setupper_plugins = local:dataservice.SetupperDummyPlugin:SetupperDummyPlugin
+
+# plugins for Closer
+closer_plugins = atlas:dataservice.CloserAtlasPlugin:CloserAtlasPlugin
+
+
+
+##########################
+#
+# Panda Proxy
+#
+
+# URL
+pandaProxy_URLSSL = https://aipanda084.cern.ch:25128/proxy/panda
+
+# CA cert
+pandaProxy_ca_certs = /etc/pki/tls/certs/CERN-bundle.pem
+#########################
+#
+# Default site
+#
+
+#def_sitename   = BNL_ATLAS_1
+#def_queue   = ANALY_BNL_ATLAS_1
+#def_nickname   = BNL_ATLAS_1-condor
+#def_dq2url     = http://dms02.usatlas.bnl.gov:8000/dq2/
+#def_ddm        = PANDA_UNDEFINED
+#def_type       = production
+#def_status     = online
+#def_gatekeeper = gridgk01.racf.bnl.gov
+
+
+
+
+##########################
+#
+# Database parameters for EventIndex
+#
+
+# host
+ei_dbhost = ATLAS_EI
+
+# user
+ei_dbuser = ATLAS_EI_PANDA_R
+
+# password
+ei_dbpasswd = FIXME
+
+# database
+ei_dbname = PandaDB
+
+# timout value
+ei_dbtimeout = 300
+
+
+
+
+##########################
+#
+# Parameters for token-based authentication
+#
+
+token_authType = None
+
+token_issuers = https://aipanda026.cern.ch/scitokens
+
+token_audience = https://pandaserver.cern.ch
