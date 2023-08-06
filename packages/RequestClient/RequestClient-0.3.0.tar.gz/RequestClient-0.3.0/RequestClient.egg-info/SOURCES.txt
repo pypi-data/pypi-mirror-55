@@ -1,0 +1,11 @@
+README.md
+setup.cfg
+setup.py
+RequestClient/GraphQLClient.py
+RequestClient/RestRequestClient.py
+RequestClient/__init__.py
+RequestClient.egg-info/PKG-INFO
+RequestClient.egg-info/SOURCES.txt
+RequestClient.egg-info/dependency_links.txt
+RequestClient.egg-info/requires.txt
+RequestClient.egg-info/top_level.txt
