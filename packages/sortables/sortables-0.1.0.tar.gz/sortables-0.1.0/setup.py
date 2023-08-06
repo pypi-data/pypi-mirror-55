@@ -1,0 +1,24 @@
+# -*- coding: utf-8 -*-
+from distutils.core import setup
+
+packages = \
+['sortables']
+
+package_data = \
+{'': ['*']}
+
+setup_kwargs = {
+    'name': 'sortables',
+    'version': '0.1.0',
+    'description': 'sanely sortable Python data structures',
+    'long_description': "## sortables\n\n\nNot to be confused with `sortable`, which is a Grappelli admin UI sorter for Django.\n\n**Note:** I have not yet sorted out (hee hee) the compatible Python versions, but this does use type hints, so it will end up being at least 3.5+. There are also some places in the code that depend on the new specification of retained order in dicts, being a Python 3.7+ specific feature. I have not yet decided whether to fix this for 3.5, 3.6 compatibility.\n\nThis initial (very alpha) state of the project was developed in Python 3.7.2.\n\n### Sanely sortable Python data structures\n\nSort Python data structures without awkward itemgetter, attrgettr, or lambda syntax.\n\nPython's sorting syntax is not always expressive or easy to remember. Why do this:\n\n```\nsorted(d, key=operator.itemgetter(1))\n```\n\nwhen you could do this?\n\n```\nd.sorted(by_value=True)\n```\n\nOr how about sorting a named tuple. Instead of this:\n\n```\nsorted(t, key=operator.attrgetter('myproperty'))\n```\n\nwe can do this:\n\n```\nt.sorted(key='myproperty')\n```\n\n... and more.\n\n### Sort a series of tuples by an internal index.\n\n```\n>>> t = ( ('apples', 3), ('oranges', 1), ('bananas', 2) )\n>>> st = Sortable(t)\n>>> st.sorted()\n[('apples', 3), ('bananas', 2), ('oranges', 1)]\n>>> st.sorted(key=1)\n[('oranges', 1), ('bananas', 2), ('apples', 3)]\n>>> st.sorted(key=1, reverse=True)\n[('apples', 3), ('bananas', 2), ('oranges', 1)]\n```\n\n### Sort a dict by value.\n\n```\n>>> sd = Sortable(dict(t))\n>>> sd.sorted()\n{'apples': 3, 'bananas': 2, 'oranges': 1}\n>>> sd.sorted(by_value=True)\n{'oranges': 1, 'bananas': 2, 'apples': 3}\n>>> sd.sorted(by_value=True, reverse=True)\n{'apples': 3, 'bananas': 2, 'oranges': 1}\n```\n\n### Sort a series of named tuples by internal named property.\n\n```\n>>> from collections import namedtuple\n>>> Fruit = namedtuple('Fruit', ['name', 'number'])\n>>> sl = Sortable([ Fruit(name='apples', number=3), Fruit(name='bananas', number=2), Fruit(name='oranges', number=1) ])\n>>> sl.sorted()\n[Fruit(name='apples', number=3), Fruit(name='bananas', number=2), Fruit(name='oranges', number=1)]\n>>> sl.sorted(key='number')\n[Fruit(name='oranges', number=1), Fruit(name='bananas', number=2), Fruit(name='apples', number=3)]\n>>> sl.sorted(key='number', reverse=True)\n[Fruit(name='apples', number=3), Fruit(name='bananas', number=2), Fruit(name='oranges', number=1)]\n```\n\n### Sort by method call.\n\n```\n>>> class Fruit(object):\n...     def __init__(self, name, number):\n...         self.name = name\n...         self.number = number\n...     def get_name(self):\n...         return self.name\n...     def get_number(self):\n...         return self.number\n...     def __repr__(self):\n...         return '%s:%s' % (self.name, self.number)\n...\n>>> s = Sortable(set([Fruit('apples', 3), Fruit('bananas', 2), Fruit('oranges', 1)]))\n>>> s.sorted(method='get_name')\n[apples:3, bananas:2, oranges:1]\n>>> s.sorted(method='get_number')\n[oranges:1, bananas:2, apples:3]\n>>> s.sorted(method='get_name', reverse=True)\n[oranges:1, bananas:2, apples:3]\n```\n\n## Goals & philsophy\n\n * create an intuitive and readable sorting syntax\n * be as unabtrusive as possible\n * don't break existing sort approaches\n * don't try to be all things to all sorting needs\n\nToward these ideals, sortables:\n\n * replaces awkward operator and lambda syntax with a simple readable syntax\n * uses a single Sortable factory for all series data structures and dicts\n * mimics (and internally utilizes) Python's `sorted` builtin, but does not replace it\n * focuses on the most common use cases. Fall back to the builtin `sorted` as needed.\n\n## `sorted` returns a Sortable\n\nA Sortable's sorted method, as well as a Sortable dict's `items` method return\na Sortable series. As with the `sorted` builtin, the series type is generally\na list.\n\n## Regarding efficiency\n\nIn general, you can expect this to work as well as the `sorted` builtin since\nthat is what it uses internally.\n\nSortable `sorted` methods always return a copy of the data. This also goes for\nthe Sortable dict `items` method, which differs from the view-based `dict_items`\nof a regular dictionary.\n\nI have used operator getters rather than lambda based key interpretations mainly\nbecause this was slightly faster for me in the few timeit tests that I ran to\nmake the decision.\n",
+    'author': 'Scott Bradley',
+    'author_email': 'scott@scott2b.com',
+    'url': 'https://github.com/scott2b/sortables',
+    'packages': packages,
+    'package_data': package_data,
+    'python_requires': '>=3.7,<4.0',
+}
+
+
+setup(**setup_kwargs)
