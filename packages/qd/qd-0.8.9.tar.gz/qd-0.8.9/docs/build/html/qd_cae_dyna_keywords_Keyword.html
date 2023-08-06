@@ -1,0 +1,1193 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Keyword &mdash; qd 0.8.9 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="IncludeKeyword" href="qd_cae_dyna_keywords_IncludeKeyword.html" />
+    <link rel="prev" title="Keyword Types" href="qd_cae_dyna_keywords.html" /> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.4/chroma.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> qd
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.8.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="qd_cae_dyna.html">qd.cae.dyna</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_Binout.html">Binout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_D3plot.html">D3plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_RawD3plot.html">RawD3plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_KeyFile.html">KeyFile</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="qd_cae_dyna_keywords.html">Keyword Types</a><ul class="current">
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Keyword</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qd_cae_dyna_keywords_IncludeKeyword.html">IncludeKeyword</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qd_cae_dyna_keywords_IncludePathKeyword.html">IncludePathKeyword</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qd_cae_dyna_keywords_NodeKeyword.html">NodeKeyword</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qd_cae_dyna_keywords_ElementKeyword.html">ElementKeyword</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qd_cae_dyna_keywords_PartKeyword.html">PartKeyword</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_FEMFile.html">FEMFile (D3plot and KeyFile)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_Element.html">Element</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_Node.html">Node</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_Part.html">Part</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_functions.html">Additional Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="qd_cae_beta.html">qd.cae.beta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qd_numerics.html">qd.numerics</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="compilation_guide.html">Compilation Guide</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="developer_guide.html">Developer Guide</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">qd</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="qd_cae_dyna.html">qd.cae.dyna</a> &raquo;</li>
+        
+          <li><a href="qd_cae_dyna_keywords.html">Keyword Types</a> &raquo;</li>
+        
+      <li>Keyword</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/qd_cae_dyna_keywords_Keyword.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="keyword">
+<h1>Keyword<a class="headerlink" href="#keyword" title="Permalink to this headline">¶</a></h1>
+<p>This class is used for almost all Keywords. It simply saves and manipulates the lines of the Keyword smartly and also proides multiple means of manipulation. For reading these keywords, please enable the argument <cite>read_keywords</cite> in the KeyFile constructor.</p>
+<dl class="class">
+<dt id="qd.cae.dyna.Keyword">
+<em class="property">class </em><code class="sig-prename descclassname">qd.cae.dyna.</code><code class="sig-name descname">Keyword</code><span class="sig-paren">(</span><em class="sig-param">lines</em>, <em class="sig-param">position=0</em><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>lines</strong><span class="classifier">str or list of str</span></dt><dd><p>Keyword data for initalization. May contain the lines of
+the keyword either as list or as one string. If provided
+one string, it is splitted at the line ending symbols.</p>
+</dd>
+<dt><strong>position</strong><span class="classifier">int</span></dt><dd><p>line index at which the keyword shall be positioned. This
+will be the sorting index in a KeyFile.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>keyword</strong><span class="classifier">Keyword</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">qd.cae.dyna</span> <span class="k">import</span> <span class="n">Keyword</span>
+<span class="gp">&gt;&gt;&gt; </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">$------------------------------------------</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">$ Parts, Sections, and Materials</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">$------------------------------------------</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">*PART</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">$# title</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">engine part number one </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">$#     pid     secid       mid     eosid   </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">   2000001   2000001   2000017</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;&#39;&#39;</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span> <span class="o">=</span> <span class="n">Keyword</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="p">[</span><span class="s2">&quot;pid&quot;</span><span class="p">]</span>
+<span class="go">2000001</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="go">&#39;engine part number one &#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2000002</span>
+</pre></div>
+</div>
+<dl class="field-list simple">
+<dt class="field-odd">Attributes</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><a class="reference internal" href="#qd.cae.dyna.Keyword.field_size" title="qd.cae.dyna.Keyword.field_size"><code class="xref py py-obj docutils literal notranslate"><span class="pre">field_size</span></code></a></dt><dd><p>field_size</p>
+</dd>
+<dt><a class="reference internal" href="#qd.cae.dyna.Keyword.position" title="qd.cae.dyna.Keyword.position"><code class="xref py py-obj docutils literal notranslate"><span class="pre">position</span></code></a></dt><dd><p>Notes —– Line index of the <code class="docutils literal notranslate"><span class="pre">Keyword</span></code>.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Methods</p>
+<table class="longtable docutils align-default">
+<colgroup>
+<col style="width: 10%" />
+<col style="width: 90%" />
+</colgroup>
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="#qd.cae.dyna.Keyword.align" title="qd.cae.dyna.Keyword.align"><code class="xref py py-obj docutils literal notranslate"><span class="pre">align</span></code></a></p></td>
+<td><p>Type of alignment for comment names and fields:</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#qd.cae.dyna.Keyword.append_line" title="qd.cae.dyna.Keyword.append_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">append_line</span></code></a>(line)</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#qd.cae.dyna.Keyword.get_card_valueByIndex" title="qd.cae.dyna.Keyword.get_card_valueByIndex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_card_valueByIndex</span></code></a>(iCard, iField[, …])</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#qd.cae.dyna.Keyword.get_card_valueByName" title="qd.cae.dyna.Keyword.get_card_valueByName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_card_valueByName</span></code></a>(name[, field_size])</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#qd.cae.dyna.Keyword.get_keyword_name" title="qd.cae.dyna.Keyword.get_keyword_name"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_keyword_name</span></code></a>()</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#qd.cae.dyna.Keyword.get_line" title="qd.cae.dyna.Keyword.get_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_line</span></code></a>()</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#qd.cae.dyna.Keyword.get_lines" title="qd.cae.dyna.Keyword.get_lines"><code class="xref py py-obj docutils literal notranslate"><span class="pre">get_lines</span></code></a>()</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#qd.cae.dyna.Keyword.has_long_fields" title="qd.cae.dyna.Keyword.has_long_fields"><code class="xref py py-obj docutils literal notranslate"><span class="pre">has_long_fields</span></code></a>()</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#qd.cae.dyna.Keyword.insert_line" title="qd.cae.dyna.Keyword.insert_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">insert_line</span></code></a>(iLine, line)</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#qd.cae.dyna.Keyword.reformat_all" title="qd.cae.dyna.Keyword.reformat_all"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reformat_all</span></code></a>([skip_cards])</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#qd.cae.dyna.Keyword.reformat_field" title="qd.cae.dyna.Keyword.reformat_field"><code class="xref py py-obj docutils literal notranslate"><span class="pre">reformat_field</span></code></a>(iCard, iField[, field_size, …])</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#qd.cae.dyna.Keyword.remove_line" title="qd.cae.dyna.Keyword.remove_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">remove_line</span></code></a>(iLine)</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#qd.cae.dyna.Keyword.set_card_valueByDict" title="qd.cae.dyna.Keyword.set_card_valueByDict"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_card_valueByDict</span></code></a>(fields[, field_size])</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#qd.cae.dyna.Keyword.set_card_valueByIndex" title="qd.cae.dyna.Keyword.set_card_valueByIndex"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_card_valueByIndex</span></code></a>(iCard, iField, value)</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#qd.cae.dyna.Keyword.set_card_valueByName" title="qd.cae.dyna.Keyword.set_card_valueByName"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_card_valueByName</span></code></a>(name, value[, field_size])</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#qd.cae.dyna.Keyword.set_line" title="qd.cae.dyna.Keyword.set_line"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_line</span></code></a>(iLine, line)</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-odd"><td><p><a class="reference internal" href="#qd.cae.dyna.Keyword.set_lines" title="qd.cae.dyna.Keyword.set_lines"><code class="xref py py-obj docutils literal notranslate"><span class="pre">set_lines</span></code></a>(lines)</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="#qd.cae.dyna.Keyword.switch_field_size" title="qd.cae.dyna.Keyword.switch_field_size"><code class="xref py py-obj docutils literal notranslate"><span class="pre">switch_field_size</span></code></a>([skip_cards])</p></td>
+<td><p><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><p></p></dd>
+</dl>
+</p></td>
+</tr>
+</tbody>
+</table>
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.__init__">
+<code class="sig-name descname">__init__</code><span class="sig-paren">(</span><em class="sig-param">lines</em>, <em class="sig-param">position=0</em><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.__init__" title="Permalink to this definition">¶</a></dt>
+<dd><p>Keyword(lines, position=0)</p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>lines</strong><span class="classifier">str or list of str</span></dt><dd><p>Keyword data for initalization. May contain the lines of
+the keyword either as list or as one string. If provided
+one string, it is splitted at the line ending symbols.</p>
+</dd>
+<dt><strong>position</strong><span class="classifier">int</span></dt><dd><p>line index at which the keyword shall be positioned. This
+will be the sorting index in a KeyFile.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>keyword</strong><span class="classifier">Keyword</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">qd.cae.dyna</span> <span class="k">import</span> <span class="n">Keyword</span>
+<span class="gp">&gt;&gt;&gt; </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">data</span> <span class="o">=</span> <span class="s1">&#39;&#39;&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">$------------------------------------------</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">$ Parts, Sections, and Materials</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">$------------------------------------------</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">*PART</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">$# title</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">engine part number one </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">$#     pid     secid       mid     eosid   </span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">   2000001   2000001   2000017</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="s1">&#39;&#39;&#39;</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span> <span class="o">=</span> <span class="n">Keyword</span><span class="p">(</span><span class="n">data</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="p">[</span><span class="s2">&quot;pid&quot;</span><span class="p">]</span>
+<span class="go">2000001</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="go">&#39;engine part number one &#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2000002</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.__setitem__">
+<code class="sig-name descname">__setitem__</code><span class="sig-paren">(</span><em class="sig-param">args</em>, <em class="sig-param">value</em><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.__setitem__" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>Please consider using ``set_card_valueByIndex`` or ``set_card_valueByName``</em></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>args</strong><span class="classifier">str, int or tuple</span></dt><dd><dl class="simple">
+<dt>Possible arguments are:</dt><dd><ul class="simple">
+<li><p>card index (int)</p></li>
+<li><p>card and field index (int,int)</p></li>
+<li><p>card index, field index and field size (int,int,int)</p></li>
+<li><p>field name (str)</p></li>
+<li><p>field name and field size (str,int)</p></li>
+</ul>
+</dd>
+</dl>
+</dd>
+<dt><strong>value</strong><span class="classifier">object</span></dt><dd><p>Value to bet set. Must be convertible to string.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><dl class="simple">
+<dt>ValueError</dt><dd><p>if indexes are out of bounds or field name not found</p>
+</dd>
+<dt>RuntimeError</dt><dd><p>if arguments are not castable to int</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function is just a quick, dirty wrapper for the member function
+<code class="docutils literal notranslate"><span class="pre">set_card_value</span></code>. It is recommended to use <code class="docutils literal notranslate"><span class="pre">set_card_value</span></code> instead,
+since it’s much clearer.</p>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># keyword is from constructor example</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="n">Im</span> <span class="n">too</span> <span class="n">long</span> <span class="n">hihihi</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">]</span>
+<span class="go">&#39;Im too lon&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">,</span><span class="mi">50</span><span class="p">]</span> <span class="o">=</span> <span class="n">Im</span> <span class="n">too</span> <span class="n">long</span> <span class="n">hihihi</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="p">[</span><span class="s2">&quot;title&quot;</span><span class="p">]</span>
+<span class="go">&#39;Im too long hihihi&#39;</span>
+</pre></div>
+</div>
+<p>Set value from indexes:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Set full keyword line to this&quot;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span> <span class="o">=</span> <span class="mi">2001</span> <span class="c1"># pid</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">50</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;Set 50 chars to this&quot;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.__getitem__">
+<code class="sig-name descname">__getitem__</code><span class="sig-paren">(</span><em class="sig-param">arg1</em>, <em class="sig-param">arg2</em>, <em class="sig-param">field_size=0</em><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.__getitem__" title="Permalink to this definition">¶</a></dt>
+<dd><p><em>Abreviation for `get_card_valueByName` and `get_card_valueByIndex`</em></p>
+<dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>arg1</strong><span class="classifier">int or str</span></dt><dd><p>either card index (starting with 0) or field name</p>
+</dd>
+<dt><strong>arg2</strong><span class="classifier">int</span></dt><dd><p>if first argument is a card index, then this is the 
+optional field index, otherwise full card will be returned</p>
+</dd>
+<dt><strong>field_size</strong><span class="classifier">int</span></dt><dd><p>the number of characters, which can be found in the 
+card field.</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>entry</strong><span class="classifier">int, float or str</span></dt><dd><p>field value</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>ValueError</dt><dd><p>if indexes are out of bounds or name not found</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function is just a quick, dirty wrapper for the member function
+<cite>get_card_value</cite>.</p>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># keyword is from constructor example</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="p">[</span><span class="s2">&quot;pid&quot;</span><span class="p">]</span>
+<span class="go">2000001</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="p">[</span><span class="s2">&quot;yay&quot;</span><span class="p">]</span>
+<span class="go">ValueError: Can not find field: yay in comments.</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
+<span class="go">&#39;engine part number one &#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">]</span>
+<span class="go">&#39;engine par&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">50</span><span class="p">]</span>
+<span class="go">&#39;engine part number one&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.__repr__">
+<code class="sig-name descname">__repr__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.__repr__" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>repr</strong><span class="classifier">str</span></dt><dd><p>representation string of the keyword</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="kn">from</span> <span class="nn">qd.cae.dyna</span> <span class="k">import</span> <span class="n">KeyFile</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kf</span> <span class="o">=</span> <span class="n">KeyFile</span><span class="p">(</span><span class="s2">&quot;path/to/keyfile&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kf</span><span class="p">[</span><span class="s2">&quot;*SET_NODE_ADD&quot;</span><span class="p">]</span>
+<span class="go">[&lt;Keyword: *SET_NODE_ADD&gt;]</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.__iter__">
+<code class="sig-name descname">__iter__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.__iter__" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>line</strong><span class="classifier">str</span></dt><dd><p>line of the keyword buffer</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">kw</span><span class="p">:</span>
+<span class="gp">&gt;&gt;&gt; </span>   <span class="nb">print</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.__str__">
+<code class="sig-name descname">__str__</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.__str__" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>keyword_str</strong><span class="classifier">str</span></dt><dd><p>keyword as one string</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kw_as_string</span> <span class="o">=</span> <span class="nb">str</span><span class="p">(</span><span class="n">kw</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">kw</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="class">
+<dt id="qd.cae.dyna.Keyword.align">
+<em class="property">class </em><code class="sig-name descname">align</code><a class="headerlink" href="#qd.cae.dyna.Keyword.align" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="simple">
+<dt>Type of alignment for comment names and fields:</dt><dd><ul class="simple">
+<li><p>left</p></li>
+<li><p>right</p></li>
+<li><p>middle</p></li>
+</ul>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># The alignment is always global</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Keyword</span><span class="o">.</span><span class="n">field_alignment</span> <span class="o">=</span> <span class="n">Keyword</span><span class="o">.</span><span class="n">align</span><span class="o">.</span><span class="n">middle</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.append_line">
+<code class="sig-name descname">append_line</code><span class="sig-paren">(</span><em class="sig-param">line</em><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.append_line" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>line</strong><span class="classifier">str</span></dt><dd><p>line to append to the internal string buffer</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">append_line</span><span class="p">(</span><span class="s2">&quot;$ Im a comment&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.field_size">
+<em class="property">property </em><code class="sig-name descname">field_size</code><a class="headerlink" href="#qd.cae.dyna.Keyword.field_size" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>ValueError</dt><dd><p>if the library doesn’t like you for setting
+a negative field size.</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>Size of the fields in the keyword. Most cards
+have a field size of 10. Unfortunately some
+cards have a deviating field size (e.g. 8) 
+and there is no automatic way to check for 
+this.</p>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># the field size of the card</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">field_size</span>
+<span class="go">10</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># some keywords use 8 chars per field</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">field_size</span><span class="o">=</span><span class="mi">8</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.get_card_valueByIndex">
+<code class="sig-name descname">get_card_valueByIndex</code><span class="sig-paren">(</span><em class="sig-param">iCard</em>, <em class="sig-param">iField</em>, <em class="sig-param">field_size=0</em><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.get_card_valueByIndex" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>iCard</strong><span class="classifier">int</span></dt><dd><p>card index</p>
+</dd>
+<dt><strong>iField</strong><span class="classifier">int</span></dt><dd><p>field index</p>
+</dd>
+<dt><strong>field_size</strong><span class="classifier">int</span></dt><dd><p>number of chars to read</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>entry</strong><span class="classifier">int, float or str</span></dt><dd><p>field value</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>ValueError</dt><dd><p>if indexes are out of bounds</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># keyword is from constructor example</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># get pid</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">get_card_value</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> 
+<span class="go">2000001</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">get_card_value</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span> 
+<span class="go">&#39;engine part number one &#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">get_card_value</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span>
+<span class="go">&#39;engine par&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">get_card_value</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">50</span><span class="p">)</span> 
+<span class="go">&#39;engine part number one&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.get_card_valueByName">
+<code class="sig-name descname">get_card_valueByName</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">field_size=0</em><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.get_card_valueByName" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong><span class="classifier">str</span></dt><dd><p>name of the field in comments</p>
+</dd>
+<dt><strong>field_size</strong><span class="classifier">int</span></dt><dd><p>number of chars to read</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>entry</strong><span class="classifier">int, float or str</span></dt><dd><p>field value</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>ValueError</dt><dd><p>if name not found in the previous comment line</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># keyword is from constructor example</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># get pid</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">get_card_value</span><span class="p">(</span><span class="s2">&quot;pid&quot;</span><span class="p">)</span> 
+<span class="go">2000001</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.get_keyword_name">
+<code class="sig-name descname">get_keyword_name</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.get_keyword_name" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>keyword_name</strong><span class="classifier">str</span></dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><dl class="simple">
+<dt>RuntimeError</dt><dd><p>if keyword definition can not be found in line buffer</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>According to LS-Dyna, char 0 in the line must be a *</p>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">get_keyword_name</span><span class="p">()</span>
+<span class="go">&#39;*PART&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.get_line">
+<code class="sig-name descname">get_line</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.get_line" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>iLine</strong><span class="classifier">int</span></dt><dd><p>index of the line</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Returns</dt>
+<dd class="field-even"><dl class="simple">
+<dt><strong>line</strong><span class="classifier">str</span></dt><dd></dd>
+</dl>
+</dd>
+<dt class="field-odd">Raises</dt>
+<dd class="field-odd"><dl class="simple">
+<dt>ValueError</dt><dd><p>if iLine out of bounds</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">get_line</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="go">&#39;$# title&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.get_lines">
+<code class="sig-name descname">get_lines</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.get_lines" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>lines</strong><span class="classifier">list of str</span></dt><dd><p>lines of the keyword</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">list_of_lines</span> <span class="o">=</span> <span class="n">kw</span><span class="o">.</span><span class="n">get_lines</span><span class="p">()</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.has_long_fields">
+<code class="sig-name descname">has_long_fields</code><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.has_long_fields" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Returns</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>has_long_fields</strong><span class="classifier">bool</span></dt><dd><p>whether the card uses double size fields or not</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><dl class="simple">
+<dt>RuntimeError</dt><dd><p>if keyword definition can not be found in line buffer</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>A card uses double sized fields, if + is appended to the
+keywords name.</p>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">has_long_fields</span><span class="p">()</span>
+<span class="go">False</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">get_keyword_name</span><span class="p">()</span>
+<span class="go">&#39;*PART&#39;</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.insert_line">
+<code class="sig-name descname">insert_line</code><span class="sig-paren">(</span><em class="sig-param">iLine</em>, <em class="sig-param">line</em><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.insert_line" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>iLine</strong><span class="classifier">int</span></dt><dd><p>index of the line</p>
+</dd>
+<dt><strong>line</strong><span class="classifier">str</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">insert_line</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;$ comment&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.position">
+<em class="property">property </em><code class="sig-name descname">position</code><a class="headerlink" href="#qd.cae.dyna.Keyword.position" title="Permalink to this definition">¶</a></dt>
+<dd><p class="rubric">Notes</p>
+<p>Line index of the <code class="docutils literal notranslate"><span class="pre">Keyword</span></code>. This is used for sorting
+before writing to a file.</p>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">position</span> <span class="o">=</span> <span class="mi">438</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">position</span>
+<span class="go">438</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.reformat_all">
+<code class="sig-name descname">reformat_all</code><span class="sig-paren">(</span><em class="sig-param">skip_cards=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.reformat_all" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>skip_cards</strong><span class="classifier">list of int</span></dt><dd><p>indexes of cards not to touch</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function reformats the card regarding the 
+global formatting rules. 
+<em>BEWARE</em> skip cards which have a field with unnormal size.</p>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Keyword</span><span class="o">.</span><span class="n">name_delimiter_used</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Keyword</span><span class="o">.</span><span class="n">name_delimiter</span> <span class="o">=</span> <span class="s1">&#39;|&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Keyword</span><span class="o">.</span><span class="n">name_spacer</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Keyword</span><span class="o">.</span><span class="n">name_alignment</span> <span class="o">=</span> <span class="n">Keyword</span><span class="o">.</span><span class="n">align</span><span class="o">.</span><span class="n">right</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Keyword</span><span class="o">.</span><span class="n">field_alignment</span> <span class="o">=</span> <span class="n">Keyword</span><span class="o">.</span><span class="n">align</span><span class="o">.</span><span class="n">right</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">reformat_all</span><span class="p">(</span><span class="n">skip_cards</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">kw</span><span class="p">)</span>
+<span class="go">$------------------------------------------</span>
+<span class="go">$ Parts, Sections, and Materials</span>
+<span class="go">$------------------------------------------</span>
+<span class="go">*PART</span>
+<span class="go">$# title</span>
+<span class="go">engine part number one </span>
+<span class="go">$------pid|----secid|------mid|----eosid|</span>
+<span class="go">       100       200   2000017</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.reformat_field">
+<code class="sig-name descname">reformat_field</code><span class="sig-paren">(</span><em class="sig-param">iCard</em>, <em class="sig-param">iField</em>, <em class="sig-param">field_size=0</em>, <em class="sig-param">format_field=True</em>, <em class="sig-param">format_name=True</em><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.reformat_field" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>iCard</strong><span class="classifier">int</span></dt><dd><p>card index</p>
+</dd>
+<dt><strong>iField</strong><span class="classifier">int</span></dt><dd><p>field index</p>
+</dd>
+<dt><strong>field_size</strong><span class="classifier">int</span></dt><dd><p>size of field in chars</p>
+</dd>
+<dt><strong>format_field</strong><span class="classifier">bool</span></dt><dd><p>whether to format the field</p>
+</dd>
+<dt><strong>format_name</strong><span class="classifier">bool</span></dt><dd><p>whether to format the comment name</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><dl class="simple">
+<dt>ValueError</dt><dd><p>if card and field index not found</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function reformats a single card regarding the 
+global formatting rules.</p>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">Keyword</span><span class="o">.</span><span class="n">name_delimiter_used</span> <span class="o">=</span> <span class="kc">True</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Keyword</span><span class="o">.</span><span class="n">name_delimiter</span> <span class="o">=</span> <span class="s1">&#39;|&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Keyword</span><span class="o">.</span><span class="n">name_spacer</span> <span class="o">=</span> <span class="s1">&#39;-&#39;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Keyword</span><span class="o">.</span><span class="n">name_alignment</span> <span class="o">=</span> <span class="n">Keyword</span><span class="o">.</span><span class="n">align</span><span class="o">.</span><span class="n">right</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">Keyword</span><span class="o">.</span><span class="n">field_alignment</span> <span class="o">=</span> <span class="n">Keyword</span><span class="o">.</span><span class="n">align</span><span class="o">.</span><span class="n">right</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">reformat_field</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">,</span><span class="mi">40</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">kw</span><span class="p">)</span>
+<span class="go">$------------------------------------------</span>
+<span class="go">$ Parts, Sections, and Materials</span>
+<span class="go">$------------------------------------------</span>
+<span class="go">*PART</span>
+<span class="go">$----------------------------------title</span>
+<span class="go">                  engine part number one</span>
+<span class="go">$#     pid     secid       mid     eosid   </span>
+<span class="go">       100       200   2000017</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.remove_line">
+<code class="sig-name descname">remove_line</code><span class="sig-paren">(</span><em class="sig-param">iLine</em><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.remove_line" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>iLine</strong><span class="classifier">int</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">remove_line</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.set_card_valueByDict">
+<code class="sig-name descname">set_card_valueByDict</code><span class="sig-paren">(</span><em class="sig-param">fields</em>, <em class="sig-param">field_size=0</em><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.set_card_valueByDict" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>field</strong><span class="classifier">dict</span></dt><dd><p>fields to set, key can be string or indexes</p>
+</dd>
+<dt><strong>field_size</strong><span class="classifier">int</span></dt><dd><p>number of chars to read</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><dl class="simple">
+<dt>ValueError</dt><dd><p>if name or card/field indexes not found</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># keyword is from constructor example</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">fields</span> <span class="o">=</span> <span class="p">{</span><span class="s2">&quot;pid&quot;</span><span class="p">:</span><span class="mi">100</span><span class="p">,</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">):</span><span class="mi">200</span><span class="p">}</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">set_card_valueByDict</span><span class="p">(</span><span class="n">fields</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">kw</span><span class="p">)</span>
+<span class="go">$------------------------------------------</span>
+<span class="go">$ Parts, Sections, and Materials</span>
+<span class="go">$------------------------------------------</span>
+<span class="go">*PART</span>
+<span class="go">$# title</span>
+<span class="go">engine part number one </span>
+<span class="go">$#     pid     secid       mid     eosid   </span>
+<span class="go">       100       200   2000017</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.set_card_valueByIndex">
+<code class="sig-name descname">set_card_valueByIndex</code><span class="sig-paren">(</span><em class="sig-param">iCard</em>, <em class="sig-param">iField</em>, <em class="sig-param">value</em>, <em class="sig-param">name=&quot;&quot;</em>, <em class="sig-param">field_size=0</em><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.set_card_valueByIndex" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>iCard</strong><span class="classifier">int</span></dt><dd><p>card index</p>
+</dd>
+<dt><strong>iField</strong><span class="classifier">int</span></dt><dd><p>field index</p>
+</dd>
+<dt><strong>value</strong><span class="classifier">object</span></dt><dd><p>Value to bet set. Must be convertible to string.</p>
+</dd>
+<dt><strong>name</strong><span class="classifier">str</span></dt><dd><p>name in comments to be set</p>
+</dd>
+<dt><strong>field_size</strong><span class="classifier">int</span></dt><dd><p>number of chars to read</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><dl class="simple">
+<dt>ValueError</dt><dd><p>if indexes are out of bounds</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># keyword is from constructor example</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># set pid</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">set_card_valueByIndex</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">100</span><span class="p">,</span> <span class="n">name</span><span class="o">=</span><span class="s2">&quot;haha&quot;</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">kw</span><span class="p">)</span>
+<span class="go">$------------------------------------------</span>
+<span class="go">$ Parts, Sections, and Materials</span>
+<span class="go">$------------------------------------------</span>
+<span class="go">*PART</span>
+<span class="go">$# title</span>
+<span class="go">engine part number one </span>
+<span class="go">$#    haha     secid       mid     eosid   </span>
+<span class="go">       100   2000001   2000017</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.set_card_valueByName">
+<code class="sig-name descname">set_card_valueByName</code><span class="sig-paren">(</span><em class="sig-param">name</em>, <em class="sig-param">value</em>, <em class="sig-param">field_size=0</em><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.set_card_valueByName" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>name</strong><span class="classifier">str</span></dt><dd><p>name of the field in comments</p>
+</dd>
+<dt><strong>value</strong><span class="classifier">object</span></dt><dd><p>Value to bet set. Must be convertible to string.</p>
+</dd>
+<dt><strong>field_size</strong><span class="classifier">int</span></dt><dd><p>number of chars to read</p>
+</dd>
+</dl>
+</dd>
+<dt class="field-even">Raises</dt>
+<dd class="field-even"><dl class="simple">
+<dt>ValueError</dt><dd><p>if name not found in the previous comment line</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="c1"># keyword is from constructor example</span>
+<span class="go">&gt;&gt;&gt;</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="c1"># set pid</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">set_card_valueByName</span><span class="p">(</span><span class="s2">&quot;pid&quot;</span><span class="p">,</span> <span class="n">value</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="nb">print</span><span class="p">(</span><span class="n">kw</span><span class="p">)</span>
+<span class="go">$------------------------------------------</span>
+<span class="go">$ Parts, Sections, and Materials</span>
+<span class="go">$------------------------------------------</span>
+<span class="go">*PART</span>
+<span class="go">$# title</span>
+<span class="go">engine part number one </span>
+<span class="go">$#     pid     secid       mid     eosid   </span>
+<span class="go">       100   2000001   2000017</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.set_line">
+<code class="sig-name descname">set_line</code><span class="sig-paren">(</span><em class="sig-param">iLine</em>, <em class="sig-param">line</em><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.set_line" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>iLine</strong><span class="classifier">int</span></dt><dd><p>index of the line</p>
+</dd>
+<dt><strong>line</strong><span class="classifier">str</span></dt><dd></dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">set_line</span><span class="p">(</span><span class="mi">4</span><span class="p">,</span> <span class="s2">&quot;blubber&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.set_lines">
+<code class="sig-name descname">set_lines</code><span class="sig-paren">(</span><em class="sig-param">lines</em><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.set_lines" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>lines</strong><span class="classifier">list of str</span></dt><dd><p>set the lines of the line buffer</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">lines</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;*PART&quot;</span><span class="p">,</span><span class="s2">&quot;engine part number one&quot;</span><span class="p">]</span>
+<span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">set_lines</span><span class="p">(</span><span class="n">lines</span><span class="p">)</span>
+</pre></div>
+</div>
+</dd></dl>
+
+<dl class="method">
+<dt id="qd.cae.dyna.Keyword.switch_field_size">
+<code class="sig-name descname">switch_field_size</code><span class="sig-paren">(</span><em class="sig-param">skip_cards=[]</em><span class="sig-paren">)</span><a class="headerlink" href="#qd.cae.dyna.Keyword.switch_field_size" title="Permalink to this definition">¶</a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">Parameters</dt>
+<dd class="field-odd"><dl class="simple">
+<dt><strong>skip_cards</strong><span class="classifier">list of int</span></dt><dd><p>indexes of cards not to touch</p>
+</dd>
+</dl>
+</dd>
+</dl>
+<p class="rubric">Notes</p>
+<p>This function switches the card size between single and
+double sized fields. In the process the global formatting
+rules are applied.
+<em>BEWARE</em> skip cards which have a field with unnormal size.</p>
+<p class="rubric">Examples</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="gp">&gt;&gt;&gt; </span><span class="n">kw</span><span class="o">.</span><span class="n">switch_field_size</span><span class="p">(</span><span class="n">skip_cards</span><span class="o">=</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+</pre></div>
+</div>
+</dd></dl>
+
+</dd></dl>
+
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="qd_cae_dyna_keywords_IncludeKeyword.html" class="btn btn-neutral float-right" title="IncludeKeyword" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="qd_cae_dyna_keywords.html" class="btn btn-neutral float-left" title="Keyword Types" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, C. Diez, D. Toewe
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+  
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100051229-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>

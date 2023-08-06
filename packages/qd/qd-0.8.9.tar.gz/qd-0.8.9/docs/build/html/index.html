@@ -1,0 +1,320 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Welcome to qd’s documentation! &mdash; qd 0.8.9 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="qd.cae.dyna" href="qd_cae_dyna.html" /> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/86/three.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/1.3.4/chroma.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="#" class="icon icon-home"> qd
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.8.9
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul>
+<li class="toctree-l1"><a class="reference internal" href="qd_cae_dyna.html">qd.cae.dyna</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qd_cae_beta.html">qd.cae.beta</a></li>
+<li class="toctree-l1"><a class="reference internal" href="qd_numerics.html">qd.numerics</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="compilation_guide.html">Compilation Guide</a></li>
+</ul>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="developer_guide.html">Developer Guide</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="#">qd</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="#">Docs</a> &raquo;</li>
+        
+      <li>Welcome to qd’s documentation!</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="welcome-to-qd-s-documentation">
+<h1>Welcome to qd’s documentation!<a class="headerlink" href="#welcome-to-qd-s-documentation" title="Permalink to this headline">¶</a></h1>
+<p>qd is python3 library for Computer Aided Engineering (CAE). I’ve developed this library, since I was very unhappy with many expensive commercial software tools in our field of work. I believe many new scientific ideas emerge from freedom and simplicity, therefore the main focus of this project was on a good API and Speed. As a result memory took quite some, so watch you RAM when you load a full vehicle.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>This library is maintained for bugfixes only. Migrate to <a class="reference external" href="https://github.com/lasso-gmbh/lasso-python">lasso-python</a> if possible. Note please, that not all features are available in <a class="reference external" href="https://github.com/lasso-gmbh/lasso-python">lasso-python</a>.</p>
+</div>
+</div>
+<div class="section" id="modules">
+<h1>Modules<a class="headerlink" href="#modules" title="Permalink to this headline">¶</a></h1>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="qd_cae_dyna.html">qd.cae.dyna</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_Binout.html">Binout</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_D3plot.html">D3plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_RawD3plot.html">RawD3plot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_KeyFile.html">KeyFile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_keywords.html">Keyword Types</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="qd_cae_dyna_keywords_Keyword.html">Keyword</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qd_cae_dyna_keywords_IncludeKeyword.html">IncludeKeyword</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qd_cae_dyna_keywords_IncludePathKeyword.html">IncludePathKeyword</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qd_cae_dyna_keywords_NodeKeyword.html">NodeKeyword</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qd_cae_dyna_keywords_ElementKeyword.html">ElementKeyword</a></li>
+<li class="toctree-l3"><a class="reference internal" href="qd_cae_dyna_keywords_PartKeyword.html">PartKeyword</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_FEMFile.html">FEMFile (D3plot and KeyFile)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_Element.html">Element</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_Node.html">Node</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_Part.html">Part</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_dyna_functions.html">Additional Functions</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="qd_cae_beta.html">qd.cae.beta</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="qd_cae_beta.html#metacommunicator">MetaCommunicator</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="qd_numerics.html">qd.numerics</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="qd_numerics.html#sampling">sampling</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="installation">
+<h1>Installation<a class="headerlink" href="#installation" title="Permalink to this headline">¶</a></h1>
+<p>Installation can be done by running:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python -m pip install qd
+</pre></div>
+</div>
+<p>Windows uses precompiled wheels, which includes femzip decompression. Femzip decompression requires the intel libraries <code class="docutils literal notranslate"><span class="pre">libmmd.dll</span></code> and <code class="docutils literal notranslate"><span class="pre">libiomp5.dll</span></code> to be in your system path. For Anaconda Python you can easily install them through:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>conda install icc_rt mkl
+</pre></div>
+</div>
+<p>If the installation fails please check the compilation guide below. Compilation is required especially on Linux.</p>
+</div>
+<div class="section" id="compilation-guide">
+<h1>Compilation Guide<a class="headerlink" href="#compilation-guide" title="Permalink to this headline">¶</a></h1>
+<p>Try installation of the precompiled python wheels in the <a class="reference external" href="https://github.com/qd-cae/qd-cae-python/tree/master/dist">dist folder</a> before compiling it yourself. If your python distribution doesn’t match any of the wheels, then you’re in the right spot here.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="compilation_guide.html">Compilation Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="compilation_guide.html#compilation-on-windows">Compilation on Windows</a></li>
+<li class="toctree-l2"><a class="reference internal" href="compilation_guide.html#compilation-on-linux">Compilation on Linux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="compilation_guide.html#tests">Tests</a></li>
+<li class="toctree-l2"><a class="reference internal" href="compilation_guide.html#hints-on-openmp">Hints on OpenMP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="compilation_guide.html#compilation-with-femzip-support">Compilation with FEMZIP support</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="developer-guide">
+<h1>Developer Guide<a class="headerlink" href="#developer-guide" title="Permalink to this headline">¶</a></h1>
+<p>This section is for anyone, who wants to extend this library or build a new tool from it.</p>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="developer_guide.html">Developer Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="developer_guide.html#compilation">Compilation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer_guide.html#adding-new-classes">Adding new Classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer_guide.html#connecting-c-and-python">Connecting C++ and Python</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer_guide.html#internal-data-structure">Internal Data Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="developer_guide.html#documentation">Documentation</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class="section" id="indices-and-tables">
+<h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
+</ul>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="qd_cae_dyna.html" class="btn btn-neutral float-right" title="qd.cae.dyna" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2017, C. Diez, D. Toewe
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+  
+ 
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-100051229-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+</body>
+</html>
