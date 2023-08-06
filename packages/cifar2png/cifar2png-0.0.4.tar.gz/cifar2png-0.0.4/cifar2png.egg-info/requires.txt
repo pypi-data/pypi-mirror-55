@@ -1,0 +1,6 @@
+numpy
+pathlib
+Pillow>=6.2.0
+requests>=2.20.0
+six
+tqdm
