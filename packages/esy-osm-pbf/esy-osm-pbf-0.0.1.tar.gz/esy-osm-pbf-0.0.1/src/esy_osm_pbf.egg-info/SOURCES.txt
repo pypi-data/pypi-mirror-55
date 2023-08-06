@@ -1,0 +1,11 @@
+README.md
+setup.py
+src/esy/osm/pbf/__init__.py
+src/esy/osm/pbf/file.py
+src/esy/osm/pbf/fileformat_pb2.py
+src/esy/osm/pbf/osmformat_pb2.py
+src/esy_osm_pbf.egg-info/PKG-INFO
+src/esy_osm_pbf.egg-info/SOURCES.txt
+src/esy_osm_pbf.egg-info/dependency_links.txt
+src/esy_osm_pbf.egg-info/requires.txt
+src/esy_osm_pbf.egg-info/top_level.txt
