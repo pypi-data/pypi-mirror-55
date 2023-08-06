@@ -1,0 +1,10 @@
+README.md
+setup.py
+plusplusgael/__init__.py
+plusplusgael/core.py
+plusplusgael.egg-info/PKG-INFO
+plusplusgael.egg-info/SOURCES.txt
+plusplusgael.egg-info/dependency_links.txt
+plusplusgael.egg-info/entry_points.txt
+plusplusgael.egg-info/requires.txt
+plusplusgael.egg-info/top_level.txt

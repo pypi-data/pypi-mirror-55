@@ -1,0 +1,16 @@
+Metadata-Version: 1.1
+Name: plusplusgael
+Version: 0.0.1
+Summary: plusplusgael test
+Home-page: https://github.com/rundimeco/plusplusgael
+Author: UNKNOWN
+Author-email: UNKNOWN
+License: MIT
+Description-Content-Type: text/markdown
+Description: Plus
+        ====
+        
+        Plus is a simple test CLI addition operation manager.  
+        It's based on python (3.6).
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3.6

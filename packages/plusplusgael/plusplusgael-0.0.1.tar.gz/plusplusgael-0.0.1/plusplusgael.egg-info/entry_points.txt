@@ -1,0 +1,3 @@
+[console_scripts]
+plusplusgael = plusplusgael:plus_toto
+
