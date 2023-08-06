@@ -1,0 +1,6 @@
+README.md
+setup.py
+testrun.egg-info/PKG-INFO
+testrun.egg-info/SOURCES.txt
+testrun.egg-info/dependency_links.txt
+testrun.egg-info/top_level.txt
