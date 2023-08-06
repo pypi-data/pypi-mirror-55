@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: fetchcommandwrapper
+Version: 0.8.2
+Summary: Wrapper around Aria2 for portage's FETCHCOMMAND variable
+Home-page: https://github.com/hartwork/fetchcommandwrapper
+Author: Sebastian Pipping
+Author-email: sping@gentoo.org
+License: GPL v3 or later
+Platform: UNKNOWN
+
+UNKNOWN
+
+
