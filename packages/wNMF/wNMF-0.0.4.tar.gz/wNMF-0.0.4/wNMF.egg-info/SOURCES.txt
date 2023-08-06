@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+wNMF/__init__.py
+wNMF/wNMF.py
+wNMF.egg-info/PKG-INFO
+wNMF.egg-info/SOURCES.txt
+wNMF.egg-info/dependency_links.txt
+wNMF.egg-info/requires.txt
+wNMF.egg-info/top_level.txt
