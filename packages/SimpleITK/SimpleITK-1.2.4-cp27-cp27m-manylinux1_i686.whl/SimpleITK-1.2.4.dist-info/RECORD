@@ -1,0 +1,10 @@
+SimpleITK-1.2.4.data/data/NOTICE,sha256=OSPV3Xnxe-rDNDNwb2M_Y8lW7iRdLoLcJKRYL6Kp11E,186
+SimpleITK-1.2.4.data/data/Readme.md,sha256=iltlk4yhy4Q6NS3Pcv2-mNVWVS8esYrC-_Mx4-sun04,5797
+SimpleITK-1.2.4.data/data/LICENSE,sha256=z8d0m5b2O9McPEK1xHG_dWgUBT6EfBDz6wA0F7xSPTA,11358
+SimpleITK/_SimpleITK.so,sha256=SIYq8B-46v5fSm4X4OY-PIoXzPFrHo86QzHAg-7ACm4,191864539
+SimpleITK/SimpleITK.py,sha256=1wyaNwBuOJ-NLEc4XTzRNcXCJuBXtZcNkJ_oTS5H_sw,2105967
+SimpleITK/__init__.py,sha256=gc1079cbFl5PHnEQ1Ra-VfceElNEk4WYoJKQ48pxQyQ,25
+SimpleITK-1.2.4.dist-info/RECORD,,
+SimpleITK-1.2.4.dist-info/METADATA,sha256=TBh8xPgEo6276mR17Zls9NMMf-fopS2v6dv7g6e9BFI,1441
+SimpleITK-1.2.4.dist-info/top_level.txt,sha256=B1KR4Uq5HwDUTeXLYhuUE_Ryfnp5j8Tik9KptJj7Wr8,10
+SimpleITK-1.2.4.dist-info/WHEEL,sha256=XOTNcMnW1rR1qJhBaz_4YXMuewd51qjJVfqe2o2ouvI,107
