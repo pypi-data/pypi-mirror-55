@@ -1,0 +1,181 @@
+################################################################################
+# tests/CMakeLists.txt
+#
+# Part of Project Thrill - http://project-thrill.org
+#
+# Copyright (C) 2015 Timo Bingmann <tb@panthema.net>
+#
+# All rights reserved. Published under the BSD-2 license in the LICENSE file.
+################################################################################
+
+include_directories(SYSTEM ${gtest_SOURCE_DIR}/include ${gtest_SOURCE_DIR})
+
+# macro for building test target programs with correct libraries
+macro(thrill_build_target TARGETNAME)
+
+  add_executable(${TARGETNAME} ${ARGN})
+  target_link_libraries(${TARGETNAME} thrill gtest gtest_main)
+
+endmacro(thrill_build_target)
+
+# macro for building test programs, without main() in gtest_main
+macro(thrill_build_plain PROGNAME)
+
+  string(REPLACE "/" "_" TESTNAME "${PROGNAME}") # replace slashes
+
+  thrill_build_target(${TESTNAME} ${PROGNAME}.cpp ${ARGN})
+
+endmacro(thrill_build_plain)
+
+# macro for building test programs, adding gtest runner in gtest_main
+macro(thrill_build_only PROGNAME)
+
+  # append gtest runner program.
+  thrill_build_plain(${PROGNAME} ${ARGN})
+
+endmacro(thrill_build_only)
+
+# macro for registering test programs: maybe prepend valgrind
+macro(thrill_test_only TESTNAME)
+
+  set(TARGETNAME ${TESTNAME} ${ARGN})
+  string(REPLACE "/" "_" TARGETNAME "${TARGETNAME}") # replace slashes
+  string(REPLACE ";" "_" TARGETNAME "${TARGETNAME}") # stringify list
+
+  if(USE_VALGRIND)
+    # prepend valgrind call
+    add_test(
+      NAME ${TARGETNAME}
+      COMMAND /usr/bin/valgrind ${THRILL_VALGRIND_OPTS}
+      --xml=yes --xml-file=${TESTNAME}.xml
+      ./${TESTNAME} ${ARGN})
+  else()
+    add_test(
+      NAME ${TARGETNAME}
+      COMMAND ${TESTNAME} ${ARGN})
+  endif()
+
+endmacro(thrill_test_only)
+
+# macro for building and running test programs
+macro(thrill_build_test PROGNAME)
+
+  thrill_build_only(${PROGNAME})
+
+  string(REPLACE "/" "_" TESTNAME "${PROGNAME}") # replace slashes
+  thrill_test_only(${TESTNAME})
+
+endmacro(thrill_build_test)
+
+# macro for building and running a group of tests
+macro(thrill_build_test_group TESTNAME)
+
+  string(REPLACE "/" "_" TARGETNAME "${TESTNAME}") # replace slashes
+
+  thrill_build_target(${TARGETNAME} ${ARGN})
+  thrill_test_only(${TARGETNAME})
+
+endmacro(thrill_build_test_group)
+
+### list of tests in subdirectories
+
+thrill_build_test_group(common/tests
+  common/binary_heap_test.cpp
+  common/concurrent_bounded_queue_test.cpp
+  common/concurrent_queue_test.cpp
+  common/function_traits_test.cpp
+  common/hash_test.cpp
+  common/json_logger_test.cpp
+  common/math_test.cpp
+  common/matrix_test.cpp
+  common/qsort_test.cpp
+  common/radix_sort_test.cpp
+  common/reservoir_sampling_test.cpp
+  common/stats_counter_test.cpp
+  common/stats_timer_test.cpp
+  common/thread_barrier_test.cpp
+  common/timed_counter_test.cpp
+  common/uint_types_test.cpp
+  common/zipf_distribution_test.cpp
+  )
+
+thrill_build_test(mem/allocator_test)
+thrill_build_test(mem/pool_test)
+if(NOT MSVC)
+  thrill_build_test(mem/malloc_tracker_test)
+endif()
+
+thrill_build_test(net/binary_builder_test)
+thrill_build_test(net/buffer_test)
+thrill_build_test(net/mock_test)
+if(NOT MSVC)
+  thrill_build_test(net/tcp_test)
+endif()
+if(MPI_FOUND)
+  thrill_build_only(net/mpi_test)
+  # run test with mpirun
+  add_test(net_mpi_test1 ${MPIEXEC} ${MPIEXEC_NUMPROC_FLAG} 1 ${CMAKE_CURRENT_BINARY_DIR}/net_mpi_test)
+  add_test(net_mpi_test2 ${MPIEXEC} ${MPIEXEC_NUMPROC_FLAG} 2 ${CMAKE_CURRENT_BINARY_DIR}/net_mpi_test)
+  add_test(net_mpi_test3 ${MPIEXEC} ${MPIEXEC_NUMPROC_FLAG} 3 ${CMAKE_CURRENT_BINARY_DIR}/net_mpi_test)
+  add_test(net_mpi_test7 ${MPIEXEC} ${MPIEXEC_NUMPROC_FLAG} 7 ${CMAKE_CURRENT_BINARY_DIR}/net_mpi_test)
+  add_test(net_mpi_test8 ${MPIEXEC} ${MPIEXEC_NUMPROC_FLAG} 8 ${CMAKE_CURRENT_BINARY_DIR}/net_mpi_test)
+endif()
+
+thrill_build_test(vfs/sys_file_test)
+thrill_build_plain(vfs/s3_file_example)
+if(THRILL_USE_HDFS3)
+  thrill_build_plain(vfs/hdfs3_file_example)
+endif()
+if(ZLIB_FOUND)
+  thrill_build_test(vfs/gzip_filter_test)
+endif()
+if(BZIP2_FOUND)
+  thrill_build_test(vfs/bzip2_filter_test)
+endif()
+
+thrill_build_test(data/block_queue_test)
+thrill_build_test(data/block_pool_test)
+thrill_build_test(data/file_test)
+thrill_build_test(data/multiplexer_test)
+thrill_build_test(data/serialization_cereal_test)
+thrill_build_test(data/serialization_test)
+
+thrill_build_test(core/bit_stream_test)
+thrill_build_test(core/duplicate_detection_test)
+thrill_build_test(core/reduce_hash_table_test)
+thrill_build_test(core/reduce_post_phase_test)
+thrill_build_test(core/reduce_pre_phase_test)
+thrill_build_test(core/multiway_merge_test)
+
+thrill_build_test(api/groupby_node_test)
+thrill_build_test(api/hyperloglog_test)
+thrill_build_test(api/join_test)
+thrill_build_test(api/merge_node_test)
+thrill_build_test(api/operations_test)
+thrill_build_test(api/read_write_test)
+thrill_build_test(api/reduce_node_test)
+thrill_build_test(api/sort_node_test)
+thrill_build_test(api/stage_builder_test)
+thrill_build_test(api/zip_node_test)
+
+thrill_build_test(examples/k_means_test)
+thrill_build_test(examples/page_rank_test)
+thrill_build_test(examples/select_test)
+thrill_build_test(examples/triangle_count_test)
+thrill_build_test(examples/word_count_test)
+
+### copy input files into tests binary directory: CMAKE_BINARY_DIR/tests/
+
+file(COPY "inputs/" DESTINATION "${CMAKE_CURRENT_BINARY_DIR}/inputs/")
+file(MAKE_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/outputs/")
+file(MAKE_DIRECTORY "${CMAKE_CURRENT_BINARY_DIR}/outputs/binary/")
+
+### limit tests on travis
+
+if(THRILL_ON_TRAVIS AND APPLE)
+  # read_write_test uses too many open files on Travis/MacOS
+  set_tests_properties(api_read_write_test PROPERTIES
+    ENVIRONMENT THRILL_MAX_MOCK_WORKERS=20)
+endif()
+
+################################################################################

@@ -1,0 +1,61 @@
+/***************************************************************************
+ *  foxxll/config.hpp.in
+ *
+ *  Template file processed by cmake to set all define switches for this build
+ *  according to the cmake build options.
+ *
+ *  Part of FOXXLL. See http://foxxll.org
+ *
+ *  Copyright (C) 2012-2013 Timo Bingmann <tb@panthema.net>
+ *  Copyright (C) 2018      Manuel Penschuck <foxxll@manuel.jetzt>
+ *
+ *  Distributed under the Boost Software License, Version 1.0.
+ *  (See accompanying file LICENSE_1_0.txt or copy at
+ *  http://www.boost.org/LICENSE_1_0.txt)
+ **************************************************************************/
+
+#ifndef FOXXLL_CONFIG_HEADER
+#define FOXXLL_CONFIG_HEADER
+
+// the FOXXLL library version variables
+#define FOXXLL_VERSION_MAJOR ${FOXXLL_VERSION_MAJOR}
+#define FOXXLL_VERSION_MINOR ${FOXXLL_VERSION_MINOR}
+#define FOXXLL_VERSION_PATCH ${FOXXLL_VERSION_PATCH}
+#define FOXXLL_VERSION_STRING "${FOXXLL_VERSION_STRING}"
+#define FOXXLL_VERSION_PHASE "${FOXXLL_VERSION_PHASE}"
+
+// if this is a git repository, add the refspec and commit sha
+#cmakedefine FOXXLL_VERSION_GIT_REFSPEC "${FOXXLL_VERSION_GIT_REFSPEC}"
+#cmakedefine FOXXLL_VERSION_GIT_SHA1 "${FOXXLL_VERSION_GIT_SHA1}"
+
+#cmakedefine FOXXLL_DIRECT_IO_OFF ${FOXXLL_DIRECT_IO_OFF}
+// default: 0/1 (platform dependent)
+// cmake:   detection of platform and flag
+// effect:  disables use of O_DIRECT flag on unsupported platforms
+
+#cmakedefine FOXXLL_HAVE_MMAP_FILE ${FOXXLL_HAVE_MMAP_FILE}
+// default: 0/1 (platform dependent)
+// used in: io/mmap_file.h/cpp
+// effect:  enables/disables memory mapped file implementation
+
+#cmakedefine FOXXLL_HAVE_LINUXAIO_FILE ${FOXXLL_HAVE_LINUXAIO_FILE}
+// default: 0/1 (platform dependent)
+// used in: io/linuxaio_file.h/cpp
+// effect:  enables/disables Linux AIO file implementation
+
+#cmakedefine FOXXLL_WINDOWS ${FOXXLL_WINDOWS}
+// default: off
+// cmake:   detection of ms windows platform
+// effect:  enables windows-specific api calls (mingw or msvc)
+
+#cmakedefine FOXXLL_MSVC ${FOXXLL_MSVC}
+// default: off
+// cmake:   detection of ms visual c++ via CMake (contains version number)
+// effect:  enables msvc-specific headers and macros
+
+#cmakedefine FOXXLL_WITH_VALGRIND ${FOXXLL_WITH_VALGRIND}
+// default: off
+// cmake:   option USE_VALGRIND=ON
+// effect:  run all tests with valgrind and pre-initialize some memory buffers
+
+#endif // !FOXXLL_CONFIG_HEADER
