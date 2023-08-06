@@ -1,0 +1,7 @@
+[console_scripts]
+dash_tokamak-generate-components = dash_tokamak.development.component_generator:cli
+renderer = dash_tokamak.development.build_process:renderer
+
+[pytest11]
+dash_tokamak = dash_tokamak.testing.plugin
+
