@@ -1,0 +1,8 @@
+README.md
+memorizesrs.py
+setup.py
+memorizesrs.egg-info/PKG-INFO
+memorizesrs.egg-info/SOURCES.txt
+memorizesrs.egg-info/dependency_links.txt
+memorizesrs.egg-info/top_level.txt
+memorizesrs.egg-info/zip-safe
