@@ -1,0 +1,25 @@
+Metadata-Version: 2.1
+Name: dagster-airflow
+Version: 0.6.4rc3
+Summary: Airflow plugin for Dagster
+Home-page: https://github.com/dagster-io/dagster
+Author: Elementl
+License: Apache-2.0
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 2.7
+Classifier: Programming Language :: Python :: 3.5
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Operating System :: OS Independent
+Requires-Dist: six (>=1.11.0)
+Requires-Dist: dagster (==0.6.4.pre3)
+Requires-Dist: docker (==3.7.0)
+Requires-Dist: python-dateutil (>=2.8.0)
+Provides-Extra: kubernetes
+Requires-Dist: kubernetes (>=3.0.0) ; extra == 'kubernetes'
+Requires-Dist: cryptography (>=2.0.0) ; extra == 'kubernetes'
+
+UNKNOWN
+
+
