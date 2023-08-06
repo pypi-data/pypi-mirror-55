@@ -1,0 +1,13 @@
+webscraping_tools/__init__.py,sha256=fwYuwqzzW_iIBXmKQYOs34peT1sKVwGjEKr6bFVM3Zk,164
+webscraping_tools/crypto_scrape_long.py,sha256=FdzC7wMRg0Vj9gO8MU-QXbn3Y5FAxv2Gi7mTOye4GLg,1677
+webscraping_tools/crypto_scrape_simple.py,sha256=lUpNVKj6jkGDENyyOcZzYtIfMWURGPHIqCIyNPUdrmk,229
+webscraping_tools/ezScrape.py,sha256=PGqKkFf7gpqp36OOq5y0kGFX3zvmfoS-l9O7MN8kkmE,1836
+webscraping_tools/webscraperHelper.py,sha256=ZYJgvYSyNM7-yA8fKtpRxKRsjRVqN0SLIO1hhqr-77g,901
+webscraping_tools/webscrapingTools.py,sha256=YV-ial62Dq3A8rUZO3Ue5uWcw6HzrfsCSGw-L4UiZvI,8445
+webscraping_tools/webscrapingtoolsexample.py,sha256=rxcyFg-WlO9YEEhcxRBPRjhtEpxhloqf2K-NxHDiWtM,3089
+webscraping_tools-0.1.0.dist-info/AUTHORS.rst,sha256=JhlRaKu_LNXOqNK9udWqIC7v_GY_wO5Mrdfag3a5jV0,160
+webscraping_tools-0.1.0.dist-info/LICENSE,sha256=Yl0rbxsO4ROSOtwAGzPOiaXTEU40u18-AnICcecge_U,1070
+webscraping_tools-0.1.0.dist-info/METADATA,sha256=piSoFRNr4mtXNbjs_67l-4eF4BflBTAJU6TTQPa2oNw,2013
+webscraping_tools-0.1.0.dist-info/WHEEL,sha256=8zNYZbwQSXoB9IfXOjPfeNwvAsALAjffgk27FqvCWbo,110
+webscraping_tools-0.1.0.dist-info/top_level.txt,sha256=sh-pvM8hF1m7QbhemuFwhqti-TIcQ_nIjYY415fymW0,18
+webscraping_tools-0.1.0.dist-info/RECORD,,
