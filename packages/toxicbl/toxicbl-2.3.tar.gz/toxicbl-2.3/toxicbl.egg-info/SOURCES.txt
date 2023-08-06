@@ -1,0 +1,11 @@
+README.md
+setup.py
+toxicbl/__init__.py
+toxicbl/bots.py
+toxicbl/data.py
+toxicbl/users.py
+toxicbl.egg-info/PKG-INFO
+toxicbl.egg-info/SOURCES.txt
+toxicbl.egg-info/dependency_links.txt
+toxicbl.egg-info/requires.txt
+toxicbl.egg-info/top_level.txt
