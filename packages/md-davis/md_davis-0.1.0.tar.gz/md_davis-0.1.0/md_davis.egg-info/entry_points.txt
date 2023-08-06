@@ -1,0 +1,3 @@
+[console_scripts]
+md_davis = md_davis.cli:main
+
