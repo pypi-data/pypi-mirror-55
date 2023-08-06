@@ -1,0 +1,264 @@
+====================
+independetsoft.msg
+====================
+
+Microsoft Outlook .msg file module for Python. Use this module to easy create, read, update and parse Outlook message files.
+
+========
+Features
+========
+
+  - Create message, appointment, task, contact or any other Outlook item.
+  - Read any Outlook .msg file and get all properties.
+  - Convert from Outlook message (.msg file) to MIME message (.eml file)
+  - Convert from MIME message (.eml file) to Outlook message (.msg file)
+  - Set/Get MAPI properties.
+  - Set/Get named properties.
+  - Add attachments.
+  - Read attachments.
+  - Save attachments.
+  - Add embedded messages.
+  - Read embedded messages.
+  - Save embedded messages.
+
+========
+Examples
+========
+
+**************
+Create message
+**************
+
+Create message with plain text body, set some properties and recipients.
+ 
+	from independentsoft.msg import Message
+	from independentsoft.msg import Recipient
+	from independentsoft.msg import ObjectType
+	from independentsoft.msg import DisplayType
+	from independentsoft.msg import RecipientType
+	from independentsoft.msg import MessageFlag
+	from independentsoft.msg import StoreSupportMask
+
+	message = Message()
+
+	recipient1 = Recipient()
+	recipient1.address_type = "SMTP"
+	recipient1.display_type = DisplayType.MAIL_USER
+	recipient1.object_type = ObjectType.MAIL_USER
+	recipient1.display_name = "John Smith"
+	recipient1.email_address = "John@domain.com"
+	recipient1.recipient_type = RecipientType.TO
+
+	recipient2 = Recipient()
+	recipient2.address_type = "SMTP"
+	recipient2.display_type = DisplayType.MAIL_USER
+	recipient2.object_type = ObjectType.MAIL_USER
+	recipient2.display_name = "Mary Smith"
+	recipient2.email_address = "Mary@domain.com"
+	recipient2.recipient_type = RecipientType.CC
+
+	message.subject = "Test"
+	message.body = "Body text"
+	message.display_to = "John Smith"
+	message.display_cc = "Mary Smith"
+	message.recipients.append(recipient1)
+	message.recipients.append(recipient2)
+	message.message_flags.append(MessageFlag.UNSENT)
+	message.store_support_masks.append(StoreSupportMask.CREATE)
+
+	message.save("e:\\output.msg")
+
+*******************
+Create HTML message
+*******************
+ 
+Create message with HTML and RTF body. Outlook requires RTF body to be set if HTML is present in order to display rich body text.
+
+	from independentsoft.msg import Message
+	from independentsoft.msg import Recipient
+	from independentsoft.msg import ObjectType
+	from independentsoft.msg import DisplayType
+	from independentsoft.msg import RecipientType
+	from independentsoft.msg import MessageFlag
+	from independentsoft.msg import StoreSupportMask
+
+	message = Message()
+
+	recipient1 = Recipient()
+	recipient1.address_type = "SMTP"
+	recipient1.display_type = DisplayType.MAIL_USER
+	recipient1.object_type = ObjectType.MAIL_USER
+	recipient1.display_name = "John Smith"
+	recipient1.email_address = "John@domain.com"
+	recipient1.recipient_type = RecipientType.TO
+
+	recipient2 = Recipient()
+	recipient2.address_type = "SMTP"
+	recipient2.display_type = DisplayType.MAIL_USER
+	recipient2.object_type = ObjectType.MAIL_USER
+	recipient2.display_name = "Mary Smith"
+	recipient2.email_address = "Mary@domain.com"
+	recipient2.recipient_type = RecipientType.CC
+
+	html_body = "<html><body><b>Hello World bold html text</b></body></html>"
+	html_body_with_rtf = "{\\rtf1\\ansi\\ansicpg1252\\fromhtml1 \\htmlrtf0 " + html_body + "}"
+	rtf_body = html_body_with_rtf.encode("utf_8")
+
+	message.subject = "Test"
+	message.display_to = "John Smith"
+	message.display_cc = "Mary Smith"
+	message.recipients.append(recipient1)
+	message.recipients.append(recipient2)
+	message.body_html_text = html_body
+	message.body_rtf = rtf_body
+	message.message_flags.append(MessageFlag.UNSENT)
+	message.store_support_masks.append(StoreSupportMask.CREATE)
+
+	message.save("e:\\output.msg")
+
+******************************
+Create message with attachment
+******************************
+
+	from independentsoft.msg import Message
+	from independentsoft.msg import Attachment
+	from independentsoft.msg import Recipient
+	from independentsoft.msg import ObjectType
+	from independentsoft.msg import DisplayType
+	from independentsoft.msg import RecipientType
+	from independentsoft.msg import MessageFlag
+	from independentsoft.msg import StoreSupportMask
+
+	message = Message()
+
+	recipient1 = Recipient()
+	recipient1.address_type = "SMTP"
+	recipient1.display_type = DisplayType.MAIL_USER
+	recipient1.object_type = ObjectType.MAIL_USER
+	recipient1.display_name = "John Smith"
+	recipient1.email_address = "John@domain.com"
+	recipient1.recipient_type = RecipientType.TO
+
+	recipient2 = Recipient()
+	recipient2.address_type = "SMTP"
+	recipient2.display_type = DisplayType.MAIL_USER
+	recipient2.object_type = ObjectType.MAIL_USER
+	recipient2.display_name = "Mary Smith"
+	recipient2.email_address = "Mary@domain.com"
+	recipient2.recipient_type = RecipientType.CC
+
+	message.subject = "Test"
+	message.body = "Body text"
+	message.display_to = "John Smith"
+	message.display_cc = "Mary Smith"
+	message.recipients.append(recipient1)
+	message.recipients.append(recipient2)
+	message.message_flags.append(MessageFlag.UNSENT)
+	message.store_support_masks.append(StoreSupportMask.CREATE)
+
+	attachment = Attachment(file_path = "e:\\test.pdf")
+	message.attachments.append(attachment)
+
+	message.save("e:\\output.msg")
+
+************************************************
+Read message and save attachments to file system
+************************************************
+
+	from independentsoft.msg import Message
+	from independentsoft.msg import Attachment
+
+	message = Message(file_path = "e:\\intvalue.msg")
+
+	for i in range(len(message.attachments)):
+		attachment = message.attachments[i]
+		attachment.save("e:\\" + str(attachment.file_name))
+ 
+******************
+Create appointment
+******************
+
+	import datetime
+	from independentsoft.msg import Message
+
+	appointment = Message()
+
+	appointment.message_class = "IPM.Appointment"
+	appointment.subject = "Test"
+	appointment.body = "Body text"
+	appointment.location = "My Office"
+	appointment.appointment_start_time = datetime.datetime(2019,12,10,8,0,0)
+	appointment.appointment_end_time = datetime.datetime(2019,12,10,10,0,0)
+
+	appointment.save("e:\\appointment.msg")
+
+**************
+Create contact
+**************
+
+	import datetime
+	from independentsoft.msg import Message
+
+	contact = Message()
+
+	contact.message_class = "IPM.Contact"
+	contact.subject = "John Smith"
+	contact.display_name_prefix = "Mr."
+	contact.display_name = "John Smith"
+	contact.given_name = "John"
+	contact.surname = "Smith"
+	contact.company_name = "Independentsoft"
+	contact.email1_address = "john@independentsoft.com"
+	contact.email1_display_as = "John"
+	contact.email1_display_name = "John"
+	contact.email1_type = "SMTP"
+	contact.business_address_city = "NY"
+	contact.business_address_street = "First Street"
+	contact.business_address_country = "USA"
+	contact.business_address = "First Street, NY, USA"
+	contact.business_phone = "555-666-777"
+
+	contact.save("e:\\contact.msg")
+
+***********
+Create task
+***********
+
+	import datetime
+	from independentsoft.msg import Message
+	from independentsoft.msg import Priority
+	from independentsoft.msg import TaskStatus
+
+	task = Message()
+
+	task.message_class = "IPM.Task"
+	task.subject = "Test"
+	task.body = "Body text"
+	task.owner = "John"
+	task.task_status = TaskStatus.NOT_STARTED
+	task.priority = Priority.HIGH
+	task.task_start_date = datetime.datetime(2019,12,20,10,0,0)
+	task.task_due_date =  datetime.datetime(2019,12,22,10,0,0)
+
+	task.save("e:\\task.msg")
+
+***********
+Create note
+***********
+
+	import datetime
+	from independentsoft.msg import Message
+	from independentsoft.msg import NoteColor
+
+	note = Message()
+
+	note.message_class = "IPM.StickyNote"
+	note.subject = "Test"
+	note.body = "Body text"
+	note.note_color = NoteColor.GREEN
+	note.note_top = 200
+	note.note_left = 300
+	note.note_height = 200
+	note.note_width = 250
+
+	note.save("e:\\note.msg")
